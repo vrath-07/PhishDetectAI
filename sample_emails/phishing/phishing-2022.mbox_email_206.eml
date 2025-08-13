@@ -1,0 +1,185 @@
+Return-Path:
+ bounces+30021592-8e5a-jose=monkey.org@em8487.neurodiversenutritionrd.com
+Delivered-To: jose@monkey.org
+X-FDA: 80138831388.22.CB61737
+Received: from dhtrpcpz.outbound-mail.sendgrid.net
+ (dhtrpcpz.outbound-mail.sendgrid.net [208.117.60.62])	by
+ imf09.b.hostedemail.com (Postfix) with ESMTP id 8DA2818C320D3	for
+ <jose@monkey.org>; Wed, 16 Nov 2022 09:48:53 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=neurodiversenutritionrd.com;
+	h=mime-version:from:subject:content-type:content-transfer-encoding:to:	cc;
+	s=s1; bh=W6QkFHszlD7YuCcOTkZbSjkUO6G30XyVgZfrryuDm80=;
+	b=cXBQyaUSKeQWvXW//NHj0rNrhgqq9iz32dM/MW6cwhBLOqc6hsmFyPsSyUWBQODX42PK
+	e5wBOGws/NQCm4u6zf/Is/paUv71r8n9YGgiMgmzPhMphxeuVkCvYVpG6GwbTZ7k1SRelb
+	OOguJ0hpbfgJv0g/PVSM/+43RYyY0+hWgA+iiUCtam7QnYk2jgkt661pb03HCcXGBdGhJT
+	OAaWJQ3o+69znV2FSKrsascD6P742Dll7U3UWgBqw5LqhYkODigtTUGuWv0U7uSS3Aa7+k
+	VQIUgu+YfvWdaK54QWOAlDCIiSLvyzoz9R3etNmXW6axgxK2hBMHqwJMAkD1bdRA==
+Received: by filterdrecv-78c577f976-qwzj9 with SMTP id
+ filterdrecv-78c577f976-qwzj9-1-6374B204-2        2022-11-16
+ 09:48:52.278923398 +0000 UTC m=+482526.355890934
+Received: from azure16 (unknown)
+	by geopod-ismtpd-4-6 (SG) with ESMTP
+	id rraPLjcYSuSIl7TuqPr_Dw
+	for <jose@monkey.org>;
+	Wed, 16 Nov 2022 09:48:52.184 +0000 (UTC)
+MIME-Version: 1.0
+From: Help Center <7728455netflix.co.za@em8487.neurodiversenutritionrd.com>
+Date: Wed, 16 Nov 2022 09:48:52 +0000 (UTC)
+Subject: Netflix : We're having some trouble with your current billing
+ information
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+Message-ID: <rraPLjcYSuSIl7TuqPr_Dw@geopod-ismtpd-4-6>
+X-SG-EID:  DRlVPltNyCnXsHDX/cO1VWM1LYFIJRv1UDHXE2UXz1zMrN9DvNeO4Vp8yDAX85
+ =?utf-8?q?yrTJkblYagk5ZP3YfnYHtPycYWOi1ABXs6Rj+5I?==?utf-8?q?EeV/s7GeqmbrFq?=
+ =?utf-8?q?deNUWfsqUww9mJEhbRnTMAS4eFZA1AKBF77ueIKxLHBD8JsyATT2X+GUjz5lD9JC3?=
+ =?utf-8?q?Qx8ndLte411QCEL5WaimzDj5cxQ3z1WnaJDUC0wJBbd3CWXi7tQgbmLJP8u67lawk?=
+ =?utf-8?q?YVlB7AADlLRa?=73pyD9dHpE2ENxLziAUI36rAxPzRI7LwOdDVivrwSo=
+To: jose@monkey.org
+X-Entity-ID: m4YAkBllpFssdgR20b7hhQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1668592133;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=W6QkFHszlD7YuCcOTkZbSjkUO6G30XyVgZfrryuDm80=;
+	b=aSMGqcEKLEVpknhHLfn5yZ7044QgXaOcefJuK2he907l9G/sUrTUzLSPXbU57zZ7SJxWpe
+	UwTZcRVpoIepKGNr5VymcVheZYRrn+q1j6Ul+aujhkU2kjT9DK4NkvJqoDKRxg5fXXIK8r
+	d90yUNTd9jlG2Y9mRyu2xk5sJRBpuY4=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1668592133; a=rsa-sha256;
+	cv=none;
+	b=rcJPUcYIBi6WSUvAZ65x77FuIJ0uwhExvLwiG8KSPMbrPTtioFQtZlcKYObUNkP2G427J3
+	gQyH9RWDIFtdcHG8T14tFTxrLZffd6AzOODfknACAWk8GohZaTRj4QBivS0YxRf3jnImZI
+	6GaMLZzvKVmK+1F4LsK2d36gnh9IE98=
+ARC-Authentication-Results: i=1;	imf09.b.hostedemail.com;	dkim=pass
+ header.d=neurodiversenutritionrd.com header.s=s1 header.b=cXBQyaUS;
+	dmarc=none;	spf=fail (imf09.b.hostedemail.com: domain of
+ "bounces+30021592-8e5a-jose=monkey.org@em8487.neurodiversenutritionrd.com"
+ does not designate 208.117.60.62 as permitted sender) =?utf-8?q?smtp=2Email?=
+ =?utf-8?q?from=3D=22bounces+30021592-8e5a-jose=3Dmonkey=2Eorg=40em8487=2Ene?=
+ =?utf-8?q?urodiversenutritionrd=2Ecom=22?=
+X-Rspam-User: 
+Authentication-Results: imf09.b.hostedemail.com;	dkim=pass
+ header.d=neurodiversenutritionrd.com header.s=s1 header.b=cXBQyaUS;
+	dmarc=none;	spf=fail (imf09.b.hostedemail.com: domain of
+ "bounces+30021592-8e5a-jose=monkey.org@em8487.neurodiversenutritionrd.com"
+ does not designate 208.117.60.62 as permitted sender) =?utf-8?q?smtp=2Email?=
+ =?utf-8?q?from=3D=22bounces+30021592-8e5a-jose=3Dmonkey=2Eorg=40em8487=2Ene?=
+ =?utf-8?q?urodiversenutritionrd=2Ecom=22?=
+X-Spam-Status: Yes, score=9.65
+X-Stat-Signature: 41ycb3r9fe7bz1cw8dc96jcitsiyemqa
+X-Rspamd-Queue-Id: 8DA2818C320D3
+X-Rspamd-Server: rspam08
+X-HE-Tag: 1668592133-307788
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 205
+
+<table style=3D"background-color: #eaeaea; margin-top: 0;" border=3D"0" wid=
+th=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center">
+<table border=3D"0" width=3D"600" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"background-attachment: scroll; background-image: url('http://c=
+dn.nflximg.com/us/email/hitch/netflix-crop-opacity.png'); background-size: =
+auto; background-repeat: no-repeat; background-color: #ffffff;" bgcolor=3D"=
+#ffffff">
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"padding: 46px 0 0 0;" align=3D"center"><a style=3D"color: inhe=
+rit;" href=3D"https://www.netflix.com/browse?lnktrk=3DEMP&amp;g=3DE77C1A160=
+B66237FCC574253CE1CA58C64550A7C&amp;lkid=3DURL_HOME" target=3D"_blank" rel=
+=3D"noreferrer noopener"> <img style=3D"outline: currentcolor none medium; =
+width: 145px; max-width: 280px; border: medium none currentcolor;" src=3D"h=
+ttps://assets.nflxext.com/us/email/logo/newDesign/logo_v2.png" alt=3D"Netfl=
+ix" align=3D"middle" /> </a></td>
+</tr>
+<tr>
+<td style=3D"padding: 45px 0 0 0; font-size: 0; line-height: 0;" height=3D"=
+0">&nbsp;</td>
+</tr>
+<tr>
+<td style=3D"padding: 0 0 0 90px; margin: 0; background-color: #0071eb;">
+<table style=3D"background-color: #0071eb; color: #ffffff; font-family: Hel=
+vetica Neue, Helvetica, Roboto, Segoe UI, sans-serif; font-size: 16px;" bor=
+der=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"padding: 0 4px 0 0;" width=3D"19"><img style=3D"border-collaps=
+e: collapse; display: block; outline: currentcolor none medium; border: med=
+ium none currentcolor;" src=3D"http://cdn.nflximg.com/us/email/toaster/aler=
+t20.png" alt=3D"[!!]" width=3D"19" data-inlineimagemanipulating=3D"true" />=
+</td>
+<td style=3D"padding: 12px 0 12px 0; background-color: #0071eb; color: #fff=
+fff; font-family: Helvetica Neue, Helvetica, Roboto, Segoe UI, sans-serif; =
+font-size: 16px;">Your account is on hold.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style=3D"font-family: Helvetica, Arial, sans; font-weight: bold; font-s=
+ize: 32px; color: #221f1f; line-height: 40px; padding: 40px 90px 10px 90px;=
+" align=3D"left">Update your payment details</td>
+</tr>
+<tr>
+<td style=3D"padding: 22px 90px 0 90px; font-family: Helvetica Neue, Helvet=
+ica, Roboto, Segoe UI, sans-serif; font-size: 18px; line-height: 24px; colo=
+r: #221f1f;" align=3D"left">Dear Customer,</td>
+</tr>
+<tr>
+<td style=3D"padding: 22px 90px 0 90px; font-family: Helvetica Neue, Helvet=
+ica, Roboto, Segoe UI, sans-serif; font-size: 18px; line-height: 24px; colo=
+r: #221f1f;" align=3D"left">We are having problems with your current billin=
+g information. We will try again, but in the meantime, you may want to upda=
+te your payment details.</td>
+</tr>
+<tr>
+<td style=3D"padding: 22px 90px 0 90px;">
+<table style=3D"color: #ffffff; background-color: #e50914; border-radius: 2=
+px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"padding: 10px 16px; max-width: 265px; border-radius: 2px;"><a =
+style=3D"font-size: 16px; line-height: 24px; font-weight: normal; text-alig=
+n: center; text-decoration-line: none; text-decoration-style: solid; text-d=
+ecoration-color: currentcolor; font-family: Helvetica Neue, Helvetica, Robo=
+to, Segoe UI, sans-serif; letter-spacing: 0.025em; color: inherit;" href=3D=
+"https://www.jannaty.co/net.htm" target=3D"_blank" rel=3D"noreferrer noopen=
+er">Update your information</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style=3D"padding: 22px 90px 0 90px; font-family: Helvetica Neue, Helvet=
+ica, Roboto, Segoe UI, sans-serif; font-size: 18px; line-height: 24px; colo=
+r: #221f1f;" align=3D"left">Need help? We are here if you need it. Visit th=
+e Help Center or contact us now.</td>
+</tr>
+<tr>
+<td style=3D"padding: 22px 90px 0 90px; font-family: Helvetica Neue, Helvet=
+ica, Roboto, Segoe UI, sans-serif; font-size: 18px; line-height: 24px; colo=
+r: #221f1f;" align=3D"left">&ndash;Your friends on Netflix</td>
+</tr>
+<tr>
+<td style=3D"padding: 30px 90px 0 90px;">
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"font-family: Helvetica Neue, Helvetica, Roboto, Segoe UI, sans=
+-serif; font-size: 15px; line-height: 17px; font-weight: bold; padding: 17p=
+x 0px 0px; vertical-align: bottom; text-decoration-line: none; text-decorat=
+ion-style: solid; text-decoration-color: currentcolor;">&nbsp;</td>
+
+
+

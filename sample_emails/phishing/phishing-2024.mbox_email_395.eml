@@ -1,0 +1,246 @@
+Return-Path: arabministorage@otelco.net
+Delivered-To: jose@monkey.org
+X-FDA: 82908092988.13.1A161D5
+Received: from mail-fe3.otelco.net (mail-fe3.otelco.net [216.220.228.134])
+	by imf05.b.hostedemail.com (Postfix) with ESMTP id DF8AD1C000B
+	for <jose@monkey.org>; Wed, 18 Dec 2024 13:01:59 +0000 (UTC)
+Authentication-Results: imf05.b.hostedemail.com;	dkim=none;	dmarc=none;
+	spf=pass (imf05.b.hostedemail.com: domain of arabministorage@otelco.net
+ designates 216.220.228.134 as permitted sender)
+ smtp.mailfrom=arabministorage@otelco.net
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1734526933;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	 references;
+ bh=wrjXJ4BPrH9phMkiuAAmbE45UW4e5lTuYTc2xBeyFhA=;
+	b=3Le9qwvdc3PKkPQlpfGxszW8D9TyBGrWjBSkieEd23bNm9w4PSWApn3CKkK8jYP5n5gvjg
+	UP0dFA+Mj6kp6U8wTkua7FlWcQgZf/rRvjdJVpm3fxpmWkFEZhThvm10ZeAYFndgL9Qvc3
+	KcNxotlVvjN9f3ofY7mgbOKPdokcdt4=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1734526933; a=rsa-sha256;
+	cv=none;
+	b=JXtOzizixMZccGvRYWGvblGuCjC41jqVKnZWjt47z6jcZdl22f1H+ysJLVsqa7nvwV8Eqi
+	RYlyTkjHQAZTchQ937NiPFUHJntF1iCCcOoAuaoeS1d4z+NMLOpEsUJF4QYClHDb9GJQIy
+	NaAa8J5d84UBA81nG8oPKcMWz7njDn4=
+ARC-Authentication-Results: i=1;	imf05.b.hostedemail.com;	dkim=none;
+	dmarc=none;	spf=pass (imf05.b.hostedemail.com: domain of
+ arabministorage@otelco.net designates 216.220.228.134 as permitted sender)
+ smtp.mailfrom=arabministorage@otelco.net
+Received: (qmail 826215 invoked from network); 18 Dec 2024 13:02:28 -0000
+Received: from unknown (HELO VM-87175)
+ (arabministorage@otelco.net@146.70.247.103)	by mail-fe3.otelco.net with 
+ (ECDHE-RSA-AES256-GCM-SHA384 encrypted) ESMTPSA
+	(532805b8-bd40-11ef-9c29-1866da7c7b54); Wed, 18 Dec 2024 08:02:28 -0500
+From: "ITHelpdeskDl7rD" <arabministorage@otelco.net>
+Subject: Notices Report
+To: <jose@monkey.org>
+Content-Type: multipart/alternative;
+ boundary="P1ZkTGt1iMSykx=_uu1rD9o7WTOOpk6P65"
+MIME-Version: 1.0
+Date: Wed, 18 Dec 2024 05:02:28 -0800
+Message-Id: <20241812050227E349601F20-32AAADDC99@otelco.net>
+X-MagicMail-OS: Windows NT kernel
+X-MagicMail-UUID: 532805b8-bd40-11ef-9c29-1866da7c7b54
+X-MagicMail-Authenticated: arabministorage@otelco.net
+X-MagicMail-SourceIP: 146.70.247.103
+X-MagicMail-RegexMatch: 0
+X-MagicMail-EnvelopeFrom: <arabministorage@otelco.net>
+X-Rspam-User: 
+X-Rspamd-Queue-Id: DF8AD1C000B
+X-Spam-Status: No, score=-0.01
+X-Stat-Signature: e5ndyeb9proht8wky4eoifj57mcbft5k
+X-Rspamd-Server: rspam09
+X-HE-Tag: 1734526919-659044
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+8PS7Z89x7ODXs52l9zCrPrH9O5Um48zqrrYU4sRqolWH?=
+ =?utf-8?q?9hio3obOql2BrYbu9mH5oOUahZg1RAia+4duJnisACXQTBnmLuPSUUw4oIX9NC6kq?=
+ =?utf-8?q?94Cra1ySR/hIMNiCh+7uplAObb6dRJWZieM081q2sEVscwZbyp5l+XQjyFjllNfBJ?=
+ =?utf-8?q?cAEN+HU2HXqBIKdONoK6nxs5NCFAZb4ddERJdZ997RX+VjCk0PPyD+dWn35KjE23w?=
+ =?utf-8?q?6XT7PJItFjKSuD49Dnwy4WFp1EIXsO/pLmWwlj/N01eYJ7yoCUfANyeNeH7wZNYnT?=
+ =?utf-8?q?RsudzxtTDzuSRu0nld8ai9eQwyi7kwpvzI0y15g0CY0b4IAuU1Vdd/7pb7T3ZV21c?=
+ =?utf-8?q?yxoBYGHYQl4fnOFuU57ocTzxH2T9nQ2dmhtuJW9H7eQNrikeQwLw2nEJ0ThkaNAdL?=
+ =?utf-8?q?vK9GObORK16Demo6pSgLuNeWvJ63CWS6BX6M7MQe5WYmPJJUmKZyIvBfbXJTnsxNQ?=
+ =?utf-8?q?e/9tBVBF0TtXeCKNFUjlKY46I1Z0hsykEPf321A1keJgPsYfOi5PpziDF+g0vU3u1?=
+ =?utf-8?q?2233omulaDdJ5lbGsew5jY6EWGpkPxfmlcC9Ydq0HWk3HgJpXJSlUQAcg9slxy6E+?=
+ =?utf-8?q?f+iBdS6WmS3VPqFND1lqpL3SnDzNyx9k1IqYqsZAmT3aXmtYUF55jCr4VsX81/7l+?=
+ =?utf-8?q?fRHqIGqXMTEfK+baSK2ywYR/QgxdnWUtPXyBD877Qn+zD5x65qNxasJDdJbmoBMIt?=
+ =?utf-8?q?QZHAeSyhS5/3/elKX2IZw2Uh7VsI0BqrgZbljxQsdtHIpJ1o/lLGzV1Lf7Unw22w5?=
+ =?utf-8?q?7dIIj0kNKoD7T3zes/EGEwfYqf3TBmpNiOW6udz7YuS0qwAO9QuhLSksNq5Mljw0t?=
+ =?utf-8?q?mLtDvjDNr2zIZK6e1fjxy9q8JT++fo9qXhJB2bhKQWfCQOFCK7XCQQC4JJRjbkWyv?=
+ =?utf-8?q?v+zKSHUNRroZrfsIT1KKmF_2VklCnHxNK+Mz/Cl6eYy/T6WRwNBaovMlSPyay26UU?=
+ =?utf-8?q?PvY+2Jn59mgqqFo6U425gUhd7exChO6nLtIwD8LwtpwPnFwFLJwl7I8qy9w69+dcU?=
+ =?utf-8?q?pG1MUKXa4KSwrkjuHfm6WwWZSEA8ey+TYWfo6lEcRcfXfkHHpaqIcjlOiFJdypJS9?=
+ =?utf-8?q?LgS45HWJvert0OmXl5e0mC8GZBn+I78m1qig/cm2wgvUUfPJC+NA+XefvHPAwpYQQ?=
+ =?utf-8?q?+nDbWNpPY7ZF+aCVjUvYKB3ht+zwj2hVbqVzcbAtchRedfMg7Tr3HsxuKXKu6Ye3O?=
+ =?utf-8?q?JhLnzdaNrskd4DyOhWBxkhGH+KiXh6zhDfOObhyPtbwCdlB4PS8IzIhTJc00e4lDr?=
+ =?utf-8?q?b3652ie6hj+wwvdqWejtEJ6iKou/5+BzXvanNZrHnjwGTq6zDqyqVsv+0fU4q3lIw?=
+ =?utf-8?q?oZYOc9XRj7J275PMXNcXvGFSYGNtjoxcSWcvct9r/TOn0W79AXJVfQdpBMRQ7dDSR?=
+ =?utf-8?q?ulmItz5U3Y1sPR8bnqwtL/HB6an+jETlQpr1PF0ctVwtYGtBPzEB?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 395
+
+This is a multi-part message in MIME format
+
+--P1ZkTGt1iMSykx=_uu1rD9o7WTOOpk6P65
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+Hello User,
+
+=A0
+
+Your Password for jose@monkey.org is set to expire today
+
+=A0
+
+Connect Below to Activate Same Settings =A0
+
+=A0
+
+=A0
+
+Re-authenticate Now https://click.mailchimp.com/track/click/30010842/f=
+78vxh.fk17.fdske.com?p=3DeyJzIjoiNjhtWGwwTEMwYURrUXduMFVOY2RLVGNBeDIwI=
+iwidiI6MSwicCI6IntcInVcIjozMDAxMDg0MixcInZcIjoxLFwidXJsXCI6XCJodHRwczp=
+cXFwvXFxcL2Y3OHZ4aC5mazE3LmZkc2tlLmNvbVxcXC9lXFxcL2NcXFwvMDFqZmM2MG55e=
+WNoMmtrenp5eXZoOW15ZjdcXFwvMDFqZmM2MG55eWNoMmtrenp5ejF0OGJicDRcIixcIml=
+kXCI6XCJkZDg4MTEzYjJhZTM0MTM5ODE3ZGU0N2YwMGEwMzIxNFwiLFwidXJsX2lkc1wiO=
+ltcImY5Y2VkNDEwYmZhZTVjYjc2ZWM1ZDY1MzUxMWY3ODdmNjI5OWQyMjNcIl19In0
+
+=A0
+
+=A0
+
+a
+
+This is a system generated message. Do not reply to this message.<=A0
+
+=A0
+
+=A0
+
+______________________________________________________________________=
+_
+
+Any advice contained in this email (including any attachments unless e=
+xpressly stated otherwise) is not intended or written to be used, and =
+cannot be used, for
+ purposes of avoiding tax penalties that may be imposed on any taxpaye=
+r.
+
+Confidential and Privileged: the information transmitted is intended o=
+nly for the person or entity to which it is addressed and may contain =
+confidential and/or privileged material. Any review, retransmission, d=
+issemination or other use of, or taking of any
+ action in reliance upon, this information by persons or entities othe=
+r than the intended recipient is prohibited. If you are not the intend=
+ed recipient, please contact the sender, destroy all copies and delete=
+ the material from any computer. Harshbarger &
+ Company LLC and/or its employees shall not be liable for the incorrec=
+t, incomplete or delay in transmission of this e-mail.
+
+--P1ZkTGt1iMSykx=_uu1rD9o7WTOOpk6P65
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas=
+-microsoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:off=
+ice:word" xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml"=
+ xmlns=3D"http://www.w3.org/TR/REC-html40"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-=
+8859-1">
+ <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">  <meta na=
+me=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)"> <!--=
+[if !mso]><style>v\:* {behavior:url(#default#VML);} o\:* {behavior:url=
+(#default#VML);} w\:* {behavior:url(#default#VML);} .shape {behavior:u=
+rl(#default#VML);} </style><![endif]--><style><!-- /* Font Definitions=
+ */ @font-face {font-family:"Cambria Math"; panose-1:2 4 5 3 5 4 6 3 2=
+ 4;} @font-face {font-family:Calibri; panose-1:2 15 5 2 2 2 4 3 2 4;} =
+@font-face {font-family:"Book Antiqua"; panose-1:2 4 6 2 5 3 5 3 3 4;}=
+ @font-face {font-family:"Gill Sans MT"; panose-1:2 11 5 2 2 1 4 2 2 3=
+;} /* Style Definitions */ p.MsoNormal, li.MsoNormal, div.MsoNormal {m=
+argin:0in; font-size:11.0pt; font-family:"Calibri",sans-serif;} a:link=
+, span.MsoHyperlink {mso-style-priority:99; color:blue; text-decoratio=
+n:underline;} span.EmailStyle19 {mso-style-type:personal-reply; font-f=
+amily:"Book Antiqua",serif; color:windowtext;} .MsoChpDefault {mso-sty=
+le-type:export-only; font-size:10.0pt; mso-ligatures:none;} @page Word=
+Section1 {size:8.5in 11.0in; margin:1.0in 1.0in 1.0in 1.0in;} div.Word=
+Section1 {page:WordSection1;} --></style><!--[if gte mso 9]><xml> <o:s=
+hapedefaults v:ext=3D"edit" spidmax=3D"1026" /> </xml><![endif]--><!--=
+[if gte mso 9]><xml> <o:shapelayout v:ext=3D"edit"> <o:idmap v:ext=3D"=
+edit" data=3D"1" /> </o:shapelayout></xml><![endif]--> </head>
+ <body lang=3D"EN-US" style=3D"-ms-word-wrap: break-word;" link=3D"blu=
+e" vlink=3D"purple"> <div class=3D"WordSection1"> <p class=3D"MsoNorma=
+l"><span style=3D'font-family: "Book Antiqua",serif;'>Hello User, </sp=
+an> <span style=3D'font-family: "Book Antiqua",serif;'><o:p></o:p></sp=
+an></p><p class=3D"MsoNormal" style=3D"margin-right: 1pt;"><span style=
+=3D'font-family: "Gill Sans MT",sans-serif; font-size: 4pt;'><o:p>&nbs=
+p;</o:p></span></p><p class=3D"MsoNormal"><span style=3D'font-family: =
+"Book Antiqua",serif;'>Your Password for <b>jose@monkey.org</b> is set=
+ to expire <b style=3D"color: red;">today<o:p></b></o:p></span></p><p =
+class=3D"MsoNormal" style=3D"margin-right: 1pt;"><span style=3D'font-f=
+amily: "Gill Sans MT",sans-serif; font-size: 4pt;'><o:p>&nbsp;</o:p></=
+span></p><p class=3D"MsoNormal"><o:p>Connect Below to Activate Same Se=
+ttings &nbsp;</o:p></p><p class=3D"MsoNormal" style=3D"margin-right: 1=
+pt;"><span style=3D'font-family: "Gill Sans MT",sans-serif; font-size:=
+ 4pt;'><o:p>&nbsp;</o:p></span></p><p class=3D"MsoNormal" style=3D"mar=
+gin-right: 1pt;"><span style=3D'font-family: "Gill Sans MT",sans-serif=
+; font-size: 4pt;'><o:p>&nbsp;</o:p></span></p><p class=3D"MsoNormal" =
+style=3D"margin-right: 1pt;"><span style=3D"mso-ligatures: standardcon=
+textual;"><a href=3D"https://click.mailchimp.com/track/click/30010842/=
+f78vxh.fk17.fdske.com?p=3DeyJzIjoiNjhtWGwwTEMwYURrUXduMFVOY2RLVGNBeDIw=
+IiwidiI6MSwicCI6IntcInVcIjozMDAxMDg0MixcInZcIjoxLFwidXJsXCI6XCJodHRwcz=
+pcXFwvXFxcL2Y3OHZ4aC5mazE3LmZkc2tlLmNvbVxcXC9lXFxcL2NcXFwvMDFqZmM2MG55=
+eWNoMmtrenp5eXZoOW15ZjdcXFwvMDFqZmM2MG55eWNoMmtrenp5ejF0OGJicDRcIixcIm=
+lkXCI6XCJkZDg4MTEzYjJhZTM0MTM5ODE3ZGU0N2YwMGEwMzIxNFwiLFwidXJsX2lkc1wi=
+OltcImY5Y2VkNDEwYmZhZTVjYjc2ZWM1ZDY1MzUxMWY3ODdmNjI5OWQyMjNcIl19In0"><=
+span style=3D'margin: 20px 0px; padding: 10px; border-radius: 3px; wid=
+th: 210px; text-align: center; color: rgb(255, 255, 255); line-height:=
+ 25px; font-family: Segoe UI, Segoe UI; font-size: 16px; font-weight: =
+bold; text-decoration: none; display: inline-block; min-height: 20px; =
+background-color: rgb(24, 90, 189);'>Re-authenticate Now</span></a></s=
+pan><span style=3D'font-family: "Gill Sans MT",sans-serif; font-size: =
+8pt;'><o:p></o:p></span></p><p class=3D"MsoNormal" style=3D"margin-rig=
+ht: 1pt;"><span style=3D'font-family: "Gill Sans MT",sans-serif; font-=
+size: 4pt;'><o:p>&nbsp;</o:p></span></p><p class=3D"MsoNormal" style=3D=
+"margin-right: 1pt;"><span style=3D'font-family: "Gill Sans MT",sans-s=
+erif; font-size: 4pt;'><o:p>&nbsp;</o:p></span></p>a <p class=3D"MsoNo=
+rmal" style=3D"margin-right: 1pt;"><span style=3D'font-family: "Gill S=
+ans MT",sans-serif; font-size: 4pt;'><o:p>This is a system generated m=
+essage. Do not reply to this message.<&nbsp;</o:p></span></p><p class=3D=
+"MsoNormal" style=3D"margin-right: 1pt;"><span style=3D'font-family: "=
+Gill Sans MT",sans-serif; font-size: 4pt;'><o:p>&nbsp;</o:p></span></p=
+><p class=3D"MsoNormal" style=3D"margin-right: 1pt;"><span style=3D'fo=
+nt-family: "Gill Sans MT",sans-serif; font-size: 4pt;'><o:p>&nbsp;</o:=
+p></span></p><p class=3D"MsoNormal"><span style=3D'font-family: "Gill =
+Sans MT",sans-serif;'><o:p><br></o:p></span></p><p class=3D"MsoNormal"=
+><span style=3D'font-family: "Gill Sans MT",sans-serif;'><o:p><br></o:=
+p></span></p><p class=3D"MsoNormal"><span style=3D'font-family: "Gill =
+Sans MT",sans-serif; font-size: 12pt;'>_______________________________=
+________________________________________<o:p></o:p></span></p><p class=
+=3D"MsoNormal"><b><i><span style=3D'color: black; font-family: "Arial"=
+,sans-serif; font-size: 8pt;'>Any advice contained in this email (incl=
+uding any attachments unless expressly stated otherwise) is not intend=
+ed or written to be used, and cannot be used, for purposes of avoiding=
+ tax penalties that may be imposed on any taxpayer.</span></i></b><i><=
+span style=3D'color: black; font-family: "Arial",sans-serif; font-size=
+: 8pt;'><br> <br> Confidential and Privileged: the information transmi=
+tted is intended only for the person or entity to which it is addresse=
+d and may contain confidential and/or privileged material. Any review,=
+ retransmission, dissemination or other use of, or taking of any actio=
+n in reliance upon, this information by persons or entities other than=
+ the intended recipient is prohibited. If you are not the intended rec=
+ipient, please contact the sender, destroy all copies and delete the m=
+aterial from any computer. Harshbarger &amp; Company LLC and/or its em=
+ployees shall not be liable for the incorrect, incomplete or delay in =
+transmission of this e-mail.</span></i><span style=3D'color: black; fo=
+nt-family: "Arial",sans-serif; font-size: 8pt;'> </span><span style=3D=
+'color: rgb(31, 73, 125); font-family: "Times New Roman",serif; font-s=
+ize: 8pt;'><o:p></o:p></span></p> </div>
+
+--P1ZkTGt1iMSykx=_uu1rD9o7WTOOpk6P65--
+
+

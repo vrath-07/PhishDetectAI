@@ -1,0 +1,140 @@
+Return-Path: 75335-140813-231605-16538-jose=monkey.org@mail.septifix.best
+Delivered-To: jose@monkey.org
+X-FDA: 81826228638.17.FDF143D
+Received: from king.septifix.best (srv2.webupd.com [107.173.104.79])
+	by imf14.b.hostedemail.com (Postfix) with ESMTP id E8B7660008
+	for <jose@monkey.org>; Sat, 24 Feb 2024 09:50:55 +0000 (UTC)
+Authentication-Results: imf14.b.hostedemail.com;	dkim=pass
+ header.d=septifix.best header.s=k1 header.b="C/eBWFu1";	spf=pass
+ (imf14.b.hostedemail.com: domain of
+ "75335-140813-231605-16538-jose=monkey.org@mail.septifix.best" designates
+ 107.173.104.79 as permitted sender)
+ smtp.mailfrom="75335-140813-231605-16538-jose=monkey.org@mail.septifix.best";
+	dmarc=pass (policy=quarantine) header.from=septifix.best
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1708768258;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=GYEwjZmfbpDjffuhtC6fG2eCuNRNQj5F7kOoTwmrrmM=;
+	b=b2tMrhG2b+PgICx8tKikTL8xwTgwuBbHROS/ODE34HIlddOSc1cRWTXJ7t4qSWaApWjz3J
+	AkXkoQc3SwIZ9VxvuMNYyzmlAvIS7NV7gxgYDSD9uPcK7ZsDYpXAdyfwLu+xe+sKnizZtD
+	5X7tzfNv9Ml5KGISKk9oAOZGMVgJacQ=
+ARC-Authentication-Results: i=1;	imf14.b.hostedemail.com;	dkim=pass
+ header.d=septifix.best header.s=k1 header.b="C/eBWFu1";	spf=pass
+ (imf14.b.hostedemail.com: domain of
+ "75335-140813-231605-16538-jose=monkey.org@mail.septifix.best" designates
+ 107.173.104.79 as permitted sender)
+ smtp.mailfrom="75335-140813-231605-16538-jose=monkey.org@mail.septifix.best";
+	dmarc=pass (policy=quarantine) header.from=septifix.best
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1708768258; a=rsa-sha256;
+	cv=none;
+	b=wDbGgK0ePefNEV4mmAunZdrlhKRx0wBYOV00wlbEzIoAzBz4EGwCZ1n2hAtcJfQANC33w2
+	Xqbwty3WqWrTKHQX3Uyxkoqjlbd2hntvpuEqNySAGJ+lZDT9OerjaOAWBJQaY27JbjLu0p
+	QHMPul+/v+kFp+t/2W8SzyEshX6b8Vo=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=k1; d=septifix.best;
+ h=Mime-Version:Content-Type:Date:From:Reply-To:Subject:To:Message-ID;
+ i=PackageNotification@septifix.best; bh=TXaQ9xEZRBX3WlchC5dMxzrzdWs=; 
+ =?utf-8?q?b=3DC/eBWFu1CMwYm072qki2pHzv4cWHEKVaQS61aBlvbGOKLy7mQfo8heQPeMfIW?=
+ =?utf-8?q?5tDaGRyTwwFmkKq?=  
+ Q2Y4/1T6fo9HSql0ScuDJU4hzdqssc7gT8f88/jVHFodGUtnaZfBq7F9RfeElCKznzYj8WohofIb
+  
+ B2nmirYwIuU724D6cAlC4EE0DtuABg7aSn5CWypNH6+3mm19hv1elV+v8hlfaGEPsJJDHa+9K1hp
+  
+ naqdXf0xMC8wIqXceAFbxpqk51XsQvEjOk9wcDWA/6bT1XTT61TiKRDUdPQxSdfQqdQ0t/5tHw/E
+   9OP83xHnrRZB/gp1l4LOtf276MXjswjmQLaEHA==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=k1; d=septifix.best; 
+ =?utf-8?q?b=3DngqrFlsGXtcjasj9mLYjDkPsXAP5p29hRzKRCFCzUyoGlSEfK8zAG+b8Wdn/C?=
+ =?utf-8?q?++QJWjjJfoRdvCe?=  
+ JIitpuZrpW5rAVFlchfPe28+qSl091scOiAeekmQ/2oYR3lSQlQPsxxWr9t5uimkDtDEYKowWodN
+  
+ bCybafcn4DjnQczR8YF7UcCtIUelaIUwDOHIolj1/Cnaa1Xt5/VwM3iWpB3agDRWuR94YO7yWwuX
+  
+ yrL6tL0gMflnPbWMH8twHFhnWz0X1BWNCRTkVlr4t+SAuH7ntauCR+eGEVhT2TeSebRyZPpETAmv
+   aaD0PZhnZV6fMtVxpjVx78H+/tZ3N/5mwEkksQ==;
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="e4bd8e70b08b81bdf9276ab421ef4c80_2260d_388b5"
+Date: Sat, 24 Feb 2024 10:50:53 +0100
+From: "Track & Trace" <PackageNotification@septifix.best>
+Reply-To: "Track.and.Trace" <PackageNotification@septifix.best>
+Subject: Sorry we missed you! Schedule your next delivery date.
+To: <jose@monkey.org>
+Message-ID: <or3i1eqvcidtpwmp-d2f3qnj8qolbs2nt-2260d-388b5@septifix.best>
+X-Rspamd-Server: rspam08
+X-Rspam-User: 
+X-Rspamd-Queue-Id: E8B7660008
+X-Spam-Status: No, score=8.08
+X-Stat-Signature: pfw7erksdhxsqhi6wryfwckq8eso3wgz
+X-HE-Tag: 1708768255-928540
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19Z5rLyEEzGKHSJhcwdv1PmdS4Jc+uWrUBKN3Fy1WLSu94?=
+ =?utf-8?q?kEjwVWKFrGBJ8mpMA4SXD4WSS7rlQfNhfzu41WF2Dd0iXeaMBesUjTbEt/OWZX+8/?=
+ =?utf-8?q?wOEl1WNyn32tyHHaFDXL8TqprAKTOljY+QaNuBx2xR7i2yYpufSlagoyMvh01bwto?=
+ =?utf-8?q?FpXbMtQWgILfXoExIqAaDPXeQ+pUYSLWERq/R4fnmZ6dEj1Lus=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 64
+
+--e4bd8e70b08b81bdf9276ab421ef4c80_2260d_388b5
+Content-Type: text/plain;
+Content-Transfer-Encoding: 8bit
+
+Sorry we missed you! Schedule your next delivery date.
+
+http://septifix.best/iWt7aYxHPIPNQGaeVN3iu_u7FowPyYPpWyQqdiwRKiEgggXi5Q
+
+http://septifix.best/NngWm08dPUv3g5yecq1P2UwnVvolkjh1_OEOJ0Nd36PNhaoFYw
+
+een songs and calls is based upon complexity, length, and context. Songs are longer and more complex and are associated with territory and courtship and mating, while calls tend to serve such functions as alarms or keeping members of a flock in contact. Other authorities such as Howell and Webb (1995) make the distinction based on function, so that short vocalizations, such as those of pigeons, and even non-vocal sounds, such as the drumming of woodpeckers and the "winnowing" of snipes' wings in display flight, are considered songs. Still others require song to have syllabic diversity and temporal regularity akin to the repetitive and transformative patterns that define music. It is generally agreed upon in birding and ornithology which sounds are songs and which are calls, and a good field guide will differentiate between the two.
+
+
+Wing feathers of a male club-winged manakin, with the modifications noted by P. L. Sclater in 1860 and discussed by Charles Darwin in 1871. The bird produces sound with its wings.
+Bird song is best developed in the order Passeriformes. Some groups are nearly voiceless, producing only percussive and rhythmic sounds, such as the storks, which clatter their bills. In some manakins (Pipridae), the males have evolved several mechanisms for mechanical sound production, including mechanisms for stridulation not unlike those found in some insects. The production of sounds by mechanical means as opposed to the use of the syrinx has been termed variously instrumental music by Charles Darwin, mechanical sounds and more recently sonation. The term sonate has been defined as the act of producing non-vocal sounds that are intentionally modulated communicative signals, produced using non-syringeal structures such as the bill, wings, tail, feet and body feathers.
+
+Song is usually delivered from prominent perches, although some species may sing when flying.
+
+In extratropical Eurasia and the Americas almost all song is produced by male birds; however, in the tropics and to a greater extent the desert belts of Australia and Africa it is more typical for females to sing as much as males. These differences have been known for a long time and are generally attributed to the much less regular and seasonal climate of Australian and African arid zones requiring that birds breed at any time when conditions are favourable, although they cann
+
+--e4bd8e70b08b81bdf9276ab421ef4c80_2260d_388b5
+Content-Type: text/html;
+Content-Transfer-Encoding: 8bit
+
+<html>
+<head>
+	<title>Newsletter</title>
+</head>
+<body>
+<center>
+<div style="font-size:14px;font-family:cambria;width:500px;">Need help with a broken image? <a href="http://septifix.best/iWt7aYxHPIPNQGaeVN3iu_u7FowPyYPpWyQqdiwRKiEgggXi5Q" http:="" microsoft.com="" target="blank"><b>Click here</b></a></div>
+&nbsp;
+
+<div style="font-size:20px;font-family:Lucida Fax;width:500px;color:#FA3403;font-weight:bold;"><a href="http://septifix.best/iWt7aYxHPIPNQGaeVN3iu_u7FowPyYPpWyQqdiwRKiEgggXi5Q" http:="" microsoft.com="" target="blank"><b style="color:#004f93;">Sorry we missed you! Schedule your next delivery date.</b></a></div>
+<br />
+<br />
+<a href="http://septifix.best/iWt7aYxHPIPNQGaeVN3iu_u7FowPyYPpWyQqdiwRKiEgggXi5Q" http:="" microsoft.com="" target="blank"><img http:="" microsoft.com="" src="http://septifix.best/d37a02a6928eb5a643.png" /></a><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+&nbsp; <a href="http://septifix.best/fhsV7mpq6et8VZux0Xw6K4fd7qrmUOMgF45iQ1XQ4i1Ky5NICg" http:="" microsoft.com="" style="font-weight:bold;" target="blank"><img http:="" microsoft.com="" src="http://septifix.best/afd3de22cb1b7ba0d2.jpg" /></a><br />
+<br />
+<br />
+<br />
+&nbsp;
+<p style="color:#FFFFFF;font-size:8px;">een songs and calls is based upon complexity, length, and context. Songs are longer and more complex and are associated with territory and courtship and mating, while calls tend to serve such functions as alarms or keeping members of a flock in contact. Other authorities such as Howell and Webb (1995) make the distinction based on function, so that short vocalizations, such as those of pigeons, and even non-vocal sounds, such as the drumming of woodpeckers and the &quot;winnowing&quot; of snipes&#39; wings in display flight, are considered songs. Still others require song to have syllabic diversity and temporal regularity akin to the repetitive and transformative patterns that define music. It is generally agreed upon in birding and ornithology which sounds are songs and which are calls, and a good field guide will differentiate between the two. Wing feathers of a male club-winged manakin, with the modifications noted by P. L. Sclater in 1860 a
+ nd discussed by Charles Darwin in 1871. The bird produces sound with its wings. Bird song is best developed in the order Passeriformes. Some groups are nearly voiceless, producing only percussive and rhythmic sounds, such as the storks, which clatter their bills. In some manakins (Pipridae), the males have evolved several mechanisms for mechanical sound production, including mechanisms for stridulation not unlike those found in some insects. The production of sounds by mechanical means as opposed to the use of the syrinx has been termed variously instrumental music by Charles Darwin, mechanical sounds and more recently sonation. The term sonate has been defined as the act of producing non-vocal sounds that are intentionally modulated communicative signals, produced using non-syringeal structures such as the bill, wings, tail, feet and body feathers. Song is usually delivered from prominent perches, although some species may sing when flying. In extratropical Eurasia and the Americas
+  almost all song is produced by male birds; however, in the tropics and to a greater extent the desert belts of Australia and Africa it is more typical for females to sing as much as males. These differences have been known for a long time and are generally attributed to the much less regular and seasonal climate of Australian and African arid zones requiring that birds breed at any time when conditions are favourable, although they cann</p>
+<br />
+<br />
+&nbsp;
+<p>&nbsp;</p>
+<a href="http://septifix.best/NngWm08dPUv3g5yecq1P2UwnVvolkjh1_OEOJ0Nd36PNhaoFYw" http:="" microsoft.com="" target="blank"><img http:="" microsoft.com="" src="http://septifix.best/f1daba8870cbc3c3d5.png" /></a></center>
+<a href="http://septifix.best/BwcV0gyukljbkNxRIRvXZIPR5FbO6SfEjXqiDUi-v2_w7rSeyg"><img src="http://septifix.best/301f1f31ccbea52e12.jpg" /><img height="1" src="http://www.septifix.best/s6lEEJKw0gXlaauyRQ4CyCFTKwK4Y-6dlySqyWV_R_L28wEW_Q" width="1" /></a></body>
+</html>
+
+--e4bd8e70b08b81bdf9276ab421ef4c80_2260d_388b5--
+

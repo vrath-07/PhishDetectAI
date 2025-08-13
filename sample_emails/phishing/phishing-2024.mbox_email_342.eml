@@ -1,0 +1,304 @@
+Return-Path: postmailer@giardinoperfetto.net
+Delivered-To: jose@monkey.org
+X-FDA: 82773085038.31.69AE2AA
+Received: from smtp09.aws88.smarthost.it (smtp09.aws88.smarthost.it
+ [109.232.88.9])	by imf16.b.hostedemail.com (Postfix) with ESMTP id
+ 87B29120006	for <jose@monkey.org>; Mon, 11 Nov 2024 08:07:39 +0000 (UTC)
+Authentication-Results: imf16.b.hostedemail.com;	dkim=pass
+ header.d=giardinoperfetto.net header.s=DFD2F9AE-4BEB-11EE-9B24-DBC3B35BC91C
+ header.b=gxaqYlSE;	spf=pass (imf16.b.hostedemail.com: domain of
+ postmailer@giardinoperfetto.net designates 109.232.88.9 as permitted sender)
+ smtp.mailfrom=postmailer@giardinoperfetto.net;	dmarc=pass (policy=none)
+ header.from=giardinoperfetto.net
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1731312342;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=Y+SPlP/BNWnNls/cJzxcxxYPHQzVFdq+zV77qSn7ATQ=;
+	b=l1zzP5aySDWATyaRAy33Lpmo/mYEUVw3WxQmW7pDG1K7MFXNNdV+owTp7N5DGwmbz6zSsK
+	lrKvad9WecVeNM/tOWSWuv770e7TY/EZT8QMPxXOzLhbw50dOHObHq0evJla1o0hdh7bks
+	zVQEe0Vhdhs3cPr5hi/3eBALQOgOJiI=
+ARC-Authentication-Results: i=1;	imf16.b.hostedemail.com;	dkim=pass
+ header.d=giardinoperfetto.net header.s=DFD2F9AE-4BEB-11EE-9B24-DBC3B35BC91C
+ header.b=gxaqYlSE;	spf=pass (imf16.b.hostedemail.com: domain of
+ postmailer@giardinoperfetto.net designates 109.232.88.9 as permitted sender)
+ smtp.mailfrom=postmailer@giardinoperfetto.net;	dmarc=pass (policy=none)
+ header.from=giardinoperfetto.net
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1731312342; a=rsa-sha256;
+	cv=none;
+	b=TTs8ZxesqRMwgYpjG+TbsQDFz5cLFqh+mitrykhTOfxMmE9+2Xmcw0mF1PlnTyRqQxB33q
+	aeUfP24ciPdR12l43NVHU019qRWRC/zgQHOsITAe3k3Vobet35U4XXvjtf3PBm4k4xXj2b
+	bGvcvXFb3gn0cZvMRZwcxLSwP9fUG+8=
+Received: from mailexchange.italogic.it
+ (ip-172-30-0-68.eu-west-1.compute.internal [172.30.0.68])	by
+ mgw06.aws.smarthost.it (Postfix) with ESMTP id 2F8F7D9D6EF	for
+ <jose@monkey.org>; Mon, 11 Nov 2024 08:05:09 +0000 (UTC)
+Received: from localhost (localhost [127.0.0.1])
+	by mailexchange.italogic.it (Postfix) with ESMTP id C05F515E072
+	for <jose@monkey.org>; Mon, 11 Nov 2024 08:30:41 +0100 (CET)
+Received: from mailexchange.italogic.it ([127.0.0.1])
+	by localhost (mailexchange.italogic.it [127.0.0.1]) (amavisd-new, port 10032)
+	with ESMTP id F9HW0n6sJTuK for <jose@monkey.org>;
+	Mon, 11 Nov 2024 08:30:40 +0100 (CET)
+Received: from localhost (localhost [127.0.0.1])
+	by mailexchange.italogic.it (Postfix) with ESMTP id 513E815CB4E
+	for <jose@monkey.org>; Mon, 11 Nov 2024 06:14:03 +0100 (CET)
+DKIM-Filter: OpenDKIM Filter v2.8.4 mailexchange.italogic.it 513E815CB4E
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+	d=giardinoperfetto.net; s=DFD2F9AE-4BEB-11EE-9B24-DBC3B35BC91C;
+	t=1731302043; bh=Y+SPlP/BNWnNls/cJzxcxxYPHQzVFdq+zV77qSn7ATQ=;
+	h=Reply-To:From:To:Subject:Date:Message-ID:MIME-Version:
+	 Content-Type:Content-Transfer-Encoding;
+	b=gxaqYlSE1enGtZMG/wCReXAePjxG1AwAKI5vWGfSE3xGZkk0gUbmBdpBN5OJsKFMm
+	 ewv3BBOo4oEfAXA5H2faYozu+bDVSmgMMHNiAgQ/6Crg3QL57FIj3eM219n28/qLug
+	 t1TGvq70qWhRli54NeTv8dkR6TrOU2UuMr/esuMU=
+X-Virus-Scanned: amavisd-new at mailexchange.italogic.it
+Received: from mailexchange.italogic.it ([127.0.0.1])
+	by localhost (mailexchange.italogic.it [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id yFB1cuzbelnQ for <jose@monkey.org>;
+	Mon, 11 Nov 2024 06:14:02 +0100 (CET)
+Received: from [147.182.162.252] (unknown [147.182.162.252])
+	by mailexchange.italogic.it (Postfix) with ESMTPSA id 3825D1E23F5
+	for <jose@monkey.org>; Mon, 11 Nov 2024 04:16:49 +0100 (CET)
+Reply-To: WeTransfer <noreply@wetransfer.com>
+From: WeTransfer <postmailer@giardinoperfetto.net>
+To: jose@monkey.org
+Subject: Documents sent you via WeTransfer
+Date: 10 Nov 2024 19:16:46 -0800
+Message-ID: <20241110191646.F0BB6A9DE8A7B14E@giardinoperfetto.net>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 87B29120006
+X-Stat-Signature: o5pmabi5xycsmospoxd8huebubq5jsqw
+X-Rspamd-Server: rspam09
+X-Spam-Status: No, score=0.30
+X-HE-Tag: 1731312459-706622
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19C74K5AO6rHlqkseayDOrTUQkfPQMkUG+LZXtShPvgphg?=
+ =?utf-8?q?GIo+2aWQFQOQ2LKpnzd03HEIl8RT46AE43ZBOBQuCXuCCVJa5U0k2JYA/uoJ3JQNg?=
+ =?utf-8?q?bHQzFdl6w6oNshEcq76kvYSvjs5ZhZvqFfaUr2U1AoM2Q5T/TJMrDkNQBOWOLdL4K?=
+ =?utf-8?q?xQWyPeciTPsGtiJXBSXpCDFYKiavEwW5bRWyFww/YNxwXAW8koiFyQIxS12HeNFDo?=
+ =?utf-8?q?aYhI4Mrvo2QLPbExXswmBL1SV5Me0+y+JNmhiHHXUE6lSg6jFJUHfy5TGARFn6yqP?=
+ =?utf-8?q?XUT0gJB/53MwoLG7S9MbEpYJPeQo8phgzih6woNvycZBwLooh3XRG9sLsh5YNUQHd?=
+ =?utf-8?q?5mmRXKvn4MeX5KZjjWXxN3e22kCjcM/qYdKgiov38lp1SzpON6RcsXBYiDYJAPrN7?=
+ =?utf-8?q?RPouLI3C5eSY2PnB9pzy4JjAgB4VBjHzC/8KG15sIakvTfzLlKs/SOd9GXT4idS9X?=
+ =?utf-8?q?70UeA4IW63x/BYFzypUUnivaCk1r9ASrgWTLVKc4Tj6BApfRnj0EGkpwfVWJk9Cjn?=
+ =?utf-8?q?kOdsFNmJFyjMNMhFL9l24uZR158XMmaMzPBSw7JqdYlmpyv/hfyb2dEVicQBmd8j3?=
+ =?utf-8?q?6flDn6usDva/OrwqEzCPCD0MSDgiO5joVqZypEtCNwNf1hOHIGku0/QJYdlHKtjtP?=
+ =?utf-8?q?Atb/Dr31bB5XuTlWbphosXJO+63E6NZBzS0cqd5144+BDSIVAQNgsJjpO2k5PCZ/F?=
+ =?utf-8?q?D/JLOvxvWDGV3GhD/l2X3mpHdp6SZFefQaKl50EKXt4GqZfF9RdgVq1gN3JkiMrB7?=
+ =?utf-8?q?crN2xg4Nnqw5PenaRUeU+t7ZQMnKSfkz/+jnoT7LL1wQff8721F/HN4RbW8wGADHV?=
+ =?utf-8?q?+F50bNZcPwNKe/FbrTPE5PddYZ8jwSsJBU08Jz4rxXoD+H06UExg5l6CjHqxWdXrL?=
+ =?utf-8?q?NYSFQXU9yiQIaeuhp3JRcQ_Ug9tLbhMz5FSAdtpGhmPJ1BW6ZfOfmYKtVp8bbAnUr?=
+ =?utf-8?q?FfDBX/ZPVxGwGi5XOK6W1O8MuhDFXbgs4zOmkPbgQEv0kp+eDcfVA14zGmCgXL7jI?=
+ =?utf-8?q?HwZVHsXoiLakix/pmLIlCS39Pj6t83PQURGW28B4c1hkLo0vD19BrTMdPmbXmPwsX?=
+ =?utf-8?q?epjPjxilGXVcxO6l+jB0i2GodMo+a6QLUkJb3k6qPb3cxby32Q6800izu0U+w3dfn?=
+ =?utf-8?q?mxtru5CnF0XHNWZV3GrpN/nSa7zZ5QXdOUsexEkFuhLiuDaPKeGiY5Nck3v/jn1od?=
+ =?utf-8?q?YbDTKlAgrUHI4V90SMl7SkOYbq/NRTLyypk1wF0m5CzWmHvgMYBBHYjpP2CRTzAU6?=
+ =?utf-8?q?MCBuwvCk+nvJ7pJ7s7DQEfZnxxcpvpIVC/dESWlZgUDls0SMGuHD6IbhfiKJfzgHn?=
+ =?utf-8?q?GK3duRexNwE6yRFzG4z2s64fPpqB4ECW3+CKor/p2NuUq7i3Q3M+uRjsrUW6k11Y3?=
+ =?utf-8?q?FyVjoSiIkesLXHzuMLzMxZbq5eFDPfibjg42qGOZjuvDy8tRPLSlwCQS2zXZrE3p2?=
+ =?utf-8?q?i8WjEcTzdGSypdt029mpKbn6Pwn0oQ1zorK2h/uLl+Ap189csdDcFw6QneBT4XXLH?=
+ =?utf-8?q?SNwDVeEcCgdolbJ2+hOTiT/hkGzCT1mChQQeJ3TQ=3D=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 342
+
+<!DOCTYPE HTML>
+
+<html><head><title></title>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"margin: 0.4em; font-size: 14pt;">
+<table width=3D"100%" style=3D"margin: 0px; padding: 0px; color: rgb(34, 34=
+, 34); text-transform: none; letter-spacing: normal; font-family: Arial, He=
+lvetica, sans-serif; font-size: small; font-style: normal; font-weight: 400=
+; word-spacing: 0px; white-space: normal; border-collapse: collapse; table-=
+layout: auto; border-spacing: 0px; orphans: 2; widows: 2; font-variant-liga=
+tures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; t=
+ext-decoration-thickness: initial;=20
+text-decoration-style: initial; text-decoration-color: initial;" bgcolor=3D=
+"#f4f4f4" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td a=
+lign=3D"left" valign=3D"top" style=3D"margin: 0px; padding: 0px; width: 982=
+px;"><center><table width=3D"600" align=3D"center" style=3D"margin: 0px aut=
+o; padding: 0px; width: 600px; border-collapse: collapse; table-layout: fix=
+ed; min-width: 600px; border-spacing: 0px;" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0"><tbody><tr>
+<td width=3D"600" align=3D"left" valign=3D"top" style=3D"margin: 0px; paddi=
+ng: 0px; width: 600px; min-width: 600px;"><table style=3D"margin: 0px; padd=
+ing: 0px; width: 600px; border-collapse: collapse; table-layout: fixed; bor=
+der-spacing: 0px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody>=
+<tr><td align=3D"left" valign=3D"top" style=3D"margin: 0px; padding: 55px 0=
+px 0px; width: 600px;">
+<table style=3D"margin: 0px; padding: 0px; width: 600px; border-collapse: c=
+ollapse; table-layout: fixed; border-spacing: 0px;" border=3D"0" cellspacin=
+g=3D"0" cellpadding=3D"0"><tbody><tr><td align=3D"left" valign=3D"top" styl=
+e=3D"background: no-repeat 50% 50% / cover; margin: 0px; padding: 0px; widt=
+h: 600px; font-size: 10px;" bgcolor=3D"#5268ff"><center>
+<table align=3D"center" style=3D"margin: 0px auto; padding: 0px; width: aut=
+o; border-collapse: collapse; table-layout: fixed; border-spacing: 0px;" bo=
+rder=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td height=3D"16"=
+ align=3D"left" valign=3D"top" style=3D"margin: 0px; padding: 0px; width: 5=
+6px; height: 16px;"></td></tr><tr><td align=3D"left" valign=3D"top" style=
+=3D"margin: 0px; padding: 0px; width: 56px;">
+<a style=3D"color: rgb(17, 85, 204);" href=3D"https://wetransfer.com/?trk=
+=3DTRN_TDL_01&amp;utm_campaign=3DTRN_TDL_01&amp;utm_medium=3Demail&amp;utm_=
+source=3Dsendgrid" target=3D"_blank" data-saferedirecturl=3D"https://www.go=
+ogle.com/url?q=3Dhttps://wetransfer.com/?trk%3DTRN_TDL_01%26utm_campaign%3D=
+TRN_TDL_01%26utm_medium%3Demail%26utm_source%3Dsendgrid&amp;source=3Dgmail&=
+amp;ust=3D1731261070344000&amp;usg=3DAOvVaw1atovN8BxifSkzKH4jyn9V">
+<img width=3D"56" align=3D"center" style=3D"margin: 0px; padding: 0px; bord=
+er: currentColor; border-image: none; width: 56px; height: auto; line-heigh=
+t: 10px; display: block; text-decoration-line: none;" alt=3D"Click 'Downloa=
+d images' to view images" src=3D"https://ci3.googleusercontent.com/meips/AD=
+Kq_NbpCyD7rRykXhEKlH8d7j-IkObeQT44QCMY4zeIOKAPmqXlXuGRDqb9-RFqZ6kcUOiwxkhLs=
+DxUTc3oKonwdcyXbbOkObtEhLj6ow=3Ds0-d-e1-ft#https://email.wetransfer.net/ema=
+ils/logos/blue_2x.png" border=3D"0" height=3D"30"></a></td></tr><tr>
+<td height=3D"11" align=3D"left" valign=3D"top" style=3D"margin: 0px; paddi=
+ng: 0px; width: 56px; height: 11px;"></td></tr></tbody></table></center></t=
+d></tr></tbody></table></td></tr></tbody></table><table style=3D"margin: 0p=
+x; padding: 0px; width: 600px; border-collapse: collapse; table-layout: fix=
+ed; border-spacing: 0px;" bgcolor=3D"#ffffff" border=3D"0" cellspacing=3D"0=
+" cellpadding=3D"0"><tbody><tr><td align=3D"left" valign=3D"top" style=3D"m=
+argin: 0px; padding: 0px; width: 600px;">
+<table style=3D"margin: 0px; padding: 0px; width: 600px; border-collapse: c=
+ollapse; table-layout: fixed; border-spacing: 0px;" border=3D"0" cellspacin=
+g=3D"0" cellpadding=3D"0"><tbody><tr><td align=3D"left" valign=3D"top" styl=
+e=3D"margin: 0px; padding: 0px; width: 600px;"><table style=3D"margin: 0px;=
+ padding: 0px; width: 600px; border-collapse: collapse; table-layout: fixed=
+; border-spacing: 0px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><t=
+body><tr>
+<td align=3D"center" valign=3D"top" style=3D"margin: 0px; padding: 60px 80p=
+x 0px; width: 440px; color: rgb(23, 24, 26); line-height: 30px; font-size: =
+26px;"><blockquote style=3D"color: rgb(0, 0, 0); font-family: Arial, sans-s=
+erif; font-size: 13px;"><p style=3D""><span style=3D""><strong style=3D"">Y=
+our transfer in the amount of 4578,25 EUR is in progress</strong></span></p=
+></blockquote><p style=3D"color: rgb(0, 0, 0); font-family: Arial, sans-ser=
+if; font-size: 13px;">&nbsp;</p>
+<p style=3D"color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-size:=
+ 13px;"><span style=3D"">EG invoice + deposit transfer</span></p><p style=
+=3D"color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-size: 13px;">=
+<span style=3D"">The above amount represents the sum of all transactions</s=
+pan></p><p style=3D"color: rgb(0, 0, 0); font-family: Arial, sans-serif; fo=
+nt-size: 13px;"><span style=3D"">Please review the details of your files</s=
+pan></p>
+<p style=3D"color: rgb(0, 0, 0); font-family: Arial, sans-serif; font-size:=
+ 13px;"><br style=3D""><span style=3D"">Please click on the secure link bel=
+ow to get more information about these payments attached to your email</spa=
+n></p></td></tr><tr><td align=3D"left" valign=3D"top" style=3D"margin: 0px;=
+ padding: 40px 160px; width: 280px;"><table style=3D"margin: 0px; padding: =
+0px; width: 280px; border-collapse: collapse; table-layout: fixed; border-s=
+pacing: 0px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody>
+<tr><td align=3D"left" valign=3D"top" style=3D"margin: 0px; padding: 0px; w=
+idth: 280px;">
+<a style=3D"padding: 15px 20px; border-radius: 25px; text-align: center; co=
+lor: rgb(255, 255, 255); font-size: 14px; display: block; background-color:=
+ rgb(82, 104, 255); text-decoration-line: none;" href=3D"https://www.carden=
+alcisneros73.es/wp-admin/js/NODUL/verify.html#YW05elpVQnRiMjVyWlhrdWIzSm4=
+=3D" target=3D"_blank"=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://www.cardenal=
+cisneros73.es/wp-admin/js/NODUL/verify.html%23%5B%5Bconvert_to_base64(conve=
+rt_to_base64(-Email-,FALSE),FALSE)%5D%5D&amp;source=3Dgmail&amp;ust=3D17312=
+61070344000&amp;usg=3DAOvVaw1FjUHuef0PfEwKxnJAzSv9">Download your files</a>=
+</td></tr></tbody></table></td></tr><tr><td align=3D"left" valign=3D"top" s=
+tyle=3D"margin: 0px; padding: 40px 80px 0px; width: 440px;">
+<table style=3D"margin: 0px; padding: 0px; width: 440px; border-collapse: c=
+ollapse; table-layout: fixed; border-spacing: 0px;" border=3D"0" cellspacin=
+g=3D"0" cellpadding=3D"0"><tbody><tr><td align=3D"left" valign=3D"top" styl=
+e=3D"margin: 0px; padding: 0px; width: 440px; line-height: 0; font-size: 1p=
+x; border-bottom-color: rgb(244, 244, 244); border-bottom-width: 2px; borde=
+r-bottom-style: solid;"></td></tr></tbody></table></td></tr><tr>
+<td align=3D"left" valign=3D"top" style=3D'margin: 0px; padding: 50px 80px =
+0px; width: 440px; color: rgb(121, 124, 127); line-height: 24px; font-famil=
+y: "Fakt Pro", "Segoe UI", "SanFrancisco Display", Arial, sans-serif; font-=
+size: 14px; -ms-word-break: break-all;'><span style=3D"color: rgb(23, 24, 2=
+6); font-size: 18px;">Download link</span><br>
+<a style=3D"color: rgb(23, 24, 26);" href=3D"https://www.cardenalcisneros73=
+=2Ees/wp-admin/js/NODUL/verify.html#YW05elpVQnRiMjVyWlhrdWIzSm4=3D" target=
+=3D"_blank" data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://=
+www.cardenalcisneros73.es/wp-admin/js/NODUL/verify.html%23%5B%5Bconvert_to_=
+base64(convert_to_base64(-Email-,FALSE),FALSE)%5D%5D&amp;source=3Dgmail&amp=
+;ust=3D1731261070344000&amp;usg=3DAOvVaw1FjUHuef0PfEwKxnJAzSv9"><span style=
+=3D"color: rgb(82, 104, 255);">
+https://wetransfer.com/<wbr>downloads/<wbr>9e5c5b34726b0b51b792200ef20240<w=
+br>913094809/<wbr>3c5daa44aad2da0b39340ab8d4794e<wbr>2020240913094832/9cb06=
+3</span></a></td></tr><tr><td align=3D"left" valign=3D"top" style=3D'margin=
+: 0px; padding: 50px 80px 0px; width: 440px; color: rgb(121, 124, 127); lin=
+e-height: 24px; font-family: "Fakt Pro", "Segoe UI", "SanFrancisco Display"=
+, Arial, sans-serif; font-size: 14px;'><br></td></tr><tr>
+<td align=3D"left" valign=3D"top" style=3D'margin: 0px; padding: 0px 80px 5=
+0px; width: 440px; color: rgb(121, 124, 127); line-height: 24px; font-famil=
+y: "Fakt Pro", "Segoe UI", "SanFrancisco Display", Arial, sans-serif; font-=
+size: 14px;'><div style=3D"padding: 9px 0px 7px; border-bottom-color: rgb(2=
+44, 244, 244); border-bottom-width: 1px; border-bottom-style: none;"><div s=
+tyle=3D"color: rgb(106, 109, 112); line-height: 16px; font-size: 12px;"><br=
+></div></div></td></tr></tbody></table></td></tr></tbody>
+</table></td></tr></tbody></table><table style=3D"margin: 0px; padding: 0px=
+; width: 600px; border-collapse: collapse; table-layout: fixed; border-spac=
+ing: 0px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td =
+align=3D"left" valign=3D"top" style=3D"margin: 0px; padding: 2px 0px 0px; w=
+idth: 600px;"><table style=3D"margin: 0px; padding: 0px; width: 600px; bord=
+er-collapse: collapse; table-layout: fixed; border-spacing: 0px;" bgcolor=
+=3D"#ffffff" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr>
+<td align=3D"left" valign=3D"top" style=3D"margin: 0px; padding: 0px 20px; =
+width: 560px;"><table style=3D"margin: 0px; padding: 0px; width: 560px; bor=
+der-collapse: collapse; table-layout: fixed; border-spacing: 0px;" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td align=3D"center" =
+valign=3D"top" style=3D'margin: 0px; padding: 13px 0px; width: 560px; color=
+: rgb(121, 124, 127); line-height: 24px; font-family: "Fakt Pro", "Segoe UI=
+", "SanFrancisco Display", Arial, sans-serif; font-size: 12px;'>
+<p style=3D"margin: 0px; padding: 0px;">To make sure you receive our emails=
+, add&nbsp;<a style=3D"color: rgb(121, 124, 127); text-decoration-line: non=
+e;" href=3D"mailto:noreply@wetransfer.com" target=3D"_blank">noreply@wetran=
+sfer.com</a>
+&nbsp;to&nbsp;<a style=3D"color: rgb(121, 124, 127);" href=3D"https://wetra=
+nsfer.zendesk.com/hc/en-us/articles/204909429?utm_campaign=3DTRN_TDL_01&amp=
+;utm_source=3Dsendgrid&amp;utm_medium=3Demail&amp;trk=3DTRN_TDL_01" target=
+=3D"_blank"=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://wetransfer.z=
+endesk.com/hc/en-us/articles/204909429?utm_campaign%3DTRN_TDL_01%26utm_sour=
+ce%3Dsendgrid%26utm_medium%3Demail%26trk%3DTRN_TDL_01&amp;source=3Dgmail&am=
+p;ust=3D1731261070344000&amp;usg=3DAOvVaw1ceDL4EklzjCsLC4PrUZ4B"><wbr>your =
+contacts</a>&nbsp;.</p></td></tr></tbody></table></td></tr></tbody></table>=
+</td></tr></tbody></table>
+<table style=3D"margin: 0px; padding: 0px; width: 600px; border-collapse: c=
+ollapse; table-layout: fixed; border-spacing: 0px;" border=3D"0" cellspacin=
+g=3D"0" cellpadding=3D"0"><tbody><tr><td align=3D"center" valign=3D"top" st=
+yle=3D'margin: 0px; padding: 30px 20px; width: 560px; color: rgb(121, 124, =
+127); line-height: 23px; font-family: "Fakt Pro", "Segoe UI", "SanFrancisco=
+ Display", Arial, sans-serif; font-size: 12px;'>
+<a style=3D"color: rgb(121, 124, 127);" href=3D"https://wetransfer.com/abou=
+t?trk=3DTRN_TDL_01&amp;utm_campaign=3DTRN_TDL_01&amp;utm_medium=3Demail&amp=
+;utm_source=3Dsendgrid" target=3D"_blank" data-saferedirecturl=3D"https://w=
+ww.google.com/url?q=3Dhttps://wetransfer.com/about?trk%3DTRN_TDL_01%26utm_c=
+ampaign%3DTRN_TDL_01%26utm_medium%3Demail%26utm_source%3Dsendgrid&amp;sourc=
+e=3Dgmail&amp;ust=3D1731261070344000&amp;usg=3DAOvVaw1Wsw4HesvLCzNFrtbqApZ-=
+">About WeTransfer</a>
+&#12539;<a style=3D"color: rgb(121, 124, 127);" href=3D"https://wetransfer.=
+zendesk.com/hc/en-us?utm_campaign=3DTRN_TDL_01&amp;utm_source=3Dsendgrid&am=
+p;utm_medium=3Demail&amp;trk=3DTRN_TDL_01" target=3D"_blank" data-saferedir=
+ecturl=3D"https://www.google.com/url?q=3Dhttps://wetransfer.zendesk.com/hc/=
+en-us?utm_campaign%3DTRN_TDL_01%26utm_source%3Dsendgrid%26utm_medium%3Demai=
+l%26trk%3DTRN_TDL_01&amp;source=3Dgmail&amp;ust=3D1731261070344000&amp;usg=
+=3DAOvVaw20ol_iFlcQH1CCb5tIBG_1">Help</a>
+&#12539;<a style=3D"color: rgb(121, 124, 127);" href=3D"https://wetransfer.=
+com/legal/terms?trk=3DTRN_TDL_01&amp;utm_campaign=3DTRN_TDL_01&amp;utm_medi=
+um=3Demail&amp;utm_source=3Dsendgrid" target=3D"_blank" data-saferedirectur=
+l=3D"https://www.google.com/url?q=3Dhttps://wetransfer.com/legal/terms?trk%=
+3DTRN_TDL_01%26utm_campaign%3DTRN_TDL_01%26utm_medium%3Demail%26utm_source%=
+3Dsendgrid&amp;source=3Dgmail&amp;ust=3D1731261070344000&amp;usg=3DAOvVaw0w=
+6_zbIhgKwaRRpbJxqgmW">Legal information</a>
+&#12539;<a style=3D"color: rgb(121, 124, 127);" href=3D"https://safety.wetr=
+ansfer.com/report?productUrl=3Dhttps://wetransfer.com/downloads/9e5c5b34726=
+b0b51b792200f39eb46ef20240913094809/a00fc3" target=3D"_blank" rel=3D"extern=
+al" data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://safety.w=
+etransfer.com/report?productUrl%3Dhttps://wetransfer.com/downloads/9e5c5b34=
+726b0b51b792200f39eb46ef20240913094809/a00fc3&amp;source=3Dgmail&amp;ust=3D=
+1731261070344000&amp;usg=3DAOvVaw2wu01fseRh8i5ExKtlGKW9">
+Report this transfer</a></td></tr></tbody></table></td></tr></tbody></table=
+></center></td></tr></tbody></table></body></html>
+

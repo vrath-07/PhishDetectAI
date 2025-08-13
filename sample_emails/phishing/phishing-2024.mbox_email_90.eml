@@ -1,0 +1,268 @@
+Return-Path: alvis@nguynththominh.cfd
+Delivered-To: jose@monkey.org
+X-FDA: 81964780758.36.67BA85C
+Received: from mail.nguynththominh.cfd (mail.nguynththominh.cfd
+ [165.227.109.131])	by imf29.b.hostedemail.com (Postfix) with ESMTP id
+ 45FCF120006	for <jose@monkey.org>; Tue,  2 Apr 2024 14:11:58 +0000 (UTC)
+Authentication-Results: imf29.b.hostedemail.com;	dkim=none;	dmarc=pass
+ (policy=none) header.from=nguynththominh.cfd;	spf=pass
+ (imf29.b.hostedemail.com: domain of alvis@nguynththominh.cfd designates
+ 165.227.109.131 as permitted sender) smtp.mailfrom=alvis@nguynththominh.cfd
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1712067118;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=NrT0suvRmNFcKX/c1CPMyX1xvooqeBhgoW23QI0VNgE=;
+	b=M0Ms/b4+nQwvhbWt8yQ9vgFxteLEkJMlYOmdTnfUHwKBi1NjofuT7hQMktthaTCBMCz34H
+	wjifuqPli9XfoyP8R9EO8uTpQflKLcRUsQyxPHEgv1X+Iq/c7bWnWrL+hioVU3NgwMNUej
+	Y/KmgJB2WNQUD1Ri8MBXB2ojTlSGTKQ=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1712067118; a=rsa-sha256;
+	cv=none;
+	b=F3rgSFiQUH3BL3nGPZHZnlDDqJXMjwengXB2IfnwnmWUz/sIbyeCxGoNq8IMDGddNz17sB
+	GH5ZT3++qLWAlcWKg0fAXxpGTCNulAV5U8SzkfDb5ykW/+lqhO3p8zjhVV3LfwQbRps152
+	ow2g599PXZZdOWXhiZNk2a3ZLC/LdHo=
+ARC-Authentication-Results: i=1;	imf29.b.hostedemail.com;	dkim=none;
+	dmarc=pass (policy=none) header.from=nguynththominh.cfd;	spf=pass
+ (imf29.b.hostedemail.com: domain of alvis@nguynththominh.cfd designates
+ 165.227.109.131 as permitted sender) smtp.mailfrom=alvis@nguynththominh.cfd
+Received: from nguynththominh.cfd (unknown [185.222.57.73])
+	by mail.nguynththominh.cfd (Postfix) with ESMTPA id 1BBE5861DD
+	for <jose@monkey.org>; Tue,  2 Apr 2024 05:33:31 -0800 (AKDT)
+From: "monkey.org" <alvis@nguynththominh.cfd>
+To: jose@monkey.org
+Subject: jose@monkey.org Data Usage Notification (Update Required)
+Date: 02 Apr 2024 15:33:30 +0200
+Message-ID: <20240402153330.DBF90FFA1C76502D@nguynththominh.cfd>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam02
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 45FCF120006
+X-Spam-Status: No, score=5.30
+X-Stat-Signature: hsidjkihgx87saypbmkbm7ehydj394do
+X-HE-Tag: 1712067118-158198
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19/VLD497hy6CK7sZQdsZfHbWLXqrgxrXbfREP2UgbJJHo?=
+ =?utf-8?q?RedB1av+KZ4Jd4+kz68o7Sn1U5w9d80g8A8ENNdKejy+GITa7hKyH1t/vN6ITxKw+?=
+ =?utf-8?q?aj1lA1B01Se91uq1eRtn/v3PgvWT7gym9u+u7Xha37Tb9q+nJ+wne8MmpXmaAElNT?=
+ =?utf-8?q?AkO2wTNoGlYEbfnFPYu29LD/JCOsWt6dwgmBrpJJbUGu5IgA0qbIJK1xcAq+549Ns?=
+ =?utf-8?q?tfmGPrEcJX1LDjMAjDssuvtzH7O+UOmFGFTUK06gZBDBWC2cQiYd7/4XBOwmTM4H2?=
+ =?utf-8?q?hOZLC/VilbiWw7oVN+aX65uE+R3ZstN3ZuYMFfJOCr84feEmpg+hnFw137Rcvvsmh?=
+ =?utf-8?q?sRLQyZIYVZDiNVHh/5ERSW+8T2/by9yhtIH8ThmvX7Lrisxqdgz1wTzysQ=3D=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 90
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.17037"></HEAD>
+<body>
+<P><BR>&nbsp;</P>
+<DIV style=3D"TEXT-ALIGN: center"><BR><BIG><BIG><BIG><BIG><SPAN style=3D"FO=
+NT-FAMILY: Microsoft JhengHei UI; COLOR: rgb(51,51,255)">Email Mailbox Upda=
+te </SPAN></BIG></BIG></BIG></BIG><BR><BR>&nbsp;&nbsp; <SPAN style=3D"FONT-=
+FAMILY: Microsoft JhengHei UI">Your mailbox is 98% Full</SPAN><BR><BR></DIV=
+>
+<P>
+<table style=3D"WIDTH: 40%; TEXT-ALIGN: left; MARGIN-LEFT: auto; MARGIN-RIG=
+HT: auto" cellspacing=3D"2" cellpadding=3D"2" border=3D"0">
+<TBODY>
+<TR>
+<td style=3D"WIDTH: 603px; VERTICAL-ALIGN: top; BACKGROUND-COLOR: red"><BR>=
+</TD>
+<td style=3D"WIDTH: 25px; VERTICAL-ALIGN: top; BACKGROUND-COLOR: rgb(218,21=
+8,218)"><BR></TD></TR></TBODY></TABLE></P>
+<DIV style=3D"TEXT-ALIGN: center">
+<DIV style=3D"TEXT-ALIGN: center"><BR></DIV>
+<table style=3D"WIDTH: 40%; TEXT-ALIGN: left; MARGIN-LEFT: auto; MARGIN-RIG=
+HT: auto" cellspacing=3D"2" cellpadding=3D"2" border=3D"0">
+<TBODY>
+<TR>
+<td style=3D"WIDTH: 574px; VERTICAL-ALIGN: top">&nbsp;&nbsp; <SPAN style=3D=
+"FONT-FAMILY: Microsoft JhengHei UI">48GB</SPAN><BR></TD>
+<td style=3D"WIDTH: 54px; VERTICAL-ALIGN: top"><SPAN style=3D"FONT-FAMILY: =
+Microsoft JhengHei UI">50GB</SPAN><BR></TD></TR></TBODY></TABLE>
+<DIV style=3D"TEXT-ALIGN: center"><BR></DIV><BR><SPAN style=3D"FONT-FAMILY:=
+ Microsoft JhengHei UI; FONT-WEIGHT: bold">jose@monkey.org</SPAN><BR><BR>&n=
+bsp; <SPAN style=3D"FONT-FAMILY: Microsoft JhengHei UI">To&nbsp; expand and=
+ add additional 150GB memory space to your mailbox, Kindly follow the below=
+ link to automatically </SPAN><BR><SPAN style=3D"FONT-FAMILY: Microsoft Jhe=
+ngHei UI"></SPAN><BR><SPAN style=3D"FONT-FAMILY: Microsoft JhengHei UI">
+increase your mailbox memory storage, clear and empty your deleted/recover =
+deleted items and update your account.</SPAN><BR></DIV>
+<DIV style=3D"BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; VER=
+TICAL-ALIGN: baseline; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTO=
+M: 0px; TEXT-TRANSFORM: none; COLOR: ; PADDING-BOTTOM: 0px; TEXT-ALIGN: cen=
+ter; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-LEFT: 0px; OR=
+PHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; PADDING-RIGHT: 0px; BACKGROUND=
+-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-stretch: inherit"><BR aria=
+-hidden=3Dtrue>&nbsp;
+<table style=3D"FONT-FAMILY: inherit; TEXT-ALIGN: left; MARGIN-LEFT: auto; =
+MARGIN-RIGHT: auto; font-stretch: inherit">
+<TBODY>
+<TR>
+<td style=3D"WHITE-SPACE: normal !important; PADDING-BOTTOM: 5px; PADDING-T=
+OP: 5px; PADDING-LEFT: 20px; MARGIN: 0px; PADDING-RIGHT: 20px; BACKGROUND-C=
+OLOR: rgb(38,114,236)">
+<DIV style=3D"BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; VER=
+TICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; PA=
+DDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PADDING-R=
+IGHT: 0px; font-stretch: inherit"><FONT face=3Darial,sans-serif>
+<SPAN style=3D"BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; VE=
+RTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; P=
+ADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PADDING-=
+RIGHT: 0px; font-stretch: inherit"><FONT style=3D"COLOR: white !important" =
+color=3Dwhite size=3D2 face=3D"segoe ui semibold,segoe ui bold,segoe ui,hel=
+vetica neue medium,arial,sans-serif">
+<SPAN style=3D"BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; VE=
+RTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; P=
+ADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PADDING-=
+RIGHT: 0px; font-stretch: inherit"><B>
+<SPAN style=3D"BORDER-TOP: 0px; FONT-FAMILY: Candara,Optima,sans-serif,seri=
+f,EmojiFont; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0p=
+x; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGI=
+N: 0px; BORDER-LEFT: 0px; PADDING-RIGHT: 0px; font-stretch: inherit">
+<SPAN style=3D"BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; VE=
+RTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; P=
+ADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PADDING-=
+RIGHT: 0px; font-stretch: inherit">
+<SPAN style=3D"BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; VE=
+RTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; P=
+ADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PADDING-=
+RIGHT: 0px; font-stretch: inherit">
+<SPAN style=3D"BORDER-TOP: 0px; FONT-FAMILY: sans-serif,serif,EmojiFont; BO=
+RDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PAD=
+DING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-=
+LEFT: 0px; PADDING-RIGHT: 0px; font-stretch: inherit">
+<SPAN style=3D"BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; VE=
+RTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; P=
+ADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PADDING-=
+RIGHT: 0px; font-stretch: inherit">
+<SPAN style=3D"BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; VE=
+RTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; P=
+ADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PADDING-=
+RIGHT: 0px; font-stretch: inherit">
+<SPAN style=3D"BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; VE=
+RTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; P=
+ADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PADDING-=
+RIGHT: 0px; font-stretch: inherit">
+<SPAN style=3D"BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; VE=
+RTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; P=
+ADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PADDING-=
+RIGHT: 0px; font-stretch: inherit">
+<SPAN style=3D"BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; VE=
+RTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; P=
+ADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PADDING-=
+RIGHT: 0px; font-stretch: inherit">
+<SPAN style=3D"BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; VE=
+RTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; P=
+ADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PADDING-=
+RIGHT: 0px; font-stretch: inherit">
+<SPAN style=3D"BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; VE=
+RTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; P=
+ADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PADDING-=
+RIGHT: 0px; font-stretch: inherit">
+<A id=3DOWA00ac31eb-24e6-5b4d-5f8e-3b3f7ec148ea=20
+title=3Dhttps://emea01.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%=
+2Fdocs.google.com%2Fpresentation%2Fd%2Fe%2F2PACX-1vRFOcwvHJk0quNIdLGb3qfjUb=
+cjxpy1X5oRWLGH6r6O7x3EKHrvZv3RuHbXwwzgNAsKn13l2e5iLtaJ%2Fpub%3Fstart%3Dfals=
+e%26loop%3Dfalse%26delayms%3D3000%26slide%3Did.p&amp;data=3D05%7C01%7C%7Ce3=
+650331c607435903f608db05e74e60%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7=
+C638110263224685793%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2l=
+uMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;
+sdata=3DDCVsaMsJCYXGfi260bcH5LRKmuoJUwENXVGAusi6v2c%3D&amp;reserved=3D0 cla=
+ss=3Dx_x_x_x_x_x_x_x_x_x_x_x_x_x_OWAAutoLink style=3D"BORDER-TOP: 0px; FONT=
+-FAMILY: inherit; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTO=
+M: 0px; COLOR: rgb(25,106,212) !important; PADDING-BOTTOM: 0px; PADDING-TOP=
+: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PADDING-RIGHT: 0px=
+; font-stretch: inherit" href=3D"https://ipfs.io/ipfs/QmeWASc6XMLWrx7QysQdp=
+TTCQHwqk2LthS3SZw87fJqVsb/#jose@monkey.org" shape=3Drect=20
+rel=3D"noopener noreferrer" target=3D_blank data-linkindex=3D"0"=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://emea01.safel=
+inks.protection.outlook.com/?url%3Dhttps%253A%252F%252Flinkpop.com%252Fmsss=
+n%26data%3D05%257C01%257C%257C25c7c1fdc0804035c1d308db04a9a543%257C84df9e7f=
+e9f640afb435aaaaaaaaaaaa%257C1%257C0%257C638108898887924818%257CUnknown%257=
+CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn=
+0%253D%257C3000%257C%257C%257C%26sdata%3D1%252FWpHu1GgY33BgW2eaocNCdi3OC9Ac=
+eY4QyiOtoY%252FfI%253D%26reserved%3D0&amp;source=3Dgmail
+&amp;ust=3D1675512682715000&amp;usg=3DAOvVaw1LGjo-dFYWp8wpg2vAK9M-" shash=
+=3D"X+33KSPEwqNeDR7aZKRJGzcYXwmS+J8tC6DsG4Nphse+7mmIwI/OdYRgBV9Z5T/D9Mo+SkL=
+F5sbGNVWjlBlymOJ4QytN/gcwRk0SoGLOqP+sf8SrVMzzFSF6v98Md8g50BVBEUhIiHLXlV6CqH=
+oy5LI277GwFfRj1YFy8Fb1x+k=3D" originalsrc=3D"https://docs.google.com/presen=
+tation/d/e/2PACX-1vRFOcwvHJk0quNIdLGb3qfjUbcjxpy1X5oRWLGH6r6O7x3EKHrvZv3RuH=
+bXwwzgNAsKn13l2e5iLtaJ/pub?start=3Dfalse&amp;loop=3Dfalse&amp;delayms=3D300=
+0&amp;slide=3Did.p" data-auth=3D"Verified">
+<SPAN style=3D"FONT-SIZE: 11pt; BORDER-TOP: 0px; FONT-FAMILY: Microsoft Jhe=
+ngHei UI; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; =
+COLOR: rgb(255,255,255) !important; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; =
+PADDING-LEFT: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PADDING-RIGHT: 0px; font-=
+stretch: inherit">Update And Increase Storage Of Your Account</SPAN>
+<SPAN style=3D"FONT-SIZE: 11pt; BORDER-TOP: 0px; FONT-FAMILY: inherit; BORD=
+ER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDI=
+NG-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-LE=
+FT: 0px; PADDING-RIGHT: 0px; font-stretch: inherit"></SPAN></A></SPAN></SPA=
+N></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></B></SPAN=
+></FONT></SPAN></FONT></DIV><FONT face=3Darial,sans-serif>
+<SPAN style=3D"BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; VE=
+RTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; P=
+ADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PADDING-=
+RIGHT: 0px; font-stretch: inherit"><FONT style=3D"COLOR: white !important" =
+color=3Dwhite size=3D2 face=3D"segoe ui semibold,segoe ui bold,segoe ui,hel=
+vetica neue medium,arial,sans-serif">
+<SPAN style=3D"BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; VE=
+RTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; P=
+ADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PADDING-=
+RIGHT: 0px; font-stretch: inherit"><B>
+<SPAN style=3D"BORDER-TOP: 0px; FONT-FAMILY: Candara,Optima,sans-serif,seri=
+f,EmojiFont; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0p=
+x; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGI=
+N: 0px; BORDER-LEFT: 0px; PADDING-RIGHT: 0px; font-stretch: inherit">
+<SPAN style=3D"BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; VE=
+RTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; P=
+ADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PADDING-=
+RIGHT: 0px; font-stretch: inherit">
+<SPAN style=3D"BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; VE=
+RTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; P=
+ADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PADDING-=
+RIGHT: 0px; font-stretch: inherit">
+<SPAN style=3D"BORDER-TOP: 0px; FONT-FAMILY: sans-serif,serif,EmojiFont; BO=
+RDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PAD=
+DING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-=
+LEFT: 0px; PADDING-RIGHT: 0px; font-stretch: inherit">
+<SPAN style=3D"BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; VE=
+RTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; P=
+ADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PADDING-=
+RIGHT: 0px; font-stretch: inherit">
+<SPAN style=3D"BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; VE=
+RTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; P=
+ADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PADDING-=
+RIGHT: 0px; font-stretch: inherit">
+<SPAN style=3D"BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; VE=
+RTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; P=
+ADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PADDING-=
+RIGHT: 0px; font-stretch: inherit">
+<SPAN style=3D"BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; VE=
+RTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; P=
+ADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PADDING-=
+RIGHT: 0px; font-stretch: inherit">
+<SPAN style=3D"BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; VE=
+RTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; P=
+ADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PADDING-=
+RIGHT: 0px; font-stretch: inherit">
+<SPAN style=3D"BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; VE=
+RTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; P=
+ADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PADDING-=
+RIGHT: 0px; font-stretch: inherit">
+<SPAN style=3D"BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; VE=
+RTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; P=
+ADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PADDING-=
+RIGHT: 0px; font-stretch: inherit"></SPAN></SPAN></SPAN></SPAN></SPAN></SPA=
+N></SPAN></SPAN></SPAN></SPAN></SPAN></B></SPAN></FONT></SPAN></FONT></TD><=
+/TR></TBODY></TABLE></DIV>
+<DIV style=3D"TEXT-ALIGN: center"><BR><BR><SPAN style=3D"FONT-FAMILY: Micro=
+soft JhengHei UI">Mailbox Address: jose@monkey.org</SPAN><BR><BR><BR></DIV>=
+</BODY></HTML>
+

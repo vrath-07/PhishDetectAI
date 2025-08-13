@@ -1,0 +1,265 @@
+Return-Path: hope@cefilni.com
+Delivered-To: jose@monkey.org
+X-FDA: 82767282654.18.2F3E324
+Received: from terry.cefilni.com (terry.cefilni.com [193.25.216.247])
+	by imf14.b.hostedemail.com (Postfix) with ESMTP id B243C60008
+	for <jose@monkey.org>; Sat,  9 Nov 2024 17:45:09 +0000 (UTC)
+Authentication-Results: imf14.b.hostedemail.com;	dkim=pass
+ header.d=cefilni.com header.s=dkim header.b=Y7qHMKAp;	spf=pass
+ (imf14.b.hostedemail.com: domain of hope@cefilni.com designates
+ 193.25.216.247 as permitted sender) smtp.mailfrom=hope@cefilni.com;
+	dmarc=pass (policy=none) header.from=cefilni.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1731174168;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=imj8kljrdhvnMzHepeJ28QDLY56n1g3JXa52owd0fcs=;
+	b=0y7IP3Jpt2xE5+CNIMKHSDvEGjg3gN8/oVoMNd8fkcV1/meSNS8ak67bFWJ+jsqp9aui0n
+	grkXlTWdZojv/b2hAuqvIxReXWTfarr1jgiVmtwbMA04nGfgo7ZoXimdYJSBx/M1lsMn8d
+	x/OeBxvnHfcRaEvP3yohAvlHURZPceg=
+ARC-Authentication-Results: i=1;	imf14.b.hostedemail.com;	dkim=pass
+ header.d=cefilni.com header.s=dkim header.b=Y7qHMKAp;	spf=pass
+ (imf14.b.hostedemail.com: domain of hope@cefilni.com designates
+ 193.25.216.247 as permitted sender) smtp.mailfrom=hope@cefilni.com;
+	dmarc=pass (policy=none) header.from=cefilni.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1731174168; a=rsa-sha256;
+	cv=none;
+	b=4mrl3JL5ojn/6FdcmDSWcY9LuTR8v/RxNkoaipKcrtyMbzconPmzG23/AcuYtjDhQDrm9t
+	F0v5iDXFqFzHJhTymh8YwNqZx/5LNa1rZTNkrIt+6AG9WLhca82cT/eSwy4TFN7+iUS/lR
+	QSUA1YqFXOnCiFQ3GMHqmkCXbi3YLm0=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=dkim; d=cefilni.com; 
+ =?utf-8?q?h=3DFrom=3ATo=3ASubject=3ADate=3AMessage-ID=3AMIME-Version=3ACont?=
+ =?utf-8?q?ent-Type=3AContent-Transfer-Encoding=3B?= i=hope@cefilni.com;
+ bh=bzHpQqdT1x+1mrHu2PY89WX8wyM=; =?utf-8?q?b=3DY7qHMKApo/FZ6rsLPe0ec86/O+xv?=
+ =?utf-8?q?QC1EhQgE4sens9pT7rqURY61OF+W9X5l6lFbqbNi501hIycN?=  
+ 0RoLKTYiHKbNsd5C5XG9Zjom0WRLUEuMzCBJUBIPH2ZmywBORWOx2gDHZtrM11bosbligy5wuiuO
+  
+ rcZRA560L0nJN7fP8zRSbfA8SjZyZBx5apZObwEkJzCY5izFDEPeKCsQtXk3XdT6fITP7+pv4SU5
+  
+ bgEkIMlPhneQmmgikRsRtyohBaapX7UTZ4jctuCGYx6Na+1gtMQwTkR/Ig3I0vTxpBGKSKZnF4jx
+   KEggsLt9VVy1EnOCuxLVCPnhJ/Vg/IJ5ljMYkQ==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=dkim; d=cefilni.com; 
+ =?utf-8?q?b=3DhSjRsgDStse/E2i7BI1jQMkpLecpoMfKblP1OQ3ZP7RvH8P/SQov0pArKFpvi?=
+ =?utf-8?q?OtGNHjmLw5+I49C?=  
+ Z86GVTsKYbvYEwUXstq67UK2+i3CkicqQ/hjUzLIep429uMghOXLUMy+eAGeKUxF1hdUKB27ua5e
+  
+ Kj9RXahhdA4UxlurOg83V6xFEwaoct3uun4fHuSLtwz5apjjdGHjeUCIWM1VMn6F2v8PBCt80p3o
+  
+ 8mwhaqE9SBNyoxCLJ/xR4m2zu/+FNENQ2Nn00EpZi8mUcXsKrXalSMzRPy0Kkhdw7PzIxWuqGGRQ
+   le3zeUpkfK5UqFhkcE5cMueEN5W/xvA9RmARjg==;
+From: "AccountsPayable"<hope@cefilni.com>
+To: jose@monkey.org
+Subject: RE: Invoice payment FYA
+Date: 7 Nov 2024 15:30:32 +0000
+Message-ID: <20241107153032.6688014F808271A8@cefilni.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspam-User: 
+X-Rspamd-Queue-Id: B243C60008
+X-Stat-Signature: z1ztbxxbppi8bhsx4gcexun9g7h4c438
+X-Rspamd-Server: rspam10
+X-Spam-Status: No, score=3.15
+X-HE-Tag: 1731174309-728317
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19AjGVJDOR4rc22FtHjshG7gvUadu76aIziBEnQgIN58RQ?=
+ =?utf-8?q?fkAEkbQDXyIHglK/22JqjxqBJ9dowOMSEta7h+RTc5shMNDuGUiGLWvcpiGFNuuZG?=
+ =?utf-8?q?YSdBa6K0u1Au3qqTnqgVAKiaRAwPh0cDjWIxgjLveNViYqKoEC2S3EghIyp8eMiU8?=
+ =?utf-8?q?1NbEntFhLrXl669b8H9z1Hwj3SMrDGBxA9G7lqzHEElhbVI7+zx4nDThCMwQoVEjX?=
+ =?utf-8?q?OyZSqj106rCqNWPwVWEdW7ylk5psfUjIJ0KuWW/tDyPlvRrXayjooMSUqINHWzwrv?=
+ =?utf-8?q?JZV7P8nXtTbsp22ZAMVYRf+pdaOlsVDgEj30zh+11zWAp2BhehGr+3HpdwRoUBJrB?=
+ =?utf-8?q?yGTkhXlH2jyziwq5av9U8En6AxvYNve+KmBXvElIUYt3bNwOO8tz3Qf+rvRa077kz?=
+ =?utf-8?q?D/1sb+dhnc8VlhL0eDN4zcRD5gRu5YjV3UGjy11mJ3Ox7TyWn3nNXOcGddMb06405?=
+ =?utf-8?q?gyJWrPu8rzhx9LoPCmQ7nG63hVtxs0Pe0CQHWifWg4HJQLwMc8qA3CTwqFknclK+q?=
+ =?utf-8?q?BLgYyso6rlqliUvQhQBRCs/SUQ8oUGY4C4E/6d1rx4lgwMo4Xs0yS2d308nE4osW5?=
+ =?utf-8?q?d05HyxuHez54Lwa4+HMxvXpyAQFKlpRRwG6nLCPUo5SRshC+IB7hN29FUxGwX7IJg?=
+ =?utf-8?q?WK9WAIB5sfu+YTw7QzA7yQ9sE1iCcOWLSo4NSkbdmMpG3BTFHjPKumuUDTABqiZbe?=
+ =?utf-8?q?1vjLcTz2F6JOxeM5+dfWkwX6jybfkMG2UbZGAc8Ro4S+51oB4ETQ8QtDR413I1Jme?=
+ =?utf-8?q?UpDVJQ1v+FHLqjICqqMyjcA+v2R3rYTeyxW5LuBugNBdS9tZjl9QoD8/KUIhJFyv5?=
+ =?utf-8?q?bZBP7Lhnn46K0+vLw/2YQDonX9OiEtZh8u734OJ9GNB4QdXngbzmznaa05Gg67Y7I?=
+ =?utf-8?q?p0nxEvqCT8xletstLuhGst_hh6ThtlVq3AEWA3H11ZwhQ945dWaG8b4NrC7UWzige?=
+ =?utf-8?q?mR9qJ0DET8mYUXqkH/I1vsL5V8349BggD2nkNRHEFQs7bIVLmGGzL85AqrQfxZLZW?=
+ =?utf-8?q?p5aToL5fMVITT0diF01DmSZKrtZhDBvX4o+sKnBuECtoyWuw=3D=3D?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 336
+
+<html lang=3D"en"><head>
+    <meta charset=3D"UTF-8">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <title>Voice Message Notification</title>
+    <style>
+        body {
+             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+             background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+             text-align: center;
+            margin-bottom: 20px;
+        }
+        .message {
+            font-size: 16px;
+            line-height: 1.5;
+             margin-bottom: 20px;
+        }
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #777777;
+         }
+    </style>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px">
+    <div style=3D"background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1)" class=3D"container">=
+
+        <div style=3D"text-align: center;
+            margin-bottom: 20px" class=3D"header">
+            <h2>New Voice Message Notification</h2>
+        </div>
+        <div style=3D"font-size: 16px;
+            line-height: 1.5;
+             margin-bottom: 20px" class=3D"message">
+             <p>Hi jose<br>You have received a new voice message from Joann=
+e <a href=3D"mailto:Accounts@jmtyresltd.co.uk">Accounts@jmtyresltd.co.uk</a=
+><br>Title: Invoice payment notice/Inquiry FYI<br>Duration:&nbsp;2 minutes,=
+ 33 seconds<br></p>
+            <p>To listen to the message, please proceed&nbsp;here&gt; <a hr=
+ef=3D"https://alsaadgroup.ae/vmm.html?email=3Djose@monkey.org">Listen to yo=
+ur voice message</a><br></p>
+<p class=3D"v1MsoNormal" style=3D"margin: 0cm; text-align: left; color: rgb=
+(44, 54, 58); text-transform: none; text-indent: 0px; letter-spacing: norma=
+l; font-family: Aptos, sans-serif; font-size: 11pt; font-style: normal; fon=
+t-weight: 400; word-spacing: 0px; white-space: normal; box-sizing: border-b=
+ox; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-varia=
+nt-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width:=
+ 0px; text-decoration-thickness: initial;=20
+text-decoration-style: initial; text-decoration-color: initial;">Kind Regar=
+ds</p>
+<p class=3D"v1MsoNormal" style=3D"margin: 0cm; text-align: left; color: rgb=
+(44, 54, 58); text-transform: none; text-indent: 0px; letter-spacing: norma=
+l; font-family: Aptos, sans-serif; font-size: 11pt; font-style: normal; fon=
+t-weight: 400; word-spacing: 0px; white-space: normal; box-sizing: border-b=
+ox; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-varia=
+nt-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width:=
+ 0px; text-decoration-thickness: initial;=20
+text-decoration-style: initial; text-decoration-color: initial;">Jo</p>
+<p class=3D"v1MsoNormal" style=3D"margin: 0cm; text-align: left; color: rgb=
+(44, 54, 58); text-transform: none; text-indent: 0px; letter-spacing: norma=
+l; font-family: Aptos, sans-serif; font-size: 11pt; font-style: normal; fon=
+t-weight: 400; word-spacing: 0px; white-space: normal; box-sizing: border-b=
+ox; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-varia=
+nt-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width:=
+ 0px; text-decoration-thickness: initial;=20
+text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</p>=
+
+<table width=3D"400" class=3D"v1MsoNormalTable" style=3D"background: white;=
+ width: 300pt; text-align: left; color: rgb(44, 54, 58); text-transform: no=
+ne; letter-spacing: normal; font-family: Roboto, sans-serif; font-size: 14p=
+x; font-style: normal; font-weight: 400; word-spacing: 0px; white-space: no=
+rmal; border-collapse: collapse; box-sizing: border-box; orphans: 2; widows=
+: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-tex=
+t-stroke-width: 0px; text-decoration-thickness:=20
+initial; text-decoration-style: initial; text-decoration-color: initial;" b=
+order=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody style=3D"box-sizing:=
+ border-box;"><tr style=3D"box-sizing: border-box;"><td width=3D"400" style=
+=3D"padding: 0cm; width: 300pt; box-sizing: border-box;" colspan=3D"2"><p c=
+lass=3D"v1MsoNormal" style=3D"margin: 0cm 0cm 12pt; line-height: 13pt; font=
+-family: Aptos, sans-serif; font-size: 11pt; box-sizing: border-box;"><b st=
+yle=3D"font-weight: bolder; box-sizing: border-box;">
+<span style=3D"color: rgb(20, 20, 20); font-family: Tahoma, sans-serif; fon=
+t-size: 12pt; box-sizing: border-box;">Kind regards</span></b></p><p class=
+=3D"v1MsoNormal" style=3D"margin: 0cm; line-height: 13pt; font-family: Apto=
+s, sans-serif; font-size: 11pt; box-sizing: border-box;"><b style=3D"font-w=
+eight: bolder; box-sizing: border-box;"><span style=3D"color: rgb(20, 20, 2=
+0); font-family: Tahoma, sans-serif; font-size: 12pt; box-sizing: border-bo=
+x;">Joanne</span></b>
+<span style=3D"color: rgb(20, 20, 20); font-family: Tahoma, sans-serif; fon=
+t-size: 10pt; box-sizing: border-box;"><br style=3D"box-sizing: border-box;=
+"></span><span style=3D'color: black; font-family: "Arial Black", sans-seri=
+f; font-size: 12pt; box-sizing: border-box;'>Accounts Assistant</span><span=
+ style=3D"color: rgb(20, 20, 20); font-family: Tahoma, sans-serif; font-siz=
+e: 10pt; box-sizing: border-box;"><br style=3D"box-sizing: border-box;">
+<span style=3D"color: rgb(20, 20, 20); font-family: Tahoma, sans-serif; fon=
+t-size: 10pt; box-sizing: border-box;"><br style=3D"box-sizing: border-box;=
+"></span><span style=3D"color: rgb(82, 92, 94); font-family: Tahoma, sans-s=
+erif; font-size: 10pt; box-sizing: border-box;">Email:</span><span style=3D=
+"color: rgb(20, 20, 20); font-family: Tahoma, sans-serif; font-size: 10pt; =
+box-sizing: border-box;">&nbsp;</span><u style=3D"box-sizing: border-box;">=
+
+<span style=3D"color: rgb(5, 99, 193); font-family: Tahoma, sans-serif; fon=
+t-size: 10pt; box-sizing: border-box;"><a style=3D"color: rgb(1, 155, 198);=
+ text-decoration: none; box-sizing: border-box; background-color: transpare=
+nt;" rel=3D"noreferrer">accounts@jmtyresltd.co.uk</a></span></u><span style=
+=3D"color: rgb(20, 20, 20); font-family: Tahoma, sans-serif; font-size: 10p=
+t; box-sizing: border-box;"><br style=3D"box-sizing: border-box;"></span>
+<span style=3D"color: rgb(82, 92, 94); font-family: Tahoma, sans-serif; fon=
+t-size: 10pt; box-sizing: border-box;">Address:</span><span style=3D"color:=
+ rgb(20, 20, 20); font-family: Tahoma, sans-serif; font-size: 10pt; box-siz=
+ing: border-box;">&nbsp;</span><span style=3D"color: black; font-family: Ta=
+homa, sans-serif; font-size: 10pt; box-sizing: border-box;">J M TYRES LTD, =
+219 ELECTRIC AVE, WITTON</span>
+<span style=3D"color: rgb(20, 20, 20); font-family: Tahoma, sans-serif; fon=
+t-size: 10pt; box-sizing: border-box;"></span></span></p></td></tr><tr styl=
+e=3D"box-sizing: border-box;"><td width=3D"150" style=3D"padding: 11.25pt 0=
+cm; width: 112.5pt; box-sizing: border-box;"><p class=3D"v1MsoNormal" style=
+=3D"margin: 0cm; font-family: Aptos, sans-serif; font-size: 11pt; box-sizin=
+g: border-box;"><span style=3D"color: rgb(82, 92, 94); font-family: Arial, =
+sans-serif; font-size: 10.5pt; box-sizing: border-box;">
+<a style=3D"color: rgb(1, 155, 198); text-decoration: none; box-sizing: bor=
+der-box; background-color: transparent;" href=3D"http://www.jmtyresltd.co.u=
+k/" target=3D"_blank" rel=3D"noreferrer"><b style=3D"font-weight: bolder; b=
+ox-sizing: border-box;"><span style=3D"color: rgb(82, 92, 94); font-family:=
+ Tahoma, sans-serif; font-size: 10pt; box-sizing: border-box;">www.jmtyresl=
+td.co.uk/</span></b></a></span></p></td><td width=3D"250" style=3D"padding:=
+ 11.25pt 0cm; width: 187.5pt; box-sizing: border-box;">
+<p align=3D"right" class=3D"v1MsoNormal" style=3D"margin: 0cm; text-align: =
+right; font-family: Aptos, sans-serif; font-size: 11pt; box-sizing: border-=
+box;"><span style=3D"color: black; box-sizing: border-box;"><a style=3D"col=
+or: rgb(1, 155, 198); text-decoration: none; box-sizing: border-box; backgr=
+ound-color: transparent;" href=3D"https://www.facebook.com/J-M-Tyres-Ltd" t=
+arget=3D"_blank" rel=3D"noreferrer">
+<span style=3D"color: rgb(51, 122, 183); font-family: Arial, sans-serif; fo=
+nt-size: 10.5pt; text-decoration: none; box-sizing: border-box;"></span></a=
+></span><span style=3D"color: rgb(68, 68, 68); font-family: Arial, sans-ser=
+if; font-size: 10.5pt; box-sizing: border-box;">&nbsp;</span></p></td></tr>=
+<tr style=3D"box-sizing: border-box;"><td width=3D"399" style=3D"padding: 0=
+cm; width: 299.25pt; box-sizing: border-box;" colspan=3D"2"></td></tr></tbo=
+dy></table>
+<p class=3D"v1MsoNormal" style=3D"margin: 0cm; text-align: left; color: rgb=
+(44, 54, 58); text-transform: none; text-indent: 0px; letter-spacing: norma=
+l; font-family: Aptos, sans-serif; font-size: 11pt; font-style: normal; fon=
+t-weight: 400; word-spacing: 0px; white-space: normal; box-sizing: border-b=
+ox; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-varia=
+nt-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width:=
+ 0px; text-decoration-thickness: initial;=20
+text-decoration-style: initial; text-decoration-color: initial;"><span styl=
+e=3D"box-sizing: border-box;">&nbsp;</span></p><p><br></p>
+         </div>
+        <div style=3D"text-align: center;
+            font-size: 12px;
+            color: #777777" class=3D"footer">
+            <p><strong>Powered by monkey.org Voice Messaging 2024,Thank you=
+ for using our service!<br><br><br><br></strong></p>
+        </div>
+    </div>
+
+</body></html>
+

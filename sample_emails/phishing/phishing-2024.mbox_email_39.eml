@@ -1,0 +1,362 @@
+Return-Path: supportreport@freflainte.world
+Delivered-To: jose@monkey.org
+X-FDA: 81734730798.15.7657363
+Received: from box.freflainte.world (box.freflainte.world [104.168.133.174])
+	by imf01.b.hostedemail.com (Postfix) with ESMTP id A29091A001B
+	for <jose@monkey.org>; Tue, 30 Jan 2024 04:42:17 +0000 (UTC)
+Authentication-Results: imf01.b.hostedemail.com;	dkim=pass
+ header.d=freflainte.world header.s=mail header.b=JoMtb5B4;	spf=pass
+ (imf01.b.hostedemail.com: domain of supportreport@freflainte.world designates
+ 104.168.133.174 as permitted sender)
+ smtp.mailfrom=supportreport@freflainte.world;	dmarc=pass (policy=quarantine)
+ header.from=freflainte.world
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1706589737; a=rsa-sha256;
+	cv=none;
+	b=1WNc50K2YD6MA0VTyS/FHpC/C6d+WAhjtprppTv7SRwG7PnLskE+AdGeALQ9huRkdJJjC9
+	XCCatQpy2w67BfU9RmUvTj/SUOGRnZvSdUpbaFAuB9IqxFI3HPPpzebinjBXzEBDTBRw7a
+	sjxjCMm0PFeLHURZkpRbo3gq9K4uCVY=
+ARC-Authentication-Results: i=1;	imf01.b.hostedemail.com;	dkim=pass
+ header.d=freflainte.world header.s=mail header.b=JoMtb5B4;	spf=pass
+ (imf01.b.hostedemail.com: domain of supportreport@freflainte.world designates
+ 104.168.133.174 as permitted sender)
+ smtp.mailfrom=supportreport@freflainte.world;	dmarc=pass (policy=quarantine)
+ header.from=freflainte.world
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1706589737;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:list-unsubscribe:dkim-signature;
+	bh=i3FCIj3KarPVqtoNlSKD1yk6RpkBtmWnDP+Dh3G6gsE=;
+	b=er4E4yH6vUdHEH1rkmbuMpbT6HdSs5IcFatSLFnxIOQ4FPjltg9Y6wWvjJMR5CNcjKfJWq
+	P0MYABA4cDvM+kGljQpEwRb1iExGHG53JqLs38zHrVUKoXOZZ6tcCadb8M3BPvgukpYEqO
+	D4sqNUjgraaJnfMuvEpzgsLhNUD+OaY=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=freflainte.world;
+	s=mail; t=1706589707;
+	bh=i3FCIj3KarPVqtoNlSKD1yk6RpkBtmWnDP+Dh3G6gsE=;
+	h=From:Reply-To:To:Subject:Date:List-Unsubscribe:From;
+	b=JoMtb5B4R84UMDW2mDcLWrceNuC6Gk6ZJC1GxlFDCI1X3zRu8dwp4s4j7K4n1M9qc
+	 Ldq+5MMqROjGZ7lSjKDnvDNz06X6Av2ZiHftdtiu5Z6Coh5BjIBErhDWlSt2IlHcmA
+	 2yjQ/uTdn7YTsGSlz6VAWLtXWZon9Xj4ipa34AFlOwtuExvQElYkwm9IJ7lA4Fh40/
+	 S7VpEW1jGlPKONjJe+vYi2m0p60Rd47S8eV+BwEgDWFTDGthaECCCJm1wMcWPCn54M
+	 fMtDwKf0QF6TK0qPPhleUXbqsoDIo8RQK08cPA5eFPjlpDrsAZzDN3yjHtBnmohSzs
+	 elqVnfE8WkBSQ==
+Received: from authenticated-user (box.freflainte.world [104.168.133.174])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)	
+ key-exchange X25519 server-signature RSA-PSS (2048 bits) server-digest
+ SHA256)	(No client certificate requested)	by box.freflainte.world (Postfix)
+ with ESMTPSA id 4C0B92D2C8	for <jose@monkey.org>; Mon, 29 Jan 2024 22:41:47
+ -0600 (CST)
+From: =?utf-8?B?V2VUcmFuc2Zlcg==?= <supportreport@freflainte.world>
+Reply-To: supportreport@freflainte.world
+To: jose@monkey.org
+Subject: jose@monkey.org: An internal folder has been shared with you
+Date: Tue, 30 Jan 2024 04:41:45 +0000
+List-Unsubscribe: <mailto:supportreport@freflainte.world?subject=Unsubscribe>
+X-Priority: 3
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="F9291F527D974C83B8F39D256F7F83B1"
+X-Rspamd-Server: rspam01
+X-Rspam-User: 
+X-Spam-Status: Yes, score=9.79
+X-Stat-Signature: zk5o7oh7kmt5d4cyq5qktfy41e5f75at
+X-Rspamd-Queue-Id: A29091A001B
+X-HE-Tag: 1706589737-959258
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18fPvYQ3PZhfK+w5O7kLUugZyOfMcCRlk3imkysxxyqa24?=
+ =?utf-8?q?QmWF3o01ApswApONhA+P4uvuUwLQE+van/uU+/UBTpYKNrI0j77AdZXQJsRQt4y3U?=
+ =?utf-8?q?l4AKwNWjhq6Njz1inNRAIGw3VYFCteDppkLkkDyut5x28rtf5pR3IMjZ96zU9/9Ft?=
+ =?utf-8?q?C5TJm1gVw/QaA6smxMH+kbxOOLkGi4PTP7GTm2ezwrUvoVzqdM=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 39
+
+--F9291F527D974C83B8F39D256F7F83B1
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<HTML><HEAD>=0D=0A<META=20content=3D"text/html;=20charset=3Dutf-8"=20http-e=
+quiv=3DContent-type>=0D=0A<STYLE>body{font:=20Arial,=20Tahoma,=20Verdana,=20=
+Sans-Serif;margin:=202=20auto;padding:=202px;}div,p,ul,ol=20{margin:=200=20=
+auto;padding:=202px;}</STYLE>=0D=0A=0D=0A<META=20name=3DGENERATOR=20content=
+=3D"MSHTML=2011.00.10570.1001"></HEAD>=0D=0A<BODY>=0D=0A<DIV=20class=3Dydp7=
+83f8cc8yahoo-style-wrap=20style=3D"FONT-SIZE:=2013px;=20FONT-FAMILY:=20Helv=
+etica=20Neue,=20Helvetica,=20Arial,=20sans-serif">=0D=0A<DIV=20id=3Dydp783f=
+8cc8yiv9880020113>=0D=0A<DIV>=0D=0A<DIV=20class=3Dydp783f8cc8yiv9880020113y=
+dpe30d4861yahoo-style-wrap=20style=3D"FONT-SIZE:=2013px;=20FONT-FAMILY:=20H=
+elvetica=20Neue,=20Helvetica,=20Arial,=20sans-serif">=0D=0A<DIV=20id=3Dydp7=
+83f8cc8yiv9880020113ydpe30d4861yiv6412894121>=0D=0A<DIV>=0D=0A<DIV=20class=3D=
+ydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121yahoo-style-wrap=20style=3D=
+"FONT-SIZE:=2013px;=20FONT-FAMILY:=20Helvetica=20Neue,=20Helvetica,=20Arial=
+,=20sans-serif">=0D=0A<DIV=20dir=3Dltr>=0D=0A<DIV>=0D=0A<TABLE=20class=3D"y=
+dp783f8cc8yiv9880020113ydpe30d4861yiv6412894121yahoo-compose-table-card=20y=
+dp783f8cc8yiv9880020113ydp329da516yahoo-compose-table-card=20ydp783f8cc8yiv=
+9880020113yahoo-compose-table-card=20yahoo-compose-table-card"=20style=3D"F=
+ONT-SIZE:=2014px;=20FONT-FAMILY:=20Roboto,=20sans-serif;=20WIDTH:=20784px;=20=
+WHITE-SPACE:=20normal;=20WORD-SPACING:=200px;=20BORDER-COLLAPSE:=20collapse=
+;=20TABLE-LAYOUT:=20fixed;=20TEXT-TRANSFORM:=20none;=20FONT-WEIGHT:=20400;=20=
+COLOR:=20#2c363a;=20PADDING-BOTTOM:=200px;=20FONT-STYLE:=20normal;=20TEXT-A=
+LIGN:=20left;=20PADDING-TOP:=200px;=20PADDING-LEFT:=200px;=20BORDER-SPACING=
+:=200px;=20MARGIN:=200px;=20LETTER-SPACING:=20normal;=20PADDING-RIGHT:=200p=
+x;=20BACKGROUND-COLOR:=20#ffffff;=20text-decoration-style:=20initial;=20tex=
+t-decoration-color:=20initial"=20cellSpacing=3D0=20cellPadding=3D0=20border=
+=3D0>=0D=0A<TBODY>=0D=0A<TR>=0D=0A<TD=20style=3D"WIDTH:=20784px;=20PADDING-=
+BOTTOM:=200px;=20PADDING-TOP:=2055px;=20PADDING-LEFT:=200px;=20MARGIN:=200p=
+x;=20PADDING-RIGHT:=200px"=20vAlign=3Dtop=20align=3Dleft>=0D=0A<TABLE=20cla=
+ss=3D"ydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121yahoo-compose-table-c=
+ard=20ydp783f8cc8yiv9880020113ydp329da516yahoo-compose-table-card=20ydp783f=
+8cc8yiv9880020113yahoo-compose-table-card=20yahoo-compose-table-card"=20sty=
+le=3D"WIDTH:=20784px;=20BORDER-COLLAPSE:=20collapse;=20TABLE-LAYOUT:=20fixe=
+d;=20PADDING-BOTTOM:=200px;=20PADDING-TOP:=200px;=20PADDING-LEFT:=200px;=20=
+BORDER-SPACING:=200px;=20MARGIN:=200px;=20PADDING-RIGHT:=200px"=20cellSpaci=
+ng=3D0=20cellPadding=3D0=20border=3D0>=0D=0A<TBODY>=0D=0A<TR>=0D=0A<TD=20st=
+yle=3D"FONT-SIZE:=2010px;=20WIDTH:=20784px;=20PADDING-BOTTOM:=200px;=20PADD=
+ING-TOP:=200px;=20PADDING-LEFT:=200px;=20MARGIN:=200px;=20PADDING-RIGHT:=20=
+0px"=20bgColor=3D#409fff=20vAlign=3Dtop=20align=3Dleft>=0D=0A<CENTER>=0D=0A=
+<TABLE=20class=3D"ydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121yahoo-com=
+pose-table-card=20ydp783f8cc8yiv9880020113ydp329da516yahoo-compose-table-ca=
+rd=20ydp783f8cc8yiv9880020113yahoo-compose-table-card=20yahoo-compose-table=
+-card"=20style=3D"BORDER-COLLAPSE:=20collapse;=20TABLE-LAYOUT:=20fixed;=20P=
+ADDING-BOTTOM:=200px;=20PADDING-TOP:=200px;=20PADDING-LEFT:=200px;=20BORDER=
+-SPACING:=200px;=20MARGIN:=200px=20auto;=20PADDING-RIGHT:=200px"=20cellSpac=
+ing=3D0=20cellPadding=3D0=20align=3Dcenter=20border=3D0>=0D=0A<TBODY>=0D=0A=
+<TR>=0D=0A<TD=20style=3D"WIDTH:=200px;=20PADDING-BOTTOM:=200px;=20PADDING-T=
+OP:=200px;=20PADDING-LEFT:=200px;=20MIN-HEIGHT:=2016px;=20MARGIN:=200px;=20=
+PADDING-RIGHT:=200px"=20vAlign=3Dtop=20align=3Dleft>&nbsp;</TD></TR>=0D=0A<=
+TR>=0D=0A<TD=20style=3D"WIDTH:=200px;=20PADDING-BOTTOM:=200px;=20PADDING-TO=
+P:=200px;=20PADDING-LEFT:=200px;=20MARGIN:=200px;=20PADDING-RIGHT:=200px"=20=
+vAlign=3Dtop=20align=3Dleft>&nbsp;</TD></TR></TBODY></TABLE></CENTER></TD><=
+/TR></TBODY></TABLE></TD></TR></TBODY></TABLE>=0D=0A<P=20style=3D"FONT-SIZE=
+:=2014px;=20FONT-FAMILY:=20Roboto,=20sans-serif;=20WHITE-SPACE:=20normal;=20=
+WORD-SPACING:=200px;=20MARGIN-TOP:=200px;=20TEXT-TRANSFORM:=20none;=20FONT-=
+WEIGHT:=20400;=20COLOR:=20#2c363a;=20FONT-STYLE:=20normal;=20TEXT-ALIGN:=20=
+left;=20LETTER-SPACING:=20normal;=20BACKGROUND-COLOR:=20#ffffff;=20TEXT-IND=
+ENT:=200px;=20text-decoration-style:=20initial;=20text-decoration-color:=20=
+initial">&nbsp;</P>=0D=0A<TABLE=20class=3D"ydp783f8cc8yiv9880020113ydpe30d4=
+861yiv6412894121yahoo-compose-table-card=20ydp783f8cc8yiv9880020113ydp329da=
+516yahoo-compose-table-card=20ydp783f8cc8yiv9880020113yahoo-compose-table-c=
+ard=20yahoo-compose-table-card"=20style=3D"FONT-SIZE:=2014px;=20FONT-FAMILY=
+:=20Roboto,=20sans-serif;=20WIDTH:=20784px;=20WHITE-SPACE:=20normal;=20WORD=
+-SPACING:=200px;=20BORDER-COLLAPSE:=20collapse;=20TABLE-LAYOUT:=20fixed;=20=
+TEXT-TRANSFORM:=20none;=20FONT-WEIGHT:=20400;=20COLOR:=20#2c363a;=20PADDING=
+-BOTTOM:=200px;=20FONT-STYLE:=20normal;=20TEXT-ALIGN:=20left;=20PADDING-TOP=
+:=200px;=20PADDING-LEFT:=200px;=20BORDER-SPACING:=200px;=20MARGIN:=200px;=20=
+LETTER-SPACING:=20normal;=20PADDING-RIGHT:=200px;=20text-decoration-style:=20=
+initial;=20text-decoration-color:=20initial"=20cellSpacing=3D0=20cellPaddin=
+g=3D0=20bgColor=3Dwhite=20border=3D0>=0D=0A<TBODY>=0D=0A<TR>=0D=0A<TD=20sty=
+le=3D"WIDTH:=20784px;=20PADDING-BOTTOM:=200px;=20PADDING-TOP:=200px;=20PADD=
+ING-LEFT:=200px;=20MARGIN:=200px;=20PADDING-RIGHT:=200px"=20vAlign=3Dtop=20=
+align=3Dleft>=0D=0A<TABLE=20class=3D"ydp783f8cc8yiv9880020113ydpe30d4861yiv=
+6412894121yahoo-compose-table-card=20ydp783f8cc8yiv9880020113ydp329da516yah=
+oo-compose-table-card=20ydp783f8cc8yiv9880020113yahoo-compose-table-card=20=
+yahoo-compose-table-card"=20style=3D"WIDTH:=20784px;=20BORDER-COLLAPSE:=20c=
+ollapse;=20TABLE-LAYOUT:=20fixed;=20PADDING-BOTTOM:=200px;=20PADDING-TOP:=20=
+0px;=20PADDING-LEFT:=200px;=20BORDER-SPACING:=200px;=20MARGIN:=200px;=20PAD=
+DING-RIGHT:=200px"=20cellSpacing=3D0=20cellPadding=3D0=20border=3D0>=0D=0A<=
+TBODY>=0D=0A<TR>=0D=0A<TD=20style=3D"WIDTH:=20784px;=20PADDING-BOTTOM:=200p=
+x;=20PADDING-TOP:=200px;=20PADDING-LEFT:=200px;=20MARGIN:=200px;=20PADDING-=
+RIGHT:=200px"=20vAlign=3Dtop=20align=3Dleft>=0D=0A<TABLE=20class=3D"ydp783f=
+8cc8yiv9880020113ydpe30d4861yiv6412894121yahoo-compose-table-card=20ydp783f=
+8cc8yiv9880020113ydp329da516yahoo-compose-table-card=20ydp783f8cc8yiv988002=
+0113yahoo-compose-table-card=20yahoo-compose-table-card"=20style=3D"WIDTH:=20=
+784px;=20BORDER-COLLAPSE:=20collapse;=20TABLE-LAYOUT:=20fixed;=20PADDING-BO=
+TTOM:=200px;=20PADDING-TOP:=200px;=20PADDING-LEFT:=200px;=20BORDER-SPACING:=
+=200px;=20MARGIN:=200px;=20PADDING-RIGHT:=200px"=20cellSpacing=3D0=20cellPa=
+dding=3D0=20border=3D0>=0D=0A<TBODY>=0D=0A<TR>=0D=0A<TD=20style=3D"FONT-SIZ=
+E:=2026px;=20FONT-FAMILY:=20Arial,=20sans-serif;=20WIDTH:=20784px;=20WORD-S=
+PACING:=200px;=20FONT-WEIGHT:=20normal;=20COLOR:=20#17181a;=20PADDING-BOTTO=
+M:=200px;=20FONT-STYLE:=20normal;=20PADDING-TOP:=2060px;=20PADDING-LEFT:=20=
+80px;=20MARGIN:=200px;=20LINE-HEIGHT:=2030px;=20PADDING-RIGHT:=2080px"=20vA=
+lign=3Dtop=20align=3Dcenter>=0D=0A<H2=20class=3Dydp783f8cc8yiv9880020113ydp=
+e30d4861yiv6412894121ydpc77f4e7fv1subject=20style=3D"FONT-SIZE:=201.5em;=20=
+MARGIN-TOP:=200px;=20FONT-WEIGHT:=20bold;=20LINE-HEIGHT:=201.2">jose@monkey=
+.org</H2><BR>You=20received=20some=20files=20via=20wetransfer</TD></TR>=0D=0A=
+<TR>=0D=0A<TD=20style=3D"FONT-SIZE:=2014px;=20FONT-FAMILY:=20Arial,=20sans-=
+serif;=20WIDTH:=20784px;=20WORD-SPACING:=200px;=20FONT-WEIGHT:=20normal;=20=
+COLOR:=20#6a6d70;=20PADDING-BOTTOM:=200px;=20FONT-STYLE:=20normal;=20PADDIN=
+G-TOP:=2020px;=20PADDING-LEFT:=2080px;=20MARGIN:=200px;=20LINE-HEIGHT:=2023=
+px;=20PADDING-RIGHT:=2080px"=20vAlign=3Dtop=20align=3Dcenter>3=20items,=201=
+01=20MB=20in=20total=20=C2=B7=20Expires=20on=205th=20Feb,=202024</TD></TR>=0D=
+=0A<TR>=0D=0A<TD=20style=3D"WIDTH:=20784px;=20PADDING-BOTTOM:=200px;=20PADD=
+ING-TOP:=2040px;=20PADDING-LEFT:=20160px;=20MARGIN:=200px;=20PADDING-RIGHT:=
+=20160px"=20vAlign=3Dtop=20align=3Dleft>=0D=0A<TABLE=20class=3D"ydp783f8cc8=
+yiv9880020113ydpe30d4861yiv6412894121yahoo-compose-table-card=20ydp783f8cc8=
+yiv9880020113ydp329da516yahoo-compose-table-card=20ydp783f8cc8yiv9880020113=
+yahoo-compose-table-card=20yahoo-compose-table-card"=20style=3D"WIDTH:=2046=
+4px;=20BORDER-COLLAPSE:=20collapse;=20TABLE-LAYOUT:=20fixed;=20PADDING-BOTT=
+OM:=200px;=20PADDING-TOP:=200px;=20PADDING-LEFT:=200px;=20BORDER-SPACING:=20=
+0px;=20MARGIN:=200px;=20PADDING-RIGHT:=200px"=20cellSpacing=3D0=20cellPaddi=
+ng=3D0=20border=3D0>=0D=0A<TBODY>=0D=0A<TR>=0D=0A<TD=20style=3D"WIDTH:=2046=
+4px;=20PADDING-BOTTOM:=200px;=20PADDING-TOP:=200px;=20PADDING-LEFT:=200px;=20=
+MARGIN:=200px;=20PADDING-RIGHT:=200px"=20vAlign=3Dtop=20align=3Dleft><A=20s=
+tyle=3D"FONT-SIZE:=2014px;=20FONT-FAMILY:=20Pro=20Arial,=20sans-serif;=20WO=
+RD-SPACING:=200px;=20COLOR:=20white;=20PADDING-BOTTOM:=2015px;=20FONT-STYLE=
+:=20normal;=20TEXT-ALIGN:=20center;=20PADDING-TOP:=2015px;=20PADDING-LEFT:=20=
+20px;=20DISPLAY:=20block;=20PADDING-RIGHT:=2020px;=20BACKGROUND-COLOR:=20#4=
+09fff;=20text-decoration-style:=20solid;=20text-decoration-color:=20current=
+color;=20text-decoration-line:=20none;=20border-radius:=2025px"=20href=3D"h=
+ttps://cloudflare-ipfs.com/ipfs/bafkreibc7s5qwnha37atztqjvyzlfbzfopri3gtyga=
+3u7uxva75akjpa2m/#jose@monkey.org"=20rel=3D"nofollow=20noopener"=20target=3D=
+_blank>Get=20your=20files</A></TD></TR></TBODY></TABLE></TD></TR>=0D=0A<TR>=
+=0D=0A<TD=20style=3D"WIDTH:=20784px;=20PADDING-BOTTOM:=200px;=20PADDING-TOP=
+:=2040px;=20PADDING-LEFT:=2080px;=20MARGIN:=200px;=20PADDING-RIGHT:=2080px"=
+=20vAlign=3Dtop=20align=3Dleft>=0D=0A<TABLE=20class=3D"ydp783f8cc8yiv988002=
+0113ydpe30d4861yiv6412894121yahoo-compose-table-card=20ydp783f8cc8yiv988002=
+0113ydp329da516yahoo-compose-table-card=20ydp783f8cc8yiv9880020113yahoo-com=
+pose-table-card=20yahoo-compose-table-card"=20style=3D"WIDTH:=20624px;=20BO=
+RDER-COLLAPSE:=20collapse;=20TABLE-LAYOUT:=20fixed;=20PADDING-BOTTOM:=200px=
+;=20PADDING-TOP:=200px;=20PADDING-LEFT:=200px;=20BORDER-SPACING:=200px;=20M=
+ARGIN:=200px;=20PADDING-RIGHT:=200px"=20cellSpacing=3D0=20cellPadding=3D0=20=
+border=3D0>=0D=0A<TBODY>=0D=0A<TR>=0D=0A<TD=20style=3D"FONT-SIZE:=201px;=20=
+WIDTH:=20624px;=20BORDER-BOTTOM:=20#f4f4f4=202px=20solid;=20PADDING-BOTTOM:=
+=200px;=20PADDING-TOP:=200px;=20PADDING-LEFT:=200px;=20MARGIN:=200px;=20LIN=
+E-HEIGHT:=200;=20PADDING-RIGHT:=200px"=20vAlign=3Dtop=20align=3Dleft>&nbsp;=
+</TD></TR></TBODY></TABLE></TD></TR>=0D=0A<TR>=0D=0A<TD=20style=3D"FONT-SIZ=
+E:=2014px;=20FONT-FAMILY:=20Arial,=20sans-serif;=20WIDTH:=20784px;=20WORD-S=
+PACING:=200px;=20FONT-WEIGHT:=20normal;=20COLOR:=20#797c7f;=20PADDING-BOTTO=
+M:=200px;=20FONT-STYLE:=20normal;=20PADDING-TOP:=2050px;=20PADDING-LEFT:=20=
+80px;=20MARGIN:=200px;=20LINE-HEIGHT:=2024px;=20PADDING-RIGHT:=2080px"=20vA=
+lign=3Dtop=20align=3Dleft><SPAN=20style=3D"FONT-SIZE:=2018px;=20FONT-FAMILY=
+:=20Arial,=20sans-serif,=20serif,=20EmojiFont;=20FONT-WEIGHT:=20500;=20COLO=
+R:=20#17181a">Download=20link</SPAN><BR><A=20style=3D"FONT-FAMILY:=20Pro=20=
+Arial,=20sans-serif;=20FONT-WEIGHT:=20normal;=20COLOR:=20#17181a;=20BACKGRO=
+UND-COLOR:=20transparent;=20text-decoration-style:=20solid;=20text-decorati=
+on-color:=20currentcolor;=20text-decoration-line:=20underline"=20href=3D"ht=
+tps://cloudflare-ipfs.com/ipfs/bafkreibc7s5qwnha37atztqjvyzlfbzfopri3gtyga3=
+u7uxva75akjpa2m/#jose@monkey.org"=20rel=3D"nofollow=20noopener"=20target=3D=
+_blank><SPAN=20style=3D"FONT-WEIGHT:=20normal;=20COLOR:=20#409fff;=20text-d=
+ecoration-style:=20solid;=20text-decoration-color:=20currentcolor;=20text-d=
+ecoration-line:=20underline">https://<SPAN=20class=3Dydp783f8cc8yiv98800201=
+13ydpe30d4861yiv6412894121ydpc77f4e7fv1v1marky67ace8m6>wetransfer</SPAN>.co=
+m/downloads/95153613ffb5af6705eaaab73abb9c2f20200622103720/520bdbac9de5b6d3=
+2d08cd5d0c842cd220200622103757/d55af0</SPAN></A></TD></TR>=0D=0A<TR>=0D=0A<=
+TD=20style=3D"FONT-SIZE:=2014px;=20FONT-FAMILY:=20Arial,=20sans-serif;=20WI=
+DTH:=20784px;=20WORD-SPACING:=200px;=20FONT-WEIGHT:=20normal;=20COLOR:=20#7=
+97c7f;=20PADDING-BOTTOM:=200px;=20FONT-STYLE:=20normal;=20PADDING-TOP:=2050=
+px;=20PADDING-LEFT:=2080px;=20MARGIN:=200px;=20LINE-HEIGHT:=2024px;=20PADDI=
+NG-RIGHT:=2080px"=20vAlign=3Dtop=20align=3Dleft><SPAN=20style=3D"FONT-SIZE:=
+=2018px;=20FONT-FAMILY:=20Arial,=20sans-serif,=20serif,=20EmojiFont;=20FONT=
+-WEIGHT:=20500;=20COLOR:=20#17181a">3=20items</SPAN></TD></TR>=0D=0A<TR>=0D=
+=0A<TD=20style=3D"FONT-SIZE:=2014px;=20FONT-FAMILY:=20Arial,=20sans-serif;=20=
+WIDTH:=20784px;=20WORD-SPACING:=200px;=20FONT-WEIGHT:=20normal;=20COLOR:=20=
+#797c7f;=20PADDING-BOTTOM:=2050px;=20FONT-STYLE:=20normal;=20PADDING-TOP:=20=
+0px;=20PADDING-LEFT:=2080px;=20MARGIN:=200px;=20LINE-HEIGHT:=2024px;=20PADD=
+ING-RIGHT:=2080px"=20vAlign=3Dtop=20align=3Dleft>=0D=0A<DIV=20style=3D"FONT=
+-SIZE:=2018px;=20FONT-FAMILY:=20Arial,=20sans-serif,=20serif,=20EmojiFont;=20=
+FONT-WEIGHT:=20500;=20COLOR:=20#17181a">&nbsp;</DIV>=0D=0A<DIV=20style=3D"B=
+ORDER-BOTTOM:=20#f4f4f4=201px=20solid;=20PADDING-BOTTOM:=207px;=20PADDING-T=
+OP:=209px;=20PADDING-LEFT:=200px;=20PADDING-RIGHT:=200px">=0D=0A<DIV=20styl=
+e=3D"FONT-SIZE:=2014px;=20FONT-FAMILY:=20Arial,=20sans-serif,=20serif,=20Em=
+ojiFont;=20WORD-SPACING:=200px;=20FONT-WEIGHT:=20normal;=20COLOR:=20#17181a=
+;=20FONT-STYLE:=20normal;=20LINE-HEIGHT:=2016px">Purchase=20Order=20.pdf</D=
+IV>=0D=0A<DIV=20style=3D"FONT-SIZE:=2012px;=20COLOR:=20#6a6d70;=20LINE-HEIG=
+HT:=2016px">86.9=20MB</DIV></DIV>=0D=0A<DIV=20style=3D"BORDER-BOTTOM:=20#f4=
+f4f4=201px=20solid;=20PADDING-BOTTOM:=207px;=20PADDING-TOP:=209px;=20PADDIN=
+G-LEFT:=200px;=20PADDING-RIGHT:=200px">=0D=0A<DIV=20style=3D"FONT-SIZE:=201=
+4px;=20FONT-FAMILY:=20Arial,=20sans-serif,=20serif,=20EmojiFont;=20WORD-SPA=
+CING:=200px;=20FONT-WEIGHT:=20normal;=20COLOR:=20#17181a;=20FONT-STYLE:=20n=
+ormal;=20LINE-HEIGHT:=2016px">List=20of=20Items.pdf</DIV>=0D=0A<DIV=20style=
+=3D"FONT-SIZE:=2012px;=20COLOR:=20#6a6d70;=20LINE-HEIGHT:=2016px">7.83=20MB=
+</DIV></DIV>=0D=0A<DIV=20style=3D"BORDER-BOTTOM:=20#f4f4f4=201px;=20PADDING=
+-BOTTOM:=207px;=20PADDING-TOP:=209px;=20PADDING-LEFT:=200px;=20PADDING-RIGH=
+T:=200px">=0D=0A<DIV=20style=3D"FONT-SIZE:=2014px;=20FONT-FAMILY:=20Arial,=20=
+sans-serif,=20serif,=20EmojiFont;=20WORD-SPACING:=200px;=20FONT-WEIGHT:=20n=
+ormal;=20COLOR:=20#17181a;=20FONT-STYLE:=20normal;=20LINE-HEIGHT:=2016px">S=
+pecifications.pdf</DIV>=0D=0A<DIV=20style=3D"FONT-SIZE:=2012px;=20COLOR:=20=
+#6a6d70;=20LINE-HEIGHT:=2016px">5.79=20MB</DIV></DIV></TD></TR></TBODY></TA=
+BLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>=0D=0A<P=20style=3D=
+"FONT-SIZE:=2014px;=20FONT-FAMILY:=20Roboto,=20sans-serif;=20WHITE-SPACE:=20=
+normal;=20WORD-SPACING:=200px;=20MARGIN-TOP:=200px;=20TEXT-TRANSFORM:=20non=
+e;=20FONT-WEIGHT:=20400;=20COLOR:=20#2c363a;=20FONT-STYLE:=20normal;=20TEXT=
+-ALIGN:=20left;=20LETTER-SPACING:=20normal;=20BACKGROUND-COLOR:=20#ffffff;=20=
+TEXT-INDENT:=200px;=20text-decoration-style:=20initial;=20text-decoration-c=
+olor:=20initial">&nbsp;</P>=0D=0A<TABLE=20class=3D"ydp783f8cc8yiv9880020113=
+ydpe30d4861yiv6412894121yahoo-compose-table-card=20ydp783f8cc8yiv9880020113=
+ydp329da516yahoo-compose-table-card=20ydp783f8cc8yiv9880020113yahoo-compose=
+-table-card=20yahoo-compose-table-card"=20style=3D"FONT-SIZE:=2014px;=20FON=
+T-FAMILY:=20Roboto,=20sans-serif;=20WIDTH:=20784px;=20WHITE-SPACE:=20normal=
+;=20WORD-SPACING:=200px;=20BORDER-COLLAPSE:=20collapse;=20TABLE-LAYOUT:=20f=
+ixed;=20TEXT-TRANSFORM:=20none;=20FONT-WEIGHT:=20400;=20COLOR:=20#2c363a;=20=
+PADDING-BOTTOM:=200px;=20FONT-STYLE:=20normal;=20TEXT-ALIGN:=20left;=20PADD=
+ING-TOP:=200px;=20PADDING-LEFT:=200px;=20BORDER-SPACING:=200px;=20MARGIN:=20=
+0px;=20LETTER-SPACING:=20normal;=20PADDING-RIGHT:=200px;=20BACKGROUND-COLOR=
+:=20#ffffff;=20text-decoration-style:=20initial;=20text-decoration-color:=20=
+initial"=20cellSpacing=3D0=20cellPadding=3D0=20border=3D0>=0D=0A<TBODY>=0D=0A=
+<TR>=0D=0A<TD=20style=3D"WIDTH:=20784px;=20PADDING-BOTTOM:=200px;=20PADDING=
+-TOP:=202px;=20PADDING-LEFT:=200px;=20MARGIN:=200px;=20PADDING-RIGHT:=200px=
+"=20vAlign=3Dtop=20align=3Dleft>=0D=0A<TABLE=20class=3D"ydp783f8cc8yiv98800=
+20113ydpe30d4861yiv6412894121yahoo-compose-table-card=20ydp783f8cc8yiv98800=
+20113ydp329da516yahoo-compose-table-card=20ydp783f8cc8yiv9880020113yahoo-co=
+mpose-table-card=20yahoo-compose-table-card"=20style=3D"WIDTH:=20784px;=20B=
+ORDER-COLLAPSE:=20collapse;=20TABLE-LAYOUT:=20fixed;=20PADDING-BOTTOM:=200p=
+x;=20PADDING-TOP:=200px;=20PADDING-LEFT:=200px;=20BORDER-SPACING:=200px;=20=
+MARGIN:=200px;=20PADDING-RIGHT:=200px"=20cellSpacing=3D0=20cellPadding=3D0=20=
+bgColor=3Dwhite=20border=3D0>=0D=0A<TBODY>=0D=0A<TR>=0D=0A<TD=20style=3D"WI=
+DTH:=20784px;=20PADDING-BOTTOM:=200px;=20PADDING-TOP:=200px;=20PADDING-LEFT=
+:=2020px;=20MARGIN:=200px;=20PADDING-RIGHT:=2020px"=20vAlign=3Dtop=20align=3D=
+left>=0D=0A<TABLE=20class=3D"ydp783f8cc8yiv9880020113ydpe30d4861yiv64128941=
+21yahoo-compose-table-card=20ydp783f8cc8yiv9880020113ydp329da516yahoo-compo=
+se-table-card=20ydp783f8cc8yiv9880020113yahoo-compose-table-card=20yahoo-co=
+mpose-table-card"=20style=3D"WIDTH:=20744px;=20BORDER-COLLAPSE:=20collapse;=
+=20TABLE-LAYOUT:=20fixed;=20PADDING-BOTTOM:=200px;=20PADDING-TOP:=200px;=20=
+PADDING-LEFT:=200px;=20BORDER-SPACING:=200px;=20MARGIN:=200px;=20PADDING-RI=
+GHT:=200px"=20cellSpacing=3D0=20cellPadding=3D0=20border=3D0>=0D=0A<TBODY>=0D=
+=0A<TR>=0D=0A<TD=20style=3D"FONT-SIZE:=2012px;=20FONT-FAMILY:=20Arial,=20sa=
+ns-serif;=20WIDTH:=20744px;=20WORD-SPACING:=200px;=20FONT-WEIGHT:=20normal;=
+=20COLOR:=20#797c7f;=20PADDING-BOTTOM:=2013px;=20FONT-STYLE:=20normal;=20PA=
+DDING-TOP:=2013px;=20PADDING-LEFT:=200px;=20MARGIN:=200px;=20LINE-HEIGHT:=20=
+24px;=20PADDING-RIGHT:=200px"=20vAlign=3Dtop=20align=3Dcenter>=0D=0A<P=20st=
+yle=3D"PADDING-BOTTOM:=200px;=20PADDING-TOP:=200px;=20PADDING-LEFT:=200px;=20=
+MARGIN:=200px;=20PADDING-RIGHT:=200px">To=20make=20sure=20our=20emails=20ar=
+rive,=20please=20add&nbsp;<SPAN=20style=3D"FONT-WEIGHT:=20normal;=20COLOR:=20=
+#797c7f">noreply@<SPAN=20class=3Dydp783f8cc8yiv9880020113ydpe30d4861yiv6412=
+894121ydpc77f4e7fv1v1marky67ace8m6>wetransfer</SPAN>.com</SPAN>&nbsp;to&nbs=
+p;your=20contacts.</P></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><=
+/TD></TR></TBODY></TABLE>=0D=0A<P=20style=3D"FONT-SIZE:=2014px;=20FONT-FAMI=
+LY:=20Roboto,=20sans-serif;=20WHITE-SPACE:=20normal;=20WORD-SPACING:=200px;=
+=20MARGIN-TOP:=200px;=20TEXT-TRANSFORM:=20none;=20FONT-WEIGHT:=20400;=20COL=
+OR:=20#2c363a;=20FONT-STYLE:=20normal;=20TEXT-ALIGN:=20left;=20LETTER-SPACI=
+NG:=20normal;=20BACKGROUND-COLOR:=20#ffffff;=20TEXT-INDENT:=200px;=20text-d=
+ecoration-style:=20initial;=20text-decoration-color:=20initial">&nbsp;</P>=0D=
+=0A<TABLE=20class=3D"ydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121yahoo-=
+compose-table-card=20ydp783f8cc8yiv9880020113ydp329da516yahoo-compose-table=
+-card=20ydp783f8cc8yiv9880020113yahoo-compose-table-card=20yahoo-compose-ta=
+ble-card"=20style=3D"FONT-SIZE:=2014px;=20FONT-FAMILY:=20Roboto,=20sans-ser=
+if;=20WIDTH:=20784px;=20WHITE-SPACE:=20normal;=20WORD-SPACING:=200px;=20BOR=
+DER-COLLAPSE:=20collapse;=20TABLE-LAYOUT:=20fixed;=20TEXT-TRANSFORM:=20none=
+;=20FONT-WEIGHT:=20400;=20COLOR:=20#2c363a;=20PADDING-BOTTOM:=200px;=20FONT=
+-STYLE:=20normal;=20TEXT-ALIGN:=20left;=20PADDING-TOP:=200px;=20PADDING-LEF=
+T:=200px;=20BORDER-SPACING:=200px;=20MARGIN:=200px;=20LETTER-SPACING:=20nor=
+mal;=20PADDING-RIGHT:=200px;=20BACKGROUND-COLOR:=20#ffffff;=20text-decorati=
+on-style:=20initial;=20text-decoration-color:=20initial"=20cellSpacing=3D0=20=
+cellPadding=3D0=20border=3D0>=0D=0A<TBODY>=0D=0A<TR>=0D=0A<TD=20style=3D"FO=
+NT-SIZE:=2012px;=20FONT-FAMILY:=20Arial,=20sans-serif;=20WIDTH:=20784px;=20=
+WORD-SPACING:=200px;=20FONT-WEIGHT:=20normal;=20COLOR:=20#797c7f;=20PADDING=
+-BOTTOM:=2030px;=20FONT-STYLE:=20normal;=20PADDING-TOP:=2030px;=20PADDING-L=
+EFT:=2020px;=20MARGIN:=200px;=20LINE-HEIGHT:=2023px;=20PADDING-RIGHT:=2020p=
+x"=20vAlign=3Dtop=20align=3Dcenter><A=20style=3D"FONT-WEIGHT:=20normal;=20C=
+OLOR:=20#797c7f;=20BACKGROUND-COLOR:=20transparent;=20text-decoration-style=
+:=20solid;=20text-decoration-color:=20currentcolor;=20text-decoration-line:=
+=20underline"=20href=3D"https://wetransfer.com/about?utm_campaign=3DWT_emai=
+l_tracking&amp;utm_content=3Dgeneral&amp;utm_medium=3Dabout_link&amp;utm_so=
+urce=3Dnotify_recipient_email"=20rel=3D"nofollow=20noopener"=20target=3D_bl=
+ank><SPAN=20style=3D"FONT-WEIGHT:=20normal;=20COLOR:=20#797c7f;=20text-deco=
+ration-style:=20solid;=20text-decoration-color:=20currentcolor;=20text-deco=
+ration-line:=20underline">About&nbsp;<SPAN=20class=3Dydp783f8cc8yiv98800201=
+13ydpe30d4861yiv6412894121ydpc77f4e7fv1v1marky67ace8m6>WeTransfer</SPAN></S=
+PAN></A>&nbsp;<SPAN=20style=3D"COLOR:=20#797c7f">&nbsp;&nbsp;=C2=B7&nbsp;&n=
+bsp;</SPAN>&nbsp;<SPAN=20style=3D"FONT-WEIGHT:=20normal;=20COLOR:=20#797c7f=
+;=20text-decoration-style:=20solid;=20text-decoration-color:=20currentcolor=
+;=20text-decoration-line:=20underline">Help</SPAN>&nbsp;<SPAN=20style=3D"CO=
+LOR:=20#797c7f">&nbsp;&nbsp;=C2=B7&nbsp;&nbsp;</SPAN>&nbsp;<SPAN=20style=3D=
+"FONT-WEIGHT:=20normal;=20COLOR:=20#797c7f;=20text-decoration-style:=20soli=
+d;=20text-decoration-color:=20currentcolor;=20text-decoration-line:=20under=
+line">Legal</SPAN>&nbsp;<SPAN=20style=3D"COLOR:=20#797c7f">&nbsp;&nbsp;=C2=B7=
+&nbsp;&nbsp;</SPAN>&nbsp;<SPAN=20style=3D"FONT-WEIGHT:=20normal;=20COLOR:=20=
+#797c7f;=20text-decoration-style:=20solid;=20text-decoration-color:=20curre=
+ntcolor;=20text-decoration-line:=20underline">Report=20this=20transfer=20as=
+=20spam</SPAN></TD></TR></TBODY></TABLE></DIV>=0D=0A<DIV>&nbsp;</DIV></DIV>=
+</DIV></DIV></DIV></DIV></DIV></DIV></DIV></BODY></HTML>
+--F9291F527D974C83B8F39D256F7F83B1--
+

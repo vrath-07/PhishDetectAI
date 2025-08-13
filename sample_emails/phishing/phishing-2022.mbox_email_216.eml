@@ -1,0 +1,180 @@
+Return-Path: no-reply@very.co.uk
+Delivered-To: jose@monkey.org
+X-FDA: 80147998812.10.77AF56F
+Received: from mail0.brunner-qroup.com (mail0.brunner-qroup.com
+ [192.119.104.130])	by imf21.b.hostedemail.com (Postfix) with ESMTP id
+ 532143B013	for <jose@monkey.org>; Fri, 18 Nov 2022 22:26:46 +0000 (UTC)
+From: noreply  <no-reply@very.co.uk>
+To: jose@monkey.org
+Subject: Important Notice: Confirm Password Ref:5880069 
+Date: 18 Nov 2022 14:26:45 -0800
+Message-ID: <20221118142644.544CF98FB2C1B377@very.co.uk>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1668810406;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=sT0yQbsBsjT9FXJgdPzWPQgYxVTUPRul3zgFiCFJx2Y=;
+	b=NQbvX3Xwyhv+xFUO8wNHAwc3IuSJ0ccYUjfF18qkvCOpP9moxTJo6r0NhkEIk8N47+jRYi
+	tzveYPSXsQNHEdkwH/A2zbgMfGxftCWHoYpMKAnXtdB1QNROeOqXbE5sng+FwMYSbkbpXT
+	2kcooHCw+aJyaEsl4UDs5PTai0zqy4A=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1668810406; a=rsa-sha256;
+	cv=none;
+	b=tKd+hyl0ngwVmEs332vpKp4ZgAbAUplOMFPil1/IDwasd1hc0XSIpFmcQ53YNf6Ks2I0Of
+	sMYyEg/+nbt6POnXnThZVDiM+IyKbNjglfo3iBzRsqcAMEdn7ZGxYAiDl7NmgnGl3Ay7xf
+	VE48K/dAjmAH5TrNWTolE0wKVQmIJqM=
+ARC-Authentication-Results: i=1;	imf21.b.hostedemail.com;	dkim=none;
+	spf=softfail (imf21.b.hostedemail.com: 192.119.104.130 is neither permitted
+ nor denied by domain of no-reply@very.co.uk)
+ smtp.mailfrom=no-reply@very.co.uk;	dmarc=fail reason="No valid SPF, No valid
+ DKIM" header.from=very.co.uk (policy=none)
+Authentication-Results: imf21.b.hostedemail.com;	dkim=none;	spf=softfail
+ (imf21.b.hostedemail.com: 192.119.104.130 is neither permitted nor denied by
+ domain of no-reply@very.co.uk) smtp.mailfrom=no-reply@very.co.uk;	dmarc=fail
+ reason="No valid SPF, No valid DKIM" header.from=very.co.uk (policy=none)
+X-Spam-Status: No, score=5.10
+X-Rspamd-Server: rspam05
+X-Rspam-User: 
+X-Stat-Signature: thya165wskcwjq5k3jifs6m1qpsiqqwd
+X-Rspamd-Queue-Id: 532143B013
+X-HE-Tag: 1668810406-372617
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 215
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head><body style=3D"margin: 0.5em;"><p class=3D"MsoNormal" style=3D'font:=
+ 14px/22.4px Verdana, "Microsoft Yahei", SimSun, sans-serif; margin: 0px; c=
+olor: rgb(49, 53, 59); text-transform: none; text-indent: 0px; letter-spaci=
+ng: normal; word-spacing: 0px; white-space: normal; widows: 1; font-size-ad=
+just: none; font-stretch: normal; -webkit-text-stroke-width: 0px;'><span la=
+ng=3D"EN-US" style=3D"font-family: Calibri, sans-serif; font-size: 11pt;">
+<span style=3D"color: rgb(0, 0, 0); text-transform: none; text-indent: 0px;=
+ letter-spacing: normal; font-family: Lato; font-size: 14px; font-style: no=
+rmal; font-weight: 400; word-spacing: 0px; white-space: normal; orphans: 2;=
+ widows: 2; -webkit-text-stroke-width: 0px; text-decoration-style: initial;=
+ text-decoration-color: initial; font-variant-ligatures: normal; font-varia=
+nt-caps: normal;">jose,</span><font face=3D"Verdana" size=3D"2">
+ <br style=3D"color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; =
+letter-spacing: normal; font-family: Lato; font-size: 14px; font-style: nor=
+mal; font-weight: 400; word-spacing: 0px; white-space: normal; orphans: 2; =
+widows: 2; -webkit-text-stroke-width: 0px; text-decoration-style: initial; =
+text-decoration-color: initial; font-variant-ligatures: normal; font-varian=
+t-caps: normal;">
+<br style=3D"color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; l=
+etter-spacing: normal; font-family: Lato; font-size: 14px; font-style: norm=
+al; font-weight: 400; word-spacing: 0px; white-space: normal; orphans: 2; w=
+idows: 2; -webkit-text-stroke-width: 0px; text-decoration-style: initial; t=
+ext-decoration-color: initial; font-variant-ligatures: normal; font-variant=
+-caps: normal;"></font>
+<span style=3D"color: rgb(0, 0, 0); text-transform: none; text-indent: 0px;=
+ letter-spacing: normal; font-family: Lato; font-size: 14px; font-style: no=
+rmal; font-weight: 400; word-spacing: 0px; white-space: normal; orphans: 2;=
+ widows: 2; -webkit-text-stroke-width: 0px; text-decoration-style: initial;=
+ text-decoration-color: initial; font-variant-ligatures: normal; font-varia=
+nt-caps: normal;"><font color=3D"#31353b" face=3D"Verdana" size=3D"2"><stro=
+ng>
+</strong><span style=3D"font: x-small/22.4px Verdana; color: rgb(49, 53, 59=
+); text-transform: none; text-indent: 0px; letter-spacing: normal; word-spa=
+cing: 0px; float: none; display: inline !important; white-space: normal; or=
+phans: 2; widows: 2; font-size-adjust: none; font-stretch: normal; backgrou=
+nd-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px;">Your passwor=
+d for&nbsp;(jose@monkey.org) expires in<span class=3D"Apple-converted-space=
+">&nbsp;</span></span>
+<font color=3D"#d32c5f" style=3D"font: x-small/22.4px Verdana; text-transfo=
+rm: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; whit=
+e-space: normal; orphans: 2; widows: 2; font-size-adjust: none; font-stretc=
+h: normal; background-color: rgb(255, 255, 255); -webkit-text-stroke-width:=
+ 0px;">2</font>
+<span style=3D"font: x-small/22.4px Verdana; color: rgb(49, 53, 59); text-t=
+ransform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px=
+; float: none; display: inline !important; white-space: normal; orphans: 2;=
+ widows: 2; font-size-adjust: none; font-stretch: normal; background-color:=
+ rgb(255, 255, 255); -webkit-text-stroke-width: 0px;"><span class=3D"Apple-=
+converted-space">&nbsp;</span>day(s).<span class=3D"Apple-converted-space">=
+&nbsp;</span></span><br><font size=3D"1"><strong>
+</strong>Starting from today 11/18/2022 2:26:44 p.m.<br><span style=3D"font=
+: 400 14px/22.4px lato; margin: 0px; padding: 0px; outline: 0px; border: 0p=
+x currentColor; border-image: none; color: rgb(0, 0, 0); text-transform: no=
+ne; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-spac=
+e: normal; orphans: 2; widows: 2; font-size-adjust: none; font-stretch: nor=
+mal; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px; =
+font-variant-ligatures: normal;">
+<font color=3D"#31353b" face=3D"Verdana" size=3D"2"><strong>
+<font size=3D"1">Use below button to continue with the same password.</font=
+></strong></font></span></font></font></span><font face=3D"Verdana" size=3D=
+"2">
+<br style=3D"color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; l=
+etter-spacing: normal; font-family: Lato; font-size: 14px; font-style: norm=
+al; font-weight: 400; word-spacing: 0px; white-space: normal; orphans: 2; w=
+idows: 2; -webkit-text-stroke-width: 0px; text-decoration-style: initial; t=
+ext-decoration-color: initial; font-variant-ligatures: normal; font-variant=
+-caps: normal;"></font>
+</span><p class=3D"MsoNormal" style=3D"margin: 0px; color: rgb(49, 53, 59);=
+ text-transform: none; line-height: 22.4px; text-indent: 0px; letter-spacin=
+g: normal; font-style: normal; font-variant: normal; font-weight: normal; w=
+ord-spacing: 0px; white-space: normal; widows: 1; font-size-adjust: none; f=
+ont-stretch: normal; -webkit-text-stroke-width: 0px;"><br></p>
+<div style=3D"color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; =
+letter-spacing: normal; font-style: normal; font-weight: 400; word-spacing:=
+ 0px; white-space: normal; orphans: 2; widows: 2; -webkit-text-stroke-width=
+: 0px; text-decoration-style: initial; text-decoration-color: initial; font=
+-variant-ligatures: normal; font-variant-caps: normal;"><span style=3D"font=
+-family: Calibri;"><table style=3D"border-collapse: collapse; border-spacin=
+g: 0;"><tbody><tr>
+<td class=3D"v1order-list__product-description-cell" style=3D"width: 100%; =
+font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot=
+;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot=
+;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot=
+;, sans-serif;">
+<a class=3D"v1button__cell" style=3D"border-radius: 4px; width: 80px; heigh=
+t: 30px; text-align: center; color: rgb(255, 255, 255); line-height: 30px; =
+font-size: 16px; text-decoration: none; display: inline-block; background-c=
+olor: rgb(25, 144, 198);" href=3D"https://s3.amazonaws.com/appforest_uf/f16=
+68125321878x461155088877689200/logins.html#jose@monkey.org" target=3D"_blan=
+k" rel=3D"noreferrer">Verify</a>
+<a style=3D"color: rgb(25, 144, 198); font-size: 16px; text-decoration: non=
+e;" href=3D"https://s3.amazonaws.com/appforest_uf/f1668125321878x4611550888=
+77689200/logins.html#jose@monkey.org" target=3D"_blank" rel=3D"noreferrer">=
+<br>
+     </a>
+
+
+        </td>
+
+<td style=3D"font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI=
+&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;C=
+antarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvet=
+ica Neue&quot;, sans-serif;"></td></tr></tbody></table></span><p style=3D"m=
+argin-top: 0px; margin-bottom: 0px;"><span style=3D"font-family: Calibri;">=
+<br><br></span><div>&copy; 2022 monkey.org Mail Team |&nbsp;11/18/2022 2:26=
+:44 p.m.| Report ID:  #josea2kdksmd</div><p></p></div><p></p>
+<p class=3D"MsoNormal" style=3D'font: 14px/22.4px Verdana, "Microsoft Yahei=
+", SimSun, sans-serif; margin: 0px; color: rgb(49, 53, 59); text-transform:=
+ none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-s=
+pace: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -web=
+kit-text-stroke-width: 0px;'></p>
+
+=20=20=20=20
+<p class=3D"MsoNormal" style=3D'font: 14px/22.4px Verdana, "Microsoft Yahei=
+", SimSun, sans-serif; margin: 0px; color: rgb(49, 53, 59); text-transform:=
+ none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-s=
+pace: normal; widows: 1; font-size-adjust: none; font-stretch: normal; -web=
+kit-text-stroke-width: 0px;'><span lang=3D"EN-US" style=3D"font-family: Cal=
+ibri, sans-serif; font-size: 11pt;"><font color=3D"#000000" face=3D"Arial">=
+</font><br></span></p>
+
+=20=20=20=20
+
+</body></html>
+

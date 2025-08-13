@@ -1,0 +1,390 @@
+Return-Path: bounces+25859629-c067-jose=monkey.org@em4871.petloverschat.com
+Delivered-To: jose@monkey.org
+X-FDA: 82833622158.18.08F6ADF
+Received: from o3.ptr3799.petloverschat.com (o3.ptr3799.petloverschat.com
+ [149.72.55.182])	by imf13.b.hostedemail.com (Postfix) with ESMTP id
+ C4FB5120004	for <jose@monkey.org>; Thu, 28 Nov 2024 00:30:19 +0000 (UTC)
+Authentication-Results: imf13.b.hostedemail.com;	dkim=pass
+ header.d=petloverschat.com header.s=s1 header.b=h5uevNhh;	spf=pass
+ (imf13.b.hostedemail.com: domain of
+ "bounces+25859629-c067-jose=monkey.org@em4871.petloverschat.com" designates
+ 149.72.55.182 as permitted sender) =?utf-8?q?smtp=2Emailfrom=3D=22bounces+2?=
+ =?utf-8?q?5859629-c067-jose=3Dmonkey=2Eorg=40em4871=2Epetloverschat=2Ecom?=
+ =?utf-8?q?=22=3B?=	dmarc=pass (policy=none) header.from=petloverschat.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1732753820;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=2tDGv/32m8UO+Mi6mzD0jcDmJxCD10KiBOKl+HzBOFE=;
+	b=K+xcjmvVOm4k4Hr0X6/NyFkNkVs08AizvutnH3awp60UpRxBLxWtD/jnRvy0SCOkHFQs/o
+	ERjwNd/Fk52Ql0+ScSRuMeFIxShsZff3EmvV8v8LfrHF3fagWHdnKfnz+OaxgE/mVqmTnB
+	V+CEjrb8KNGvBVOAAOtEOWaeusmkYhE=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1732753820; a=rsa-sha256;
+	cv=none;
+	b=PnmGhp4YQuiDQ0c/Wd+4aKxsKF5TDTSBRy1ktXu0d90msa5KBIVOIdARBLTjlCPuNBw0GC
+	KepjKRrP6xMzn9L774DsdVPHWU30iyT2O/jfX2lfGcOnsZbbKPFnjIFCaSGP1lvxMKwAEf
+	+gZ7ENjRrLjqnoUgx/u/9qO/jb35Fug=
+ARC-Authentication-Results: i=1;	imf13.b.hostedemail.com;	dkim=pass
+ header.d=petloverschat.com header.s=s1 header.b=h5uevNhh;	spf=pass
+ (imf13.b.hostedemail.com: domain of
+ "bounces+25859629-c067-jose=monkey.org@em4871.petloverschat.com" designates
+ 149.72.55.182 as permitted sender) =?utf-8?q?smtp=2Emailfrom=3D=22bounces+2?=
+ =?utf-8?q?5859629-c067-jose=3Dmonkey=2Eorg=40em4871=2Epetloverschat=2Ecom?=
+ =?utf-8?q?=22=3B?=	dmarc=pass (policy=none) header.from=petloverschat.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=petloverschat.com;
+	h=content-type:from:subject:content-transfer-encoding:mime-version:to:
+	cc:content-type:from:subject:to;
+	s=s1; bh=2tDGv/32m8UO+Mi6mzD0jcDmJxCD10KiBOKl+HzBOFE=;
+	b=h5uevNhh33It078Y+LqSzxuDA1MDCVkpZXcqo5ARywKyoCi2bguAS+ZoXYJ1kaA8Ko3N
+	4/gY4v5UhFhiLk/tqlbd8pIPOThTYLGpmiarouGZ9XEgNC8BngzjEi4WRXUtN7rzY91Dqq
+	5ZW1i228zzl6DqjFYB28uCSGrHcLrCllYqQouEgyLgnoH5KX67SOSEUI4Bwhk6Dr5uaaPr
+	ELw9A1qRKIifimqhoUqqVN9T+FOGTF0MiwwVFHQ5Y8WBAnzsuYdi/MORqNBcFynAVHdl9F
+	ojNM+X4E2kLxjDKXPwKhY87MgCM/I15XopQ42suOt6AO9BPGKbE1g/TQ6LRvqzPg==
+Received: by recvd-6f8dbbcdc-hfkqv with SMTP id
+ recvd-6f8dbbcdc-hfkqv-1-6747B99D-90	2024-11-28 00:30:21.824268249 +0000 UTC
+ m=+1134531.249724394
+Received: from [127.0.0.1] (unknown)
+	by geopod-ismtpd-12 (SG) with ESMTP
+	id m90WZ2Q3QPCY8dxgUCe_pg
+	for <jose@monkey.org>;
+	Thu, 28 Nov 2024 00:30:21.744 +0000 (UTC)
+Content-Type: text/html; charset=utf-8
+From: Disney+ <info@petloverschat.com>
+Subject: re: required: update your information  [DD-295874-D5655]
+Message-ID: <1a789d06-9018-f64b-670e-54919a783f3b@petloverschat.com>
+Content-Transfer-Encoding: quoted-printable
+Date: Thu, 28 Nov 2024 00:30:21 +0000 (UTC)
+MIME-Version: 1.0
+X-SG-EID:  u001.dM4+Aa26mP+ssyx3wYw8BbELYHK95xpNUa8eOF7qnfm8mZrYSLalhiGeb
+ =?utf-8?q?XR3VVzHf0QLfq4gkrfAAaqDcxPplntrX2R29o5k?==?utf-8?q?qZ+2YfLsqSIm3u?=
+ =?utf-8?q?XVQaG9aQG6BFzgmb+9olWdQ45QlTp5ckg3YDGdOqQURmVI8pbuLjgKOJI/NwVvNmt?=
+ =?utf-8?q?RAKkVuBwze1WIQk2bnxvXbHbM3vScLBzif9rJs?=jsxURgaG5cAotFC2QBvviM=
+To: jose@monkey.org
+X-Entity-ID: u001.2DBRHct1e61pKbar07k1Ig==
+X-Rspam-User: 
+X-Rspamd-Queue-Id: C4FB5120004
+X-Spam-Status: No, score=1.02
+X-Stat-Signature: d8a17swsdaettieg56548438jcjxph5f
+X-Rspamd-Server: rspam09
+X-HE-Tag: 1732753819-786853
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18iS45ESHUDNvzlDwYrCMFx90rr41OxF0FPPnDdAbif+rE?=
+ =?utf-8?q?D0DdQyyELGY4T9SUqJ3E3XOCVbYOXJiqJNYfTDo2nJfVy4cuwD2YtjS2rdrSp04iQ?=
+ =?utf-8?q?ibu9gge09Jc8FiKA5ad3Vy73zoVlcmkF7a808pNuCabDxOQl6Nc6rPLYXFKeB85LL?=
+ =?utf-8?q?aPH/4QFqc735lMgpo9cKjPsspNn4yPu4ZJWykMpWsnBoXZ7XGcV1+sEDXNR/DJTaQ?=
+ =?utf-8?q?FQKKs1k11GPZ2eNM4KVDQeHWomL5XC17jQ9/pG8H2TKDhb+ygqLSruMg3iF5l/Jqv?=
+ =?utf-8?q?rtgZbbxDNZdzbd9Otbc/0GFPawY6iiRxH7CZTAy60PC72jXMCIxjIImF6c9wBRBMH?=
+ =?utf-8?q?FGVoZrwHKBdCoym/tvN5iEYXW/zgcm/5CKhS/P1gLj0QdFEXM/sTpt6cY7lqwGZC7?=
+ =?utf-8?q?7FG6EvQfXdJQzmS5qn8dHGfdFm09b3Le7QQVTfftSd9v4QPqlVtqtgClUhkgctglC?=
+ =?utf-8?q?ZyqxDP68UZFoWV9jUGTt4OROTZTwdLQajx01QcEY/7czlBPEwUG5mo7RT0xq5sb+V?=
+ =?utf-8?q?hudlWpK5S619lADmXp//Bw3PGPaErh6LRS5+Gw0O6jX3qsnf4myDa3zEOiRXg1Qhp?=
+ =?utf-8?q?H8nzVvFErye6X4EbRnCwmhrOFKNMExV9NQWtjC7gjS4sd543/PUW1uGvtp8fQOohq?=
+ =?utf-8?q?jlliFS1o0pGZQUo+9kT371bCm0W/z+6+fLwtoquVTemYLSPiq6JDbXTNEBLhVE7GC?=
+ =?utf-8?q?c517mUiLOBRqXWxpjm92tsWIXWstZbjO5OEUvfaqbZTGuj5mRl+zNvZ2K7SySF3kx?=
+ =?utf-8?q?l1qa7NQw5zZjypNjM7J8RwGw3PVJuHtO1lpPphgbtE7WRxYAU8BBGBjKvb0gqqx2P?=
+ =?utf-8?q?XbcFMzOnGw1Tlwzf6NmFW2bzRmrCwNBHFHxUKPvBJwTZelCGRDtUdq4qsDQovaZcb?=
+ =?utf-8?q?eEBqo0hyUDfLlk4YBpWb/S_S82VWsCf8Wibhod2vG22+Q64kabASnZQ3/bCIPJ0pV?=
+ =?utf-8?q?4dYan7p0hP0XxkJ23daINEnd4Gp08HAta03SbdQy0qvbKjuPhROaSpdBo3jgnMzBF?=
+ =?utf-8?q?NMCcmYeBw7EtO9uzfobhPzKQtswVg+r7e2Fyval2FzXmgKlD++WMVWBr8uV0IliYA?=
+ =?utf-8?q?mssTxBVaVRy/Qd1d3h//Kg1jFtufLe6K4kHbwexZaKeX329ib1WMCTcKElj/tNjOs?=
+ =?utf-8?q?9snsXBJ0YqvHLKKLsLjvFgykbIw3aXekiaJMI8VpzlMl+TwB61Fj2QgW2ddLuagKW?=
+ =?utf-8?q?DDulL00502clldapshPj482hXtBpeYGbAg27XnDL3VnLFhXixN55AxrNeVHwsYFQj?=
+ =?utf-8?q?9NoBGLOTJQDIsRCXM8VwOu/pGDanEJjwCho3eKPLZwbgB4U1752+sWATn0l8odsKK?=
+ =?utf-8?q?I68YUZSN3Pafcon++jbLdumsGjDvk0KWcGBGFkYhfQiCxjaV+UdIbjYZnPDxfSuJp?=
+ =?utf-8?q?9MIb5DXsEBxt3O2BVusOjxEXiV54i8Mnlj8wKepDJpDXfUDMggJPrI01ZGn/1hvei?=
+ =?utf-8?q?3kn4SZ1d0Ogb0M704Y76DmDMBSrDnOuaxE22l/r074CTFj4r8ujhzcoueZcQyZEju?=
+ =?utf-8?q?rxY6VG1zsW25fT/5ARDdwLW1BLTma45qPAI0gsDqbhsEcJG1OMr3xTSfzRD4yO9ww?=
+ =?utf-8?q?IxdloGCST/KFLSzE8?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 365
+
+<div class=3D"___sj378o0 fly5x3f f1l02sjl f113hnb5">&nbsp;</div>
+<div>
+<div class=3D"rps_a27c">
+<div>
+<p aria-hidden=3D"true">&nbsp;</p>
+<table style=3D"font-size: small; font-family: Arial,Helvetica,sans-serif; =
+white-space: normal; word-spacing: 0px; text-transform: none; font-weight: =
+400; color: #222222 !important; font-style: normal; orphans: 2; widows: 2; =
+letter-spacing: normal; background-color: #ffffff; font-variant-ligatures: =
+normal; font-variant-caps: normal; font-variant-numeric: inherit; font-vari=
+ant-east-asian: inherit; font-variant-alternates: inherit; font-stretch: in=
+herit; font-kerning: inherit; font-feature-settings: inherit; text-decorati=
+on-style: initial; text-decoration-color: initial;" role=3D"presentation" b=
+order=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" align=3D"cen=
+ter">
+<tbody>
+<tr>
+<td style=3D"font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif; wh=
+ite-space: normal !important; border-collapse: collapse; margin: 0px;" alig=
+n=3D"center">
+<table style=3D"font-family: Arial,Helvetica,sans-serif; width: 480px; font=
+-stretch: inherit; font-kerning: inherit; font-feature-settings: inherit;" =
+role=3D"presentation" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center">
+<tbody>
+<tr>
+<td style=3D"font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif; wh=
+ite-space: normal !important; border-collapse: collapse; margin: 0px;">
+<table role=3D"presentation" border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif; wh=
+ite-space: normal !important; border-collapse: collapse; margin: 0px;" alig=
+n=3D"center" valign=3D"top">
+<table style=3D"width: 480px;" role=3D"presentation" border=3D"0" cellspaci=
+ng=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif; wh=
+ite-space: normal !important; border-collapse: collapse; margin: 0px;" alig=
+n=3D"center">
+<table role=3D"presentation" border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" bgcolor=3D"#07113e">
+<tbody>
+<tr>
+<td style=3D"font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif; wh=
+ite-space: normal !important; border-collapse: collapse; padding-bottom: 20=
+px; padding-top: 35px; padding-left: 50px; margin: 0px;" align=3D"left"><im=
+g class=3D"x_x_CToWUd" style=3D"vertical-align: baseline; margin: 0px; disp=
+lay: block; border: 0px; padding: 0px;" src=3D"https://image.mail.disneyplu=
+s.com/lib/fe4415707564067f751773/m/1/f3958d35-d5a5-49e4-94b3-6a9e52c683d9.p=
+ng" alt=3D"Promo" width=3D"129" height=3D"69" border=3D"0" data-imagetype=
+=3D"External" /></td>
+</tr>
+<tr>
+<td style=3D"font-size: 30px; font-family: Arial,Helvetica,sans-serif; whit=
+e-space: normal !important; border-collapse: collapse; color: #ffffff !impo=
+rtant; padding-bottom: 35px; padding-left: 50px; margin: 0px; padding-right=
+: 15px;" align=3D"left">Your account is suspended.</td>
+</tr>
+<tr>
+<td style=3D"font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif; wh=
+ite-space: normal !important; border-collapse: collapse; margin: 0px;" alig=
+n=3D"left">
+<table role=3D"presentation" border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" bgcolor=3D"#f0f3fa">
+<tbody>
+<tr>
+<td style=3D"font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif; wh=
+ite-space: normal !important; border-collapse: collapse; margin: 0px; paddi=
+ng: 30px;">
+<table style=3D"border-radius: 10px; border: #ffffff 1px solid;" role=3D"pr=
+esentation" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#=
+ffffff">
+<tbody>
+<tr>
+<td style=3D"font-size: 14px; font-family: Arial,Helvetica,sans-serif; whit=
+e-space: normal !important; border-collapse: collapse; font-weight: bold; c=
+olor: #737487 !important; margin: 0px; line-height: 21px; padding: 20px;">H=
+ello!</td>
+</tr>
+<tr>
+<td style=3D"font-size: 14px; font-family: Arial,Helvetica,sans-serif; whit=
+e-space: normal !important; border-collapse: collapse; font-weight: 500; co=
+lor: #737487 !important; padding-bottom: 20px; padding-left: 20px; margin: =
+0px; line-height: 21px; padding-right: 20px;">We're having trouble with you=
+r billing information.</td>
+</tr>
+<tr>
+<td style=3D"font-size: 14px; font-family: Arial,Helvetica,sans-serif; whit=
+e-space: normal !important; border-collapse: collapse; font-weight: 500; co=
+lor: #737487 !important; padding-bottom: 20px; padding-left: 20px; margin: =
+0px; line-height: 21px; padding-right: 20px;">Would you like to try <a titl=
+e=3D"https://hcbjt1m3.r.ap-south-1.awstrack.me/L0/https:%2F%2Ft.co%2F7uU87i=
+CVzr/1/010901936fd1fef1-1960e0b4-d5d9-4051-8938-4952ee91d8c8-000000/oZSFFa-=
+-ND3F9fxjqLKXXIdku48=3D183" href=3D"http://url2417.petloverschat.com/ls/cli=
+ck?upn=3Du001.v-2BdtII7-2F-2FBNo99f7JHIAgExEC74z1hlhN6X9QU6Q0y9tsbS7vN7Jlme=
+NOhTPcfk4Mup-2FomRCc2yLrgxtuF-2Ft9GAS9eYhrPWfMwPLu2iHxFk09TiJPYU49M0USfFIiA=
+dwo9XMTXrpE2vIirF7wmpSvF3Q8tNJpJTg3uhlYu9H6Vgm6d8kZp5EXmvBA6FXsC0SucBMhXVlr=
+UVsXM-2BiPrdKKA21ZsmcHgoUBb73YOKCwerhwmEu23p5lkQ5uuBa49lVvgpv_fKvoxt542JDYa=
+qgeR2SzDY7s2siCDcUil1Dfvcd8On9GgFYL-2BLFzHnL71O3Wm1sKQm9dExEm-2FHZRPXuSSq4h=
+ttV8dLcpdtWcH-2BV09OGa9nLyNpofuWQH-2FffGDt7FnyikDzS8E-2Fvl68EyxQX-2Fri7-2Bj=
+o4gE5FR-2Bwut5Ar2nRivY9TPsV-2BD22OHPYSxe4XMuBGoeFagdktLGXAfumR6BYYiMg-3D-3D=
+" target=3D"_blank" rel=3D"noopener noreferrer" data-linkindex=3D"0" data-a=
+uth=3D"NotApplicable">paying with your card again</a>?</td>
+</tr>
+<tr>
+<td style=3D"font-size: 14px; font-family: Arial,Helvetica,sans-serif; whit=
+e-space: normal !important; border-collapse: collapse; font-weight: 500; co=
+lor: #737487 !important; padding-bottom: 20px; padding-left: 20px; margin: =
+0px; line-height: 21px; padding-right: 20px;">
+<p>You can also enter a <a title=3D"https://hcbjt1m3.r.ap-south-1.awstrack.=
+me/L0/https:%2F%2Ft.co%2F7uU87iCVzr/1/010901936fd1fef1-1960e0b4-d5d9-4051-8=
+938-4952ee91d8c8-000000/oZSFFa--ND3F9fxjqLKXXIdku48=3D183" href=3D"http://u=
+rl2417.petloverschat.com/ls/click?upn=3Du001.v-2BdtII7-2F-2FBNo99f7JHIAgExE=
+C74z1hlhN6X9QU6Q0y9tsbS7vN7JlmeNOhTPcfk4Mup-2FomRCc2yLrgxtuF-2Ft9GAS9eYhrPW=
+fMwPLu2iHxFk09TiJPYU49M0USfFIiAdwo9XMTXrpE2vIirF7wmpSvF3Q8tNJpJTg3uhlYu9H6V=
+gm6d8kZp5EXmvBA6FXsC0SucBMhXVlrUVsXM-2BiPrdKKA21ZsmcHgoUBb73YOKCwerhwmEu23p=
+5lkQ5uuBa49lV69fv_fKvoxt542JDYaqgeR2SzDY7s2siCDcUil1Dfvcd8On9GgFYL-2BLFzHnL=
+71O3Wm1sKa-2FGHtpr0Y4nTBdwEE7sgou-2FPEvbl-2FdNnFGWwIYul1Py3DzTdvYqnD8L6dTVH=
+lLeg0NpAkF9k5i8BggS-2BilpUwaBH5YkAB-2BhXZn-2F0dTF6SYk0KJSeAuHY1NQaOxr66a6ZE=
+89xdyPsL-2FnvgBF0Wi2UTA-3D-3D" target=3D"_blank" rel=3D"noopener noreferrer=
+" data-linkindex=3D"1" data-auth=3D"NotApplicable">new payment method</a>.<=
+/p>
+<p aria-hidden=3D"true">&nbsp;</p>
+<p>Need help? We're here to help.</p>
+<p>Visit the <a title=3D"https://zalando.be" href=3D"http://url2417.petlove=
+rschat.com/ls/click?upn=3Du001.v-2BdtII7-2F-2FBNo99f7JHIAgNamWnG-2Bfv2Hdai1=
+Q46uiyU-3DTQXT_fKvoxt542JDYaqgeR2SzDY7s2siCDcUil1Dfvcd8On9GgFYL-2BLFzHnL71O=
+3Wm1sKwsBueCAE3RJJcUcI7N7I6SU88hurHJuAa-2FT0Ngcv66DyL8M046HTFZKBZKw-2B2VNBk=
+IOl6CRRrfdwb7uHJMXp1TC1nzgCMUoks2DnStz0GCVqxKRp9coospSkObvmCzppPEEXZfkPTL9F=
+sbH7ZVqSdg-3D-3D" target=3D"_blank" rel=3D"noopener noreferrer" data-linkin=
+dex=3D"2" data-auth=3D"NotApplicable">Help Center or contact</a> us now.</p=
+>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style=3D"font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif; wh=
+ite-space: normal !important; border-collapse: collapse; padding-bottom: 30=
+px; padding-left: 30px; margin: 0px; padding-right: 30px;" bgcolor=3D"#0711=
+3e">
+<table role=3D"presentation" border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" bgcolor=3D"#07113e">
+<tbody>
+<tr>
+<td style=3D"font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif; wh=
+ite-space: normal !important; border-collapse: collapse; padding-bottom: 30=
+px; padding-top: 30px; margin: 0px;" align=3D"center">
+<table style=3D"min-width: 100%;" role=3D"presentation" width=3D"100%" cell=
+spacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif; wh=
+ite-space: normal !important; border-collapse: collapse; margin: 0px;">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center">
+<tbody>
+<tr>
+<td style=3D"font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif; wh=
+ite-space: normal !important; border-collapse: collapse; margin: 0px;" alig=
+n=3D"center">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<img src=3D"https://image.mail.disneyplus.com/lib/fe4415707564067f751773/m/=
+1/ad332f70-9069-48ca-80db-e00cdcb45c48.png" alt=3D"" width=3D"233" height=
+=3D"13" data-imagetype=3D"External" /></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style=3D"font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif; wh=
+ite-space: normal !important; border-collapse: collapse; margin: 0px;">
+<table style=3D"min-width: 100%;" role=3D"presentation" width=3D"100%" cell=
+spacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif; wh=
+ite-space: normal !important; border-collapse: collapse; margin: 0px;">
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"font-size: 11px; font-family: Arial,Helvetica,sans-serif; whit=
+e-space: normal !important; border-collapse: collapse; color: #c0c0c0 !impo=
+rtant; padding-bottom: 20px; margin: 0px; line-height: 16px;" align=3D"left=
+">Merci de ne pas r&eacute;pondre &agrave; cette communication car nous ne =
+pouvons malheureusement pas vous r&eacute;pondre individuellement. Cet e-ma=
+il de service contient des informations essentielles relatives &agrave; vot=
+re compte Disney+ ou &agrave; un achat ou un abonnement &agrave; l&rsquo;un=
+ de nos services. Disney respecte et &oelig;uvre &agrave; prot&eacute;ger l=
+a vie priv&eacute;e de ses utilisateurs. Pour toute question relative au tr=
+aitement et &agrave; l'utilisation de vos donn&eacute;es personnelles, cons=
+ultez les liens suivants<span style=3D"vertical-align: baseline; margin: 0p=
+x; border: 0px; padding: 0px;">&nbsp;</span>R&egrave;gles de Respect de la =
+Vie Priv&eacute;e&nbsp;et<span style=3D"vertical-align: baseline; margin: 0=
+px; border: 0px; padding: 0px;">&nbsp;</span>Droits Donn&eacute;es dans l'U=
+E et au R=E2=80=91U.</td>
+</tr>
+<tr>
+<td style=3D"font-size: 11px; font-family: Arial,Helvetica,sans-serif; whit=
+e-space: normal !important; border-collapse: collapse; color: #c0c0c0 !impo=
+rtant; padding-bottom: 20px; margin: 0px; line-height: 16px;" align=3D"left=
+">Cet e-mail de service a &eacute;t&eacute; envoy&eacute; par : The Walt Di=
+sney Company (Benelux) BV,<span style=3D"vertical-align: baseline; margin: =
+0px; border: 0px; padding: 0px;">&nbsp;</span>PO Box 23658, 1100 ED AMSTERD=
+AM, The Netherlands, Chambre du commerce :<span style=3D"vertical-align: ba=
+seline; margin: 0px; border: 0px; padding: 0px;">&nbsp;</span>34076102.<spa=
+n style=3D"vertical-align: baseline; margin: 0px; border: 0px; padding: 0px=
+;">&nbsp;</span>Ces informations &eacute;taient correctes au moment de l'en=
+voi de cet e-mail.</td>
+</tr>
+<tr>
+<td style=3D"font-size: 11px; font-family: Arial,Helvetica,sans-serif; whit=
+e-space: normal !important; border-collapse: collapse; color: #c0c0c0 !impo=
+rtant; padding-bottom: 20px; margin: 0px; line-height: 16px;" align=3D"left=
+">Conditions G&eacute;n&eacute;rales d&rsquo;Abonnement<span style=3D"verti=
+cal-align: baseline; margin: 0px; border: 0px; padding: 0px;">&nbsp;</span>=
+&ndash;<span style=3D"vertical-align: baseline; margin: 0px; border: 0px; p=
+adding: 0px;">&nbsp;</span>R&egrave;gles de Respect de la Vie Priv&eacute;e=
+<span style=3D"vertical-align: baseline; margin: 0px; border: 0px; padding:=
+ 0px;">&nbsp;</span>&ndash;<span style=3D"vertical-align: baseline; margin:=
+ 0px; border: 0px; padding: 0px;">&nbsp;</span>Modalit&eacute;s relatives a=
+ux cookies<span style=3D"vertical-align: baseline; margin: 0px; border: 0px=
+; padding: 0px;">&nbsp;</span>&ndash;<span style=3D"vertical-align: baselin=
+e; margin: 0px; border: 0px; padding: 0px;">&nbsp;</span>Droits Donn&eacute=
+;es dans l'UE et au R-U</td>
+</tr>
+<tr>
+<td style=3D"font-size: 11px; font-family: Arial,Helvetica,sans-serif; whit=
+e-space: normal !important; border-collapse: collapse; color: #c0c0c0 !impo=
+rtant; margin: 0px; line-height: 16px;" align=3D"left">&copy; 2024 Disney+ =
+et toutes ses entit&eacute;s associ&eacute;es. Tous droits&nbsp;r&eacute;se=
+rv&eacute;s.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<img src=3D"http://url2417.petloverschat.com/wf/open?upn=3Du001.z0wa68HzF9N=
+q0jK6BfRwe1frBA-2BiN8Z2wCSGnkWlgw-2F-2BiyfVrNRCb3Hm-2BHi6u74-2BRCqQoQ1X-2Fq=
+qG6roNNOBMBtUNv1sNFF8Y6c-2FM93w5ojgU-2Bh9ErVBdYBV4tFbzTsmpunI-2FfuDB6AyDVPt=
+5ccHlPhJw0TTzGs8wNNS-2FROADgXnOLtkvT8Pg0HXStJ7McGPbvcWli6HNLWgKpoxR7Gx75A-3=
+D-3D" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"height:1px !i=
+mportant;width:1px !important;border-width:0 !important;margin-top:0 !impor=
+tant;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !im=
+portant;padding-top:0 !important;padding-bottom:0 !important;padding-right:=
+0 !important;padding-left:0 !important;"/>
+

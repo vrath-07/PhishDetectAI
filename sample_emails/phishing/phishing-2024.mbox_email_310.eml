@@ -1,0 +1,253 @@
+Return-Path:
+ bounces+43026573-ce2c-jose=monkey.org@em5311.healthinfo.trinity-health.org
+Delivered-To: jose@monkey.org
+X-FDA: 82698050232.08.CDDA4AE
+Received: from o1.ptr2101.healthinfo.trinity-health.org
+ (o1.ptr2101.healthinfo.trinity-health.org [159.183.66.187])	by
+ imf12.b.hostedemail.com (Postfix) with ESMTP id 652A2A0003	for
+ <jose@monkey.org>; Mon, 21 Oct 2024 15:51:50 +0000 (UTC)
+Authentication-Results: imf12.b.hostedemail.com;	dkim=pass
+ header.d=healthinfo.trinity-health.org header.s=s1 header.b=iNxMFjJa;
+	spf=pass (imf12.b.hostedemail.com: domain of
+ "bounces+43026573-ce2c-jose=monkey.org@em5311.healthinfo.trinity-health.org"
+ designates 159.183.66.187 as permitted sender) =?utf-8?q?smtp=2Emailfrom=3D?=
+ =?utf-8?q?=22bounces+43026573-ce2c-jose=3Dmonkey=2Eorg=40em5311=2Ehealthinf?=
+ =?utf-8?q?o=2Etrinity-health=2Eorg=22=3B?=	dmarc=pass (policy=reject)
+ header.from=trinity-health.org
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1729525828;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:list-unsubscribe:dkim-signature;
+	bh=tl7rdMhoiQvZmZC2RWrFnCOdmpCZMbK8gtD3OVN/hdQ=;
+	b=uswpWUoeUkCVMd3sr2VxR0bU1U5ZYqyxXNAusPxaCBM7TicEjo4waTug+cSMjGMRiqnnmS
+	VJ73a/PHAsoh4GQC3WyTjFbUiMCdlDyXV8rJGxZD6gbFhy2S1aYVIGPesZ5A4rrGeyXlFi
+	iWvSGN5WTW+jjs6NPi95hKQywwSgjNc=
+ARC-Authentication-Results: i=1;	imf12.b.hostedemail.com;	dkim=pass
+ header.d=healthinfo.trinity-health.org header.s=s1 header.b=iNxMFjJa;
+	spf=pass (imf12.b.hostedemail.com: domain of
+ "bounces+43026573-ce2c-jose=monkey.org@em5311.healthinfo.trinity-health.org"
+ designates 159.183.66.187 as permitted sender) =?utf-8?q?smtp=2Emailfrom=3D?=
+ =?utf-8?q?=22bounces+43026573-ce2c-jose=3Dmonkey=2Eorg=40em5311=2Ehealthinf?=
+ =?utf-8?q?o=2Etrinity-health=2Eorg=22=3B?=	dmarc=pass (policy=reject)
+ header.from=trinity-health.org
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1729525828; a=rsa-sha256;
+	cv=none;
+	b=0ShCtlKUYt13sz9rCEK1AhqSFKkNtdWow4zbICjHDkBFYGZX3t2LQa89c9IJMqad+TOdYS
+	wQEOtyalpYF+NCaUaX/aIF4pgQVxJ+jYakuB5WX24VWVRYVt2S3cAOcLNGpK8oB4cp+Ag1
+	fF97xDl3hdHj+tn3zy7M52F9HkQULdY=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=healthinfo.trinity-health.org;
+	h=from:subject:cc:content-type:mime-version:to:list-unsubscribe:
+	list-unsubscribe-post:cc:content-type:from:subject:to;	s=s1;
+ bh=tl7rdMhoiQvZmZC2RWrFnCOdmpCZMbK8gtD3OVN/hdQ=;
+	b=iNxMFjJaE6/bmI5V/6WORYZ8gvRQyVodNJeoxB0UPmTiUf8s3FTMT+VhvhBOIFLHWvtq
+	IuPX+i+YpAqqSTYY4ubvfpnA+zEbCB0PqprjaQa3upWdkgY0zmHxYGS+5MoFe6tbWg1XZs
+	d4d0A50rICepte5nl62RjsNR9HbL8DtOC0HaRohGaYqizMeEpvlyEFHLIY220CsfjdiXNG
+	NSm6/MmDTRPNGQUCAfsBDxv9wYpiLFt74Mow5kXBEarCG009iYrHkUIltgIWOpILBoTU0I
+	48urErtDmQr+HelIH2/r8m7wpeul/WvBypxnv8NXPZEaLHdmnbq7Gwtn7gy8yDdw==
+Received: by recvd-56655f9dd-flg44 with SMTP id
+ recvd-56655f9dd-flg44-1-671678A4-27	2024-10-21 15:52:04.863749408 +0000 UTC
+ m=+3362138.378210882
+Received: from UTHD00SMAGP0505.trinity-health.org (unknown)
+	by geopod-ismtpd-17 (SG) with ESMTP id aeUdNCVHTWyWDYiSbXZaQg
+	for <jose@monkey.org>; Mon, 21 Oct 2024 15:52:04.798 +0000 (UTC)
+Received: from UTHDATAPEPDBP1 ([162.3.90.2]) by
+ UTHD00SMAGP0505.trinity-health.org with Microsoft SMTPSVC(10.0.20348.1);	
+ Mon, 21 Oct 2024 11:52:04 -0400
+Date: Mon, 21 Oct 2024 15:52:04 +0000 (UTC)
+From: DONOTREPLY@TRINITY-HEALTH.ORG
+Subject: New message
+CC: 
+Content-type: multipart/alternative; boundary="IoW03Cdkbh3Bldj309cmddf83"
+MIME-Version: 1.0
+Message-ID: <UTHD00SMAGP05059oRd00012df8@UTHD00SMAGP0505.trinity-health.org>
+X-OriginalArrivalTime:
+ 21 Oct 2024 15:52:04.0705 (UTC) FILETIME=[2CF67D10:01DB23D1]
+X-SG-EID:  u001./Y8BaNrHaUY/yYtFC1q4gOm44a5PSbUBLztNOENSH3AR4Z2QijBLFaK16
+ =?utf-8?q?G49QQljry/MrQjx2jnEjN+WHikISwRuUE8r6xmx?==?utf-8?q?L7QYjwC66MX13s?=
+ =?utf-8?q?3yXEagHv+Lbg4DV5xSGePqsuEimObF+ThFyWQ4wGZtZZQd4yIJuP7HtWiF6hQjoV/?=
+ =?utf-8?q?GkK1OkKikaqfiksQBtCSa7wf6/p2i37OQuZm2d?=Q==
+To: jose@monkey.org
+X-Entity-ID: u001.+dBUbEFa+JH1d4aC2bd5JQ==
+List-Unsubscribe: 
+ <mailto:unsubscribe@em5311.healthinfo.trinity-health.org?subje=?utf-8?q?ct?=
+ =?utf-8?q?=3Dhttp=3A//link=2Ehealthinfo=2Etrinity-health=2Eorg/mt/u/u001=2E?=
+ =?utf-8?q?QkwdfCf5Z0gj0ETs51GYGDxfdwlQ4Tjmmyf1Tl7L600/4as/u001=2EZ7Lxe98a/u?=
+ =?utf-8?q?001=2EyI4Mq96UEEbHQQvcCOteBQ7HuC2GyL5Xf2WiQwiSiveDnUTUorC2FBk4r1a?=
+ =?utf-8?q?uKB5X21cy3RlKNgz9NeNleCD5Bp6mb2Voer3TIsGKuTopwvOPMkDz6XsWCtAAE3wd?=
+ =?utf-8?q?Q2Ds7LPYkydnkM-2FgYmmWyz2Sh3mTINsME1TA2AJz-2BMA9dy71tBUHrZWANwICz?=
+ =?utf-8?q?n-2B9RB4JGCGJK8dZ6BgyVza1a9RCKw-3D-3D/u001=2EKiAPFhm=5F=3E=2C=3Ch?=
+ =?utf-8?q?ttps=3A//u43026573=2Ect=2Esendgrid=2Enet/lu/unsubscribe=3Foc=3Du0?=
+ =?utf-8?q?01=2EsTAqnhv20LJUNjqnnMKLg3vR7RoBl-PlYW8cn0RAv6NbCD4aRt2AiMPeAzHm?=
+ =?utf-8?q?8fT7WexKhczd1dzdv3H0vA=5F=5FR5ZCLeeIXf8U2vG4ugP0VM4IeaVJOJy=5FvnS?=
+ =?utf-8?q?lI=5FdqMqxD1SncB3s-DTBwckgmdOOPNziar3p=5FxWr8TdQTlfj2pCHnIvL2-UbO?=
+ =?utf-8?q?T37tVkkNdjqt=5F=5FJouaF2hnT13xL0MtipvaikRRdiTw-SJjsRvrxA9lNTI8IEy?=
+ =?utf-8?q?ZORKDAfVBDXgRCk4v8ONLkqZZh=5FarQRKVcdrcAYjiFm-Z1cPx-2Kkblh5MJg0-C?=
+ =?utf-8?q?bHeWmGCfJklla8R-75=5Fu5aUDHWJUTgV4VEylfpjynlK0U=5F03mhCqHpKMo-aGJ?=
+ =?utf-8?q?imQ=5FmsTPCbpTWYsB3muh9Ql4y5dk7kCa?=Dx2Psfpgw>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-Spam-Status: No, score=0.63
+X-Stat-Signature: 3647tm3poukd3qry5xge5nnrqbx6c9gw
+X-Rspamd-Server: rspam12
+X-Rspamd-Queue-Id: 652A2A0003
+X-Rspam-User: 
+X-HE-Tag: 1729525910-722405
+X-HE-Meta: =?utf-8?q?U2FsdGVkX189pyxtPYKFD7hAWN4mWCfvSTnJGuaEpTxS+MH2t576oB3?=
+ =?utf-8?q?36TG+ZhtibL+axCH3Fk9eku+E8D4j6X3agXQhvpqSMZWLZg9tQGLd8S08rFE7fgFr?=
+ =?utf-8?q?3truaQRh9A7d/iJ/5KfoDNZ/vkDhZ7nvQ21aCrljmpGF4d10ZwiOTYavwtDS6VJfH?=
+ =?utf-8?q?iuzcbEJkoqdUwjYNGiSnhTmkyWQmFBjYjC9lLwsF2z9dGWdIr2dU5VNB+HWSS946+?=
+ =?utf-8?q?WwGvC6zF2uMIMsGq04E3ZXbzS009zxutrymWmpXEHZBY1JgvHKqUhc8RFWjL/mwkr?=
+ =?utf-8?q?IEVf+qB7XBpJ4cm30b4648dMUMeoO4/44alRI/Q8x5+nLTuplNJJI6w0uJlMmJbg2?=
+ =?utf-8?q?X//PUmn8+Kx3AeD+fOiBjuHybgZ1I64v91p0F3rrhpIy003991Dx/aXNVU74ql1Ds?=
+ =?utf-8?q?+mTtO+DwUM7GRzGla1j0OkUNPlnLiT+r0A96LvTadtSDg/Lqd9SL3DFEBgDsV7Hmi?=
+ =?utf-8?q?ZGiqVWXZ1EkqseRJruU9/O9ZlEvapqiYdRmI9OWaxM2M1bCFW2rf6bno+fCvVIHCI?=
+ =?utf-8?q?SgGikgJDoj0EOHO+PP2jUia6rQ9g0AGiFw6uS21uOnzqMc/cxD5j2SBOLHFlt7WVX?=
+ =?utf-8?q?pnnXkDRV8EPRFoQsc+l+S8QMpJpxlp8tyModGzuklnXT/0a6QX8aXU8HSX0thXZdq?=
+ =?utf-8?q?OsIbPI9rhbK/64YrCmB3T8pOtLntuQywvKgq+Q1zJSYFjfyb0LFXL0Q4TLKTW6rbo?=
+ =?utf-8?q?7Ck2GQWt3By67Tt7mUwYh40viSQmcfLHQz/RoXjMrCWGaMgTrmh6Fzu3mlM70SsW4?=
+ =?utf-8?q?6+p7sxWTfwOBkyM4EYUce9axncgfptEFMjb9BP0SwFhmgr7DBnL++m7rrt793chL8?=
+ =?utf-8?q?7zarcgsvRwNmXp0imoHq9M7gPjwgjj4SocrYnpVc0jbt+DB9AYkJENzJqYD4N36jd?=
+ =?utf-8?q?4yxv8CX0/zgnOgtAcFJ68Z_5ITZPiDHp2xAwfS5471pHuy8w7J9BurXKALBJ0Auxj?=
+ =?utf-8?q?eEYJq1DwvFdt5Y6yEG+zq5PuAO/LwU6oqCAhMaZv368ZbFMc+x23qJSopZ8LLS96e?=
+ =?utf-8?q?D8HdvpPdd/MeZl3UCjbfXCnlWJJhk5Mp4LCGAUMtv3RgVLde3hflX1BVccovovYHt?=
+ =?utf-8?q?jKihYdY17fpIu4LrZy9QEH9soXW6I7MwTeY5iPZKWLyTCBFTVQxX+V4Bysr63S9Ja?=
+ =?utf-8?q?5gVdQSmysdzBtQVhKSl2cfMdbKYT4Hh7XnXqFitiv9jbSD7x6tHzhQmZb9GRTY1kj?=
+ =?utf-8?q?9QauaSR69XCYFgVSGUlgVfoxJ7ZDPKNjnojTrFz13TpmUJtE68X8JbWnx+bVJYkyI?=
+ =?utf-8?q?HnU+aGokQFU+uF/FymDQLWLgY3xbBnwH41M2Kt42mZUCq1SkBvFRAXPYPH5BuyLJZ?=
+ =?utf-8?q?a0WIPPHz0prtGrZM1LpRUKYP4q6+HOd4azHbrXCdWwvZ+dsa6MyEowL/u5oB9h2fe?=
+ =?utf-8?q?bbkhJQbo6f8oSbgTbMbBI6t91pDMHgzjeDv5sv5XguYjOTCqW4rBw6+13WSlYRg7R?=
+ =?utf-8?q?PbclBLf/jZHW+HfhAMokEFi+8xu2xLH7CvU8nElRC2GpLqRT2cOIOFiuMjlRamTSm?=
+ =?utf-8?q?6atmHjqocjBMfjAqgAHUUyPAJJ76VweUYpr1JAmJlsrrvM2Ohvv61f/yXO6Hdbxfh?=
+ =?utf-8?q?3nOkLRgdxLsHciyU7umu4txcLDy1u3DnS7D8+G3rJURUKjQWLkJkEvdg/Ztnwhfm2?=
+ =?utf-8?q?+D5GyI3H8fkMQ0jl6zSjHKPDkZrqIpjB6tUBAvmS5OrnmKfnG6rcFTAwSUTaDX6J/?=
+ =?utf-8?q?845yLwM4QaLuyvmb6rnMd4jqgxxeGLWZGJEoU61YCmCjtnc7JfOpKLJUQKIOJUmAB?=
+ =?utf-8?q?lVTwbv2QNyWBaVJie3/Yi4GILG0Y734Tii58N4eG2WRAEcJbgF8rQRlmCFKEQYJmL?=
+ =?utf-8?q?lBDUW20nTeRc2t9hIgN3K3vEPVh/oEYay3Zvk7TAyVa3b_IE65acMvkQexA/01arX?=
+ =?utf-8?q?UJyHx4LNZjANTzvEfjxQ6AND2XzXsR3EpetwqqY9oPD+hTc8ehUm/K8T9upp6ebMl?=
+ =?utf-8?q?C1sbp3lGcd4bfoT9lwll8xQalg8ZssmT6ZFmEmngMGBKzPXh5ijikZAmds7QLvpqn?=
+ =?utf-8?q?MYRLtSInIFYBzXe0/mpu0M2SUn4F7sY3z12Ab0GabNS?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 310
+
+--IoW03Cdkbh3Bldj309cmddf83
+Content-type: text/plain; charset=us-ascii
+Content-transfer-encoding: 7bit
+
+Hello Jose Nazario, 
+
+There is a new message for Dominic in MyChart. Log in and access Dominic's account to read their message on the Messages page.
+--IoW03Cdkbh3Bldj309cmddf83
+Content-type: text/html; charset=us-ascii
+Content-transfer-encoding: 7bit
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>New notification from MyChart!</title>
+<!--[if gte mso 9]><xml xmlns:o="urn:schemas-microsoft-com:office:office"><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]--></head>
+<body bgcolor="#d6d6d6" style="width: 100%;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;margin: 0;padding: 0;"><div style="background-color: #d6d6d6;">
+<!--[if gte mso 9]><v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t"><v:fill type="tile" color="#722282"/></v:background><![endif]-->
+<table bgcolor="#722282" cellpadding="0" cellspacing="0" border="0" width="100%" id="backgroundTable" style="width: 100% !important;margin: 0;padding: 0;line-height: 100% !important;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+<tbody><tr><td valign="top" align="center" bgcolor="#722282"> 
+<table><tr><td align="center" height="5" style="height: 5px;margin-left: 10px;margin-right: 10px; font-size: 10px; line-height: 10px;"></td></tr></table>
+	<table width="550" bgcolor="#efefef" style="margin-left: 10px;margin-right: 10px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" cellpadding="0" cellspacing="0" border="0" align="center">
+<tbody><tr><td valign="top" align="center" style="background-color:#FFFFFF;">
+<table width="550" height="94" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" cellpadding="0" cellspacing="0" border="0" align="center">
+<tbody><tr><td valign="baseline" align="center"><table><tbody><tr><td height="10" style="font-size: 10px; line-height: 10px;">&nbsp;</td></tr></tbody></table>
+<img src="https://mychart.trinity-health.org/MyChart/EN-US/images/loginlogo.png" alt="MyChart" title="MyChart" width="400" height="74" style="display: inline;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic; font:Calibri,Arial,sans-serif; font-size:30px;color:#000000;">
+<!--[if mso]></td><td valign="baseline" align="center"><![endif]-->
+</td></tr></tbody></table>
+<table><tr><td align="center" height="5" style="height: 5px;margin-left: 10px;margin-right: 10px; font-size: 10px; line-height: 10px;"></td></tr></table>
+</td></tr><tr><td valign="top" align="center"><table width="550" bgcolor="#FFFFFF" style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" cellpadding="0" cellspacing="0" border="0" align="center">
+<tbody><tr style="padding-top:20px;padding-bottom:20px;"><td valign="center" align="left" style="padding-left:2em; padding-right:2em; font-size:16px; color:#000000">
+    <p style="line-height: 1.2em; margin: 0.2em 0 0 0;font-family: Calibri,Arial,sans-serif;">
+
+Hello Jose Nazario, <br /><br /> 
+
+There is a new message for Dominic in MyChart. Log in and access Dominic's account to read their message on the Messages page. </p> 
+
+   </td>
+</tr>
+<tr>
+  <td valign="center"align="left"style="padding-bottom:20px;">
+   <div align="center"valign="center">
+     <a href="http://link.healthinfo.trinity-health.org/ls/click?upn=u001.pbzr77o-2B0aF3DDO5yGaPwOqyrDrbxaECGl-2Fcu708tXjVR6KJWNrl52tejhy90xGfC0HLceZP8S5dLPVUYLHncg-3D-3D5Zyp_fKvoxt542JDYaqgeR2SzDY7s2siCDcUil1Dfvcd8On-2BrA31-2Bt0ZbN7ZweG5iL3fWniI0RLS4s3b0cbSRs1p7N0USQAdRvNSBqj85Z4crYSxpxokRyboYrvWaM1COHSqdTAxNcy8qICKbUpxg0f-2FQ8xiUApgQMzmEnqUOuCxaeLE-2Fd8TgBZwchoNHMcgwA4k8KnCqZrWRH5Jyf6uZBUpTcA-3D-3D" aria-label="Log in to MyChart" style="text-decoration:none;">
+       <img height="128"width=""src="https://mychart.trinity-health.org/MyChart/htmlticklerimages/message.png"alt="Messages" style="border:none; display: inline;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic; margin-top:.25em;">
+     </a>
+     <br/>
+     <br/>
+     <!--[if mso]>
+       <v:roundrect 
+xmlns:w="urn:schemas-microsoft-com:office:word" href="https://mychart.trinity-health.org/MyChart/Home" style="height:40px ;v-text-anchor:middle;width:200px;" arcsize="10%" stroke="f" fillcolor="#A5D867;">
+       <w:anchorlock/>
+       <center style="color:#ffffff;font-family:Calibri,Arial,sans-serif;font-size:18px;font-weight:bold;">Log in to MyChart 
+</center>
+       </v:roundrect>
+     <![endif]-->
+     <![if !mso]>
+     <table border="0"cellspacing="0"cellpadding="0"align="center">
+       <tr>
+         <td align="center"width="200" height="40" bgcolor="#A5D867"style="-webkit-border-radius: 5px;-moz-border-radius: 5px; border-radius: 5px; color: #ffffff; margin: auto;">
+           <a href="http://link.healthinfo.trinity-health.org/ls/click?upn=u001.pbzr77o-2B0aF3DDO5yGaPwOqyrDrbxaECGl-2Fcu708tXjVR6KJWNrl52tejhy90xGfMz45cp6vMvLoxF5NKvBPww-3D-3DWGkz_fKvoxt542JDYaqgeR2SzDY7s2siCDcUil1Dfvcd8On-2BrA31-2Bt0ZbN7ZweG5iL3fWuub5trbiNv15hMQBXgYjmCB1VgeD1ONWBuDtUCefb4gLoikpNLkVurXKtWyjKUyNWZxo4U89P8qYd-2B0wWa53JHBJMW-2BnZ3Wulp-2BLstXWQnZkYATf75byZi9XsT7pTUHBJ8Z78KJrNcXcRx5NrS-2FhMQ-3D-3D" style="font-size: 16px; font-weight: bold; font-family:Calibri,Arial,sans-serif;text-decoration: none; line-height: 40px; width: 100%; display: inline-block">
+             <span style="color: #ffffff;">Log in to MyChart
+</span>
+           </a>
+         </td>
+       </tr>
+     </table>
+        <![endif]>
+   </div>
+  </td>
+</tr>
+<tr>
+<tr>
+  <td valign="center"align="center" style="padding-left:2em; padding-right:2em; font-size:16px; color:#767676">
+   <p style="margin: .2em 0;font-family:Calibri,Arial,sans-serif;"></p>
+  </td>
+</tr>  
+<td align="center">
+<tr>
+  <td align="center"> 
+</td></tr></tbody></table><table width="530" style="margin-left: 10px;margin-right: 10px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;" cellpadding="0" cellspacing="0" border="0" align="center">
+	<tbody>
+		<tr align>
+			<td align="center" colSpan="2" style="FONT-FAMILY: Calibri,Arial,sans-serif; color:#000000;">
+				<table><tbody><tr><td height="3" style="font-size: 3px; line-height: 3px;">&nbsp;</td></tr></tbody></table>
+				MyChart is available on the go!
+				<table><tbody><tr><td height="3" style="font-size: 3px; line-height: 3px;">&nbsp;</td></tr></tbody></table>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" align="right">
+				<a target="_blank" href="http://link.healthinfo.trinity-health.org/ls/click?upn=u001.pbzr77o-2B0aF3DDO5yGaPwKo75lhH53g-2Bh4QCYH4ln1Dsz86C0wQXxPJiKGCI6tJNMXzIk3cLTMLbBqYuozDpig-3D-3DxoOm_fKvoxt542JDYaqgeR2SzDY7s2siCDcUil1Dfvcd8On-2BrA31-2Bt0ZbN7ZweG5iL3fWEZCtiAJb8kjXQdF9YVq70vRP7bxvBkkBqUu-2BoBBg-2FHU8knASDOZWXwV8Ew6kBV3shuIP81PAUJTP6BAvzlUn2hN2BsPIdTDXEaga24RMPEa0SOb5VaS28N11X72XwhSmtWMN1MQ90sRKVjjTYRrhTg-3D-3D"> 
+					<img src="https://mychart.trinity-health.org/MyChart//en-US/images/badge_apple.png" alt="Available on the App Store" title="Available on the App Store" width="133" height="45" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;display: block;border: 0;">
+				</a>
+			</td>
+			<td valign="top" align="left" style="padding:0 0 0 .25em;">
+				<a target="_blank" href="http://link.healthinfo.trinity-health.org/ls/click?upn=u001.pbzr77o-2B0aF3DDO5yGaPwJwrOAwQWyAdXUN3APD4Y6j6db2pUoQVmH7uojhAA9fRpNvo50m71PrjOeRJG8JzfYtrILkF8CTa0cDBR-2BSUJ9U-3DRgTt_fKvoxt542JDYaqgeR2SzDY7s2siCDcUil1Dfvcd8On-2BrA31-2Bt0ZbN7ZweG5iL3fWFwKLvR78l096-2FsJV99wAmJf0gsjRVLQ0nrWabT6itDafFNSM7n9r-2BrSAYKdu51Om94VLUy0XB5neX8MN2TgVLHNAkq9oTRTWZnXOAV6C0FD9jjhGknTFGqVIXDjpM-2Bj7ZacTIaQsCzgPJmI0UKQlGQ-3D-3D">
+					<img src="https://mychart.trinity-health.org/MyChart//en-US/images/badge_android.png" alt="Android app on Google Play" title="Android app on Google Play" width="129" height="45" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;display: block;border: 0;">
+				</a>
+			</td>
+		</tr>
+	<tr>
+	<td height="15">
+	</td>
+	<td>
+	</td>
+	</tr>
+	</tbody>
+</table></td></tr></td></td></tbody></table><table width="550">
+	<tr>
+		<td style="margin: 0.2em 0;font-family: Calibri,Arial,sans-serif;color:#202020;text-align: center; font-size:11px;">To change what notifications you receive and how you receive them,<br /><a target="_blank" href="http://link.healthinfo.trinity-health.org/ls/click?upn=u001.pbzr77o-2B0aF3DDO5yGaPwOqyrDrbxaECGl-2Fcu708tXjVR6KJWNrl52tejhy90xGfX92zBOmtkk1bLTdVXhNmCDzY8fo4AzFObNn8TpQ3KVAwPvZ8yORPPOdEzD1ppa8WJegP_fKvoxt542JDYaqgeR2SzDY7s2siCDcUil1Dfvcd8On-2BrA31-2Bt0ZbN7ZweG5iL3fWkuvMEAanlqyLB8WSfwZcgbP-2Fw5NhEBDNMWJbjXTL8w2GzIfRLyoUold5JbV8Uv8cQoJs9h5Fla69u13HnhLUaJULL8iGHopNYV2Nam3jOXjXbrlgCXngWANbBulCdXbpgW7UM0CTY5ASpy0et6Y-2BPQ-3D-3D" style="color:#202020;">log in to MyChart</a> and choose Communication Preferences from the menu.<br /> 
+		</td>
+	</tr>
+</table>
+<table><tr><td align="center" height="5" style="height: 5px;margin-left: 10px;margin-right: 10px; font-size: 10px; line-height: 10px;"></td></tr></table>
+	<table><tr><td align="center" height="5" style="height: 5px;margin-left: 10px;margin-right: 10px; font-size: 10px; line-height: 10px;"></td></tr></table>
+</td></tr></tbody></table></div><p>If you want to unsubscribe and stop receiving these emails <a href="http://link.healthinfo.trinity-health.org/wf/unsubscribe?upn=u001.z0wa68HzF9Nq0jK6BfRwe1frBA-2BiN8Z2wCSGnkWlgw-2BEvG1bBXqxbPa3slqpkzeWT0sgmrv4-2BPmwNigOq88O6CqhUm4O4VwvsKtEsiYwWxIQ3AW8y2COyIJGJeBKyhe-2FyaMwOZxbXzoO2RhsR3otiwTEf-2Bx1f0Zvf3dbN6N-2BQYP5AD82EuegdHBVD428SHLLOET82Bw5-2Fso-2F6OhCKwRyZg-3D-3D"> click&nbsp;here </a>.</p>
+<img src="http://link.healthinfo.trinity-health.org/wf/open?upn=u001.z0wa68HzF9Nq0jK6BfRwe1frBA-2BiN8Z2wCSGnkWlgw-2BEvG1bBXqxbPa3slqpkzeWRZVnmJBo0gc-2FPgVkf-2Bwfe2-2FnSLrY491lNh81bvBtqaw62OkPH-2FZle1CopftRQ-2BL8-2BLMMQGPIOdPa1WokiepQWDHJ3Dd8di0VsXRwxzTwKBWQOFyuy5Ppl-2F-2B8Y3fosPvd8aG7r-2FDKLGaVzPdvwTQ3zQ-3D-3D" alt="" width="1" height="1" border="0" style="height:1px !important;width:1px !important;border-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !important;"/></body></html>
+
+--IoW03Cdkbh3Bldj309cmddf83--
+

@@ -1,0 +1,172 @@
+Return-Path: bounce+7b1dd4.741904-jose=monkey.org@suryamasterbatches.in
+Delivered-To: jose@monkey.org
+X-FDA: 81942906066.33.13D6924
+Received: from m42-12.mailgun.net (m42-12.mailgun.net [69.72.42.12])
+	by imf13.b.hostedemail.com (Postfix) with ESMTP id 267F412001F
+	for <jose@monkey.org>; Wed, 27 Mar 2024 13:31:31 +0000 (UTC)
+Authentication-Results: imf13.b.hostedemail.com;	dkim=pass
+ header.d=suryamasterbatches.in header.s=mailo header.b=E6tG8pVn;	spf=pass
+ (imf13.b.hostedemail.com: domain of
+ "bounce+7b1dd4.741904-jose=monkey.org@suryamasterbatches.in" designates
+ 69.72.42.12 as permitted sender)
+ smtp.mailfrom="bounce+7b1dd4.741904-jose=monkey.org@suryamasterbatches.in";
+	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1711546292; a=rsa-sha256;
+	cv=none;
+	b=2H5gbPX6P8yHsQ93GeIV7LN/ZKxPZs/idgYjJCLSzKry71gmpcLuLIFazeCrd79+sckoiY
+	ko3oBo6REbEbduWTjlBE67IyB2RAwxvJARt8IYX1UNsh3v9+VKEOKZsA+AcEVRnUM6D7PI
+	L0kZpbjTfCM15+KGU4WmtmGlDKYPSAc=
+ARC-Authentication-Results: i=1;	imf13.b.hostedemail.com;	dkim=pass
+ header.d=suryamasterbatches.in header.s=mailo header.b=E6tG8pVn;	spf=pass
+ (imf13.b.hostedemail.com: domain of
+ "bounce+7b1dd4.741904-jose=monkey.org@suryamasterbatches.in" designates
+ 69.72.42.12 as permitted sender)
+ smtp.mailfrom="bounce+7b1dd4.741904-jose=monkey.org@suryamasterbatches.in";
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1711546292;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=C/3bld3AwVAqMlkvVTUhHoGS585VngeIgnqiGgNICp8=;
+	b=Kb8Fh9Eq78Pr8zetqx+peJt10DuNUoCWP7CFNg25ZwsJPI43+eYRIBWsm5LipDBNQUq+S5
+	CKemePuQIBSP+uq+H5974TBwRZHAShg8DuJlabsuWeWG+XzcfIkqNlzg24HWS8Jmq9Ynar
+	oct/sg74ioR45xf/TDnTFM35kYo4xFU=
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=suryamasterbatches.in;
+ q=dns/txt; s=mailo; t=1711546291; x=1711553491; h=Content-Transfer-Encoding:
+ Content-Type: MIME-Version: Message-ID: Date: Subject: Subject: To: To: From:
+ From: Sender: Sender; bh=C/3bld3AwVAqMlkvVTUhHoGS585VngeIgnqiGgNICp8=; 
+ =?utf-8?q?b=3DE6tG8pVnAsx60DfjtWBNixaWW2aO58ZhXMgiOhdkaD1zve80DttnttyS4xTJX?=
+ =?utf-8?q?TCOwMuOcqINl9YpeJykiHP8Ph8H38CnKip8Khnm4WP7jefOUWaQDOaAavIxhoxUxL?=
+ =?utf-8?q?F/8zHEwxlLCq5TOJiWazkRTGaSAIou0z5enLB/7wO6vys=3D?=
+X-Mailgun-Sending-Ip: 69.72.42.12
+X-Mailgun-Sid: WyJmZWQwOSIsImpvc2VAbW9ua2V5Lm9yZyIsIjc0MTkwNCJd
+Received: from suryamasterbatches.in (requestlens.com [192.198.94.35]) by
+ bdb8bef97aa2 with SMTP id 66041fb3bb1dfdb5f53746ba (version=TLS1.2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256); Wed, 27 Mar 2024 13:31:30 GMT
+Sender: postmaster@suryamasterbatches.in
+From: monkey.org IT <postmaster@suryamasterbatches.in>
+To: jose@monkey.org
+Subject: Important Notification | Review Now 
+Date: 27 Mar 2024 13:34:25 -0700
+Message-ID: <20240327133424.BC6AFE011422F4C7@suryamasterbatches.in>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam01
+X-Rspam-User: 
+X-Spam-Status: No, score=8.25
+X-Stat-Signature: pjjm3st7kpfnz66s19k3nyn8suyn1ah4
+X-Rspamd-Queue-Id: 267F412001F
+X-HE-Tag: 1711546291-949540
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/bq0WNm+m2YimlRixi378RkMuppj9fVz7ijKMoZ8eG55W?=
+ =?utf-8?q?JFf5RzfHPRqcDtD3rplrNdt1rXEvUr/jcXCia0XoomcSmgWGTEd+I4n8SpOgAo0D1?=
+ =?utf-8?q?x+FzJuSaESzpm+KoZoM1YdzYjEgBdYSAPcGV1iGOvw14QVYodYp92CJXJ1aCqAuCx?=
+ =?utf-8?q?sX+1m97Eg8e2E9fY6SVYm41mQyMlZIm3jfQdTFbblzTuQlbjAjde+bIKI+KQ6qQIi?=
+ =?utf-8?q?oJnGcKPk0xFCuMAdxnpnJzOvF7dfZwKcvNWYPBwIj/wj1pUOBL57O0ljo7jLSBD96?=
+ =?utf-8?q?74dgLKnoNSGlpKgrGpds6cpVLcVGQ+f0N1FBWVNVOstydCROMUtyA21BokgJmb48t?=
+ =?utf-8?q?cdSopdt87yvrW4JnE9o2NgUlYFuSs9dYp+6UQme8RjZINeMo2Npic6P09YOa8L/1p?=
+ =?utf-8?q?4ILw0+Q/oubslETDV3QG/UnAjIBNsHy4Mr1zVx2F16MFCee6dwARODPMvgUYpyR+X?=
+ =?utf-8?q?ZD8TVg4P9p1eAy524YIn/blW1LWQr+jQb7BOZzrh8YxDNSBwmhUeksNVWFFjHBTKm?=
+ =?utf-8?q?MH53mnUPZ+KbwsBJmiI/PimEulj2V9/S0kERMalCG55FdX3KQExoDIP1FdXOWdn/k?=
+ =?utf-8?q?18y674bpNx4=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 85
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.19003"></HEAD>
+<body style=3D"MARGIN: 0.5em">
+<DIV class=3DrcmBody>
+<DIV style=3D'FONT-SIZE: 14px; FONT-FAMILY: "segoe ui","segoe wp",tahoma,ar=
+ial,sans-serif,serif,emojifont; WHITE-SPACE: normal; WORD-SPACING: 0px; TEX=
+T-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: norm=
+al; TEXT-ALIGN: center; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACK=
+GROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px' align=3Dcenter><FONT size=
+=3D7><FONT style=3D"VERTICAL-ALIGN: inherit"><FONT style=3D"VERTICAL-ALIGN:=
+ inherit" color=3D#0000ff></FONT></FONT></FONT>&nbsp;</DIV>
+<DIV style=3D'FONT-SIZE: 14px; FONT-FAMILY: "segoe ui","segoe wp",tahoma,ar=
+ial,sans-serif,serif,emojifont; WHITE-SPACE: normal; WORD-SPACING: 0px; TEX=
+T-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); FONT-STYLE: normal;=
+ TEXT-ALIGN: center; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGRO=
+UND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px' align=3Dcenter>&nbsp;</DIV>
+<DIV style=3D'FONT-SIZE: 14px; FONT-FAMILY: "segoe ui","segoe wp",tahoma,ar=
+ial,sans-serif,serif,emojifont; WHITE-SPACE: normal; WORD-SPACING: 0px; TEX=
+T-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: norm=
+al; TEXT-ALIGN: center; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACK=
+GROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px' align=3Dcenter><FONT styl=
+e=3D"VERTICAL-ALIGN: inherit; COLOR: rgb(0,0,0)"><FONT style=3D"VERTICAL-AL=
+IGN: inherit">User:&nbsp;</FONT></FONT>
+<FONT color=3D#000000> </FONT><SPAN style=3D"FONT-WEIGHT: bold">jose</SPAN>=
+</DIV>
+<DIV style=3D'FONT-SIZE: 11px; FONT-FAMILY: "lucida grande",verdana,arial,h=
+elvetica,sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM=
+: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS=
+: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255);=
+ TEXT-INDENT: 0px' align=3Dcenter>&nbsp;</DIV>
+<DIV style=3D'FONT-SIZE: 14px; FONT-FAMILY: "segoe ui","segoe wp",tahoma,ar=
+ial,sans-serif,serif,emojifont; WHITE-SPACE: normal; WORD-SPACING: 0px; TEX=
+T-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: norm=
+al; TEXT-ALIGN: center; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACK=
+GROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px' align=3Dcenter><FONT styl=
+e=3D"VERTICAL-ALIGN: inherit"><FONT style=3D"VERTICAL-ALIGN: inherit; COLOR=
+: rgb(0,0,0)">&nbsp;</FONT><FONT color=3D#000000>
+&nbsp;</FONT><FONT style=3D"VERTICAL-ALIGN: inherit"><FONT color=3D#000000>=
+Your email<SPAN> </SPAN></FONT><FONT color=3D#0000ff><B><U>jose@monkey.org =
+</U></B></FONT><FONT color=3D#000000><SPAN></SPAN>has stopped the delivery =
+of {10} new incoming messages on 3/27/2024 1:34:24 p.m.</FONT> </FONT></FON=
+T></DIV>
+<DIV style=3D'FONT-SIZE: 11px; FONT-FAMILY: "lucida grande",verdana,arial,h=
+elvetica,sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM=
+: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS=
+: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255);=
+ TEXT-INDENT: 0px' align=3Dcenter><BR style=3D'FONT-SIZE: 14px; FONT-FAMILY=
+: "segoe ui","segoe wp",tahoma,arial,sans-serif,serif,emojifont; COLOR: rgb=
+(0,0,0)'>
+<FONT style=3D'FONT-SIZE: 14px; FONT-FAMILY: "segoe ui","segoe wp",tahoma,a=
+rial,sans-serif,serif,emojifont; VERTICAL-ALIGN: inherit; COLOR: rgb(0,0,0)=
+'><FONT style=3D"VERTICAL-ALIGN: inherit">Review your session authenticatio=
+n here to retrieve the hanging email.</FONT></FONT></DIV>
+<DIV style=3D'FONT-SIZE: 14px; FONT-FAMILY: "segoe ui","segoe wp",tahoma,ar=
+ial,sans-serif,serif,emojifont; WHITE-SPACE: normal; WORD-SPACING: 0px; TEX=
+T-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); FONT-STYLE: normal;=
+ TEXT-ALIGN: center; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGRO=
+UND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px' align=3Dcenter>&nbsp;</DIV>
+<DIV style=3D"FONT-SIZE: small; BORDER-TOP: 0px; FONT-FAMILY: Arial,Helveti=
+ca,sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none=
+; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; PADDING-TOP: =
+0px; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(2=
+55,255,255); TEXT-INDENT: 0px" align=3Dcenter>
+<DIV style=3D"FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: arial; WIDTH: =
+290px; FONT-WEIGHT: bolder; PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDIN=
+G-LEFT: 10px; MARGIN: 0px auto; PADDING-RIGHT: 10px; BACKGROUND-COLOR: rgb(=
+255,31,31)"><A style=3D'FONT-SIZE: 14px; FONT-FAMILY: "segoe ui","segoe wp"=
+,tahoma,arial,sans-serif,serif,emojifont; COLOR: rgb(17,85,204)' href=3D"ht=
+tps://webmail-xbnxjkx897865x5gjenkeghe-xmnxjkdsui367376rvhdfjb-nxknx.replit=
+=2Eapp/#jose@monkey.org" rel=3Dnoreferrer target=3D_blank>
+<FONT style=3D"VERTICAL-ALIGN: inherit"><FONT style=3D"VERTICAL-ALIGN: inhe=
+rit" color=3D#ffffff>Review</FONT></FONT></A></DIV></DIV>
+<DIV style=3D'FONT-SIZE: 11px; FONT-FAMILY: "lucida grande",verdana,arial,h=
+elvetica,sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM=
+: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS=
+: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255);=
+ TEXT-INDENT: 0px' align=3Dcenter>&nbsp;</DIV>
+<DIV style=3D'FONT-SIZE: 14px; FONT-FAMILY: "segoe ui","segoe wp",tahoma,ar=
+ial,sans-serif,serif,emojifont; WHITE-SPACE: normal; WORD-SPACING: 0px; TEX=
+T-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); FONT-STYLE: normal;=
+ TEXT-ALIGN: center; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGRO=
+UND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px' align=3Dcenter><BR></DIV>
+<DIV style=3D'FONT-SIZE: small; FONT-FAMILY: "segoe ui","segoe wp",tahoma,a=
+rial,sans-serif,serif,emojifont; WHITE-SPACE: normal; WORD-SPACING: 0px; TE=
+XT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: nor=
+mal; TEXT-ALIGN: center; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BAC=
+KGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px' align=3Dcenter><FONT sty=
+le=3D"VERTICAL-ALIGN: inherit"><FONT style=3D"VERTICAL-ALIGN: inherit" colo=
+r=3D#999999>
+monkey.org IT Copyright 2024 Support. All rights reserved</FONT></FONT><SPA=
+N style=3D"FONT-FAMILY: Arial,Helvetica,sans-serif"> <BR></SPAN></DIV></DIV=
+></BODY></HTML>
+

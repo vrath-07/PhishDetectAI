@@ -1,0 +1,90 @@
+Return-Path: MAILER-DAEMON
+Delivered-To: jose@monkey.org
+X-FDA: 82704075342.38.8B5C482
+Received: from transfer-biz.shop (transfer-biz.shop [92.53.111.152])
+	by imf08.b.hostedemail.com (Postfix) with ESMTP id 66E6F160003
+	for <jose@monkey.org>; Wed, 23 Oct 2024 07:42:42 +0000 (UTC)
+Authentication-Results: imf08.b.hostedemail.com;	dkim=none;	spf=pass
+ (imf08.b.hostedemail.com: domain of transfer-biz.shop designates
+ 92.53.111.152 as permitted sender) smtp.helo=transfer-biz.shop;	dmarc=pass
+ (policy=quarantine) header.from=transfer-biz.shop
+Date: Wed, 23 Oct 2024 07:42:59 +0000
+From: postmaster@transfer-biz.shop
+Subject: Delivery report
+To: jose@monkey.org
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+    boundary="report6718A903@transfer-biz.shop"
+X-Spam-Status: Yes, score=15.20
+X-Stat-Signature: qj8ejuci87fwheoqfwe7utbhn7xpm5ej
+X-Rspamd-Server: rspam12
+X-Rspamd-Queue-Id: 66E6F160003
+X-Rspam-User: 
+X-HE-Tag: 1729669362-361497
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18KHrv7WWPeKxhx6AlolMgLmLVYIVGrEJfelN56IEnGXA+?=
+ =?utf-8?q?64ZwKeeZez8VBTqhky9sX2D24QuV8MnqjsQcPVOpRtrY4SyqK86rrLeKL8Jwq9yRt?=
+ =?utf-8?q?He12IftMQkEeGQ8Y/wULBeGVyk6EUSRzXg1QNwKDNCoddF2h1pyToLoAvEGmKThNs?=
+ =?utf-8?q?Obtw7teYxZlMzjSdLk5yaQXOyzJrRykhJrFrUCptpfQFjgjrjvkxAXITvG3fRYj72?=
+ =?utf-8?q?Q5CQnXNXr2wGjWCi7B6Wf02cJs84OtqNF5s2xxYvCiCexY56kud+3AJ08cmK+O3jJ?=
+ =?utf-8?q?QpY1yUs4SI2++abpFp0u4tOco32o8fe9pkTdm6op7qvMrM7em+FGewuTjpYQxSNX8?=
+ =?utf-8?q?OK1dQgptHeFJ6IACbZuOsguIA3DmAIZLI+b7R8cKAbR5OAQN53+oHY07QVuc0NLEN?=
+ =?utf-8?q?lw0pUItjhU0eMPnXVm4M6NQ1fxR5P8LQOeSqOdX+yqrhjpEoO/9CwkwPZRQgvImKu?=
+ =?utf-8?q?AuDo7+UZg9pxXj+YmDY6L2K9l5Fmo4fwr9qiH8lcNnzvm0jGiYBUkm1X6AAWkv27u?=
+ =?utf-8?q?6ceAJcpAKlAlc2/72EdzWWWVnSJ0KtR5eZvOH1a71FUrPncx8/TnrgOTBlGU5ahow?=
+ =?utf-8?q?Cd8V32yuAwyDAk/qTutADMU3VIZ3v07uUW70Gern+eplVsyWy+9sfor3Fiwdm1MXU?=
+ =?utf-8?q?xbsWq0rFee0rgRb1D4u3X0uAdXwxWGXJ0z9vaDlMbPEiuYcIXZWhM1U/KqjsNUqKQ?=
+ =?utf-8?q?SasdrrSMQwCf2+O1hC+kSrBn/GUr+rputQTvNQTekFpCXEJaIkC79O02u1jlFTh54?=
+ =?utf-8?q?jCUCrsQkLjfzpynDeoHFEITH7Wshok5s8lKyuI3xsqCJviSqITCZ1vtWv7XUZLHUw?=
+ =?utf-8?q?4AIj4RdJRHAlfeUOHc1VQMHedhiwlEe8hw454QZPMV/HLoj+lT3WaTOo8iCEo5xR+?=
+ =?utf-8?q?RCFWatKzqKpHrU/VQliSh1_8eBPaQgzA+FlFDIyiIoQOyDykwLuyWv5t4G1Kr9UTy?=
+ =?utf-8?q?NXZxqrTOYpYUV8Ifs02OkJnPdOyxSxpiwWuD2U=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 314
+
+
+--report6718A903@transfer-biz.shop
+Content-Type: text/plain
+
+Hello, this is the mail server on transfer-biz.shop.
+
+I am sending you this message to inform you on the delivery status of a
+message you previously sent.  Immediately below you will find a list of
+the affected recipients;  also attached is a Delivery Status Notification
+(DSN) report in standard format, as well as the headers of the original
+message.
+
+  <jose@monkey.org>  delivery failed; will not continue trying
+
+--report6718A903@transfer-biz.shop
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns;transfer-biz.shop
+X-PowerMTA-VirtualMTA: web1
+Received-From-MTA: dns;monkey.org (64.188.22.134)
+Arrival-Date: Wed, 23 Oct 2024 07:42:56 +0000
+
+Final-Recipient: rfc822;jose@monkey.org
+Action: failed
+Status: 5.7.1 (delivery not authorized)
+Remote-MTA: dns;mx.monkey.org.cust.b.hostedemail.com (64.98.38.4)
+Diagnostic-Code: smtp;550 5.7.1 Message contains spam or virus. (110)
+ [1729669360-332610] DMARC policy violation.
+X-PowerMTA-BounceCategory: spam-related
+
+--report6718A903@transfer-biz.shop
+Content-Type: text/rfc822-headers
+
+From: monkey.org HR Team<jose@monkey.org>
+To: jose@monkey.org
+Subject: Staff Payroll for October 2024
+Date: 23 Oct 2024 00:42:54 -0700
+Message-ID: <20241023004254.040FB24127838DE6@monkey.org>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+--report6718A903@transfer-biz.shop--
+

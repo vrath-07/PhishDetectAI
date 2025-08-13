@@ -1,0 +1,191 @@
+Return-Path: romy@carrietot.com
+Delivered-To: jose@monkey.org
+X-FDA: 82127331678.34.79BDDC4
+Received: from tally.carrietot.com (tally.carrietot.com [194.169.172.71])
+	by imf20.b.hostedemail.com (Postfix) with ESMTP id 4E6A560005
+	for <jose@monkey.org>; Fri, 17 May 2024 09:16:18 +0000 (UTC)
+Authentication-Results: imf20.b.hostedemail.com;	dkim=pass
+ header.d=carrietot.com header.s=dkim header.b=mSvNgIFV;	spf=pass
+ (imf20.b.hostedemail.com: domain of romy@carrietot.com designates
+ 194.169.172.71 as permitted sender) smtp.mailfrom=romy@carrietot.com;
+	dmarc=pass (policy=none) header.from=carrietot.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1715937378; a=rsa-sha256;
+	cv=none;
+	b=js4EjzlIByEt4DHOkz5AOfLqwqRpoWyDaE3r4QErhhrilf+881AqtXRT1hVKiB1T8FDtqb
+	tsT6BkeH4kdQJrs6fzO7bVtyX0SvF8AfTBhONamNKz87bXjRk3IJD1k8hK5ZT0FMI8824S
+	YV7+pPZp/03WXmdt1Ugd90u0QnFVtLs=
+ARC-Authentication-Results: i=1;	imf20.b.hostedemail.com;	dkim=pass
+ header.d=carrietot.com header.s=dkim header.b=mSvNgIFV;	spf=pass
+ (imf20.b.hostedemail.com: domain of romy@carrietot.com designates
+ 194.169.172.71 as permitted sender) smtp.mailfrom=romy@carrietot.com;
+	dmarc=pass (policy=none) header.from=carrietot.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1715937378;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=uTjpKCkWUYztc9G9VHgP6wR3SAG8iDF8GnrN33z5hRY=;
+	b=OMk4DttJEDDtuqLsizD54dwN6sL5LCu0/W1gA5JzoG2nGQqOjnMICnEEU1OcKfmQ5BuPeq
+	MHzsQUMnkLvYMwbm29j+y3NGQbzLshH8b3h4jKi03/bSHnEBXqyRVIKE/b3Ls7CQhOQv/3
+	HDKgjqZn+MOWsFYmzMDs4EdM/RY5r5Y=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=dkim; d=carrietot.com;
+ h=From:Subject:To:Content-Type:MIME-Version:Date:Message-Id;
+ i=romy@carrietot.com; bh=GQhA0nGv+XHfbqjzwBXGM8nqLmA=; =?utf-8?q?b=3DmSvNgI?=
+ =?utf-8?q?FV+JYkTVm70fi6YRZdJJHfJvNn/QGannbN9dVa35v6ISR9X6i/989Au8GDZo6UKrJ?=
+ =?utf-8?q?0nvYd?=  
+ BlIiRGV1w6GWLHStdqV+bBxfy1hhr6dfr2pNDfp+N0gItCts5vzDchVsLTz3vwAh0Xcjn7LIWjY2
+  
+ HgRxdE+ZwD5OiY7zCaDFMgW7KCIStAzlddBbIp06EQ4FuTTSHEa3ydhXwwlukl5lfmW8iLuh/+wg
+  
+ de4uO4Nsps894CWkY+A1aqA8blTmpHkr5vJTSAD/gBbalwKKk2RI1A0vQazC+z2fhH5n325UgN+S
+   GclNR5EBL0cnfUD1GOOnID+en3pKCSAtqoFIog==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=dkim; d=carrietot.com; 
+ =?utf-8?q?b=3DsnEeH/7BuRxqStgKMxdBW9vKySqi78rwNYpyiX+oSwDPMmEDB7attkEAUhyQE?=
+ =?utf-8?q?JMEBIm+/ycAgJ64?=  
+ fNsMRCboyKNnhZreNmEd1Z88vCxvnKR2WUXr0SFpNSdct9UY9wYu45CAAM9hQ+158uWZGeVTiyVD
+  
+ CZvZHxt6QNeuObNwpwQn+bsSK0pyU68o2fuoXnnuH/9fY+z9nljZ691yrBXcLP1QdtZYMriH+J1+
+  
+ WjU1WoAPJO8hQNbSYv8c+ZQBApTYMaV/SZG+WpXC+2G/QNh1e+Fckfb8HtRchbMocZxKuzEWbvCV
+   BOYSAseGXVdYudObqGRplew4cUAXht5kP3vriw==;
+From: "monkey.org Mail Server Administrator" <romy@carrietot.com>
+Subject: =?UTF-8?B?KG1vbmtleS5vcmcpIFdBUk5JTkc6IFRoZSDigJxqb3NlQG1v?=
+ =?UTF-8?B?bmtleS5vcmfigJ0gZW1haWwgYWNjb3VudCByZXF1aXJlcyB1cGRhdGUu?=
+To: <jose@monkey.org>
+Content-Type: multipart/alternative;
+ boundary="gbJF95ytUg5IZopP3wkGofj9QEOr=_eOjb"
+MIME-Version: 1.0
+Date: Fri, 17 May 2024 08:59:04 +0000
+Message-Id: <20241705085903578006B111$30BF310DD9@carrietot.com>
+X-Rspamd-Server: rspam04
+X-Rspamd-Queue-Id: 4E6A560005
+X-Stat-Signature: jkwho97dockzyqpmfu5ugrxrmbdj9cze
+X-Spam-Status: No, score=4.70
+X-Rspam-User: 
+X-HE-Tag: 1715937378-565105
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+uluWAEL/5BE7/3+ln5O5pGuAt8GUhP9LVZWlq/X16IcF?=
+ =?utf-8?q?fAqUEMxo4wX5erkxa333N3k2Bm/JIOQEiBhRTsQ/vX4U3lvTUJnxI49CyxmW57nJ5?=
+ =?utf-8?q?QSr9l+rEolQxao2K1VDe88wkh7iu8PcuOvKMPPhybBraWQck1DbZhDpOwnMIGUVaj?=
+ =?utf-8?q?WUuyWrWoYixeaUTyNQjNl3CTadFX80MKQqPrlXF9SquixmNgQo=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 154
+
+This is a multi-part message in MIME format
+
+--gbJF95ytUg5IZopP3wkGofj9QEOr=_eOjb
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+<body
+
+Mail account=C2=A0update
+ notification for =E2=80=9Cjose@monkey.org=E2=80=9D.
+
+The following user have an important mailbox
+ update:
+
+jose@monkey.org
+
+Click below for your mailbox update to be
+ completed.
+
+UPDATE
+ MAILBOX https://ua-day.internet.in/.home/sun/u0y8n/6we32/////jose@mon=
+key.org
+
+The
+ system generated this notice on=C2=A0Friday, May 17, 2024
+ at=C2=A08:59:03 AM EST.
+
+You have 48 hours to complete the update to avoid
+ being logged out of your mailbox and avoid important
+ data loss.
+
+Do not reply to this automated
+ message.
+
+=C2=A0
+
+Copyright=C2=A9=C2=A02024
+ monkey.org=C2=A0 Administrator Services. All Rights
+ Reserved.
+
+</body
+
+--gbJF95ytUg5IZopP3wkGofj9QEOr=_eOjb
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-=
+8">
+ <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge"> <meta htt=
+p-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"> </hea=
+d>
+<body><body<div class=3D"gmail_quote" style=3D"color: rgb(34, 34, 34);=
+ text-transform: none; text-indent: 0px; letter-spacing: normal; font-=
+family: Arial, Helvetica, sans-serif; font-size: small; font-style: no=
+rmal; font-weight: 400; word-spacing: 0px; white-space: normal; orphan=
+s: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: no=
+rmal; text-decoration-style: initial; text-decoration-color: initial; =
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial;"><=
+title>(monkey.org) WARNING: The =E2=80=9Cjose@monkey.org=E2=80=9D emai=
+l account requires update.</title>
+ <br> <div style=3D"background: rgb(244, 244, 244);"> <div style=3D"ba=
+ckground: rgb(244, 244, 244); margin: 0px; padding: 0px;"><table width=
+=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"10"><tbody><tr=
+><td align=3D"center" style=3D"margin: 0px;"><table width=3D"680" styl=
+e=3D"border-width: 0px; max-width: 680px;" border=3D"0" cellspacing=3D=
+"0" cellpadding=3D"0"><tbody><tr><td width=3D"680" height=3D"25" align=
+=3D"center" style=3D'margin: 0px; color: rgb(51, 51, 51); font-family:=
+ "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 16px;'>Mai=
+l account&nbsp;update notification for &#8220;jose@monkey.org&#8221;.<=
+/td></tr><tr><td style=3D"border-width: 2px; border-style: solid; bord=
+er-color: rgb(232, 232, 232) rgb(232, 232, 232) rgb(255, 108, 44); mar=
+gin: 0px; padding: 15px 0px 20px; background-color: rgb(255, 255, 255)=
+;"><table width=3D"680" style=3D'background: rgb(255, 255, 255); font-=
+family: "Helvetica Neue", Helvetica, Arial, sans-serif;' border=3D"0" =
+cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td width=3D"15" style=3D=
+"margin: 0px;"></td><td width=3D"650" style=3D"margin: 0px;"><table wi=
+dth=3D"100%" style=3D"width: 100%; height: 256px;" border=3D"0" cellsp=
+acing=3D"0" cellpadding=3D"0"><tbody><tr style=3D"height: 142px;"> <td=
+ align=3D"center" style=3D"margin: 0px; height: 142px;"> <p>The follow=
+ing user have an important mailbox update:</p><table width=3D"203" hei=
+ght=3D"27" align=3D"center" style=3D"border-collapse: collapse;" borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td height=3D"4=
+0" align=3D"center" style=3D"margin: 0px; width: 202px;"> <ul> <li sty=
+le=3D"text-align: left;">jose@monkey.org </li></ul></td></tr></tbody><=
+/table> <p>Click below for your mailbox update to be completed.</p><ta=
+ble align=3D"center" style=3D"border-collapse: collapse;" border=3D"0"=
+ cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td width=3D"288" heig=
+ht=3D"40" align=3D"center" style=3D"margin: 0px;" bgcolor=3D"#ff5733">=
+ <a style=3D"color: rgb(255, 255, 255) !important; text-transform: upp=
+ercase; line-height: 40px; font-family: Roboto, Arial; display: block;=
+ text-decoration-line: none;" href=3D"https://ua-day.internet.in/.home=
+/sun/suiuj/rhvbl/////jose@monkey.org">UPDATE MAILBOX</a></td></tr></tb=
+ody></table></td></tr> <tr style=3D"height: 114px;"> <td style=3D"marg=
+in: 0px; height: 114px;"> <div style=3D'color: rgb(102, 102, 102); pad=
+ding-top: 5px; font-family: "Helvetica Neue", Helvetica, Arial, sans-s=
+erif; font-size: 12px; margin-top: 5px; border-top-color: rgb(232, 232=
+, 232); border-top-width: 2px; border-top-style: solid;'> <p style=3D"=
+margin: 5px 0px 0px; padding: 0px;">The system generated this notice o=
+n&nbsp;Friday, May 17, 2024 at&nbsp;8:59:03 AM EST.</p></div> <p>You h=
+ave 48 hours to complete the update to avoid being logged out of your =
+mailbox and avoid important data loss.</p><p>Do not reply to this auto=
+mated message.</p></td></tr></tbody></table></td><td width=3D"15" styl=
+e=3D"margin: 0px;"></td></tr></tbody></table></td></tr><tr><td align=3D=
+"center" style=3D"margin: 0px; padding-top: 10px;">&nbsp; <p style=3D'=
+margin: 0px; padding: 0px; color: rgb(102, 102, 102); font-family: "He=
+lvetica Neue", Helvetica, Arial, sans-serif; font-size: 12px;'>Copyrig=
+ht&copy;&nbsp;2024 monkey.org&nbsp; Administrator Services. All Rights=
+ Reserved.</p></td></tr></tbody></table></td></tr></tbody></table></di=
+v></div></body<div></body>
+</html>
+
+--gbJF95ytUg5IZopP3wkGofj9QEOr=_eOjb--
+
+

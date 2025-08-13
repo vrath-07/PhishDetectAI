@@ -1,0 +1,267 @@
+Return-Path: jose@aashaymeasurements.com
+Delivered-To: jose@monkey.org
+X-FDA: 82189959306.01.24CA753
+Received: from IND01-BMX-obe.outbound.protection.outlook.com
+ (mail-bmxind01hn2221.outbound.protection.outlook.com [52.100.219.221])	by
+ imf01.b.hostedemail.com (Postfix) with ESMTP id E41C81A000D	for
+ <jose@monkey.org>; Mon,  3 Jun 2024 15:28:29 +0000 (UTC)
+Authentication-Results: imf01.b.hostedemail.com;	dkim=none;	spf=pass
+ (imf01.b.hostedemail.com: domain of jose@aashaymeasurements.com designates
+ 52.100.219.221 as permitted sender)
+ smtp.mailfrom=jose@aashaymeasurements.com;	arc=pass
+ ("microsoft.com:s=arcselector9901:i=1");	dmarc=none
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1717428510;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	 references;
+ bh=9D7eIhDKBJrSssC+jWCBEh5mm0vMvxhd3kyzzRCwIRY=;
+	b=PyJ8XbL61qx7WWA+ZbXP+Ew8sXHMZs+QTMTRKWqL+ZDuAM1VBpc+XI4iLkMYyrHpQyqBhb
+	g9lW37XhCPbH6zCLuLfToISgGCgWCACAQkNDDG8FVLqd8yXJQdnHTatk6UIg+tRfXGgowJ
+	Lqj+OjYkQPmXJ/K7cnNI3/NA5s1/4jk=
+ARC-Authentication-Results: i=2;	imf01.b.hostedemail.com;	dkim=none;	spf=pass
+ (imf01.b.hostedemail.com: domain of jose@aashaymeasurements.com designates
+ 52.100.219.221 as permitted sender)
+ smtp.mailfrom=jose@aashaymeasurements.com;	arc=pass
+ ("microsoft.com:s=arcselector9901:i=1");	dmarc=none
+ARC-Seal: i=2; s=arc-20220608; d=hostedemail.com; t=1717428510; a=rsa-sha256;
+	cv=pass;
+	b=zpOe7mxdtBjlkEuDMIzbaV2QkilngGh2cljz2bdUGvShK6qBttzLP23r1CFLYl6x5sjWGM
+	n7Uvp31IQ6uVC8E3PDhE1DLrRKNKTvCygVy+BaSc4mcVNBHCYedcYWGDefL/5kTH98toZO
+	pBjPQYuvizNLsldzu2ahILWlMNBMGcw=
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none; 
+ =?utf-8?q?b=3DkyquzBWEzFgQ0+hKRNyB9w/f+d1EXaQcFvqE74GSsHhdUGHjkcoHH/hhLHWAF?=
+ =?utf-8?q?oDYezIsYXGv9HDXgbdKhV1Jmf8Fn+E6Xi1kSieIMU4cSZtEzK1lhtqEAHTT7y/OYu?=
+ =?utf-8?q?wQXn5w9/VT7c+ODi559zQ/JjlUbKBIAaVL9k6UGuxOdHItdpXnWM5cfyhqTWKyE9j?=
+ =?utf-8?q?LiX/vhbk4fBWd0vCNSqBozgHxHnfx2YfUvgRm16G0AO5YAoIh3+HMQBVRvB1SSqKb?=
+ =?utf-8?q?ZVvy28LgT/FBA8mKXCuj5qanx2i434qvM8zxY+1iQiPsmXfEU13OvvAiQOXt94qnP?=
+ =?utf-8?q?3CBD3qc4Rr9SeW1j0esJQ=3D=3D?=
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901; =?utf-8?q?h=3DFrom=3ADate=3ASubject=3AMessage-ID=3AConte?=
+ =?utf-8?q?nt-Type=3AMIME-Version=3AX-MS-Exchange-AntiSpam-MessageData-Chunk?=
+ =?utf-8?q?Count=3AX-MS-Exchange-AntiSpam-MessageData-0=3AX-MS-Exchange-Anti?=
+ =?utf-8?q?Spam-MessageData-1=3B?=
+ bh=9D7eIhDKBJrSssC+jWCBEh5mm0vMvxhd3kyzzRCwIRY=; =?utf-8?q?b=3DMmw3SvBpMpct?=
+ =?utf-8?q?PII678fYXmMyzeFWMDpXV0vJHXD2WBfrz1hW5CTgkrt10Q6cvfC55KKI+97v/iyGB?=
+ =?utf-8?q?Lo0nPvxSt7A++f1Dh7PTT9v8txq2VGSrFF6cHDsq5IzNZOsGa90dnuEgkspYx7cA5?=
+ =?utf-8?q?Qfu3rXluTUATqqoTobTdjKRdscBGRuNt1+eCe+za8xu5s7a/scRm4cukcvH6vAur6?=
+ =?utf-8?q?pSuhby11uPtESf3F0hnooYiBudS/F7I2Nfx9aTXhbZLR3VdSahdUzjULIpCSMVPLr?=
+ =?utf-8?q?o4rAhsQdc/9HeoFg8ILYHepTDUXF645kfetFLyDLSgZ8fkoz0dv024OWynX+zdnHV?=
+ =?utf-8?q?Tv9lQ=3D=3D?=
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=fail (sender ip is
+ 209.90.237.21) smtp.rcpttodomain=monkey.org
+ smtp.mailfrom=aashaymeasurements.com; dmarc=none action=none
+ header.from=aashaymeasurements.com; dkim=none (message not signed); arc=none
+ (0)
+Received: from PN0PR01CA0041.INDPRD01.PROD.OUTLOOK.COM (2603:1096:c01:49::23)
+ by PN3P287MB1619.INDP287.PROD.OUTLOOK.COM (2603:1096:c01:191::10) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7633.24; Mon, 3 Jun
+ 2024 15:28:25 +0000
+Received: from PN2PEPF0000018E.INDPRD01.PROD.OUTLOOK.COM
+ (2603:1096:c01:49:cafe::f4) by PN0PR01CA0041.outlook.office365.com
+ (2603:1096:c01:49::23) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7633.29 via Frontend
+ Transport; Mon, 3 Jun 2024 15:28:25 +0000
+X-MS-Exchange-Authentication-Results: spf=fail (sender IP is 209.90.237.21)
+ smtp.mailfrom=aashaymeasurements.com; dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=aashaymeasurements.com;
+Received-SPF: Fail (protection.outlook.com: domain of aashaymeasurements.com
+ does not designate 209.90.237.21 as permitted sender)
+ receiver=protection.outlook.com; client-ip=209.90.237.21; helo=209;
+Received: from 209 (209.90.237.21) by
+ PN2PEPF0000018E.mail.protection.outlook.com (10.167.242.21) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.7633.15 via Frontend Transport; Mon, 3 Jun 2024 15:28:23 +0000
+From: "Docusign" <jose@aashaymeasurements.com>
+Subject: Document(s): Approved: Salary adjustment for all monkey.org Staff
+To: <jose@monkey.org>
+Content-Type: multipart/alternative;
+ boundary="FvvC4bImxwkQEjHe=_fZhfQAnhrMbyGXPJ"
+MIME-Version: 1.0
+Date: Mon, 3 Jun 2024 17:28:23 +0200
+Message-Id: <20240306172823B0FE33FDAD$3A71570501@aashaymeasurements.com>
+X-EOPAttributedMessage: 0
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: PN2PEPF0000018E:EE_|PN3P287MB1619:EE_
+X-MS-Office365-Filtering-Correlation-Id: f5e19c5e-2cf0-41b0-7a0c-08dc83e1ced1
+X-MS-Exchange-SenderADCheck: 1
+X-MS-Exchange-AntiSpam-Relay: 0
+X-Microsoft-Antispam: 	=?utf-8?q?BCL=3A0=3BARA=3A13230031=7C376005=7C3686070?=
+ =?utf-8?q?0004=7C61400799018=7C82310400017=7C69100299006=7C18082699003=7C19?=
+ =?utf-8?q?588885035=3B?=
+X-Microsoft-Antispam-Message-Info: 
+	=?iso-8859-1?Q?eLjFLmECeAUFQSj8+mteK8EelNnXDLrWiuR4PiZPQi06Z9jnL9k326wYOX?=
+ =?iso-8859-1?Q?0/9h4SsQhSIMGrgL5W+Tt0Nr0jlD1m/Te4pgcdm2re5Rbe8SRWK9CWa4qE?=
+ =?iso-8859-1?Q?KKYZvhCdPuxncILzmVSqjrXMHiBSv0rj6bZuBmncEwD1h/cCVTGvZTDVD1?=
+ =?iso-8859-1?Q?xlHro7VAcPTIb3kfCud3wonGiHuR8TaJlyVS35yqPEQlwxlrTUyux6RQoh?=
+ =?iso-8859-1?Q?r/QC8/OWhpUry97WG/znO5PALRPu/TNtxGxcRLNaPdjEO3SQdBMkakh7j4?=
+ =?iso-8859-1?Q?NVAHOdoXHDQc4yLpqVym8cp3SDmBBeSeVmgtJpOmXONCHkcBECYrBMIdih?=
+ =?iso-8859-1?Q?tN/vsb8Y3HQMU9M28gBXSZAXi9hZGFD4QLuqsbLAj9/MmcI+ipwjur57zm?=
+ =?iso-8859-1?Q?JR5KvN3Crz4RfNfaxRwG44FOO5TvNSSa3cMeIrSwXx/qApjfigadtdOgTs?=
+ =?iso-8859-1?Q?eMSSyrNR1Z+8ZUiLZFMujl2akXbinmFJJ1PRDrftsI+C/PGKnHTuhaKltp?=
+ =?iso-8859-1?Q?Gs5+vZ8EqaEROwu93fPklhrokXl9MPBAl2ZJ79WWwk2RQgC+jG41e83f61?=
+ =?iso-8859-1?Q?7t1dyRv5bg6t5Ip+qql1z0Iq13UZWbPGPVs2fU0Hb3YtlZ4ubQzBYabv1K?=
+ =?iso-8859-1?Q?UbnO7ai2etAZCsLDcqRLny5k1SHyeQar4eVYElo/TR09wmX9V8ClwTMV9T?=
+ =?iso-8859-1?Q?a+Wj6m7k86iFo406HVqUtvg5IATxDGGYNoXuffU75AQN2futqQ81FBsj0V?=
+ =?iso-8859-1?Q?dFGmbbFEmsJE5d3XhBZ+pS000E3UO7kHsCtUM1Ohm8leZWsxQwm7BFiKBP?=
+ =?iso-8859-1?Q?4/zH4V4CNZe7HfJUTwCvfk69Qn48ncfqkHBNms7kXjKXrzDCQ6hE/WSuz7?=
+ =?iso-8859-1?Q?GmlA2+5py5BqtrtaBR7VsZq/15Dg2dkI52VCku0pEiYjBGHJCBDqcMQY5W?=
+ =?iso-8859-1?Q?7SpKMmjhqfB1y0pQ9AA5YWDnNRz2ZI21FPsPMtxY+rUJEZnIynWLoXnaIX?=
+ =?iso-8859-1?Q?xWSBzX1GC8I2naH9C0FTakmLxEpeV3PS2xuGU/Gw24fhz3UJJycgbXu9yj?=
+ =?iso-8859-1?Q?Z5XDh1P4BbTt6rTyA5kXDmjW6XVK9GU65kJ1Tyyw0Pg8cwcxwJpakUyK3C?=
+ =?iso-8859-1?Q?YWPJ7B3xttUU9krHbU5RqQqlvh/HhLbCPDSXiDFJnkSJrirE+hMw5i5NIc?=
+ =?iso-8859-1?Q?1ZftyJxxCfTNwBeZkJdnSazq9+rsJTWnXkB2Wwvcdx/oRxZG7WbOu9+7ZA?=
+ =?iso-8859-1?Q?Hdmj4NqNQeMgzOh/4NO28a3EkBxfZgH6IqEh1gRSscp0k4IKtof+rXl0bu?=
+ =?iso-8859-1?Q?qYum2Dwk4TJADPZpnfOZ+q6Tz2MyMasOWGG1bqHDztZi5zbKnyuc99JDUu?=
+ =?iso-8859-1?Q?ICp+bw3Lnl66evFTlEALhF5kFAaUKfnfZLxWEJ7u9oATdTM5JhgrEDS/88?=
+ =?iso-8859-1?Q?Bcwg4z+FdJyCJSbkxPDLN9YM7X3wRnClj86mkBNRGCbqszeCzydk80pEzE?=
+ =?iso-8859-1?Q?182wWEObe7HePDd2dWzi/ctnP6ULQz6QcyuE5TK0KUFCvH12C00WGyJ14X?=
+ =?iso-8859-1?Q?0eR9H9poqHWdUDdVJvQyvz3JDEIrN+C+tOvq64SQ1mATDkYeEUJIHfn/o9?=
+ =?iso-8859-1?Q?REw4i+40i0H6YK28oECOFnQcWNvSaceYMIBkM324J+gDu3cS9cJG+Ra2yv?=
+ =?iso-8859-1?Q?CzHWbmzm26/kwoUuF//kKui0alThdE2ol2dMry281GnB2Mf2eWVIakQHF5?=
+ =?iso-8859-1?Q?SpdlXMy2SKnjcKCPYUfoj12vgk6i8IO/80NC0mcuqSBNwLHXAYVEX8FyA1?=
+ =?iso-8859-1?Q?ZMXZVSF9LsSJYpN/KX1Z5Ys8pbbUim6XrLQM5/r6vcIdSG51yfewfX89Vr?=
+ =?iso-8859-1?Q?lFdbgv75bwAnIaxygr3uGTIlxeymTjCgfMCSgK0cHGDkFLttITsw+gQYDJ?=
+ =?iso-8859-1?Q?ycayAp+BQyS9Yj0akCIfW02Dz0b/Ika6kQl7YFKUJN01hhZHLkE9PYFiZx?=
+ =?iso-8859-1?Q?AvUUFEGivukP6KHnZ0pd2bt1PTf/JlExxeeq9DvAABaGQRx9aIKN/l65wv?=
+ =?iso-8859-1?Q?B9r7gypObFBCR3g3W28qmOgReSpQlkxWhZ94wpIXHJ4e5q1uu8wKnS9/NH?=
+ =?iso-8859-1?Q?qxUuvYGjZhYE4RCZDGgThbibk7px3n7L44DChhDZL8HmhpBJf3czIZB8S8?=
+ =?iso-8859-1?Q?1VI0OP+vCqHJPN9kj89nHKtgZ67ffmrksGEMMJHJi0+JsitIqOGIBIyjHx?=
+ =?iso-8859-1?Q?o28JPRY4lilY64r1/eevnm0H5DWjWnMow6wIgn7K5I90N75LbawtZMm/3F?=
+ =?iso-8859-1?Q?W+A6RqL+iPPlcpVepozYEgMB4MIRl4xVr/3eTLTCuCiOSCUsDrA2Ntz7+W?=
+ =?iso-8859-1?Q?GMNyfon03eocPH98LEs/nP7tRntlWQCyFtWiFZ8lKD1G8UP2S7nKbfeyCw?=
+ =?iso-8859-1?Q?VcnQjoImteJOZKGdF8W2LyLLqOgyKU1asbA1Kyd/Cwa7V7xpN3IbRn8QYz?=
+ =?iso-8859-1?Q?GLMBSEFKmLUvjXDLXlZqm+IBLKIOCWodCqk5obNVqYQ8z/WPkjFS/UfRRw?=
+ =?iso-8859-1?Q?U6gdDky/McxaUG3wyxR4xp9WPoJcSbLhv+E0BmiZkdA8mLWuT7DdIb7VjY?=
+ =?iso-8859-1?Q?jNkZhXE/uwC9ZK1o3eeqdi9Q=3D=3D?=
+X-Forefront-Antispam-Report: 	=?utf-8?b?Q0lQOjIwOS45MC4yMzcuMjE7Q1RSWTpVUztM?=
+ =?utf-8?b?QU5HOmVuO1NDTDo5O1NSVjo7SVBWOk5MSTtTRlY6U1BNO0g6MjA5O1BUUjoyMDku?=
+ =?utf-8?b?OTAuMjM3LjIxLnJldmVyc2Uud293cmFjay5jb207Q0FUOk9TUE07U0ZTOigx?=
+ =?utf-8?q?3230031=29=28376005=29=2836860700004=29=2861400799018=29=28823104?=
+ =?utf-8?q?00017=29=2869100299006=29=2818082699003=29=2819588885035=29=3BDIR?=
+ =?utf-8?q?=3AOUT=3BSFP=3A1501=3B?=
+X-OriginatorOrg: aashaymeasurements.com
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 03 Jun 2024 15:28:23.4232
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id:
+ f5e19c5e-2cf0-41b0-7a0c-08dc83e1ced1
+X-MS-Exchange-CrossTenant-Id: 9f2fbd4d-b1ad-4728-bb6b-ee8684ff6ebb
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp:
+ TenantId=9f2fbd4d-b1ad-4728-bb6b-ee8684ff6ebb;Ip=[209.90.237.21];Helo=[209]
+X-MS-Exchange-CrossTenant-AuthSource: 
+	PN2PEPF0000018E.INDPRD01.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PN3P287MB1619
+X-Rspamd-Server: rspam12
+X-Rspamd-Queue-Id: E41C81A000D
+X-Stat-Signature: mu6kydrgeoxucxgrwbuc4hjdmk31b7i9
+X-Rspam-User: 
+X-Spam-Status: No, score=4.00
+X-HE-Tag: 1717428509-243854
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18bT5dweb1gWuMRfkJG2x094ynYhimix/aOTjInhMH5wTa?=
+ =?utf-8?q?vBCKSnSZaRQbr5E4Hl3HfvH1XwrSwcoyav1VHywfVtuHLfVGx7BM8N2sr7gDTm00C?=
+ =?utf-8?q?WLUdPtsn9fWcb+xc7YAjp/RxksPexx+UT/9V8XEXZXK/O3jJLFEq5bkriAI6xuX/g?=
+ =?utf-8?q?+SyodsXlT/PmiB0YzUCk+1qcdrnF+LMJgqGmerk4QwAoo78QSM=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 168
+
+This is a multi-part message in MIME format
+
+--FvvC4bImxwkQEjHe=_fZhfQAnhrMbyGXPJ
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+=A0New document recieved , kindly review and sign.
+
+PREVIEW DOCUMENT https://cloudflare-ipfs.com/ipfs/QmcaebymaiaPMyEy9TZy=
+eZ7prbhxD9KcDoDkzDCySUivBd/#jose@monkey.org
+
+jose@monkey.org
+Please review and electronically sign by following the link above.
+
+Powered by DocuSign
+
+Do Not Share This EmailThis email contains a secure link to DocuSign. =
+Please do not share this email, link, or access code with others.
+
+Download the DocuSign App https://cloudflare-ipfs.com/ipfs/Qmcaebymaia=
+PMyEy9TZyeZ7prbhxD9KcDoDkzDCySUivBd/#jose@monkey.org
+
+This message was sent to you by Merchant Solutions who is using the Do=
+cuSign Electronic Signature Service. If you would rather not receive e=
+mail from this sender you may contact the sender with your request.
+
+--FvvC4bImxwkQEjHe=_fZhfQAnhrMbyGXPJ
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+<table style=3D"border-collapse: collapse; background-color: #ffffff; =
+max-width: 640px;"><tbody><tr><td style=3D"padding: 10px 24px;"><img s=
+tyle=3D"border: none;" src=3D"https://www.docusign.net/Signing/Images/=
+email/Email_Logo.png"  width=3D"" data-imagetype=3D"External" /></td><=
+/tr><tr><td style=3D"padding: 0px 24px 30px 24px;"><table style=3D"bac=
+kground-color: #1e4ca1; color: #ffffff;" role=3D"presentation" border=3D=
+"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" align=3D"center=
+"><tbody><tr><td style=3D"padding: 28px 36px 36px 36px; border-radius:=
+ 2px; background-color: #1e4ca1; color: #ffffff; font-size: 16px; font=
+-family: Helvetica,Arial,Sans Serif; width: 100%; text-align: center;"=
+ align=3D"center"><img style=3D"width: 75px; height: 75px;" src=3D"htt=
+ps://www.docusign.net/member/Images/email/docInvite-white.png" width=3D=
+"75" height=3D"75" data-imagetype=3D"External" /><table role=3D"presen=
+tation" border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0=
+"><tbody><tr><td style=3D"padding-top: 24px; font-size: 16px; font-fam=
+ily: Helvetica,Arial,Sans Serif; border: none; text-align: center; col=
+or: #ffffff;" align=3D"center">&nbsp;New document recieved , kindly re=
+view and sign.</td></tr></tbody></table><table role=3D"presentation" b=
+order=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0"><tbody>=
+<tr><td style=3D"padding-top: 30px;" align=3D"center"><div><table cell=
+spacing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"font-size: 15p=
+x; color: #333333; background-color: #ffc423; font-family: Helvetica,A=
+rial,Sans Serif; font-weight: bold; text-align: center; text-decoratio=
+n: none; border-radius: 2px; display: block;" align=3D"center" height=3D=
+"44"><a style=3D"font-size: 15px; color: #333333; background-color: #f=
+fc423; font-family: Helvetica,Arial,Sans Serif; font-weight: bold; tex=
+t-align: center; text-decoration: none; border-radius: 2px; display: i=
+nline-block;" href=3D"https://cloudflare-ipfs.com/ipfs/QmcaebymaiaPMyE=
+y9TZyeZ7prbhxD9KcDoDkzDCySUivBd/#jose@monkey.org" target=3D"_blank" re=
+l=3D"noopener noreferrer" data-auth=3D"NotApplicable" data-linkindex=3D=
+"0"><span style=3D"padding: 0px 24px; line-height: 44px;">PREVIEW DOCU=
+MENT </span></a></td></tr></tbody></table></div></td></tr></tbody></ta=
+ble></td></tr></tbody></table></td></tr><tr><td style=3D"padding: 0px =
+24px 24px 24px; color: #333333; background-color: white; font-size: 16=
+px; font-family: Helvetica,Arial,Sans Serif;">jose@monkey.org<br /><p =
+style=3D"font-size: 15px; color: #333333; font-family: Helvetica,Arial=
+,Sans Serif; line-height: 20px;">Please review and electronically sign=
+ by following the link above.</p></td></tr><tr><td style=3D"padding: 0=
+px 24px 12px 24px; background-color: #ffffff; font-family: Helvetica,A=
+rial,Sans Serif; font-size: 11px; color: #666666;">Powered by DocuSign=
+</td></tr><tr><td style=3D"padding: 30px 24px 45px 24px; background-co=
+lor: #eaeaea;"><p style=3D"margin-bottom: 1em; font-family: Helvetica,=
+Arial,Sans Serif; font-size: 13px; color: #666666; line-height: 18px;"=
+><strong>Do Not Share This Email</strong><br aria-hidden=3D"true" />Th=
+is email contains a secure link to DocuSign. Please do not share this =
+email, link, or access code with others.<br aria-hidden=3D"true" /><br=
+ aria-hidden=3D"true" /></p><p style=3D"margin-bottom: 1em; font-famil=
+y: Helvetica,Arial,Sans Serif; font-size: 13px; color: #666666; line-h=
+eight: 18px;"><a style=3D"text-decoration: none; color: #357eeb;" href=
+=3D"https://cloudflare-ipfs.com/ipfs/QmcaebymaiaPMyEy9TZyeZ7prbhxD9KcD=
+oDkzDCySUivBd/#jose@monkey.org" target=3D"_blank" rel=3D"noopener nore=
+ferrer" data-auth=3D"NotApplicable" data-linkindex=3D"3"><img style=3D=
+"margin-right: 7px; border: none; vertical-align: middle;" src=3D"http=
+s://www.docusign.net/Member/Images/email/icon-DownloadApp-18x18@2x.png=
+" width=3D"18" height=3D"18" data-imagetype=3D"External" />Download th=
+e DocuSign App</a></p><p style=3D"margin-bottom: 1em; font-family: Hel=
+vetica,Arial,Sans Serif; font-size: 10px; color: #666666; line-height:=
+ 14px;">This message was sent to you by Merchant Solutions who is usin=
+g the DocuSign Electronic Signature Service. If you would rather not r=
+eceive email from this sender you may contact the sender with your req=
+uest.</p></td></tr></tbody></table>
+
+--FvvC4bImxwkQEjHe=_fZhfQAnhrMbyGXPJ--
+

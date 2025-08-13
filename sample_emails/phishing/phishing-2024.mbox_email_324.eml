@@ -1,0 +1,575 @@
+Return-Path: bounces+6821565-4318-jose=monkey.org@email.mazhr.com
+Delivered-To: jose@monkey.org
+X-FDA: 82752295458.24.6790DE3
+Received: from s.wrqvtnnq.outbound-mail.sendgrid.net
+ (s.wrqvtnnq.outbound-mail.sendgrid.net [149.72.114.36])	by
+ imf29.b.hostedemail.com (Postfix) with ESMTP id 4D902120007	for
+ <jose@monkey.org>; Tue,  5 Nov 2024 14:37:58 +0000 (UTC)
+Authentication-Results: imf29.b.hostedemail.com;	dkim=pass header.d=mazhr.com
+ header.s=s1 header.b=hz2iSDTM;	spf=pass (imf29.b.hostedemail.com: domain of
+ "bounces+6821565-4318-jose=monkey.org@email.mazhr.com" designates
+ 149.72.114.36 as permitted sender)
+ smtp.mailfrom="bounces+6821565-4318-jose=monkey.org@email.mazhr.com";
+	dmarc=temperror reason="server fail" header.from=manageintakes.com
+ (policy=temperror)
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1730817489;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=Xw0OHx/eqOp99glKy3a38LFJq6Dn2S9XDn4smvWOvDE=;
+	b=pT/sma6GH95v6KmZ/5/GZ7JxLaLLffESl2RtnG7jmo77yHVfrsSBwtLzKaPInGfNQQo4hs
+	rQgM9OENej8rbYD7Yt5J5lyC3duOre3LiOiHE9xsJ/39oZITOYNuLPYHW4c+6DbqrXnWbH
+	3oTHoMbU34ilGacWMl6zPEBhzeRhNdY=
+ARC-Authentication-Results: i=1;	imf29.b.hostedemail.com;	dkim=pass
+ header.d=mazhr.com header.s=s1 header.b=hz2iSDTM;	spf=pass
+ (imf29.b.hostedemail.com: domain of
+ "bounces+6821565-4318-jose=monkey.org@email.mazhr.com" designates
+ 149.72.114.36 as permitted sender)
+ smtp.mailfrom="bounces+6821565-4318-jose=monkey.org@email.mazhr.com";
+	dmarc=temperror reason="server fail" header.from=manageintakes.com
+ (policy=temperror)
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1730817489; a=rsa-sha256;
+	cv=none;
+	b=uxp/Tk9s9OHMYwD9g+sx+deTGdpkwiSzE6BEgQJ/qEGvWpSM1OXMPNMXvy16zl8KVDMIVg
+	jRyDuH5BM796VeOvQ93dGrLYTEODD+LZM5oltnq8QPnwblw2HlgldduJ7GWEwdLbUz9zBq
+	8rTz2sVZEGaf+gqOtEL7/OWXcEdKI9M=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mazhr.com;
+	h=from:subject:mime-version:to:content-type:content-transfer-encoding:
+	cc:content-type:from:subject:to;
+	s=s1; bh=Xw0OHx/eqOp99glKy3a38LFJq6Dn2S9XDn4smvWOvDE=;
+	b=hz2iSDTMxLXipg2rYmgdplIO2PJ1KuHgnAz+GZsKI+d5wtN+I52yr6+Rk+Rsf48CSFHn
+	t4BVbx4Zgc3jmInZ82nWdGfaBfQul5C1/mBLOtMcPrl1xGVGrYKgs55tCsvaMqqNJxbPlI
+	hv8p1pIfzd6ShPgQK5eLWBJXIfiUrJ1r7gr51RFQQ8gpNN49YEZJkqGb8NAO28OsBkMNll
+	E1+YTkQJ3gz1uLc5ppxRmk/3UE5l5LIKgavJ8yCG1WSLC2t7d8eaivUFsnMFB1yKzUBNwf
+	cvlA8lj2JGAiw/0Ca142RiFd3+xstelWCMf89WgvqBUFVpydHCF9JwyYs7ZHEO2g==
+Received: by recvd-77b98ff8f5-njvdg with SMTP id
+ recvd-77b98ff8f5-njvdg-1-672A2DDB-31	2024-11-05 14:38:19.338102809 +0000 UTC
+ m=+4653604.584970790
+Received: from crckng.net (unknown)
+	by geopod-ismtpd-6 (SG) with ESMTP
+	id jA-Cw1SITyKiAwGUco4DVA
+	for <jose@monkey.org>;
+	Tue, 05 Nov 2024 14:38:19.203 +0000 (UTC)
+From: JPMorganchase Fraud-Prevention <no-reply@manageintakes.com>
+Subject: Your Chase Account Needs Verification  Tuesday, November 5, 2024 5:38
+ p.m.
+Date: Tue, 05 Nov 2024 14:38:19 +0000 (UTC)
+Message-ID: <20241105173817.9D4057D8BB253B46@manageintakes.com>
+MIME-Version: 1.0
+X-SG-EID:  u001.ZxpyNt9EFsmzNBrGFVznXCHxzEMYjXZpgwawlXmdcj9PxgV/7IbkONzS+
+ =?utf-8?q?rh2ox47kzoscys2xWfJf7WiBJIDSd4+TWWvPcSH?==?utf-8?q?ZEgiAG8ZxVDP5+?=
+ =?utf-8?q?dB81+xI7zjPJg8jk/CcDGWrXBYbE0HNeDKGCawM+ZjY4BUS+W5Mn9p1kh5MQzTBw2?=
+ =?utf-8?q?qTG0zg/CpEOJk4yOdYYmiKDyyweVfyszpo2ZLEZGi1YGHwI2kll+OEn44OOvg3tpq?=
+ =?utf-8?q?9muymyBcE6av?=BR5Vl1mNkvsATL2y/qZj3QcUUg==
+To: jose@monkey.org
+X-Entity-ID: u001.BhQyBNlk3d8TFTLF4NSbPQ==
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+X-Spam-Status: No, score=1.38
+X-Rspamd-Server: rspam07
+X-Rspamd-Queue-Id: 4D902120007
+X-Stat-Signature: o8ejtoup17q4u8u3ejqexdiow67xtrm3
+X-Rspam-User: 
+X-HE-Tag: 1730817478-535449
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/VE75cF1eqapTBawzjxj4M4E+P0KaS7bT/i5Dk4RJ+Khg?=
+ =?utf-8?q?mA38Q0NfBmqD8i3CCDpKPOP9A5WqZdmReDgIwbJQuCyhdibpMtOcL8yckFZQFONPX?=
+ =?utf-8?q?YA0ft+XCswKst52dmQoSMaOswqNm59GE6ucFoCP02nF4TdKBHfnaaN4YI12VsUoz7?=
+ =?utf-8?q?hIzi1LVxIrkOXYHSPbZWp0TiPp1omjb6AnBiIPOZNA10B/NTuwvgKqWt1yuqptS3J?=
+ =?utf-8?q?QrveqebtH5xFadNZeLpA1jIAhWJwmtMByaNmPyNSXV/++1XY2zF3Yx8CY+DqvTemv?=
+ =?utf-8?q?DdqN1Dj6DsYzjKMAcen6Rr+qg4lEnqmjsyU2CpVRG71PrT5pX/Ee5Tec79buPWt7H?=
+ =?utf-8?q?RPt9J+rxHkWqj2bfrxUObog41uEarzXEzJySWrdYes7MYvBKVHJCgDnX92TUMq6ED?=
+ =?utf-8?q?qfPRk56zbL1hqzQbhgqeN/u6HDLo84OrYIqNEFDNbtIZ1VZSQ68KByuKfNxR011z7?=
+ =?utf-8?q?6hCNR/ifLz3diKYx+gTkSg/UbgYPR4SD8lsfnNfVIdqRJALzLtpbkifHddARH1EWj?=
+ =?utf-8?q?W7rB0M5T6VQ7Tw4+BANhrEEJFyo6r4zlJekX+m3rj/nF//mY+o3Ugeiw+EXCwFf9z?=
+ =?utf-8?q?Lc7DR7yxMdeQzIqO3mxyMbuSuL5FhPVro+Q6HPCYqjq9tnfriOvCY/rMDHnCIrR5k?=
+ =?utf-8?q?D6Us5oasB7aAcIEvZL9f1bUVuFM0xLrjN9kFwR9SLnPWGqa3lO6D1FNm8aFHwEwgh?=
+ =?utf-8?q?3UQXdnpZTe+dMPa//Ykn8/HNOhUrjP98qysCiwQ9QWfCdM1Pv5sYhOU+deaclo6sf?=
+ =?utf-8?q?l07KA+B2GiBwaekHDHb48SV9Z5R5a8Wu0mBHQ1J0WdDHWkAF+Bsy9M6s2g2uVOcFY?=
+ =?utf-8?q?EuBHDAC1UUgRK/rXlkfMZ9ZLPfNkZwMGzvAwXWnNe0+CFl4f+wRDxAoZPaNBFVGlt?=
+ =?utf-8?q?C+cdS4hmyOLtwTaQRTGI4L_9vDi1Va8KVhEAnJ5TtU9lqMMG4TrmjMJFpJ4ieJmif?=
+ =?utf-8?q?DTC7T9uKLv1Lw6Yt9rRA27UJPjluz/WO0SHY1GsmghK16Va5weiE2ISLUwFhkObTr?=
+ =?utf-8?q?Kvwr2yahlHhSdx1XXGGZ4xeqAv5LrPnWXw87qRl9/raqUp/wENsVH7WVRjQZ6xUbo?=
+ =?utf-8?q?2qDAhlwVmE4JEjaOsMRuaB7LLbv57i7JHPzWWJG71yk3iVj/17TCqpa4pws9gYTWs?=
+ =?utf-8?q?8vRBniR+7BF/s3EtHqpFxjNJs9BfP7ZAKyBEBRS0mZJVXAKMNPocTGp2rcsJvPk09?=
+ =?utf-8?q?JD6dpay1rh9Oqjn34gLZYEr08q/CWpkOlD3LFFZeNlp5KZcKMqjU3ff63SJREF0L5?=
+ =?utf-8?q?FiuVCHoEVKjIVKaxODZuWeYgxwkAighDPIIRzbBhNA1lTHbD1OxAJGofgVCknS19w?=
+ =?utf-8?q?ScCk1TC/jtVT6Nvt0TroKXkwj9KuZPZpJiXRfb+oz+HMrxa0he08I3IGvlgKTlQ0i?=
+ =?utf-8?q?CxLQHYiu41HBYPGEdzkUqnShz6qeYWZd+m2EV1gJqyp7JgL648ZMG+/2Z1AOx9hQd?=
+ =?utf-8?q?oz6RH0q/lzhvddpGoAa73kwTNx7JOWRbea0L6Lxx9020Ba59CGZ3oOUiEe3VpOKRC?=
+ =?utf-8?q?3Utii++SLk5f5wFTWuDgKZwXCYNcmM8Q0pR9v8ouDHSYrUQQweRY2s1FPLgtqb0Oh?=
+ =?utf-8?q?xntpEKsWgVx1RcHo7RMlHyRpkrUVp8fOWXODibd3xMdDm8S9Gz2QA4O6qtR4=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 324
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta http-equiv=3D"content-type" content=3D"text/html; charset=3DISO-8859-=
+1">
+  <title></title>
+</head>
+<body>
+<div id=3D"x_divRplyFwdMsg" style=3D"margin: 0px; padding: 0px; border: 0px=
+ currentColor; border-image: none; color: rgb(36, 36, 36); text-transform: =
+none; line-height: normal !important; text-indent: 0px; letter-spacing: nor=
+mal; font-family: Times New Roman; font-size: 15px; font-style: normal; fon=
+t-weight: 400; word-spacing: 0px; vertical-align: baseline; white-space: no=
+rmal; orphans: 2; widows: 2; font-size-adjust: inherit; font-stretch: inher=
+it; background-color: rgb(255, 255, 255);" dir=3D"ltr">
+<font style=3D"line-height: normal !important;"><b style=3D"line-height: no=
+rmal !important;">From:</b><span>&nbsp;</span>Chase
+&lt;no.reply.alerts@chase.com&gt;</font></div>
+<table width=3D"100%" align=3D"center" class=3D"x_fullWidth" role=3D"presen=
+tation" style=3D"color: rgb(36, 36, 36); text-transform: none; line-height:=
+ normal !important; letter-spacing: normal; font-family: Times New Roman; f=
+ont-size: 15px; font-style: normal; font-weight: 400; word-spacing: 0px; wh=
+ite-space: normal; min-width: 800px; orphans: 2; widows: 2; font-size-adjus=
+t: inherit; font-stretch: inherit; background-color: rgb(215, 219, 224) !im=
+portant;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+  <tbody style=3D"line-height: normal !important;">
+    <tr style=3D"line-height: normal !important;">
+      <td align=3D"center" class=3D"x_fullWidth" style=3D"padding: 0px 0px =
+20px; line-height: normal !important; vertical-align: top; white-space: nor=
+mal !important; min-width: 800px; background-color: rgb(215, 219, 224) !imp=
+ortant;">
+      <table width=3D"800" align=3D"center" class=3D"x_fullWidth" role=3D"p=
+resentation" style=3D"line-height: normal !important; font-size: inherit; f=
+ont-style: inherit; font-variant: inherit; font-weight: inherit; font-size-=
+adjust: inherit; font-stretch: inherit; background-color: rgb(255, 255, 255=
+) !important;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+        <tbody style=3D"line-height: normal !important;">
+          <tr style=3D"line-height: normal !important;">
+            <td align=3D"center" style=3D"padding: 23px 0px 0px; line-heigh=
+t: normal !important; vertical-align: top; white-space: normal !important; =
+background-color: rgb(0, 94, 184) !important;">
+            <table role=3D"presentation" style=3D"line-height: normal !impo=
+rtant; font-size: inherit; font-style: inherit; font-variant: inherit; font=
+-weight: inherit; font-size-adjust: inherit; font-stretch: inherit;" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+              <tbody style=3D"line-height: normal !important;">
+                <tr style=3D"line-height: normal !important;">
+                  <td align=3D"right" style=3D"padding: 0px; width: 12px; l=
+ine-height: normal !important; vertical-align: bottom; white-space: normal =
+!important;">
+<img width=3D"12" height=3D"226" style=3D"margin: 0px; padding: 0px; border=
+: 0px currentColor; border-image: none; color: inherit; line-height: normal=
+ !important; font-size: inherit; font-style: inherit; font-variant: inherit=
+; font-weight: inherit; vertical-align: baseline; display: block; font-size=
+-adjust: inherit; font-stretch: inherit;" alt=3D"" src=3D"https://www.chase=
+.com/content/dam/email/images/blue-left.jpg" border=3D"0" data-imagetype=3D=
+"External"></td>
+                  <td align=3D"center" style=3D"padding: 0px; width: 616px;=
+ line-height: normal !important; vertical-align: bottom; white-space: norma=
+l !important; background-color: rgb(255, 255, 255) !important;">
+                  <table width=3D"100%" role=3D"presentation" style=3D"line=
+-height: normal !important; font-size: inherit; font-style: inherit; font-v=
+ariant: inherit; font-weight: inherit; font-size-adjust: inherit; font-stre=
+tch: inherit;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                    <tbody style=3D"line-height: normal !important;">
+                      <tr style=3D"line-height: normal !important;">
+                        <td align=3D"left" style=3D"padding: 0px; line-heig=
+ht: normal !important; vertical-align: top; white-space: normal !important;=
+ background-color: rgb(255, 255, 255) !important;">
+                        <table width=3D"100%" role=3D"presentation" style=
+=3D"line-height: normal !important; font-size: inherit; font-style: inherit=
+; font-variant: inherit; font-weight: inherit; font-size-adjust: inherit; f=
+ont-stretch: inherit;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                          <tbody style=3D"line-height: normal !important;">
+                            <tr style=3D"line-height: normal !important;">
+                              <td align=3D"left" class=3D"x_moPad" style=3D=
+"line-height: normal !important; padding-left: 30px; vertical-align: top; w=
+hite-space: normal !important; background-color: rgb(255, 255, 255) !import=
+ant;">
+                              <table width=3D"100%" role=3D"presentation" s=
+tyle=3D"line-height: normal !important; font-size: inherit; font-style: inh=
+erit; font-variant: inherit; font-weight: inherit; font-size-adjust: inheri=
+t; font-stretch: inherit;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+>
+                                <tbody style=3D"line-height: normal !import=
+ant;">
+                                  <tr style=3D"line-height: normal !importa=
+nt;">
+                                    <td align=3D"left" style=3D"padding: 36=
+px 0px 20px; line-height: normal !important; vertical-align: bottom; white-=
+space: normal !important;">
+<img width=3D"104" height=3D"20" style=3D"margin: 0px; padding: 0px; border=
+: 0px currentColor; border-image: none; color: inherit; line-height: normal=
+ !important; font-size: inherit; font-style: inherit; font-variant: inherit=
+; font-weight: inherit; vertical-align: baseline; display: block; font-size=
+-adjust: inherit; font-stretch: inherit;" alt=3D"Chase Logo" src=3D"https:/=
+/www.chase.com/content/dam/email/images/chase-logo-h-rgb.png" border=3D"0" =
+data-imagetype=3D"External"></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              </td>
+                            </tr>
+                            <tr style=3D"line-height: normal !important;">
+                              <td align=3D"left" class=3D"x_moPad" style=3D=
+"padding: 20px 28px 0px; line-height: normal !important; vertical-align: to=
+p; white-space: normal !important;">
+                              <table align=3D"left" role=3D"presentation" s=
+tyle=3D"line-height: normal !important; font-size: inherit; font-style: inh=
+erit; font-variant: inherit; font-weight: inherit; font-size-adjust: inheri=
+t; font-stretch: inherit;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+>
+                                <tbody style=3D"line-height: normal !import=
+ant;">
+                                  <tr style=3D"line-height: normal !importa=
+nt;">
+                                    <td align=3D"left" style=3D"line-height=
+: normal !important; vertical-align: top; white-space: normal !important;">
+                                    <table width=3D"100%" role=3D"presentat=
+ion" style=3D"line-height: normal !important; font-size: inherit; font-styl=
+e: inherit; font-variant: inherit; font-weight: inherit; font-size-adjust: =
+inherit; font-stretch: inherit;" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0">
+                                      <tbody style=3D"line-height: normal !=
+important;">
+                                        <tr style=3D"line-height: normal !i=
+mportant;">
+                                          <td align=3D"left" class=3D"x_fon=
+t14" style=3D"padding: 5px 10px; color: rgb(65, 64, 66) !important; line-he=
+ight: normal !important; font-size: 12px; font-weight: bold; vertical-align=
+: top; white-space: nowrap; background-color: rgb(215, 219, 224) !important=
+;">Security alert</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              </td>
+                            </tr>
+                            <tr style=3D"line-height: normal !important;">
+                              <td align=3D"left" class=3D"x_moPad" style=3D=
+"padding: 20px 30px 58px; line-height: normal !important; vertical-align: t=
+op; white-space: normal !important; background-color: rgb(255, 255, 255) !i=
+mportant;">
+                              <table role=3D"presentation" style=3D"width: =
+548px; height: 47px; line-height: normal !important; font-size: inherit; fo=
+nt-style: inherit; font-variant: inherit; font-weight: inherit; font-size-a=
+djust: inherit; font-stretch: inherit;" border=3D"0" cellspacing=3D"0" cell=
+padding=3D"0">
+                                <tbody style=3D"line-height: normal !import=
+ant;">
+                                  <tr style=3D"line-height: normal !importa=
+nt;">
+                                    <td align=3D"left" class=3D"x_zeroPad" =
+style=3D"padding: 0px 150px 0px 0px; color: rgb(65, 64, 66) !important; lin=
+e-height: normal !important; font-size: 30px; font-weight: bold; vertical-a=
+lign: top; white-space: normal !important;">Account Verification Required</=
+td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </td>
+                  <td align=3D"left" style=3D"padding: 0px; width: 12px; li=
+ne-height: normal !important; vertical-align: bottom; white-space: normal !=
+important;">
+<img width=3D"12" height=3D"226" style=3D"margin: 0px; padding: 0px; border=
+: 0px currentColor; border-image: none; color: inherit; line-height: normal=
+ !important; font-size: inherit; font-style: inherit; font-variant: inherit=
+; font-weight: inherit; vertical-align: baseline; display: block; font-size=
+-adjust: inherit; font-stretch: inherit;" alt=3D"" src=3D"https://www.chase=
+.com/content/dam/email/images/blue-right.jpg" border=3D"0" data-imagetype=
+=3D"External"></td>
+                </tr>
+              </tbody>
+            </table>
+            </td>
+          </tr>
+          <tr style=3D"line-height: normal !important;">
+            <td align=3D"center" style=3D"padding: 0px; line-height: normal=
+ !important; vertical-align: top; white-space: normal !important; backgroun=
+d-color: rgb(255, 255, 255) !important;">
+            <table role=3D"presentation" style=3D"line-height: normal !impo=
+rtant; font-size: inherit; font-style: inherit; font-variant: inherit; font=
+-weight: inherit; font-size-adjust: inherit; font-stretch: inherit;" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+              <tbody style=3D"line-height: normal !important;">
+                <tr style=3D"line-height: normal !important;">
+                  <td align=3D"right" style=3D"padding: 0px; width: 12px; l=
+ine-height: normal !important; vertical-align: top; white-space: normal !im=
+portant;">
+<img width=3D"12" height=3D"77" style=3D"margin: 0px; padding: 0px; border:=
+ 0px currentColor; border-image: none; color: inherit; line-height: normal =
+!important; font-size: inherit; font-style: inherit; font-variant: inherit;=
+ font-weight: inherit; vertical-align: baseline; display: block; font-size-=
+adjust: inherit; font-stretch: inherit;" alt=3D"" src=3D"https://www.chase.=
+com/content/dam/email/images/white-left.jpg" border=3D"0" data-imagetype=3D=
+"External"></td>
+                  <td align=3D"center" style=3D"padding: 0px; width: 616px;=
+ line-height: normal !important; vertical-align: top; white-space: normal !=
+important; background-color: rgb(255, 255, 255) !important;">
+                  <table role=3D"presentation" style=3D"width: 616px; heigh=
+t: 558px; line-height: normal !important; font-size: inherit; font-style: i=
+nherit; font-variant: inherit; font-weight: inherit; font-size-adjust: inhe=
+rit; font-stretch: inherit;" border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0">
+                    <tbody style=3D"line-height: normal !important;">
+                      <tr style=3D"line-height: normal !important;">
+                        <td align=3D"left" class=3D"x_moPad" style=3D"paddi=
+ng: 0px 150px 0px 30px; line-height: normal !important; vertical-align: top=
+; white-space: normal !important;">
+                        <table width=3D"100%" role=3D"presentation" style=
+=3D"line-height: normal !important; font-size: inherit; font-style: inherit=
+; font-variant: inherit; font-weight: inherit; font-size-adjust: inherit; f=
+ont-stretch: inherit;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                          <tbody style=3D"line-height: normal !important;">
+                            <tr style=3D"line-height: normal !important;">
+                              <td align=3D"left" style=3D"padding: 10px 0px=
+; line-height: normal !important; vertical-align: top; border-bottom-color:=
+ rgb(65, 64, 66); border-bottom-width: 1px; border-bottom-style: solid; whi=
+te-space: normal !important;">
+                              <table width=3D"100%" role=3D"presentation" s=
+tyle=3D"line-height: normal !important; font-size: inherit; font-style: inh=
+erit; font-variant: inherit; font-weight: inherit; font-size-adjust: inheri=
+t; font-stretch: inherit;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+>
+                                <tbody style=3D"line-height: normal !import=
+ant;">
+                                  <tr style=3D"line-height: normal !importa=
+nt;">
+                                    <td align=3D"left" class=3D"x_font14" s=
+tyle=3D"padding: 0px; color: rgb(65, 64, 66) !important; line-height: norma=
+l !important; font-size: 16px; vertical-align: top; white-space: normal !im=
+portant;"><span style=3D"font-weight: bold;">Email
+Sent to:</span></td>
+                                    <td align=3D"right" class=3D"x_font14" =
+style=3D"padding: 0px 0px 0px 5px; color: rgb(65, 64, 66) !important; line-=
+height: normal !important; font-size: 16px; font-weight: bold; vertical-ali=
+gn: top; white-space: normal !important;">(jose@monkey.org)</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              </td>
+                            </tr>
+                            <tr style=3D"line-height: normal !important;">
+                              <td align=3D"left" style=3D"padding: 10px 0px=
+; line-height: normal !important; vertical-align: top; border-bottom-color:=
+ rgb(65, 64, 66); border-bottom-width: 1px; border-bottom-style: solid; whi=
+te-space: normal !important;">
+                              <table width=3D"100%" role=3D"presentation" s=
+tyle=3D"line-height: normal !important; font-size: inherit; font-style: inh=
+erit; font-variant: inherit; font-weight: inherit; font-size-adjust: inheri=
+t; font-stretch: inherit;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+>
+                                <tbody style=3D"line-height: normal !import=
+ant;">
+                                  <tr style=3D"line-height: normal !importa=
+nt;">
+                                    <td align=3D"left" class=3D"x_font14" s=
+tyle=3D"padding: 0px; color: rgb(65, 64, 66) !important; line-height: norma=
+l !important; font-size: 16px; vertical-align: top; white-space: normal !im=
+portant;"><span style=3D"font-weight: bold;">Email
+Date:</span></td>
+                                    <td align=3D"right" class=3D"x_font14" =
+style=3D"padding: 0px 0px 0px 5px; color: rgb(65, 64, 66) !important; line-=
+height: normal !important; font-size: 16px; font-weight: bold; vertical-ali=
+gn: top; white-space: normal !important;"> Tuesday, November 5, 2024 5:38 p=
+.m.<br>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              </td>
+                            </tr>
+                            <tr style=3D"line-height: normal !important;">
+                              <td align=3D"left" style=3D"padding: 10px 0px=
+; line-height: normal !important; vertical-align: top; border-bottom-color:=
+ rgb(65, 64, 66); border-bottom-width: 1px; border-bottom-style: solid; whi=
+te-space: normal !important;">
+                              <table width=3D"100%" role=3D"presentation" s=
+tyle=3D"line-height: normal !important; font-size: inherit; font-style: inh=
+erit; font-variant: inherit; font-weight: inherit; font-size-adjust: inheri=
+t; font-stretch: inherit;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+>
+                                <tbody style=3D"line-height: normal !import=
+ant;">
+                                  <tr style=3D"line-height: normal !importa=
+nt;">
+                                    <td align=3D"left" class=3D"x_font14" s=
+tyle=3D"padding: 0px; color: rgb(65, 64, 66) !important; line-height: norma=
+l !important; font-size: 16px; font-weight: bold; vertical-align: top; whit=
+e-space: normal !important;">Email Priority</td>
+                                    <td align=3D"right" class=3D"x_font14" =
+style=3D"padding: 0px 0px 0px 5px; color: rgb(65, 64, 66) !important; line-=
+height: normal !important; font-size: 16px; font-weight: bold; vertical-ali=
+gn: top; white-space: normal !important;">Extremely High</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        </td>
+                      </tr>
+                      <tr style=3D"line-height: normal !important;">
+                        <td align=3D"left" class=3D"x_moPad" style=3D"paddi=
+ng: 40px 130px 0px 30px; color: rgb(65, 64, 66) !important; line-height: no=
+rmal !important; font-size: 16px; vertical-align: top; white-space: normal =
+!important;"><big>You are receiving this notification
+because we have detected fraudulent activity on your account, which has
+led to its temporary suspension.<br>
+                        <br>
+To restore access, please click the *Review Account* link below, sign
+in, and verify your account information.<br>
+                        <br>
+Note: Ensure that you do not change your UserID or password during the
+verification process.</big></td>
+                      </tr>
+                      <tr style=3D"line-height: normal !important;">
+                        <td align=3D"left" class=3D"x_moPad" style=3D"paddi=
+ng: 40px 0px 60px 30px; line-height: normal !important; vertical-align: top=
+; white-space: normal !important;">
+                        <table align=3D"left" role=3D"presentation" style=
+=3D"line-height: normal !important; font-size: inherit; font-style: inherit=
+; font-variant: inherit; font-weight: inherit; vertical-align: top; font-si=
+ze-adjust: inherit; font-stretch: inherit;" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0">
+                          <tbody style=3D"line-height: normal !important;">
+                            <tr style=3D"line-height: normal !important;">
+                              <td align=3D"center" role=3D"button" style=3D=
+"padding: 10px 0px; border: 1px solid rgb(0, 96, 240); border-image: none; =
+width: 168px; color: rgb(255, 255, 254) !important; line-height: normal !im=
+portant; font-size: 16px; vertical-align: top; white-space: normal !importa=
+nt; background-color: rgb(0, 96, 240) !important;">
+<a title=3D"Protected by Outlook: https://secure.chase.com/web/auth/nav?nav=
+Key=3DrequestDashboard. Click or tap to follow the link." style=3D"margin: =
+0px; padding: 0px; border: 0px currentColor; border-image: none; color: rgb=
+(255, 255, 254) !important; line-height: normal !important; font-size: inhe=
+rit; font-style: inherit; font-variant: inherit; font-weight: inherit; text=
+-decoration: none; vertical-align: baseline; font-size-adjust: inherit; fon=
+t-stretch: inherit;"=20
+href=3D"https://u6821565.ct.sendgrid.net/ls/click?upn=3Du001.j5r5ehMAgYTm7j=
+QBfROobUA73pOQBGhhUs7zCy8C-2B4BEPd-2BexygXRgmMK5qbKms6XoVK_fKvoxt542JDYaqge=
+R2SzDY7s2siCDcUil1Dfvcd8On9iLYD3k0uXG2mqgKB7U9obYGZ9OQp4v1B-2FfhvAIa-2BpSLe=
+fttZvxcB6Yj9nP9hJh4PLEDzhhNNv70xVX1tX3rCbmZNWPs4G64e-2FSI81lT-2F50E2dgJuX9O=
+EbqtpBhqWF3Nnw8w-2F7LOdRYQ5QHBaURJQSf63thHxIhPcw16QOw0SP7w-3D-3D" target=3D=
+"_blank" rel=3D"noopener noreferrer" data-linkindex=3D"1" data-auth=3D"Veri=
+fied" originalsrc=3D"https://secure.chase.com/web/auth/nav?navKey=3Drequest=
+Dashboard" shash=3D"LmhmeT+dow98xL9F3/KhatsKlKvY3cC7r1qFmdZVJ61gfN/f4mjpxoo=
+wFsgExx+8HUM7c03PdiuyJLA4mtzHtrashtWMmzPy4l04UGxxCN/3eoAxo+IfLbWl7npaUPLps6=
+c7ZtzZxqJlMhVZjdIbSaKj02kRg9E3kM1ZeRp1koc=3D">Review
+account</a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        </td>
+                      </tr>
+                      <tr style=3D"line-height: normal !important;">
+                        <td align=3D"left" class=3D"x_moPad x_font14" style=
+=3D"padding: 0px 30px 20px; color: rgb(113, 113, 113) !important; line-heig=
+ht: normal !important; font-size: 12px; vertical-align: top; white-space: n=
+ormal !important;">Securely access your accounts with the<span>&nbsp;</span=
+>
+<a title=3D"Protected by Outlook: https://www.chase.com/digital/mobile-bank=
+ing. Click or tap to follow the link." style=3D"margin: 0px; padding: 0px; =
+border: 0px currentColor; border-image: none; color: rgb(0, 96, 240) !impor=
+tant; line-height: normal !important; font-size: inherit; font-style: inher=
+it; font-variant: inherit; font-weight: inherit; text-decoration: underline=
+; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inheri=
+t;"=20
+href=3D"https://u6821565.ct.sendgrid.net/ls/click?upn=3Du001.j5r5ehMAgYTm7j=
+QBfROobVqHVz703dV4w1B-2B-2BbSwj60RqKgeOSafnC-2BW43-2BMN4mRy9zTYNOYO4TVGLfnv=
+sXu7g-2BbRIrbbhWaIdJXNgsrP46LcGUmgycGn8k6xgBgqoEBmBkNebNT9KfLw45oHCUDPQJFe9=
+Y1hlROwBMEfQQug-2Bs2rGbb5gEHn-2BKblJtDKE3G-2Bvy65QEl3NVTSutUHY0mJ-2BKgXlwdz=
+glhk6xWW-2FXuYBE2nOw1aX47qL-2Bg289oTDwEFLDLlsBeCcOV6Ji96QtxdYTS-2Fsu-2FgK5M=
+TwHyog-2Bt-2FQStJavBK2gCe2P-2F1-2Fvy5gMKYZg7LPr-2BEcK0Fyv0RJJy1egwtA2tTxyR6=
+-2FUFdXFQSoGhXVCzd6IVgezn7iqLK2aeN3-2BJd0JBPKpv2GqsUAbs6CSAEFOUgp4K5uZOHGdW=
+73d2Tm92V8h3Uytf2-2FonsTbhkms7fgk-2B7A2lIrIqr7iq83FNFu19YXkrDtmuoxiQkm8oUvP=
+ShOEfla3Ncab-2FQDcI7StcyTi-2FB-2FaQabL10-2FajjA-3D-3D9tId_fKvoxt542JDYaqgeR=
+2SzDY7s2siCDcUil1Dfvcd8On9iLYD3k0uXG2mqgKB7U9obm7Ghr1UZybmTORsnV7u2WnFcn0ER=
+AgyPgfLajMSsAx63s0OeSRrx-2BO-2FydewWx9ErFeBQBsXxCVMEvHO2tDz1LGliNmCh-2BNNTy=
+6BEYb2l9In0mm-2BFk2Gj9MT916zJU19bOH2UvSIghaHsn3qzz-2Fma4w-3D-3D" target=3D"=
+_blank" rel=3D"noopener noreferrer" data-linkindex=3D"2" data-auth=3D"Verif=
+ied"=20
+originalsrc=3D"https://www.chase.com/digital/mobile-banking" shash=3D"nR0xG=
+s2oI7BaAShprsZSBabEi8TYp75EgB3Psa4gcivWm8V/2dv2BE+PFFFuGL9SmP/vC1VyPdTX/i9g=
+zpQaKXv0JS/2cpw0MkcN5tL+if2KS365MBahFc0DZhZc0bh+msDsk6ptyuzHeKhPOwAfSWw4W4l=
+oyhKYB6XM1iELbjA=3D">
+Chase&nbsp;Mobile<span style=3D"margin: 0px; padding: 0px; border: 0px curr=
+entColor; border-image: none; color: inherit; line-height: normal !importan=
+t; font-size: 8.4px; font-style: inherit; font-variant: inherit; font-weigh=
+t: inherit; text-decoration: none; vertical-align: 3px; font-size-adjust: i=
+nherit; font-stretch: inherit;">&reg;</span><span>&nbsp;</span>app</a><span=
+>&nbsp;</span>or<span>&nbsp;</span>
+<a title=3D"Protected by Outlook: https://secure.chase.com/web/auth/nav?nav=
+Key=3DrequestDashboard. Click or tap to follow the link." style=3D"margin: =
+0px; padding: 0px; border: 0px currentColor; border-image: none; color: rgb=
+(0, 96, 240) !important; line-height: normal !important; font-size: inherit=
+; font-style: inherit; font-variant: inherit; font-weight: inherit; text-de=
+coration: underline; vertical-align: baseline; font-size-adjust: inherit; f=
+ont-stretch: inherit;"=20
+href=3D"https://u6821565.ct.sendgrid.net/ls/click?upn=3Du001.j5r5ehMAgYTm7j=
+QBfROobVqHVz703dV4w1B-2B-2BbSwj60RqKgeOSafnC-2BW43-2BMN4mRy9zTYNOYO4TVGLfnv=
+sXu7psZKcW9R-2FlYh2eLPRk2U-2FF3X5VQFtzIHJQbZTfSGwq-2BKiE8BTo1yyp41kxpoGL06z=
+32FTE9J0SCOWYM5guuZT8g4w9etzUx8CaOXznQoXyo6L11Lk0yr73qKQR5xuUcrEO2Ejowv75Kp=
+VdjkEbu8pY1zWXhrxtfnRYZG62waWETiMrY5YozLzBUucEC5cNxK41ghfKVgmvjtU5vuJ2s-2FO=
+H24Mgu5o3haQOuBDPL1n3uBhIUnm6Lh9fK0quQ15wUeMx9FHiRJVLMDCmDIJXB9-2BeOL6ADQER=
+GUjVP-2B6-2F-2Fg9Rym48b9EMMjNYa0YlIM-2BBn1W8MHTvJRfCx-2BZETb-2BctyTKAm46F1F=
+EoKjeZ6Oj6vpW09aJWNVu6whSFHqdZCX81X99DwaoqLQDoy5uxXPo93Qi05KljZ-2BswhSHdrl7=
+qCWsnnTYpUGr5kyTzMJ3mCIuM2TOVKsD25kemDfRRwDdRdSUnhG-2FijMN0DKPOsc-2B-2FJBmW=
+Qxtr_fKvoxt542JDYaqgeR2SzDY7s2siCDcUil1Dfvcd8On9iLYD3k0uXG2mqgKB7U9obRK66B1=
+7beunJsGIZbkzfVg-2Fw78XXJqwDqeY4nAqpNs3DpOxSKLUTMkw2Fq6e3YEs-2F6cOdD8-2FjQp=
+cr2WKfxvqEcjtb6Fh2kuXcBge7RJY58QDSw1UOwL5I3kNEoG5ZpkNQyyFlGj6E-2FQZ0FPLlTym=
+JQ-3D-3D" target=3D"_blank" rel=3D"noopener noreferrer" data-linkindex=3D"3=
+"=20
+data-auth=3D"Verified" originalsrc=3D"https://secure.chase.com/web/auth/nav=
+?navKey=3DrequestDashboard" shash=3D"H6pZXeJfLtzBfzUPaKO61t42zNtah3a/IuhEOw=
+u43Bjnw3cq4GjnoGtX2Cz3JDDmDdTXcWW2n6JG7qB+0cSAbACteN7TcfpWPN+sv4HR8dcifV55u=
+xOdGlRjA/ROCSTDvdDRIWtQtai5OyR1iskbM396OvS+NifS7PcTBBps3tw=3D">chase.com</a=
+>.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </td>
+                  <td align=3D"left" style=3D"padding: 0px; width: 12px; li=
+ne-height: normal !important; vertical-align: top; white-space: normal !imp=
+ortant;">
+<img width=3D"12" height=3D"77" style=3D"margin: 0px; padding: 0px; border:=
+ 0px currentColor; border-image: none; color: inherit; line-height: normal =
+!important; font-size: inherit; font-style: inherit; font-variant: inherit;=
+ font-weight: inherit; vertical-align: baseline; display: block; font-size-=
+adjust: inherit; font-stretch: inherit;" alt=3D"" src=3D"https://www.chase.=
+com/content/dam/email/images/white-right.jpg" border=3D"0" data-imagetype=
+=3D"External"></td>
+                </tr>
+              </tbody>
+            </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<img src=3D"https://u6821565.ct.sendgrid.net/wf/open?upn=3Du001.z0wa68HzF9N=
+q0jK6BfRwe1frBA-2BiN8Z2wCSGnkWlgw9S9f-2BZPAZjy6W9h-2FbtKXqvcnTYwJgsHoQ48IPg=
+J7ZLpmgtTHatyup6iqtrukDS36slFLYVM1TFh-2FgNLneumdSjLh0D6WP-2FzNDaNHLIwLAJTIn=
+2qF6RSub056SJcEd4K-2FKCscWIHTaCFM71nHo4EJ7B3m7wsugh9QOhHVCBxW7JQg-3D-3D" al=
+t=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"height:1px !important=
+;width:1px !important;border-width:0 !important;margin-top:0 !important;mar=
+gin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;=
+padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !impor=
+tant;padding-left:0 !important;"/></body></html>
+

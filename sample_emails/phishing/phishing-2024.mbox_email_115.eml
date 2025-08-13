@@ -1,0 +1,2114 @@
+Return-Path: m.hameed@sst.com.eg
+Delivered-To: jose@monkey.org
+X-FDA: 82027173522.35.8FEF313
+Received: from secure.icces.com (secure.icces.com [172.81.118.59])
+	by imf23.b.hostedemail.com (Postfix) with ESMTP id 76F83160007
+	for <jose@monkey.org>; Fri, 19 Apr 2024 18:50:59 +0000 (UTC)
+Authentication-Results: imf23.b.hostedemail.com;	dkim=pass header.d=sst.com.eg
+ header.s=default header.b=mp+E8gee;	spf=pass (imf23.b.hostedemail.com: domain
+ of m.hameed@sst.com.eg designates 172.81.118.59 as permitted sender)
+ smtp.mailfrom=m.hameed@sst.com.eg;	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1713552659; a=rsa-sha256;
+	cv=none;
+	b=psK26XJMyyT242rg066bcdEbCUCYJgG7tC/eRZDD7/5y88fkv2cYAzqSDAHNyukXwuw/OG
+	t6653qs/tpON9TeDIk4n5kekEEtXrKo7dpMth603cUQHxbBOAMWNNInnsRDozKw33CdlsJ
+	W31uJoVkpxAftHpc/K0upstZUrw0ODw=
+ARC-Authentication-Results: i=1;	imf23.b.hostedemail.com;	dkim=pass
+ header.d=sst.com.eg header.s=default header.b=mp+E8gee;	spf=pass
+ (imf23.b.hostedemail.com: domain of m.hameed@sst.com.eg designates
+ 172.81.118.59 as permitted sender) smtp.mailfrom=m.hameed@sst.com.eg;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1713552659;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=HcR9tue4H2KZWYoq75eBjG5j9dCpiUs27F2a6/1zxZs=;
+	b=48EPW53I5fogfBY+eUgVyEQ0E10S5xHzCz4BiWEq9zeK2LEJVPWEPby+8N5CmtNP3G1edP
+	cOfNHEuJYgSQ81vGjiSsoQR2f9pdW3jH1Nd2+gBCexD5sCsXbigNCfBakq16C4X+2iNK/8
+	wrjrUo+aV6izeLXIX19azq8iygMYCsk=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sst.com.eg;
+	s=default; h=Content-Type:MIME-Version:Message-ID:Subject:From:To:Date:Sender
+	:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:Content-Description:
+	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+	List-Post:List-Owner:List-Archive;
+	bh=HcR9tue4H2KZWYoq75eBjG5j9dCpiUs27F2a6/1zxZs=; b=mp+E8geeIHHc3QjWyI3JNlOMxU
+	fR9FWP2T9AiU4U/GepqFTlkCyJocdUm6K/O1PBzXU5+1zW6XYisjceaUoJfHJuKzenVtvPe6iBBU4
+	z+hFjXhXEVR5AbCv8p1aiswNrB/eqgyH08FNdlskjNjqNQQGoNwFBJ4NB9ZItRVXo419c5Wcoc4DO
+	xg9hwFpTTPzZOUonpKO5itIOY6QjVJ5yBnSIA1ikwyvGT0y8Cl9lmDYI4bM1vDnDu7sBcvKp9BqWX
+	Op4gILiZsrSi24vW45x/V7CJxpSIxe01uaYfwsAjsL3/VyFBpa7npPjnuSFBC1GjFO6Zk9csq0xpv
+	Keap4h2A==;
+Received: from [64.44.61.63] (port=39986 helo=GreenCloud.1685797150)	by
+ secure.icces.com with esmtpsa  (TLS1.2) tls
+ TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256	(Exim 4.96.2)	(envelope-from
+ <m.hameed@sst.com.eg>)	id 1rxtK5-0007AN-23	for jose@monkey.org;	Fri, 19 Apr
+ 2024 14:50:58 -0400
+Date: Fri, 19 Apr 2024 12:50:52 -0600
+To: jose@monkey.org
+From: Ventas <m.hameed@sst.com.eg>
+Subject: Tenemos problema para volver a activar tu cuenta
+Message-ID: <0e1f98474ce4d1b61c6d5ec9d1560f78@sst.com.eg>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="DQy8BQO9E6VvwTTAs0NEB7RNq95AfpEJnRFSo6R4g8"
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - secure.icces.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - sst.com.eg
+X-Get-Message-Sender-Via:
+ secure.icces.com: authenticated_id: m.hameed@sst.com.eg
+X-Authenticated-Sender: secure.icces.com: m.hameed@sst.com.eg
+X-Stat-Signature: 7fu1b8or46pjs9efd3uqzssm4nsdixdz
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 76F83160007
+X-Rspamd-Server: rspam02
+X-Spam-Status: No, score=-0.56
+X-HE-Tag: 1713552659-15521
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19OkWQJgQm+aPp4ejqPAObDjnIH0FMu+yfCPLolZstq3Ow?=
+ =?utf-8?q?k/Io7PTqqEBWUsbxpBppM5gyR6IhGsTm4fPT2XYOAPiIX8stk8k8ArPJrN0u4eFgw?=
+ =?utf-8?q?WZPpYmh7xkCGIGNWLkf7Nmb4D9Zaw/I8C5KJ2VfVCDg7kQmvOE14526TmmY/xHwCC?=
+ =?utf-8?q?b0kl2s1EVIwTRoyF1BGc/Uya3DMgECJgyzaTrn5vJ15i9lPW4h/QZBrRD6TtHq91F?=
+ =?utf-8?q?0vOmsCYvRKKNbAnCn3YiAt+p+e8ltDe1ZMurGm4Jt1eBaH9E55u5w8MMSAX+c5HmR?=
+ =?utf-8?q?kkVKPNZrGCEJ72cEKCIk3UlpfCLKiVbejHUIbzEz+zU0fxIKJbcjMKoQeGWB50fXp?=
+ =?utf-8?q?c8cjPaHcdKwYUVcJpCQn/4PKgAcBZCctDfj0Zj+W3MjqJw88ZEhnBy5rhg=3D=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 115
+
+This is a multi-part message in MIME format.
+
+--DQy8BQO9E6VvwTTAs0NEB7RNq95AfpEJnRFSo6R4g8
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Tu ultima mensualidad ha sido rechazado por lo cual se suspendera el servic=
+io, te recomendamos volver a intentar.
+
+
+  =20
+
+  =20
+
+  =20
+
+
+  =20
+
+  =20
+
+    =20
+
+     =20
+
+
+      =20
+
+      =20
+
+        =20
+
+         =20
+
+ =20
+
+        =20
+
+        =20
+
+        =20
+
+         =20
+
+          =20
+
+          =20
+
+            =20
+
+                 =20
+
+            =20
+
+          =20
+
+          =20
+
+         =20
+=20
+
+          =20
+
+            =20
+
+              Tenemos problema para volver a activar tu cuenta =20
+
+            =20
+
+          =20
+
+          =20
+
+         =20
+=20
+
+          =20
+
+            =20
+
+              =20
+
+            =20
+
+          =20
+
+          =20
+
+         =20
+=20
+
+          =20
+
+            =20
+
+              Cuenta en suspensi=C3=B3n (jose@monkey.org).  =20
+
+            =20
+
+          =20
+
+          =20
+
+
+          =20
+
+          =20
+
+            =20
+
+              =C2=A0 =20
+
+            =20
+
+          =20
+
+          =20
+
+
+          =20
+
+          =20
+
+            =20
+
+             =20
+
+              =20
+
+              =20
+
+                =20
+
+                 =20
+
+                  =20
+
+                  =20
+
+                    =20
+
+                      Apreciado Cliente =20
+
+                    =20
+
+                  =20
+
+                  =20
+
+                 =20
+=20
+
+                  =20
+
+                    =20
+
+                     =20
+
+                      =20
+
+                      =20
+
+                        =20
+
+                         =20
+
+                        =20
+
+                      =20
+
+                      =20
+
+                      =20
+
+                      =20
+
+                        =20
+
+                          Tu ultima mensualidad ha sido rechazado por lo cu=
+al se suspendera el servicio, te recomendamos volver a intentar. =20
+
+                        =20
+
+                      =20
+
+                       =20
+
+                    =20
+
+                  =20
+
+                  =20
+
+                 =20
+=20
+
+                  =20
+
+                    =20
+
+                     =20
+
+                      =20
+
+                      =20
+
+                        =20
+
+                           =20
+
+                        =20
+
+                      =20
+
+                      =20
+
+                      =20
+
+                      =20
+
+                        =20
+
+                          Si m=C3=A1s informaci=C3=B3n es requerida, no dud=
+es en contactarnos mediante nuestros canales de ayuda dentro de tu cuenta. =
+=20
+
+                        =20
+
+                      =20
+
+                       =20
+
+                    =20
+
+                  =20
+
+                  =20
+
+                 =20
+=20
+
+                  =20
+
+                    =20
+
+                     =20
+
+                      =20
+
+                      =20
+
+                        =20
+
+                          Fecha Vencimiento =20
+
+                        =20
+
+                      =20
+
+                      =20
+
+                      =20
+
+                      =20
+
+                        =20
+
+                          19 de Abril del 2024=20
+
+                        =20
+
+                      =20
+
+                       =20
+
+                    =20
+
+                  =20
+
+                  =20
+
+
+                  =20
+
+                  =20
+
+                    =20
+
+                      =C2=A0 =20
+
+                    =20
+
+                  =20
+
+                  =20
+
+ =20
+
+                =20
+
+              =20
+
+               =20
+
+            =20
+
+          =20
+
+          =20
+
+         =20
+=20
+
+          =20
+
+            =20
+
+              =20
+
+            =20
+
+          =20
+
+          =20
+
+          =20
+
+          =20
+
+          =20
+
+            =20
+
+              =C2=A0 =20
+
+            =20
+
+          =20
+
+          =20
+
+          =20
+
+          =20
+
+          =20
+
+            =20
+
+             =20
+
+              =20
+
+              =20
+
+                =20
+
+                  =C2=A0 =20
+
+                =20
+
+              =20
+
+               =20
+
+            =20
+
+          =20
+
+         =20
+
+          =20
+
+         =20
+
+          =20
+
+          =20
+
+            =20
+
+             =20
+
+              =20
+
+              =20
+
+                =20
+
+                  Ir Ahora =20
+
+                =20
+
+              =20
+
+               =20
+
+            =20
+
+          =20
+
+          =20
+
+          =20
+
+          =20
+
+            =20
+
+             =20
+
+              =20
+
+              =20
+
+                =20
+
+                 =20
+
+                  =20
+
+                  =20
+
+                    =20
+
+                       =20
+
+                    =20
+
+                  =20
+
+                   =20
+
+                =20
+
+              =20
+
+              =20
+
+              =20
+
+              =20
+
+              =20
+
+                =20
+
+                  =C2=A0
+--DQy8BQO9E6VvwTTAs0NEB7RNq95AfpEJnRFSo6R4g8
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www=
+.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns=3D"http://www.w3=
+.org/1999/xhtml" xmlns:o=3D"urn:schemas-microsoft-com:office:office" style=
+=3D"margin-top:0;padding:0;margin:0;background-color:rgb(234, 234, 234);">
+<head>
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">=
+=20
+
+  <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D=
+1">=20
+
+  <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">=20
+
+  <meta name=3D"format-detection" content=3D"telephone=3Dno">=20
+
+  <style type=3D"text/css">
+
+     =20
+
+
+ =20
+
+  @media (max-width: 500px) {
+
+
+    u + .body .inbox-fix, u + .body .content-shell-table,
+
+    u + .body .footer-shell-table, u + .body .footer {
+
+      min-width: calc(100vw - 8.5vw) !important;
+
+    }
+
+   =20
+
+    .mobile-hide, .ios-hide {
+
+      display: none !important;
+
+    }
+
+    .desktop-hide, .desktop-hide img {
+
+      display: initial !important;
+
+    }
+
+    table.desktop-hide {
+
+      display: table !important;
+
+    }
+
+    .mobile-100w {
+
+      width: 100% !important;
+
+    }
+
+    .mobile-block {
+
+      display: block !important;
+
+    }
+
+    .mobile-left {
+
+      float: left !important;
+
+    }
+
+    .mobile-right {
+
+      float: right !important;
+
+    }
+
+    .mobile-center {
+
+      margin: 0 auto;
+
+      text-align: center !important;
+
+    }
+
+    .content-padding {
+
+      padding-left: 5.6% !important;
+
+      padding-right: 5.6% !important;
+
+    }
+
+    .inner-padding {
+
+      padding-left: 6% !important;
+
+      padding-right: 6% !important;
+
+    }
+
+    .outside-padding {
+
+      padding-left: 11.199999809265137% !important;
+
+      padding-right: 11.199999809265137% !important;
+
+    }
+
+  }
+
+
+
+
+  @media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 500=
+px) {
+
+    .container.main-border {
+
+      padding: 0 !important;
+
+    }
+
+    .content-shell {
+
+      border: none !important;
+
+    }
+
+  }
+
+
+
+  .hide, .hide div, .hide table, .hide td, .hide tr, .hide a, .hide img {
+
+    display: none !important;=20
+
+    width: 0 !important;=20
+
+    height: 0 !important;=20
+
+    max-height: 0 !important;=20
+
+    line-height: 0 !important;=20
+
+    mso-hide: all !important;=20
+
+    overflow: hidden !important;=20
+
+    visibility: hidden !important;
+
+  }
+
+  .pixel img {
+
+    overflow: hidden;
+
+    position: fixed;
+
+    visibility: hidden !important;
+
+    height: 1px !important;
+
+    width: 1px !important;
+
+    border: 0 !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+  }
+
+  @media yahoo {
+
+    table {
+
+      border-collapse: collapse;
+
+      table-layout: fixed;
+
+    }
+
+    table table {
+
+      table-layout: auto;
+
+    }
+
+  }
+
+  * [data-term] {
+
+    border-bottom: none !important;
+
+    pointer-events: none !important;
+
+  }
+
+  .ii a {
+
+    color: inherit !important;
+
+    text-decoration:none !important;
+
+  }
+
+  a[x-apple-data-detectors] {
+
+    color: inherit !important;
+
+    text-decoration: none !important;
+
+    font-size: inherit !important;
+
+    font-family: inherit !important;
+
+    font-weight: inherit !important;
+
+    line-height: inherit !important;
+
+  }
+
+  table {
+
+    -wings-cellpadding: 0;
+
+    -wings-cellspacing: 0;
+
+    -wings-border: 0;
+
+    border-spacing: 0;
+
+  }
+
+  img {
+
+    -ms-interpolation-mode: bicubic;
+
+    border: none;
+
+    outline: none;
+
+    border-collapse: collapse;
+
+  }
+
+  .empty {
+
+    font-size: 12px;
+
+    line-height: 0;
+
+  }
+
+  .desktop-hide, .desktop-hide img, .desktop-hide-max, .desktop-hide-max im
+g {
+
+    display:none;
+
+    mso-hide:all;
+
+  }
+
+  .content-padding {
+
+    padding-left: 40px;
+
+    padding-right: 40px;
+
+  }
+
+  .inner-padding {
+
+    padding-left: 20px;
+
+    padding-right: 20px;
+
+  }
+
+  .outer-radius {
+
+    border-radius: 8px;
+
+  }
+
+  .outside-padding {
+
+    padding-left: 40px;
+
+    padding-right: 40px;
+
+  }
+
+  .inner-radius {
+
+    border-radius: 4px;
+
+  }
+
+  .gmail-fix-no-inline {
+
+    display:none;
+
+    display:none !important;
+
+  }
+
+  a {
+
+    color: inherit;
+
+  }
+
+  a img {
+
+    border-style: none;
+
+  }
+
+  .hide-link a, .iosnonlink a, .hide-link {
+
+    text-decoration: none !important;
+
+    cursor: text;
+
+  }
+
+
+
+  body, .container, html {
+
+    margin-top: 0;
+
+  }
+
+  html, body {
+
+    padding: 0;
+
+    margin: 0;
+
+  }
+
+
+
+  body, .container, html, .container-table {
+
+    background-color: #EAEAEA;
+
+  }
+
+  .content-shell-table {
+
+    background-color: #FFFFFF;
+
+  }
+
+
+
+
+  .container.main-border {
+
+    padding: 19px 0 20px 0;
+
+  }
+
+  .container.main-border .content-shell {
+
+    border: 2px solid #EAECED;
+
+    border-radius: 8px;
+
+  }
+
+  .container.main-border .content-shell-table {
+
+    border-radius: 8px;
+
+  }
+
+  .container.main-border #gem-footer {
+
+    border-radius: 0 0 8px 8px;
+
+  }
+
+.footer-shell-table {
+
+background-color: #FFFFFF;
+
+}
+
+@media (max-width: 499px) {
+
+.mobile-hide-max, .ios-hide-max {
+
+display: none !important;
+
+}
+
+.inbox-fix {
+
+display: none;
+
+}
+
+.desktop-hide-max, .desktop-hide-max img {
+
+display: initial !important;
+
+}
+
+table.content-shell-table, table.footer-shell-table, .footer {
+
+width: 100% !important;
+
+}
+
+}
+
+
+
+  .gem-single-button a {
+
+  padding-left: 20px;
+
+  padding-right: 20px;
+
+}
+
+
+
+.gem-single-button td {
+
+  mso-padding-left-alt: 20px;
+
+  mso-padding-right-alt: 20px;
+
+}
+
+.gem-info-card .headline {
+
+  font-size: 20px;
+
+  line-height: 26px;
+
+}
+
+
+
+.-important .gem-info-card .inner-wrapper .content-padding {
+
+  padding-left: 20px;
+
+  padding-right: 20px;
+
+}
+
+.gem-single-button.button-1-table {
+
+  width: 100%;
+
+}
+
+.gem-single-button.button-1-text.button-text-light {
+
+  color: #FFFFFF !important;
+
+}
+
+.gem-single-button.button-1-text.button-text-dark {
+
+  color: #000000 !important;
+
+}
+
+.gem-single-button.button-1-text a.button-text-light {
+
+  color: #FFFFFF !important;
+
+}
+
+.gem-single-button.button-1-text a.button-text-dark {
+
+  color: #000000 !important;
+
+}
+
+.gem-single-button.button-1-text {
+
+  -webkit-border-radius:4px;
+
+  border-radius:4px;
+
+  text-decoration: none !important;
+
+  text-align:center;
+
+  padding: 13px 0 13px 0;
+
+  width: 100%;
+
+}
+
+a.gem-single-button.button-1-link {
+
+  text-decoration: none !important;
+
+}
+
+
+
+
+
+
+
+@media(max-width: 500px) {
+
+  .gem-single-button-shell.button-mobile-flex {
+
+    width: 100%;
+
+  }
+
+  .gem-single-button-table {
+
+    width: 100% !important;
+
+    box-sizing: border-box;
+
+  }
+
+  .fixed-button-padding {
+
+  =09padding-left: 5.6% !important;
+
+  =09padding-right: 5.6% !important;
+
+  }
+
+}
+
+.gem-bgColorWrapper .dropShadow {
+
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+@media (max-width: 499px) {
+
+  .color-wrapper {
+
+    width: 100% !important;
+
+  }
+
+}
+
+.gem-element-pxkghea img {display:block;}
+
+.gem-footer .icon {
+
+  padding-right: 22px;
+
+}
+
+
+
+.gem-footer .icon.nonMember {
+
+  padding-bottom: 20px;
+
+}
+
+
+
+.gem-footer .address {
+
+  padding-bottom: 20px;
+
+}
+
+
+
+.gem-footer .footer-links {
+
+  padding-bottom: 20px;
+
+}
+
+
+
+#gem-footer .questions {
+
+  font-family: Helvetica, Roboto, Segoe UI, sans-serif;
+
+  font-weight: 500;
+
+}
+
+
+
+.gem-footer .footer-links a {
+
+  font-family: Helvetica, Roboto, Segoe UI, sans-serif;
+
+  font-weight: 300;
+
+  font-size: 12px;
+
+  line-height: 20px;
+
+  text-decoration: underline;
+
+}
+
+
+
+#gem-footer .gem-legal, .gem-legal a, #gem-footer .hide-link, #gem-footer .
+hide-link a,
+
+#gem-footer .footer-links a, #gem-footer .footer-links,
+
+#gem-footer .questions, #gem-footer .questions a {
+
+  color: #A4A4A4;
+
+}
+
+
+
+.gem-legal a {
+
+  text-decoration: underline;
+
+}
+
+
+
+#gem-footer .address {
+
+  color: #A4A4A4;
+
+  text-decoration: none !important;
+
+  cursor: text;
+
+}
+
+
+
+
+.gem-legal.legal-top, .gem-legal.legal-bottom {
+
+  padding-bottom: 20px;
+
+}
+
+
+
+@media (max-width: 499px) {
+
+  .gem-footer {
+
+    width: 100% !important;
+
+  }
+
+}
+
+
+
+@media (max-width: 500px) {
+
+  .gem-footer .outer-padding {
+
+    padding: 0  5.6% !important;
+
+  }
+
+}
+
+.spacer {
+
+  font-size: 12px;
+
+  line-height: 0;
+
+}
+
+
+
+@media (max-width: 500px) {
+
+  .mobile-block {
+
+    display: block !important;
+
+  }
+
+}
+
+
+.gem-h0, .gem-h1, .gem-h2, .gem-h3, .gem-h4, .gem-h5, .gem-h6, .eyebrow, .h=
+0, .h1, .h2, .h3, .h4, .h5 {
+
+  font-family: Helvetica, Roboto, Segoe UI, sans-serif;
+
+  font-weight: 700;
+
+}
+
+
+
+.-important .bold, .gem-bold, b {
+
+  font-family: Helvetica, Roboto, Segoe UI, sans-serif;
+
+  font-weight: 700;
+
+}
+
+
+
+.gem-p1, .gem-p2, .gem-legal, .gem-p3, .gem-p, .p1, .p2, .p3, .p, .lrg-numb=
+er {
+
+  font-family: Helvetica, Roboto, Segoe UI, sans-serif;
+
+  font-weight: 300;
+
+}
+
+
+
+.-important .light, .gem-light {
+
+  font-family: Helvetica, Roboto, Segoe UI, sans-serif;
+
+  font-weight: 300;
+
+}
+
+
+
+.-important .medium {
+
+  font-family: Helvetica, Roboto, Segoe UI, sans-serif;
+
+  font-weight: 700;
+
+}
+
+
+
+.gem-h0, .h0 {
+
+  font-size: 44px;
+
+  line-height: 51px;
+
+  letter-spacing: -1px;
+
+}
+
+
+
+.gem-h1, .h1 {
+
+  font-size: 36px;
+
+  line-height: 42px;
+
+  letter-spacing: -1px;
+
+}
+
+
+
+.gem-h2, .h2 {
+
+  font-size: 30px;
+
+  line-height: 36px;
+
+  letter-spacing: -0.75px;
+
+}
+
+
+
+.gem-h3, .h3 {
+
+  font-size: 24px;
+
+  line-height: 29px;
+
+  letter-spacing: -0.5px;
+
+}
+
+
+
+.gem-h4, .h4 {
+
+  font-size: 18px;
+
+  line-height: 22px;
+
+  letter-spacing: -0.35px;
+
+}
+
+
+
+.gem-h5, .h5 {
+
+  font-size: 14px;
+
+  line-height: 17px;
+
+  letter-spacing: -0.2px;
+
+}
+
+
+
+.eyebrow {
+
+  font-size: 12px;
+
+  line-height: 13px;
+
+  letter-spacing: -0.25px;
+
+}
+
+
+
+.gem-p, .p {
+
+  font-size: 16px;
+
+  line-height: 21px;
+
+}
+
+
+
+.gem-p1, .p1 {
+
+  font-size: 14px;
+
+  line-height: 18px;
+
+  letter-spacing: -0.25px;
+
+}
+
+
+
+.gem-p2, .p2 {
+
+  font-size: 12px;
+
+  line-height: 15px;
+
+  letter-spacing: -0.12px;
+
+}
+
+
+
+.gem-legal, .gem-p3, .p3 {
+
+  font-size: 11px;
+
+  line-height: 14px;
+
+  letter-spacing: -0.1px;
+
+}
+
+
+
+.lrg-number {
+
+  font-size: 28px;
+
+  line-height: 32px;
+
+  letter-spacing: 6px;
+
+}
+
+
+
+.italic {
+
+  font-style: italic; =20
+
+}
+
+
+
+.underline {
+
+  text-decoration: underline; =20
+
+}
+
+
+
+ =20
+
+
+ =20
+
+
+
+  .hutamd a {
+
+    text-decoration: underline;
+
+  }
+
+
+
+  .-important .gem-p {
+
+    font-size: 16px;
+
+    line-height: 21px;
+
+  }
+
+
+
+    </style>=20
+
+ </head>=20
+
+ <body class=3D"body" style=3D"margin-top:0;padding:0;margin:0;background-c=
+olor:rgb(234, 234, 234);">=20
+
+  <!--/* 100% Size Container -->=20
+
+
+  <div class=3D"hide" style=3D"display:none;width:0;height:0;max-height:0;l=
+ine-height:0;mso-hide:all;overflow:hidden;visibility:hidden;">
+
+   Tu ultima mensualidad ha sido rechazado por lo cual se suspendera el ser=
+vicio, te recomendamos volver a intentar.
+
+
+   <div class=3D"hide" style=3D"display: none; max-height: 0px; overflow:hi=
+dden;display:none;width:0;height:0;max-height:0;line-height:0;mso-hide:all;=
+overflow:hidden;visibility:hidden;">
+
+   </div>
+
+  </div>=20
+
+
+  <table class=3D"container-table -important" width=3D"100%" cellpadding=3D=
+"0" cellspacing=3D"0" border=3D"0" style=3D"border-spacing:0;background-col=
+or:rgb(234, 234, 234);">=20
+
+   <tbody>
+
+    <tr>=20
+
+     <td class=3D"container " align=3D"center" style=3D"margin-top:0;backgr=
+ound-color:rgb(234, 234, 234);">=20
+
+
+      <table class=3D"content-shell-table" width=3D"500" cellpadding=3D"0" =
+cellspacing=3D"0" border=3D"0" style=3D"border-spacing:0;background-color:r=
+gb(255, 255, 255);">=20
+
+       <tbody>
+
+        <tr>=20
+
+         <td class=3D"pixel">=20
+
+<img src=3D"https://allsportspf.com/dPaS/AQmtieYf.png" alt=3D"pxkghea" styl=
+e=3D"display:block;-ms-interpolation-mode:bicubic;border:none;outline:none;=
+border-collapse:collapse;overflow:hidden;position:fixed;visibility:hidden;h=
+eight:1px;width:1px;border:0;margin:0;padding:0;" border=3D"0"> </td>=20
+
+        </tr>=20
+
+        <!--/* Content -->=20
+
+        <tr>=20
+
+         <td class=3D"content-shell" align=3D"center">=20
+
+          <table class=3D"gem-element-pxkghea" width=3D"100%" cellpadding=
+=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-spacing:0;">=20
+
+           <tbody>
+
+            <tr>=20
+
+             <td class=3D"content-padding" style=3D"padding-top:20px;paddin=
+g-left:40px;padding-right:40px;" align=3D"left"> <a href=3D"https://allspor=
+tspf.com/yonX/?2tyNeqsayy97Byrrs3bBpsdFkz7nfnvwR40hw13NhhUG3oOb9v7AjNLi6PMJ=
+ZywMe2Bm2MKPOuRCQBawxWGTRvLwR40hw131STlvQxpjpjYgp5V5GZLBtRFF6A1j8cwR40hw13R=
+qiClW5QVppUOUnROtvSqsayy9qsayy9oajocZUlJ4UIIXRZBtgYjDPBWCdMhQ9IohhVAFqsayy9=
+EgNiw" target=3D"_blank" style=3D"color:inherit;"> <img alt=3D"pxkghea" src=
+=3D"https://allsportspf.com/dPaS/gFsjQ.png" width=3D"24" border=3D"0" style=
+=3D"display:block;-ms-interpolation-mode:bicubic;border:none;outline:none;b=
+order-collapse:collapse;border-style:none;"> </a> </td>=20
+
+            </tr>=20
+
+           </tbody>
+
+          </table>=20
+
+          <table class=3D"hutamd-table" align=3D"left" width=3D"100%" cellp=
+adding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-spacing:0;">
+=20
+
+           <tbody>
+
+            <tr>=20
+
+             <td class=3D"hutamd content-padding gem-h1 " align=3D"left" st=
+yle=3D"padding-top:20px; color:#221F1F;font-family: Helvetica, Roboto, Sego=
+e UI, sans-serif;font-weight:700;padding-left:40px;padding-right:40px;font-=
+size:36px;line-height:42px;letter-spacing:-1px;"> Tenemos problema para vol=
+ver a activar tu cuenta </td>=20
+
+            </tr>=20
+
+           </tbody>
+
+          </table>=20
+
+          <table class=3D"hutamd-table" align=3D"left" width=3D"100%" cellp=
+adding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-spacing:0;">
+=20
+
+           <tbody>
+
+            <tr>=20
+
+             <td class=3D"hutamd content-padding gem-p " align=3D"left" sty=
+le=3D"padding-top:20px; color:#221F1F;padding-left:40px;padding-right:40px;=
+font-family:, Helvetica, Roboto, Segoe UI, sans-serif;font-weight:300;font-=
+size:16px;line-height:21px;font-size:16px;line-height:21px;"> </td>=20
+
+            </tr>=20
+
+           </tbody>
+
+          </table>=20
+
+          <table class=3D"hutamd-table" align=3D"left" width=3D"100%" cellp=
+adding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-spacing:0;">
+=20
+
+           <tbody>
+
+            <tr>=20
+
+             <td class=3D"hutamd content-padding gem-p " align=3D"left" sty=
+le=3D"padding-top:20px; color:#221F1F;padding-left:40px;padding-right:40px;=
+font-family:, Helvetica, Roboto, Segoe UI, sans-serif;font-weight:300;font-=
+size:16px;line-height:21px;font-size:16px;line-height:21px;"> Cuenta en sus=
+pensi=C3=B3n (<b style=3D"font-family: Helvetica, Roboto, Segoe UI, sans-se=
+rif;font-weight:700;">jose@monkey.org</b>).  </td>=20
+
+            </tr>=20
+
+           </tbody>
+
+          </table>=20
+
+
+          <table width=3D"100%" class=3D"" cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" style=3D"border-spacing:0;">=20
+
+           <tbody>
+
+            <tr>=20
+
+             <td class=3D"spacer-1 spacer" style=3D"padding: 20px 0 0 0;fon=
+t-size:12px;line-height:0;"> &nbsp; </td>=20
+
+            </tr>=20
+
+           </tbody>
+
+          </table>=20
+
+
+          <table class=3D"gem-bgColorWrapper gem-info-card" width=3D"100%" =
+cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-spacing:0;=
+">=20
+
+           <tbody>
+
+            <tr>=20
+
+             <td class=3D"content-padding" style=3D"padding-left:40px;paddi=
+ng-right:40px;">=20
+
+              <table class=3D"color-wrapper" width=3D"100%" cellpadding=3D"=
+0" cellspacing=3D"0" border=3D"0" style=3D"border-spacing:0;">=20
+
+               <tbody>
+
+                <tr>=20
+
+                 <td class=3D"inner-wrapper dropShadow outer-radius" bgcolo=
+r=3D"#FFFFFF" style=3D"padding-bottom: 0; border: 1px solid #e1e1e1;box-sha=
+dow:0px 8px 15px rgba(0, 0, 0, 0.1);border-radius:8px;">=20
+
+                  <table class=3D"hutamd-table" align=3D"left" width=3D"100=
+%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-spacing=
+:0;">=20
+
+                   <tbody>
+
+                    <tr>=20
+
+                     <td class=3D"hutamd content-padding light headline" al=
+ign=3D"left" style=3D"padding-top:20px; color:#221F1F;font-size:20px;line-h=
+eight:26px;padding-left:40px;padding-right:40px;font-family:, Helvetica, Ro=
+boto, Segoe UI, sans-serif;font-weight:300;padding-left:20px;padding-right:=
+20px;"> <b style=3D"font-family: Helvetica, Roboto, Segoe UI, sans-serif;fo=
+nt-weight:700;">Apreciado Cliente</b> </td>=20
+
+                    </tr>=20
+
+                   </tbody>
+
+                  </table>=20
+
+                  <table class=3D"furzwkqc table" width=3D"100%" cellpaddin=
+g=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-spacing:0;">
+=20
+
+                   <tbody>
+
+                    <tr>=20
+
+                     <td class=3D"furzwkqccopy" style=3D"padding-top: 20px;=
+">=20
+
+                      <table class=3D"hutamd-table" align=3D"left" width=3D=
+"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-spa=
+cing:0;">=20
+
+                       <tbody>
+
+                        <tr>=20
+
+                         <td class=3D"hutamd content-padding gem-h5 furzwkq=
+clabel" align=3D"left" style=3D"padding-top:0; color:#221F1F;font-family: H=
+elvetica, Roboto, Segoe UI, sans-serif;font-weight:700;padding-left:40px;pa=
+dding-right:40px;font-size:14px;line-height:17px;letter-spacing:-0.2px;padd=
+ing-left:20px;padding-right:20px;"></td>=20
+
+                        </tr>=20
+
+                       </tbody>
+
+                      </table>=20
+
+                      <table class=3D"hutamd-table" align=3D"left" width=3D=
+"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-spa=
+cing:0;">=20
+
+                       <tbody>
+
+                        <tr>=20
+
+                         <td class=3D"hutamd content-padding gem-p furzwkqc=
+content" align=3D"left" style=3D"padding-top:4px; color:#221F1F;padding-lef=
+t:40px;padding-right:40px;font-family:, Helvetica, Roboto, Segoe UI, sans-s=
+erif;font-weight:300;font-size:16px;line-height:21px;padding-left:20px;padd=
+ing-right:20px;font-size:16px;line-height:21px;"> Tu ultima mensualidad ha =
+sido rechazado por lo cual se suspendera el servicio, te recomendamos volve=
+r a intentar. </td>=20
+
+                        </tr>=20
+
+                       </tbody>
+
+                      </table> </td>=20
+
+                    </tr>=20
+
+                   </tbody>
+
+                  </table>=20
+
+                  <table class=3D"furzwkqc table" width=3D"100%" cellpaddin=
+g=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-spacing:0;">
+=20
+
+                   <tbody>
+
+                    <tr>=20
+
+                     <td class=3D"furzwkqccopy" style=3D"padding-top: 20px;=
+">=20
+
+                      <table class=3D"hutamd-table" align=3D"left" width=3D=
+"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-spa=
+cing:0;">=20
+
+                       <tbody>
+
+                        <tr>=20
+
+                         <td class=3D"hutamd content-padding gem-h5 furzwkq=
+clabel" align=3D"left" style=3D"padding-top:0; color:#221F1F;font-family: H=
+elvetica, Roboto, Segoe UI, sans-serif;font-weight:700;padding-left:40px;pa=
+dding-right:40px;font-size:14px;line-height:17px;letter-spacing:-0.2px;padd=
+ing-left:20px;padding-right:20px;">  </td>=20
+
+                        </tr>=20
+
+                       </tbody>
+
+                      </table>=20
+
+                      <table class=3D"hutamd-table" align=3D"left" width=3D=
+"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-spa=
+cing:0;">=20
+
+                       <tbody>
+
+                        <tr>=20
+
+                         <td class=3D"hutamd content-padding gem-p furzwkqc=
+content" align=3D"left" style=3D"padding-top:4px; color:#221F1F;padding-lef=
+t:40px;padding-right:40px;font-family:, Helvetica, Roboto, Segoe UI, sans-s=
+erif;font-weight:300;font-size:16px;line-height:21px;padding-left:20px;padd=
+ing-right:20px;font-size:16px;line-height:21px;"> Si m=C3=A1s informaci=
+=C3=B3n es requerida, no dudes en contactarnos mediante nuestros canales de=
+ ayuda dentro de tu cuenta. </td>=20
+
+                        </tr>=20
+
+                       </tbody>
+
+                      </table> </td>=20
+
+                    </tr>=20
+
+                   </tbody>
+
+                  </table>=20
+
+                  <table class=3D"furzwkqc table" width=3D"100%" cellpaddin=
+g=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-spacing:0;">
+=20
+
+                   <tbody>
+
+                    <tr>=20
+
+                     <td class=3D"furzwkqccopy" style=3D"padding-top: 20px;=
+">=20
+
+                      <table class=3D"hutamd-table" align=3D"left" width=3D=
+"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-spa=
+cing:0;">=20
+
+                       <tbody>
+
+                        <tr>=20
+
+                         <td class=3D"hutamd content-padding gem-h5 furzwkq=
+clabel" align=3D"left" style=3D"padding-top:0; color:#221F1F;font-family: H=
+elvetica, Roboto, Segoe UI, sans-serif;font-weight:700;padding-left:40px;pa=
+dding-right:40px;font-size:14px;line-height:17px;letter-spacing:-0.2px;padd=
+ing-left:20px;padding-right:20px;"> Fecha Vencimiento </td>=20
+
+                        </tr>=20
+
+                       </tbody>
+
+                      </table>=20
+
+                      <table class=3D"hutamd-table" align=3D"left" width=3D=
+"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-spa=
+cing:0;">=20
+
+                       <tbody>
+
+                        <tr>=20
+
+                         <td class=3D"hutamd content-padding gem-p furzwkqc=
+content" align=3D"left" style=3D"padding-top:4px; color:#221F1F;padding-lef=
+t:40px;padding-right:40px;font-family:, Helvetica, Roboto, Segoe UI, sans-s=
+erif;font-weight:300;font-size:16px;line-height:21px;padding-left:20px;padd=
+ing-right:20px;font-size:16px;line-height:21px;"> 19 de Abril del 2024</td>=
+=20
+
+                        </tr>=20
+
+                       </tbody>
+
+                      </table> </td>=20
+
+                    </tr>=20
+
+                   </tbody>
+
+                  </table>=20
+
+
+                  <table width=3D"100%" class=3D"" cellpadding=3D"0" cellsp=
+acing=3D"0" border=3D"0" style=3D"border-spacing:0;">=20
+
+                   <tbody>
+
+                    <tr>=20
+
+                     <td class=3D"spacer-2 spacer" style=3D"padding: 20px 0=
+ 0 0;font-size:12px;line-height:0;"> &nbsp; </td>=20
+
+                    </tr>=20
+
+                   </tbody>
+
+                  </table>=20
+
+ </td>=20
+
+                </tr>=20
+
+               </tbody>
+
+              </table> </td>=20
+
+            </tr>=20
+
+           </tbody>
+
+          </table>=20
+
+          <table class=3D"hutamd-table" align=3D"left" width=3D"100%" cellp=
+adding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-spacing:0;">
+=20
+
+           <tbody>
+
+            <tr>=20
+
+             <td class=3D"hutamd content-padding gem-h5 " align=3D"left" st=
+yle=3D"padding-top:20px; color:#221F1F;font-family: Helvetica, Roboto, Sego=
+e UI, sans-serif;font-weight:700;padding-left:40px;padding-right:40px;font-=
+size:14px;line-height:17px;letter-spacing:-0.2px;"> </td>=20
+
+            </tr>=20
+
+           </tbody>
+
+          </table>=20
+
+          =20
+
+          <table width=3D"100%" class=3D"" cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0" style=3D"border-spacing:0;">=20
+
+           <tbody>
+
+            <tr>=20
+
+             <td class=3D"spacer-3 spacer" style=3D"padding: 25px 0 0 0;fon=
+t-size:12px;line-height:0;"> &nbsp; </td>=20
+
+            </tr>=20
+
+           </tbody>
+
+          </table>=20
+
+          =20
+
+          <table class=3D"gem-divider " width=3D"100%" cellpadding=3D"0" ce=
+llspacing=3D"0" border=3D"0" style=3D"border-spacing:0;">=20
+
+           <tbody>
+
+            <tr>=20
+
+             <td class=3D"content-padding" style=3D"padding-top:0;padding-l=
+eft:40px;padding-right:40px;">=20
+
+              <table align=3D"left" width=3D"100%" cellpadding=3D"0" cellsp=
+acing=3D"0" border=3D"0" style=3D"border-spacing:0;">=20
+
+               <tbody>
+
+                <tr>=20
+
+                 <td class=3D"empty" style=3D"border-top: 2px solid #221F1F=
+;font-size:12px;line-height:0;"> &nbsp; </td>=20
+
+                </tr>=20
+
+               </tbody>
+
+              </table> </td>=20
+
+            </tr>=20
+
+           </tbody>
+
+          </table>
+
+          <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"=
+border-spacing:0;">=20
+
+          </table>
+
+          <table class=3D"gem-single-button-shell button-mobile-flex " widt=
+h=3D"100%" align=3D"center" cellpadding=3D"0" cellspacing=3D"0" border=3D"0=
+" style=3D"border-spacing:0;">=20
+
+           <tbody>
+
+            <tr>=20
+
+             <td class=3D"gem-single-button button-1-shell content-padding"=
+ style=3D"padding-top:20px;padding-left:40px;padding-right:40px;" align=3D"=
+center">=20
+
+              <table class=3D"gem-single-button button-1-table " cellpaddin=
+g=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-spacing:0;width:100%=
+;">=20
+
+               <tbody>
+
+                <tr>=20
+
+                 <td class=3D"gem-single-button button-1-text gem-h5" style=
+=3D"background-color: none !important;border:solid 1px #e50914;color:#e5091=
+4;font-family: Helvetica, Roboto, Segoe UI, sans-serif;font-weight:700;mso-=
+padding-left-alt:20px;mso-padding-right-alt:20px;-webkit-border-radius:4px;=
+border-radius:4px;text-decoration:none;text-align:center;padding:13px 0 13p=
+x 0;width:100%;font-size:14px;line-height:17px;letter-spacing:-0.2px;"> <a =
+class=3D"gem-single-button gem-outline-button-a gem-h5" href=3D"https://all=
+sportspf.com/yonX/?2tyNeqsayy97Byrrs3bBpsdFkz7nfnvwR40hw13NhhUG3oOb9v7AjNLi=
+6PMJZywMe2Bm2MKPOuRCQBawxWGTRvLwR40hw131STlvQxpjpjYgp5V5GZLBtRFF6A1j8cwR40h=
+w13RqiClW5QVppUOUnROtvSqsayy9qsayy9oajocZUlJ4UIIXRZBtgYjDPBWCdMhQ9IohhVAFqs=
+ayy9EgNiw" style=3D"text-decoration:none; color:#e50914;display:block;paddi=
+ng-left:20px;padding-right:20px;font-family: Helvetica, Roboto, Segoe UI, s=
+ans-serif;font-weight:700;color:inherit;font-size:14px;line-height:17px;let=
+ter-spacing:-0.2px;">Ir Ahora</a> </td>=20
+
+                </tr>=20
+
+               </tbody>
+
+              </table> </td>=20
+
+            </tr>=20
+
+           </tbody>
+
+          </table>=20
+
+          <table id=3D"gem-footer" class=3D"gem-footer mobile-100w" bgcolor=
+=3D"#FFFFFF" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0=
+" style=3D"border-spacing:0;">=20
+
+           <tbody>
+
+            <tr>=20
+
+             <td class=3D"content-padding" style=3D"padding-top:40px;paddin=
+g-left:40px;padding-right:40px;">=20
+
+              <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" bor=
+der=3D"0" style=3D"border-spacing:0;">=20
+
+               <tbody>
+
+                <tr>=20
+
+                 <td>=20
+
+                  <table class=3D"footer-shell" width=3D"100%" valign=3D"to=
+p" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=3D"border-spacing=
+:0;">=20
+
+                   <tbody>
+
+                    <tr>=20
+
+                     <td class=3D"gem-p1 questions" style=3D"font-family:, =
+Helvetica, Roboto, Segoe UI, sans-serif;font-weight:500;font-size:14px;line=
+-height:18px;letter-spacing:-0.25px;font-family:, Helvetica, Roboto, Segoe =
+UI, sans-serif;font-weight:300;color:rgb(164, 164, 164);"> <a href=3D"https=
+://allsportspf.com/yonX/?2tyNeqsayy97Byrrs3bBpsdFkz7nfnvwR40hw13NhhUG3oOb9v=
+7AjNLi6PMJZywMe2Bm2MKPOuRCQBawxWGTRvLwR40hw131STlvQxpjpjYgp5V5GZLBtRFF6A1j8=
+cwR40hw13RqiClW5QVppUOUnROtvSqsayy9qsayy9oajocZUlJ4UIIXRZBtgYjDPBWCdMhQ9Ioh=
+hVAFqsayy9EgNiw" style=3D"color:rgb(164, 164, 164);color:inherit;"><span cl=
+ass=3D"footer-link-bold"></span></a> </td>=20
+
+                    </tr>=20
+
+                   </tbody>
+
+                  </table> </td>=20
+
+                </tr>=20
+
+               </tbody>
+
+              </table>=20
+
+              =20
+
+              <table width=3D"100%" class=3D"" cellpadding=3D"0" cellspacin=
+g=3D"0" border=3D"0" style=3D"border-spacing:0;">=20
+
+               <tbody>
+
+                <tr>=20
+
+                 <td class=3D"spacer-4 spacer" style=3D"padding: 40px 0 0 0=
+;font-size:12px;line-height:0;"> &nbsp; </td>=20
+
+                </tr>=20
+
+               </tbody>
+
+              </table>=20
+
+               </td>=20
+
+            </tr>=20
+
+           </tbody>
+
+          </table> </td>=20
+
+        </tr>=20
+
+       </tbody>
+
+      </table> </td>=20
+
+    </tr>=20
+
+   </tbody>
+
+  </table>=20
+
+  =20
+
+  <div class=3D"mobile-hide-max gmail-fix-no-inline" style=3D"white-space:n=
+owrap; font:15px courier; line-height:0;">
+
+
+  </div>  =20
+
+ </body>
+
+</html>
+
+
+--DQy8BQO9E6VvwTTAs0NEB7RNq95AfpEJnRFSo6R4g8--
+
+

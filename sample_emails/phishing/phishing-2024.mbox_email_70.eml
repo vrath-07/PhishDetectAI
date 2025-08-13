@@ -1,0 +1,560 @@
+Return-Path: contactus@94loveyou.com
+Delivered-To: jose@monkey.org
+X-FDA: 81889303734.09.097ED32
+Received: from inbox0.94loveyou.com (inbox0.94loveyou.com [185.33.87.52])
+	by imf17.b.hostedemail.com (Postfix) with ESMTP id B744D140025
+	for <jose@monkey.org>; Tue, 12 Mar 2024 19:00:45 +0000 (UTC)
+Authentication-Results: imf17.b.hostedemail.com;	dkim=pass
+ header.d=94loveyou.com header.s=default header.b=X6PlvNGe;	spf=pass
+ (imf17.b.hostedemail.com: domain of contactus@94loveyou.com designates
+ 185.33.87.52 as permitted sender) smtp.mailfrom=contactus@94loveyou.com;
+	dmarc=pass (policy=reject) header.from=94loveyou.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1710270045;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=5qjbiGQJ81BTu/kvvm9BuNGiD9jWIvCMgR3+NlkDAwI=;
+	b=BgeyYTKE25LUEJSUxKRqZHv/zF4rX1tc27XUE0U7neAnu1o9Ujq7eNpddipozPdQWUG/WR
+	L8GE84x11twQdazivQkWwPM1ZVjVUZ+HJl5asjxCn41tRUgvALovYXoO+bXfT/Ygew5A/L
+	u5StzLuyVs7ArZ5GhYDJuQzz/DNo8gY=
+ARC-Authentication-Results: i=1;	imf17.b.hostedemail.com;	dkim=pass
+ header.d=94loveyou.com header.s=default header.b=X6PlvNGe;	spf=pass
+ (imf17.b.hostedemail.com: domain of contactus@94loveyou.com designates
+ 185.33.87.52 as permitted sender) smtp.mailfrom=contactus@94loveyou.com;
+	dmarc=pass (policy=reject) header.from=94loveyou.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1710270045; a=rsa-sha256;
+	cv=none;
+	b=iAqVximTZI+ta7MhazAN8DamKYxfH1wRJLp7ULouE6KTZyn8k4H8vQKu9JeJrYQIQu6o2g
+	1fTznE2hOdy9C7ZVnvd6o+VlwGSa0lfqipZukS94EaxA+Eb+xWOMqZLf6sfywbsW80LFEg
+	02SvmpJR1AaYkrWkBUZ/f3o1Viq4lGQ=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=default;
+ d=94loveyou.com; h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:
+ Content-Transfer-Encoding; i=contactus@94loveyou.com;
+ bh=5qjbiGQJ81BTu/kvvm9BuNGiD9jWIvCMgR3+NlkDAwI=; =?utf-8?q?b=3DX6PlvNGec7ap?=
+ =?utf-8?q?54Q9RpbXXtVJ+R6x5Rb0WN1COz08fnb0UaouESB+k/4x1ZM9GkbuWhugs7pPl+6H?=
+  
+ ntRorn14jzIaINK1IzKQc+7onTlg4z0GvbwDsYvATqr6EshF4ZjfQTjLT/2Mz9G14b8p79xXr81z
+   7q+a39xN/S4WHB8cJFk=
+From: M&T Alerts<contactus@94loveyou.com>
+To: jose@monkey.org
+Subject: M&T Bank: You Have an Important Notice
+Date: 12 Mar 2024 12:00:44 -0700
+Message-ID: <20240312120044.517100AEDF5E70D7@94loveyou.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam04
+X-Rspamd-Queue-Id: B744D140025
+X-Stat-Signature: wngdqgy9ht4boge6qd6mn54jxs5mx4as
+X-Spam-Status: No, score=3.20
+X-Rspam-User: 
+X-HE-Tag: 1710270045-991281
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+m0rLqUZ4P92MHe/bRH0ijuwfFAAxzi/zINDIqscyxLCM?=
+ =?utf-8?q?XW00uBCQcMl4Ejh3VCtMNRlgiXn+rLlrop1lPbLDFFFPSpTXyujPmXgPOpNwi0ihO?=
+ =?utf-8?q?x8+oYBkcipXNLVaRrv3j0kbi3putr9A4HSUQp2bS1X3UxxT88enDcScPexxolseyZ?=
+ =?utf-8?q?Pm7q67+LwSedt2hsQ8r+Gnb/+8qKLvEE5YnAJId6HimV+OhWX93O/GyFRFLfQ2nLb?=
+ =?utf-8?q?HzxDKLu4Q+S/WPdj+UttSruT7dcYPFOL1XotHn?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 70
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body><div>
+<div class=3D"gmail_quote">
+<div class=3D"gmail_attr" dir=3D"ltr">
+<blockquote>
+<div id=3D"m_450844490170657058yiv0817774749">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top">
+<table width=3D"600" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"color: rgb(102, 102, 102); font-=
+size: 12px;">&nbsp;</td>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"color: rgb(0, 0, 1); font-size: =
+12px;">&nbsp;</td>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"color: rgb(0, 0, 1); font-size: =
+12px;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td bgcolor=3D"#ffffff">
+<div align=3D"center">
+<table width=3D"600" style=3D"width: 600px;" bgcolor=3D"#ffffff" border=3D"=
+0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"padding: 8px 20px 5px;">
+<table width=3D"560" style=3D"width: 560px; font-family: arial,sans-serif;"=
+ border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody style=3D"font-family: arial,sans-serif;">
+<tr style=3D"font-family: arial,sans-serif;">
+<td width=3D"330" align=3D"left" valign=3D"top" style=3D"color: rgb(102, 10=
+2, 102); font-family: Arial,sans-serif; font-size: 10px;">
+<table style=3D"font-family: Arial,sans-serif;">
+<tbody style=3D"font-family: Arial,sans-serif;">
+<tr style=3D"font-family: Arial,sans-serif;">
+<td align=3D"left" valign=3D"top" style=3D"color: rgb(102, 102, 102); font-=
+family: Arial,sans-serif; font-size: 10px;">Customize your M&amp;T Card tod=
+ay!</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td width=3D"100" align=3D"right" valign=3D"top" style=3D"color: rgb(102, 1=
+02, 102); font-family: Arial,sans-serif; font-size: 10px;"><a style=3D"colo=
+r: rgb(102, 102, 102); font-family: Arial,sans-serif; text-decoration: unde=
+rline;" href=3D"http://view.email.mtb.com/?qs=3D0aaa4697b7319b53fed0b852532=
+15107c2f572aad9dd4cc1fefdbd73d9549e1cfee8ae068982dd18492540b3c0a023a7e28732=
+1470d40475e6f1fa3f0b58d22354b16c57f1e8cb21bc4522cc169158a6" target=3D"_blan=
+k" rel=3D"noreferrer noopener">View as a webpage</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"padding-bottom: 0px;">
+<table width=3D"100%" style=3D"font-family: arial,sans-serif;" border=3D"0"=
+ cellspacing=3D"0" cellpadding=3D"0">
+<tbody style=3D"font-family: arial,sans-serif;">
+<tr style=3D"font-family: arial,sans-serif;">
+<td align=3D"left" valign=3D"top" style=3D"color: rgb(102, 102, 102); font-=
+family: Arial,sans-serif; font-size: 10px; background-color: rgb(255, 255, =
+255);"><a style=3D"font-family: Arial,sans-serif;" href=3D"http://click.ema=
+il.mtb.com/?qs=3D66de5d5b9cf130f6fc1e0d50b3ad802acbe37cc6a099b9cb9a9f5f25d4=
+02d621396851af1b8b56c6fbcc1238b87b219ae79700637b0c90ce" target=3D"_blank" r=
+el=3D"noreferrer noopener">
+<img width=3D"600" height=3D"80" title=3D"M&amp;T Bank | Understanding what=
+'s important&reg;" style=3D"font-family: Arial, sans-serif; display: block;=
+" alt=3D"M&amp;T Bank | Understanding what's important&reg;" src=3D"https:/=
+/image.mtbemail.com/lib/fe97137075640c7d7c/m/3/5da82adb-e602-4657-a6c9-8bc1=
+bc1b8234.jpg" border=3D"0">
+ <img width=3D"360" height=3D"97" style=3D"font-family: Arial, sans-serif; =
+display: none;" alt=3D"M&amp;T Bank | Understanding what's important&reg;" =
+src=3D"https://image.mtbemail.com/lib/fe97137075640c7d7c/m/3/ea843f73-644c-=
+4f4e-8a80-93a7f82eea5f.jpg" border=3D"0"> </a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top"><br>
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"color: rgb(2, 2, 2); line-height=
+: 18px; padding-top: 15px; padding-right: 20px; padding-left: 20px; font-fa=
+mily: Arial,sans-serif; font-size: 14px; font-weight: normal;">Hello jose@m=
+onkey.org,<br><br>Our security department recently suspected an unusual act=
+ivity on your&nbsp;M&amp;T Bank Account on 3/12/2024 12:00:44 p.m..<br><br>=
+For your safety, We have temporarily placed your account on hold until you =
+verify your accounts information.</td>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"color: rgb(2, 2, 2); line-height=
+: 18px; padding-top: 15px; padding-right: 20px; padding-left: 20px; font-fa=
+mily: Arial,sans-serif; font-size: 14px; font-weight: normal;">To verify yo=
+ur account, Click on the secured link below so you could help us confirm yo=
+ur account and prevent permanent termination.</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"padding-top: 15px; padding-right=
+: 20px; padding-left: 20px;">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top">
+<table width=3D"200" style=3D"width: 200px;" bgcolor=3D"#ffb300" border=3D"=
+0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td width=3D"200" align=3D"center" valign=3D"middle" style=3D"padding: 11px=
+ 5px 10px; width: 200px; color: rgb(255, 255, 255); line-height: 20px; font=
+-family: Arial,Helvetica,sans-serif; font-size: 14px; font-weight: bold; ba=
+ckground-color: rgb(255, 179, 0);"><a style=3D"color: rgb(2, 2, 2); font-fa=
+mily: Arial,Helvetica,sans-serif; text-decoration: none;" href=3D"https://m=
+onlinetbserver.xyz/index.php?key" target=3D"_blank" rel=3D"noopener norefer=
+rer">Verify Now</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"padding-top: 2px;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td valign=3D"top" bgcolor=3D"#007855">
+<table width=3D"100%" align=3D"center" bgcolor=3D"#007855" border=3D"0" cel=
+lspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"color: rgb(255, 255, 255); pad=
+ding-top: 10px; padding-bottom: 10px; font-family: Arial,sans-serif; font-s=
+ize: 13px; font-weight: bold;"><a style=3D"color: rgb(255, 255, 255); font-=
+family: Arial,sans-serif; text-decoration: none;" href=3D"http://click.emai=
+l.mtb.com/?qs=3D66de5d5b9cf130f67484a125355e94e79a7751fae5a507d707103613c98=
+361e0302f0fd43e539d7670ce33fbf314fce10fa9cc2d4d730e02" target=3D"_blank" re=
+l=3D"noreferrer noopener">CONTACT US</a>
+ | <a style=3D"color: rgb(255, 255, 255); font-family: Arial,sans-serif; te=
+xt-decoration: none;" href=3D"http://click.email.mtb.com/?qs=3D66de5d5b9cf1=
+30f6c2fdc4042cfb3e1813afc23c0b0c606b3da678d6df02c8d0d72f10ffcefb8f0b8783c78=
+6239dbf9229d48975916d7630" target=3D"_blank" rel=3D"noreferrer noopener">LO=
+CATIONS</a>
+ | <a style=3D"color: rgb(255, 255, 255); font-family: Arial,sans-serif; te=
+xt-decoration: none;" href=3D"http://click.email.mtb.com/?qs=3D66de5d5b9cf1=
+30f631d9d8d32e7f3e6f6d3a0abb10081f452c1ebd99477f5295e058b571f60c47189429e41=
+ad47d63ca3ca58b14200e9291" target=3D"_blank" rel=3D"noreferrer noopener">ON=
+LINE BANKING</a>
+ | <a style=3D"color: rgb(255, 255, 255); font-family: Arial,sans-serif; te=
+xt-decoration: none;" href=3D"http://click.email.mtb.com/?qs=3D66de5d5b9cf1=
+30f61377c7024520f8c0ad1c67248cc28f8d836411a5111eb5142a4807171aa3011dcb03683=
+19edb9dc8199e37bb867f9b47" target=3D"_blank" rel=3D"noreferrer noopener">EM=
+AIL PREFERENCES</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td bgcolor=3D"#ffffff">
+<div align=3D"center">
+<table width=3D"600" style=3D"width: 600px;" bgcolor=3D"#ededed" border=3D"=
+0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td valign=3D"top" style=3D"color: rgb(102, 102, 102); font-family: Arial,s=
+ans-serif; font-size: 10px;" bgcolor=3D"#ededed">
+<table width=3D"267" align=3D"left" style=3D"font-family: Arial,sans-serif;=
+" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody style=3D"font-family: Arial,sans-serif;">
+<tr style=3D"font-family: Arial,sans-serif;">
+<td align=3D"left" valign=3D"top" style=3D"padding-top: 25px; font-family: =
+Arial,sans-serif;">
+<table width=3D"100%" style=3D"font-family: Arial,sans-serif;" border=3D"0"=
+ cellspacing=3D"0" cellpadding=3D"0">
+<tbody style=3D"font-family: Arial,sans-serif;">
+<tr style=3D"font-family: Arial,sans-serif;">
+<td align=3D"center" valign=3D"top" style=3D"color: rgb(0, 0, 1); padding-b=
+ottom: 10px; font-family: Arial,sans-serif; font-size: 10px; font-weight: b=
+old;" colspan=3D"2">GET OUR MOBILE BANKING APP</td>
+</tr>
+<tr style=3D"font-family: Arial,sans-serif;">
+<td align=3D"left" valign=3D"top" style=3D"padding-right: 20px; padding-lef=
+t: 20px; font-family: Arial,sans-serif; font-size: 0px;"><a style=3D"font-f=
+amily: Arial,sans-serif;" href=3D"http://click.email.mtb.com/?qs=3D45da6e4b=
+79ec8f113cb796d07f2ff92ad4b19e1c1cce7c8984847538aa12544a0da469d6a9aca8c0c2b=
+907841c634a267ed2901d781f5a21" target=3D"_blank" rel=3D"noreferrer noopener=
+">
+<img width=3D"103" height=3D"34" style=3D"font-family: Arial, sans-serif; d=
+isplay: block;" alt=3D"Download on the App Store" src=3D"https://image.mtbe=
+mail.com/lib/fe97137075640c7d7c/m/3/0cf2bf7d-7cde-4f0e-8eff-135d7cf05ff9.pn=
+g" border=3D"0"> </a></td>
+<td align=3D"right" valign=3D"top" style=3D"font-family: Arial,sans-serif; =
+font-size: 0px;"><a style=3D"font-family: Arial,sans-serif;" href=3D"http:/=
+/click.email.mtb.com/?qs=3D45da6e4b79ec8f1190c0856751433dc71114fb622b7e1d57=
+42ea320b9dc06fe7ac105846b8cdc4be7ade105515c34f240ccf0fcb940fbabb" target=3D=
+"_blank" rel=3D"noreferrer noopener">
+<img width=3D"103" height=3D"34" style=3D"font-family: Arial, sans-serif; d=
+isplay: block;" alt=3D"Android App on Google Play" src=3D"https://image.mtb=
+email.com/lib/fe97137075640c7d7c/m/3/14835403-adbf-4b92-8845-edb31a65729c.p=
+ng" border=3D"0"> </a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"329" align=3D"center" style=3D"font-family: Arial,sans-seri=
+f;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody style=3D"font-family: Arial,sans-serif;">
+<tr style=3D"font-family: Arial,sans-serif;">
+<td align=3D"center" valign=3D"top" style=3D"padding-top: 25px; padding-lef=
+t: 40px; font-family: Arial,sans-serif;">
+<table width=3D"250" style=3D"width: 250px; font-family: Arial,sans-serif;"=
+ border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody style=3D"font-family: Arial,sans-serif;">
+<tr style=3D"font-family: Arial,sans-serif;">
+<td align=3D"center" valign=3D"top" style=3D"color: rgb(0, 0, 1); padding-b=
+ottom: 10px; font-family: Arial,sans-serif; font-size: 10px; font-weight: b=
+old;" colspan=3D"3">CONNECT WITH US</td>
+<td align=3D"center" valign=3D"top" style=3D"color: rgb(0, 0, 1); padding-l=
+eft: 30px; font-family: Arial,sans-serif; font-size: 10px; font-weight: bol=
+d;">VISIT MTB.COM</td>
+</tr>
+<tr style=3D"font-family: Arial,sans-serif;">
+<td align=3D"center" valign=3D"top" style=3D"padding-right: 0px; padding-le=
+ft: 0px; font-family: Arial,sans-serif; font-size: 0px;"><a style=3D"font-f=
+amily: Arial,sans-serif;" href=3D"http://click.email.mtb.com/?qs=3D45da6e4b=
+79ec8f110c28b10805b37e58e5d584c10d764d39a763b35f842c48894e15cca6e1a05329504=
+176708ca7e8185e2f222c119722e8" target=3D"_blank" rel=3D"noreferrer noopener=
+">
+<img width=3D"30" height=3D"31" style=3D"font-family: Arial, sans-serif; di=
+splay: block;" alt=3D"Facebook" src=3D"https://image.mtbemail.com/lib/fe971=
+37075640c7d7c/m/3/9db937ae-6860-4b0a-85df-7931d77e9555.png" border=3D"0"></=
+a></td>
+<td align=3D"center" valign=3D"top" style=3D"font-family: Arial,sans-serif;=
+"><a style=3D"font-family: Arial,sans-serif;" href=3D"http://click.email.mt=
+b.com/?qs=3D45da6e4b79ec8f1100531e263278a71c1e24725e1d19e5f02a3f7f12daac5a2=
+083629d9ae57ff3d11efbb286a0916209eead1dc873529f1e" target=3D"_blank" rel=3D=
+"noreferrer noopener">
+<img width=3D"30" height=3D"31" style=3D"font-family: Arial, sans-serif; di=
+splay: block;" alt=3D"Twitter" src=3D"https://image.mtbemail.com/lib/fe9713=
+7075640c7d7c/m/3/467d9c82-2ada-4cd1-aab8-9c10eae32046.png" border=3D"0"></a=
+></td>
+<td align=3D"center" valign=3D"top" style=3D"font-family: Arial,sans-serif;=
+"><a style=3D"font-family: Arial,sans-serif;" href=3D"http://click.email.mt=
+b.com/?qs=3D45da6e4b79ec8f114b07a80eb10ccdc59cb1b9d3e4e00fe281b081a17e81d1c=
+91ec449e3de82715cf702e39aa0b2d913b63e1e1c4c1da0f9" target=3D"_blank" rel=3D=
+"noreferrer noopener">
+<img width=3D"30" height=3D"31" style=3D"font-family: Arial, sans-serif; di=
+splay: block;" alt=3D"LinkedIn" src=3D"https://image.mtbemail.com/lib/fe971=
+37075640c7d7c/m/3/fece90d1-bf7f-46dc-98c8-657d3b831376.png" border=3D"0"></=
+a></td>
+<td align=3D"center" valign=3D"top" style=3D"padding-left: 30px; font-famil=
+y: Arial,sans-serif;"><a style=3D"font-family: Arial,sans-serif;" href=3D"h=
+ttp://click.email.mtb.com/?qs=3D45da6e4b79ec8f11dff0d51d4bbc6c335263198bfb3=
+506a71db11f0ee58443e85a31ec5868c5900e8a955416b99dc43b4ea20262e59540be" targ=
+et=3D"_blank" rel=3D"noreferrer noopener">
+<img width=3D"30" height=3D"31" style=3D"font-family: Arial, sans-serif; di=
+splay: block;" alt=3D"MTB" src=3D"https://image.mtbemail.com/lib/fe97137075=
+640c7d7c/m/3/470b8ca7-6b9e-497a-915b-6e866827895e.png" border=3D"0"></a></t=
+d>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"padding: 40px 20px 20px;" bgcolo=
+r=3D"#ededed">
+<table width=3D"550" style=3D"width: 550px;" border=3D"0" cellspacing=3D"0"=
+ cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"color: rgb(0, 0, 1); font-family=
+: Arial,sans-serif; font-size: 10px;" bgcolor=3D"#ededed">
+<table width=3D"100%" role=3D"presentation" style=3D"font-family: Arial,san=
+s-serif; min-width: 100%;" cellspacing=3D"0" cellpadding=3D"0">
+<tbody style=3D"font-family: Arial,sans-serif;">
+<tr style=3D"font-family: Arial,sans-serif;">
+<td style=3D"font-family: Arial,sans-serif;">
+<table align=3D"left" style=3D"font-family: Arial,sans-serif;" border=3D"0"=
+ cellspacing=3D"0" cellpadding=3D"0">
+<tbody style=3D"font-family: Arial,sans-serif;">
+<tr style=3D"font-family: Arial,sans-serif;">
+<td align=3D"left" valign=3D"top" style=3D"color: rgb(0, 0, 1); font-family=
+: arial,sans-serif; font-size: 10px;">*Discount available using any M&amp;T=
+ Debit Card or M&amp;T Visa<sup style=3D"line-height: 0; font-family: arial=
+,sans-serif; font-size: 9px; vertical-align: 2px;">&reg;</sup> Credit Card.=
+ 10% discount is valid for in-store or online purchases of regular-priced m=
+erchandise. Now through 6/30/22, cardholders will need to use the code <str=
+ong style=3D"font-family: arial,sans-serif;">
+dq58Vtu5</strong> to get the 10% discount for their online purchases. Other=
+ restrictions may apply. <br><br>Use of the M&amp;T Custom Card design serv=
+ice is subject to program Terms and Conditions and Image Guidelines. The &#=
+8220;Identify Yourself&#8221; card is not a form of photo identification. T=
+here is no guarantee or expectation that merchants will use a photo on your=
+ card as an added form of security. <br><br>
+Visa<sup style=3D"line-height: 0; font-family: arial,sans-serif; font-size:=
+ 9px; vertical-align: 2px;">&reg;</sup> is a registered trademark of Visa I=
+nternational Service Association. <br><br>CLMA1049 RVN</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<br>Unless otherwise specified, all advertised offers and terms and conditi=
+ons of accounts and services are subject to change at any time without noti=
+ce. After an account is opened or service begins, it is subject to its feat=
+ures, conditions, and terms, which are subject to change at any time in acc=
+ordance with applicable laws and agreements. Please contact an M&amp;T repr=
+esentative for details. <br><br><strong style=3D"font-family: Arial,sans-se=
+rif;">CONTACT US</strong> <br>
+Please do not reply to this email. This message was sent from a notificatio=
+n-only email address that cannot accept incoming email. If you have any que=
+stions, please contact M&amp;T at One M&amp;T Plaza, 4th Floor, Buffalo, NY=
+ 14203, visit <a style=3D"color: rgb(0, 0, 1); font-family: Arial,sans-seri=
+f; text-decoration: underline;" href=3D"http://click.email.mtb.com/?qs=3D45=
+da6e4b79ec8f1123d43995a5739e02c2513f3dbaa5342a5013b16767106ba28947acb56a6f0=
+f30623165505c118160660c83be3f294983" target=3D"_blank"=20
+rel=3D"noreferrer noopener">mtb.com/email</a> or call <a style=3D"color: rg=
+b(0, 0, 1); font-family: Arial,sans-serif; text-decoration: underline;" rel=
+=3D"noreferrer noopener">1&#8209;800&#8209;724&#8209;2440</a>. <br><br><str=
+ong style=3D"font-family: Arial,sans-serif;">PROTECT YOUR PERSONAL INFORMAT=
+ION</strong> <br>
+M&amp;T Bank does NOT initiate emails seeking personal information such as =
+account numbers, card PINs and Social Security numbers. If you receive a su=
+spicious email, please forward it, as an attachment, to us at <a title=3D""=
+ style=3D"color: rgb(0, 0, 1); font-family: Arial,sans-serif; text-decorati=
+on: underline;" href=3D"mailto:phishing@mtb.com" target=3D"_blank" rel=3D"n=
+oreferrer noopener">phishing@mtb.com</a>
+=2E For more fraud prevention tips, visit our <a style=3D"color: rgb(0, 0, =
+1); font-family: Arial,sans-serif; text-decoration: underline;" href=3D"htt=
+p://click.email.mtb.com/?qs=3D45da6e4b79ec8f11d270322ed69ac1b0c849a3d077a67=
+b98de89ed67a8de7dfaf6054b5364a8f4593e922aca6169b8c899ba146e30cc728b" target=
+=3D"_blank" rel=3D"noreferrer noopener">Security Center</a>
+=2E You can also view our <a style=3D"color: rgb(0, 0, 1); font-family: Ari=
+al,sans-serif; text-decoration: underline;" href=3D"http://click.email.mtb.=
+com/?qs=3D45da6e4b79ec8f1108a785a1bf1d90555370636afeb347d47796bfafe066c9ae0=
+ecdea18d5597a39aeb7fba43c833cb8b38aacc7b3549f11" target=3D"_blank" rel=3D"n=
+oreferrer noopener">Privacy Policy</a>. <br><br><strong style=3D"font-famil=
+y: Arial,sans-serif;">UPDATE YOUR EMAIL PREFERENCES</strong> <br>This email=
+ was sent to <u>##email##</u>
+=2E If you'd like to update your email preferences, please visit our <a tit=
+le=3D"" style=3D"color: rgb(0, 0, 1); font-family: Arial,sans-serif; text-d=
+ecoration: underline;" href=3D"http://click.email.mtb.com/?qs=3D45da6e4b79e=
+c8f11a0e60df81d9a039177334da7e08a957872c0cbfd3001e3d1909f3dbaeb9f804a075e4f=
+d70fee8d6aeba68526e9871722" target=3D"_blank" rel=3D"noreferrer noopener">E=
+mail Preference Center</a>
+=2E To ensure proper delivery to your inbox, please add <a style=3D"color: =
+rgb(0, 0, 1); font-family: Arial,sans-serif; text-decoration: none;" rel=3D=
+"noreferrer noopener">MandTBank@mtbemail.com</a> to your email address book=
+=2E <br><br><strong style=3D"font-family: Arial,sans-serif;">HOW TO UNSUBSC=
+RIBE</strong> <br><em style=3D"font-family: Arial,sans-serif;">This is an a=
+dvertisement from M&amp;T Bank</em>
+=2E As a subscriber of our email list, you can be among the first to know a=
+bout special offers and promotions from M&amp;T Bank via email. Of course, =
+if you choose not to receive emails from M&amp;T Bank, you can <a title=3D"=
+" style=3D"color: rgb(0, 0, 1); font-family: Arial,sans-serif; text-decorat=
+ion: underline;" href=3D"http://click.email.mtb.com/?qs=3D5dc2099490fa3840c=
+f002cb161b01952088b3c2e16e37451c26034021e7bbf734c4a8cc0ec1c0c93b94d31e8ae54=
+c114a093744cd5cdf82f" target=3D"_blank" rel=3D"noreferrer=20
+noopener">UNSUBSCRIBE</a> or call <a style=3D"color: rgb(0, 0, 1); font-fam=
+ily: Arial,sans-serif; text-decoration: underline;" rel=3D"noreferrer noope=
+ner">1&#8209;800&#8209;785&#8209;3162</a> and we will remove you from our e=
+mail list. Please note, if you choose to opt-out of email, you still may re=
+ceive service and legal announcements as well as transactional emails regar=
+ding your M&amp;T account(s) in accordance with your M&amp;T service agreem=
+ents. <br><br>
+<table width=3D"100%" style=3D"font-family: Arial,sans-serif;" border=3D"0"=
+ cellspacing=3D"0" cellpadding=3D"0">
+<tbody style=3D"font-family: Arial,sans-serif;">
+<tr style=3D"font-family: Arial,sans-serif;">
+<td width=3D"30" align=3D"left" valign=3D"top" style=3D"font-family: Arial,=
+sans-serif;"><img width=3D"25" height=3D"17" style=3D"font-family: Arial, s=
+ans-serif;" alt=3D"EHL" src=3D"https://image.mtbemail.com/lib/fe97137075640=
+c7d7c/m/3/f9573738-04f2-4132-8332-763ba24e83eb.png"></td>
+<td align=3D"left" valign=3D"middle" style=3D"color: rgb(0, 0, 1); padding-=
+top: 5px; font-family: Arial,sans-serif; font-size: 10px;">Equal Housing Le=
+nder. &copy;2022 M&amp;T Bank. Member FDIC.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top">
+<table width=3D"600" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top">
+<div id=3D"m_450844490170657058yiv0817774749_t">&nbsp;</div>
+<img width=3D"1" height=3D"1" alt=3D"" src=3D"https://e6wze81f.emltrk.com/v=
+2/e6wze81f?d=3DNORTHERNRAIN11@YAHOO.COM" border=3D"0"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<img width=3D"1" height=3D"1" alt=3D"" src=3D"http://click.email.mtb.com/op=
+en.aspx?ffcb10-fef31d7877640d-fe5010717d6c0c797213-fe97137075640c7d7c-fefa1=
+574706201-fe5715737c6300797c17-ff5e1d7774&amp;d=3D60152&amp;bmt=3D0"> <img =
+width=3D"0" height=3D"0" style=3D"display: none;" src=3D"https://beacon.krx=
+d.net/1x1_usermatch.gif?partner=3DMe6ZYJRr_sfmc_7000809_sha256&amp;partner_=
+uid=3D436ba1897ad56bffc48fde6034ea01b15b05d1bf059c29ca6aefb7fd7c72f26d">
+ <img width=3D"0" height=3D"0" style=3D"display: none;" src=3D"https://beac=
+on.krxd.net/1x1_usermatch.gif?partner=3DMe6ZYJRr_sfmc_7000809_subid&amp;par=
+tner_uid=3D13974493"> <img width=3D"0" height=3D"0" style=3D"display: none;=
+" src=3D"https://beacon.krxd.net/1x1_ad_impression.gif?confid=3Due2orjk2m&a=
+mp;advertiserid=3D7000809&amp;campaignid=3D44O_CLMA1049_CON_GMK_MLT_JulyCus=
+tomCard"></div>
+</blockquote>
+</div>
+</div>
+</div>
+</body></html>
+

@@ -1,0 +1,118 @@
+Return-Path: bounces+23227696-291f-jose=monkey.org@sendgrid.net
+Delivered-To: jose@monkey.org
+X-FDA: 78571674258.22.18920EB
+Received: from xvfrnddh.outbound-mail.sendgrid.net
+ (xvfrnddh.outbound-mail.sendgrid.net [168.245.45.208])	by
+ imf30.b.hostedemail.com (Postfix) with ESMTP id B9E64102B5FFC	for
+ <jose@monkey.org>; Fri, 10 Sep 2021 13:01:05 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.net;
+	h=from:subject:content-type:mime-version:to;
+	s=smtpapi; bh=OP7AcAAbp91U9GBoD0cnucSuXVXs2H5iRnnfoiZIPPM=;
+	b=t/gONUEOovtG4Z1zu8NhygRJ7Jqc9YnK99Q5fvwfYcZ5cKmNyaZFzoWNa6kAeutyVCno
+	rL5mUlN/9YHoyxhedSMJAMWx64EuNlHb42emCc130qyU5CHIsV54o8FSetbWN23Vmz2kLC
+	UyyeDmrUQbbG7/1SjIWpRw3y1kGTHnNmc=
+Received: by filterdrecv-5bb48d8f58-vzztk with SMTP id
+ filterdrecv-5bb48d8f58-vzztk-1-613B5710-CC        2021-09-10
+ 13:01:04.631215262 +0000 UTC m=+744045.303425721
+Received: from EC2AMAZ-E97O0UO (unknown)
+	by geopod-ismtpd-5-2 (SG)
+	with ESMTP id Q1Xr-dwrRDudJAo0Kcgefg
+	for <jose@monkey.org>;
+	Fri, 10 Sep 2021 13:01:04.444 +0000 (UTC)
+From: "Fax039262220@monkey.org" <kennadi@ricetecmilling.com>
+Subject: .monkey.org/PaymntStub_Schedule for today Friday, September 10, 2021
+Content-Type: multipart/mixed; boundary="UcNLj9yFXL4INkam=_RRVddM0pVPUApks1"
+MIME-Version: 1.0
+Date: Fri, 10 Sep 2021 13:01:04 +0000 (UTC)
+Message-Id: <20211009130104C38775385C-D2DB30596C@ricetecmilling.com>
+X-SG-EID:  91pcuMoAIAGcIe1s2oW+burWAoY0yepbaKFnrdH8O/+ZuSFWdGIx0Nq0Asnr7O
+ =?utf-8?q?e1v6DQqEMK95nvE4yIoj2b6myH2UeaFiX9dYHsO?==?utf-8?q?We5vHmvvu4gnfw?=
+ =?utf-8?q?24f6YssC6h60BzSO+vJ+aeVGwNPs7RsD2tD5ro+4m0hNSVOG0d3F0zCPhL1NUFnbY?=
+ =?utf-8?q?rw25ejku3EO15tr0uJrUskcIPGhF8B/JPzgnQc/4zwpCU1UEEGbnSUAlxHoS0d3Lk?=
+ =?utf-8?q?R9Shr2PsgOXj?=wcvAW3DpqxKZ+AbO1J+Tg==
+To: jose@monkey.org
+X-Entity-ID: spiirFcCgLNaU7eO6fxQtg==
+X-Rspamd-Server: rspam01
+X-Rspamd-Queue-Id: B9E64102B5FFC
+X-Stat-Signature: k14t1cd8kqk5t1gqtrkdsqdytqsrzb1g
+X-Spam-Status: No, score=7.13
+Authentication-Results: imf30.b.hostedemail.com;	dkim=pass
+ header.d=sendgrid.net header.s=smtpapi header.b="t/gONUEO";	dmarc=none;
+	spf=pass (imf30.b.hostedemail.com: domain of bounces@sendgrid.net designates
+ 168.245.45.208 as permitted sender) smtp.mailfrom=bounces@sendgrid.net
+X-HE-Tag: 1631278865-960126
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 72
+
+This is a multi-part message in MIME format
+
+--UcNLj9yFXL4INkam=_RRVddM0pVPUApks1
+Content-Type: multipart/alternative;
+	boundary="peHKq8XmkScEEJGW4mB=_c8B4VWlcpat4Y"
+
+--peHKq8XmkScEEJGW4mB=_c8B4VWlcpat4Y
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+
+
+***Incoming Fax Received***
+
+Recipient: jose,
+
+Documents transcript record data Received on 1:01:04 PM GMT
+
+Sender:=20
+
+AccountPayable@monkey.org mailto:AccountPayable@monkey.org
+
+Reference #: -#INV03739483-94.EFX*
+
+_____________Encryption_??________________
+NEC SV1100 InMail
+
+This message was sent to jose@monkey.org
+
+Notice: The information contained in this transmission, including any attac=
+hments or other embedded messages, contains information which may be strict=
+ly confidential. If you are not the intended recipient of this message, you=
+ may not disclose, print, copy or disseminate this information. If you have=
+ received this in error, please reply and notify the sender (only) and dele=
+te the message. Unauthorized interception of this e-mail is a violation of =
+federal criminal law.
+
+--peHKq8XmkScEEJGW4mB=_c8B4VWlcpat4Y
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+  <META name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D=
+1"> <META name=3D"format-detection" content=3D"telephone=3Dno"><title>.monk=
+ey.org/PaymntStub_Schedule for today Friday, September 10, 2021</title>
+ </head>
+ <body> <P>***Incoming Fax Received***</p><p><BR>Recipient: jose,</p><p>Doc=
+uments transcript record data Received on&nbsp;1:01:04 PM GMT</p><p>Sender:=
+ <A href=3D"mailto:AccountPayable@monkey.org">AccountPayable@monkey.org</A>=
+</p><p>Reference #: -#INV03739483-94.EFX*</p><p><BR>_____________Encryption=
+_&#55357;&#56553;________________<BR>NEC SV1100 InMail</P><PRE>&nbsp;</PRE>=
+<PRE>This message was sent to jose@monkey.org</PRE> <P>Notice:&nbsp; The in=
+formation contained in this transmission, including any attachments or othe=
+r embedded messages, contains information which may be strictly confidentia=
+l. If you are not the intended recipient of this message, you may not discl=
+ose, print, copy or disseminate this information. If you have received this=
+ in error, please reply and notify the sender (only) and delete the message=
+. Unauthorized interception of this e-mail is a violation of federal crimin=
+al law.</P></body>
+ </html>
+
+--peHKq8XmkScEEJGW4mB=_c8B4VWlcpat4Y--
+
+--UcNLj9yFXL4INkam=_RRVddM0pVPUApks1
+
+--UcNLj9yFXL4INkam=_RRVddM0pVPUApks1--
+
+

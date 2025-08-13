@@ -1,0 +1,147 @@
+Return-Path: Human@lotusbali.co.jp
+Delivered-To: jose@monkey.org
+X-FDA: 82378222962.17.A62637D
+Received: from wxpm01.wadax-sv.jp (wxpm01.wadax-sv.jp [157.120.115.7])
+	by imf13.b.hostedemail.com (Postfix) with ESMTP id E2B6D120014
+	for <jose@monkey.org>; Thu, 25 Jul 2024 12:36:19 +0000 (UTC)
+Authentication-Results: imf13.b.hostedemail.com;	dkim=pass
+ header.d=lotusbali.co.jp header.s=default header.b="Y/Wyazhs";	spf=pass
+ (imf13.b.hostedemail.com: domain of Human@lotusbali.co.jp designates
+ 157.120.115.7 as permitted sender) smtp.mailfrom=Human@lotusbali.co.jp;
+	dmarc=pass (policy=quarantine) header.from=lotusbali.co.jp
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1721910935;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=D3mPSnTgPE/XcMj55sKWkAmAJDUggEjBR8Mc9cx+Aq4=;
+	b=2Vtce3zd1os1vALNokK7ErulySISktXThbmHals/6T2q+zL5pobGOpU+2D2Mv+1CY9sGJJ
+	W4dJw6xj3+ZUw8YCYRSlX5Edmb7hEz5bnUGpLED6sINj9WmenN9k9GAcbICOETKqSBwcmZ
+	l8i67GlY67H3v45OJxbzcDKBLFgFQ2Q=
+ARC-Authentication-Results: i=1;	imf13.b.hostedemail.com;	dkim=pass
+ header.d=lotusbali.co.jp header.s=default header.b="Y/Wyazhs";	spf=pass
+ (imf13.b.hostedemail.com: domain of Human@lotusbali.co.jp designates
+ 157.120.115.7 as permitted sender) smtp.mailfrom=Human@lotusbali.co.jp;
+	dmarc=pass (policy=quarantine) header.from=lotusbali.co.jp
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1721910935; a=rsa-sha256;
+	cv=none;
+	b=h3eCtQn7S54Mckbiqbp+0IuYWIPPGwXWqWMimW8SAaEe5W/c+zrGC2DrlNuSLdPUH74Fy+
+	v9vdWCugG8KDfTLGTm1HpI4MlfFtjQc/GEgu0SYZKAK8/hvJssPBYsTG7ecQiusVQE3RbS
+	KGyW22002eDk0MNGpqijgkjZFSu+hz8=
+Received: from wxpm01.wadax-sv.jp (localhost.localdomain [127.0.0.1])
+	by wxpm01.wadax-sv.jp (Proxmox) with ESMTP id BAF3A5432E8
+	for <jose@monkey.org>; Thu, 25 Jul 2024 21:36:17 +0900 (JST)
+Received: from wx105.wadax-sv.jp (wx105.wadax-sv.jp [153.123.7.38])
+	by wxpm01.wadax-sv.jp (Proxmox) with ESMTPS id B74565430BF
+	for <jose@monkey.org>; Thu, 25 Jul 2024 21:36:16 +0900 (JST)
+Received: by wx105.wadax-sv.jp (Postfix, from userid 10411)
+	id B32BBE279DD52; Thu, 25 Jul 2024 21:36:16 +0900 (JST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=lotusbali.co.jp;
+	s=default; t=1721910976;
+	bh=D3mPSnTgPE/XcMj55sKWkAmAJDUggEjBR8Mc9cx+Aq4=; h=To:Subject:From;
+	b=Y/WyazhsauLi3neOfcgFyyIEPObD+a9i06lmgdGVpazrR9Y8r/Ty+3o9D3vZTemuB
+	 uCAfvnZhaOV7kBYiYVnvMk4TQAe9Q8KX5sE+c/GpmrpTgf2rZHwDNuJRUOLB7Lsetz
+	 8j6WLdkeXcKRAH+N2jJb4/bReDTpTMkG1Uf/DJrQ=
+To: jose@monkey.org
+Subject: "Angela Faria" sent you a message
+From: Monkey Via Messenger 07/25/2024 05:36:16 am <Human@lotusbali.co.jp>
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8BIT
+Message-Id: <20240725123616.B32BBE279DD52@wx105.wadax-sv.jp>
+Date: Thu, 25 Jul 2024 21:36:16 +0900 (JST)
+X-SPAM-LEVEL: Spam detection results:  3	AWL                     0.009
+ Adjusted score from AWL reputation of From: address	BAYES_00                
+ -1.9 Bayes spam probability is 0 to 1%	DKIM_SIGNED               0.1 Message
+ has a DKIM or DK signature, not necessarily valid	DKIM_VALID              
+ -0.1 Message has at least one valid DKIM or DK signature	DKIM_VALID_AU
+            -0.1 Message has a valid DKIM or DK signature from author's domain
+	DKIM_VALID_EF            -0.1 Message has a valid DKIM or DK signature from
+ envelope-from domain	FACEBOOK_IMG_NOT_RCVD_FB  1.999 Facebook hosted image
+ but message not from Facebook	FROM_EXCESS_BASE64      0.001 From: base64
+ encoded unnecessarily	HTML_MESSAGE            0.001 HTML included in message
+	KAM_REALLYHUGEIMGSRC      0.5 Spam with image tags with ridiculously huge
+ http urls	MIME_HTML_ONLY            0.1 Message only has text/html MIME parts
+	RCVD_IN_VALIDITY_CERTIFIED_BLOCKED  0.001 ADMINISTRATOR NOTICE: The query to
+ Validity was blocked.  See
+ https://knowledge.validity.com/hc/en-us/articles/20961730681243 for more
+ information.	RCVD_IN_VALIDITY_RPBL_BLOCKED  0.001 ADMINISTRATOR NOTICE: The
+ query to Validity was blocked.  See
+ https://knowledge.validity.com/hc/en-us/articles/20961730681243 for more
+ information.	SPF_HELO_PASS          -0.001 SPF: HELO matches SPF record
+	SPF_PASS               -0.001 SPF: sender matches SPF record
+	UNWANTED_LANGUAGE_BODY    2.8 Message written in an undesired language
+	URIBL_BLOCKED           0.001 ADMINISTRATOR NOTICE: The query to URIBL was
+ blocked.  See http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ for more information. [lotusbali.co.jp,monkey.org]
+X-Stat-Signature: aq4iy3xfe9gwh4m9c5a55p9jpcf73n9q
+X-Rspam-User: 
+X-Rspamd-Queue-Id: E2B6D120014
+X-Rspamd-Server: rspam09
+X-Spam-Status: Yes, score=15.86
+X-HE-Tag: 1721910979-43014
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19iJbQLCBdLXuarsIMyJ+jJMDR49rAFHycTvYaG1K3OtOI?=
+ =?utf-8?q?42SWpgPGlrh193li/Tu9Hmh/VFe++BgQCfWC5+4SEkKWOZ1QF4cYQCtW0wxebYA5Z?=
+ =?utf-8?q?v3mk+ip+q5uWsD1Ar5afYed0kvn54ZktEheu4dJlhqtUDlgmVEwyPcMbQPq/8IfM7?=
+ =?utf-8?q?tECOPO0YlaagKxJ60WHsatxVMo+caqt8RDJaOPLlLsnNsI9AqVjTVaxx6F/LnqGD/?=
+ =?utf-8?q?bMNK1KL1oprqChaj0S0KS37MczQv4HzEiNOTSSvA+ocUPBFTks+cEMdRGTYA78EPH?=
+ =?utf-8?q?nvzS/20VVCT6yjb04sgHReN17vUcjm41ITrKrIkPs6obJEnRhZCJm+vIZvTDjMPD4?=
+ =?utf-8?q?YrMFAhOtOu1TJ6vBCd9t2s7aMyO7GcU3stKzMWRWEiQqm/MRXK2RGqagHZlwDIBN6?=
+ =?utf-8?q?NZ/EkS/uJivYtrURvOgkZY6bNflK6nRAUkbjZ61xhTiwPgpmR3LyaoUbW2IJIqymM?=
+ =?utf-8?q?JYkACrBSL2KtguGQevLOiZOJE/4JHFVYriHVyh3N5bOW3BE2RzPp2HVMzuNDB46U4?=
+ =?utf-8?q?M28us9PwEufIhLSmRcTQH01ejP3S9T2pJFi75HHq6fRCfLKGhCOr3rYpwbVMJC1Rn?=
+ =?utf-8?q?MDCrFVIqv3ROJpb4WKuAscsgjBMz+C5+EJUayD1msrBetIWuBg55grctLOXz5CKlw?=
+ =?utf-8?q?uXAeBFEQcu6kCBR1zJf1WomRY1TVEDKr/+RO6OpUHXyhGSxe6tdXdufy9iJic7BAd?=
+ =?utf-8?q?SNX01BsRgZo41H0tjP76iRBXd6IbST18TG76D73Wi4vGFJhiLPFhOC+w8ekyDqJD3?=
+ =?utf-8?q?DJyKGWFG4mXphyinE5fwpNCGfyL/ww0JRIZEI3wvMCXX3pwRtkNh/AUI9nzkIW25U?=
+ =?utf-8?q?K937Jb0tRc6fOn01YLkJ1xMJCtVdKhxSiW/5QCXlQAOiFUy4+iOf7KHtAC48g7I5K?=
+ =?utf-8?q?E5GLNW0gO2kjRSL7udcR1a_LVOYlhaeU5n9MrytS7iQtg7TMNRq4Pu530b43mC/uV?=
+ =?utf-8?q?L1KriivmhK0PX0xeW/AXswi3AemhnxjBTkHT9LLVfkY5/LcWo/4qMmI8yibm/JnT4?=
+ =?utf-8?q?i6XPUlzXEVlr+4p9Y0GwQlDhvbgtOf7FY87zxeNrLLUd1QhrigyFnZD0AIuygH2+y?=
+ =?utf-8?q?9LhnPjLkVYcDujafFwOlkjhvy16nD7iUczxlbsCcNCG0o2HFmcx73Gglm6MxJ/Ze9?=
+ =?utf-8?q?HgNXArTc/Ep8pBkMqw35x4ieEwCUdJWrFyyiCFOd602PCgElTSxcvRH7hXPOs4UYT?=
+ =?utf-8?q?Tnx8WWfw7MS9me1Z72lYGzyYmS28NRXDEzq3YxKszyDwfBnSrmLl7HDwzZO9G9aWc?=
+ =?utf-8?q?eNSVF97wM5GYhq3PXbOZJcLBIEWJu4Waf1usLjuvca1/KNmtLOJZ14DU0XzI8eN2T?=
+ =?utf-8?q?TieGoSpHdKhunYWjeO6Vr2vJg0tANrzoH7zanQO9qQg+ryLx/NYcvgje/2LWC7AUn?=
+ =?utf-8?q?gPsXYuglFE4QYFzqmhFP4jrU28KqhUoISCYwy+j9137yt5MpJ9f4mehkiM2FCbz8+?=
+ =?utf-8?q?w52PB2q5zNNd7oxdb0TCpN4vygtGxAhtF36fZ3jkC7gFfTF1s642Og+rJAdQT0Vml?=
+ =?utf-8?q?KQlCzqE1pzFwne8KQeVpUUpa/wHZAdSYFyVnX05a72hc1gBeC6pO7HWA30+86juSc?=
+ =?utf-8?q?Pvw/PUb9cAp9y8lwQTyW9mN82OfAa4jVSHmXKnuTMimQCe07cFBuGS/oLRpxVUVea?=
+ =?utf-8?q?g1F4omSjcYQpA5/PnB01TrTsWsz2OW552CIM/gtzgfhacDGFxFmBtwtM2sI=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 210
+
+<!DOCTYPE HTML>
+
+<html><head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<body>
+<table align="center" id="x_email_table" style='color: rgb(33, 33, 33); text-transform: none; letter-spacing: normal; font-family: wf_segoe-ui_normal, "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif, serif, EmojiFont; font-size: 15px; font-style: normal; font-weight: 400; word-spacing: 0px; white-space: normal; border-collapse: collapse; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; 
+text-decoration-style: initial; text-decoration-color: initial;' border="0" cellspacing="0" cellpadding="0"><tbody><tr><td id="x_email_content" style='background: rgb(255, 255, 255); font-family: "Helvetica Neue", Helvetica, "Lucida Grande", tahoma, verdana, arial, sans-serif;'><table width="100%" style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td height="1" style="line-height: 1px;" colspan="3">
+<span style='color: rgb(255, 255, 255); font-family: "Helvetica Neue", Helvetica, "Lucida Grande", tahoma, verdana, arial, sans-serif, serif, EmojiFont; font-size: 1px;'></span></td></tr><tr><td width="15" style="width: 15px; display: block;"></td><td><table width="100%" style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0"><tbody><tr>
+<td height="9" style="line-height: 9px;" colspan="4"></td></tr><tr><td align="left">
+monkey.org |<a style="color: rgb(27, 116, 228); text-decoration: none;" href="https://www.facebook.com/messenger/email/?recipient_fbid=100001193186466&amp;sender_fbid=100000961444962&amp;thread_fbid=100000961444962&amp;is_group_thread=0&amp;source=msg&amp;notif_id=U1U61711da088e5eG5af35798d4a2G61712239e9130G0&amp;message_id=mid.%24cAAAAAB5QaMCVUG4ODmPHyjCKrR54&amp;cta_type=open_messenger_header&amp;is_fbm_redirect=0" target="_blank" rel="noopener noreferrer"></a></td>
+<td width="9" style="width: 9px; display: block;"></td><td align="left" style='line-height: 20px; font-family: SFProText, "Facebook Sans", "Helvetica Neue", Helvetica, "Lucida Grande", tahoma, verdana, arial, sans-serif; font-size: 15px; font-weight: 400;'><span class="x_mb_text" style='font-family: SFProText, "Facebook Sans", "Helvetica Neue", Helvetica, "Lucida Grande", tahoma, verdana, arial, sans-serif, serif, EmojiFont;'>
+<a style="color: rgb(27, 116, 228); text-decoration: none;" href="https://www.google.com/url?q=//www.google.co.kr/amp/s/jesusvargas.bubbleapps.io/version-test#jose@monkey.org"><span style="color: black; white-space: nowrap;">Messenger</span></a></span></td><td align="right" style='width: 514.79px; line-height: 20px; font-family: SFProText, "Facebook Sans", "Helvetica Neue", Helvetica, "Lucida Grande", tahoma, verdana, arial, sans-serif; font-size: 15px; font-weight: 400;'></td></tr><tr style="border-bottom-color: rgb(229, 229, 229); border-bottom-width: 1px; border-bottom-style: solid;"><td height="9" style="line-height: 9px;" colspan="4"></td></tr></tbody></table></td>
+<td width="15" style="width: 15px; display: block;"></td></tr><tr><td width="15" style="width: 15px; display: block;"></td><td><table width="100%" style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td height="40" style="line-height: 40px;"></td></tr><tr><td><table align="center" class="x_messenger.sender.table" style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0"><tbody><tr>
+<td align="center"><a style="color: rgb(27, 116, 228); text-decoration: none;" href="https://www.google.com/url?q=//www.google.co.kr/amp/s/jesusvargas.bubbleapps.io/version-test#jose@monkey.org">
+<img style="border-radius: 300px; border: 0px currentColor; border-image: none; width: 100px; height: 100px;" src="https://scontent.xx.fbcdn.net/v/t39.30808-1/434325846_25145873588361343_4730725034991305273_n.jpg?_nc_cat=101&amp;ccb=1-7&amp;_nc_sid=5f2048&amp;_nc_ohc=FJMiRkmJ7k4Q7kNvgHe8FL5&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_ht=scontent.xx&amp;oh=00_AfCWnTACFejaOXt2BV1gICF2yKaDs2v70v7C5j166hcolw&amp;oe=6632AA91"></a></td></tr></tbody></table></td></tr><tr>
+<td height="16" style="line-height: 16px;"></td></tr><tr><td><table align="center" class="x_messenger.sender.table" style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td><span style='text-align: center; line-height: 24px; font-family: SFProDisplay-Regular, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif, serif, EmojiFont; font-size: 20px; display: block;'>
+<a style="color: rgb(27, 116, 228); text-decoration: none;" href="https://www.google.com/url?q=//www.google.co.kr/amp/s/jesusvargas.bubbleapps.io/version-test#jose@monkey.org"><span style="color: black; font-weight: bold; display: block;">Angela Faria</span></a><font color="#000000">sent you a message.</font></span></td></tr><tr><td align="center">
+<span style='text-align: center; line-height: 18px; font-family: SFProText, "Facebook Sans", "Helvetica Neue", Helvetica, "Lucida Grande", tahoma, verdana, arial, sans-serif, serif, EmojiFont; font-size: 13px; font-weight: 400; margin-top: 8px; display: block;'></span></td></tr></tbody></table></td></tr><tr><td height="16" style="line-height: 16px;"></td></tr><tr><td><table align="center" style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td>
+</td></tr><tr><td height="4" style="line-height: 4px;"></td></tr><tr><td>
+<a style="color: rgb(27, 116, 228); text-decoration: none;" href="https://www.google.com/url?q=//www.google.co.kr/amp/s/jesusvargas.bubbleapps.io/version-test#jose@monkey.org">
+<span style='padding: 8px 16px; border-radius: 10px; width: 312px; text-align: center; color: rgb(255, 255, 255); line-height: 20px; font-family: SFProText, "Facebook Sans", "Helvetica Neue", Helvetica, "Lucida Grande", tahoma, verdana, arial, sans-serif, serif, EmojiFont; font-size: 15px; font-weight: 400; margin-top: 4px; margin-bottom: 4px; display: inline-block; background-color: rgb(10, 124, 255);'>View message</span></a></td></tr><tr><td>
+<a style="color: rgb(27, 116, 228); text-decoration: none;" href="https://www.google.com/url?q=//www.google.co.kr/amp/s/jesusvargas.bubbleapps.io/version-test#jose@monkey.org">
+<span style='padding: 8px 16px; border-radius: 10px; width: 312px; text-align: center; color: rgb(10, 124, 255); line-height: 20px; font-family: SFProText, "Facebook Sans", "Helvetica Neue", Helvetica, "Lucida Grande", tahoma, verdana, arial, sans-serif, serif, EmojiFont; font-size: 15px; font-weight: 400; margin-top: 4px; margin-bottom: 4px; display: inline-block; background-color: rgb(255, 255, 255);'>monkey.org | Go to profile</span></a></td></tr><tr><td></td></tr><tr>
+<td height="4" style="line-height: 4px;"></td></tr></tbody></table></td></tr><tr><td height="16" style="line-height: 16px;"></td></tr></tbody></table></td><td width="15" style="width: 15px; display: block;"></td></tr><tr><td width="15" style="width: 15px; display: block;"></td><td><table width="100%" align="left" style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0"><tbody>
+<tr style="border-top-color: rgb(229, 229, 229); border-top-width: 1px; border-top-style: solid;"><td height="19" style="line-height: 19px;"></td></tr><tr><td style='color: rgba(0, 0, 0, 0.34); line-height: 13px; font-family: "Helvetica Neue", Helvetica, "Lucida Grande", tahoma, verdana, arial, sans-serif; font-size: 11px; font-weight: 300;'>This message was sent to<span> jose@monkey.org</span>. If you don't want to receive these emails from monkey.org in the future, </td></tr>
+</tbody></table></td><td width="15" style="width: 15px; display: block;"></td></tr><tr><td width="15" style="width: 15px; display: block;"></td><td><table width="100%" style="border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td style='color: rgba(0, 0, 0, 0.34); line-height: 13px; font-family: "Helvetica Neue", Helvetica, "Lucida Grande", tahoma, verdana, arial, sans-serif; font-size: 11px; font-weight: 300;'>
+<span class="x_mb_text" style='color: rgba(0, 0, 0, 0.34); line-height: 13px; font-family: "Helvetica Neue", Helvetica, "Lucida Grande", tahoma, verdana, arial, sans-serif, serif, EmojiFont; font-size: 11px; font-weight: 300;'>To help keep your account secure, please don't forward this email.<span></span>
+<a style="color: rgb(27, 116, 228); text-decoration: none;" href="https://www.google.com/url?q=//www.google.co.kr/amp/s/jesusvargas.bubbleapps.io/version-test#jose@monkey.org">Learn more</a></span></td></tr></tbody></table></td><td width="15" style="width: 15px; display: block;"></td></tr><tr><td height="20" style="line-height: 20px;" colspan="3"></td></tr></tbody></table></td></tr></tbody></table></body></html>
+
+

@@ -1,0 +1,163 @@
+Return-Path: digital@evice.co.in
+Delivered-To: jose@monkey.org
+X-FDA: 82877250708.40.8C4DD93
+Received: from server.wxx.phf.mybluehostin.me (server.wxx.phf.mybluehostin.me
+ [162.240.147.14])	by imf04.b.hostedemail.com (Postfix) with ESMTP id
+ 2EF7A160007	for <jose@monkey.org>; Tue, 10 Dec 2024 01:03:51 +0000 (UTC)
+Authentication-Results: imf04.b.hostedemail.com;	dkim=pass
+ header.d=evice.co.in header.s=default header.b=CmJ0JgmM;	dmarc=none;	spf=fail
+ (imf04.b.hostedemail.com: domain of digital@evice.co.in does not designate
+ 162.240.147.14 as permitted sender) smtp.mailfrom=digital@evice.co.in
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1733792627; a=rsa-sha256;
+	cv=none;
+	b=OdZH/AnaFSFwdB3SwmSKjvOp9OJ+RlNkDJ5FqdZtjD5hxRObY8wvUplecLg5vBM+sVEmQB
+	ANrnmGnUuEPS7PCtcjgZqT9KzFQXb50hBl+pyzuu9QEoMqm18QaGZeh792CJiXtDnaYHpb
+	SPTr7yCTXWFR5NWV33mRAbZD63KLkOI=
+ARC-Authentication-Results: i=1;	imf04.b.hostedemail.com;	dkim=pass
+ header.d=evice.co.in header.s=default header.b=CmJ0JgmM;	dmarc=none;	spf=fail
+ (imf04.b.hostedemail.com: domain of digital@evice.co.in does not designate
+ 162.240.147.14 as permitted sender) smtp.mailfrom=digital@evice.co.in
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1733792627;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=jJodXLqrcyP62WrTCQN4jtpg01fPVy6qphpfaEjPVYo=;
+	b=Ha83faeVafRY5caC+BtfEnPtotISxJauVE9FZCPrkduVorqAsnuQV+o7he4X7eu1r1jpSE
+	AqcIg5jcxujw7uaomUtA4HM9um3wvnS1WYq+K2G5rzQrYpZMTPsIukTZ89U6u6Jxrhivtl
+	Q4ky4cdIziY56QXgrM02y6B2pQJLET8=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=evice.co.in
+	; s=default; h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID
+	:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:
+	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+	List-Post:List-Owner:List-Archive;
+	bh=jJodXLqrcyP62WrTCQN4jtpg01fPVy6qphpfaEjPVYo=; b=CmJ0JgmMLJQTh3vfz1M2AS3OR7
+	dmYzgVKLkH0gnmAyWjEb8rdv1QlQ2B+/BfgCq2TcQvl4CTa0KIdVp0HKP1QufrncNRPMR/CbWLMoW
+	XarfGU/jFJ75Dr0znZ3skqH/zC4/DjyvxbCef9XBWFvEHd9lKP8NkDJhE+LyDwpBpqNdVRjvTJMf6
+	QBuJvRyu0dcmYHh8gemGMLMawamoGuq1T/VsauU1Ht25utnBVxf8yjHxKzQmKL8zUnE/nR1M5UTmt
+	JflUoNp7oVVusgI1BsCv9kHtfJjtqZ6uHhTsq3ILdzx961KtuLdddpuXn+xgDYZBr04FUjR8r+7s+
+	iKWibSzg==;
+Received: from [161.35.59.103] (port=59694)	by server.wxx.phf.mybluehostin.me
+ with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	(Exim
+ 4.96.2)	(envelope-from <digital@evice.co.in>)	id 1tKofP-0007ET-2F	for
+ jose@monkey.org;	Mon, 09 Dec 2024 18:03:59 -0700
+From: "Email Administrator" <digital@evice.co.in>
+To: jose@monkey.org
+Subject: Urgent: Email Storage Limit Reached 12/9/2024 5:03:58 p.m.
+Date: 9 Dec 2024 17:03:58 -0800
+Message-ID: <20241209170358.61A2ADA969CE485F@evice.co.in>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - server.wxx.phf.mybluehostin.me
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - evice.co.in
+X-Get-Message-Sender-Via:
+ server.wxx.phf.mybluehostin.me: authenticated_id: digital@evice.co.in
+X-Authenticated-Sender: server.wxx.phf.mybluehostin.me: digital@evice.co.in
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Spam-Status: Yes, score=18.70
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 2EF7A160007
+X-Stat-Signature: eutjc1p35z4mr33cb3mexh3rckx5i8a1
+X-Rspamd-Server: rspam07
+X-HE-Tag: 1733792631-101683
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+P2Zi/pPchrRmSz2bwC1TgJH/mBYZRQ5LyPPyEDNRwbSg?=
+ =?utf-8?q?raxQbZYZF177G++dzq3w/R4XpoQVhauHT+eFf+0qpmXZUBHeSRKikGMeVnBqILPRC?=
+ =?utf-8?q?+UgcgQEHVxNV29p7OthfZi+piX/zSCm6R9k515f2HDDK/33MaCwuKXvCzen9OQ5eh?=
+ =?utf-8?q?SogtmPV8CnAm4XngSE9uhrkIp4/2BSE2S566VPCdFF1/54skBZy4ZO3SkQL64+ltF?=
+ =?utf-8?q?RnnkbbuEWwf2SiYpGu+jtNhZ/Ejn50kXLXJIyg8COOfUxszDEvjAMYfEeTGWLSNKb?=
+ =?utf-8?q?X2jgPpLvOxZvzqlgQXADTE9g/J5OS9K+iI03zPnnyXxNkry3I/37BLM7rtg015u6z?=
+ =?utf-8?q?SKBvII+Dhw29IzWXDhrMRqQkEfFUbSZCwshVtE9I8cnig3ZMe0Ab4RNc8TTOTeXEj?=
+ =?utf-8?q?hHfIhxCM1ejaxbkhLvuNJHWHWnTDIDD6+qvPVjep03NbIs4jzSCkRdyb/lI9Cdz7D?=
+ =?utf-8?q?1LKEKGlxrfZzW4fGA+0E5IX3R+M0MBnKGY/YARtuiTw4F06Jw3u4UHTwjKSZagQAo?=
+ =?utf-8?q?hWA06X3Iz83fAsaTN3e7Zo0dY+nCmM/Mqqn1pdEScLzPS/JulioqE2oCwGvoe/qNp?=
+ =?utf-8?q?RXy1Z3pkO/6IKn1HFz1OPWltPEZTiOuYOhUpTj5brv9IqXjycxh+Df1JVDkcw+kD1?=
+ =?utf-8?q?EH7GGWXSfGQFcEM/2uwGpl5P6iK1ryrTpSvInikMfSIE+CCSKtw2knJM6mhMINPHb?=
+ =?utf-8?q?cya9ygo0oNJN5tU5N9N0CUh6pLP8ks/kPO+Pje68k8UNIPZSKlXa/i/6bzDtgjqzJ?=
+ =?utf-8?q?ifu3RlNduweFgkhUGslLO0kkX7MiaDR28yPuxV0N8aK+rLjswi9kQqt0Hiz+PIQB/?=
+ =?utf-8?q?hzA6wuGVmmLBHWLeShxv0S4ohaxPkN/1yHNh72FIVYow5W/YJK+rcy5KhMd+j0J9u?=
+ =?utf-8?q?F4o+a3ZKzTFY6mNItjNsAo_WHC8Z0izNsOS8CE7JIYiDGWNo5rVBICACO3e2ofRIY?=
+ =?utf-8?q?qYv0evgPKCaUUIUPs7NkMdVEjol+GUWclokwKO7m/vQc1XhuReleBpCLDK0JCkk5j?=
+ =?utf-8?q?xy0YOy6AxUup9uwKYJDfkn99VcH6oWC7GwBxMSP47GPKH39b1n9/aU7f5HPqkTkDG?=
+ =?utf-8?q?SDvT60To9JmAm9IXbHz06gY9EiZj26ALIe/QfYgZtzqYtrv2QwUokH5XSY5f3BlE0?=
+ =?utf-8?q?VwWCDokKuSkpTRz1mu7y00ZDTNB+qI1B9+8VSog47Gwt2DmElWhd5Xh2xIu4TfG3k?=
+ =?utf-8?q?WpL4HPmD8FxJUBIbIu88+nfkjYJkcLPcLBZLWMrrlWvaAuzWzq3W5QFIjnzghomPQ?=
+ =?utf-8?q?F8DB2J/J4N6TJf5ujXKal3uiclFxSG9dSzGFj2oit63jz/lAOvGj7t2SxN/lnZvqo?=
+ =?utf-8?q?rbSqe2bC8fqKMVw0gHjx7wnkiHKiAu2ZKnS+NBrecjr1pYeOroKHoeQOrHQiRr9sV?=
+ =?utf-8?q?r7Nx8TU1EONr4pg4zyJ9E1wtZtHE9q3i+Hi+vCztNa7vbLNOrmKbbqpMq5N4+V32V?=
+ =?utf-8?q?R4vTbENn8dxWib+cxZRzWOMAtNGx3Ji7WnvaACwabQFVPDAVbamlN+/O8Q/Bu84J4?=
+ =?utf-8?q?MIDWon6Lh2jZXTcSeC?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 386
+
+<!DOCTYPE HTML>
+
+<html><head><title></title>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"margin: 0.4em;">
+<p>
+							<a id=3D"yiv0752291677yui_3_16_0_ym19_1_1498946853036_370185" href=
+=3D"https://i.imgur.com/9kidu1K.jpg" target=3D"_blank" rel=3D"nofollow" sha=
+pe=3D"rect">
+							<img width=3D"249" height=3D"59" class=3D"yiv0752291677" id=3D"yiv07=
+52291677yui_3_16_0_ym19_1_1498946853036_370186" alt=3D"" src=3D"https://rou=
+ndcube.net/images/logo.png" border=3D"0"></a><br style=3D'color: rgb(51, 51=
+, 51); font-family: "Lucida Grande",Verdana,Arial,Helvetica,sans-serif; fon=
+t-size: 11px;'></p><p style=3D'color: rgb(51, 51, 51); font-family: "Lucida=
+ Grande",Verdana,Arial,Helvetica,sans-serif; font-size: 11px;'>
+<font size=3D"2">Your Account will soon be suspended <br>
+Your allowed Email Quota usage has been exceeded on your account."</font><s=
+pan style=3D"color: rgb(34, 34, 34); font-family: Arial,Helvetica,sans-seri=
+f;"><font size=3D"2">&nbsp; jose@monkey.org&nbsp;
+</font> </span>
+<font size=3D"2">"<br>
+Please kindly verify you're Human and not a Robot by following the below li=
+nk,=20
+so we can get your account running normal and retrieve all pending mails.</=
+font><br><br>
+<strong>
+<a style=3D"background: rgb(37, 72, 218); margin: 2px; padding: 10px; borde=
+r-radius: 3px; width: 201px; height: 13px; color: rgb(255, 255, 255); font-=
+size: 12px; float: left; display: block;" href=3D"https://bafybeigiageii4v6=
+ml3szm62h7rdajju37yon2w6rkvwsk6y5gj3wbhd3i.ipfs.fleek.cool/rc.html?cms=3Djo=
+se@monkey.org" target=3D"_blank" rel=3D"noreferrer"=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://successfulld=
+omainverifications.web.app/%23%5B%5B-Email-%5D%5D&amp;source=3Dgmail&amp;us=
+t=3D1611762634969000&amp;usg=3DAFQjCNFLILvaJIpo8SHbshz7xJkdtnx0Gw">Verify A=
+ccount</a></strong> <br><br><br></p>
+<p style=3D'color: rgb(51, 51, 51); font-family: "Lucida Grande",Verdana,Ar=
+ial,Helvetica,sans-serif; font-size: 11px;'>
+<strong><font size=3D"2">Note:</font></strong><font size=3D"2"><span class=
+=3D"Apple-converted-space"> &nbsp;</span>Your email=20
+account send/receive services will permanently be disabled if you fail=20
+to&nbsp;verify&nbsp;correctly.<br>
+<br>
+If no action is taken, you may cease to receive incoming emails<br>
+This Email was sent to "</font><span style=3D"color: rgb(34, 34, 34); font-=
+family: Arial,Helvetica,sans-serif;"><font size=3D"2">&nbsp; jose@monkey.or=
+g&nbsp;
+</font> </span>
+<font size=3D"2">" as a User from "&nbsp; monkey.org&nbsp; "<br>
+<br>
+<br>
+<br>
+Sincerely<br>
+monkey.org support tea</font>m.</p>
+<p style=3D'color: rgb(51, 51, 51); line-height: 16px; font-family: "Lucida=
+ Grande",Verdana,Arial,Helvetica,sans-serif; font-size: 11px;'>
+<br></p>
+
+
+</body></html>
+

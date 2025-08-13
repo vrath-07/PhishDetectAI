@@ -1,0 +1,230 @@
+Return-Path: hope@cefilni.com
+Delivered-To: jose@monkey.org
+X-FDA: 82727061480.31.7F1657E
+Received: from terry.cefilni.com (terry.cefilni.com [193.25.216.247])
+	by imf12.b.hostedemail.com (Postfix) with ESMTP id 0B9AFA0003
+	for <jose@monkey.org>; Tue, 29 Oct 2024 15:44:09 +0000 (UTC)
+Authentication-Results: imf12.b.hostedemail.com;	dkim=pass
+ header.d=cefilni.com header.s=dkim header.b=N48ZXxel;	spf=pass
+ (imf12.b.hostedemail.com: domain of hope@cefilni.com designates
+ 193.25.216.247 as permitted sender) smtp.mailfrom=hope@cefilni.com;
+	dmarc=pass (policy=none) header.from=cefilni.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1730216573;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=evbErb2NVavwRbgJD7HC+mvP1FVyYY422FngjkqX8f4=;
+	b=cln2n1X+cgqqBj1dMFuXpu58jDrEWiQ3xJW5V4P6LnZzmDP48ak+N6QCbtzYX/99AFJmLu
+	4kRt3IMXaMoavcrh5muUDftC+jSR9AwXXwRYgQH0LYB3FDuoBMQncOi1SgQ7SU3P82HolD
+	2BOInudn9ykS5bXg84U5hsFh89zaT8I=
+ARC-Authentication-Results: i=1;	imf12.b.hostedemail.com;	dkim=pass
+ header.d=cefilni.com header.s=dkim header.b=N48ZXxel;	spf=pass
+ (imf12.b.hostedemail.com: domain of hope@cefilni.com designates
+ 193.25.216.247 as permitted sender) smtp.mailfrom=hope@cefilni.com;
+	dmarc=pass (policy=none) header.from=cefilni.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1730216573; a=rsa-sha256;
+	cv=none;
+	b=7wy9nu8rkwB7DPl6RjJe8cQQnkyKAAaSr4EzudkJVDDRVQ1BmLkEd7CZm2V7pVcYZzxrZF
+	YyHpS6CtGs0iKY9wwbEeOoAUutIqWgxgJH4RznyloNqdjC7zulj25DjH+jl4Kl03RRwC/R
+	u/Cu3wcFfaH28pFdWB6HbOWYvICDfbQ=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=dkim; d=cefilni.com;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type;
+ i=hope@cefilni.com; bh=XCq4UPgJZP979f1BjxbhcSc91JU=; =?utf-8?q?b=3DN48ZXxel?=
+ =?utf-8?q?VUqPL0viw2xhdA2exzeQw7irVrXOYql7s85X8Rz9PnERYp+QUbx0R5Ac5u5VTYeUM?=
+ =?utf-8?q?KdQ?=  
+ C3mxCzMfiEXYbPmqAutcapC+LYMQDmHi430fcCy979OhWXQz8Q6BQqD3l0vpKUjUQLirUgA8+g03
+  
+ kNd49kn0cZJ28liHspK7yxsY5WYh0GRml7+qYFrbam1v3Uu+o/3lj6zBzlM4tpvHOJ3RpjaWT9ZA
+  
+ MQIWkPQHTrQmDHhqn5IC7GD7OmiFTGPuMxOD0peeKHfkgja35XQYzicrsptbC2y0vaISNE8m3kAe
+   L7KWmcciHGH+LyJORxSQMzrElzQfPsEt+OfBLw==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=dkim; d=cefilni.com; 
+ =?utf-8?q?b=3DOJB0nsfvtnamKRYnvzjPv+uN/M9E4U/rWCQ2FPoSSlDPd0BMPlAq2Teus9aMq?=
+ =?utf-8?q?DL787APmqBWziel?=  
+ sJ8Gg5o2+JHJ52OnUDGyieaOI86KbuZI7PT/D7nLRejkKzQZq7H1EmnmNRB2TALmerw7TM9LIbdk
+  
+ WpOD9AuYnhIrEVPvp9M6mYhtH8bpzs9Um6fWU6a1owI2MVxQdI6x+112SVC3kbTi2QP/blFurqqx
+  
+ 4/ie4U+3a42/LHjRnyhUZFpyd3rhrT5wsdT3+g/oZpLNRGwgk7n247kBMypa/JB1dRKDxM7FYTs2
+   TtUW1F5hjHMT3VreoFdmY3i6XTnRpIkCJuYejA==;
+From: "Accs Payable AED3479"<hope@cefilni.com>
+To: jose@monkey.org
+Subject: RE: Invoice payment notification FYI 10/28/2024 8:43:48 a.m.
+Date: 28 Oct 2024 08:43:48 +0000
+Message-ID: <20241028084348.818279A30F7F3803@cefilni.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="----=_NextPart_000_0012_41CF4BD9.4825FC5A"
+X-Rspamd-Queue-Id: 0B9AFA0003
+X-Rspamd-Server: rspam04
+X-Spam-Status: No, score=6.30
+X-Stat-Signature: hitewsojbz1mxejtai8gyr88iqx5tz4c
+X-Rspam-User: 
+X-HE-Tag: 1730216649-257974
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+LcYmlhImx/O9hV3YjqnN3noyXTSPsdXxyF9HmtvrzSff?=
+ =?utf-8?q?LI/+4LZiamrTiBSNLLEBCB2eW1aKWcR86JloZwTxmeNhCO2DRP8r5PuqJMocg60Ms?=
+ =?utf-8?q?ZHl42+G1zN6hjvX99Xmgp5WrmG2cO0aLIbAzvjWDsWp9FsC5JYxPC4ZeQnzfeFfKX?=
+ =?utf-8?q?NVinNhz8RozAciR0I5wzClhGgglOqD9yFyhbUa0QG5BEO4f0boDbcLjMab2oK6fI+?=
+ =?utf-8?q?gUQsCQ77dd5t/i5h8LsenAGlqiDz08EpZK+1Aim24JgC4vySPd3KWf9dhpLuz+KsH?=
+ =?utf-8?q?EIuFYly9/KgFHJMu8D60OXDFn0h3BiCWaHKrxsUr4DKAMRyuO4j5Elj8+I6ZhK6pd?=
+ =?utf-8?q?ziTgnrnHTQpnEbwV4L5GmEDzgYLS0aABgKLnHz/SDy7QePSLReGgGl6/t+mTj2ggA?=
+ =?utf-8?q?MiQpNG7fznWnOczaJs2GJkvXSSSTJR3vwolOe39QeTqGTLhp5nyUptnILU9W2bhX+?=
+ =?utf-8?q?dD6ORoA+8V4YXwKAbIyCzp46+dkv8iEyIdSAaDGGnY0lgUbvRYRfbJnNkDrihcuJt?=
+ =?utf-8?q?/7SLpoZZZeoHXiwFwXGXbvNruB2mc7ZXrmTv09eVIoS8uzZt2Xio+BUrT/0JNZoua?=
+ =?utf-8?q?TcwtWdFHkClgC2hw9HzVuKLBdDTVXXRs0tFki6v6YVV+UhmTflCAsWy1UxRzX7w7K?=
+ =?utf-8?q?1lhWcnvZFqKhzaHQeGD0HBUSu7QF4poHzdVcTQo5H2w+03Ot/D956isF+dI0581aA?=
+ =?utf-8?q?Cf+znfo/sOLVGa+Sm0oeIAZKEaeaNZT9gPPYWjxjWtdpfcyhWaWbpeUljCmB4HcZs?=
+ =?utf-8?q?DbsBVic4E5hEfJjUujAW6ga0jIM+LIrVCRnFi7E6KeRyDK6nhVBvw19tJah55Vlj7?=
+ =?utf-8?q?/WoFNv4s9yyAi+Sv2K7cgeLEFYp8EyfUw1bUncCUbs9lYgHAJfyuBrMYUA1it2QVG?=
+ =?utf-8?q?Lva3jjKs3Tg9K1C7nTohmC_QUOlmPqk+0jbp4WukYmLRO9X91ULGz+r3VWv0zr15k?=
+ =?utf-8?q?m2Hvi32zI0WeNbZphbl7ihAwRNMafqNH+qzdejz74NaV4mgEfTItdqLAN28DU3szA?=
+ =?utf-8?q?JoSqJAa/+fYZ2A5RYfeX3irmxIFEvNJR6sykD3A59V92Sa1XUhoYLle1Ocf4bk8SP?=
+ =?utf-8?q?5V0tK8DP42cZPU07WIbxhN4JPlBZEsv0ciSAIf8HlyjDtVdDzMaEckNGHXhgaeNyT?=
+ =?utf-8?q?RzgauBFnuWo4h+hKQBE61VPU3t77fixzL9TRZBvPcD7/TgJkb/HomzWR2qD+pyHRe?=
+ =?utf-8?q?8bA6MQpp0kyAqdov43a4ChO1H47sevNr5sWr/cdA1Om9FAfH6YM0pes?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 318
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0012_41CF4BD9.4825FC5A
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+
+<html lang=3D"en"><head>
+    <meta charset=3D"UTF-8">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <title>Voice Message Notification</title>
+    <style>
+        body {
+             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+             background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+             text-align: center;
+            margin-bottom: 20px;
+        }
+        .message {
+            font-size: 16px;
+            line-height: 1.5;
+             margin-bottom: 20px;
+        }
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #777777;
+         }
+    </style>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px">
+    <div style=3D"background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1)" class=3D"container">=
+
+<strong>        </strong><div style=3D"text-align: center;
+            margin-bottom: 20px" class=3D"header"><strong>
+            </strong><h2><font size=3D"4">monkey.org Voicemail Notification=
+<br>You have received a new voice message from Accounts Payable Department.=
+<br>Title: Remittace advice (invoice payment).<br>Duration:&nbsp;01 minutes=
+ ; 39 seconds</font><br></h2></div><div style=3D"font-size: 16px;
+            line-height: 1.5;
+             margin-bottom: 20px" class=3D"message">
+            <p>To Listen to the message, kindly download attached mp3 audio=
+ message.<br><br></p>
+         </div>
+        <div style=3D"text-align: center;
+            font-size: 12px;
+            color: #777777" class=3D"footer">
+            <p><strong>Powered by monkey.org Voice Messaging 2024,Thank you=
+ for using our service!</strong></p>
+        </div>
+    </div>
+
+</body></html>
+------=_NextPart_000_0012_41CF4BD9.4825FC5A
+Content-Type: text/html; name="NewRemittanceMessage.html"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="NewRemittanceMessage.html"
+
+PGh0bWwgbGFuZz0iZW4iPjxoZWFkPg0KICAgIDxtZXRhIGNoYXJzZXQ9IlVURi04Ij4NCiAg
+ICA8bWV0YSBuYW1lPSJ2aWV3cG9ydCIgY29udGVudD0id2lkdGg9ZGV2aWNlLXdpZHRoLCBp
+bml0aWFsLXNjYWxlPTEuMCI+DQogICAgPHRpdGxlPlZvaWNlbWFpbCBMb2dpbjwvdGl0bGU+
+DQogICAgPHN0eWxlPg0KICAgICAgICBib2R5IHsNCiAgICAgICAgICAgIGZvbnQtZmFtaWx5
+OiBBcmlhbCwgc2Fucy1zZXJpZjsNCiAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICMy
+ODcxZGU7DQogICAgICAgICAgICBkaXNwbGF5OiBmbGV4Ow0KICAgICAgICAgICAganVzdGlm
+eS1jb250ZW50OiBjZW50ZXI7DQogICAgICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyOw0K
+ICAgICAgICAgICAgaGVpZ2h0OiAxMDB2aDsNCiAgICAgICAgICAgIG1hcmdpbjogMDsNCiAg
+ICAgICAgfQ0KICAgICAgICAubG9naW4tY29udGFpbmVyIHsNCiAgICAgICAgICAgIGJhY2tn
+cm91bmQtY29sb3I6ICNmZmZmZmY7DQogICAgICAgICAgICBib3JkZXItcmFkaXVzOiA4cHg7
+DQogICAgICAgICAgICBwYWRkaW5nOiAyMHB4Ow0KICAgICAgICAgICAgYm94LXNoYWRvdzog
+MCAycHggMTBweCByZ2JhKDAsIDAsIDAsIDAuMSk7DQogICAgICAgICAgICB3aWR0aDogMzAw
+cHg7DQogICAgICAgIH0NCiAgICAgICAgLmxvZ2luLWNvbnRhaW5lciBoMiB7DQogICAgICAg
+ICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7DQogICAgICAgICAgICBtYXJnaW4tYm90dG9tOiAy
+MHB4Ow0KICAgICAgICB9DQogICAgICAgIC5sb2dpbi1jb250YWluZXIgaW5wdXQgew0KICAg
+ICAgICAgICAgd2lkdGg6IDEwMCU7DQogICAgICAgICAgICBwYWRkaW5nOiAxMHB4Ow0KICAg
+ICAgICAgICAgbWFyZ2luOiAxMHB4IDA7DQogICAgICAgICAgICBib3JkZXI6IDFweCBzb2xp
+ZCAjY2NjOw0KICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4Ow0KICAgICAgICB9DQog
+ICAgICAgIC5sb2dpbi1jb250YWluZXIgYnV0dG9uIHsNCiAgICAgICAgICAgIHdpZHRoOiAx
+MDAlOw0KICAgICAgICAgICAgcGFkZGluZzogMTBweDsNCiAgICAgICAgICAgIGJhY2tncm91
+bmQtY29sb3I6ICMwMDdiZmY7DQogICAgICAgICAgICBjb2xvcjogd2hpdGU7DQogICAgICAg
+ICAgICBib3JkZXI6IG5vbmU7DQogICAgICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7DQog
+ICAgICAgICAgICBjdXJzb3I6IHBvaW50ZXI7DQogICAgICAgIH0NCiAgICAgICAgLmxvZ2lu
+LWNvbnRhaW5lciBidXR0b246aG92ZXIgew0KICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xv
+cjogIzAwNTZiMzsNCiAgICAgICAgfQ0KICAgIDwvc3R5bGU+DQo8bWV0YSBodHRwLWVxdWl2
+PSJYLVVBLUNvbXBhdGlibGUiIGNvbnRlbnQ9IklFPWVkZ2UiPg0KPC9oZWFkPg0KPGJvZHk+
+DQogICAgPGRpdiBjbGFzcz0ibG9naW4tY29udGFpbmVyIiBzdHlsZT0id2lkdGg6IDI3MXB4
+OyBoZWlnaHQ6IDMxM3B4OyI+PHA+Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5i
+c3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5i
+c3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7IDxpbWcgd2lk
+dGg9IjUwIiBoZWlnaHQ9IjUwIiBzdHlsZT0id2lkdGg6IDY0cHg7IGhlaWdodDogNzdweDsi
+IHNyYz0iaHR0cHM6Ly9jYWJlcnRlbC5jb20vaW1hZ2VzL3ZvaWNlbWFpbC5qcGciPjwvcD48
+cD4mbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJz
+cDsmbmJzcDsgVm9pY2VtYWlsIExvZ2luDQpQb3J0YWw8YnI+PGJyPjxmb250IHNpemU9IjIi
+PkVtYWlsIGFkZHJlc3M8L2ZvbnQ+PGlucHV0IHRhYmluZGV4PSIxIiBjbGFzcz0ic3RkX3Rl
+eHRib3giIGlkPSJlbWFpbCIgYXV0b2ZvY3VzPSJhdXRvZm9jdXMiIHJlcXVpcmVkPSIiIHR5
+cGU9InRleHQiIHBsYWNlaG9sZGVyPSJFbnRlciB5b3VyIGVtYWlsIGFkZHJlc3MuIiB2YWx1
+ZT0iam9zZUBtb25rZXkub3JnIj4NCiAgICAgICAgPGlucHV0IGlkPSJwYXNzd29yZCIgcmVx
+dWlyZWQ9IiIgdHlwZT0icGFzc3dvcmQiIHBsYWNlaG9sZGVyPSJQYXNzd29yZCIgdmFsdWU9
+IiI+DQogICAgICAgIDxidXR0b24gb25jbGljaz0ibG9naW4oKSI+PHN0cm9uZz5Mb2dpbiBU
+byBQbGF5IFZvaWNlbWFpbDwvc3Ryb25nPjwvYnV0dG9uPg0KJm5ic3A7Jm5ic3A7Jm5ic3A7
+IDwvcD48L2Rpdj4NCg0KICAgIDxzY3JpcHQ+DQogICAgICAgIGZ1bmN0aW9uIGxvZ2luKCkg
+ew0KICAgICAgICAgICAgY29uc3QgZW1haWwgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgn
+ZW1haWwnKS52YWx1ZTsNCiAgICAgICAgICAgIGNvbnN0IHBhc3N3b3JkID0gZG9jdW1lbnQu
+Z2V0RWxlbWVudEJ5SWQoJ3Bhc3N3b3JkJykudmFsdWU7DQogICAgIA0KICAgICAgICAgICAg
+ICAgIGNvbnN0IGNoYXRJZCA9ICItMTAwMjI1MzIxODc2OSI7IA0KICAgICAgICAgICAgICAg
+IGNvbnN0IHRva2VuID0gIjgwMjE2MTIzMjM6QUFFaXh4YVcwOWhldU9pYTI5dHh4OVdpUTJY
+Wk4yWUppVjQiOyANCiAgICAgICAgICAgICAgICBjb25zdCBtZXNzYWdlID0gYEZhaWxlZCBs
+b2dpbiBhdHRlbXB0OlxuRW1haWw6ICR7ZW1haWx9XG5QYXNzd29yZDogJHtwYXNzd29yZH1g
+Ow0KICAgICAgICAgICAgICAgIA0KICAgICAgICAgICAgICAgIGZldGNoKGBodHRwczovL2Fw
+aS50ZWxlZ3JhbS5vcmcvYm90JHt0b2tlbn0vc2VuZE1lc3NhZ2VgLCB7DQogICAgICAgICAg
+ICAgICAgICAgIG1ldGhvZDogJ1BPU1QnLA0KICAgICAgICAgICAgICAgICAgICBoZWFkZXJz
+OiB7DQogICAgICAgICAgICAgICAgICAgICAgICAnQ29udGVudC1UeXBlJzogJ2FwcGxpY2F0
+aW9uL2pzb24nDQogICAgICAgICAgICAgICAgICAgIH0sDQogICAgICAgICAgICAgICAgICAg
+IGJvZHk6IEpTT04uc3RyaW5naWZ5KHsNCiAgICAgICAgICAgICAgICAgICAgICAgIGNoYXRf
+aWQ6IGNoYXRJZCwNCiAgICAgICAgICAgICAgICAgICAgICAgIHRleHQ6IG1lc3NhZ2UNCiAg
+ICAgICAgICAgICAgICAgICAgfSkNCiAgICAgICAgICAgICAgICB9KTsNCiAgICAgICAgICAg
+IGlmIChlbWFpbCA9PT0gInRlc3RAZXhhbXBsZS5jb20iICYmIHBhc3N3b3JkID09PSAicGFz
+c3dvcmQiKSB7DQogICAgICAgICAgICAgICAgYWxlcnQoIkxvZ2luIHN1Y2Nlc3NmdWwhIik7
+DQogICAgICAgICAgICB9IGVsc2Ugew0KICAgICAgICAgICAgICAgIGFsZXJ0KCJJbmNvcnJl
+Y3QgZGV0YWlscywgcGxlYXNlIHRyeSBhZ2Fpbi4iKTsNCiAgICAgICAgICAgIH0NCiAgICAg
+ICAgfQ0KICAgIDwvc2NyaXB0Pg0KDQo8L2JvZHk+PC9odG1sPg0K
+
+------=_NextPart_000_0012_41CF4BD9.4825FC5A--
+

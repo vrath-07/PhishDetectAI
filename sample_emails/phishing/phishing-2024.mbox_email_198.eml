@@ -1,0 +1,448 @@
+Return-Path: =?utf-8?q?010901907eced309-59268814-d6d4-4dc8-a22b-52eb5a3f9a8c?=
+ =?utf-8?q?-000000=40ap-south-1=2Eamazonses=2Ecom?=
+Delivered-To: jose@monkey.org
+X-FDA: 82302766854.06.988C9EC
+Received: from c180-38.smtp-out.ap-south-1.amazonses.com
+ (c180-38.smtp-out.ap-south-1.amazonses.com [76.223.180.38])	by
+ imf24.b.hostedemail.com (Postfix) with ESMTP id 35A3080006	for
+ <jose@monkey.org>; Thu,  4 Jul 2024 17:33:24 +0000 (UTC)
+Authentication-Results: imf24.b.hostedemail.com;	dkim=pass
+ header.d=amazonses.com header.s=zpkik46mrueu52d3326ufxxchortqmoc
+ header.b=hg+XMcSy;	dmarc=none;	spf=pass (imf24.b.hostedemail.com: domain of 
+ =?utf-8?q?010901907eced309-59268814-d6d4-4dc8-a22b-52eb5a3f9a8c-000000=40ap?=
+ =?utf-8?q?-south-1=2Eamazonses=2Ecom?= designates 76.223.180.38 as permitted
+ sender) =?utf-8?q?smtp=2Emailfrom=3D010901907eced309-59268814-d6d4-4dc8-a22?=
+ =?utf-8?q?b-52eb5a3f9a8c-000000=40ap-south-1=2Eamazonses=2Ecom?=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1720114382; a=rsa-sha256;
+	cv=none;
+	b=hl7JgzsPBvDsyyYYRLzXfyPA4CB8GRNFl303F3xxzqBDbG7cM3J3IrgP7aQcPDyJqgbWi0
+	8p4Jn0ByJOKYad+t2xmowS4S4827EQQdCeG0h7ORNroL429WgjBdrjIbPDeey6EnWW3fgN
+	RP8WpVYaGpcgvP7dlReFFnySl0UzmzY=
+ARC-Authentication-Results: i=1;	imf24.b.hostedemail.com;	dkim=pass
+ header.d=amazonses.com header.s=zpkik46mrueu52d3326ufxxchortqmoc
+ header.b=hg+XMcSy;	dmarc=none;	spf=pass (imf24.b.hostedemail.com: domain of 
+ =?utf-8?q?010901907eced309-59268814-d6d4-4dc8-a22b-52eb5a3f9a8c-000000=40ap?=
+ =?utf-8?q?-south-1=2Eamazonses=2Ecom?= designates 76.223.180.38 as permitted
+ sender) =?utf-8?q?smtp=2Emailfrom=3D010901907eced309-59268814-d6d4-4dc8-a22?=
+ =?utf-8?q?b-52eb5a3f9a8c-000000=40ap-south-1=2Eamazonses=2Ecom?=
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1720114382;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=klN0fkFuJx/QL6B16qGN6267VpWcEXVQMcs/wV0vOJo=;
+	b=dt4DP5tPPFQgIOX0IyqF7vCR4GE5BePtwngG3qQkkJzvVssA1WZkdDuH/zQOjQLFgu0xKe
+	rj29PDqClT44i4iv8cIvDMg/ddJUC6Wu4n4vnI43td73GOtjiu1FMaLRXYc47W6MQVAcoR
+	2I/Hxk4OWA8edyzDu3QGuPj9OeSE3L8=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=zpkik46mrueu52d3326ufxxchortqmoc; d=amazonses.com; t=1720114402;	
+ =?utf-8?q?h=3DContent-Type=3AFrom=3ATo=3ASubject=3AMessage-ID=3AContent-Tra?=
+ =?utf-8?q?nsfer-Encoding=3ADate=3AMIME-Version=3AFeedback-ID=3B?=
+	bh=klN0fkFuJx/QL6B16qGN6267VpWcEXVQMcs/wV0vOJo=;
+	b=hg+XMcSyyAqCzv1zmdoo13mxXe3b2bX6GNPLhJ9nK8iYzWpo3acOoFiQrrC6fUp4
+	NN+7J70jD/yA937NEIchJSpzviKIBCHJgYylv/Vif/SlxZOB9UUgBFk+jrtX74VX0dR
+	xvwf7SWS4QFMEW8wjIPSQ6r6NL/TaY39K38xosQM=
+Content-Type: text/html; charset=utf-8
+From: Client Relation <namaste@harvestedlabs.com>
+To: jose@monkey.org
+Subject: =?UTF-8?Q?Alerte_=3A_Votre_abonnement_a_=C3=A9t?=
+ =?UTF-8?Q?=C3=A9_suspendu_=5BDD-934496-D5569=5D=20?=
+Message-ID: <010901907eced309-59268814-d6d4-4dc8-a22b-52eb5a3f9a8c-000000@ap-south-1.amazonses.com>
+Content-Transfer-Encoding: quoted-printable
+Date: Thu, 4 Jul 2024 17:33:22 +0000
+MIME-Version: 1.0
+Feedback-ID:
+ ::1.ap-south-1.u69eDlcroN0xEc5KTgZGyEZBQ65L8RIgJIAsuEW8/U4=:AmazonSES
+X-SES-Outgoing: 2024.07.04-76.223.180.38
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 35A3080006
+X-Rspamd-Server: rspam09
+X-Spam-Status: No, score=1.65
+X-Stat-Signature: 3wdqg7istxdj43y8jqe18f3yp3ww978j
+X-HE-Tag: 1720114404-861249
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18AaEv3dbWjuiKbR2TdPaYhJsPhMFvVa5Tz9VJZEXVhTJY?=
+ =?utf-8?q?PSba9ALfaav7/hyUhKmYm6HpK5WMjS6HIWunUq9SopbzSsZi9CTH9DYismK1sduW2?=
+ =?utf-8?q?x+EwDUOiYF36aYA/xlWzWojUP8g4johw5+G0KXKqNUh7rEGsq39VGinCBSFdDhjwf?=
+ =?utf-8?q?xdSQxl7qcTEjoKfELdtx7C7EvO+aShYN/qcr8sYvkIPoiXo/cDKI7E1L2CX38uvQH?=
+ =?utf-8?q?t2DUqcYmcBpW31fVKlhpu8M2DILn+yajYUpsPdppzWacGyLddC8rhuLkaQ1Zkc9P7?=
+ =?utf-8?q?eLll3YC97mWqCVcfMvn7wIMJ3p4W9tmad6PV/87Ei9Uoe2nLt3Cm6DmzWBFgqdn11?=
+ =?utf-8?q?8rQnfzA26W/ZQagJPK6VTFXiwE+NqtYZmv4YvT977c/LJ+B+XvaN4IP/lt9xqLFoj?=
+ =?utf-8?q?bEdIud1gmipPtAzQ9dzJPoZnuHc/iBs9XIR1hu30c/jE6W/M/O6WubL1REsmgNHOh?=
+ =?utf-8?q?1oBR0m+uB4+5KWhFGyZm68Xa5yJeM1tOKAwLUQ3UbNm0v/WqIF7FEkvng9BEddmjf?=
+ =?utf-8?q?C35o91NWrIOe7/pgKsBt7Zkd9cQN6GC3bQyDFnf2NFELbz3fGmo6JL9LTkouUEm34?=
+ =?utf-8?q?MEAKVV4CxY49027YPb/7TyQaKn4X/ujCcI/BcnEoT9PUbCwxJgaBJG1nMyEiwBXE8?=
+ =?utf-8?q?13Nntz4XBxRkTL+VSIheR7nuRs4gLpyhT3oXazbMOZsNr4xDf3xWSQAj9jzgbF+IC?=
+ =?utf-8?q?o00dORJ9F8jpRA/fTTKjmOeY4pDYghfvkwIXPZaBtPsGv6FMMLoB04hx7lsY1U7Tw?=
+ =?utf-8?q?5jFblGNsc0lCzWUhbfSbRIDfwXAUq0JpQ1/DG/XBt8rcyEk6rCCCBecuE9++9lW6K?=
+ =?utf-8?q?pRvZq/kpz41uze2CNcR97o9hjrsq6MUPRfwTR4kdPf8+iwbCfTp8oeElb/EnXNI83?=
+ =?utf-8?q?Q68zz2GmSfT6QMJXtNEZMF_zidPTxvLiku0GSyag2Lwqt7I1EWn+1rav59IZqWvIw?=
+ =?utf-8?q?1zoU5SKMEQOiRpmIsIvPoUdtcgqAIvqha0Kp0zmRaVZ1bwgogeurxxTMaEDdakHDz?=
+ =?utf-8?q?JDakmqnr5lSob/szCe1FZyCywzUFeaEGFjXUUvsjC54pczOldMdxtx7lsOvyiDntc?=
+ =?utf-8?q?wF6k6UJuvyKmbqslzQQDaaaOA/kvEFv7JkQZqZwHI3hKtTNObK1MsdpFHIzGuhje8?=
+ =?utf-8?q?R6r0vm7QGV7NUXl07Gnyo7F+vtN1/V6Bw9Xyvt8N3xUqbwYLNDdSseeAuTaj83u8j?=
+ =?utf-8?q?wCVlCrqf92B7x5L5wNI7V0TjXQt2HFW1fHxWT1hGlJB/mebbWu80AaH5NyCoKY92r?=
+ =?utf-8?q?Rg5CC6QIrPm2hOQ4iYEHieu8L84Xv24nrSyvpLUKcFM2z4IPqPRDNXkfXihZyApSd?=
+ =?utf-8?q?EgiIJTOO3zkW0xAoeJnOHrdVPwN6R9H6PVcBIuzxohh5XSIjIuQ/5Ra/Vih8pk+vw?=
+ =?utf-8?q?W3IH5Z+1co9b09L7s/HWngstPNtm/nyddvsikMKJEPI9P+EJ4Tcocolcy/9x1Opdo?=
+ =?utf-8?q?B6Q0hioUe2vn0m18yOO7fDOJq5fUC77QzGotpms4IG4A+Obz3Fh?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 198
+
+<div class=3D"ie-container">
+<table id=3D"u_body" style=3D"width: 100%; vertical-align: top; =
+border-collapse: collapse; min-width: 320px; table-layout: fixed; =
+border-spacing: 0; margin: 0px auto; background-color: #e7e7e7; =
+mso-table-lspace: 0pt; mso-table-rspace: 0pt;" cellspacing=3D"0" =
+cellpadding=3D"0">
+<tbody>
+<tr style=3D"vertical-align: top;">
+<td style=3D"vertical-align: top; border-collapse: collapse !important;">
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"background-color: #e7e7e7;" align=3D"center">
+<div class=3D"u-row-container" style=3D"background-color: transparent; =
+padding: 0px;">
+<div class=3D"u-row" style=3D"word-wrap: break-word; max-width: 500px; =
+min-width: 320px; margin: 0px auto; background-color: transparent; =
+overflow-wrap: break-word;">
+<div style=3D"height: 100%; width: 100%; border-collapse: collapse; =
+display: table; background-color: transparent;">
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"background-color: transparent; padding: 0px;" =
+align=3D"center">
+<table style=3D"width: 500px;" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0">
+<tbody>
+<tr style=3D"background-color: transparent;">
+<td style=3D"width: 500px; background-color: #ffffff; border-radius: 0px; =
+-webkit-border-radius: 0px; -moz-border-radius: 0px; border: transparent =
+0px solid; padding: 0px;" align=3D"center" valign=3D"top" width=3D"500">
+<div class=3D"u-col u-col-100" style=3D"max-width: 320px; vertical-align: =
+top; min-width: 500px; display: table-cell;">
+<div style=3D"height: 100%; width: 100% !important; background-color: =
+#ffffff; border-radius: 0px; -webkit-border-radius: 0px; =
+-moz-border-radius: 0px;">
+<table style=3D"font-family: arial,helvetica,sans-serif;" =
+role=3D"presentation" border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"font-family: arial,helvetica,sans-serif; overflow-wrap: =
+break-word; padding: 0px;" align=3D"left">
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"padding-left: 0px; padding-right: 0px;" align=3D"left"><img =
+style=3D"text-decoration: none; max-width: 154px; float: none; =
+outline-width: medium; outline-style: none; clear: both; display: =
+inline-block !important; outline-color: invert; -ms-interpolation-mode: =
+bicubic;" title=3D"" src=3D"https://assets.unlayer.com/projects/154503/1716=
+491904992-logo%20N%20fond%20blanc.png" alt=3D"" width=3D"100%" =
+align=3D"left" border=3D"0" /></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class=3D"u-row-container" style=3D"background-color: transparent; =
+padding: 0px;">
+<div class=3D"u-row" style=3D"word-wrap: break-word; max-width: 500px; =
+min-width: 320px; margin: 0px auto; background-color: transparent; =
+overflow-wrap: break-word;">
+<div style=3D"height: 100%; width: 100%; border-collapse: collapse; =
+display: table; background-color: transparent;">
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"background-color: transparent; padding: 0px;" =
+align=3D"center">
+<table style=3D"width: 500px;" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0">
+<tbody>
+<tr style=3D"background-color: transparent;">
+<td style=3D"width: 500px; background-color: #d89d31; border: transparent =
+0px solid; padding: 0px;" align=3D"center" valign=3D"top" width=3D"500">
+<div class=3D"u-col u-col-100" style=3D"max-width: 320px; vertical-align: =
+top; min-width: 500px; display: table-cell;">
+<div style=3D"height: 100%; width: 100% !important; background-color: =
+#d89d31;">
+<table style=3D"font-family: arial,helvetica,sans-serif;" =
+role=3D"presentation" border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"font-family: arial,helvetica,sans-serif; overflow-wrap: =
+break-word; padding: 10px;" align=3D"left">
+<div style=3D"font-size: 15px; word-wrap: break-word; text-align: center; =
+line-height: 140%;">
+<p style=3D"line-height: 140%;"><strong>Votre compte a &eacute;t&eacute; =
+bloqu&eacute;.</strong></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class=3D"u-row-container" style=3D"background-color: transparent; =
+padding: 0px;">
+<div class=3D"u-row" style=3D"word-wrap: break-word; max-width: 500px; =
+min-width: 320px; margin: 0px auto; background-color: transparent; =
+overflow-wrap: break-word;">
+<div style=3D"height: 100%; width: 100%; border-collapse: collapse; =
+display: table; background-color: transparent;">
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"background-color: transparent; padding: 0px;" =
+align=3D"center">
+<table style=3D"width: 500px;" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0">
+<tbody>
+<tr style=3D"background-color: transparent;">
+<td style=3D"width: 500px; background-color: #ffffff; border-radius: 0px; =
+-webkit-border-radius: 0px; -moz-border-radius: 0px; border: transparent =
+0px solid; padding: 0px;" align=3D"center" valign=3D"top" width=3D"500">
+<div class=3D"u-col u-col-100" style=3D"max-width: 320px; vertical-align: =
+top; min-width: 500px; display: table-cell;">
+<div style=3D"height: 100%; width: 100% !important; background-color: =
+#ffffff; border-radius: 0px; -webkit-border-radius: 0px; =
+-moz-border-radius: 0px;">
+<table style=3D"font-family: arial,helvetica,sans-serif;" =
+role=3D"presentation" border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"font-family: arial,helvetica,sans-serif; overflow-wrap: =
+break-word; padding: 9px;" align=3D"left">
+<div style=3D"font-size: 30px; word-wrap: break-word; text-align: center; =
+line-height: 140%;">
+<p style=3D"line-height: 140%;"><strong>Veuillez r&eacute;essayer de payer =
+ou mettre &agrave; jour vos informations de paiement</strong></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class=3D"u-row-container" style=3D"background-color: transparent; =
+padding: 0px;">
+<div class=3D"u-row" style=3D"word-wrap: break-word; max-width: 500px; =
+min-width: 320px; margin: 0px auto; background-color: transparent; =
+overflow-wrap: break-word;">
+<div style=3D"height: 100%; width: 100%; border-collapse: collapse; =
+display: table; background-color: transparent;">
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"background-color: transparent; padding: 0px;" =
+align=3D"center">
+<table style=3D"width: 500px;" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0">
+<tbody>
+<tr style=3D"background-color: transparent;">
+<td style=3D"width: 500px; background-color: #ffffff; border-radius: 0px; =
+-webkit-border-radius: 0px; -moz-border-radius: 0px; border: transparent =
+0px solid; padding: 0px;" align=3D"center" valign=3D"top" width=3D"500">
+<div class=3D"u-col u-col-100" style=3D"max-width: 320px; vertical-align: =
+top; min-width: 500px; display: table-cell;">
+<div style=3D"height: 100%; width: 100% !important; background-color: =
+#ffffff; border-radius: 0px; -webkit-border-radius: 0px; =
+-moz-border-radius: 0px;">
+<table style=3D"font-family: arial,helvetica,sans-serif;" =
+role=3D"presentation" border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"font-family: arial,helvetica,sans-serif; overflow-wrap: =
+break-word; padding: 10px;" align=3D"left">
+<div style=3D"font-size: 14px; word-wrap: break-word; text-align: left; =
+line-height: 140%;">
+<p style=3D"line-height: 140%;"><strong><span style=3D"text-decoration: =
+underline; line-height: 19px;">Bonjour,</span></strong>&nbsp;</p>
+<p style=3D"line-height: 140%;">Nous rencontrons un probl&egrave;me avec =
+votre paiement. Assurez-vous que votre mode de paiement est suffisamment =
+approvisionn&eacute; et qu'il n'a pas expir&eacute;. Veuillez =
+r&eacute;essayer de payer pour continuer &agrave; profiter de Netflix.</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table style=3D"font-family: arial,helvetica,sans-serif;" =
+role=3D"presentation" border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"font-family: arial,helvetica,sans-serif; overflow-wrap: =
+break-word; padding: 10px;" align=3D"left">
+<div align=3D"center"><span style=3D"font-size: 14px;"><a =
+href=3D"https://u6627034.ct.sendgrid.net/ls/click?upn=3Du001.=
+9SSACFPeOwNj0klEaFCEHwJKWntMYNXH-2FF0MXT5lgNwDsXWsdImSi2X3LwB8bffm2QE7_gqo-=
+2BUQvE369gm8QprrRux6s0KA-2B6UdN9GDACdSxHZhn7KCLfPZzyvGtA54ua0duol6r2ldlFvJH=
+NwKjrxgP-2FGJrDcNoycVc9y5inYnSH-2BKw5Iw49ik0vYPLYbV39H2-2FAxtkHy0BDQFyo7pag=
+Z1CpMALhVAmJ-2BouapfoGdVwzkZsIQwZ-2BneH1odIlb5mKGEmEXXkh52OpeRPBRuRYKkztww-=
+3D-3D"><span style=3D"box-sizing: border-box; text-decoration: none; =
+max-width: 100%; width: 90%; color: #ffffff; text-align: center; display: =
+block; line-height: 120%; background-color: #e5162b; overflow-wrap: =
+break-word; border-radius: 4px; text-size-adjust: none; padding: 10px 20px =
+10px 20px;"><strong>&nbsp;R&eacute;essayez le paiement</strong></span> =
+</a></span></div>
+</td>
+</tr>
+</tbody>
+</table>
+<table style=3D"font-family: arial,helvetica,sans-serif;" =
+role=3D"presentation" border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"font-family: arial,helvetica,sans-serif; overflow-wrap: =
+break-word; padding: 10px;" align=3D"left">
+<div align=3D"center"><a class=3D"v-button" style=3D"box-sizing: =
+border-box; font-size: 14px; word-wrap: break-word; text-decoration: none; =
+max-width: 100%; width: 90%; color: #000000; text-align: center; display: =
+inline-block; background-color: #ffffff; overflow-wrap: break-word; =
+border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; =
+-webkit-text-size-adjust: none; mso-border-alt: none; border: #000000 2px =
+solid;" href=3D"https://u6627034.ct.sendgrid.net/ls/click?upn=3Du001.=
+9SSACFPeOwNj0klEaFCEHwJKWntMYNXH-2FF0MXT5lgNwDsXWsdImSi2X3LwB8bffm2QE7_gqo-=
+2BUQvE369gm8QprrRux6s0KA-2B6UdN9GDACdSxHZhn7KCLfPZzyvGtA54ua0duol6r2ldlFvJH=
+NwKjrxgP-2FGJrDcNoycVc9y5inYnSH-2BKw5Iw49ik0vYPLYbV39H2-2FAxtkHy0BDQFyo7pag=
+Z1CpMALhVAmJ-2BouapfoGdVwzkZsIQwZ-2BneH1odIlb5mKGEmEXXkh52OpeRPBRuRYKkztww-=
+3D-3D" target=3D"_blank" rel=3D"noopener"><span style=3D"display: block; =
+line-height: 120%; padding: 10px 20px 10px 20px;"><strong>Mettre &agrave; =
+jour le mode de paiement</strong></span> </a></div>
+</td>
+</tr>
+</tbody>
+</table>
+<table style=3D"font-family: arial,helvetica,sans-serif;" =
+role=3D"presentation" border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"font-family: arial,helvetica,sans-serif; overflow-wrap: =
+break-word; padding: 10px;" align=3D"left">
+<div style=3D"font-size: 14px; word-wrap: break-word; text-align: left; =
+line-height: 140%;">
+<p style=3D"line-height: 140%;">Pour plus d&rsquo;informations, consultez =
+le centre d&rsquo;aide ou contactez-nous.</p>
+<p style=3D"line-height: 140%;"><strong><span style=3D"text-decoration: =
+underline; line-height: 19px;">Netflix-Team</span></strong></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table style=3D"font-family: arial,helvetica,sans-serif;" =
+role=3D"presentation" border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"font-family: arial,helvetica,sans-serif; overflow-wrap: =
+break-word; padding: 10px;" align=3D"left">
+<table style=3D"border-top: #000000 3px solid; vertical-align: top; =
+border-collapse: collapse; table-layout: fixed; -ms-text-size-adjust: 100%;=
+ border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; =
+-webkit-text-size-adjust: 100%;" border=3D"0" width=3D"94%" =
+cellspacing=3D"0" cellpadding=3D"0" align=3D"center">
+<tbody>
+<tr style=3D"vertical-align: top;">
+<td style=3D"font-size: 0px; vertical-align: top; border-collapse: collapse=
+ !important; -ms-text-size-adjust: 100%; line-height: 0px; =
+-webkit-text-size-adjust: 100%; mso-line-height-rule: =
+exactly;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table style=3D"font-family: arial,helvetica,sans-serif;" =
+role=3D"presentation" border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"font-family: arial,helvetica,sans-serif; overflow-wrap: =
+break-word; padding: 10px;" align=3D"left">
+<div style=3D"font-size: 14px; word-wrap: break-word; color: #bbbbbb; =
+text-align: left; line-height: 140%;">
+<p style=3D"line-height: 140%;">=E2=80=AANetflix International B.V.=
+=E2=80=AC</p>
+<p style=3D"line-height: 140%;">&nbsp;</p>
+<p style=3D"line-height: 140%;">SRC: 61675495_c9a2a218-ae0f-40aa-b1d8-939d1=
+b6dc49b_fr_B-E_EVO</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+

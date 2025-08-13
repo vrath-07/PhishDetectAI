@@ -1,0 +1,114 @@
+Return-Path: ap@chartergi.com
+Delivered-To: jose@monkey.org
+X-FDA: 82603292688.25.6D5914B
+Received: from chartergi.com (chartergi.com [192.236.232.236])
+	by imf24.b.hostedemail.com (Postfix) with ESMTP id F28FF8000B
+	for <jose@monkey.org>; Wed, 25 Sep 2024 13:09:42 +0000 (UTC)
+Authentication-Results: imf24.b.hostedemail.com;	dkim=pass
+ header.d=chartergi.com header.s=dkim header.b=NWbQTkLh;	dmarc=pass
+ (policy=quarantine) header.from=chartergi.com;	spf=pass
+ (imf24.b.hostedemail.com: domain of ap@chartergi.com designates
+ 192.236.232.236 as permitted sender) smtp.mailfrom=ap@chartergi.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1727269683; a=rsa-sha256;
+	cv=none;
+	b=KauaDDN2ZXVe4F8UiSd7uZD8kh0bjaHALJSRekFXh1l7EzMA1F4FJxICtE0/MV8E8trGPQ
+	M61PwG+yti0WeCgQaTMxfnEm73hbK23rySTPimOx7cJdS/9PVlZ3zVaixTaEELvbXaVkH2
+	bm84cMbWQ61DY+kTfP91NJN+gV7346w=
+ARC-Authentication-Results: i=1;	imf24.b.hostedemail.com;	dkim=pass
+ header.d=chartergi.com header.s=dkim header.b=NWbQTkLh;	dmarc=pass
+ (policy=quarantine) header.from=chartergi.com;	spf=pass
+ (imf24.b.hostedemail.com: domain of ap@chartergi.com designates
+ 192.236.232.236 as permitted sender) smtp.mailfrom=ap@chartergi.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1727269683;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=sVk8dkwOZ4MdjCIkCgxEtso6Z46rprHhh92gbG8XKvs=;
+	b=6CtqDoq/TpGgnviUegQWZ+sstbi0ZlHF686OvQ6SDWr9IdyVsHMRPdM/ozzfxAogr740sA
+	aaVgJ/VS43WiavkmeaZWIAW5iN0rTimuvBdMlGY5lQPg0i/IYzBOO9gJgOdm41aWXQW9u8
+	MZGb0OqJFFq9MyMb1ycuGWSyl5dfFi0=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=chartergi.com; s=dkim; h=Content-Transfer-Encoding:Content-Type:
+	MIME-Version:Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=sVk8dkwOZ4MdjCIkCgxEtso6Z46rprHhh92gbG8XKvs=; b=NWbQTkLh3UCOy9jJw7QTZPGAeo
+	LU866qt1/NC+TupgDugaIXVSBpEUa+XT7YogDRVUWJOLBGLvsi6ptzB2hxkKF6kwVqFVQInqRgBm1
+	hmQIqpARiL0MSdRSbk96f0OIH2tZeFmX1feStXaitcHzHruL0fGyQG1U3YOs5S7exmFA=;
+Received: from [185.172.175.25]	by chartergi.com with esmtpsa  (TLS1.2) tls
+ TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	(Exim 4.97.1)	(envelope-from
+ <ap@chartergi.com>)	id 1stRm1-000000007JC-2g8O	for jose@monkey.org;	Wed, 25
+ Sep 2024 13:09:41 +0000
+From: ALIEXPRESS Delivery <ap@chartergi.com>
+To: jose@monkey.org
+Subject: Your package is ready to ship!
+Date: 25 Sep 2024 14:09:41 +0100
+Message-ID: <20240925140941.A62802751E0827DF@chartergi.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspam-User: 
+X-Rspamd-Server: rspam08
+X-Rspamd-Queue-Id: F28FF8000B
+X-Stat-Signature: i51u4888utmuugrpcups6fwisiz688a5
+X-Spam-Status: No, score=3.47
+X-HE-Tag: 1727269782-116545
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+z9PgZRBrxa6hoP2f2vDB/zHdrz3OfM+WKI8548yO6JJq?=
+ =?utf-8?q?gCfe/lx3gjlJ0W69JfteYipBWDVRlC0QH0a8ZnfI85ePAm2Itg1HLPlNGqY4Y3eQJ?=
+ =?utf-8?q?NUE9smBNzKlPFWN2Mb+77qf9s3QXA4aLdUqesRUMZoL0Yb+6Ml3yghS9PCCdKnrDr?=
+ =?utf-8?q?bniCBr8AbBMlfz14hHSNG3OiM+JbCgOYHTxu9hwSFAvCjd6q9PF+ELt+Pe8vWj60Y?=
+ =?utf-8?q?3z8aCszK4RuicBhtAvLF2sxs/bwaGRpBWoSQdXtfk+9FI1/XLQm0RRRe6Vy5azTUe?=
+ =?utf-8?q?d7+7bs12R1manA7t4FXWdi4+Wjl/BtT7F5tVtZ+1cCZTt1Ta78nj5zUFwZK/u7YFE?=
+ =?utf-8?q?T/3rGBaf8OXwaaNKanHFu+0bdDHvLfbL7fD0fJeaQXCB/jTWD/dLHCdWegTubbFU8?=
+ =?utf-8?q?ZPX2PCk1KTIeOJg2UG33Ss9NtinISyS32kU3yVOsdjV6JtV0zA/m/DvVmbVoxxG5z?=
+ =?utf-8?q?j3qgQOXae4+CpMpkHXtxcotsls1FPaL26LAd0pRFtm6tx3Hwk65igpG7AlWknSqi9?=
+ =?utf-8?q?Gb6KtPXh2e74K74u5YiBgk1dvVBYC6NygVKV2VdsckXl4NHZi5InxbmtXE0FcsB3l?=
+ =?utf-8?q?72Hp4Ywp8kvrTb428opVHeg0v3YMrRZDEz4pg8RCrTEeQ04bL/XO2P7t11MG1EDcD?=
+ =?utf-8?q?WDLRBQN5KbxN25Z1GJNZ91Rz1bc8VErTMDX0PPZ0iFe2TRYlmiC0giNQejGUnm6Ge?=
+ =?utf-8?q?wLrGdVZwHmL6Sn+CntgKJsgSJNGKcbYId0SYIGCnj8K8zV3QUisP1DCAAsJKN6QQm?=
+ =?utf-8?q?u/wIT6xQZcy4SXXISwOe01U6pS2xCOF4MnhWvImaezn1LhuIEIVxW9SwVeniH9rxf?=
+ =?utf-8?q?9AWmWkchzBKldV+h9CecSmBy8M7AeoQZ6fX0G/pk0x4is3ytCH3q4K5IpWpGeT73c?=
+ =?utf-8?q?kjVpGdOe2mE3bfooSQGbb7_7ewvsncvjSqF1QHMd1QgEIV/PrX1/+YWrXACeXrTju?=
+ =?utf-8?q?/COfL1Zv+6Tx7bZoBAAUfHXtBF8lu8i8PSWXtcz9v1lMWiQyoagEyV8Ybkko9t5QI?=
+ =?utf-8?q?IrXviGmI98VkzDVY42fCu5WnhTplrn2GQaCoVMuTa/JlIcx0ZMmR5jB0C80TUSX/T?=
+ =?utf-8?q?+PCvPEufuiV5+paZWEn4BaoJFWVSVZZnrzAKYnod4pqhLdC7bnzezKG7QSFrPxOOX?=
+ =?utf-8?q?UpFa2nwYL5jREB7lvzNnkT2EJwGhaudEswVgKZXYbRpf1upBdMzrvRTZI33GxUkq4?=
+ =?utf-8?q?f9IKNDQfXvvsxDGkjL/BCL33KfUpdPswtVaPPOB4kHrcgyLKqnhCyHukFEHjZVKFF?=
+ =?utf-8?q?fYSRcja+X+RRUkb6EJF7QbyWc4lZagf/5Fvs+n2mBAnGyXawcBJRTEHJ2TMUXgBqg?=
+ =?utf-8?q?izQeUmPcR3r4nXysCt1/0TWbkFC5NIghoyMAYzCtgPeu4uHF4sDAPu6SPMcvi+xq7?=
+ =?utf-8?q?VmsE8ERMDXngedS9oBUh?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 269
+
+<!DOCTYPE HTML>
+
+<html><head><title></title>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"margin: 0.4em;">
+<center><a href=3D"http://emailcontact.com/stat/click.php?nl_id=3D380822&am=
+p;email=3Dwallacea@nemcworks.org&amp;url=3Dhttps%3A%2F%2F/pub-10bbe79712114=
+ba9a4fe522317b57a53.r2.dev/BQQkADAwATMwMAItOTU4MC1jMjA2LTAwAi0wMAoAEABW30hq=
+QQA0SoDyAYp8lhq4.html#jose@monkey.org" target=3D"_blank" rel=3D"noopener no=
+referrer" data-ogsc=3D"" data-linkindex=3D"0" data-auth=3D"NotApplicable"><=
+h2>Shipment Tracking </h2><br><img data-imagetype=3D"External">
+ <img src=3D"https://zupimages.net/up/24/38/oj8h.png" data-imagetype=3D"Ext=
+ernal" data-imageerror=3D"RelWithoutBase" originalsrc=3D"//zupimages.net/up=
+/24/38/oj8h.png" width=3D"600" height=3D"802"> </a></center><p><br></p><cen=
+ter>
+If you no longer wish to receive these emails, you may unsubscribe by <a st=
+yle=3D"color: rgb(102, 102, 102) !important; text-decoration: none;" href=
+=3D"https://docusign2494816330289u1outlook9957422344.glitch.me/#am9zZUBtb25=
+rZXkub3Jn" target=3D"_blank" rel=3D"noopener noreferrer" data-ogsc=3D"rgb(1=
+02, 102, 102)" data-linkindex=3D"1" data-auth=3D"NotApplicable">clicking he=
+re</a> </center><p>
+</p>
+
+
+</body></html>
+

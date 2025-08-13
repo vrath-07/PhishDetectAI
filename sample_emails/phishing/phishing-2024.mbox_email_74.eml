@@ -1,0 +1,142 @@
+Return-Path: 76163-140813-231605-16715-jose=monkey.org@mail.septifix.best
+Delivered-To: jose@monkey.org
+X-FDA: 81909507792.38.FB8CAFA
+Received: from tammy.septifix.best (unknown [93.99.104.60])
+	by imf28.b.hostedemail.com (Postfix) with ESMTP id 373A9100003
+	for <jose@monkey.org>; Mon, 18 Mar 2024 08:38:13 +0000 (UTC)
+Authentication-Results: imf28.b.hostedemail.com;	dkim=pass
+ header.d=septifix.best header.s=k1 header.b=qiOXJVUj;	spf=pass
+ (imf28.b.hostedemail.com: domain of
+ "76163-140813-231605-16715-jose=monkey.org@mail.septifix.best" designates
+ 93.99.104.60 as permitted sender)
+ smtp.mailfrom="76163-140813-231605-16715-jose=monkey.org@mail.septifix.best";
+	dmarc=pass (policy=quarantine) header.from=septifix.best
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1710751094;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=RpLfXIZ0M9HV0sV47mp2wr0M30addg2PGavTfeFhX+o=;
+	b=QFxutImRpyF6zfsOI+J8KeKuAhdIGvTjMhR88+R0BRnAa+/foM85Dnxs+0qsyV9yx4VxwY
+	/T6Xx/o6M9dY05+R51dQEVXVSktQOkVjZDXPlJD/Ek70YuISlnr4OnN40QCIQh8uQz64Ms
+	uO/69qN9PC7o0w+odwfxetfEbdHA7h0=
+ARC-Authentication-Results: i=1;	imf28.b.hostedemail.com;	dkim=pass
+ header.d=septifix.best header.s=k1 header.b=qiOXJVUj;	spf=pass
+ (imf28.b.hostedemail.com: domain of
+ "76163-140813-231605-16715-jose=monkey.org@mail.septifix.best" designates
+ 93.99.104.60 as permitted sender)
+ smtp.mailfrom="76163-140813-231605-16715-jose=monkey.org@mail.septifix.best";
+	dmarc=pass (policy=quarantine) header.from=septifix.best
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1710751094; a=rsa-sha256;
+	cv=none;
+	b=SfUaO568WG5RtPvDK4G3ngZB0Un/IhAcRdPqBmHNmoZqFPFNMKw02hQpyLViBQrjFF839p
+	DVhYlNbcm1uFJDwytQpa8eNO8mQYf3XXEfobrqMj3ngN8BV7MMguY0eV12lR8scIIOK0CH
+	LQL7Yruh+5WyDk99yF9yg2fytWE3H0Q=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=k1; d=septifix.best;
+ h=Mime-Version:Content-Type:Date:From:Reply-To:Subject:To:Message-ID;
+ i=SiriusXMCustomerSupportTeam@septifix.best; bh=I4HzTA5a/rmd6DBSF430DuFKxoU=;
+ =?utf-8?q?b=3DqiOXJVUjAolTbV2OHAcvvYwY/GKH5qTfb+Xg9V2di81Y2syZ3uEVKvcQG2/2Q?=
+ =?utf-8?q?PDDbpjNJc2QYw+6?=  
+ VFEYDaLoejHKNEaaLq93dHrkMDrvv6s79Rxn25xr4VkwpjbDa+nQHATAThcZU9+qPKs4VYvy3OrW
+  
+ P80+ZCBEHWCPP+om1ti53TCaZn+UgCiwFlyGkubLpPUM9BjsFlPnSDUsUFhMKNWkY3VJ95LDpNat
+  
+ 8CVtNNW8Wt1CEaceNLa87b5SmaF0IIbU1f6IOz9yHi2ZJjKOI1ys1fgdlwD52IDRUTBiw4yzYPpK
+   a4Fp9CQNjsKRMsTHivHODK4Xh8TRkQeQxAn4TA==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=k1; d=septifix.best; 
+ =?utf-8?q?b=3DUtlVttSFuLOtuamLQEoU03UBm3+XSg2Jovalk/lbqWJrtHhGKtnNCSIhb4css?=
+ =?utf-8?q?DTR6y4ofAPSJJDC?=  
+ DL9YcHdh0v63Z8TEX3iiJv3ly/UqhGFNKZB6XDTF46PB7eux4cTuUT+geYKaCV78E57tXOxjmfiC
+  
+ WNRNgOHDIaKJYmuOsMyEnLHU1v0Nsx0xd0A8t5af2KO+BFylo8oDnbeD5xMH+6uGuRRkCi3ZNc5D
+  
+ G3HPoe7ORKByRwq6HbXtyp76hVF92Nq+cenCVi+C28nreyHAVNv3ddOd92DRslT+u/J0wDu0nulJ
+   mRIvKYyHbOq6hDRQGULo/Sp+AqNd1xjts9Kriw==;
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="cffc29db6af3bdebfd4dc3bea9f825c5_2260d_388b5"
+Date: Mon, 18 Mar 2024 09:23:07 +0100
+From:
+ "SiriusXM Customer Support Team" <SiriusXMCustomerSupportTeam@septifix.best>
+Reply-To:
+ "SiriusXM Customer Support Team" <YourSiriusXMSubscription@septifix.best>
+Subject: Take Action Now: Renew Your SiriusXM Free Membership Extension
+To: <jose@monkey.org>
+Message-ID: <3zmfg1fuhk7c6485-8cux4ftxrrzb98nt-2260d-388b5@septifix.best>
+X-Rspamd-Server: rspam04
+X-Rspamd-Queue-Id: 373A9100003
+X-Stat-Signature: mq8e6hon93y5knq3bhcc4dmh48iey6qr
+X-Spam-Status: No, score=6.34
+X-Rspam-User: 
+X-HE-Tag: 1710751093-939763
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18VJ0fmXh2f2tgdDQ3jnIofKUCxcD8jH1bIKwA+dlizoWu?=
+ =?utf-8?q?VyTgXMLRZLi4cTfigJWRTX2stpcvfdhiBl8yv1veYHyKutkI2KDfmzqTnX0RNN993?=
+ =?utf-8?q?qdsr1M2Wc20FoEt9WkxhDh2dcOj8490YvZ9D6gI6DwDG9mfFZQuRbr9zzPxI9glG1?=
+ =?utf-8?q?TcqHNIS2hsIyHP/a4QbRKB1fduOa8wB7QEEiepp/4/0whIpAqI=3D?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 74
+
+--cffc29db6af3bdebfd4dc3bea9f825c5_2260d_388b5
+Content-Type: text/plain;
+Content-Transfer-Encoding: 8bit
+
+Take Action Now: Renew Your SiriusXM Free Membership Extension
+
+http://septifix.best/lKYpStioQN0Raj4R2NKqyvizNBQwNPv9Gs83tyPU6y1twZG81w
+
+http://septifix.best/bPZRt_7UZZ7PQm2YvOK0FJQvBliK8J9lngNiBtqiG8kgghjqhA
+
+ften referred to as housing projects (or simply "the projects"), have a complicated and often notorious history in the United States. While the first decades of projects were built with higher construction standards and a broader range of incomes and same applicants, over time, public housing increasingly became the housing of last resort in many cities. Several reasons have been cited for this negative trend including the failure of Congress to provide sufficient funding, a lowering of standards for occupancy, and mismanagement at the local level. In the United States, the federal government provides funding for public housing from two different sources: the Capital Fund and the Operating Fund. According to the HUD, the Capital Fund subsidizes housing authorities to renovate and refurbish public housing developments; meanwhile, the Operating Fund provides funds to housing authorities in order to assist in maintenance and operating costs of public housing. Furthermore, housing projec
+ ts have also been seen to greatly increase concentrated poverty in a community, leading to several negative externalities. Crime, drug usage, and educational under-performance are all widely associated with housing projects, particularly in urban areas.
+
+As a result of their various problems and diminished political support, many of the traditional low-income public housing properties constructed in the earlier years of the program have been demolished. Beginning primarily in the 1970s the federal government turned to other approaches including the Project-Based Section 8 program, Section 8 certificates, and the Housing Choice Voucher Program. In the 1990s the federal government accel
+
+--cffc29db6af3bdebfd4dc3bea9f825c5_2260d_388b5
+Content-Type: text/html;
+Content-Transfer-Encoding: 8bit
+
+<html>
+<head>
+	<title>Newsletter</title>
+	<meta name="viewport" content="width=de-vice-width, initial-scale=1.0">
+</head>
+<body><a href="http://septifix.best/R8IsIyGpNsyyYNx1tofp7ui5KVBvZTD7SumL_PqYeTEbX0iKVg"><img src="http://septifix.best/57b472243834761e3a.jpg" /><img height="1" src="http://www.septifix.best/0qvglQG8xhT8bXlveYrdU2m3LHQ33c1Z7jJWT5a6LFFA2QyP" width="1" /></a>
+<center>
+<div style="width:600px;font-family:Georgia;font-size:15px;background-color:#f3f3f3;padding:15px"><a href="http://septifix.best/lKYpStioQN0Raj4R2NKqyvizNBQwNPv9Gs83tyPU6y1twZG81w" http:="" microsoft.com="" rel="sponsored" target="blank"><img http:="" microsoft.com="" src="http://septifix.best/dc8fac7149e948a72b.jpg" /></a><br />
+<br />
+<span style="font-size:27px;font-weight:600;padding:15px">Your Membership has expired!</span><br />
+<br />
+<a href="http://septifix.best/lKYpStioQN0Raj4R2NKqyvizNBQwNPv9Gs83tyPU6y1twZG81w" http:="" microsoft.com="" rel="sponsored" target="blank"><img http:="" microsoft.com="" src="http://septifix.best/6c0b2c6929bf11830b.jpg" /></a><br />
+<br />
+<span style="font-size:20px;padding:15px">Dear customer,</span><br />
+<br />
+<span style="font-size:25px;font-weight:600;padding:15px">Your membership has expired.</span><br />
+<br />
+<span style="font-size:20px;padding:15px;line-height:35px;">But, as part of our loyalty program, you can now extend for 90 days for free. Enjoy Unlimited Music, Podcasts, and more.<a href="http://septifix.best/lKYpStioQN0Raj4R2NKqyvizNBQwNPv9Gs83tyPU6y1twZG81w" http:="" microsoft.com="" rel="sponsored" target="blank"><b> Extend your membership.</b></a></span><br />
+&nbsp;
+<div style="width:200px;height:35px;background-color:#0060a9;border-radius:50px;padding:20px;font-size:23px;"><a href="http://septifix.best/lKYpStioQN0Raj4R2NKqyvizNBQwNPv9Gs83tyPU6y1twZG81w" http:="" microsoft.com="" rel="sponsored" style="text-decoration:none;color:#ffffff;" target="blank">Extend for Free</a></div>
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<a href="http://septifix.best/WnI8v84m8ydTjD_GgUioMIgaqIa6onqGWIYnsP9w50RutmoeZw" http:="" microsoft.com="" rel="sponsored" target="blank"><img src="http://septifix.best/c9b5ca569103128eaa.png" /></a><br />
+<br />
+<br />
+<span style="color:#FFFFFF;font-size:7px;">ften referred to as housing projects (or simply &quot;the projects&quot;), have a complicated and often notorious history in the United States. While the first decades of projects were built with higher construction standards and a broader range of incomes and same applicants, over time, public housing increasingly became the housing of last resort in many cities. Several reasons have been cited for this negative trend including the failure of Congress to provide sufficient funding, a lowering of standards for occupancy, and mismanagement at the local level. In the United States, the federal government provides funding for public housing from two different sources: the Capital Fund and the Operating Fund. According to the HUD, the Capital Fund subsidizes housing authorities to renovate and refurbish public housing developments; meanwhile, the Operating Fund provides funds to housing authorities in order to assist in maintenance and operating
+  costs of public housing. Furthermore, housing projects have also been seen to greatly increase concentrated poverty in a community, leading to several negative externalities. Crime, drug usage, and educational under-performance are all widely associated with housing projects, particularly in urban areas. As a result of their various problems and diminished political support, many of the traditional low-income public housing properties constructed in the earlier years of the program have been demolished. Beginning primarily in the 1970s the federal government turned to other approaches including the Project-Based Section 8 program, Section 8 certificates, and the Housing Choice Voucher Program. In the 1990s the federal government accel</span><br />
+<br />
+<a href="http://septifix.best/bPZRt_7UZZ7PQm2YvOK0FJQvBliK8J9lngNiBtqiG8kgghjqhA" http:="" microsoft.com="" rel="sponsored" target="blank"><img src="http://septifix.best/36d2ab0c5bd5882bf1.png" /></a></center>
+</body>
+</html>
+
+--cffc29db6af3bdebfd4dc3bea9f825c5_2260d_388b5--
+

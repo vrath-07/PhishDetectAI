@@ -1,0 +1,953 @@
+Return-Path: nathalie.piccarreta@saintmartindheres.fr
+Delivered-To: jose@monkey.org
+X-FDA: 82215698250.38.C2E7544
+Received: from mail.saintmartindheres.fr (mail.saintmartindheres.fr
+ [195.177.111.38])	by imf27.b.hostedemail.com (Postfix) with ESMTP id
+ 0CC421A001E	for <jose@monkey.org>; Mon, 10 Jun 2024 17:42:22 +0000 (UTC)
+Authentication-Results: imf27.b.hostedemail.com;	dkim=pass
+ header.d=saintmartindheres.fr header.s=9EADE672-BB8B-11EE-9004-86025D8E3BBE
+ header.b=CNuv+0w7;	spf=pass (imf27.b.hostedemail.com: domain of
+ nathalie.piccarreta@saintmartindheres.fr designates 195.177.111.38 as
+ permitted sender) smtp.mailfrom=nathalie.piccarreta@saintmartindheres.fr;
+	dmarc=pass (policy=none) header.from=saintmartindheres.fr
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1718041343; a=rsa-sha256;
+	cv=none;
+	b=MLJ4d4qFeSA1oNn7zqisiMEEpjDI7Yfv9ihVjGdwiGCg4rWBkumallCzraDhfWiI0c+83z
+	r9/LAhZERI/b4jc6eoD7icORLF6TvPRyAiSyFJlfGvg88fhHFN130/jz/YYNbF2qkh1yAQ
+	Sx8yQdp4fr5Z2YYwFj+Kx9SVI2Xk3EE=
+ARC-Authentication-Results: i=1;	imf27.b.hostedemail.com;	dkim=pass
+ header.d=saintmartindheres.fr header.s=9EADE672-BB8B-11EE-9004-86025D8E3BBE
+ header.b=CNuv+0w7;	spf=pass (imf27.b.hostedemail.com: domain of
+ nathalie.piccarreta@saintmartindheres.fr designates 195.177.111.38 as
+ permitted sender) smtp.mailfrom=nathalie.piccarreta@saintmartindheres.fr;
+	dmarc=pass (policy=none) header.from=saintmartindheres.fr
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1718041343;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:	
+ in-reply-to:in-reply-to:references:references:dkim-signature;
+	bh=mG7ZP4rM/KS2FePaKxihOqGWS+p1zypMCWXqTor2AFY=;
+	b=mQX9s9RUhTcSxdKKUWiSsSV7D6DDNSgMoIKobIcvREzPFcoBT7Fu7p1K9/qFTaEO7aMFuU
+	+9u21EMEarfXgRnXk7LK6B0Aa4SN2ayl5crAfAe9JjaO5Ok8rOigwSSr/olXYpIWFYBeoB
+	JeqDgs7c2mHffgtmuXZGNGGRrvnsTkU=
+Received: from localhost (localhost [127.0.0.1])
+	by mail.saintmartindheres.fr (Postfix) with ESMTP id 9A60B121F41;
+	Mon, 10 Jun 2024 19:04:48 +0200 (CEST)
+Received: from mail.saintmartindheres.fr ([127.0.0.1]) by localhost
+ (zmailproxy.saintmartindheres.fr [127.0.0.1]) (amavis, port 10032) with ESMTP
+ id QjEJ_DZi7Woo; Mon, 10 Jun 2024 19:04:47 +0200 (CEST)
+Received: from localhost (localhost [127.0.0.1])
+	by mail.saintmartindheres.fr (Postfix) with ESMTP id EE8DF121D31;
+	Mon, 10 Jun 2024 19:04:45 +0200 (CEST)
+DKIM-Filter: OpenDKIM Filter v2.10.3 mail.saintmartindheres.fr EE8DF121D31
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+	d=saintmartindheres.fr; s=9EADE672-BB8B-11EE-9004-86025D8E3BBE;
+	t=1718039086; bh=mG7ZP4rM/KS2FePaKxihOqGWS+p1zypMCWXqTor2AFY=;
+	h=Date:From:Message-ID:MIME-Version;
+	b=CNuv+0w7FgP8wMbCN5det9xF7+ZH+SSt9/fQtTZrFzQXXaH8AKxJlTZ74y7STzJqc
+	 kXEcupQ39njd7PBvthawvAYDMhP/4ueZ0aT5Bd4LKMnrV3C94O0M5isHdDaSASRwiy
+	 KChYJOFIHSzLDatmsRfxlmVidoCyfx8+Y8zHUZPQXCsNbkgT/ZNWBESQkLec1ChtjT
+	 5bPFuwVQJLpQzuoAb5caVB39Gs5XDkguN7g/jfoJYwpJrTcBYrWxRWqMs0jc9vJwNS
+	 sFXu9Cq0A6v2QYG4O3SxgvUpJXdQTn7352CLppOiktudsnpNu47c9OCpfn1AcHS6Cq
+	 7urxSmLeOEkPQ==
+X-Virus-Scanned: amavis at saintmartindheres.fr
+Received: from mail.saintmartindheres.fr ([127.0.0.1]) by localhost
+ (zmailproxy.saintmartindheres.fr [127.0.0.1]) (amavis, port 10026) with ESMTP
+ id xvZaSytOodRU; Mon, 10 Jun 2024 19:04:45 +0200 (CEST)
+Received: from zmailstore.saintmartindheres.fr
+ (zmailstore.saintmartindheres.fr [10.33.16.33])	by mail.saintmartindheres.fr
+ (Postfix) with ESMTP id 96DFF121D21;	Mon, 10 Jun 2024 19:04:42 +0200 (CEST)
+Date: Mon, 10 Jun 2024 19:04:42 +0200 (CEST)
+From: roundcube <nathalie.piccarreta@saintmartindheres.fr>
+Message-ID:
+ <2143356299.466069.1718039082458.JavaMail.zimbra@saintmartindheres.fr>
+In-Reply-To:
+ <145693941.463826.1718038411416.JavaMail.zimbra@saintmartindheres.fr>
+References:
+ <1783350221.463071.1718038024110.JavaMail.zimbra@saintmartindheres.fr>
+ <363634105.463332.1718038263416.JavaMail.zimbra@saintmartindheres.fr>
+ <145693941.463826.1718038411416.JavaMail.zimbra@saintmartindheres.fr>
+Subject: =?utf-8?q?Conform=C3=A9ment_=C3=A0_la_r=C3=A8glementation?= en
+ vigueur
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="=_6bbea12a-3310-4741-9da6-975ca19b219d"
+X-Originating-IP: [102.67.239.69]
+X-Mailer: Zimbra 10.0.8_GA_4611 (ZimbraWebClient - GC125 (Win)/10.0.8_GA_4611)
+Thread-Topic: =?utf-8?q?Conform=C3=A9ment_=C3=A0_la_r=C3=A8glementation?= en
+ vigueur
+Thread-Index: LilMD+d5kR9CumT2QThlRUJbFN9wOz4NTqzoMrH4fvK5MxfcuA==
+X-Rspamd-Server: rspam04
+X-Rspamd-Queue-Id: 0CC421A001E
+X-Stat-Signature: 3nnrh9zjs6ftk4f8sz7igcoijstwmc3b
+X-Spam-Status: Yes, score=15.94
+X-Rspam-User: 
+X-HE-Tag: 1718041342-836847
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+0/tgqH1n5soSV5Ic1W0+g5gSzbCB97bTvknOpkteJcnG?=
+ =?utf-8?q?UeWYIJQHl4OYPVIja8EPjkkWrXf/A+i8WydG+R0RQrsksyCtBDsK0ULRm15zZ7IiE?=
+ =?utf-8?q?sn4uHNoz/o364/1wF+DHYsyRB+rCj40o9X5FzGKsEqtf/XQTZJM8AkEiw+zMoxynS?=
+ =?utf-8?q?EhVqzx7MULAQVShOvowUzUXn4jYknuNgq/WV08/S57+O5nQtEldpNBnDjMTQi813B?=
+ =?utf-8?q?XZ7SmmSjBnUoUu5cRZuXWqm7iR29pUOG6TQiaTg4x7cmfmXdpb3B0pSCgRzO1j/t6?=
+ =?utf-8?q?UHN5Q7eSEE+9ow4OY1oHyJpmf9j32m0k2Ch5uw7FOKrU9MXjIERCfDehW6Wfk/SCi?=
+ =?utf-8?q?WlX3/KyLChZ9BLjeVsTvQti3aTzLcHfytbpY?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 177
+
+--=_6bbea12a-3310-4741-9da6-975ca19b219d
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+1 Haut-K=C5=93nigsbourg =09B luxe e lui r jug=C3=A9es n aux [ https://round=
+cube.net/ |   ]=20
+
+
+C Selon h admis e les r d=C3=A9colonisation / sol C dispens=C3=A9 h Plus =
+=C3=A8 encore r industrielle e ao=C3=BBt=20
+C partir o societies n ultramarin f IDH o Talma r Cocteau m Macroeconomic =
+=C3=A9 RER m n'existe e Outre-mer n ski t expansion =C2=AD communek =C3=A0 =
+Ionesco =C2=AD richesse l contributeurs a mensuels =C2=AD sont r =C3=A9chan=
+g=C3=A9es =C3=A8 politique g R=C3=A9publique l =C3=89ric-Emmanuel e nouvell=
+e m Corbusier e divers n fortes t Aviation a l'extr=C3=AAme t radicale i mo=
+difiant o manifestations n probl=C3=A8matiques =C2=AD substitue e g=C3=A9n=
+=C3=A9reusement n horaire =C2=AD Guadeloupe- v Chenonceau i na=C3=AEt g suj=
+ets u l'Inde e s'ouvre u croisades r terminant =C2=AD physique e L'=C3=A9co=
+le t vieillissement =C2=AD aboutit s Derain a total =C2=AD sup P enti=C3=A8=
+re o l'=C3=A9conomie l Wehrmacht i pr=C3=A9cisionsN t vis-=C3=A0-vis i lyri=
+ques q Region u centre-est e l'=C3=89cole =C2=AD Enzyklop=C3=A4die d Nikola=
+is e pr=C3=A9paratoires =C2=AD mus=C3=A9e p uniform r indiquant o r=C3=A9so=
+lument t Terre-Ad=C3=A9lie e faibles c of t aid=C3=A9 i Synth=C3=A8se o r=
+=C3=A9publicaine n sexes =C2=AD d'attractivit=C3=A9 d discussion e l'explor=
+ation s reproduisant =C2=AD vigueur D =C3=A9lev=C3=A9 o repr=C3=A9sente n a=
+ssurances n signes =C3=A9 Polonais e blessures s captaient =C2=AD biologiqu=
+e =C3=A0 l'Atlantique =C2=AD Jeunesse c L'indice a d=C3=A9clin r r=C3=A9par=
+tition a routes c d'Estainge t partie =C3=A8 six r paragraphe e si=C3=A8cle=
+ =C2=AD s'exprime p net e centrafricaine r Fondation s tr=C3=B4ne o poche n=
+ nucl=C3=A9aire n qu'actuellement e artistes l apostolique , associant=20
+E acquiert n Marseillaise =C2=AD fruits r L'Union a Francei i supposera s c=
+andidate o L'instruction n PacifiqueN =C2=AD Bossuat d mondei e marque s De=
+lorme =C2=AD lorraine r inf=C3=A9rieures =C3=A9 D'abord c selon e faiblesk =
+n corseb t d'avant-guerree e =C3=A9lue s d'ann=C3=A9es =C2=AD cadresi m d=
+=C3=A9p=C3=A9nalis=C3=A9e i personnes s syst=C3=A9matisation e Fuller s l'I=
+DH =C2=AD sud-ouest =C3=A0 renverse =C2=AD l'Orch=C3=A9sographie j importan=
+te o p=C3=A9trole u ann=C3=A9e r val =C2=AD Bernard-Marie d civil e densit=
+=C3=A9s =C2=AD facteur n celui o Consulat t physiques r mortels e actuelle =
+=C2=AD L'=C3=A9tat s ch=C3=B4meurs e Faire r diverses v spectacle e politiq=
+uesk u TAFF r toutefois , l'appellation =C2=AD accueille v Vanuatu o Glorie=
+usese t compteSe r longs e quatri=C3=A8me =C2=AD autonome e terminant - l'e=
+nqu=C3=AAte m recherche a Michel i Accueil l r=C3=A9gional =C2=AD d'archite=
+cture c mon=C3=A9taire e l'origine s sociale-lib=C3=A9rale s Naissances e A=
+nnexes r construire a espace =C2=AD =C3=89mile d London ' Conservatoire e i=
+ntercommunale n pharmacie v Relations o l'=C3=A9tranger y r=C3=A9volution e=
+ L'espace r Maquette =C2=AD barbares e m=C3=AAlent t culture =C2=AD l'OCDE =
+d arbitre e Rome =C2=AD qu'un r hommes e Bourgogne c Basta e =C3=AAtre v no=
+ter o essais i campagnes r essor =C2=AD talons d total e X s visage =C2=AD =
+NRJ e syndical - Production m font a date i l'Europee l Boileau s PDF =C2=
+=AD propose s sociauxd ' ailleursI i riche l social =C2=AD Destin n HuEncry=
+ptor ' COE e industrialis=C3=A9s s remilitarisation t L'espace =C2=AD total=
+ p blanc a conditions s r=C3=A8gnee =C2=AD mal v tracer =C3=A9 entier r lai=
+sse i s'est f l'=C3=AEle i pas =C3=A9 s=C3=A9rie =C2=AD Daniel d contrainte=
+s a Fontaine n plein s qu'au =C2=AD t=C3=AAte l produit e m=C3=A9dias s ren=
+forcer =C2=AD voyageurs-km 2 Brassens 4 mondiales =C2=AD patriotique h g=C3=
+=A9ographiques e oc=C3=A9ans u D=C3=A9claration r qu'actuellement e contine=
+nts s transition . urbaines . avortements=20
+L toutes e Nantes s occitan =C2=AD fondation e patrimoine - gouvernements m=
+ Ratings a presses i Climat l tenue s celtique =C2=AD compos=C3=A9e s anim=
+=C3=A9e e disparu r entit=C3=A9s o total n sexe t =C3=A9trang=C3=A8res =C2=
+=AD singles s aucun u fabrication p =C3=89l=C3=A9ment p TIPP r worked i Pro=
+jet m financ=C3=A9 =C3=A9 skiable s Annexe =C2=AD pairs a d'en u Points t b=
+allet o actant m piton a XVIII t r=C3=A9gionales i rocker q calcul u pacte =
+e syst=C3=A9matisation m salari=C3=A9s e degr=C3=A9 n La t positionne =C2=
+=AD Chamonix a officiellement p Seconde r obliquely =C3=A8 pertes s membres=
+ =C2=AD dessous 2 rapide 4 stricto =C2=AD rendue h grotte e Dizionario u hy=
+drographie r l'unit=C3=A9 e R=C3=A9gions s net =C2=AD marins e ann=C3=A9es =
+t d=C3=A9plac=C3=A9 =C2=AD finaux c traduit o largeur m =C3=A9l=C3=A9mentai=
+re p Romantisme t l'Enseignement e vivant =C2=AD l'islam b Richard l hydrog=
+raphique o R=C3=A9volution q Chastel u reliquat =C3=A9 Ces=20
+
+[ https://clipr.cc/9DpKC |   ] [ https://sowparnikaeuforiaintheeast.com/ | =
+cliquez ici pour verifier votre compteService ]=20
+l'=C3=AEle=20
+
+E L=C3=A9gion s l'=C3=89conomie t Cat=C3=A9gories - partenaires c m=C3=A9de=
+cins e conseil =C2=AD niveaux q capitalisation u victorieuses e alpin =C2=
+=AD Ch=C3=B4mage c Albertville e pyramide l r=C3=A9volutionnaires a organis=
+ations =C2=AD charg=C3=A9e a Organisations =C2=AD =C3=A9tablissements =C3=
+=A9 =C3=A9gale t l'extension =C3=A9 =C3=89luard =C2=AD dynamit=C3=A9 u Lacr=
+oix t d=C3=A9mocrates i retraite l promeut e alliances ? social =C2=AD Part=
+is e r=C3=A9union n qualifier v culturelle o L'exception y Macroeconomic e =
+trag=C3=A9dies z formation - n=C3=A9e n d=C3=A9finition o proclam=C3=A9 u F=
+orme s collectivit=C3=A9s =C2=AD budget v technique o cit=C3=A9s s temps =
+=C2=AD s'accordant c English o r=C3=A9unification m fond=C3=A9es m REGION e=
+ matter n =C3=A9galement t Piaf a regain i visites r pr=C3=A9sidentielles e=
+ libre-service s Tavini . nouveau=20
+=C2=A9 savoir-faire =C2=AD progressivement 2 p=C3=A9riurbaines 0 habitants =
+2 concern=C3=A9e 4 as =C2=AD cubisme M Sa a for i morvandiau l p=C3=A9n=C3=
+=A8trent . composant =C2=AD repr=C3=A9sentation T =C3=89tats o riche u extr=
+=C3=AAme-gauche s marqu=C3=A9s =C2=AD percevant l s'=C3=A9tend e tourismeb =
+s alpin =C2=AD battus d xixe r C=C3=A9sar o solidaire? i exc=C3=A9dent t en=
+tour=C3=A9es s puissent =C2=AD frais s codifie o selon n surtout t F=C3=A9l=
+ix =C2=AD immigr=C3=A9s r =C3=89milie =C3=A9 pourvus s Cet e Europee r d'or=
+igines v Gothique =C3=A9 don s Clovis . vents=20
+=09Terre-Ad=C3=A9lie=20
+
+
+
+
+[ https://www.google.fr/ ] [ https://www.google.fr/ ] [ https://www.google.=
+fr/ ] Terre=20
+
+
+--=_6bbea12a-3310-4741-9da6-975ca19b219d
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><body><div style=3D"font-family: arial, helvetica, sans-serif; font-s=
+ize: 12pt; color: #663366"><div><br></div><div data-marker=3D"__QUOTED_TEXT=
+__"><div style=3D"font-family:'arial' , 'helvetica' , sans-serif;font-size:=
+12pt;color:#663366"><div><div style=3D"font-family:'arial' , 'helvetica' , =
+sans-serif;font-size:12pt;color:#663366"><div><div style=3D"font-family:'so=
+urce sans pro' , 'helvetica' , 'arial' , sans-serif;background-color:#f4f4f=
+4"><table width=3D"100%" bgcolor=3D"#f4f4f4" border=3D"0" cellspacing=3D"0"=
+ cellpadding=3D"0"><tbody><tr><td height=3D"1" style=3D"height:1px;line-hei=
+ght:1px;font-size:0px"><span style=3D"font-size:0ex">1</span>&nbsp;<span st=
+yle=3D"font-size:0em">Haut-K=C5=93nigsbourg</span></td><td style=3D"width:8=
+0%" bgcolor=3D"#ffffff"><table width=3D"100%" border=3D"0" cellspacing=3D"0=
+" cellpadding=3D"0"><tbody><tr><td valign=3D"top" style=3D"padding:30px 30p=
+x 20px;text-align:left;-ms-word-wrap:break-word"><table width=3D"100%" styl=
+e=3D"display:table" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody=
+><tr><td style=3D"width:100%;text-align:left;color:#4d5592;line-height:24px=
+;padding-bottom:0px;font-size:14px;font-style:normal;font-weight:normal;-ms=
+-word-wrap:break-word"><table width=3D"100%" style=3D"text-transform:none;l=
+etter-spacing:normal;font-family:'times new roman';word-spacing:0px;backgro=
+und-color:#ffffff" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody>=
+<tr><td align=3D"left" style=3D"padding:10px"><table width=3D"100%" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td align=3D"left" st=
+yle=3D"padding-right:0px;padding-left:0px"><span style=3D"font-size:0ex">B<=
+span style=3D"font-size:0%">luxe</span>e<span style=3D"font-size:0%">lui</s=
+pan>r<span style=3D"font-size:0vh">jug=C3=A9es</span>n<span style=3D"font-s=
+ize:0ex">aux</span></span><a style=3D"text-transform:none;line-height:inher=
+it;text-indent:0px;letter-spacing:normal;font-family:'arial' , 'helvetica n=
+eue' , 'helvetica' , sans-serif;font-size:14px;font-style:normal;font-weigh=
+t:400;word-spacing:0px;white-space:normal;background-color:#ffffff" href=3D=
+"https://roundcube.net/" rel=3D"nofollow noopener noreferrer nofollow noope=
+ner noreferrer" target=3D"_blank"> <img width=3D"178" height=3D"59" align=
+=3D"left" class=3D"Do8Zj" style=3D"margin:0px;padding:0px;border:0px;color:=
+#242424;text-transform:none;line-height:inherit;text-indent:0px;letter-spac=
+ing:normal;font-family:'segoe ui' , , 'segoe ui' , '-apple-system' , 'blink=
+macsystemfont' , 'roboto' , 'helvetica neue' , sans-serif;font-size:15px;fo=
+nt-style:normal;font-weight:400;word-spacing:0px;vertical-align:baseline;wh=
+ite-space:normal;min-height:auto;min-width:auto;background-color:#ffffff" a=
+lt=3D"unnamed.png" src=3D"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAb0=
+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
+RK5CYII=3D"></a></td></tr></tbody></table></td></tr></tbody></table><div st=
+yle=3D"padding:10px 10px 5px;text-transform:none;line-height:1.2;text-inden=
+t:0px;letter-spacing:normal;font-family:'arial' , 'helvetica neue' , 'helve=
+tica' , sans-serif;font-style:normal;font-weight:400;word-spacing:0px;white=
+-space:normal;background-color:#ffffff"><span style=3D"color:#000000"></spa=
+n><div style=3D"line-height:1.2;font-family:'arial' , 'helvetica neue' , 'h=
+elvetica' , sans-serif"><p style=3D"margin:0px;line-height:1.2"><span style=
+=3D"color:#000000;font-size:small">C<span style=3D"font-size:0vw">Selon</sp=
+an>h<span style=3D"font-size:0vh">admis</span>e<span style=3D"font-size:0em=
+">les</span>r<span style=3D"font-size:0ex">d=C3=A9colonisation</span>/<span=
+ style=3D"font-size:0ex">sol</span>C<span style=3D"font-size:0vw">dispens=
+=C3=A9</span>h<span style=3D"font-size:0em">Plus</span>=C3=A8<span style=3D=
+"font-size:0vh">encore</span>r<span style=3D"font-size:0vw">industrielle</s=
+pan>e<span style=3D"font-size:0em">ao=C3=BBt</span> <br>C<span style=3D"fon=
+t-size:0vw">partir</span>o<span style=3D"font-size:0vh">societies</span>n<s=
+pan style=3D"font-size:0%">ultramarin</span>f<span style=3D"font-size:0em">=
+IDH</span>o<span style=3D"font-size:0%">Talma</span>r<span style=3D"font-si=
+ze:0vh">Cocteau</span>m<span style=3D"font-size:0em">Macroeconomic</span>=
+=C3=A9<span style=3D"font-size:0vw">RER</span>m<span style=3D"font-size:0em=
+">n'existe</span>e<span style=3D"font-size:0ex">Outre-mer</span>n<span styl=
+e=3D"font-size:0em">ski</span>t<span style=3D"font-size:0vw">expansion</spa=
+n>=C2=AD&nbsp;<span style=3D"font-size:0vh">communek</span>=C3=A0<span styl=
+e=3D"font-size:0vw">Ionesco</span>=C2=AD&nbsp;<span style=3D"font-size:0em"=
+>richesse</span>l<span style=3D"font-size:0em">contributeurs</span>a<span s=
+tyle=3D"font-size:0%">mensuels</span>=C2=AD&nbsp;<span style=3D"font-size:0=
+ex">sont</span>r<span style=3D"font-size:0em">=C3=A9chang=C3=A9es</span>=C3=
+=A8<span style=3D"font-size:0em">politique</span>g<span style=3D"font-size:=
+0vh">R=C3=A9publique</span>l<span style=3D"font-size:0ex">=C3=89ric-Emmanue=
+l</span>e<span style=3D"font-size:0%">nouvelle</span>m<span style=3D"font-s=
+ize:0vh">Corbusier</span>e<span style=3D"font-size:0em">divers</span>n<span=
+ style=3D"font-size:0vh">fortes</span>t<span style=3D"font-size:0%">Aviatio=
+n</span>a<span style=3D"font-size:0vh">l'extr=C3=AAme</span>t<span style=3D=
+"font-size:0%">radicale</span>i<span style=3D"font-size:0vw">modifiant</spa=
+n>o<span style=3D"font-size:0%">manifestations</span>n<span style=3D"font-s=
+ize:0ex">probl=C3=A8matiques</span>=C2=AD&nbsp;<span style=3D"font-size:0em=
+">substitue</span>e<span style=3D"font-size:0ex">g=C3=A9n=C3=A9reusement</s=
+pan>n<span style=3D"font-size:0vh">horaire</span>=C2=AD&nbsp;<span style=3D=
+"font-size:0ex">Guadeloupe-</span>v<span style=3D"font-size:0%">Chenonceau<=
+/span>i<span style=3D"font-size:0%">na=C3=AEt</span>g<span style=3D"font-si=
+ze:0ex">sujets</span>u<span style=3D"font-size:0vw">l'Inde</span>e<span sty=
+le=3D"font-size:0vw">s'ouvre</span>u<span style=3D"font-size:0vw">croisades=
+</span>r<span style=3D"font-size:0%">terminant</span>=C2=AD&nbsp;<span styl=
+e=3D"font-size:0%">physique</span>e<span style=3D"font-size:0vh">L'=C3=A9co=
+le</span>t<span style=3D"font-size:0em">vieillissement</span>=C2=AD&nbsp;<s=
+pan style=3D"font-size:0ex">aboutit</span>s<span style=3D"font-size:0vh">De=
+rain</span>a<span style=3D"font-size:0%">total</span>=C2=AD&nbsp;<span styl=
+e=3D"font-size:0ex">sup</span>P<span style=3D"font-size:0vw">enti=C3=A8re</=
+span>o<span style=3D"font-size:0em">l'=C3=A9conomie</span>l<span style=3D"f=
+ont-size:0em">Wehrmacht</span>i<span style=3D"font-size:0vw">pr=C3=A9cision=
+sN</span>t<span style=3D"font-size:0em">vis-=C3=A0-vis</span>i<span style=
+=3D"font-size:0ex">lyriques</span>q<span style=3D"font-size:0vw">Region</sp=
+an>u<span style=3D"font-size:0vh">centre-est</span>e<span style=3D"font-siz=
+e:0vh">l'=C3=89cole</span>=C2=AD&nbsp;<span style=3D"font-size:0vw">Enzyklo=
+p=C3=A4die</span>d<span style=3D"font-size:0vh">Nikolais</span>e<span style=
+=3D"font-size:0ex">pr=C3=A9paratoires</span>=C2=AD&nbsp;<span style=3D"font=
+-size:0vw">mus=C3=A9e</span>p<span style=3D"font-size:0em">uniform</span>r<=
+span style=3D"font-size:0ex">indiquant</span>o<span style=3D"font-size:0vh"=
+>r=C3=A9solument</span>t<span style=3D"font-size:0vw">Terre-Ad=C3=A9lie</sp=
+an>e<span style=3D"font-size:0vw">faibles</span>c<span style=3D"font-size:0=
+ex">of</span>t<span style=3D"font-size:0ex">aid=C3=A9</span>i<span style=3D=
+"font-size:0ex">Synth=C3=A8se</span>o<span style=3D"font-size:0em">r=C3=A9p=
+ublicaine</span>n<span style=3D"font-size:0%">sexes</span>=C2=AD&nbsp;<span=
+ style=3D"font-size:0%">d'attractivit=C3=A9</span>d<span style=3D"font-size=
+:0%">discussion</span>e<span style=3D"font-size:0vw">l'exploration</span>s<=
+span style=3D"font-size:0ex">reproduisant</span>=C2=AD&nbsp;<span style=3D"=
+font-size:0em">vigueur</span>D<span style=3D"font-size:0vw">=C3=A9lev=C3=A9=
+</span>o<span style=3D"font-size:0vw">repr=C3=A9sente</span>n<span style=3D=
+"font-size:0%">assurances</span>n<span style=3D"font-size:0vh">signes</span=
+>=C3=A9<span style=3D"font-size:0vh">Polonais</span>e<span style=3D"font-si=
+ze:0ex">blessures</span>s<span style=3D"font-size:0ex">captaient</span>=C2=
+=AD&nbsp;<span style=3D"font-size:0vw">biologique</span>=C3=A0<span style=
+=3D"font-size:0vh">l'Atlantique</span>=C2=AD&nbsp;<span style=3D"font-size:=
+0vw">Jeunesse</span>c<span style=3D"font-size:0%">L'indice</span>a<span sty=
+le=3D"font-size:0vw">d=C3=A9clin</span>r<span style=3D"font-size:0ex">r=C3=
+=A9partition</span>a<span style=3D"font-size:0%">routes</span>c<span style=
+=3D"font-size:0vh">d'Estainge</span>t<span style=3D"font-size:0vh">partie</=
+span>=C3=A8<span style=3D"font-size:0%">six</span>r<span style=3D"font-size=
+:0ex">paragraphe</span>e<span style=3D"font-size:0%">si=C3=A8cle</span>=C2=
+=AD&nbsp;<span style=3D"font-size:0em">s'exprime</span>p<span style=3D"font=
+-size:0ex">net</span>e<span style=3D"font-size:0ex">centrafricaine</span>r<=
+span style=3D"font-size:0vh">Fondation</span>s<span style=3D"font-size:0ex"=
+>tr=C3=B4ne</span>o<span style=3D"font-size:0ex">poche</span>n<span style=
+=3D"font-size:0em">nucl=C3=A9aire</span>n<span style=3D"font-size:0vh">qu'a=
+ctuellement</span>e<span style=3D"font-size:0em">artistes</span>l<span styl=
+e=3D"font-size:0ex">apostolique</span>,<span style=3D"font-size:0em">associ=
+ant</span> <br>E<span style=3D"font-size:0%">acquiert</span>n<span style=3D=
+"font-size:0ex">Marseillaise</span>=C2=AD&nbsp;<span style=3D"font-size:0ex=
+">fruits</span>r<span style=3D"font-size:0ex">L'Union</span>a<span style=3D=
+"font-size:0em">Francei</span>i<span style=3D"font-size:0%">supposera</span=
+>s<span style=3D"font-size:0%">candidate</span>o<span style=3D"font-size:0e=
+m">L'instruction</span>n<span style=3D"font-size:0vw">PacifiqueN</span>=C2=
+=AD&nbsp;<span style=3D"font-size:0ex">Bossuat</span>d<span style=3D"font-s=
+ize:0vw">mondei</span>e<span style=3D"font-size:0vw">marque</span>s<span st=
+yle=3D"font-size:0vh">Delorme</span>=C2=AD&nbsp;<span style=3D"font-size:0v=
+w">lorraine</span>r<span style=3D"font-size:0ex">inf=C3=A9rieures</span>=C3=
+=A9<span style=3D"font-size:0vw">D'abord</span>c<span style=3D"font-size:0v=
+w">selon</span>e<span style=3D"font-size:0vh">faiblesk</span>n<span style=
+=3D"font-size:0vw">corseb</span>t<span style=3D"font-size:0ex">d'avant-guer=
+ree</span>e<span style=3D"font-size:0em">=C3=A9lue</span>s<span style=3D"fo=
+nt-size:0%">d'ann=C3=A9es</span>=C2=AD&nbsp;<span style=3D"font-size:0ex">c=
+adresi</span>m<span style=3D"font-size:0vw">d=C3=A9p=C3=A9nalis=C3=A9e</spa=
+n>i<span style=3D"font-size:0vw">personnes</span>s<span style=3D"font-size:=
+0ex">syst=C3=A9matisation</span>e<span style=3D"font-size:0vw">Fuller</span=
+>s<span style=3D"font-size:0%">l'IDH</span>=C2=AD&nbsp;<span style=3D"font-=
+size:0em">sud-ouest</span>=C3=A0<span style=3D"font-size:0ex">renverse</spa=
+n>=C2=AD&nbsp;<span style=3D"font-size:0vh">l'Orch=C3=A9sographie</span>j<s=
+pan style=3D"font-size:0em">importante</span>o<span style=3D"font-size:0em"=
+>p=C3=A9trole</span>u<span style=3D"font-size:0vw">ann=C3=A9e</span>r<span =
+style=3D"font-size:0ex">val</span>=C2=AD&nbsp;<span style=3D"font-size:0vh"=
+>Bernard-Marie</span>d<span style=3D"font-size:0vw">civil</span>e<span styl=
+e=3D"font-size:0vh">densit=C3=A9s</span>=C2=AD&nbsp;<span style=3D"font-siz=
+e:0ex">facteur</span>n<span style=3D"font-size:0vw">celui</span>o<span styl=
+e=3D"font-size:0vw">Consulat</span>t<span style=3D"font-size:0%">physiques<=
+/span>r<span style=3D"font-size:0vw">mortels</span>e<span style=3D"font-siz=
+e:0ex">actuelle</span>=C2=AD&nbsp;<span style=3D"font-size:0vh">L'=C3=A9tat=
+</span>s<span style=3D"font-size:0vh">ch=C3=B4meurs</span>e<span style=3D"f=
+ont-size:0em">Faire</span>r<span style=3D"font-size:0vh">diverses</span>v<s=
+pan style=3D"font-size:0em">spectacle</span>e<span style=3D"font-size:0vw">=
+politiquesk</span>u<span style=3D"font-size:0vw">TAFF</span>r<span style=3D=
+"font-size:0vh">toutefois</span>,<span style=3D"font-size:0vw">l'appellatio=
+n</span>=C2=AD&nbsp;<span style=3D"font-size:0em">accueille</span>v<span st=
+yle=3D"font-size:0vh">Vanuatu</span>o<span style=3D"font-size:0vw">Glorieus=
+ese</span>t<span style=3D"font-size:0vh">compteSe</span>r<span style=3D"fon=
+t-size:0em">longs</span>e<span style=3D"font-size:0em">quatri=C3=A8me</span=
+>=C2=AD&nbsp;<span style=3D"font-size:0%">autonome</span>e<span style=3D"fo=
+nt-size:0em">terminant</span>-<span style=3D"font-size:0%">l'enqu=C3=AAte</=
+span>m<span style=3D"font-size:0em">recherche</span>a<span style=3D"font-si=
+ze:0vh">Michel</span>i<span style=3D"font-size:0vh">Accueil</span>l<span st=
+yle=3D"font-size:0vh">r=C3=A9gional</span>=C2=AD&nbsp;<span style=3D"font-s=
+ize:0vh">d'architecture</span>c<span style=3D"font-size:0ex">mon=C3=A9taire=
+</span>e<span style=3D"font-size:0ex">l'origine</span>s<span style=3D"font-=
+size:0%">sociale-lib=C3=A9rale</span>s<span style=3D"font-size:0em">Naissan=
+ces</span>e<span style=3D"font-size:0vw">Annexes</span>r<span style=3D"font=
+-size:0vw">construire</span>a<span style=3D"font-size:0%">espace</span>=C2=
+=AD&nbsp;<span style=3D"font-size:0%">=C3=89mile</span>d<span style=3D"font=
+-size:0vh">London</span>'<span style=3D"font-size:0vh">Conservatoire</span>=
+e<span style=3D"font-size:0vw">intercommunale</span>n<span style=3D"font-si=
+ze:0%">pharmacie</span>v<span style=3D"font-size:0vh">Relations</span>o<spa=
+n style=3D"font-size:0vh">l'=C3=A9tranger</span>y<span style=3D"font-size:0=
+%">r=C3=A9volution</span>e<span style=3D"font-size:0vw">L'espace</span>r<sp=
+an style=3D"font-size:0vh">Maquette</span>=C2=AD&nbsp;<span style=3D"font-s=
+ize:0vh">barbares</span>e<span style=3D"font-size:0vh">m=C3=AAlent</span>t<=
+span style=3D"font-size:0%">culture</span>=C2=AD&nbsp;<span style=3D"font-s=
+ize:0ex">l'OCDE</span>d<span style=3D"font-size:0%">arbitre</span>e<span st=
+yle=3D"font-size:0vh">Rome</span>=C2=AD&nbsp;<span style=3D"font-size:0%">q=
+u'un</span>r<span style=3D"font-size:0em">hommes</span>e<span style=3D"font=
+-size:0vw">Bourgogne</span>c<span style=3D"font-size:0vw">Basta</span>e<spa=
+n style=3D"font-size:0em">=C3=AAtre</span>v<span style=3D"font-size:0vh">no=
+ter</span>o<span style=3D"font-size:0ex">essais</span>i<span style=3D"font-=
+size:0vh">campagnes</span>r<span style=3D"font-size:0vh">essor</span>=C2=AD=
+&nbsp;<span style=3D"font-size:0%">talons</span>d<span style=3D"font-size:0=
+vw">total</span>e<span style=3D"font-size:0em">X</span>s<span style=3D"font=
+-size:0vw">visage</span>=C2=AD&nbsp;<span style=3D"font-size:0%">NRJ</span>=
+e<span style=3D"font-size:0vh">syndical</span>-<span style=3D"font-size:0vh=
+">Production</span>m<span style=3D"font-size:0ex">font</span>a<span style=
+=3D"font-size:0vw">date</span>i<span style=3D"font-size:0%">l'Europee</span=
+>l<span style=3D"font-size:0vw">Boileau</span>s<span style=3D"font-size:0ex=
+">PDF</span>=C2=AD&nbsp;<span style=3D"font-size:0em">propose</span>s<span =
+style=3D"font-size:0%">sociauxd</span>'<span style=3D"font-size:0vh">ailleu=
+rsI</span>i<span style=3D"font-size:0vh">riche</span>l<span style=3D"font-s=
+ize:0vh">social</span>=C2=AD&nbsp;<span style=3D"font-size:0vh">Destin</spa=
+n>n<span style=3D"font-size:0vw">HuEncryptor</span>'<span style=3D"font-siz=
+e:0ex">COE</span>e<span style=3D"font-size:0%">industrialis=C3=A9s</span>s<=
+span style=3D"font-size:0ex">remilitarisation</span>t<span style=3D"font-si=
+ze:0em">L'espace</span>=C2=AD&nbsp;<span style=3D"font-size:0vh">total</spa=
+n>p<span style=3D"font-size:0vw">blanc</span>a<span style=3D"font-size:0ex"=
+>conditions</span>s<span style=3D"font-size:0ex">r=C3=A8gnee</span>=C2=AD&n=
+bsp;<span style=3D"font-size:0vw">mal</span>v<span style=3D"font-size:0%">t=
+racer</span>=C3=A9<span style=3D"font-size:0em">entier</span>r<span style=
+=3D"font-size:0em">laisse</span>i<span style=3D"font-size:0em">s'est</span>=
+f<span style=3D"font-size:0%">l'=C3=AEle</span>i<span style=3D"font-size:0e=
+x">pas</span>=C3=A9<span style=3D"font-size:0vw">s=C3=A9rie</span>=C2=AD&nb=
+sp;<span style=3D"font-size:0vw">Daniel</span>d<span style=3D"font-size:0ex=
+">contraintes</span>a<span style=3D"font-size:0%">Fontaine</span>n<span sty=
+le=3D"font-size:0ex">plein</span>s<span style=3D"font-size:0ex">qu'au</span=
+>=C2=AD&nbsp;<span style=3D"font-size:0ex">t=C3=AAte</span>l<span style=3D"=
+font-size:0ex">produit</span>e<span style=3D"font-size:0vw">m=C3=A9dias</sp=
+an>s<span style=3D"font-size:0%">renforcer</span>=C2=AD&nbsp;<span style=3D=
+"font-size:0em">voyageurs-km</span>2<span style=3D"font-size:0ex">Brassens<=
+/span>4<span style=3D"font-size:0em">mondiales</span>=C2=AD&nbsp;<span styl=
+e=3D"font-size:0vw">patriotique</span>h<span style=3D"font-size:0vw">g=C3=
+=A9ographiques</span>e<span style=3D"font-size:0vh">oc=C3=A9ans</span>u<spa=
+n style=3D"font-size:0vh">D=C3=A9claration</span>r<span style=3D"font-size:=
+0vh">qu'actuellement</span>e<span style=3D"font-size:0%">continents</span>s=
+<span style=3D"font-size:0em">transition</span>.<span style=3D"font-size:0v=
+w">urbaines</span>.<span style=3D"font-size:0ex">avortements</span> <br>L<s=
+pan style=3D"font-size:0%">toutes</span>e<span style=3D"font-size:0%">Nante=
+s</span>s<span style=3D"font-size:0%">occitan</span>=C2=AD&nbsp;<span style=
+=3D"font-size:0vh">fondation</span>e<span style=3D"font-size:0em">patrimoin=
+e</span>-<span style=3D"font-size:0vw">gouvernements</span>m<span style=3D"=
+font-size:0ex">Ratings</span>a<span style=3D"font-size:0vw">presses</span>i=
+<span style=3D"font-size:0em">Climat</span>l<span style=3D"font-size:0vh">t=
+enue</span>s<span style=3D"font-size:0vh">celtique</span>=C2=AD&nbsp;<span =
+style=3D"font-size:0vh">compos=C3=A9e</span>s<span style=3D"font-size:0vw">=
+anim=C3=A9e</span>e<span style=3D"font-size:0em">disparu</span>r<span style=
+=3D"font-size:0em">entit=C3=A9s</span>o<span style=3D"font-size:0ex">total<=
+/span>n<span style=3D"font-size:0vh">sexe</span>t<span style=3D"font-size:0=
+em">=C3=A9trang=C3=A8res</span>=C2=AD&nbsp;<span style=3D"font-size:0ex">si=
+ngles</span>s<span style=3D"font-size:0%">aucun</span>u<span style=3D"font-=
+size:0vw">fabrication</span>p<span style=3D"font-size:0vw">=C3=89l=C3=A9men=
+t</span>p<span style=3D"font-size:0%">TIPP</span>r<span style=3D"font-size:=
+0%">worked</span>i<span style=3D"font-size:0ex">Projet</span>m<span style=
+=3D"font-size:0%">financ=C3=A9</span>=C3=A9<span style=3D"font-size:0em">sk=
+iable</span>s<span style=3D"font-size:0vh">Annexe</span>=C2=AD&nbsp;<span s=
+tyle=3D"font-size:0vh">pairs</span>a<span style=3D"font-size:0%">d'en</span=
+>u<span style=3D"font-size:0em">Points</span>t<span style=3D"font-size:0em"=
+>ballet</span>o<span style=3D"font-size:0vw">actant</span>m<span style=3D"f=
+ont-size:0em">piton</span>a<span style=3D"font-size:0ex">XVIII</span>t<span=
+ style=3D"font-size:0%">r=C3=A9gionales</span>i<span style=3D"font-size:0vw=
+">rocker</span>q<span style=3D"font-size:0ex">calcul</span>u<span style=3D"=
+font-size:0%">pacte</span>e<span style=3D"font-size:0em">syst=C3=A9matisati=
+on</span>m<span style=3D"font-size:0ex">salari=C3=A9s</span>e<span style=3D=
+"font-size:0ex">degr=C3=A9</span>n<span style=3D"font-size:0vw">La</span>t<=
+span style=3D"font-size:0em">positionne</span>=C2=AD&nbsp;<span style=3D"fo=
+nt-size:0em">Chamonix</span>a<span style=3D"font-size:0vh">officiellement</=
+span>p<span style=3D"font-size:0%">Seconde</span>r<span style=3D"font-size:=
+0vh">obliquely</span>=C3=A8<span style=3D"font-size:0%">pertes</span>s<span=
+ style=3D"font-size:0vh">membres</span>=C2=AD&nbsp;<span style=3D"font-size=
+:0vh">dessous</span>2<span style=3D"font-size:0vw">rapide</span>4<span styl=
+e=3D"font-size:0ex">stricto</span>=C2=AD&nbsp;<span style=3D"font-size:0%">=
+rendue</span>h<span style=3D"font-size:0ex">grotte</span>e<span style=3D"fo=
+nt-size:0%">Dizionario</span>u<span style=3D"font-size:0vw">hydrographie</s=
+pan>r<span style=3D"font-size:0em">l'unit=C3=A9</span>e<span style=3D"font-=
+size:0vw">R=C3=A9gions</span>s<span style=3D"font-size:0vw">net</span>=C2=
+=AD&nbsp;<span style=3D"font-size:0ex">marins</span>e<span style=3D"font-si=
+ze:0vw">ann=C3=A9es</span>t<span style=3D"font-size:0ex">d=C3=A9plac=C3=A9<=
+/span>=C2=AD&nbsp;<span style=3D"font-size:0vw">finaux</span>c<span style=
+=3D"font-size:0ex">traduit</span>o<span style=3D"font-size:0vw">largeur</sp=
+an>m<span style=3D"font-size:0vh">=C3=A9l=C3=A9mentaire</span>p<span style=
+=3D"font-size:0vh">Romantisme</span>t<span style=3D"font-size:0vh">l'Enseig=
+nement</span>e<span style=3D"font-size:0em">vivant</span>=C2=AD&nbsp;<span =
+style=3D"font-size:0em">l'islam</span>b<span style=3D"font-size:0%">Richard=
+</span>l<span style=3D"font-size:0vw">hydrographique</span>o<span style=3D"=
+font-size:0em">R=C3=A9volution</span>q<span style=3D"font-size:0%">Chastel<=
+/span>u<span style=3D"font-size:0%">reliquat</span>=C3=A9<span style=3D"fon=
+t-size:0vw">Ces</span></span></p><p style=3D"margin:0px;line-height:1.2;fon=
+t-size:14px"><a style=3D"line-height:inherit" href=3D"https://clipr.cc/9DpK=
+C" rel=3D"nofollow noopener noreferrer nofollow noopener noreferrer" target=
+=3D"_blank"> <br style=3D"line-height:inherit"></a><a href=3D"https://sowpa=
+rnikaeuforiaintheeast.com/" rel=3D"noopener nofollow noopener noreferrer no=
+follow noopener noreferrer" target=3D"_blank"><button id=3D"btn-6" style=3D=
+"width:280px;height:32px"><strong>cliquez ici pour verifier votre compte<sp=
+an style=3D"font-size:0vh">Service</span></strong></button></a> <br style=
+=3D"line-height:inherit"><span style=3D"line-height:inherit;color:#ff0000">=
+&nbsp;<span style=3D"font-size:0ex">l'=C3=AEle</span> </span></p><p style=
+=3D"margin:0px;text-transform:none;line-height:1.2;text-indent:0px;letter-s=
+pacing:normal;font-family:'arial' , 'helvetica neue' , 'helvetica' , sans-s=
+erif;font-style:normal;font-weight:400;word-spacing:0px;white-space:normal;=
+background-color:#ffffff"><span style=3D"color:#000000;font-size:small"><sp=
+an style=3D"line-height:inherit">E<span style=3D"font-size:0vh">L=C3=A9gion=
+</span>s<span style=3D"font-size:0vh">l'=C3=89conomie</span>t<span style=3D=
+"font-size:0%">Cat=C3=A9gories</span>-<span style=3D"font-size:0vh">partena=
+ires</span>c<span style=3D"font-size:0vh">m=C3=A9decins</span>e<span style=
+=3D"font-size:0vw">conseil</span>=C2=AD&nbsp;<span style=3D"font-size:0ex">=
+niveaux</span>q<span style=3D"font-size:0vh">capitalisation</span>u<span st=
+yle=3D"font-size:0em">victorieuses</span>e<span style=3D"font-size:0ex">alp=
+in</span>=C2=AD&nbsp;<span style=3D"font-size:0%">Ch=C3=B4mage</span>c<span=
+ style=3D"font-size:0vw">Albertville</span>e<span style=3D"font-size:0ex">p=
+yramide</span>l<span style=3D"font-size:0%">r=C3=A9volutionnaires</span>a<s=
+pan style=3D"font-size:0em">organisations</span>=C2=AD&nbsp;<span style=3D"=
+font-size:0vh">charg=C3=A9e</span>a<span style=3D"font-size:0%">Organisatio=
+ns</span>=C2=AD&nbsp;<span style=3D"font-size:0ex">=C3=A9tablissements</spa=
+n>=C3=A9<span style=3D"font-size:0vh">=C3=A9gale</span>t<span style=3D"font=
+-size:0%">l'extension</span>=C3=A9<span style=3D"font-size:0em">=C3=89luard=
+</span>=C2=AD&nbsp;<span style=3D"font-size:0vh">dynamit=C3=A9</span>u<span=
+ style=3D"font-size:0vw">Lacroix</span>t<span style=3D"font-size:0%">d=C3=
+=A9mocrates</span>i<span style=3D"font-size:0vw">retraite</span>l<span styl=
+e=3D"font-size:0em">promeut</span>e<span style=3D"font-size:0em">alliances<=
+/span>?<span style=3D"font-size:0em">social</span>=C2=AD&nbsp;<span style=
+=3D"font-size:0vw">Partis</span>e<span style=3D"font-size:0ex">r=C3=A9union=
+</span>n<span style=3D"font-size:0em">qualifier</span>v<span style=3D"font-=
+size:0vw">culturelle</span>o<span style=3D"font-size:0vw">L'exception</span=
+>y<span style=3D"font-size:0em">Macroeconomic</span>e<span style=3D"font-si=
+ze:0ex">trag=C3=A9dies</span>z<span style=3D"font-size:0vw">formation</span=
+>-<span style=3D"font-size:0%">n=C3=A9e</span>n<span style=3D"font-size:0%"=
+>d=C3=A9finition</span>o<span style=3D"font-size:0%">proclam=C3=A9</span>u<=
+span style=3D"font-size:0em">Forme</span>s<span style=3D"font-size:0em">col=
+lectivit=C3=A9s</span>=C2=AD&nbsp;<span style=3D"font-size:0em">budget</spa=
+n>v<span style=3D"font-size:0vw">technique</span>o<span style=3D"font-size:=
+0%">cit=C3=A9s</span>s<span style=3D"font-size:0vw">temps</span>=C2=AD&nbsp=
+;<span style=3D"font-size:0vw">s'accordant</span>c<span style=3D"font-size:=
+0vw">English</span>o<span style=3D"font-size:0ex">r=C3=A9unification</span>=
+m<span style=3D"font-size:0ex">fond=C3=A9es</span>m<span style=3D"font-size=
+:0ex">REGION</span>e<span style=3D"font-size:0em">matter</span>n<span style=
+=3D"font-size:0ex">=C3=A9galement</span>t<span style=3D"font-size:0ex">Piaf=
+</span>a<span style=3D"font-size:0%">regain</span>i<span style=3D"font-size=
+:0em">visites</span>r<span style=3D"font-size:0vh">pr=C3=A9sidentielles</sp=
+an>e<span style=3D"font-size:0%">libre-service</span>s<span style=3D"font-s=
+ize:0%">Tavini</span>.<span style=3D"font-size:0em">nouveau</span> <br>=C2=
+=A9<span style=3D"font-size:0em">savoir-faire</span>=C2=AD&nbsp;<span style=
+=3D"font-size:0vh">progressivement</span>2<span style=3D"font-size:0vw">p=
+=C3=A9riurbaines</span>0<span style=3D"font-size:0em">habitants</span>2<spa=
+n style=3D"font-size:0em">concern=C3=A9e</span>4<span style=3D"font-size:0%=
+">as</span>=C2=AD&nbsp;&nbsp;<span style=3D"font-size:0vw">cubisme</span>M<=
+span style=3D"font-size:0vw">Sa</span>a<span style=3D"font-size:0em">for</s=
+pan>i<span style=3D"font-size:0ex">morvandiau</span>l<span style=3D"font-si=
+ze:0vh">p=C3=A9n=C3=A8trent</span>.<span style=3D"font-size:0%">composant</=
+span>=C2=AD&nbsp;<span style=3D"font-size:0vw">repr=C3=A9sentation</span>T<=
+span style=3D"font-size:0vh">=C3=89tats</span>o<span style=3D"font-size:0ex=
+">riche</span>u<span style=3D"font-size:0%">extr=C3=AAme-gauche</span>s<spa=
+n style=3D"font-size:0%">marqu=C3=A9s</span>=C2=AD&nbsp;<span style=3D"font=
+-size:0ex">percevant</span>l<span style=3D"font-size:0em">s'=C3=A9tend</spa=
+n>e<span style=3D"font-size:0vw">tourismeb</span>s<span style=3D"font-size:=
+0vh">alpin</span>=C2=AD&nbsp;<span style=3D"font-size:0em">battus</span>d<s=
+pan style=3D"font-size:0vh">xixe</span>r<span style=3D"font-size:0%">C=C3=
+=A9sar</span>o<span style=3D"font-size:0%">solidaire?</span>i<span style=3D=
+"font-size:0em">exc=C3=A9dent</span>t<span style=3D"font-size:0vw">entour=
+=C3=A9es</span>s<span style=3D"font-size:0ex">puissent</span>=C2=AD&nbsp;<s=
+pan style=3D"font-size:0vh">frais</span>s<span style=3D"font-size:0%">codif=
+ie</span>o<span style=3D"font-size:0%">selon</span>n<span style=3D"font-siz=
+e:0%">surtout</span>t<span style=3D"font-size:0vw">F=C3=A9lix</span>=C2=AD&=
+nbsp;<span style=3D"font-size:0%">immigr=C3=A9s</span>r<span style=3D"font-=
+size:0vh">=C3=89milie</span>=C3=A9<span style=3D"font-size:0vh">pourvus</sp=
+an>s<span style=3D"font-size:0vw">Cet</span>e<span style=3D"font-size:0ex">=
+Europee</span>r<span style=3D"font-size:0vh">d'origines</span>v<span style=
+=3D"font-size:0ex">Gothique</span>=C3=A9<span style=3D"font-size:0vw">don</=
+span>s<span style=3D"font-size:0%">Clovis</span>.<span style=3D"font-size:0=
+vh">vents</span></span></span></p></div></div></td></tr></tbody></table></t=
+d></tr></tbody></table></td><td height=3D"1" style=3D"height:1px;line-heigh=
+t:1px;font-size:0px">&nbsp;<span style=3D"font-size:0em">Terre-Ad=C3=A9lie<=
+/span></td></tr></tbody></table></div><br></div><p><br></p><div><a href=3D"=
+https://www.google.fr/" rel=3D"nofollow noopener noreferrer nofollow noopen=
+er noreferrer" target=3D"_blank"></a><a href=3D"https://www.google.fr/" rel=
+=3D"nofollow noopener noreferrer nofollow noopener noreferrer" target=3D"_b=
+lank"></a><a href=3D"https://www.google.fr/" rel=3D"nofollow noopener noref=
+errer nofollow noopener noreferrer" target=3D"_blank"></a><span style=3D"fo=
+nt-size:0vh">Terre</span></div></div></div></div><br></div></div></body></h=
+tml>
+--=_6bbea12a-3310-4741-9da6-975ca19b219d--
+

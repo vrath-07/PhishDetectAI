@@ -1,0 +1,126 @@
+Return-Path: business@medwayus.net
+Delivered-To: jose@monkey.org
+X-FDA: 82553554272.23.3464623
+Received: from mail.pmmgtln.com (unknown [162.240.231.30])
+	by imf05.b.hostedemail.com (Postfix) with ESMTP id 907BB1C0008
+	for <jose@monkey.org>; Wed, 11 Sep 2024 20:12:14 +0000 (UTC)
+Authentication-Results: imf05.b.hostedemail.com;	dkim=pass
+ header.d=medwayus.net header.s=default header.b=cAUi9ZTt;	spf=pass
+ (imf05.b.hostedemail.com: domain of business@medwayus.net designates
+ 162.240.231.30 as permitted sender) smtp.mailfrom=business@medwayus.net;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1726085440;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=LV1ms4gmej+hbh6c30kEsHPE5JAf69zI0PDydb8y2eQ=;
+	b=2cPrLadg9kphkuliPxJhoVVzJuGgHW0nPKM4oa0rwQbq+TKhmgrrSbamOUItNtgPkbs7is
+	mvn5LlTZcTpbypVPnkUkA4LY3nm4jeUOmC6zs0QETSAiJnX3/8gpJ5Z+l3xOz0pgw1Vn+h
+	TOWvOGg70zTEIHPoxwL6hyRHTieflKk=
+ARC-Authentication-Results: i=1;	imf05.b.hostedemail.com;	dkim=pass
+ header.d=medwayus.net header.s=default header.b=cAUi9ZTt;	spf=pass
+ (imf05.b.hostedemail.com: domain of business@medwayus.net designates
+ 162.240.231.30 as permitted sender) smtp.mailfrom=business@medwayus.net;
+	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1726085440; a=rsa-sha256;
+	cv=none;
+	b=dUk/wfbp2K12N6iYVZ6f/bE5MAtAj/ltvnk7U0UYYl07NSeEmLszG/9qkzRLI969OwFx36
+	43TO3YDy6xZ+4spcQ66c8QgnneRvTnlL8RxNrpWQL3Nfmr2miA3vs06e7tOqazCt9GthpY
+	ytACIU9gX9UF3eNtuLM4yco+pZ8WvjY=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=medwayus.net; s=default; h=Content-Transfer-Encoding:Content-Type:
+	MIME-Version:Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=LV1ms4gmej+hbh6c30kEsHPE5JAf69zI0PDydb8y2eQ=; b=cAUi9ZTtaoagIpoYcOytQwJaCr
+	2rwuV5X1y6gFw2GyoVey/W0mAz5Jua1JrUX4wCFhZQYv8eLQ+RZcp+WdR5DMz2p+xzbDnP+Vnsk0r
+	x/TnQV7SiTQSDchO06kkOogaTfx1yEouCbd7mNvMg8jPC02d4/7Inb5B+FtWntjIE5tSO7Kb08Xe3
+	wIzlHvhkqaKR3AROZKanFi+LmrhjY9XLlSbq24Ru212rxYvBXcgBqtP/yhtcbKSV7i8JnNxCPqktk
+	g+z4tH73XEHxQCQxDIif0tKxI8pqYPIkT7WB+UfLl7EyVfkWqgyubthpVk+eDU7V963tZO65mI7Se
+	T6DFGfCg==;
+Received: from [23.111.200.85] (port=56803 helo=medwayus.net)	by
+ server.yfq.ypa.mybluehost.me with esmtpsa  (TLS1.2) tls
+ TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	(Exim 4.96.2)	(envelope-from
+ <business@medwayus.net>)	id 1soThH-0005Bl-0g	for jose@monkey.org;	Wed, 11 Sep
+ 2024 14:12:14 -0600
+From: "Admin@monkey.org" <business@medwayus.net>
+To: jose@monkey.org
+Subject: Re: 25G Extra Storage Limit
+Date: 11 Sep 2024 20:12:12 -0700
+Message-ID: <20240911201211.8DA7F821EA4A90CC@medwayus.net>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - server.yfq.ypa.mybluehost.me
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - medwayus.net
+X-Get-Message-Sender-Via:
+ server.yfq.ypa.mybluehost.me: authenticated_id: business@medwayus.net
+X-Authenticated-Sender: server.yfq.ypa.mybluehost.me: business@medwayus.net
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Stat-Signature: xipyfmo7mcmau3az5dkupgwp1xgdppsn
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 907BB1C0008
+X-Rspamd-Server: rspam09
+X-Spam-Status: Yes, score=19.30
+X-HE-Tag: 1726085534-414106
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/UFYtThEk9+eagt6gOarbwUKMslIPFSuSUL8YTNbTa80b?=
+ =?utf-8?q?0f0ea1XSeRZJ6itMLMnh6nWERggXCfXEQNDxfZCqMe9g3vfTXISKFesiwkdo995zm?=
+ =?utf-8?q?/lQIPjccEjIEnS6sjcrzDg/pmfTqH2TFliqWWjFJkSVPbqBmBLfE9CWXtkX2cVYjB?=
+ =?utf-8?q?mkxDWvCcZLjzyyKqHVmXyOSIA3iiZ86Xr1eabGCWtbmESIFVvQfJpas5UQOcY0HpB?=
+ =?utf-8?q?rhy4aJDEJBUHScy46MNKBckmSqqHEnJjL0l0VM/oGdjK34XTMImu7brCDH8zAXSza?=
+ =?utf-8?q?nPr47ijYFaTFbLOPoWX4eVHy6bfTWXFfaljIsDOUDIbI3270bRBrwQ374vOMKAHfh?=
+ =?utf-8?q?ZdMtKHx088TweHsxhta3PPqZr+aGpZbcbRknKCoBf23aHBRngcnZdfZ3HqwjrnbqW?=
+ =?utf-8?q?vYj3+0jTMTyUrePIMz5DHTcz6YaozNuo49ulARhJ22T4RwgbJfqNys/xGKPIkX448?=
+ =?utf-8?q?5v+Iwa05Rmz87fX0gORdf7otYEo27c+I8s6SVbTJaiMh8Ts6W1Je7daTmhH/PG2Yq?=
+ =?utf-8?q?EKVWGSy64hyZ2X1IcnLtMq6EL0ypJg1Vlrpr5khhRDvil8dIKCpP5l6r6SHcjQncP?=
+ =?utf-8?q?lQ2uqmEyndVysWWldqoeJiVBOWBTY5pD6idbcY8SNHFqRAuGx7t+3ke3sfFJGgE2H?=
+ =?utf-8?q?6o0R91F4srHQ/caovRx7oso50XU2V84AfNgCLKGBX94XQpRY/4+kFVgGhvWQiBAA/?=
+ =?utf-8?q?/auIoUO3Iw7zSWR5O+clyOMig0eya+Y861FOVAPobohPvUM8dw8wtklfuncZ1Qr+J?=
+ =?utf-8?q?okp7qIUrcJWki8i5gJUuMXfWvrtzloMUTzYQnpIs545s8gXW6GVDm/8gL5NDYE0wM?=
+ =?utf-8?q?k/AqzyEykLi8+7ryHHZCgYG4iTDmZn0tw9FO6ZUZJ23JndHY8Rmr2FQ9b7VOrP5WI?=
+ =?utf-8?q?/Mbf0fPTgdLulezX7x/ddV_VdzlB2L/qD0KVcqmj8pSa4cEX0kwZrzYFXpz5KEcZl?=
+ =?utf-8?q?8zzQHoOt2+pjHfnfE22zcgF4UafQoAgOITB1ShyTVF4nkHUAPQqwTAR4my57a4E0L?=
+ =?utf-8?q?baQ9Icz6Bpg1GyhBBNQEr3yC/Z/0ZMJWRZTG/mlAT942+qOOBtht/dqSiqDcOfqau?=
+ =?utf-8?q?/WeITvU9Ahuff/Ofn655q5OdEoHtB9OSIapJ39LFWrdT3VQNHt03q8JX+gsLaMLFj?=
+ =?utf-8?q?cYvWJVps5+GU14PRQ96UXOvXoN6mMv+V7gbDW9y8xZmaAIjcI0fE5B6VS7uqsi1sM?=
+ =?utf-8?q?RsOxTqEfttyaLwJ15AVNA281IHdXqVzsdkZtPMEpn7C/eIMA5ztvYpu6It6QAwXR6?=
+ =?utf-8?q?QlILeKCcMrtjUscLI6nSxSw2QKTb8JrFIjIr5lgmOB2dBwVM1bf3RTTDwY0vNgLex?=
+ =?utf-8?q?cCclmiKZynHE/phismOTeUDHltGS4bhrbU3xbSDSDLgdOGDISDp/xgIkAJfv7xeRn?=
+ =?utf-8?q?mAcOqfM+ADfyE4+I7NEc0kSeah3qpnE275lw4llIEnfEhZdAYq/TWMOTTeCSArwUt?=
+ =?utf-8?q?64yEV2ML0VQnjO0wdIwz2XW641eVdx6ZF7qS3D5btaz8nFnm5P6NoOKjkGHVnDFV5?=
+ =?utf-8?q?Tnf2ceMHhUt9JdRsYhghYmakgE39dwNC0PqecyWrkTfL72XS24KozPefswnadHLNS?=
+ =?utf-8?q?TF9MUxfbrOzB0RwwI3t47jMjUbu9sLaMc8oDcEw=3D=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 259
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<html><head>
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"margin: 0.5em;"><p>Attn: jose@monkey.org</p><p><br><font siz=
+e=3D"4">Hi, This is the IT Manager for monkey.org I have been&nbsp;instruct=
+ed to increase the storage capacity on your email address to 25G Extra Stor=
+age Limit. All you need to do is&nbsp;Click on the icon below and login the=
+ new space added and interface would take effect automatically.</font></p><=
+p><br><font size=3D"4"><strong><font color=3D"#301be4"><u>
+<a href=3D"https://cdn.dragon.cere.network/535/fs/default2/settinhgs-weurtb=
+fdik_teoinjkbcgcvkld/oboyawell.shtml#jose@monkey.org">CLICK HERE</a></u></f=
+ont></strong> to get the added space and interface.</font>
+</p><p><br><font size=3D"4">Thank You</font></p><p><font size=3D"4">IT Mana=
+ger.</font></p><p><font size=3D"2">monkey.org Copyright&copy; 2024</font></=
+p></body></html>
+

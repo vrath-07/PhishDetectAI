@@ -1,0 +1,262 @@
+Return-Path: hope@cefilni.com
+Delivered-To: jose@monkey.org
+X-FDA: 82733100912.12.02DDE20
+Received: from terry.cefilni.com (terry.cefilni.com [193.25.216.247])
+	by imf27.b.hostedemail.com (Postfix) with ESMTP id 200041A0006
+	for <jose@monkey.org>; Thu, 31 Oct 2024 07:40:57 +0000 (UTC)
+Authentication-Results: imf27.b.hostedemail.com;	dkim=pass
+ header.d=cefilni.com header.s=dkim header.b=AQaEyQcX;	dmarc=pass
+ (policy=none) header.from=cefilni.com;	spf=pass (imf27.b.hostedemail.com:
+ domain of hope@cefilni.com designates 193.25.216.247 as permitted sender)
+ smtp.mailfrom=hope@cefilni.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1730360408;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=Q66DJE5h/lVBrrKsiETeAgM9EYk+Z+tzfzvomrLJZSs=;
+	b=JthfdrZszytAZAez5OeYwvecRP+t00qOHnuMf7+C28vxj94cUybIo0ttFpXq2irsyolnGo
+	yp5xOKbOr18Pwvu140KjIUCUxntJ6lPw0/9XPkEgaNfUmiaxFfimrwVEeHHyMEZtzEam8e
+	It3rCpYhFoTYtBmKgPGN8n1KsUKmCv4=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1730360408; a=rsa-sha256;
+	cv=none;
+	b=NemzrGelWJkmW+1p8qnnsxwiRlUHvrGzsYGuHq0ASPCQIxqwKULvEBDxfwJ5XZER4U5jZk
+	0N1lThYQwYPZT9QZKgqml8Wg7KVo2LJZf0u7ZznjCVJXLiAvssXXy3QnJCNmTHopPvCoci
+	MicdzU83qu62nTdHq2JPI0tQY0JIOOk=
+ARC-Authentication-Results: i=1;	imf27.b.hostedemail.com;	dkim=pass
+ header.d=cefilni.com header.s=dkim header.b=AQaEyQcX;	dmarc=pass
+ (policy=none) header.from=cefilni.com;	spf=pass (imf27.b.hostedemail.com:
+ domain of hope@cefilni.com designates 193.25.216.247 as permitted sender)
+ smtp.mailfrom=hope@cefilni.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=dkim; d=cefilni.com; 
+ =?utf-8?q?h=3DFrom=3ATo=3ASubject=3ADate=3AMessage-ID=3AMIME-Version=3ACont?=
+ =?utf-8?q?ent-Type=3AContent-Transfer-Encoding=3B?= i=hope@cefilni.com;
+ bh=gejAYCLyJ/h3eEHdUqrVNU2Vg+M=; =?utf-8?q?b=3DAQaEyQcXL72EhmiabDoQ793Kjw5P?=
+ =?utf-8?q?98FLTpPDss6WNbj/TgFXfFaX2FbFTfmYhEjQJwLjs2D9nSWh?=  
+ RuLk0cRFji4YpXsd/GO4hlQCA6DBDK8ReqgNaGf4iwjmohpoywnhHupgIyYnpp9qOmtHI41RbZ3K
+  
+ 4uQPmg5mOEsQoXIirtXr45a9vipiK7RQpJJUJ5oEayb++YfHLVx5VG9cT8wca73G0PF99Eyhe0LQ
+  
+ QQ0oui1ZQLWlbii8KnOdbYgd9y4vRdMrpaF/i+vKoZJsC9SEBK8TFP3IOHMGtMZdGNcIsuiXl9L/
+   N4b3+em/fTPR5oVuHotqC2HVLIZTVrhINly+3Q==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=dkim; d=cefilni.com; 
+ =?utf-8?q?b=3Dry0ol+9gYqO0ZgO0O77ctC8yVqkkGENq5hF8F8fmnsJwORF0JF1jVEE9V1raf?=
+ =?utf-8?q?B653I4jT+58n7iE?=  
+ TO1lgdMkbBcN4wTclDk7BDgLYFJxp11fjJb3b7kmBDGYqaBOp2wVqyG8rFsWEUGsbBbr1rZFg7rg
+  
+ a7bHTuRKbH79jXh9O8sm16f9YabZ/llexAAfd8+BeqgTa+ZaCToVhb45ft9D0C5N91Q0M2AGA3dG
+  
+ asq6vm9DYnXZSJEVDDNmxkCREYysTION+sQcAibhEILu5ODfuM+FAhBntfNzLnnWJslLPQAMtYm3
+   QEbalGeYlFGwacQ6FBpghzMgurL4yH8km/n4Zw==;
+From: "ITSupportHelpdesk monkey.org"<hope@cefilni.com>
+To: jose@monkey.org
+Subject: REMINDER: jose Email Expiry Notice.(urgent)
+Date: 30 Oct 2024 13:08:49 +0000
+Message-ID: <20241030130849.FD0AEB6E658CD43B@cefilni.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam05
+X-Spam-Status: No, score=1.18
+X-Stat-Signature: 6rknq8ktm7nkw6ruehfxf4pu8pdxmtrw
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 200041A0006
+X-HE-Tag: 1730360457-67342
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/kLwVAQBS6LUDpfJHbF/CmWr3btOLhEzVpEjNY/TMOKyR?=
+ =?utf-8?q?B/SoH7jqEo6FgSrjBGLE8kJA0p/Wwk4DGCheA0n6E9AajquatpZ0zFaA43Y9gwcNM?=
+ =?utf-8?q?oH+Np49gODwux2myevV3vWOx3VLi3Q3P6vKQMoyKAgddfj5Z0/5W4a4VdzgKvdWtQ?=
+ =?utf-8?q?ez5mVreXjqsfvUrFmcvWmACUJ8z6kSNvgiBIi50EKyBiR8eInt9jJUzBo4NPt8Svl?=
+ =?utf-8?q?hIjZtt9DxKMmmyj4NuYsTGwZ0Cai8e2eVMbM8KA9RbR9Y3443KVnzgh0GDK3YimlC?=
+ =?utf-8?q?Qev2hP8OncIrDIdwEAJVGGduXUV0OvNpfKaHWd5KoYBZzStBrm5+DuP35ICZag0M8?=
+ =?utf-8?q?VYIikeijemiMkMDg3kaNgiS7ixFlMn06QQdy6nwjaUTB/fZZ0xcSWyOEgwn1NtULc?=
+ =?utf-8?q?UuBuHmBGA+4laePjDBCawPMyFCCYcR4XIvwe2mrNDafDAIpi5t/jsj1TvrJYCgP/4?=
+ =?utf-8?q?vDR0mdaomhcUpIBZ8fqhbynniV/5hHA11bYMaQoRXUnUqSEpV6iuvecOlvDp0lKo7?=
+ =?utf-8?q?RuXd2NPeHObkT3SQvSyRvXnRNlds8iTkT6E2g5APrmLholJxtlMvamxlM4VmP9CQN?=
+ =?utf-8?q?5xgn7QZEzeBxmXIRIDxdSOBW/hBxHFRP06cnzc6mkIGoL0rRg6xdz4JT186eb9GGK?=
+ =?utf-8?q?GFe1dkNdxkL/qetM4Ix6KbIuiNVqm8+V5BARzzxkfZdtWi5pFSwgVEMbLqa64W+wm?=
+ =?utf-8?q?D99Yhp71mGYgGk639CCahT0F/Oe30MWdHLn6FY38YRiDaUDHzBN/plb5iy+xljWUt?=
+ =?utf-8?q?+GqtJCsqviGOEj93iD/N17IRocm2fKyXweq1fwrH8QzmpO2QKsbKHM+RmPjDUa0wp?=
+ =?utf-8?q?WevBILHai3jnFZ2/BAWAN+rUpWXYWEMOltRqg0iTnQi2subC7mXag8LBNyqxuk70N?=
+ =?utf-8?q?UcjjWoweWULQlR699yRE1d_kMuvnA3Yi0wsJgH8OCdzmOrS5S/PuFz6oL2JJJgqIO?=
+ =?utf-8?q?NxirjeNw+BEWKlAM01tsJXsW4eN3Tm7euVqSawfLQ27Afd8ug=3D=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 320
+
+<html><head>
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<span style=3D"box-sizing: border-box;"><span style=3D"box-sizing: border-b=
+ox;">
+<div style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-i=
+mage: none; color: rgb(0, 0, 0); text-transform: none; line-height: inherit=
+; text-indent: 0px; letter-spacing: normal; font-family: Aptos, Aptos_Embed=
+dedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12=
+pt; font-style: normal; font-weight: 400; word-spacing: 0px; vertical-align=
+: baseline; white-space: normal; orphans: 2; widows: 2; font-size-adjust: i=
+nherit; font-stretch: inherit;=20
+font-feature-settings: inherit; font-variant-ligatures: normal; font-varian=
+t-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: =
+initial; text-decoration-style: initial; text-decoration-color: initial; fo=
+nt-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant=
+-alternates: inherit; font-variant-position: inherit; font-optical-sizing: =
+inherit; font-kerning: inherit; font-variation-settings: inherit;"><br clas=
+s=3D"Apple-interchange-newline"><br></div>
+<hr style=3D'width: 588px; color: rgb(0, 0, 0); text-transform: none; text-=
+indent: 0px; letter-spacing: normal; font-family: "Segoe UI Web (West Europ=
+ean)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Ne=
+ue", sans-serif; font-size: medium; font-style: normal; font-weight: 400; w=
+ord-spacing: 0px; display: inline-block; white-space: normal; orphans: 2; w=
+idows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webki=
+t-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial;'>
+<div id=3D"divRplyFwdMsg" style=3D'margin: 0px; padding: 0px; border: 0px c=
+urrentColor; border-image: none; color: rgb(0, 0, 0); text-transform: none;=
+ line-height: inherit; text-indent: 0px; letter-spacing: normal; font-famil=
+y: "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSyste=
+mFont, Roboto, "Helvetica Neue", sans-serif; font-size: medium; font-style:=
+ normal; font-weight: 400; word-spacing: 0px; vertical-align: baseline; whi=
+te-space: normal; orphans: 2; widows: 2;=20
+font-size-adjust: inherit; font-stretch: inherit; font-feature-settings: in=
+herit; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-t=
+ext-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-=
+style: initial; text-decoration-color: initial; font-variant-numeric: inher=
+it; font-variant-east-asian: inherit; font-variant-alternates: inherit; fon=
+t-variant-position: inherit; font-optical-sizing: inherit; font-kerning: in=
+herit; font-variation-settings: inherit;'=20
+dir=3D"ltr"><span style=3D"margin: 0px; padding: 0px; border: 0px currentCo=
+lor; border-image: none; color: rgb(0, 0, 0); line-height: inherit; font-fa=
+mily: Calibri, sans-serif; font-size: 11pt; font-style: inherit; font-varia=
+nt: inherit; font-weight: inherit; vertical-align: baseline; font-size-adju=
+st: inherit; font-stretch: inherit; font-feature-settings: inherit; font-op=
+tical-sizing: inherit; font-kerning: inherit; font-variation-settings: inhe=
+rit;"><b>From:</b>&nbsp;monkey.org Support Team<br>
+<b>Sent:</b>&nbsp;10/30/2024 1:08:49 p.m.<br><b>To:</b>&nbsp;jose@monkey.or=
+g</span></div>
+<p style=3D"text-align: left; color: rgb(34, 34, 34); text-transform: none;=
+ text-indent: 0px; letter-spacing: normal; font-family: Arial, Helvetica, s=
+ans-serif; font-size: larger; font-style: normal; font-weight: 400; margin-=
+top: 0px; word-spacing: 0px; white-space: normal; box-sizing: border-box; o=
+rphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-li=
+gatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px;=
+ text-decoration-thickness: initial;=20
+text-decoration-style: initial; text-decoration-color: initial;"><br><br><s=
+trong>monkey.org&nbsp;Email Service.</strong></p></span></span>
+<p style=3D"text-align: left; color: rgb(34, 34, 34); text-transform: none;=
+ text-indent: 0px; letter-spacing: normal; font-family: Arial, Helvetica, s=
+ans-serif; font-size: larger; font-style: normal; font-weight: 400; margin-=
+top: 0px; word-spacing: 0px; white-space: normal; box-sizing: border-box; o=
+rphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-li=
+gatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px;=
+ text-decoration-thickness: initial;=20
+text-decoration-style: initial; text-decoration-color: initial;"></p>
+<p style=3D"text-align: left; color: rgb(34, 34, 34); text-transform: none;=
+ text-indent: 0px; letter-spacing: normal; font-family: Arial, Helvetica, s=
+ans-serif; font-size: small; font-style: normal; font-weight: 400; margin-t=
+op: 0px; word-spacing: 0px; white-space: normal; box-sizing: border-box; or=
+phans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-lig=
+atures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; =
+text-decoration-thickness: initial;=20
+text-decoration-style: initial; text-decoration-color: initial;">Hi jose</p=
+>
+<p style=3D"text-align: left; color: rgb(34, 34, 34); text-transform: none;=
+ text-indent: 0px; letter-spacing: normal; font-family: Arial, Helvetica, s=
+ans-serif; font-size: small; font-style: normal; font-weight: 400; margin-t=
+op: 0px; word-spacing: 0px; white-space: normal; box-sizing: border-box; or=
+phans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-lig=
+atures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; =
+text-decoration-thickness: initial;=20
+text-decoration-style: initial; text-decoration-color: initial;">Please not=
+e<span style=3D"box-sizing: border-box;">&nbsp;jose@monkey.org</span><span =
+style=3D"box-sizing: border-box;">&nbsp;</span>authentication expires 30th =
+October, 2024.</p>
+<p style=3D"text-align: left; color: rgb(34, 34, 34); text-transform: none;=
+ text-indent: 0px; letter-spacing: normal; font-family: Arial, Helvetica, s=
+ans-serif; font-size: small; font-style: normal; font-weight: 400; margin-t=
+op: 0px; word-spacing: 0px; white-space: normal; box-sizing: border-box; or=
+phans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-lig=
+atures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; =
+text-decoration-thickness: initial;=20
+text-decoration-style: initial; text-decoration-color: initial;"></p>
+<table bordercolor=3D"" style=3D"text-align: left; color: rgb(34, 34, 34); =
+text-transform: none; letter-spacing: normal; font-family: Arial, Helvetica=
+, sans-serif; font-size: small; font-style: normal; font-weight: 400; word-=
+spacing: 0px; white-space: normal; border-collapse: collapse; box-sizing: b=
+order-box; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); fon=
+t-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke=
+-width: 0px; text-decoration-thickness: initial;=20
+text-decoration-style: initial; text-decoration-color: initial;" bgcolor=3D=
+"">
+<tbody style=3D"box-sizing: border-box;">
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"margin: 0px; padding: 5px 7px; border-radius: 3px; color: whit=
+e; box-sizing: border-box; background-color: cornflowerblue;"><a style=3D"c=
+olor: white; text-decoration: none; box-sizing: border-box; background-colo=
+r: transparent;" href=3D"https://alsaadgroup.ae/ae.html?email=3Djose@monkey=
+=2Eorg" target=3D"_blank" rel=3D"noreferrer">Continue</a></td></tr></tbody>=
+</table>
+<p style=3D"text-align: left; color: rgb(34, 34, 34); text-transform: none;=
+ text-indent: 0px; letter-spacing: normal; font-family: Arial, Helvetica, s=
+ans-serif; font-size: small; font-style: normal; font-weight: 400; margin-t=
+op: 0px; word-spacing: 0px; white-space: normal; box-sizing: border-box; or=
+phans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-lig=
+atures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; =
+text-decoration-thickness: initial;=20
+text-decoration-style: initial; text-decoration-color: initial;"></p>
+<p style=3D"text-align: left; color: rgb(34, 34, 34); text-transform: none;=
+ text-indent: 0px; letter-spacing: normal; font-family: Arial, Helvetica, s=
+ans-serif; font-size: small; font-style: normal; font-weight: 400; margin-t=
+op: 0px; word-spacing: 0px; white-space: normal; box-sizing: border-box; or=
+phans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-lig=
+atures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; =
+text-decoration-thickness: initial;=20
+text-decoration-style: initial; text-decoration-color: initial;">Please con=
+tinue to keep or change your password.</p>
+<p style=3D"text-align: left; color: rgb(34, 34, 34); text-transform: none;=
+ text-indent: 0px; letter-spacing: normal; font-family: Arial, Helvetica, s=
+ans-serif; font-size: small; font-style: normal; font-weight: 400; margin-t=
+op: 0px; word-spacing: 0px; white-space: normal; box-sizing: border-box; or=
+phans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-lig=
+atures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; =
+text-decoration-thickness: initial;=20
+text-decoration-style: initial; text-decoration-color: initial;"></p>
+<p style=3D"text-align: left; color: rgb(44, 54, 58); text-transform: none;=
+ text-indent: 0px; letter-spacing: normal; font-family: Roboto, sans-serif;=
+ font-size: 14px; font-style: normal; font-weight: 400; margin-top: 0px; wo=
+rd-spacing: 0px; white-space: normal; box-sizing: border-box; orphans: 2; w=
+idows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: nor=
+mal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decora=
+tion-thickness: initial; text-decoration-style:=20
+initial; text-decoration-color: initial;">
+<span style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: 0=
+px; letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; font=
+-size: small; font-style: normal; font-weight: 400; word-spacing: 0px; floa=
+t: none; display: inline !important; white-space: normal; box-sizing: borde=
+r-box; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-va=
+riant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-wid=
+th: 0px; text-decoration-thickness: initial;=20
+text-decoration-style: initial; text-decoration-color: initial;">Regards,</=
+span>
+<br style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: 0px=
+; letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; font-s=
+ize: small; font-style: normal; font-weight: 400; word-spacing: 0px; white-=
+space: normal; box-sizing: border-box; orphans: 2; widows: 2; background-co=
+lor: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps:=
+ normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial=
+; text-decoration-style: initial;=20
+text-decoration-color: initial;">
+<span style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: 0=
+px; letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; font=
+-size: small; font-style: normal; font-weight: 400; word-spacing: 0px; floa=
+t: none; display: inline !important; white-space: normal; box-sizing: borde=
+r-box; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-va=
+riant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-wid=
+th: 0px; text-decoration-thickness: initial;=20
+text-decoration-style: initial; text-decoration-color: initial;">monkey.org=
+&nbsp;ITHelpdesk</span></p></body></html>
+

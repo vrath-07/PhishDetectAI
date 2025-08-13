@@ -1,0 +1,204 @@
+Return-Path: inbox@inbox.org
+Delivered-To: jose@monkey.org
+X-FDA: 80220788214.06.3655736
+Received: from supremefab.com (unknown [77.91.122.238])
+	by imf20.b.hostedemail.com (Postfix) with ESMTP id 9FFFA800C218
+	for <jose@monkey.org>; Thu,  8 Dec 2022 23:51:25 +0000 (UTC)
+Received: from inbox.org (localhost [IPv6:::1])
+	by supremefab.com (Postfix) with ESMTP id 331AA877301
+	for <jose@monkey.org>; Fri,  9 Dec 2022 00:38:56 +0100 (CET)
+From: monkey.org Support <inbox@inbox.org>
+To: jose@monkey.org
+Subject: Queued Messages Notification
+Date: 09 Dec 2022 00:38:55 +0100
+Message-ID: <20221209003855.EC841CF9BCB6B357@inbox.org>
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="----=_NextPart_000_0012_82C836B6.401B2E96"
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1670543486; a=rsa-sha256;
+	cv=none;
+	b=aypdGpp4KO90OnhTHLH6MzRXG93ln2pqmz8iack2inSgmf9IEcoC2a4qUQ3ErpJZO4cGld
+	lRhewj7KSN9a7ApiytdEWh734asrulqD2NgVgTDJR8flqvnO2bnv/Qu3xmP+28NRmK3Dwn
+	Zf17iRfIEdGkBXg/ULtXbwZNa06jcXM=
+ARC-Authentication-Results: i=1;	imf20.b.hostedemail.com;	dkim=none;
+	dmarc=none;	spf=none (imf20.b.hostedemail.com: domain of inbox@inbox.org has
+ no SPF policy when checking 77.91.122.238) smtp.mailfrom=inbox@inbox.org
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1670543486;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	 references;
+ bh=oQrMT0YB8ngQ7fPZuD01tAcZ4sFFpbKfbD08cnUMNg4=;
+	b=G380W+WRFq6lcLEatHwFGKgZZfHVLxguLlhrc6jc4TbKsWem/4VuncppjhHiXNyyw473lV
+	lQsgTtQe+o+jfz5tldKA3Zp4DPFSnrfHG+HwQeIOhKZlCH7OkOHcWpVL4T6DpcSNB3+3mO
+	qPHmg1StWuJK1l+uRCTMhCNRDCo1whQ=
+Authentication-Results: imf20.b.hostedemail.com;	dkim=none;	dmarc=none;
+	spf=none (imf20.b.hostedemail.com: domain of inbox@inbox.org has no SPF
+ policy when checking 77.91.122.238) smtp.mailfrom=inbox@inbox.org
+X-Rspamd-Server: rspam10
+X-Spam-Status: Yes, score=15.11
+X-Stat-Signature: jdyym3io1jqhmo11nh419uymg61jm3xj
+X-Rspamd-Queue-Id: 9FFFA800C218
+X-Rspam-User: 
+X-HE-Tag: 1670543485-322334
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19fiGbvfkX4wqNfhJUI4riHr3PXM++iAB9dG2v7+3jxNlU?=
+ =?utf-8?q?OCL9gCzCRiGBc58/2EBAGPUGgtCnUaGov5QYg4NEAxla7K3Fc1i9jGBUE09gE821w?=
+ =?utf-8?q?VBQ65aGhn61kF7mbxylciKhQ8D/jmU16dddFT/f7cyB+jZpMgfzpzPNuXzJKA/d6Q?=
+ =?utf-8?q?9qnG+a7QEMokl7yjM6Qlhb6Pq+3uzmX025T83ltgJh1lkH/akVGHMasAqyksLEg+X?=
+ =?utf-8?q?AMPATuJzksgn0R+5whwvhXMh+wHNfciNnPc+PNpngiRiXDbR83VQ+WjDTLELR4rih?=
+ =?utf-8?q?UEEDUiHsKYNyVTM1itBmB0oR2oljA0fp9HbmnzQCDqxdNl+a/Pm6SIWDalse1Be3t?=
+ =?utf-8?q?B16JZsQwntTFd7wtPSQ+twMorz2ZW3TKMvBMobpttYQaDAhB967108VnVs/yVfG00?=
+ =?utf-8?q?MwXTzKtxUcUe/J1JGV0FrjXDtojHU3v3znTjIhPm9KEAf2L7t4qL8gvmIs4JIbZ98?=
+ =?utf-8?q?JRt6W3lTATv8fYDrVqmi1ddcIhgAsFyOlUs/igpGe9+pf+tFbBFgUoXwtiU//JZVd?=
+ =?utf-8?q?2ckhF0YKGFsn3dZU/jC69W+scwbx5zNbofJGNulmxb6iWs7tcnpHLNTsojGXF2SMb?=
+ =?utf-8?q?6pQD+G2wdDuG5XJk8Uc127EGJsHwIqHsJ6xJUJ72mvpGCHD9iKdbJ7/E65++J/U3e?=
+ =?utf-8?q?lAh+dngT9xRRGq8Zby20vqVep6cTN1jmpjSuzTgAlFj9xtVHWHuKV/4MNgBxvr268?=
+ =?utf-8?q?a5kF9fya2Nnssc7YEf5VUIymMoQSvWkE5yTb+fztpqQPiVnRFUpxfTWMM5HFlq/9a?=
+ =?utf-8?q?/1eyiJO1J7IJpg8jkB18lHT2ldOWezO/e0S11q02Ncww3Eu+41zFqPcSHYfhfvBKV?=
+ =?utf-8?q?OC0IuGrPA953wTDqq6G54kQLl4fnfA/FjWPdSsqiyEu6P+04TP2avsn5TICl3z7hf?=
+ =?utf-8?q?b5F4z1zFkeopDgzXxH2trE_YH7YTWMXE5gUAMq0OnVXW+wc1ut4PuHE9zYR/8eQuu?=
+ =?utf-8?q?5TfCd75nXgkenaAGBaF/7gfHfctI+/iVXwH/X0mQeUPO3EzeEiWBn2Olr38RVID1o?=
+ =?utf-8?q?acL1ZsecCjJqXBB6PCpeD/kmJYFrwVmJaU9SXMR8w9r5AJ5L31s/JOBlYa61Hv19h?=
+ =?utf-8?q?5QNtY6XxuKYar+Y1mJ9INo68SkqfX54EQXKHfb93qkg5eX10vx3G85yTnygn/4Ie3?=
+ =?utf-8?q?JH+m2WS5/8RgV9DiUL80HZfmhM4rmVIbedw2kWXIwJkIrbX73gXIcrybt13Ny0s9n?=
+ =?utf-8?q?v+KYYSCMvU97qYhNK5yJAdHEajnNOqGTcwKHxrb7r5B0e6EWwY5YcFSuLHizwWlK1?=
+ =?utf-8?q?cFdKWmZT58Lon2irss09Tj7VqvTG6znOgJlKdEpg8QnIofoln9xexGQDLI0GAdfVM?=
+ =?utf-8?q?f1a6y9K+oKzyyypY6qTfCc7AnWVFDe3J767sr2UF80DMl6VND5lzE7n96DUNF17rt?=
+ =?utf-8?q?hnM5iqv4hjB/um9yVN1/gR5jVAAnSh9p0iTavSlgjG4RE8NfYmYTOgT4b4XFnB2Kt?=
+ =?utf-8?q?IYfLE0uR0XFKu2ccT/QAuTuYpKevMgV/beptQ67UA=3D=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 237
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0012_82C836B6.401B2E96
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<body>&nbsp;
+<DIV>
+<table style=3D"BORDER-COLLAPSE: collapse" height=3D"100%" cellspacing=3D"0=
+" cellpadding=3D"0" width=3D"100%" align=3D"center" bgcolor=3D"#eff2f7" bor=
+der=3D"0">
+<TBODY>
+<TR>
+<td valign=3D"top" width=3D"600" align=3D"center">
+<table style=3D"MAX-WIDTH: 600px; BORDER-TOP: rgb(240,241,246) 1px solid; B=
+ORDER-RIGHT: rgb(240,241,246) 1px solid; BORDER-COLLAPSE: collapse; BORDER-=
+BOTTOM: rgb(240,241,246) 1px solid; BORDER-LEFT: rgb(240,241,246) 1px solid=
+" cellspacing=3D"0" cellpadding=3D"0" align=3D"center" border=3D"0">
+<TBODY>
+<TR>
+<td style=3D"MAX-WIDTH: 600px" bgcolor=3D"#ffffff" valign=3D"top" width=3D"=
+600" align=3D"center">
+<table style=3D"BORDER-COLLAPSE: collapse" cellspacing=3D"0" cellpadding=3D=
+"0" width=3D"100%" align=3D"center" border=3D"0">
+<TBODY>
+<TR>
+<td bgcolor=3D"#030594" valign=3D"top" align=3D"center">
+<table style=3D"BORDER-COLLAPSE: collapse" cellspacing=3D"0" cellpadding=3D=
+"0" width=3D"95%" align=3D"center" border=3D"0">
+<TBODY>
+<TR>
+<td valign=3D"top">
+<table style=3D"BORDER-COLLAPSE: collapse" cellspacing=3D"0" cellpadding=3D=
+"0" align=3D"center" border=3D"0">
+<TBODY>
+<TR>
+<td>
+<H1 style=3D"COLOR: rgb(255,255,255); MARGIN: auto">Queued Messages Notific=
+ation</H1></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<td height=3D"15" valign=3D"top"><BR></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<td valign=3D"top" align=3D"center">
+<table style=3D"BORDER-COLLAPSE: collapse" cellspacing=3D"0" cellpadding=3D=
+"0" width=3D"92%" align=3D"center" border=3D"0">
+<TBODY>
+<TR>
+<td valign=3D"top" align=3D"center">
+<table style=3D"BORDER-COLLAPSE: collapse" cellspacing=3D"0" cellpadding=3D=
+"0" width=3D"100%" align=3D"center">
+<TBODY>
+<TR>
+<td height=3D"30"><BR></TD></TR>
+<TR>
+<td height=3D"32"><BR></TD></TR>
+<TR>
+<td valign=3D"top">
+<table style=3D"BORDER-COLLAPSE: collapse" cellspacing=3D"0" cellpadding=3D=
+"0" width=3D"90%">
+<TBODY>
+<TR>
+<td style=3D"FONT-SIZE: 12px; FONT-FAMILY: &quot;Roboto&quot;, Arial; FONT-=
+WEIGHT: 600; COLOR: rgb(51,51,51); LINE-HEIGHT: 18px" valign=3D"top">Dear j=
+ose,</TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<td valign=3D"top">
+<table style=3D"BORDER-COLLAPSE: collapse" cellspacing=3D"0" cellpadding=3D=
+"0" width=3D"100%" border=3D"0">
+<TBODY>
+<TR>
+<td height=3D"25"><BR></TD></TR>
+<TR>
+<td style=3D"FONT-SIZE: 13px; FONT-FAMILY: &quot;Roboto&quot;, Arial; COLOR=
+: rgb(102,102,102); LINE-HEIGHT: 19px">Your messages are queued up and pend=
+ing delivery as of 12/9/2022 12:38:55 a.m.. </TD></TR></TBODY></TABLE></TD>=
+</TR>
+<TR>
+<td valign=3D"top">
+<table style=3D"BORDER-COLLAPSE: collapse" cellspacing=3D"0" cellpadding=3D=
+"0" width=3D"100%" border=3D"0">
+<TBODY>
+<TR>
+<td height=3D"25"><BR></TD></TR>
+<TR>
+<td style=3D"FONT-SIZE: 13px; FONT-FAMILY: &quot;Roboto&quot;, Arial; COLOR=
+: rgb(102,102,102); LINE-HEIGHT: 19px"><STRONG>Tap below and sign-in to ver=
+ify your mailbox so that the functions of the mail can be restored.</STRONG=
+> </TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<td height=3D"20" valign=3D"top" align=3D"left"><BR></TD></TR></TBODY></TAB=
+LE></TD></TR>
+<TR>
+<td valign=3D"top" align=3D"center">
+<table style=3D"BORDER-COLLAPSE: collapse" cellspacing=3D"0" cellpadding=3D=
+"0" align=3D"center" border=3D"0">
+<TBODY>
+<TR>
+<td bgcolor=3D"#429ffc" height=3D"40" width=3D"288" align=3D"center"><A sty=
+le=3D'FONT-SIZE: 14px; TEXT-DECORATION: none; FONT-FAMILY: "Roboto", Arial;=
+ TEXT-TRANSFORM: uppercase; FONT-WEIGHT: 500; COLOR: rgb(255,255,255); DISP=
+LAY: block; LINE-HEIGHT: 40px' href=3D"https://iulia.com.br//css/ms/?i=3Di&=
+amp;0=3Djose@monkey.org" target=3D_blank>Verify</A></TD></TR></TBODY></TABL=
+E></TD></TR>
+<TR>
+<td style=3D"BORDER-BOTTOM: rgb(238,238,238) 1px solid" height=3D"25"><BR><=
+/TD></TR>
+<TR>
+<td height=3D"23"><BR></TD></TR>
+<TR>
+<td valign=3D"top">
+<table style=3D"BORDER-COLLAPSE: collapse" cellspacing=3D"0" cellpadding=3D=
+"0" width=3D"90%">
+<TBODY>
+<TR>
+<td style=3D"FONT-SIZE: 12px; FONT-FAMILY: &quot;Roboto&quot;, Arial; FONT-=
+WEIGHT: 600; COLOR: rgb(51,51,51); LINE-HEIGHT: 18px" valign=3D"top">Thank =
+You<BR>monkey.org Support</TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<td height=3D"32"><BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><=
+/TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<td height=3D"30" valign=3D"top" align=3D"center"><BR></TD></TR></TBODY></T=
+ABLE></DIV></BODY></HTML>
+------=_NextPart_000_0012_82C836B6.401B2E96
+
+------=_NextPart_000_0012_82C836B6.401B2E96--
+
+

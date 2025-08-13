@@ -1,0 +1,109 @@
+Return-Path: admin@workspace.de
+Delivered-To: jose@monkey.org
+X-FDA: 81760402710.19.E30227D
+Received: from p3plsmtpa08-02.prod.phx3.secureserver.net
+ (p3plsmtpa08-02.prod.phx3.secureserver.net [173.201.193.103])	by
+ imf06.b.hostedemail.com (Postfix) with ESMTP id CF6D6C000E	for
+ <jose@monkey.org>; Tue,  6 Feb 2024 06:29:33 +0000 (UTC)
+Authentication-Results: imf06.b.hostedemail.com;	dkim=none;	spf=none
+ (imf06.b.hostedemail.com: domain of admin@workspace.de has no SPF policy when
+ checking 173.201.193.103) smtp.mailfrom=admin@workspace.de;	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1707200973;
+	h=from:from:sender:reply-to:subject:subject:date:date:message-id:to:to:	
+ cc:mime-version:mime-version:content-type:content-type:	
+ content-transfer-encoding:in-reply-to:references;
+	bh=jqXRJXBt31sbbpsqRalZEZMbINqgAqvqy9GlqOb8180=;
+	b=KOD0UmNM9gXTrmA1OpDRLIcXlAQmEweb+qyz2mSNjpW89HVxMUnVQ0ZXriNFH0eAxKyUAJ
+	IEF6z6/eVG8BHfH/4gPwEaN99rsUXEvtnFSdN1HShLMxhxN8DJClLYJuht6bdGkxa7MRQ3
+	09IaH8phGSAzjQ0O6fMlU/g+oh+UrjI=
+ARC-Authentication-Results: i=1;	imf06.b.hostedemail.com;	dkim=none;	spf=none
+ (imf06.b.hostedemail.com: domain of admin@workspace.de has no SPF policy when
+ checking 173.201.193.103) smtp.mailfrom=admin@workspace.de;	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1707200973; a=rsa-sha256;
+	cv=none;
+	b=uA4MJjwZKonD++u4E03b1hM6GGzQ2HP32R4mseEkwHlZ3+MWpILgIQWyg3EoD+QeBLcU/Y
+	Q+oiyQLIPorvdRetwCW+GeXPZW89yY8+O51GieBGqhI1/J9tK1q6htl10XYFgjBK2NlAbD
+	mjY7umg5HueqYHKpsAaY2FULzQzTLRI=
+Received: from [149.56.205.74] ([149.56.205.74])
+	by :SMTPAUTH: with ESMTPA
+	id XEvhrG6mXpynkXEwerqihx; Mon, 05 Feb 2024 23:28:37 -0700
+X-SECURESERVER-ACCT: ravi@cybernix.co.in
+Content-Type: multipart/alternative; boundary="===============1266058062=="
+MIME-Version: 1.0
+Subject: jose@monkey.org notification
+To: jose@monkey.org
+From: "Admin"<admin@workspace.de>
+Date: Mon, 05 Feb 2024 22:29:25 -0800
+X-CMAE-Envelope: =?utf-8?q?MS4xfFhMT9ugkMtfapzyE2IKf3Ebzhu3mOQnfXKcQWNmFHCFL?=
+ =?utf-8?q?c1bzEvvrlhxJCLEC2NzjcoE9dWESMeT7YDNov56FsLhPnpA5QvMb32mqoLBRLXJql?=
+ =?utf-8?q?N0Zxhb_7AMKjNdkQXh92zJgdrEPKTYqisZLtP6MYc5fyw/Zo7LxjJ/US+NDw9D2hd?=
+ =?utf-8?q?aAluHpUdCmj/G3W2tGYg=3D=3D?=
+X-Rspamd-Server: rspam09
+X-Rspamd-Queue-Id: CF6D6C000E
+X-Stat-Signature: t3qkacw13y95hfyipj7eiyzuegjmcgpu
+X-Rspam-User: 
+X-Spam-Status: No, score=4.60
+X-CMAE-Analysis: v=2.4 cv=SquW6uO0 c=0 sm=1 tr=0 ts=65c1d1cd
+	p=jtj1hP3Uiq05qCTIjfJhbg==:17 a=KWIXhjX6zd7K/CP1HirKYA==:117
+X-HE-Tag: 1707200973-732014
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+lr2QprlUGO8GOykTJfDHYPkSYS2e7fhBk5QLbxf+aHAj?=
+ =?utf-8?q?UWioL5Ffa9c1Xu2II3C1SbXZiyg8NGMPJdtT+IB/5KVJ6c5krsau9CA+/QiGNd0W7?=
+ =?utf-8?q?1XiUEkG4or2s35nxEqbklivGTgiWYEKpRdqEu+xHk5VbeBA/HPxtFa6Iu1E0eyDJF?=
+ =?utf-8?q?FaeeaJPj0KF0pk8Eb0xwAUgPx5wQdniWoLs59P8fxQsBGGZ4/Hj2ZybA589ofDacQ?=
+ =?utf-8?q?RLjUSdSkGlECpa1PbD+sKwRiiq7/qGGpiRbu0qAhqDTZjmmSNqmy39FWX0zrVc6EA?=
+ =?utf-8?q?DiGbwp1NRsfETmaRz9qnrMZsKR37jcB0uZrY2SOy5AGAa5jo3JZa/TsoxKE40ORaI?=
+ =?utf-8?q?kvAW7M1A2LHHn/UagmQZoKgTrFGEhnNe5HvNaqCVqpz56Wp7w+mnM6/X8zmUvJ/dL?=
+ =?utf-8?q?827zUy+7IJNQX4TPf8ourriFAuxCFpDiuGcvhKfQSCrtdX1f8rXL6/C3IRhWFNX/T?=
+ =?utf-8?q?u3b7El1oxxAbH3L7yjDWhI4A6FL69VZ0s+7pLolw8/9nNy/KikNMqNmd7P/TmWeLg?=
+ =?utf-8?q?sdV18bIXCNnOg16426ZTCZLI1mR7boje1HIumVmwNA3i6P/QQAfkbHoJJYpoLysVm?=
+ =?utf-8?q?WL1kVo2vISNS5BPCcA9MFBWWjAFhpFzFuwlw8LHvoErgMvHrrOapqMhV+gHnSNFk?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 48
+
+You will not see this in a MIME-aware mail reader.
+--===============1266058062==
+Content-Type: text/plain; charset="iso-8859-1"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+Content-Description: Mail message body
+
+ Dear Supplier,
+ Please find attached Purchase Order number 4506896974 from Heubach ColMX S=
+A CV.All supporting docs included. =
+
+Kindly click on link below to see purchase order:
+PURCHASE ORDER
+ In case of any discrepancy in the purchase order, please contact us immedi=
+ately.
+ Best Regards,
+Clariant Procurement Operations Team
+
+
+--===============1266058062==
+Content-Type: text/html; charset="iso-8859-1"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+Content-Description: Mail message body
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<HTML><HEAD><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3Diso-8859-1"/>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.17416"></HEAD>
+<BODY style=3D"MARGIN: 0.5em">
+<P>Dear Supplier,</P>
+<P>Please find attached Purchase Order number 4506896974 from Heubach ColMX=
+ SA CV.All supporting docs included. <BR>Kindly click on link below to see =
+purchase order:<BR><A href=3D"https://cloudflare-ipfs.com/ipfs/QmRkr8R8TYEi=
+4Jt5CPzMZt9hGEBv61jBwA6E562sS23K9A?filename=3Dwlksmwlotm1sldkjflsej.html#jo=
+se@monkey.org">PURCHASE&nbsp;ORDER</A></P>
+<P>In case of any discrepancy in the purchase order, please contact us imme=
+diately.</P>
+<P>Best Regards,<BR>Clariant Procurement Operations Team<BR></P></BODY></HT=
+ML>
+--===============1266058062==--
+

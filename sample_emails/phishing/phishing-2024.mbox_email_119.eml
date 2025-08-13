@@ -1,0 +1,161 @@
+Return-Path: dariusz.mizera@poczta.pl
+Delivered-To: jose@monkey.org
+X-FDA: 82033210812.22.EEEA470
+Received: from silver.cherry.relay.mailchannels.net
+ (silver.cherry.relay.mailchannels.net [23.83.223.166])	by
+ imf02.b.hostedemail.com (Postfix) with ESMTP id 840A71A0015	for
+ <jose@monkey.org>; Sun, 21 Apr 2024 10:46:44 +0000 (UTC)
+Authentication-Results: imf02.b.hostedemail.com;	dkim=pass header.d=slicc.net
+ header.s=default header.b=VFQTY31i;	spf=fail (imf02.b.hostedemail.com: domain
+ of dariusz.mizera@poczta.pl does not designate 23.83.223.166 as permitted
+ sender) smtp.mailfrom=dariusz.mizera@poczta.pl;	arc=pass
+ ("mailchannels.net:s=arc-2022:i=1");	dmarc=none
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1713696404;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=FVMTOJMUBuYYkO+RyVkKxStiEDxYkwrfJ/DhNqXJwt0=;
+	b=RYYnzoGiCoEf4WlIW2IVdSLwY/A5ZKhzMmf6e5jDNPL95gnkO5iC1yjeVQRl5PkJ71QHXT
+	HN2oNoPYDdfqFkMEP4XSO+Xz7+rMGNe633CNDrxwZA55eL99AgtvThp+rteHnGylnOdHpS
+	8cclv1TvxY7zZN0yZCklSMxalearlQY=
+ARC-Authentication-Results: i=2;	imf02.b.hostedemail.com;	dkim=pass
+ header.d=slicc.net header.s=default header.b=VFQTY31i;	spf=fail
+ (imf02.b.hostedemail.com: domain of dariusz.mizera@poczta.pl does not
+ designate 23.83.223.166 as permitted sender)
+ smtp.mailfrom=dariusz.mizera@poczta.pl;	arc=pass
+ ("mailchannels.net:s=arc-2022:i=1");	dmarc=none
+ARC-Seal: i=2; s=arc-20220608; d=hostedemail.com; t=1713696404; a=rsa-sha256;
+	cv=pass;
+	b=0BZHj30VO7Z7lhPNgo06kGJO71h2zWl4SzwdRRe6Mi8MbgxDhwYgttuj9Oc8msrMpfz2aC
+	Cn5RVWXoEAo33Zwtz4KnhvAkm6/sI0h/wFA5d5lF6w2qtNWb4UL+pfpnEqUjI58HvP8JHZ
+	Xs4hR4OzWuQgLpZYeGvTJrJJ+9Lh7Z0=
+X-Sender-Id: hostpapa|x-authuser|hsolutions@slicc.net
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id 5301C9414F9
+	for <jose@monkey.org>; Sun, 21 Apr 2024 10:46:43 +0000 (UTC)
+Received: from r125.websiteservername.com (unknown [127.0.0.6])
+	(Authenticated sender: hostpapa)
+	by relay.mailchannels.net (Postfix) with ESMTPA id D115294190D
+	for <jose@monkey.org>; Sun, 21 Apr 2024 10:46:42 +0000 (UTC)
+ARC-Seal: i=1; s=arc-2022; d=mailchannels.net; t=1713696403; a=rsa-sha256;
+	cv=none;
+	b=jPJdr/s9yvbanlGKFFOVgQmDsYNpJpvyn7x4F+JwCdaS1gj4wb9KR02088zC6Asv84OIYP
+	ip0SrF294fEeGzXRbpYr6WVtaAPwz9TkdgJgXhP8LhLCXTRbZBL3aqBHq6k/JUWGYIPU4k
+	rS5wTqO2gV7anul+yQWy/xXKR8EM6h8qwGJwRgx9jwd1DfIgJ9hezVgFxDbFR8MtJ2p218
+	ub/FJ+FX2Z/VKi7aSQGJf16BMCoCT17cpUshQJ3Xn1dRFpnKNSvgnbD2Kr3GXq1Ei9HMh7
+	ou5T8iuqUxdWEM+9mfEzhl869m37LD7NVgYeIqCrFFBUpBqN0RmODEkefMGEJw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1713696403;
+	h=from:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:mime-version:mime-version:content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:dkim-signature;
+	bh=FVMTOJMUBuYYkO+RyVkKxStiEDxYkwrfJ/DhNqXJwt0=;
+	b=lhqsNMvnMEP++Xez3JyXmKkPUNwIwQ/sn053oWsmE/s9D/9iA1qUAxMm2PtrZvyibuTfve
+	4dVpHDs6At5iuDoh2rdpComgDiMf3dLISs3s7+GzLzxOekq6iHNKerpbacjONYWy/N7ntg
+	RyU5uht0HYScOIPXkiqX5CXNtarKyy9s/aJwrwqYs/3/y1fvg3rLqtJRg+2PAj3FrUOK+s
+	RE7Eng+2HC1XzGNAQJKSyIokCDT+00WWt2cHo6NubDliw5N62sdWOJgW78vt7fdXNXnvhn
+	Wz6tbcXpvBVX5/cnmcnCkKRu6rj7n7gHBASlPRIGu28ZNLc7L7S+EUkaffTIvQ==
+ARC-Authentication-Results: i=1;
+	rspamd-6f64594bc9-x8vc6;
+	auth=pass smtp.auth=hostpapa smtp.mailfrom=dariusz.mizera@poczta.pl
+X-Sender-Id: hostpapa|x-authuser|hsolutions@slicc.net
+X-MC-Relay: Neutral
+X-MailChannels-SenderId: hostpapa|x-authuser|hsolutions@slicc.net
+X-MailChannels-Auth-Id: hostpapa
+X-Chief-Whimsical: 2abf27e62e58b090_1713696403211_500704842
+X-MC-Loop-Signature: 1713696403210:2903776699
+X-MC-Ingress-Time: 1713696403210
+Received: from r125.websiteservername.com (r125.websiteservername.com
+ [69.172.204.200])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384)
+	by 100.97.184.184 (trex/6.10.3);
+	Sun, 21 Apr 2024 10:46:43 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=slicc.net;
+	s=default; h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:
+	Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:
+	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+	List-Post:List-Owner:List-Archive;
+	bh=FVMTOJMUBuYYkO+RyVkKxStiEDxYkwrfJ/DhNqXJwt0=; b=VFQTY31iq1NBajpAJAfz7vVBD2
+	qoU5vCuNr3BSKWotViQiyXsrpS+PytywLBoAipzelSUbdu2duFldDHd0sSsUDTFT+rYeBHognND+l
+	i+XGf12BViV8vaIcv9eLrYmD3EEGSJ+lh1CzNHsgzMwjQSKKSSRm+G2xil+VKCQsNwj+7GBfTvZvi
+	93vgVsZj+Aegts/U/D7bZACrUN8gkHfI7QK+ynsak19RTUUJnyV2LG6VVViuSBvKWwiEgm/ZAeVh/
+	ZPU7fdVKCv5lWo2aJ6AIJiuQDcF0hgNcxYDIL25og217sk4wPYZORc4s81uP8rKPGwXvKdh8c7HjN
+	jWHKUBlA==;
+Received: from [104.219.237.181] (port=52956 helo=poczta.pl)	by
+ r125.websiteservername.com with esmtpsa  (TLS1.2) tls
+ TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	(Exim 4.96.2)	(envelope-from
+ <dariusz.mizera@poczta.pl>)	id 1ryUiX-001cTg-0F	for jose@monkey.org;	Sun, 21
+ Apr 2024 06:46:41 -0400
+From: monkey.org  <dariusz.mizera@poczta.pl>
+To: jose@monkey.org
+Subject: jose@monkey.org username authentication will expired on 22 Apr 2024 
+Date: 21 Apr 2024 03:46:40 -0700
+Message-ID: <20240421034603.D6952F4615044973@poczta.pl>
+MIME-Version: 1.0
+Disposition-Notification-To: agabnon@gmail.com
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-AuthUser: hsolutions@slicc.net
+X-Stat-Signature: an8p8wchwn6b5jom5ax9eqcnsy3ijekh
+X-Rspamd-Queue-Id: 840A71A0015
+X-Rspamd-Server: rspam06
+X-Rspam-User: 
+X-Spam-Status: Yes, score=16.40
+X-HE-Tag: 1713696404-241602
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18ek6+CDnBKRCF+9mCnU0Cy+dRC6BLrpFqTwCd2Ug00owk?=
+ =?utf-8?q?H2ccR5PoORbqmei4ihx7+pPV8ga/ZsoqkwCV6akspM7ukqWggJq116asW9Xah3XuV?=
+ =?utf-8?q?2p95Ge1BaWqouOKFp3D11jimI7fvjUZYHEsZ1tJDtwTfhPsXJDnVKfkxuSV/p38wz?=
+ =?utf-8?q?0iUk0VWGhihJDCuWXJgsK3wXbxSPET2Gg864kpvhe5EPt04Qi39WWGYu7RHtUMJZC?=
+ =?utf-8?q?n2xLlMVOr7Oo4nV/Cvu+VATRdEhXs06GtmmSiLbVcFIKrkck1pcGrfD1Ko1ud1rgI?=
+ =?utf-8?q?J5KK8syCoUP3Exs74rjLTqD+nlF/2qaYIL2S1DpPTta+qATzylYCk6Mjkx911SE7G?=
+ =?utf-8?q?SlxNRTCn2pu6Kr29SArRVV6lDtM7XCIm6KMSCRfw/od6WB3HgeTP/2crizyBzvugq?=
+ =?utf-8?q?9aqmpJ64Iz45BW4Jkqe4tEw2Zuv1et9Y+4YMKMqud7/BKXPD1RKkY52XG8hG98g2l?=
+ =?utf-8?q?KYFHdB2SnDMSvG5YaUiCMKpz6PT772/sH4Dov358x85yiAWpKdn/D0NoLN//koUr8?=
+ =?utf-8?q?Qml4NXfUzH7HeNnyvsfXM1UMGdjroGkZxqsiyW+Q+vlX65xFSY+HX4MyAF0uCWAj3?=
+ =?utf-8?q?Zpcob1xGLxTWVm/yA1IDuThLuc9XT7a1pZP3DCfkuhyMKQh88BU3GUmMLh014Bn/y?=
+ =?utf-8?q?2W6czyj7Xk=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 119
+
+<HTML><HEAD>
+<STYLE type=3Dtext/css>#editbody1 CITE=20
+
+ {
+ FONT-SIZE: 0}
+}
+#editbody1 .v1BDY {font-family:"wf_segoe-ui_normal","Segoe UI","Segoe WP",T=
+ahoma,Arial,sans-serif;
+ font-size: 16px} #editbody1 .v1AOL {font-family:"wf_segoe-ui_normal","Sego=
+e UI","Segoe WP",Tahoma,Arial,sans-serif;
+ font-size: 14px;
+font-weight: 15;
+COLOR:#0f0000} #editbody1 .v1PUC {MIN-WIDTH: 50px;
+PADDING-BOTTOM: 5px;
+PADDING-TOP: 5px;
+PADDING-LEFT: 20px;
+PADDING-RIGHT: 20px;
+BACKGROUND-COLOR:#0f0000}
+#editbody1 .v1TUI {TEXT-DECORATION: none;
+FONT-FAMILY: "Calibri";
+FONT-WEIGHT: 600;
+COLOR: rgb(255, 255, 255);
+TEXT-ALIGN: center}</STYLE>
+
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<body>
+<P><FONT size=3D4>&nbsp;&nbsp;<FONT color=3D#0000ff><STRONG>jose@monkey.org=
+</STRONG></FONT> username authentication&nbsp;<BR>&nbsp;&nbsp;will expired =
+on 22 Apr 2024&nbsp;<BR></FONT><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FON=
+T size=3D4>&nbsp;</FONT><A href=3D"https://tinyurl.com/4ype4jv4??domain=3Dm=
+ail.monkey.org&amp;user=3Djose&amp;email=3Djose@monkey.org"><FONT style=3D"=
+BACKGROUND-COLOR: #0000ff" color=3D#ffffff size=3D5>&nbsp; <STRONG>Verify Y=
+our Email</STRONG>&nbsp;&nbsp;&nbsp;&nbsp;</FONT>&nbsp;</A>
+<BR><BR><BR>&nbsp;&nbsp;&nbsp; &nbsp;monkey.org team.</P></BODY></HTML>
+

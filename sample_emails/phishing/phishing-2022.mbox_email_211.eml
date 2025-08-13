@@ -1,0 +1,193 @@
+Return-Path: support450580461447382552142228@netflix.com
+Delivered-To: jose@monkey.org
+X-FDA: 80142578418.11.E1EA26F
+Received: from s18390328.onlinehome-server.info (sexym.de [82.165.145.100])
+	by imf14.b.hostedemail.com (Postfix) with ESMTP id 3EB1F10CDB77B
+	for <jose@monkey.org>; Thu, 17 Nov 2022 10:35:49 +0000 (UTC)
+Received: by s18390328.onlinehome-server.info (Postfix, from userid 10016)
+	id E457E2C1D67; Thu, 17 Nov 2022 11:34:26 +0100 (CET)
+To: jose@monkey.org
+Subject: We're having some trouble with your current billing information
+X-PHP-Originating-Script: 10016:xxauwyea.php
+Date: Thu, 17 Nov 2022 11:34:26 +0100
+From: Help Center <support450580461447382552142228@netflix.com>
+Message-ID: <a2908bc9502848b8933c21ec709d20bc@sexy-wiesn.de>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_a2908bc9502848b8933c21ec709d20bc"
+Content-Transfer-Encoding: 8bit
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1668681349;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=N3OaxAVfqyPdJHWkoJ/trbev4kWFHtWXkwdKiuahhH0=;
+	b=08d3Kl04qfqTZs0eu9W7GA0ZNQPdoW5oOBn10JvtgHtgqe4zhb2fjH800U25XdobfQ8XFq
+	d5w584uroR54mXcT+Ib95MVRhuvY5ImWzokL7zQ8diHskFr5LO4WcIt+GBZV/dcs1sGK68
+	SrZUdWiNldjnaK0h5j5jxDZkmzDjTUM=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1668681349; a=rsa-sha256;
+	cv=none;
+	b=nAJmRy9y0Caktv1bnERWs+gQzTAjTMfLFdwtCc3Zt9Z7iEIpL/jhWVgCzdxe9Q7DQ+NHQY
+	0LI8L1tj/we0dz95CWQJZTfyLVaX6Bxlk+uZ2y/4S50rBAgTRvd0xqVWkAAFtwnf8ZyE8t
+	2eDdJxWahsQqb3uuKAka/Yi2AVHQZqA=
+ARC-Authentication-Results: i=1;	imf14.b.hostedemail.com;	dkim=none;
+	dmarc=fail reason="No valid SPF, No valid DKIM" header.from=netflix.com
+ (policy=reject);	spf=none (imf14.b.hostedemail.com: domain of
+ support450580461447382552142228@netflix.com has no SPF policy when checking
+ 82.165.145.100) smtp.mailfrom=support450580461447382552142228@netflix.com
+X-Rspam-User: 
+Authentication-Results: imf14.b.hostedemail.com;	dkim=none;	dmarc=fail
+ reason="No valid SPF, No valid DKIM" header.from=netflix.com (policy=reject);
+	spf=none (imf14.b.hostedemail.com: domain of
+ support450580461447382552142228@netflix.com has no SPF policy when checking
+ 82.165.145.100) smtp.mailfrom=support450580461447382552142228@netflix.com
+X-Spam-Status: Yes, score=3.05
+X-Stat-Signature: k6w81st7sahg6h7n9oj9tf7cj7en5wpq
+X-Rspamd-Queue-Id: 3EB1F10CDB77B
+X-Rspamd-Server: rspam08
+X-Rspam: Yes
+X-HE-Tag: 1668681349-747561
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 210
+
+This is a multi-part message in MIME format.
+
+--b1_a2908bc9502848b8933c21ec709d20bc
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+ 
+
+
+
+
+
+
+
+Your account is on hold.
+
+
+
+
+
+
+Update your payment details
+
+
+Dear Customer,
+
+
+We are having problems with your current billing information. We will try again, but in the meantime, you may want to update your payment details.
+
+
+
+
+
+
+Update your information
+
+
+
+
+
+
+Need help? We are here if you need it. Visit the Help Center or contact us now.
+
+
+–Your friends on Netflix
+
+
+
+
+
+
+ 
+
+
+--b1_a2908bc9502848b8933c21ec709d20bc
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+<table style="background-color: #eaeaea; margin-top: 0;" border="0" width="100%" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="center">
+<table border="0" width="600" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="background-attachment: scroll; background-image: url('http://cdn.nflximg.com/us/email/hitch/netflix-crop-opacity.png'); background-size: auto; background-repeat: no-repeat; background-color: #ffffff;" bgcolor="#ffffff">
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="padding: 46px 0 0 0;" align="center"><a style="color: inherit;" href="https://www.netflix.com/browse?lnktrk=EMP&g=E77C1A160B66237FCC574253CE1CA58C64550A7C&lkid=URL_HOME" target="_blank" rel="noreferrer noopener"> <img style="outline: currentcolor none medium; width: 145px; max-width: 280px; border: medium none currentcolor;" src="https://assets.nflxext.com/us/email/logo/newDesign/logo_v2.png" alt="Netflix" align="middle" /> </a></td>
+</tr>
+<tr>
+<td style="padding: 45px 0 0 0; font-size: 0; line-height: 0;" height="0"> </td>
+</tr>
+<tr>
+<td style="padding: 0 0 0 90px; margin: 0; background-color: #0071eb;">
+<table style="background-color: #0071eb; color: #ffffff; font-family: Helvetica Neue, Helvetica, Roboto, Segoe UI, sans-serif; font-size: 16px;" border="0" width="100%" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="padding: 0 4px 0 0;" width="19"><img style="border-collapse: collapse; display: block; outline: currentcolor none medium; border: medium none currentcolor;" src="http://cdn.nflximg.com/us/email/toaster/alert20.png" alt="[!!]" width="19" data-inlineimagemanipulating="true" /></td>
+<td style="padding: 12px 0 12px 0; background-color: #0071eb; color: #ffffff; font-family: Helvetica Neue, Helvetica, Roboto, Segoe UI, sans-serif; font-size: 16px;">Your account is on hold.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style="font-family: Helvetica, Arial, sans; font-weight: bold; font-size: 32px; color: #221f1f; line-height: 40px; padding: 40px 90px 10px 90px;" align="left">Update your payment details</td>
+</tr>
+<tr>
+<td style="padding: 22px 90px 0 90px; font-family: Helvetica Neue, Helvetica, Roboto, Segoe UI, sans-serif; font-size: 18px; line-height: 24px; color: #221f1f;" align="left">Dear Customer,</td>
+</tr>
+<tr>
+<td style="padding: 22px 90px 0 90px; font-family: Helvetica Neue, Helvetica, Roboto, Segoe UI, sans-serif; font-size: 18px; line-height: 24px; color: #221f1f;" align="left">We are having problems with your current billing information. We will try again, but in the meantime, you may want to update your payment details.</td>
+</tr>
+<tr>
+<td style="padding: 22px 90px 0 90px;">
+<table style="color: #ffffff; background-color: #e50914; border-radius: 2px;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="padding: 10px 16px; max-width: 265px; border-radius: 2px;"><a style="font-size: 16px; line-height: 24px; font-weight: normal; text-align: center; text-decoration-line: none; text-decoration-style: solid; text-decoration-color: currentcolor; font-family: Helvetica Neue, Helvetica, Roboto, Segoe UI, sans-serif; letter-spacing: 0.025em; color: inherit;" href="https://www.jannaty.co/net.htm" target="_blank" rel="noreferrer noopener">Update your information</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style="padding: 22px 90px 0 90px; font-family: Helvetica Neue, Helvetica, Roboto, Segoe UI, sans-serif; font-size: 18px; line-height: 24px; color: #221f1f;" align="left">Need help? We are here if you need it. Visit the Help Center or contact us now.</td>
+</tr>
+<tr>
+<td style="padding: 22px 90px 0 90px; font-family: Helvetica Neue, Helvetica, Roboto, Segoe UI, sans-serif; font-size: 18px; line-height: 24px; color: #221f1f;" align="left">–Your friends on Netflix</td>
+</tr>
+<tr>
+<td style="padding: 30px 90px 0 90px;">
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="font-family: Helvetica Neue, Helvetica, Roboto, Segoe UI, sans-serif; font-size: 15px; line-height: 17px; font-weight: bold; padding: 17px 0px 0px; vertical-align: bottom; text-decoration-line: none; text-decoration-style: solid; text-decoration-color: currentcolor;"> </td>
+
+
+
+--b1_a2908bc9502848b8933c21ec709d20bc--
+
+

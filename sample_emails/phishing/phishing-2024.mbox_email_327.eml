@@ -1,0 +1,196 @@
+Return-Path: notice@karan-ae.com
+Delivered-To: jose@monkey.org
+X-FDA: 82744106340.24.1AD603E
+Received: from vps.thiagho.com (vps.thiagho.com [144.126.154.42])
+	by imf11.b.hostedemail.com (Postfix) with ESMTP id 8DDA280002
+	for <jose@monkey.org>; Sun,  3 Nov 2024 08:28:15 +0000 (UTC)
+Authentication-Results: imf11.b.hostedemail.com;	dkim=pass
+ header.d=mt10.com.br header.s=default header.b=lbDKDxiH;	spf=softfail
+ (imf11.b.hostedemail.com: 144.126.154.42 is neither permitted nor denied by
+ domain of notice@karan-ae.com) smtp.mailfrom=notice@karan-ae.com;	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1730622382;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=ihQI84ZDKhi9+DI2XhvVMqSxnz8KxVcda8z4TiLZKOA=;
+	b=va9/wXgEcCzOxpdEv9EUUIiHI0edFKRZkTtmijdpAFz6ErUx0ig+BVgKzMobRB4zh/O/Y/
+	jnPIEQRSTtfSEVV9dUDk9cW47BpmwLLTC1B2G5yynfQCA4D3WnKnw184X576c3uxltbUu3
+	5N1sPLzl/VKCGpFi+FkxtBfJDKuA+Ow=
+ARC-Authentication-Results: i=1;	imf11.b.hostedemail.com;	dkim=pass
+ header.d=mt10.com.br header.s=default header.b=lbDKDxiH;	spf=softfail
+ (imf11.b.hostedemail.com: 144.126.154.42 is neither permitted nor denied by
+ domain of notice@karan-ae.com) smtp.mailfrom=notice@karan-ae.com;	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1730622382; a=rsa-sha256;
+	cv=none;
+	b=QMaX7F0OfV0SHIdKfpD6eqnZqT3VRJBVtgBX/fF0XwrslBhn/kt9zmdgNbkdODVc4CpksO
+	Mk20lH9Z9ApsDChqGX6Y1j3BGJq5gEPYJ8Fz9Xpy/nZNhEV9yd9LRXtgNAB6wMx8BTLkP4
+	OzYltown1R8IJBi/FoRiAfr/MYGmTmo=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=mt10.com.br
+	; s=default; h=Content-Type:MIME-Version:Message-ID:Date:Subject:To:From:
+	Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:Content-Description:
+	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+	List-Post:List-Owner:List-Archive;
+	bh=ihQI84ZDKhi9+DI2XhvVMqSxnz8KxVcda8z4TiLZKOA=; b=lbDKDxiHRiC759oc/jBw5VVV9e
+	Btg0cQfNUKSMoI7nPCqDzt5xkQn8HEskkjbpqhbMvT7MijJ+MGUTQJAr3gSS/3DUeILKCaQNuNasn
+	LcOacUTUavjG7YGdufdWe0GPoAEX+1qEaOrfqt3gbzClo/b8ZcbHDjJ8DNvjSokYE2/5HbcBEyOuw
+	H6ujFPU7r8gUKaDU2OxKFNWwhBJy3uQNxWHdNmgm/Lr+va95gv5savVeIEaCC1m69uHa8SkmyyszW
+	xACuhvqYRswFClfxHCm8DacJGMjpCuV3G4jt3IVIXLrPDHCDL0J1ftVkbN6LJL5LjhG7YeTOUpLEf
+	xD1+saDg==;
+Received: from [103.114.217.9] (port=59321 helo=karan-ae.com)	by
+ vps.thiagho.com with esmtpsa  (TLS1.2) tls
+ TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	(Exim 4.96.2)	(envelope-from
+ <notice@karan-ae.com>)	id 1t6teG-0006pl-0S	for jose@monkey.org;	Fri, 01 Nov
+ 2024 11:33:16 -0400
+From: Monkey Upgrade Terminal  <notice@karan-ae.com>
+To: jose@monkey.org
+Subject: [WARNING] Your Mailbox is storage Full =?utf-8?b?4pyF?= 
+Date: 02 Nov 2024 04:33:50 -0700
+Message-ID: <20241102043350.975B5AF02C6081FA@karan-ae.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0012_CCB07D3F.B6150450"
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - vps.thiagho.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - karan-ae.com
+X-Get-Message-Sender-Via:
+ vps.thiagho.com: authenticated_id: back-up@mt10.com.br
+X-Authenticated-Sender: vps.thiagho.com: back-up@mt10.com.br
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspam-User: 
+X-Rspamd-Server: rspam03
+X-Rspamd-Queue-Id: 8DDA280002
+X-Stat-Signature: 5s8ihhn4f5sfjht9u6mf9hrzupzyxaew
+X-Spam-Status: Yes, score=22.66
+X-HE-Tag: 1730622495-927448
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+e4Wo2ZfvECkJq9aK+1tU1dwumvnDKd8lcbXJaqe0Ub9t?=
+ =?utf-8?q?LnXczD/0/nVNJ0Fn1AAM/YJBjEKIspDbbnoqYJt7y5lMwzngSq2oEtSzY/P/Y7+Dn?=
+ =?utf-8?q?vFZCDvIWeDz71mUEmm3VsLwqMMgQGCoAHm501rameVcJ0j9947P1Ongoyrqm65lNA?=
+ =?utf-8?q?dhV4rsfe2wcUoZvHDKRSX8Dx5n5cZv0lANMEw0RV7uhMFPG534NcSI3icF1d8FO8s?=
+ =?utf-8?q?njh8Ff/eINjNLgEJZCCwVSQuVzWWZ0a+hmtpAN7Pt8tfMyZzEFZHv2CgybIPlOwYc?=
+ =?utf-8?q?UaXp9EltATJJUFifhQsLAD6szMTD6ybGRB3jtTCHJRhS97czMHiK8ivisa6YVstKP?=
+ =?utf-8?q?3pW/eLgjTqSIiBGLcQr4v88E0pO/R6t16Vc9JNoyff5LsiRg2ZUq2TTMYgQZejOzd?=
+ =?utf-8?q?RVdFI+hBcDA61QTPpliuCIoSWo8VIz7akZrAXliGG/IVFFCC3f1+5hFsxGUJcJECR?=
+ =?utf-8?q?cYIxIwNsJ+jWQvNJvlmPsYklMy5iGNeoz78Ge23m5mk+IVlCI50RpF7YiFQzPMdTj?=
+ =?utf-8?q?OUiqPMCwXz7CouAnhPzHyy65WBLFBfUPsKkJ7bxUnwGqWKY134od9XTPsswGCwZRm?=
+ =?utf-8?q?FNP109JF7g0D1mRT4pHuSqPlHP3F51NiMtQCv/S9neQ1IPy483RL4dbGRtmoTbjmt?=
+ =?utf-8?q?83TGEvhpLm+aA5J26ig41jsgj7fjO/xcxctdEpRw3mzmHsg16fJG9JF1CfnojqJSK?=
+ =?utf-8?q?hL7YvaLX0Ry8nK8iZXJRJvStkqevcMMOKuDKFZN/SGiU94P8pVW4stW4XfX5G4m4Q?=
+ =?utf-8?q?M82JY+M1KKrWhdiBIItjBecWngC2cGTNMWD1EhHyIalJ4CNbGKIXMZpI/I5t039QG?=
+ =?utf-8?q?u6YmAYD1eHcK/4EyMG5FusnNHXGlb/HD+o6HB1CerlPVauQgVB+V+VS05qFYkGOSE?=
+ =?utf-8?q?FaiGkqJ1whSKrGJKgc8MIw_67sWJ3WnVwEIotF3DHIDB6yrBa3XiKQYA+tOv8DUFQ?=
+ =?utf-8?q?6QbxrR0SDcewtHayVAQKxVGES39V271drwDtgsjypvPKNYdxm+cZidSZFjDRVDv8S?=
+ =?utf-8?q?dzZK7tdzcUPGQwq0gQgh9kSgxWr0rte5JjreBnGgBWzw4axiMqR/hnW5ROJTBeQL0?=
+ =?utf-8?q?k7EG1E+YmxrofYF14SatqZPjmhtFB56ieuT98jkrglcknbBr4Sy1xEbWtcyzvbLmT?=
+ =?utf-8?q?Z6MHjLjs+QoRJJh3F9zinkexMTbH25uuuYiB1i4f47VlevVLGxszg+19zHnBhLV6J?=
+ =?utf-8?q?nM7XSJrk0ycYELPN/CHFQfdokn26JKsK7pH2+KDiK4ylFeog02qLx/2BGPgo+Xfh8?=
+ =?utf-8?q?ap9E8Ce9fr61JTgW17/ynFipKVh7o3XSr5ujDHUJuF0rnHJ1vvMAD2WQGRn2sM8w/?=
+ =?utf-8?q?EsawWZwuOflJ6nFLkk/60I2/dcEeFbNrKeJe+nrCyQtDsqB7Hp6KkWZJrVff9QUCw?=
+ =?utf-8?q?8MsAvSIIGL+OOvQ3lVOGrrdtd+pi13vC+51VWcNgNFeWkVYFHEnFrmlTUWR5ZXzpP?=
+ =?utf-8?q?iUycOUOBcqM9IyGwMv2JfYFSZH3KweTsO5avAje5wanYlqUHG7h53VAYL1xvTkyFe?=
+ =?utf-8?q?h/uoKkCFEBKvl3tdlXRSm54icY/ZXxQPBbgvzNaLOFgqqJb/ybpmFZ6UTqRHk8S7Z?=
+ =?utf-8?q?YwibDNs8tNQUZ03CDPw6EK6I9fsPznyJJ5xdr7ym1vMybAAJOsPZ42Qyh4ZNt4KNj?=
+ =?utf-8?q?OcizkpKMJJi/xXlT+mVkGlk1NLBrGkLVGLPYuSEZC2wJ9z/xuwUru4Kni5Vx1rxpr?=
+ =?utf-8?q?qwsjHYuhvfsQfFMFzortc7B125oY2e39H7Auq3MgNufWNd8iuUjIaadjB4SiCAn6d?=
+ =?utf-8?q?55nnYBxVahnp1L43zwR5Vc90QjNKadYOx/hsjScaPs6dp/emQYUHjN2UJbTRshSPE?=
+ =?utf-8?q?m0asWA8EDvFTCo5N4P+TEV1d0szQyNsdqj113qSAiIztP?= IIOEdqUZQ/k=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 327
+
+
+------=_NextPart_000_0012_CCB07D3F.B6150450
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+no text
+------=_NextPart_000_0012_CCB07D3F.B6150450
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.19003"></HEAD>
+<body>Attention User:</SPAN></SPAN></FONT><SPAN style=3D"BOX-SIZING: border=
+-box; VERTICAL-ALIGN: inherit"> jose@monkey.org</SPAN>=20
+<P></P>
+<DIV style=3D"BOX-SIZING: border-box; FONT-SIZE: small; FONT-FAMILY: Arial,=
+ Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSF=
+ORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); OUTLINE-WIDTH: medium; F=
+ONT-STYLE: normal; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; LETTER-SPACI=
+NG: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-=
+caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: in=
+itial; text-decoration-style: initial;=20
+text-decoration-color: initial"><SPAN style=3D"BOX-SIZING: border-box; FONT=
+-SIZE: xx-large"><FONT style=3D"BOX-SIZING: border-box; VERTICAL-ALIGN: inh=
+erit; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none">Your Mailbox storage is 9=
+8% Full</FONT></SPAN></DIV>
+<DIV style=3D"BOX-SIZING: border-box; MARGIN-BOTTOM: 8px; FONT-SIZE: 1px; B=
+ORDER-TOP: rgb(187,187,187) 1px solid; HEIGHT: 8px; FONT-FAMILY: Arial, Hel=
+vetica, sans-serif; BORDER-RIGHT: rgb(187,187,187) 1px solid; WIDTH: 700px;=
+ WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: rgb(187,187,187) 1p=
+x solid; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); OUTL=
+INE-WIDTH: medium; FONT-STYLE: normal; OUTLINE-STYLE: none; BORDER-LEFT: rg=
+b(187,187,187) 1px solid; ORPHANS: 2; WIDOWS: 2;=20
+MARGIN-TOP: 10px; LETTER-SPACING: normal; TEXT-INDENT: 0px; font-variant-li=
+gatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px;=
+ text-decoration-thickness: initial; text-decoration-style: initial; text-d=
+ecoration-color: initial; border-image: none">
+<DIV style=3D"BOX-SIZING: border-box; BORDER-TOP: rgb(236,101,51) 1px solid=
+; HEIGHT: 6px; BORDER-RIGHT: rgb(236,101,51) 1px solid; WIDTH: 621px; BORDE=
+R-BOTTOM: rgb(236,101,51) 1px solid; OUTLINE-WIDTH: medium; OUTLINE-STYLE: =
+none; BORDER-LEFT: rgb(236,101,51) 1px solid; BACKGROUND-COLOR: rgb(236,101=
+,51); border-image: none"></DIV></DIV>
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: small; FONT-FAMILY: Arial, H=
+elvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFOR=
+M: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHAN=
+S: 2; WIDOWS: 2; MARGIN-TOP: 0px; LETTER-SPACING: normal; TEXT-INDENT: 0px;=
+ font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-st=
+roke-width: 0px; text-decoration-thickness: initial; text-decoration-style:=
+ initial; text-decoration-color: initial">
+<SPAN style=3D"BOX-SIZING: border-box; COLOR: rgb(159,159,159)"><FONT style=
+=3D"BOX-SIZING: border-box; VERTICAL-ALIGN: inherit; OUTLINE-WIDTH: medium;=
+ OUTLINE-STYLE: none"><SPAN style=3D"BOX-SIZING: border-box; OUTLINE-WIDTH:=
+ medium; OUTLINE-STYLE: none"><EM style=3D"BOX-SIZING: border-box">You are =
+currently using 4853.4 MB of 5000 MB available</EM><BR style=3D"BOX-SIZING:=
+ border-box"><BR style=3D"BOX-SIZING: border-box"><BR style=3D"BOX-SIZING: =
+border-box"><BR style=3D"BOX-SIZING: border-box">
+<A style=3D'BOX-SIZING: border-box; FONT-SIZE: 14px; FONT-FAMILY: "Google S=
+ans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif; MIN-WIDTH: 90px; C=
+OLOR: rgb(255,255,255); PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LE=
+FT: 24px; DISPLAY: inline-block; LINE-HEIGHT: 16px; PADDING-RIGHT: 24px; BA=
+CKGROUND-COLOR: rgb(65,132,243); text-decoration-line: none; border-radius:=
+ 5px' href=3D"https://ipfs.io/ipfs/QmUf8PQMne21qVv9vZ54hAr8rZT4BRLQnV7sbm1c=
+MHdoEb#jose@monkey.org" rel=3Dnoreferrer target=3D_blank>
+Upgrade Storage</A></SPAN></FONT></SPAN><BR style=3D"BOX-SIZING: border-box=
+"><BR style=3D"BOX-SIZING: border-box">&nbsp;</P>
+<P>
+<SPAN style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica, sans-serif;=
+ WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none;=
+ FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; WI=
+DOWS: 2; DISPLAY: inline !important; LETTER-SPACING: normal; BACKGROUND-COL=
+OR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; fon=
+t-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thi=
+ckness: initial; text-decoration-style: initial;=20
+text-decoration-color: initial">Monkey Notifications! <BR><BR><EM><FONT col=
+or=3D#000000 size=3D3 face=3D"Times New Roman">This is an automatic email n=
+otification. Do not reply!</FONT></EM></SPAN>
+ <SPAN style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica, sans-serif=
+; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none=
+; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; W=
+IDOWS: 2; DISPLAY: inline !important; LETTER-SPACING: normal; BACKGROUND-CO=
+LOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; fo=
+nt-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-th=
+ickness: initial; text-decoration-style: initial;=20
+text-decoration-color: initial"></SPAN></P></BODY></HTML>
+------=_NextPart_000_0012_CCB07D3F.B6150450--
+
+

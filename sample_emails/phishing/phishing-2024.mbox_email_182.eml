@@ -1,0 +1,451 @@
+Return-Path: g9ribard@enib.fr
+Delivered-To: jose@monkey.org
+X-FDA: 82241833254.33.01F0F7C
+Received: from smtpout02-ext4.partage.renater.fr
+ (smtpout02-ext4.partage.renater.fr [194.254.241.31])	by
+ imf11.b.hostedemail.com (Postfix) with ESMTP id 1333680015	for
+ <jose@monkey.org>; Mon, 17 Jun 2024 22:33:24 +0000 (UTC)
+Authentication-Results: imf11.b.hostedemail.com;	dkim=pass header.d=enib.fr
+ header.s=334D60F3-38D2-41CC-A313-276A274465E5 header.b=PIaZo08m;	spf=pass
+ (imf11.b.hostedemail.com: domain of g9ribard@enib.fr designates
+ 194.254.241.31 as permitted sender) smtp.mailfrom=g9ribard@enib.fr;
+	dmarc=pass (policy=none) header.from=enib.fr
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1718663601;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=kHDF5RN/IZKkLlCrBB8S8fzXhsxIWfl9+pSJC7+M4Xo=;
+	b=VE1zmgamdxWDaV9b4vK2jbpCZgN7XaCdflWc7aXW0xrBA4GPz/sMAwVIYWX+zz5/Jmpo2+
+	ONuvFY3a4VGk9pNbs4xk11pn9zif+g0ymLdRAn71lJNT8qGoYnKhtpoBhCnmltxf5KuiAz
+	lwWm0RlxYdggm0Z3tkoCEwsBChusl/U=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1718663601; a=rsa-sha256;
+	cv=none;
+	b=Zvn+/1aHu6frtsIZy/anubvQMqSCQRaXF9vWBAiC96G6gqAvmKZ2+8bxwyoq4Xz1q0VRjO
+	Zwymgh61r7BL0CJuYB6nRPpiujbSgqTK/PZ3L9SmVoFkxvL9N+ZWO3OlXDhD/y4DV67enh
+	ZX1UVyG6TN+B6qQZcCZ1KmPpKMUUfeE=
+ARC-Authentication-Results: i=1;	imf11.b.hostedemail.com;	dkim=pass
+ header.d=enib.fr header.s=334D60F3-38D2-41CC-A313-276A274465E5
+ header.b=PIaZo08m;	spf=pass (imf11.b.hostedemail.com: domain of
+ g9ribard@enib.fr designates 194.254.241.31 as permitted sender)
+ smtp.mailfrom=g9ribard@enib.fr;	dmarc=pass (policy=none) header.from=enib.fr
+Received: from zmtaauth02.partage.renater.fr (zmtaauth02.partage.renater.fr
+ [194.254.241.25])	by smtpout20.partage.renater.fr (Postfix) with ESMTP id
+ 11E83C2651	for <jose@monkey.org>; Tue, 18 Jun 2024 00:33:22 +0200 (CEST)
+Received: from zmtaauth02.partage.renater.fr (localhost [127.0.0.1])
+	by zmtaauth02.partage.renater.fr (Postfix) with ESMTPS id EDDCDA08BC
+	for <jose@monkey.org>; Tue, 18 Jun 2024 00:33:21 +0200 (CEST)
+Received: from localhost (localhost [127.0.0.1])
+	by zmtaauth02.partage.renater.fr (Postfix) with ESMTP id DF19DA08C9
+	for <jose@monkey.org>; Tue, 18 Jun 2024 00:33:21 +0200 (CEST)
+DKIM-Filter: OpenDKIM Filter v2.10.3 zmtaauth02.partage.renater.fr DF19DA08C9
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=enib.fr;
+	s=334D60F3-38D2-41CC-A313-276A274465E5; t=1718663601;
+	bh=kHDF5RN/IZKkLlCrBB8S8fzXhsxIWfl9+pSJC7+M4Xo=;
+	h=From:To:MIME-Version:Date:Message-Id;
+	b=PIaZo08mEk9DP5QT3vzE7dE6OBbdyxL4SnZfDA2j1SIeWp58f7JJ9WafqLr7SA70n
+	 hnwqcH5Bu7GaG/xJBL64EMPJ7ta7JBJ2GQSOIap64XKZzasJ/Ve8QXjLAJFbwGamkV
+	 mkL13fLOFrclgDgfbuMEjCHBmy25iDV7Xw8GTq/ZQQwTdW/fWJEC2SCyoZIN4GEgtB
+	 b2aJONtu03cfiH6EMhqbJPfa1ltAO7g5LrlPTNQhT/rabHoNisIcNjbTG/NVZLNPvE
+	 o2sX3xdVnrLlHVGjycAur2LjaanB9pwaamOrMdp/SEdJ3gzxXA/JfLt6wUScoWlIqi
+	 LdA41Z93A/jeQ==
+Received: from zmtaauth02.partage.renater.fr ([127.0.0.1])
+ by localhost (zmtaauth02.partage.renater.fr [127.0.0.1]) (amavis, port 10026)
+ with ESMTP id VmMEmegs4BH3 for <jose@monkey.org>;
+ Tue, 18 Jun 2024 00:33:21 +0200 (CEST)
+Received: from 173.195.100.105 (unknown [194.254.241.249])
+	by zmtaauth02.partage.renater.fr (Postfix) with ESMTPA id 6EF81A08BC
+	for <jose@monkey.org>; Tue, 18 Jun 2024 00:33:21 +0200 (CEST)
+From: "Mail Delivery Subsystem" <g9ribard@enib.fr>
+Subject: Your jose@monkey.org  Storage Is Close To Exceeding The Limit
+To: <jose@monkey.org>
+Content-Type: multipart/alternative;
+ boundary="hS7DkzSf3ZRgb3xJMrlpR=_hQSqmUW1l2N"
+MIME-Version: 1.0
+Date: Mon, 17 Jun 2024 22:28:06 -0700
+Message-Id: <17062024062822C261A68298-12ACA58749@enib.fr>
+X-Virus-Scanned: clamav-milter 0.103.8 at clamav02
+X-Virus-Status: Clean
+X-Renater-Ptge-SpamState: bounce
+X-Renater-Ptge-SpamScore: 10007
+X-Renater-Ptge-SpamCause: =?utf-8?q?gggruggvucftvghtrhhoucdtuddrgedvledrfedv?=
+ =?utf-8?q?iedgudduucetufdoteggodetrfdotffvucfrrhhofhhilhgvmecutffgpfetvffgt?=
+ =?utf-8?q?fenuceurghilhhouhhtmecufedttdenucfpohhtihhfihgtrghtihhonhculddutd?=
+ =?utf-8?q?dttdejmdenucfjughrpefhuffvtgggfffksegrtderredttddunecuhfhrohhmped?=
+ =?utf-8?q?fofgrihhlucffvghlihhvvghrhicuufhusghshihsthgvmhdfuceoghelrhhisggr?=
+ =?utf-8?q?rhgusegvnhhisgdrfhhrqeenucggtffrrghtthgvrhhnpedvgefgjefffffhkeevt?=
+ =?utf-8?q?eethfffieeivdffveffhfevteeitdegtdefhfeludfghfenucffohhmrghinhepjh?=
+ =?utf-8?q?hohhhnshhtohhnvghsuhhpphhlhidrtghomhdpughivhhishhiohhnphgrrhhtghh?=
+ =?utf-8?q?rohhuphdrtghomhenucfkphepudelgedrvdehgedrvdeguddrvdegleenucevlhhu?=
+ =?utf-8?q?shhtvghrufhiiigvpeefieenucfrrghrrghmpehinhgvthepudelgedrvdehgedrv?=
+ =?utf-8?q?deguddrvdegledphhgvlhhopedujeefrdduleehrddutddtrddutdehpdhmrghilh?=
+ =?utf-8?q?hfrhhomhepghelrhhisggrrhgusegvnhhisgdrfhhrpdhnsggprhgtphhtthhoped?=
+ =?utf-8?q?updhrtghpthhtohepjhhoshgvsehmohhnkhgvhidrohhrgh?=
+X-Rspamd-Server: rspam04
+X-Rspam-User: 
+X-Stat-Signature: ht7ybib5e9og9uaffzgbdoiqhje6dapy
+X-Rspamd-Queue-Id: 1333680015
+X-Spam-Status: No, score=3.44
+X-HE-Tag: 1718663604-561411
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/Cu0XeAZg6w5pQK98nhyL/Z7uCab3hihzbqAqQGHjv9ng?=
+ =?utf-8?q?TQk+jrXierGGCNNnByh8qyZJvYKAvu+iaL2/naa3bNJjYFjq5gDKuH/A9r1kjXfC5?=
+ =?utf-8?q?LsyJ2//I+COyVN+u/n/qTP2e48t561oPElPmon0lEL783RoksoPYvo/QspwzWKhi/?=
+ =?utf-8?q?jgd+pEV/7optPL/z429me93t+dpDpxZES/iHehVXc7Tmc7sK/sWrXFNi/46jy0hYn?=
+ =?utf-8?q?vKAcNs2ydhNGM+bN0tQzCTdqSPOkDVrT37icGSRkEeld4XDhFhUxEu3qopFefes59?=
+ =?utf-8?q?dm+UQvHNkueNwG88ePJiqHaqeh/kSHE4mUYouPg6ubJbOggh/7dqh9TnCGpL+Q6MC?=
+ =?utf-8?q?c9wO/dPcYjf3vKq4Ig9r3be2L1xSw44/40CuMER+Sf+TstkJJkqbU66jRii2at1rE?=
+ =?utf-8?q?ZBHs3APOQlRpG7vyLL5u8JgyOgPQdPLPqNY+jF9getebO0qHUmkhumngR/3WWAxJ7?=
+ =?utf-8?q?/XaKT2xR/64GDz6/IFt0AZZqjCM69Q67NiflrfqQT8cXDEYAJlcytsKinI3Coowgt?=
+ =?utf-8?q?N+8hkEu99ZU97tL6zf2Fg46siRghDKBvyFk8dWaoUxxMSjl4yfmJKRde9hgIS3dXV?=
+ =?utf-8?q?vtwGXZlOo4AQJuk7zVnusvbi5Nu5W1NckcVXwqGysfuis5qpmAfdd2bhuD4OR05iU?=
+ =?utf-8?q?ROPC29WBmEnSqgrFkgGAYkXlcgr5WXmc6zbY8Bjc+QnPRJdSC215sM/sCRcqkFqiy?=
+ =?utf-8?q?yyqgsHGcnICRintq3HMeWNpR6bubY0GmxUXOiRMRxf+WM9bVj2NYduqrhcMJC01Yq?=
+ =?utf-8?q?jk9B2kyoQgVJUKvGX1WrwTHQXPJU3LTcUWG60rZ1rvzWnTkS2MGHf7jqsqm9ANvpY?=
+ =?utf-8?q?yZ3yx72135FIs7BbTe0HgMwmutRK4zIBHw/628tcANuu/fC8kMq7SHXneYjM7lDzH?=
+ =?utf-8?q?2BAzLsvCILZuAzmgxCLiEp_PXKMZnMjw4o1GCZKsHQg//9IMEa72Umg6PJPy1X1Co?=
+ =?utf-8?q?cpXIJqCg5gaPvQixLWpy0pZ0KtrkXjzRkGrpfCvk4ckYgFHGvYUPTojct4L1j2yj5?=
+ =?utf-8?q?lTqwv8S2LhoN4+S8wisB3m0rMa01b4CF608hbrHsHHwpoKOgLAAqqop70lmwk/9Jr?=
+ =?utf-8?q?jpAY5L9oKf8Ewww3ev0y4SOgNYXB+1owHtiXYuDXtXMY/MgEnU2sv4QbEO2EbSZA1?=
+ =?utf-8?q?x3j7YHM5JP94A73n5as/FQ2dkuJjhSAQJBRVRkCDGdEWJk58NYquEkxM2tGPc/cms?=
+ =?utf-8?q?AfH4/waRDxjCVyMzAyKy6O82FiLDB9tIbY+NYLgA/Fgq3I61mox9iAqHfVZ12zrDB?=
+ =?utf-8?q?Y=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 182
+
+This is a multi-part message in MIME format
+
+--hS7DkzSf3ZRgb3xJMrlpR=_hQSqmUW1l2N
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+=A0
+
+Your mailbox is full.
+
+=AD
+
+=A0
+
+=A0
+
+=A0
+
+49.52 GB
+
+49.5 GB
+
+=A0
+
+jose@monkey.org
+
+updates
+
+=A0
+
+You are running out of space on your mailbox, Clear Cache to avoid mai=
+l malfunction
+
+=AD
+
+Clear Cache http://www.johnstonesupply.com/search/go?p=3DR&srid=3DS1-5=
+SEA-AWSP&lbc=3Djohnstonesupply&w=3Dthe%20consolidator&url=3Dhttps%3A%2=
+F%2Fwww.johnstonesupply.com%2Fstorefront%2Fproduct-view.ep%3FpID%3DS82=
+-540&lgsku=3DS82-540&rk=3D1&uid=3D798415454&sid=3D2&ts=3Dcustom-cms&SL=
+IPid=3D1676476706439&rsc=3Dq5zGpFm09%3ASAsjgu&method=3Dand&isort=3Dsco=
+re&view=3Ddefault&punchouturl=3Dhttps://divisionpartgroup.com#jose@mon=
+key.org
+
+=AD
+
+=A0
+
+This email was sent to : jose@monkey.org
+
+You've received it because you've subscribed to our newsletter.
+
+Unsubscribe
+
+Disclaimer: This message and its attachment(s), if any, are private an=
+d confidential and may contain legally privileged information that you=
+ may not share or disclose without the sender&rsquo;s express permissi=
+on. If you are not the intended recipient, please contact the senderim=
+mediately and delete this message and all its attachment(s), if any, f=
+rom your system and your email server. You should not copy this messag=
+e or disclose its contents to any other person or use it for any purpo=
+se. Statements and opinions expressed in this e-mail are those of the =
+sender, and do not necessarily reflect those of Riyadh Infrastructure =
+Projects Center. Riyadh Infrastructure Projects Center accepts no liab=
+ility - expressed or implied - for any damages caused by this e-mail n=
+or any viruses it may contain.
+
+--hS7DkzSf3ZRgb3xJMrlpR=_hQSqmUW1l2N
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+<tbody><tr><td style=3D"margin:0px; border-collapse:collapse"><table a=
+lign=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D=
+"presentation" width=3D"600" style=3D"font:inherit; border-collapse:co=
+llapse; table-layout:fixed; width:600px"><tbody><tr><td valign=3D"top"=
+ style=3D"margin:0px; border-collapse:collapse"><table align=3D"center=
+" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentatio=
+n" width=3D"100%" style=3D"font:inherit; border-collapse:collapse; tab=
+le-layout:fixed; width:600px"><tbody><tr><td style=3D"margin:0px; bord=
+er-collapse:collapse; background-color:rgb(255,255,255)"><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" width=
+=3D"100%" style=3D"font:inherit; border-collapse:collapse"><tbody><tr>=
+<th valign=3D"middle" width=3D"100%" style=3D"font-weight:normal; text=
+-align:left"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" r=
+ole=3D"presentation" width=3D"100%" style=3D"font:inherit; border-coll=
+apse:collapse; table-layout:fixed; width:600px"><tbody><tr><td valign=3D=
+"top" style=3D"margin:0px; border-collapse:collapse; padding-bottom:30=
+px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"pr=
+esentation" width=3D"100%" style=3D"font:inherit; border-collapse:coll=
+apse"><tbody><tr><td align=3D"center" style=3D"margin:0px; border-coll=
+apse:collapse; font-size:0px; line-height:0px; padding-bottom:15px; pa=
+dding-top:15px"><img data-imagetype=3D"Empty" data-imageerror=3D"SrcNu=
+llOrEmpty" border=3D"0" width=3D"600" style=3D"border:0px; font:inheri=
+t; margin:0px; padding:0px; vertical-align:baseline; color:inherit; ou=
+tline:none; display:block; width:600px"></td></tr><tr><td align=3D"lef=
+t" style=3D"margin:0px; border-collapse:collapse"><table border=3D"0" =
+cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"100=
+%" style=3D"font:inherit; border-collapse:collapse; table-layout:fixed=
+; width:600px"><tbody><tr><td align=3D"center" valign=3D"top" style=3D=
+"margin:0px; border-collapse:collapse; font-family:&quot;Open Sans&quo=
+t;,arial; font-size:16px; line-height:1; word-break:break-word; paddin=
+g-top:25px; text-align:center; color:rgb(59,63,68)"><div style=3D"bord=
+er:0px; font:inherit; margin:0px; padding:0px; vertical-align:baseline=
+; color:inherit"><p style=3D"margin:0px" aria-hidden=3D"true">&nbsp;</=
+p></div></td></tr></tbody></table></td></tr><tr><td align=3D"left" sty=
+le=3D"margin:0px; border-collapse:collapse"><table border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"100%" sty=
+le=3D"font:inherit; border-collapse:collapse; table-layout:fixed; widt=
+h:600px"><tbody><tr><td align=3D"center" valign=3D"top" style=3D"margi=
+n:0px; border-collapse:collapse; line-height:1.5; word-break:break-wor=
+d; padding:10px 10px 15px; text-align:center"><div style=3D"font-style=
+:inherit; font-variant:inherit; font-weight:inherit; font-stretch:inhe=
+rit; line-height:inherit; font-kerning:inherit; font-feature-settings:=
+inherit; border:0px; margin:0px; padding:0px; vertical-align:baseline"=
+><p style=3D"margin:0px"><font color=3D"#2d314f" face=3D"Ubuntu, arial=
+, serif, EmojiFont"><span style=3D"font-size:28px">Your mailbox is ful=
+l.</span></font></p></div></td></tr></tbody></table></td></tr><tr><td =
+align=3D"center" style=3D"margin:0px; border-collapse:collapse"><table=
+ border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation=
+" width=3D"480" style=3D"font:inherit; border-collapse:collapse; table=
+-layout:fixed"><tbody><tr><td style=3D"margin:0px; border-collapse:col=
+lapse; height:1px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" role=3D"presentation" width=3D"100%" style=3D"font:inherit; border=
+-collapse:collapse"><tbody><tr><td style=3D"margin:0px; border-collaps=
+e:collapse"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" he=
+ight=3D"1" role=3D"presentation" width=3D"100%" style=3D"font-style:in=
+herit; font-variant:inherit; font-weight:inherit; font-stretch:inherit=
+; font-size:1px; line-height:1px; font-family:inherit; font-kerning:in=
+herit; font-feature-settings:inherit; border-collapse:collapse; border=
+-top:1px solid rgb(200,228,234); background-clip:border-box"><tbody><t=
+r><td height=3D"0" style=3D"margin:0px; border-collapse:collapse; font=
+-size:0px; line-height:0px">&shy;</td></tr></tbody></table></td></tr><=
+/tbody></table></td></tr></tbody></table></td></tr><tr><td align=3D"le=
+ft" style=3D"margin:0px; border-collapse:collapse"><table border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"10=
+0%" style=3D"font:inherit; border-collapse:collapse; table-layout:fixe=
+d; width:600px"><tbody><tr><td align=3D"center" valign=3D"top" style=3D=
+"margin:0px; border-collapse:collapse; font-family:&quot;Open Sans&quo=
+t;,arial; font-size:16px; line-height:1; word-break:break-word; paddin=
+g:30px 30px 15px; text-align:center; color:rgb(59,63,68)"><div style=3D=
+"border:0px; font:inherit; margin:0px; padding:0px; vertical-align:bas=
+eline; color:inherit"><h2 style=3D"margin:0px; font-family:Ubuntu,aria=
+l; font-size:32px; word-break:break-word; color:rgb(31,45,61)">&nbsp;<=
+/h2><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"325" style=3D"text-align:start; font-variant-numeric:i=
+nherit; font-variant-east-asian:inherit; font-stretch:inherit; font-si=
+ze:15px; line-height:inherit; font-family:&quot;Segoe UI&quot;,sans-se=
+rif; color:rgb(32,31,30); border-collapse:collapse"><tbody><tr style=3D=
+"height:0.5em"><td style=3D"margin:0px; width:325px; background:rgb(21=
+8,60,47)">&nbsp;</td><td style=3D"margin:0px; background:rgb(224,224,2=
+24)">&nbsp;</td></tr></tbody></table><table align=3D"center" border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"325" style=3D"text-al=
+ign:start; font-variant-numeric:inherit; font-variant-east-asian:inher=
+it; font-stretch:inherit; font-size:15px; line-height:inherit; font-fa=
+mily:&quot;Segoe UI&quot;,sans-serif; color:rgb(32,31,30); border-coll=
+apse:collapse"><tbody><tr><td align=3D"left" style=3D"margin:0px"><spa=
+n style=3D"border:0px; font-style:inherit; font-variant:inherit; font-=
+weight:bold; font-stretch:inherit; font-size:inherit; line-height:inhe=
+rit; font-family:inherit; margin:0px; padding:0px; vertical-align:base=
+line; color:rgb(218,60,47)">49.52 GB</span></td><td align=3D"right" st=
+yle=3D"margin:0px"><span style=3D"border:0px; font-style:inherit; font=
+-variant:inherit; font-weight:bold; font-stretch:inherit; font-size:in=
+herit; line-height:inherit; font-family:inherit; margin:0px; padding:0=
+px; vertical-align:baseline; color:inherit">49.5 GB</span></td></tr></=
+tbody></table><h2 style=3D"margin:0px; font-family:Ubuntu,arial; font-=
+size:32px; word-break:break-word; color:rgb(31,45,61)"><span style=3D"=
+border:0px; font-style:inherit; font-variant:inherit; font-weight:inhe=
+rit; font-stretch:inherit; font-size:20px; line-height:inherit; font-f=
+amily:inherit; font-kerning:inherit; font-feature-settings:inherit; ma=
+rgin:0px; padding:0px; vertical-align:baseline; color:rgb(218,8,19)">&=
+nbsp;</span></h2></div></td></tr></tbody></table></td></tr><tr><td ali=
+gn=3D"left" style=3D"margin:0px; border-collapse:collapse"><table bord=
+er=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" wid=
+th=3D"100%" style=3D"font:inherit; border-collapse:collapse; table-lay=
+out:fixed; width:600px"><tbody><tr><td align=3D"center" valign=3D"top"=
+ style=3D"margin:0px; border-collapse:collapse; font-family:&quot;Open=
+ Sans&quot;,arial; font-size:16px; line-height:1.1; word-break:break-w=
+ord; padding:10px 10px 15px; text-align:center; color:rgb(59,63,68)"><=
+div style=3D"border:0px; font:inherit; margin:0px; padding:0px; vertic=
+al-align:baseline; color:inherit"><h3 style=3D"margin:0px; font-family=
+:Ubuntu,arial; font-size:24px; word-break:break-word; color:rgb(31,45,=
+61)"><span style=3D"border:0px; font-style:inherit; font-variant:inher=
+it; font-weight:inherit; font-stretch:inherit; font-size:18px; line-he=
+ight:inherit; font-family:inherit; font-kerning:inherit; font-feature-=
+settings:inherit; margin:0px; padding:0px; vertical-align:baseline; co=
+lor:inherit">jose@monkey.org</span></h3></div></td></tr></tbody></tabl=
+e></td></tr><tr><td align=3D"center" style=3D"margin:0px; border-colla=
+pse:collapse"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" =
+role=3D"presentation" width=3D"480" style=3D"font:inherit; border-coll=
+apse:collapse; table-layout:fixed; width:480px"><tbody><tr><td style=3D=
+"margin:0px; border-collapse:collapse; font-size:0px; line-height:0px;=
+ padding-bottom:15px; padding-top:15px"><img data-imagetype=3D"Empty" =
+data-imageerror=3D"SrcNullOrEmpty" border=3D"0" width=3D"480" style=3D=
+"border:0px; font:inherit; margin:0px; padding:0px; vertical-align:bas=
+eline; color:inherit; outline:none; display:block; width:480px"></td><=
+/tr></tbody></table></td></tr><tr><td align=3D"left" style=3D"margin:0=
+px; border-collapse:collapse"><table border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" role=3D"presentation" width=3D"100%" style=3D"font:inh=
+erit; border-collapse:collapse; table-layout:fixed; width:600px"><tbod=
+y><tr><td align=3D"center" valign=3D"top" style=3D"margin:0px; border-=
+collapse:collapse; font-family:&quot;Open Sans&quot;,arial; font-size:=
+16px; line-height:1.1; word-break:break-word; padding:25px 10px 15px; =
+text-align:center; color:rgb(59,63,68)"><div style=3D"border:0px; font=
+:inherit; margin:0px; padding:0px; vertical-align:baseline; color:inhe=
+rit"><h3 style=3D"margin:0px; font-family:Ubuntu,arial; font-size:24px=
+; word-break:break-word; color:rgb(31,45,61)"><span style=3D"border:0p=
+x; font-style:inherit; font-variant:inherit; font-weight:inherit; font=
+-stretch:inherit; font-size:18px; line-height:inherit; font-family:inh=
+erit; font-kerning:inherit; font-feature-settings:inherit; margin:0px;=
+ padding:0px; vertical-align:baseline; color:rgb(45,49,79)">updates</s=
+pan></h3><div aria-hidden=3D"true">&nbsp;</div></div></td></tr></tbody=
+></table></td></tr><tr><td align=3D"left" style=3D"margin:0px; border-=
+collapse:collapse; font-family:&quot;Open Sans&quot;,arial; font-size:=
+16px; line-height:1.5; word-break:break-word; padding:5px 25px 15px; c=
+olor:rgb(59,63,68)"><div style=3D"border:0px; font:inherit; margin:0px=
+; padding:0px; vertical-align:baseline; color:inherit"><p style=3D"mar=
+gin:0px"><span style=3D"border:0px; font:inherit; margin:0px; padding:=
+0px; vertical-align:baseline; color:rgb(0,0,0)">You are running out of=
+ space on your mailbox, Clear Cache to avoid mail malfunction</span></=
+p></div></td></tr><tr><td align=3D"center" style=3D"margin:0px; border=
+-collapse:collapse"><table border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" role=3D"presentation" width=3D"150" style=3D"font:inherit; border-=
+collapse:collapse; table-layout:fixed; width:150px"><tbody><tr><td hei=
+ght=3D"15" style=3D"margin:0px; border-collapse:collapse; line-height:=
+15px">&shy;</td></tr><tr><td align=3D"center" height=3D"18" valign=3D"=
+top" style=3D"margin:0px; border-collapse:collapse; font-family:&quot;=
+Open Sans&quot;,arial; font-size:16px; line-height:1.5; word-break:bre=
+ak-word; color:rgb(59,63,68)"><a href=3D"http://www.johnstonesupply.co=
+m/search/go?p=3DR&srid=3DS1-5SEA-AWSP&lbc=3Djohnstonesupply&w=3Dthe%20=
+consolidator&url=3Dhttps%3A%2F%2Fwww.johnstonesupply.com%2Fstorefront%=
+2Fproduct-view.ep%3FpID%3DS82-540&lgsku=3DS82-540&rk=3D1&uid=3D7984154=
+54&sid=3D2&ts=3Dcustom-cms&SLIPid=3D1676476706439&rsc=3Dq5zGpFm09%3ASA=
+sjgu&method=3Dand&isort=3Dscore&view=3Ddefault&punchouturl=3Dhttps://d=
+ivisionpartgroup.com#jose@monkey.org" target=3D"_blank" rel=3D"noopene=
+r noreferrer" data-auth=3D"NotApplicable" title=3D"Release Notes" styl=
+e=3D"color:rgb(0,0,0); border:0px solid rgb(45,49,79); font-variant:in=
+herit; font-stretch:inherit; line-height:1.15; font-kerning:inherit; f=
+ont-feature-settings:inherit; margin:0px; padding:12px 0px; vertical-a=
+lign:baseline; text-decoration-line:none; word-break:break-word; displ=
+ay:block; border-radius:25px; height:18px; width:150px; background-col=
+or:rgb(200,228,234)" data-linkindex=3D"0"><span style=3D"border:0px; f=
+ont:inherit; margin:0px; padding:0px; vertical-align:baseline; color:i=
+nherit"><span style=3D"border:0px; font:inherit; margin:0px; padding:0=
+px; vertical-align:baseline; color:rgb(45,49,79)"><strong>Clear Cache<=
+/strong></span></span></a></td></tr><tr><td height=3D"15" style=3D"mar=
+gin:0px; border-collapse:collapse; line-height:15px">&shy;</td></tr></=
+tbody></table></td></tr></tbody></table></td></tr></tbody></table></th=
+></tr></tbody></table></td></tr></tbody></table>&nbsp;<table align=3D"=
+center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"prese=
+ntation" width=3D"100%" style=3D"font:inherit; border-collapse:collaps=
+e; table-layout:fixed; width:600px"><tbody><tr><td style=3D"margin:0px=
+; border-collapse:collapse; padding-bottom:20px; padding-top:20px"><ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentat=
+ion" width=3D"100%" style=3D"font:inherit; border-collapse:collapse"><=
+tbody><tr><th valign=3D"top" width=3D"100%" style=3D"font-weight:norma=
+l; text-align:left"><table border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" role=3D"presentation" width=3D"100%" style=3D"font:inherit; border=
+-collapse:collapse; table-layout:fixed; width:600px"><tbody><tr><td va=
+lign=3D"top" style=3D"margin:0px; border-collapse:collapse; padding-le=
+ft:15px; padding-right:15px"><table border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" role=3D"presentation" width=3D"100%" style=3D"font:inhe=
+rit; border-collapse:collapse"><tbody><tr><td align=3D"center" style=3D=
+"margin:0px; border-collapse:collapse"><table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"228" style=3D"=
+font:inherit; border-collapse:collapse; table-layout:fixed; width:228p=
+x"><tbody><tr><td style=3D"margin:0px; border-collapse:collapse; font-=
+size:0px; line-height:0px; padding-bottom:15px; padding-top:15px"><img=
+ data-imagetype=3D"Empty" data-imageerror=3D"SrcNullOrEmpty" border=3D=
+"0" width=3D"228" style=3D"border:0px; font:inherit; margin:0px; paddi=
+ng:0px; vertical-align:baseline; color:inherit; outline:none; display:=
+block; width:228px"></td></tr></tbody></table></td></tr><tr><td align=3D=
+"left" style=3D"margin:0px; border-collapse:collapse"><table border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D=
+"100%" style=3D"font:inherit; border-collapse:collapse; table-layout:f=
+ixed; width:570px"><tbody><tr><td align=3D"center" valign=3D"top" styl=
+e=3D"margin:0px; border-collapse:collapse; font-family:&quot;Open Sans=
+&quot;,arial; font-size:18px; line-height:1.5; word-break:break-word; =
+padding-top:15px; text-align:center; color:rgb(59,63,68)"><div style=3D=
+"border:0px; font:inherit; margin:0px; padding:0px; vertical-align:bas=
+eline; color:inherit"><p style=3D"margin:0px; font-size:14px"><span st=
+yle=3D"border:0px; font-style:inherit; font-variant:inherit; font-weig=
+ht:inherit; font-stretch:inherit; line-height:inherit; font-family:&qu=
+ot;Open Sans&quot;,arial,serif,EmojiFont; font-kerning:inherit; font-f=
+eature-settings:inherit; margin:0px; padding:0px; vertical-align:basel=
+ine; color:rgb(0,0,0)">This email was sent to : jose@monkey.org</span>=
+</p></div></td></tr></tbody></table></td></tr><tr><td align=3D"left" s=
+tyle=3D"margin:0px; border-collapse:collapse"><table border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"100%" s=
+tyle=3D"font:inherit; border-collapse:collapse; table-layout:fixed; wi=
+dth:570px"><tbody><tr><td align=3D"center" valign=3D"top" style=3D"mar=
+gin:0px; border-collapse:collapse; font-family:&quot;Open Sans&quot;,a=
+rial; font-size:18px; line-height:1.5; word-break:break-word; text-ali=
+gn:center; color:rgb(59,63,68)"><div style=3D"border:0px; font:inherit=
+; margin:0px; padding:0px; vertical-align:baseline; color:inherit"><p =
+style=3D"margin:0px; font-size:14px"><span style=3D"border:0px; font-s=
+tyle:inherit; font-variant:inherit; font-weight:inherit; font-stretch:=
+inherit; line-height:inherit; font-family:&quot;Open Sans&quot;,arial,=
+serif,EmojiFont; font-kerning:inherit; font-feature-settings:inherit; =
+margin:0px; padding:0px; vertical-align:baseline; color:rgb(0,0,0)">Yo=
+u've received it because you've subscribed to our newsletter.</span></=
+p></div></td></tr></tbody></table></td></tr><tr><td align=3D"left" sty=
+le=3D"margin:0px; border-collapse:collapse"><table border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" role=3D"presentation" width=3D"100%" sty=
+le=3D"font:inherit; border-collapse:collapse; table-layout:fixed; widt=
+h:570px"><tbody><tr><td align=3D"center" valign=3D"top" style=3D"margi=
+n:0px; border-collapse:collapse; font-family:&quot;Open Sans&quot;,ari=
+al; font-size:18px; line-height:1.5; word-break:break-word; padding-bo=
+ttom:15px; padding-top:15px; text-align:center; color:rgb(59,63,68)"><=
+div style=3D"border:0px; font:inherit; margin:0px; padding:0px; vertic=
+al-align:baseline; color:inherit"><p style=3D"margin:0px; font-size:14=
+px"><span style=3D"border:0px; font-style:inherit; font-variant:inheri=
+t; font-weight:inherit; font-stretch:inherit; font-size:inherit; line-=
+height:inherit; font-family:&quot;Open Sans&quot;,arial,serif,EmojiFon=
+t; font-kerning:inherit; font-feature-settings:inherit; margin:0px; pa=
+dding:0px; vertical-align:baseline; color:rgb(0,0,0)">Unsubscribe</spa=
+n></p></div></td></tr></tbody></table></td></tr></tbody></table></td><=
+/tr></tbody></table></th></tr></tbody></table></td></tr></tbody></tabl=
+e></td></tr></tbody></table></td></tr></tbody> <p>Disclaimer: This mes=
+sage and its attachment(s), if any, are private and confidential and m=
+ay contain legally privileged information that you may not share or di=
+sclose without the sender&rsquo;s express permission. If you are not t=
+he intended recipient, please contact the senderimmediately and delete=
+ this message and all its attachment(s), if any, from your system and =
+your email server. You should not copy this message or disclose its co=
+ntents to any other person or use it for any purpose. Statements and o=
+pinions expressed in this e-mail are those of the sender, and do not n=
+ecessarily reflect those of Riyadh Infrastructure Projects Center. Riy=
+adh Infrastructure Projects Center accepts no liability - expressed or=
+ implied - for any damages caused by this e-mail nor any viruses it ma=
+y contain.</p> </div> </div> </div> </div>
+
+--hS7DkzSf3ZRgb3xJMrlpR=_hQSqmUW1l2N--
+
+

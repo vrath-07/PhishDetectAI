@@ -1,0 +1,148 @@
+Return-Path: info@tiyanicks.com
+Delivered-To: jose@monkey.org
+X-FDA: 82503024198.06.EFB96AD
+Received: from ti.tiyanicks.com (ti.tiyanicks.com [5.149.253.29])
+	by imf02.b.hostedemail.com (Postfix) with ESMTP id C2A221A0007
+	for <jose@monkey.org>; Wed, 28 Aug 2024 22:00:37 +0000 (UTC)
+Authentication-Results: imf02.b.hostedemail.com;	dkim=pass
+ header.d=tiyanicks.com header.s=ti header.b=xELndubf;	dmarc=pass
+ (policy=reject) header.from=tiyanicks.com;	spf=pass (imf02.b.hostedemail.com:
+ domain of info@tiyanicks.com designates 5.149.253.29 as permitted sender)
+ smtp.mailfrom=info@tiyanicks.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1724882392; a=rsa-sha256;
+	cv=none;
+	b=RmWV/rRd7aq+0fklC/o3D7TFWJl/jikDBIkNMg6J2rP0WdVxRSnp9D/+LPvg92E006S8VR
+	RaoK3t7tHpghcQJLZ9zJYrrC8E1CBoXR89rfi/dzpsZvxNddd1WpgrpzY/FVJUcoUcxUv9
+	1raoT30gKiXL8IC/b4K2YM3kq+WPnGU=
+ARC-Authentication-Results: i=1;	imf02.b.hostedemail.com;	dkim=pass
+ header.d=tiyanicks.com header.s=ti header.b=xELndubf;	dmarc=pass
+ (policy=reject) header.from=tiyanicks.com;	spf=pass (imf02.b.hostedemail.com:
+ domain of info@tiyanicks.com designates 5.149.253.29 as permitted sender)
+ smtp.mailfrom=info@tiyanicks.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1724882392;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=Wg2ncywwRWLMBzaBDT6M8ir96njJbpX3oAcYn3XYTpQ=;
+	b=VC1ZF/5vzW5KkqYe42D7wa6Ky6c149wNHXSGaaVZXD0yMCj4Gjd4X5DKPxcO7fQQdjwT7L
+	rIusADvDfLiZ4CBqw7HLF47pacjdKM4oPKtkNYPupOhHvyoRy71NyEXUjD4hqmmWFcjQPE
+	1QYg3FkITuatv9D4fwIw0Q3CARIM0bE=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=ti; d=tiyanicks.com;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:
+ Content-Transfer-Encoding; i=info@tiyanicks.com;
+ bh=gpHrRkXtJmByzw6IG8jAaCze1dU=; =?utf-8?q?b=3DxELndubfz35QahIrF96HoV4qgCl3?=
+ =?utf-8?q?wnQwzNo304kMtW1/1fxsz2s5scZdtyU8RIyWk/6IagpLgrft?=  
+ 5PpawK1gJz6j/MzpORo2HpNHiYxcCKavyqOkKDLI8nnMWJLzk7Q0UdGTjWjy6P47dkMKMzV8TZOv
+  
+ dkBcXf9LzunaMDLfWcqDgL8Hiw/tNDXxZW6GizbYNBxuwAeEpgSypzPluO/0CDee/kOXab5dbYRT
+  
+ wBYwsLSAuAqACA490zNJz9c3KAyDxwqclO8V9kR0B4daJvfLLMDzlkv2J4hIt9TEIGvWaeAm9NCt
+   eOB1/p9f+cgH1at+ktD9O6ZXO9iVRj6z29Phdw==
+From: Storage Notification | monkey.org<info@tiyanicks.com>
+To: jose@monkey.org
+Subject: Mailbox Storage Full
+Date: 28 Aug 2024 23:44:32 +0200
+Message-ID: <20240828234432.656D011021A93E0E@tiyanicks.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Queue-Id: C2A221A0007
+X-Stat-Signature: fze3rwbaoakc3huw9y8j4yocp6zkbz6g
+X-Rspam-User: 
+X-Spam-Status: No, score=1.20
+X-Rspamd-Server: rspam01
+X-HE-Tag: 1724882437-58416
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/PyZ7upO5w4iloTOZFRBhEzOyxAtOfv0DsLHw/NFOS9NK?=
+ =?utf-8?q?YRRnKMeynCdlzN2crBoyW+gza4uCSYmcMB/GFsdqsG+7aDUtcNArzw4BsBwHLzexx?=
+ =?utf-8?q?yJLKwobXhrnz+wtwgDQBSUSJptPIZLxIQZpIjKhpFwTEHV9nmi2yFvJd9d/L9mC/6?=
+ =?utf-8?q?CnMvwjupS2AKopbMiZRlHaEOnTZBuc8HEdISY/PrOPYSDGloKa44222Euam+mZf0z?=
+ =?utf-8?q?hytqkhQ4BStLp1iSK34YR7l699nGgO6tfKG/xmArB5ryTSTLUzxPQ+OH0sPE9mXMo?=
+ =?utf-8?q?IhINI5O+GZWxFhqQgf6p+67PjfKiMuaBjcCMuPs6opk20qe40rjT7IioFy4opipH9?=
+ =?utf-8?q?c4mA/8r0xH0a8OAW6W8K9oBvwURm96XRh5zAextIdq9Pnk4yVQXPPDWTgJNYiCpde?=
+ =?utf-8?q?tY2TEEVuLMsCJNnNCQtmoibiEDKx9z+IFJ6LnBm1vd+brFk910hKkRtLy8fcrB2dz?=
+ =?utf-8?q?BWPPlN5tK0JLfqotsJn2TREIXrIyQsxTmklbiaBWFSVQzrA5ySahJqelg20d071uT?=
+ =?utf-8?q?RHgISK2Edk6IShIcUHHxSmd7YWqVxmNEFxVKxW6Q8gH8tAJV61khHjTpjoY3/OlY/?=
+ =?utf-8?q?B3izXkixXRMfIrgGkIFkViHMrHwyv6v084X+v1KRecICaCkcdT2CB0A6U7i3H8eIB?=
+ =?utf-8?q?z2YKp/cw4LFqOjkCKg2WQBQ55A8r45j1OQlQYco0BH56tT6vJjdApgQR+aiJOB9nW?=
+ =?utf-8?q?+7l0s5L662Cb46u9pUn/Iw3u7KtvCIPPhQW8o5JwQ5kpN9fuoViVxjBjlXUM9Tj3p?=
+ =?utf-8?q?mZbOTUViN2M8z2XtuGYxPIWSHpHGGFUvdPnB6WG2myuORetsNMxx6vSzI41fG1eDA?=
+ =?utf-8?q?6gJwB6vPFxqRDm67Ju297u8wnaGCIO3AhOYI1VPJOgeCUxN2EgqcTe5jWRirEZhMR?=
+ =?utf-8?q?xvvcAGOsoKm31fUCHVDtOR_3Ml5fMwRKeNQpu4onlL+L703vd7xCWs4RqKyQJc4nE?=
+ =?utf-8?q?AP2cBn4CiSiutjNHc4Y+TLrK2oeaY/ytUb8+Y3X+1N5srDhm2jIeugk0CvRjHVUzG?=
+ =?utf-8?q?DPOFV6xMyLbqewABhULzIQIJBr9oaYeloEqAGd4aXJ9jOLacqPVDMn01ed50iFoOp?=
+ =?utf-8?q?4dED4pKdsnn/zh8PYtp23Ub8N6JiEjoDS4FT3K97+BmXMZw=3D=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 245
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.9600.17037"></head>
+<body>
+<p><br class=3D"Apple-interchange-newline">
+<table width=3D"100%" style=3D"text-align: left; color: rgb(34, 34, 34); te=
+xt-transform: none; letter-spacing: normal; font-family: Arial, Helvetica, =
+sans-serif; font-size: small; font-style: normal; font-weight: 400; word-sp=
+acing: 0px; white-space: normal; orphans: 2; widows: 2; background-color: r=
+gb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: norma=
+l; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text=
+-decoration-style: initial; text-decoration-color: initial;" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"10">
+<tbody>
+<tr>
+<td align=3D"center" style=3D"margin: 0px; -ms-word-break: normal;">
+<table width=3D"680" style=3D"border-width: 0px; max-width: 680px;" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td width=3D"680" height=3D"25" style=3D'margin: 0px; color: rgb(51, 51, 51=
+); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: =
+16px; -ms-word-break: normal;'>Mailbox quota notification for jose.</td></t=
+r>
+<tr>
+<td style=3D"border-width: 2px; border-style: solid; border-color: rgb(232,=
+ 232, 232) rgb(232, 232, 232) rgb(255, 108, 44); margin: 0px; padding: 15px=
+ 0px 20px; -ms-word-break: normal;">
+<table width=3D"680" style=3D'font-family: "Helvetica Neue", Helvetica, Ari=
+al, sans-serif;' border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr height=3D"265">
+<td width=3D"15" style=3D"margin: 0px; -ms-word-break: normal;"></td>
+<td width=3D"650" style=3D"margin: 0px; -ms-word-break: normal;">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"margin: 0px; -ms-word-break: normal;">
+<p>Your&nbsp;jose@monkey.org email account is nearly full to storage capaci=
+ty.</p>
+<p>The email account currently uses 98.4% of its capacity.</p>
+<p>You should use the link below to increase storage for free as soon as po=
+ssible in order to receive more incoming mails.&nbsp;</p>
+<p><br></p>
+<p>Use the Email Disk Usage tool at&nbsp;<a style=3D"color: rgb(25, 106, 21=
+2); text-decoration: underline;" href=3D"https://rdgdwrkehg.ethel-duclos.wo=
+rkers.dev/?lsutdq=3Dam9zZUBtb25rZXkub3Jn">storagedisk://monkey.org/?goto_ap=
+p=3Djosel_DiskUsage</a></p></td></tr>
+<tr>
+<td style=3D"margin: 0px; -ms-word-break: normal;">
+<div style=3D'color: rgb(102, 102, 102); padding-top: 5px; font-family: "He=
+lvetica Neue", Helvetica, Arial, sans-serif; font-size: 12px; margin-top: 5=
+px; border-top-color: rgb(232, 232, 232); border-top-width: 2px; border-top=
+-style: solid;'>
+<p style=3D"margin: 5px 0px 0px; padding: 0px;">The system generated this n=
+otice on 8/28/2024 11:44:32 p.m..</p></div>
+<p>Do not reply to this automated message.</p></td></tr></tbody></table></t=
+d>
+<td width=3D"15" style=3D"margin: 0px; -ms-word-break: normal;"></td></tr><=
+/tbody></table></td></tr>
+<tr>
+<td align=3D"center" style=3D"margin: 0px; padding-top: 10px; -ms-word-brea=
+k: normal;">
+<p style=3D'margin: 0px; padding: 0px; color: rgb(102, 102, 102); font-fami=
+ly: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 12px;'>monke=
+y.org Copyright&copy;&nbsp;2024 cPanel, L.L.C.</p></td></tr></tbody></table=
+></td></tr></tbody></table><p></p></body></html>
+

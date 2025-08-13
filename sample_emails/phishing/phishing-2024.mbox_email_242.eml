@@ -1,0 +1,382 @@
+Return-Path: bounces+jose=monkey.org@iad1.rp.oracleemaildelivery.com
+Delivered-To: jose@monkey.org
+X-FDA: 82465696194.01.55FEFB8
+Received: from adg154cb43.iad1.oracleemaildelivery.com
+ (adg154cb43.iad1.oracleemaildelivery.com [147.154.32.43])	by
+ imf28.b.hostedemail.com (Postfix) with ESMTP id 296F610000B	for
+ <jose@monkey.org>; Sun, 18 Aug 2024 15:07:55 +0000 (UTC)
+Authentication-Results: imf28.b.hostedemail.com;	dkim=pass
+ header.d=clinicanasnuvens.com.br header.s=clinicanasnuvens-ash-20230224
+ header.b=B2xtHGRM;	dkim=pass header.d=iad1.rp.oracleemaildelivery.com
+ header.s=prod-iad-20200707 header.b=uAPvbTRG;	spf=pass
+ (imf28.b.hostedemail.com: domain of
+ "bounces+jose=monkey.org@iad1.rp.oracleemaildelivery.com" designates
+ 147.154.32.43 as permitted sender)
+ smtp.mailfrom="bounces+jose=monkey.org@iad1.rp.oracleemaildelivery.com";
+	dmarc=pass (policy=reject) header.from=clinicanasnuvens.com.br
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1723993606;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:list-unsubscribe:dkim-signature;
+	bh=enQLqt9TnVYxsT2i93PChKgfAHjZOC2NsbbswW0l3ao=;
+	b=3bd85g3t3FjdtOpI2oQCbVkUKL58lz9CcopLai3vlGrVq0it4NXROl8tEGr1tE4ghelD3Z
+	mIng9wWahgoPfMviIsV1A/vxiM5Dud0I/EUZeKw+FjlhQ3z0A+LkcVwQF1m/G2VrsN3Zcs
+	mMn9r1yWCfMksGz9FV46nTGFQdNFoFo=
+ARC-Authentication-Results: i=1;	imf28.b.hostedemail.com;	dkim=pass
+ header.d=clinicanasnuvens.com.br header.s=clinicanasnuvens-ash-20230224
+ header.b=B2xtHGRM;	dkim=pass header.d=iad1.rp.oracleemaildelivery.com
+ header.s=prod-iad-20200707 header.b=uAPvbTRG;	spf=pass
+ (imf28.b.hostedemail.com: domain of
+ "bounces+jose=monkey.org@iad1.rp.oracleemaildelivery.com" designates
+ 147.154.32.43 as permitted sender)
+ smtp.mailfrom="bounces+jose=monkey.org@iad1.rp.oracleemaildelivery.com";
+	dmarc=pass (policy=reject) header.from=clinicanasnuvens.com.br
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1723993606; a=rsa-sha256;
+	cv=none;
+	b=lYUMXqxy9s8bcvixADC8wSs3Y96gcZS2chfWI8yJZ0dyNVInh6eObayYlLi8mzX29N7vN8
+	/NaqYOV9O3+sA8+CTK6ze0iPKgjMr3ySvxguGSfRLpfXl7Amb407LGjexyVaSiubVPtybV
+	QJ6djathgaFlOiCVJpy5fFNwmdWgFxI=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ s=clinicanasnuvens-ash-20230224; d=clinicanasnuvens.com.br; =?utf-8?q?h=3DD?=
+ =?utf-8?q?ate=3ATo=3AFrom=3ASubject=3AMessage-Id=3AMIME-Version=3ASender=3A?=
+ =?utf-8?q?List-Unsubscribe=3AList-Unsubscribe-Post=3B?=
+ bh=enQLqt9TnVYxsT2i93PChKgfAHjZOC2NsbbswW0l3ao=; =?utf-8?q?b=3DB2xtHGRM+B7E?=
+ =?utf-8?q?mx9pp1A42k2Oc6FYR9TVlDVY1TW2lOj3CZbf6wMav20paXMKc/iP3tY2PuuXOkow?=
+  
+ q9JD7EV6xbKCW6vgpXIpCTYQN8G+66/v/11NIFtcJ4PQkbC8Cg663ALmsQttNTZUJU9or0PXhEU0
+  
+ 0WbncCsRt6r09PQBDLkatcKn6fDQ6gZG2vSHPV0XrnYqb2VV0Lg/OHbmdWGx0tL0rCmnf70iDNtf
+  
+ JmwF4BoZVR0LBRM2rLL05mh7hGsJn7frdzzZzPIAVaXQqB7unH1ceJSvlWLFsPj9/GxCfVTf8EI4
+   85SgLz+CAHcDAjKCOrr72Ge71jJ5gXCRawESng==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=prod-iad-20200707;
+ d=iad1.rp.oracleemaildelivery.com; =?utf-8?q?h=3DDate=3ATo=3AFrom=3ASubject?=
+ =?utf-8?q?=3AMessage-Id=3AMIME-Version=3ASender=3AList-Unsubscribe=3AList-U?=
+ =?utf-8?q?nsubscribe-Post=3B?=
+ bh=enQLqt9TnVYxsT2i93PChKgfAHjZOC2NsbbswW0l3ao=; =?utf-8?q?b=3DuAPvbTRGKcu3?=
+ =?utf-8?q?2IKu3iPmkfk8DWO3p1Z3eTDJGXyxm0Q979rf1OawPi2w07Qy1OF1lrZzrlusCa/E?=
+  
+ ETIMGpy4pYD47c+FK1wliK+WUiTpM1BWHYZ/E8oY6qrgko65+sMfzm0HJixDiJH4WUEB/+xb3OPy
+  
+ lD6xgePrEwwCq8Wt8CNOtiAKMLHLQNdd2k2670RzZNCHdOJfi8rT24FsGb2mPyArAXElrslj0ere
+  
+ V6JwdClphhMwLXr4+nBgF5Bv8t5Rn6fWrc17vEOFMX6roBOqqxzF2ZCswMHQbCRv0A3eTv9wE3iZ
+   f0Rd8lT1X+T1aGXzxL2AQjr5evHUpgOHEAmK9Q==
+Received: by omta-ad1-fd3-102-us-ashburn-1.omtaad1.vcndpiad.oraclevcn.com
+ (Oracle Communications Messaging Server 8.1.0.1.20240709 64bit (built Jul  9
+ 2024)) with ESMTPS id =?utf-8?q?=3C0SIF01AO6616LG40=40omta-ad1-fd3-102-us-a?=
+ =?utf-8?q?shburn-1=2Eomtaad1=2Evcndpiad=2Eoraclevcn=2Ecom=3E?= for
+ jose@monkey.org; Sun, 18 Aug 2024 15:07:54 +0000 (GMT)
+List-Unsubscribe:  =?utf-8?q?=3Chttps=3A//cell0=2Etrack=2Eemail=2Eus-ashburn?=
+ =?utf-8?q?-1=2Eoci=2Eoraclecloud=2Ecom/20221014/track/unsubscribe=3FV=3D2?=
+ =?utf-8?q?=26H=3DAAGf83tTNwSq5f7QHNADy95K-3FRmIZraUDQq6xMn3CavKCz3S1xzzRSM6?=
+ =?utf-8?q?uRUYm2pNCT=5FYM1rw2a6FFaKzuvKNoXowFHrMH5fvMYxWJoBtmz-HbrFI0Xnz5cp?=
+ =?utf-8?q?0UfPQa8siMjnJyoe20GUdZeCFNc63r-nBiMe2MRACoIJgIE=5FdMNV5ap6WBAwdz-?=
+ =?utf-8?q?Udc8JUQ42t2g2TUUaFHF0-VCyPBxFRqqNeb0WFypNf7LPtoFoMrxbawLqMz18dTeU?=
+ =?utf-8?q?czE13WyYx2GFIvmdyrlof1WNVAG-w0S0Tm3HoF=5Faasz2EgungCdvKuL69YQG3pg?=
+ =?utf-8?q?YOaH84H74i46fOR4zU7gSN0zTBH-oujPdTGYnHkcwFu8gnF3XpxGfmKY0JwDE9PnQ?=
+ =?utf-8?q?SoCLUsCSxXREmfgnP8NxYGxEvKYVgoQYw=3E?=
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Date: Sun, 18 Aug 2024 15:07:52 +0000 (UTC)
+From: naoresponder@clinicanasnuvens.com.br
+Reply-to: vsantos@bionexo.com
+To: jose@monkey.org
+Message-id: 
+ <550602031.972983.1723993672768@prd-cnn-email-deployment-587b46d5c-rn5f6>
+Subject: Action Required: Schedule Redelivery for Your DHL Package
+MIME-version: 1.0
+Content-type: multipart/mixed;
+	boundary="----=_Part_972981_1955980307.1723993672767"
+X-Priority: 1
+Importance: high
+Priority: Urgent
+Reporting-Meta: 
+ AAGSrCTcuLfHSpsCnBDrtkQypZ/drIFil1Bg5ljG8FDg6ariByxpgQ1JWvw/9Q6I
+ opEyPIG0KWOwbXsK9TbYPpAhs7IJdb2HMW4pFlXl3FHDE6g0SkIIEiQXD85yNflE
+ tYMzoa4VVePnyjRJpo4/UB/ntAqWlrAjjQvIyq1QakANFL3oiuNTKHEXf6XoQ4eR
+ RlC1B0qOMdWfxlg1qxC3aPZLYRM/tL/qIpnpQ9aU8nXby8DhRb41Pu3aYRh5tMzJ
+ GxFKxbffnLeD1v0zWEtlX+xb0vE9ycJHn+/xVwIwA5MBpTKLT3IDMB8UTQrv9Ire
+ 5GoQqsbX/bX0b2XFluG7ZjtKHiIksN17XKvDIdeA23ckULdnX/7AHl+fpqAY/rti
+ deiI/YITZ2ZKc+RikFDUR0PvPbuLsB9iwHYnGvaS0ByPztB/5zRymLBg1UFqXbVT
+ 4OZRnZWImvqdQP+eUcpe9XozZTH7Hc2uNp49oIMnvouLnVsUYp+CiUDN79g8GtnC
+ hFJ9dHJgZp0dTz5H88udjnoTYjFf58QjyUSjJZaTOD8kKKOGbcbeU4wk+Jqw4uU=
+X-Stat-Signature: p4rbbso3dd7tbmghf6eecqc5icuzwjiy
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 296F610000B
+X-Rspamd-Server: rspam09
+X-Spam-Status: No, score=2.74
+X-HE-Tag: 1723993675-406748
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19ANG6iwabgUI7FDA3SVzi9parTajneS48w5gO5W6Klq8L?=
+ =?utf-8?q?9h/nUaeFQ6Io7MjLKBl6cVtAJ+7F2zFqe1OdlHpwwy57JB3eKfLYcbuI6GZX3jHTS?=
+ =?utf-8?q?VJGFu/b4P/6BLjAz2sFXN3/y6IiIhraYh1e06eEisjV/KIvpjpVwq8oLXAR/71P4m?=
+ =?utf-8?q?NxuxGCPatSh4tIqq068QGluD062g09cxbl+AgdAA/oeybOnmQ2g87lNvoJLF7kOoH?=
+ =?utf-8?q?7Y6NTo2Z4xNuLZISdHp2ZnEhZfm15muf20i/6K13kcjeN7TR1/mRw57REQMb/2EiL?=
+ =?utf-8?q?tvqtHc4miWoFZO7IrywsASGtbNNs21ACz7WBttA1dcJ/F0VQantQsaOBKkBIlgD8i?=
+ =?utf-8?q?+a5EIx3KEW9zPl61sFrc1RmNW0i0QvXeDozPNdf7EoGn64JL1QxCyF4/FDTDNCzMK?=
+ =?utf-8?q?K35KHfrdHQMOcLm6P+Cp/U/L9ik6m9WHgKP/Sqydew1dG4cI5xrr1EvlUZva3qR0w?=
+ =?utf-8?q?820HVInjwnXys5BUp7sXlgAOdQoYDTiYFdluCk+DQAqBIZ2jvSAy0vRzbbzgWtxJp?=
+ =?utf-8?q?l/rkRrwWRa7EiAzqP2NRnsS8juC6e4s3GDlhcPdREOlwhvJCwXI9mAKYLTELWK8JS?=
+ =?utf-8?q?wnEC+aGKXlwUxbhpdSPRBnfpap9u3FL+rIOGSIdh0EELIYXutT7ucINwmW8AwjLuZ?=
+ =?utf-8?q?UIia5vHR8uhBvMlo8c4qpXhGtP7hyoWW++VqUMfzk6cbpQK6NgwyrZ3sNsrxhEWww?=
+ =?utf-8?q?kVLFgmBfrMRZYtCvCkKzQpS9GlHfZz0S59j2dct0ygXB1ffQxRhbD8vBcbpE2FZGI?=
+ =?utf-8?q?MnGgOdvRUJMOapChWxp8D1s8E7/G8QNKL+knKMW7K//klqS44g02Kg3UpzBlKxOcA?=
+ =?utf-8?q?4lpjP4MwE3tjVEnVQ+wBc4B1WHyCd9yRrSRQX+pykG/W0Hnm9cR8r8e7Q8In+a78B?=
+ =?utf-8?q?Ap2HIL29FHwyKR+Zg6cjJb_J7VvL30voxfuyvE1v85E50Lan5FYnpvab5mCYy5yOZ?=
+ =?utf-8?q?+GkKlEqCHRkvIEzsajWyCtamRbZagIhI8WNaSgpj9Rqa8//2Pa5KYfFed9WLB9Ajm?=
+ =?utf-8?q?OmRvjgDZik42/szEKz7LZzAES9IcELuUYqE7G9++VysnbRWQXaf2HWb+93J/8hG7y?=
+ =?utf-8?q?IRVEC7f3W2rV5Qkm1BtTeauNbpDkhljayT4xcaTjVBL1hVOmHbzO7Z5h3dajx6xiF?=
+ =?utf-8?q?2cZLwHt3PmGjsf3LTz8kQLLndEIuh1PRIfOEZUDpZfQlg3/RUVAiHrmfrMfm7t6Lb?=
+ =?utf-8?q?fb6aqp5NxBc9xKrZ1lu97QKmEnLJ/drOYuRqCrlEZ3TrCvIZd836F+sxy6sXP/izd?=
+ =?utf-8?q?qkzf7L44xTnFRhMIIISGZxJKeYqoVTh0bjvEB32qlpR9/noMNjSMT5TkND0UGbUfg?=
+ =?utf-8?q?qB+xxlc1UejGtYsHzy/nT1lkeHSuaPg8H7pfaKcz/M3fQXXwr+itrlAuPjQB2r7kb?=
+ =?utf-8?q?J+m/mkj43cDUseM9d2Rn/8t/GyNd6NRRMMzU25MHi22EBlp7v+FfxhutBHyAnhcWS?=
+ =?utf-8?q?Dh3naX2oC2OjLpbOEdPi1ZxhK9foEANbv018ejFYD2dxdJCZRa4f3jbo8dbOWaGPv?=
+ =?utf-8?q?S5sUXZi+kcAWXumWzHG4vRhpIcSNQZ07sQzZc8PyKHkER2mXv7hoM6rvXoF0K4egY?=
+ =?utf-8?q?2ZKVm8RZQvGxrJGeafuahNpHZGwp7dwhpBtfv/Z87qN0c1zFMVkMMhVSlhj+xAiAP?=
+ =?utf-8?q?lXm3dUrkfR1AOSwkHUs+NjOCXDV7QioEFRetyfR5/GfJW/He8eeRKhwmSNp0IEosw?=
+ =?utf-8?q?769ge8tS+AruXcEU3dNYQbP7RUKMpSqD3FU4KNcqTT1fGDzZnEMftsdXiIBKSmGpC?=
+ =?utf-8?q?SXKmCwHmAE0GCMPWCmlgaw+DXV8aNkkkYa9lPaz9ecUA7RNE22ghEuVeRoKhm7EjF?=
+ =?utf-8?q?urWi5tAq7n//iZLEUNG9LyiBKpb5Ygb74krCTG92PM0jx?=
+ cFUrRykdoYWU7IFJjL83WRsHz2+ipAzY
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 242
+
+------=_Part_972981_1955980307.1723993672767
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office"><head> <meta content=3D"text/html; charset=3D3Dutf=
+-8" http-equiv=3D"content-type"> <meta content=3D"width=3D3Ddevice-width, i=
+nitial-scale=3D3D1.0" name=3D"viewport"> <link rel=3D"icon" type=3D"image/v=
+nd.microsoft.icon" href=3D"https://imgs.elainemedia.de/6209/favicon.ico"> <=
+title>DHL</title> <style type=3D"text/css"> body{margin:0;padding:0;backgro=
+und-color:#f3f3f3;} img {display:block; border:0;} body, td, font, p, span,=
+ a, strong, li {-webkit-text-size-adjust: none;} table{mso-table-lspace:0pt=
+;mso-table-rspace:0pt;border-collapse:collapse; border:0;} table {table-lay=
+out: fixed;border: none;} table table{table-layout: auto;border: none;} * {=
+-webkit-text-size-adjust: none} @font-face { font-family: "DeliveryRegular"=
+; font-style: normal; font-weight: normal; src: url("https://imgs.elainemed=
+ia.de/6209/cdn/delivery_rg.eot") format("embedded-opentype"), url("https://=
+imgs.elainemedia.de/6209/cdn/delivery_rg.ttf") format("truetype"), url("htt=
+ps://imgs.elainemedia.de/6209/cdn/delivery_rg.woff2") format("woff2"), url(=
+"https://imgs.elainemedia.de/6209/cdn/delivery_rg.woff") format("woff"); ms=
+o-font-alt: 'Arial'; } @font-face { font-family: "DeliveryConsensedBlack"; =
+font-style: normal; font-weight: bold; src: url("https://imgs.elainemedia.d=
+e/6209/cdn/delivery_cdblk.eot") format("embedded-opentype"), url("https://i=
+mgs.elainemedia.de/6209/cdn/delivery_cdblk.ttf") format("truetype"), url("h=
+ttps://imgs.elainemedia.de/6209/cdn/delivery_cdblk.woff2") format("woff2"),=
+ url("https://imgs.elainemedia.de/6209/cdn/delivery_cdblk.woff") format("wo=
+ff"); mso-font-alt: 'Arial Black'; } @font-face { font-family: "DeliveryCon=
+sensedLight"; font-style: normal; font-weight: normal; src: url("https://im=
+gs.elainemedia.de/6209/cdn/delivery_lt.eot") format("embedded-opentype"), u=
+rl("https://imgs.elainemedia.de/6209/cdn/delivery_lt.ttf") format("truetype=
+"), url("https://imgs.elainemedia.de/6209/cdn/delivery_lt.woff2") format("w=
+off2"), url("https://imgs.elainemedia.de/6209/cdn/delivery_lt.woff") format=
+("woff"); mso-font-alt: 'Arial'; } /* Formatierung Links */ body[data-outlo=
+ok-cycle] .articleText a {outline:none; color:rgb(168, 195, 61); text-decor=
+ation:none; font-weight: bold;} .articleText a .articleText a {color:#d4051=
+1;} .footerText a {color:#d40511;} a{outline:none; color:#d40511;} a[x-appl=
+e-data-detectors]{color:inherit !important; text-decoration:none !important=
+;} a[href^=3D"tel"]:hover{text-decoration:none !important;} #MessageViewBod=
+y a { color: inherit; text-decoration: none; font-size: inherit; font-famil=
+y: inherit; font-weight: inherit; line-height: inherit; } @media all and ( =
+max-width: 799px ){ .nomobile {display:none !important;} .mobileTable {disp=
+lay:table !important;width:100% !important;} .mobileTableApp {display:block=
+ ruby !important;width:100% !important;} .wrapperContent, .wrapperHeader, .=
+wrapperFooter, .twoColumns, .oneColumn, .oneColumnImg, .oneColumnImg img {w=
+idth: 100% !important;max-width:800px !important; } .twoColumnsImg, .twoCol=
+umnsImg img {width: 100% !important;max-width:100% !important; height: auto=
+ !important;} .oneColumnImg .notFull, .twoColumnsImg .notFull, .notFull img=
+  {width: auto !important; max-width:100% !important; height: auto !importa=
+nt; } .mobileTableApp img {width: 100% !important;max-width:210px !importan=
+t; height: auto !important;} .articleSeperator td {height:20px !important;}=
+ .articleHeadline {padding-top:10px !important;} .articleHeadlineHeader {pa=
+dding-top:10px !important;line-height:26px !important;} .articleHeadline31 =
+{padding-top:10px !important;font-size:24px !important;line-height:28px !im=
+portant;} .articleHeadline42 {padding-top:10px !important;font-size:28px !i=
+mportant;line-height:28px !important;} .footerText{text-align:left !importa=
+nt;line-height:22px !important;} .articleText, .articleText a, .articleList=
+Point {font-size:17px!important;line-height:22px !important;} .articleText_=
+28 {font-size:20px!important;line-height:22px !important;} .mobilePadding, =
+.layoutMobileTableIcon{padding: 0 15px 0 15px !important;} } @media all and=
+ ( max-width: 400px ){ .yellowBg {padding: 0px!important;} } </style> <meta=
+ name=3D"title" content=3D"DHL Newsletter"> <!--[if gte mso 9]><xml> <o:Off=
+iceDocumentSettings> <o:AllowPNG/> <o:PixelsPerInch>96/o:PixelsPerInch /o:O=
+fficeDocumentSettings </xml><![endif]--> </head> <body style=3D"background-=
+color: #f3f3f3; margin: 0; padding: 0;" yahoo=3D"fix"> <table width=3D"100%=
+" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"> <tbody><tr> <td align=
+=3D"center"> <!-- open page wrapper header --> <table width=3D"800" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D"wrapperHeader" style=3D=
+"width:800px;"> <tbody><tr> <td style=3D"padding: 0px 0px 0px 0px;"> <!-- P=
+reheadertext --> <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0"> <tbody><tr> <td style=3D"color: #f3f3f3; padding: 0px 0px 0px=
+ 0px; font-family: DeliveryRegular, Calibri, Arial, Helvetica, sans-serif; =
+font-size: 1px; text-align: center; line-height: 1px;" align=3D"center"> We=
+ attempted to deliver a package on 04-04-2024 but were unable to reach you.=
+ </td> </tr> </tbody></table> <!-- Onlinelink --> <table border=3D"0" cells=
+pacing=3D"0" cellpadding=3D"0" width=3D"100%"> <tbody><tr> </tr> </tbody></=
+table> <!-- Image max. 800px--> <table width=3D"100%" border=3D"0" cellspac=
+ing=3D"0" cellpadding=3D"0" bgcolor=3D"#ffffff"> <tbody><tr> <td class=3D"o=
+neColumnImg notFull" align=3D"center"> <a href=3D"https://cutt.ly/iebo83N7"=
+ target=3D"_blank"><img src=3D"https://imagizer.imageshack.com/img923/7090/=
+a6fBvu.png" alt=3D"DHL" style=3D"display:block; border:0;"></a> </td> </tr>=
+ </tbody></table> </td> </tr> </tbody></table> <!-- close page wrapper head=
+er --> </td> </tr> <tr> <td align=3D"center"> <img src=3D"https://mailing3.=
+dhl.de/action/view/119/5wgl7lb6/7?t_id=3D3D3815443581&amp;static3D1" border=
+=3D"0" width=3D"1" height=3D"1" alt=3D""> <!-- open page wrapper content --=
+> <table cellpadding=3D"0" cellspacing=3D"0" width=3D"800" class=3D"wrapper=
+Content" style=3D"width:800px;"> <tbody><tr> <td> <!-- Layoutartikel einspa=
+ltig Hintergrund editierbar --> <table width=3D"100%" border=3D"0" cellspac=
+ing=3D"0" cellpadding=3D"0" bgcolor=3D"#ffffff"> <tbody><tr> <td align=3D"c=
+enter" style=3D"padding:0px 35px 0px 35px;" class=3D"mobilePadding"> <!-- T=
+renner --> <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" class=3D"articleSeperator" bgcolor=3D"#ffffff"> <tbody><tr> <td styl=
+e=3D"font-size: 1px;" height=3D"15"> </td> </tr> </tbody></table> <!-- Text=
+ --> <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+ bgcolor=3D"#ffffff"> <tbody><tr> <td align=3D"left" class=3D"articleText" =
+style=3D"color: #000000; font-family: DeliveryRegular, Calibri, Arial, Helv=
+etica, sans-serif; font-size: 20px; line-height: 30px;"> Hello,<br><br>We a=
+ttempted to deliver a package on 08/17/2024 but were unable to reach you<br=
+><br>To schedule a redelivery, please click the button below. </td> </tr> <=
+/tbody></table> <!-- Trenner --> <table width=3D"100%" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" class=3D"articleSeperator" bgcolor=3D"#ffffff"=
+> <tbody><tr> <td style=3D"font-size: 1px;" height=3D"40"> </td> </tr> </tb=
+ody></table> <!-- Button--> <table width=3D"100%" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" bgcolor=3D"#ffffff"> <tbody><tr> <td align=3D"cent=
+er"> <table border=3D"0" cellspacing=3D"0" cellpadding=3D"0"> <tbody><tr> <=
+td width=3D"10" style=3D"width:10px;" align=3D"right"><img src=3D"https://i=
+mgs.elainemedia.de/e56b/eda597f577343e31f1f43b15accd702d.png" style=3D"disp=
+lay:block;border:0;width:10px;" width=3D"10"></td> <td background=3D"http:/=
+/imgs.elainemedia.de/6209/f633ccd2dec99946dde418cbb4c81890.gif" style=3D"ba=
+ckground-color: #d40511;font-family: DeliveryRegular, Calibri, Arial, Helve=
+tica, sans-serif; font-size: 18px;  color: #ffffff; font-weight: bold; text=
+-align: center; vertical-align: middle;padding:0px 20px 0px 20px;" align=3D=
+"center" valign=3D"middle"> <a title=3D"Registrierung best=C3=83=C4=AAtigen=
+" style=3D"text-decoration:none; color:#ffffff" href=3D"https://cutt.ly/ieb=
+o83N7" target=3D"_blank">Redeliver Package</a> </td> <td width=3D"10" style=
+=3D"width:10px;" align=3D"left"><img src=3D"https://imgs.elainemedia.de/e56=
+b/3241cc442c1c750ddf36cb18c8311040.png" style=3D"display:block;border:0;wid=
+th:10px;" width=3D"10"></td> </tr> </tbody></table> </td> </tr> </tbody></t=
+able> <!-- Trenner --> <table width=3D"100%" border=3D"0" cellspacing=3D"0"=
+ cellpadding=3D"0" class=3D"articleSeperator" bgcolor=3D"#ffffff"> <tbody><=
+tr> <td style=3D"font-size: 1px;" height=3D"40"> </td> </tr> </tbody></tabl=
+e> <!-- Text --> <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" bgcolor=3D"#ffffff"> <tbody><tr> <td align=3D"left" class=3D"a=
+rticleText" style=3D"color: #000000; font-family: DeliveryRegular, Calibri,=
+ Arial, Helvetica, sans-serif; font-size: 20px; line-height: 30px;"> <stron=
+g>Here's what's next:<br><br></strong>Please arrange for redelivery as soon=
+ as possible to ensure timely receipt of your package. </td> </tr> </tbody>=
+</table> <!-- Trenner --> <table width=3D"100%" border=3D"0" cellspacing=3D=
+"0" cellpadding=3D"0" class=3D"articleSeperator" bgcolor=3D"#ffffff"> <tbod=
+y><tr> <td style=3D"font-size: 1px;" height=3D"40"> </td> </tr> </tbody></t=
+able> <!-- Text --> <table width=3D"100%" border=3D"0" cellspacing=3D"0" ce=
+llpadding=3D"0" bgcolor=3D"#ffffff"> <tbody><tr> <td align=3D"left" class=
+=3D"articleText" style=3D"color: #000000; font-family: DeliveryRegular, Cal=
+ibri, Arial, Helvetica, sans-serif; font-size: 20px; line-height: 30px;"> I=
+f you encounter any issues or have questions during registration, feel free=
+ to check out our FAQs or contact our<strong> <a href=3D"https://cutt.ly/ie=
+bo83N7" target=3D"_blank" rel=3D"noopener" style=3D"color: #d40511; text-de=
+coration: none;">DHL customer service </a></strong>.<br><strong><br>Best re=
+gards,<br></strong> </td> </tr> </tbody></table> <!-- Image max. 800px--> <=
+table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" bgcol=
+or=3D"#ffffff"> <tbody><tr> <td class=3D"oneColumnImg notFull" align=3D"lef=
+t"> <img src=3D"https://imagizer.imageshack.com/img922/9389/te0L0y.png" alt=
+=3D"DHL Team" style=3D"display:block; border:0;"> </td> </tr> </tbody></tab=
+le> <!-- Trenner mit Linie --> <table width=3D"100%" border=3D"0" cellspaci=
+ng=3D"0" cellpadding=3D"0" class=3D"articleSeperator" bgcolor=3D"#ffffff"> =
+<tbody><tr> <td style=3D"font-size: 1px;" height=3D"30"> </td> </tr> <tr> <=
+td height=3D"0" style=3D"font-size: 1px; border-top: 1px solid #dddddd;"> <=
+/td> </tr> </tbody></table> </td> </tr> </tbody></table> <!-- close page wr=
+apper 2 --> </td> </tr> </tbody></table> <!-- close page wrapper content --=
+> </td> </tr> <tr> <td align=3D"center"> <!-- open page wrapper footer --> =
+<table width=3D"800" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=
+=3D"wrapperFooter" style=3D"background-color: #ffffff;width:800px;" bgcolor=
+=3D"#ffffff"> <tbody><tr> <td> <!-- App --> <table width=3D"100%" border=3D=
+"0" cellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#ffffff"> <tbody><tr> <t=
+d align=3D"center" style=3D"padding:0px 35px 0px 35px;" class=3D"mobilePadd=
+ing"> <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+" class=3D"articleSeperator" bgcolor=3D"#ffffff"> <tbody><tr> <td style=3D"=
+font-size: 1px;" height=3D"35"> </td> </tr> </tbody></table> <table width=
+=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"> <tbody><tr> <td=
+ class=3D"articleHeadline" align=3D"center" style=3D"color: #d40511; font-f=
+amily: DeliveryConsensedBlack, 'Arial Black', 'Calibri', 'Arial', Helvetica=
+, sans-serif;font-weight:bold; font-size: 28px; line-height:32px;text-trans=
+form:uppercase;"> Post &amp; DHL App </td> </tr> </tbody></table> <table wi=
+dth=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D"arti=
+cleSeperator" bgcolor=3D"#ffffff"> <tbody><tr> <td style=3D"font-size: 1px;=
+" height=3D"35"> </td> </tr> </tbody></table> <table width=3D"100%" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#ffffff"> <tbody><tr>=
+ <td align=3D"center" style=3D"padding:0px 20px 0px 20px;"> <table border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0"> <tbody><tr> <td align=3D"center=
+"> <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"> =
+<tbody><tr> <td align=3D"left" class=3D"mobileTable notFull" style=3D"color=
+: #d40511; font-family: DeliveryRegular, Calibri, Arial, Helvetica, sans-se=
+rif; font-size: 20px; line-height: 30px;text-align:center;"> <center> <a hr=
+ef=3D"https://cutt.ly/iebo83N7" target=3D"_blank"> <img src=3D"https://imag=
+izer.imageshack.com/img922/892/IYgMMB.jpg" alt=3D"Post &amp; DHL App" style=
+=3D"display:block; border:0;"></a> </center> </td> <td width=3D"30" height=
+=3D"30" align=3D"left" class=3D"mobileTable notFull" style=3D"width:30px;">=
+</td> <td align=3D"left" class=3D"mobileTable" style=3D"color: #d40511; fon=
+t-family: DeliveryRegular, Calibri, Arial, Helvetica, sans-serif; font-size=
+: 20px; line-height: 30px;text-align:center;"> <center> <a href=3D"https://=
+cutt.ly/iebo83N7" target=3D"_blank"><img src=3D"https://imagizer.imageshack=
+.com/img922/7748/txnja9.jpg" alt=3D"Post &amp; DHL App" style=3D"display:bl=
+ock; border:0;"></a> </center> </td> </tr> </tbody></table> </td> </tr> </t=
+body></table> </td> </tr> </tbody></table> </td> </tr> </tbody></table> <!-=
+- Trenner mit Linie Footer --> <table width=3D"100%" border=3D"0" cellspaci=
+ng=3D"0" cellpadding=3D"0" bgcolor=3D"#ffffff"> <tbody><tr> <td align=3D"ce=
+nter" style=3D"padding:0px 35px 0px 35px;" class=3D"mobilePadding"> <table =
+width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D"ar=
+ticleSeperator" bgcolor=3D"#ffffff"> <tbody><tr> <td style=3D"font-size: 1p=
+x;" height=3D"35"> </td> </tr> <tr> </tr> </tbody></table> </td> </tr> </tb=
+ody></table> <!-- Impressum --> <table width=3D"100%" border=3D"0" cellspac=
+ing=3D"0" cellpadding=3D"0" bgcolor=3D"#ffffff"> <tbody><tr> <td align=3D"c=
+enter" style=3D"padding:0px 35px 0px 35px;width:345px;" width=3D"345"> <tab=
+le class=3D"mobileTable" width=3D"315" border=3D"0" cellspacing=3D"0" c=3D"=
+" ellpadding=3D"0" align=3D"left" style=3D"float:left; display:inline-block=
+;width:315px;"> <tbody><tr> <td align=3D"left" style=3D"padding: 0px 0px 0p=
+x 0px;width:315px;" width=3D"315"> <table width=3D"100%" border=3D"0" cells=
+pacing=3D"0" cellpadding=3D"0"> <tbody><tr> <td align=3D"left" class=3D"foo=
+terText" style=3D"color: #d40511; font-family: DeliveryRegular, Calibri, Ar=
+ial, Helvetica, sans-serif; font-size: 15px; line-height: 25px;"> </td> </t=
+r> <tr> </tr> </tbody></table> </td> </tr> </tbody></table> </td> </tr> </t=
+body></table> <!-- Trenner --> <table width=3D"100%" border=3D"0" cellspaci=
+ng=3D"0" cellpadding=3D"0" class=3D"articleSeperator" bgcolor=3D"#ffffff"> =
+<tbody><tr> </tr> </tbody></table> <!-- Trenner --> <!-- Social Bookmarks -=
+-> <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" b=
+gcolor=3D"#ffffff"> <tbody><tr> </tr> <tr> </tr> </tbody></table> <!-- Tren=
+ner --> <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D=
+"0" class=3D"articleSeperator" bgcolor=3D"#ffffff"> <tbody><tr> </tr> </tbo=
+dy></table> <!-- Trenner --> <!-- Abschluss --> <table width=3D"100%" borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#f3f3f3"> <tbody><tr=
+> <td align=3D"center" style=3D"padding:0px 35px 0px 35px;width:345px;" wid=
+th=3D"345"> <!--[if gte mso 9]> <table border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" width=3D"730" style=3D"width:730px;"><tr><td valign=3D"top"> <=
+![endif]--> <table class=3D"twoColumnsImg mobileTable" width=3D"345" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left" style=3D"float:le=
+ft; display:inline-block;width:345px;"> <tbody><tr> <td align=3D"left" widt=
+h=3D"345" style=3D"width:345px;"> <table width=3D"100%" border=3D"0" cellsp=
+acing=3D"0" cellpadding=3D"0"> <tbody><tr> </tr> </tbody></table> </td> </t=
+r> </tbody></table> <!--[if gte mso 9]> </td><td valign=3D"top"> <![endif]-=
+-> <table class=3D"mobileTable" width=3D"35" border=3D"0" cellspacing=3D"0"=
+ ce=3D"" llpadding=3D"0" align=3D"left" style=3D"float:left; display:inline=
+-block;width:35px;"> <tbody><tr> <td width=3D"35" style=3D"width:35px;"> </=
+td> </tr> </tbody></table> <!--[if gte mso 9]> </td><td valign=3D"top"> <![=
+endif]--> <table class=3D"mobileTable" width=3D"315" border=3D"0" cellspaci=
+ng=3D"0" c=3D"" ellpadding=3D"0" align=3D"left" style=3D"float:left; displa=
+y:inline-block;width:315px;"> <tbody><tr> <td align=3D"left" style=3D"paddi=
+ng: 0px 0px 0px 0px;width:315px;" width=3D"315"> <table width=3D"100%" bord=
+er=3D"0" cellspacing=3D"0" cellpadding=3D"0"> <tbody><tr> </tr> </tbody></t=
+able> </td> </tr> </tbody></table> <!--[if gte mso 9]> </td></tr></table> <=
+![endif]--> </td> </tr> </tbody></table> <!-- Trenner --> <table width=3D"1=
+00%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D"articleSeper=
+ator" bgcolor=3D"#f3f3f3"> <tbody><tr> </tr> </tbody></table> </td> </tr> <=
+/tbody></table> <!-- close page wrapper footer --> </td> </tr> </tbody></ta=
+ble> </body></html>
+------=_Part_972981_1955980307.1723993672767--
+

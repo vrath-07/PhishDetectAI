@@ -1,0 +1,244 @@
+Return-Path: support@dilez.com
+Delivered-To: jose@monkey.org
+X-FDA: 82581939384.01.49D93AA
+Received: from mail.dilez.com (mail.dilez.com [148.135.58.229])
+	by imf15.b.hostedemail.com (Postfix) with ESMTP id 2390B60008
+	for <jose@monkey.org>; Thu, 19 Sep 2024 15:56:10 +0000 (UTC)
+Authentication-Results: imf15.b.hostedemail.com;	dkim=pass header.d=dilez.com
+ header.s=dkim header.b=eRHSwI0U;	spf=pass (imf15.b.hostedemail.com: domain of
+ support@dilez.com designates 148.135.58.229 as permitted sender)
+ smtp.mailfrom=support@dilez.com;	dmarc=pass (policy=none)
+ header.from=dilez.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1726761269;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=mMlEYc4pRwiF8wmX3+GqZGURZknRM0QNCfMi2bctYxY=;
+	b=qrmpPD8ghpSLItqGNsuXeFYs6iEb1QqpUKRTqAl1xbyBwMp/1TEQgxyhUKtbGyrcfBm5dQ
+	/ruSRmnzflUB183JvVvlMi6B8eQu8o1uGKj4X+k/ln7YAblBaC8pO+FPN6U+Ca+xbKPvWR
+	XzpnOhDwvmFnkXvr8i61B6pFslsLAVM=
+ARC-Authentication-Results: i=1;	imf15.b.hostedemail.com;	dkim=pass
+ header.d=dilez.com header.s=dkim header.b=eRHSwI0U;	spf=pass
+ (imf15.b.hostedemail.com: domain of support@dilez.com designates
+ 148.135.58.229 as permitted sender) smtp.mailfrom=support@dilez.com;
+	dmarc=pass (policy=none) header.from=dilez.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1726761269; a=rsa-sha256;
+	cv=none;
+	b=KRhTsVP8GR/nXWpy8xOjwLkeMdeIBN5DgGrLWETwp9I7C8hN5SQYxh8SOwPw6dtMut5lGG
+	UtkZBl2KkBr/MlTEDbPUxlirP6TaoSLEVP6pjGQ7Yy2uGhzvCQWDu754/Q/PZ7yoNrzZ5l
+	5oVTIZiQg1iU+TYu2LkGoOUba1N8AdY=
+Received: from [127.0.0.1] (localhost [127.0.0.1]) by localhost (Mailerdaemon)
+ with ESMTPSA id E19EF5EBF8	for <jose@monkey.org>; Mon, 16 Sep 2024 01:01:54
+ +0100 (BST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=dilez.com; s=dkim;
+	t=1726444915; h=from:subject:date:message-id:to:mime-version:content-type:
+	 content-transfer-encoding; bh=mMlEYc4pRwiF8wmX3+GqZGURZknRM0QNCfMi2bctYxY=;
+	b=eRHSwI0UgducfXdK8qvhksHMBdx1qlxhs8HRH9xRvD/oxImM9qMDpeco9+IYSFAGN2qJib
+	6joyD1PdtQPsPR0KkFwmkJIHoUlMehlD8Etu2Ty5VPa595qHtlFpOgH3lqUAZkQMO6eSkf
+	A1GnEbD4YTszRCkNxwpgplV87PghMr2d5qgsBvhnkcOODxURwoEA4eR4tO8bLPK0zOIQ6I
+	RPzxrbFVNn/ztHDgujEZW4gKBSrCV8zWlBm1TSAkvQLyfqyEF5EpIHremBqmd+ES5x2nGp
+	NCBX7gM3NPQc4MPs0g2LtFzT9lyyno93ZHSNXOGXGDmOQkOcHbwNWTmOALvrNQ==
+From: "Team" <support@dilez.com>
+To: jose@monkey.org
+Subject: Last Reminder!!!
+Date: 16 Sep 2024 02:01:53 +0200
+Message-ID: <20240916020153.83A67CB164E0D339@dilez.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Last-TLS-Session-Version: TLSv1.3
+X-Stat-Signature: wqfusfgj5uxbqgjdmzec38ga9tf7brof
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 2390B60008
+X-Rspamd-Server: rspam09
+X-Spam-Status: No, score=0.93
+X-HE-Tag: 1726761370-722032
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+0ZyvHXtIHAoRWvKXZRCTqNfUzFDXhGRR1crxpOUW2lKC?=
+ =?utf-8?q?pK1iWRj/rUWSiYTPkmqFBadNqEmpMcRX2Fvz2WBctFMt+sEu3K5oxBsbQ/wkTw4Dv?=
+ =?utf-8?q?mFxJQ09QV30YjjqDUG8cQg6k+I4GpnrvosrmmOE7SPonv7lt80SBqp1updRVn+OIF?=
+ =?utf-8?q?pkbyUjme+heghagxZP38/+MZJJGoVQE1L1XhR6ZmtKegJtDNr+6V5uXu9e+BBxdDT?=
+ =?utf-8?q?vz64NRBucHdNj3aeZqspT5vi0MWng25bLU9CMUqzB3XjoGqfM3QBZ0M4z+xOWdlrc?=
+ =?utf-8?q?sSMzMGQHfyuc4PoT7nMBQ+X0nIV++IKnK90fzYHBu7j9csskHXAq8loWo23W7PJxB?=
+ =?utf-8?q?tdTHwxw0lMShHRl/DfxtMzIdITdF8rJyJ/bZpgRIW50zjuIlBLn5Q4SJ+DV52ZGpb?=
+ =?utf-8?q?b9L4gsFrirrUxa8YWuyQKWNvB9DDyUQ7fdWUGneDLrc4JJ8XOZwZvMWX+7X89z99J?=
+ =?utf-8?q?FjyeSrt+44WVBd/yzUssIDFpfMlncT5HnY4QSVoGphqCAYTvxMQPszoOQB7pRYm1f?=
+ =?utf-8?q?Q8Wo4SCF3d9sumzJlIuJ3cbLxEuFanz+BhUJnxcED35e5W5G7Bzua3jPQ9i/hE/ya?=
+ =?utf-8?q?E5Stwag1kYcszpgjUtfqsL1NCIFMdQiYNI6jpetVvaUIZ7AWyhsuQXS05YLv2/3z/?=
+ =?utf-8?q?n0W4GefW3cIkj8pE1XeKnkckbUGc3rygZPtuvYIEDpWgum+wMxR+h2ywm2S1VymHj?=
+ =?utf-8?q?S4unAyjwUSp25m6pnyrelcbEupW0tsVIJh6ufbHcVydd7KIwkhHIbQ5f2cRoObFTO?=
+ =?utf-8?q?h8lZNNPNI1xfxsZS62Vzolfo9CG2vG3EYs5r5rdQ/Z9wwhUxI4vdYyMUn5IMK/yrw?=
+ =?utf-8?q?R+GAi+KRyht4PPPxFxQr8klsEsOxpL9dalryASebkv0CwTkBpMRI+icBXzpgubNYT?=
+ =?utf-8?q?+EnEZoujuaB0r55gEO/VkJ_5WjlybGNEzq5pb7wL9ailJcvumdP4QeGuiCxNdw1bw?=
+ =?utf-8?q?tmnSOVO4j5ikWeyOw0LhpNoXJs9fIyhGEb/1IEEFLhu+wPi+wYSAoENMdid/w2NsO?=
+ =?utf-8?q?xd45wk6UCww27kxPlqq6mdI031PM30YAnOdc9vWJNkKqBwwIbaC4JPVqme7UGzzcl?=
+ =?utf-8?q?p9FfqcMmG70DflJlxfRrgMWOHVf80dApt5d/HO/Q2A/u2l5w8EwRxzjDA2PgkVz0k?=
+ =?utf-8?q?vXSrNAJNSMOXkx2Yw7erMqMzB/tCl7mEwKLFXPqdmahI6CJZ/Oeb9+8dQ33YEi6G0?=
+ =?utf-8?q?4DbTo1QgNytfmznK8I7wtGDOJzODYLIGyWrXWscVBFKb+dr7ShAZf8C3iES9HTSOw?=
+ =?utf-8?q?FW2jYStcYBvvRSRlSSLG+B5Af1H9lXGJkTc0NF3Dds9cZTdgheBNQe?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 264
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body><html<body>
+<img width=3D"288" height=3D"76" style=3D"width: 295px; height: 77px;" alt=
+=3D""=20
+src=3D"data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAbAAAABwCAMAAABID9UYA=
+AAAolBMVEX///8AAADl5eVAT1Q3vv9mZmbMzMzZ2dl/f3+MjIyysrK/v78/Pz+fn59vb2/Pz88P=
+Dw/v7+/19fXf39/FxcUfHx9fX195eXkvLy+pqamVlZVPT085otRMWl/y+/9Ewv+b3v+fp6lpzv/=
+m9/9YZWnN7/9we3/a4+e05/+GjpC62+zP4OiO0vKC1v+k1u9jbnJtyvd9holYxfrA6/+v2e1Ort=
+zbYdNMAAAQ9ElEQVR4nO2dCZejNhKAbWwaEAYMxsbH9CaT9M5sJnd29///tZVKBzoKENjttrPUe=
++nQWEil+qSqksS4F4tZ7ilVsIuKl5diFzApy6r6aI1m6RQK64VLEWhSzsweUkpJ6+UlCmyZmT2a=
+BMVLDy82zz5aw1k00XHhvGZkDySVjquT1+wYH0V2Oi4z35gn2eOJ
+&#10;&#10;&#10;&#10;Ob36ec2T7OOlfDFlNwBsnmQfKzuLV08Am4k9gNi8hhziTOxjxeblM8F=
+mYh8nDi+vCTYT+ygJbF7DGcdM7APFzg/9J9hM7CPEWn/5RzAu83rs3hJdM8GofLT+/2/iBrBRE2=
+x2ineWyuXln3JwmZ3iPcV1iCM9YjA7xXsKNsHGecRgdor3FGSCjfWI8xS7o2ATbLRHnKPY/cTZk=
+5riEecpdjfBJtgEjzhPsXsJsgZ7eZnAa0477iRYyjEhhAWzT7yPoB5xGrDZJ95DUI84JeeYfeJ9=
+BMsRJ+UcwewT7yLuucoM7KEF4zUpSQyeJYgtmaS3qi1mtcW3qm1Y0JxjBuYv9waG5hzTksRnyTp=
+mYDOwuwGrPme3BBb88OO9NL9CnhhY+ro63RTYev39P+6k+3R5WmDF76vVzYGtv/vXXZS/Qp4UWP=
+DTavUewNbrv/55B/WvkKcEVn1+Xb0XsPX6j4cOZc8IrH5brd4R
+2Pq7R&#10;w5lzw&#10;ds92W&#10;1el9g&#10;1C8+bih7NmDVTytNfrolsJ/XmvzwqKHsyYD=
+J4PUewL6tDfn1Mf3iUwEr3lamfMGATd1L/M0ERkOZbLfMDhvasa2pTLwB4+0vmb1HskupFNZNdi=
+/dWTfJ4cjrSLr2WYp8s2VtbxL+LAaMluGqHCxVSmi0RzsNGOGVUFVsJVtth4uYsrLl7ZbAflnbI=
+np92C65aKqkm6UmB7MDYIaNpfzSHczxtrsOLtneLuECI0etzPagI0tttW3tFDCjoQs6g2OjiD0e=
+UXGArVBgE8/DfsCBkdaqSpHysjRlm3SZRIkDrDhadWR2f+0S7HEb2G5jldFV8QVW2pXkzoRP94N=
+FXHGBoWniRGDfocAyTUdlSFt5NuQ0/b2AFVunDotY5hRYHmxgSC200EhgSCXHAnmov4gXsDMGbN=
+o7Hd8cXmvVZRMYZiSqf0vMB9gOq8QghvCiMExgBCvTEvMDdsFU
+2Ro4Dlgz20&#10;FiLrDfbwfM&#10;zjkAWCn6so&#10;/TcrGzTH3J&#10;UhrWlWu/jAImnNA=
+mY7USYZCtFsckr33C7LLLdK8lgamhcyAFTSaUKpKYHzBVBzwiI/bWdhlMl5y2vJPaGkU8ga1qBN=
+i0vP4PDBjX1IxQIrBslHEz0UVVygNYZj0iTN96s8KuVA+mAlgpAF0cVQj/dQSwtjs7EaDbDgg30=
+wZZtwguCDD0RGwKr68ur7WcYMbUT5am6ZnhBEPZZw9g3NSaCxSAlNn4hDK8TqlyEAEsX9q1yDL7=
+UrO0pQgK7KCXSMx6xbg47twixkh2BQH25VZZB+IR12IeGLm4YGjm58JMstfDwArXSmZbmcurnVE=
+C2M7lpVThlvQGdjCLcBx7/QE9RmsK9jtFBNgqvVEQ+wsDdnCV4n25WJrtjPkxDCw2pxPIXn+Km5=
+1YdRQGsAMydGQZbmxfYEfb7hdtKPAh6mQYF48phgH78zZBDMkR
+KbCNC2ePmHohOea&#10;uSZQY1oXeHhFDCu&#10;vyyeOGiIMGjBty7&#10;5TJYiaAwBeYs1Dm=
+&#10;7XMFETfDShyWePO6YMBesbRjPDB31cyAuaoivozLXlN/GNhGwytFt26C21F6wbQ1pLPa7q=
+pSiQsMyR04DqAOg8vyfUTlrL2pPQYM3QAeHcTQCSaAGX4p6dIyb3voC8watKlW9aZr9F5aYIi/t=
+sUTGAKdtF3XfQdImWgbB70+EQX2ikSxsUHsKzrB1sjG3aHLkqlW9hpgvIZ9xzwW0ypVddjBFKvS=
+uukCw6ArdQtr1Bb6InrTO8FxYDSMuV5xHK/f3F2pLmDdVtLG2/XAOgevVmiJ1IGWtm46wNA4pJx=
+2ajA11u+Hoa2ODmCrV2c1NsYnfsMSxF5gqJW27Sc3AobtmZcWsP4szQ8YuvzdyE9IW8dOP17Yd5=
+4ItdIFbLV6s3aB/fPEn5EdjknAtE/eEZj2SXcZq0rr5khgiawj
+NXyhveJApRsYXUGnU6bY&#10;1186vOF4YBqQGwHDbFJY&#10;wG7hEruBXVQdpX5gtkXP&#10;=
+7hDpA0bTRT2U+aUdXcFr&#10;ABjaQyibdZthPDAMBndQ4IzAgjlSxq7SuukmHdije6mBcV7BZO=
++csHdKPzAzlHng+obnhr3AIHvfIroRrez1wDrHhdY+lDkiZewqrZu6dlxrJHfgC75EXSnBT6M7Z=
+ADYavX7yX+Kfe0JXt3AeFqNOKuDZpvrgemrOkO0/Stse8uSFKvmomnHaSDTVFtvaonGNvf0hUIG=
+gdFQVntGsd7g1Q2sa8+I7xP1OBqe3sllyxAwskQKqPs8NSy6jI1XqQS2KeXKBAYAsvretzNZ5Rr=
+H/kUXIh7AVq9y56M3UfyPBy4UmDj2cPxCrvPQtgmUZMZzQ8D4sHYNaexkdmxrHrVphTAtjbEQ4y=
+Mj0x4Up9oHu88eW2M+wCiyz0NO8eeh4NUDjKu5t0zJOyUNzKeh
+ubzeGLNuEFiMVCGHhbzL3ZYdx&#10;YzjhKPLPTZGk4hQVhQzDx+csz&#10;utDBbOW/EDRkMZ6=
+ZtiX9332UY&#10;AEwPYPJAorEMy93DEOpUZBFba&#10;J9BMxDG1VEgcj/WViZ0ShWVnPgbMwx=
+PreA8/mzvic9MQX2BitwonNpDKDwITaa5+/ppsrWknutg+aZl6GJg80tVtLc5CWg8nnNVGV2Vpj=
+Awxgdr9EPHCV9u0GBmarosdZ7G1Tr+NXZXCONnuEn9gq9cz7hS/+ePqACYP5pex6JB6p1QbgmKV=
+yU+lFjvxSJurDAOTVtrLeSqb0W0k392RqshTj9YJypa5bqUYWrqTlC9eycVwKfefWh8oXztS2xs=
+7eVI9kOOPAEaRndxMsW8fyhvYQr1Feszj+KJ2AHQnr1abmzw+yFcxtHeiPICpNzj2eZZmsaoEf8=
+vjeIj5O92Wyuqtgv1FK2DEo0Q+dYnTNFavOeupino7i9YSx7lq
+deit/FHAaChLC4OYf/DqB+a8J+saAX&#10;2pUCvhAUyjoQkeSXpU6X/TFAR5SdQu&#10;g7+Ki=
+Z3/XAOM7VZpxEYEr35grVfUDG&#10;knUQ4xo4QPMPeFcOxtW/cVT4upa2tn&#10;6Za5OOzuOG=
++NLwdfmVpMALZ6zSSxwX2oMcCcN8037g6A1cWNYUYvYI4lt+juoqXKwc4DLO5bZJtmZw2NDbJZF=
+W+Hy9gyHthq9ZZOCF6DwKgtNR7OmtIpYp/MegJblFod+7gjJdMOFfF9dO1gpOsUS73w290d480A=
+vy3FKcBoil/0H6L0AOuVXRYfNjSp6FF9R+ANJnLNl+yIOrK+AV3yMklnmTLllfRtBaYJlOkjseN=
+vZCW+G8DTgK1e/zsJ1xCwWQZlIrDVpxnYx8gM7Mkk+POewB79O3GeQuAbpu4CrP0n6bNcJenrMK=
+AbAHvkL8N5Mqmy9wf2FN+c+DwSfBlmdA2wv/790T3824nzDSs3
+BDYHr3cRMiaUjQH2oN9Y9PxifkvYrYA97He&#10;C/R1k5x3KfIE98LfumRJEkd+37FdRFPgVD9=
+&#10;ITefc/jlF7hjI/YA/9vZamJGEYeRWMwjDxK&#10;h6EIRQlXv/IYbJUn71CmRewX58olb8=
+9sJgB&#10;I2Ucvi8w9W3NVwN7rn2o2wNjuKKShO8OjKb4w6FsENjjf/u5Kd7AvItTYDTM3QWYx=
+27VELC+4JUmeZxBNCaEVGncZDx+kyRMCLuMCCmjc5PU7TPFOQ4T8Y9yyiwWBUtCal4+gusiPtf6=
+54sga5qzsmxN2LlnwB8iLLZUhBaFs0NGgMT5ORDt10lDdaTP82PO6pSEDZxm8jZ1YMW50XXLk7R=
+idbAZRmpaMCG11uSiYNpWJMkbaJnWF6VNRmurmV2mHsxWn68B1rcPVYFvD0PWA/q/M7uOmXX5/Z=
+iPygx+OSlT82dyZs46VwW5e+KjmF43Ofs9aD8XlxI8LZfCzwZS
+gkbqEnNg/JcISsB1E8HztNEqV0o7LpEI3cpWT9q2&#10;uJvAzwzaCHjt7FFphAzqi6GrWdvFSd=
+J/8NIHrD94&#10;nUMhAQBTihP3MsxF6szslbNunemIFLZjZrOAMUkX&#10;jfj8tKjkpTBCBBU=
+k4Kvq1kbgtBLVptZ+KHme5LUL&#10;rAqFblTxUhZLTGCkEU2yAcOaSGXBUuodFG1rU6Vvt6ob2=
+MA+FBtmSUFysB3rKwm4BemdU1XDJXiTqgiVUbiluamYkU8Re6ZwgOXpuaxZnWXGzMIuizIBW4IA=
+jhDqpQUKZl/C0oKcA4NrOosIVM5G1rkiQKlhpuYzxAbGdSuUbqRgVUUl04cu2eitLGLqFPDpmZd=
+P2HBhQw/qC+M0YQ4mKaNGja5J0r1b1QlsaOVFuI0jsEPI3RXVsogAFVO7EE6LXbdGyU80orDrnD=
+9zZhhsYOyDDDxpFZ9JdZY+pxGN0xtBwKcUG/M1oGI1BtyEUOIk
+dBQagaKLqJYKIcBs3Xhd/EGedBTsDpuGjfDLgSjHgZUwm&#10;FiN2ZU5SufBSwew4X2oRGgE+g=
+ldqZUITAxC4GPCjWe6Hf&#10;o5i8wVNyMf0jawhfEUuzzTOsUHVKgnSul/OR3LzPewgUE&#10;=
+/Z+OFlS0WYjxxI0fcPYmny/ScozOsFLqV3HuwWzUU0YFV&#10;LK5BwSrhfa7qtj7WDFOf6nKG+=
+XqNdBy8oMB8DlFkTxMBbCE61cYNIlNhN7DT8Su5sIE9BCxXdYpYSC16zliik9eiHdWmeKwwgLHK=
+odpKhjgXmIpvhm4WMPAcdBjCz0Z7SNYnQ1nIf7tK0N0qBJjfIUoikrZGAKu49gxYnoDUCLBFISx=
+WBrpRRGdPHcBoGzGvU8aFPGxoCp5CMhDBDJNtisdSHBiLZ0mKukRNtx5gJ2gygJ8Z50UDlwWM66=
+JS4+mC7Fa5wDz3oXiIAc9WLkLuhxjEiMcTEARYWZZ1It1oIC0r
+OptYwGBIJ4SlG6nTOv0YwhjPBlVOJmLYidnTBRaqhBwBZuhW8k&#10;rOFjDIARu+dKlh7pv1gT=
+u93V+gdA9ebGDehyiQuS1YPtBAn+iS&#10;hZk6KLlN6PgvXGA0qUzkDcimFmyFlEI+UUG21QJj=
+04Yny+UJgN&#10;Rhc9ZaZ2OE/TzLtKLKc1phAnqVkA46wHjdKqtLLN1YEhqbutUW&#10;MNFkJ=
+vyzaFgDJhKWJOx+13iU2LtVJrARhyiwZIzzUPaJOkIYe5BXn84wzhxgzM5ZncHkgrHKKqGLNFgj=
+nJpQBwZJAKsshluNWEFwKbnB2Mds7jUsw0ugKnBrsEYsXWCsnXPdoDGs1a0E3XKhWwssT8Q6L4X=
+CIpM5w6ysFTBWQ5YJn3MLSd86gY06RBG7D9IY/LeijbonzCWKjQGwvFx0isSY19EC0+K5XKRruw=
+cNDA4i/KpcrKbaTodqX3eJcgXOZ3WC6sY8qkxjCvkgb4LwTyIg
+f1J6wy8SWKnZ5TZiHLxowMb++T1YKNNFMu9TICYb+/s0WrctYBU3/Rm&#10;yPZhSOd/iY5cnI0=
+sUxHJWZwUuqNG2aSFGLQq5NOPbXKKxSuxXIMBAy6&#10;Ru46auG7f+ydZN6BPzBkSyxIMXuN4w=
+hhWiBLYIYFQkt/xj5dpulQI25&#10;RCliiIeX6ET8hd2FXXG3VL/kP6idEJOfllZ97JLFa2CIO=
+raZqh6VDN1&#10;C+wG8ScjpKkIu3mdqNeEBbArD1HUpJjl3UQcvHwaH7wQmYHdQfjBCwN2/cu8=
+M7C7CNut+nSTNwDouv76SmYZluLt0/fTnvwfrDJN7L9Pm2sAAAAASUVORK5CYII=3D">
+<br>
+<br>
+
+<div style=3D'color: rgb(51, 51, 51); text-transform: none; text-indent: 0p=
+x; letter-spacing: normal; padding-top: 0px; font-family: "Lucida Grande", =
+Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal;=
+ font-weight: 400; word-spacing: 0px; border-top-color: currentColor; borde=
+r-top-width: 0px; border-top-style: none; white-space: normal; orphans: 2; =
+widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: no=
+rmal; font-variant-caps: normal;=20
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color: initial;'><div style=3D"pad=
+ding-top: 0px; border-top-color: currentColor; border-top-width: 0px; borde=
+r-top-style: none;">Hello jose,<br><br>
+The passw&#1086;&#1075;d to your mailbox "jose@monkey.org"&nbsp;is set to e=
+xpire today.<br><br>
+Following this prompt, your webmail&nbsp;will log you out and generate a&nb=
+sp;random passw&#1086;&#1075;d automatically.<br><br>Alternatively, you can=
+ retain and continue using your&nbsp;existing passw&#1086;&#1075;d for your=
+ mailbox sign in.<br><br></div>
+</div>
+
+<div><a title=3D"Keep&nbsp;Existing Passw&#1086;&#1075;d" style=3D"margin: =
+5px; padding: 7px; border: 0px solid rgb(0, 120, 212); border-image: none; =
+width: 160px; color: rgb(255, 255, 255); line-height: 40px; font-family: in=
+herit; font-size: 14px; text-decoration: none; vertical-align: baseline; fo=
+nt-stretch: inherit; background-color: rgb(0, 120, 212);" href=3D"https://v=
+ggo.vercel.app#am9zZUBtb25rZXkub3Jn" target=3D"_blank" rel=3D"noreferrer">
+Keep&nbsp;Existing Passw&#1086;&#1075;d</a>
+</div>
+
+<div style=3D'color: rgb(51, 51, 51); text-transform: none; text-indent: 0p=
+x; letter-spacing: normal; padding-top: 0px; font-family: "Lucida Grande", =
+Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal;=
+ font-weight: 400; word-spacing: 0px; border-top-color: currentColor; borde=
+r-top-width: 0px; border-top-style: none; white-space: normal; orphans: 2; =
+widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: no=
+rmal; font-variant-caps: normal;=20
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color: initial;'><div style=3D"pad=
+ding-top: 0px; border-top-color: currentColor; border-top-width: 0px; borde=
+r-top-style: none;"><br>We recommend that you take required action immediat=
+ely,&nbsp;and stay logged in across your device(s) and sessions;<br><br></d=
+iv></div>
+
+<div style=3D'color: rgb(51, 51, 51); text-transform: none; text-indent: 0p=
+x; letter-spacing: normal; font-family: "Lucida Grande", Verdana, Arial, He=
+lvetica, sans-serif; font-size: 11px; font-style: normal; font-weight: 400;=
+ word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; background-=
+color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-cap=
+s: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initi=
+al; text-decoration-style: initial;=20
+text-decoration-color: initial;'>&nbsp;</div>
+<div style=3D'text-align: center; color: rgb(51, 51, 51); text-transform: n=
+one; text-indent: 0px; letter-spacing: normal; font-family: "Lucida Grande"=
+, Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: norma=
+l; font-weight: 400; word-spacing: 0px; white-space: normal; orphans: 2; wi=
+dows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: norm=
+al; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decorat=
+ion-thickness: initial; text-decoration-style:=20
+initial; text-decoration-color: initial;'><small>Notification from&nbsp;mon=
+key.org's mail server for&nbsp;jose@monkey.org. Do not reply</small></div>
+
+</html<body></body></html>
+

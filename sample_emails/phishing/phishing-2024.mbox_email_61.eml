@@ -1,0 +1,172 @@
+Return-Path: support@trustwalet.com
+Delivered-To: jose@monkey.org
+X-FDA: 81808341174.26.E9EA632
+Received: from cpanel2.tegrahost.com (cpanel2.tegrahost.com [185.135.47.22])
+	by imf24.b.hostedemail.com (Postfix) with ESMTP id 4CE3580016
+	for <jose@monkey.org>; Mon, 19 Feb 2024 11:32:44 +0000 (UTC)
+Authentication-Results: imf24.b.hostedemail.com;	dkim=pass
+ header.d=radazin.com header.s=default header.b=kGy0Zxbm;	spf=temperror
+ (imf24.b.hostedemail.com: error in processing during lookup of
+ support@trustwalet.com: DNS error) smtp.mailfrom=support@trustwalet.com;
+	dmarc=temperror reason="server fail" header.from=trustwalet.com
+ (policy=temperror)
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1708342365;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=9/T3+pStrI41dxLdgzj4rJptof5FtYMqBzU4HzMpk+s=;
+	b=lJ6kAes8jEadEX4sEXHKwjJuxB1Uz/SGH6XCasrjOwhqSF9lRYIUWRX6n6YF6PFt3XgRU5
+	/Zj7MlDrtXwoaIQLzFhiNB7Gqz9mob5ryv/ppEM0agTjmfYtusCjT2LbYh3tv8wsmxOroe
+	KoHBHWvfWKYD9ekOXJZF7Ycd9gFY4yE=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1708342365; a=rsa-sha256;
+	cv=none;
+	b=To2z+2kjMXX2YGZhSMBQg7IC+vDku91x/wgwUcOSKNlRPRSnVSCkXVVjonHKD/a2TWrG++
+	DU2HqtzFF0GCwYoAX3OjxfLfzSyA9xtlLaTL7mz+zt8ZOmSm5N4hbSTx2yhn9SQUJvQ50s
+	Ejkkfl/vrjaMRKqVHhsZ5piwQbYdWco=
+ARC-Authentication-Results: i=1;	imf24.b.hostedemail.com;	dkim=pass
+ header.d=radazin.com header.s=default header.b=kGy0Zxbm;	spf=temperror
+ (imf24.b.hostedemail.com: error in processing during lookup of
+ support@trustwalet.com: DNS error) smtp.mailfrom=support@trustwalet.com;
+	dmarc=temperror reason="server fail" header.from=trustwalet.com
+ (policy=temperror)
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=radazin.com
+	; s=default; h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID
+	:Date:Subject:To:From:Reply-To:Sender:Cc:Content-ID:Content-Description:
+	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+	List-Post:List-Owner:List-Archive;
+	bh=9/T3+pStrI41dxLdgzj4rJptof5FtYMqBzU4HzMpk+s=; b=kGy0ZxbmHU8Z1gbVL6WaRP0KDJ
+	rz8ZQK2CdukCYyMhHICib2IrsoAyfuWAykr5dbuOSI+HjdUYA1dMTcpkBWFAvKvj1zZixWMMg4MzI
+	2uEr4YBFOhv6piqKV/xRioCuoO8eMFmfO9iIvbsctV41TVnLenqvOT22RUJk28b86rqHDM03XjGRT
+	A9JrT81heCzgTR0Bu/QV1O3Hd56ZiSU+a6z4LtMhY9NhgqOLIqLP4ZQrPQbN9bb9Yv4beCJgVfLfy
+	MelU9uXIRtxbpyAM+3IgL2ARdu9hvPAZY02Ncnu2Yvaxlk2vq8c2nGXuxPiSURS8aq9F+Ta7hqEx4
+	jf6Vhf+Q==;
+Received: from [80.94.95.91] (port=56768 helo=trustwalet.com)	by
+ cpanel2.tegrahost.com with esmtpsa  (TLS1.2) tls
+ TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	(Exim 4.96.2)	(envelope-from
+ <support@trustwalet.com>)	id 1rc1t3-0002qz-02	for jose@monkey.org;	Mon, 19
+ Feb 2024 15:02:41 +0330
+Reply-To: pendingredirections@gmail.com
+From: Trust WaIIet <support@trustwalet.com>
+To: jose@monkey.org
+Subject: Re: You've received a B T C coin on your e-mail
+Date: 19 Feb 2024 03:32:41 -0800
+Message-ID: <20240219033241.3115404AED9CD62E@trustwalet.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - cpanel2.tegrahost.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - trustwalet.com
+X-Get-Message-Sender-Via:
+ cpanel2.tegrahost.com: authenticated_id: site@radazin.com
+X-Authenticated-Sender: cpanel2.tegrahost.com: site@radazin.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Server: rspam02
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 4CE3580016
+X-Spam-Status: Yes, score=15.80
+X-Stat-Signature: jn1aayh4xqhdawccbramatb9ine3dfdk
+X-HE-Tag: 1708342364-365353
+X-HE-Meta: =?utf-8?q?U2FsdGVkX182wYaBD6sok57fRmvWUs+jirp2+aIQ2XtoTO3uFcVffJp?=
+ =?utf-8?q?lTuN4SaZCShuQviTQKsW3a9QrIgrtkJAskwhL+j5VI5l63E8HEF4lE3LrZF+2tuKj?=
+ =?utf-8?q?kBbVJsIDmaTbsKj1FaMZECTyYHrEEjPs4GuxByTSzaUNBye/m4Zgem/pGaKeuyvTx?=
+ =?utf-8?q?7vJxOIRGrGsrI6xyMxrHeCdC2K+jmYp4Z2E/2MtBDyNj79Sv4NlxSZwjo1NCnkMS2?=
+ =?utf-8?q?kNn6lBo9IzLJ2RwA0qs23XwlA4tOilrEWRGYESlBmpky06t+E=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 61
+
+<!DOCTYPE HTML>
+
+<html><head><title></title>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"margin: 0.4em;">
+<div><p style=3D"color: rgb(51, 51, 51); font-size: 14px;"><span style=3D'b=
+order-width: 0px; margin: 0px; padding: 0px; color: rgb(181, 181, 181); fon=
+t-family: "lucida grande",verdana,arial,sans-serif; font-size: 12px; vertic=
+al-align: baseline; font-stretch: inherit; font-variant-numeric: inherit; f=
+ont-variant-east-asian: inherit;'># Please type your reply above this line =
+#</span></p><p style=3D"color: rgb(51, 51, 51); font-size: 14px;">
+<span style=3D'border-width: 0px; margin: 0px; padding: 0px; color: rgb(181=
+, 181, 181); font-family: "lucida grande",verdana,arial,sans-serif; font-si=
+ze: 12px; vertical-align: baseline; font-stretch: inherit; font-variant-num=
+eric: inherit; font-variant-east-asian: inherit;'></span></p>
+<table width=3D"100%" style=3D"color: rgb(0, 0, 0); font-family: Roboto,Rob=
+otoDraft,Helvetica,Arial,sans-serif; font-size: 0px; border-collapse: colla=
+pse; font-stretch: inherit; font-variant-numeric: inherit; font-variant-eas=
+t-asian: inherit;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody =
+style=3D"box-sizing: border-box;"><tr style=3D"box-sizing: border-box;"><td=
+ align=3D"left" style=3D"padding: 32px 0px 0px; line-height: 24px; border-c=
+ollapse: collapse; box-sizing: border-box;">
+<div style=3D"border-width: 0px; margin: 0px; padding: 0px; color: rgb(18, =
+29, 51); line-height: 1; font-family: helvetica,arial,sans-serif; font-size=
+: 16px; vertical-align: baseline; max-width: 100%; box-sizing: border-box; =
+font-stretch: inherit;">Hi there,</div></td></tr><tr style=3D"box-sizing: b=
+order-box;"><td align=3D"left" style=3D"padding: 20px 0px; line-height: 24p=
+x; border-collapse: collapse; box-sizing: border-box;">
+<div style=3D"border-width: 0px; margin: 0px; padding: 0px; color: rgb(18, =
+29, 51); line-height: 24px; font-family: helvetica,arial,sans-serif; vertic=
+al-align: baseline; max-width: 100%; box-sizing: border-box; font-stretch: =
+inherit;"><span style=3D"border-width: 0px; margin: 0px; padding: 0px; vert=
+ical-align: baseline; box-sizing: border-box;"><div style=3D"line-height: 2=
+4px; box-sizing: border-box;"><span style=3D"box-sizing: border-box;"><div =
+style=3D"line-height: 24px; box-sizing: border-box;"></div>
+</span></div></span></div></td></tr><tr style=3D"box-sizing: border-box;"><=
+td align=3D"left" style=3D"padding: 32px 0px 0px; line-height: 24px; border=
+-collapse: collapse; box-sizing: border-box;"><span style=3D"color: rgb(18,=
+ 29, 51); font-family: helvetica,arial,sans-serif; box-sizing: border-box;"=
+><font size=3D"4">Your email (&nbsp;<strong><font color=3D"#f73b08">jose@mo=
+nkey.org</font></strong> ) popped up on the Blockchain&nbsp;</font></span>
+<span style=3D"color: rgb(18, 29, 51); font-family: helvetica,arial,sans-se=
+rif; font-size: large;">Crypto</span><font size=3D"4" style=3D"color: rgb(1=
+8, 29, 51); font-family: helvetica,arial,sans-serif;">&nbsp;Explorer previo=
+usly with a transaction of 8,567,356.46 U S D credited to it. We will need =
+you to provide your redirectable btc&nbsp;</font><span style=3D"color: rgb(=
+18, 29, 51); font-family: helvetica,arial,sans-serif; font-size: large;">Cr=
+ypto</span>
+<font size=3D"4" style=3D"color: rgb(18, 29, 51); font-family: helvetica,ar=
+ial,sans-serif;">&nbsp;waIIet Address where we can redirect&nbsp;your trans=
+action from your email into your </font>
+=20
+<span style=3D"color: rgb(18, 29, 51); font-family: helvetica,arial,sans-se=
+rif; font-size: large;">redirectable btc&nbsp;</span><font size=3D"4" style=
+=3D"color: rgb(18, 29, 51); font-family: helvetica,arial,sans-serif;">waIIe=
+t Address,&nbsp;with the help of Trust WaIIet's Credit Department System yo=
+u&nbsp;will need to click on the reply&nbsp;to send your </font>
+
+<span style=3D"color: rgb(18, 29, 51); font-family: helvetica,arial,sans-se=
+rif; font-size: large;">redirectable btc&nbsp;</span><font size=3D"4" style=
+=3D"color: rgb(18, 29, 51); font-family: helvetica,arial,sans-serif;">waIIe=
+t address and&nbsp;your ticket number 4138844&nbsp;</font><font size=3D"4" =
+style=3D"color: rgb(18, 29, 51); font-family: helvetica,arial,sans-serif;">=
+which is linked to your transaction</font><font size=3D"4" style=3D"color: =
+rgb(18, 29, 51); font-family: helvetica,arial,sans-serif;">
+,&nbsp;Note if you do not have a wallet we can guide your on how to create =
+a new </font>
+
+<span style=3D"color: rgb(18, 29, 51); font-family: helvetica,arial,sans-se=
+rif; font-size: large;">redirectable btc </span><font size=3D"4" style=3D"c=
+olor: rgb(18, 29, 51); font-family: helvetica,arial,sans-serif;">wallet.</f=
+ont><font size=3D"4" style=3D"color: rgb(18, 29, 51); font-family: helvetic=
+a,arial,sans-serif;"><br></font><br><br>
+<div style=3D"border-width: 0px; margin: 0px; padding: 0px; color: rgb(18, =
+29, 51); line-height: 24px; font-family: helvetica,arial,sans-serif; font-s=
+ize: 16px; vertical-align: baseline; max-width: 100%; box-sizing: border-bo=
+x; font-stretch: inherit;">Best,<br aria-hidden=3D"true" style=3D"box-sizin=
+g: border-box;">Trust WaIIet<br></div></td></tr></tbody></table><u><font co=
+lor=3D"#0000ff">Trust WaIIet Support team</font></u></div><p>
+</p>
+
+
+</body></html>
+

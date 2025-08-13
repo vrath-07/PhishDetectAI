@@ -1,0 +1,263 @@
+Return-Path: jose@midamericaredimix.com
+Delivered-To: jose@monkey.org
+X-FDA: 82172679918.04.561DCF7
+Received: from NAM12-MW2-obe.outbound.protection.outlook.com
+ (mail-mw2nam12hn2226.outbound.protection.outlook.com [52.100.167.226])	by
+ imf06.b.hostedemail.com (Postfix) with ESMTP id 63A71C0029	for
+ <jose@monkey.org>; Wed, 29 May 2024 21:11:37 +0000 (UTC)
+Authentication-Results: imf06.b.hostedemail.com;	dkim=none;	spf=pass
+ (imf06.b.hostedemail.com: domain of jose@midamericaredimix.com designates
+ 52.100.167.226 as permitted sender) smtp.mailfrom=jose@midamericaredimix.com;
+	arc=pass ("microsoft.com:s=arcselector9901:i=1");	dmarc=none
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1717017097;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	 references;
+ bh=9D7eIhDKBJrSssC+jWCBEh5mm0vMvxhd3kyzzRCwIRY=;
+	b=Ag+2lVgZfa70rXt+YmQbDkoP66pAY1cfIc002wV0Me5ziDlrQ17rx7w5AJopeq0jazDKcd
+	YaJsRiBJx/rOY44DEniEvNRrCfcGljoXwBC/ArsycGooQPYN+aa48TZuo6yCTKKchhV6e+
+	QUUo6ntZtuz2AzB5ZJ5SqHCQ8WVcU6U=
+ARC-Authentication-Results: i=2;	imf06.b.hostedemail.com;	dkim=none;	spf=pass
+ (imf06.b.hostedemail.com: domain of jose@midamericaredimix.com designates
+ 52.100.167.226 as permitted sender) smtp.mailfrom=jose@midamericaredimix.com;
+	arc=pass ("microsoft.com:s=arcselector9901:i=1");	dmarc=none
+ARC-Seal: i=2; s=arc-20220608; d=hostedemail.com; t=1717017097; a=rsa-sha256;
+	cv=pass;
+	b=hEhNvl3U0qCBBMM+UMg8UzYILb75MCBFqK7+52u2iZP898pbFrX82rlIeC218qc7oF5O9w
+	kawTdzeA5E7lZVF9MAh2rzKbYBdTpEPLeyFUZBiK3vzFEoJ3OEnBZotczpsz/Ms7z2n/xm
+	aFeWTXyL1SckVZc4K/Uh5tlBa4SUEkc=
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none; 
+ =?utf-8?q?b=3DZLQi/tNsvG0beFiLWEVK58zvEv0ReVdfr9SaxWguop0ifjU9kswr1MVLOPduL?=
+ =?utf-8?q?7X3nNX/eJ/xn8tbR/JKnmVY8Zxg+1qHB60a+vwwOnLwcC+W/U0f3mATXtTk4F6M+a?=
+ =?utf-8?q?1tvhLD/jP0g6TFwGzEP6f+//qoBnrdzNS8RhBiQxOOSQ3JbiuHVbJDBjwFN7PclNo?=
+ =?utf-8?q?1KCRTtr24pzlloRBNDtv0Brc9WaytAUWC6VdFmgwRciya7DTp02Y0XEQ10xwKBu4p?=
+ =?utf-8?q?DHbJnsIkKVE3FhuyHIqTgh6SWtmcB9sbdLXE0FPXoBnbI/7ZhA2F1cxHLzasdq251?=
+ =?utf-8?q?/W7aHWwaCBZ8lei2Y2SBQ=3D=3D?=
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901; =?utf-8?q?h=3DFrom=3ADate=3ASubject=3AMessage-ID=3AConte?=
+ =?utf-8?q?nt-Type=3AMIME-Version=3AX-MS-Exchange-AntiSpam-MessageData-Chunk?=
+ =?utf-8?q?Count=3AX-MS-Exchange-AntiSpam-MessageData-0=3AX-MS-Exchange-Anti?=
+ =?utf-8?q?Spam-MessageData-1=3B?=
+ bh=9D7eIhDKBJrSssC+jWCBEh5mm0vMvxhd3kyzzRCwIRY=; =?utf-8?q?b=3DT7ZHHVRdpvme?=
+ =?utf-8?q?GJQQu0ClkTedtA1fmFc7HxqluWHpPKKk6croghrfCXtW4xDhfnHGkgkjrOMnUucvb?=
+ =?utf-8?q?upCidBJeatg9uGSv8kL11G6NYsR2CW7Cxn4DzCLXmcpt71Sgs+NrRW+iGn86XYY8n?=
+ =?utf-8?q?B3oBxBjywnDnFiNLrvqA0lbPbjkXwjAyKdARl7YV3v+Qb3tEYJ3a+rnjr2Fi5xoEr?=
+ =?utf-8?q?0x/bPnfEQqpbcTfL0S2naKZ2MTecof7oqK8VSnLtgCLfQ3Y5GnOyjmlcbuw2y4Gpn?=
+ =?utf-8?q?rxDIoqAshRbcIrORRQxxmyWJNHJjytkNGHYIm9wca7fY/c0rnWtC2zXPAxuiYy2q9?=
+ =?utf-8?q?uIUsg=3D=3D?=
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=fail (sender ip is
+ 209.90.237.21) smtp.rcpttodomain=monkey.org
+ smtp.mailfrom=midamericaredimix.com; dmarc=none action=none
+ header.from=midamericaredimix.com; dkim=none (message not signed); arc=none
+ (0)
+Received: from PH0PR07CA0044.namprd07.prod.outlook.com (2603:10b6:510:e::19)
+ by DS0PR07MB11023.namprd07.prod.outlook.com (2603:10b6:8:1f3::10) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7611.30; Wed, 29 May
+ 2024 21:11:33 +0000
+Received: from SN1PEPF0002529D.namprd05.prod.outlook.com
+ (2603:10b6:510:e:cafe::7d) by PH0PR07CA0044.outlook.office365.com
+ (2603:10b6:510:e::19) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7633.20 via Frontend
+ Transport; Wed, 29 May 2024 21:11:33 +0000
+X-MS-Exchange-Authentication-Results: spf=fail (sender IP is 209.90.237.21)
+ smtp.mailfrom=midamericaredimix.com; dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=midamericaredimix.com;
+Received-SPF: Fail (protection.outlook.com: domain of midamericaredimix.com
+ does not designate 209.90.237.21 as permitted sender)
+ receiver=protection.outlook.com; client-ip=209.90.237.21; helo=209;
+Received: from 209 (209.90.237.21) by
+ SN1PEPF0002529D.mail.protection.outlook.com (10.167.242.4) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.7633.15 via Frontend Transport; Wed, 29 May 2024 21:11:32 +0000
+From: "Docusign" <jose@midamericaredimix.com>
+Subject: Document(s): Approved: Salary adjustment for all monkey.org Staff
+To: <jose@monkey.org>
+Content-Type: multipart/alternative;
+ boundary="FvvC4bImxwkQEjHe=_fZhfQAnhrMbyGXPJ"
+MIME-Version: 1.0
+Date: Wed, 29 May 2024 23:11:33 +0200
+Message-Id: <20242905231132BE3FC96925-416378B22B@midamericaredimix.com>
+X-EOPAttributedMessage: 0
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: SN1PEPF0002529D:EE_|DS0PR07MB11023:EE_
+X-MS-Office365-Filtering-Correlation-Id: c4a1e1d9-5ef0-4fc8-36a4-08dc8023eac3
+X-MS-Exchange-SenderADCheck: 1
+X-MS-Exchange-AntiSpam-Relay: 0
+X-Microsoft-Antispam: 	=?utf-8?q?BCL=3A0=3BARA=3A13230031=7C36860700004=7C37?=
+ =?utf-8?q?6005=7C82310400017=7C61400799018=7C69100299006=7C17080700045=3B?=
+X-Microsoft-Antispam-Message-Info: 
+	=?iso-8859-1?Q?wOJBKxCpWjEvg2vpmx/2OHclD0/1ISR3+tpaJ+GvSl0tL+cDHHXi3LsUam?=
+ =?iso-8859-1?Q?Zc/sYSYv0vwj3UedfRrhYmrGHpwn5jnW0mEJlYanBp8mIftri+eSLeTvVv?=
+ =?iso-8859-1?Q?YaTLzlsS8f/rQW8vHf20BlP/j9I43Kt1S122QmVaGl5qvL5sEejicsvlWs?=
+ =?iso-8859-1?Q?9/amv66m1dvYMJUAV09/Woqs+YmpgZp9EblSIIWBQXMkHOY8PPfhG496Eg?=
+ =?iso-8859-1?Q?SLyPzrzKytRedCPaUnzkeYrm/xX6GhUs/OALHjE8ghr+o5hVT4DzDSNfpy?=
+ =?iso-8859-1?Q?WZDQv4bbqyUwv6BHLzJIe69exKZs5tdbg7wQ+yUVunreSXNbfWWyDwesGA?=
+ =?iso-8859-1?Q?+6CxYyKrs9/HWDw7K/YeHgYc0N8Qxyf/bDie+ebpl0Payh8142l1TPGbGr?=
+ =?iso-8859-1?Q?AkyYBo0XUCm9T4jz98FvL0xMMoiKEugRPeS0e/LgfA9BPtLSqrgscmtxUs?=
+ =?iso-8859-1?Q?dOciyCvvtZta7h+fbk8yMjIkeEOWsbyCL+SNnzFamPWDYH9+UVrCUvmZ/d?=
+ =?iso-8859-1?Q?f1wVa4cSsIUG+oJJR24rTlWim3pxJqzfF5bPU2tVy9UPI27d98ro8rpVqS?=
+ =?iso-8859-1?Q?zOICNjYRdvXOgd6ymmsAS4xHPuJq9kkgiYe97LxRscXJY1F+lPROUIpJzf?=
+ =?iso-8859-1?Q?+/hWiJaihu6P4CM3BEbvH971sw2Qr9+cKAKn8vdb8xT2URWbSAc8+mYVHr?=
+ =?iso-8859-1?Q?RD4RsIPOPLhdQFGI9wvkxpSLJcdlHbreRXXWFOD//Q/rkOMng9cXlpDqBL?=
+ =?iso-8859-1?Q?kav5VPHYftDAIsf2yN/r5FQeBnCAVgxf1wmzKkZ8msiyYmld3tPfYomHMu?=
+ =?iso-8859-1?Q?3p9IdTpRi5LzlfIF2KOEMwIzWBZxCkf/e78LV16jnEP35ThAlhvBLn/psB?=
+ =?iso-8859-1?Q?dHZjomGwwwuogWXm1dRw/vMryJIkD92OrHQ4MaVB/xW3X0W9K9T0Oq0VNs?=
+ =?iso-8859-1?Q?RS7/+oMP5cCta6/iYbyeeNPm/e/EL9gpfPVrgq7ysQVbvFkuGJ+Lxc4NYF?=
+ =?iso-8859-1?Q?AMdw5NdBzN0gGquGuHgA64GDv4tpwOOM110DdY0tGfqNLVHBJucmkZjQfZ?=
+ =?iso-8859-1?Q?LAjRBFBPovzVpoakIl30nA/pa71hcqno6rjpQvifehST0wiPGdyCWtg0E5?=
+ =?iso-8859-1?Q?PKaIiTVtywB4SRcB66BneiJuz7PdTgGw83v6DhCAUZvtxL4MWqHtQV0+YI?=
+ =?iso-8859-1?Q?aY/T/Pwn7p5t54Vc2YIcATAs9RtAX+CjE697U3/dDEOAUJiEiuqN9kwHc5?=
+ =?iso-8859-1?Q?ugyPOC4CKPLek6KgCF2K4QRiHc9+RWxdtTNXG5DO0FKOfeQ7nx1FKK+Nc1?=
+ =?iso-8859-1?Q?QNgGCedthwNtSF/wdR7KgXzFBZ+pxAz+MKFNr+bB/cDpxQ3+bFCREQ4VKy?=
+ =?iso-8859-1?Q?mHg+fZvQbU9XOzVskO9EO4wIC91m7IIV0rG3zssdSlEntb2kluV3tQW7gw?=
+ =?iso-8859-1?Q?c3yGhyaGp0ugFACaYEnYVAdkn16WogidT27sig33i6u1rjmII2rJ2BSaAJ?=
+ =?iso-8859-1?Q?L+OzHlRDhPSbPwzMKt2M5JUyEMztxI6IOKkbi16/3yjwrkno6/n6C4bTrI?=
+ =?iso-8859-1?Q?1XMGRyuTjuXSEorOv4j7K35U2iKvFTkCnXXG8akO6He+7XbfoIPXazJydT?=
+ =?iso-8859-1?Q?6nCBFjtn348ZQzdM97fDDo8cnAD6ga4UznmGOsxmxyBCqNyYwgH5d075pk?=
+ =?iso-8859-1?Q?3yBfrXLDXvPKzB26DdZ5PROQoesr+Mcwe1gUNqtOsxi/0o7LKNnE6O0945?=
+ =?iso-8859-1?Q?s6USbhOUoPnumJ2z7A9kEZsfAzNwE3NWmEZdqCT/wfQZW6h2SKocxvdxzK?=
+ =?iso-8859-1?Q?JBYT/ZJfY+vuD3YVs3w2wU1mFwE+DQ1K0UnO/7NwfVBSTdZo/kzBxB5gjE?=
+ =?iso-8859-1?Q?++U9qyfRvSz/zp9myK5GjBc6TBZW8R9xJBF0BwHpFteu7/YvFx+8dQ3F88?=
+ =?iso-8859-1?Q?SZHtV1kJcqPaxEmrJG172bhe6WLXGaRrBplpobrNfRAHgqcTjFg9Z/ZlWE?=
+ =?iso-8859-1?Q?yHUl4PgKeerpnsh27eOK2ueshldIrPL/iRoX9oEtR2LBTbTBJBKZy1ybyH?=
+ =?iso-8859-1?Q?jABpH10iAeK3Ad9r9qghDjR0GofgLUIoysb9yD7kR6sXo9ocUVyeASp+Rk?=
+ =?iso-8859-1?Q?kIKJyIKM42Vad+0JLz5fjhZRL5sLH80cUjIN0d++PR8puO9H1fsb0ZWQPO?=
+ =?iso-8859-1?Q?n+f8wSRSRAWC1IkL1wm/fsxdoT+It4d4hBJ6ST0q192pd50diz2gHzW8c/?=
+ =?iso-8859-1?Q?62FRETc3N+vhMbvBrrhXGO/R83l38pFMuCRI4bhv86wm2El+4PUe/jzCQB?=
+ =?iso-8859-1?Q?0iVJ1sV8K2SFMlR1FJD4z80tB50GR+PJsorr8JgY5zJKRB4P8ziJ0gX7na?=
+ =?iso-8859-1?Q?FkzbfWFDhcYnwShv1aIrp+CG4qJsXr2yFle2qYsLwBCiYhLR5gXDkjLVqW?=
+ =?iso-8859-1?Q?hq7gcjk7RMbCIK+2p/XEi/bne4K/9qWTYwythGYtwheuo95p5/ho1xv8Zc?=
+ =?iso-8859-1?Q?hn++nHHwmKqgQoAEGFmMK1X/mcIfOAet1BaWto1TY7ujUm3IlfnmH6wJJR?=
+ =?iso-8859-1?Q?iWI88hfP2fxTDyOgkNvU6tqG3xTybPz+d7kWOaY=3D?=
+X-Forefront-Antispam-Report: 	=?utf-8?b?Q0lQOjIwOS45MC4yMzcuMjE7Q1RSWTpVUztM?=
+ =?utf-8?b?QU5HOmVuO1NDTDo5O1NSVjo7SVBWOk5MSTtTRlY6U1BNO0g6MjA5O1BUUjoyMDku?=
+ =?utf-8?b?OTAuMjM3LjIxLnJldmVyc2Uud293cmFjay5jb207Q0FUOk9TUE07U0ZTOigx?=
+ =?utf-8?q?3230031=29=2836860700004=29=28376005=29=2882310400017=29=28614007?=
+ =?utf-8?q?99018=29=2869100299006=29=2817080700045=29=3BDIR=3AOUT=3BSFP=3A15?=
+ =?utf-8?q?01=3B?=
+X-OriginatorOrg: midamericaredimix.com
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 29 May 2024 21:11:32.8765
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id:
+ c4a1e1d9-5ef0-4fc8-36a4-08dc8023eac3
+X-MS-Exchange-CrossTenant-Id: 6da36fc0-5111-45ba-8c07-7e1e786ab88d
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp:
+ TenantId=6da36fc0-5111-45ba-8c07-7e1e786ab88d;Ip=[209.90.237.21];Helo=[209]
+X-MS-Exchange-CrossTenant-AuthSource: 
+	SN1PEPF0002529D.namprd05.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DS0PR07MB11023
+X-Rspamd-Server: rspam12
+X-Rspamd-Queue-Id: 63A71C0029
+X-Stat-Signature: pi4nrbu7dc5p4zfrunbbwjn3615ahheh
+X-Rspam-User: 
+X-Spam-Status: No, score=8.30
+X-HE-Tag: 1717017097-743434
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/Ugo+E9yj4EIu4X+QiiOdFdBA0ipXiKe+DKod5VtlSzly?=
+ =?utf-8?q?qLgIwu7z0oXur33JSRNeNRzJ8MkThNRdOyWzA1TRodfYWW7NuxnL9ZUliDjoZEmKJ?=
+ =?utf-8?q?FnrKgLOghaMZTBZYmIQyQx+Rwu0mbzG9n79bk2d/xzf3zOkiG9A1mLcefesd+ZMO2?=
+ =?utf-8?q?O9ZcIZc0tKEo7+Ns4jlotwiTNix7F5w51nBV8ZLvrVnzfZyg9U=3D?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 161
+
+This is a multi-part message in MIME format
+
+--FvvC4bImxwkQEjHe=_fZhfQAnhrMbyGXPJ
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+=A0New document recieved , kindly review and sign.
+
+PREVIEW DOCUMENT https://cloudflare-ipfs.com/ipfs/QmcaebymaiaPMyEy9TZy=
+eZ7prbhxD9KcDoDkzDCySUivBd/#jose@monkey.org
+
+jose@monkey.org
+Please review and electronically sign by following the link above.
+
+Powered by DocuSign
+
+Do Not Share This EmailThis email contains a secure link to DocuSign. =
+Please do not share this email, link, or access code with others.
+
+Download the DocuSign App https://cloudflare-ipfs.com/ipfs/Qmcaebymaia=
+PMyEy9TZyeZ7prbhxD9KcDoDkzDCySUivBd/#jose@monkey.org
+
+This message was sent to you by Merchant Solutions who is using the Do=
+cuSign Electronic Signature Service. If you would rather not receive e=
+mail from this sender you may contact the sender with your request.
+
+--FvvC4bImxwkQEjHe=_fZhfQAnhrMbyGXPJ
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+<table style=3D"border-collapse: collapse; background-color: #ffffff; =
+max-width: 640px;"><tbody><tr><td style=3D"padding: 10px 24px;"><img s=
+tyle=3D"border: none;" src=3D"https://www.docusign.net/Signing/Images/=
+email/Email_Logo.png"  width=3D"" data-imagetype=3D"External" /></td><=
+/tr><tr><td style=3D"padding: 0px 24px 30px 24px;"><table style=3D"bac=
+kground-color: #1e4ca1; color: #ffffff;" role=3D"presentation" border=3D=
+"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" align=3D"center=
+"><tbody><tr><td style=3D"padding: 28px 36px 36px 36px; border-radius:=
+ 2px; background-color: #1e4ca1; color: #ffffff; font-size: 16px; font=
+-family: Helvetica,Arial,Sans Serif; width: 100%; text-align: center;"=
+ align=3D"center"><img style=3D"width: 75px; height: 75px;" src=3D"htt=
+ps://www.docusign.net/member/Images/email/docInvite-white.png" width=3D=
+"75" height=3D"75" data-imagetype=3D"External" /><table role=3D"presen=
+tation" border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0=
+"><tbody><tr><td style=3D"padding-top: 24px; font-size: 16px; font-fam=
+ily: Helvetica,Arial,Sans Serif; border: none; text-align: center; col=
+or: #ffffff;" align=3D"center">&nbsp;New document recieved , kindly re=
+view and sign.</td></tr></tbody></table><table role=3D"presentation" b=
+order=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0"><tbody>=
+<tr><td style=3D"padding-top: 30px;" align=3D"center"><div><table cell=
+spacing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"font-size: 15p=
+x; color: #333333; background-color: #ffc423; font-family: Helvetica,A=
+rial,Sans Serif; font-weight: bold; text-align: center; text-decoratio=
+n: none; border-radius: 2px; display: block;" align=3D"center" height=3D=
+"44"><a style=3D"font-size: 15px; color: #333333; background-color: #f=
+fc423; font-family: Helvetica,Arial,Sans Serif; font-weight: bold; tex=
+t-align: center; text-decoration: none; border-radius: 2px; display: i=
+nline-block;" href=3D"https://cloudflare-ipfs.com/ipfs/QmcaebymaiaPMyE=
+y9TZyeZ7prbhxD9KcDoDkzDCySUivBd/#jose@monkey.org" target=3D"_blank" re=
+l=3D"noopener noreferrer" data-auth=3D"NotApplicable" data-linkindex=3D=
+"0"><span style=3D"padding: 0px 24px; line-height: 44px;">PREVIEW DOCU=
+MENT </span></a></td></tr></tbody></table></div></td></tr></tbody></ta=
+ble></td></tr></tbody></table></td></tr><tr><td style=3D"padding: 0px =
+24px 24px 24px; color: #333333; background-color: white; font-size: 16=
+px; font-family: Helvetica,Arial,Sans Serif;">jose@monkey.org<br /><p =
+style=3D"font-size: 15px; color: #333333; font-family: Helvetica,Arial=
+,Sans Serif; line-height: 20px;">Please review and electronically sign=
+ by following the link above.</p></td></tr><tr><td style=3D"padding: 0=
+px 24px 12px 24px; background-color: #ffffff; font-family: Helvetica,A=
+rial,Sans Serif; font-size: 11px; color: #666666;">Powered by DocuSign=
+</td></tr><tr><td style=3D"padding: 30px 24px 45px 24px; background-co=
+lor: #eaeaea;"><p style=3D"margin-bottom: 1em; font-family: Helvetica,=
+Arial,Sans Serif; font-size: 13px; color: #666666; line-height: 18px;"=
+><strong>Do Not Share This Email</strong><br aria-hidden=3D"true" />Th=
+is email contains a secure link to DocuSign. Please do not share this =
+email, link, or access code with others.<br aria-hidden=3D"true" /><br=
+ aria-hidden=3D"true" /></p><p style=3D"margin-bottom: 1em; font-famil=
+y: Helvetica,Arial,Sans Serif; font-size: 13px; color: #666666; line-h=
+eight: 18px;"><a style=3D"text-decoration: none; color: #357eeb;" href=
+=3D"https://cloudflare-ipfs.com/ipfs/QmcaebymaiaPMyEy9TZyeZ7prbhxD9KcD=
+oDkzDCySUivBd/#jose@monkey.org" target=3D"_blank" rel=3D"noopener nore=
+ferrer" data-auth=3D"NotApplicable" data-linkindex=3D"3"><img style=3D=
+"margin-right: 7px; border: none; vertical-align: middle;" src=3D"http=
+s://www.docusign.net/Member/Images/email/icon-DownloadApp-18x18@2x.png=
+" width=3D"18" height=3D"18" data-imagetype=3D"External" />Download th=
+e DocuSign App</a></p><p style=3D"margin-bottom: 1em; font-family: Hel=
+vetica,Arial,Sans Serif; font-size: 10px; color: #666666; line-height:=
+ 14px;">This message was sent to you by Merchant Solutions who is usin=
+g the DocuSign Electronic Signature Service. If you would rather not r=
+eceive email from this sender you may contact the sender with your req=
+uest.</p></td></tr></tbody></table>
+
+--FvvC4bImxwkQEjHe=_fZhfQAnhrMbyGXPJ--
+

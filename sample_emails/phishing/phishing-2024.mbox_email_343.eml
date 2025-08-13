@@ -1,0 +1,202 @@
+Return-Path: ceo@elhanouf.ae
+Delivered-To: jose@monkey.org
+X-FDA: 82773616128.22.8163E75
+Received: from cloudvpsserver.host.elhanouf.ae
+ (cloudvpsserver.host.elhanouf.ae [67.227.251.25])	by imf17.b.hostedemail.com
+ (Postfix) with ESMTP id EB756140006	for <jose@monkey.org>; Mon, 11 Nov 2024
+ 11:38:42 +0000 (UTC)
+Authentication-Results: imf17.b.hostedemail.com;	dkim=pass
+ header.d=elhanouf.ae header.s=default header.b=Q+CaN93d;	spf=pass
+ (imf17.b.hostedemail.com: domain of ceo@elhanouf.ae designates 67.227.251.25
+ as permitted sender) smtp.mailfrom=ceo@elhanouf.ae;	dmarc=pass (policy=none)
+ header.from=elhanouf.ae
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1731324993;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=TjqrQ+J9/HPef7H80qLgxIftDsmbpCCBjEcguSbE8vA=;
+	b=LbeMDg4mKreWnhcpSikdjc8aQcQmWNmipn2i9YFrdNStjLFoZWghHxmmMIZVOfGgrORPWm
+	LB5lP8pXRSkGqSLGsvTIoXCmwf0al83CrIRyNwFFqCRdpB/On1wqPfRBFNzwKdDMzhZXEM
+	BdN2KZvxCVCr7GUcjPwkQ8duIGyfNlE=
+ARC-Authentication-Results: i=1;	imf17.b.hostedemail.com;	dkim=pass
+ header.d=elhanouf.ae header.s=default header.b=Q+CaN93d;	spf=pass
+ (imf17.b.hostedemail.com: domain of ceo@elhanouf.ae designates 67.227.251.25
+ as permitted sender) smtp.mailfrom=ceo@elhanouf.ae;	dmarc=pass (policy=none)
+ header.from=elhanouf.ae
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1731324993; a=rsa-sha256;
+	cv=none;
+	b=HJCdlOZnTaQ+8VN8AfgX1f1fzanPAp94h43sTeUl905WDQ9O0mDJwebMg5+gF1qxHznus+
+	sqTkdVcAV9FFtES2GgWdRZguCfHRcwvznW7fQVznbdB3HL9imT3oot76oPhewhh5y6v3Nc
+	xPZYKbAuKjQpXGr4B273wg5mPoNMmtc=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=elhanouf.ae
+	; s=default; h=Content-Type:MIME-Version:Message-ID:Date:Subject:To:From:
+	Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:Content-Description:
+	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+	List-Post:List-Owner:List-Archive;
+	bh=TjqrQ+J9/HPef7H80qLgxIftDsmbpCCBjEcguSbE8vA=; b=Q+CaN93d5sq0ogt94c/kgdSnog
+	Su8t3gZafSeEt/Rv+R5G3zYCc6dAGy4wURuQquL2a8rqGP/UsV8G2YdPAV0XQqQNBviIRRMYFBK/5
+	dkO0NcvtI4dVwd+i9clewVlT19G7siDglZem6i+/6KWjG8yRBH0osd+1niEP8WS/5AzQ5K21IXZTh
+	KgtKNmvTIv0aAZal62/KqQ1JibKqLsLZ32QdgoJZIRonKuxmvCKr2tsj/F2yT9oeTOc8KioK3bvMc
+	70g/me3U6cOpMC/iWNSRr5cikVj7iZQQIPLzuzwWo98WKpH6WG6x4uMeSuRGOSIPM+icEu36N8bXv
+	mura20mg==;
+Received: from ec2-34-220-138-226.us-west-2.compute.amazonaws.com
+ ([34.220.138.226]:63414)	by cloudvpsserver.host.elhanouf.ae with esmtpsa 
+ (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	(Exim 4.96.2)
+	(envelope-from <ceo@elhanouf.ae>)	id 1tASl0-00051X-2Z	for jose@monkey.org;
+	Mon, 11 Nov 2024 06:38:58 -0500
+From: "Admin, monkey.org"<ceo@elhanouf.ae>
+To: jose@monkey.org
+Subject: RE: Reminder jose
+Date: 11 Nov 2024 11:38:57 +0000
+Message-ID: <20241111113856.8BCA0D094A90224B@elhanouf.ae>
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="----=_NextPart_000_0012_93E22810.EBB80ACE"
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - cloudvpsserver.host.elhanouf.ae
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - elhanouf.ae
+X-Get-Message-Sender-Via: cloudvpsserver.host.elhanouf.ae: authenticated_id:
+ huthaifa_shafee@elhanouf.ae
+X-Authenticated-Sender:
+ cloudvpsserver.host.elhanouf.ae: huthaifa_shafee@elhanouf.ae
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspam-User: 
+X-Rspamd-Server: rspam03
+X-Rspamd-Queue-Id: EB756140006
+X-Stat-Signature: fsb3zhh4q81dddyaeo1md88sp31cwfio
+X-Spam-Status: Yes, score=9.45
+X-HE-Tag: 1731325122-948039
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/VFv4L3YmHsdWVOz8sf8zXalzPXibW7kjA3C2xad3kqN/?=
+ =?utf-8?q?och97ZincTc13KTWPEdrBzsdPY7VSNkuZ9o2N11lEiMidCEnbMQN65AP0vxCzR4KZ?=
+ =?utf-8?q?TZd9/KypSwE0hrFYm4zd3uricGg+ySqfp6jBEXIoFRWdJzzi1RpDHezZ4b1yPvre7?=
+ =?utf-8?q?rfS7qQNisfqAvTYNqHz20pupcdNZxLDBRrZXycdTuMJ4pKdrwid4ZiWu3G8MAOlOY?=
+ =?utf-8?q?d3juFynIWE5A+0K3TMofacVDVe72tRpNjAHMkB0XPB9RgKrmB2IRQB2FfaZC35o9P?=
+ =?utf-8?q?DHi+S3I4IUehiQ2FET8FSbC0UtWMn/jdW75op86wItjfMcLE9mgjpaycXjTTq3yp3?=
+ =?utf-8?q?nzFJN3j3vCKUyTn8qKDeZqH61Bkl5aTJHvZXUuosWZ0fOAHUJzV6NENAqdZ5/DT7v?=
+ =?utf-8?q?PT/FRIQuiHnA3HMrMurwPza1k0w9AN5zR8GI+/7J3mUbtNvxUWoutw/aVKSpRz8zf?=
+ =?utf-8?q?GPB7RQPXjUhW/M3jvZaPRwS2F+f+LX5Rjq8fnHk33LgLqbPV0BZgPBf1XclssElkb?=
+ =?utf-8?q?fDKDBWcdMsI1Q3HTHqN/yN6aU1bZ5gmnNrzo+8sH8Yp3JlxQNh72Xwh4Em86lfJxF?=
+ =?utf-8?q?vN8IOV3tTZT4NsvuJVSmlXYdfmrdusuJlxJz3m6jjtwjkenYMbtEcV+PIUABUd2nO?=
+ =?utf-8?q?5Bti4WpYtxUxTeHYz/Cimvvb6fTf2+PDF5TkRv8mxVGJfK7pd2xmMyBlwISwjDmmo?=
+ =?utf-8?q?qdbx8VSp8wPTiiUk2GT6e6tOYzLcafuiyxsFMvCnpg+5tgfOScd9h+t5IRXSisdAV?=
+ =?utf-8?q?5yVEpQtqml6/wcvK39wfk5rK9c7Xh3OKLeEuZCkr+lharKYCa0WATMx5O6LdGrrPH?=
+ =?utf-8?q?0A6cgz70BYwsL0SIg3TtHvtIrdB/TTI5B6uHJnXfZunAJyfv009ZnbdpjET2/Sp2K?=
+ =?utf-8?q?GvtO+Ww4CZN0fzS9jq7gqr_WA203hBPlMINvYibYx7jE57PkPMYEouSVdaDmVscXN?=
+ =?utf-8?q?Gh2P5LWxtLKCDfTIPbYXOafyKpFAp0+3XVuWHeiOpm+wDpK6rqq/tdIbRX3xUtM/o?=
+ =?utf-8?q?y5r7A6tiYY3nIFonEe6a934UqAeQxKXw3Kyh+NFQvb3qGLZ0ZbNU8K5Z9JyRTG1cr?=
+ =?utf-8?q?MIlVra0ige42muCGZbs2KQMcu7W36xIkG1l0HaVaZ6heXUiMzGzLigI+x8LWbtQbr?=
+ =?utf-8?q?chS4I/81RXiChI7us1c/AoU4+yiLw6CEtUOcqIp8vXJjTx4GXUpvki7/qDaA3yVMg?=
+ =?utf-8?q?C9A//PwssSIOmaESg0m7ug++8pj13/n8ezs3wMb/pESA6tTkh68VeRWZDp+LUjL/7?=
+ =?utf-8?q?lzGfCYd+4U6HHm29Xs58r73QQQwDRt6KAvkL676LeZdnOH5E3TR8qBZqGY/vxc+Pn?=
+ =?utf-8?q?J4eAiwBd49TuFTHKUQcpacFbsD4FlfjyYrRyeNsKhUylK003pZ3b3i77MpjjNCDla?=
+ =?utf-8?q?sjR8B+w8uFJON/9bScBOaYAolt5LGIIoY/jMzSpAi8NH2kVYYJKaokpH6fTcJSXo/?=
+ =?utf-8?q?qUp0h+pvK+OT/wVLBsvbcfr2sPa/3AavLNZPlk9pSSBt50JpZPVLr/Ac1uFHa/SN5?=
+ =?utf-8?q?jnFW2AE1qOu2MJkvjxLC975rRUbVNuUMAS/pq2cZlZsFv5upDiZ1nC1qjJ4KKOIG2?=
+ =?utf-8?q?Yw4DSJzFt959juyvE86+bkeXagaZ4fWn+65Z+fU+JvzzNalFwJkOfhNzmeAFTiUkq?=
+ =?utf-8?q?ObTZaDnRxlqau8Z0/hg3+4uCnY6fjmXcq7LVDOVnHfiT/2lVy5iWupYAp6Gv33koA?=
+ =?utf-8?q?rzH+9clj/hywLkWctY1ls0CaK3AOTM/wjQBAIdW2+7ZwXcYnhrqwqbWx3/1KBckp3?=
+ =?utf-8?q?j4j7C0Om4seFK3HfDSwWCKx+9x4zHbbdquAT8t7GUFhn7akmLXBPxjpBe0lyaY5FH?=
+ =?utf-8?q?mo55+menIwWj/ojZtx/9eF9T38QrAHOUrOzA4OyixKwMC_wx+0vzlZ9MNN1aa1r7B?=
+ =?utf-8?q?tZV/XACeAUkrz6OjyYja6we2LKQTKCjURjZadNnOdbDuHjMsQ6xHptyMPDsi5lrSI?=
+ =?utf-8?q?rE9s51SZbwgrgCKsdXem+/B4c9UrlHlq7e5bkR3o/kXXTB3NnZ5aKJrHiI58RXjVV?=
+ =?utf-8?q?5tGHu//m9BNzQ/d51Xb9Lav/e8NEadT17VCJkN8IDogt/JY0yX/qZUskoaBt9U4Tp?=
+ =?utf-8?q?SfMTK9XroXExwwYNOloqHGmi3Yzg8aZKIvX8A9qm10B9xV0EEHlLd1yThvt+JO/Yg?=
+ =?utf-8?q?uGiaWXyTuOYk+fmYZzx3sL8NGFOdsj15CyyHXdvD3jLanujRvxGlrT3Fu64PqNJcn?=
+ =?utf-8?q?MMrxOpVex16d4NxhHX+CWKMmG0GQmw//Q1OaCFSLWf84o+mygjc=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 343
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0012_93E22810.EBB80ACE
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<BODY>
+<P>
+<TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D2>
+<TBODY>
+<TR>
+<TD>
+<P style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica, sans-serif; WH=
+ITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 40=
+0; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-=
+SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font=
+-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-=
+width: 0px; text-decoration-thickness: initial; text-decoration-style: init=
+ial; text-decoration-color: initial">
+Dear jose,<BR><BR>This is to inform you that jose@monkey.org has been suspe=
+nded due to violations of our email terms of service.<BR><BR>You have 81 pe=
+nding messages on hold waiting for you. To review and save your pending mes=
+sages, Kindly see attached for more details and to submit an appeal.</P>
+<P style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica, sans-serif; WH=
+ITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 40=
+0; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-=
+SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font=
+-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-=
+width: 0px; text-decoration-thickness: initial; text-decoration-style: init=
+ial; text-decoration-color: initial">
+To assist you in this process, we have also prepared a comprehensive docume=
+nt outlining important updates and best practices for managing your email a=
+ccounts effectively. Please find the attachment included with this email fo=
+r your reference. </P>
+<P style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica, sans-serif; WH=
+ITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 40=
+0; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-=
+SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font=
+-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-=
+width: 0px; text-decoration-thickness: initial; text-decoration-style: init=
+ial; text-decoration-color: initial">
+Your security and convenience are our top priorities, and we encourage you =
+to review the document carefully to ensure the continued smooth operation o=
+f your email services.</P>
+<P style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica, sans-serif; WH=
+ITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 40=
+0; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-=
+SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font=
+-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-=
+width: 0px; text-decoration-thickness: initial; text-decoration-style: init=
+ial; text-decoration-color: initial">
+Should you have any questions or require further assistance, please do not =
+hesitate to contact our dedicated support team at<SPAN>&nbsp;</SPAN><A styl=
+e=3D"COLOR: rgb(0,123,255); text-decoration-line: none" target=3D_blank>mon=
+key.org</A>.</P>
+<P style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica, sans-serif; WH=
+ITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 40=
+0; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-=
+SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font=
+-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-=
+width: 0px; text-decoration-thickness: initial; text-decoration-style: init=
+ial; text-decoration-color: initial">
+Thank you for your attention to this matter.</P>
+<P style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica, sans-serif; WH=
+ITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 40=
+0; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-=
+SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font=
+-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-=
+width: 0px; text-decoration-thickness: initial; text-decoration-style: init=
+ial; text-decoration-color: initial">
+Warm regards,</P>
+<P style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica, sans-serif; WH=
+ITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 40=
+0; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-=
+SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font=
+-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-=
+width: 0px; text-decoration-thickness: initial; text-decoration-style: init=
+ial; text-decoration-color: initial">
+Email IT Administrator<BR>monkey.org</P></TD></TR></TBODY></TABLE></P></BOD=
+Y></HTML>
+------=_NextPart_000_0012_93E22810.EBB80ACE
+------=_NextPart_000_0012_93E22810.EBB80ACE--
+

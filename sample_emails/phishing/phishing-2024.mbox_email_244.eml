@@ -1,0 +1,642 @@
+Return-Path: p240yc5khuowv3zextrsqj896g1@c53.teal-consulting.com
+Delivered-To: jose@monkey.org
+X-FDA: 82472907426.30.8CDCBE6
+Received: from mail-il1-f229.google.com (mail-il1-f229.google.com
+ [209.85.166.229])	by imf13.b.hostedemail.com (Postfix) with ESMTP id
+ 4BE9A120002	for <jose@monkey.org>; Tue, 20 Aug 2024 14:49:31 +0000 (UTC)
+Authentication-Results: imf13.b.hostedemail.com;	dkim=pass
+ header.d=ccsvaf181-great-site-net.20230601.gappssmtp.com header.s=20230601
+ header.b=fkkeT9gF;	spf=pass (imf13.b.hostedemail.com: domain of
+ p240yc5khuowv3zextrsqj896g1@c53.teal-consulting.com designates 209.85.166.229
+ as permitted sender)
+ smtp.mailfrom=p240yc5khuowv3zextrsqj896g1@c53.teal-consulting.com;	dmarc=pass
+ (policy=none) header.from=c53.teal-consulting.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1724165337;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=LZzF9OCdcj1pdMxqjyuT/H+TjwSZuMDe97t56ETo93E=;
+	b=zBpwVvQ99NX10nQGDIXG4Q9vqcrfGShDtGGcqjRUXWNZEbrK/pCA8hGBJwZx4KGdGyK2lG
+	bRIS1iazY6l1niBKpK0QwFjWuGR7VwZHq0tghNy9uKZSMp8P60tcUsq2M1lHO4kNIh6bxG
+	scvGv5hFZa8gwbdkzL8bIirFi623yK0=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1724165337; a=rsa-sha256;
+	cv=none;
+	b=I7Vse/DApPczMqDCXVyaXqSDKoXlQQxaYrpMplJM9uNNyAq0iPxkE7Txu07Ja1ios4Wq4M
+	g32ujsJeII7OWB4zCaPSeSgCnzfPTVweIuD1Xqu4AZBxWAY53FAeV4Nw796/geWu4iVhlr
+	JdEUNNT3k/ek6QzSl7m+GW1xH50thbY=
+ARC-Authentication-Results: i=1;	imf13.b.hostedemail.com;	dkim=pass
+ header.d=ccsvaf181-great-site-net.20230601.gappssmtp.com header.s=20230601
+ header.b=fkkeT9gF;	spf=pass (imf13.b.hostedemail.com: domain of
+ p240yc5khuowv3zextrsqj896g1@c53.teal-consulting.com designates 209.85.166.229
+ as permitted sender)
+ smtp.mailfrom=p240yc5khuowv3zextrsqj896g1@c53.teal-consulting.com;	dmarc=pass
+ (policy=none) header.from=c53.teal-consulting.com
+Received: by mail-il1-f229.google.com with SMTP id
+ e9e14a558f8ab-39d31d16d39so11970775ab.0        for <jose@monkey.org>; Tue, 20
+ Aug 2024 07:49:30 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;       
+ d=ccsvaf181-great-site-net.20230601.gappssmtp.com; s=20230601; t=1724165370;
+ x=1724770170; darn=monkey.org;       
+ h=content-transfer-encoding:mime-version:message-id:subject:from:to        
+ :date:from:to:cc:subject:date:message-id:reply-to;       
+ bh=LZzF9OCdcj1pdMxqjyuT/H+TjwSZuMDe97t56ETo93E=;       
+ b=fkkeT9gFOwQozTTy42aF1s2WniwP3y1lyVySwrtvyBkqCQ7dIKWBz2bBQ+hQ4vYKku        
+ nCwMfWsIoMGsROKNvnGEI3f9EoABwUV554AQYn7Tft5g2iKjdPjOKov2ZTijssFP5m1T        
+ r3sZMiK/kiIxUwSq67FFyZfleh8CEOyIQh+mS82fYJ+4t99vlo8cT2kj96x9BdAnFgeX        
+ wbbqpvafw2gsSCPdd2lhRiGF4arIuThsczmBR1aMn/6oB7zb0UoL/2sOOtLgj/6/aRAK        
+ EDxQitJ3LVYqGtwWvb5wYtyNQDPZfs87kx+N9WenEraI8O0n9NZ+n31kj57kB8TS6dTa        
+ /DtQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1724165370; x=1724770170;
+        h=content-transfer-encoding:mime-version:message-id:subject:from:to
+         :date:x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=LZzF9OCdcj1pdMxqjyuT/H+TjwSZuMDe97t56ETo93E=;
+        b=nzyAv1zU+XAmK3Sw/tvb2aUxArToSTQW84PQrEyepcZl6quup/tusR79cPd8mnReyz
+         ka+47h4RG5WtHIpcrKBBFx5XZLOe16H3tpIeoDk9jxOhLB0vNaX3P2Q1VW11ImWgFR5U
+         mPZGlNNRymwNaWF/OSvuO1L1OA6LfxDTVj6Ic/P+3XkOGOXrAHkQDaEN/1bqPk4xR50r
+         8OjcX8hW/BSzCbWWkKkKw7jgIERDVcLQZl6dLes2eCVNuhx1/UuDxmJeMYVN9y6/aNrE
+         CDMH49S1DlhqFjM5G7SuIbQKFo9bjVA8jIl9zRCFk4O/7b1T2HT8RnDmCp3yFZf7Zwee
+         NCHw==
+X-Gm-Message-State: AOJu0Ywptl5u/SA+5b51GDw0+TjvO7atVlQbtLVhdRQxGkAq0ZdjfSiC
+	J+d7YSdRnwvI/42rbvIJNaUd60orxUR3WiSHNc8xZB+OoGNlDhQP2avKPK7SYhD0tb2lFklRx4W
+	/91/UWT4I6UvBR34+nSlYgR/oEa2RFcGhJPZ6aXamf1A=
+X-Google-Smtp-Source: =?utf-8?q?AGHT+IH4+A5sxaT2+3FROyL8+30wOom6bRmBxd0NVJF8?=
+ =?utf-8?q?HmiGIKGOjwsgdQwhf3BozyNqGKrL+4ZictK+PoC4?=
+X-Received: by 2002:a05:6e02:216f:b0:39d:254c:ece5 with SMTP id
+ e9e14a558f8ab-39d26d17c81mr153729665ab.16.1724165370095;        Tue, 20 Aug
+ 2024 07:49:30 -0700 (PDT)
+Received: from mail-qv1-3714.google.com ([159.89.91.34])        by
+ smtp-relay.gmail.com with ESMTPS id
+ e9e14a558f8ab-39d28e13c7csm4321065ab.57.2024.08.20.07.49.29        for
+ <jose@monkey.org>        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384
+ bits=256/256);        Tue, 20 Aug 2024 07:49:30 -0700 (PDT)
+X-Relaying-Domain: c53.teal-consulting.com
+Date: Tue, 20 Aug 2024 14:49:29 +0000
+To: jose@monkey.org
+From:
+ Prime Notification <9delkr0p0w5fgw7-t5acspmkdjrdwc43@c53.teal-consulting.com>
+Subject: Your Prime membership is Renewing on Tue, August 20, 2024  2:49 PM
+Message-ID:
+ <SuVbhNYrC2YWRor5LBh5kAydUJ1d4GHFDyMJ37jHM@mail-qv1-3714.google.com>
+X-Priority: 1
+X-Mailer: WebService/1.1.17936 YMailNorrin Mozilla/5.0 (Windows NT 10.0;
+ Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192
+ Safari/537.36
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 4BE9A120002
+X-Rspamd-Server: rspam02
+X-Spam-Status: No, score=3.00
+X-Stat-Signature: q34ihef3e489os8mbejdemgd9c49y3tc
+X-HE-Tag: 1724165371-325615
+X-HE-Meta: =?utf-8?q?U2FsdGVkX195tNsAvde/rK3sblfhMIeoI9WWHLSHEOP3Oydrr7/y38B?=
+ =?utf-8?q?T0pMJ/oKCjKtWxteP6tK+YZ9A24MCd+5vStYFK9x3KEG8AEksZbaqfw3J0zQE8yku?=
+ =?utf-8?q?JO6YiKqJJ1hRtf/B/RdtQz23NNBB1asZfYnKOh4LVBEhtLV6NjeGPfe2c/Dpklwhl?=
+ =?utf-8?q?rZaZiNZYa0THkLef+9HWre13rkgMgbdqPGxIyv+TJci+aD/cpL0l4BElddBdzOnN7?=
+ =?utf-8?q?kYvzyAIhccLQtOTXZd8CjEO7qXdpP0BkVzAhD8BJjDlhgY9ITpJfX1LKer1J3bXlh?=
+ =?utf-8?q?NDibnxt3UWPgyXqfJ5wlhOkXeJypiyZUPM6HPVkmScg5G4WvythdX4TUoLDfCYmVR?=
+ =?utf-8?q?CamXC9zpJRhY2mMcX89J3XjE+c13fDqjiiN+DGDzoBDbtL2zdnhC4jInx7QA1ubSz?=
+ =?utf-8?q?OPMVL3bGK358YnJY8bcxuSV9sUAKi4Q4TATws/Tyh+yaHQDzt6AVI2svvyNySP2Bf?=
+ =?utf-8?q?sBDdH9mWXS8V/k5nIEGmP5M2BDpsqqtb5guaQCJIOjZNX758A5B3PYpxVgd1GLsPP?=
+ =?utf-8?q?GUaKvIybS+lf8woINEgO8E4sU9sVFwLyDOhc+J4fQmR1hv33digw/BMEJlSsJmVLf?=
+ =?utf-8?q?o7AL7gs8ovcqoqBOi4+8Cw9a9deO1UPGlKm+f+E8fD15Jygc6j5EottMs/FvSnN/0?=
+ =?utf-8?q?K0mQtBhV/gVXEAzSRLXOGnkNbkLb5kE5qVKNTbx926AXSG5ZHyO2Q30/HC0mGyAFK?=
+ =?utf-8?q?g6mKQVzO5Y3hpE9WnbFMvHOfwicZEEKI+RFX/iKjKyEhVl2sE1dBidk2Rkg06O9o7?=
+ =?utf-8?q?eFFG3LOFTLsBC19FUHxjTNAJoF1x+Qa7NIdRZCwLceq24LJac4qya2SH7coGUh/Mw?=
+ =?utf-8?q?FlvgRm72Zznwdb1ITjy1ePDwKg2X7YBOgfCBGlIdtNnv4XjvOQ0aaLnga+e0/bqjl?=
+ =?utf-8?q?8vwItuoVkRfMf45Ng9L6PX_RYHa2cGjThPqeU2TUUxMfnYW2Uk5uksdVkcXTOSFYt?=
+ =?utf-8?q?x6H8lrdbGuricZW3E3lvoYnViMsVcsJheHOqeNZVdasSCWscxjcf0oPK031MLTi19?=
+ =?utf-8?q?lWJW+Vklh4Y8znx4SgBNHY/EYnF9tRGvJr3VUwvRLQqU02Jd3gaLLs2oALoPs44ug?=
+ =?utf-8?q?HXDnUE+86xkIRrGbC4ahQSDLKroJghTGaeQ1QTF9kztBgxi6iI3LbkcUbfICrh41+?=
+ =?utf-8?q?U7zb/K71p5Ix0ACB2nkkaWenzR5V3MH235OMUCEhKaMEjWB26ZD+BBkGvO0skGHD4?=
+ =?utf-8?q?K1gLPH/wsil+ScWKQ72JyQfwH2w/ePfmL2pdAbkgR0/K9562vfUmXvCzdGaTy9rv3?=
+ =?utf-8?q?TXR9OfSgiyYFcoeNinZVOO0t3PrYFG7v/4Rf8nTL+jVps7KMmaT/IESV/LjJAKGHS?=
+ =?utf-8?q?sSYakGnRWeDawyISYsrOHPkpWs00lEDxj15RGjwuIlSExvgxWYNb8j5UuzsyufuMa?=
+ =?utf-8?q?O09Gz73Yax0azoVTmZhn4i21Kl2RT8UDVF2jG54DrrLiJqcwwZq3hbuW9VqO5KJS4?=
+ =?utf-8?q?TCfMMSbgHwfh0BQJKF2GKphcovqcKUsDPvP80bdf4oPwgF7LUYmD21G6523LyM1MJ?=
+ =?utf-8?q?/2xYfJOoUdRZTiFcAoee6OXhKAT0PlN+gnPTPw/31ri0Nwx42z?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 244
+
+<div>
+  <style type=3D"text/css">
+    <!--
+    .rps_e3f9 table.x_epic-guarantor-additional-patients-table {
+      border-width: 1px;
+      border-style: solid;
+      border-color: #e7e9ef;
+      border-radius: 16px;
+      background-color: white;
+      width: 100%;
+      table-layout: fixed;
+      margin-top: 16px;
+      margin-bottom: 32px;
+      margin-right: auto;
+      margin-left: auto;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-right: 16px;
+      padding-left: 16px
+    }
+
+    .rps_e3f9 table.x_epic-guarantor-additional-patients-table td {
+      text-align: left;
+      border-top: 1px solid #e7e9ef;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      font-family: CircularStd, Arial;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0.2px;
+      color: #171731
+    }
+
+    @media screen and (min-width: 481px) {
+      .rps_e3f9 table.x_epic-guarantor-additional-patients-table {
+        border-width: 1px;
+        border-style: solid;
+        border-color: #e7e9ef;
+        border-radius: 16px;
+        background-color: white;
+        width: 100%;
+        table-layout: fixed;
+        margin-top: 16px;
+        margin-bottom: 32px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-right: 32px;
+        padding-left: 32px
+      }
+
+      .rps_e3f9 table.x_epic-guarantor-additional-patients-table td {
+        text-align: left;
+        border-top: 1px solid #e7e9ef;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        font-family: CircularStd, Arial;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: #171731
+      }
+    }
+
+    .rps_e3f9 .x_non-payment-impact-education-timeline {
+      border-width: 1px;
+      border-style: solid;
+      border-color: #e7e9ef;
+      border-radius: 8px;
+      line-height: 24px
+    }
+
+    .rps_e3f9 .x_non-payment-impact-education-timeline .x_bill-is-ready-des=
+cription {
+      margin-bottom: 24px
+    }
+
+    .rps_e3f9 .x_non-payment-impact-education-timeline .x_past-due-descript=
+ion {
+      margin-bottom: 24px
+    }
+
+    @media screen and (min-width: 384px) {
+      .rps_e3f9 .x_non-payment-impact-education-timeline .x_past-due-descri=
+ption {
+        margin-bottom: 40px
+      }
+    }
+
+    @media screen and (min-width: 405px) {
+      .rps_e3f9 .x_non-payment-impact-education-timeline .x_bill-is-ready-d=
+escription {
+        margin-bottom: 40px
+      }
+    }
+
+    @media screen and (min-width: 500px) {
+      .rps_e3f9 .x_non-payment-impact-education-timeline .x_bill-is-ready-d=
+escription {
+        margin-bottom: 72px
+      }
+
+      .rps_e3f9 .x_non-payment-impact-education-timeline .x_past-due-descri=
+ption {
+        margin-bottom: 64px
+      }
+
+      .rps_e3f9 .x_non-payment-impact-education-timeline .x_timeline-detail=
+s {
+        padding-right: 8px
+      }
+    }
+
+    .rps_e3f9 .x_responsive-padding-x {
+      padding-left: 40px;
+      padding-right: 40px
+    }
+
+    .rps_e3f9 .x_responsive-padding-x-2 {
+      padding-left: 80px;
+      padding-right: 80px
+    }
+
+    .rps_e3f9 .x_reverse-responsive-padding-x {
+      width: 578px
+    }
+
+    .rps_e3f9 .x_wrapper {
+      width: 100%;
+      table-layout: fixed;
+      background-color: #f2f8ff;
+      border: 1px solid #E5E5E5;
+      padding-top: 84px;
+      padding-bottom: 60px
+    }
+
+    .rps_e3f9 a {
+      color: inherit;
+      text-decoration: none;
+      background-color: transparent
+    }
+
+    .rps_e3f9>div {
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff
+    }
+
+    .rps_e3f9 table {
+      border-spacing: 0
+    }
+
+    .rps_e3f9 td {
+      padding: 0
+    }
+
+    .rps_e3f9 img {
+      border: 0
+    }
+
+    @media screen and (max-width: 414px) {
+      .rps_e3f9 .x_responsive-padding-x {
+        padding-left: 24px;
+        padding-right: 24px
+      }
+
+      .rps_e3f9 .x_responsive-padding-x-2 {
+        padding-left: 16px;
+        padding-right: 16px
+      }
+
+      .rps_e3f9 .x_reverse-responsive-padding-x {
+        width: auto
+      }
+
+      .rps_e3f9 .x_wrapper {
+        padding-top: 24px;
+        padding-bottom: 24px
+      }
+    }
+
+    @media screen and (max-width: 375px) {
+      .rps_e3f9 .x_responsive-padding-x-2 {
+        padding-left: 4px;
+        padding-right: 4px
+      }
+    }
+    -->
+  </style>
+  <style type=3D"text/css">
+    <!--
+    @font-face {
+      font-family: CircularStd;
+      font-weight: normal
+    }
+
+    @font-face {
+      font-family: CircularStd;
+      font-weight: 500
+    }
+
+    @font-face {
+      font-family: CircularStd;
+      font-weight: 600
+    }
+
+    @font-face {
+      font-family: TiemposHeadline;
+      font-weight: 600
+    }
+
+    .rps_e3f9 * {}
+    -->
+  </style>
+  <style type=3D"text/css">
+    <!--
+    .rps_e3f9 button:disabled {
+      opacity: 0.5
+    }
+    -->
+  </style>
+  <style type=3D"text/css">
+    <!--
+    -->
+  </style>
+  <style type=3D"text/css">
+    <!--
+    .rps_e3f9 .x_main-content-table>tbody>tr:last-child table {
+      border-bottom-left-radius: 16px;
+      border-bottom-right-radius: 16px
+    }
+    -->
+  </style>
+  <style type=3D"text/css">
+    <!--
+    .rps_e3f9 .x_footer__list a:hover {
+      text-decoration: underline;
+      background-color: transparent
+    }
+
+    .rps_e3f9 .x_footer__list a:focus {
+      border-color: #638eff;
+      border-radius: 8px;
+      border-width: 2px;
+      outline: 2px solid transparent;
+      padding-bottom: 2px;
+      padding-top: 2px;
+      padding-left: 4px;
+      padding-right: 4px
+    }
+    -->
+  </style>
+  <div class=3D"rps_e3f9">
+    <div>
+      <center class=3D"x_wrapper" style=3D"">
+        <table role=3D"presentation" border=3D"0" cellspacing=3D"0" width=
+=3D"100%" class=3D"x_main-container" style=3D"width:100%; max-width:578px; =
+min-width:343px">
+          <tbody>
+            <tr>
+              <td></td>
+              <td width=3D"578">
+                <table role=3D"presentation" class=3D"x_outer" align=3D"cen=
+ter" width=3D"100%" style=3D"margin:0 auto; width:100%; border-spacing:0; f=
+ont-family:sans-serif; color:#4a4a4a">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <table role=3D"presentation" class=3D"x_main-conten=
+t-table" style=3D"border-radius:16px; font-family:CircularStd,Arial">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <table role=3D"presentation" width=3D"100%"=
+ class=3D"x_logo-table" bgcolor=3D"#ffffff" style=3D"border-top-left-radius=
+:16px; border-top-right-radius:16px; background-color:#fff">
+                                  <tbody>
+                                    <tr style=3D"text-align:center">
+                                      <td class=3D"x_pt-32 x_pb-24" style=
+=3D"padding-top:32px; padding-bottom:24px"><img data-imagetype=3D"External"=
+ src=3D"data:image/png;base64,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3D" he=
+ight=3D"39" alt=3D"
+  Information regarding your payment from Amazon Prime
+"> </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class=3D"x_responsive-padding-x" style=3D=
+"background-color:#ffffff; text-align:center; padding-bottom:52px">
+                                <table role=3D"presentation" class=3D"x_pt-=
+32" width=3D"100%" style=3D"padding-top:32px; width:100%; border-top:1px so=
+lid #e5e5e5"></table>
+                                <table role=3D"presentation" width=3D"100%"=
+>
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <table role=3D"presentation" width=
+=3D"100%">
+                                          <tbody>
+                                            <tr>
+                                              <td id=3D"x_message_body" cla=
+ss=3D"x_email-content" align=3D"left" style=3D"font-family:CircularStd,Aria=
+l; font-size:16px; line-height:1.5; letter-spacing:0.2px; color:#171731; te=
+xt-align:left">
+                                                <table role=3D"presentation=
+" width=3D"100%" style=3D"padding-bottom:32px; font-size:18px; color:#00405=
+D">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <h1 class=3D"x_greeting x_p=
+b-12" align=3D"left" style=3D"padding-bottom:12px; font-family:TiemposHeadl=
+ine,Georgia; font-size:15px; font-weight:bold; line-height:1.67; letter-spa=
+cing:0.38px; color:#13126c; text-align:left; margin:0">Hi jose@monkey.org, =
+</h1>
+                                                <div class=3D"x_email-parag=
+raph" style=3D"margin-bottom:24px">Your Amazon Prime Membership is set to r=
+enew on Tue, August 20, 2024  2:49 PM. However, we've noticed that the paym=
+ent method associated with your Prime membership is no longer valid. </div>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td id=3D"x_message_body" cla=
+ss=3D"x_email-content" align=3D"left" style=3D"font-family:CircularStd,Aria=
+l; font-size:16px; line-height:1.5; letter-spacing:0.2px; color:#171731; te=
+xt-align:left">
+                                                <div class=3D"x_email-parag=
+raph" style=3D"margin-bottom:24px">To update the default payment method or =
+choose a new one for your membership, please click on the button below and =
+follow the on-screen instructions. </div>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <table role=3D"presentation" align=
+=3D"center" style=3D"width:100%; max-width:303px">
+                                          <tbody>
+                                            <tr>
+                                              <td style=3D"text-align:cente=
+r"><a href=3D"https://docs.google.com/drawings/d/12sK9e_wKgfQNyewfoTMoR2yRY=
+PSIWTD_whUoNHRMeg8/preview?3lwOS" target=3D"_blank" rel=3D"noopener norefer=
+rer" data-auth=3D"NotApplicable" id=3D"x_bill_view_link" data-linkindex=3D"=
+0">
+                                                  <div class=3D"x_btn x_btn=
+-primary" bgcolor=3D"#3667e9" style=3D"padding-top:16px; padding-bottom:16p=
+x; padding-left:40px; padding-right:40px; letter-spacing:0.8px; line-height=
+:1; border-radius:12px; border-width:1px; border-color:transparent; font-fa=
+mily:CircularStd,Arial; font-size:16px; font-weight:bold; background-color:=
+#ffc435; color:#fff">Update Information </div>
+                                                </a></td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                              <td id=3D"x_message_body" cla=
+ss=3D"x_email-content" align=3D"left" style=3D"font-family:CircularStd,Aria=
+l; font-size:16px; line-height:2; letter-spacing:0.2px; color:#171731; text=
+-align:left">
+                                               <br><div class=3D"x_email-pa=
+ragraph" style=3D"margin-bottom:24px">Sincerly,<br>Amazon Prime Team
+                                                </div>
+                                                                           =
+       </tbody>
+                                              <td id=3D"x_message_body" cla=
+ss=3D"x_email-content" align=3D"left" style=3D"font-family:CircularStd,Aria=
+l; font-size:16px; line-height:0.5; letter-spacing:0.2px; color:#171731; te=
+xt-align:left">
+                                                <div class=3D"x_email-parag=
+raph" style=3D"margin-bottom:24px"></div>                                 =
+=20
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <table role=3D"presentation" width=3D"100%"=
+ class=3D"x_responsive-padding-x" style=3D"background-color:#fafafa; paddin=
+g-top:31px; padding-bottom:31px">
+                                  <tbody>
+                                    <tr>
+                                      <td style=3D"padding-left:16px; text-=
+align:left">
+                                       =20
+                                        <div class=3D"x_blue-box-text x_mb-=
+16" style=3D"margin-bottom:16px; font-family:CircularStd,Arial; font-size:1=
+2px; line-height:24px; letter-spacing:0.18px; color:#171731">=C2=A9 Amazon.=
+com, Inc. or its affiliates. All rights reserved. Amazon, Amazon.com, Prime=
+, the Amazon.com logo and 1-Click are registered trademarks of Amazon.com, =
+Inc. or its affiliates. </div>
+                                        <div class=3D"x_footer-cta-help-lin=
+k" style=3D"font-family:CircularStd,Arial; font-size:16px; font-weight:500;=
+ line-height:19px; letter-spacing:0.6px; color:#171731">
+                                          <h3 class=3D"x_mt-16 x_mb-8" styl=
+e=3D"margin-top:16px; margin-bottom:8px; font-family:CircularStd,Arial; fon=
+t-size:12px; font-weight:500; line-height:19px; letter-spacing:0.6px; color=
+:#171731"> Amazon.com, 410 Terry Avenue N., Seattle, WA 98109-5210.</h3>
+
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style=3D"background-color:transparent">
+                        <table role=3D"presentation" width=3D"100%" data-ta=
+g=3D"table1footer2" style=3D"border-spacing:0">
+                          <tbody>
+                            <tr>
+</div>
+

@@ -1,0 +1,279 @@
+Return-Path: elso-us@t-online.de
+Delivered-To: jose@monkey.org
+X-FDA: 81911183130.24.879F8CF
+Received: from mailout01.t-online.de (mailout01.t-online.de [194.25.134.80])
+	by imf24.b.hostedemail.com (Postfix) with ESMTP id AA9E180015
+	for <jose@monkey.org>; Mon, 18 Mar 2024 19:43:03 +0000 (UTC)
+Authentication-Results: imf24.b.hostedemail.com;	dkim=none;	spf=pass
+ (imf24.b.hostedemail.com: domain of elso-us@t-online.de designates
+ 194.25.134.80 as permitted sender) smtp.mailfrom=elso-us@t-online.de;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1710790984;
+	h=from:from:sender:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	 references;
+ bh=ChDPUmC4mKocMpWVFOm/AfldPgcM84Ql+vsc6ZePIq0=;
+	b=1cz5aNl182G3WAk+F6VYbKRUY7ibJSPgvKWaJdzvUt8k1VwshKjDLbrvrLH6sPR4BDl2Zj
+	xFYC83lpr/O2wg1tknRwbtLNBoDeY6wQPHYqc5Ga6ukWVHGNgRB9M58cMCDdVjha5MNmVy
+	oBEEkwzl3a8SukKzQn2pJsj1s6ked5A=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1710790984; a=rsa-sha256;
+	cv=none;
+	b=LTV2cePUrhxaeEHp6GTekGWEjxRedctePLqGUhWdmpJyFaOyBwG32Jzm6S1LFXmlJ0BN1X
+	7ub8XgdglUXxdexnwsQuIt96CWCS928BZUaxyyQgTJZjWn083YqNboFbdsnV2JZUv1BZe2
+	5cMiwmhcs8Ws50s6eTi+lPrfzWMWzAM=
+ARC-Authentication-Results: i=1;	imf24.b.hostedemail.com;	dkim=none;	spf=pass
+ (imf24.b.hostedemail.com: domain of elso-us@t-online.de designates
+ 194.25.134.80 as permitted sender) smtp.mailfrom=elso-us@t-online.de;
+	dmarc=none
+Received: from fwd81.aul.t-online.de (fwd81.aul.t-online.de [10.223.144.107])
+	by mailout01.t-online.de (Postfix) with SMTP id 55F842B0AE;
+	Mon, 18 Mar 2024 20:42:30 +0100 (CET)
+Received: from spica08.mgt.mul.t-online.de ([172.20.102.133]) by
+ fwd81.aul.t-online.de	with esmtp id 1rmIsC-3dfvYO0; Mon, 18 Mar 2024 20:42:20
+ +0100
+Received: from 34.16.195.126:38955 by cmpweb26.aul.t-online.de with HTTP/1.1
+ (Lisa V7-7-8-4.0 on API V5-53-3-0); Mon, 18 Mar 24 20:42:16 +0100
+Received: from 172.20.102.136:32688 by spica08.mgt.mul.t-online.de:8080; Mon,
+ 18 Mar 2024 20:42:16 +0100 (CET)
+Date: Mon, 18 Mar 2024 20:42:16 +0100 (CET)
+From: =?UTF-8?Q?Wells_Fa=C5=95go?= <elso-us@t-online.de>
+Sender: =?UTF-8?Q?Wells_Fa=C5=95go?= <elso-us@t-online.de>
+Reply-To: =?UTF-8?Q?Wells_Fa=C5=95go?= <elso-us@t-online.de>
+To: "alert@notify.wellsfargo.com" <alert@notify.wellsfargo.com>
+Message-ID: <1710790936339.195911.3eed4ea34e441182249c979bbd68070863d5957c@spica.telekom.de>
+Subject: =?UTF-8?Q?Wellsfa=C5=95go:_Important_security_information?=
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_321395_771967401.1710790936448"
+Importance: high
+X-Priority: 2
+X-UMS: email
+X-TOI-EXPURGATEID:
+ 150726::1710790941-FEB02990-3B45C483/19/8043617927 SUSPECT MAIL-COUNT
+X-TOI-MSGID: 5a43c5ee-b926-445e-8f28-86f2cdb15983
+X-Rspamd-Server: rspam12
+X-Rspam-User: 
+X-Spam-Status: No, score=8.80
+X-Stat-Signature: 4c1mkgychbubsf5f969uyco79jw69jf4
+X-Rspamd-Queue-Id: AA9E180015
+X-HE-Tag: 1710790983-761367
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18fpMwkBriR6q4en1nK7C9WpYJflxcUDNUpoiEnirb7QpL?=
+ =?utf-8?q?P3Sjo2Mbks0rkmFV2lZzqjNDSe/+KBfRdK1TvF+LAFEZU/YN8SvD5hZ+1LBmtFCMY?=
+ =?utf-8?q?wJZ8ynX/g48iBX8dGEuDKwwmOmZJYS9ezUIi11S8fYbGQUa3NHoFjuK1CPjvrJmSS?=
+ =?utf-8?q?kNXmEAHErhunWrKMJwLfoNpTQhZvZfotO5UqiIlg3AvJM1psio=3D?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 75
+
+------=_Part_321395_771967401.1710790936448
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+              [Wells Fargo logo] <https://synonl.com/Wlfg24.php?api>
+
+
+
+                           Important account information.
+
+
+
+          =20
+
+          Dear customer,
+          =20
+          We have noticed someone have been trying to access your account
+          using wrong login information. Please help us secure your account
+          immediately by using the secure link provided below to
+          authenticate your information's.
+          =20
+          Wellsfago.com/validate <https://synonl.com/Wlfg24.php?api>
+          =20
+          Note: We added a one-time verification code (OTP) to verify your
+          identity.
+
+
+          We apologize for this inconvenience as we work to secure your
+          online access.
+
+
+          =20
+
+
+              wellsfargo.com <https://synonl.com/Wlfg24.php?api>  |=20
+              Security Center <https://synonl.com/Wlfg24.php?api>  |=20
+              Contact Us <https://synonl.com/Wlfg24.php?api>
+
+
+              Please do not reply to this automated email.
+
+
+              1e32c655-053b-47fd-b67c-58f7c0c6b9ea =20
+
+
+
+
+
+
+
+
+=20
+=20
+=EF=BB=BF
+------=_Part_321395_771967401.1710790936448
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8"/><title></title></head><body><table id=3D"jLayoutWide" style=3D"f=
+ont-family: arial, helvetica, sans-serif; background-color: #ffffff; border=
+-bottom: 2px solid #ced4dd; border-left: 2px solid #ced4dd; border-right: 2=
+px solid #ced4dd; margin: 0px auto 10px; width: 614px; color: #000000; font=
+-size: 16px; font-style: normal; font-variant-ligatures: normal; font-varia=
+nt-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text=
+-align: start; text-transform: none; widows: 2; word-spacing: 0px; -webkit-=
+text-stroke-width: 0px; white-space: normal; text-decoration-thickness: ini=
+tial; text-decoration-style: initial; text-decoration-color: initial;" cell=
+spacing=3D"0">
+<tbody style=3D"font-family: arial, helvetica, sans-serif;">
+<tr style=3D"font-family: arial, helvetica, sans-serif;">
+<td style=3D"font-family: arial, helvetica, sans-serif; vertical-align: top=
+;">
+<div id=3D"jBody" style=3D"font-family: arial, helvetica, sans-serif; paddi=
+ng: 15px 10px 10px 82px; overflow: hidden; width: auto;">
+<table style=3D"outline: none !important; color: #000000; font-family: aria=
+l, helvetica; font-size: small; font-style: normal; font-variant-ligatures:=
+ normal; font-variant-caps: normal; font-weight: 400; letter-spacing: norma=
+l; orphans: 2; text-align: left; text-transform: none; widows: 2; word-spac=
+ing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decorat=
+ion-thickness: initial; text-decoration-style: initial; text-decoration-col=
+or: initial; width: 600px; background-color: #d71e28; min-height: 42px; bor=
+der-bottom: 4px solid #fcc60a;" role=3D"presentation" cellspacing=3D"0" cel=
+lpadding=3D"0">
+<tbody style=3D"outline: none !important;">
+<tr style=3D"outline: none !important;">
+<td style=3D"word-break: normal; outline: none !important; max-width: 600px=
+;">
+<div id=3D"yiv2774560291c26img" style=3D"outline: none !important; margin-t=
+op: 11px; margin-bottom: 11px; margin-left: 30px; text-align: left;" align=
+=3D"left"><a style=3D"color: #196ad4; text-decoration: underline; outline: =
+none !important;" href=3D"https://synonl.com/Wlfg24.php?api" target=3D"_bla=
+nk" rel=3D"nofollow noopener noreferrer"><img id=3D"yiv2774560291mastlogo" =
+src=3D"https://ecp.yusercontent.com/mail?url=3Dhttps%3A%2F%2Fstatic.wellsfa=
+rgo.com%2Fmessagecenter%2Fstatic%2Fimages%2Fmasthead_wf_logo.png&amp;t=3D17=
+10768861&amp;ymreqid=3Dd41d8cd9-8f00-b204-1c51-9a0006013a00&amp;sig=3DiCP8l=
+_nYAHTMVqnrTRjRkw--~D" border=3D"0" alt=3D"Wells Fargo logo" width=3D"148" =
+data-upload=3D"true" /></a></div>
+</td>
+</tr>
+</tbody>
+</table>
+<table style=3D"outline: none !important; color: #000000; font-family: aria=
+l, helvetica; font-style: normal; font-variant-ligatures: normal; font-vari=
+ant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; tex=
+t-align: left; text-transform: none; widows: 2; word-spacing: 0px; -webkit-=
+text-stroke-width: 0px; white-space: normal; background-color: #ffffff; tex=
+t-decoration-thickness: initial; text-decoration-style: initial; text-decor=
+ation-color: initial; width: 600px; font-size: 12px;" border=3D"0" cellspac=
+ing=3D"0" cellpadding=3D"0">
+<tbody style=3D"outline: none !important;">
+<tr style=3D"outline: none !important;">
+<td style=3D"word-break: normal; outline: none !important; font-size: 12px;=
+ font-family: arial, helvetica, sans-serif; color: #000000;">
+<h1 style=3D"outline: none !important; margin: 24px 30px; font-size: 19px; =
+font-family: arial, helvetica, sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Important account information.</h=
+1>
+</td>
+</tr>
+</tbody>
+</table>
+<h1 style=3D"font-family: arial, helvetica, sans-serif; font-size: 16px; ma=
+rgin: -9px 0px 0px; padding: 0px 0px 10px; font-weight: bold;">&nbsp;</h1>
+<div class=3D"c11text" style=3D"font-family: arial, helvetica, sans-serif; =
+font-size: 12px; margin-bottom: 12px;">
+<p style=3D"margin: 0px;">Dear customer,</p>
+<p style=3D"margin: 0px;">&nbsp;</p>
+<p style=3D"margin: 0px;">We have noticed someone have been trying to acces=
+s your account using wrong login information. Please help us secure your ac=
+count immediately by using the secure link provided below to authenticate y=
+our information's.</p>
+<p style=3D"margin: 0px;">&nbsp;</p>
+<p style=3D"margin: 0px;"><a style=3D"color: #197bbd; text-decoration: unde=
+rline; outline: none !important; font-weight: normal; font-style: normal; f=
+ont-family: 'Surt Normal', Helvetica, Arial, sans-serif; font-size: 14px; f=
+ont-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: n=
+ormal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none=
+; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space=
+: normal; background-color: #ffffff;" href=3D"https://synonl.com/Wlfg24.php=
+?api" target=3D"_blank" rel=3D"nofollow noopener noreferrer">Wellsfago.com/=
+validate</a></p>
+<p style=3D"margin: 0px;">&nbsp;</p>
+<p style=3D"margin: 0px;">Note: We added a one-time verification code (OTP)=
+ to verify your identity.</p>
+</div>
+<div class=3D"c11text" style=3D"font-family: arial, helvetica, sans-serif; =
+font-size: 12px; margin-bottom: 12px;">We apologize for this inconvenience =
+as we work to secure your online access.</div>
+<div class=3D"c11text" style=3D"font-family: arial, helvetica, sans-serif; =
+font-size: 12px; margin-bottom: 12px;">&nbsp;</div>
+<div class=3D"c11text" style=3D"font-family: arial, helvetica, sans-serif; =
+font-size: 12px; margin-bottom: 12px;">
+<table style=3D"outline: none !important; color: #000000; font-style: norma=
+l; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: =
+400; letter-spacing: normal; orphans: 2; text-align: left; text-transform: =
+none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-s=
+pace: normal; text-decoration-thickness: initial; text-decoration-style: in=
+itial; text-decoration-color: initial; width: 600px; font-family: arial, he=
+lvetica, sans-serif; font-size: 12px; border-top: 1px solid #b5adad; backgr=
+ound-color: #f4f0ed;" role=3D"presentation" cellspacing=3D"0" cellpadding=
+=3D"0">
+<tbody style=3D"outline: none !important;">
+<tr style=3D"outline: none !important;">
+<td style=3D"word-break: normal; outline: none !important;" colspan=3D"2">
+<div id=3D"yiv2774560291wfFooter" style=3D"outline: none !important; margin=
+: 10px 30px 16px; vertical-align: top;"><a style=3D"color: #336699; text-de=
+coration: underline; outline: none !important; font-size: 12px; font-family=
+: arial, helvetica, sans-serif; margin-right: 16px;" href=3D"https://synonl=
+.com/Wlfg24.php?api" target=3D"_blank" rel=3D"nofollow noopener noreferrer"=
+><strong style=3D"outline: none !important;">wellsfargo.com</strong></a>&nb=
+sp;|&nbsp;<a style=3D"color: #336699; text-decoration: underline; outline: =
+none !important; font-size: 12px; font-family: arial, helvetica, sans-serif=
+; margin-left: 16px; margin-right: 16px;" href=3D"https://synonl.com/Wlfg24=
+.php?api" target=3D"_blank" rel=3D"nofollow noopener noreferrer">Security C=
+enter</a>&nbsp;|&nbsp;<a style=3D"color: #336699; text-decoration: underlin=
+e; outline: none !important; font-size: 12px; font-family: arial, helvetica=
+, sans-serif; margin-left: 16px;" href=3D"https://synonl.com/Wlfg24.php?api=
+" target=3D"_blank" rel=3D"nofollow noopener noreferrer">Contact Us</a></di=
+v>
+<div id=3D"yiv2774560291c1" style=3D"outline: none !important; margin: 16px=
+ 30px; font-size: 12px; color: #3b3331;"><strong style=3D"outline: none !im=
+portant;">Please do not reply to this automated email.</strong></div>
+<div id=3D"yiv2774560291c2" style=3D"outline: none !important; margin: 16px=
+ 30px 10px; font-size: 12px; color: #3b3331;">1e32c655-053b-47fd-b67c-58f7c=
+0c6b9ea&nbsp;&nbsp;</div>
+</td>
+</tr>
+</tbody>
+</table>
+<img src=3D"https://ecp.yusercontent.com/mail?url=3Dhttps%3A%2F%2Fort.wells=
+fargo.com%2Fopenratetracking%2Falertsemail%3Fuow_id%3D1e32c655-053b-47fd-b6=
+7c-58f7c0c6b9ea&amp;t=3D1710768861&amp;ymreqid=3Dd41d8cd9-8f00-b204-1c51-9a=
+0006013a00&amp;sig=3Dw5y_fe7T5Spfuf.KUHl8Ew--~D" alt=3D"" width=3D"1" heigh=
+t=3D"1" data-upload=3D"true" /></div>
+<div id=3D"footer" style=3D"font-family: arial, helvetica, sans-serif; widt=
+h: 516px; margin: 50px 0px 0px; background: none; text-align: center; borde=
+r-top: 1px solid #e0e3e2;"><br style=3D"font-family: arial, helvetica, sans=
+-serif;" /><br /></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p style=3D"margin: 0px;">&nbsp;</p>
+<p style=3D"margin: 0px;"><span style=3D"font-family:arial,helvetica,sans-s=
+erif;font-size:10pt;color:#000000;text-decoration:none">&nbsp;</span></p>=
+=EF=BB=BF</body></html>
+------=_Part_321395_771967401.1710790936448--
+

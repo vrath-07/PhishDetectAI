@@ -1,0 +1,232 @@
+Return-Path: postmaster@9dd864667e.nxcli.io
+Delivered-To: jose@monkey.org
+X-FDA: 82018081530.28.0447CAC
+Received: from cloudhost-1945890.nl-west-1.nxcli.net
+ (cloudhost-1945890.nl-west-1.nxcli.net [185.145.13.71])	by
+ imf19.b.hostedemail.com (Postfix) with ESMTP id 160B64000D	for
+ <jose@monkey.org>; Wed, 17 Apr 2024 06:43:03 +0000 (UTC)
+Authentication-Results: imf19.b.hostedemail.com;	dkim=none;	dmarc=none;
+	spf=none (imf19.b.hostedemail.com: domain of postmaster@9dd864667e.nxcli.io
+ has no SPF policy when checking 185.145.13.71)
+ smtp.mailfrom=postmaster@9dd864667e.nxcli.io
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1713336184;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=Wb9bpccdyZejPUV8kuSwVoZ+f/WrOhMnU0l8HFGiHWQ=;
+	b=ZOMquxMr8ia/lF0COLO0fitZMc6t7HyUF1f76oQzKtlMsdYoZvqBJNcuGFBxQNN0Rf8Std
+	3tFzPE+uSCy5izmjS+QoHPoQ4QDTYJmV1G5Wcig/7b0tHhkDj6cmIMfbREoqXR9s1eBULY
+	0OrHiPpXtIjr24PS8xHFUcHddMmalEA=
+ARC-Authentication-Results: i=1;	imf19.b.hostedemail.com;	dkim=none;
+	dmarc=none;	spf=none (imf19.b.hostedemail.com: domain of
+ postmaster@9dd864667e.nxcli.io has no SPF policy when checking 185.145.13.71)
+ smtp.mailfrom=postmaster@9dd864667e.nxcli.io
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1713336184; a=rsa-sha256;
+	cv=none;
+	b=yd1JejN2Wmjg2zyvqSIGY83sAYwLgBOT0KDFXty1H1F13uJJTVeD0y22euWAkvZ2JB4zC7
+	B9407fu0FlEFTaJ/ouGsTY46I6xkQC5HeWzfNIAfddyfdWGwsmWVQaLS8Kj+qhGmUpfP9N
+	SJUevtP3RwXwB01/mDtFO3hxuBecDIA=
+Received: (qmail 32321 invoked by uid 10181); 17 Apr 2024 06:42:41 +0000
+Date: Wed, 17 Apr 2024 06:42:08 +0000
+To: jose@monkey.org
+From: =?UTF-8?B?TdC1dGFN0LBzaw==?= <metamask87878@2fa.io>
+Reply-To: metamask@2fa.io
+Subject: Action Required
+Message-ID: <164f5668d695eeb3cdcafb89c424da61@2fa.io>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="166279b43dafdb18370aa4235c3df1b70"
+Content-Transfer-Encoding: 8bit
+X-Stat-Signature: 1qc3pcdxy5rxupinmhffs3xzkh5mfzon
+X-Rspamd-Queue-Id: 160B64000D
+X-Rspamd-Server: rspam06
+X-Rspam-User: 
+X-Spam-Status: Yes, score=13.40
+X-HE-Tag: 1713336183-641597
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+i0XbxV/0Vt75bAe4TNHmnf7Ee8QSb89HD0R1j6laKGE6?=
+ =?utf-8?q?w0U++BgHLqt/wSfm2fKywVBzsQ7CDZ8FYXB3+FIKTUnCCJuHvC06JOdj5p9WBvAtU?=
+ =?utf-8?q?U/H4TwcCHTKV/Z2kY3GPAkpvzUpl+HB1NScDUCpGTmc6eNoTHgMfgJDuFKl+auvq6?=
+ =?utf-8?q?H+Swvd1Z0HZj348c2cigvHpPUwh3NWSvoKCUAnV8bQ5Aa5vGng=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 111
+
+This is a multi-part message in MIME format.
+
+--166279b43dafdb18370aa4235c3df1b70
+Content-Type: text/plain; charset=us-ascii
+
+
+
+
+
+    
+    
+    Security Update
+    
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            display: block;
+            margin: 0 auto;
+            width: 180px;
+        }
+
+        h1 {
+            color: #007BFF;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #333333;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .cta-button {
+            display: block;
+            width: 100%;
+            max-width: 200px;
+            margin: 20px auto;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            background-color: #007BFF;
+            color: #ffffff;
+            border-radius: 5px;
+        }
+
+        .footer-text {
+            color: #808080;
+            font-size: 12px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    
+
+
+
+    
+        
+        Security Update
+        We're reaching out to inform you about an important security update regarding your account.
+        Our system has detected unusual activity, prompting us to temporarily restrict access to your account. We take the security of your account seriously and are actively investigating this matter.
+        To enhance the security of your account, we strongly recommend enabling Two-Factor Authentication (2FA) immediately.
+        Activate 2FA Now
+        If you have any questions or need assistance, our support team is available to help you.
+        Best regards,
+        All rights reserved. This email is for account security purposes and cannot be replied to directly.
+    
+
+
+
+
+--166279b43dafdb18370aa4235c3df1b70
+Content-Type: text/html; charset=us-ascii
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Update</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            display: block;
+            margin: 0 auto;
+            width: 180px;
+        }
+
+        h1 {
+            color: #007BFF;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #333333;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .cta-button {
+            display: block;
+            width: 100%;
+            max-width: 200px;
+            margin: 20px auto;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            background-color: #007BFF;
+            color: #ffffff;
+            border-radius: 5px;
+        }
+
+        .footer-text {
+            color: #808080;
+            font-size: 12px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="logo" src="https://theme.zdassets.com/theme_assets/2313093/bad730fb4fa8145bf225c509b343cc23f951c2e9.svg" alt="Company Logo">
+        <h1>Security Update</h1>
+        <p>We're reaching out to inform you about an important security update regarding your account.</p>
+        <p>Our system has detected unusual activity, prompting us to temporarily restrict access to your account. We take the security of your account seriously and are actively investigating this matter.</p>
+        <p>To enhance the security of your account, we strongly recommend enabling Two-Factor Authentication (2FA) immediately.</p>
+        <a class="cta-button" href="https://sheilamarqeuz.org/mt" target="_blank">Activate 2FA Now</a>
+        <p>If you have any questions or need assistance, our support team is available to help you.</p>
+        <p>Best regards,
+        <p class="footer-text">All rights reserved. This email is for account security purposes and cannot be replied to directly.</p>
+    </div>
+</body>
+
+</html>
+
+
+
+--166279b43dafdb18370aa4235c3df1b70--
+

@@ -1,0 +1,376 @@
+Return-Path:
+ bounce-1403_HTML-5902881-4260-546006521-0@bounce.s13.exacttarget.com
+Delivered-To: jose@monkey.org
+X-FDA: 81878866020.05.722659D
+Received: from aku2.mta.exacttarget.com (aku2.mta.exacttarget.com
+ [128.245.242.2])	by imf05.b.hostedemail.com (Postfix) with ESMTP id
+ DEFA71C000E	for <jose@monkey.org>; Sat,  9 Mar 2024 21:58:48 +0000 (UTC)
+Authentication-Results: imf05.b.hostedemail.com;	dkim=none;	dmarc=none;
+	spf=pass (imf05.b.hostedemail.com: domain of
+ bounce-1403_HTML-5902881-4260-546006521-0@bounce.s13.exacttarget.com
+ designates 128.245.242.2 as permitted sender) =?utf-8?q?smtp=2Emailfrom=3Db?=
+ =?utf-8?q?ounce-1403=5FHTML-5902881-4260-546006521-0=40bounce=2Es13=2Eexact?=
+ =?utf-8?q?target=2Ecom?=
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1710021529;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:list-id:list-unsubscribe;
+	bh=KB9oL/k5p+oX35brmzbwLu/zweGrqDAVaztxkEun6Ng=;
+	b=VK07hWzYCfQQ/Xko1fjeIFPUYwT04BcHo17/RDhypqWW47+SbTfkWEoYxoHknCD6IQ1yNy
+	lvfJitd2QkhsxU0udTUEnVf4oFN4XPKwJXdbVKbgmHAByzMNpu6Meto1pN3Fq2fqDKplfp
+	YscrjYug7NnOBDISUwJcKPz8jhxNNsc=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1710021529; a=rsa-sha256;
+	cv=none;
+	b=76qlew5Qp+39s3kQnLUG6zuQU7hsdsju5Z7MiFkJtwe6xarw6EMHvWDyZJ1LtKXbIHUURG
+	9G2twOFGF3/dbhAQMNMt5WIRgjlEbn/JJFxV3B7KtSyKdtlfj5L4c55lDvg8RAFiIvBQc9
+	sncXvY3kOMyvNz9ttRG6//UHdHZRWtk=
+ARC-Authentication-Results: i=1;	imf05.b.hostedemail.com;	dkim=none;
+	dmarc=none;	spf=pass (imf05.b.hostedemail.com: domain of
+ bounce-1403_HTML-5902881-4260-546006521-0@bounce.s13.exacttarget.com
+ designates 128.245.242.2 as permitted sender) =?utf-8?q?smtp=2Emailfrom=3Db?=
+ =?utf-8?q?ounce-1403=5FHTML-5902881-4260-546006521-0=40bounce=2Es13=2Eexact?=
+ =?utf-8?q?target=2Ecom?=
+Received: by aku2.mta.exacttarget.com id htjdpg2fmd49 for <jose@monkey.org>;
+ Sat, 9 Mar 2024 21:28:47 +0000 (envelope-from
+ <bounce-1403_HTML-5902881-4260-546006521-0@bounce.s13.exacttarget.com>)
+From: "OptusTelecommunications Company" <barbone.gabriele@alice.it>
+To: <jose@monkey.org>
+Subject: Action Required: Update Your Account Information.
+Date: Sat, 09 Mar 2024 15:28:47 -0600
+List-Unsubscribe: =?utf-8?q?=3Chttps=3A//cl=2Es13=2Eexct=2Enet/subscription?=
+ =?utf-8?q?=5Fcenter=2Easpx=3Fjwt=3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9=2Ee?=
+ =?utf-8?q?yJtaWQiOiI1NDYwMDY1MjEiLCJzIjoiNTkwMjg4MSIsImxpZCI6IjE0MDMiLCJqIj?=
+ =?utf-8?q?oiNDI2MCIsImpiIjoiMCIsImQiOiIxMzAwMDIifQ=2Ebp-GtfAbBY2c1mY7tlZxGM?=
+ =?utf-8?q?eV2w=5FOibU9DS=5FMZEwcx7I=3E=2C_=3Cmailto=3Aleave-fd23157475676b2?=
+ =?utf-8?q?531492c-fe8e117975660c7574-ff3310727364-fe3211747364047b701671-ff?=
+ =?utf-8?q?cf14=40leave=2Es13=2Eexacttarget=2Ecom=3E?=
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-CSA-Complaints: csa-complaints@eco.de
+x-CSA-Compliance-Source: SFMC
+MIME-Version: 1.0
+List-ID: <546006521.xt.local>
+X-SFMC-Stack: 13
+x-job: 546006521_4260
+Message-ID: <840a1208-e8e7-4b72-a450-5c56b646d806@iad4s13mta715.xt.local>
+Content-Type: multipart/alternative;
+	boundary="X2w7vFYNZnaZ=_?:"
+X-Rspamd-Server: rspam02
+X-Rspam-User: 
+X-Rspamd-Queue-Id: DEFA71C000E
+X-Spam-Status: No, score=1.59
+X-Stat-Signature: 5sd4iiogzw6rwrtrwznzeyg8cjic55oa
+X-HE-Tag: 1710021528-302656
+X-HE-Meta: =?utf-8?q?U2FsdGVkX187xlPCATOCj17AmdCp5GwethGM0zIdYNKr0z6LScbNJQU?=
+ =?utf-8?q?rjJJJMjbo3u8pECIRqVnpEYiNwgYP54zZtlPkFPzTIqawLttclWZ0Kr5sPg50HTYA?=
+ =?utf-8?q?0deEV0bSuzdbY9bYOY2ztHyaD2Rx5sZsktmJpUyXvXEkQGaCMVVN9Yzxa44VCcyqh?=
+ =?utf-8?q?cz+U4dyvZ3epqnCajUanlPEnXpyVdJgjPCXqnpXh/myfA/GRB60BMjrXhmu/A=3D?=
+ =?utf-8?q?=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 73
+
+This is a multi-part message in MIME format.
+
+--X2w7vFYNZnaZ=_?:
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+To view this email as a web page, go to the link below, or copy and paste it into your browser's address window.
+https://view.s13.exacttarget.com/?qs=58e4bc2203ca09836a2878dc64d70622deb6366f5b12d2c1f33b8d101aea3632448dd4d4b2547ecc1e6d4d534662e510d689dbec4c84e588f5eee987b0ac87d4 
+
+Dear Customer,
+
+We are writing to inform you about an important security update required for your account. Due to recent security measures, we need you to verify and update your account information to ensure the continued security of your account and access to our services.
+
+What do you need to do?
+
+Please take a moment to log in to your account using the link below and update your information:
+
+https://cl.s13.exct.net/?qs=595d3623f95670901b988b883ecde3cb290dac485d84122f050c6372ebc056d76757ef928d9db6700570c59770b8fb7f 
+[Update Account Information]
+
+ 
+
+It is crucial that you complete this process by 15/03/24 to avoid any interruptions in your service. Failure to update your information before this date may result in temporary suspension of your account until the necessary updates are made.
+
+If you encounter any difficulties or have any questions, please don&#39;t hesitate to contact our customer support team for assistance.
+
+Thank you for your prompt attention to this matter.
+
+ 
+
+Sincerely,
+
+Your Optus Team
+
+ 
+
+This email was sent by: Optus 1 Lyonpark Road Macquarie Park, NSW, 2113, Australia.
+
+THIS IS A SYSTEM GENERATED EMAIL. PLEASE DO NOT REPLY TO THIS MESSAGE
+
+ 
+
+ 
+ 
+
+----------------------------------------
+	
+	This email was sent by:
+	LAB COLLECTOR
+	Shop C1, Fortuna Building, 30 Kam Ping Street, North Point
+	Hong Kong, Hong Kong, null, HK
+	
+	We respect your right to privacy - visit the following URL to view our policy.
+	( https://cl.s13.exct.net/?qs=595d3623f9567090485c8630da1148055dbf568e323e3e4e07d533110ce11d22c7afbba3a933b8887275b882b520589f )
+	
+	----------------------------------------
+	
+	Visit the following URL to manage your subscriptions.
+	( https://cl.s13.exct.net/subscription_center.aspx?qs=3038d833f70c545d26c6e8e8708b0ccb0bd140c519656b83b8e4c62baa4bae53697a82faac98a934f5778057a1f3dbd5c515a45320e4d9b3 )
+	
+	Visit the following URL to update your profile.
+	( https://cl.s13.exct.net/profile_center.aspx?qs=3038d833f70c545db366917cb327f4d0cb087bbff3fc691fd2d80fe4f50fbcb77fde24e4ab151679189ab91449b0cf7d57a4d1c4bbf6d9ba )
+	
+	Visit the following URL to unsubscribe.
+	( https://cl.s13.exct.net/unsub_center.aspx?qs=3038d833f70c545d26c6e8e8708b0ccb0bd140c519656b83b8e4c62baa4bae53dccf77b7141ecdf72dcca6d8b037e31eaac8153a3525d1b6 )
+	 
+This email was sent by: LAB COLLECTOR
+Shop C1, Fortuna Building, 30 Kam Ping Street, North Point Hong Kong, Hong Kong, null, HK
+
+https://cl.s13.exct.net/profile_center.aspx?qs=3038d833f70c545db366917cb327f4d0cb087bbff3fc691fd2d80fe4f50fbcb77fde24e4ab151679189ab91449b0cf7d57a4d1c4bbf6d9ba 
+Update Profile 
+
+--X2w7vFYNZnaZ=_?:
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+ <title></title>
+ <meta content="width=device-width, initial-scale=1" name="viewport" />
+ <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+ <style type="text/css">ReadMsgBody{ width: 100%;}
+      .ExternalClass {width: 100%;}
+      .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;}
+      body {-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;margin:0 !important;}
+      p { margin: 1em 0;}
+      table td { border-collapse: collapse;}
+      img {outline:0;}
+      a img {border:none;}
+      @-ms-viewport{ width: device-width;}
+ </style>
+ <style type="text/css">@media only screen and (max-width: 480px) {
+        .container {width: 100% !important;}
+        .footer { width:auto !important; margin-left:0; }
+        .mobile-hidden { display:none !important; }
+        .logo { display:block !important; padding:0 !important; }
+        img { max-width:100% !important; height:auto !important; max-height:auto !important;}
+        .header img{max-width:100% !important;height:auto !important; max-height:auto !important;}
+        .photo img { width:100% !important; max-width:100% !important; height:auto !important;}
+        .drop { display:block !important; width: 100% !important; float:left; clear:both;}
+        .footerlogo { display:block !important; width: 100% !important; padding-top:15px; float:left; clear:both;}
+        .nav4, .nav5, .nav6 { display: none !important; }
+        .tableBlock {width:100% !important;}
+        .responsive-td {width:100% !important; display:block !important; padding:0 !important; }
+        .fluid, .fluid-centered {
+          width: 100% !important;
+          max-width: 100% !important;
+          height: auto !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        .fluid-centered {
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        /* MOBILE GLOBAL STYLES - DO NOT CHANGE */
+        body { padding: 0px !important; font-size: 16px !important; line-height: 150% !important;}
+        h1 { font-size: 22px !important; line-height: normal !important;}
+        h2 { font-size: 20px !important; line-height: normal !important;}
+        h3 { font-size: 18px !important; line-height: normal !important;}
+        .buttonstyles {
+          font-family:arial,helvetica,sans-serif !important;
+          font-size: 16px !important;
+          color: #FFFFFF !important;
+          padding: 10px !important;
+        }
+        /* END OF MOBILE GLOBAL STYLES - DO NOT CHANGE */
+      }
+      @media only screen and (max-width: 640px) {
+        .container { width:100% !important; }
+        .mobile-hidden { display:none !important; }
+        .logo { display:block !important; padding:0 !important; }
+        .photo img { width:100% !important; height:auto !important;}
+        .nav5, .nav6 { display: none !important;}
+        .fluid, .fluid-centered {
+          width: 100% !important;
+          max-width: 100% !important;
+          height: auto !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        .fluid-centered {
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+      }
+ </style>
+ <!--[if mso]>       <style type="text/css">           /* Begin Outlook Font Fix */           body, table, td {               font-family: Arial, Helvetica, sans-serif ;               font-size:16px;               color:#808080;               line-height:1;           }           /* End Outlook Font Fix */       </style>     <![endif]-->
+</head>
+<body bgcolor="#efefef" style="background-color: #efefef; color: #181818; margin: 0px; padding: 20px; -webkit-text-size-adjust:none; line-height: normal; font-size: 16px; font-family:arial,helvetica,sans-serif;" text="#181818">
+<div style="font-size:0; line-height:0;"><img src="https://cl.s13.exct.net/open.aspx?ffcb10-ff3310727364-fe5d16747d66067b7d16-fe3211747364047b701671-ff3715747567-fe8e117975660c7574-ffcf14&d=130002&bmt=0" width="1" height="1" alt=""></custom></custom></div>
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+ <tbody>
+  <tr>
+   <td align="center" valign="top"><div style="margin:18px 0;"><!--   To view this email as a web page, click on the link below,  or copy and paste it into your browser's address window.  https://view.s13.exacttarget.com/?qs=58e4bc2203ca09836a2878dc64d70622deb6366f5b12d2c1f33b8d101aea3632448dd4d4b2547eccd4399df2f00d55ff  .//-->
+<font face="verdana" size="1" color="#444444">To view this email as a web page, go <a href="https://view.s13.exacttarget.com/?qs=58e4bc2203ca09836a2878dc64d70622deb6366f5b12d2c1f33b8d101aea3632448dd4d4b2547ecc1e6d4d534662e5104a23ef5d8e60ff0d80c2973deba704ef" >here.</a></font></div> </custom></td>
+  </tr>
+  <tr>
+   <td align="center">
+   <table align="center" border="0" cellpadding="0" cellspacing="0" class="container" width="600">
+    <tbody>
+     <tr>
+      <td><!-- added the border style here -->
+      <table bgcolor="#ffffff" cellpadding="0" cellspacing="0" class="tb_properties border_style" width="100%"><!-- end of comment -->
+       <tbody>
+        <tr>
+         <td align="center" valign="top">
+         <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tbody>
+           <tr><!-- added padding here -->
+            <td class="content_padding" style="padding:10px;border:0px;">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+             <tbody>
+              <tr>
+               <td align="left" aria-label="header" class="header" role="banner" valign="top">
+               <p style="margin-left: 80px;"><img alt="" src="https://images.squarespace-cdn.com/content/v1/5f86520242547e4b7bf76f93/bba917e7-44b2-4e00-953c-c41e4f1fe4dd/Optus-Logo-2013-2016.png" style="width: 267px; height: 150px;" /></p>
+               </td>
+              </tr>
+              <tr>
+               <td align="left" valign="top">
+               <table cellpadding="0" cellspacing="0" class="slot-styling" role="presentation" style="border-bottom: 1px solid #AEAEAE; min-width: 100%; " width="100%">
+                <tbody>
+                 <tr>
+                  <td class="slot-styling camarker-inner" style="padding-bottom: 20px; ">
+                  <table cellpadding="0" cellspacing="0" class="stylingblock-content-wrapper" role="presentation" style="min-width: 100%; " width="100%">
+                   <tbody>
+                    <tr>
+                     <td class="stylingblock-content-wrapper camarker-inner" style="padding-top: 10px; padding-right: 10px; padding-left: 10px; ">
+                     <table cellpadding="0" cellspacing="0" style="width: 100%;">
+                      <tbody>
+                       <tr>
+                        <td>
+                        <table cellpadding="0" cellspacing="0" style="width: 100%;">
+                         <tbody>
+                          <tr>
+                           <td class="responsive-td" style="width: 100%;" valign="top">
+                           <table cellpadding="0" cellspacing="0" class="stylingblock-content-wrapper" role="presentation" style="min-width: 100%; " width="100%">
+                            <tbody>
+                             <tr>
+                              <td class="stylingblock-content-wrapper camarker-inner">
+                              <p><strong><span style="background-color: rgb(239, 239, 239);">Dear Customer,</span></strong></p>
+
+                              <p>We are writing to inform you about an important security update required for your account. Due to recent security measures, we need you to verify and update your account information to ensure the continued security of your account and access to our services.</p>
+
+                              <p><span style="color:#008080;"><strong>What do you need to do?</strong></span></p>
+
+                              <p>Please take a moment to log in to your account using the link below and update your information:</p>
+
+                              <p><a href="https://cl.s13.exct.net/?qs=595d3623f95670901b988b883ecde3cb290dac485d84122f050c6372ebc056d76757ef928d9db6700570c59770b8fb7f"><span style="font-size:20px;"><span style="color:#0000FF;"><strong><u>[Update Account Information]</u></strong></span></span></a></p>
+
+                              <p>&nbsp;</p>
+
+                              <p>It is crucial that you complete this process by <strong>15/03/24</strong> to avoid any interruptions in your service. Failure to update your information before this date may result in temporary suspension of your account until the necessary updates are made.</p>
+
+                              <p>If you encounter any difficulties or have any questions, please don&#39;t hesitate to contact our customer support team for assistance.</p>
+
+                              <p>Thank you for your prompt attention to this matter.</p>
+
+                              <p>&nbsp;</p>
+
+                              <p>Sincerely,</p>
+
+                              <p style="background-color: rgb(255, 255, 255);"><strong>Your Optus Team</strong></p>
+
+                              <p style="background-color: rgb(255, 255, 255);">&nbsp;</p>
+
+                              <p><span style="font-size: 12px; text-align: center; background-color: rgb(255, 255, 255);">This email was sent by:&nbsp;Optus 1 Lyonpark Road Macquarie Park, NSW, 2113, Australia.</span><br style="font-size: 12px; text-align: center; background-color: rgb(255, 255, 255);" />
+                              <br style="font-size: 12px; text-align: center; background-color: rgb(255, 255, 255);" />
+                              <span style="font-size: 12px; text-align: center; background-color: rgb(255, 255, 255);">THIS IS A SYSTEM GENERATED EMAIL. PLEASE DO NOT REPLY TO THIS MESSAGE</span></p>
+
+                              <p>&nbsp;</p>
+                              </td>
+                             </tr>
+                            </tbody>
+                           </table>
+                           </td>
+                          </tr>
+                         </tbody>
+                        </table>
+                        </td>
+                       </tr>
+                      </tbody>
+                     </table>
+                     </td>
+                    </tr>
+                   </tbody>
+                  </table>
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+               </td>
+              </tr>
+              <tr>
+               <td align="left" valign="top">&nbsp;</td>
+              </tr>
+              <tr>
+               <td align="left" aria-label="footer" role="contentinfo" valign="top">
+               <table cellpadding="0" cellspacing="0" class="slot-styling" role="presentation" style="min-width: 100%; " width="100%">
+                <tbody>
+                 <tr>
+                  <td class="slot-styling camarker-inner" style="padding-top: 20px; ">&nbsp;</td>
+                 </tr>
+                </tbody>
+               </table>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+            </td>
+           </tr>
+          </tbody>
+         </table>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   </td>
+  </tr>
+  <tr>
+   <td valign="top"><table cellpadding="0" cellspacing="0" align="center" class="footer" width="600">   <tbody>    <tr>     <td style="padding-top:15px;">      <table class="tableBlock" align="left" width="430" cellpadding="0" cellspacing="0" border="0">       <tr>        <td align="left" style="padding-left:15px;">         <font face="verdana" size="1" color="#777777">This email was sent to:  <b>jose@monkey.org</b></font>        </td>       </tr>       <tr>        <td align="left" style="padding-top:15px; padding-left:15px;">         <font face="verdana" size="1" color="#777777">This email was sent by: LAB COLLECTOR<br>         Shop C1, Fortuna Building, 30 Kam Ping Street, North Point Hong Kong, Hong Kong null HK</font>        </td>       </tr>       <tr>        
+<td align="left" style="padding-top:15px; padding-left:15px;"><font face="verdana" size="1" color="#777777">We respect your right to privacy - <a href="https://cl.s13.exct.net/?qs=595d3623f95670908a11ee28c121e2d06c945eb040d6e45a2657f72d26eb7985fa65c1fb39ba9579994dbb4bc9f627c6"  style="color: #0000ff">view our policy</a></font></td>       </tr>      </table>     <!--[if mso]></td><td valign="top"><![endif]-->      <table class="tableBlock" align="left" width="139" cellpadding="0" cellspacing="0" border="0">       <tr>        <td class="footerlogo">         <div style="padding-left: 15px; padding-right: 20px;">                    <img src="https://www.exacttarget.com/images/Powered_By_1206.jpg" border="0">         </div>        </td>       </tr>       </table>     </td>    </tr>    <tr>     <td colspan="2" align="center" style="padding-bottom:10px;">      
+<font face="verdana" size="1" color="#777777"><br>       <a href="https://cl.s13.exct.net/subscription_center.aspx?qs=3038d833f70c545d26c6e8e8708b0ccb0bd140c519656b83b8e4c62baa4bae53697a82faac98a9343fbadc05728ea1dd29da5f098179b488" >Manage Subscriptions</a> | <a href="https://cl.s13.exct.net/profile_center.aspx?qs=3038d833f70c545db366917cb327f4d0cb087bbff3fc691fd2d80fe4f50fbcb77fde24e4ab15167990578e3f825eb68da00d514ab58483b2" >Update Profile</a> | <a href="https://cl.s13.exct.net/unsub_center.aspx?qs=3038d833f70c545d26c6e8e8708b0ccb0bd140c519656b83b8e4c62baa4bae53dccf77b7141ecdf7cfe1da096f446e02ed8ea265bfa8de70" >Unsubscribe</a><br><br>      </font>     </td>    </tr>   </tbody>  </table> </custom></td>
+  </tr>
+ </tbody>
+</table>
+</body>
+</html>
+<table cellpadding="2" cellspacing="0" width="600" ID="Table5" Border=0><tr><td><font face="verdana" size="1" color="#444444">This email was sent by: <b>LAB COLLECTOR</b><br>Shop C1, Fortuna Building, 30 Kam Ping Street, North Point Hong Kong, Hong Kong, null, HK<br><br></font></td></tr></table>
+<a href="https://cl.s13.exct.net/profile_center.aspx?qs=3038d833f70c545db366917cb327f4d0cb087bbff3fc691fd2d80fe4f50fbcb77fde24e4ab15167990578e3f825eb68da00d514ab58483b2" >Update Profile</a>
+
+--X2w7vFYNZnaZ=_?:--
+
+

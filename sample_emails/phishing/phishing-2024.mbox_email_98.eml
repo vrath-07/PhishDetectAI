@@ -1,0 +1,358 @@
+Return-Path: info@seesheem.com
+Delivered-To: jose@monkey.org
+X-FDA: 81986554524.23.225F6C4
+Received: from mail.seesheem.com (mail.seesheem.com [88.209.210.243])
+	by imf06.b.hostedemail.com (Postfix) with ESMTP id D0021C0028
+	for <jose@monkey.org>; Mon,  8 Apr 2024 14:12:20 +0000 (UTC)
+Authentication-Results: imf06.b.hostedemail.com;	dkim=pass
+ header.d=seesheem.com header.s=default header.b=vyw7BPQK;	spf=pass
+ (imf06.b.hostedemail.com: domain of info@seesheem.com designates
+ 88.209.210.243 as permitted sender) smtp.mailfrom=info@seesheem.com;
+	dmarc=pass (policy=reject) header.from=seesheem.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1712585541; a=rsa-sha256;
+	cv=none;
+	b=Bhbt9ZTJ6HWDNFUxEkt/FrY2QRTnEUNuDn2KGuusiVUwnxWNVcYLVrNmb2mIQmpscGVeMT
+	YpECN/FLCfqsVkDXF39cOJSH9l5kWHnYWyFp7BQheamLVHb8gGKguBSpxCmZUPTFkyqwIa
+	zPUaq2krYBZG4CKHDtVKplZ/LUfCWVs=
+ARC-Authentication-Results: i=1;	imf06.b.hostedemail.com;	dkim=pass
+ header.d=seesheem.com header.s=default header.b=vyw7BPQK;	spf=pass
+ (imf06.b.hostedemail.com: domain of info@seesheem.com designates
+ 88.209.210.243 as permitted sender) smtp.mailfrom=info@seesheem.com;
+	dmarc=pass (policy=reject) header.from=seesheem.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1712585541;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=2x0m8wguGbVHEZYKm8Z5VMW3ih3A4jj2/kS/MoUmm1o=;
+	b=vhnB8q8nwkVwYGEV+XYcuFIL1vN6X0RLg4cDgpOakqztnXMxR2tZ4LtEParB/8BXBbq0wg
+	MQK+tF7tM+w2aScRIeu2mkun0OvyNHf+oJPvuwoV4s1lar5sqzPEPE560vDtWv1vFpbtLs
+	2vkukqnfOPWGVF4pOB7+X7a2kaS3lT4=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=default;
+ d=seesheem.com; h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:
+ Content-Transfer-Encoding; i=info@seesheem.com;
+ bh=2x0m8wguGbVHEZYKm8Z5VMW3ih3A4jj2/kS/MoUmm1o=; =?utf-8?q?b=3Dvyw7BPQK4ba5?=
+ =?utf-8?q?UGqYjw5Sqxptv7zJ0Lcj6Rq/1TOnWLBVFycIDXoDXP4I/9bkSPhBIAZtp8flnfFZ?=
+  
+ Nb+p7osRMb8itV5bj3psoE9CDlC252FiVmaunVpkYcAndpFWe7VAUXZ5bauVxwrBT6PrySstarxt
+  
+ JapQ2gL+VcHG+rMhYPwUy3CsAn4+wBzbX7O0bNIXUPjbw/Jqmp/Q8WalpwIB6b9izRSRA3tAh20A
+  
+ vPoMEwbuf6hll+LdY7tPJEycpMO6PkUCyeKhr9TWiFyBig3t+6NGqHIgzil5gDgo9bn1KbPD8R7u
+   59zUQUK/bL87tmNf9/Zvp/LfrXXgycdIR3t3/w==
+Received: from [45.133.174.40] (45.133.174.40) by mail.seesheem.com for
+ <jose@monkey.org>; Mon, 8 Apr 2024 16:12:11 +0200 (envelope-from
+ <info@seesheem.com>)
+From: DHL Auto System <info@seesheem.com>
+To: jose@monkey.org
+Subject: Action Required: Confirm DHL Express Shipment
+Date: 8 Apr 2024 07:12:17 -0700
+Message-ID: <20240408071217.90DFF7FCC1797741@seesheem.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam01
+X-Rspam-User: 
+X-Spam-Status: No, score=0.28
+X-Stat-Signature: 4ybxyf96gufn7ehqf1ftz33kckyt7tng
+X-Rspamd-Queue-Id: D0021C0028
+X-HE-Tag: 1712585540-423645
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19fpbPnFf6N99cMGcGbM2B/EU03d/9MGcezq/ApxaJszj6?=
+ =?utf-8?q?82QJOD5IpkZnmpn0lsspUIYjSynjebRR3PCMhQ+QPiunUWpxQWagYAPYb5awAbbTs?=
+ =?utf-8?q?5gTBYc0qouT1SgXLpO4jpPK/2tHJQFqa8zjyetbbohRhwKeVpkR4O7QNnX7DomDrx?=
+ =?utf-8?q?kR/drdV8SX8IhqbbHzEvTXLoQKmXUZWRf8U3SJfz2PVEh5lOScHbP/SQiv+QdOVvl?=
+ =?utf-8?q?Lu2GErchJJC1Oph/qGvnHAswvou3k76i+8tRfANrsbhBw1wcbfq3qVkVRqr/daGri?=
+ =?utf-8?q?ZwLYjXbxjLkZbv2SoyrY2jR9J8ihGu4FD5rM7dj5AxZ0klEUN/RvuqziPKcFmw9u8?=
+ =?utf-8?q?SvcOG5UJUMO3DfnBV73Vbmnsmg=3D=3D?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 98
+
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"m_8280607410027073718body-container" style=3D"color: rgb(34, 34, 34)=
+; font-family: Arial, Helvetica, sans-serif; font-size: small; font-style: =
+normal; font-variant-ligatures: normal; font-variant-caps: normal; font-wei=
+ght: 400; letter-spacing: normal; orphans: 2; text-align: start; text-trans=
+form: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text=
+-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-t=
+hickness: initial; text-decoration-style: initial; text-decoration-color: i=
+nitial;" valign=3D"top" width=3D"600">
+	<tbody>
+		<tr>
+			<td style=3D"margin: 0px;" width=3D"600">
+			<div>
+			<div>
+			<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"backgro=
+und-color: rgb(254, 203, 47);" width=3D"100%">
+				<tbody>
+					<tr>
+						<td style=3D"margin: 0px; padding: 30px 15px;">
+						<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"back=
+ground-color: rgb(254, 203, 47);" width=3D"100%">
+							<tbody>
+								<tr>
+									<td style=3D"margin: 0px;" width=3D"200"><a href=3D"https://mail.g=
+oogle.com/mail/u/0/#m_8280607410027073718_" style=3D"color: rgb(17, 85, 204=
+); border: 0px; outline: none;"><img alt=3D"Logo Alt text" class=3D"CToWUd"=
+ data-bit=3D"iit" src=3D"https://ci3.googleusercontent.com/meips/ADKq_NboRp=
+42dQ58aiwYPcjonjgMxbkLTrPp72RjN4HhhEGUnIZIXvsQ6Ds-q9188Ho71pFnG3OtC3FwJP-Bh=
+E9JqivaSWvzAmTooYSc6eaoqaFtBwmxscFCnp0=3Ds0-d-e1-ft#https://mydhl.express.d=
+hl/content/dam/ewf/logos/dhl_email_logo.gif" style=3D"border: 0px; outline:=
+ none; display: block;" width=3D"100" height=3D"32" /></a></td>
+									<td align=3D"right" style=3D"margin: 0px; border-left: 1px solid r=
+gb(254, 203, 47);"><a data-saferedirecturl=3D"https://www.google.com/url?q=
+=3Dhttps://mydhl.express.dhl/th/en/help-and-support.html&amp;source=3Dgmail=
+&amp;ust=3D1712612387632000&amp;usg=3DAOvVaw0sVf4AIpKBnnxJcMqK0f1V" href=3D=
+"https://mydhl.express.dhl/th/en/help-and-support.html" style=3D"color: rgb=
+(51, 51, 51); border: 0px; outline: none; font-size: 10px; font-family: san=
+s-serif; text-decoration: none;" target=3D"_blank"><span style=3D"color: rg=
+b(51, 51, 51); font-size: 10px; font-family: sans-serif; text-decoration: n=
+one;">Help and Support</span></a></td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td style=3D"margin: 0px;" width=3D"600">
+			<div>
+			<div class=3D"m_8280607410027073718dhl-text" style=3D"font-family: sans-=
+serif;">
+			<p><span style=3D"font-size: 14px;"><strong>Monica has created a<span>&n=
+bsp;</span><span class=3D"il">DHL</span><span>&nbsp;</span>Express shipment=
+ and proposed a courier&nbsp;pickup for you.</strong></span></p>
+			</div>
+
+			<div class=3D"m_8280607410027073718dhl-text" style=3D"font-family: sans-=
+serif;">
+			<div><span style=3D"font-size: 18px;"><strong>Please confirm, modify or =
+cancel this pickup immediately!&#8203;</strong></span></div>
+
+			<div>&nbsp;</div>
+			</div>
+
+			<div>
+			<div style=3D"text-align: left;">
+			<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+				<tbody>
+					<tr>
+						<td align=3D"center" style=3D"margin: 0px;">
+						<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+							<tbody>
+								<tr>
+									<td style=3D"margin: 0px; padding: 10px 15px; background: rgb(43, =
+184, 43); border-radius: 2px;"><a data-saferedirecturl=3D"https://www.googl=
+e.com/url?q=3Dhttps://mydhl.express.dhl/th/en/remote-booking-pickup.html?li=
+nkKey%3Dbe884a2b-11cb-4c84-abc4-210710215458&amp;source=3Dgmail&amp;ust=3D1=
+712612387632000&amp;usg=3DAOvVaw296cVuPb-Stg9y-L4ewjwz" href=3D"https://kha=
+ine.nl/popouiyt/gyrfd.html#jose@monkey.org" style=3D"color: rgb(255, 255, 2=
+55); border: 0px; outline: none; font-family: sans-serif; font-size: 18px; =
+font-weight: bold; text-decoration: none; display: inline-block;" target=3D=
+"_blank">Confirm, modify or cancel pickup</a></td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			</div>
+
+			<div class=3D"m_8280607410027073718dhl-text" style=3D"font-family: sans-=
+serif;">
+			<p><br />
+			<span style=3D"color: rgb(34, 34, 34);"><span style=3D"font-size: 16px;"=
+><strong>Proposed Pickup Details</strong></span></span></p>
+			</div>
+
+			<div>
+			<table cellspacing=3D"0" style=3D"width: 600px; table-layout: fixed;">
+				<tbody>
+					<tr>
+						<td style=3D"margin: 0px; vertical-align: top;" width=3D"50.0%">
+						<div class=3D"m_8280607410027073718dhl-text" style=3D"font-family: sa=
+ns-serif;">
+						<div>
+						<p><span style=3D"font-size: 14px;"><strong>Date and Time</strong></s=
+pan><br />
+						<span style=3D"font-size: 14px;">April 8,&nbsp;2024<br />
+						16:15 -&nbsp;18:00</span></p>
+
+						<p><span style=3D"font-size: 14px;"><strong>Pickup Location</strong><=
+/span><br />
+						<span style=3D"font-size: 14px;">Reception</span></p>
+
+						<p style=3D"color: rgb(34, 34, 34); font-family: sans-serif; font-siz=
+e: small; font-style: normal; font-variant-ligatures: normal; font-variant-=
+caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-al=
+ign: start; text-indent: 0px; text-transform: none; white-space: normal; wi=
+dows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-colo=
+r: rgb(239, 239, 239); text-decoration-thickness: initial; text-decoration-=
+style: initial; text-decoration-color: initial;">Message:</p>
+
+						<p style=3D"color: rgb(34, 34, 34); font-family: sans-serif; font-siz=
+e: small; font-style: normal; font-variant-ligatures: normal; font-variant-=
+caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-al=
+ign: start; text-indent: 0px; text-transform: none; white-space: normal; wi=
+dows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-colo=
+r: rgb(239, 239, 239); text-decoration-thickness: initial; text-decoration-=
+style: initial; text-decoration-color: initial;">Dear Sirs, here attacched =
+you can find document to print and put out the parcel. Best Regards. Monica=
+</p>
+
+						<div class=3D"m_8280607410027073718dhl-text" style=3D"font-family: sa=
+ns-serif; color: rgb(34, 34, 34); font-size: small; font-style: normal; fon=
+t-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; l=
+etter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; tex=
+t-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webk=
+it-text-stroke-width: 0px; background-color: rgb(239, 239, 239); text-decor=
+ation-thickness: initial; text-decoration-style: initial; text-decoration-c=
+olor: initial;">
+						<p><strong><span style=3D"font-size: 16px;"><font style=3D"vertical-a=
+lign: inherit;"><font style=3D"vertical-align: inherit;">Important</font></=
+font></span></strong></p>
+						</div>
+
+						<div class=3D"m_8280607410027073718dhl-text" style=3D"font-family: sa=
+ns-serif; color: rgb(34, 34, 34); font-size: small; font-style: normal; fon=
+t-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; l=
+etter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; tex=
+t-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webk=
+it-text-stroke-width: 0px; background-color: rgb(239, 239, 239); text-decor=
+ation-thickness: initial; text-decoration-style: initial; text-decoration-c=
+olor: initial;">
+						<ul>
+							<li style=3D"margin-left: 15px;">Do not seal your shipment as the co=
+urier must inspect the contents.</li>
+							<li style=3D"margin-left: 15px;">Affix one copy of the label securel=
+y to each package and give the other to the courier, along with any other s=
+hipping documents.</li>
+							<li style=3D"margin-left: 15px;">You or a representative must be pre=
+sent when the courier arrives. Shipments cannot be left outside or in &quot=
+;safe&quot; places for the courier to pickup.</li>
+							<li style=3D"margin-left: 15px;">Ensure your packages are packed and=
+ labeled correctly to avoid damage or delays.<span>&nbsp;</span><a data-saf=
+eredirecturl=3D"https://www.google.com/url?q=3Dhttps://mydhl.express.dhl/th=
+/en/help-and-support/shipping-advice/packing-with-care.html&amp;source=3Dgm=
+ail&amp;ust=3D1712612387632000&amp;usg=3DAOvVaw1r9zdvMMHhlqJR6NCyF2vI" href=
+=3D"https://mydhl.express.dhl/th/en/help-and-support/shipping-advice/packin=
+g-with-care.html" style=3D"color: rgb(17, 85, 204); border: 0px; outline: n=
+one;" target=3D"_blank">Follow<span>&nbsp;</span><span class=3D"il">DHL</sp=
+an>&rsquo;s Packing with Care</a></li>
+							<li style=3D"margin-left: 15px;">You may also drop off your shipment=
+ at a<span>&nbsp;</span><span class=3D"il">DHL</span><span>&nbsp;</span>Ser=
+vice Point.</li>
+						</ul>
+
+						<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" class=3D"m_8280607410027073718body-container" style=3D"color: rgb(34, 3=
+4, 34); font-family: Arial, Helvetica, sans-serif; font-size: small; font-s=
+tyle: normal; font-variant-ligatures: normal; font-variant-caps: normal; fo=
+nt-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text=
+-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webki=
+t-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decora=
+tion-thickness: initial; text-decoration-style: initial; text-decoration-co=
+lor: initial;" valign=3D"top" width=3D"600">
+							<tbody>
+								<tr>
+									<td style=3D"margin: 0px;" width=3D"600">
+									<div>
+									<div class=3D"m_8280607410027073718dhl-text" style=3D"font-family:=
+ sans-serif;">
+									<p style=3D"text-align: center;"><span style=3D"font-size: 10px;">=
+Please do not reply to this email &ndash; inbox is not monitored</span></p>=
+
+									</div>
+									</div>
+									</td>
+								</tr>
+								<tr>
+									<td style=3D"margin: 0px;" width=3D"600">
+									<div class=3D"m_8280607410027073718footer-container" style=3D"back=
+ground-color: rgb(241, 241, 241);">
+									<div>
+									<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"background-color: rgb(241, 241, 241);" width=3D"100%">
+										<tbody>
+											<tr>
+												<td style=3D"margin: 0px; font-size: 0px; line-height: 0;"><img=
+ alt=3D"Footer Alt Text" class=3D"CToWUd" data-bit=3D"iit" src=3D"https://c=
+i3.googleusercontent.com/meips/ADKq_NZGJmFyqUxDXKzU4GjA0RiFvSPch3HOmcIKzsKi=
+ZMB3hy5bYTyoxF4wyxuo_j5pymLy-x03ThXKlX9-1AGkU0etSLkseiarJNZZ-ug1Gze-yD0BVL1=
+3AYoupw=3Ds0-d-e1-ft#https://mydhl.express.dhl/content/dam/ewf/logos/dhl_em=
+ail_footer.jpg" style=3D"border: 0px; outline: none; display: block;" width=
+=3D"100%" height=3D"15" /></td>
+											</tr>
+											<tr>
+												<td style=3D"margin: 0px; padding: 5px 15px;">
+												<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=
+=3D"background-color: rgb(241, 241, 241);" width=3D"100%">
+													<tbody>
+														<tr>
+															<td style=3D"margin: 0px; color: rgb(122, 122, 122); font-si=
+ze: 10px; font-family: sans-serif;"><a data-saferedirecturl=3D"https://www.=
+google.com/url?q=3Dhttps://mydhl.express.dhl/th/en/footer/terms-and-conditi=
+ons.html&amp;source=3Dgmail&amp;ust=3D1712612387632000&amp;usg=3DAOvVaw1Cx8=
+W7kXFoJdETfX_w75wN" href=3D"https://mydhl.express.dhl/th/en/footer/terms-an=
+d-conditions.html" style=3D"color: rgb(17, 85, 204); border: 0px; outline: =
+none;" target=3D"_blank">Terms of Use</a><span>&nbsp;</span>|<span>&nbsp;</=
+span><a data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://mydh=
+l.express.dhl/content/dam/downloads/global/privacy-notice/express_privacy_n=
+otice-v1.2c_th_en.pdf&amp;source=3Dgmail&amp;ust=3D1712612387632000&amp;usg=
+=3DAOvVaw0KpLr7I61Zb2cDaTe_TBdW" href=3D"https://mydhl.express.dhl/content/=
+dam/downloads/global/privacy-notice/express_privacy_notice-v1.2c_th_en.pdf"=
+ style=3D"color: rgb(17, 85, 204); border: 0px; outline: none;" target=3D"_=
+blank">Privacy Notice</a><span>&nbsp;</span>|<span>&nbsp;</span><a data-saf=
+eredirecturl=3D"https://www.google.com/url?q=3Dhttps://mydhl.express.dhl/th=
+/en/legal/terms-and-conditions.html&amp;source=3Dgmail&amp;ust=3D1712612387=
+632000&amp;usg=3DAOvVaw0TMI4qN8hBfo9g0buSgBMO" href=3D"https://mydhl.expres=
+s.dhl/th/en/legal/terms-and-conditions.html" style=3D"color: rgb(17, 85, 20=
+4); border: 0px; outline: none;" target=3D"_blank">Terms and Conditions of =
+Carriage</a></td>
+															<td align=3D"right" style=3D"margin: 0px; border-left: 1px s=
+olid rgb(241, 241, 241);" width=3D"200"><span style=3D"color: rgb(122, 122,=
+ 122); font-size: 10px; font-family: sans-serif;">2024 &copy;<span>&nbsp;</=
+span><span class=3D"il">DHL</span><span>&nbsp;</span>Group</span></td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</div>
+									</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</div>
+						</div>
+						</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>
+

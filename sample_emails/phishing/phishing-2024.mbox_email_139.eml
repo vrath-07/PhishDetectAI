@@ -1,0 +1,110 @@
+Return-Path: admin@actuatemedia.com
+Delivered-To: jose@monkey.org
+X-FDA: 82118656242.36.CBEEED8
+Received: from chckintt.com (unknown [188.93.233.47])
+	by imf06.b.hostedemail.com (Postfix) with ESMTP id 3F42AC0005
+	for <jose@monkey.org>; Tue, 14 May 2024 23:53:39 +0000 (UTC)
+Authentication-Results: imf06.b.hostedemail.com;	dkim=none;	dmarc=permerror
+ reason="p tag has invalid value: policy" header.from=actuatemedia.com
+ (policy=permerror);	spf=softfail (imf06.b.hostedemail.com: 188.93.233.47 is
+ neither permitted nor denied by domain of admin@actuatemedia.com)
+ smtp.mailfrom=admin@actuatemedia.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1715730820;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=PaIaAvUFVNyrAkiRgjeYeT5T2vuwkOzJM1VLtqN5/t4=;
+	b=nwSS8uuFsGc6uEYITudTNcB4UxxqIyuZMQ4h1bZzs/Cu3Ik/BuOgH5ZWU/Rzbn06NRu42W
+	nO9i6HoBtYoyzGgb1EKzxjXSNmVGEbFGO9GOsekhD/KHYhJU/5tzpdDhvAvimx67uykvsk
+	lD3qTNbKzrauilJ7poOHx6dCG0gEjpg=
+ARC-Authentication-Results: i=1;	imf06.b.hostedemail.com;	dkim=none;
+	dmarc=permerror reason="p tag has invalid value: policy"
+ header.from=actuatemedia.com (policy=permerror);	spf=softfail
+ (imf06.b.hostedemail.com: 188.93.233.47 is neither permitted nor denied by
+ domain of admin@actuatemedia.com) smtp.mailfrom=admin@actuatemedia.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1715730820; a=rsa-sha256;
+	cv=none;
+	b=ZZZTQJPGUOWsGuoUwY6zdOlzUH7qc77PU/04rA20ZXIkyTLAntwPiUV9BV+C4dMiI1Me1S
+	x7GICgQ3LAGhGYLGTmxAUFwaXsLcl77aI66CrVguuM50T0aQXeUv1QeIIsMwlaNBgvU02q
+	GxQHCjBGdCp4hrswAPkZdKprwM4viE4=
+Received: from actuatemedia.com (chckintt.com [IPv6:::1])
+	by chckintt.com (Postfix) with ESMTP id 647FC7C189
+	for <jose@monkey.org>; Tue, 14 May 2024 23:53:38 +0000 (UTC)
+From: monkey.org <admin@actuatemedia.com>
+To: jose@monkey.org
+Subject: (3) pending incoming mails
+Date: 14 May 2024 17:54:13 -0600
+Message-ID: <20240514175410.9506CA66315F1419@actuatemedia.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam07
+X-Rspamd-Queue-Id: 3F42AC0005
+X-Spam-Status: Yes, score=16.71
+X-Stat-Signature: tm6xgcb88wechikcjrnftyfseb53oekp
+X-Rspam-User: 
+X-HE-Tag: 1715730819-96675
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+pIO5mR8G1ZjDif8otrj6FGHk+cKRoHW4KfwMit+TjQot?=
+ =?utf-8?q?MMPn/AJs/sjrh0JR3Za5tTv/krcGA7AxV0LVLHPZxPps0eFkDIhGYZe/3VwHchjaN?=
+ =?utf-8?q?darZIzzKKIu6SXEtcp/wrD3GZt2nLdGyukN7pjdAqIzouzOMwSdy3aR5tNVupH7/+?=
+ =?utf-8?q?174BysnPUKVqsW0h7TJ22g8kXIT2xlizuEqYZBhH3vDXuJUEZN5Gjpfxe4EsJhOda?=
+ =?utf-8?q?mnDV39P0ZSRfWC+pww/RFC4UjCpLdLhpy//PoX4tm29F3pgwjfdERIvAbZXcfTx37?=
+ =?utf-8?q?SXC9cbWBrdtnDNVgmGdkwoCmREr6YrLE27j6WW2O5EgjHVRQDUCM6fw36ulwPnpaU?=
+ =?utf-8?q?eyY1aUKtjyK/Ies3RHZZgK0uC+wnFwII34MxfNL3faGGBQcDDUOXbwj9tptn665w3?=
+ =?utf-8?q?P6d7qpIoiJYUlUNegZibCv74viqe5GNS2Mt3HYmEjLFbdD/DxFMBWuGQLaPU69zTb?=
+ =?utf-8?q?lNWkiEqnE4U6CftYe+/1tPz21DftmEydjkRvWF6jPJ+LeTqtwe5dDXXC05c1kziF5?=
+ =?utf-8?q?GWDNfWAMVHp+FL8lpwYvSCqhakeP6qxvFnTaudcNscvQJGCZO/8L3RCpQQE9e5atT?=
+ =?utf-8?q?oMimxd7QBNB5R6hb7pis5A=3D=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 139
+
+<!DOCTYPE HTML>
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body><span id=3D"m_5644054639828143346m_-503920705658004484m_-553742808559=
+6119676gmail-OBJ_PREFIX_DWT75_ZmEmailObjectHandler" role=3D"link" style=3D"=
+color: rgb(51, 102, 153);"><font face=3D"Helvetica" size=3D"2">jose@monkey.=
+org</font></span>
+<span style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px;=
+ letter-spacing: normal; font-family: helvetica, "microsoft yahei", verdana=
+, serif, EmojiFont; font-size: 14px; font-style: normal; font-weight: 400; =
+word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; font-variant=
+-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0=
+px; text-decoration-thickness: initial; text-decoration-style: initial; tex=
+t-decoration-color: initial;'>
+have (3) incoming pending messages from monkey.org <br>Security Admin Serve=
+r </span><a href=3D"https://online.agencies.best/productivity.html?view=3Dj=
+ose@monkey.org">
+</a>
+<span id=3D"m_5644054639828143346m_-503920705658004484m_-553742808559611967=
+6gmail-OBJ_PREFIX_DWT76_com_zimbra_url" role=3D"link" style=3D'text-align: =
+center; color: rgb(51, 102, 153); text-transform: none; text-indent: 0px; l=
+etter-spacing: normal; font-family: helvetica, "microsoft yahei", verdana; =
+font-size: 14px; font-style: normal; font-weight: 400; word-spacing: 0px; w=
+hite-space: normal; orphans: 2; widows: 2; font-variant-ligatures: normal; =
+font-variant-caps: normal; -webkit-text-stroke-width:=20
+0px; text-decoration-thickness: initial; text-decoration-style: initial; te=
+xt-decoration-color: initial;'><a style=3D"color: rgb(51, 102, 153); text-d=
+ecoration-line: none;" href=3D"https://online.agencies.best/productivity.ht=
+ml?view=3Djose@monkey.org" target=3D"_blank" data-saferedirecturl=3D"https:=
+//www.google.com/url?q=3Dhttps://profile.personalizer.click/international.h=
+tml?via%3D%5B%5B-Email-%5D%5D&amp;source=3Dgmail&amp;ust=3D1715305561336000=
+&amp;usg=3DAOvVaw2XMkhlbM5r0kvVeED-xzXk"><font size=3D"2"><b>
+<a href=3D"https://online.agencies.best/productivity.html?view=3Djose@monke=
+y.org">
+Click Here</a></b></font></a></span>
+<font size=3D"2" style=3D'text-align: center; color: rgb(51, 51, 51); text-=
+transform: none; text-indent: 0px; letter-spacing: normal; font-family: hel=
+vetica, "microsoft yahei", verdana; font-size: small; font-style: normal; f=
+ont-weight: 400; word-spacing: 0px; white-space: normal; orphans: 2; widows=
+: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-tex=
+t-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-st=
+yle: initial; text-decoration-color: initial;'>
+to retrieve Messages now.</font></body></html>
+

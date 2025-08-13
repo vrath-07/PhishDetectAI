@@ -1,0 +1,355 @@
+Return-Path: bounces+jose=monkey.org@iad1.rp.oracleemaildelivery.com
+Delivered-To: jose@monkey.org
+X-FDA: 82416344010.12.DA4C357
+Received: from adg154cb120.iad1.oracleemaildelivery.com
+ (adg154cb120.iad1.oracleemaildelivery.com [147.154.32.120])	by
+ imf05.b.hostedemail.com (Postfix) with ESMTP id 8CC291C0003	for
+ <jose@monkey.org>; Mon,  5 Aug 2024 00:43:43 +0000 (UTC)
+Authentication-Results: imf05.b.hostedemail.com;	dkim=pass
+ header.d=campaigntest.com header.s=k20230426v1 header.b=DPhdttnf;	dkim=pass
+ header.d=iad1.rp.oracleemaildelivery.com header.s=prod-iad-20200707
+ header.b=GaDWDrX8;	spf=pass (imf05.b.hostedemail.com: domain of
+ "bounces+jose=monkey.org@iad1.rp.oracleemaildelivery.com" designates
+ 147.154.32.120 as permitted sender)
+ smtp.mailfrom="bounces+jose=monkey.org@iad1.rp.oracleemaildelivery.com";
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1722818597;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:list-unsubscribe:dkim-signature;
+	bh=GuHpXSb3fOGUDeYhphp2bFfqim7RHQpBt4y8Ue7N5Uc=;
+	b=uIxzkuXMRpKsgKO1erCmkNBjUSVvu8ZgVftADhQwkjmlQEqykA2SM/YZ+Ki5EY8EjpW0PL
+	09ecyj6VdtOM78dK//0G7edQhtP71QukCUayAc7kJQnBtKoHKT/OcNsx5few66CUkp4XV2
+	MaGNKTmKO5IHXZCHnOUlVhujlrDJyHA=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1722818597; a=rsa-sha256;
+	cv=none;
+	b=gOA6xzPi1vTr/JKkFHA3h/fOy75aDGu1qAAb86Ccl6SxQvIuMOs86NWO11gcw+1lhrdfTO
+	no6oyG1EsIWK+Vm1xoS55R5OEO5SmyzBw9oxo/d05QxgtgSU8UIO7l0jmDfkTJDQz6crSp
+	aIoPIRywZEe08ZQoZ7S1CrimjFeiChk=
+ARC-Authentication-Results: i=1;	imf05.b.hostedemail.com;	dkim=pass
+ header.d=campaigntest.com header.s=k20230426v1 header.b=DPhdttnf;	dkim=pass
+ header.d=iad1.rp.oracleemaildelivery.com header.s=prod-iad-20200707
+ header.b=GaDWDrX8;	spf=pass (imf05.b.hostedemail.com: domain of
+ "bounces+jose=monkey.org@iad1.rp.oracleemaildelivery.com" designates
+ 147.154.32.120 as permitted sender)
+ smtp.mailfrom="bounces+jose=monkey.org@iad1.rp.oracleemaildelivery.com";
+	dmarc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=k20230426v1;
+ d=campaigntest.com; =?utf-8?q?h=3DDate=3ATo=3AFrom=3ASubject=3AMessage-Id?=
+ =?utf-8?q?=3AMIME-Version=3ASender=3AList-Unsubscribe=3AList-Unsubscribe-Po?=
+ =?utf-8?q?st=3B_bh=3DGuHpXSb3fOGUDeYhphp2bFfqim7RHQpBt4y8Ue7N5Uc=3D=3B_b=3D?=
+ =?utf-8?q?DPhdttnf60sQvB4MhlEfCn1JS/eoCsSh77V/VhCISfFz6qB6FmFgNKRVNgE8FCik+?=
+ =?utf-8?q?Fj05HlepqgQ?=  
+ ePNDdouiUOv7x+7qzFCLoisH5SEoN3VwOREEmJ3d3wtdBEtog/nnsLMuNV7EFErEl+fn8JbRjWSq
+  
+ L3m4LtKJclwC0RpLeUDZuh9TghkJCXl0SlCw1YMr9cfrujJW/EJauYTYCTjvsOArRBvBCw+xorCB
+  
+ HjKARoeMUDf6ai1nEu93x7A77nc5XZOM67FSYxSMK4F1knUmpvYIsNUjrTmpMLoX/UfonaphrAbD
+   A/V48lFlVkbvxrfXMxCEbrCXQ8NGiriZBzAccQ==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=prod-iad-20200707;
+ d=iad1.rp.oracleemaildelivery.com; =?utf-8?q?h=3DDate=3ATo=3AFrom=3ASubject?=
+ =?utf-8?q?=3AMessage-Id=3AMIME-Version=3ASender=3AList-Unsubscribe=3AList-U?=
+ =?utf-8?q?nsubscribe-Post=3B?=
+ bh=GuHpXSb3fOGUDeYhphp2bFfqim7RHQpBt4y8Ue7N5Uc=; =?utf-8?q?b=3DGaDWDrX834B3?=
+ =?utf-8?q?venQFEvdiKNzv6S7THxhKf2porQs39wRcYBt2vGTwaDFX4O1VLDOPzNwT7zwWQCz?=
+  
+ iTx8RTEV9G6Xv/hb4CZQK7nBqMLXPFrUNbaI19xhE7u6FA4ZDZkPQtMwe/6mpj2hN5hCFBXAfSx9
+  
+ QU+7SCxmFyGma/8X1f4I7AIfFjJtK3lV9qKHZyvnXbH68hDyq9tsmiMW24UEm2oOHf5FRWKmQnAN
+  
+ abvOhCzZOGYFfKAtA+wwXlvvLY9R6YUg7ikU9L07DHLraA48Yfn5iaL+PJ+9NkmsmJ6NJ6iuQAJt
+   fImJAJiPZdLrojIU/gXVQc/0T6OCY9B/pUfIWA==
+Received: by omta-ad2-fd1-201-us-ashburn-1.omtaad2.vcndpiad.oraclevcn.com
+ (Oracle Communications Messaging Server 8.1.0.1.20240709 64bit (built Jul  9
+ 2024)) with ESMTPS id =?utf-8?q?=3C0SHP00XVHZCUYC90=40omta-ad2-fd1-201-us-a?=
+ =?utf-8?q?shburn-1=2Eomtaad2=2Evcndpiad=2Eoraclevcn=2Ecom=3E?= for
+ jose@monkey.org; Mon, 05 Aug 2024 00:43:42 +0000 (GMT)
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-Mailer: XLOracle
+Reply-to: "Membership Services" <bzlla@loop-teck.com>
+From: "Membership Services" <mailservice@campaigntest.com>
+To: "Valued Customer" <jose@monkey.org>
+Subject: Update Your Membership for Uninterrupted Streaming!
+Date: Sun, 4 Aug 2024 20:43:41 -0400
+Message-id:  <874893159.1084788.20240804204341.3E3E2D98F7774346991B3EE04AED07E6.5792419910@campaigntest.com>
+MIME-version: 1.0
+Content-type: multipart/alternative;
+	boundary="----=_NextPart_000_16959_01DAE6AE.FDE0D840"
+List-Unsubscribe:  =?utf-8?q?=3Chttps=3A//cell0=2Etrack=2Eemail=2Eus-ashburn?=
+ =?utf-8?q?-1=2Eoci=2Eoraclecloud=2Ecom/20221014/track/unsubscribe=3FV=3D2?=
+ =?utf-8?q?=26H=3DAAFh2cvEgq1fOM13C-Kc733TCFtB8kcN8LqrU64xtZLE6LBInnyWjeIMAB?=
+ =?utf-8?q?Sagrc0DGB0JWJaiiW4B5o9ioEuqNFTz8-Zi=5FD5=5F2LX=5FGOazYWhWCynSOEoH?=
+ =?utf-8?q?qmPqEvDYlkV37-cVzbpILgaoQnGlGdiCsDEDUQ1pe6x7zTbkaOZMDYHyP7gRjZmJU?=
+ =?utf-8?q?-yiMcFM17GsIHUTLuRfDv0syyA1U7HFhpVP7ZGaMcvzlbyGaIsw5fw4KnVMt6TlCA?=
+ =?utf-8?q?miFoMU=5FZO5dyNca5Jm4B2dC-M4fwhzdyJAcQIajzHPkybwK2niG2595kcYlbiDP?=
+ =?utf-8?q?K661nkqQtQH8V6z4-pDFWiaXbmkEI-OfWmsdlgmmi-8iQNfSjVqQeQ-zO2IiNrbja?=
+ =?utf-8?q?Abd3aFIlSawXB5MH4xVHxj44=5FZwGSegcFKSh=5FvA=3E?=
+X-ECP-CampaignID: 1084788
+X-ECP-ClientID: 874893159
+Reporting-Meta: 
+ AAH9/dgFuxX9ptrqTVf4b+cKrQ7jSSinFYsrFkCAkFhRT3cwAnoy9EGrehascXtI
+ 5CkXkt7CHk4Mu/Z73WcvxTOxK62vds+O/2VGkUzkv/zC2QTOdUmDTrOt1w5rUfsB
+ kR6q4TcADxg0TXrMFWVm5tWqozzmwe65hxjhqYemGVir9yhSHQ4mOWPNM1zx6heV
+ OqYzqpkzVav3/nRtBCD2Fhl8IkngkG9SBKTolB9Gae/c44Kb40RKgax0Q4dJmFTu
+ frbe0q0L1E0cABmZa0TRFzzHMWr+8aj0PbTkX4TJSa7+4RK/mWZl4NMd2tRU/PJR
+ xg9jcUPeZUD3Z2zhGC/+81RPQ37bN284Te9tyEm1obqqtZVrPjHfBMEaZiJIiECG
+ rQQR42QSzsxcuLHCa1a9qYDeR+Ne1ILRGIJtslvyOOvQAk06CQdx7AItM4Eu3GPn
+ FoeK+XABCIVTf8tF92Nqo1gnJX40TnVs0HBy3DcRTHvQWH1/da3gzNb9U+V1nn80
+ A8jHEc5PzhBg2d9F08MWLMcp8xAOxHlZ3Ls=
+X-Rspamd-Queue-Id: 8CC291C0003
+X-Spam-Status: No, score=0.10
+X-Stat-Signature: bjq57fk6ermyn3brkdkr6xab31epiauz
+X-Rspam-User: 
+X-Rspamd-Server: rspam05
+X-HE-Tag: 1722818623-211796
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18pkPfplAsaYKUxmFimwiAcATZBj++XgHqFV1+83I3gFuF?=
+ =?utf-8?q?XBiULyaZcFQbkOKlk/yoU6QYbxkKkZbJpg1fnVXpKa2S9emX9+Z7Aq+ZS3n+9MBPx?=
+ =?utf-8?q?e92hO02XZnDg4x1CSPIm+kVM2Xx8g0cSIr/nTz/5pkYY7OEMEv447GxCjZPV+ufUY?=
+ =?utf-8?q?QjZL9ovfJUqrpndfQ+0d2d8LXouiAI207OUgZ+gy0W7Er3NEEwyCOYzZWGSdVyj8B?=
+ =?utf-8?q?rNa2YipeDm2KxIvEk8QqgsXBYXUvDVacvjIfA2fLPOg7u0RYPD6h/px9WsCCEUsHg?=
+ =?utf-8?q?EDmVxdAX3ilOkbwBMB1kL/ZwjwTqjmIh6+mRdOVznL3Vk+bZSsesjIIqrEEhk3uw0?=
+ =?utf-8?q?eGLzL1sFJ6av7bYeLM6drAeGIK97cBjrovaJ7Pe24Ea7WZqaI4/vv7dx0Gd80Cpl8?=
+ =?utf-8?q?yG3BXsGpo6lQMIxb6WLprZOUf+chn3+McCm9gPpsDWssBIQP1M0/7HLeVhEDFvhs4?=
+ =?utf-8?q?+NRphr6DH1qp3MJopFl6BQXnK4hw4oir5RcQ5HI+sqkTpUvrqCAHdDA+kkSqoORf2?=
+ =?utf-8?q?nbPeYl0q+wUriLIHxwnbe5uF/lb7ECzO4GItaLEFlH7IbuUwnmZo+M9lzYuwlQMtt?=
+ =?utf-8?q?ZDC4wKPBpoVjGn4KESyED+x/T8mPh+15shRHUteKcaHohusseQKFalMeXuZ1WKetR?=
+ =?utf-8?q?cmnlkktRhQKySQG9N0ew+tXf4VlM+J3d0OoYMvF1QzVyL68nz2bNz/MrDuciTIAFY?=
+ =?utf-8?q?Q6SA7nAVymNMrRtwlefHvsTIKvbdX+cFIKwhujIu7ZRBn5u3sYL2BpZHBQVFbwxG0?=
+ =?utf-8?q?HBORke4zAVhZhzPQveUrMP1xF0tghxdno+seT/0L+7Sxp+iZe91v+wHtkOKiQ6W3r?=
+ =?utf-8?q?5HdS7x/3Ppb4qlwmsBt+pPX6YCscTVcnOO1EIHCOkwMGtaGsF6HGHKGbZ4y+luu+A?=
+ =?utf-8?q?MLwuTE0TTqjRM175z9W6L+_8/Vs1tNJB7TxcvE7seg6c2IewcLsKrV2wU/DDBN0NY?=
+ =?utf-8?q?p5iH9FKZwZJAiPiSt77crm05g712LGEKP47ZqbggMOIyCmdu1zP6FtCHGex9ldgmh?=
+ =?utf-8?q?5nQgEWjjLdbpzyWP6jNSoP794OibcLPpY/y7E0A3XmBoz9cb+5pn+MBbcTMFpcDSl?=
+ =?utf-8?q?f104ql/9/GjbIlxOA+3Vp2a4w4YrS2ipJCSLT0sJNYHMcM+BF7i5FdTQi3r/BhOFZ?=
+ =?utf-8?q?t/Ond4n+tXYnzFsuCjYy6wWQjIXv3NwsR2pAdPC0vL/45ZUozAf2Wsaila3yzz3wi?=
+ =?utf-8?q?OCijYoSwGyT1y6WeDnB8uTXH4G7AE89nwR9Wk0+JPczZan1CqOx7Ys9/5mJYERUGr?=
+ =?utf-8?q?CN6v+UGvAW8tiFHM0F87sGz3nVjl2AC+ravSPDr8PzJivkSfXb9fy+dHzlJRjwUbh?=
+ =?utf-8?q?lk01mrHo5i4zUMhDQ5isbyh+dZvuVRYvO3IwqRNhw85XxqU9pcd3nY3Aa1JOuYibu?=
+ =?utf-8?q?AhA8YaYyfzyzDo/BH6HspuS8U88A1njPKgISajAoC9gdSlWcsuR2NAA+r2I/TLUr1?=
+ =?utf-8?q?YorviDRJ3zMRkdQKCOuwtMIDMNt468IPYAQLtmU01Kk4WQ10WRWrSGsetrFpIk+Ea?=
+ =?utf-8?q?52xmuzWnedrc012a497JGctl9rZBAVnqIv14rYXQytZfAQISEmTDc0UhxUu6fy3Wb?=
+ =?utf-8?q?K+7lwhMxAJhiaZT9Q8HKxvIhNyFC8WqMk9XjY9UlrYVQgQBVcLIiKYpetHX8NTH5y?=
+ =?utf-8?q?bIKg4cd9Foj1auMhirXcyY5v2iiilYKXtpg52ksLJ56fbsturqZ/Xq+NGyXmzg+hr?=
+ =?utf-8?q?nQlQn/lVzEL/trixgd5da9FCx6BmGAEm/B6WVsenUNJhdytII6WyMD27Bn3jEHb5k?=
+ =?utf-8?q?CS5mwW0E1muZ+7RZlkqFEcHbe4/lhbh5eHVdHlQDLLaQ5b9cFHynOVtnSIx32AFQW?=
+ =?utf-8?q?cnIYp+Zo+8DYXWFh/71AZu2L2EdSXUHhlrzGcYaxnfHHV_mizGSfGr2F1S54AtGk6?=
+ =?utf-8?q?wpzwOWSCCCCcXnZiKCVj+j1XzKLWKsjjftMwjPavJKzhuPtGtwm22E1zp+3xjHvMZ?=
+ =?utf-8?q?Yh5yTT4Msll5yhZdvGDgZDQjn1qPBaeBaL69kMjOlitqNiBbmBmoke6D0y7ydP9nA?=
+ =?utf-8?q?3y140Mz5orlB9CfIy6ZaxkwkOzfc2nl1EzsYFyoxW0JunS5xNmorU/ojMWUOvWHX4?=
+ =?utf-8?q?AjBNds1O7Xj/Pn5qtf3ydiKf0KLr1V9LEFbPLTbto2vQhZ7aQJCc3ShGPJQN725qp?=
+ =?utf-8?q?ZTsfPphO3A+WziSqALMkm+hMuBCSNRFGjs5eA63XlRaGqcFlYrxBG6QkrrGzduruH?=
+ =?utf-8?q?dNb1bYPy4nrE3tCinfbBheLwMkx4WZTwhiiqx4iWqaOVbtVBgqKqFHqB/ofHGau0I?=
+ =?utf-8?q?1cEbfMQ4QIv5C5mfgoFBy5huxsiP8FEiB897aIzBzeYBZNSPc3Fyk0I7d2RKw=3D?=
+ =?utf-8?q?=3D?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 227
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_16959_01DAE6AE.FDE0D840
+Content-Type: text/plain;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+
+ Netflix
+Subscription<https://mir-s3-cdn-cf.behance.net/project_modules/hd/fb7627
+91877129.5e3cb3903fb67.gif> 
+
+R???n???w Your ????t?f?l???? ??u?b?????r?????t?????n 
+
+
+Dear Esteemed Customer,
+
+We've observed that your ????t?f?l???? ??u?b?????r?????t?????n requires
+renewal. To ensure you continue enjoying seamless access to your
+favorite films and series, please update your ??u?b?????r?????t?????n
+details at your earliest convenience.
+
+Click the button below to R???n???w your ??u?b?????r?????t?????n:
+
+Renew Subscription
+<https://www.proyectosconstrutorres.com/wp-includes/fonts/uz/Xcvfv2>  
+
+If you have any inquiries or require support, don't hesitate to reach
+out to us
+<https://www.proyectosconstrutorres.com/wp-includes/fonts/uz/Xcvfv2> .
+
+Thank you for being a part of the ????t?f?l???? family!
+
+Warm regards,
+The ????t?f?l???? Team
+
+ 
+35299<http://l.campaigntest.com/open_image.asp?campaignid=1084788&custom
+erid=A09D020FF298424CB25C70BE55D71B9A> 
+
+
+  	MuvanoAlssen
+vanny lukas 5 Chapel St 27 AVENNU Rugby, IL CV21 3EB 	  	
+Unsubscribe jose@monkey.org
+<http://f.campaigntest.com/customer/sys_unsubscribe_me.asp?customerguid=
+3E3E2D98F7774346991B3EE04AED07E6&clientguid=A09D020FF298424CB25C70BE55D7
+1B9A&campaignid=1084788> 
+	
+Send me a message
+<http://f.campaigntest.com/customer/sys_send_message.asp?customerguid=3E
+3E2D98F7774346991B3EE04AED07E6&clientguid=A09D020FF298424CB25C70BE55D71B
+9A&campaignid=1084788>  | Request a callback
+<http://f.campaigntest.com/customer/sys_request_callback.asp?customergui
+d=3E3E2D98F7774346991B3EE04AED07E6&clientguid=A09D020FF298424CB25C70BE55
+D71B9A&campaignid=1084788>  | Forward this email
+<http://f.campaigntest.com/customer/sys_email_friend.asp?customerguid=3E
+3E2D98F7774346991B3EE04AED07E6&clientguid=A09D020FF298424CB25C70BE55D71B
+9A&campaignid=1084788>  	
+Sent by MuvanoAlssen in collaboration with 
+	
+ eCampaignPro Try it
+Today<http://www.ecampaignpro.com/real-estate/images/ecampaign_footer_lo
+go.png> 
+
+eCampaignPro
+
+Copyright 2001-2024 XL Technologies, LLC. All rights reserved. P.O. Box
+2747 Sarasota, FL 34230 	
+
+------=_NextPart_000_16959_01DAE6AE.FDE0D840
+Content-Type: text/html
+Content-Transfer-Encoding: 7bit
+
+<!--std2_1.htm-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Renew Your Netflix Subscription</title>
+  <style>
+    /* Simple styling for the email */
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.5;
+      margin: 0;
+      padding: 20px;
+      background-color: #eef2f3;
+    }
+    .wrapper {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+    }
+    h2 {
+      color: #e50914;
+    }
+    p {
+      margin-bottom: 15px;
+    }
+    .cta-button {
+      display: inline-block;
+      background-color: #e50914;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 4px;
+    }
+    /* Responsive styles */
+    @media (max-width: 600px) {
+      .wrapper {
+        padding: 15px;
+      }
+      h2 {
+        font-size: 24px;
+      }
+      .cta-button {
+        padding: 10px 20px;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/hd/fb762791877129.5e3cb3903fb67.gif" alt="Netflix Subscription" style="height: 200px; width: 100%; max-width: 600px;">
+
+    <h2>R&#65279;&#1077;&#65279;n&#65279;&#1077;&#65279;w Your &#925;&#65279;&#1077;&#65279;t&#65279;f&#65279;l&#65279;&#1110;&#65279;&#1093; &#1029;&#65279;u&#65279;b&#65279;&#1109;&#65279;&#1089;&#65279;r&#65279;&#1110;&#65279;&#1088;&#65279;t&#65279;&#1110;&#65279;&#1086;&#65279;n    </h2>
+    <p>Dear Esteemed Customer,</p>
+    <p>We've observed that your &#925;&#65279;&#1077;&#65279;t&#65279;f&#65279;l&#65279;&#1110;&#65279;&#1093; &#1029;&#65279;u&#65279;b&#65279;&#1109;&#65279;&#1089;&#65279;r&#65279;&#1110;&#65279;&#1088;&#65279;t&#65279;&#1110;&#65279;&#1086;&#65279;n requires renewal. To ensure you continue enjoying seamless access to your favorite films and series, please update your &#1029;&#65279;u&#65279;b&#65279;&#1109;&#65279;&#1089;&#65279;r&#65279;&#1110;&#65279;&#1088;&#65279;t&#65279;&#1110;&#65279;&#1086;&#65279;n details at your earliest convenience.</p>
+    <p>Click the button below to R&#65279;&#1077;&#65279;n&#65279;&#1077;&#65279;w your &#1029;&#65279;u&#65279;b&#65279;&#1109;&#65279;&#1089;&#65279;r&#65279;&#1110;&#65279;&#1088;&#65279;t&#65279;&#1110;&#65279;&#1086;&#65279;n:</p>
+    <a href="https://www.proyectosconstrutorres.com/wp-includes/fonts/uz/Xcvfv2" class="cta-button">Renew Subscription</a>
+    <p>If you have any inquiries or require support, don't hesitate to <a href="https://www.proyectosconstrutorres.com/wp-includes/fonts/uz/Xcvfv2">reach out to us</a>.</p>
+    <p>Thank you for being a part of the &#925;&#65279;&#1077;&#65279;t&#65279;f&#65279;l&#65279;&#1110;&#65279;&#1093; family!</p>
+    <p>Warm regards,<br>The &#925;&#65279;&#1077;&#65279;t&#65279;f&#65279;l&#65279;&#1110;&#65279;&#1093; Team</p>
+  </div>
+<img src="http://l.campaigntest.com/open_image.asp?campaignid=1084788&customerid=A09D020FF298424CB25C70BE55D71B9A" border="0" width="1" height="1" alt="35299">
+<br/><br/>
+<table id="xltaddress1" border="0" cellpadding="0" cellspacing="0" width="100%" align="center" style="border-collapse:collapse !important; width:100% !important; z-index:9999 !important;background-color:#ffffff !important;" bgcolor="#ffffff">
+   <tr>
+       <td align="center">
+           <table id="xltaddress2" align="center" style="border-collapse:collapse !important;" border="0" cellpadding="0" cellspacing="0" width="710">
+               <tr>
+                   <td valign="top" width="1%" align="center" style="padding-top:20px">
+                            &nbsp;
+                   </td>
+                   <td width="98%" align="center" style="font-family:Verdana, Arial, sans-serif; font-size:12px; color:#7d7878; padding-top:20px">
+                           <strong style='font-size:14px'>MuvanoAlssen</strong><br/>
+                           vanny&nbsp;lukas&nbsp;5 Chapel St&nbsp;27 AVENNU&nbsp;Rugby,&nbsp;IL&nbsp;CV21 3EB
+                   </td>
+                   <td valign="top" width="1%" align="center" style="padding-top:20px">
+                            &nbsp;
+                   </td>
+               </tr>
+           </table>
+       </td>
+   </tr>
+</table>
+<table id="xltfooter" border="0" cellpadding="0" cellspacing="0" width="100%" align="center" style="border-collapse:collapse !important; width:100% !important; z-index:9999 !important;background-color:#ffffff !important;" bgcolor="#ffffff">
+	<tr>
+		<td>
+			<table align="center" style="border-collapse:collapse !important;" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="710">
+				<tr>
+					<td align="center" style="padding:10px; font-family:Verdana, Arial, sans-serif"><a href="http://f.campaigntest.com/customer/sys_unsubscribe_me.asp?customerguid=3E3E2D98F7774346991B3EE04AED07E6&clientguid=A09D020FF298424CB25C70BE55D71B9A&campaignid=1084788"><font color="#000000" style="text-decoration: underline;">Unsubscribe jose@monkey.org</font></a><br /></td>
+				</tr>
+				<tr>
+					<td align="center" style="padding:10px; font-family:Verdana, Arial, sans-serif">
+						<a title="Send me a message" href="http://f.campaigntest.com/customer/sys_send_message.asp?customerguid=3E3E2D98F7774346991B3EE04AED07E6&clientguid=A09D020FF298424CB25C70BE55D71B9A&campaignid=1084788"><font color="#000000" style="text-decoration: underline;">Send me a message</font></a> |
+						<a title="Request a callback from me" href="http://f.campaigntest.com/customer/sys_request_callback.asp?customerguid=3E3E2D98F7774346991B3EE04AED07E6&clientguid=A09D020FF298424CB25C70BE55D71B9A&campaignid=1084788"><font color="#000000" style="text-decoration: underline;">Request a callback</font></a> |
+						<a title="Tell a Friend" href="http://f.campaigntest.com/customer/sys_email_friend.asp?customerguid=3E3E2D98F7774346991B3EE04AED07E6&clientguid=A09D020FF298424CB25C70BE55D71B9A&campaignid=1084788"><font color="#000000" style="text-decoration: underline;">Forward this email</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td align="center" style="padding:10px; font-family:Verdana, Arial, sans-serif">
+						Sent by MuvanoAlssen in collaboration with <br />
+					</td>
+				</tr>
+				<tr>
+					<td id="ecp-logo" align="center">
+						<img border="0" alt="eCampaignPro Try it Today" src="http://www.ecampaignpro.com/real-estate/images/ecampaign_footer_logo.png" />
+						<p style="margin:0 !important;  padding:0 !important;"><font color="#2877EC" style="text-decoration: none; font-family:Verdana, Arial, sans-serif; font-size:9px;">eCampaignPro</font></p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3" align="center" style="color:#7d7878; font-size:10px; font-family:Verdana, Arial, sans-serif; padding-bottom:20px;">
+						Copyright 2001-2024 XL Technologies, LLC. All rights reserved. P.O. Box 2747 Sarasota, FL 34230
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
+
+
+------=_NextPart_000_16959_01DAE6AE.FDE0D840--
+
+

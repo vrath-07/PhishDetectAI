@@ -1,0 +1,207 @@
+Return-Path: MAILER-DAEMON
+Delivered-To: jose@monkey.org
+X-FDA: 82469392782.07.FCC2737
+Received: from emu.alicehosting.com.au (emu.alicehosting.com.au
+ [43.245.162.34])	by imf21.b.hostedemail.com (Postfix) with ESMTP id
+ 307D5180004	for <jose@monkey.org>; Mon, 19 Aug 2024 15:34:48 +0000 (UTC)
+Authentication-Results: imf21.b.hostedemail.com;	dkim=none;	dmarc=none;
+	spf=none (imf21.b.hostedemail.com: domain of emu.alicehosting.com.au has no
+ SPF policy when checking 43.245.162.34) smtp.helo=emu.alicehosting.com.au
+Received: from mailnull by emu.alicehosting.com.au with local (Exim 4.96.2)
+	id 1sg4P8-0005p9-1w
+	for jose@monkey.org;
+	Tue, 20 Aug 2024 01:04:46 +0930
+X-Failed-Recipients: jose@monkey.org
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@emu.alicehosting.com.au>
+To: jose@monkey.org
+References: <20240819153443.E463784A99388ABD@monkey.org>
+Content-Type: multipart/report; report-type="delivery-status";
+ boundary="1724081686-eximdsn-712518272"
+MIME-Version: 1.0
+Subject: Mail delivery failed: returning message to sender
+Message-Id: <E1sg4P8-0005p9-1w@emu.alicehosting.com.au>
+Date: Tue, 20 Aug 2024 01:04:46 +0930
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - emu.alicehosting.com.au
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - 
+X-Get-Message-Sender-Via: emu.alicehosting.com.au: sender_ident via
+ received_protocol == local: mailnull/primary_hostname/system user
+X-Authenticated-Sender: emu.alicehosting.com.au: mailnull
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Queue-Id: 307D5180004
+X-Stat-Signature: 51yq67iqeg8ymwqr6z9no6kwd31djdw9
+X-Rspam-User: 
+X-Spam-Status: Yes, score=11.30
+X-Rspamd-Server: rspam01
+X-HE-Tag: 1724081688-155528
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19nJZb3TKwaBnxfCaQExTn4aI3yclC/G9u24eowwj8KuZ7?=
+ =?utf-8?q?Q0+y6d3MU+84K/HUWmvYVmH7u5ZbfnFVHkJ4bllicGqtiKnv9bbhv+gXTCbe6jnqX?=
+ =?utf-8?q?agj6GC4OuRfFk6P9yJjwx3ownsqhWpjOXbzzNJyFI6M08JCXA4ppELzA+GE5enuIE?=
+ =?utf-8?q?UXhzj7T5S3ZjczwQKIixYljBR6594AAprggRWtTGGzytBpYf90B3Df/6cO5n8dJnk?=
+ =?utf-8?q?usiZmK8Q+Wyc2Hl2wOlcmy+8hiuwzAUqEy06h9QACgFWUq86GmX0ORmbL+RcFQ6XD?=
+ =?utf-8?q?2TiRsm0GPODPLKsAZlUb2At5Vvlv7pBCKeG7sq4ccolZ+zHqGawh8PUB7gnxGRGD2?=
+ =?utf-8?q?C0INTP1oLuBrZDkuM/OtoRMg3dFemYkamFOk88h3tMA/+ZvMj9+sOIvAFClgXc+/k?=
+ =?utf-8?q?lWXb5/ACaGu8DSv9Gzz/2ZHTTxTwwYN9hb3VoSkLac8vOEVtDretjoUAcGvyHYWFa?=
+ =?utf-8?q?3NhYEcuDHeC3RpZZRpOcnms9gaaSbV1LCC6C26ksVtZrUxQbWmZDEbgHkbRjwrFWA?=
+ =?utf-8?q?AMIT3cfLu3hVaHdEtUctdpzhc12BFJyS8v8ZkvOBVHNW6R9wBCHLR/49TskGXAPEb?=
+ =?utf-8?q?ZM3KLu2lHxQsykkDHAQz5vvXdM8LsMbfwjZd6OdPG7kieMU6BQpo+nlhYI/zzrmzn?=
+ =?utf-8?q?p7BWtf3dRtMIiljabW2xFg7wylCDdyOO2lfnqF9TCEvA1DYM3NUBv24+q66scLFhS?=
+ =?utf-8?q?L5TIXSWSImr85AfoZtREzhh5kVZfkW73NP6Z+vwn+tWce81kKNYdZULksZRJ2pLc/?=
+ =?utf-8?q?KITIse/xTfVDacERsJW4Xk1Ldg3+8StLZuY7Sn8pN7r81RsYlPyL3hVQxBvSVJcew?=
+ =?utf-8?q?CZvGqDU8s4oW4rQvfyCQfmWOuoOJU7hQHoN5AfKhEV4StOBznLtSkY9qXJixSu0Cq?=
+ =?utf-8?q?CA/tdUYKciQOGJi9qHwloB_G3FDrPoKWwdHJjVnbb//WKST3hB18dN6Yy+0uz4glX?=
+ =?utf-8?q?G15LORFO5W6/apm3IwGjouHP0sld54Lf4es40UgWEX2fNEATGTzbWY9fewtz6Q8mI?=
+ =?utf-8?q?slXuJxJVCl5iKyuJQ3QjB7+uuZvqZ7A+7vdZpKIpjMgOFtqKk6tTlv8I1d76+mhKd?=
+ =?utf-8?q?Ct/XqOf9+5wSXp3D9JoBGUW+x8i7gKoRTOMHZlk1BFjGaUaE9CeEpVF3NhKYdwCEI?=
+ =?utf-8?q?7MzJ1/roIOdJ2U9AE5TaLpwGtagVb8ChLBlki4/hM2qCN89NSZ730ePbJjtpVVupp?=
+ =?utf-8?q?wHKLXdj3oHrc3m6LImGrt3IOjfInDg6wednrQOYx/XxXr4cIn3tqfHrAwMgnO3Djv?=
+ =?utf-8?q?uyZ9uw/zaNSRzLvLRPZ/NaGWQ1RaQDBTw2c8f96iSsLUguFI3ETYIbHvAEbiaLOvc?=
+ =?utf-8?q?Abtm7N4L+PnJSZLBFg55rSuxiJbIeHpsrvbF73o4MI5Yy7hLitV14txGI+72kJ4fe?=
+ =?utf-8?q?TdUm/Vd2KpcKCTMRu0XJK82yy+0ms6lKcjiBSq7Dhgnn2KoneCmpXXZxnEV53i5fm?=
+ =?utf-8?q?yhtaf+Wstmrk8fDv0zMDUUyeqrNB4+5WlPyZAhrY7/5WrixujGgbJYwACoykU7rby?=
+ =?utf-8?q?JyFb1j2Ff8e61SRZY1l+WMb/pdSer+X5jXuIosgydmxnG/4ItegCJPoTl99YUIBzP?=
+ =?utf-8?q?mEtHMTkbBILTik5V3IwBTvuR/DduxxqLAgWqgqZ7krVZc33HlzGhL4hOb1ucsbK7i?=
+ =?utf-8?q?iZXlvwDe5+vcAxI53i8HQmLfL/svqFXBC3yM+wp6IH+Rt+8Qh7hrMUTf0bfMaYR1d?=
+ =?utf-8?q?dBRJH6LU9XiQAfvmIfQLUfXaPlMScL3ftuIZxSZP1qDAX/BkEGYnZBAF5qUM6hh8p?=
+ =?utf-8?q?skmqjEQv1+51F3RDAynkFoyf7uS5mvu0xxtA=3D=3D?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 243
+
+--1724081686-eximdsn-712518272
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  jose@monkey.org
+    Domain desertfruitcompany.com.au has exceeded the max emails per hour (625/500 (125%)) allowed.  Message discarded.
+
+--1724081686-eximdsn-712518272
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; emu.alicehosting.com.au
+
+Action: failed
+Final-Recipient: rfc822;jose@monkey.org
+Status: 5.0.0
+
+--1724081686-eximdsn-712518272
+Content-type: message/rfc822
+
+Return-path: <jose@monkey.org>
+Received: from [208.70.254.110] (port=49290 helo=monkey.org)	by
+ emu.alicehosting.com.au with esmtpsa  (TLS1.2) tls
+ TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	(Exim 4.96.2)	(envelope-from
+ <jose@monkey.org>)	id 1sg4P8-0005ku-0c	for jose@monkey.org;	Tue, 20 Aug 2024
+ 01:04:46 +0930
+From: "Mail Admin" <jose@monkey.org>
+To: jose@monkey.org
+Subject: Verify Ownership Email jose@monkey.org
+Date: 19 Aug 2024 15:34:43 -0700
+Message-ID: <20240819153443.E463784A99388ABD@monkey.org>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.17037"></HEAD>
+<body style=3D"MARGIN: 0.5em">
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: small; FONT-FAMILY: Arial, H=
+elvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFOR=
+M: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); PADDING-BOTTOM: 0px; FONT-=
+STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0in 0in 0pt; OR=
+PHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; LINE-HEIGHT: 1.5; PADDING-RIGH=
+T: 0px; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps=
+: normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial"><FONT style=3D"BOX-SIZING: border-box" face=3D"Cal=
+ibri, sans-serif"><SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: 16px"><=
+FONT style=3D"BOX-SIZING: border-box; VERTICAL-ALIGN: inherit"><FONT style=
+=3D"BOX-SIZING: border-box; VERTICAL-ALIGN: inherit">To continue using jose=
+@monkey.org</FONT></FONT></SPAN></FONT><SPAN style=3D"FONT-SIZE: 16px; FONT=
+-FAMILY: Calibri, sans-serif, serif, EmojiFont">
+ &nbsp;kindly verify ownership.</SPAN></P>
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: small; FONT-FAMILY: Arial, H=
+elvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFOR=
+M: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); PADDING-BOTTOM: 0px; FONT-=
+STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0in 0in 0pt; OR=
+PHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; LINE-HEIGHT: 1.5; PADDING-RIGH=
+T: 0px; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps=
+: normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial"><SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: =
+16px; FONT-FAMILY: Calibri, sans-serif, serif, EmojiFont">Failure to verify=
+&nbsp;<SPAN style=3D"FONT-FAMILY: Calibri, sans-serif">jose@monkey.org</SPA=
+N>&nbsp;will delete your email from admin server</SPAN></P>
+<DIV style=3D"BOX-SIZING: border-box; FONT-SIZE: small; FONT-FAMILY: Arial,=
+ Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSF=
+ORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPH=
+ANS: 2; WIDOWS: 2; LETTER-SPACING: normal; TEXT-INDENT: 0px; font-variant-l=
+igatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px=
+; text-decoration-thickness: initial; text-decoration-style: initial; text-=
+decoration-color: initial">
+<BR style=3D"BOX-SIZING: border-box"></DIV>
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: small; FONT-FAMILY: Arial, H=
+elvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFOR=
+M: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); PADDING-BOTTOM: 0px; FONT-=
+STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0in 0in 0pt; OR=
+PHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; LINE-HEIGHT: 1.5; PADDING-RIGH=
+T: 0px; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps=
+: normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial"><SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: =
+12pt">
+<A style=3D"BOX-SIZING: border-box; COLOR: blue; BACKGROUND-COLOR: transpar=
+ent; border-radius: 3px; text-decoration-line: none" href=3D"https://ipfs.i=
+o/ipfs/bafybeicw475oyuphswfgdm75vihtrs5otrypdvlgmi3jabtotrdaa3wfx4/#jose@mo=
+nkey.org" rel=3Dnoreferrer target=3D_blank data-saferedirecturl=3D"https://=
+www.google.com/url?q=3Dhttps://fleek.ipfs.io/ipfs/QmcVapdtzZSMcx2xkQs2pdnic=
+hKZwVhvj5JJWR4Pgv5Dxg/Jah.html/%23%5B%5B-Email-%5D%5D&amp;source=3Dgmail&am=
+p;ust=3D1716866661359000&amp;usg=3DAOvVaw2LIBrrq8_SOy813j0fmWRl">
+<SPAN style=3D"BOX-SIZING: border-box; BORDER-TOP: rgb(25,118,210) 6pt soli=
+d; BORDER-RIGHT: rgb(25,118,210) 6pt solid; BACKGROUND: rgb(25,118,210); BO=
+RDER-BOTTOM: rgb(25,118,210) 6pt solid; COLOR: white; PADDING-BOTTOM: 0in; =
+PADDING-TOP: 0in; PADDING-LEFT: 0in; BORDER-LEFT: rgb(25,118,210) 6pt solid=
+; PADDING-RIGHT: 0in"><FONT style=3D"BOX-SIZING: border-box; VERTICAL-ALIGN=
+: inherit"><FONT style=3D"BOX-SIZING: border-box; VERTICAL-ALIGN: inherit">=
+Click Here To Verify Ownership</FONT></FONT></SPAN></A>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<WBR>
+ &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR style=3D"BOX-=
+SIZING: border-box">&nbsp;monkey.org</SPAN><SPAN style=3D"FONT-SIZE: 16px; =
+FONT-FAMILY: Calibri, sans-serif">
+ &nbsp;Web Admin Configuration Team.</SPAN></P>
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: small; FONT-FAMILY: Arial, H=
+elvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFOR=
+M: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); PADDING-BOTTOM: 0px; FONT-=
+STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0in 0in 0pt; OR=
+PHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; LINE-HEIGHT: 1.5; PADDING-RIGH=
+T: 0px; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps=
+: normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial"><FONT style=3D"BOX-SIZING: border-box" face=3D"Cal=
+ibri, sans-serif"><SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: 16px"><=
+FONT style=3D"BOX-SIZING: border-box; VERTICAL-ALIGN: inherit"><FONT style=
+=3D"BOX-SIZING: border-box; VERTICAL-ALIGN: inherit">&copy; 2024</FONT></FO=
+NT></SPAN></FONT></P></BODY></HTML>
+
+--1724081686-eximdsn-712518272--
+

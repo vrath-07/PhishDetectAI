@@ -1,0 +1,298 @@
+Return-Path: call@mach4water.com
+Delivered-To: jose@monkey.org
+X-FDA: 82552300782.09.79730E8
+Received: from ame.americanmotorcyclecompany.com (unknown [108.167.176.71])
+	by imf22.b.hostedemail.com (Postfix) with ESMTP id 2897516000E
+	for <jose@monkey.org>; Wed, 11 Sep 2024 11:54:49 +0000 (UTC)
+Authentication-Results: imf22.b.hostedemail.com;	dkim=pass
+ header.d=mach4water.com header.s=default header.b=sTMNjsmq;	dmarc=none;
+	spf=pass (imf22.b.hostedemail.com: domain of call@mach4water.com designates
+ 108.167.176.71 as permitted sender) smtp.mailfrom=call@mach4water.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1726055636; a=rsa-sha256;
+	cv=none;
+	b=T0cM/Ey3SUrFZCO62sj85r/+oySwWEC+hTNmJB77GsvK5qWq3CMZrxeF2HDavOsb1Ze0nC
+	mCNhiz5WCed00ITvRbJTs2rb0AJmCQtr6CX0OgPmpOoTRl2qrAPXzR/Utb0mggtdZbngF2
+	lFCYoeGq+0vQWYEdMNthtNo2QnKH0Zw=
+ARC-Authentication-Results: i=1;	imf22.b.hostedemail.com;	dkim=pass
+ header.d=mach4water.com header.s=default header.b=sTMNjsmq;	dmarc=none;
+	spf=pass (imf22.b.hostedemail.com: domain of call@mach4water.com designates
+ 108.167.176.71 as permitted sender) smtp.mailfrom=call@mach4water.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1726055636;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=bA6grFs/xR6N0d8qOwBQVFgOQXRiakWqI+3rcfP/HQk=;
+	b=F3+Bh/PX+qipwQHFxRkY1tgEsDqhAbeeVVxtuHgFkGggO5h4HWJWCG7DrfKN2cBpKYtAn0
+	bjWBuONE/zNqvE8lrK9yU8FUVAs0cDTX2pH0fzuDGtVazMoSBvMGsF+a8J+uzzGPwRWiPx
+	8Y1OulxyRqnhj8ZP+Wz9wv5mP5aGlrg=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=mach4water.com; s=default; h=Content-Transfer-Encoding:Content-Type:
+	MIME-Version:Message-ID:Date:Subject:To:From:Reply-To:Sender:Cc:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=bA6grFs/xR6N0d8qOwBQVFgOQXRiakWqI+3rcfP/HQk=; b=sTMNjsmqOQDYfg6DmKPjo8w7eA
+	CULpsd0ggol8gKrxmxI4HX8FXFTA4w7G5uZU69B3nSpL6VjTMAie6IwW89EmmX7aiesj2YLlUgzmt
+	6RqvYWD5B7L7jVCZvoUhRkjyW9cQp7d0tXG+lypYRGGVpi1vBJstNThucpeFe0pW9TbQfzXNgO4Bt
+	oTSP0gUfQX+Gm8HJZJZDI4cAbjJq2edkxJ07o431Y2KBm3vXmDh0vW8AH23SU4G5ZsFpBwpiXsONE
+	C8abrnXwV6Hw0jxZ69WjVtRAydHfi16YFJwb2lUwa4ZSb8pMFdRa9kX0GgC+P9QxRiUvGIHIjG5Ma
+	CPpIrn0w==;
+Received: from [45.154.98.201] (port=63139)	by
+ ame.americanmotorcyclecompany.com with esmtpsa  (TLS1.2) tls
+ TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	(Exim 4.94.2)	(envelope-from
+ <call@mach4water.com>)	id 1sVCAO-0007hc-7L	for jose@monkey.org; Sat, 20 Jul
+ 2024 15:38:52 +0000
+Reply-To: HelpDesk monkey.org<noreply@monkey.org>
+From: HelpDesk monkey.org<HelpDesk monkey.org<call@mach4water.com>
+To: jose@monkey.org
+Subject: Notification | You have (7) failed email deliveries
+Date: 20 Jul 2024 17:38:51 +0200
+Message-ID: <20240720173851.3D36FADFC52BA3C4@mach4water.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - ame.americanmotorcyclecompany.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - mach4water.com
+X-Get-Message-Sender-Via:
+ ame.americanmotorcyclecompany.com: authenticated_id: call@mach4water.com
+X-Authenticated-Sender: ame.americanmotorcyclecompany.com: call@mach4water.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Queue-Id: 2897516000E
+X-Stat-Signature: zp9k5off7xp11e8qxg1pye9idhq6jytg
+X-Rspam-User: 
+X-Spam-Status: Yes, score=27.44
+X-Rspamd-Server: rspam01
+X-HE-Tag: 1726055689-778219
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/X9sa7UFQNYgvkmTVdK52ZHtYPGWcpG4BPBtE6ihTo1IT?=
+ =?utf-8?q?IRL1GIXo1l6CKTyViAnjkI91sWYjnQMOrq6Ouj4wQf1aWYtrn0K3ea0BTyff8LSq6?=
+ =?utf-8?q?/zuH90K4fexg8IR6lrSTljxyNOfzhNEudTQO5bpGVOJM6wFylu/y7rNjYVTE884pk?=
+ =?utf-8?q?nC7aXKr2cMMEF9abMgky8ZKaSUFAzx7YOIe2Kf1J59RmsrJVm79aip3q+ao5j6Dcs?=
+ =?utf-8?q?eYW3eJI6PB7Mxa9o0sgA16OyZqVabhzNLRORfwGAk1aq/P0keXHOFKniO2BvIf0Mo?=
+ =?utf-8?q?DUFot6l3cDw2pCiK4rsX9UnQhrjrhV+1CB8aCV1nx1162Q/syR2/8E5VUD10xpwGt?=
+ =?utf-8?q?+SNaHN+YacGWrWTdfCMesJmPeFgLKtNkvc1JCr9ugv5GGExENenDBM0U+kNuWOzgG?=
+ =?utf-8?q?Su8fY7/t5fHbwjuLRwWAWS1zsOo9ibux/krYMyqyJTIU7e6G1KL+M02F3yj6X13m/?=
+ =?utf-8?q?YbDWkb6lnEojP3oqzsIjVNkpwuzlyRsKMM+575KGF66AP+emAnoID+a2s117xiZLh?=
+ =?utf-8?q?yGNtO6P4AeIZ90W8hjTATvzoEXU7cHTPLEIsXEhZQ4q56Rhbsh+hFNaSlvR3WL4AN?=
+ =?utf-8?q?L1kq33SMSWfY1BfjTnLeH1/j77JB5mQmFjavEUTiMaIqJM9frzqy5T/ObMynAcnDt?=
+ =?utf-8?q?1XBRv+C6J42Xd4T2WQKPDoCYmA8LIEZvKvWXnOPxJcuLq84acvDWKL5qXRJZ5+SoX?=
+ =?utf-8?q?z6NSYdsUE5/CFXu6m0WUotMDcXmbAY5YltFjhOwymqZnwS6sygXw9jZlrv+h3EiG4?=
+ =?utf-8?q?0m39DhPG2DPja67d2eLjBjgB0VU82EE5jjPxd4TvCEEvP9U9fCDA0RCglPt0ptMOU?=
+ =?utf-8?q?AMH09xjonbJlTTPDHPzbSPWD8e9wYlZNsdMDZxgevP8nBUnUk6qQXJKDWxeO7V9DI?=
+ =?utf-8?q?r9ibI2H3YFoywT/DJMsh0N_1Jlu6Di07+u0L96G7GAMJubFc1Re66FsbGs9org0jX?=
+ =?utf-8?q?oB3/IGoudowPihStNHyT+XFaFjfajJYgp4KAmOrpguv3g2y1clF8LDz85/qcmtfFM?=
+ =?utf-8?q?pFYaRNxx7TT7ONI06FJY8shn2HSY976Gl/eUNPJREeRKGgKUnxMTw/SDUC6heAyvs?=
+ =?utf-8?q?0KWk/4yQY56ZxEfYMRvHMeV2wdtN1Ocnyefe0RICqBPAaDsFfxqFySfx/vjB7gis0?=
+ =?utf-8?q?cdOy5igUfKvA6EgVwVE9yTtHt0Lvg3R+lg/aK6pwzR+HUkNcq/e7RHN3J4mrRd6Yj?=
+ =?utf-8?q?LRITB96tu58JeweCPW+CHLpe3btxXKC7hcWO4DiFf3CQNnayySt4kAOueJmyTaqOd?=
+ =?utf-8?q?//M7RgSOBWkqHNTyqGvGG2zgL6qmDnrB3J4TgenX0vS6ubh3nyHHWqSvXkF5FZONp?=
+ =?utf-8?q?jXFajXNL/UDkpav8kjLMPG+SwQv+T0L+AXXUVyypqprkKuUVU8utPkkPrn/Z18aDt?=
+ =?utf-8?q?5B3N3a16F0fgJH6od2pCaexssteNBACUKhaWUYiCbUiw+x2q7AMBymPUEsUyeOjvg?=
+ =?utf-8?q?eT48I9nc3Yk1Mj3rKgPQkOovcTXd7pQ/D4d43OHuNBGpV5U0h8Hc9ob6Np+4Gbno2?=
+ =?utf-8?q?mM+8sNJ//QdTWCCOUY7nMHIRHWiLDIEZAnDAtHvHoP3f9k5cK/CbyYAjA8dF4ohLS?=
+ =?utf-8?q?FBe7r0cLYC4mb3ChITd2gh0KMH5tkApqviR4vCTcGfF6/HSxHB5kthC95r+E3mLSJ?=
+ =?utf-8?q?6XlJfDTArIHK66MwYu8z2OWPEVMu8+RU2nze04IpCpEQboXNiI/nkbspAh2cLSswT?=
+ =?utf-8?q?jTqZZO6euVzRtx7sZq6wLHVhSf0aESBwHPLPTz/vJ5xoMsEefa1wcwa1O+uIFRPwm?=
+ =?utf-8?q?VVlOoSKmqVK+rs1LaHjx0aZIGnBI3X7YvvFvqBI0Ilr81BTpcIfdMmwOfOLjpqZ+a?=
+ =?utf-8?q?o7h1zsx6/K+BO6G0yNQCQvt29K+98IzpIJF4Aw0ZtEQqd_/QjbiqsRzh8Z47ysVPs?=
+ =?utf-8?q?s9bGuAQnWuYGCdVJKyY11y4gHolrV2HUxVEyo7RRejwtb81U8kYBFsEg6ToV4tgo7?=
+ =?utf-8?q?nPAgWrYLSTy0iWD+VXWRHaovO9uFLSebjSLb+YMxQ5W+Fwwc22VcDYYp/yBuj8Mcr?=
+ =?utf-8?q?HNGCoVMWfHv?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 258
+
+<!DOCTYPE HTML>
+
+<html><head><title></title>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"margin: 0.4em; font-size: 14pt;">
+<div>
+<table width=3D"548" style=3D"border-color: rgb(221, 221, 221); color: blac=
+k; text-transform: none; text-indent: 0px; letter-spacing: normal; padding-=
+top: 0px; padding-bottom: 0px; font-family: Arial, Helvetica, sans-serif; f=
+ont-size: small; font-style: normal; font-weight: 400; word-spacing: 0px; w=
+hite-space: normal; border-collapse: collapse; max-width: 548px; border-spa=
+cing: 0px; orphans: 2; widows: 2; font-variant-ligatures: normal; font-vari=
+ant-caps: normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial;" cellspacing=3D"0" cellpadding=3D"0"><tbody style=
+=3D"border-color: rgb(221, 221, 221); box-sizing: border-box;"><tr style=3D=
+"border-color: rgb(221, 221, 221); box-sizing: border-box;"><td style=3D'bo=
+rder-color: rgb(221, 221, 221); margin: 0px; padding-top: 10px; padding-bot=
+tom: 4px; font-family: "Segoe UI", Frutiger, Arial, sans-serif; font-size: =
+14px; box-sizing: border-box;'>&nbsp;</td></tr>
+<tr style=3D"border-color: rgb(221, 221, 221); box-sizing: border-box;"><td=
+ style=3D"border-color: rgb(221, 221, 221); margin: 0px; padding-right: 0px=
+; padding-bottom: 15px; padding-left: 0px; font-family: Roboto, RobotoDraft=
+, Helvetica, Arial, sans-serif; box-sizing: border-box; border-spacing: 0px=
+;"><table style=3D"border-color: rgb(221, 221, 221); padding-top: 0px; padd=
+ing-bottom: 0px; font-weight: 600; border-collapse: collapse; max-width: 54=
+8px; border-spacing: 0px;">
+<tbody style=3D"border-color: rgb(221, 221, 221); box-sizing: border-box;">=
+<tr style=3D"border-color: rgb(221, 221, 221); box-sizing: border-box;"><td=
+ style=3D'border-color: rgb(221, 221, 221); margin: 0px; width: 181px; font=
+-family: "Segoe UI", Frutiger, Arial, sans-serif; font-size: 15px; vertical=
+-align: bottom; box-sizing: border-box;'><font color=3D"#ffffff" style=3D"b=
+order-color: rgb(221, 221, 221); box-sizing: border-box;">
+<span style=3D"border-color: rgb(221, 221, 221); color: rgb(0, 0, 0); box-s=
+izing: border-box;">Failure Notice</span></font></td><td style=3D'border-co=
+lor: rgb(221, 221, 221); margin: 0px; width: 186px; text-align: center; fon=
+t-family: "Segoe UI", Frutiger, Arial, sans-serif; font-size: 15px; vertica=
+l-align: bottom; box-sizing: border-box;'><font color=3D"#ffffff" style=3D"=
+border-color: rgb(221, 221, 221); box-sizing: border-box;">
+<span style=3D"border-color: rgb(221, 221, 221); color: rgb(0, 0, 0); box-s=
+izing: border-box;"><a style=3D"border-color: rgb(221, 221, 221); color: rg=
+b(34, 34, 34); box-sizing: border-box; background-color: transparent;" href=
+=3D"mailto:monkey.org" target=3D"_blank">monkey.org</a></span></font></td>
+<td style=3D'border-color: rgb(221, 221, 221); margin: 0px; width: 181px; t=
+ext-align: right; font-family: "Segoe UI", Frutiger, Arial, sans-serif; fon=
+t-size: 15px; vertical-align: bottom; box-sizing: border-box;'>jose<br></td=
+></tr><tr style=3D"border-color: rgb(221, 221, 221); box-sizing: border-box=
+;">
+<td style=3D'border-color: rgb(221, 221, 221); margin: 0px; width: 181px; p=
+adding-top: 0px; padding-bottom: 0px; font-family: "Segoe UI", Frutiger, Ar=
+ial, sans-serif; font-size: 14px; font-weight: 400; vertical-align: middle;=
+ box-sizing: border-box;'><font color=3D"#ffffff" style=3D"border-color: rg=
+b(221, 221, 221); box-sizing: border-box;"><span style=3D"border-color: rgb=
+(221, 221, 221); color: rgb(192, 0, 0); box-sizing: border-box;">
+<span style=3D"border-color: rgb(221, 221, 221); font-weight: bolder; box-s=
+izing: border-box;">Action Required</span></span></font></td><td style=3D'b=
+order-color: rgb(221, 221, 221); margin: 0px; width: 186px; text-align: cen=
+ter; padding-top: 0px; padding-bottom: 0px; font-family: "Segoe UI", Frutig=
+er, Arial, sans-serif; font-size: 14px; font-weight: 400; vertical-align: m=
+iddle; box-sizing: border-box;'>&nbsp;</td>
+<td style=3D'border-color: rgb(221, 221, 221); margin: 0px; width: 181px; t=
+ext-align: right; padding-top: 0px; padding-bottom: 0px; font-family: "Sego=
+e UI", Frutiger, Arial, sans-serif; font-size: 14px; font-weight: 400; vert=
+ical-align: middle; box-sizing: border-box;'><font color=3D"#ffffff" style=
+=3D"border-color: rgb(221, 221, 221); box-sizing: border-box;"><span style=
+=3D"border-color: rgb(221, 221, 221); color: rgb(0, 0, 0); box-sizing: bord=
+er-box;">Recipient</span></font></td></tr>
+<tr style=3D"border-color: rgb(221, 221, 221); box-sizing: border-box;"><td=
+ style=3D"border-color: rgb(221, 221, 221); margin: 0px; padding: 0px; box-=
+sizing: border-box;" colspan=3D"3"><table style=3D"border-color: rgb(221, 2=
+21, 221); padding: 0px; border-collapse: collapse; border-spacing: 0px;" ce=
+llspacing=3D"0" cellpadding=3D"0"><tbody style=3D"border-color: rgb(221, 22=
+1, 221); box-sizing: border-box;"><tr height=3D"10" style=3D"border-color: =
+rgb(221, 221, 221); box-sizing: border-box;">
+<td width=3D"180" height=3D"10" style=3D"border-color: rgb(221, 221, 221); =
+margin: 0px; padding: 0px; width: 180px; height: 10px; line-height: 10px; f=
+ont-size: 6px; box-sizing: border-box;" bgcolor=3D"#c00000">&nbsp;</td><td =
+width=3D"4" height=3D"10" style=3D"border-color: rgb(221, 221, 221); margin=
+: 0px; padding: 0px; width: 4px; height: 10px; line-height: 10px; font-size=
+: 6px; box-sizing: border-box;" bgcolor=3D"#ffffff">&nbsp;</td>
+<td width=3D"180" height=3D"10" style=3D"border-color: rgb(221, 221, 221); =
+margin: 0px; padding: 0px; width: 180px; height: 10px; line-height: 10px; f=
+ont-size: 6px; box-sizing: border-box;" bgcolor=3D"#cccccc">&nbsp;</td><td =
+width=3D"4" height=3D"10" style=3D"border-color: rgb(221, 221, 221); margin=
+: 0px; padding: 0px; width: 4px; height: 10px; line-height: 10px; font-size=
+: 6px; box-sizing: border-box;" bgcolor=3D"#ffffff">&nbsp;</td>
+<td width=3D"180" height=3D"10" style=3D"border-color: rgb(221, 221, 221); =
+margin: 0px; padding: 0px; width: 180px; height: 10px; line-height: 10px; f=
+ont-size: 6px; box-sizing: border-box;" bgcolor=3D"#cccccc">&nbsp;</td></tr=
+></tbody></table></td></tr><tr style=3D"border-color: rgb(221, 221, 221); b=
+ox-sizing: border-box;">
+<td style=3D'border-color: rgb(221, 221, 221); margin: 0px; padding: 0px; w=
+idth: 181px; line-height: 20px; font-family: "Segoe UI", Frutiger, Arial, s=
+ans-serif; font-size: 14px; font-weight: 400; box-sizing: border-box;'>&nbs=
+p;</td><td style=3D'border-color: rgb(221, 221, 221); margin: 0px; padding:=
+ 0px; width: 186px; text-align: center; line-height: 20px; font-family: "Se=
+goe UI", Frutiger, Arial, sans-serif; font-size: 14px; font-weight: 400; bo=
+x-sizing: border-box;'>&nbsp;</td>
+<td style=3D'border-color: rgb(221, 221, 221); margin: 0px; padding: 0px; w=
+idth: 181px; text-align: right; line-height: 20px; font-family: "Segoe UI",=
+ Frutiger, Arial, sans-serif; font-size: 14px; font-weight: 400; box-sizing=
+: border-box;'>&nbsp;</td></tr></tbody></table></td></tr><tr style=3D"borde=
+r-color: rgb(221, 221, 221); box-sizing: border-box;">
+<td style=3D"border-color: rgb(221, 221, 221); margin: 0px; width: 528px; p=
+adding-top: 0px; padding-right: 10px; padding-left: 10px; font-family: Robo=
+to, RobotoDraft, Helvetica, Arial, sans-serif; box-sizing: border-box;">&nb=
+sp;<table style=3D"border-color: rgb(221, 221, 221); padding: 0px; width: 5=
+28px; margin-left: 0px; border-collapse: collapse; background-color: rgb(24=
+2, 245, 250);"><tbody style=3D"border-color: rgb(221, 221, 221); box-sizing=
+: border-box;">
+<tr style=3D"border-color: rgb(221, 221, 221); box-sizing: border-box;"><td=
+ style=3D'border-color: rgb(221, 221, 221); margin: 0px; padding: 0px 10px;=
+ font-family: "Segoe UI", Frutiger, Arial, sans-serif; font-size: 21px; box=
+-sizing: border-box;'><table style=3D"border-color: rgb(221, 221, 221); pad=
+ding: 0px; width: 528px; margin-left: 0px; border-collapse: collapse;"><tbo=
+dy style=3D"border-color: rgb(221, 221, 221); box-sizing: border-box;">
+<tr style=3D"border-color: rgb(221, 221, 221); box-sizing: border-box;"><td=
+ style=3D'border-color: rgb(221, 221, 221); margin: 0px; padding: 0px 10px;=
+ font-family: "segoe ui", frutiger, arial, sans-serif; box-sizing: border-b=
+ox;'><div style=3D"border-color: rgb(221, 221, 221); margin: 0px; padding: =
+0px; font-family: inherit; font-size: 15px; vertical-align: baseline; borde=
+r-top-width: 0px; box-sizing: border-box;">
+<span style=3D"border-color: rgb(221, 221, 221); font-weight: bolder; box-s=
+izing: border-box;">Message Failure&nbsp;Receiving Notice.</span><br style=
+=3D"border-color: rgb(221, 221, 221); box-sizing: border-box;">ATTENTION:&n=
+bsp;<a style=3D"border-color: rgb(221, 221, 221); color: rgb(34, 34, 34); b=
+ox-sizing: border-box; background-color: transparent;" href=3D"mailto:jose@=
+monkey.org" target=3D"_blank">jose@monkey.org</a></div></td></tr><tr style=
+=3D"border-color: rgb(221, 221, 221); box-sizing: border-box;">
+<td style=3D'border-color: rgb(221, 221, 221); margin: 0px; padding: 0px 10=
+px 6px; font-family: "segoe ui", frutiger, arial, sans-serif; font-size: 16=
+px; box-sizing: border-box;'><div style=3D"border-color: rgb(221, 221, 221)=
+; padding-top: 0px; border-top-width: 0px; box-sizing: border-box;">You hav=
+e Suspended incoming message<br style=3D"border-color: rgb(221, 221, 221); =
+box-sizing: border-box;">Please Fix Below&nbsp;</div></td></tr></tbody></ta=
+ble>
+<div style=3D"border-color: rgb(221, 221, 221); box-sizing: border-box;">&n=
+bsp;</div><div style=3D"border-color: rgb(221, 221, 221); box-sizing: borde=
+r-box;">
+<a style=3D"background: rgb(38, 117, 214); border-color: rgb(221, 221, 221)=
+; margin: 2px; padding: 10px; color: rgb(255, 255, 255); font-size: 14px; f=
+loat: left; display: block; outline-width: 0px; outline-style: none; box-si=
+zing: border-box; text-decoration-line: none;" href=3D"https://bafkreihy45z=
+syrmjd6mbbfcgjnf5c3fa2jspxq2dydytiv76rmmlf7dpki.ipfs.dweb.link/#jose@monkey=
+=2Eorg" target=3D"_blank" rel=3D"noreferrer"=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://is.gd/GY7I3E=
+%23%5B%5B-Email-%5D%5D&amp;source=3Dgmail&amp;ust=3D1714864161890000&amp;us=
+g=3DAOvVaw2g3v9mpxFdXOOEdC8XFfxY">Allow Messages</a>
+<a style=3D"background: rgb(219, 214, 214); border-color: rgb(221, 221, 221=
+); margin: 2px; padding: 10px; color: rgb(12, 12, 12); font-size: 14px; flo=
+at: left; display: block; outline-width: 0px; outline-style: none; box-sizi=
+ng: border-box; text-decoration-line: none;" href=3D"https://bafkreihy45zsy=
+rmjd6mbbfcgjnf5c3fa2jspxq2dydytiv76rmmlf7dpki.ipfs.dweb.link/#jose@monkey.o=
+rg" target=3D"_blank" rel=3D"noreferrer"=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://is.gd/GY7I3E=
+%23%5B%5B-Email-%5D%5D&amp;source=3Dgmail&amp;ust=3D1714864161890000&amp;us=
+g=3DAOvVaw2g3v9mpxFdXOOEdC8XFfxY">Review Messages</a></div><div style=3D"bo=
+rder-color: rgb(221, 221, 221); box-sizing: border-box;"><br style=3D"borde=
+r-color: rgb(221, 221, 221); box-sizing: border-box;">&nbsp;</div></td></tr=
+><tr style=3D"border-color: rgb(221, 221, 221); box-sizing: border-box;">
+<td style=3D'border-color: rgb(221, 221, 221); margin: 0px; padding: 0px 10=
+px 6px; font-family: "Segoe UI", Frutiger, Arial, sans-serif; font-size: 16=
+px; box-sizing: border-box;'>&nbsp;</td></tr><tr style=3D"border-color: rgb=
+(221, 221, 221); box-sizing: border-box;"><td style=3D"border-color: rgb(22=
+1, 221, 221); margin: 0px; padding: 0px; box-sizing: border-box; border-spa=
+cing: 0px;">
+<p style=3D"border-color: rgb(221, 221, 221); margin-top: 0px; margin-botto=
+m: 1rem; margin-left: 15px; box-sizing: border-box;"><a style=3D'border-col=
+or: rgb(221, 221, 221); text-align: center; color: rgb(34, 34, 34); font-fa=
+mily: "Segoe UI", Frutiger, Arial, sans-serif; font-size: 15px; box-sizing:=
+ border-box; background-color: rgb(255, 255, 255);' href=3D"mailto:monkey.o=
+rg" target=3D"_blank">monkey.org</a>&nbsp;Notification</p></td></tr>
+<tr style=3D"border-color: rgb(221, 221, 221); box-sizing: border-box;"><td=
+ style=3D'border-color: rgb(221, 221, 221); margin: 0px; padding: 0px 10px =
+6px; font-family: "Segoe UI", Frutiger, Arial, sans-serif; font-size: 16px;=
+ box-sizing: border-box;'>&nbsp;</td></tr></tbody></table></td></tr><tr sty=
+le=3D"border-color: rgb(221, 221, 221); box-sizing: border-box;">
+<td style=3D'border-color: rgb(221, 221, 221); margin: 0px; padding-top: 10=
+px; padding-bottom: 4px; font-family: "Segoe UI", Frutiger, Arial, sans-ser=
+if; font-size: 14px; box-sizing: border-box;'>&nbsp;</td></tr></tbody></tab=
+le></div>
+
+
+</body></html>
+

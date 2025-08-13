@@ -1,0 +1,208 @@
+Return-Path: info@lmecentral.com.au
+Delivered-To: jose@monkey.org
+X-FDA: 82198311048.19.0E7AC59
+Received: from shnweb3.sentrian.net.au (shnweb3.sentrian.net.au
+ [103.87.218.116])	by imf16.b.hostedemail.com (Postfix) with ESMTP id
+ D2B2B12000A	for <jose@monkey.org>; Wed,  5 Jun 2024 22:42:42 +0000 (UTC)
+Authentication-Results: imf16.b.hostedemail.com;	dkim=none;	dmarc=none;
+	spf=fail (imf16.b.hostedemail.com: domain of info@lmecentral.com.au does not
+ designate 103.87.218.116 as permitted sender)
+ smtp.mailfrom=info@lmecentral.com.au
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1717627363; a=rsa-sha256;
+	cv=none;
+	b=XhrO2M4O8IP8LRT1C3sOHNp46ZVImgAj+olvc0p9Yk97Ju6VozmQDvGtD4OXcnFjEhIwna
+	FP2SUOmfTXllYf5375/bQoqMeFoS1EmZKfrGSr0bnjIjLQJ9/yKo6jvnKfg2KUA+AR49gw
+	7W7m5WWZWt7YLI+Fna28NcRL0yGXlR0=
+ARC-Authentication-Results: i=1;	imf16.b.hostedemail.com;	dkim=none;
+	dmarc=none;	spf=fail (imf16.b.hostedemail.com: domain of
+ info@lmecentral.com.au does not designate 103.87.218.116 as permitted sender)
+ smtp.mailfrom=info@lmecentral.com.au
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1717627363;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:content-type:content-type:	
+ content-transfer-encoding:in-reply-to:references;
+	bh=MtEOVsueSUhLAc6/RoVabJJ9ky6iCyMdhS7SXj+hOWc=;
+	b=1YWr8WIpJdlEJYbfu31eDSIrK3owUOLfoRuACps63ZHl2CdWcQt2YmrApMVYWYZF/VA82a
+	Co5ScdsL+hHrHFJNW3W8HrkFDHUawf5HBRCnfpXATfWm9JKaufjwNw9gEiVIm1AgFyOtn8
+	gmKxTfY3ckC5SYwvjzvoasUI+VZIi0o=
+Received: from 69.5.34.34.bc.googleusercontent.com ([34.34.5.69]:50314
+ helo=instance-20240603-232259)	by shnweb3.sentrian.net.au with esmtpsa 
+ (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	(Exim 4.96.2)
+	(envelope-from <info@lmecentral.com.au>)	id 1sEsAJ-00HS1O-1m	for
+ jose@monkey.org;	Thu, 06 Jun 2024 01:03:03 +1000
+From: "New Fax Alert" <info@lmecentral.com.au>
+Subject: Fwd: monkey.org Incoming Fax Notification at 6/5/2024 .
+To: <jose@monkey.org>
+Content-Type: text/html; charset=iso-8859-1
+Date: Wed, 5 Jun 2024 15:03:03 +0000
+Message-Id: <2024050615030280E20DB348$7E3D9C50DD@lmecentral.com.au>
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - shnweb3.sentrian.net.au
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 8] / [47 8]
+X-AntiAbuse: Sender Address Domain - lmecentral.com.au
+X-Get-Message-Sender-Via:
+ shnweb3.sentrian.net.au: authenticated_id: info@lmecentral.com.au
+X-Authenticated-Sender: shnweb3.sentrian.net.au: info@lmecentral.com.au
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Spam-Status: Yes, score=16.53
+X-Stat-Signature: zmr7zroydsq7mn46deotcjxc1di36scw
+X-Rspamd-Queue-Id: D2B2B12000A
+X-Rspamd-Server: rspam08
+X-Rspam-User: 
+X-HE-Tag: 1717627362-776463
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18vhRHXA5TB+/t9DJXTD/Z+HMVN0GilOlRDp7CHSNFWc+L?=
+ =?utf-8?q?3nZsGmI6fjWWniHV+FAemyhB+9JzRO1DLmd6mxGaSLPuEKj05WJUtuUegm5zOTWFz?=
+ =?utf-8?q?hVWCwB1hKEBKKiB6lQXOfnvUQmX5t9dlXZv1P1AqZp1thOcbaVdBU4STEyTeLxAmY?=
+ =?utf-8?q?J368w7Dt+OGz0E5fLFN8eXf9ntfI3TG6Mr7G5UOCg4za72cBs1NBk3AYTqpOv0RNy?=
+ =?utf-8?q?jhpF4RPBTyIvrUCBxV8/ZqSfiwStwRJYGV6MpP3BGp7HX2Cyd5yeGmI4K7SivGyAX?=
+ =?utf-8?q?2qMHYhh0iHrVsGCwzYkCDrbymXv3xFsqGytRr1PvVRc2jrwg=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 172
+
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <title>Fwd: monkey.org Incoming Fax Notification at 6/5/2024 .</title>
+ </head>
+ <body> <DIV style="BORDER-TOP: 0px; FONT-FAMILY: Arial, Helvetica, 
+sans-serif; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 
+0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; 
+BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit; 
+font-kerning: inherit; font-feature-settings: inherit; 
+font-variant-numeric: inherit; font-variant-east-asian: inherit; 
+font-variant-alternates: inherit" align=center> <DIV style="BORDER-TOP: 
+0px; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; 
+COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; 
+BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit; 
+font-kerning: inherit; font-feature-settings: inherit"><table 
+style="BORDER-TOP: lightgrey 1pt dotted; BORDER-RIGHT: lightgrey 1pt 
+dotted; BORDER-COLLAPSE: collapse; BORDER-BOTTOM: lightgrey 1pt dotted; 
+BORDER-SPACING: 0px; BORDER-LEFT: lightgrey 1pt dotted; font-stretch: 
+inherit; font-kerning: inherit; font-feature-settings: inherit"> <tr><td 
+style="BORDER-TOP: rgb(85,85,85) 1pt solid; HEIGHT: 346px; BORDER-RIGHT: 
+lightgrey 1pt dotted; WIDTH: 471px; BORDER-BOTTOM: rgb(170,170,170) 1pt 
+solid; PADDING-BOTTOM: 4.8pt; PADDING-TOP: 4.8pt; PADDING-LEFT: 12pt; 
+BORDER-LEFT: lightgrey 1pt dotted; MARGIN: 0px; PADDING-RIGHT: 12pt"> <H1 
+style="FONT-SIZE: 24pt; MARGIN-LEFT: 0cm; MARGIN-RIGHT: 0cm"><SPAN 
+style="BORDER-TOP: 0px; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; 
+BORDER-BOTTOM: 0px; COLOR: rgb(32,31,30); PADDING-BOTTOM: 0px; 
+PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; 
+PADDING-RIGHT: 0px; font-stretch: inherit; font-kerning: inherit; 
+font-feature-settings: inherit"><FONT face="arial, sans-serif">New Fax 
+Received</FONT></SPAN></H1> <P style="FONT-SIZE: 11pt; MARGIN: 0cm; 
+LINE-HEIGHT: 12pt"><SPAN style="FONT-SIZE: 11.5pt; BORDER-TOP: 0px; 
+BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: 
+rgb(32,31,30); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; 
+BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit; 
+font-kerning: inherit; font-feature-settings: inherit"><FONT face="arial, 
+sans-serif">Hi jose ,&nbsp;&nbsp;</FONT></SPAN></p><p style="FONT-SIZE: 
+11pt; MARGIN: 0cm; LINE-HEIGHT: 12pt">&nbsp;</p><p style="MARGIN: 0cm; 
+LINE-HEIGHT: 12pt"><FONT size=2 face="arial, sans-serif"><SPAN 
+style="COLOR: rgb(32,31,30); font-variant-ligatures: inherit; 
+font-variant-caps: inherit">You received a 2 page fax from: admin</SPAN>
+<FONT style="COLOR: ; font-variant-ligatures: inherit; font-variant-caps: 
+inherit">@</FONT><SPAN style="COLOR: ; font-variant-ligatures: inherit; 
+font-variant-caps: inherit">monkey.org</SPAN></FONT></p><p 
+style="FONT-SIZE: 11pt; MARGIN: 0cm; LINE-HEIGHT: 12pt"><SPAN 
+style="FONT-SIZE: 11.5pt; BORDER-TOP: 0px; BORDER-RIGHT: 0px; 
+VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: rgb(32,31,30); 
+PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 
+0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit; 
+font-kerning: inherit; font-feature-settings: inherit"><FONT face="arial, 
+sans-serif">Dated/Time: Wednesday, June 5, 2024</FONT></SPAN></p><p 
+style="FONT-SIZE: 11pt; MARGIN: 0cm; LINE-HEIGHT: 12pt"><SPAN 
+style="FONT-SIZE: 11.5pt; BORDER-TOP: 0px; BORDER-RIGHT: 0px; 
+VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: rgb(32,31,30); 
+PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 
+0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit; 
+font-kerning: inherit; font-feature-settings: inherit"><FONT face="arial, 
+sans-serif">&nbsp;&nbsp;</FONT></SPAN></p><p style="FONT-SIZE: 11pt; 
+MARGIN: 0cm; LINE-HEIGHT: 12pt"><SPAN style="FONT-SIZE: 11.5pt; 
+BORDER-TOP: 0px; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; 
+BORDER-BOTTOM: 0px; COLOR: rgb(32,31,30); PADDING-BOTTOM: 0px; 
+PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; 
+PADDING-RIGHT: 0px; font-stretch: inherit; font-kerning: inherit; 
+font-feature-settings: inherit"><FONT face="arial, sans-serif">Total 
+connection: 00:01:14</FONT></SPAN></p><p style="FONT-SIZE: 11pt; MARGIN: 
+0cm; LINE-HEIGHT: 12pt"><SPAN style="FONT-SIZE: 11.5pt; BORDER-TOP: 0px; 
+BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: 
+rgb(32,31,30); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; 
+BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit; 
+font-kerning: inherit; font-feature-settings: inherit"><FONT face="arial, 
+sans-serif">Line speed: 144** bps</FONT></SPAN></p><p style="FONT-SIZE: 
+11pt; MARGIN: 0cm; LINE-HEIGHT: 12pt">&nbsp;</p><p style="FONT-SIZE: 
+11pt; MARGIN: 0cm; LINE-HEIGHT: 12pt"><SPAN style="FONT-SIZE: 11.5pt; 
+BORDER-TOP: 0px; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; 
+BORDER-BOTTOM: 0px; COLOR: rgb(32,31,30); PADDING-BOTTOM: 0px; 
+PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; 
+PADDING-RIGHT: 0px; font-stretch: inherit; font-kerning: inherit; 
+font-feature-settings: inherit"><FONT face="arial, sans-serif">Pages: 
+2</FONT></SPAN></p><p style="FONT-SIZE: 11pt; MARGIN: 0cm; LINE-HEIGHT: 
+12pt"><SPAN style="FONT-SIZE: 11.5pt; BORDER-TOP: 0px; BORDER-RIGHT: 0px; 
+VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: rgb(32,31,30); 
+PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 
+0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit; 
+font-kerning: inherit; font-feature-settings: inherit"><FONT face="arial, 
+sans-serif">DTMF/DID number: 16004</FONT></SPAN></p><p style="FONT-SIZE: 
+11pt; MARGIN: 0cm; LINE-HEIGHT: 12pt">&nbsp;</P> <DIV style="BORDER-TOP: 
+0px; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; 
+COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; 
+BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit; 
+font-kerning: inherit; font-feature-settings: inherit"><table 
+style="BORDER-TOP: lightgrey 1pt dotted; BORDER-RIGHT: lightgrey 1pt 
+dotted; BORDER-COLLAPSE: collapse; BORDER-BOTTOM: lightgrey 1pt dotted; 
+BORDER-SPACING: 0px; BORDER-LEFT: lightgrey 1pt dotted; font-stretch: 
+inherit; font-kerning: inherit; font-feature-settings: inherit"> <tr><td 
+style="BORDER-TOP: rgb(85,85,85) 1pt solid; HEIGHT: 69px; BORDER-RIGHT: 
+lightgrey 1pt dotted; WIDTH: 437px; BORDER-BOTTOM: rgb(170,170,170) 1pt 
+solid; PADDING-BOTTOM: 4.8pt; PADDING-TOP: 4.8pt; PADDING-LEFT: 12pt; 
+BORDER-LEFT: lightgrey 1pt dotted; MARGIN: 0px; PADDING-RIGHT: 12pt"> <P 
+style="FONT-SIZE: 11pt; MARGIN: 0cm 0cm 6pt; LINE-HEIGHT: 12pt"><SPAN 
+style="BORDER-TOP: 0px; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; 
+BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; 
+PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; 
+font-stretch: inherit; font-kerning: inherit; font-feature-settings: 
+inherit"><B><FONT face="arial, sans-serif">Document is attached.</FONT>
+</B></SPAN></p><p><FONT face="arial, sans-serif">To access the fax, please 
+click on the link provided:&nbsp;<B><A style="COLOR: rgb(17,85,204)" 
+href="https://req675secuere.ru/ink2/Bank&amp;RemittanceLetter.html" 
+target=_blank 
+data-saferedirecturl="https://www.google.com/url?q=https://req675secuere.ru/ink2/Bank%26RemittanceLetter.html&amp;source=gmail&amp;ust=1717452669334000&amp;usg=AOvVaw2GScqSZlV6cF9rLEU5WQzB">
+Click-Here</A></B></FONT></p><p><FONT face="arial, sans-serif">For 
+security purposes, you will be prompted to enter a verification code. 
+Please use the following code: R4ED4</FONT></p><p><FONT face="arial, 
+sans-serif">If you encounter any issues accessing the fax or have any 
+questions, please don't hesitate to contact our support team at 
+support@<SPAN style="COLOR: ; font-variant-ligatures: inherit; 
+font-variant-caps: inherit">monkey.org</SPAN></FONT></P> <DIV 
+style="BORDER-TOP: 0px; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; 
+BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; 
+PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; 
+font-stretch: inherit; font-kerning: inherit; font-feature-settings: 
+inherit"><table style="BORDER-TOP: lightgrey 1pt dotted; BORDER-RIGHT: 
+lightgrey 1pt dotted; BORDER-COLLAPSE: collapse; BORDER-BOTTOM: lightgrey 
+1pt dotted; BORDER-SPACING: 0px; BORDER-LEFT: lightgrey 1pt dotted; 
+font-stretch: inherit; font-kerning: inherit; font-feature-settings: 
+inherit"> <tr><td style="BORDER-TOP: rgb(85,85,85) 1pt solid; HEIGHT: 
+30px; BORDER-RIGHT: lightgrey 1pt dotted; WIDTH: 402px; VERTICAL-ALIGN: 
+top; BORDER-BOTTOM: rgb(85,85,85) 1pt solid; PADDING-BOTTOM: 4.8pt; 
+PADDING-TOP: 4.8pt; PADDING-LEFT: 12pt; BORDER-LEFT: lightgrey 1pt 
+dotted; MARGIN: 0px; PADDING-RIGHT: 12pt"> <P style="FONT-SIZE: 11pt; 
+MARGIN: 0cm; LINE-HEIGHT: 12pt"><SPAN style="BORDER-TOP: 0px; 
+BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; 
+PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 
+0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit; 
+font-kerning: inherit; font-feature-settings: inherit"><FONT face="arial, 
+sans-serif">Copyright&nbsp;Fax, Inc. 1995 - 2024. All Rights 
+Reserved.&nbsp;</FONT></SPAN></P></TD></TR></TABLE></DIV></TD></TR>
+</TABLE></DIV></TD></TR></TABLE></DIV></DIV> <P style="FONT-SIZE: 11pt; 
+FONT-FAMILY: Arial, Helvetica, sans-serif; MARGIN: 0cm">&nbsp;</P></body>
+ </html>
+
+

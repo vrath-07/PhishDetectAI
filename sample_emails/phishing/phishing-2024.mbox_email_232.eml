@@ -1,0 +1,95 @@
+Return-Path: MAILER-DAEMON
+Delivered-To: jose@monkey.org
+X-FDA: 82441254084.40.D7F6DAE
+Received: from ab-xy.top (ab-xy.top [93.84.115.145])
+	by imf04.b.hostedemail.com (Postfix) with ESMTP id 8852F160006
+	for <jose@monkey.org>; Sun, 11 Aug 2024 21:28:41 +0000 (UTC)
+Authentication-Results: imf04.b.hostedemail.com;	dkim=none;	spf=pass
+ (imf04.b.hostedemail.com: domain of ab-xy.top designates 93.84.115.145 as
+ permitted sender) smtp.helo=ab-xy.top;	dmarc=pass (policy=quarantine)
+ header.from=ab-xy.top
+Date: Mon, 12 Aug 2024 00:28:39 +0300
+From: postmaster@ab-xy.top
+Subject: Delivery report
+To: jose@monkey.org
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+    boundary="report66B92D07@ab-xy.top"
+X-Rspamd-Queue-Id: 8852F160006
+X-Stat-Signature: 9c79sj6tzfcmw3mmtage8p1nritn7ka9
+X-Rspam-User: 
+X-Spam-Status: Yes, score=16.70
+X-Rspamd-Server: rspam12
+X-HE-Tag: 1723411721-916782
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+IRnZJc5y2lcJIZnGA0NSKHD/8YszqUwov3i1gPPmWL64?=
+ =?utf-8?q?1hp3E+s/zLtza7COCrpu9FfkvukNYutMz07RC+3DKYRe9dvJnNue59z+Aijbs4a//?=
+ =?utf-8?q?9kqI9EZ8Sui4g2mDDkbHIUwCe/A/0gpNedsUpjHbeZN39dV8kgpEtjyKVZ7CaEukI?=
+ =?utf-8?q?44fi+JNsLf1fnlE/B5mLTRInDM8qFasPo9tRsscVZXTHL0dqzNZhQ1FwVPeTPg89Q?=
+ =?utf-8?q?0yLuZXImIuPQO83pu4hC4rB+EeRKrEZgof4fxfk9q+Vo1BpE4lHJI35RNkPJdUmwi?=
+ =?utf-8?q?kZiD3MQ/TvJloorQDFnI3MI5eKjQzYO8YSktCOiBluIOY+MyRfBZ6wzUFH/37G9sK?=
+ =?utf-8?q?r9gFP8CZDvkUGhlnr+m5o0+KuKMeM+ySQX2UlWThKeJyxfZ+VPjyD3yxKpVhkLHey?=
+ =?utf-8?q?+zYgbhfXeiznXVPtk8YYFCAJNhrvHb7IRlGQoj9EwZVuo9tTpGla0Ox7DJiY4meIy?=
+ =?utf-8?q?pb+TpCCFihKQDiCU4TdSg+D0QXpBHjy6YErZSBoqyIAZpB/sqFmCdOEWjz3XQh5Lz?=
+ =?utf-8?q?+z6kNVlGdaaQICayan48Q3DcLRNwOe7/SQMeSox1C2jYiyEMR6VN/GU1OEBFIwCNj?=
+ =?utf-8?q?Sp0mD0bam8x+w4S9I2r8uHxIV/KINgt86a6e+pu2KqXE1fGE+6mV6pgNe/tWPmTJE?=
+ =?utf-8?q?iiHXOT3sITrrnrdmQ2XnjPFiV4vP/rTu2oCHc7Y831I5CIBLDafQK9Ny1qmK3DCJB?=
+ =?utf-8?q?tAykYHJ8d3d1DaCADws6+GiiSbFdw5fTzQLD+SW0WWnhzRdtQfTNKv5L0yR810Xzq?=
+ =?utf-8?q?qfIMyaznT0z5oJhump4NYBcVq3K9jtm5LPZ1SsTkxbfmVcGxOIbMOCICllcd/3V4s?=
+ =?utf-8?q?e4G/Y9bu6Sb2ALlQpMKdm6m1EKu+EBOZqRXgeI2lvitx9sfTKACSs8TH+CpeTcpA/?=
+ =?utf-8?q?RwMFGAjs0HihuIfpQISm4Y_5iOSAVF5DLB1hDigwHndUJkN84P8xYZcQTUWGB8TAY?=
+ =?utf-8?q?5Ykf/xPr32iu5FKGYJiS/MHczLjXkB1RYnBDW+XEtbv/jITGrxmnrQr8PIihh9zpI?=
+ =?utf-8?q?s2O/fNFJv6aX52TZ1Fh43sLM3yXf1Q5a4FSknp2KhlSMJ7GaOFlm7yCxKqea0FjOD?=
+ =?utf-8?q?G55KpIh7BJNHHiknr12YZlg7da5UIiD8MoOwf5Z16gyOaiBMBJ6QAlcLjxXSKWAJe?=
+ =?utf-8?q?q8J7/act5I86LT7sLgmbgglC55TD5U9qtH9jw/tZVwpPuk2Yt6k0DqDjSkNvPPX7y?=
+ =?utf-8?q?8MG6DTjIaarVPL0Lec2MFJorUev3GPQLI3qpRdUZorPx3I91y6MEll1F25rXW7Eo2?=
+ =?utf-8?q?Sey6rrv8GhvjA4I2CMHEnm+nxHWsWdsvmmm8mHw7lHhg=3D=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 232
+
+
+--report66B92D07@ab-xy.top
+Content-Type: text/plain
+
+Hello, this is the mail server on ab-xy.top.
+
+I am sending you this message to inform you on the delivery status of a
+message you previously sent.  Immediately below you will find a list of
+the affected recipients;  also attached is a Delivery Status Notification
+(DSN) report in standard format, as well as the headers of the original
+message.
+
+  <jose@monkey.org>  delivery failed; will not continue trying
+
+--report66B92D07@ab-xy.top
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns;ab-xy.top
+X-PowerMTA-VirtualMTA: web1
+Received-From-MTA: dns;monkey.org (173.205.83.72)
+Arrival-Date: Mon, 12 Aug 2024 00:28:35 +0300
+
+Final-Recipient: rfc822;jose@monkey.org
+Action: failed
+Status: 5.7.1 (delivery not authorized)
+Remote-MTA: dns;mx.monkey.org.cust.b.hostedemail.com (64.98.38.4)
+Diagnostic-Code: smtp;550 5.7.1 Message contains spam or virus. (110)
+ [1723411719-431717] DMARC policy violation.
+X-PowerMTA-BounceCategory: spam-related
+
+--report66B92D07@ab-xy.top
+Content-Type: text/rfc822-headers
+
+From: monkey.org<jose@monkey.org>
+To: jose@monkey.org
+Subject: monkey.org Password Management Notification!
+Date: 11 Aug 2024 17:15:55 -0700
+Message-ID: <20240811171554.071F5ABEA802232D@monkey.org>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+--report66B92D07@ab-xy.top--
+

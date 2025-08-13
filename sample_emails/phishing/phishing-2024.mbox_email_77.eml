@@ -1,0 +1,164 @@
+Return-Path:
+ 76228-140813-231605-16383-jose=monkey.org@mail.medicinalgardenkit.za.com
+Delivered-To: jose@monkey.org
+X-FDA: 81913524126.28.35DBFC5
+Received: from emma.medicinalgardenkit.za.com (unknown [109.236.50.105])
+	by imf03.b.hostedemail.com (Postfix) with ESMTP id 2F10512000C
+	for <jose@monkey.org>; Tue, 19 Mar 2024 11:12:00 +0000 (UTC)
+Authentication-Results: imf03.b.hostedemail.com;	dkim=pass
+ header.d=medicinalgardenkit.za.com header.s=k1 header.b="vNjN/gNo";	spf=pass
+ (imf03.b.hostedemail.com: domain of
+ "76228-140813-231605-16383-jose=monkey.org@mail.medicinalgardenkit.za.com"
+ designates 109.236.50.105 as permitted sender) =?utf-8?q?smtp=2Emailfrom=3D?=
+ =?utf-8?q?=2276228-140813-231605-16383-jose=3Dmonkey=2Eorg=40mail=2Emedicin?=
+ =?utf-8?q?algardenkit=2Eza=2Ecom=22=3B?=	dmarc=pass (policy=quarantine)
+ header.from=medicinalgardenkit.za.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1710846721; a=rsa-sha256;
+	cv=none;
+	b=Z3c8njScd+UQpxW+Ow95RpWEmbRb0Tcu5ifQ+Nal6olop9h5PoMWkOTxrwSKIAjyEEfamn
+	5RmJHuuD068F/+0YersTZaLg+V/TWeIlYcl6iDJ0KAGYK3IUJnMQSBOGe1efvF0joUDWVl
+	+x7UWl10/XKnOy8DjSxU4eRB3ad4YHU=
+ARC-Authentication-Results: i=1;	imf03.b.hostedemail.com;	dkim=pass
+ header.d=medicinalgardenkit.za.com header.s=k1 header.b="vNjN/gNo";	spf=pass
+ (imf03.b.hostedemail.com: domain of
+ "76228-140813-231605-16383-jose=monkey.org@mail.medicinalgardenkit.za.com"
+ designates 109.236.50.105 as permitted sender) =?utf-8?q?smtp=2Emailfrom=3D?=
+ =?utf-8?q?=2276228-140813-231605-16383-jose=3Dmonkey=2Eorg=40mail=2Emedicin?=
+ =?utf-8?q?algardenkit=2Eza=2Ecom=22=3B?=	dmarc=pass (policy=quarantine)
+ header.from=medicinalgardenkit.za.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1710846721;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=HFXn14aFiTDgAsjXWPqRPIUf+VnQUbkoVrDsb23iQNU=;
+	b=w5ci000fqTB7Hs04wUKJvleGx9rRVL8idEtxGAvHFQajImGug/hL+rj1YqFpQU4SYu14Sn
+	k6K1FVqNGX43aRsrnchB3gk+S5oD1BFKjuoEkiyzloASaNwV2I8HMTpvDUzhT0t9IG8X1Y
+	q0eMwQultcbzEEIGIXmApZa2BWjXukQ=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=k1;
+ d=medicinalgardenkit.za.com;
+ h=Mime-Version:Content-Type:Date:From:Reply-To:Subject:To:Message-ID;
+ i=PeacockRenewal@medicinalgardenkit.za.com; bh=SpCOypW77zCsOgi4NkZg2ImNijU=; 
+ =?utf-8?q?b=3DvNjN/gNo/CNnp5fdxZ/i+FhHoto5Z31SSg4L6Q78xh8q+Ysgjy8xsaaXMGtUc?=
+ =?utf-8?q?86YyhAPxMdVKeGX?=  
+ V7pORYcnfmnnXjMUitJy3isO1aIV64vn++jamxZjYkO+dsKBTBLGIv7WAyed3ZDdCf3oDtlAYEMi
+  
+ F7+PibLHi1DsbOdESbzo0O8oTDzb/Zi1yj2UJ44yqfh2WSFFwosdp9BuJ7ylOdC6dKDC25bvpNLZ
+  
+ LRINeeaNjJIDuJ4Ej1F5m4S1+4JGWcWTWsle1/oK6MPrS538x/miL+rxhsfqpmEdiqVtj/qCaQo0
+   XX666ooWKZ/LU4Zx5j5cjX7Wai6irF3yXgZtvQ==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=k1;
+ d=medicinalgardenkit.za.com; =?utf-8?q?b=3Df3jsH0qfTsrjCTOBm6dP0ulfgaIvLMv5?=
+ =?utf-8?q?l4q78ZXWehIsQ9oYY0c8v4faQCFzG37q3Fstk8fVVidQ?=  
+ gSuo/6YZMdx6lzsWxjH4pbcbtbtOjaC95BsFA32rXrpF/358mbF8mNqlE2S3qFk6V7EmYPU7op0S
+  
+ wdSBf56j1Vpa+db9q5h3sx2/qVDonS3aVl5XVxgN7w2OyCL+6ouJkVq616pwnt8FqjhWgPiJ016p
+  
+ oXDvNgPzfMkcTfvlzMkhvQ73SiJaqYN23EB3jusI28nNAY5Dj9U/sGgw3Kut3RmVZV/5pSvONXj7
+   FYS7u1FvVL4JWdsfH1bBxnVX39oCQmRpYy6KJg==;
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="81ada8d866317abd1d25765abf791e8a_2260d_388b5"
+Date: Tue, 19 Mar 2024 12:07:45 +0100
+From: "Peacock Membership" <PeacockRenewal@medicinalgardenkit.za.com>
+Reply-To: "Peacock" <PeacockRenewal@medicinalgardenkit.za.com>
+Subject: Extend your account for free
+To: <jose@monkey.org>
+Message-ID:
+ <rjrvro88k7tiizl6-zzkla815wp35zxjr-2260d-388b5@medicinalgardenkit.za.com>
+X-Rspamd-Server: rspam01
+X-Rspam-User: 
+X-Spam-Status: No, score=6.73
+X-Stat-Signature: jkahtjednja5zxjjegnc8xaoqfoyzm3q
+X-Rspamd-Queue-Id: 2F10512000C
+X-HE-Tag: 1710846720-988212
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19nyvXvz1jqEE1ApCDVLSeCUcynlMjU5z58A5I2tz+NdWe?=
+ =?utf-8?q?rnT0lORKWZ7rjwCGugoURU584SXWonTmwNLxZSSZ31J7KCa2A4s7OZN/CE158olKL?=
+ =?utf-8?q?5Xj3wVVKNRQYUmwEuyCcEhvsOo/MpYpR3T3klV2e4xqDHl8PPHA+//dNtNBnl/1qQ?=
+ =?utf-8?q?2WP6xpMn/L78DqBinf75+vpguMZEmQNRbs+Jy/a/378BeeL2qY=3D?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 77
+
+--81ada8d866317abd1d25765abf791e8a_2260d_388b5
+Content-Type: text/plain;
+Content-Transfer-Encoding: 8bit
+
+Extend your account for free
+
+http://medicinalgardenkit.za.com/SDeT6EMGH-IwKsUFAeOWbjrEI-cebUkPoIOPBrLNg-abcc8
+
+http://medicinalgardenkit.za.com/P7h2aH3tN8CkPbhOi5kFbYbTjsyTSuv7J6ajApcHFv1eVZo
+
+fitted trains, the brake van has several purposes, and hence jobs for the guard: Operating the brake, train supervision, and illumination & communication.
+
+Firstly, and most importantly, the guard would use the brake van's brakes to assist with keeping the train under control on downwards gradients, and whenever they could see that the locomotive's crew was attempting to slow the train. Route knowledge would allow the guard to initiate the braking before the driver. To aid in this, signalling regulations mandated that signals be left at clear until the entirety of a train (including guard's van) had passed, as the guard would immediately apply brakes upon seeing a signal at danger.
+
+Secondly, they minimized the risk of snapped broken couplings by application of handbrake wheel, which would keep otherwise-loose screw couplings taut between unfitted wagons. This helped mitigate the risk of a coupling failure from uneven acceleration ("snatching" or jerking). This was particularly a problem as locomotives became more powerful. Because coupling failures were a fairly common occurrence when starting an unfitted train, train crews were given specific instruction upon starting a freight train that the footplate crew look back towards the brake van for a signal from the guard (by flag or lamp) that the entire train was moving and all couplings were taut, before accelerating to higher speeds.
+
+
+Preserved SR "Queen Mary" bogie brake van - most British brake vans had just four wheels and a rigid wheelbase. This one has all three side lamps visible.
+A later job of the guard was the provision of side lamps on brake vans. The white lamp is the tail lamp, whilst the grey lamps are the side lamps, along with the standard tail lamp (showing red to the rear and sides) required on the rear of every train. The side lamps showed a white light towards the front and a red light to the side/rear. The front-facing lamps were an indication to the locomotive crew that the train was still complete, whilst the provision of extra red lights to the rear was an additional safety measure. Due to the very low chance of all three lights being out at once, it was stipulated that a freight train passing without any lamps on the rear had split and that the rear portion was potentially running away. These side lamps were used on passenger trains before the adoption of continuous brakes on such trains.
+
+A further purpose for these side lamps was altering the colour of illumination lamps. Because the red indication was provided by a removable filter, a white light c
+
+--81ada8d866317abd1d25765abf791e8a_2260d_388b5
+Content-Type: text/html;
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Newsletter</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body><a href="http://medicinalgardenkit.za.com/If38dsLzdYVG_t43SVgxfzrhfvGfxWVQAIdZic1OVrL8I8Q"><img src="http://medicinalgardenkit.za.com/22eeacad52d832cdf8.jpg" /><img height="1" src="http://www.medicinalgardenkit.za.com/uEQ7qnz_truKJFpBo40RLphS6UpDQCU-PgJj52rWLF0O1vg" width="1" /></a>
+<center>
+<div style="width:600px;font-family:trebuchet ms,helvetica,sans-serif;font-size:15px;"><a href="http://medicinalgardenkit.za.com/SDeT6EMGH-IwKsUFAeOWbjrEI-cebUkPoIOPBrLNg-abcc8" http:="" microsoft.com="" rel="sponsored" target="blank"><b>Button This if the image&nbsp; </b></a>is not appearing correctly..</div>
+&nbsp;
+
+<div style="font-size:25px;"><a href="http://medicinalgardenkit.za.com/SDeT6EMGH-IwKsUFAeOWbjrEI-cebUkPoIOPBrLNg-abcc8" http:="" microsoft.com="" rel="sponsored" style="color:#0000FF;" target="blank"><b>Extend your account for free</b></a><br />
+&nbsp;</div>
+
+<div><a href="http://medicinalgardenkit.za.com/SDeT6EMGH-IwKsUFAeOWbjrEI-cebUkPoIOPBrLNg-abcc8" http:="" microsoft.com="" rel="sponsored" target="blank"><img http:="" microsoft.com="" src="http://medicinalgardenkit.za.com/89dd318925857441fa.png" /></a></div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<a href="http://medicinalgardenkit.za.com/f_6hsRn0P3K0LkYDkMOmHbpTJtfCmFGCXZWBmmTVvjTJ-U4" http:="" microsoft.com="" rel="sponsored" target="blank"><img http:="" microsoft.com="" src="http://medicinalgardenkit.za.com/d68eadb38ae8ecbbf0.png" /></a><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+&nbsp;
+<div style="color:#FFFFFF;font-size:3px;">fitted trains, the brake van has several purposes, and hence jobs for the guard: Operating the brake, train supervision, and illumination &amp; communication. Firstly, and most importantly, the guard would use the brake van&#39;s brakes to assist with keeping the train under control on downwards gradients, and whenever they could see that the locomotive&#39;s crew was attempting to slow the train. Route knowledge would allow the guard to initiate the braking before the driver. To aid in this, signalling regulations mandated that signals be left at clear until the entirety of a train (including guard&#39;s van) had passed, as the guard would immediately apply brakes upon seeing a signal at danger. Secondly, they minimized the risk of snapped broken couplings by application of handbrake wheel, which would keep otherwise-loose screw couplings taut between unfitted wagons. This helped mitigate the risk of a coupling failure from uneven accelerati
+ on (&quot;snatching&quot; or jerking). This was particularly a problem as locomotives became more powerful. Because coupling failures were a fairly common occurrence when starting an unfitted train, train crews were given specific instruction upon starting a freight train that the footplate crew look back towards the brake van for a signal from the guard (by flag or lamp) that the entire train was moving and all couplings were taut, before accelerating to higher speeds. Preserved SR &quot;Queen Mary&quot; bogie brake van - most British brake vans had just four wheels and a rigid wheelbase. This one has all three side lamps visible. A later job of the guard was the provision of side lamps on brake vans. The white lamp is the tail lamp, whilst the grey lamps are the side lamps, along with the standard tail lamp (showing red to the rear and sides) required on the rear of every train. The side lamps showed a white light towards the front and a red light to the side/rear. The front-facin
+ g lamps were an indication to the locomotive crew that the train was still complete, whilst the provision of extra red lights to the rear was an additional safety measure. Due to the very low chance of all three lights being out at once, it was stipulated that a freight train passing without any lamps on the rear had split and that the rear portion was potentially running away. These side lamps were used on passenger trains before the adoption of continuous brakes on such trains. A further purpose for these side lamps was altering the colour of illumination lamps. Because the red indication was provided by a removable filter, a white light c</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<a href="http://medicinalgardenkit.za.com/P7h2aH3tN8CkPbhOi5kFbYbTjsyTSuv7J6ajApcHFv1eVZo" http:="" microsoft.com="" rel="sponsored" target="blank"><img http:="" microsoft.com="" src="http://medicinalgardenkit.za.com/3b97b96cba6e1b9838.png" /></a><br />
+<br />
+<br />
+<br />
+&nbsp;</center>
+</body>
+</html>
+
+--81ada8d866317abd1d25765abf791e8a_2260d_388b5--
+

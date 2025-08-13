@@ -1,0 +1,348 @@
+Return-Path: bounces+17410146-548a-jose=monkey.org@sendgrid.net
+Delivered-To: jose@monkey.org
+X-FDA: 77876628942.03.65A197F
+Received: from csnrwtvt.outbound-mail.sendgrid.net
+ (csnrwtvt.outbound-mail.sendgrid.net [198.37.151.135])	by
+ imf28.b.hostedemail.com (Postfix) with ESMTP id B9A581809AC97	for
+ <jose@monkey.org>; Wed,  3 Mar 2021 00:09:29 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.net; 
+	h=from:subject:mime-version:content-type; s=smtpapi; 
+	bh=JnCa60oVdFKwbt65NHTlf+F1zDH62ps4RYu31xEu8qs=; b=NPPC7fbB30nVf
+	QDoafL4FZ6hKuOOrvcP1phj4mjiPL5OBf84IGvXc3sxBv5unlQ+E71YiYPai3v4+
+	BDjiuwetQP//ng2gH89fs9jEI9xrC9PIG5GT2KJo9yLNWoAUGCYOs7YJnA3BPnhA
+	7orlB6q6lLe2ajSCKKQZdtvt5J7f5s=
+Received: by filter2832p1mdw1.sendgrid.net with SMTP id
+ filter2832p1mdw1-31322-603ED3B2-3E        2021-03-03 00:09:22.785909024 +0000
+ UTC m=+3035.861493821
+Received: from 105.0.3.24 (unknown)
+	by geopod-ismtpd-5-0 (SG) with ESMTP id HLqg8xSRTbSwfafQSV92wQ
+	Wed, 03 Mar 2021 00:09:19.756 +0000 (UTC)
+Message-ID: <E245A54095B94DC1AAF04CD21B6A5DC0@DESKTOP-GIVING>
+From: "Nedbank Credit Card monthly eStatement"
+ <consumerstatements@nedbankestatements.com>
+Subject: Nedbank Credit Card monthly Charges eStatement
+Date: Wed, 03 Mar 2021 00:09:24 +0000 (UTC)
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="----=_NextPart_000_0745_01D70FD1.EB174030"
+X-Priority: 3
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2900.5843
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.5579
+X-SG-EID: =?utf-8?q?uk4PP0eEjut4P8/eKt92EMT2PN5rig6Ts8EnoW54QtAucwGJ3500zLtP?=
+ =?utf-8?q?JCfMMVU4iZHe7J4jfUx2bd_jYGFiNuhhFMwTUtXzfviK9FDe8ymHMumHOX1xq5wMk?=
+ =?utf-8?q?t34XiGgcGbyC3PaeiVmzOw3D2g5qenvGrrRq_aU/2RY+8HhIHOt9mhTnb1fjaFLTX?=
+ =?utf-8?q?dRiUCDkDAFFteGQLty/YVIPyD7pdBkvV9bLuCpABV72nze33Uc?=
+ /cEVESheMvLLURDM32Ects/A12dESOo57AppAUxrplVs/z6RL9SfAhkFarJf1tVyw=
+X-Entity-ID: QCQf5RpGpXc2iFggm9t2GQ==
+X-Spam-Status: No, score=11.04
+X-Stat-Signature: bzac1hbdundcnd5kqyxcgwa3ecfg6u8q
+X-Rspamd-Queue-Id: B9A581809AC97
+X-Rspamd-Server: rspam06
+Received-SPF: none (sendgrid.net>: No applicable sender policy available)
+ receiver=imf28.b.tucows.com; identity=mailfrom;
+ envelope-from="<bounces+17410146-548a-jose=monkey.org@sendgrid.net>";
+ helo=csnrwtvt.outbound-mail.sendgrid.net; client-ip=198.37.151.135
+X-HE-DKIM-Result: pass/pass
+X-Spam-Summary: =?utf-8?q?50=2C0=2C0=2Ceb27d4cdb060b29c=2Cd41d8cd98f00b204?=
+ =?utf-8?q?=2Cbounces+17410146-548a-jose=3Dmonkey=2Eorg=40sendgrid=2Enet=2Cj?=
+ =?utf-8?b?b3NlQG1vbmtleS5vcmcsUlVMRVNfSElUOjI6NDE6NzI6MzU1OjM3OTozODc6NTM5?=
+ =?utf-8?b?OjU0MDo1NDE6NTQyOjU0Mzo1Njc6Njc3Ojg3MTo5NjA6OTYyOjk2Nzo5Njk6OTcz?=
+ =?utf-8?b?Ojk3ODo5Nzk6OTgyOjk4Mzo5ODg6OTg5OjEwMDA6MTE1NToxMTg5OjEyMDg6MTI1?=
+ =?utf-8?q?6=3A1260=3A1263=3A1308=3A1309=3A1313=3A1314=3A1345=3A1381=3A1431?=
+ =?utf-8?q?=3A1432=3A1433=3A1434=3A1436=3A1437=3A1516=3A1517=3A1518=3A1571?=
+ =?utf-8?q?=3A1575=3A1587=3A1588=3A1589=3A1592=3A1594=3A1730=3A1764=3A1776?=
+ =?utf-8?q?=3A1792=3A1801=3A1823=3A2073=3A2076=3A2198=3A2199=3A2380=3A2525?=
+ =?utf-8?q?=3A2527=3A2528=3A2568=3A2610=3A2682=3A2685=3A2693=3A2743=3A2829?=
+ =?utf-8?q?=3A2859=3A2890=3A2892=3A2894=3A2900=3A2903=3A2915=3A2924=3A2926?=
+ =?utf-8?q?=3A2933=3A2937=3A2939=3A2942=3A2945=3A2947=3A2951=3A2954=3A3000?=
+ =?utf-8?q?=3A3022=3A3138=3A3139=3A3140=3A3141=3A3142=3A3167=3A3354=3A3586?=
+ =?utf-8?q?=3A3863=3A3865=3A3866=3A3867=3A3868=3A3870=3A3871=3A3873=3A3874?=
+ =?utf-8?q?=3A3934=3A3936=3A3938=3A3941=3A3944=3A3947=3A3950=3A3953=3A3956?=
+ =?utf-8?q?=3A3959=3A4042=3A4050=3A4250=3A4310=3A4321=3A4383=3A4384=3A4388?=
+ =?utf-8?q?=3A4389=3A4395=3A4430=3A4605=3A5007=3A6117=3A6119=3A6227=3A6238?=
+ =?utf-8?q?=3A6354=3A6506=3A6653=3A6684=3A6747=3A6748=3A7281=3A7689=3A7809?=
+ =?utf-8?q?=3A7875=3A7903=3A8518=3A8599=3A8603=3A8829=3A8957=3A9025=3A9080?=
+ =?utf-8?q?=3A9121=3A9388=3A9467=3A9901=3A9908=3A10049=3A10265=3A10305=3A103?=
+ =?utf-8?q?46=3A10394=3A11026=3A11233=3A11253=3A11473=3A11529=3A11604=3A1165?=
+ =?utf-8?q?7=3A11658=3A11967=3A1204_3=3A12050=3A12297=3A12438=3A12555=3A1274?=
+ =?utf-8?q?0=3A12895=3A12986=3A13139=3A13143=3A13156=3A13163=3A13228=3A13229?=
+ =?utf-8?q?=3A13230=3A13439=3A13972=3A14096=3A14149=3A14404=3A14405=3A14659?=
+ =?utf-8?q?=3A14985=3A21347=3A21397=3A21433=3A21450=3A21451=3A21483=3A21524?=
+ =?utf-8?q?=3A21627=3A21740=3A21789=3A21790=3A21796=3A21819=3A21917=3A21939?=
+ =?utf-8?q?=3A21966=3A21990=3A22059=3A30001=3A30009=3A30012=3A30019=3A30022?=
+ =?utf-8?q?=3A30028=3A30034=3A30037=3A30052=3A30054=3A30055=3A30064=3A30069?=
+ =?utf-8?q?=3A30070=3A30074=3A30075=3A30078=3A30080=3A30089=2C0=2CRBL=3A105?=
+ =?utf-8?b?LjAuMy4yNDpAc2VuZGdyaWQubmV0Ompvc2VAbW9ua2V5Lm9yZy5sYmw4Lm1haWxz?=
+ =?utf-8?q?hell=2Enet-64=2E201=2E201=2E201_62=2E22=2E247=2E100=3B04yrtkhw3n1?=
+ =?utf-8?q?fet98pf6ecwmwx8zgpofn8fcp3oyz5uqpxgg8d7afo855yfaffio=2E1qiwun4gn6?=
+ =?utf-8?q?sru9k9wfpsadpkrdmxy5ybhr9k7oqdrr6ubg5msaknzrmpg1mgm16=2E73aj3rr99?=
+ =?utf-8?q?88ubuxt5rc59dyfhf8q43puh5nnyjgery8yfktt767hjtjy-lbl8=2Emailshell?=
+ =?utf-8?q?=2Enet-223=2E238=2E255=2E100=2CCacheIP=3Anone=2CBayesian=3A0=2E5?=
+ =?utf-8?q?=2C0=2E5=2C0=2E5=2CNetcheck=3Anone=2CDomainCache=3A0=2CMSF=3Anot?=
+ bulk,SPF:fs,MSBL:0,DNSBL:none,Custom_rules:0:1:0,LFtime:26,LUA_SUMMARY:none
+X-HE-Tag: 1614730169-457056
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 17
+
+This is a multi-part message in MIME format.
+------=_NextPart_000_0745_01D70FD1.EB174030
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_001_0746_01D70FD1.EB174030"
+
+------=_NextPart_001_0746_01D70FD1.EB174030
+Content-Type: text/plain;
+	charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+
+
+Welcome to your monthly Nedbank card eStatement=20
+
+
+Dear Customer=20
+
+Attached to this email is your latest monthly card eStatement, which is enc=
+rypted to ensure your confidentiality. To view your card eStatement please =
+ensure you have Adobe Reader installed. (To download Adobe Reader kindly go=
+ to www.adobe.com.)=20
+
+If your identity document was used to open your account, your identity numb=
+er is your eStatement password. Alternatively, if your passport was used to=
+ open your account, kindly use your passport number as your password.=20
+
+If you have any questions or want to unsubscribe from this service, please =
+contact our service centre on 011 710 4710.=20
+
+For more information on your credit card benefits or the Nedbank product of=
+fering please visit www.nedbank.co.za.=20
+
+
+Yours sincerely
+
+Nedbank Card
+
+
+Verify the integrity and origin of this email:
+1.This message has been signed by the sender.
+2.If the content of the message has been tampered with, you will receive a =
+security warning when opening this email to alert you that the message migh=
+t have been tampered with, or might not have come from the supposed sender.
+3.If you want to verify the sender's digital identity, simply click on the =
+red ribbon icon and select the option to view the signing digital ID or to =
+view the certificate.
+
+Nedbank Limited Reg No 1951/000009/06, VAT Reg No 4320116074, 135 Rivonia R=
+oad, Sandown, Sandton, 2196, South Africa. We subscribe to the Code of Bank=
+ing Practice of The Banking Association South Africa and, for unresolved di=
+sputes, support resolution through the Ombudsman for Banking Services. We a=
+re an authorised financial services provider. We are a registered credit pr=
+ovider in terms of the National Credit Act (NCR Reg No NCRCP16).=20
+
+------=_NextPart_001_0746_01D70FD1.EB174030
+Content-Type: text/html;
+	charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META content=3D"text/html; charset=3Dwindows-1252" http-equiv=3DContent-Ty=
+pe>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<BODY>
+<DIV class=3DrcmBody>
+<TABLE cellSpacing=3D0 cellPadding=3D0 width=3D600 align=3Dcenter border=3D=
+0>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" align=3Dcenter =
+border=3D0>
+        <TBODY>
+        <TR>
+          <TD><IMG border=3D0=20
+            src=3D"http://img.striata.com/Nedbank/CEP/head_consumer.gif"></=
+TD></TR>
+        <TR>
+          <TD>
+            <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D=
+0>
+              <TBODY>
+              <TR>
+                <TD width=3D15></TD>
+                <TD width=3D570><FONT size=3D2 face=3DArial><BR><FONT color=
+=3D#ac977c=20
+                  size=3D3>Welcome to your monthly Nedbank card eStatement<=
+/FONT>=20
+                  <BR><BR><BR>Dear Customer <BR><BR>Attached to this email =
+is=20
+                  your latest monthly card eStatement, which is encrypted t=
+o=20
+                  ensure your confidentiality. To view your card eStatement=
+=20
+                  please ensure you have Adobe Reader installed. (To downlo=
+ad=20
+                  Adobe Reader kindly go to www.adobe.com.) <BR><BR>If your=
+=20
+                  identity document was used to open your account, your ide=
+ntity=20
+                  number is your eStatement password. Alternatively, if you=
+r=20
+                  passport was used to open your account, kindly use your=
+=20
+                  passport number as your password. <BR><BR>If you have any=
+=20
+                  questions or want to unsubscribe from this service, pleas=
+e=20
+                  contact our service centre on <FONT color=3D#ac977c><B>01=
+1 710=20
+                  4710.</B></FONT> <BR><BR><STRONG>For more information on =
+your=20
+                  credit card benefits or the Nedbank product offering plea=
+se=20
+                  visit www.nedbank.co.za.</STRONG> <BR><BR></FONT></TD>
+                <TD width=3D15></TD></TR>
+              <TR>
+                <TD vAlign=3Dtop colSpan=3D3>
+                  <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" bor=
+der=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD width=3D15></TD>
+                      <TD vAlign=3Dtop><FONT size=3D2 face=3DArial>Yours=20
+                        sincerely<BR><BR>Nedbank Card<BR></FONT></TD></TR>
+                    <TR>
+                      <TD width=3D15></TD>
+                      <TD><FONT size=3D2 face=3DArial>
+                        <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100=
+%"=20
+border=3D0>
+                          <TBODY>
+                          <TR>
+                            <TD height=3D40></TD></TR>
+                          <TR>
+                            <TD colSpan=3D2><FONT color=3D#8c7a60 size=3D1=
+=20
+                              face=3DArial>Verify the integrity and origin =
+of this=20
+                              email:</FONT></TD></TR>
+                          <TR>
+                            <TD vAlign=3Dtop><FONT color=3D#8c7a60 size=3D1=
+=20
+                              face=3DArial>1.</FONT></TD>
+                            <TD vAlign=3Dtop><FONT color=3D#8c7a60 size=3D1=
+=20
+                              face=3DArial>This message has been signed by =
+the=20
+                              sender.</FONT></TD></TR>
+                          <TR>
+                            <TD vAlign=3Dtop><FONT color=3D#8c7a60 size=3D1=
+=20
+                              face=3DArial>2.</FONT></TD>
+                            <TD vAlign=3Dtop><FONT color=3D#8c7a60 size=3D1=
+=20
+                              face=3DArial>If the content of the message ha=
+s been=20
+                              tampered with, you will receive a security wa=
+rning=20
+                              when opening this email to alert you that the=
+=20
+                              message might have been tampered with, or mig=
+ht=20
+                              not have come from the supposed=20
+                          sender.</FONT></TD></TR>
+                          <TR>
+                            <TD vAlign=3Dtop><FONT color=3D#8c7a60 size=3D1=
+=20
+                              face=3DArial>3.</FONT></TD>
+                            <TD vAlign=3Dtop><FONT color=3D#8c7a60 size=3D1=
+=20
+                              face=3DArial>If you want to verify the sender=
+'s=20
+                              digital identity, simply click on the red rib=
+bon=20
+                              icon and select the option to view the signin=
+g=20
+                              digital ID or to view the=20
+certificate.</FONT></TD></TR>
+                          <TR>
+                            <TD colSpan=3D2><FONT color=3D#00836c size=3D1=
+=20
+                              face=3DArial><BR>Nedbank Limited Reg No=20
+                              1951/000009/06, VAT Reg No 4320116074, 135 Ri=
+vonia=20
+                              Road, Sandown, Sandton, 2196, South Africa. W=
+e=20
+                              subscribe to the Code of Banking Practice of =
+The=20
+                              Banking Association South Africa and, for=20
+                              unresolved disputes, support resolution throu=
+gh=20
+                              the Ombudsman for Banking Services. We are an=
+=20
+                              authorised financial services provider. We ar=
+e a=20
+                              registered credit provider in terms of the=20
+                              National Credit Act (NCR Reg No NCRCP16).=20
+                            </FONT></TD></TR></TBODY></TABLE></FONT></TD></=
+TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD=
+></TR></TBODY></TABLE></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV><!-- end mailview-right -->
+<DIV></DIV><!-- end mainscreencontent -->
+<DIV></DIV><!-- end mainscreen -->
+<DIV aria-hidden=3Dtrue id=3Dattachmentmenu class=3Dpopupmenu>
+<UL role=3Dmenu id=3Dattachmentoptionsmenu class=3Dtoolbarmenu>
+  <LI role=3Dmenuitem><A=20
+  onclick=3D"return rcmail.command('open-attachment','',this,event)" role=
+=3Dbutton=20
+  aria-disabled=3Dtrue tabIndex=3D-1 id=3Dattachmenuopen class=3Dicon href=
+=3D"#"><SPAN=20
+  class=3D"icon extwin"></SPAN></A></LI></UL></DIV>
+<DIV id=3Dmessagestack></DIV>
+<SCRIPT type=3Dtext/javascript>
+if (!window.UI) { var UI =3D new rcube_mail_ui(); }
+</SCRIPT>
+
+<SCRIPT type=3Dtext/javascript>
+
+jQuery.extend(jQuery.ui.dialog.prototype.options.position, {
+                using: function(pos) {
+                    var me =3D jQuery(this),
+                        offset =3D me.css(pos).offset(),
+                        topOffset =3D offset.top - 12;
+                    if (topOffset < 0)
+                        me.css('top', pos.top - topOffset);
+                    if (offset.left + me.outerWidth() + 12 > jQuery(window)=
+.width())
+                        me.css('left', pos.left - 12);
+                }
+            });
+$(document).ready(function(){=20
+rcmail.init();
+});
+</SCRIPT>
+
+<img src=3D"https://u17410146.ct.sendgrid.net/wf/open?upn=3DpefIbq-2F0PhcN2=
+qttzAUOKcqrOrDw1L6ncHuzcceg2g-2BhDcESSgM6B5wloVmZHyeKSj3wZZR85-2FYsTx6tDddp=
+16U1LFgfprI3sBQLdYv6VlBw5plgp-2FnQvXa3FcjqogaHgm78goqBKgBSMaGUI2G2KSwMmSBme=
+36Tsep15uIH9EXWW59RcEdD6ZPxt7I0Ekluyvei7z-2By3yvWrQnpt8-2BnroVpb-2F0Eu7H-2F=
+9yoAC43nmdw-3D" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"hei=
+ght:1px !important;width:1px !important;border-width:0 !important;margin-to=
+p:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-=
+left:0 !important;padding-top:0 !important;padding-bottom:0 !important;padd=
+ing-right:0 !important;padding-left:0 !important;"/>
+</BODY></HTML>
+
+
+------=_NextPart_001_0746_01D70FD1.EB174030--
+
+------=_NextPart_000_0745_01D70FD1.EB174030
+
+------=_NextPart_000_0745_01D70FD1.EB174030--
+

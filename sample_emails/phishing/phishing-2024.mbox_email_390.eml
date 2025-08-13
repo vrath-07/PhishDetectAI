@@ -1,0 +1,458 @@
+Return-Path: secretaria@goemt.org.br
+Delivered-To: jose@monkey.org
+X-FDA: 82896148314.30.B7130B4
+Received: from w97.mxout.mta1.net (w97.mxout.mta1.net [69.72.31.97])
+	by imf06.b.hostedemail.com (Postfix) with ESMTP id 4BAE8C0002
+	for <jose@monkey.org>; Sun, 15 Dec 2024 06:02:14 +0000 (UTC)
+Authentication-Results: imf06.b.hostedemail.com;	dkim=pass
+ header.d=goemt.org.br header.s=api header.b=S3qSm91Z;	dkim=pass
+ header.d=elasticemail.com header.s=api header.b=SXjBwLXq;	dmarc=pass
+ (policy=none) header.from=goemt.org.br;	spf=pass (imf06.b.hostedemail.com:
+ domain of secretaria@goemt.org.br designates 69.72.31.97 as permitted sender)
+ smtp.mailfrom=secretaria@goemt.org.br
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1734242539;
+	h=from:from:sender:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:list-unsubscribe:dkim-signature;
+	bh=hOuuwzQuHabG+bxMZAcXLK4FnRsQdJXyqlxlssh4qKo=;
+	b=6DJ59jUMzlt0FOhUGC9VZkweAzKsrLPpEAkVI61h+ChRf2JN50sHaTN5MVK5oh5oVCQyZ2
+	dBNZYNIbLQa18vpxWl1oAX6tx/NUzPddFMQ+s+EgzLCXDjyeQElX826peOiiSsGvpuQ5nG
+	J03J/6O7lrQ4cXdCdtKbCZuMYbaeUNU=
+ARC-Authentication-Results: i=1;	imf06.b.hostedemail.com;	dkim=pass
+ header.d=goemt.org.br header.s=api header.b=S3qSm91Z;	dkim=pass
+ header.d=elasticemail.com header.s=api header.b=SXjBwLXq;	dmarc=pass
+ (policy=none) header.from=goemt.org.br;	spf=pass (imf06.b.hostedemail.com:
+ domain of secretaria@goemt.org.br designates 69.72.31.97 as permitted sender)
+ smtp.mailfrom=secretaria@goemt.org.br
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1734242539; a=rsa-sha256;
+	cv=none;
+	b=X4qLlogS5VU0p+Rxw+ruP6KxJdXU1pXQcEe6Br5xgzn+5cioqUyhwWehQD2heABFCoLWOy
+	B99e8HQfRAJhUkUKoxkVxyOpHzdnL7dJiDnVyR20LCGNZ8KM/BdblWPQ5NkdxmsAWKWQye
+	gmKfgKoMa3BHpUstFgJYxbUDnSn0WL8=
+DKIM-Signature: v=1; a=rsa-sha256; d=goemt.org.br; s=api; c=relaxed/simple;
+	t=1734242558;
+	h=from:date:subject:reply-to:to:list-unsubscribe:list-unsubscribe-post:
+	mime-version;
+	bh=hOuuwzQuHabG+bxMZAcXLK4FnRsQdJXyqlxlssh4qKo=;
+	b=S3qSm91Zt0psgSzJlUWhQcHXBXcB/fhn5vNtRAACz4QzkseMy3+tfYuA72zbLNovoemuQoB8T/c
+	BXFYGTKGtrgDbp2kQJn/Q3aeqolHdHYHulb6V7oboJiYtYU6R0COci8zXmGB6szDcRg0Huij8e2w2
+	n2x1H0VL/mLFgs2gFw4=
+DKIM-Signature: v=1; a=rsa-sha256; d=elasticemail.com; s=api;
+	c=relaxed/simple; t=1734242558;
+	h=from:date:subject:reply-to:to:list-unsubscribe:list-unsubscribe-post;
+	bh=hOuuwzQuHabG+bxMZAcXLK4FnRsQdJXyqlxlssh4qKo=;
+	b=SXjBwLXqExRNYXseLLAJOuLK/pm+Mt/AyPar+cUkKf3Lf1MdLKu/QfhkwWREVJ9hKcGxNnPJxJE
+	L2A2foQoXGHzAoTR2HmiM8QyOCxWtJxxzJpSR2xsx2R5fB/3tB43e3lGAMK1FmZOh6GxYJL9kod23
+	gs2xA2AU3pCXkrLlfAw=
+From: customer relation <secretaria@goemt.org.br>
+Date: Sun, 15 Dec 2024 06:02:38 +0000
+Subject: re: Payment reminder - Unpaid Netflix bill    [DD-054006-D8634]
+Message-Id: <4uovondqnoh8.o8k7mZLoyQyjcVAqpbXgAQ2@tracking.goemt.org.br>
+Reply-To: customer relation <secretaria@goemt.org.br>
+Sender: secretaria@goemt.org.br
+To: jose@monkey.org
+List-Unsubscribe: 
+ <mailto:unsubscribe+o8k7mZLoyQyjcVAqpbXgAQ2@bounces.elasticem=?utf-8?q?ail?=
+ =?utf-8?q?=2Enet=3Fsubject=3Dunsubscribe=3E=2C?=
+ <http://tracking.goemt.org.br/tracking/unsubscribe?msgid=o8k7=?utf-8?q?mZLo?=
+ =?utf-8?q?yQyjcVAqpbXgAQ2=26c=3D1868174812229388414=3E?=
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-Msg-EID: o8k7mZLoyQyjcVAqpbXgAQ2
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="=-eZCfCzreqSj2C8iHW9Alah/gwxRg7fkE/XWKzQ=="
+X-Spam-Status: No, score=0.29
+X-Rspamd-Server: rspam08
+X-Rspamd-Queue-Id: 4BAE8C0002
+X-Stat-Signature: eook8847afi8frnxijbtsa7me91t49u9
+X-Rspam-User: 
+X-HE-Tag: 1734242534-787600
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/tOpYOpjNqo7n3WTPJYfImByJlhyYctMiFSlxsknfMxOl?=
+ =?utf-8?q?tfOoQBSsf6/0/gID7W4f+KU6VwlEEK2r2qwrIqfb8WQZ/0l/M4dob1/2v0yQPGJT9?=
+ =?utf-8?q?+KJ8T+tXb54EmMbATxf5FqgXaepJjXgQdlnpcs6O0EfNLzHAp2tamY7mGcEOP5bK0?=
+ =?utf-8?q?nqkSIfxo/I1JJ/ga7W/TUPhXL8eZHxs3K/eaNYTYGxFkvWXpULShtn1UzgLPZcftv?=
+ =?utf-8?q?+ds3wsc3A1iDx4y7mBUllFIsF4Qpt4btw6rbJeacq9QMRpfuraps+hWzdciLPwg8i?=
+ =?utf-8?q?o1eka2DJRgghugiblLJL+kca7MPS6WPDx99UC3ATVX/6U3ZpUB0S90anhusu08pKH?=
+ =?utf-8?q?AzdNWTdzPDoYpSG12sKaaUo4PWtX6xiXKxNMeiSx4xhvWTUPPDDhgs+KZbfu5hLwA?=
+ =?utf-8?q?OvgmJ4Ma15ZzT/MnhG8MGSdnASuhXabfii7d1/7F0F9L8pVNdyoXpEOf8RO7Kc/0o?=
+ =?utf-8?q?ARVc06u0JtKsh4nk00Z44NT0+cxovvDvNizA7q3TSGjf5XnaFPR900CH3l55v6wsy?=
+ =?utf-8?q?qtLhhSOXKf0jgM3drPHk5GOrJlaH2BazLjiRk2EjlbmiBsCKPUeF5XTFZi7/UsvW6?=
+ =?utf-8?q?COlIhQRQxkrRqdrY1MzxgoH4YQTH+cMcBXXcoGN2FX17c9GJsWilAexjrjXevEl4G?=
+ =?utf-8?q?Yk7bWcF5tjCEo2DWZvKcYwZiY6rUK6u7UqImOUCEMbMoTFgdqbp5JvIbyQHBMF03s?=
+ =?utf-8?q?bZE0k+CKSRJkFJ7YOzTAxS21fVroO8nyizllsiqUXKSJ9vctEZbSCHSqz4ivGMZXt?=
+ =?utf-8?q?Q3pgSfU1MTDSEpQVwj1ie/AkPjVvugGRcCt/XmmSrU/UZBp6OoHYDanTl36Lth9uX?=
+ =?utf-8?q?OxaPpGPbFFsFOJ5XXb31xuRQ3AjwZXU2TbB6ldkSthaRsa87KFEHfCypE6zaYAvD+?=
+ =?utf-8?q?Guu3DsknB5lpdrdmIiQiNZ_pM14wM9s2t+9jhh3wLjDLHoeQQnaaVatUrSJjUI2Kt?=
+ =?utf-8?q?T/lHMoND0Vwncxc5AaDE/5pRrj1cFTvW/YOQUZP5qgbo7BMlwlNFUOa+sHouks48R?=
+ =?utf-8?q?5MOFs43wb+FLlXhDhDU6ODLdkdwXNVSyrZclHkgXYpsE2H1GunCWXNfQA2syEVWXV?=
+ =?utf-8?q?4D8vqrlffeyM1ne7kyLFXUVEhdKIr1T1NrpCLCmx5PGIYObzjjIEAIuIk1XEom0+w?=
+ =?utf-8?q?O/Mtq+zLkgXTFzKd4ZNyyAvYAoBVPS+5l9o3LF5e+KbSO1Fgs9AMmZYws6bUQc6Dl?=
+ =?utf-8?q?ievgGF0x6bAtScQiJoflcg8Gad8+7mP1SW+Lkwf5I8D5Qq1bL3kVLhYdfDTFiKBSa?=
+ =?utf-8?q?9BuzPa8tUJ3NBQLnjL1qXWR+rg7FoxV2hNoy8ebYQnGC6Z3Xq9JyfYWQaY1EF9SUN?=
+ =?utf-8?q?yd7disa1mXx4RFRRWjhaow+yRledXijFAOMI9rwn8HBUf6PPixoplZ9ICEm75hZjT?=
+ =?utf-8?q?yNkJaU9jB01AoU/FSQP08qhbuMa5kvuXtUqXhq/ZszUQY2KG1ARJioDz3RLBxfbyA?=
+ =?utf-8?q?eYMOHbLxteUSmr31gLzhaVTv0jHLX6ANLCVvIGYqBoLbVXm2dAZGcU5CvEsThVMym?=
+ =?utf-8?q?/Gf9TYIldzBked6PbgOeJ16jzypwR3z4bx/i3JjOvSvGRlQJGD?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 390
+
+--=-eZCfCzreqSj2C8iHW9Alah/gwxRg7fkE/XWKzQ==
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: base64
+
+WW91ciBhY2NvdW50IGlzIHN1c3BlbmRlZC5QbGVhc2UgdXBkYXRlIHlvdXIgcGF5bWVudCBp
+bmZvcm1hdGlvbkhlbGxvLFdlJ3JlIGhhdmluZyB0cm91YmxlIHdpdGggeW91ciBiaWxsaW5n
+IGluZm9ybWF0aW9uLiBXZSdsbCB0cnkgYWdhaW4sIGJ1dCB5b3UgbWF5IG5lZWQgdG8gdXBk
+YXRlIHlvdXIgcGF5bWVudCBkZXRhaWxzLg0KPGh0dHA6Ly90cmFja2luZy5nb2VtdC5vcmcu
+YnIvdHJhY2tpbmcvY2xpY2s/ZD1pMzJfaHZkeGxJeGVXVTFzR2xmNm9HbTBLVEs5djExYkdT
+ZGREZWM2akIxcHByQUNGcWU1bFN0WHlDZGl6M3J1ZmllLUI0VFpWbUt6cGRlSUFWSEwzQy1W
+YWNwMVRBazBBTFNFOXotWjNrT1JwRXNvMjdHaGVra3NOdG9ETlNSbUh0a0oxV3BVaDdoaUgw
+MkNHLXVseThzVEZ2RTVkdlJOQlhTNGVzbml3VE9vWGc3b1V6dVg4UEpwUW9HRGNyclJMU0dB
+S2ZJVWhJdGRxZDZPVk0tUGV6azE+DQpVcGRhdGUgbm93Rm9yIGZ1cnRoZXIgaW5mb3JtYXRp
+b24sIHBsZWFzZSBjb25zdWx0IHRoZSBIZWxwIENlbnRlciBvciBjb250YWN0IHVzIGF0LsKg
+TmV0ZmxpeMKgwqANCjxodHRwOi8vdHJhY2tpbmcuZ29lbXQub3JnLmJyL3RyYWNraW5nL2Ns
+aWNrP2Q9XzB5WkJkT25tZWY4SDlLdDdfUDduSnhxTmY1bFdGSVZTNEtYUnk5MFVNbnR0ZFRm
+dDhOYWstbG9OeHNZM3pWdXdySktvNEpoUGs4aVJzV3QwWXB0YkZ6cmhkVXlkWGZsNVlNV1l0
+OE03cTBjVFJybWhqcElQcXR1LVZ4YU9YTEhObFdtVjIxc01PaFc5RmFSaFNVWTFYTlVDb3ZH
+MXZRbUhmTUExTnFTNW95TmxqYUlZVHJibS1EMldqaGNDUi01VnVVNjhUYzl2clJTNHFham4y
+T0lOcS1hYTF3QVdOZGpWM2wtVlJnYV9kRkU3WEE2cUlTWVZBb05LYURDT0djOWNBMj4NCuKA
+qk5ldGZsaXggSW50ZXJuYXRpb25hbCBCLlYu4oCsU1JDOiANCjxodHRwOi8vdHJhY2tpbmcu
+Z29lbXQub3JnLmJyL3RyYWNraW5nL2NsaWNrP2Q9N0xXNDlxTnYzbEoxbHpYMTVPUnp3ckMy
+b3ZvNmZXZ2J5cWxkWmtMb1I0V2x4R1R6Q09mR0w1VGNZZGtaWGhmT3lVTmVCSW1VNnBlRF9V
+b3NuZnVUek1zOHplZ3l6dWtSd2YtYWx3c05HZ3VTeDhwZzFCMzBtN3gzcmNrYnJnMENzY2xD
+WjloXzBQWFJUSndtdDF6SE9vd2FHZVc5U1BvZEhTd0s4dVRXWTBFSFNnMXYxVFhnQXY5NldR
+cjhaYTFraWp0M1lwVTYyT3hESDVrTHF5eUt6djlMeXBvU250eFUwUS0tdUl2SW52b0kwPg0K
+NjMzQjUzMEZfZmM2YzdiNmUtNjg3OC00ZTIyLWIxOWEtYmYzNmNjZTkxYzExX2ZyX0JFX0VW
+T8KgDQo8aHR0cDovL3RyYWNraW5nLmdvZW10Lm9yZy5ici90cmFja2luZy91bnN1YnNjcmli
+ZT9kPU83NGtWOG5JMHE2dldjX0R2RWs4WU0wbE9pdGRXZ0JiN3ZjamVJeHZNOU5GN0JtZkQ2
+b3RMT3BNTkpsS3FjcmdLdXhuRUkzT1R4alhyblRMcmxFRDZFSTE+DQpVTlNVQlNDUklCRQ0K
+PGh0dHA6Ly90cmFja2luZy5nb2VtdC5vcmcuYnIvdHJhY2tpbmcvYm90Y2xpY2s/bXNnaWQ9
+bzhrN21aTG95UXlqY1ZBcXBiWGdBUTImYz0xODY4MTc0ODEyMjI5Mzg4NDE0Pg0K
+
+--=-eZCfCzreqSj2C8iHW9Alah/gwxRg7fkE/XWKzQ==
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div id=3D"UniqueMessageBody_6" class=3D"XbIp4 jmmB7 GNqVo allowTextSe=
+lection OuGoX" tabindex=3D"0" aria-label=3D"Corps du message">
+<div>
+<div>
+<div dir=3D"ltr">
+<div style=3D"margin: 0px; background-color: #eaeaea; padding: 0px;">
+<table style=3D"background-color: #eaeaea;" border=3D"0" width=3D"100%=
+" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"margin-top: 0px; background-color: #eaeaea;" align=3D"cen=
+ter">
+<table style=3D"width: 500px; background-color: white;" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0" align=3D"center">
+<tbody>
+<tr>
+<td>
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"padding-top: 0px; padding-left: 40px; padding-right: 40px=
+;" align=3D"center"><img style=3D"border-collapse: collapse; outline-w=
+idth: medium; outline-style: none; display: block; outline-color: inve=
+rt; border-style: none;" src=3D"https://beaconimages.netflix.net/img/B=
+AQgBEAEakAN2THSsgosiINnMMOKPnivWct3aDBWUvjxnzpqOMHxNSeFc2YlhxhaV4z9L09=
+Kf96HQQOT9tz_iJabmsNcJXyMxQIrniqMEDR06Q2Oz-LbPJTvcWRtQhxJN-kGsC7yY5Opv=
+OZZvJAK4MGsG3hKSLEuAocenQYJa2qE9cVnTsFTMom9SwDmZqno-Qc5hD1pikA2L91Al7D=
+vgHbKQIUEod7RLvz3HnurN1AWCMXPrYZGp0fzgeXN4-nJVYq8rZM0zoeee8C6vyEr_BdEx=
+G-PKtRsxLOnEyQlw3bs91a01YPzQP90j0VdveMQEjxX7mw1Ej66BUltly9UvRYXcgz_mLH=
+mG7MHjT9SJtpKX9DLSnOMGyD5VDCEA2XFBswOCd0F8Lyp3PY1tJiG-YYOJzNz7TPhk9IDQ=
+NHWBlbV5Td7eCDbIxRUfV_Qk-J9u-upebFMUYZbXTdkXaStjb3yvzbNO3O6ZrmRuNATwSj=
+mQABkhsAjux-_EECz21CNFd-XuvU4S6lzRsiy2-uTNtcnmLwOVSJzU" width=3D"0" bo=
+rder=3D"0" data-imagetype=3D"External" /></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td align=3D"center">
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"padding-top: 20px; padding-left: 40px; padding-right: 40p=
+x;" align=3D"left"><img style=3D"border-collapse: collapse; outline-wi=
+dth: medium; outline-style: none; display: block; outline-color: inver=
+t; border-style: none;" src=3D"https://assets.nflxext.com/us/email/gem=
+/nflx.png" alt=3D"Netflix" width=3D"24" border=3D"0" data-imagetype=3D=
+"External" /></td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"padding-top: 25px;">
+<table style=3D"background-color: #0071eb;" width=3D"100%" cellspacing=
+=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"padding: 12px 40px 12px 40px;" width=3D"100%">
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" align=3D"lef=
+t">
+<tbody>
+<tr>
+<td style=3D"font-size: 16px; font-family: NetflixSans-Regular,Helveti=
+ca,Roboto,Segoe UI,sans-serif; font-weight: 400; color: white; padding=
+-top: 0px; line-height: 21px;" align=3D"left">Your account is suspende=
+d.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" align=3D"lef=
+t">
+<tbody>
+<tr>
+<td style=3D"font-size: 36px; font-family: NetflixSans-Bold,Helvetica,=
+Roboto,Segoe UI,sans-serif; font-weight: bold; color: #221f1f; padding=
+-top: 20px; padding-left: 40px; letter-spacing: -1px; line-height: 43p=
+x; padding-right: 40px;" align=3D"left">Please update your payment inf=
+ormation</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" align=3D"lef=
+t">
+<tbody>
+<tr>
+<td style=3D"font-size: 16px; font-family: NetflixSans-Regular,Helveti=
+ca,Roboto,Segoe UI,sans-serif; font-weight: 400; color: #221f1f; paddi=
+ng-top: 20px; padding-left: 40px; line-height: 21px; padding-right: 40=
+px;" align=3D"left"><span style=3D"word-break: break-all;">Hello</span=
+>,</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" align=3D"lef=
+t">
+<tbody>
+<tr>
+<td style=3D"font-size: 16px; font-family: NetflixSans-Regular,Helveti=
+ca,Roboto,Segoe UI,sans-serif; font-weight: 400; color: #221f1f; paddi=
+ng-top: 20px; padding-left: 40px; line-height: 21px; padding-right: 40=
+px;" align=3D"left">We're having trouble with your billing information=
+. We'll try again, but you may need to update your payment details.</t=
+d>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" align=3D"cen=
+ter">
+<tbody>
+<tr>
+<td style=3D"padding-top: 20px; padding-left: 40px; padding-right: 40p=
+x;" align=3D"center">
+<table dir=3D"ltr">
+<tbody>
+<tr>
+<td style=3D"font-size: 14px; font-family: 'Segoe UI', Tahoma, Verdana=
+, Arial, sans-serif; color: #2a2a2a !important; padding: 25px 0px 0px =
+0px;">
+<table border=3D"0" cellspacing=3D"0">
+<tbody>
+<tr>
+<td style=3D"min-width: 50px; background-color: #2672ec; padding: 5px =
+20px 5px 20px;" bgcolor=3D"#2672ec"><a id=3D"x_i11" style=3D"font-size=
+: 14px; text-decoration: none; font-family: 'Segoe UI Semibold', 'Sego=
+e UI Bold', 'Segoe UI', 'Helvetica Neue Medium', Arial, sans-serif; fo=
+nt-weight: 600; color: #ffffff !important; text-align: center; letter-=
+spacing: 0.02em;" title=3D"https://account.microsoft.com/activity" hre=
+f=3D"http://tracking.goemt.org.br/tracking/click?d=3Di32_hvdxlIxeWU1sG=
+lf6oGm0KTK9v11bGSddDec6jB1pprACFqe5lStXyCdiz3rufie-B4TZVmKzpdeIAVHL3C-=
+Vacp1TAk0ALSE9z-Z3kORpEso27GhekksNtoDNSRmHtkJ1WpUh7hiH02CG-uly8sTFvE5d=
+vRNBXS4esniwTOoXg7oUzuX8PJpQoGDcrrRLSGAKfIUhItdqd6OVM-Pezk1" target=3D=
+"_blank" rel=3D"noopener noreferrer" data-linkindex=3D"1" data-auth=3D=
+"NotApplicable">Update now</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" align=3D"lef=
+t">
+<tbody>
+<tr>
+<td style=3D"font-size: 16px; font-family: NetflixSans-Regular,Helveti=
+ca,Roboto,Segoe UI,sans-serif; font-weight: 400; color: #221f1f; paddi=
+ng-top: 20px; padding-left: 40px; line-height: 21px; padding-right: 40=
+px;" align=3D"left">For further information, please consult the Help C=
+enter or contact us at.</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" align=3D"lef=
+t">
+<tbody>
+<tr>
+<td style=3D"font-size: 14px; font-family: NetflixSans-Medium,Helvetic=
+a,Roboto,Segoe UI,sans-serif; font-weight: bold; color: #221f1f; paddi=
+ng-top: 20px; padding-left: 40px; letter-spacing: 0px; line-height: 17=
+px; padding-right: 40px;" align=3D"left">&nbsp;Netflix</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"padding-top: 30px; padding-left: 40px; padding-right: 40p=
+x;">
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" align=3D"cen=
+ter">
+<tbody>
+<tr>
+<td style=3D"border-left-style: solid; border-top: #221f1f 2px solid; =
+border-bottom: #221f1f 0px solid; border-left-color: #221f1f; border-r=
+ight-style: solid; border-right-color: #221f1f; line-height: 0;">&nbsp=
+;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style=3D"background-color: white;" align=3D"center">
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0"=
+>
+<tbody>
+<tr>
+<td style=3D"padding-left: 40px; padding-right: 40px; background-color=
+: white;" align=3D"center" valign=3D"top">
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"height: 40px; line-height: 0;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"padding: 0px 20px 0px 0px;" valign=3D"top">
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"padding-top: 0px;" align=3D"center"><img style=3D"border-=
+collapse: collapse; outline-width: medium; outline-style: none; displa=
+y: block; outline-color: invert; border-style: none;" src=3D"https://a=
+ssets.nflxext.com/us/email/gem/nflx.png" width=3D"24" border=3D"0" dat=
+a-imagetype=3D"External" /></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td valign=3D"top">
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td>
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" align=3D"lef=
+t">
+<tbody>
+<tr>
+<td style=3D"font-size: 11px; font-family: NetflixSans-Regular,Helveti=
+ca,Roboto,Segoe UI,sans-serif; font-weight: 400; color: #a4a4a4; paddi=
+ng-top: 0px; letter-spacing: 0px; line-height: 14px;" align=3D"left"><=
+span style=3D"text-decoration: none;"><a style=3D"text-decoration: non=
+e; color: #a4a4a4;" title=3D"https://help.netflix.com/legal/corpinfo?g=
+=3Dfc6c7b6e-6878-4e22-b19a-bf36cce91c11&amp;lkid=3DURL_CORP_INFO&amp;l=
+nktrk=3DEVO" href=3D"http://tracking.goemt.org.br/tracking/click?d=3D_=
+0yZBdOnmef8H9Kt7_P7nJxqNf5lWFIVS4KXRy90UMnttdTft8Nak-loNxsY3zVuwrJKo4J=
+hPk8iRsWt0YptbFzrhdUydXfl5YMWYt8M7q0cTRrmhjpIPqtu-VxaOXLHNlWmV21sMOhW9=
+FaRhSUY1XNUCovG1vQmHfMA1NqS5oyNljaIYTrbm-D2WjhcCR-5VuU68Tc9vrRS4qajn2O=
+INq-aa1wAWNdjV3l-VRga_dFE7XA6qISYVAoNKaDCOGc9cA2" target=3D"_blank" re=
+l=3D"noopener noreferrer" data-auth=3D"NotApplicable" data-linkindex=3D=
+"4">=E2=80=AANetflix International B.V.=E2=80=AC</a></span></td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" align=3D"lef=
+t">
+<tbody>
+<tr>
+<td style=3D"font-size: 11px; font-family: NetflixSans-Regular,Helveti=
+ca,Roboto,Segoe UI,sans-serif; font-weight: 400; color: #a4a4a4; paddi=
+ng-top: 20px; letter-spacing: 0px; line-height: 14px;" align=3D"left">=
+SRC: <a style=3D"text-decoration: none; color: #a4a4a4;" title=3D"http=
+s://www.netflix.com/browse?g=3Dfc6c7b6e-6878-4e22-b19a-bf36cce91c11&am=
+p;lkid=3DURL_SRC&amp;lnktrk=3DEVO" href=3D"http://tracking.goemt.org.b=
+r/tracking/click?d=3D7LW49qNv3lJ1lzX15ORzwrC2ovo6fWgbyqldZkLoR4WlxGTzC=
+OfGL5TcYdkZXhfOyUNeBImU6peD_UosnfuTzMs8zegyzukRwf-alwsNGguSx8pg1B30m7x=
+3rckbrg0CsclCZ9h_0PXRTJwmt1zHOowaGeW9SPodHSwK8uTWY0EHSg1v1TXgAv96WQr8Z=
+a1kijt3YpU62OxDH5kLqyyKzv9LypoSntxU0Q--uIvInvoI0" target=3D"_blank" re=
+l=3D"noopener noreferrer" data-auth=3D"NotApplicable" data-linkindex=3D=
+"10">633B530F_fc6c7b6e-6878-4e22-b19a-bf36cce91c11_fr_BE_EVO</a></td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"height: 40px; line-height: 0;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<img src=3D"http://tracking.goemt.org.br/tracking/open?msgid=3Do8k7mZL=
+oyQyjcVAqpbXgAQ2&c=3D1868174812229388414" style=3D"width:1px;height:1p=
+x" alt=3D"" /><div style=3D"text-align:center; background-color:#fff;p=
+adding-top:10px;padding-bottom:10px;font-size:8pt;font-family:sans-ser=
+if;"><a href=3D"http://tracking.goemt.org.br/tracking/unsubscribe?d=3D=
+O74kV8nI0q6vWc_DvEk8YM0lOitdWgBb7vcjeIxvM9NF7BmfD6otLOpMNJlKqcrgKuxnEI=
+3OTxjXrnTLrlED6EI1" style=3D"text-align:center;text-decoration:none;co=
+lor:#666;">UNSUBSCRIBE</a></div><a style=3D "display : none;" href=3D"=
+http://tracking.goemt.org.br/tracking/botclick?msgid=3Do8k7mZLoyQyjcVA=
+qpbXgAQ2&c=3D1868174812229388414"></a>
+--=-eZCfCzreqSj2C8iHW9Alah/gwxRg7fkE/XWKzQ==--
+

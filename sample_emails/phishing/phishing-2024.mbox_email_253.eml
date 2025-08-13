@@ -1,0 +1,181 @@
+Return-Path: account@supplydemands.com
+Delivered-To: jose@monkey.org
+X-FDA: 82540113390.07.FF87728
+Received: from mail.supplydemands.com (ded3699.inmotionhosting.com
+ [209.182.200.19])	by imf22.b.hostedemail.com (Postfix) with ESMTP id
+ 1D0FF16000D	for <jose@monkey.org>; Sun,  8 Sep 2024 03:18:33 +0000 (UTC)
+Authentication-Results: imf22.b.hostedemail.com;	dkim=pass
+ header.d=supplydemands.com header.s=default header.b=M1TFMzzP;	spf=pass
+ (imf22.b.hostedemail.com: domain of account@supplydemands.com designates
+ 209.182.200.19 as permitted sender) smtp.mailfrom=account@supplydemands.com;
+	dmarc=pass (policy=none) header.from=supplydemands.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1725765472;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=pgN/MhxuvUfZhtuvo8OWdzQxypT/3i0dbz/sXhcYpf4=;
+	b=yeOY7lJEaUVll99iNRQAn9d8FrAEBMEbWtmrj95WJxlXnGWLK7mJRwMb/zOTcslleL2TeX
+	4hQyQE19pBphug0vo/dyjavQRYynf//99KnNduf0J8iCCMvT0l9R66JArwHae2ZM6HVImJ
+	JCpH06XT1s63cw3NwXhgjEUT1r82KHM=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1725765472; a=rsa-sha256;
+	cv=none;
+	b=Pb34NpzlNrjiINvOKhitaZqx2+uTYEHc3oAw8hWVkYQi6CrRTaCMjSsVSmX/k8AxNY/XfZ
+	s+xVvxXMDK8x3CiB1RJacnjzkxxoaGYnWoJHX+1VqOPYcqne5QYgxlOxQef2bacj3EhezB
+	FIPqaVcOlHxFjuVTzj3rpUMM7hprrIY=
+ARC-Authentication-Results: i=1;	imf22.b.hostedemail.com;	dkim=pass
+ header.d=supplydemands.com header.s=default header.b=M1TFMzzP;	spf=pass
+ (imf22.b.hostedemail.com: domain of account@supplydemands.com designates
+ 209.182.200.19 as permitted sender) smtp.mailfrom=account@supplydemands.com;
+	dmarc=pass (policy=none) header.from=supplydemands.com
+Received: from 45.32.12.234.vultrusercontent.com (unknown [45.32.12.234])
+	by mail.supplydemands.com (Postfix) with ESMTPA id 68250150BA4D
+	for <jose@monkey.org>; Tue,  3 Sep 2024 15:53:16 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=supplydemands.com;
+	s=default; t=1725403997;
+	bh=sg/+v1SpuFD/glrEGWL7ZDC7oq7214ZBs8NlmG9agQg=;
+	h=From:To:Subject:Date;
+	b=M1TFMzzPT+Gbzn85k1RAy2yKriwKuCWp/SzNYeyFdyvbCWGzNz4+caRt9va3eDF5+
+	 yTlQB8/lQIz9zvoKe86D1Dt0lqaU3/VnexvVxViJbmuUnb0EZB7SbqW8eCPL8qeeBr
+	 dUDZ2fIhFqteNPE1S9yQf4FdPGyh3lFL2mXTQ6BY=
+From: monkey.org Cpanel E-Mail Admin <account@supplydemands.com>
+To: jose@monkey.org
+Subject: Action Required:  jose@monkey.org You have 5 Pending E-mails
+Date: 4 Sep 2024 00:53:13 +0200
+Message-ID: <20240904005312.72E2FC7C94C41CEC@supplydemands.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 1D0FF16000D
+X-Rspamd-Server: rspam02
+X-Spam-Status: No, score=8.90
+X-Stat-Signature: 3icupwz877pqrps4bny14myopjd9hh9s
+X-HE-Tag: 1725765513-747831
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+bSS+/0q+k/QkZqBD5RCuDAebYPme+ZmULdmTa232Ztif?=
+ =?utf-8?q?NkWpPjIt1nqDUSOeUdrja8FiGZn66dXLrpFsVEWOT+l2wv3Pj8r9t2lc1PEPpnXgf?=
+ =?utf-8?q?bjkl0v4jnsEu71CSH3zoDKQWQtc6ZyfFI1ANbvIOzWdi9jukwWPYM58uRRzGHy21J?=
+ =?utf-8?q?xofPFZeybpB6xE9F3e6MfoFrDm1wooog9GsLvLr95bp0KTjAzyFWBACA/veQoxWqf?=
+ =?utf-8?q?DmUNccRUpzj3vCQ8ygQAAvr7IV5g1cPtUHTphuyqNTOtCji7cNsrLmwX6kiiGK8Sz?=
+ =?utf-8?q?DgSWc1pqxI6BStaF4Udg/siFufjho906sJ6Lwanijy67whsodqebsrP3Lob9oBubA?=
+ =?utf-8?q?vF6eO+K8Ut/F7FHDcEFip+OwPWh2Zx0T/6TAsxBbVrtVsIAMpbvEAHNI3BdqP8kab?=
+ =?utf-8?q?3FWKLaIVZhWXbAROc8fIqyba2DL4VVrkC7nhAdm9Q1MelQoFgDv8KlqI3XIeBqv4w?=
+ =?utf-8?q?o83W7LVcaDG3yVsjkzVS4eyjJwokmKKILMuJBSuuHriOa0kV2CIs56Kpz7JxPZJmZ?=
+ =?utf-8?q?qRduekIeni7hGbWb1ACRJqSHdOqqEXQGH+Fx25t6+D6hqvSa6w5142uQhPPGhZwLg?=
+ =?utf-8?q?7ticx/uT9TbdvPo+YeXSDOvJP+gxZjrTjHZ7KOPF9dM2Tl2vtOYiptQxopEAIcefa?=
+ =?utf-8?q?NUipW8dAinyRO3Nh+qY/Xr/ET7if8QCfjvJx8JzXJnkcIgrOVlujpb7HT+NveSMZl?=
+ =?utf-8?q?WVTvjO+QAhARx/vrTy/ZPHtDB9AvxvVQio6GQKmUp4G4Dr8iaBga246oOs550s5Bp?=
+ =?utf-8?q?853F43PUhX2v5zpcWnxyP7z2EaWUYxfF1azQ+wwSDVQrZJ2YUoO98ej7SFdx61/xH?=
+ =?utf-8?q?1QBwDJ57QqX8v+uVWu6bIlStQi+QnlrcsvYMxc5iYtpMF1hsY3aiRDDmodI5PhDb3?=
+ =?utf-8?q?QOZqvfH6dFDVJfqevAkn/y_Mse/PHw/K1wDbmCqq3gi340AS6v6O6V7KHtfj8DrEK?=
+ =?utf-8?q?qZWod2AH97mWyZsMyeg/euClg83UZ0xlnjwWjCU+WSK+UVRaBs+wMxIjecnYtl+qm?=
+ =?utf-8?q?3N396BIatOfBzDUec/n48LPF30h2hDYRXtoj6giIIkmErVtW/+KzZXi64exOFLZev?=
+ =?utf-8?q?9AcyvpHzrveNROzXnCw+yceZcjtu78JKNRWSRQdPUObb4Egcw+ibyVRKXfjBcnXHn?=
+ =?utf-8?q?Blo12SDq2e6pTnmvubJtQpg6/E+hzRyvucZpqjAnOcfs6jUDVY62WzfRG1bRA1D4n?=
+ =?utf-8?q?Rbqj/9AM1bPt4FojCXGfRPB4EcfytFJHp31E6EkJ9iV3GbD6ztfG8xpzmZmLG/EBc?=
+ =?utf-8?q?+1C/jc8CLL+IpOc+VuNgsENscZ2EGrEFXaMuJzJHJjLjLXMmJDRdCMCSIs861Jc+5?=
+ =?utf-8?q?nNdcKWJ8X+Jmyk1MIdcl5VGDFrFVYAO0HCbLcTnn5dW3RqjHBXncb?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 253
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<title></title>
+	<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.9600.17037">
+</head>
+<body>
+<table style=3D'width: 432px; color: rgb(51, 51, 51); font-family: "Lucida =
+Grande", Verdana, Arial, Helvetica, sans-serif; font-size: 11px; border-col=
+lapse: collapse;'>
+	<tbody style=3D"box-sizing: border-box;">
+		<tr style=3D"box-sizing: border-box;">
+			<th style=3D"padding: 5px; border: 0px solid rgb(0, 0, 0); border-image:=
+ none; width: 13.78px; text-align: inherit; box-sizing: border-box; backgro=
+und-color: rgb(2, 151, 64);">&nbsp;</th>
+			<td style=3D"margin: 0px; padding: 5px; border: 0px solid rgb(0, 0, 0); =
+border-image: none; width: 417.21px; font-family: Roboto, RobotoDraft, Helv=
+etica, Arial, sans-serif; box-sizing: border-box; background-color: rgb(243=
+, 255, 248);"><span style=3D"font-family: georgia, serif; box-sizing: borde=
+r-box;"><span style=3D"font-size: 12px; box-sizing: border-box;">Sent from =
+a trusted sender.</span></span></td>
+		</tr>
+	</tbody>
+</table>
+
+<p style=3D'color: rgb(51, 51, 51); font-family: "Lucida Grande", Verdana, =
+Arial, Helvetica, sans-serif; font-size: 11px;'><br>
+<span style=3D"font-family: tahoma, sans-serif;"><span style=3D"font-size: =
+12pt;"><span style=3D"font-size: 11pt;"><span style=3D"font-size: 13pt;">He=
+llo&nbsp;</span></span></span><b><span style=3D"font-size: 12pt;"><span sty=
+le=3D"font-size: 11pt;"><span style=3D"font-size: 13pt;">jose@monkey.org,</=
+span></span></span></b></span></p><span style=3D"font-size: 12pt;"><span st=
+yle=3D"font-size: 11pt;"><span style=3D"font-size: 13pt;">
+
+</span></span></span><p style=3D'color: rgb(51, 51, 51); font-family: "Luci=
+da Grande", Verdana, Arial, Helvetica, sans-serif; font-size: 11px;'><span =
+style=3D"font-family: tahoma, sans-serif;"><span style=3D"font-size: 12pt;"=
+><span style=3D"font-size: 11pt;"><span style=3D"font-size: 13pt;">You have=
+&nbsp;5 emails pending.</span></span></span><br><span style=3D"font-size: 1=
+2pt;"><span style=3D"font-size: 11pt;"><span style=3D"font-size: 13pt;">
+</span></span></span><br><span style=3D"font-size: 12pt;"><span style=3D"fo=
+nt-size: 11pt;"><span style=3D"font-size: 13pt;">
+Follow the link below to release it all to your inbox.</span></span></span>=
+</span></p>
+
+<p style=3D'color: rgb(51, 51, 51); font-family: "Lucida Grande", Verdana, =
+Arial, Helvetica, sans-serif; font-size: 11px;'><span style=3D"font-family:=
+ tahoma, sans-serif;">
+<a style=3D"background: rgb(70, 139, 252); margin: 2px; padding: 10px; bord=
+er-radius: 3px; color: rgb(255, 255, 255); font-size: 12px; float: left; di=
+splay: block; -ms-word-break: break-all; text-decoration-line: none;" href=
+=3D"https://cbvwjelruityudkdjfhgriutfgiu78y4389erdio.pages.dev/?9N1yQaZAJmk=
+Mp_Iw371MeniZa=3Djose@monkey.org&amp;VDwAefGf5hyYBUM-80vYZwWPEpLI8K4yCB&#10=
+;" target=3D"_blank" rel=3D"noreferrer"=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://ipjcsaovicen=
+te.com.br//redirect.php?v%3Dfc71ed3664fd738%23%5B%5B-Email-%5D%5D&amp;sourc=
+e=3Dgmail&amp;ust=3D1710912516276000&amp;usg=3DAOvVaw0bNdtCTJPoJ_jI0u14tTce=
+&#10;"><strong style=3D"font-size: inherit; -ms-word-break: break-all;"><sp=
+an style=3D"font-size: inherit; vertical-align: inherit; -ms-word-break: br=
+eak-all;">RELEASE NOW</span></strong></a></span></p>
+
+<p style=3D'color: rgb(51, 51, 51); font-family: "Lucida Grande", Verdana, =
+Arial, Helvetica, sans-serif; font-size: 11px;'><span style=3D"font-family:=
+ tahoma, sans-serif;">&nbsp;</span></p>
+
+<p style=3D'color: rgb(51, 51, 51); font-family: "Lucida Grande", Verdana, =
+Arial, Helvetica, sans-serif; font-size: 11px;'>&nbsp;</p>
+
+<p style=3D'color: rgb(51, 51, 51); font-family: "Lucida Grande", Verdana, =
+Arial, Helvetica, sans-serif; font-size: 11px;'><span style=3D"font-family:=
+ tahoma, sans-serif; font-size: 13pt;">Regards</span></p>
+
+<p style=3D'color: rgb(51, 51, 51); font-family: "Lucida Grande", Verdana, =
+Arial, Helvetica, sans-serif; font-size: 11px;'><br>
+<span style=3D"font-family: tahoma, sans-serif;"><strong>monkey.org cPanel =
+Security Gateway</strong></span><br>
+<br>
+<span style=3D"font-size: xx-small;"><span style=3D"font-family: tahoma, sa=
+ns-serif; font-size: inherit; -ms-word-break: break-all;"><span style=3D"fo=
+nt-size: 12px; -ms-word-break: break-all;"><span style=3D"font-size: inheri=
+t; vertical-align: inherit; -ms-word-break: break-all;"><span style=3D"colo=
+r: rgb(102, 102, 102);"><span style=3D"font-size: xx-small;"><strong><span =
+style=3D"box-sizing: border-box;"><span style=3D"font-family: calibri; box-=
+sizing: border-box;">
+This is a service notification and does not mean you will receive mass mail=
+ings from us.</span></span></strong></span></span></span></span></span></sp=
+an><br>
+<span style=3D"font-size: small;"><strong><span style=3D"font-family: calib=
+ri; box-sizing: border-box;"><span style=3D"color: rgb(102, 102, 102);"><sp=
+an style=3D"font-size: xx-small;">This message is auto-generated from Drake=
+philippines Security Gateway; replies sent to this email cannot be delivere=
+d.</span></span><br>
+<span style=3D"border-radius: 0px; color: rgb(102, 102, 102); font-family: =
+inherit; font-size: 10px; vertical-align: baseline; font-stretch: inherit;"=
+>Copyright &copy; 2024 Inc. All rights reserved</span></span></strong></spa=
+n></p>
+
+</body></html>
+

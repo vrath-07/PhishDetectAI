@@ -1,0 +1,562 @@
+Return-Path: =?utf-8?q?01000191d6a3cb57-0afaeff9-7535-4eaf-8383-b88bfa784d18?=
+ =?utf-8?q?-000000=40DoNotReply=2Ekatzprivacysettlement=2Ecom?=
+Delivered-To: jose@monkey.org
+X-FDA: 82545045492.35.1343954
+Received: from a46-46.smtp-out.amazonses.com (a46-46.smtp-out.amazonses.com
+ [54.240.46.46])	by imf29.b.hostedemail.com (Postfix) with ESMTP id
+ 6117512000A	for <jose@monkey.org>; Mon,  9 Sep 2024 11:55:45 +0000 (UTC)
+Authentication-Results: imf29.b.hostedemail.com;	dkim=pass
+ header.d=katzprivacysettlement.com header.s=hdyfpwlmk6mpd67efezq6krf4cryjf5g
+ header.b="6m9b/SIr";	dkim=pass header.d=amazonses.com
+ header.s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug header.b=KEzdy+R+;	spf=pass
+ (imf29.b.hostedemail.com: domain of =?utf-8?q?01000191d6a3cb57-0afaeff9-753?=
+ =?utf-8?q?5-4eaf-8383-b88bfa784d18-000000=40DoNotReply=2Ekatzprivacysettlem?=
+ =?utf-8?q?ent=2Ecom_designates_54=2E240=2E46=2E46_as_permitted_sender=29_sm?=
+ =?utf-8?q?tp=2Emailfrom=3D01000191d6a3cb57-0afaeff9-7535-4eaf-8383-b88bfa78?=
+ =?utf-8?q?4d18-000000=40DoNotReply=2Ekatzprivacysettlement=2Ecom=3B?=
+	dmarc=pass (policy=none) header.from=katzprivacysettlement.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1725882902;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=2X8FFaFUuNbK/Q3D+JdXz/hAm6hLKMIbt/0LuhhyF3w=;
+	b=smIaBR/wep6oNISGjR36JI9746vlBwYwQR6Nnx3QfWKkJ8Y/3ypGpFo9OX0D/m6sTmt2Fp
+	pschXyuYWgbhm+d8EklF2tUXKPQFND2vetzO9Grzl3DSH+1Lx26FZM7uT//iW5XoIH5J9F
+	wvWnyiUEHQn4Ev0YhwD7q2ZrRlBMTS0=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1725882902; a=rsa-sha256;
+	cv=none;
+	b=nJRFI0tL8+4AUru6QtPRJSytZkx/qDzrblr74Gw4MrmFhrVx8l7WyR6i686Ws596Ksa8Rv
+	Faf+O6Ole4hlugj/ukaKK/ZiBKlcw8rRVDTnwQhvuIiAlYpt5KY/05NbK16fbzS7zL2qeg
+	RFGYyX6wwVs9p9BR4chgHMARWxdNvjE=
+ARC-Authentication-Results: i=1;	imf29.b.hostedemail.com;	dkim=pass
+ header.d=katzprivacysettlement.com header.s=hdyfpwlmk6mpd67efezq6krf4cryjf5g
+ header.b="6m9b/SIr";	dkim=pass header.d=amazonses.com
+ header.s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug header.b=KEzdy+R+;	spf=pass
+ (imf29.b.hostedemail.com: domain of =?utf-8?q?01000191d6a3cb57-0afaeff9-753?=
+ =?utf-8?q?5-4eaf-8383-b88bfa784d18-000000=40DoNotReply=2Ekatzprivacysettlem?=
+ =?utf-8?q?ent=2Ecom_designates_54=2E240=2E46=2E46_as_permitted_sender=29_sm?=
+ =?utf-8?q?tp=2Emailfrom=3D01000191d6a3cb57-0afaeff9-7535-4eaf-8383-b88bfa78?=
+ =?utf-8?q?4d18-000000=40DoNotReply=2Ekatzprivacysettlement=2Ecom=3B?=
+	dmarc=pass (policy=none) header.from=katzprivacysettlement.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=hdyfpwlmk6mpd67efezq6krf4cryjf5g; d=katzprivacysettlement.com;
+	t=1725882944;
+	h=Date:From:To:Subject:MIME-Version:Content-Type:Message-ID;
+	bh=2X8FFaFUuNbK/Q3D+JdXz/hAm6hLKMIbt/0LuhhyF3w=;
+	b=6m9b/SIrXk9CBSp8oLp/Puc6iJVkEQxJT5IGEopb3yhbACGhCkUNVblAjV+soR2r
+	Rtjuw73lDBAId1eBti6TdjPvQooFAV3PD9MbqQ5BubGJ9s14VSRnjPSBqIfQvr4Iz4x
+	kpT2MvZd7LKogZ4DADiLubrwUj8nGiK900J/AQtexQ78mpQWOs/61+Nw/fewFhRIVML
+	biMJ/qz6L7oh1NfX9B8gnI1h22itx+i4fr0eTBDbQp1Mh9bB3XJeQJCe+tZbI8sem2f
+	nZCfxT+KRMhgOI2sMJq+HHYaqXaqYfKEaLPwgQPGZlD3abM6by39SefYVBj/gDffBgZ
+	CjhxMEQKjA==
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug; d=amazonses.com; t=1725882944;
+	h=Date:From:To:Subject:MIME-Version:Content-Type:Message-ID:Feedback-ID;
+	bh=2X8FFaFUuNbK/Q3D+JdXz/hAm6hLKMIbt/0LuhhyF3w=;
+	b=KEzdy+R+qVzLJwcfBrHNWN3StTX5ceqQL0T1Y0QvtXg+R0lXpAvjK7gCJmllVjxP
+	/1vNLMeCWaCaxtf2Wt7K6MEKGrOnEV9rsMTSgI0EBg05Ia+/1JjPG4ajkCXtG9LPXrg
+	r6vVHDmwtHQX3yw1NjP+RUHGYLex9Pc0onSCjKKU=
+Date: Mon, 9 Sep 2024 11:55:44 +0000
+From: "Katz-Lacabe v. Oracle Settlement Administrator"
+ <donotreply@katzprivacysettlement.com>
+To: jose@monkey.org
+Subject: Legal Notice of Class Action Settlement: You May Be Entitled To
+ Compensation
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_16792943_1725292873.1725882944388"
+Message-ID: <01000191d6a3cb57-0afaeff9-7535-4eaf-8383-b88bfa784d18-000000@email.amazonses.com>
+Feedback-ID:
+ ::1.us-east-1.wLc5IWXNRAd9daXsYIrFcDkA8bqCEA2UImqsvLWQtag=:AmazonSES
+X-SES-Outgoing: 2024.09.09-54.240.46.46
+X-Rspamd-Queue-Id: 6117512000A
+X-Spam-Status: No, score=-2.00
+X-Stat-Signature: bwresst5nyqr6kgeciamkjat64kudcj3
+X-Rspam-User: 
+X-Rspamd-Server: rspam05
+X-HE-Tag: 1725882945-226796
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/U+leA0K2oCvEYIN7lcJIUHgJfeNWowXNROe9oKe3J8un?=
+ =?utf-8?q?YLbxn45vVtF9932QTytvZ8GoEQR2FaoXoTwgY7+uP2GeyBFUaz8p1gb2zrNHtGTtD?=
+ =?utf-8?q?C6DUC4vQL1jlwS5UVynmbNwjYBZeB5sC4fHPYGExh4HeHd2902jU/+g1WYs66s+hX?=
+ =?utf-8?q?ZN2pBipIDhhlbdrSpBocvH9etjBVgKGtsWoiC9e6YOPmSXla19+z0pGFcX37pEaAL?=
+ =?utf-8?q?sOBUJSu+dmknboKvfDp/2W4Bwv7WLTIUTL7OEki23maPPkp5YXL1RZqeodCImo3VS?=
+ =?utf-8?q?4bGu2kvSLDnaehbmJF6BDlNvSiJZ/T2+gZ3I7ydrlrUKLJ/RKeg0qw2uVfbOySDOy?=
+ =?utf-8?q?z8bOmrmOtH1TQ1pumeAfDrtic32NgYsAOiyDc9VpvH03OxGk+ufBueTLuoYAF9HcZ?=
+ =?utf-8?q?3bVUguGnIT4uXokI7AKWmopRc1pB4ewU+5yDYxFn2FTypO0P1yUBQ4lBSBOJxbXzJ?=
+ =?utf-8?q?BDTCeTxgwYWoBLTI+Yw9nk+4swoPNBSxFdq6YJHzGrCOIwxdA0amYf67aT1WiH1Sl?=
+ =?utf-8?q?f98VYcdThBAlKSmYiuFpU0D+S7i+/FVKu2XRXGEB/Xeb/6kCG6V2SGYe9GZ4gUuhG?=
+ =?utf-8?q?V4kJ+6PFUf6CeEnulYD9zAgIMzO1lOUPideiY69bQ/KobO/Cu2OgGhR+wkFuouwgY?=
+ =?utf-8?q?n3HQD1a8iRqgj52NxaMtw6PWGF0ps2HHzuH8QShec3uODOPY0vWrR+nG6NbhftYld?=
+ =?utf-8?q?9SOtQzCcP47ElZwaPnjbMmgqVygqg5AyT6GZZR4JUr8gTz/r0GPPveOllf3SmodVK?=
+ =?utf-8?q?nBlQeewD94r7KIXgC9FzpITWelMuWDK5GBRhcPUpHpoad7sCENcgfLfEemQ0C4Mdb?=
+ =?utf-8?q?5TtHKDKjsyhOB2PKhb3Y5yIIv3UkgX5S/eQ+riZIbk0kC4jlsvYc8jdgdSIrqRftB?=
+ =?utf-8?q?HpzMD5slzlQGiqUKK5W8T4_EcZjEZyh7mJWPXIaq4taROaqq9l6y8ZnFXn/S4Ig3/?=
+ =?utf-8?q?d0y/eX4vifbzOSOg7iKUCYrCGX6JQrtDfn1n3Xe57FSz9JJUbdUI0zQlZs4wnDIA7?=
+ =?utf-8?q?FV/E1UmbL8sxOzn+fAaj+zToV9IYE26nWv0RM3cUzK8AskQ3v95/NoD4wgnoijOc7?=
+ =?utf-8?q?cfifzuKy/zEtbCCgqFBKq9EX84pa1vUFnb4LMqAVnxDRrpDIvgEu4CukaPXIU47L3?=
+ =?utf-8?q?wYtpHvuV0ny703H4L+naHZKN5YdsWDoEuXhYGJbXqgdlRFhAFjcpwHvGihE0EG5v+?=
+ =?utf-8?q?SRnR4hHGZHXFwo/2LW4t4tP2hAxG0IQhjgcDnDCAD/46YZVQFqtmr2aTRDeM9pSmP?=
+ =?utf-8?q?RcaNyxcQE6KfslTSJs6ABN2TB16X+gMB+vOt499/O6TelzfaKUOhUAUzB+PvX3tJL?=
+ =?utf-8?q?CHVD5N8/MmBbe5TS6uIPdim6S0O63mwIITUuNPpTRrSesqn9eZWKNTlZtsj0dHtwX?=
+ =?utf-8?q?8//rPEKLAuHjk3YYTGm8+8JS+zwYoFNuGI81yOM8PC/PmuE/ph/YDtB7Jb2YKBanT?=
+ =?utf-8?q?1ECduNhkntmpZbMFKSwj3wBjIoiLUhRSzbRHbabdWhsPiER21G+dye3u/y7UKaBVP?=
+ =?utf-8?q?DWV0fZkuaoVnfu+MqnDOIfItIisMP3YNF4t8851IqFozpiiWmSYSBAzFjNbfmaQ4j?=
+ =?utf-8?q?I8u0SmqPRf0WCACniZJOp8PTN6Ir+UMFySwe5qOYOcCL8BtMO3ykCavWuuL1Q8XwZ?=
+ =?utf-8?q?eakj7TwkUbEUP0TD63xaoBxINbpjpvoUljnIqs99Iq/Lb9rhQPLvkUZTA+4BiYJP1?=
+ =?utf-8?q?LF+yg1jumJxSj6+iDliQDEUjNM0iTXIWIy/XnmEaTitacGm1fH3tPskoR0Qklyim5?=
+ =?utf-8?q?N0DP+iKaJgfUxyfnk5S9liB82UnudYsyqp/ONvhQSuHfbqdCy/xacLZssTgQ6+pyj?=
+ =?utf-8?q?8UMGYlCo3yeVCwL6zd44WbRdM1REwNtnucKB9awmYzTJH_oXr77RZL+P8Qs2HA+X5?=
+ =?utf-8?q?3g4wyR48/yB6Ulswz8YLDXPxePaU4WWCWx3ixfXXYxIyGJCTq6T72kxtyWNlMI+Oy?=
+ =?utf-8?q?ZOR+Gr1PnVj4?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 254
+
+------=_Part_16792943_1725292873.1725882944388
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Notice ID: KATL0398926118
+Confirmation Code: 96N96HBrvUK4
+
+United States District Court for the Northern District of California
+Katz-Lacabe et al v. Oracle America, Inc., Case No. 3:22-cv-04792-RS
+
+NOTICE OF PROPOSED CLASS ACTION SETTLEMENT
+
+Our Records Indicate You May Be Entitled to a Payment from a Class Action S=
+ettlement
+Because Your Personal Data May Have Been Collected by Oracle America, Inc.
+
+A federal court authorized this notice. You are not being sued. This is not=
+ an advertisement.
+(Para la notificaci=C3=B3n en espa=C3=B1ol, visite el sitio web.)
+
+A Settlement has been proposed in class action litigation against Oracle Am=
+erica, Inc. (=E2=80=9COracle=E2=80=9D). This class action alleges that Orac=
+le improperly captured, compiled, and sold individuals=E2=80=99 online and =
+offline data to third parties without obtaining their consent. Oracle denie=
+s all the allegations made in the lawsuit and any wrongdoing and maintains =
+that its practices were lawful and disclosed to individuals.
+
+Who is included in the Settlement? You are included if you are a Settlement=
+ Class Member, which is defined as =E2=80=9Call natural persons residing in=
+ the United States whose personal information, or data derived from their p=
+ersonal information, was acquired, captured, or otherwise collected by Orac=
+le Advertising technologies or made available for use or sale by or through=
+ ID Graph, Data Marketplace, or any other Oracle Advertising product or ser=
+vice from August 19, 2018 to the date of final judgment in the Action.=E2=
+=80=9D
+
+What does the Settlement provide? Under the Settlement, Oracle will pay $11=
+5 million to establish a Settlement Fund.
+
+To submit your claim, go to: www.KatzPrivacySettlement.com/submit-claim.
+
+Class Counsel will ask the Court to award up to 25% of the Settlement Fund =
+(i.e. up to $28.75 million) for attorneys=E2=80=99 fees. In addition, Class=
+ Counsel will ask the Court to reimburse them out of the Settlement Fund fo=
+r the expenses they reasonably incurred and will incur in litigating this c=
+ase on behalf of Settlement Class Members in an amount not to exceed $225,0=
+00. Oracle has reserved the right to object or comment on Class Counsel=E2=
+=80=99s request for attorneys=E2=80=99 fees and expenses in the District Co=
+urt and has also agreed not to appeal any order of the District Court award=
+ing attorneys=E2=80=99 fees and expenses. Class Counsel will also ask the C=
+ourt to approve Service Awards of up to $10,000 each for the two Class Repr=
+esentatives named in the complaint as an award for their service to the Set=
+tlement Class as Plaintiffs and Class Representatives ($20,000 in total) ou=
+t of the Settlement Fund. Class Counsel=E2=80=99s application for attorneys=
+=E2=80=99 fees, expenses, and Service Awards will be made available on the =
+Settlement Website at www.KatzPrivacySettlement.com before the deadline for=
+ you to comment on or object to the Settlement.
+
+After deducting any Court-approved attorneys=E2=80=99 fees and expenses and=
+ Service Awards for the Class Representatives, and the costs of the Settlem=
+ent administration, the Settlement Fund will be distributed to Class Member=
+s on a pro rata basis.
+
+Oracle will also certify that, for as long as it continues to offer the pro=
+ducts and services described in the complaint, it will: (i) not capture (a)=
+ user-generated information within referrer URLs (i.e., the URL of the prev=
+iously-visited page) associated with a website user or (b) except for Oracl=
+e=E2=80=99s own websites, any text entered by a user in an online web form,=
+; and (ii) implement an audit program to reasonably review customer complia=
+nce with contractual consumer privacy obligations.
+
+How do I get a payment? You must submit a valid Claim Form by October 17, 2=
+024. Claim forms may be submitted online at www.KatzPrivacySettlement.com o=
+r printed from the website and mailed to the address on the Claim Form. Cla=
+im Forms are also available by calling 1-888-255-4036 or emailing Questions=
+@KatzPrivacySettlement.com. You are not required to submit a claim, but if =
+you are in the Settlement Class and do not submit a claim, you will lose yo=
+ur right to claim compensation in connection with the Settlement.
+
+Your other options. If you don=E2=80=99t want to be legally bound by the Se=
+ttlement, you must exclude yourself from it by October 17, 2024. Unless you=
+ exclude yourself, you won=E2=80=99t be able to sue or continue to sue Orac=
+le for any claim made in this lawsuit or released by the Settlement Agreeme=
+nt. If you stay in the Settlement (i.e., don=E2=80=99t exclude yourself), y=
+ou may file an objection or other comment no later than October 17, 2024. M=
+ore information about these options is available at www.KatzPrivacySettleme=
+nt.com.
+
+Do I have a lawyer in the case? If you are a Settlement Class Member, you h=
+ave a lawyer in this case. The Court appointed as =E2=80=9CClass Counsel=E2=
+=80=9D the law firm of Lieff Cabraser Heimann & Bernstein, LLP to represent=
+ Settlement Class Members. If you want to be represented by your own lawyer=
+, you may hire one at your own expense.
+
+The Court=E2=80=99s hearing. The Court will hold the Final Approval Hearing=
+ at 1:30 p.m. on November 14, 2024 in Courtroom 3 (17th Floor) of the San F=
+rancisco Courthouse, 450 Golden Gate Avenue, San Francisco, CA 94102. There=
+ is no requirement that you attend the hearing=E2=80=94you may submit a cla=
+im, object, comment or exclude yourself from the Settlement without attendi=
+ng the hearing. At the Final Approval Hearing, the Court will consider whet=
+her the Settlement is fair, reasonable, and adequate, including Class Couns=
+el=E2=80=99s application for attorneys=E2=80=99 fees, expenses, and for Ser=
+vice Awards.
+
+How Do I Get More Information? For more information, including the full not=
+ice, claim form and Settlement Agreement visit www.KatzPrivacySettlement.co=
+m, or contact the Settlement Administrator by email at Questions@KatzPrivac=
+ySettlement.com, by phone at 1-888-255-4036, or by mail at:
+
+Katz-Lacabe et al v. Oracle America, Inc.
+c/o Settlement Administrator
+1650 Arch Street, Suite 2210
+Philadelphia, PA 19103
+
+If you are member of the Settlement Class, you may go to the Settlement web=
+site (www.KatzPrivacySettlement.com) now and make a claim.
+
+PLEASE DO NOT CONTACT THE COURT OR THE COURT CLERK=E2=80=99S
+OFFICE TO INQUIRE ABOUT THIS SETTLEMENT OR THE CLAIM PROCESS.
+
+This notice is only a summary.
+
+Unsubscribe
+------=_Part_16792943_1725292873.1725882944388
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!doctype html>
+<html data-darkreader-mode=3D"dynamic" data-darkreader-scheme=3D"dark" xmln=
+s=3D"http://www.w3.org/1999/xhtml" xmlns:o=3D"urn:schemas-microsoft-com:off=
+ice:office" xmlns:v=3D"urn:schemas-microsoft-com:vml">
+<head>
+=09<title></title>
+=09<meta charset=3D"UTF-8">
+=09<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+=09<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1">
+=09<style type=3D"text/css">
+=09=09body, #bodyTable, #bodyCell {
+=09=09=09height: 100%;
+=09=09=09margin: 0;
+=09=09=09padding: 0;
+=09=09=09width: 100%;
+=09=09=09background-color: #FAFAFA;
+=09=09}
+=09=09table {
+=09=09=09border-collapse: collapse;
+=09=09}
+=09=09img {
+=09=09=09-ms-interpolation-mode: bicubic;
+=09=09=09height: auto;
+=09=09=09border: 0;
+=09=09=09outline: none;
+=09=09=09text-decoration: none;
+=09=09}
+=09=09p {
+=09=09=09margin: 10px 0;
+=09=09=09padding: 0;
+=09=09}
+=09=09h1, h2, h3, h4, h5, h6 {
+=09=09=09display: block;
+=09=09=09margin: 0;
+=09=09=09padding: 0;
+=09=09}
+=09=09.templateContainer {
+=09=09=09max-width: 600px !important;
+=09=09=09border: 0;
+=09=09}
+=09=09#bodyCell {
+=09=09=09padding: 10px;
+=09=09=09border-top: 0;
+=09=09}
+=09=09#templateBody {
+=09=09=09background-color: #FFFFFF;
+=09=09=09border-top: 0;
+=09=09=09border-bottom: 2px solid #EAEAEA;
+=09=09=09padding-top: 0;
+=09=09=09padding-bottom: 9px;
+=09=09}
+=09=09#templateFooter {
+=09=09=09background-color: #FAFAFA;
+=09=09=09border-top: 0;
+=09=09=09border-bottom: 0;
+=09=09=09padding-top: 9px;
+=09=09=09padding-bottom: 9px;
+=09=09=09text-align: center;
+=09=09}
+=09=09.mcnTextContent {
+=09=09=09word-break: break-word;
+=09=09=09color: #202020;
+=09=09=09font-family: Helvetica;
+=09=09=09font-size: 16px;
+=09=09=09line-height: 150%;
+=09=09=09text-align: left;
+=09=09}
+=09=09.mcnTextContent a {
+=09=09=09color: #007C89;
+=09=09=09font-weight: normal;
+=09=09=09text-decoration: underline;
+=09=09}
+=09=09@media only screen and (min-width:768px) {
+=09=09=09.templateContainer {
+=09=09=09=09width: 600px !important;
+=09=09=09}
+=09=09}
+=09=09@media only screen and (max-width:480px) {
+=09=09=09body, table, td, p, a, li, blockquote {
+=09=09=09=09-webkit-text-size-adjust: none !important;
+=09=09=09}
+=09=09=09body {
+=09=09=09=09width: 100% !important;
+=09=09=09=09min-width: 100% !important;
+=09=09=09}
+=09=09=09.mcnRetinaImage {
+=09=09=09=09max-width: 100% !important;
+=09=09=09}
+=09=09=09.mcnImage {
+=09=09=09=09width: 100% !important;
+=09=09=09}
+=09=09=09.mcnTextContent, .mcnBoxedTextContentColumn {
+=09=09=09=09padding-right: 18px !important;
+=09=09=09=09padding-left: 18px !important;
+=09=09=09}
+=09=09=09h1 {
+=09=09=09=09font-size: 22px !important;
+=09=09=09=09line-height: 125% !important;
+=09=09=09}
+=09=09=09h2 {
+=09=09=09=09font-size: 20px !important;
+=09=09=09=09line-height: 125% !important;
+=09=09=09}
+=09=09=09h3 {
+=09=09=09=09font-size: 18px !important;
+=09=09=09=09line-height: 125% !important;
+=09=09=09}
+=09=09=09h4 {
+=09=09=09=09font-size: 16px !important;
+=09=09=09=09line-height: 150% !important;
+=09=09=09}
+=09=09}
+=09</style>
+</head>
+<body>
+<center>
+=09<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ height=3D"100%" id=3D"bodyTable" width=3D"100%">
+=09=09<tbody>
+=09=09=09<tr>
+=09=09=09=09<td align=3D"center" id=3D"bodyCell" valign=3D"top">
+=09=09=09=09=09<div class=3D"templateContainer">
+=09=09=09=09=09=09<div id=3D"templateBody">
+=09=09=09=09=09=09=09<div class=3D"mcnTextContent" style=3D"padding: 0px 18=
+px 9px; font-size: 13px;">
+=09=09=09=09=09=09=09=09<p style=3D"font-size: 13px;">Notice ID: KATL039892=
+6118<br />
+=09=09=09=09=09=09=09=09Confirmation Code: 96N96HBrvUK4</p>
+
+=09=09=09=09=09=09=09=09<p style=3D"text-align: center; font-size: 13px;">U=
+nited States District Court for the Northern District of California<br />
+=09=09=09=09=09=09=09=09<em>Katz-Lacabe et al v. Oracle America, Inc., Case=
+ No. 3:22-cv-04792-RS</em></p>
+
+=09=09=09=09=09=09=09=09<p style=3D"text-align: center; font-size: 13px;"><=
+strong>NOTICE OF PROPOSED CLASS ACTION SETTLEMENT</strong></p>
+
+=09=09=09=09=09=09=09=09<hr width=3D"50%" />
+=09=09=09=09=09=09=09=09<p style=3D"text-align: center; font-size: 13px;"><=
+strong>Our Records Indicate You May Be Entitled to a Payment from a Class A=
+ction Settlement<br />
+=09=09=09=09=09=09=09=09Because Your Personal Data May Have Been Collected =
+by Oracle America, Inc.</strong></p>
+
+=09=09=09=09=09=09=09=09<hr width=3D"50%" />
+=09=09=09=09=09=09=09=09<p style=3D"font-size: 13px; text-align: center;"><=
+strong><em>A federal court authorized this notice. You are not being sued. =
+This is not an advertisement.</em></strong><br />
+=09=09=09=09=09=09=09=09<a href=3D"https://t3kzfhdh.r.us-east-1.awstrack.me=
+/L0/https:%2F%2Fangeion-public.s3.amazonaws.com%2Fwww.katzprivacysettlement=
+.com%2Fdocs%2FAviso%2520detallado%2520en%2520espa%25C3%25B1ol.pdf/1/0100019=
+1d6a3cb57-0afaeff9-7535-4eaf-8383-b88bfa784d18-000000/7EhqI1f3YfzsKJpf5draM=
+gXXTPA=3D390"><strong><u>(Para la notificaci&oacute;n en espa&ntilde;ol, vi=
+site el sitio web.)</u></strong></a></p>
+
+=09=09=09=09=09=09=09=09<p style=3D"font-size: 13px;">A Settlement has been=
+ proposed in class action litigation against Oracle America, Inc. (&ldquo;O=
+racle&rdquo;). This class action alleges that Oracle improperly captured, c=
+ompiled, and sold individuals&rsquo; online and offline data to third parti=
+es without obtaining their consent. Oracle denies all the allegations made =
+in the lawsuit and any wrongdoing and maintains that its practices were law=
+ful and disclosed to individuals.</p>
+
+=09=09=09=09=09=09=09=09<p style=3D"font-size: 13px;"><strong>Who is includ=
+ed in the Settlement?</strong> You are included if you are a Settlement Cla=
+ss Member, which is defined as &ldquo;all natural persons residing in the U=
+nited States whose personal information, or data derived from their persona=
+l information, was acquired, captured, or otherwise collected by Oracle Adv=
+ertising technologies or made available for use or sale by or through ID Gr=
+aph, Data Marketplace, or any other Oracle Advertising product or service f=
+rom August 19, 2018 to the date of final judgment in the Action.&rdquo;</p>
+
+=09=09=09=09=09=09=09=09<p style=3D"font-size: 13px;"><strong>What does the=
+ Settlement provide?</strong> Under the Settlement, Oracle will pay $115 mi=
+llion to establish a Settlement Fund.</p>
+
+=09=09=09=09=09=09=09=09<p style=3D"font-size: 13px;">To submit your claim,=
+ go to: <a href=3D"https://t3kzfhdh.r.us-east-1.awstrack.me/L0/https:%2F%2F=
+www.KatzPrivacySettlement.com%2Fsubmit-claim/1/01000191d6a3cb57-0afaeff9-75=
+35-4eaf-8383-b88bfa784d18-000000/gvp2cQyxU0ex8uGaj6iJy8q_joQ=3D390"><strong=
+>www.KatzPrivacySettlement.com/submit-claim</strong></a>.</p>
+
+=09=09=09=09=09=09=09=09<p style=3D"font-size: 13px;">Class Counsel will as=
+k the Court to award up to 25% of the Settlement Fund (i.e. up to $28.75 mi=
+llion) for attorneys&rsquo; fees. In addition, Class Counsel will ask the C=
+ourt to reimburse them out of the Settlement Fund for the expenses they rea=
+sonably incurred and will incur in litigating this case on behalf of Settle=
+ment Class Members in an amount not to exceed $225,000. Oracle has reserved=
+ the right to object or comment on Class Counsel&rsquo;s request for attorn=
+eys&rsquo; fees and expenses in the District Court and has also agreed not =
+to appeal any order of the District Court awarding attorneys&rsquo; fees an=
+d expenses. Class Counsel will also ask the Court to approve Service Awards=
+ of up to $10,000 each for the two Class Representatives named in the compl=
+aint as an award for their service to the Settlement Class as Plaintiffs an=
+d Class Representatives ($20,000 in total) out of the Settlement Fund. Clas=
+s Counsel&rsquo;s application for attorneys&rsquo; fees, expenses, and Serv=
+ice Awards will be made available on the Settlement Website at <a href=3D"h=
+ttps://t3kzfhdh.r.us-east-1.awstrack.me/L0/https:%2F%2Fwww.KatzPrivacySettl=
+ement.com/1/01000191d6a3cb57-0afaeff9-7535-4eaf-8383-b88bfa784d18-000000/JE=
+uyBqOsGJgvMrfx3aewF9_86jQ=3D390"><strong>www.KatzPrivacySettlement.com</str=
+ong></a> before the deadline for you to comment on or object to the Settlem=
+ent.</p>
+
+=09=09=09=09=09=09=09=09<p style=3D"font-size: 13px;">After deducting any C=
+ourt-approved attorneys&rsquo; fees and expenses and Service Awards for the=
+ Class Representatives, and the costs of the Settlement administration, the=
+ Settlement Fund will be distributed to Class Members on a <em>pro rata</em=
+> basis.</p>
+
+=09=09=09=09=09=09=09=09<p style=3D"font-size: 13px;">Oracle will also cert=
+ify that, for as long as it continues to offer the products and services de=
+scribed in the complaint, it will: (i) not capture (a) user-generated infor=
+mation within referrer URLs (<em>i.e.</em>, the URL of the previously-visit=
+ed page) associated with a website user or (b) except for Oracle&rsquo;s ow=
+n websites, any text entered by a user in an online web form,; and (ii) imp=
+lement an audit program to reasonably review customer compliance with contr=
+actual consumer privacy obligations.</p>
+
+=09=09=09=09=09=09=09=09<p style=3D"font-size: 13px;"><strong>How do I get =
+a payment? </strong>You must submit a valid Claim Form by <strong>October 1=
+7, 2024</strong>. Claim forms may be submitted online at <a href=3D"https:/=
+/t3kzfhdh.r.us-east-1.awstrack.me/L0/https:%2F%2Fwww.KatzPrivacySettlement.=
+com/2/01000191d6a3cb57-0afaeff9-7535-4eaf-8383-b88bfa784d18-000000/CsgrGYY9=
+CGGf6odeAJ1AD47tFWo=3D390"><strong>www.KatzPrivacySettlement.com</strong></=
+a> or printed from the website and mailed to the address on the Claim Form.=
+ Claim Forms are also available by calling 1-888-255-4036 or emailing <a hr=
+ef=3D"mailto:Questions@KatzPrivacySettlement.com"><strong>Questions@KatzPri=
+vacySettlement.com</strong></a>. You are not required to submit a claim, bu=
+t if you are in the Settlement Class and do not submit a claim, you will lo=
+se your right to claim compensation in connection with the Settlement.</p>
+
+=09=09=09=09=09=09=09=09<p style=3D"font-size: 13px;"><strong>Your other op=
+tions.</strong> If you don&rsquo;t want to be legally bound by the Settleme=
+nt, you must exclude yourself from it by <strong>October 17, 2024</strong>.=
+ Unless you exclude yourself, you won&rsquo;t be able to sue or continue to=
+ sue Oracle for any claim made in this lawsuit or released by the Settlemen=
+t Agreement. If you stay in the Settlement (<em>i.e.</em>, don&rsquo;t excl=
+ude yourself), you may file an objection or other comment no later than <st=
+rong>October 17, 2024</strong>. More information about these options is ava=
+ilable at <a href=3D"https://t3kzfhdh.r.us-east-1.awstrack.me/L0/https:%2F%=
+2Fwww.KatzPrivacySettlement.com/3/01000191d6a3cb57-0afaeff9-7535-4eaf-8383-=
+b88bfa784d18-000000/Uy7fnRFBKLWfIGImWEQZrP0dAX8=3D390"><strong>www.KatzPriv=
+acySettlement.com</strong></a>.</p>
+
+=09=09=09=09=09=09=09=09<p style=3D"font-size: 13px;"><strong>Do I have a l=
+awyer in the case?</strong> If you are a Settlement Class Member, you have =
+a lawyer in this case. The Court appointed as &ldquo;Class Counsel&rdquo; t=
+he law firm of Lieff Cabraser Heimann &amp; Bernstein, LLP to represent Set=
+tlement Class Members. If you want to be represented by your own lawyer, yo=
+u may hire one at your own expense.</p>
+
+=09=09=09=09=09=09=09=09<p style=3D"font-size: 13px;"><strong>The Court&rsq=
+uo;s hearing.</strong> The Court will hold the Final Approval Hearing at <s=
+trong>1:30 p.m. on November 14, 2024</strong> in Courtroom 3 (17th Floor) o=
+f the San Francisco Courthouse, 450 Golden Gate Avenue, San Francisco, CA 9=
+4102. There is no requirement that you attend the hearing&mdash;you may sub=
+mit a claim, object, comment or exclude yourself from the Settlement withou=
+t attending the hearing. At the Final Approval Hearing, the Court will cons=
+ider whether the Settlement is fair, reasonable, and adequate, including Cl=
+ass Counsel&rsquo;s application for attorneys&rsquo; fees, expenses, and fo=
+r Service Awards.</p>
+
+=09=09=09=09=09=09=09=09<p style=3D"font-size: 13px;"><strong>How Do I Get =
+More Information? </strong>For more information, including the full notice,=
+ claim form and Settlement Agreement visit <a href=3D"https://t3kzfhdh.r.us=
+-east-1.awstrack.me/L0/https:%2F%2Fwww.KatzPrivacySettlement.com/4/01000191=
+d6a3cb57-0afaeff9-7535-4eaf-8383-b88bfa784d18-000000/cVqp_fsiUnxaN23p9szT9L=
+bF-r0=3D390"><strong>www.KatzPrivacySettlement.com</strong></a>, or contact=
+ the Settlement Administrator by email at <a href=3D"mailto:Questions@KatzP=
+rivacySettlement.com"><strong>Questions@KatzPrivacySettlement.com</strong><=
+/a>, by phone at 1-888-255-4036, or by mail at:</p>
+
+=09=09=09=09=09=09=09=09<p style=3D"font-size: 13px; margin-left:10%;"><em>=
+Katz-Lacabe et al v. Oracle America, Inc.</em><br />
+=09=09=09=09=09=09=09=09c/o Settlement Administrator<br />
+=09=09=09=09=09=09=09=091650 Arch Street, Suite 2210<br />
+=09=09=09=09=09=09=09=09Philadelphia, PA 19103</p>
+
+=09=09=09=09=09=09=09=09<p style=3D"text-align: center; font-size: 13px;"><=
+span style=3D"font-size:14px;"><strong>If you are member of the Settlement =
+Class, you may go to the Settlement website <a href=3D"https://t3kzfhdh.r.u=
+s-east-1.awstrack.me/L0/https:%2F%2Fwww.KatzPrivacySettlement.com/5/0100019=
+1d6a3cb57-0afaeff9-7535-4eaf-8383-b88bfa784d18-000000/-HGYLKoZ-GIYOJo5GYEFq=
+QNcSxM=3D390"><strong>(www.KatzPrivacySettlement.com)</strong></a> now and =
+make a claim.</strong></span></p>
+
+=09=09=09=09=09=09=09=09<p style=3D"text-align: center; font-size: 13px;"><=
+span style=3D"font-size:14px;"><strong>PLEASE DO NOT CONTACT THE COURT OR T=
+HE COURT CLERK&rsquo;S<br />
+=09=09=09=09=09=09=09=09OFFICE TO INQUIRE ABOUT THIS SETTLEMENT OR THE CLAI=
+M PROCESS.</strong></span></p>
+
+=09=09=09=09=09=09=09=09<p style=3D"text-align: center; font-size: 13px;"><=
+span style=3D"font-size:14px;"><strong>This notice is only a summary. </str=
+ong></span></p>
+=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09</div>
+=09=09=09=09=09=09<div id=3D"templateFooter">
+=09=09=09=09=09=09=09<p style=3D"font-size:9px;"><a href=3D"https://t3kzfhd=
+h.r.us-east-1.awstrack.me/L0/https:%2F%2F%2Fwww.angeionemail.com%2Funsubscr=
+ibe%2FzlAiWlPeaHDpY4oLXNcavw%2FV6UVY2eGsYrPtrj26BtIZQ%2FVXns29qwGlK892dW69u=
+wSBow/1/01000191d6a3cb57-0afaeff9-7535-4eaf-8383-b88bfa784d18-000000/Sbr1JE=
+U6WIbO5xKqSyuww40rAC4=3D390" >Unsubscribe</a></p>
+=09=09=09=09=09=09</div>
+=09=09=09=09=09</div>
+=09=09=09=09</td>
+=09=09=09</tr>
+=09=09</tbody>
+=09</table>
+</center>
+<img alt=3D"" src=3D"https://t3kzfhdh.r.us-east-1.awstrack.me/I0/01000191d6=
+a3cb57-0afaeff9-7535-4eaf-8383-b88bfa784d18-000000/b2aIVu2DQS5x-iKiHEF-sEVv=
+nEc=3D390" style=3D"display: none; width: 1px; height: 1px;">
+</body>
+</html>
+
+------=_Part_16792943_1725292873.1725882944388--
+

@@ -1,0 +1,292 @@
+Return-Path: info@vlqa-investment.com
+Delivered-To: jose@monkey.org
+X-FDA: 82835402706.10.BCBF09F
+Received: from mail.vlqa-investment.com (mail.vlqa-investment.com
+ [95.164.88.53])	by imf30.b.hostedemail.com (Postfix) with ESMTP id
+ 6F657180006	for <jose@monkey.org>; Thu, 28 Nov 2024 12:16:50 +0000 (UTC)
+Authentication-Results: imf30.b.hostedemail.com;	dkim=pass
+ header.d=vlqa-investment.com header.s=202410 header.b=C2RyZp4n;	spf=pass
+ (imf30.b.hostedemail.com: domain of info@vlqa-investment.com designates
+ 95.164.88.53 as permitted sender) smtp.mailfrom=info@vlqa-investment.com;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1732796209;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=DrCfiJpQjhtxTh0uhSm4b8pzrKmPzrq7UAmpXhMAVsI=;
+	b=4YsT9+OaFQZpLg3i/Q4bFkAX2e1QJkpQC6/OfJ9LuRgLEgHdl6GEqnzgFsDLIPwcChAOuq
+	d5DC8nCe2couC3E5k2VrNWeJR6cKUdDvL4DiU+PbKLKSjXfr9YscVDkkaoKPBT9qpsJn8W
+	njGZY1KyiVB9VMHHnmPgJtbAlk3fIEQ=
+ARC-Authentication-Results: i=1;	imf30.b.hostedemail.com;	dkim=pass
+ header.d=vlqa-investment.com header.s=202410 header.b=C2RyZp4n;	spf=pass
+ (imf30.b.hostedemail.com: domain of info@vlqa-investment.com designates
+ 95.164.88.53 as permitted sender) smtp.mailfrom=info@vlqa-investment.com;
+	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1732796209; a=rsa-sha256;
+	cv=none;
+	b=st9WuFQ3tVpNUrTaCW8H6ivgMSYeqcoXsqxGAZalAmERlE6X7ezIv43/SdSAzY71iTOoSh
+	GmXAd76njSQrdAuGSNGi4iZKYO9Il9skZxm/hePr7E1uy4s7GMrUg2GaIrAN0wgt/RyrxW
+	9QccRHu1TgO7L68CK809dh3oBLoNxSs=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=vlqa-investment.com;
+	s=202410; t=1732796202;
+	bh=9j8htwvEEU9Tge+OFEWg4Q0L6sHf6YCSD4ti135VdLc=;
+	h=Reply-To:From:To:Subject:Date:From;
+	b=C2RyZp4nDwXoNEY/bKSR7fNolxP2P5kdXgO5O0TAhYaoBMj7FIhQphSUse1+radF2
+	 tj+bkHXBl0LxgyWb2qVuZl/hNaeb3NO1nogPE3M03u2eFd46QC8Wp4aBIc2TH25HJR
+	 ciXce0DOnOqMqASmcO9rphANltKc28/PQGDg5N6qY6U08iSqV5mIJduGb/dD+knTGD
+	 3VLGjfZRErYVo3HAo0de8fjVhQVQtWHns+XTHNkbBB8/4FuCheRne/EKSpqYKaHx74
+	 Pgl3wqESLKlUG3hXdEFPRhmCjJ6Ap27HVm+M7t3ZBNrw8eHA8WoMD+HQt2rsvdSsdN
+	 LzaA+kHn53M4g==
+Received: from [109.248.150.220] (unknown [109.248.150.220])
+	by mail.vlqa-investment.com (Postfix) with ESMTPA id 67D98AB2A0
+	for <jose@monkey.org>; Thu, 28 Nov 2024 12:16:42 +0000 (GMT)
+Reply-To: no-reply_dse_NA4@docusign.net
+From: Docusign via monkey.org <info@vlqa-investment.com>
+To: jose@monkey.org
+Subject: Complete with Docusign:  Review Document
+Date: 28 Nov 2024 13:16:42 +0100
+Message-ID: <20241128131642.53756CC6337D25C7@vlqa-investment.com>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspam-User: 
+X-Rspamd-Server: rspam01
+X-Rspamd-Queue-Id: 6F657180006
+X-Stat-Signature: dssjess4pwm6ngsdt5jzd6w6nmjfb998
+X-Spam-Status: No, score=-0.70
+X-HE-Tag: 1732796210-392529
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19IEeSFaZ0OMBkxl6XlpcWTqFJIRm+xUjMs0NBC7xL/ONe?=
+ =?utf-8?q?l+yfz0nIx2WRGhQTkKywEx2483saI4KQig7Eq9ChGAFwvJjhR4apRK8xu9OntTeKt?=
+ =?utf-8?q?cto2bsCWMvsz+eSgIUKJewgEZeZ3v3qVp1p+DlzjG+wr+h2LRhlVOObXK4fSSR1TG?=
+ =?utf-8?q?pvIlnHvG+r0nrQw5jsxWYvhScn5F6UX7KQsnKKGSg4eqqP59gLwY2PTAZAK/f7SnF?=
+ =?utf-8?q?O25jCrvNGd5f2+CckWh5muctPGSj4JuI6LqRPBxUfayBrHiovT5yV68HJlfp/CecD?=
+ =?utf-8?q?KvIsTlsyHZjxr6OIcnqstbZhPxF4WMB6+qNa+Zg6OnE2Aux3F6tpmZ9a/G7/gtcEv?=
+ =?utf-8?q?/pH/q2XfMdkJutu6NhoOfZTnM+gyQsSjvUN6ufUFyI595Gm2a5QYjWydG3CDYkhCu?=
+ =?utf-8?q?7t8/gsbPiyE2I60IxsNB8Os/Kx2iQixyLXZAtTn7HgA84/EWfQmjjPaQ7PVKey4ak?=
+ =?utf-8?q?jeK4/WGHXshtHx2lJqlUlPrHFgqXdHQQstUgi2OjPm+hfujWbyWuUI8muHSJbz31v?=
+ =?utf-8?q?Fw4HTRFrY8C5m1ZgUoD1KCqObRi+lvLg4Uo8COYgEqpXg3YPuGFGmDWwEo7K08AHh?=
+ =?utf-8?q?18wpAfuyhQ1PUDbCLOaXK04ZKKqaZrZD3OLOyTOgXNmhECgJcfUMNLuIzRX+PgiY3?=
+ =?utf-8?q?EMHLUfytkcBFgPGvLvuNaObtcr6w6Ayto9a8fbXoZup1G8b/99cmqgZZnDjBOWhvs?=
+ =?utf-8?q?Aar4AJS2/GT96h4xHqiYhWLVWTXVMZHmFYvb7raDgWgxBwJTrHNCY8naWgGF0oyhY?=
+ =?utf-8?q?BZVdIbkHpXHauZjr1PeSDoPQ0InoQomhdx3gl67Zj2mVZ6jPPLMm/nkytRij2vAke?=
+ =?utf-8?q?ziDa9d6MCMFqnEvZG1yHjwxzk9x6Lqvw0r+dkoxDT/aueZ/2045fVotr9NaHuDbaj?=
+ =?utf-8?q?qFC1vI7gG1qqoUEQl+LRLf_P9KwsLvswB0QE1uhqYvx3SPNe0GyCZIE2GVXrA8KR3?=
+ =?utf-8?q?QivStyQsKSmHsppJwMWet11GLRTMpTct8BmQ7xZquPaSoBXM25T/N84QpPD4S9EGw?=
+ =?utf-8?q?UHjCNnncZ3nYIiio4K6/2n2lAzyVKsnJcNKdXJO8leUI7T0iuR0aJErJWQoLDcnCY?=
+ =?utf-8?q?iBpIghAerQ5DglfwyJY7e812w503bIl9UXQDqTouhDN/A9+OygkelcQXmWiWBO0GR?=
+ =?utf-8?q?v08nIcIR/teJ4uLaK5H2BWw3MMjsrG4MxmWEh4FTwWX8FROL8b8JyX2BIuf13Eo83?=
+ =?utf-8?q?DraQVnE/R56BkpQWyDtfWXbLKYPtBXVcV3lkXbFag1wghQHtj20m2ap7iUOvgCeo6?=
+ =?utf-8?q?MgHwn8XUMGOWR432kJMfqwErZY3Kj/DTy1YVTwVcxQXKgk5LcrqJnwiUvkNBySqU6?=
+ =?utf-8?q?PNNymQx5JHfsJYuJGnjU9l75ytaVfsLWqgoAteSyHdS+TyTN74G8G+1P2hmfJJ4kD?=
+ =?utf-8?q?wh/EXj3iKCCADG0ukHdvtvRiArVgiRU9YBHD8DyuetjYFHrbSoAxqSQGaVhokOX1J?=
+ =?utf-8?q?FSZroYHfWjAqJex3kEvCYsxrnjzOvX+dXJdhnfPMprbf+PtUIzhR1uDVD6jpWbD3N?=
+ =?utf-8?q?/Js2M1GS/k60x2WIt976lP4allgkKBWDBqFfccxA=3D=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 366
+
+<html><head>
+  <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+  <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-885=
+9-1">
+    <title></title></head>
+    <body>
+    <p id=3D"reply-intro"></p>
+    <div id=3D"replybody1">
+    <div style=3D"padding-top: 2%; padding-right: 2%; padding-bottom: 2%; b=
+ackground-color: rgb(234, 234, 234);">
+    <table width=3D"100%" align=3D"center" border=3D"0" cellspacing=3D"0" c=
+ellpadding=3D"0">
+=20=20=20=20=20=20
+      <tbody><tr>
+        <td></td>
+        <td width=3D"640">
+          <table style=3D"border-collapse: collapse; max-width: 640px; back=
+ground-color: rgb(255, 255, 255); mso-table-lspace: 0pt; mso-table-rspace: =
+0pt;">
+=20=20=20=20=20=20=20=20=20=20=20=20
+            <tbody><tr>
+              <td style=3D"padding: 10px 24px;"><img width=3D"116" style=3D=
+"border-image: none;" alt=3D"DocuSign" src=3D"https://na2.docusign.net/Sign=
+ing/Images/email/Email_Logo.png" height=3D"34"></td></tr>
+            <tr>
+              <td style=3D"padding: 0px 24px 30px;">
+                <table width=3D"100%" align=3D"center" style=3D"color: rgb(=
+255, 255, 255); background-color: rgb(30, 76, 161);" border=3D"0" cellspaci=
+ng=3D"0" cellpadding=3D"0">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                  <tbody><tr>
+                    <td align=3D"center" style=3D"padding: 28px 10px 36px; =
+border-radius: 2px; width: 100%; text-align: center; color: rgb(255, 255, 2=
+55); font-family: Helvetica,Arial,Sans Serif; font-size: 16px; background-c=
+olor: rgb(30, 76, 161);"><img width=3D"75" height=3D"75" style=3D"width: 75=
+px; height: 75px;" src=3D"https://na2.docusign.net/member/Images/email/docC=
+omplete-white.png">=20
+                      <table width=3D"100%" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                        <tbody><tr>
+                          <td align=3D"center" style=3D"border-image: none;=
+ text-align: center; color: rgb(255, 255, 255); padding-top: 24px; font-fam=
+ily: Helvetica,Arial,Sans Serif; font-size: 16px;">You received a new&nbsp;=
+document to review and=20
+                            sign.<br></td></tr></tbody></table>
+                      <table width=3D"100%" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+                        <tbody><tr>
+                          <td align=3D"center" style=3D"padding-top: 30px;"=
+>
+                            <div>
+                            <table cellspacing=3D"0" cellpadding=3D"0">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20=20=20
+                              <tbody><tr>
+                                <td height=3D"44" align=3D"center" style=3D=
+"border: 1px solid rgb(255, 255, 255); border-image: none; height: 100%; te=
+xt-align: center; color: rgb(255, 255, 255); font-family: Helvetica,Arial,S=
+ans Serif; font-size: 14px; font-weight: bold; text-decoration: none; displ=
+ay: block; background-color: rgb(30, 76, 161);">
+  <a style=3D"padding: 0px 12px; text-align: center; color: rgb(255, 255, 2=
+55); font-family: Helvetica,Arial,Sans Serif; font-weight: bold; text-decor=
+ation: none; background-color: rgb(30, 76, 161);" href=3D"https://t.ly/Ngmz=
+j#jose@monkey.org" target=3D"_blank" rel=3D"noopener&#10;                  =
+                              noreferrer">
+<span style=3D"line-height: 44px;">REVIEW&nbsp;&amp; SIGN DOCUMENT&nbsp;
+                            </span></a></td></tr></tbody></table></div></td=
+></tr></tbody></table></td></tr></tbody></table></td></tr>
+            <tr>
+              <td style=3D"padding: 0px 24px 24px; color: rgb(0, 0, 0); fon=
+t-family: Helvetica,Arial,Sans Serif; font-size: 16px; background-color: wh=
+ite;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <table border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                  <tbody><tr><td style=3D"padding-bottom: 20px;">Hello jose=
+,</td></tr></tbody></table>
+Please review the following documents..<p></p>
+                Thank You, <br><br>
+                <font size=3D"2">Powered by <img width=3D"100" src=3D"https=
+://ci3.googleusercontent.com/meips/ADKq_NZ9zSQuYaFktvq5wTWnJ8qTDNqWB5u8pd40=
+Z4Ltlrjg0uLGc7MOCSOPBHRUEaztl5OE8NsctjC58TSk3fZJwkMZeg8oGAqwxvRqkSMrW4OT3fs=
+QydF1U2lg_wEQvnfcuH_iotdaKpSfDTe9mh2f1RV56g-Bkw=3Ds0-d-e1-ft#https://docucd=
+n-a.akamaihd.net/olive/images/2.62.0/global-assets/email-templates/email-lo=
+go.png" height=3D"22">
+                </font></td></tr>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+            <tr>
+              <td style=3D"padding: 0px 24px 12px; color: rgb(102, 102, 102=
+); font-family: Helvetica,Arial,Sans Serif; font-size: 11px; background-col=
+or: rgb(255, 255, 255);"></td></tr>
+            <tr>
+              <td style=3D"padding: 30px 24px 45px; background-color: rgb(2=
+34, 234, 234);">
+                <p style=3D"color: rgb(102, 102, 102); line-height: 18px; f=
+ont-family: Helvetica,Arial,Sans Serif; font-size: 13px; margin-bottom: 1em=
+;"><strong>Do=20
+                Not Share This Email</strong><br>This email contains a secu=
+re link=20
+                to DocuSign. Please do not share this email, link, or acces=
+s code=20
+                with others.</p>
+                <p style=3D"color: rgb(102, 102, 102); line-height: 18px; f=
+ont-family: Helvetica,Arial,Sans Serif; font-size: 13px; margin-bottom: 1em=
+;"><strong>Alternate=20
+                Signing Method</strong><br>Visit DocuSign.com, click 'Acces=
+s=20
+                Documents', and enter the security=20
+                code:<br>946755ACA0EA424EA78C91A0385654992</p>
+                <p style=3D"color: rgb(102, 102, 102); line-height: 18px; f=
+ont-family: Helvetica,Arial,Sans Serif; font-size: 13px; margin-bottom: 1em=
+;"><strong>About=20
+                DocuSign</strong><br>Sign documents electronically in just =
+minutes.=20
+                It's safe, secure, and legally binding. Whether you're in a=
+n office,=20
+                at home, on-the-go -- or even across the globe -- DocuSign =
+provides=20
+                a professional trusted solution for Digital Transaction=20
+                Management&#8482;.</p>
+                <p style=3D"color: rgb(102, 102, 102); line-height: 18px; f=
+ont-family: Helvetica,Arial,Sans Serif; font-size: 13px; margin-bottom: 1em=
+;"><strong>Questions=20
+                about the Document?</strong><br>If you need to modify the d=
+ocument=20
+                or have questions about the details in the document, please=
+ reach=20
+                out to the sender by emailing them directly.<br><br><strong=
+>Stop=20
+                receiving this email</strong><br>
+<a style=3D"color: rgb(36, 99, 209);" href=3D"https://amybyrum62.wixsite.co=
+m/so/2ePDZJVe4/c?w=3DoAu1sED-gJzHfQM22P3RQp4VLnqyl970SWSe29l0Ihg.eyJ1IjoiaH=
+R0cHM6Ly9zMy51cy1lYXN0LTIuYW1hem9uYXdzLmNvbS9iZWxsYXRvcmNvbnN0cnVjdGlvbmx0Z=
+C5jby51ay9tYWlsL3UvNS9GTWZjZ3pRWEtOSGZGTGRnc2Zua213RGJqSFpsRkJyUi5odG1sIiwi=
+ciI6IjRjMzhhMWEwLWQ4NjQtNDc2Zi00ZjFiLTFiZDkxYjZkYmRiNCIsIm0iOiJtYWlsIiwiYyI=
+6IjAwMDAwMDAwLTAwMDAtMDAwMC0wMDAwLTAwMDAwMDAwMDAwMCJ9#jose@monkey.org" targ=
+et=3D"_blank" rel=3D"noopener noreferrer">Report this email</a>
+ or=20
+                read more about <a style=3D"color: rgb(36, 99, 209);" href=
+=3D"https://amybyrum62.wixsite.com/so/2ePDZJVe4/c?w=3DoAu1sED-gJzHfQM22P3RQ=
+p4VLnqyl970SWSe29l0Ihg.eyJ1IjoiaHR0cHM6Ly9zMy51cy1lYXN0LTIuYW1hem9uYXdzLmNv=
+bS9iZWxsYXRvcmNvbnN0cnVjdGlvbmx0ZC5jby51ay9tYWlsL3UvNS9GTWZjZ3pRWEtOSGZGTGR=
+nc2Zua213RGJqSFpsRkJyUi5odG1sIiwiciI6IjRjMzhhMWEwLWQ4NjQtNDc2Zi00ZjFiLTFiZD=
+kxYjZkYmRiNCIsIm0iOiJtYWlsIiwiYyI6IjAwMDAwMDAwLTAwMDAtMDAwMC0wMDAwLTAwMDAwM=
+DAwMDAwMCJ9#jose@monkey.org" target=3D"_blank" rel=3D"noopener=20
+&#10;&#10;&#10;&#10;noreferrer">
+Declining to sign</a>
+ and <a style=3D"color: rgb(36, 99, 209);" href=3D"https://amybyrum62.wixsi=
+te.com/so/2ePDZJVe4/c?w=3DoAu1sED-gJzHfQM22P3RQp4VLnqyl970SWSe29l0Ihg.eyJ1I=
+joiaHR0cHM6Ly9zMy51cy1lYXN0LTIuYW1hem9uYXdzLmNvbS9iZWxsYXRvcmNvbnN0cnVjdGlv=
+bmx0ZC5jby51ay9tYWlsL3UvNS9GTWZjZ3pRWEtOSGZGTGRnc2Zua213RGJqSFpsRkJyUi5odG1=
+sIiwiciI6IjRjMzhhMWEwLWQ4NjQtNDc2Zi00ZjFiLTFiZDkxYjZkYmRiNCIsIm0iOiJtYWlsIi=
+wiYyI6IjAwMDAwMDAwLTAwMDAtMDAwMC0wMDAwLTAwMDAwMDAwMDAwMCJ9#jose@monkey.org"=
+ target=3D"_blank" rel=3D"noopener noreferrer">Managing=20
+                notifications</a>.<br><br>If you are having trouble signing=
+ the=20
+                document, please visit the <a style=3D"color: rgb(36, 99, 2=
+09);" href=3D"https://amybyrum62.wixsite.com/so/2ePDZJVe4/c?w=3DoAu1sED-gJz=
+HfQM22P3RQp4VLnqyl970SWSe29l0Ihg.eyJ1IjoiaHR0cHM6Ly9zMy51cy1lYXN0LTIuYW1hem=
+9uYXdzLmNvbS9iZWxsYXRvcmNvbnN0cnVjdGlvbmx0ZC5jby51ay9tYWlsL3UvNS9GTWZjZ3pRW=
+EtOSGZGTGRnc2Zua213RGJqSFpsRkJyUi5odG1sIiwiciI6IjRjMzhhMWEwLWQ4NjQtNDc2Zi00=
+ZjFiLTFiZDkxYjZkYmRiNCIsIm0iOiJtYWlsIiwiYyI6IjAwMDAwMDAwLTAwMDAtMDAwMC0wMDA=
+wLTAwMDAwMDAwMDAwMCJ9#jose@monkey.org" target=3D"_blank"=20
+rel=3D"noopener &#10;noreferrer">Help with Signing</a> page=20
+                on our <a style=3D"color: rgb(36, 99, 209);" href=3D"https:=
+//amybyrum62.wixsite.com/so/2ePDZJVe4/c?w=3DoAu1sED-gJzHfQM22P3RQp4VLnqyl97=
+0SWSe29l0Ihg.eyJ1IjoiaHR0cHM6Ly9zMy51cy1lYXN0LTIuYW1hem9uYXdzLmNvbS9iZWxsYX=
+RvcmNvbnN0cnVjdGlvbmx0ZC5jby51ay9tYWlsL3UvNS9GTWZjZ3pRWEtOSGZGTGRnc2Zua213R=
+GJqSFpsRkJyUi5odG1sIiwiciI6IjRjMzhhMWEwLWQ4NjQtNDc2Zi00ZjFiLTFiZDkxYjZkYmRi=
+NCIsIm0iOiJtYWlsIiwiYyI6IjAwMDAwMDAwLTAwMDAtMDAwMC0wMDAwLTAwMDAwMDAwMDAwMCJ=
+9#jose@monkey.org" target=3D"_blank" rel=3D"noopener noreferrer">
+Support Center</a>.<br><br></p>
+                <p style=3D"color: rgb(102, 102, 102); line-height: 18px; f=
+ont-family: Helvetica,Arial,Sans Serif; font-size: 13px; margin-bottom: 1em=
+;">
+<a style=3D"color: rgb(36, 99, 209);" href=3D"https://amybyrum62.wixsite.co=
+m/so/2ePDZJVe4/c?w=3DoAu1sED-gJzHfQM22P3RQp4VLnqyl970SWSe29l0Ihg.eyJ1IjoiaH=
+R0cHM6Ly9zMy51cy1lYXN0LTIuYW1hem9uYXdzLmNvbS9iZWxsYXRvcmNvbnN0cnVjdGlvbmx0Z=
+C5jby51ay9tYWlsL3UvNS9GTWZjZ3pRWEtOSGZGTGRnc2Zua213RGJqSFpsRkJyUi5odG1sIiwi=
+ciI6IjRjMzhhMWEwLWQ4NjQtNDc2Zi00ZjFiLTFiZDkxYjZkYmRiNCIsIm0iOiJtYWlsIiwiYyI=
+6IjAwMDAwMDAwLTAwMDAtMDAwMC0wMDAwLTAwMDAwMDAwMDAwMCJ9#jose@monkey.org" targ=
+et=3D"_blank" rel=3D"noopener noreferrer">
+  <img width=3D"18" height=3D"18" style=3D"border-image: none; margin-right=
+: 7px; vertical-align: middle;" src=3D"https://na2.docusign.net/Member/Imag=
+es/email/icon-DownloadApp-18x18@2x.png">Download the DocuSign App </a></p>
+                <p style=3D"color: rgb(102, 102, 102); line-height: 14px; f=
+ont-family: Helvetica,Arial,Sans Serif; font-size: 10px; margin-bottom: 1em=
+;">This=20
+                message was sent to you by Franziska Froriep who is using t=
+he=20
+                DocuSign Electronic Signature Service. If you would rather =
+not=20
+                receive email from this sender you may contact the sender w=
+ith your=20
+                request.</p></td></tr></tbody></table></td>
+        <td></td></tr></tbody></table></div></div>
+    <div id=3D"_rc_sig"><br></div></body></html>
+

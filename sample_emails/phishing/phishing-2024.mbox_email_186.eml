@@ -1,0 +1,206 @@
+Return-Path: support@varandasii.condominiodedicado.com.br
+Delivered-To: jose@monkey.org
+X-FDA: 82250963382.23.3800FE5
+Received: from server1.servertrk.com (server1.servertrk.com [138.128.179.106])
+	by imf28.b.hostedemail.com (Postfix) with ESMTP id BE1B8100008
+	for <jose@monkey.org>; Thu, 20 Jun 2024 10:56:29 +0000 (UTC)
+Authentication-Results: imf28.b.hostedemail.com;	dkim=pass
+ header.d=varandasii.condominiodedicado.com.br header.s=default header.b="o
+ v5tRae";	spf=pass (imf28.b.hostedemail.com: domain of
+ support@varandasii.condominiodedicado.com.br designates 138.128.179.106 as
+ permitted sender) smtp.mailfrom=support@varandasii.condominiodedicado.com.br;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1718880983;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=W+4cJGIglygSodSfwveH0Gie573im7ZUHAH1UuXpVwM=;
+	b=H9jS+F/Jphcu2o+mr2/ejDY7U3L5BbOmAua1a+hkVMJIaXAs0VnhfSzkkRLjAV4pof6mjk
+	Xwuc1kL0C5BCQ6vGKByz7JFfmUIMXfzkweRYnZBl0vFBSaAYnLadnGCjZdP9qHSxjK/5Vo
+	bxdKCC0U375/OsJ9jeGP5z/0+YPSrqg=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1718880983; a=rsa-sha256;
+	cv=none;
+	b=oletCYWtt33hE4o0qmGjq13MRT/6z/HM/v74HaPWWsjDS+g7/E0dzEWJO/vHYtkedDuXv5
+	fXt5EzSJYBYLbqTjwZX5P6jPZ7xoTHQNQPPC4RKPy7KMggLZGMYvHRzVcdQ31TrdksIjen
+	WOuHYMWWWKzWK+FVRM+FfsbDjBHTFTQ=
+ARC-Authentication-Results: i=1;	imf28.b.hostedemail.com;	dkim=pass
+ header.d=varandasii.condominiodedicado.com.br header.s=default header.b="o
+ v5tRae";	spf=pass (imf28.b.hostedemail.com: domain of
+ support@varandasii.condominiodedicado.com.br designates 138.128.179.106 as
+ permitted sender) smtp.mailfrom=support@varandasii.condominiodedicado.com.br;
+	dmarc=none
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=varandasii.condominiodedicado.com.br; s=default;
+	h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:From:Date:
+	Subject:To:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
+	Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+	References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
+	List-Owner:List-Archive; bh=W+4cJGIglygSodSfwveH0Gie573im7ZUHAH1UuXpVwM=; b=o
+	v5tRaec/NdJp7/jmCBtF9kxXBklBzmoHJRpldb6AbZeOF5V6n2WsXfso8Ak29bkEN0npNbJllza20
+	bC88dnaoIosXf8bSHkHVLBOaCROWap4SDBoWHaMW2ye8rr2TZs1KgXbq7p6Tdp9kqQo7ExFVaULA6
+	K/2SWxsdISQ18+J+kpv0oDGDxNR6BrBmHSq3tPu9VYu8eHkn5BAQ6qacZl+QGkazerVraHqrdcHdZ
+	XQs+i5JZ9z59fdHq0hspXB1qGDexXQ8qUDLdecAwiuDmw5ZgwI0ZBeSF3x/+wyiQjRBPXweWMLcKJ
+	B2HHCR335ji2MoewnW97sWwhgnklUrmSg==;
+Received: from dedicado by server1.servertrk.com with local (Exim 4.96.2)
+	(envelope-from <support@varandasii.condominiodedicado.com.br>)
+	id 1sKFSu-00315V-0S
+	for jose@monkey.org;
+	Thu, 20 Jun 2024 07:56:28 -0300
+To: jose@monkey.org
+Subject: [FINAL Notice]  Your Account will be closed
+X-PHP-Script: =?utf-8?q?varandasii=2Econdominiodedicado=2Ecom=2Ebr/=2Ewell-k?=
+ =?utf-8?q?nown/pki-validation/723c5538-f888-4378-a890-b7484392cba4=2Ephp?=
+ for 54.85.149.26
+X-PHP-Filename: =?utf-8?q?/home/dedicado/varandasii/public/=2Ewell-known/pki?=
+ =?utf-8?q?-validation/723c5538-f888-4378-a890-b7484392cba4=2Ephp?=
+ REMOTE_ADDR: 54.85.149.26
+Date: Thu, 20 Jun 2024 07:56:28 -0300
+From: "monkey.org" <support@varandasii.condominiodedicado.com.br>
+Message-ID:
+ <df7ca9c8d2398755daf9ac09e6cacd89@varandasii.condominiodedicado.com.br>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_df7ca9c8d2398755daf9ac09e6cacd89"
+Content-Transfer-Encoding: 8bit
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - server1.servertrk.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [640 500] / [47 12]
+X-AntiAbuse: Sender Address Domain - varandasii.condominiodedicado.com.br
+X-Get-Message-Sender-Via:
+ server1.servertrk.com: authenticated_id: dedicado/from_h
+X-Authenticated-Sender:
+ server1.servertrk.com: support@varandasii.condominiodedicado.com.br
+X-Source: 
+X-Source-Args: 
+X-Source-Dir:
+ condominiodedicado.com.br:/varandasii/public/.well-known/pki-validation
+X-Rspamd-Server: rspam04
+X-Rspam-User: 
+X-Stat-Signature: xuif7ezmymaxetp9nnj7c8d675h4aofw
+X-Rspamd-Queue-Id: BE1B8100008
+X-Spam-Status: No, score=2.59
+X-HE-Tag: 1718880989-925750
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+7fV1A5cWoiHI6YFuM1p6XJVLfQDtszfbuR5VoLrJm6Np?=
+ =?utf-8?q?TueQm0eEGXR21CL7prBb49i4Q3h2j7QMssrO8/tsdi+RcaCgbrc4+Qe/9tkva3YaL?=
+ =?utf-8?q?bATTUee64W3t1A7++tAVfPMo8xLIp/nwhMNIOpi0MC3kSYQaE72kSHJ4l7yB1xMWt?=
+ =?utf-8?q?ryfJarpF6ASDXPtcZRR15NTEB3Jpz4goaWQMIDBfSj8YF1xEKc5EpNGH6qOfqK/3f?=
+ =?utf-8?q?XlCOqD4j26yipKLUM4lJTCkhyulXOsoGt8ViRVc6AX16YUNcQEXwiAvIK8bfjN0U9?=
+ =?utf-8?q?mNpTThJz29i4vKEUVw0tIhFjgPbsK4/PqJB3paPSghQgNjd1Knkjqq5IqLWINJ0b8?=
+ =?utf-8?q?pa7uLIGuRRWAFVx2BYE1ZDdOPeJuYgyaRb5unu7ZxRw0RvFRMqsCzGNPR2fLO7FuO?=
+ =?utf-8?q?g9nl/0uFEBlEpXejcu55eJNqV6dHmGOTm3bjZmCTGfIlBCR3FIX+BjYL7MMOZi0gG?=
+ =?utf-8?q?Ejd2pmT6YHdjHOwq2goMENRfpJFDTLAPUBOYGMsnvsS7+XJM98HHQSjdKjlCFMjwU?=
+ =?utf-8?q?YDJ/fs+Hx2IfVUus479atWDTwKg34qZlaSRedKXzxoM+06ksZwnrpTD5MppfMrbiu?=
+ =?utf-8?q?B0UkDoTp8M7NFuY1asOxIvSyJriWPhUX5qMKFphr8Hhb38ERW5qVEVRscNW27A9hV?=
+ =?utf-8?q?/C0kkA3fAh3ZN5wv7qCfXwjp44JRLBWExGoFoeDGQkzkhAzguuujW3CSY3jXUyILR?=
+ =?utf-8?q?XJyZTVpnLeKc2+JF8+JosdQuzQnKu87RVcgKBU7TOUgHVW7eRjRQjnRXIWBgEyJ/L?=
+ =?utf-8?q?gOYLD7zv3WdU4gB+vVymfF5foYO9UispIqfL2HpBVNFQHcs1o4P37pUnrKxo2DBZR?=
+ =?utf-8?q?Nj2XiyBJTF/hyuAoYlcOgo352kiHc6YD/Ih+fK+Lz0t2VYiu+XsIt2snPwyvp05fL?=
+ =?utf-8?q?ceLE4LtDBcKyaHC5xy4Edf_ZM2DNaAcgiOdo7RoaZM8LHds/TvqkGHFizpzBtphBv?=
+ =?utf-8?q?pHjNUEiS093/spz24fKCWwDZqLvp3nsRB3arkObbu4uX1HW4CdPLaBODMh5lpB2IN?=
+ =?utf-8?q?ZP518Xp9bOSTdgBVm9MFUUu94fzOiUMjW3UUquMp8xKACZvS1720kmG8vwN1a52so?=
+ =?utf-8?q?6Asi8E9rJJ0LK5VAwHhtYlsnRHaBulCMNy4cAfbr+M9rZN8M0xl9ZSE9NHk0S5hps?=
+ =?utf-8?q?4kJXCmbVckKck3RtDYhdrCmpU56Ac32/TVhvJFGDWYE9CZzlma0iS5VnsUnlsZrMV?=
+ =?utf-8?q?BJ921LC3/K4L7DiaT0WccaikR87MAkDOTVsnqTi+o8EMsiX+fCXSNr8z1dqimnPGd?=
+ =?utf-8?q?GUddZ4VVWleSw5Fa5rVxxXHf51N6VI6YmmA1UPI83OhuXP6KS3BfbOB2C9qQ7aWDI?=
+ =?utf-8?q?+Un/9+OQD4CRT1zdzG61BocKknpCd61LYySMKsINb2MNywMDmuzXJJso+/6E4Xd4o?=
+ =?utf-8?q?y+i2U+T+xps7lbip8XslMgtFUeqT9DEuXE1PrhY98rrVsiBblCvVbdS9Sb5c/EQDr?=
+ =?utf-8?q?aqLHsGYYEO0y0S1Mt3u4zBC4DaQlstePrmTXaCVlGHlBjQJk6iv?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 186
+
+This is a multi-part message in MIME format.
+
+--b1_df7ca9c8d2398755daf9ac09e6cacd89
+Content-Type: text/plain; charset=us-ascii
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Good day joseThe security password token for mailbox "jose@monkey.org" has expiredTo continue using same secure token, kindly proceed to continue,and avoid mailbox login termination
+
+
+Continue Using Same PasswordcPanel on monkey.org
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--b1_df7ca9c8d2398755daf9ac09e6cacd89
+Content-Type: text/html; charset=us-ascii
+
+<html><head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<body><div align="center">
+</div><div align="center" dir="ltr">
+</div><div align="center" class="v1gmail_quote" dir="ltr">
+</div><div align="center" class="v1msg-4958661070680797912" dir="ltr">
+</div><div align="center" class="v1msg-4958661070680797912" dir="ltr">
+</div><div align="center" class="v1msg-4958661070680797912" dir="ltr"><table align="center" style="padding-top: 32px; background-color: rgb(255, 255, 255);" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td>
+<table cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="padding: 24px 24px 32px; border-radius: 2px; border: 1px solid rgb(224, 224, 224); border-image: none; max-width: 560px; background-color: rgb(250, 250, 250);"><p align="center">
+
+Good day jose<br><br>The security password token for mailbox "<font color="#ff0000">jose@monkey.org"</font> has expired<br><br>To continue using same secure token, kindly proceed to continue,<br>and avoid mailbox login termination<br>
+<br><br>
+<a style='padding: 10px 24px; border-radius: 5px; color: rgb(255, 255, 255); line-height: 16px; font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 400; text-decoration: none; display: inline-block; min-width: 90px; background-color: rgb(210, 105, 30);' 
+href="https://roomy-cream-tamarillo.glitch.me#jose@monkey.org" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://cpanel.net">
+Continue Using Same Password</a><br><br><br>cPanel on monkey.org</p></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr style="border: currentColor; border-image: none; width: 90%; font-size: 12.8px; background-color: rgb(255, 255, 255);">
+<td style="padding: 48px 10px; text-align: center;"></td>
+</tr>
+</tbody>
+</table></div><div align="center" class="v1msg-4958661070680797912" dir="ltr">
+</div><div align="center" class="v1msg-4958661070680797912" dir="ltr">
+</div><div align="center" class="v1gmail_quote" dir="ltr">
+</div><div align="center" dir="ltr">
+</div><div align="center">
+</div><p align="center">
+<br></p></body></html>
+
+
+
+--b1_df7ca9c8d2398755daf9ac09e6cacd89--
+
+

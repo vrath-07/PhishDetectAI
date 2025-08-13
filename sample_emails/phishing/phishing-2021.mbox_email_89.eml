@@ -1,0 +1,433 @@
+Return-Path: postmaster@arkema.me
+Delivered-To: jose@monkey.org
+X-FDA: 78774258822.41.44E4AD0
+Received: from srv3.arkema.me (srv3.arkema.me [192.3.26.44])
+	by imf11.b.hostedemail.com (Postfix) with ESMTP id 5B42718424C36
+	for <jose@monkey.org>; Fri,  5 Nov 2021 08:51:50 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=dkim; d=arkema.me;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type;
+ i=postmaster@arkema.me; bh=251hDFVosrQv28iTXvWwGFO/Mv4gl4ZJ9C07Pmz7+JM=; 
+ =?utf-8?q?b=3DCjzMoiF7y4nPzr02zf8bbI65ekbfeP0s3ixbZwiwvyFIYvVz6qeqJAwSDXnkg?=
+ =?utf-8?q?9mJiOc0SYEIfA+8?=  
+ cEXsEYncglwxlsC/mFF/KtipLD/p0WDBKW+7NtCIHWSZeN41jnmxwW0Zeb6ECaKscbf4KiyG6XZP
+   gC3q/BmQKZZ/9iXy+48=
+From: We Transfer<postmaster@arkema.me>
+To: jose@monkey.org
+Subject: 2 new files sent via We-Transfer for jose@monkey.org
+Date: 05 Nov 2021 09:51:49 +0100
+Message-ID: <20211105095149.C2B3DAA0117F0948@arkema.me>
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	boundary="----=_NextPart_000_0012_F3AE347F.E6403B20"
+X-Rspamd-Queue-Id: 5B42718424C36
+X-Spam-Status: No, score=1.40
+Authentication-Results: imf11.b.hostedemail.com;	dkim=pass header.d=arkema.me
+ header.s=dkim header.b=CjzMoiF7;	dmarc=pass (policy=reject)
+ header.from=arkema.me;	spf=pass (imf11.b.hostedemail.com: domain of
+ postmaster@arkema.me designates 192.3.26.44 as permitted sender)
+ smtp.mailfrom=postmaster@arkema.me
+X-Stat-Signature: eneypj61cu33s4qewz5z671rkryhzr93
+X-Rspamd-Server: rspam08
+X-HE-Tag: 1636102310-586316
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 89
+
+
+------=_NextPart_000_0012_F3AE347F.E6403B20
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<body>
+<DIV id=3Deditbody1>
+<DIV style=3D"FONT-SIZE: 10pt; FONT-FAMILY: Verdana,Geneva,sans-serif">
+<P>&nbsp;</P>
+<DIV id=3Dv1editbody1>
+<DIV style=3D"FONT: 10pt Helvetica Neue">
+<DIV style=3D"FONT-SIZE: 10pt; FONT-FAMILY: arial,helvetica; COLOR: black">=
+
+<DIV id=3Dv1v1yiv3283627290>
+<DIV style=3D"FONT: 10pt Helvetica Neue">
+<table class=3D"v1v1yiv3283627290gmail-yiv4753690006gmail-yiv7789071534oute=
+r_wrapper_table" style=3D"FONT-SIZE: 12px; BORDER-COLLAPSE: collapse; TABLE=
+-LAYOUT: auto; OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; PADDING-TOP: 0px=
+; OUTLINE-STYLE: none; PADDING-LEFT: 0px; BORDER-SPACING: 0px; MARGIN: 0px;=
+ OUTLINE-COLOR: invert; PADDING-RIGHT: 0px" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"100%" bgcolor=3D"#f4f4f4" border=3D"0">
+<TBODY>
+<TR>
+<td style=3D"FONT-FAMILY: Roboto, RobotoDraft, Helvetica, Arial, sans-serif=
+; WIDTH: 1003px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; =
+MARGIN: 0px; PADDING-RIGHT: 0px" valign=3D"top" align=3D"left">&nbsp;</TD><=
+/TR></TBODY></TABLE><BR class=3Dv1v1yiv3283627290gmail-yiv4753690006gmail-A=
+pple-interchange-newline>
+<table class=3D"v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595oute=
+r_wrapper_table" style=3D"FONT-SIZE: 12px; BORDER-COLLAPSE: collapse; TABLE=
+-LAYOUT: auto; OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; PADDING-TOP: 0px=
+; OUTLINE-STYLE: none; PADDING-LEFT: 0px; BORDER-SPACING: 0px; MARGIN: 0px;=
+ OUTLINE-COLOR: invert; PADDING-RIGHT: 0px" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"100%" bgcolor=3D"#f4f4f4" border=3D"0">
+<TBODY>
+<TR>
+<td style=3D"FONT-FAMILY: Roboto, RobotoDraft, Helvetica, Arial, sans-serif=
+; WIDTH: 1003px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; =
+MARGIN: 0px; PADDING-RIGHT: 0px" valign=3D"top" align=3D"left">
+<CENTER>
+<table class=3D"v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595inne=
+r_wrapper_table v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595tabl=
+e_centered" style=3D"WIDTH: 600px; BORDER-COLLAPSE: collapse; MIN-WIDTH: 60=
+0px; TABLE-LAYOUT: fixed; OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; PADDI=
+NG-TOP: 0px; OUTLINE-STYLE: none; PADDING-LEFT: 0px; BORDER-SPACING: 0px; M=
+ARGIN: 0px auto; OUTLINE-COLOR: invert; PADDING-RIGHT: 0px" cellspacing=3D"=
+0" cellpadding=3D"0" width=3D"600" align=3D"center" border=3D"0">
+<TBODY>
+<TR>
+<td class=3D"v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595inner_w=
+rapper_td" style=3D"WIDTH: 600px; MIN-WIDTH: 600px; PADDING-BOTTOM: 0px; PA=
+DDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px" valign=
+=3D"top" width=3D"600" align=3D"left">
+<table class=3D"v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595tabl=
+e_full_width" style=3D"WIDTH: 600px; BORDER-COLLAPSE: collapse; TABLE-LAYOU=
+T: fixed; OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; OUT=
+LINE-STYLE: none; PADDING-LEFT: 0px; BORDER-SPACING: 0px; MARGIN: 0px; OUTL=
+INE-COLOR: invert; PADDING-RIGHT: 0px" cellspacing=3D"0" cellpadding=3D"0" =
+border=3D"0">
+<TBODY>
+<TR>
+<td class=3D"v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595logo_ou=
+ter_wrapper_td" style=3D"WIDTH: 600px; PADDING-BOTTOM: 0px; PADDING-TOP: 55=
+px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px" valign=3D"top" alig=
+n=3D"left">
+<table class=3D"v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595tabl=
+e_full_width" style=3D"WIDTH: 600px; BORDER-COLLAPSE: collapse; TABLE-LAYOU=
+T: fixed; OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; OUT=
+LINE-STYLE: none; PADDING-LEFT: 0px; BORDER-SPACING: 0px; MARGIN: 0px; OUTL=
+INE-COLOR: invert; PADDING-RIGHT: 0px" cellspacing=3D"0" cellpadding=3D"0" =
+border=3D"0">
+<TBODY>
+<TR>
+<td class=3D"v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595logo_in=
+ner_wrapper_td" style=3D"FONT-SIZE: 10px; WIDTH: 600px; PADDING-BOTTOM: 0px=
+; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px" bgc=
+olor=3D"#409fff" valign=3D"top" align=3D"left">
+<CENTER>
+<table class=3D"v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595tabl=
+e_centered" style=3D"WIDTH: auto; BORDER-COLLAPSE: collapse; TABLE-LAYOUT: =
+fixed; OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; OUTLIN=
+E-STYLE: none; PADDING-LEFT: 0px; BORDER-SPACING: 0px; MARGIN: 0px auto; OU=
+TLINE-COLOR: invert; PADDING-RIGHT: 0px" cellspacing=3D"0" cellpadding=3D"0=
+" align=3D"center" border=3D"0">
+<TBODY>
+<TR>
+<td style=3D"WIDTH: 56px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LE=
+FT: 0px; MIN-HEIGHT: 16px; MARGIN: 0px; PADDING-RIGHT: 0px" height=3D"16" v=
+align=3D"top" align=3D"left">&nbsp;</TD></TR>
+<TR>
+<td style=3D"WIDTH: 56px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LE=
+FT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px" valign=3D"top" align=3D"left"><A =
+style=3D"COLOR: blue" href=3D"https://wetransfer.com/?utm_campaign=3DWT_ema=
+il_tracking&amp;utm_content=3Dgeneral&amp;utm_medium=3Dlogo&amp;utm_source=
+=3Dnotify_recipient_email" rel=3D"noopener noreferrer" target=3D_blank>
+<img class=3D"v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595logo_b=
+lue_img" style=3D"HEIGHT: auto; WIDTH: 56px; OUTLINE-WIDTH: medium; PADDING=
+-BOTTOM: 0px; PADDING-TOP: 0px; OUTLINE-STYLE: none; PADDING-LEFT: 0px; MAR=
+GIN: 0px; DISPLAY: block; OUTLINE-COLOR: invert; LINE-HEIGHT: 10px; PADDING=
+-RIGHT: 0px; VISIBILITY: visible" border=3D"0" alt=3D"Click 'Download image=
+s' to view images" src=3D"cid:blue2x-10b63a7e9107c08c8d89a3f8016c133ae4fcf5=
+afb3e59a65fb17e21eeb83148d.png" width=3D"56" align=3D"center" height=3D"30"=
+></A></TD></TR>
+<TR>
+<td style=3D"WIDTH: 56px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LE=
+FT: 0px; MIN-HEIGHT: 11px; MARGIN: 0px; PADDING-RIGHT: 0px" height=3D"11" v=
+align=3D"top" align=3D"left">&nbsp;</TD></TR></TBODY></TABLE></CENTER></TD>=
+</TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<table class=3D"v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595main=
+_content_outer_wrapper_table" style=3D"WIDTH: 600px; BORDER-COLLAPSE: colla=
+pse; TABLE-LAYOUT: fixed; OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; PADDI=
+NG-TOP: 0px; OUTLINE-STYLE: none; PADDING-LEFT: 0px; BORDER-SPACING: 0px; M=
+ARGIN: 0px; OUTLINE-COLOR: invert; PADDING-RIGHT: 0px" cellspacing=3D"0" ce=
+llpadding=3D"0" bgcolor=3D"#ffffff" border=3D"0">
+<TBODY>
+<TR>
+<td style=3D"WIDTH: 600px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-L=
+EFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px" valign=3D"top" align=3D"left">
+<table class=3D"v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595tabl=
+e_full_width" style=3D"WIDTH: 600px; BORDER-COLLAPSE: collapse; TABLE-LAYOU=
+T: fixed; OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; OUT=
+LINE-STYLE: none; PADDING-LEFT: 0px; BORDER-SPACING: 0px; MARGIN: 0px; OUTL=
+INE-COLOR: invert; PADDING-RIGHT: 0px" cellspacing=3D"0" cellpadding=3D"0" =
+border=3D"0">
+<TBODY>
+<TR>
+<td class=3D"v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595padded_=
+mobile v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595main_content_=
+inner_wrapper_td" style=3D"WIDTH: 600px; PADDING-BOTTOM: 0px; PADDING-TOP: =
+0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px" valign=3D"top" ali=
+gn=3D"left">
+<table class=3D"v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595tabl=
+e_full_width" style=3D"WIDTH: 600px; BORDER-COLLAPSE: collapse; TABLE-LAYOU=
+T: fixed; OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; OUT=
+LINE-STYLE: none; PADDING-LEFT: 0px; BORDER-SPACING: 0px; MARGIN: 0px; OUTL=
+INE-COLOR: invert; PADDING-RIGHT: 0px" cellspacing=3D"0" cellpadding=3D"0" =
+border=3D"0">
+<TBODY>
+<TR>
+<td class=3D"v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595main_he=
+ading_td v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595unpadded_mo=
+bile v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595main_heading_td=
+_wider" style=3D"FONT-SIZE: 26px; FONT-FAMILY: Arial, sans-serif; WIDTH: 44=
+0px; COLOR: #17181a; PADDING-BOTTOM: 0px; PADDING-TOP: 60px; PADDING-LEFT: =
+80px; MARGIN: 0px; LINE-HEIGHT: 30px; PADDING-RIGHT: 80px" valign=3D"top" a=
+lign=3D"center"><BR>Files sent to<BR>
+<A class=3Dv1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595main_head=
+ing_email_link style=3D"COLOR: #17181a" href=3D"mailto:n@mohhg.com" rel=3Dn=
+oreferrer><SPAN class=3Dv1v1yiv3283627290gmail-yiv4753690006gmail-yiv631881=
+4595main_heading_email_link style=3D"COLOR: #409fff">jose@monkey.org</SPAN>=
+</A></TD></TR>
+<TR>
+<td class=3D"v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595files_d=
+etails_td v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595unpadded_m=
+obile" style=3D"FONT-SIZE: 14px; FONT-FAMILY: Arial, sans-serif; WIDTH: 440=
+px; COLOR: #6a6d70; PADDING-BOTTOM: 0px; PADDING-TOP: 20px; PADDING-LEFT: 8=
+0px; MARGIN: 0px; LINE-HEIGHT: 23px; PADDING-RIGHT: 80px" valign=3D"top" al=
+ign=3D"center">2&nbsp;items, 17.96 MB in total &#12539; Expires on&nbsp;4 N=
+ovember, 2021</TD></TR>
+<TR>
+<td class=3D"v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595body_co=
+ntent_td v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595unpadded_mo=
+bile" style=3D"FONT-SIZE: 14px; FONT-FAMILY: Arial, sans-serif; WIDTH: 440p=
+x; COLOR: #797c7f; PADDING-BOTTOM: 0px; PADDING-TOP: 50px; PADDING-LEFT: 80=
+px; MARGIN: 0px; LINE-HEIGHT: 24px; PADDING-RIGHT: 80px" valign=3D"top" ali=
+gn=3D"left"></TD></TR>
+<TR>
+<td class=3D"v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595button_=
+outer_wrapper_td v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595unp=
+added_mobile" style=3D"WIDTH: 280px; PADDING-BOTTOM: 0px; PADDING-TOP: 40px=
+; PADDING-LEFT: 160px; MARGIN: 0px; PADDING-RIGHT: 160px" valign=3D"top" al=
+ign=3D"left">
+<table class=3D"v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595tabl=
+e_full_width v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595button_=
+table" style=3D"WIDTH: 280px; BORDER-COLLAPSE: collapse; TABLE-LAYOUT: fixe=
+d; OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; OUTLINE-ST=
+YLE: none; PADDING-LEFT: 0px; BORDER-SPACING: 0px; MARGIN: 0px; OUTLINE-COL=
+OR: invert; PADDING-RIGHT: 0px" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0">
+<TBODY>
+<TR>
+<td style=3D"WIDTH: 280px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-L=
+EFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px" valign=3D"top" align=3D"left">
+<A class=3D"v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595button_a=
+nchor v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595button_2_ancho=
+r" style=3D"FONT-SIZE: 14px; FONT-FAMILY: sans-serif; COLOR: #ffffff; PADDI=
+NG-BOTTOM: 15px; TEXT-ALIGN: center; PADDING-TOP: 15px; PADDING-LEFT: 20px;=
+ DISPLAY: block; PADDING-RIGHT: 20px; BACKGROUND-COLOR: #409fff; border-rad=
+ius: 25px" href=3D"https://webtransfer.swanngonorthwestregion.cf/download" =
+rel=3D"noopener noreferrer" target=3D_blank>
+Get your files</A></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<td class=3D"v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595separat=
+or_40_outer_wrapper_td v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814=
+595unpadded_mobile" style=3D"WIDTH: 440px; PADDING-BOTTOM: 0px; PADDING-TOP=
+: 40px; PADDING-LEFT: 80px; MARGIN: 0px; PADDING-RIGHT: 80px" valign=3D"top=
+" align=3D"left">
+<table class=3D"v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595tabl=
+e_full_width" style=3D"WIDTH: 440px; BORDER-COLLAPSE: collapse; TABLE-LAYOU=
+T: fixed; OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; OUT=
+LINE-STYLE: none; PADDING-LEFT: 0px; BORDER-SPACING: 0px; MARGIN: 0px; OUTL=
+INE-COLOR: invert; PADDING-RIGHT: 0px" cellspacing=3D"0" cellpadding=3D"0" =
+border=3D"0">
+<TBODY>
+<TR>
+<td class=3D"v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595separat=
+or_td" style=3D"FONT-SIZE: 1px; WIDTH: 440px; BORDER-BOTTOM: #f4f4f4 2px so=
+lid; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px;=
+ LINE-HEIGHT: 0; PADDING-RIGHT: 0px" valign=3D"top" align=3D"left">&nbsp;</=
+TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<td class=3D"v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595body_co=
+ntent_td v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595unpadded_mo=
+bile v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595download_link_c=
+ontainer" style=3D"FONT-SIZE: 14px; FONT-FAMILY: Arial, sans-serif; WIDTH: =
+440px; COLOR: #797c7f; PADDING-BOTTOM: 0px; PADDING-TOP: 50px; PADDING-LEFT=
+: 80px; MARGIN: 0px; LINE-HEIGHT: 24px; PADDING-RIGHT: 80px" valign=3D"top"=
+ align=3D"left">
+<SPAN class=3Dv1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595body_c=
+ontent_subheading_span style=3D"FONT-SIZE: 18px; COLOR: #17181a">Download l=
+ink</SPAN><BR><A class=3Dv1v1yiv3283627290gmail-yiv4753690006gmail-yiv63188=
+14595download_link_link style=3D"FONT-FAMILY: sans-serif; COLOR: #17181a" h=
+ref=3D"https://webtransfer.swanngonorthwestregion.cf/download" rel=3D"noope=
+ner noreferrer" target=3D_blank>
+<SPAN class=3Dv1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595downlo=
+ad_link_link style=3D"COLOR: #409fff">https://wetransfer.com/downloads/7b03=
+bb5bdae767a200bc6fa28b3c2f9120210602002229/7c6ca5e66b2c2354c46e58f7e86a47fe=
+20210602002229/228b3bwettransfr.pw/download/</SPAN></A></TD></TR>
+<TR>
+<td class=3D"v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595body_co=
+ntent_td v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595body_conten=
+t_padding_bottom_td v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595=
+files_list v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595files_lis=
+t_title v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595unpadded_mob=
+ile" style=3D"FONT-SIZE: 14px; FONT-FAMILY: Arial, sans-serif; WIDTH: 440px=
+; COLOR: #797c7f; PADDING-BOTTOM: 0px; PADDING-TOP:=20
+50px; PADDING-LEFT: 80px; MARGIN: 0px; LINE-HEIGHT: 24px; PADDING-RIGHT: 80=
+px" valign=3D"top" align=3D"left"><SPAN class=3Dv1v1yiv3283627290gmail-yiv4=
+753690006gmail-yiv6318814595body_content_subheading_span style=3D"FONT-SIZE=
+: 18px; COLOR: #17181a">2&nbsp;items</SPAN></TD></TR>
+<TR>
+<td class=3D"v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595tp0 v1v=
+1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595body_content_td v1v1yiv=
+3283627290gmail-yiv4753690006gmail-yiv6318814595body_content_padding_bottom=
+_td v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595files_list v1v1y=
+iv3283627290gmail-yiv4753690006gmail-yiv6318814595files_list_content v1v1yi=
+v3283627290gmail-yiv4753690006gmail-yiv6318814595unpadded_mobile" style=3D"=
+FONT-SIZE: 14px; FONT-FAMILY: Arial, sans-serif;=20
+WIDTH: 440px; COLOR: #797c7f; PADDING-BOTTOM: 50px; PADDING-TOP: 0px; PADDI=
+NG-LEFT: 80px; MARGIN: 0px; LINE-HEIGHT: 24px; PADDING-RIGHT: 80px" valign=
+=3D"top" align=3D"left">
+<DIV class=3Dv1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595body_co=
+ntent_subheading_span style=3D"FONT-SIZE: 18px; COLOR: #17181a">&nbsp;</DIV=
+>
+<DIV class=3Dv1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595transfe=
+r_item_title style=3D"COLOR: #17181a; LINE-HEIGHT: 16px">&nbsp;</DIV></TD><=
+/TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<table class=3D"v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595tabl=
+e_full_width" style=3D"WIDTH: 600px; BORDER-COLLAPSE: collapse; TABLE-LAYOU=
+T: fixed; OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; OUT=
+LINE-STYLE: none; PADDING-LEFT: 0px; BORDER-SPACING: 0px; MARGIN: 0px; OUTL=
+INE-COLOR: invert; PADDING-RIGHT: 0px" cellspacing=3D"0" cellpadding=3D"0" =
+border=3D"0">
+<TBODY>
+<TR>
+<td class=3D"v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595add_our=
+_email_outer_wrapper_td" style=3D"WIDTH: 600px; PADDING-BOTTOM: 0px; PADDIN=
+G-TOP: 2px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px" valign=3D"t=
+op" align=3D"left">
+<table class=3D"v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595add_=
+our_email_wrapper_table" style=3D"WIDTH: 600px; BORDER-COLLAPSE: collapse; =
+TABLE-LAYOUT: fixed; OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; PADDING-TO=
+P: 0px; OUTLINE-STYLE: none; PADDING-LEFT: 0px; BORDER-SPACING: 0px; MARGIN=
+: 0px; OUTLINE-COLOR: invert; PADDING-RIGHT: 0px" cellspacing=3D"0" cellpad=
+ding=3D"0" bgcolor=3D"#ffffff" border=3D"0">
+<TBODY>
+<TR>
+<td class=3D"v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595padded_=
+mobile v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595add_our_email=
+_inner_wrapper_td" style=3D"WIDTH: 560px; PADDING-BOTTOM: 0px; PADDING-TOP:=
+ 0px; PADDING-LEFT: 20px; MARGIN: 0px; PADDING-RIGHT: 20px" valign=3D"top" =
+align=3D"left">
+<table class=3D"v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595tabl=
+e_full_width" style=3D"WIDTH: 560px; BORDER-COLLAPSE: collapse; TABLE-LAYOU=
+T: fixed; OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; OUT=
+LINE-STYLE: none; PADDING-LEFT: 0px; BORDER-SPACING: 0px; MARGIN: 0px; OUTL=
+INE-COLOR: invert; PADDING-RIGHT: 0px" cellspacing=3D"0" cellpadding=3D"0" =
+border=3D"0">
+<TBODY>
+<TR>
+<td class=3D"v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595add_our=
+_email_td" style=3D"FONT-FAMILY: Arial, sans-serif; WIDTH: 560px; COLOR: #7=
+97c7f; PADDING-BOTTOM: 13px; PADDING-TOP: 13px; PADDING-LEFT: 0px; MARGIN: =
+0px; LINE-HEIGHT: 24px; PADDING-RIGHT: 0px" valign=3D"top" align=3D"center"=
+>
+<DIV style=3D"OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: in=
+vert">To make sure our emails arrive, please add&nbsp;<A class=3Dv1v1yiv328=
+3627290gmail-yiv4753690006gmail-yiv6318814595email_without_default_client_s=
+tyle style=3D"COLOR: #797c7f" href=3D"mailto:noreply@wetransfer.com" rel=3D=
+noreferrer>noreply@wetransfer.com</A> &nbsp;to&nbsp;<A style=3D"COLOR: #797=
+c7f" href=3D"#" rel=3D"noopener noreferrer" target=3D_blank>your contacts</=
+A>.</DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD>
+</TR></TBODY></TABLE>
+<table class=3D"v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595tabl=
+e_full_width" style=3D"WIDTH: 600px; BORDER-COLLAPSE: collapse; TABLE-LAYOU=
+T: fixed; OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; OUT=
+LINE-STYLE: none; PADDING-LEFT: 0px; BORDER-SPACING: 0px; MARGIN: 0px; OUTL=
+INE-COLOR: invert; PADDING-RIGHT: 0px" cellspacing=3D"0" cellpadding=3D"0" =
+border=3D"0">
+<TBODY>
+<TR>
+<td class=3D"v1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595footer_=
+td" style=3D"FONT-FAMILY: Arial, sans-serif; WIDTH: 560px; COLOR: #797c7f; =
+PADDING-BOTTOM: 30px; PADDING-TOP: 30px; PADDING-LEFT: 20px; MARGIN: 0px; L=
+INE-HEIGHT: 23px; PADDING-RIGHT: 20px" valign=3D"top" align=3D"center"><A c=
+lass=3Dv1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595footer_link s=
+tyle=3D"COLOR: #797c7f" href=3D"#l" rel=3D"noopener noreferrer" target=3D_b=
+lank>About WeTransfer</A>
+ &nbsp;<SPAN class=3Dv1v1yiv3283627290gmail-yiv4753690006gmail-yiv631881459=
+5footer_link_separator>&nbsp;&nbsp;&#12539;&nbsp;&nbsp;</SPAN> &nbsp;<A cla=
+ss=3Dv1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595footer_link sty=
+le=3D"COLOR: #797c7f" href=3D"#" rel=3D"noopener noreferrer" target=3D_blan=
+k>Help</A>&nbsp;<SPAN class=3Dv1v1yiv3283627290gmail-yiv4753690006gmail-yiv=
+6318814595footer_link_separator>&nbsp;&nbsp;&#12539;&nbsp;&nbsp;</SPAN>
+ &nbsp;<A class=3Dv1v1yiv3283627290gmail-yiv4753690006gmail-yiv6318814595fo=
+oter_link style=3D"COLOR: #797c7f" href=3D"#" rel=3D"noopener noreferrer" t=
+arget=3D_blank>Legal</A>&nbsp;<SPAN class=3Dv1v1yiv3283627290gmail-yiv47536=
+90006gmail-yiv6318814595footer_link_separator>&nbsp;&nbsp;&#12539;&nbsp;&nb=
+sp;</SPAN> &nbsp;<A class=3Dv1v1yiv3283627290gmail-yiv4753690006gmail-yiv63=
+18814595footer_link style=3D"COLOR: #797c7f" href=3D"#" rel=3D"noopener nor=
+eferrer" target=3D_blank>Report this transfer as spam</A></TD></TR>
+</TBODY></TABLE></TD></TR></TBODY></TABLE></CENTER></TD></TR></TBODY></TABL=
+E></DIV></DIV></DIV></DIV></DIV></DIV></DIV></BODY></HTML>
+------=_NextPart_000_0012_F3AE347F.E6403B20
+Content-Type: image/png;
+ name*0*=us-ascii''blue2x-10b63a7e9107c08c8d89a3f8016c133ae4fcf5afb3e59a65fb1;
+ name*1*=7e21eeb83148d.png
+Content-Transfer-Encoding: base64
+Content-ID:
+ <blue2x-10b63a7e9107c08c8d89a3f8016c133ae4fcf5afb3e59a65fb17e21eeb83148d.png>
+
+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
+
+------=_NextPart_000_0012_F3AE347F.E6403B20--
+
+

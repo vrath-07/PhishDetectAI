@@ -1,0 +1,260 @@
+Return-Path: info@fengwende.com
+Delivered-To: jose@monkey.org
+X-FDA: 82545204042.26.9748288
+Received: from fengwende.com (fengwende.com [23.254.229.193])
+	by imf24.b.hostedemail.com (Postfix) with ESMTP id 7C1D28000C
+	for <jose@monkey.org>; Mon,  9 Sep 2024 12:58:39 +0000 (UTC)
+Authentication-Results: imf24.b.hostedemail.com;	dkim=pass
+ header.d=fengwende.com header.s=default header.b=jovEUcNR;	dmarc=pass
+ (policy=none) header.from=fengwende.com;	spf=pass (imf24.b.hostedemail.com:
+ domain of info@fengwende.com designates 23.254.229.193 as permitted sender)
+ smtp.mailfrom=info@fengwende.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1725886667; a=rsa-sha256;
+	cv=none;
+	b=LMTylOaUkcB00nQ6HI9xTbdl3yzi8WF+DfT9JGQljgog07mdsqUlu7F9d63LXOndHVPetA
+	g3xagYF8lg3c7n74Vjq22jgrzIs6rHGmhyn4G5yYF+L6zCG0NCAwaHcU8iFuPVXFmd51Wt
+	8EOrHCalfd3qhPL1r4dBnABcwhlvM1E=
+ARC-Authentication-Results: i=1;	imf24.b.hostedemail.com;	dkim=pass
+ header.d=fengwende.com header.s=default header.b=jovEUcNR;	dmarc=pass
+ (policy=none) header.from=fengwende.com;	spf=pass (imf24.b.hostedemail.com:
+ domain of info@fengwende.com designates 23.254.229.193 as permitted sender)
+ smtp.mailfrom=info@fengwende.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1725886667;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=p+gefjNzoB8/8V40YAO079BgAB4ObMc1v/GUVKZ0XZc=;
+	b=XHMg424xSHmiRMhs8cvtJkTJMdzk/+5LOvt8TcrIVhPRFmBG7PQnH6g65UULSo2QT+VXIn
+	xkZ62UokQLdhrNXNRgEvx79ZOOCpKuXdKBNThnZjPvgXVlSH+wIDymgwOdVJz5EFrMObGc
+	FaiTpyaL8LIiY0px7xl10VlIsJfb7S4=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=fengwende.com;
+	s=default; t=1725886717;
+	bh=p+gefjNzoB8/8V40YAO079BgAB4ObMc1v/GUVKZ0XZc=;
+	h=From:To:Subject:Date:From;
+	b=jovEUcNREqFOvAiEU2uphylN5t3X6ZbYID/RcLMZisv8z6tJS6nLadVDhopvMMdlp
+	 Xl4Ioa2rGb3Q4qspiMa2ByBizaLDceqYkivG1jXFx+LbWTYn3+5G7vgb1//qoTsxjU
+	 qfMU7ZuO4xAXh236dWr70Oos7xKSOWFnNEVevCcGZoy8sMFz7n6AsX3Umwswn195Jf
+	 LH23v0lXyqvkZ8qF3nNd7OtDdEJPDjZmUMbhLUqaMNYk69XBJ1ks1552DADY333Zer
+	 rNLQUrSNMYn6PVBt/NPG23LlnkRY+iU4aBJru2aIx+UUdcTiiew9i9YMFT7XvoJNBK
+	 +FOVOTq9M1DXg==
+Received: from [185.172.175.25] (unknown [185.172.175.25])
+	(Authenticated sender: info@fengwende.com)
+	by fengwende.com (Postfix) with ESMTPSA id C54E52128A
+	for <jose@monkey.org>; Mon,  9 Sep 2024 12:58:37 +0000 (UTC)
+From: Eugen Faeht via DocuSign<info@fengwende.com>
+To: jose@monkey.org
+Subject: Please DocuSign: New Program
+Date: 9 Sep 2024 13:58:33 +0100
+Message-ID: <20240909135832.9C210E019A16FD7F@fengwende.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Queue-Id: 7C1D28000C
+X-Stat-Signature: 68asbjmm46oak76nyxn9o8jfyrm4ekzd
+X-Rspam-User: 
+X-Spam-Status: No, score=-4.60
+X-Rspamd-Server: rspam01
+X-HE-Tag: 1725886719-703000
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1802rXu9hNT/NA/rSqgHhdoSVUoNAd1gioiOoPnRW5kQrk?=
+ =?utf-8?q?vB0vD/rGGsAHKQwLf0UH4oRilHT9SapsCUs6PEIPbJ2hPqHZRsMLS4N8ucGCYNC08?=
+ =?utf-8?q?NytFsMsSzXuTrgaDOSoRCeT8ZaHEcU/V4ojT59Ks1PWyouio6fSLHw8QC2Ur0+w17?=
+ =?utf-8?q?dphRzj7JctC7ZMw3QIcDO4TT0ASRX71DzHidxSfpxaK7CzHnxjWuuijw92e7dK6Pi?=
+ =?utf-8?q?fpIiphKnlQlj/Kg7lSU27vW4be77JTyOYkgHlMq6lZqEjHpbMRlTlGMX6nReyZhHQ?=
+ =?utf-8?q?1ktMrKdA718P5y3TeGBHVx0usDwM8ATNzeQDyZulYvKAeVUrDAx1AMfw9fo0VpR5h?=
+ =?utf-8?q?HEUGRMzocnwtHK7lDzhhRYz54aL6GyZxHutepCKGt6hiIHYsw8s0wuvSyyrSeVcUL?=
+ =?utf-8?q?YIXHPqYd9mazAQoXCQguesnrnSWYA3Rkfi8FfbIY9rQAl2vy8QmoMe1AQnHPEzkA3?=
+ =?utf-8?q?feNPPdUkJn1j1JmLt/3hoTpts83wV62W8c/ULWcB8Cp31yWxvUDv6f8i0uHuazFQW?=
+ =?utf-8?q?0OIij6sW9xqY0nEu9GuwI+bqVfguAy73S7aDOfBVLIgzfphVzX0ouLGawJHW5nLdu?=
+ =?utf-8?q?p5yYRi07izvPwu9zoIZSVxupxLUUfwzn6y3EITyy7WXM30aUWLdsb6aitf7GrGySP?=
+ =?utf-8?q?+njkVwEWhUyNKSlCiPOqaooOhoOyCho8M1pin0lZcJ5F+/3su4IsEoCRd+YdYLuHX?=
+ =?utf-8?q?xPYE4rsSiN9tJZcY943S3MnGCiOzcT9gkReCYpgi9jhgKdiSCWIwv/XNxu73/xQKW?=
+ =?utf-8?q?3bKyyLjOvFeszyEe4HofjO/3Pg4m8buUn4Gh3N4zDVQqLqiP2Pg6r2/rak0tjAv6S?=
+ =?utf-8?q?OQZgmBaH3nKqCydxFMsHRo4/cX5w67B/aU/Y8YLJ/xZUKivVdYEYAyvrrr/NB/cau?=
+ =?utf-8?q?jMbYEa32kYcg0BhALbFaC9_v/JgHB5CoUD4uZR8gHCVJl08W5siCKmkA5vVdR3/rf?=
+ =?utf-8?q?dlV7Rt/9nL52EvJ2u3BOXRGQW/ZQYVpgjmjzdBaDC2HYRQ+/KsNk3Hg8Eg6yNZPvL?=
+ =?utf-8?q?53daqmmyiDwTq9MVBM/yOxwGlWgIabN8HKgnBb423Tlo7DZtVMdZzbC5g9ODqkFDm?=
+ =?utf-8?q?XXLVFxMiULzicgPO3AmDGEgT+68sUFIkmbvCVNgAzBkJaajDcPiSJmAqp9JIfr2b9?=
+ =?utf-8?q?0Inns/Awm2Yvx7RWCz1H2jlKWuWhu83/695UOjVnqlzwJGyNHOL6WeWz5QhY3OhNS?=
+ =?utf-8?q?Sy6A05za9Cii8jOjKmXLjS18ioccypNs5pbPNehFOsQvLXqGXpQbVlVWf0lZxoJJV?=
+ =?utf-8?q?uWwGmcVImV1u1L+Y/xs3jssyiDq7ZgkMv+lXQHkPcAY3Evd7ulnqR+KlJwrXcIbEk?=
+ =?utf-8?q?y44wibfEaSV/aWSKztxNtlA/+2vvDXYSth1/3pYYtMgErMjqV/9v4qJx75elyTcTt?=
+ =?utf-8?q?XqR+MGEWhm5N9Ja8RsVGgOUAa96oqnP9o45l1Jv9HilusRV78p9zXeCk/ShX8tuxX?=
+ =?utf-8?q?hcmwxrS6aL6G3hRgWVp5xCH0Y6KdglbC9ihCozpvAxtQhhY7b43m3nSpY+jytZvQS?=
+ =?utf-8?q?TUW1va3O5qrY9IMt4smQ5+vLgxHuZh/4BzXTjK8bx5wV9XgZayFWMxvLmX1IngTCl?=
+ =?utf-8?q?dZYxn+9YOqUNJOh1og1ek1VZxQxmHncdycXJzstKKV1h0cw936/nmctGOmbutMYQM?=
+ =?utf-8?q?XJ02QGbz78niOrFRIWNwFUd5rz30o3D2eMCs/F4JyqP3+TisXJ73DxHanNUnYr6kA?=
+ =?utf-8?q?KQTx0SzqQuun5NkwgA+NcWRjQCkXj+7oDnGW7JLkAuwslecbefSjdrSkQA=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 255
+
+<!DOCTYPE HTML>
+
+<html><head>
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body><table width=3D"100%" align=3D"center" role=3D"presentation" dir=3D""=
+ border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td></td><td w=
+idth=3D"640"><table role=3D"presentation" style=3D"border-collapse: collaps=
+e; max-width: 640px; background-color: rgb(255, 255, 255) !important;"><tbo=
+dy><tr><td style=3D"padding: 10px 24px;">
+<img width=3D"116" style=3D"border: currentColor; border-image: none;" alt=
+=3D"DocuSign" src=3D"https://docucdn-a.akamaihd.net/olive/images/2.62.0/glo=
+bal-assets/email-templates/email-logo.png" data-imagetype=3D"External" heig=
+ht=3D"25"></td></tr><tr><td style=3D"padding: 0px 24px 30px;"><table width=
+=3D"100%" align=3D"center" role=3D"presentation" style=3D"color: rgb(255, 2=
+55, 255) !important; background-color: rgb(30, 76, 161) !important;" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr>
+<td align=3D"center" style=3D"padding: 28px 10px 36px; border-radius: 2px; =
+width: 100%; text-align: center; color: rgb(255, 255, 255) !important; font=
+-family: Helvetica, Arial, Sans Serif; font-size: 16px; background-color: r=
+gb(30, 76, 161) !important;"><img width=3D"75" height=3D"75" style=3D"width=
+: 75px; height: 75px;" alt=3D"" src=3D"https://ca.docusign.net/member/Image=
+s/email/docComplete-white.png" data-imagetype=3D"External">
+<table width=3D"100%" role=3D"presentation" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0"><tbody><tr><td align=3D"center" style=3D"border: currentC=
+olor; border-image: none; text-align: center; color: rgb(255, 255, 255) !im=
+portant; padding-top: 24px; font-family: Helvetica, Arial, Sans Serif; font=
+-size: 16px;">Your document has been completed </td></tr></tbody></table><t=
+able width=3D"100%" role=3D"presentation" border=3D"0" cellspacing=3D"0" ce=
+llpadding=3D"0"><tbody><tr><td align=3D"center" style=3D"padding-top: 30px;=
+">
+<div><table cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td height=3D"44=
+" align=3D"center" style=3D"border-radius: 2px; border: 1px solid rgb(255, =
+255, 255); border-image: none; height: 100%; text-align: center; color: rgb=
+(255, 255, 255) !important; font-family: Helvetica, Arial, Sans Serif; font=
+-size: 14px; font-weight: bold; text-decoration: none; display: block; back=
+ground-color: rgb(30, 76, 161) !important;">
+<a style=3D"padding: 0px 12px; text-align: center; color: rgb(255, 255, 255=
+) !important; font-family: Helvetica, Arial, Sans Serif; font-size: 14px; f=
+ont-weight: bold; text-decoration: none; display: inline-block; background-=
+color: rgb(30, 76, 161) !important;"=20
+href=3D"http://emailcontact.com/stat/click.php?nl_id=3D380822&amp;email=3Dw=
+allacea@nemcworks.org&amp;url=3Dhttps%3A%2F%2F/pub-21580ec8317e4130bc4be688=
+a40cf75f.r2.dev/BQQkADAwATMwMAItOTU4MC1jMjA2LTAwAi0wMAoAEABW30hqQQA0SoDyAYp=
+8lhq4.html%23jose@monkey.org&amp;c=3DE,1,Rcr-y_CgBPxzLnPaIHowjVQ2FuC0dGzqNf=
+QV1qYW94BEznaUUHS-C1jTiixRNgKpq6FRTWQMFY7LXhRH0SVXci3JCxcIY4s1cn079g1rxW0P&=
+amp;typo=3D1&amp;ancr_add=3D1" target=3D"_blank" rel=3D"noopener noreferrer=
+" data-auth=3D"NotApplicable" data-linkindex=3D"0">
+<span style=3D"line-height: 44px;">VIEW COMPLETED DOCUMENT </span></a></td>=
+</tr></tbody></table></div></td></tr></tbody></table></td></tr></tbody></ta=
+ble></td></tr><tr><td style=3D"padding: 0px 24px 24px; color: rgb(0, 0, 0) =
+!important; font-family: Helvetica, Arial, Sans Serif; font-size: 16px; bac=
+kground-color: white !important;"><table role=3D"presentation" border=3D"0"=
+ cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"padding-right:=
+ 12px; padding-bottom: 20px;">
+<img width=3D"40" height=3D"40" style=3D"border-radius: 2px; width: 40px; h=
+eight: 40px;" alt=3D"Picture of Leslie Kostycz" src=3D"https://ca.docusign.=
+net/Member/image.aspx?i=3Dlogo&amp;l=3D682c65f6-92de-4ff1-8acb-5585a18f6031=
+" data-imagetype=3D"External"></td><td style=3D"padding-bottom: 20px;"><div=
+ style=3D"color: rgb(51, 51, 51) !important; line-height: 18px; font-family=
+: Helvetica, Arial, Sans Serif, serif, EmojiFont; font-size: 15px; font-wei=
+ght: bold;">Leslie Kostycz </div>
+<div style=3D"color: rgb(102, 102, 102) !important; line-height: 18px; font=
+-family: Helvetica, Arial, Sans Serif, serif, EmojiFont; font-size: 15px;">=
+leslie@eatonfs.com</div></td></tr></tbody></table><p style=3D"color: rgb(51=
+, 51, 51) !important; line-height: 20px; font-family: Helvetica, Arial, San=
+s Serif; font-size: 15px;">All parties have completed Complete with <span c=
+lass=3D"mark7igqngrju" data-markjs=3D"true" data-ogac=3D"" data-ogab=3D"" d=
+ata-ogsc=3D"" data-ogsb=3D"">DocuSign</span>
+: CL Assignment 69001562T-B&amp;A Abrams.pdf.</p><p style=3D"color: rgb(51,=
+ 51, 51) !important; line-height: 20px; font-family: Helvetica, Arial, Sans=
+ Serif; font-size: 15px;">Good Morning Bernhard &amp; Agatha,<br><br>As
+ per my email, please find attached the form required to name SCU as the
+ assignee on your new life insurance policy. Please sign where=20
+requested.<br><br>Thank you,<br>Leslie Kostycz</p></td></tr><tr><td style=
+=3D"padding: 0px 24px 12px; color: rgb(102, 102, 102) !important; font-fami=
+ly: Helvetica, Arial, Sans Serif; font-size: 11px; background-color: rgb(25=
+5, 255, 255) !important;"></td></tr><tr><td style=3D"padding: 30px 24px 45p=
+x; background-color: rgb(234, 234, 234) !important;"><p style=3D"color: rgb=
+(102, 102, 102) !important; line-height: 18px; font-family: Helvetica, Aria=
+l, Sans Serif; font-size: 13px; margin-bottom: 1em;">
+<b role=3D"heading" aria-level=3D"3">Do Not Share This Email</b><br>This em=
+ail contains a secure link to <span class=3D"mark7igqngrju" data-markjs=3D"=
+true" data-ogac=3D"" data-ogab=3D"" data-ogsc=3D"" data-ogsb=3D"">DocuSign<=
+/span>. Please do not share this email, link, or access code with others.<b=
+r></p><p style=3D"color: rgb(102, 102, 102) !important; line-height: 18px; =
+font-family: Helvetica, Arial, Sans Serif; font-size: 13px; margin-bottom: =
+1em;"><b role=3D"heading" aria-level=3D"3">Alternate Signing Method</b>
+<br>Visit <span class=3D"mark7igqngrju" data-markjs=3D"true" data-ogac=3D""=
+ data-ogab=3D"" data-ogsc=3D"" data-ogsb=3D"">DocuSign</span>.com, click 'A=
+ccess Documents', and enter the security code:<br>B4272E9D242A4FAB8FE0A79FE=
+A3913D06 </p><p style=3D"color: rgb(102, 102, 102) !important; line-height:=
+ 18px; font-family: Helvetica, Arial, Sans Serif; font-size: 13px; margin-b=
+ottom: 1em;"><b role=3D"heading" aria-level=3D"3">
+About <span class=3D"mark7igqngrju" data-markjs=3D"true" data-ogac=3D"" dat=
+a-ogab=3D"" data-ogsc=3D"" data-ogsb=3D"">DocuSign</span></b><br>Sign
+ documents electronically in just minutes. It's safe, secure, and=20
+legally binding. Whether you're in an office, at home, on-the-go -- or=20
+even across the globe -- <span class=3D"mark7igqngrju" data-markjs=3D"true"=
+ data-ogac=3D"" data-ogab=3D"" data-ogsc=3D"" data-ogsb=3D"">DocuSign</span=
+> provides a professional trusted solution for Digital Transaction Manageme=
+nt&#8482;. </p><p style=3D"color: rgb(102, 102, 102) !important; line-heigh=
+t: 18px; font-family: Helvetica, Arial, Sans Serif; font-size: 13px; margin=
+-bottom: 1em;"><b role=3D"heading" aria-level=3D"3">Questions about the Doc=
+ument?</b><br>If
+ you need to modify the document or have questions about the details in=20
+the document, please reach out to the sender by emailing them directly.<br>=
+<br><b role=3D"heading" aria-level=3D"3">Stop receiving this email</b><br>
+<a style=3D"color: rgb(36, 99, 209) !important;"=20
+href=3D"https://protect.docusign.net/report-abuse?e=3DAUtomjpFak9GlbPL0zFFi=
+12mmqjHaoWjvPSz4bzB5AdMj_ITssHc0jw_Xfara9VsB_xrQUIHyrAzvbfsrcbcQh_2k8PVJzuC=
+j4W33cBhFEN-gdknjbF_ISiW3rm2d6Ai4GGox2j6UQQ5V-zzZ7NyWUdUppuFr7LsQvFTQ5Xz8nU=
+PqmK8eMjumVtV5W49FIx3y0MZEShQx3sCKS9-Kl2ZLpHLwg7eUFApRGCU3yyd9dRZxLzWamblHj=
+Qjcvy9YS3Ojf78sWmIoc8Jl-k4kFkdyt6BK6tqgfYmPsOEC63ZnfMnDm2LyjIToJ2rd5kXgnrCg=
+VdMpQaX3B0EGQAihalaUz-Pbt-u24D4jQuocmnzug6lSIL4HYP4igLofHqBRBbezVHYDuVIZW62=
+l5j9LXMO935qD8CE1umiZyQU8RAVe9qGmNP2Grl70FSTrg38VDI9M_
+&#10;n7L-dcXXJzpoSuy4VH0dChGAdjAL6BIBLIpOvkJQF4&amp;lang=3Den" target=3D"_b=
+lank" rel=3D"noopener noreferrer" data-auth=3D"NotApplicable" data-linkinde=
+x=3D"1">Report this email</a> or read more about <a style=3D"color: rgb(36,=
+ 99, 209) !important;" href=3D"https://support.docusign.com/en/guides/Decli=
+ning-to-sign-DocuSign-Signer-Guide" target=3D"_blank" rel=3D"noopener noref=
+errer" data-auth=3D"NotApplicable" data-linkindex=3D"2">Declining to sign</=
+a>
+ and <a style=3D"color: rgb(36, 99, 209) !important;" href=3D"https://suppo=
+rt.docusign.com/en/articles/How-do-I-manage-my-email-notifications" target=
+=3D"_blank" rel=3D"noopener noreferrer" data-auth=3D"NotApplicable" data-li=
+nkindex=3D"3">Managing notifications</a>.<br><br>
+If you have trouble signing, visit "<a style=3D"color: rgb(36, 99, 209) !im=
+portant;" href=3D"https://support.docusign.com/s/articles/How-do-I-sign-a-D=
+ocuSign-document-Basic-Signing?language=3Den_US&amp;utm_campaign=3DGBL_XX_D=
+BU_UPS_2211_SignNotificationEmailFooter&amp;utm_medium=3Dproduct&amp;utm_so=
+urce=3Dpostsend" target=3D"_blank" rel=3D"noopener noreferrer" data-auth=3D=
+"NotApplicable" data-linkindex=3D"4">How to Sign a Document</a>
+" on our <a style=3D"color: rgb(36, 99, 209) !important;" href=3D"https://s=
+upport.docusign.com/" target=3D"_blank" rel=3D"noopener noreferrer" data-au=
+th=3D"NotApplicable" data-linkindex=3D"5"><span class=3D"mark7igqngrju" dat=
+a-markjs=3D"true" data-ogac=3D"" data-ogab=3D"" data-ogsc=3D"" data-ogsb=3D=
+"">Docusign</span> Support Center</a>
+, or browse our <a style=3D"color: rgb(36, 99, 209) !important;" href=3D"ht=
+tps://community.docusign.com/signing-7" target=3D"_blank" rel=3D"noopener n=
+oreferrer" data-auth=3D"NotApplicable" data-linkindex=3D"6"><span class=3D"=
+mark7igqngrju" data-markjs=3D"true" data-ogac=3D"" data-ogab=3D"" data-ogsc=
+=3D"" data-ogsb=3D"">Docusign</span> Community</a> for more information.<br=
+><br></p>
+<p style=3D"color: rgb(102, 102, 102) !important; line-height: 18px; font-f=
+amily: Helvetica, Arial, Sans Serif; font-size: 13px; margin-bottom: 1em;">=
+<a style=3D"color: rgb(36, 99, 209) !important;" href=3D"https://www.docusi=
+gn.com/features-and-benefits/mobile?utm_campaign=3DGBL_XX_DBU_UPS_2211_Sign=
+NotificationEmailFooter&amp;utm_medium=3Dproduct&amp;utm_source=3Dpostsend"=
+ target=3D"_blank" rel=3D"noopener noreferrer" data-auth=3D"NotApplicable" =
+data-linkindex=3D"7">
+<img width=3D"18" height=3D"18" style=3D"border: currentColor; border-image=
+: none; margin-right: 7px; vertical-align: middle;" alt=3D"" src=3D"https:/=
+/docucdn-a.akamaihd.net/olive/images/2.62.0/global-assets/email-templates/i=
+con-download-app.png" data-imagetype=3D"External">Download the <span class=
+=3D"mark7igqngrju" data-markjs=3D"true" data-ogac=3D"" data-ogab=3D"" data-=
+ogsc=3D"" data-ogsb=3D"">DocuSign</span> App </a></p>
+<p style=3D"color: rgb(102, 102, 102) !important; line-height: 14px; font-f=
+amily: Helvetica, Arial, Sans Serif; font-size: 10px; margin-bottom: 1em;">=
+This message was sent to you by Leslie Kostycz who is using the <span class=
+=3D"mark7igqngrju" data-markjs=3D"true" data-ogac=3D"" data-ogab=3D"" data-=
+ogsc=3D"" data-ogsb=3D"">DocuSign</span>
+ Electronic Signature Service. If you would rather not receive email=20
+from this sender you may contact the sender with your request.</p></td></tr=
+></tbody></table></td><td></td></tr></tbody></table></body></html>
+

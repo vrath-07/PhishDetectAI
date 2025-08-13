@@ -1,0 +1,360 @@
+Return-Path: tsukasa.y@yaegashi-k.co.jp
+Delivered-To: jose@monkey.org
+X-FDA: 82814924976.15.8A4E08C
+Received: from mwp-bld-mts-006c1.ocn.ad.jp (mwp-bld-mts-006c1.ocn.ad.jp
+ [210.154.211.4])	by imf15.b.hostedemail.com (Postfix) with ESMTP id
+ 369336000F	for <jose@monkey.org>; Fri, 22 Nov 2024 20:50:45 +0000 (UTC)
+Authentication-Results: imf15.b.hostedemail.com;	dkim=pass
+ header.d=yaegashi-k.co.jp header.s=bizmw header.b=teMhxIgT;	arc=pass
+ ("mwprem.net:s=default:i=1");	spf=pass (imf15.b.hostedemail.com: domain of
+ tsukasa.y@yaegashi-k.co.jp designates 210.154.211.4 as permitted sender)
+ smtp.mailfrom=tsukasa.y@yaegashi-k.co.jp;	dmarc=pass (policy=none)
+ header.from=yaegashi-k.co.jp
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1732308526;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=Ok0kqJrrG5LwKAxg3GzQRtd81cPXzi7nXbFQjhvXeQg=;
+	b=gjFqplGJgtdpbjgljGTSvQogRmk6NLRfAM1TC2wLD7o1OK4X+cE3PlYuGaS5x5jWeYf8Iw
+	NbjGyJm5YpD9daUEiTo/2bFcti/5tToolp0sFNq4mcKD6CFg8niOQWYXHpiuCXDsNYcxs6
+	sXfp5MuFyUZKR7JDesRx1Nej99dLFV4=
+ARC-Authentication-Results: i=2;	imf15.b.hostedemail.com;	dkim=pass
+ header.d=yaegashi-k.co.jp header.s=bizmw header.b=teMhxIgT;	arc=pass
+ ("mwprem.net:s=default:i=1");	spf=pass (imf15.b.hostedemail.com: domain of
+ tsukasa.y@yaegashi-k.co.jp designates 210.154.211.4 as permitted sender)
+ smtp.mailfrom=tsukasa.y@yaegashi-k.co.jp;	dmarc=pass (policy=none)
+ header.from=yaegashi-k.co.jp
+ARC-Seal: i=2; s=arc-20220608; d=hostedemail.com; t=1732308526; a=rsa-sha256;
+	cv=pass;
+	b=i7qaSacDc7Hqg2pxt0LUQ7ZTuQlOwWLcfLQcKF4oZMoSM59IAvhOyNbP7ygb0TfHkueJo9
+	2iCsD47URCtl7pOiWVOSKvZ9HDOhTzxMLcb7efmbXvl3LpZP0cB0zfuv60UStjBzqks+xM
+	DRQ48VEkS31HaGwPNigbx8iSwF69Zeg=
+Received: from cmn-spm-mts-025c1.ocn.ad.jp (cmn-spm-mts-025c1.ocn.ad.jp
+ [153.138.238.89])	by mwp-bld-mts-006c1.ocn.ad.jp (Postfix) with ESMTP id
+ 66FEE21E	for <jose@monkey.org>; Sat, 23 Nov 2024 05:51:20 +0900 (JST)
+Received: from mgw-vc-mts-005c1.ocn.ad.jp ([153.138.238.156])
+	by cmn-spm-mts-025c1.ocn.ad.jp with ESMTP
+	id Eacat3alvTzdREacatBt1v; Sat, 23 Nov 2024 05:51:20 +0900
+X-BIZ-RELAY: yes
+Received: from mwp-sdgw-mts-015c1.ocn.ad.jp ([210.145.253.202])
+	by mgw-vc-mts-005c1.ocn.ad.jp with ESMTP
+	id EacatQVFU8L0HEacatisP1; Sat, 23 Nov 2024 05:51:20 +0900
+Received: from c15o223v.mwprem.net (c15o223v.mwprem.net [122.17.147.140])
+	by mwp-sdgw-mts-015c1.ocn.ad.jp (Postfix) with SMTP id 1F56B14000084
+	for <jose@monkey.org>; Sat, 23 Nov 2024 05:51:20 +0900 (JST)
+ARC-Seal: i=1; a=rsa-sha256; d=mwprem.net; s=default; t=1732308679; cv=none;	
+ =?utf-8?q?b=3DVRBdfryjglFsfarQrtyir6EnQ8OVb3Me3xcgdtBy4MOs15gVR2/W8FgeItWVp?=
+ =?utf-8?q?KPujeBiCwja4HDGtCVp8yPdkGps8vnzTKy/VYDvX7mY9D36dhChSBIzKCXUb9AY5l?=
+ =?utf-8?q?Nx5de8UAVXG0vOaNZF1YNg6JI4zehhucZGl8aK7B2n6Og=3D?=
+ARC-Message-Signature: i=1; a=rsa-sha256; d=mwprem.net; s=default;
+	t=1732308679; c=relaxed/relaxed;
+	bh=Ok0kqJrrG5LwKAxg3GzQRtd81cPXzi7nXbFQjhvXeQg=;
+	h=DKIM-Signature:From:To:Subject:Message-ID:Date:MIME-Version; =?utf-8?q?b?=
+ =?utf-8?q?=3DykKK9hpdZf7Dz2LlsO5qT1CAXqtrPJfBpDfxptN8yMt9dy4kV2SlNCs0EnqSp7?=
+ =?utf-8?q?r/38jykvN3lkj+CSFc7R5WIeLk1pfXoPuzRj3bTbXBBFmf/gtOkwmYeYE21osgkuL?=
+ =?utf-8?q?s15oa1X2910q+xhr6MWhf+izw+geTtvq25yFvdfdKSzY=3D?=
+ARC-Authentication-Results: i=1; c15o223v.mwprem.net
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=yaegashi-k.co.jp;
+	s=bizmw; t=1732308679;
+	bh=Ok0kqJrrG5LwKAxg3GzQRtd81cPXzi7nXbFQjhvXeQg=;
+	h=From:To:Subject:Date:From;
+	b=teMhxIgTS21l7eOxeHumL3mSE+nlCd/OcCN2lZJzTH023QKuIaKTe835naddMaGAz
+	 gcjItSQNmJbNeussraRlY92RyohQytX9ajNuewxdzeMxq0nphQBjeUtucbQ9a2igp4
+	 Syp3mEqkfnFK7paXjqTlbAdUidpW0dcE9oU8DNGg=
+Content-Type: text/html; charset=utf-8
+From: Tsukasa <tsukasa.y@yaegashi-k.co.jp>
+To: jose@monkey.org
+Subject: New Order
+Message-ID: <7a432cb6-6af5-2381-ea89-096af9a59257@yaegashi-k.co.jp>
+Content-Transfer-Encoding: quoted-printable
+Date: Fri, 22 Nov 2024 20:51:16 +0000
+MIME-Version: 1.0
+X-Rspam-User: 
+X-Rspamd-Server: rspam03
+X-Rspamd-Queue-Id: 369336000F
+X-Stat-Signature: xb54x76n7ycoo55hu6ejoxs1o6ororwc
+X-Spam-Status: No, score=3.80
+X-HE-Tag: 1732308645-955214
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/heMDBjEgvsc7ARlhjzmIfbJWVeYWgj8i7N/MuY9u3OFl?=
+ =?utf-8?q?vZdJb+eumXUUw86/0KGxQfol/bj7tQQG8xzDDqo3YaO/3BJtiE1OGBKbCOd4mEdSh?=
+ =?utf-8?q?3P+QucVVkuttaXacicyuyJVeWFSPjQyM6Tc+sU50+0xRvK00PjKqLSnmZSQwKq4i9?=
+ =?utf-8?q?KUenQYzzhT++wKPTCUWBigXAerKz62GNZMSwVWoKo/18kkOpm4QWUPfCGzzxRdY72?=
+ =?utf-8?q?ogHbaEZ2X3Tn/zeGDyhFLJZwj0JcvOHCblDrjz4EjtwE55BDzcotAaCMiwsXfVLd+?=
+ =?utf-8?q?85OSOJOD8h8vI1b/iYzGxAHLvqr22P6svCkh7VmdxN3SXdkro88jENrgjYMY93XmV?=
+ =?utf-8?q?d7UXdaoAhct7/QujuY0UMH+k4lcGvHdE+sP4HAh1w6I++p5UUQBSy9Tr6nTqnxEqW?=
+ =?utf-8?q?IgK+p7qNBXQZOaMxtcXMI4IY0rPm0wZPyWwlNcOJs/Yerp6XHWpsc/xWuzWyNQYkk?=
+ =?utf-8?q?EfxgqM+fBRAZyujLZDeII5aXVWjTM6+vgeBprfI3L808LZgxT18O30rlhRpSzjI6j?=
+ =?utf-8?q?1IS8m8+3/2eWWPyZH0u+lw2OiioTVODFhE+EyEMOnFkz3aQB+OHL89xNXh3iY4G61?=
+ =?utf-8?q?t/qc29htxSsgIErINy2lj25s0fGAiGCrVrZj86T8MKpPLTeo5tCj/alQFvZ2pXIQR?=
+ =?utf-8?q?KMhkzg9Ppx8F9JTBaQ89a4dB9uhU6CyN/wIeaR8mb22/8yz4JBp+kj+uNCf4ppQEj?=
+ =?utf-8?q?dt7mS+7QgziBxzwuHXQmfFMTp/9k8WEdpoO6X1XEAnFY3FYLr9OY78Sxp3yj7glDS?=
+ =?utf-8?q?3DAGhnwullRgnD80dt8m8QSCcj/crRUa4eb+Kwa9FjNBT12E1iWZk4jy4ZkKBEnwt?=
+ =?utf-8?q?KFWRYPTx1YOS/3jE5T16ZyUHyvkcaBxlzZaSWJiKZDvao5nUw+Xi23MjiDh0GErAL?=
+ =?utf-8?q?XYeQFVlkocbhU7UNdxYqXB_PQYm46+qGcLclieF7AG6RQ5yR5SlPfTf6gzm5j8CnM?=
+ =?utf-8?q?djoej8+93ekgZa+Aj5ZOhTFLWmvzgSqrVvOQK0s+y3roYtXh/UT3h6hPWT1MvEoKA?=
+ =?utf-8?q?JxYLDYWDeTmGA++fxoOXZX2O7dF0lElSizP8S9RL9vfFmaWstuuA5dLe7xvzlR4ef?=
+ =?utf-8?q?iOEgEvTmYKcuY7ZhrQVVcS4sitlSh9Lr3A+/8xar02mrNTl1XGLKfZclK17pRNIQk?=
+ =?utf-8?q?uIFzKubcyT5b5RkgU798tTI3qwrPlUV21awLi7w6h1f1ulbmY2yJSgo3O7AtFlSdt?=
+ =?utf-8?q?zg1HjO9q/24wQ7f+pAx2+QBV2xuxF9Fh9YfjhgQqT5hYkc4EFZwFSO6naPb1CeUE/?=
+ =?utf-8?q?rlRnFUCySGJaQ7BVOh5PjTxdJ5DtdDOkw9mc6vqNrt01iuQYVl8EJvCXdoQssv9D3?=
+ =?utf-8?q?SPeAXhUli0/EBRzWVU/ibdLn5A2f0M48=3D?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 356
+
+<DIV align=3Dcenter>
+<DIV style=3D"BORDER-BOTTOM: rgb(230,230,230) 2px =
+solid; BORDER-LEFT: rgb(230,230,230) 2px solid; PADDING-BOTTOM: 10px; =
+PADDING-LEFT: 10px; PADDING-RIGHT: 10px; MAX-WIDTH: 593px; BORDER-TOP: =
+rgb(230,230,230) 2px solid; BORDER-RIGHT: rgb(230,230,230) 2px solid; =
+PADDING-TOP: 10px; border-radius: 5px">
+<TABLE cellSpacing=3D0>
+<TBODY>
+<TR>
+<TD><FONT color=3D#000000 size=3D4 face=3D"Arial, Helvetica, =
+sans-serif"><B>Lin<INS style=3D"FONT-SIZE: 0px !important">[-randomletters-=
+]sent from my [-randomletters-]iphone [-randomletters-]thanks</INS>ked</B><=
+/FONT></TD>
+<TD style=3D"BACKGROUND-COLOR: rgb(40,111,178); WIDTH: 20px; =
+HEIGHT: 20px">
+<DIV align=3Dcenter><FONT color=3D#ffffff size=3D3 =
+face=3D"Arial, Helvetica, sans-serif"><B>i<INS style=3D"FONT-SIZE: 0px !=
+important">[-randomletters-]sent from my [-randomletters-]iphone =
+[-randomletters-]thanks</INS>n</B></FONT></DIV></TD>
+<TD style=3D"WIDTH: 10px"><BR></TD>
+<TD><FONT color=3D#286fb2 size=3D4 =
+face=3D"Arial, Helvetica, sans-serif"><B>Busi<INS style=3D"FONT-SIZE: 0px !=
+important">[-randomletters-]sent from my [-randomletters-]iphone =
+[-randomletters-]thanks</INS>ne<INS style=3D"FONT-SIZE: 0px !=
+important">[-randomletters-]sent from my [-randomletters-]iphone =
+[-randomletters-]thanks</INS>ss Invi<INS style=3D"FONT-SIZE: 0px !=
+important">[-randomletters-]sent from my [-randomletters-]iphone =
+[-randomletters-]thanks</INS>tat<INS style=3D"FONT-SIZE: 0px !=
+important">[-randomletters-]sent from my [-randomletters-]iphone =
+[-randomletters-]thanks</INS>ion</B></FONT></TD></TR></TBODY></TABLE>
+<P align=3Dleft><FONT color=3D#808080></FONT>&nbsp;</P>
+<P align=3Dleft><FONT color=3D#808080>&nbsp;Hi <FONT =
+color=3D#000000>jose@monkey.org</FONT>,</FONT></P>
+<P><FONT =
+color=3D#808080>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I'd li<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>ke to ad<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>d you to my profe<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>ssio<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>nal netw<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>ork for busi<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>ne<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>ss, and wou<INS =
+style=3D"FONT-SIZE: 0px !important"></INS>ld al<INS style=3D"FONT-SIZE: 0px=
+ !important">[-randomletters-]sent from my [-randomletters-]iphone =
+[-randomletters-]thanks</INS>so li<INS style=3D"FONT-SIZE: 0px !=
+important">thanks</INS>ke you to se<INS style=3D"FONT-SIZE: 0px !=
+important">[-randomletters-]sent from my [-randomletters-]iphone =
+[-randomletters-]thanks</INS>nd me yo<INS style=3D"FONT-SIZE: 0px !=
+important">[-randomletters-]sent from my [-randomletters-]iphone =
+[-randomletters-]thanks</INS>ur be<INS style=3D"FONT-SIZE: 0px !=
+important">[-randomletters-]sent from my [-randomletters-]iphone =
+[-randomletters-]thanks</INS>st pri<INS style=3D"FONT-SIZE: 0px !=
+important">[-randomletters-]sent from my [-randomletters-]iphone =
+[-randomletters-]thanks</INS>ces for&nbsp;the att<INS style=3D"FONT-SIZE: =
+0px !important">[-randomletters-]sent from my [-randomletters-]iphone =
+[-randomletters-]thanks</INS>ac<INS style=3D"FONT-SIZE: 0px !=
+important">[-randomletters-]sent from my [-randomletters-]iphone =
+[-randomletters-]thanks</INS>hed ord<INS style=3D"FONT-SIZE: 0px !=
+important">[-randomletters-]sent from my [-randomletters-]iphone =
+[-randomletters-]thanks</INS>ers.</FONT></P>
+<P align=3Dcenter><FONT =
+color=3D#808080 size=3D3><STRONG>Purc<INS style=3D"FONT-SIZE: 0px !=
+important">[-randomletters-]sent from my [-randomletters-]iphone =
+[-randomletters-]thanks</INS>hase Man<INS style=3D"FONT-SIZE: 0px !=
+important">[-randomletters-]sent from my [-randomletters-]iphone =
+[-randomletters-]thanks</INS>ager<BR></STRONG>Pate<INS style=3D"FONT-SIZE: =
+0px !important">[-randomletters-]sent from my [-randomletters-]iphone =
+[-randomletters-]thanks</INS>llo Gen<INS style=3D"FONT-SIZE: 0px !=
+important">[-randomletters-]sent from my [-randomletters-]iphone =
+[-randomletters-]thanks</INS>eral Trad<INS style=3D"FONT-SIZE: 0px !=
+important">[-randomletters-]sent from my [-randomletters-]iphone =
+[-randomletters-]thanks</INS>ing Lt<INS style=3D"FONT-SIZE: 0px !=
+important">[-randomletters-]sent from my [-randomletters-]iphone =
+[-randomletters-]thanks</INS>d Co., Lt<INS style=3D"FONT-SIZE: 0px !=
+important">[-randomletters-]sent from my [-randomletters-]iphone =
+[-randomletters-]thanks</INS>d (Eto<INS style=3D"FONT-SIZE: 0px !=
+important">[-randomletters-]sent from my [-randomletters-]iphone =
+[-randomletters-]thanks</INS>ilen Califo<INS style=3D"FONT-SIZE: 0px !=
+important">[-randomletters-]sent from my [-randomletters-]iphone =
+[-randomletters-]thanks</INS>rnia) US<INS style=3D"FONT-SIZE: 0px !=
+important">[-randomletters-]sent from my [-randomletters-]iphone =
+[-randomletters-]thanks</INS>A</FONT></P><FONT color=3D#808080>
+<P align=3Dcenter><SPAN style=3D"TEXT-ALIGN: left; WIDOWS: 2; =
+TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255); FONT-STYLE: =
+normal; MARGIN-TOP: 14px; TEXT-INDENT: 0px; DISPLAY: inline-block; =
+FONT-FAMILY: arial, verdana, sans-serif; WHITE-SPACE: normal; ORPHANS: 2; =
+LETTER-SPACING: normal; COLOR: rgb(0,0,0); FONT-SIZE: medium; FONT-WEIGHT: =
+400; WORD-SPACING: 0px; font-variant-ligatures: normal; font-variant-caps: =
+normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; =
+text-decoration-color: initial; text-decoration-thickness: initial" =
+id=3Dqa>
+<TABLE style=3D"DISPLAY: inline-block; text-size-adjust: 100%" =
+border=3D0 cellSpacing=3D0 cellPadding=3D0>
+<TBODY>
+<TR>
+<TD style=3D"LINE-HEIGHT: 1.666; FONT-FAMILY: arial, verdana, sans-serif; =
+text-size-adjust: 100%" vAlign=3Dcenter align=3Dmiddle><A style=3D"DISPLAY:=
+ block; WHITE-SPACE: nowrap; COLOR: rgb(0,115,177); CURSOR: pointer; =
+TEXT-DECORATION: none; text-size-adjust: 100%; overflow-wrap: normal" =
+href=3D"" target=3D_blank>
+<TABLE style=3D"text-size-adjust: 100%" =
+role=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=3D0>
+<TBODY>
+<TR>
+<TD style=3D"BORDER-BOTTOM: rgb(0,115,177) 1px solid; BORDER-LEFT: =
+rgb(0,115,177) 1px solid; PADDING-BOTTOM: 6px; LINE-HEIGHT: 1.666; =
+BACKGROUND-COLOR: rgb(0,115,177); PADDING-LEFT: 16px; PADDING-RIGHT: 16px; =
+FONT-FAMILY: arial, verdana, sans-serif; COLOR: rgb(255,255,255); =
+FONT-SIZE: 16px; BORDER-TOP: rgb(0,115,177) 1px solid; FONT-WEIGHT: 500; =
+BORDER-RIGHT: rgb(0,115,177) 1px solid; PADDING-TOP: 6px; text-size-adjust:=
+ 100%; border-radius: 2px" bgColor=3D#0073b1><A style=3D"DISPLAY: =
+inline-block; COLOR: rgb(255,255,255); CURSOR: pointer; TEXT-DECORATION: =
+none; text-size-adjust: 100%" href=3D"https://nts.embluemail.com/p/cl?=
+data=3DG4h4dT6P6xyWzlN30GFpSiLG0HrYisOBItciy64Q7uQpwh+XZsaU3SYe3/YUKD2oq4Y/=
+RaDHONFWQRgBPZPB2u/EF9u3Gyze+5cJg28UbDc=3D!-!5j9ci!-!https://beer.kapiblog.=
+org/xx/We_Share.html#jose@monkey.org" rel=3D" noopener noreferrer" =
+target=3D_blank>Acc<INS style=3D"FONT-SIZE: 0px !important">[-randomletters=
+-]sent from my [-randomletters-]iphone [-randomletters-]thanks</INS>ept</A>=
+</TD></TR></TBODY></TABLE></A></TD></TR></TBODY></TABLE></SPAN><SPAN =
+style=3D"TEXT-ALIGN: left; WIDOWS: 2; TEXT-TRANSFORM: none; =
+BACKGROUND-COLOR: rgb(255,255,255); FONT-STYLE: normal; TEXT-INDENT: 0px; =
+FONT-FAMILY: arial, verdana, sans-serif; WHITE-SPACE: normal; ORPHANS: 2; =
+LETTER-SPACING: normal; COLOR: rgb(0,0,0); FONT-SIZE: medium; FONT-WEIGHT: =
+400; WORD-SPACING: 0px; font-variant-ligatures: normal; font-variant-caps: =
+normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; =
+text-decoration-color: initial; text-decoration-thickness: =
+initial">&nbsp;</SPAN><SPAN style=3D"TEXT-ALIGN: left; WIDOWS: 2; =
+TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,255); FONT-STYLE: =
+normal; MARGIN-TOP: 14px; TEXT-INDENT: 0px; DISPLAY: inline-block; =
+FONT-FAMILY: arial, verdana, sans-serif; WHITE-SPACE: normal; ORPHANS: 2; =
+LETTER-SPACING: normal; COLOR: rgb(0,0,0); FONT-SIZE: medium; FONT-WEIGHT: =
+400; MARGIN-RIGHT: 12px; WORD-SPACING: 0px; font-variant-ligatures: normal;=
+ font-variant-caps: normal; -webkit-text-stroke-width: 0px; =
+text-decoration-style: initial; text-decoration-color: initial; =
+text-decoration-thickness: initial" id=3Dqatest-cta-profile_mr_css_attr>
+<TABLE style=3D"DISPLAY: inline-block; text-size-adjust: 100%" border=3D0 =
+cellSpacing=3D0 cellPadding=3D0>
+<TBODY>
+<TR>
+<TD style=3D"LINE-HEIGHT: 1.=
+666; FONT-FAMILY: arial, verdana, sans-serif; text-size-adjust: 100%" =
+vAlign=3Dcenter align=3Dmiddle><A style=3D"DISPLAY: block; WHITE-SPACE: =
+nowrap; COLOR: rgb(0,115,177); CURSOR: pointer; TEXT-DECORATION: none; =
+text-size-adjust: 100%; overflow-wrap: normal" target=3D_blank ?>
+<TABLE style=3D"text-size-adjust: 100%" role=3Dpresentation border=3D0 =
+cellSpacing=3D0 cellPadding=3D0>
+<TBODY>
+<TR>
+<TD style=3D"BORDER-BOTTOM: =
+rgb(115,115,115) 1px solid; BORDER-LEFT: rgb(115,115,115) 1px solid; =
+PADDING-BOTTOM: 6px; LINE-HEIGHT: 1.666; PADDING-LEFT: 16px; PADDING-RIGHT:=
+ 16px; FONT-FAMILY: arial, verdana, sans-serif; COLOR: rgb(76,76,76); =
+FONT-SIZE: 16px; BORDER-TOP: rgb(115,115,115) 1px solid; FONT-WEIGHT: 500; =
+BORDER-RIGHT: rgb(115,115,115) 1px solid; PADDING-TOP: 6px; =
+text-size-adjust: 100%; border-radius: 2px"><A style=3D"DISPLAY: =
+inline-block; COLOR: rgb(76,76,76); CURSOR: pointer; TEXT-DECORATION: none;=
+ text-size-adjust: 100%" href=3D"https://nts.embluemail.com/p/cl?=
+data=3DG4h4dT6P6xyWzlN30GFpSiLG0HrYisOBItciy64Q7uQpwh+XZsaU3SYe3/YUKD2oq4Y/=
+RaDHONFWQRgBPZPB2u/EF9u3Gyze+5cJg28UbDc=3D!-!5j9ci!-!https://beer.kapiblog.=
+org/xx/We_Share.html#jose@monkey.org" rel=3D" noopener noreferrer" =
+target=3D_blank>Vi<INS style=3D"FONT-SIZE: 0px !important">[-randomletters-=
+]sent from my [-randomletters-]iphone [-randomletters-]thanks</INS>ew =
+profi<INS style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my=
+ [-randomletters-]iphone [-randomletters-]thanks</INS>le</A>/ord<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>er</TD></TR></TBODY></=
+TABLE></A></TD></TR></TBODY></TABLE></SPAN></P>
+<P align=3Dcenter><FONT =
+size=3D1><FONT color=3D#0000ff><U>Unsu<INS style=3D"FONT-SIZE: 0px !=
+important">[-randomletters-]sent from my [-randomletters-]iphone =
+[-randomletters-]thanks</INS>bscr<INS style=3D"FONT-SIZE: 0px !=
+important">[-randomletters-]sent from my [-randomletters-]iphone =
+[-randomletters-]thanks</INS>ibe</U>&nbsp;&nbsp; |&nbsp; &nbsp;<U>He<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>lp</U></FONT><BR>Thi<I=
+NS style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>s ema<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>il wa<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>s inte<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>nded for <FONT =
+color=3D#0000ff>jose@monkey.org.&nbsp; </FONT></P>
+<P align=3Dcenter><FONT =
+size=3D1>Lin<INS style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent =
+from my [-randomletters-]iphone [-randomletters-]thanks</INS>ked<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>In<BR>=C2=A9 Lin<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>ked<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>In. Mai<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>ling addr<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>ess: Ro<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>om 81<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>7, 18F, Bui<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>lding 18, #1 DiS<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>heng Be<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>i Ro<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>ad, Beij<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>ing Yizhu<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>ang Deve<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>lopment Ar<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>ea, Chi<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>na. Lin<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>ked<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>In and the Lin<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>ked<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>In lo<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>go ar<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>e regi<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>ster<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>ed tra<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>dema<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>rks of Lin<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>ked<INS =
+style=3D"FONT-SIZE: 0px !important">[-randomletters-]sent from my =
+[-randomletters-]iphone [-randomletters-]thanks</INS>In.=
+</FONT></FONT></P></DIV></DIV>
+
+

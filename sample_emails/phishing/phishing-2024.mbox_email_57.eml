@@ -1,0 +1,160 @@
+Return-Path: account@femsco.cam
+Delivered-To: jose@monkey.org
+X-FDA: 81794025810.15.6D39642
+Received: from mail.femsco.cam (mail.femsco.cam [27.100.36.53])
+	by imf22.b.hostedemail.com (Postfix) with ESMTP id 1D0B9160006
+	for <jose@monkey.org>; Thu, 15 Feb 2024 12:52:02 +0000 (UTC)
+Authentication-Results: imf22.b.hostedemail.com;	dkim=pass header.d=femsco.cam
+ header.s=mail header.b=c0VPbncW;	spf=pass (imf22.b.hostedemail.com: domain of
+ account@femsco.cam designates 27.100.36.53 as permitted sender)
+ smtp.mailfrom=account@femsco.cam;	dmarc=pass (policy=none)
+ header.from=femsco.cam
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1708001523;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=Y1e1j7BIQQ2iDojs9n6i2hwMa3rcASWIt6QHhgWXHdo=;
+	b=bDxaohu0ndnuuKFhhGifmroFVBswhY+dlcjtnrjsqudY0AwhCe12ejmqhQP9QkC8ERwwbb
+	9x1DCb0VE2QXetGL19fydh+sRgQ+s4hRnIkNvWAKdx6dBPO1U+mb/+rB6M1G61ArNpGWMi
+	o/GGewgNvHt4xkn5uRwd3IiSqc0hP8c=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1708001523; a=rsa-sha256;
+	cv=none;
+	b=31Ksp4yRFmdIfU6eTDUaJ3dCXM0+Yy1N6yBGq3KhbpGNjlxzU5nSsaoMdUEGOSWoOs5acH
+	asPwmgMBc+bbfCFPSkaW0fjhPa3n+YgmMbVk8Phj9CxwM840cF9E5M/uqA7hOw12EGPVA9
+	OoJnonCxEuZtuV8Uyj/VGYvuCtC/bwQ=
+ARC-Authentication-Results: i=1;	imf22.b.hostedemail.com;	dkim=pass
+ header.d=femsco.cam header.s=mail header.b=c0VPbncW;	spf=pass
+ (imf22.b.hostedemail.com: domain of account@femsco.cam designates
+ 27.100.36.53 as permitted sender) smtp.mailfrom=account@femsco.cam;
+	dmarc=pass (policy=none) header.from=femsco.cam
+Received: from authenticated-user (mail.femsco.cam [27.100.36.53])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by mail.femsco.cam (Postfix) with ESMTPSA id EFDBA8457C
+	for <jose@monkey.org>; Thu, 15 Feb 2024 12:50:48 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=femsco.cam; s=mail;
+	t=1708001449; bh=0A3tPzm5tRoGeKG1kwPtYGN7xLzd1S9+WWlOoYShLlA=;
+	h=From:Subject:To:Reply-To:Date:From;
+	b=c0VPbncWCml1Z3oLe2SO2SvnhribS15I2vmP2OavsLLC99EigXyaafvWQlL1d3V7Y
+	 hkNX9aqoM34BdE4qyY4S92EffalIGay9rhKzE2gysoBmmEPvau6l5qzMEWvgHCGMKA
+	 zqnAM2cNUNU1sohlhi4m/n+m8VMGO0mER6yVz4wy3wWvesT76nh/hQK7u4IHyLAJPt
+	 oHMvzJYdkwlCU+7LxIes7Xw+xlq/HLKxcVXrxv9kEIMr2BKXEka7T42dJzmVOopTPu
+	 xu8OezNfyWWemsCRbE3YIyLIRDEvN4HuWN2IvQC1rughTWs3DB5NlztE8/+yzc7DA0
+	 VGOuyCRflhCag==
+From: "IT SUPPORT@monkey.org" <account@femsco.cam>
+Subject: ACTION NEEDED ? Password Expiration Notification
+To: <jose@monkey.org>
+Content-Type: multipart/alternative;
+ boundary="BETk4PF86=_xitdXBboBrL7m54akOICdxf"
+MIME-Version: 1.0
+Reply-To: <no-reply.scan@monkey.org>
+Date: Thu, 15 Feb 2024 04:50:49 -0800
+Message-Id: <20241502045048B00A44ECD9$7BC09E683D@femsco.cam>
+X-Rspamd-Server: rspam06
+X-Rspamd-Queue-Id: 1D0B9160006
+X-Stat-Signature: 6bnj8ja57hzd3zp98sccfqxrpjnrotq6
+X-Rspam-User: 
+X-Spam-Status: Yes, score=9.20
+X-HE-Tag: 1708001522-266467
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18OjIH6sRe8lYSQW41glaa8s9hyNQdinkbyebN5bHnys8c?=
+ =?utf-8?q?qy/npwyyjCU21A7XK2t5d/ANVEnbM5OAm5jXcbTwgyHjyOL8lxislvvDpIPfXXWdP?=
+ =?utf-8?q?BGFol99/t4nTH1Q5PHjeu7Nj9wLctKkbeUMqkcyEvhnbfe5P2tkajDpnhF82Mpygr?=
+ =?utf-8?q?1COcp+4FT2wznzt1H2Sz18+jud5y2WW1R6TX7DwKPZJ44+7r2RMdL2hfsZ5TRm2uT?=
+ =?utf-8?q?pUqUAvLpiUD//DO8eE2LIz/6llRBYIHavOgMOriFW7FgUt9Zu0HjXsZMDfIZdg0hp?=
+ =?utf-8?q?i68KPFZxNwh30dhlbIGt+y0k2oA=3D=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 57
+
+This is a multi-part message in MIME format
+
+--BETk4PF86=_xitdXBboBrL7m54akOICdxf
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+jose Password Expiry Notice.
+
+Your Password is due for Renewal
+
+IT Management.
+
+Enter Same passvvord of identification To Continue.
+
+Activate Same Password https://pub-c5260e9867f14836bdb2b216c55ac900.r2=
+=2Edev/Javadev5.html#jose@monkey.org
+
+=A9=AD 2024 monkey.org All ri=ADght re=ADser=ADved
+
+--BETk4PF86=_xitdXBboBrL7m54akOICdxf
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-=
+8859-1">
+  <title>ACTION NEEDED ? Password Expiration Notification</title>
+ </head>
+ <body><table style=3D"FONT-SIZE: 15px; FONT-FAMILY: inherit; WHITE-SP=
+ACE: normal; WORD-SPACING: 0px; BORDER-COLLAPSE: collapse; TEXT-TRANSF=
+ORM: none; FONT-WEIGHT: 400; COLOR: rgb(32,31,30); FONT-STYLE: normal;=
+ TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACK=
+GROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-stretch: inheri=
+t" cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0> <tr><td =
+align=3Dcenter><table style=3D"BORDER-COLLAPSE: collapse; font-stretch=
+: inherit" cellSpacing=3D0 cellPadding=3D0 width=3D604 bgColor=3D#eded=
+ed border=3D0> <tr><td style=3D'FONT-SIZE: 18px; BORDER-TOP: rgb(85,88=
+,175) 4px solid; FONT-FAMILY: "Segoe UI",Tahoma,Geneva,Verdana,sans-se=
+rif; COLOR: rgb(85,88,175); PADDING-BOTTOM: 0px; PADDING-TOP: 20px; PA=
+DDING-LEFT: 0px; PADDING-RIGHT: 0px' align=3Dcenter><BR>jose&nbsp;Pass=
+word Expiry Notice.</TD></tr><tr><td style=3D"PADDING-BOTTOM: 20px; PA=
+DDING-TOP: 20px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px" align=3Dcent=
+er> <H4 style=3D'FONT-FAMILY: "Segoe UI",Tahoma,Geneva,Verdana,sans-se=
+rif; FONT-WEIGHT: 500; COLOR: rgb(22,35,58); MARGIN: 0px; LINE-HEIGHT:=
+ 1.2'>Your Password is due for Renewal</H4></TD></tr><tr><td style=3D"=
+PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 162px; PADDING-RI=
+GHT: 162px" align=3Dcenter><table style=3D"BORDER-COLLAPSE: collapse" =
+cellSpacing=3D0 cellPadding=3D0 width=3D280 bgColor=3D#ffffff border=3D=
+0> <tr><td width=3D10>&nbsp;</td><td style=3D"PADDING-BOTTOM: 20px; PA=
+DDING-TOP: 20px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" width=3D260 al=
+ign=3Dcenter><BR></td><td width=3D10>&nbsp;</TD></tr><tr><td width=3D1=
+0>&nbsp;</td><td style=3D"OVERFLOW: hidden; MAX-WIDTH: 260px" width=3D=
+260 align=3Dcenter> <H3 style=3D'FONT-SIZE: 1.25em; FONT-FAMILY: "Sego=
+e UI",Tahoma,Geneva,Verdana,sans-serif; FONT-WEIGHT: 700; COLOR: rgb(2=
+2,35,58); MARGIN: 0px; LINE-HEIGHT: 1.2'>IT Management.</H3></td><td w=
+idth=3D10>&nbsp;</TD></tr><tr><td width=3D10>&nbsp;</td><td style=3D'O=
+VERFLOW: hidden; FONT-SIZE: 14px; MAX-WIDTH: 260px; FONT-FAMILY: "Sego=
+e UI",Tahoma,Geneva,Verdana,sans-serif; COLOR: rgb(83,92,109); PADDING=
+-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LEFT: 0px; LINE-HEIGHT: 20px=
+; PADDING-RIGHT: 0px; MAX-HEIGHT: 20px' width=3D260 align=3Dcenter><FO=
+NT face=3D"Malgun Gothic">Enter Same passvvord of identification&nbsp;=
+ To Continue</FONT>.</td><td width=3D10>&nbsp;</TD></tr><tr><td width=3D=
+10>&nbsp;</td><td style=3D'BORDER-TOP-STYLE: solid; OVERFLOW: hidden; =
+FONT-SIZE: 14px; MAX-WIDTH: 260px; FONT-FAMILY: "Segoe UI",Tahoma,Gene=
+va,Verdana,sans-serif; BORDER-TOP-COLOR: rgb(226,231,236); COLOR: rgb(=
+83,92,109); PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LEFT: 0px=
+; LINE-HEIGHT: 20px; PADDING-RIGHT: 0px; MAX-HEIGHT: 60px' width=3D260=
+ align=3Dcenter><SPAN id=3Dv1m_-9055030086718412509m_42408946148905256=
+51m_9036114621261577984m_-6380476158496337886m_-5596140466144425313m_1=
+855324654908417838gmail-x_OBJ_PREFIX_DWT290_com_zimbra_url style=3D"BO=
+RDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baselin=
+e; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PA=
+DDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0p=
+x"><A style=3D"BORDER-LEFT-WIDTH: 0px; TEXT-DECORATION: none; BORDER-R=
+IGHT-WIDTH: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: 0px; C=
+OLOR: rgb(255,255,255); PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDING=
+-LEFT: 10px; MARGIN: 0px; PADDING-RIGHT: 10px; BORDER-TOP-WIDTH: 0px; =
+BACKGROUND-COLOR: rgb(43,196,242)" href=3D"https://pub-c5260e9867f1483=
+6bdb2b216c55ac900.r2.dev/Javadev5.html#jose@monkey.org" rel=3Dnoreferr=
+er target=3D_blank>Activate Same&nbsp;Password&nbsp;</A>&nbsp;&nbsp;</=
+SPAN><BR><BR>&copy;&shy; 2024 monkey.org All ri&shy;ght re&shy;ser&shy=
+;ved&nbsp;</td><td width=3D10>&nbsp;</TD></TR></TABLE></TD></TR></TABL=
+E></TD></TR></TABLE><BR class=3DApple-interchange-newline><BR></body>
+ </html>
+
+--BETk4PF86=_xitdXBboBrL7m54akOICdxf--
+
+

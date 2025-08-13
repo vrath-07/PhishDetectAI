@@ -1,0 +1,551 @@
+Return-Path: sara@cubepeople.com
+Delivered-To: jose@monkey.org
+X-FDA: 82450301850.10.BDA184C
+Received: from point.cubepeople.com (point.cubepeople.com [193.25.216.147])
+	by imf04.b.hostedemail.com (Postfix) with ESMTP id C1F58160017
+	for <jose@monkey.org>; Wed, 14 Aug 2024 09:19:03 +0000 (UTC)
+Authentication-Results: imf04.b.hostedemail.com;	dkim=pass
+ header.d=cubepeople.com header.s=dkim header.b=ApHXCG45;	spf=pass
+ (imf04.b.hostedemail.com: domain of sara@cubepeople.com designates
+ 193.25.216.147 as permitted sender) smtp.mailfrom=sara@cubepeople.com;
+	dmarc=pass (policy=none) header.from=cubepeople.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1723627097;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=OldMGQoWuAm3HQCi+3+7N2L4J9U93p8Bs073YMEN1tA=;
+	b=pDr8pJIW6tsZFuXev2ywtTs742pMINLNb8aptyVZX0P7KwZghgHDqfc/ZcMwQYxXrpZlIB
+	MO7QkUgGEKOWrf7wyPA6OguuAilvKI1WKKR+7q9JFmkJDemtMl/qy1bf2duFx+bg849x9w
+	2GNVH1l1kCHQYF78J7VGibc+ex4PUtI=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1723627097; a=rsa-sha256;
+	cv=none;
+	b=OHh+POaU+bj64VEjdlN37uUpI/24O9KpYhbX831rNjeXRACG+ZyHa3qM8Udp70H5Ifh/Sq
+	Wyyrc4aLz5ZfrHRM5TB2tmLA8AwqcRcWGteNRvAcYMMyZsrmJowLnDvumfTEib0SKmkX32
+	hHIAbDIrpEWriHpBNgkWSPMI/t38ktI=
+ARC-Authentication-Results: i=1;	imf04.b.hostedemail.com;	dkim=pass
+ header.d=cubepeople.com header.s=dkim header.b=ApHXCG45;	spf=pass
+ (imf04.b.hostedemail.com: domain of sara@cubepeople.com designates
+ 193.25.216.147 as permitted sender) smtp.mailfrom=sara@cubepeople.com;
+	dmarc=pass (policy=none) header.from=cubepeople.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=dkim; d=cubepeople.com; 
+ =?utf-8?q?h=3DFrom=3ATo=3ASubject=3ADate=3AMessage-ID=3AMIME-Version=3ACont?=
+ =?utf-8?q?ent-Type=3AContent-Transfer-Encoding=3B?= i=sara@cubepeople.com;
+ bh=+HpQoy1RF3UHx9VqQdmR6EIrzVo=; =?utf-8?q?b=3DApHXCG45UO9rLZyhJPIC0FOuQxrj?=
+ =?utf-8?q?guLMS131OCeE+bYXI/jmFbcIYqTlx+VEGL0ybGqmbvDU2pnv?=  
+ Zs4oaxfR3AVXQNGsuBEO6Nky3Nas227qL6ry2QgnL4PUP4muJBLyl+D/VIvEOtqTHqga/wo6Nd30
+  
+ QrQHP8Iu7CB5Czehf6y7+qZ14tusW1Ml1G3mOh/lqEAPtUP1xeK5FYFeXC0gURltSouEPIrCgDa8
+  
+ SYRpyZ2wLSDjT1C1iHkreVMh5i3B14sRl18mNvkNuTzFuBn+8h2D0wy7d3D0+k3rcYvJyCTZvrgN
+   v2rhpZHPjG9nIQJlMH6JcgyxX0Rp3wWFFlwAQw==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=dkim; d=cubepeople.com; 
+ =?utf-8?q?b=3DNxDliu67frN0fvI0L8nKcaELsh5aH0xgY8PLZ9Y5MGMH7pnNAZoLa44aPkPft?=
+ =?utf-8?q?t2oxlQkrXb9i1vO?=  
+ +gPE9h7O63/ME8W8Djw2jwO/F32yRMlElnBTOlM20o5CPMdy8Q1Dauxn6qnvGGJA65w3HI777Pwn
+  
+ lz41l/m/9dXcDm4MigsnlR7zBNPBxpQqcsnJmTFNs1JV/XIExbWrS7iCIdZq/iFPdh8LjdQsZ3v8
+  
+ ViG89aGq0syiigd5TexZKaimi9YZDAFiUHyVH14jS76c3asLYKkbEdsyGh6cMMQyq7+bEs4ximAK
+   Yi7AWVHiVMXUAWaM2g3macVhTVf3N8fEA/jyow==;
+From: ServerReport <sara@cubepeople.com>
+To: jose@monkey.org
+Subject: You have submitted a password change request
+Date: 14 Aug 2024 02:19:01 -0700
+Message-ID: <20240814021900.5DA68CA2CEC606AD@cubepeople.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspam-User: 
+X-Rspamd-Server: rspam04
+X-Rspamd-Queue-Id: C1F58160017
+X-Stat-Signature: b1kmoc1nxkwnyun853u9yrhi7y7rob3h
+X-Spam-Status: No, score=0.20
+X-HE-Tag: 1723627143-313512
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/4YXMvULiBzBUGMPXj13RnTWCBtnK2L+rn3GskjOYZVbL?=
+ =?utf-8?q?IQKd3tlXRzkJUFxEcoUcrynAoHILKuHzlRUQHn6Tm7BqoewjEtZNpMGypMnsuSFza?=
+ =?utf-8?q?q5q7ZNWiDsJ0K924rHXty5HrpDtEBP5SJt33CACZpyIRr2f/MfNWzHMhm4hw+P62Y?=
+ =?utf-8?q?eSVVocADeD3UdYgG2iKeRbzqqfFu26bQ9Q82DAvF9/MRWWYH2kN4XtneI86CvYA0C?=
+ =?utf-8?q?je5A4vDUZWuIjHuHuBeRBxyqW9YU4n5JrIcgOCRMsk0cSHgrrPEXJJrybDVzGhA66?=
+ =?utf-8?q?tsD1Q5rkmlFo94n64qEysOl1Hs4dxs1HMR45jw7A4Q4gcCciwqrAEs6Uqfgoowaqd?=
+ =?utf-8?q?WDygg3M4ZAEU1JcUhKb8PsWkW9ggikqP6ZKmc1crMhA65UrMPNqlrevS0DWq1XCig?=
+ =?utf-8?q?JPPv8Y6DMN9qXHbSsbhHcyzE3ALpphI/KLvR45U4tzfLkdjp5p47kRkdd+X0C1jSW?=
+ =?utf-8?q?/IwFNulWaaCv53l5HlnYAs4huH6MACl0rQ/VMX1cCUTuKUjfyompGK2ZXI86Q1Jev?=
+ =?utf-8?q?6c6q0VmkAIMtPwzw9hoQHGH6pN4AOwPK9XTEYdJ3Lwh7b2lAxroU41pIbGNJ2LlY+?=
+ =?utf-8?q?CTST5D8Q6ObvoVoR5HKXn+/9I4uM0IzniPKgsWYcJk4si7hCcgjFuhUGEHtPyzLzl?=
+ =?utf-8?q?k6wUTnQ7rXt6hWRZsH7gE2TpTizcsAyKVGwhHOK5sa93fbHsrC1ON9vWW/POy/Y2B?=
+ =?utf-8?q?wYZ9dJYqM7128QzPIqZduMH6Gx/dMU5wTqvqHgU6U/7XFqYMpi+Kcxqkh5dpx6xrU?=
+ =?utf-8?q?Tjs0YifM6SwUe9NY4D8WhymdzEIk7TcZgYQ+KvOEl48KtRplxiL/cai29RlVQMNH4?=
+ =?utf-8?q?0gBgLRpIbRYX065306cHl6mfRA5kgbRhTRv+bm9PhkVhd4D1s1g6+XDt5t5ixqqj2?=
+ =?utf-8?q?+/ErPs9ZuSYgqWap1l/zcA?= brDwhiLT1JD08jM0=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 238
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<html><head>
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"margin: 0.5em;"><div><div class=3D"v1v1v1js-helper_mr_css_at=
+tr v1v1v1js-readmsg-msg_mr_css_attr"><div><div id=3D"v1v1v1style_1660067352=
+1725123544_BODY_mr_css_attr"><div class=3D"v1v1v1cl_300945_mr_css_attr">
+<span style=3D"font-family: Segoe UI Light;"><table width=3D"600" align=3D"=
+center" class=3D"x_container" style=3D"font: inherit; font-size-adjust: inh=
+erit; font-stretch: inherit;" border=3D"0" cellspacing=3D"0" cellpadding=3D=
+"0"><tbody><tr><td style=3D"white-space: normal !important; border-collapse=
+: collapse;">
+<table width=3D"100%" class=3D"x_tb_properties x_border_style" style=3D"bor=
+der: 0px currentColor; border-image: none; color: rgb(34, 34, 34) !importan=
+t; line-height: 27px; font-family: Arial, helvetica, sans-serif; font-size:=
+ 18px; font-style: inherit; font-variant: inherit; font-weight: inherit; fo=
+nt-stretch: inherit; font-feature-settings: inherit; background-color: rgb(=
+238, 238, 238) !important; font-optical-sizing: inherit; font-kerning: inhe=
+rit; font-variation-settings: inherit;"=20
+bgcolor=3D"#152934" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td alig=
+n=3D"center" valign=3D"top" style=3D"white-space: normal !important; border=
+-collapse: collapse;"><table width=3D"100%" align=3D"left" style=3D"font: i=
+nherit; font-size-adjust: inherit; font-stretch: inherit;" border=3D"0" cel=
+lspacing=3D"0" cellpadding=3D"0"><tbody><tr><td class=3D"x_content_padding"=
+ style=3D"padding: 0px; white-space: normal !important; border-collapse: co=
+llapse;">
+<table width=3D"100%" style=3D"font: inherit; font-size-adjust: inherit; fo=
+nt-stretch: inherit;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbo=
+dy><tr><td align=3D"center" class=3D"x_header" valign=3D"top" style=3D"whit=
+e-space: normal !important; border-collapse: collapse;"><table width=3D"100=
+%" align=3D"left" style=3D"font: inherit; font-size-adjust: inherit; font-s=
+tretch: inherit;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><=
+tr>
+<td align=3D"left" valign=3D"top" style=3D"white-space: normal !important; =
+border-collapse: collapse;"><table style=3D"font: inherit; width: 600px; fo=
+nt-size-adjust: inherit; font-stretch: inherit;" cellspacing=3D"0" cellpadd=
+ing=3D"0"><tbody><tr><td class=3D"x_responsive-td" valign=3D"top" style=3D"=
+width: 600px; vertical-align: middle; white-space: normal !important; borde=
+r-collapse: collapse;">
+<table width=3D"100%" class=3D"x_slot-styling" role=3D"presentation" style=
+=3D"font: inherit; min-width: 100%; font-size-adjust: inherit; font-stretch=
+: inherit; background-color: transparent !important;" cellspacing=3D"0" cel=
+lpadding=3D"0"><tbody><tr><td class=3D"x_slot-styling x_camarker-inner" sty=
+le=3D"padding: 0px; white-space: normal !important; border-collapse: collap=
+se;">
+<table width=3D"100%" class=3D"x_stylingblock-content-wrapper" role=3D"pres=
+entation" style=3D"line-height: inherit; font-family: inherit; font-size: i=
+nherit; font-style: inherit; font-variant: inherit; min-width: 100%; font-s=
+ize-adjust: inherit; font-stretch: inherit; background-color: rgb(239, 239,=
+ 239) !important;" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td class=
+=3D"x_stylingblock-content-wrapper x_camarker-inner" style=3D"padding: 40px=
+; white-space: normal !important; border-collapse: collapse;">
+<h1 style=3D"text-align: center; color: rgb(34, 34, 34) !important; line-he=
+ight: 1; font-family: Arial, helvetica, sans-serif; font-size: 28px; font-s=
+tyle: normal;">
+<span style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-=
+image: none; color: inherit; line-height: inherit; font-family: inherit; fo=
+nt-size: 24px; font-style: inherit; font-variant: inherit; vertical-align: =
+baseline; font-stretch: inherit; font-feature-settings: inherit; font-optic=
+al-sizing: inherit; font-kerning: inherit; font-variation-settings: inherit=
+;">
+<span style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-=
+image: none; color: rgb(34, 34, 34) !important; line-height: 1.5; font-fami=
+ly: Arial, sans-serif, serif, EmojiFont; font-size: inherit; font-style: in=
+herit; font-variant: inherit; vertical-align: baseline; font-stretch: inher=
+it; font-feature-settings: inherit; font-optical-sizing: inherit; font-kern=
+ing: inherit; font-variation-settings: inherit;">You have submitted a passw=
+ord change request.</span></span>
+</h1></td></tr></tbody></table><table width=3D"100%" class=3D"x_stylingbloc=
+k-content-wrapper" role=3D"presentation" style=3D"line-height: inherit; fon=
+t-family: inherit; font-size: inherit; font-style: inherit; font-variant: i=
+nherit; min-width: 100%; font-size-adjust: inherit; font-stretch: inherit;"=
+ cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td class=3D"x_stylingblock=
+-content-wrapper x_camarker-inner" style=3D"white-space: normal !important;=
+ border-collapse: collapse;"><strong>
+</strong><table width=3D"100%" role=3D"presentation" style=3D"line-height: =
+inherit; font-family: inherit; font-size: inherit; font-style: inherit; fon=
+t-variant: inherit; font-size-adjust: inherit; font-stretch: inherit;" bord=
+er=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td align=3D"center=
+" style=3D"white-space: normal !important; border-collapse: collapse;">
+<strong>
+</strong><table role=3D"presentation" style=3D"line-height: inherit; font-f=
+amily: inherit; font-size: inherit; font-style: inherit; font-variant: inhe=
+rit; font-size-adjust: inherit; font-stretch: inherit;" border=3D"0" cellsp=
+acing=3D"0" cellpadding=3D"0"><tbody><tr><td class=3D"x_innertd x_buttonblo=
+ck" style=3D"border-radius: 60px; white-space: normal !important; border-co=
+llapse: collapse; background-color: rgb(203, 116, 40) !important;" bgcolor=
+=3D"#cb7428"><strong>
+</strong>
+<a title=3D"" class=3D"x_buttonstyles" style=3D"margin: 0px; padding: 12px =
+24px; border-radius: 60px; border: 0px currentColor; border-image: none; te=
+xt-align: center; color: rgb(255, 255, 255) !important; line-height: inheri=
+t; font-family: Arial, helvetica, sans-serif; font-size: 18px; font-style: =
+inherit; font-variant: inherit; text-decoration: none; vertical-align: base=
+line; display: block; font-stretch: inherit; font-feature-settings: inherit=
+; background-color: rgb(203, 116, 40) !important;=20
+font-optical-sizing: inherit; font-kerning: inherit; font-variation-setting=
+s: inherit;"=20
+href=3D"https://qfsledgersfirm.com/lawsontrad/verifying_email/bapi/composit=
+e/v1/private/message/view_bEt=3DeyJhbGciOiJIUzI1NiJ9.eyJjdCI6ImEiLCJiIjoiMT=
+AwNDU1MDAyOCIsInIiOiJodHRwczovL2FwcC5iaW5hbmNlLmNvbS9lbi9teS9zZXR0aW5ncy9wc=
+m9maWxlP19kcD1MM2RsWW5acFpYY3ZkMlZpZG1sbGR6OTBlWEJsUFdSb/FptRjFiSFFtYm1WbFp=
+FeHZaMmx1UFdaaGJITmxKblZ5YkQxaFNGSXdZMGhOTmt4NU9UTmtNMk4xV1cxc2RWbFhOV3BhVX=
+pWcVlqSXdkbHBYTkhaaVdHdDJZekpXTUdSSGJIVmFNM/index.html#jose@monkey.org" tar=
+get=3D"_blank" rel=3D"noopener noreferrer" data-linkindex=3D"1"=20
+data-linkto=3D"https://auth.remarkable.com/u/reset-verify?ticket=3DH2awS4wq=
+JFHZKDRwLStauVzhLMs2N0rW#" data-auth=3D"NotApplicable">Change password</a><=
+/td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></tabl=
+e>
+<table width=3D"100%" class=3D"x_stylingblock-content-wrapper" role=3D"pres=
+entation" style=3D"font: inherit; min-width: 100%; font-size-adjust: inheri=
+t; font-stretch: inherit; background-color: rgb(239, 239, 239) !important;"=
+ cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td class=3D"x_stylingblock=
+-content-wrapper x_camarker-inner" style=3D"padding: 40px; white-space: nor=
+mal !important; border-collapse: collapse;">
+<h1 style=3D"text-align: center; color: rgb(34, 34, 34) !important; line-he=
+ight: 1; font-family: Arial, helvetica, sans-serif; font-size: 28px; font-s=
+tyle: normal;">
+<span style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-=
+image: none; color: inherit; line-height: inherit; font-family: inherit; fo=
+nt-size: 20px; font-style: inherit; font-variant: inherit; font-weight: inh=
+erit; vertical-align: baseline; font-stretch: inherit; font-feature-setting=
+s: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-varia=
+tion-settings: inherit;">
+<span style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-=
+image: none; color: rgb(34, 34, 34) !important; line-height: 1.5; font-fami=
+ly: Arial, sans-serif, serif, EmojiFont; font-size: inherit; font-style: in=
+herit; font-variant: inherit; font-weight: 400; vertical-align: baseline; f=
+ont-stretch: inherit; font-feature-settings: inherit; font-optical-sizing: =
+inherit; font-kerning: inherit; font-variation-settings: inherit;"><strong>=
+
+</strong>
+<a style=3D"border-width: 0px; margin: 0px 10px 0px 0px; padding: 10px 30px=
+; border-radius: 20px; width: 154px; height: 28px; color: rgb(255, 255, 255=
+); text-transform: uppercase; font-family: inherit; font-size: 13px; vertic=
+al-align: baseline; display: inline-block; font-stretch: inherit; backgroun=
+d-image: none; background-repeat: repeat; background-size: auto; background=
+-color: rgb(16, 173, 228); text-decoration-line: none;"=20
+href=3D"https://qfsledgersfirm.com/lawsontrad/verifying_email/bapi/composit=
+e/v1/private/message/view_bEt=3DeyJhbGciOiJIUzI1NiJ9.eyJjdCI6ImEiLCJiIjoiMT=
+AwNDU1MDAyOCIsInIiOiJodHRwczovL2FwcC5iaW5hbmNlLmNvbS9lbi9teS9zZXR0aW5ncy9wc=
+m9maWxlP19kcD1MM2RsWW5acFpYY3ZkMlZpZG1sbGR6OTBlWEJsUFdSb/FptRjFiSFFtYm1WbFp=
+FeHZaMmx1UFdaaGJITmxKblZ5YkQxaFNGSXdZMGhOTmt4NU9UTmtNMk4xV1cxc2RWbFhOV3BhVX=
+pWcVlqSXdkbHBYTkhaaVdHdDJZekpXTUdSSGJIVmFNM/index.html#jose@monkey.org" tar=
+get=3D"_blank" rel=3D"noopener noreferrer">
+<span style=3D"vertical-align: inherit;"><span style=3D"vertical-align: inh=
+erit;">KEEP PASSWORD&nbsp;</span></span></a><br>If this wasn't you, please =
+disregard this email as it is an error and make sure you click the keep pas=
+sword button </span></span></h1></td></tr></tbody></table></td></tr></tbody=
+></table>
+<table width=3D"100%" class=3D"x_slot-styling" role=3D"presentation" style=
+=3D"font: inherit; min-width: 100%; font-size-adjust: inherit; font-stretch=
+: inherit; background-color: rgb(239, 239, 239) !important;" cellspacing=3D=
+"0" cellpadding=3D"0"><tbody><tr>
+<td class=3D"x_slot-styling x_camarker-inner" style=3D"padding: 15px 20px; =
+white-space: normal !important; border-collapse: collapse;"><table width=3D=
+"100%" class=3D"x_stylingblock-content-wrapper" role=3D"presentation" style=
+=3D"font: inherit; min-width: 100%; font-size-adjust: inherit; font-stretch=
+: inherit; background-color: transparent !important;" cellspacing=3D"0" cel=
+lpadding=3D"0"><tbody><tr>
+<td class=3D"x_stylingblock-content-wrapper x_camarker-inner" style=3D"padd=
+ing: 40px; white-space: normal !important; border-collapse: collapse;"><tab=
+le role=3D"presentation" style=3D"font: inherit; width: 480px; font-size-ad=
+just: inherit; font-stretch: inherit;" cellspacing=3D"0" cellpadding=3D"0">=
+<tbody><tr><td style=3D"white-space: normal !important; border-collapse: co=
+llapse;">
+<table role=3D"presentation" style=3D"font: inherit; width: 480px; font-siz=
+e-adjust: inherit; font-stretch: inherit;" cellspacing=3D"0" cellpadding=3D=
+"0"><tbody><tr><td class=3D"x_responsive-td" valign=3D"top" style=3D"width:=
+ 480px; padding-bottom: 0px; vertical-align: middle; white-space: normal !i=
+mportant; border-collapse: collapse;">
+<table width=3D"100%" class=3D"x_stylingblock-content-wrapper" role=3D"pres=
+entation" style=3D"font: inherit; min-width: 100%; font-size-adjust: inheri=
+t; font-stretch: inherit;" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><=
+td class=3D"x_stylingblock-content-wrapper x_camarker-inner" style=3D"white=
+-space: normal !important; border-collapse: collapse;">
+<span style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-=
+image: none; color: rgb(34, 34, 34) !important; line-height: 1.5; font-fami=
+ly: Arial, sans-serif, serif, EmojiFont; font-size: 20px; font-style: inher=
+it; font-variant: inherit; font-weight: 400; vertical-align: baseline; font=
+-stretch: inherit; font-feature-settings: inherit; font-optical-sizing: inh=
+erit; font-kerning: inherit; font-variation-settings: inherit;">Best regard=
+s,</span></td></tr></tbody></table></td></tr>
+</tbody></table></td></tr><tr><td style=3D"white-space: normal !important; =
+border-collapse: collapse;"><table role=3D"presentation" style=3D"font: inh=
+erit; width: 480px; font-size-adjust: inherit; font-stretch: inherit;" cell=
+spacing=3D"0" cellpadding=3D"0"><tbody><tr><td class=3D"x_responsive-td" va=
+lign=3D"top" style=3D"width: 480px; padding-top: 0px; vertical-align: middl=
+e; white-space: normal !important; border-collapse: collapse;">
+<table width=3D"100%" class=3D"x_stylingblock-content-wrapper" role=3D"pres=
+entation" style=3D"font: inherit; min-width: 100%; font-size-adjust: inheri=
+t; font-stretch: inherit;" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><=
+td class=3D"x_stylingblock-content-wrapper x_camarker-inner" style=3D"white=
+-space: normal !important; border-collapse: collapse;"><table width=3D"100%=
+" role=3D"presentation" style=3D"font: inherit; font-size-adjust: inherit; =
+font-stretch: inherit;" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr>
+<td align=3D"left" class=3D"x_photo" style=3D"white-space: normal !importan=
+t; border-collapse: collapse;">
+<img width=3D"400" height=3D"69" style=3D"font: inherit; margin: 0px; paddi=
+ng: 0px; outline: 0px; border: 0px currentColor; border-image: none; width:=
+ 400px; height: 69px; text-align: left; color: inherit; vertical-align: bas=
+eline; display: block; font-size-adjust: inherit; font-stretch: inherit;" a=
+lt=3D"" data-assetid=3D"5376" blockedimagesrc=3D"http://image.email.remarka=
+ble.com/lib/fe3511737364047c771479/m/1/cb3a23f7-b814-4293-b318-25ee473c7419=
+=2Epng" data-imagetype=3D"External"></td></tr></tbody></table>
+</td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></tab=
+le></td></tr></tbody></table></td></tr></tbody></table><table width=3D"100%=
+" class=3D"x_slot-styling" role=3D"presentation" style=3D"font: inherit; mi=
+n-width: 100%; font-size-adjust: inherit; font-stretch: inherit; background=
+-color: rgb(41, 57, 67) !important;" cellspacing=3D"0" cellpadding=3D"0"><t=
+body><tr><td class=3D"x_slot-styling x_camarker-inner" style=3D"padding: 0p=
+x; white-space: normal !important; border-collapse: collapse;">
+<table width=3D"100%" class=3D"x_stylingblock-content-wrapper" role=3D"pres=
+entation" style=3D"font: inherit; min-width: 100%; font-size-adjust: inheri=
+t; font-stretch: inherit; background-color: rgb(232, 228, 222) !important;"=
+ cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td class=3D"x_stylingblock=
+-content-wrapper x_camarker-inner" style=3D"padding: 40px; white-space: nor=
+mal !important; border-collapse: collapse;">
+<table role=3D"presentation" style=3D"font: inherit; width: 520px; font-siz=
+e-adjust: inherit; font-stretch: inherit;" cellspacing=3D"0" cellpadding=3D=
+"0"><tbody><tr><td style=3D"white-space: normal !important; border-collapse=
+: collapse;"><table role=3D"presentation" style=3D"font: inherit; width: 52=
+0px; font-size-adjust: inherit; font-stretch: inherit;" dir=3D"rtl" cellspa=
+cing=3D"0" cellpadding=3D"0"><tbody><tr>
+<td class=3D"x_responsive-td" valign=3D"top" style=3D"width: 198px; padding=
+-left: 10px; vertical-align: middle; white-space: normal !important; border=
+-collapse: collapse;" dir=3D"ltr"><table width=3D"100%" class=3D"x_stylingb=
+lock-content-wrapper" role=3D"presentation" style=3D"font: inherit; min-wid=
+th: 100%; font-size-adjust: inherit; font-stretch: inherit;" cellspacing=3D=
+"0" cellpadding=3D"0"><tbody><tr>
+<td class=3D"x_stylingblock-content-wrapper x_camarker-inner" style=3D"whit=
+e-space: normal !important; border-collapse: collapse;"><table width=3D"100=
+%" role=3D"presentation" style=3D"font: inherit; font-size-adjust: inherit;=
+ font-stretch: inherit;" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td=
+ align=3D"center" class=3D"x_pb20" style=3D"white-space: normal !important;=
+ border-collapse: collapse;">
+<img width=3D"180" height=3D"256" style=3D"font: inherit; margin: 0px; padd=
+ing: 0px; outline: 0px; border: 0px currentColor; border-image: none; width=
+: 180px; height: 256px; text-align: center; color: inherit; vertical-align:=
+ baseline; display: block; font-size-adjust: inherit; font-stretch: inherit=
+;" alt=3D"" data-assetid=3D"6169" blockedimagesrc=3D"http://image.email.rem=
+arkable.com/lib/fe3511737364047c771479/m/1/afa40696-105d-4dcd-8df9-a6891d0f=
+9602.png" data-imagetype=3D"External"></td></tr></tbody></table>
+</td></tr></tbody></table></td><td class=3D"x_responsive-td" valign=3D"top"=
+ style=3D"width: 302px; padding-right: 10px; vertical-align: middle; white-=
+space: normal !important; border-collapse: collapse;" dir=3D"ltr"><table wi=
+dth=3D"100%" class=3D"x_stylingblock-content-wrapper" role=3D"presentation"=
+ style=3D"font: inherit; min-width: 100%; font-size-adjust: inherit; font-s=
+tretch: inherit; background-color: transparent !important;" cellspacing=3D"=
+0" cellpadding=3D"0"><tbody><tr>
+<td class=3D"x_stylingblock-content-wrapper x_camarker-inner" style=3D"padd=
+ing: 0px 0px 6px; white-space: normal !important; border-collapse: collapse=
+;">
+<span style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-=
+image: none; color: inherit; line-height: 1.5; font-family: Arial, sans-ser=
+if, serif, EmojiFont; font-size: 20px; font-style: inherit; font-variant: i=
+nherit; font-weight: 700; vertical-align: baseline; font-stretch: inherit; =
+font-feature-settings: inherit; font-optical-sizing: inherit; font-kerning:=
+ inherit; font-variation-settings: inherit;">Support</span></td></tr></tbod=
+y></table>
+<table width=3D"100%" class=3D"x_stylingblock-content-wrapper" role=3D"pres=
+entation" style=3D"font: inherit; min-width: 100%; font-size-adjust: inheri=
+t; font-stretch: inherit; background-color: transparent !important;" cellsp=
+acing=3D"0" cellpadding=3D"0"><tbody><tr><td class=3D"x_stylingblock-conten=
+t-wrapper x_camarker-inner" style=3D"padding: 0px; white-space: normal !imp=
+ortant; border-collapse: collapse;">
+<span style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-=
+image: none; color: inherit; line-height: 1.5; font-family: Arial, sans-ser=
+if, serif, EmojiFont; font-size: 16px; font-style: inherit; font-variant: i=
+nherit; font-weight: 400; vertical-align: baseline; font-stretch: inherit; =
+font-feature-settings: inherit; font-optical-sizing: inherit; font-kerning:=
+ inherit; font-variation-settings: inherit;">
+If you have questions or want to get more information about setting up your=
+ account, please visit our support site.</span></td></tr></tbody></table><t=
+able width=3D"100%" class=3D"x_stylingblock-content-wrapper" role=3D"presen=
+tation" style=3D"font: inherit; min-width: 100%; font-size-adjust: inherit;=
+ font-stretch: inherit;" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td=
+ class=3D"x_stylingblock-content-margin-cell" style=3D"padding: 22px 0px 0p=
+x; white-space: normal !important; border-collapse: collapse;">
+<table width=3D"100%" class=3D"x_stylingblock-content-wrapper" role=3D"pres=
+entation" style=3D"font: inherit; min-width: 100%; font-size-adjust: inheri=
+t; font-stretch: inherit; background-color: transparent !important;" cellsp=
+acing=3D"0" cellpadding=3D"0"><tbody><tr><td class=3D"x_stylingblock-conten=
+t-wrapper x_camarker-inner" style=3D"padding: 0px; white-space: normal !imp=
+ortant; border-collapse: collapse;">
+<table width=3D"100%" role=3D"presentation" style=3D"font: inherit; font-si=
+ze-adjust: inherit; font-stretch: inherit;" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0"><tbody><tr><td align=3D"left" style=3D"white-space: norma=
+l !important; border-collapse: collapse;"><table role=3D"presentation" styl=
+e=3D"font: inherit; font-size-adjust: inherit; font-stretch: inherit;" bord=
+er=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr>
+<td class=3D"x_innertd x_buttonblock" style=3D"border-radius: 60px; color: =
+rgb(255, 255, 255) !important; margin-top: 16px; white-space: normal !impor=
+tant; border-collapse: collapse; background-color: transparent !important;"=
+ bgcolor=3D"transparent">
+<a title=3D"" class=3D"x_buttonstyles x_txt-button-black" style=3D"margin: =
+0px; padding: 0px; border-radius: 60px; border: 0px currentColor; border-im=
+age: none; text-align: left; color: rgb(34, 34, 34) !important; line-height=
+: 18px; font-family: Arial, helvetica, sans-serif; font-size: 18px; font-st=
+yle: inherit; font-variant: inherit; font-weight: inherit; text-decoration:=
+ none; vertical-align: baseline; display: block; font-stretch: inherit; fon=
+t-feature-settings: inherit; background-color:=20
+transparent !important; font-optical-sizing: inherit; font-kerning: inherit=
+; font-variation-settings: inherit;" href=3D"https://support.remarkable.com=
+/" target=3D"_blank" rel=3D"noopener noreferrer" data-linkindex=3D"2" data-=
+linkto=3D"https://" data-auth=3D"NotApplicable">Go to support &#8594;</a></=
+td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table=
+></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></ta=
+ble></td></tr></tbody></table></td></tr></tbody></table>
+<table width=3D"100%" class=3D"x_slot-styling" role=3D"presentation" style=
+=3D"font: inherit; min-width: 100%; font-size-adjust: inherit; font-stretch=
+: inherit; background-color: rgb(220, 216, 210) !important;" cellspacing=3D=
+"0" cellpadding=3D"0"><tbody><tr><td class=3D"x_slot-styling x_camarker-inn=
+er" style=3D"padding: 0px; white-space: normal !important; border-collapse:=
+ collapse;">
+<table width=3D"100%" class=3D"x_stylingblock-content-wrapper" role=3D"pres=
+entation" style=3D"font: inherit; min-width: 100%; font-size-adjust: inheri=
+t; font-stretch: inherit; background-color: transparent !important;" cellsp=
+acing=3D"0" cellpadding=3D"0"><tbody><tr><td class=3D"x_stylingblock-conten=
+t-wrapper x_camarker-inner" style=3D"padding: 28px 26px 0px; white-space: n=
+ormal !important; border-collapse: collapse;">
+<table role=3D"presentation" style=3D"font: inherit; width: 548px; font-siz=
+e-adjust: inherit; font-stretch: inherit;" cellspacing=3D"0" cellpadding=3D=
+"0"><tbody><tr><td style=3D"white-space: normal !important; border-collapse=
+: collapse;"><table role=3D"presentation" style=3D"font: inherit; width: 54=
+8px; font-size-adjust: inherit; font-stretch: inherit;" cellspacing=3D"0" c=
+ellpadding=3D"0"><tbody><tr>
+<td class=3D"x_responsive-td" valign=3D"top" style=3D"width: 264px; padding=
+-right: 10px; vertical-align: middle; white-space: normal !important; borde=
+r-collapse: collapse;"><table width=3D"100%" class=3D"x_stylingblock-conten=
+t-wrapper" role=3D"presentation" style=3D"font: inherit; min-width: 100%; f=
+ont-size-adjust: inherit; font-stretch: inherit; background-color: transpar=
+ent !important;" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr>
+<td class=3D"x_stylingblock-content-wrapper x_camarker-inner" style=3D"padd=
+ing: 0px 0px 30px; white-space: normal !important; border-collapse: collaps=
+e;"><table width=3D"100%" role=3D"presentation" style=3D"font: inherit; fon=
+t-size-adjust: inherit; font-stretch: inherit;" cellspacing=3D"0" cellpaddi=
+ng=3D"0"><tbody><tr><td align=3D"left" style=3D"white-space: normal !import=
+ant; border-collapse: collapse;">
+<img width=3D"113" height=3D"19" class=3D"x_tbl-center" style=3D"font: inhe=
+rit; margin: 0px; padding: 0px; outline: 0px; border: 0px transparent; bord=
+er-image: none; width: 113px; height: 19px; text-align: left; color: inheri=
+t; vertical-align: baseline; display: block; font-size-adjust: inherit; fon=
+t-stretch: inherit;" alt=3D"" data-assetid=3D"7584" blockedimagesrc=3D"http=
+://image.email.remarkable.com/lib/fe3511737364047c771479/m/1/dd5efab3-1b9c-=
+4e4e-b651-36d4b1b5b302.png" data-imagetype=3D"External"></td></tr>
+</tbody></table></td></tr></tbody></table></td><td class=3D"x_responsive-td=
+" valign=3D"top" style=3D"width: 264px; padding-left: 10px; vertical-align:=
+ middle; white-space: normal !important; border-collapse: collapse;"><table=
+ width=3D"100%" class=3D"x_stylingblock-content-wrapper" role=3D"presentati=
+on" style=3D"font: inherit; min-width: 100%; font-size-adjust: inherit; fon=
+t-stretch: inherit;" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr>
+<td class=3D"x_stylingblock-content-wrapper x_camarker-inner" style=3D"whit=
+e-space: normal !important; border-collapse: collapse;"><table align=3D"rig=
+ht" class=3D"x_tbl-center" style=3D"font: inherit; font-size-adjust: inheri=
+t; font-stretch: inherit;" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><=
+td align=3D"right" style=3D"padding-bottom: 30px; white-space: normal !impo=
+rtant; border-collapse: collapse;">
+<table class=3D"x_socialshare-innertable" style=3D"font: inherit; display: =
+inline-block; font-size-adjust: inherit; font-stretch: inherit;"><tbody><tr=
+><td style=3D"padding: 0px 14px; white-space: normal !important; border-col=
+lapse: collapse;">
+<a style=3D"font: inherit; margin: 0px; padding: 0px; border: 0px currentCo=
+lor; border-image: none; vertical-align: baseline; font-size-adjust: inheri=
+t; font-stretch: inherit;" href=3D"https://www.facebook.com/remarkableAS/" =
+target=3D"_blank" rel=3D"noopener noreferrer" data-linkindex=3D"3" data-aut=
+h=3D"NotApplicable">
+<img width=3D"10" height=3D"20" style=3D"font: inherit; margin: 0px; paddin=
+g: 0px; outline: 0px; border: currentColor; border-image: none; width: 10px=
+ !important; height: 20px !important; color: inherit; vertical-align: basel=
+ine; display: block; font-size-adjust: inherit; font-stretch: inherit;" alt=
+=3D"Facebook" blockedimagesrc=3D"http://image.email.remarkable.com/lib/fe35=
+11737364047c771479/m/1/e7f48024-0ad2-4196-beb0-9c348a87f2b1.png" data-image=
+type=3D"External"=20
+data-src=3D"https://image.s4.exct.net/lib/fe911573736c007d7d/m/2/24b84e22-8=
+d38-4d6c-98db-80812ca4de5f.png"></a></td></tr></tbody></table><table class=
+=3D"x_socialshare-innertable" style=3D"font: inherit; display: inline-block=
+; font-size-adjust: inherit; font-stretch: inherit;"><tbody><tr><td style=
+=3D"padding: 0px 14px; white-space: normal !important; border-collapse: col=
+lapse;">
+<a style=3D"font: inherit; margin: 0px; padding: 0px; border: 0px currentCo=
+lor; border-image: none; vertical-align: baseline; font-size-adjust: inheri=
+t; font-stretch: inherit;" href=3D"https://www.instagram.com/remarkable" ta=
+rget=3D"_blank" rel=3D"noopener noreferrer" data-linkindex=3D"4" data-auth=
+=3D"NotApplicable">
+<img width=3D"18" height=3D"20" style=3D"font: inherit; margin: 0px; paddin=
+g: 0px; outline: 0px; border: currentColor; border-image: none; width: 18px=
+ !important; height: 20px !important; color: inherit; vertical-align: basel=
+ine; display: block; font-size-adjust: inherit; font-stretch: inherit;" alt=
+=3D"Instagram" blockedimagesrc=3D"http://image.email.remarkable.com/lib/fe3=
+511737364047c771479/m/1/fd3e4680-c208-425a-be47-1183b9a62c65.png" data-imag=
+etype=3D"External"=20
+data-src=3D"https://image.s4.exct.net/lib/fe911573736c007d7d/m/2/11a4a1aa-4=
+e8a-432a-8f1f-f8898206da39.png"></a></td></tr></tbody></table><table class=
+=3D"x_socialshare-innertable" style=3D"font: inherit; display: inline-block=
+; font-size-adjust: inherit; font-stretch: inherit;"><tbody><tr><td style=
+=3D"padding: 0px 14px; white-space: normal !important; border-collapse: col=
+lapse;">
+<a style=3D"font: inherit; margin: 0px; padding: 0px; border: 0px currentCo=
+lor; border-image: none; vertical-align: baseline; font-size-adjust: inheri=
+t; font-stretch: inherit;" href=3D"https://twitter.com/reMarkablePaper/" ta=
+rget=3D"_blank" rel=3D"noopener noreferrer" data-linkindex=3D"5" data-auth=
+=3D"NotApplicable">
+<img width=3D"21" height=3D"20" style=3D"font: inherit; margin: 0px; paddin=
+g: 0px; outline: 0px; border: currentColor; border-image: none; width: 21px=
+ !important; height: 20px !important; color: inherit; vertical-align: basel=
+ine; display: block; font-size-adjust: inherit; font-stretch: inherit;" alt=
+=3D"Twitter" blockedimagesrc=3D"http://image.email.remarkable.com/lib/fe351=
+1737364047c771479/m/1/cafda8ce-071e-4bd6-98ee-d1ec53c5edd0.png" data-imaget=
+ype=3D"External"=20
+data-src=3D"https://image.s4.exct.net/lib/fe911573736c007d7d/m/2/a14c2439-7=
+025-4aab-a01f-423077193687.png"></a></td></tr></tbody></table></td></tr></t=
+body></table></td></tr></tbody></table></td></tr></tbody></table></td></tr>=
+</tbody></table></td></tr></tbody></table>
+<table width=3D"100%" class=3D"x_stylingblock-content-wrapper" role=3D"pres=
+entation" style=3D"font: inherit; min-width: 100%; font-size-adjust: inheri=
+t; font-stretch: inherit; background-color: transparent !important;" cellsp=
+acing=3D"0" cellpadding=3D"0"><tbody><tr><td class=3D"x_stylingblock-conten=
+t-wrapper x_camarker-inner" style=3D"padding: 0px 26px 12px; white-space: n=
+ormal !important; border-collapse: collapse;">
+<table role=3D"presentation" style=3D"font: inherit; width: 548px; font-siz=
+e-adjust: inherit; font-stretch: inherit;" cellspacing=3D"0" cellpadding=3D=
+"0"><tbody><tr><td style=3D"white-space: normal !important; border-collapse=
+: collapse;"><table role=3D"presentation" style=3D"font: inherit; width: 54=
+8px; font-size-adjust: inherit; font-stretch: inherit;" cellspacing=3D"0" c=
+ellpadding=3D"0"><tbody><tr>
+<td class=3D"x_responsive-td" valign=3D"top" style=3D"width: 154.4px; paddi=
+ng-right: 10px; vertical-align: middle; white-space: normal !important; bor=
+der-collapse: collapse;"><table width=3D"100%" class=3D"x_stylingblock-cont=
+ent-wrapper" role=3D"presentation" style=3D"font: inherit; min-width: 100%;=
+ font-size-adjust: inherit; font-stretch: inherit; background-color: transp=
+arent !important;" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr>
+<td class=3D"x_stylingblock-content-wrapper x_camarker-inner" style=3D"padd=
+ing: 0px 0px 16px; white-space: normal !important; border-collapse: collaps=
+e;"><div class=3D"x_txt-center" style=3D"font: inherit; margin: 0px; paddin=
+g: 0px; border: 0px currentColor; border-image: none; color: inherit; verti=
+cal-align: baseline; font-size-adjust: inherit; font-stretch: inherit;"></d=
+iv></td></tr></tbody></table></td>
+<td class=3D"x_responsive-td" valign=3D"top" style=3D"width: 373.6px; paddi=
+ng-left: 10px; vertical-align: middle; white-space: normal !important; bord=
+er-collapse: collapse;"><table width=3D"100%" class=3D"x_stylingblock-conte=
+nt-wrapper" role=3D"presentation" style=3D"font: inherit; min-width: 100%; =
+font-size-adjust: inherit; font-stretch: inherit;" cellspacing=3D"0" cellpa=
+dding=3D"0"><tbody><tr>
+<td class=3D"x_stylingblock-content-wrapper x_camarker-inner" style=3D"whit=
+e-space: normal !important; border-collapse: collapse;"><div class=3D"x_txt=
+-center" style=3D"font: inherit; margin: 0px; padding: 0px; border: 0px cur=
+rentColor; border-image: none; text-align: right; color: inherit; vertical-=
+align: baseline; font-size-adjust: inherit; font-stretch: inherit;">
+<span style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-=
+image: none; color: rgb(34, 34, 34) !important; line-height: 14px; font-fam=
+ily: Arial, sans-serif, serif, EmojiFont; font-size: 10px; font-style: inhe=
+rit; font-variant: inherit; font-weight: 400; vertical-align: baseline; fon=
+t-stretch: inherit; font-feature-settings: inherit; font-optical-sizing: in=
+herit; font-kerning: inherit; font-variation-settings: inherit;">&copy; 202=
+4 reMarkable All Rights Reserved</span><br>
+&nbsp;</div></td></tr></tbody></table></td></tr></tbody></table></td></tr><=
+/tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></t=
+r></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td>=
+</tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></=
+span></div></div></div></div></div></body></html>
+

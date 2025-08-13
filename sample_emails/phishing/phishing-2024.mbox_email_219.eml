@@ -1,0 +1,213 @@
+Return-Path: bounces+26120497-7820-jose=monkey.org@em4541.emiratespost.ae
+Delivered-To: jose@monkey.org
+X-FDA: 82399421244.40.29F5A39
+Received: from wrqvrhrw.outbound-mail.sendgrid.net
+ (wrqvrhrw.outbound-mail.sendgrid.net [149.72.80.89])	by
+ imf09.b.hostedemail.com (Postfix) with ESMTP id 9ED8A180010	for
+ <jose@monkey.org>; Wed, 31 Jul 2024 08:48:20 +0000 (UTC)
+Authentication-Results: imf09.b.hostedemail.com;	dkim=pass
+ header.d=emiratespost.ae header.s=s1 header.b="Jq3K/UC6";	spf=pass
+ (imf09.b.hostedemail.com: domain of
+ "bounces+26120497-7820-jose=monkey.org@em4541.emiratespost.ae" designates
+ 149.72.80.89 as permitted sender)
+ smtp.mailfrom="bounces+26120497-7820-jose=monkey.org@em4541.emiratespost.ae";
+	dmarc=pass (policy=reject) header.from=emiratespost.ae
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1722415664;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=AtAJEc/1gRuz3zXqMsZeXILG/T0p2rzYuAn4PZIeqgA=;
+	b=yuofy944uXLlDVHGA50S2csVpeWs9hpRS4uam0sSssJfNfByh8eTUwRNoOG26Wd4myOwqX
+	9Pst14jPYDvQy3n33bv0rH+oU753AQsPF5INC2L3Z/ik3kR7IRqwVjpMwvmXmOVbtI5t8r
+	vAPsL0Gr4l/fgFTz94U6/90/giGlYTI=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1722415664; a=rsa-sha256;
+	cv=none;
+	b=49eC9NFfzap4w8nKOgED3t9AQeLN4wArMzzXF1QDXsEPm3vN6Eha3ld2CdNZL23dNYE2vG
+	5Y3X4sv3jTr98dAzrhjfwD7clBgYsCQIdppmiEUu6VtWbUVi9Pq9my5bZi7VYGEznlMGZu
+	HCIpd2NF59tDzI6cFwSopsaixPDIET4=
+ARC-Authentication-Results: i=1;	imf09.b.hostedemail.com;	dkim=pass
+ header.d=emiratespost.ae header.s=s1 header.b="Jq3K/UC6";	spf=pass
+ (imf09.b.hostedemail.com: domain of
+ "bounces+26120497-7820-jose=monkey.org@em4541.emiratespost.ae" designates
+ 149.72.80.89 as permitted sender)
+ smtp.mailfrom="bounces+26120497-7820-jose=monkey.org@em4541.emiratespost.ae";
+	dmarc=pass (policy=reject) header.from=emiratespost.ae
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=emiratespost.ae;
+	h=content-transfer-encoding:content-type:from:mime-version:subject:to:
+	cc:content-type:from:subject:to;
+	s=s1; bh=AtAJEc/1gRuz3zXqMsZeXILG/T0p2rzYuAn4PZIeqgA=;
+	b=Jq3K/UC6tthdlHN0+0O5Tv22xEldo5dDmeedMukgc9TmVF9wqrrDiwG4ggtUXPKCAtpi
+	QBzQigt3IaVpnhBNOrhmjX8F815Se6AbUXx2tLuhVdLmS8gztexJLaYyA5PgxWjoL9ZQYE
+	fRCpOzcagrU7DkaIjNwBj/cAY2LpoIODegNA/+vTEjFpaWNnkyff8NR0UpzsnhHFXTs9MQ
+	7P3Q7r1LLFGx8euHH4vMirOTmn8WI2WpZ6JIAsdOJq2IBgAeq/0HxxCKOy/sFV7ID/zu7G
+	MN69reYYBeKr43hrTigpzCk+7mCSy7WfVD7OnChAkAev4CTqld2n777PKGwpY1gg==
+Received: by recvd-7dd645dcb9-rm8zv with SMTP id
+ recvd-7dd645dcb9-rm8zv-1-66A9FA53-3	2024-07-31 08:48:19.026323429 +0000 UTC
+ m=+127640.095203056
+Received: from MjYxMjA0OTc (unknown)
+	by geopod-ismtpd-3 (SG) with HTTP
+	id Z7vE7TXBQMG36NiBrxQV1Q
+	Wed, 31 Jul 2024 08:48:18.951 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=utf-8
+Date: Wed, 31 Jul 2024 08:48:19 +0000 (UTC)
+From: info <Support@emiratespost.ae>
+Mime-Version: 1.0
+Message-ID: <Z7vE7TXBQMG36NiBrxQV1Q@geopod-ismtpd-3>
+Subject: =?utf-8?b?0J3vu7/Qte+7v2zvu7/RgO+7vyDigItt77u/0LDvu79u77u/0LDvu79n?=
+ =?utf-8?b?77u/0Zbvu79u77u/Z++7vyDigIvRg++7v9C+77u/de+7v3Lvu78g4oCL0LDvu78=?=
+ =?utf-8?b?0YHvu7/Rge+7v9C+77u/de+7v27vu79077u/IOKAi9Cw77u/bu+7v2Tvu78g4oCL?=
+ =?utf-8?b?0YDvu79y77u/0LXvu79m77u/0LXvu79y77u/0LXvu79u77u/0YHvu7/Qte+7v9GV?=
+X-SG-EID:  u001.awrWNCLkPVkk3Qo91W1Gcpts8iemy/iGTXvQL0Ev0tgvbzuumjBlPZ1n8
+ =?utf-8?q?mHGGsmtbJWnqVyrKdW6e4FwKuptvSgOVF0IUjFp?==?utf-8?q?0OsXr2Ul+/jQxK?=
+ =?utf-8?q?Ah7Q1fuPh4Rox8FqgicosYDL/vzcMx5AlaTQVSyizs+Vqd3KBK3QR6Vafp/2okS/h?=
+ =?utf-8?q?lQ3UGlepEROWRK5/b+zSM9WNeqZgpKTsbUfPHV?=hFFmqOqv7v2/2V5KBvWLhc=
+To: jose@monkey.org
+X-Entity-ID: u001.SMtT0Xg0kwWoxazpBbOwdQ==
+X-Rspam-User: 
+X-Rspamd-Server: rspam04
+X-Rspamd-Queue-Id: 9ED8A180010
+X-Stat-Signature: cq4s1pjsxhw6cjhoai4km4apzmgf7xpn
+X-Spam-Status: No, score=1.65
+X-HE-Tag: 1722415700-296318
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18eYyWWOtlhkeDokr2ltH8aVVSILetIuT2rJQjKcWbnEVk?=
+ =?utf-8?q?LtmJ0bZBKDIVEWORCw/MqnF8taEE6Fo31GddVzad19L+GVjXcIk2sXvQQCVPxWBUN?=
+ =?utf-8?q?4Y+EEOamISS1+4knMzd4PeTf9xS7U5w4TfP9mxxgCT1iHwiCMsM5FsFQa2EtKeRJy?=
+ =?utf-8?q?nhZ/06YG2sdwaw39CJephAITPD4Z9qHy7jLk4cbwe7F2AkWx7gP0HNM0Iczov/JVX?=
+ =?utf-8?q?CckHaHG1fALB0uUxfzq1+h9rS8Hn4EIXVk+6hJaSWPXxfcn/ANPZXPLlVqCVmSntB?=
+ =?utf-8?q?zSWb9hwg8wtfmYxiGO7+Bm34Nw0cJDJnLgXQKN97AjpauSh8rXCTCEx1EpQXSOU+9?=
+ =?utf-8?q?LWpV7zcbdpCWissDkgtHb3FeuMVhzf9XoEau0iHI0sVAO966eP0ezRW95k0gSHbGw?=
+ =?utf-8?q?4GLxJjlZZe/DezGiXCsIyeoDx0Jmd62pBY39mSLQlgcEQAf/Vdr+nBAZghT+KvINe?=
+ =?utf-8?q?fgp2Gk18duhc8lz87oea91YiM5gD4AZ0Jsd3y8ZiAYuQoPnCp0cKp4vLlCcCLTSOz?=
+ =?utf-8?q?KbBMtoCGhyOaaF1acp0RFN19IN717uAK9Audpe54/8HeDkB/+Z+qD9fhv5PYJS6xL?=
+ =?utf-8?q?EU/UtSjNfr5ZvVjPLXWbZE3MwHqsoxaLKWCFs25NBzymQCcW1lwitVDY9Nqh+WEqC?=
+ =?utf-8?q?qciInFTkBP+8CVC3fGY6xpkvZQ84RqGAXDPABYE3BfCCp/MIhVJmLllP+n9AvPmz5?=
+ =?utf-8?q?nu5dgwRHzg30HJUxsS9171/lWml7e/0QBmoy5s4m9LUiZLK31CQ7eDk7VLRqvbVHs?=
+ =?utf-8?q?zhzLVOT2ryDy/48TxnmazvG0UVQiHYsA5883Dpq7T1gakyGhowE8aU/2QFssxHgzd?=
+ =?utf-8?q?TbfaxCPg+KhLx+A42FuUsWcZfTbogWaD/vu0Dy5LS1cRM+NSxSkXFRAPAEc5rtJ61?=
+ =?utf-8?q?DSTgKRPW0Q8rUTzYGV1Cbb_S+g7Bz73Nu1s3XjCgNmTMqEIjur0+6CZp1W89rd/tF?=
+ =?utf-8?q?+/4pdc6dJEOVT7raZLWylMRKpReQmsASGxdtlLDXC1Rr/4vCmQej0hytQNQ7JpK0z?=
+ =?utf-8?q?A60gsixpEdZGiwlF3yBTpGwV0P/kLNdEXF2Kr/vNvXmoWmyFIxlfgpQf+p7DvPJsF?=
+ =?utf-8?q?S8IlUprBXLLQhS7f0GYVX24feKd9UUIUpuimhrkt330Nzom1Kh993e9oWx0X/Wh6K?=
+ =?utf-8?q?VGrcU+Gs8t+oYvOhfh80R5Z16Dq+/p7Wfu6wqvlMD9MElSoBEFyYpZrhMzbJxQqin?=
+ =?utf-8?q?LvXobk5ZcjWWCkYgmNkyyy8hh1BcojyvCwXtUxAkH5CLoz5L37OjYdISSwiFk33wL?=
+ =?utf-8?q?i5P+1C7vUpVt43tw4wtk4/sBt8gGuCBr5qQEr17KZeZ4ehzQbI5y30E5Kq53hIJEc?=
+ =?utf-8?q?KTPdQ40GH2KLE90upQtgxkaq4da7CiSwXoD50fWjByL0XB6UyrU11LA7ijxD/oviV?=
+ =?utf-8?q?TZoYS7Bpsi+eBp75WnsjrLM0mmTf6e+sRwClo7djSbx8P260LlSkPQkE5aMY+vfxX?=
+ =?utf-8?q?ZueZeSCHj8ARgEhH+HP07g8yLjJpUT/q/Ly/e+B2Ms5Fc8oBJC+3aMegfPtployrr?=
+ =?utf-8?q?7Rl++MJTwtGn/MiKX8c53fJToZJB9zjZt2BabhMla6B6pEiWIn3nKxzOm70463CP4?=
+ =?utf-8?q?aJ5eUVwDpce7zjoKWLMdwrmlWXavcbq5yLqu7J5jGYs9MUlOpJcqVEUBzCiVhdE2L?=
+ =?utf-8?q?mNkxlIYKpkc0AmLLOpUTEPcHgim7bP6ZrWVU7HWR88VieygUMTLSkfqsiAAxzHWMJ?=
+ =?utf-8?q?rvB3FEJhpkAvih5v+9P2G3IlanITM+lRpSoOLvSPqM21wUNM+7rRlhSTXKAb+boD5?=
+ =?utf-8?q?vWsj+RyVOEJl073IDjPxeAQT8=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 219
+
+<!DOCTYPE html>
+<html lang=3D"en">
+<head>
+  <meta charset=3D"UTF-8">
+  <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D=
+1.0">
+  <title>Renew Your Netflix Subscription</title>
+  <style>
+    /* Simple styling for the email */
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.5;
+      margin: 0;
+      padding: 20px;
+      background-color: #eef2f3;
+    }
+    .wrapper {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+    }
+    h2 {
+      color: #e50914;
+    }
+    p {
+      margin-bottom: 15px;
+    }
+    .cta-button {
+      display: inline-block;
+      background-color: #e50914;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 4px;
+    }
+    /* Responsive styles */
+    @media (max-width: 600px) {
+      .wrapper {
+        padding: 15px;
+      }
+      h2 {
+        font-size: 24px;
+      }
+      .cta-button {
+        padding: 10px 20px;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class=3D"wrapper">
+    <img src=3D"https://mir-s3-cdn-cf.behance.net/project_modules/hd/fb7627=
+91877129.5e3cb3903fb67.gif" alt=3D"Netflix Subscription" style=3D"height: 2=
+00px; width: 100%; max-width: 600px;">
+
+    <h2>R=EF=BB=BF=D0=B5=EF=BB=BFn=EF=BB=BF=D0=B5=EF=BB=BFw Your =CE=9D=EF=
+=BB=BF=D0=B5=EF=BB=BFt=EF=BB=BFf=EF=BB=BFl=EF=BB=BF=D1=96=EF=BB=BF=D1=85 =
+=D0=85=EF=BB=BFu=EF=BB=BFb=EF=BB=BF=D1=95=EF=BB=BF=D1=81=EF=BB=BFr=EF=BB=BF=
+=D1=96=EF=BB=BF=D1=80=EF=BB=BFt=EF=BB=BF=D1=96=EF=BB=BF=D0=BE=EF=BB=BFn    =
+</h2>
+    <p>Dear Esteemed Customer,</p>
+    <p>We've observed that your =CE=9D=EF=BB=BF=D0=B5=EF=BB=BFt=EF=BB=BFf=
+=EF=BB=BFl=EF=BB=BF=D1=96=EF=BB=BF=D1=85 =D0=85=EF=BB=BFu=EF=BB=BFb=EF=BB=
+=BF=D1=95=EF=BB=BF=D1=81=EF=BB=BFr=EF=BB=BF=D1=96=EF=BB=BF=D1=80=EF=BB=BFt=
+=EF=BB=BF=D1=96=EF=BB=BF=D0=BE=EF=BB=BFn requires renewal. To ensure you co=
+ntinue enjoying seamless access to your favorite films and series, please u=
+pdate your =D0=85=EF=BB=BFu=EF=BB=BFb=EF=BB=BF=D1=95=EF=BB=BF=D1=81=EF=BB=
+=BFr=EF=BB=BF=D1=96=EF=BB=BF=D1=80=EF=BB=BFt=EF=BB=BF=D1=96=EF=BB=BF=D0=BE=
+=EF=BB=BFn details at your earliest convenience.</p>
+    <p>Click the button below to R=EF=BB=BF=D0=B5=EF=BB=BFn=EF=BB=BF=D0=B5=
+=EF=BB=BFw your =D0=85=EF=BB=BFu=EF=BB=BFb=EF=BB=BF=D1=95=EF=BB=BF=D1=81=EF=
+=BB=BFr=EF=BB=BF=D1=96=EF=BB=BF=D1=80=EF=BB=BFt=EF=BB=BF=D1=96=EF=BB=BF=D0=
+=BE=EF=BB=BFn:</p>
+    <a href=3D"https://u26120497.ct.sendgrid.net/ls/click?upn=3Du001.-2FSaT=
+0tAkubOQwjBoO3iNenrVyc3V12XwLjos8xDAh2Ri7Oc4cKNScIqSVvS-2FtD-2BQSTEt_fKvoxt=
+542JDYaqgeR2SzDY7s2siCDcUil1Dfvcd8On-2F2WKIMpO3MaLIxkNkB-2BhSqCSTg6BGD3gkla=
+e1oEaXB8PcbQPOX4dlekLoWZpfsvKWZ0D76vAyUYz6-2BBhuakiv-2FF9YE0-2BNoUeCV4MynE-=
+2F5b1YoXdE7bYIjj3LrKzNFEPM-2BDPxOQ56ECeMG8mzRjiQK6PzUNc4Af7fPRFTHxGU2gEg-3D=
+-3D" class=3D"cta-button">Renew Subscription</a>
+    <p>If you have any inquiries or require support, don't hesitate to <a h=
+ref=3D"#">reach out to us</a>.</p>
+    <p>Thank you for being a part of the =CE=9D=EF=BB=BF=D0=B5=EF=BB=BFt=EF=
+=BB=BFf=EF=BB=BFl=EF=BB=BF=D1=96=EF=BB=BF=D1=85 family!</p>
+    <p>Warm regards,<br>The =CE=9D=EF=BB=BF=D0=B5=EF=BB=BFt=EF=BB=BFf=EF=BB=
+=BFl=EF=BB=BF=D1=96=EF=BB=BF=D1=85 Team</p>
+  </div>
+<img src=3D"https://u26120497.ct.sendgrid.net/wf/open?upn=3Du001.z0wa68HzF9=
+Nq0jK6BfRwe1frBA-2BiN8Z2wCSGnkWlgw9vVz0UPCjkqCrR6AC63DWBkeuH9EyxlhZI-2F7pxq=
+vXE-2B-2BZOX6i2KZuNVlnhEO0RvR5QyA3pGo7ca6sxqjaScejB3x-2FaaFU1HogWMstS4-2Bbu=
+4llAJJ4kOHut42m-2BaT9hiAwDyWrcLxlXBAtYlS3bd2NykCrBAKST-2FLsyG-2BAYDjEnUQ-3D=
+-3D" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"height:1px !im=
+portant;width:1px !important;border-width:0 !important;margin-top:0 !import=
+ant;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !imp=
+ortant;padding-top:0 !important;padding-bottom:0 !important;padding-right:0=
+ !important;padding-left:0 !important;"/></body>
+</html>
+

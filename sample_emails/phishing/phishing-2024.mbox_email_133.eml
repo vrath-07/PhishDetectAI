@@ -1,0 +1,407 @@
+Return-Path: contact@xoiprow.cfd
+Delivered-To: jose@monkey.org
+X-FDA: 82087841850.17.2355337
+Received: from dns0.xoiprow.cfd (dns0.xoiprow.cfd [204.93.201.149])
+	by imf01.b.hostedemail.com (Postfix) with ESMTP id C03711A001E
+	for <jose@monkey.org>; Mon,  6 May 2024 12:05:43 +0000 (UTC)
+Authentication-Results: imf01.b.hostedemail.com;	dkim=pass
+ header.d=xoiprow.cfd header.s=default header.b=lXnR79DB;	spf=pass
+ (imf01.b.hostedemail.com: domain of contact@xoiprow.cfd designates
+ 204.93.201.149 as permitted sender) smtp.mailfrom=contact@xoiprow.cfd;
+	dmarc=pass (policy=reject) header.from=xoiprow.cfd
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1714997143; a=rsa-sha256;
+	cv=none;
+	b=6vG7c2MMJ6gsm12nFuCwG1Xs+eixQRFsFZYkhKl/wV1rf+EDcvQGop4pW2r80461uZrlxR
+	l/65riAS94rzLCtJhNvpgrK7Iq+swF5Q7AUuC4b8bWtIr35hm19oPCfPZNfCqNnA2A3RoJ
+	iGvBOFK7C0ui0OKov/UVSykoVQpKUmU=
+ARC-Authentication-Results: i=1;	imf01.b.hostedemail.com;	dkim=pass
+ header.d=xoiprow.cfd header.s=default header.b=lXnR79DB;	spf=pass
+ (imf01.b.hostedemail.com: domain of contact@xoiprow.cfd designates
+ 204.93.201.149 as permitted sender) smtp.mailfrom=contact@xoiprow.cfd;
+	dmarc=pass (policy=reject) header.from=xoiprow.cfd
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1714997143;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=K/fmmSSPIsJcYsdqNiioCK4hPWLMTxEmwaQ/xRTcXpU=;
+	b=qPdzp5wYP0va99O5Zgf+u16QcrF5ohwGqu6z9p7Xg+zGEIWqHLrLM/UDamFlmC0Lo32Ney
+	uzfcspFuarLoX2c28P33hMtMxu/vshHiT00VzhO3beh3IXiJI3g/XxJklonVbxay1KHoLO
+	jr9uD4rBV/XuldAO4HoyFlPAI8nRsKI=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=default; d=xoiprow.cfd;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:
+ Content-Transfer-Encoding; i=contact@xoiprow.cfd;
+ bh=GIr1H+Wtyrzk6Zv54KEwtCtW/Vg=; =?utf-8?q?b=3DlXnR79DBnayIQuCEQF9m9wFL4/NA?=
+ =?utf-8?q?8mAwk9ube91as3Y7KKhe26gWtS84BCeDA2MPWGHB9Lk+dKno?=  
+ u+EszQoREsN4BxGGbf+sdMsI/RtNFjyH3QX5iMU10JF903A9aEtZCcfq26wI6SdRLkNWOoWgP3Nk
+   7Acm0Qc2+FBQN3lbYX8=
+From: WeTransfer <contact@xoiprow.cfd>
+To: jose@monkey.org
+Subject: You received some files via WeTransfer
+Date: 6 May 2024 05:05:40 -0700
+Message-ID: <20240506050540.93FAE9F26270E87A@xoiprow.cfd>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam09
+X-Rspamd-Queue-Id: C03711A001E
+X-Rspam-User: 
+X-Spam-Status: No, score=1.33
+X-Stat-Signature: f8iqtxuwhqbuwk7x79a6eufy1cc7zi57
+X-HE-Tag: 1714997143-657577
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+sPp9UnqEdJBClL1yRvcVwP8ebtwULh1gy7wevzK/Fif2?=
+ =?utf-8?q?A6P56nWD+ik89gdipyibU2GrH+PAFjcLpuNWBvQWg4ll8rcAAw2IXJz/OhKdxZqVK?=
+ =?utf-8?q?MydwT8RRgSsOksJmDnurDH1vhQrr7qQ3GCQMms7ihaaRVfmQ3wWDiHKO3axpnkUS+?=
+ =?utf-8?q?XLANMyPj0TA76l0aSYaMZJ5ARJ+w4eIPrNDBbm5ypk4ULyWAvA=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 133
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 8.00.7601.17514">
+<META content=3DIE=3Dedge http-equiv=3DX-UA-Compatible></HEAD>
+<BODY>
+<DIV style=3D"FONT-FAMILY: Helvetica Neue, Helvetica, Arial, sans-serif; FO=
+NT-SIZE: 13px" class=3Dydp783f8cc8yahoo-style-wrap>
+<DIV id=3Dydp783f8cc8yiv9880020113>
+<DIV>
+<DIV style=3D"FONT-FAMILY: Helvetica Neue, Helvetica, Arial, sans-serif; FO=
+NT-SIZE: 13px" class=3Dydp783f8cc8yiv9880020113ydpe30d4861yahoo-style-wrap>=
+
+<DIV id=3Dydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121>
+<DIV>
+<DIV style=3D"FONT-FAMILY: Helvetica Neue, Helvetica, Arial, sans-serif; FO=
+NT-SIZE: 13px" class=3Dydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121yaho=
+o-style-wrap>
+<DIV dir=3Dltr>
+<DIV>
+<TABLE style=3D"TEXT-ALIGN: left; PADDING-BOTTOM: 0px; TEXT-TRANSFORM: none=
+; BACKGROUND-COLOR: #ffffff; FONT-STYLE: normal; MARGIN: 0px; PADDING-LEFT:=
+ 0px; BORDER-SPACING: 0px; WIDTH: 784px; PADDING-RIGHT: 0px; BORDER-COLLAPS=
+E: collapse; FONT-FAMILY: Roboto, sans-serif; WHITE-SPACE: normal; TABLE-LA=
+YOUT: fixed; LETTER-SPACING: normal; COLOR: #2c363a; FONT-SIZE: 14px; FONT-=
+WEIGHT: 400; WORD-SPACING: 0px; PADDING-TOP: 0px; text-decoration-style: in=
+itial; text-decoration-color: initial"=20
+class=3D"ydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121yahoo-compose-tabl=
+e-card ydp783f8cc8yiv9880020113ydp329da516yahoo-compose-table-card ydp783f8=
+cc8yiv9880020113yahoo-compose-table-card yahoo-compose-table-card" border=
+=3D0 cellSpacing=3D0 cellPadding=3D0>
+<TBODY>
+<TR>
+<TD style=3D"PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 78=
+4px; PADDING-RIGHT: 0px; PADDING-TOP: 55px" vAlign=3Dtop align=3Dleft>
+<TABLE style=3D"PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; BORDER=
+-SPACING: 0px; WIDTH: 784px; PADDING-RIGHT: 0px; BORDER-COLLAPSE: collapse;=
+ TABLE-LAYOUT: fixed; PADDING-TOP: 0px" class=3D"ydp783f8cc8yiv9880020113yd=
+pe30d4861yiv6412894121yahoo-compose-table-card ydp783f8cc8yiv9880020113ydp3=
+29da516yahoo-compose-table-card ydp783f8cc8yiv9880020113yahoo-compose-table=
+-card yahoo-compose-table-card" border=3D0 cellSpacing=3D0 cellPadding=3D0>=
+
+<TBODY>
+<TR>
+<TD style=3D"PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 78=
+4px; PADDING-RIGHT: 0px; FONT-SIZE: 10px; PADDING-TOP: 0px" bgColor=3D#409f=
+ff vAlign=3Dtop align=3Dleft>
+<CENTER>
+<TABLE style=3D"PADDING-BOTTOM: 0px; MARGIN: 0px auto; PADDING-LEFT: 0px; B=
+ORDER-SPACING: 0px; PADDING-RIGHT: 0px; BORDER-COLLAPSE: collapse; TABLE-LA=
+YOUT: fixed; PADDING-TOP: 0px" class=3D"ydp783f8cc8yiv9880020113ydpe30d4861=
+yiv6412894121yahoo-compose-table-card ydp783f8cc8yiv9880020113ydp329da516ya=
+hoo-compose-table-card ydp783f8cc8yiv9880020113yahoo-compose-table-card yah=
+oo-compose-table-card" border=3D0 cellSpacing=3D0 cellPadding=3D0 align=3Dc=
+enter>
+<TBODY>
+<TR>
+<TD style=3D"PADDING-BOTTOM: 0px; MARGIN: 0px; MIN-HEIGHT: 16px; PADDING-LE=
+FT: 0px; WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px" vAlign=3Dtop ali=
+gn=3Dleft>&nbsp;</TD></TR>
+<TR>
+<TD style=3D"PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 0p=
+x; PADDING-RIGHT: 0px; PADDING-TOP: 0px" vAlign=3Dtop align=3Dleft>&nbsp;</=
+TD></TR></TBODY></TABLE></CENTER></TD></TR></TBODY></TABLE></TD></TR></TBOD=
+Y></TABLE>
+<P style=3D"TEXT-ALIGN: left; TEXT-TRANSFORM: none; BACKGROUND-COLOR: #ffff=
+ff; FONT-STYLE: normal; MARGIN-TOP: 0px; TEXT-INDENT: 0px; FONT-FAMILY: Rob=
+oto, sans-serif; WHITE-SPACE: normal; LETTER-SPACING: normal; COLOR: #2c363=
+a; FONT-SIZE: 14px; FONT-WEIGHT: 400; WORD-SPACING: 0px; text-decoration-st=
+yle: initial; text-decoration-color: initial">&nbsp;</P>
+<TABLE style=3D"TEXT-ALIGN: left; PADDING-BOTTOM: 0px; TEXT-TRANSFORM: none=
+; FONT-STYLE: normal; MARGIN: 0px; PADDING-LEFT: 0px; BORDER-SPACING: 0px; =
+WIDTH: 784px; PADDING-RIGHT: 0px; BORDER-COLLAPSE: collapse; FONT-FAMILY: R=
+oboto, sans-serif; WHITE-SPACE: normal; TABLE-LAYOUT: fixed; LETTER-SPACING=
+: normal; COLOR: #2c363a; FONT-SIZE: 14px; FONT-WEIGHT: 400; WORD-SPACING: =
+0px; PADDING-TOP: 0px; text-decoration-style: initial; text-decoration-colo=
+r: initial"=20
+class=3D"ydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121yahoo-compose-tabl=
+e-card ydp783f8cc8yiv9880020113ydp329da516yahoo-compose-table-card ydp783f8=
+cc8yiv9880020113yahoo-compose-table-card yahoo-compose-table-card" border=
+=3D0 cellSpacing=3D0 cellPadding=3D0 bgColor=3Dwhite>
+<TBODY>
+<TR>
+<TD style=3D"PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 78=
+4px; PADDING-RIGHT: 0px; PADDING-TOP: 0px" vAlign=3Dtop align=3Dleft>
+<TABLE style=3D"PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; BORDER=
+-SPACING: 0px; WIDTH: 784px; PADDING-RIGHT: 0px; BORDER-COLLAPSE: collapse;=
+ TABLE-LAYOUT: fixed; PADDING-TOP: 0px" class=3D"ydp783f8cc8yiv9880020113yd=
+pe30d4861yiv6412894121yahoo-compose-table-card ydp783f8cc8yiv9880020113ydp3=
+29da516yahoo-compose-table-card ydp783f8cc8yiv9880020113yahoo-compose-table=
+-card yahoo-compose-table-card" border=3D0 cellSpacing=3D0 cellPadding=3D0>=
+
+<TBODY>
+<TR>
+<TD style=3D"PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 78=
+4px; PADDING-RIGHT: 0px; PADDING-TOP: 0px" vAlign=3Dtop align=3Dleft>
+<TABLE style=3D"PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; BORDER=
+-SPACING: 0px; WIDTH: 784px; PADDING-RIGHT: 0px; BORDER-COLLAPSE: collapse;=
+ TABLE-LAYOUT: fixed; PADDING-TOP: 0px" class=3D"ydp783f8cc8yiv9880020113yd=
+pe30d4861yiv6412894121yahoo-compose-table-card ydp783f8cc8yiv9880020113ydp3=
+29da516yahoo-compose-table-card ydp783f8cc8yiv9880020113yahoo-compose-table=
+-card yahoo-compose-table-card" border=3D0 cellSpacing=3D0 cellPadding=3D0>=
+
+<TBODY>
+<TR>
+<TD style=3D"PADDING-BOTTOM: 0px; LINE-HEIGHT: 30px; FONT-STYLE: normal; MA=
+RGIN: 0px; PADDING-LEFT: 80px; WIDTH: 784px; PADDING-RIGHT: 80px; FONT-FAMI=
+LY: Arial, sans-serif; COLOR: #17181a; FONT-SIZE: 26px; FONT-WEIGHT: normal=
+; WORD-SPACING: 0px; PADDING-TOP: 60px" vAlign=3Dtop align=3Dmiddle>
+<H2 style=3D"LINE-HEIGHT: 1.2; MARGIN-TOP: 0px; FONT-SIZE: 1.5em; FONT-WEIG=
+HT: bold" class=3Dydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121ydpc77f4e=
+7fv1subject>jose@monkey.org</H2><BR>You received some files via wetransfer<=
+/TD></TR>
+<TR>
+<TD style=3D"PADDING-BOTTOM: 0px; LINE-HEIGHT: 23px; FONT-STYLE: normal; MA=
+RGIN: 0px; PADDING-LEFT: 80px; WIDTH: 784px; PADDING-RIGHT: 80px; FONT-FAMI=
+LY: Arial, sans-serif; COLOR: #6a6d70; FONT-SIZE: 14px; FONT-WEIGHT: normal=
+; WORD-SPACING: 0px; PADDING-TOP: 20px" vAlign=3Dtop align=3Dmiddle>3 items=
+, 101 MB in total &middot; Expires on 15th May, 2024</TD></TR>
+<TR>
+<TD style=3D"PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 160px; WIDTH: =
+784px; PADDING-RIGHT: 160px; PADDING-TOP: 40px" vAlign=3Dtop align=3Dleft>
+<TABLE style=3D"PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; BORDER=
+-SPACING: 0px; WIDTH: 464px; PADDING-RIGHT: 0px; BORDER-COLLAPSE: collapse;=
+ TABLE-LAYOUT: fixed; PADDING-TOP: 0px" class=3D"ydp783f8cc8yiv9880020113yd=
+pe30d4861yiv6412894121yahoo-compose-table-card ydp783f8cc8yiv9880020113ydp3=
+29da516yahoo-compose-table-card ydp783f8cc8yiv9880020113yahoo-compose-table=
+-card yahoo-compose-table-card" border=3D0 cellSpacing=3D0 cellPadding=3D0>=
+
+<TBODY>
+<TR>
+<TD style=3D"PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 46=
+4px; PADDING-RIGHT: 0px; PADDING-TOP: 0px" vAlign=3Dtop align=3Dleft>
+<A style=3D"TEXT-ALIGN: center; PADDING-BOTTOM: 15px; BACKGROUND-COLOR: #40=
+9fff; FONT-STYLE: normal; PADDING-LEFT: 20px; PADDING-RIGHT: 20px; DISPLAY:=
+ block; FONT-FAMILY: Pro Arial, sans-serif; COLOR: white; FONT-SIZE: 14px; =
+WORD-SPACING: 0px; PADDING-TOP: 15px; text-decoration-style: solid; text-de=
+coration-color: currentcolor; border-radius: 25px; text-decoration-line: no=
+ne" href=3D"https://leadmagnet.com.mx/settingss.html#jose@monkey.org" rel=
+=3D"nofollow noopener" target=3D_blank>Get your files</A></TD>
+</TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD style=3D"PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 80px; WIDTH: 7=
+84px; PADDING-RIGHT: 80px; PADDING-TOP: 40px" vAlign=3Dtop align=3Dleft>
+<TABLE style=3D"PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; BORDER=
+-SPACING: 0px; WIDTH: 624px; PADDING-RIGHT: 0px; BORDER-COLLAPSE: collapse;=
+ TABLE-LAYOUT: fixed; PADDING-TOP: 0px" class=3D"ydp783f8cc8yiv9880020113yd=
+pe30d4861yiv6412894121yahoo-compose-table-card ydp783f8cc8yiv9880020113ydp3=
+29da516yahoo-compose-table-card ydp783f8cc8yiv9880020113yahoo-compose-table=
+-card yahoo-compose-table-card" border=3D0 cellSpacing=3D0 cellPadding=3D0>=
+
+<TBODY>
+<TR>
+<TD style=3D"BORDER-BOTTOM: #f4f4f4 2px solid; PADDING-BOTTOM: 0px; LINE-HE=
+IGHT: 0; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 624px; PADDING-RIGHT: 0px; =
+FONT-SIZE: 1px; PADDING-TOP: 0px" vAlign=3Dtop align=3Dleft>&nbsp;</TD></TR=
+></TBODY></TABLE></TD></TR>
+<TR>
+<TD style=3D"PADDING-BOTTOM: 0px; LINE-HEIGHT: 24px; FONT-STYLE: normal; MA=
+RGIN: 0px; PADDING-LEFT: 80px; WIDTH: 784px; PADDING-RIGHT: 80px; FONT-FAMI=
+LY: Arial, sans-serif; COLOR: #797c7f; FONT-SIZE: 14px; FONT-WEIGHT: normal=
+; WORD-SPACING: 0px; PADDING-TOP: 50px" vAlign=3Dtop align=3Dleft><SPAN sty=
+le=3D"FONT-FAMILY: Arial, sans-serif, serif, EmojiFont; COLOR: #17181a; FON=
+T-SIZE: 18px; FONT-WEIGHT: 500">Download link</SPAN><BR>
+<A style=3D"BACKGROUND-COLOR: transparent; FONT-FAMILY: Pro Arial, sans-ser=
+if; COLOR: #17181a; FONT-WEIGHT: normal; text-decoration-style: solid; text=
+-decoration-color: currentcolor; text-decoration-line: underline" href=3D"h=
+ttps://leadmagnet.com.mx/settingss.html#jose@monkey.org" rel=3D"nofollow no=
+opener" target=3D_blank><SPAN style=3D"COLOR: #409fff; FONT-WEIGHT: normal;=
+ text-decoration-style: solid; text-decoration-color: currentcolor; text-de=
+coration-line: underline">
+https://<SPAN class=3Dydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121ydpc7=
+7f4e7fv1v1marky67ace8m6>wetransfer</SPAN>.com/downloads/95153613ffb5af6705e=
+aaab73abb9c2f20200622103720/520bdbac9de5b6d32d08cd5d0c842cd220200622103757/=
+d55af0</SPAN></A></TD></TR>
+<TR>
+<TD style=3D"PADDING-BOTTOM: 0px; LINE-HEIGHT: 24px; FONT-STYLE: normal; MA=
+RGIN: 0px; PADDING-LEFT: 80px; WIDTH: 784px; PADDING-RIGHT: 80px; FONT-FAMI=
+LY: Arial, sans-serif; COLOR: #797c7f; FONT-SIZE: 14px; FONT-WEIGHT: normal=
+; WORD-SPACING: 0px; PADDING-TOP: 50px" vAlign=3Dtop align=3Dleft><SPAN sty=
+le=3D"FONT-FAMILY: Arial, sans-serif, serif, EmojiFont; COLOR: #17181a; FON=
+T-SIZE: 18px; FONT-WEIGHT: 500">3 items</SPAN></TD></TR>
+<TR>
+<TD style=3D"PADDING-BOTTOM: 50px; LINE-HEIGHT: 24px; FONT-STYLE: normal; M=
+ARGIN: 0px; PADDING-LEFT: 80px; WIDTH: 784px; PADDING-RIGHT: 80px; FONT-FAM=
+ILY: Arial, sans-serif; COLOR: #797c7f; FONT-SIZE: 14px; FONT-WEIGHT: norma=
+l; WORD-SPACING: 0px; PADDING-TOP: 0px" vAlign=3Dtop align=3Dleft>
+<DIV style=3D"FONT-FAMILY: Arial, sans-serif, serif, EmojiFont; COLOR: #171=
+81a; FONT-SIZE: 18px; FONT-WEIGHT: 500">&nbsp;</DIV>
+<DIV style=3D"BORDER-BOTTOM: #f4f4f4 1px solid; PADDING-BOTTOM: 7px; PADDIN=
+G-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 9px">
+<DIV style=3D"LINE-HEIGHT: 16px; FONT-STYLE: normal; FONT-FAMILY: Arial, sa=
+ns-serif, serif, EmojiFont; COLOR: #17181a; FONT-SIZE: 14px; FONT-WEIGHT: n=
+ormal; WORD-SPACING: 0px">Purchase Order .pdf</DIV>
+<DIV style=3D"LINE-HEIGHT: 16px; COLOR: #6a6d70; FONT-SIZE: 12px">86.9 MB</=
+DIV></DIV>
+<DIV style=3D"BORDER-BOTTOM: #f4f4f4 1px solid; PADDING-BOTTOM: 7px; PADDIN=
+G-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 9px">
+<DIV style=3D"LINE-HEIGHT: 16px; FONT-STYLE: normal; FONT-FAMILY: Arial, sa=
+ns-serif, serif, EmojiFont; COLOR: #17181a; FONT-SIZE: 14px; FONT-WEIGHT: n=
+ormal; WORD-SPACING: 0px">List of Items.pdf</DIV>
+<DIV style=3D"LINE-HEIGHT: 16px; COLOR: #6a6d70; FONT-SIZE: 12px">7.83 MB</=
+DIV></DIV>
+<DIV style=3D"BORDER-BOTTOM: #f4f4f4 1px; PADDING-BOTTOM: 7px; PADDING-LEFT=
+: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 9px">
+<DIV style=3D"LINE-HEIGHT: 16px; FONT-STYLE: normal; FONT-FAMILY: Arial, sa=
+ns-serif, serif, EmojiFont; COLOR: #17181a; FONT-SIZE: 14px; FONT-WEIGHT: n=
+ormal; WORD-SPACING: 0px">Specifications.pdf</DIV>
+<DIV style=3D"LINE-HEIGHT: 16px; COLOR: #6a6d70; FONT-SIZE: 12px">5.79 MB</=
+DIV></DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></T=
+BODY></TABLE>
+<P style=3D"TEXT-ALIGN: left; TEXT-TRANSFORM: none; BACKGROUND-COLOR: #ffff=
+ff; FONT-STYLE: normal; MARGIN-TOP: 0px; TEXT-INDENT: 0px; FONT-FAMILY: Rob=
+oto, sans-serif; WHITE-SPACE: normal; LETTER-SPACING: normal; COLOR: #2c363=
+a; FONT-SIZE: 14px; FONT-WEIGHT: 400; WORD-SPACING: 0px; text-decoration-st=
+yle: initial; text-decoration-color: initial">&nbsp;</P>
+<TABLE style=3D"TEXT-ALIGN: left; PADDING-BOTTOM: 0px; TEXT-TRANSFORM: none=
+; BACKGROUND-COLOR: #ffffff; FONT-STYLE: normal; MARGIN: 0px; PADDING-LEFT:=
+ 0px; BORDER-SPACING: 0px; WIDTH: 784px; PADDING-RIGHT: 0px; BORDER-COLLAPS=
+E: collapse; FONT-FAMILY: Roboto, sans-serif; WHITE-SPACE: normal; TABLE-LA=
+YOUT: fixed; LETTER-SPACING: normal; COLOR: #2c363a; FONT-SIZE: 14px; FONT-=
+WEIGHT: 400; WORD-SPACING: 0px; PADDING-TOP: 0px; text-decoration-style: in=
+itial; text-decoration-color: initial"=20
+class=3D"ydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121yahoo-compose-tabl=
+e-card ydp783f8cc8yiv9880020113ydp329da516yahoo-compose-table-card ydp783f8=
+cc8yiv9880020113yahoo-compose-table-card yahoo-compose-table-card" border=
+=3D0 cellSpacing=3D0 cellPadding=3D0>
+<TBODY>
+<TR>
+<TD style=3D"PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 78=
+4px; PADDING-RIGHT: 0px; PADDING-TOP: 2px" vAlign=3Dtop align=3Dleft>
+<TABLE style=3D"PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; BORDER=
+-SPACING: 0px; WIDTH: 784px; PADDING-RIGHT: 0px; BORDER-COLLAPSE: collapse;=
+ TABLE-LAYOUT: fixed; PADDING-TOP: 0px" class=3D"ydp783f8cc8yiv9880020113yd=
+pe30d4861yiv6412894121yahoo-compose-table-card ydp783f8cc8yiv9880020113ydp3=
+29da516yahoo-compose-table-card ydp783f8cc8yiv9880020113yahoo-compose-table=
+-card yahoo-compose-table-card" border=3D0 cellSpacing=3D0 cellPadding=3D0 =
+bgColor=3Dwhite>
+<TBODY>
+<TR>
+<TD style=3D"PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 20px; WIDTH: 7=
+84px; PADDING-RIGHT: 20px; PADDING-TOP: 0px" vAlign=3Dtop align=3Dleft>
+<TABLE style=3D"PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; BORDER=
+-SPACING: 0px; WIDTH: 744px; PADDING-RIGHT: 0px; BORDER-COLLAPSE: collapse;=
+ TABLE-LAYOUT: fixed; PADDING-TOP: 0px" class=3D"ydp783f8cc8yiv9880020113yd=
+pe30d4861yiv6412894121yahoo-compose-table-card ydp783f8cc8yiv9880020113ydp3=
+29da516yahoo-compose-table-card ydp783f8cc8yiv9880020113yahoo-compose-table=
+-card yahoo-compose-table-card" border=3D0 cellSpacing=3D0 cellPadding=3D0>=
+
+<TBODY>
+<TR>
+<TD style=3D"PADDING-BOTTOM: 13px; LINE-HEIGHT: 24px; FONT-STYLE: normal; M=
+ARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 744px; PADDING-RIGHT: 0px; FONT-FAMIL=
+Y: Arial, sans-serif; COLOR: #797c7f; FONT-SIZE: 12px; FONT-WEIGHT: normal;=
+ WORD-SPACING: 0px; PADDING-TOP: 13px" vAlign=3Dtop align=3Dmiddle>
+<P style=3D"PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RI=
+GHT: 0px; PADDING-TOP: 0px">To make sure our emails arrive, please add&nbsp=
+;<A style=3D"BACKGROUND-COLOR: transparent; COLOR: #797c7f; FONT-WEIGHT: no=
+rmal; text-decoration-style: solid; text-decoration-color: currentcolor; te=
+xt-decoration-line: none" href=3D"http://webmail.detoenategroup.com/#NOP" r=
+el=3D"nofollow noopener" target=3D_blank><SPAN style=3D"COLOR: #797c7f; FON=
+T-WEIGHT: normal">
+ noreply@<SPAN class=3Dydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121ydpc=
+77f4e7fv1v1marky67ace8m6>wetransfer</SPAN>.com</SPAN></A>
+ &nbsp;to&nbsp;<A style=3D"BACKGROUND-COLOR: transparent; COLOR: #797c7f; F=
+ONT-WEIGHT: normal; text-decoration-style: solid; text-decoration-color: cu=
+rrentcolor; text-decoration-line: underline" href=3D"https://wetransfer.zen=
+desk.com/hc/en-us/articles/204909429?utm_campaign=3DWT_email_tracking&amp;u=
+tm_source=3Dnotify_recipient_email&amp;utm_medium=3DAdd+Us+To+Your+Contacts=
++Link&amp;utm_content=3Dgeneral" rel=3D"nofollow noopener" target=3D_blank>=
+your contacts</A>.</P></TD></TR></TBODY></TABLE></TD></TR></TBODY>
+</TABLE></TD></TR></TBODY></TABLE>
+<P style=3D"TEXT-ALIGN: left; TEXT-TRANSFORM: none; BACKGROUND-COLOR: #ffff=
+ff; FONT-STYLE: normal; MARGIN-TOP: 0px; TEXT-INDENT: 0px; FONT-FAMILY: Rob=
+oto, sans-serif; WHITE-SPACE: normal; LETTER-SPACING: normal; COLOR: #2c363=
+a; FONT-SIZE: 14px; FONT-WEIGHT: 400; WORD-SPACING: 0px; text-decoration-st=
+yle: initial; text-decoration-color: initial">&nbsp;</P>
+<TABLE style=3D"TEXT-ALIGN: left; PADDING-BOTTOM: 0px; TEXT-TRANSFORM: none=
+; BACKGROUND-COLOR: #ffffff; FONT-STYLE: normal; MARGIN: 0px; PADDING-LEFT:=
+ 0px; BORDER-SPACING: 0px; WIDTH: 784px; PADDING-RIGHT: 0px; BORDER-COLLAPS=
+E: collapse; FONT-FAMILY: Roboto, sans-serif; WHITE-SPACE: normal; TABLE-LA=
+YOUT: fixed; LETTER-SPACING: normal; COLOR: #2c363a; FONT-SIZE: 14px; FONT-=
+WEIGHT: 400; WORD-SPACING: 0px; PADDING-TOP: 0px; text-decoration-style: in=
+itial; text-decoration-color: initial"=20
+class=3D"ydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121yahoo-compose-tabl=
+e-card ydp783f8cc8yiv9880020113ydp329da516yahoo-compose-table-card ydp783f8=
+cc8yiv9880020113yahoo-compose-table-card yahoo-compose-table-card" border=
+=3D0 cellSpacing=3D0 cellPadding=3D0>
+<TBODY>
+<TR>
+<TD style=3D"PADDING-BOTTOM: 30px; LINE-HEIGHT: 23px; FONT-STYLE: normal; M=
+ARGIN: 0px; PADDING-LEFT: 20px; WIDTH: 784px; PADDING-RIGHT: 20px; FONT-FAM=
+ILY: Arial, sans-serif; COLOR: #797c7f; FONT-SIZE: 12px; FONT-WEIGHT: norma=
+l; WORD-SPACING: 0px; PADDING-TOP: 30px" vAlign=3Dtop align=3Dmiddle>
+<A style=3D"BACKGROUND-COLOR: transparent; COLOR: #797c7f; FONT-WEIGHT: nor=
+mal; text-decoration-style: solid; text-decoration-color: currentcolor; tex=
+t-decoration-line: underline" href=3D"https://wetransfer.com/about?utm_camp=
+aign=3DWT_email_tracking&amp;utm_content=3Dgeneral&amp;utm_medium=3Dabout_l=
+ink&amp;utm_source=3Dnotify_recipient_email" rel=3D"nofollow noopener" targ=
+et=3D_blank>
+<SPAN style=3D"COLOR: #797c7f; FONT-WEIGHT: normal; text-decoration-style: =
+solid; text-decoration-color: currentcolor; text-decoration-line: underline=
+">About&nbsp;<SPAN class=3Dydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121=
+ydpc77f4e7fv1v1marky67ace8m6>WeTransfer</SPAN></SPAN></A>&nbsp;<SPAN style=
+=3D"COLOR: #797c7f">&nbsp;&nbsp;&middot;&nbsp;&nbsp;</SPAN>
+ &nbsp;<A style=3D"BACKGROUND-COLOR: transparent; COLOR: #797c7f; FONT-WEIG=
+HT: normal; text-decoration-style: solid; text-decoration-color: currentcol=
+or; text-decoration-line: underline" href=3D"https://wetransfer.zendesk.com=
+/hc/en-us?utm_campaign=3DWT_email_tracking&amp;utm_source=3Dnotify_recipien=
+t_email&amp;utm_medium=3DFooter+Help+Link&amp;utm_content=3Dgeneral" rel=3D=
+"nofollow noopener" target=3D_blank>
+ <SPAN style=3D"COLOR: #797c7f; FONT-WEIGHT: normal; text-decoration-style:=
+ solid; text-decoration-color: currentcolor; text-decoration-line: underlin=
+e">Help</SPAN></A>&nbsp;<SPAN style=3D"COLOR: #797c7f">&nbsp;&nbsp;&middot;=
+&nbsp;&nbsp;</SPAN>
+ &nbsp;<A style=3D"BACKGROUND-COLOR: transparent; COLOR: #797c7f; FONT-WEIG=
+HT: normal; text-decoration-style: solid; text-decoration-color: currentcol=
+or; text-decoration-line: underline" href=3D"https://wetransfer.com/legal/t=
+erms?utm_campaign=3DWT_email_tracking&amp;utm_content=3Dgeneral&amp;utm_med=
+ium=3Dlegal_link&amp;utm_source=3Dnotify_recipient_email" rel=3D"nofollow n=
+oopener" target=3D_blank>
+ <SPAN style=3D"COLOR: #797c7f; FONT-WEIGHT: normal; text-decoration-style:=
+ solid; text-decoration-color: currentcolor; text-decoration-line: underlin=
+e">Legal</SPAN>&nbsp;</A><SPAN style=3D"COLOR: #797c7f">&nbsp;&nbsp;&middot=
+;&nbsp;&nbsp;</SPAN>
+ &nbsp;<A style=3D"BACKGROUND-COLOR: transparent; COLOR: #797c7f; FONT-WEIG=
+HT: normal; text-decoration-style: solid; text-decoration-color: currentcol=
+or; text-decoration-line: underline"=20
+href=3D"https://wetransfer.zendesk.com/hc/en-us/requests/new?ticket_form_id=
+=3D360000007663&amp;utm_campaign=3DWT_email_tracking&amp;utm_source=3Dnotif=
+y_recipient_email&amp;utm_medium=3DSpam+Support+Link&amp;utm_content=3Dgene=
+ral&amp;token=3DeyJhbGciOiJub25lIn0.eyJyZXF1ZXN0X3N1YmplY3QiOiJSZXBvcnQgdGh=
+pcyB0cmFuc2ZlciBhcyBzcGFtIiwicmVxdWVzdF9kZXNjcmlwdGlvbiI6Imh0dHBzOi8vd2V0cm=
+Fuc2Zlci5jb20vZG93bmxvYWRzLzk1MTUzNjEzZmZiNWFmNjcwNWVhYWFiNzNhYmI5YzJmMjAyM=
+DA2MjIxMDM3MjAvNTIwYmRiYWM5ZGU1YjZkMzJkMDhjZDVkMGM4NDJjZDIyMDIwM
+DYyMjEwMzc1Ny9kNTVhZjAiLCJyZXF1ZXN0X2Fub255bW91c19yZXF1ZXN0ZXJfZW1haWwiOiJy=
+Lndvb2RzQHBkc2Rlc2lnbi1idWlsZC5jby51ayIsInJlcXVlc3RfY3VzdG9tX2ZpZWxkc18zNjA=
+wMDAxNzEyMjMiOiIwZjRlZjEzZmNlNDcyMzZkOGNjMDQ5ZjZkMGQyMGYzNzI2YWMwMDFhMWFmZD=
+MzNmYxYzkyOWM2MzY5ZjhlYzA4MjdhOWRiNTM2ZWMyM2I2MjQwOGUxMTdmYTcyYjkyZDQ3M2Y4Y=
+zg4NzRkYTI0OWI1MjMxY2Y2N2M4MDc3MGMyZiJ9." rel=3D"nofollow noopener" target=
+=3D_blank>
+ <SPAN style=3D"COLOR: #797c7f; FONT-WEIGHT: normal; text-decoration-style:=
+ solid; text-decoration-color: currentcolor; text-decoration-line: underlin=
+e">Report this transfer as spam</SPAN></A></TD></TR></TBODY></TABLE></DIV>
+<DIV>&nbsp;</DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></BODY></H=
+TML>
+

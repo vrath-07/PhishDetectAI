@@ -1,0 +1,188 @@
+Return-Path: bounces+30021592-8e5a-jose=monkey.org@sendgrid.net
+Delivered-To: jose@monkey.org
+X-FDA: 80138203740.32.8A5CA7E
+Received: from dhtrpcqr.outbound-mail.sendgrid.net
+ (dhtrpcqr.outbound-mail.sendgrid.net [208.117.60.69])	by
+ imf08.b.hostedemail.com (Postfix) with ESMTP id E65711810CDAA	for
+ <jose@monkey.org>; Wed, 16 Nov 2022 05:39:49 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.net;
+	h=mime-version:from:subject:content-type:content-transfer-encoding:to:
+	cc;
+	s=smtpapi; bh=kzAnn+YobY/baQ/+IiWCs1pndGRtAbG+IkS8jIQCUI0=;
+	b=Pb9gsW+2mQxXmUSk3978PX8EuGFsXgwDISgioSBW9dJxU6SQNKctl88z0EsZu366fspY
+	0NyjkY3OR8mp89PSqDGvM2TswG54C6xBJ8laVF1xQGbKnstrSoLaugrYwFy5NGxXzOpiZy
+	o0EvajCfpki6asXIP33T3ty0yDZ9glS5w=
+Received: by filterdrecv-7fc7bb5bb4-fjn5c with SMTP id
+ filterdrecv-7fc7bb5bb4-fjn5c-1-637477A5-16        2022-11-16
+ 05:39:49.422436454 +0000 UTC m=+468001.015799649
+Received: from azure16 (unknown)
+	by geopod-ismtpd-2-5 (SG) with ESMTP
+	id 8WOaV73OQPqv6ehWSHCjGA
+	for <jose@monkey.org>;
+	Wed, 16 Nov 2022 05:39:49.381 +0000 (UTC)
+MIME-Version: 1.0
+From: Customer Service <info@lotoftees.com>
+Date: Wed, 16 Nov 2022 05:39:49 +0000 (UTC)
+Subject: Netflix : We're having some trouble with your current billing
+ information
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+Message-ID: <8WOaV73OQPqv6ehWSHCjGA@geopod-ismtpd-2-5>
+X-SG-EID: 
+ =?us-ascii?Q?U9SsHQFHrlZAkfPOi9QfD2dPfiR6guWryGwtLUmlfXN9Ur72lljW+Rir6TGxkV?=
+ =?us-ascii?Q?CJjxGl=2FOsPuoh7=2FcHK3EWsC7CKOJsvnjPP8Vybx?=
+ =?us-ascii?Q?Mgwb8t1lKFcKHaTdqTz33kBYl5NN1b4QHglDllh?=
+ =?us-ascii?Q?qwJHJ0hel8nT2mQQPX4qcl+yLPoqVRPlGIVHZjz?=
+ =?us-ascii?Q?414N29INVmaScYtC3IraCN1JeG2d3SG3ViF8w+O?=
+ =?us-ascii?Q?qN=2FtPBErv6HzAEFaUfIKydrGZGQ2hXPeaJPIPJ?=
+To: jose@monkey.org
+X-Entity-ID: m4YAkBllpFssdgR20b7hhQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1668577189;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=kzAnn+YobY/baQ/+IiWCs1pndGRtAbG+IkS8jIQCUI0=;
+	b=vhXRPLAOSmTFvQ3cVl/4iU9sUX+B6Kivw96dzEtcGJs2VddzTxgZ1kMblawYAwZpQeyhry
+	upLrGafgaUv83hU+XzezGSXiPN66IvoURp9zJTSEshPcp5xekV0X+owH3Qeld+M/5MD5oV
+	WvD5yyHFXBSbhgTuXAIsSuPR293Nt0o=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1668577189; a=rsa-sha256;
+	cv=none;
+	b=jjS4VLcTA+PFVUBqVGLh+am/DS+iTuu2g79NmA1Ir2PNQqr3+hib4Qoms3XpsH7YFK2cE/
+	c8KO066LKtbs3FTnvzKhkqNain+mtxGyAjz/08XRiJyaG0kV+wQplDb/L7ZTTFsz2Tn/2b
+	H+ZgWwOAb5QQaMPUDwSgB2lqsbfUTQc=
+ARC-Authentication-Results: i=1;	imf08.b.hostedemail.com;	dkim=pass
+ header.d=sendgrid.net header.s=smtpapi header.b=Pb9gsW+2;	dmarc=none;
+	spf=pass (imf08.b.hostedemail.com: domain of
+ "bounces+30021592-8e5a-jose=monkey.org@sendgrid.net" designates 208.117.60.69
+ as permitted sender)
+ smtp.mailfrom="bounces+30021592-8e5a-jose=monkey.org@sendgrid.net"
+X-Rspam-User: 
+Authentication-Results: imf08.b.hostedemail.com;	dkim=pass
+ header.d=sendgrid.net header.s=smtpapi header.b=Pb9gsW+2;	dmarc=none;
+	spf=pass (imf08.b.hostedemail.com: domain of
+ "bounces+30021592-8e5a-jose=monkey.org@sendgrid.net" designates 208.117.60.69
+ as permitted sender)
+ smtp.mailfrom="bounces+30021592-8e5a-jose=monkey.org@sendgrid.net"
+X-Spam-Status: No, score=5.12
+X-Stat-Signature: ez8iybzhpubxm7cnr6bisqfexgm1rr3c
+X-Rspamd-Queue-Id: E65711810CDAA
+X-Rspamd-Server: rspam08
+X-HE-Tag: 1668577189-44049
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 201
+
+<P style=3D'FONT-SIZE: 15px; FONT-FAMILY: "Segoe UI", "Segoe UI Web (West E=
+uropean)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetic=
+a Neue", sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM=
+: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FONT-STYLE: normal; ORPHANS=
+: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255);=
+ TEXT-INDENT: 0px; text-decoration-style: initial; text-decoration-color: i=
+nitial; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-=
+text-stroke-width: 0px; text-decoration-thickness: initial'><STRONG><FONT c=
+olor=3D#ff0000 size=3D7>NETFLIX</FONT></STRONG></P>
+<P aria-hidden=3Dtrue style=3D'FONT-SIZE: 15px; FONT-FAMILY: "Segoe UI", "S=
+egoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont=
+, Roboto, "Helvetica Neue", sans-serif; WHITE-SPACE: normal; WORD-SPACING: =
+0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FONT-STY=
+LE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR=
+: rgb(255,255,255); TEXT-INDENT: 0px; text-decoration-style: initial; text-=
+decoration-color: initial; font-variant-ligatures: normal; font-variant-cap=
+s: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initi=
+al'>&nbsp;</P>
+<P style=3D'FONT-SIZE: 15px; FONT-FAMILY: "Segoe UI", "Segoe UI Web (West E=
+uropean)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetic=
+a Neue", sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM=
+: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FONT-STYLE: normal; ORPHANS=
+: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255);=
+ TEXT-INDENT: 0px; text-decoration-style: initial; text-decoration-color: i=
+nitial; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-=
+text-stroke-width: 0px; text-decoration-thickness: initial'><STRONG>Dear jo=
+se@monkey.org,</STRONG></P>
+<P style=3D'FONT-SIZE: 15px; FONT-FAMILY: "Segoe UI", "Segoe UI Web (West E=
+uropean)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetic=
+a Neue", sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM=
+: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FONT-STYLE: normal; ORPHANS=
+: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255);=
+ TEXT-INDENT: 0px; text-decoration-style: initial; text-decoration-color: i=
+nitial; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-=
+text-stroke-width: 0px; text-decoration-thickness: initial'><FONT size=3D3>=
+We're having some trouble with your current billing information. We'll try =
+again, but in the meantime you may want to update your payment details..&nb=
+sp;</FONT></P>
+<P style=3D'FONT-SIZE: 15px; FONT-FAMILY: "Segoe UI", "Segoe UI Web (West E=
+uropean)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetic=
+a Neue", sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM=
+: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FONT-STYLE: normal; ORPHANS=
+: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255);=
+ TEXT-INDENT: 0px; text-decoration-style: initial; text-decoration-color: i=
+nitial; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-=
+text-stroke-width: 0px; text-decoration-thickness: initial'><FONT size=3D3>=
+We'll try again, but in the meantime you may want to update your payment de=
+tails.</FONT></P>
+<P aria-hidden=3Dtrue style=3D'FONT-SIZE: 15px; FONT-FAMILY: "Segoe UI", "S=
+egoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont=
+, Roboto, "Helvetica Neue", sans-serif; WHITE-SPACE: normal; WORD-SPACING: =
+0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FONT-STY=
+LE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR=
+: rgb(255,255,255); TEXT-INDENT: 0px; text-decoration-style: initial; text-=
+decoration-color: initial; font-variant-ligatures: normal; font-variant-cap=
+s: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initi=
+al'><SPAN style=3D'FONT-SIZE: 16px; FONT-FAMILY: "Segoe UI", "Segoe UI Web =
+(West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "H=
+elvetica Neue", sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TR=
+ANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); FONT-STYLE=
+: normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline !importa=
+nt; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT=
+: 0px; text-decoration-style: initial; text-decoration-color: initial; font=
+-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-=
+width: 0px; text-decoration-thickness: initial'>click on the button bellow =
+to update your account now.</SPAN></P>
+<P style=3D'FONT-SIZE: 15px; FONT-FAMILY: "Segoe UI", "Segoe UI Web (West E=
+uropean)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetic=
+a Neue", sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM=
+: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FONT-STYLE: normal; ORPHANS=
+: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255);=
+ TEXT-INDENT: 0px; text-decoration-style: initial; text-decoration-color: i=
+nitial; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-=
+text-stroke-width: 0px; text-decoration-thickness: initial'><FONT color=3D#=
+3366ff>&gt;&gt;</FONT><A style=3D"BORDER-TOP: 0px; BORDER-RIGHT: 0px; VERTI=
+CAL-ALIGN: baseline; BORDER-BOTTOM: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: =
+0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px" =
+href=3D"https://www.jannaty.co/net.htm" target=3D_blank data-auth=3D"NotApp=
+licable" data-linkindex=3D"0"><U>Update  my Account</U></A></P>
+<P aria-hidden=3Dtrue style=3D'FONT-SIZE: 15px; FONT-FAMILY: "Segoe UI", "S=
+egoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont=
+, Roboto, "Helvetica Neue", sans-serif; WHITE-SPACE: normal; WORD-SPACING: =
+0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FONT-STY=
+LE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR=
+: rgb(255,255,255); TEXT-INDENT: 0px; text-decoration-style: initial; text-=
+decoration-color: initial; font-variant-ligatures: normal; font-variant-cap=
+s: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initi=
+al'>&nbsp;</P>
+<P style=3D'FONT-SIZE: 15px; FONT-FAMILY: "Segoe UI", "Segoe UI Web (West E=
+uropean)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetic=
+a Neue", sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM=
+: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FONT-STYLE: normal; ORPHANS=
+: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255);=
+ TEXT-INDENT: 0px; text-decoration-style: initial; text-decoration-color: i=
+nitial; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-=
+text-stroke-width: 0px; text-decoration-thickness: initial'>Thank you for c=
+hoosing netflix.</P>
+<P style=3D'FONT-SIZE: 15px; FONT-FAMILY: "Segoe UI", "Segoe UI Web (West E=
+uropean)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetic=
+a Neue", sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM=
+: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FONT-STYLE: normal; ORPHANS=
+: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255);=
+ TEXT-INDENT: 0px; text-decoration-style: initial; text-decoration-color: i=
+nitial; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-=
+text-stroke-width: 0px; text-decoration-thickness: initial'>Netflix billing=
+ team.</P>
+
+
+
+
+

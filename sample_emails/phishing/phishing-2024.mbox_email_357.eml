@@ -1,0 +1,220 @@
+Return-Path: ramadan@alkathirilaw.com
+Delivered-To: jose@monkey.org
+X-FDA: 82817259672.25.174DE14
+Received: from 5108368.thefilipinomall.com (5108368.thefilipinomall.com
+ [216.172.171.186])	by imf04.b.hostedemail.com (Postfix) with ESMTP id
+ DA086160006	for <jose@monkey.org>; Sat, 23 Nov 2024 12:17:14 +0000 (UTC)
+Authentication-Results: imf04.b.hostedemail.com;	dkim=pass
+ header.d=grocerymanila.com header.s=default header.b=LMBmBLAG;	spf=pass
+ (imf04.b.hostedemail.com: domain of ramadan@alkathirilaw.com designates
+ 216.172.171.186 as permitted sender) smtp.mailfrom=ramadan@alkathirilaw.com;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1732364234;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=ilRYhnc5ZYdpchP+wITem95lL3LvIUv4mH6HovJz7Yg=;
+	b=I6fA9Zlg/qbX0by1i1UweoT2GAsBdKLLRs4trcx8/lsF9bDTut7gGfeG1ylTZwkyupCnfH
+	iiWqbDk2G4xfXRZlbnnHKsJZLIHREcc3ev14oUbn4MEB92nsK/pJIeqNUOE+EwydnLLi+m
+	M+wX42/uVDv1CnYsFX4poqrYy3rhyA4=
+ARC-Authentication-Results: i=1;	imf04.b.hostedemail.com;	dkim=pass
+ header.d=grocerymanila.com header.s=default header.b=LMBmBLAG;	spf=pass
+ (imf04.b.hostedemail.com: domain of ramadan@alkathirilaw.com designates
+ 216.172.171.186 as permitted sender) smtp.mailfrom=ramadan@alkathirilaw.com;
+	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1732364234; a=rsa-sha256;
+	cv=none;
+	b=aGjpWW8yF91C1CgT87RCH5pjogrChSJeX7N0Gf5YvxTHoNdVSVwGG0UTykFLRFXsdPOxIZ
+	brlCySbs5VsDiU+L8agQmVOcUUh/SYrxvHG9CpG1jZHj9lM3hGeOHa8P592pqysL/W2Ol8
+	HYjN1dKoHdgTXTwf5pL+dA15u2hSLgc=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=grocerymanila.com; s=default; h=Content-Transfer-Encoding:Content-Type:
+	MIME-Version:Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=ilRYhnc5ZYdpchP+wITem95lL3LvIUv4mH6HovJz7Yg=; b=LMBmBLAGyft1BAlduc7oFI9ljj
+	AdC00YWcavSv6h+8N03s0lO86lkDTEizTaC6f6TZtmwchdFHULmz3i4ZMAvTyv/B9OBhpDTMX+J7u
+	hXUp1pPpjpsTtuChfAz/llcHA+7CURG2UC3o8mryFzmoouN6+G6JFV7z50sWyE0R6ocxyYlVULF6U
+	aZgfW5zSbiz+9WeINQJaeUjKh+2g3BQ/ZSqG0W9z7d9pbZXVSr7jRK3FFiGAavR+j6yC/SgysO/Mc
+	3FRWLXX9K8J6ZbqE31pTQBH2SDocuOr8jDXbtbLUJYklPITwVaDYw18NHQIxuuFgB/ibrJ/u3NLpU
+	dqBlpQow==;
+Received: from [193.26.115.157] (port=49335
+ helo=193.26.115.157.powered.by.rdp.sh)	by 5108368.thefilipinomall.com with
+ esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	(Exim 4.96.2)
+	(envelope-from <ramadan@alkathirilaw.com>)	id 1tEp4X-0003NS-0w	for
+ jose@monkey.org;	Sat, 23 Nov 2024 20:17:13 +0800
+From: Accounts Department <relations@grocerymanila.com>
+To: jose@monkey.org
+Subject: New Salary Payment Sheet Available
+Date: 23 Nov 2024 13:17:13 +0100
+Message-ID: <20241123131713.C0858D0A7059BAE6@grocerymanila.com>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - 5108368.thefilipinomall.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - alkathirilaw.com
+X-Get-Message-Sender-Via:
+ 5108368.thefilipinomall.com: authenticated_id: relations@grocerymanila.com
+X-Authenticated-Sender:
+ 5108368.thefilipinomall.com: relations@grocerymanila.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Spam-Status: Yes, score=14.98
+X-Stat-Signature: 9kiy7n83gju76t4xsxah8153s6uu6wnh
+X-Rspamd-Server: rspam12
+X-Rspamd-Queue-Id: DA086160006
+X-Rspam-User: 
+X-HE-Tag: 1732364234-71837
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+1MQeV7RX9xWHvgWB+VoijtA93z6yoeYbZFVSSGSw9G5z?=
+ =?utf-8?q?PpbO32o0bv/+N5hXHwXwibUQNWfR7t69a9db4b5Hh53EOyJm5ujHaft9kGiPoqeLE?=
+ =?utf-8?q?/ILZfSuADT05o4y88qG7fuH+qqWErKPB9vldEv+ZW8FuZ3zupVjAZYuq7Mmbkei17?=
+ =?utf-8?q?qgwW5+zs2x+i9jmTyI5DgzPhYa8EbEOW+JL4iFa6z0SSVE9HPGJk13PEx1epIkzQu?=
+ =?utf-8?q?bn4qCeWo6eIWQBVt5G4OXPynqRbp+Oixp3hH5OeC1PILCveoa/ZgGxWnsG9WCASjB?=
+ =?utf-8?q?gNUoDLZ/Ucl9eWohqIf4dKSrNdDHUl+x2W5vOjCcOmaMHrqfPzNRI6Fd2QE91yPtc?=
+ =?utf-8?q?2xP+DNYlQzwA40eC7pXznZH0FP0DwYEbJ7PRqH9Z9moU+BSLZQhCrzBfDuQkotkom?=
+ =?utf-8?q?lhcUC0DEs12Ak2Iw2h11OCYiJEfuIWPmvArKk162OOJk2owS7Mcjn0P9X7mk49nDN?=
+ =?utf-8?q?YB+QYuhk0qHoFJZJdrzBigVZRjqOGiUPoAlfHDIs3Szg3RSj+vG7FrWIkkXEj50Pl?=
+ =?utf-8?q?e+BteSMm8Vft6pAW4gWvgeXeUWwgGjWbY4mKhBAe5TFm53PYv4GN3dte2dkPc/yrl?=
+ =?utf-8?q?bpRGPguRGZbvnLjl+DG1XEsOiss5/Xe/B5I5uR44svoHO2QiKmOA3wq0mwOBOcZgI?=
+ =?utf-8?q?wBzh1i5sqgVd7X6DbCdeVnYrZeWh4imFAsWUVvyzH42eQQ6gbXhXKFBz2/QiiCSs3?=
+ =?utf-8?q?cnUAhq369jXLChigoJLEvtzhjjw+iXFn4JTxwv23GVQnK2keS1r4UxnvCvQRLOjto?=
+ =?utf-8?q?WY3WSW7OjWDddt5AzcM8+CFs/fEB5CAi1og0cSVNxppUoDi/3MySodS4CnGWerWpc?=
+ =?utf-8?q?RlPOS5cOiW/anvcFVdtaHl0IK9bhJutfhohbRzH5SETBDmwpLSHohgnCIAQDrwDeI?=
+ =?utf-8?q?S8DqNZh6IOec49cgOH+2kd_oXoHNK71hwRfgPiuc1nbm3lNW3pYDA+DlHqP2bC5+p?=
+ =?utf-8?q?hGgy5D/JgOBmLdvRQCKcCXyWpdOptkmZEeTjtc7GoolffVroxCyx93bACQvC8zkNV?=
+ =?utf-8?q?3F8lN0RmqEpiTrparmq24L+4ClXEpqWhpE2OrtIJVH6YJWUtr68OKKbAxIvbaKy67?=
+ =?utf-8?q?l+0DmZtfNUzPF9zoBQoZt8hswbXSi9qcSO0xedx47/YqRxFIjruDirJ17vE8WXUCT?=
+ =?utf-8?q?TlVtX+Xim9G7zCgfUVIGT2+UlwcdUuHnr3eu+v/6TSAEqo2+EWctQJhpWo3LHZd8v?=
+ =?utf-8?q?x8Wm73PwADBTiqMW2g+2D9RDbZYPglGlUAEAplL+BJGKP6q6kxD/y3M5fEa5b/Vnv?=
+ =?utf-8?q?t05RI4QvIHWloJMedxBY95lpPwSeurvPrgGBRXcMwlgDJ7gV7QPdzYVZbCob6U7bS?=
+ =?utf-8?q?1csg7xozYHQVPJYj+6vAtfRQSJ4nX/6rFSsvLsLvO15eXFPzMFYm88TX9/+RoZlah?=
+ =?utf-8?q?/VgfJ9fU9ohfWCrrzx/sLUovSqJRfuVwMaXyHE6xXdz1V6cV3P0SZPL0xxoqv+TWs?=
+ =?utf-8?q?YMCeR5idrLKXa6FG3hYUdwKHKMcfS3wiImgUaqEww1uKdo/S4YB9dRd/hWjuOYN3u?=
+ =?utf-8?q?U9gBU+fMeepelEuPR684Zu24ASjua7vUoybQho5jfIJ/+RSTUVlNJdcAcBo3IBfCS?=
+ =?utf-8?q?iBPmq6xRWOFwEZRN4efLA7dEBS/4xdNg7ucy2kzRQMGhkJZbXURcI1l+J0vd+7NZs?=
+ =?utf-8?q?quokuvTbianxYWsfohP6L3ypXhQ=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 357
+
+<!DOCTYPE html>
+
+<html lang=3D"en"><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta charset=3D"UTF-8">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <title>New Salary Payment Sheet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333333;
+            text-align: center;
+        }
+        p {
+            font-size: 16px;
+            color: #555555;
+            line-height: 1.5;
+        }
+        .button {
+            display: block;
+            width: fit-content;
+            margin: 20px auto;
+            text-align: center;
+            background-color: #007BFF;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #777777;
+        }
+    </style>
+</head>
+<body style=3D"font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0">
+    <div style=3D"max-width: 600px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)" class=3D"container">
+        <h1 style=3D"color: #333333;
+            text-align: center">New Salary Payment Sheet Available</h1>
+        <p style=3D"font-size: 16px;
+            color: #555555;
+            line-height: 1.5">Dear <font color=3D"#070cf8">jose@monkey.org<=
+/font>,</p>
+        <p style=3D"font-size: 16px;
+            color: #555555;
+            line-height: 1.5">We are pleased to inform you that the new sal=
+ary payment sheet for this month is now available. Please log in to your em=
+ployee portal to view your detailed salary information and related records.=
+</p>
+        <p style=3D"font-size: 16px;
+            color: #555555;
+            line-height: 1.5">This update is brought to you by <font color=
+=3D"#0637f9">monkey.org.</font>&nbsp;Ensuring transparency and convenience =
+for all our valued employees.</p>
+        <a style=3D"display: block;
+            width: fit-content;
+            margin: 20px auto;
+            text-align: center;
+            background-color: #007BFF;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px" class=3D"button" href=3D"https://ipfs.io/ipfs/=
+bafkreidytffscsqfbwqsg73kj6gxkilhbfjtwjkqowg3ut7ky3wzmmzrim#jose@monkey.org=
+">Login to View Salary Payment Sheet</a>
+        <p style=3D"font-size: 16px;
+            color: #555555;
+            line-height: 1.5; margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #777777" class=3D"footer">
+            If you have any questions or encounter any issues accessing you=
+r salary sheet, please contact the HR department at <font color=3D"#070cf8"=
+>hr@ monkey.org</font>
+        </p>
+    </div>
+
+
+</body></html>
+

@@ -1,0 +1,148 @@
+Return-Path: 78472-140813-231605-16845-jose=monkey.org@mail.amiclearpro.za.com
+Delivered-To: jose@monkey.org
+X-FDA: 82116144600.13.931E166
+Received: from johnny.amiclearpro.za.com (unknown [93.99.104.145])
+	by imf10.b.hostedemail.com (Postfix) with ESMTP id B62D2A0014
+	for <jose@monkey.org>; Tue, 14 May 2024 07:16:55 +0000 (UTC)
+Authentication-Results: imf10.b.hostedemail.com;	dkim=pass
+ header.d=amiclearpro.za.com header.s=k1 header.b=ElRN7dPp;	spf=fail
+ (imf10.b.hostedemail.com: domain of
+ "78472-140813-231605-16845-jose=monkey.org@mail.amiclearpro.za.com" does not
+ designate 93.99.104.145 as permitted sender) =?utf-8?q?smtp=2Emailfrom=3D?=
+ =?utf-8?q?=2278472-140813-231605-16845-jose=3Dmonkey=2Eorg=40mail=2Eamiclea?=
+ =?utf-8?q?rpro=2Eza=2Ecom=22=3B?=	dmarc=pass (policy=quarantine)
+ header.from=amiclearpro.za.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1715671018; a=rsa-sha256;
+	cv=none;
+	b=N+6lzAvGnOAeES7XjDEZxu9MfqxYK0+RjExSv+qPqRlxKGJtHZhzbsTfaUEAcMzx2HV8fb
+	yDkA5ZoQhSdUnb/AK39Ud87IrvdS0pGIXcRUOqLeptTBCv9rcVsh8XPhvz1r9PcwaRI5lX
+	vuE3lvunR+AwasCFZ1qO4MSTdtRL3uQ=
+ARC-Authentication-Results: i=1;	imf10.b.hostedemail.com;	dkim=pass
+ header.d=amiclearpro.za.com header.s=k1 header.b=ElRN7dPp;	spf=fail
+ (imf10.b.hostedemail.com: domain of
+ "78472-140813-231605-16845-jose=monkey.org@mail.amiclearpro.za.com" does not
+ designate 93.99.104.145 as permitted sender) =?utf-8?q?smtp=2Emailfrom=3D?=
+ =?utf-8?q?=2278472-140813-231605-16845-jose=3Dmonkey=2Eorg=40mail=2Eamiclea?=
+ =?utf-8?q?rpro=2Eza=2Ecom=22=3B?=	dmarc=pass (policy=quarantine)
+ header.from=amiclearpro.za.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1715671018;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=2bOU4HRlViBmDjSSdkSY5A5I7xvop4ti1uG+UqFAS1k=;
+	b=XjeitgHHgXOuSetruPMTPr8Rg15JlDn9ErX08N57m3XvfcrevgwOWHEuFWZNFb2qndL+eB
+	ydx5FVkcfjMYftCyqZfFbDyuYqGgMZ9PHEthCl9aaJHLIsL2Fvwp33cizIbaogjDSFm1ri
+	JhXnNewx2+9oN++7aK7LeD6gK3Rhi10=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=k1;
+ d=amiclearpro.za.com;
+ h=Mime-Version:Content-Type:Date:From:Reply-To:Subject:To:Message-ID;
+ i=NetflixMembership@amiclearpro.za.com; bh=1tC/AgPqyAsK1CC9KK2TKjm54kM=; 
+ =?utf-8?q?b=3DElRN7dPprzpZuKwXL3InHTTgVp2M96Fko4zduTfvYAGIDmIVSnTUa8u5WWTK0?=
+ =?utf-8?q?uu7uC9cgT6Bn0EI?=  
+ KOZkRImpMErCVbq6MvDBgmySSmlXXtxK+C0Nm6cPl35lFCna7+OCzJ1P//jF15FMACcnCMiN3MfL
+  
+ vejbwb2TpYb8NsGbfQR/W3+99QT2JSblU+VWc+Kg/P0K5v9T9oTXQyLKahoedFKOP5SDhZJPMOyK
+  
+ EtYK3Z3MMbGWSTARsq9yC0RMeTIROCqK6r5jhh5ngsxoi1SEaGgf9L+Wned6upydAZ0PnUnAaRkG
+   UN5hW920d9P9l/d+M7pnH3zOZzVPFzghDZ1TyA==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=k1; d=amiclearpro.za.com; 
+ =?utf-8?q?b=3DPFYLUiNFDMowv5OARtZBW56yJNQXzbDv8yRELf88MRHmJqPZd5ezdjAopm9R7?=
+ =?utf-8?q?EVkDqnzqY0GmBzh?=  
+ YjRn4+TJSv3ue6wqUV3HbAyF/dIlvds2FZ2JodtkGgYu5xe4eZTBJAeHacQQh56Q6H/AAeFNI10t
+  
+ p2gzUPM8nKvW0/F7IgUyw4gD0go+zyRzIEvfnFEZ3f0VreSl09hSSmtH4TQ3VbAs/KyvicMdHci7
+  
+ OdVcuGvbJKU14G4oKLa0CCq+KDKi3b8AThJMNONqCl9idNVCmjktY8AmbMXAVhxg5bmqmyacYc+0
+   DyFdTdXez2x6dyTDNy/z65EdR6dABpnoMyD68Q==;
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="0c0d846889c01280df1ac2979d9a30ed_2260d_388b5"
+Date: Tue, 14 May 2024 09:10:53 +0200
+From: "Netflix Renewal" <NetflixMembership@amiclearpro.za.com>
+Reply-To: "Netflix Renewal" <NetflixRenewal@amiclearpro.za.com>
+Subject: Extend your account for free
+To: <jose@monkey.org>
+Message-ID: <gcf1fo4b81ednyqo-4kkb6fe7wvt833he-2260d-388b5@amiclearpro.za.com>
+X-Rspamd-Server: rspam04
+X-Rspamd-Queue-Id: B62D2A0014
+X-Stat-Signature: y7geceeuyn4jdez956k6zbkqk7g3wud7
+X-Spam-Status: Yes, score=30.02
+X-Rspam-User: 
+X-HE-Tag: 1715671015-846602
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19vnann1UTfEgTC9XRPk/sKXugbeqh6zWHC6st9tqFc6s5?=
+ =?utf-8?q?dgmJ6E/CpR0PBwRm8NKWUivVDe4NAXugNO+RwhZzqbWap/yUnMyERUggtYjYTDvI6?=
+ =?utf-8?q?ZBailFZrLY2YqxOuhfaCCDt8XV3fROUDOD5ynlsWX+ykL42Nch9/V2QENjVfVorXB?=
+ =?utf-8?q?RtSWwbpL9qEjnU7Z01lOFc8EeYuIcJrwPlQ4+nssDJHACEI6u8=3D?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 136
+
+--0c0d846889c01280df1ac2979d9a30ed_2260d_388b5
+Content-Type: text/plain;
+Content-Transfer-Encoding: 8bit
+
+Extend your account for free
+
+http://amiclearpro.za.com/YqQGsE-Lqr5uzidDQ3Ppgvrn_uK1__eLQlrCjJdNLJCSN7L9pA
+
+http://amiclearpro.za.com/I7L1l77XXeQDgj1z-xj-pW4Qar5wrjhjXdbsc55Pf-Htqu0pUw
+
+eveloped as a single-player experience.
+
+The question of the financial viability of single-player AAA games was raised following the closure of Visceral Games by Electronic Arts (EA) in October 2017. Visceral had been a studio that established itself on a strong narrative single-player focus with Dead Space, and had been working on a single-player, linear narrative Star Wars game at the time of the closure; EA announced following this that they would be taking the game in a different direction, specifically "a broader experience that allows for more variety and player agency". Many commentators felt that EA made the change as they did not have confidence that a studio with an AAA-scale budget could produce a viable single-player game based on the popular Star Wars franchise. Alongside this, as well as relatively poor sales of games in the year prior that were principally AAA single-player games (Resident Evil 7, Prey, Dishonored 2, and Deus Ex: Mankind Divided) against financially successful multiplayer games and those offe
+ r a games-as-a-service model (Overwatch, Destiny 2, and Star Wars Battlefront 2), were indicators to many that the single-player model for AAA was waning. Manveer Heir, who had left EA after finishing his gameplay design work for Mass Effect Andromeda, acknowledged that the culture within EA was against the development of single-player games, and with Visceral's closure, "that the linear single-player triple-A game at EA is dead for the time being". Bethesda on December 7, 2017, decided to collaborate with Lynda Carter to launch a Public Safety Announcement to save single-player gaming.
+
+A few years later in 2021, EA was reported to have revived interest in single-player games, following the successful launch of Star Wars Jedi: Fallen Order in 2020. The company still planned on releasing live service games with multiplayer components, but began evaluating its IP catalog for more single-player titles to revive, such as a remake of the Dead Space franchise. Around the same time, head of Xbox Game Studios Phil Spencer said that they still see a place for narrative-driven single-player games even though the financial drivers of the market tended to be live service games. Spencer said that developing such games with AAA-scale budgets can be risky, but with availability of services like cloud gaming and subscription services, they can gauge audience reaction to these games early on and reduce the risk involved
+
+--0c0d846889c01280df1ac2979d9a30ed_2260d_388b5
+Content-Type: text/html;
+Content-Transfer-Encoding: 8bit
+
+<html>
+<head>
+	<title>Newsletter</title>
+</head>
+<body><a href="http://amiclearpro.za.com/Il7An_bC4xobj880iA3Tov-UGT16mhty693qWEl9eeot5-RdhQ"><img src="http://amiclearpro.za.com/7d9737000739ea9591.jpg" /><img src="http://www.amiclearpro.za.com/3Q0w3TeoN81MRq0UZedkS5eIxyUCceggKQPgfg4D9weLG9ka" /></a>
+<center>
+<div style="width:600px;font-family:trebuchet ms,helvetica,sans-serif;font-size:15px;">
+<hr style="border:solid 2px #ff0000" />
+<div style="height:30px;width:600px;background-color:#ff0000;color:#ffffff;text-align:right;padding:3px;font-size:18px;"><b>Tue, 14 May 2024 09:10:53 +0200</b></div>
+<br />
+<br />
+<a href="http://amiclearpro.za.com/YqQGsE-Lqr5uzidDQ3Ppgvrn_uK1__eLQlrCjJdNLJCSN7L9pA" http:="" microsoft.com="" rel="sponsored" target="blank"><img http:="" microsoft.com="" src="http://amiclearpro.za.com/2ae014710807bd26be.png" /></a>
+
+<p style="font-size:30px;">Your Membership has expired!</p>
+<a href="http://amiclearpro.za.com/YqQGsE-Lqr5uzidDQ3Ppgvrn_uK1__eLQlrCjJdNLJCSN7L9pA" http:="" microsoft.com="" rel="sponsored" target="blank"><img http:="" microsoft.com="" src="http://amiclearpro.za.com/b9a2c01a440e2763f2.png" /></a>
+
+<p style="font-size:20px;width:300px;"><b>Dear customer, Your Netflix account has expired</b></p>
+
+<p style="font-size:15px;width:400px;">But, as part of our loyalty program, you can now extend for 90 days for free.</p>
+
+<div style="width:200;height:35px;background-color:#ff0000;color:#ffffff;font-weight:600;padding:15px;border-radius:50px;font-size:25px;"><a href="http://amiclearpro.za.com/YqQGsE-Lqr5uzidDQ3Ppgvrn_uK1__eLQlrCjJdNLJCSN7L9pA" http:="" microsoft.com="" rel="sponsored" style="text-decoration:none;color:#ffffff;" target="blank">Extend For Free</a></div>
+
+<hr style="border:solid 2px #ff0000" /></div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<a href="http://amiclearpro.za.com/qRsGm4hlKCV8b71TmOYgu_plFeZW_KU8knzDyRZULje2dP30dA" http:="" microsoft.com="" rel="sponsored" target="blank"><img http:="" microsoft.com="" src="http://amiclearpro.za.com/140b36370d22861a26.png" /></a><br />
+<br />
+&nbsp;
+<div style="color:#FFFFFF;font-size:10px;">eveloped as a single-player experience. The question of the financial viability of single-player AAA games was raised following the closure of Visceral Games by Electronic Arts (EA) in October 2017. Visceral had been a studio that established itself on a strong narrative single-player focus with Dead Space, and had been working on a single-player, linear narrative Star Wars game at the time of the closure; EA announced following this that they would be taking the game in a different direction, specifically &quot;a broader experience that allows for more variety and player agency&quot;. Many commentators felt that EA made the change as they did not have confidence that a studio with an AAA-scale budget could produce a viable single-player game based on the popular Star Wars franchise. Alongside this, as well as relatively poor sales of games in the year prior that were principally AAA single-player games (Resident Evil 7, Prey, Dishonored 2, 
+ and Deus Ex: Mankind Divided) against financially successful multiplayer games and those offer a games-as-a-service model (Overwatch, Destiny 2, and Star Wars Battlefront 2), were indicators to many that the single-player model for AAA was waning. Manveer Heir, who had left EA after finishing his gameplay design work for Mass Effect Andromeda, acknowledged that the culture within EA was against the development of single-player games, and with Visceral&#39;s closure, &quot;that the linear single-player triple-A game at EA is dead for the time being&quot;. Bethesda on December 7, 2017, decided to collaborate with Lynda Carter to launch a Public Safety Announcement to save single-player gaming. A few years later in 2021, EA was reported to have revived interest in single-player games, following the successful launch of Star Wars Jedi: Fallen Order in 2020. The company still planned on releasing live service games with multiplayer components, but began evaluating its IP catalog for more
+  single-player titles to revive, such as a remake of the Dead Space franchise. Around the same time, head of Xbox Game Studios Phil Spencer said that they still see a place for narrative-driven single-player games even though the financial drivers of the market tended to be live service games. Spencer said that developing such games with AAA-scale budgets can be risky, but with availability of services like cloud gaming and subscription services, they can gauge audience reaction to these games early on and reduce the risk involved</div>
+<br />
+<br />
+<a href="http://amiclearpro.za.com/I7L1l77XXeQDgj1z-xj-pW4Qar5wrjhjXdbsc55Pf-Htqu0pUw" http:="" microsoft.com="" rel="sponsored" target="blank"><img http:="" microsoft.com="" src="http://amiclearpro.za.com/aaff6e47833ea2041d.png" /></a></center>
+</body>
+</html>
+
+--0c0d846889c01280df1ac2979d9a30ed_2260d_388b5--
+

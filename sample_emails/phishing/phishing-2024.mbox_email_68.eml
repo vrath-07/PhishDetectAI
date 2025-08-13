@@ -1,0 +1,175 @@
+Return-Path: cherylhfwbradfield453@gmail.com
+Delivered-To: jose@monkey.org
+X-FDA: 81848573478.02.925AE06
+Received: from mail-pl1-f172.google.com (mail-pl1-f172.google.com
+ [209.85.214.172])	by imf26.b.hostedemail.com (Postfix) with ESMTP id
+ 5A73818000C	for <jose@monkey.org>; Fri,  1 Mar 2024 13:37:58 +0000 (UTC)
+Authentication-Results: imf26.b.hostedemail.com;	dkim=pass header.d=gmail.com
+ header.s=20230601 header.b=hH6msWNF;	spf=pass (imf26.b.hostedemail.com:
+ domain of cherylhfwbradfield453@gmail.com designates 209.85.214.172 as
+ permitted sender) smtp.mailfrom=cherylhfwbradfield453@gmail.com;	dmarc=pass
+ (policy=none) header.from=gmail.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1709300278;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=B3NlXCag5JPqMDyKi+2dpmKb3lmYFNPv7bGme+ykbIo=;
+	b=nK53uVCw3CflkE5EpFNA0q4eeFxsF3lbkecy6clIEuBwFsc3PL1RrXZkwgQu2gpEg+JVPS
+	vJmLRcT+cBp6ahrK87AohbzcFxTSph0gXPf9IyfTzzy16YLdk6bep6PwJo9La3dZPPAy2e
+	ASvKC+4S4FmgsSnVkzqcBSBQtpXL/6I=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1709300278; a=rsa-sha256;
+	cv=none;
+	b=D/jGhX0jW7JpzUB92ow8V8W4MxwWcQtT6BvUOzakiBXrmjLSHdiDkuQ/Er3KhlMR+snjj/
+	m8OaGuzio4av27ADQKvgxAmHA0GasURFdKOfJhXbfmJCrvMxNWO4kgQMfp1L0uFuQEyURM
+	SpuGdWIAgcr/fA0rvVAGJSSNOQWwHnc=
+ARC-Authentication-Results: i=1;	imf26.b.hostedemail.com;	dkim=pass
+ header.d=gmail.com header.s=20230601 header.b=hH6msWNF;	spf=pass
+ (imf26.b.hostedemail.com: domain of cherylhfwbradfield453@gmail.com
+ designates 209.85.214.172 as permitted sender)
+ smtp.mailfrom=cherylhfwbradfield453@gmail.com;	dmarc=pass (policy=none)
+ header.from=gmail.com
+Received: by mail-pl1-f172.google.com with SMTP id
+ d9443c01a7336-1dcd0431f00so15574855ad.3        for <jose@monkey.org>; Fri, 01
+ Mar 2024 05:37:58 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1709300277; x=1709905077; darn=monkey.org;
+        h=date:mime-version:to:subject:from:message-id:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=B3NlXCag5JPqMDyKi+2dpmKb3lmYFNPv7bGme+ykbIo=;
+        b=hH6msWNFY/3EuvSnLkP5gvvWFxaB5bOThJdhQ4IGjvFotS8LTRo8EMJNOfPYSWu9sT
+         /2D3TCdZ7dKHpOu73PvSB1LaB4MgEaV2ZeMEiEXrHVTYM4QfynHmfxmvXIFsaCkz5LwF
+         gBA2KgBTwhJmJK+nT/1V8MLwqdMQgmUJrbjO7SXDHPelfE8C8uqInMHqr331khEUOrf6
+         0ASZzp7KzbJDnC3s7YEKFARhD/At5D4pzzgyXJ8Dy8fNggAqJ3SnVhJrrwbf97PVIDqX
+         pJFS4Sh84IxkNceJfPmgev6pIKCHioaiKrXjwdksy1iqYenyPtMR+3CrCofAZFxxamio
+         H/ZA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1709300277; x=1709905077;
+        h=date:mime-version:to:subject:from:message-id:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=B3NlXCag5JPqMDyKi+2dpmKb3lmYFNPv7bGme+ykbIo=;
+        b=ag3Djq7fpKxixZGmEXFn3CatP5/vSMZUA/KbDuP+LDa6fDzDKbfpcX5qWJelPHfNsH
+         w2fo3qGus8AzkQKTqPaUSCGgXsJKzRiSHVIlvfpbaxdCqwisWZFLZOZB8b84y0LFZ7Vo
+         xruUWcVaQ0gpm2/yd7XgRLBBUo3G9/kEe6vmkpQiRxnqCmQozsl1LHd3eRJcxQBisaLy
+         amnKJN6IRGHSlYPex6IzgNz3M3VJm+aoAQjYc1vJF9mEpcoa70TICMdo41idFQGKLQDd
+         0AAVQsMsQy9Djow/ar4EVB9RV7mXYZU0KHLLkDDriRO7NtE/gUY8fbwWRPMmTS7Jmvhw
+         8wLg==
+X-Gm-Message-State: AOJu0YzEOlyp05PylPN8Hb0c/gcne3/51SnHTUW7n16gYKAJEQOuGakw
+	LoM6PQNNajzr5Knc7M99jCvAyI22D2hYA623P44BcG+JVsrkAaMSHiowZITzSpx3AsU+gjs=
+X-Google-Smtp-Source: =?utf-8?q?AGHT+IFxmv9Lad8X4L/ZZLHnWo37XqSQranviQHO1vds?=
+ =?utf-8?q?D8aYCXwX8jZuGe16TOA1q4lNDDu5Sn712A=3D=3D?=
+X-Received: by 2002:a17:902:ccc2:b0:1db:c6a0:288b with SMTP id
+ z2-20020a170902ccc200b001dbc6a0288bmr1806287ple.7.1709300277215;        Fri,
+ 01 Mar 2024 05:37:57 -0800 (PST)
+Received: from 193.203.14.212 ([194.156.224.89])        by smtp.gmail.com with
+ ESMTPSA id
+ u12-20020a170902b28c00b001dc94fde843sm3404096plr.177.2024.03.01.05.37.54
+        for <jose@monkey.org>        (version=TLS1_2
+ cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);        Fri, 01 Mar 2024
+ 05:37:57 -0800 (PST)
+Message-ID: <65e1da35.170a0220.46466.e831@mx.google.com>
+From: "Francis M. Brown" <cherylhfwbradfield453@gmail.com>
+Subject: PayPal Billing Service 6428
+To: "jose" <jose@monkey.org>
+Content-Type: multipart/alternative;
+ boundary="ukns8lYaQq0IjsyzWa27mSNFLW3xx=_rSM"
+MIME-Version: 1.0
+Date: Fri, 1 Mar 2024 05:37:56 -0800
+X-Rspamd-Server: rspam06
+X-Rspamd-Queue-Id: 5A73818000C
+X-Stat-Signature: jnqpr9jx8cm57m4e8ezxbofrn1hghzq6
+X-Rspam-User: 
+X-Spam-Status: No, score=3.30
+X-HE-Tag: 1709300278-644737
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+2PaeAsw0WNLEXOhFNk95sc7Xl1cBLySH221hh3BgaCtK?=
+ =?utf-8?q?vyxZmY4NIm9FWyAwDk77IUi6Ta2ZZme988/IxJhH1hgYLv9yVel+Yhv0zzXUIeFDj?=
+ =?utf-8?q?G1SbrZlNWavOB4CKTz+UUJppqyiU/Xo4RXkKmq0UvG316p7NanXWWYmpgLg/L1SCH?=
+ =?utf-8?q?q6j9bw8YGNhTpk8nU5hk2xWHvcCfJTG2eBIi9OF2bMSeGufhh0=3D?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 68
+
+This is a multi-part message in MIME format
+
+--ukns8lYaQq0IjsyzWa27mSNFLW3xx=_rSM
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+Dear Customer, jose@monkey.org
+
+You have successfully made a transaction for your Bitcoin (BTC) Using =
+PayPal, you Charged the amount mentioned in the Invoice. This transact=
+ion may take 12 hours to appear in your Bank Statement.
+
+Your Invoice Details:
+Date: March 01, 2024
+Product Name : Bitcoin (BTC)
+Qty : 0.011 BTC
+Invoice No : CSGRICJPQY
+Order No : LGS4IBGLM2Q
+Trade ID : 415198
+Total : $685.00
+Please Note :
+If you do not authorized this charge, you have 24 hours. To cancel and=
+ receive an immediate refund of your transaction, please contact our C=
+ustomer Care on : +1 (818) 284-4559.
+
+Regards,
+Francis M. Brown
+Help line @ +1 (818) 284-4559
+
+
+--ukns8lYaQq0IjsyzWa27mSNFLW3xx=_rSM
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-=
+8">
+</head>
+<body>Dear Customer, jose@monkey.org<br><br>You have successfully made=
+ a transaction for your Bitcoin (BTC) Using PayPal, you Charged the am=
+ount mentioned in the Invoice. This transaction may take 12 hours to a=
+ppear in your Bank Statement.<br><br><font size=3D"4">Your Invoice Det=
+ails:</font><br aria-hidden=3D"true">Date: March 01, 2024<br>Product N=
+ame&nbsp;: Bitcoin (BTC)<br aria-hidden=3D"true">Qty : 0.011 BTC<br ar=
+ia-hidden=3D"true">Invoice No : EWLNGLGL19<br aria-hidden=3D"true">Ord=
+er No : UEKI3Q4CMKQ<br aria-hidden=3D"true">Trade ID :&nbsp;801285<br =
+aria-hidden=3D"true">Total&nbsp;: $685.00<p style=3D"color: rgb(36, 36=
+, 36); text-transform: none; text-indent: 0px; letter-spacing: normal;=
+ font-size: 15px; font-style: normal; font-weight: 400; word-spacing: =
+0px; white-space: normal; orphans: 2; widows: 2; background-color: rgb=
+(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: no=
+rmal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initi=
+al; text-decoration-style: initial; text-decoration-color: initial;"><=
+font size=3D"4">Please Note :</font><br aria-hidden=3D"true">If you do=
+ not authorized this charge, you have 24&nbsp;hours. To cancel and rec=
+eive an immediate refund of your transaction, please contact our Custo=
+mer Care on : +1 (818) 284-4559.</p><p style=3D"color: rgb(36, 36, 36)=
+; text-transform: none; text-indent: 0px; letter-spacing: normal; font=
+-size: 15px; font-style: normal; font-weight: 400; word-spacing: 0px; =
+white-space: normal; orphans: 2; widows: 2; background-color: rgb(255,=
+ 255, 255); font-variant-ligatures: normal; font-variant-caps: normal;=
+ -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; t=
+ext-decoration-style: initial; text-decoration-color: initial;"><font =
+face=3D"Nirmala UI"><font face=3D"Microsoft JhengHei"><font face=3D"Ti=
+mes New Roman">Regards,<br aria-hidden=3D"true">Francis M. Brown<br ar=
+ia-hidden=3D"true">Help line @&nbsp;<font color=3D"#0000ff" size=3D"4"=
+>+1 (818) 284-4559</font><font color=3D"#0000ff" size=3D"4"></font><fo=
+nt color=3D"#0000ff" size=3D"4"></font><font size=3D"4"></font><font c=
+olor=3D"#0000ff" size=3D"4"></font><font color=3D"#0000ff" size=3D"4">=
+</font><font color=3D"#0000ff" size=3D"4"></font><font color=3D"#0000f=
+f" size=3D"4"></font><font color=3D"#0000ff" size=3D"4"></font><font c=
+olor=3D"#0000ff" size=3D"4"></font><font color=3D"#0000ff" size=3D"4">=
+</font><font color=3D"#0000ff" size=3D"4"></font><font color=3D"#0000f=
+f" size=3D"4"></font><font color=3D"#0000ff" size=3D"4"></font><font c=
+olor=3D"#0000ff" size=3D"4"></font><font color=3D"#0000ff" size=3D"4">=
+</font></font></font></font></p></body></html>
+
+
+--ukns8lYaQq0IjsyzWa27mSNFLW3xx=_rSM--
+
+

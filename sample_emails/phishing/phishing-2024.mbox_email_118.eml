@@ -1,0 +1,196 @@
+Return-Path: =?utf-8?q?3aAgjZhQKCj0cqhud-rgZqdr-mnqdokxfnnfkd=2Ebnlinrd+khmj?=
+ =?utf-8?q?0lnmjdx=2Enqf=40doclist=2Ebounces=2Egoogle=2Ecom?=
+Delivered-To: jose+link1@monkey.org
+X-FDA: 82027983534.16.C633C5E
+Received: from mail-qv1-f69.google.com (mail-qv1-f69.google.com
+ [209.85.219.69])	by imf22.b.hostedemail.com (Postfix) with ESMTP id
+ 770F1160008	for <jose+link1@monkey.org>; Sat, 20 Apr 2024 00:12:25 +0000
+ (UTC)
+Authentication-Results: imf22.b.hostedemail.com;	dkim=pass header.d=google.com
+ header.s=20230601 header.b=PZKK0vaf;	spf=pass (imf22.b.hostedemail.com:
+ domain of =?utf-8?q?3aAgjZhQKCj0cqhud-rgZqdr-mnqdokxfnnfkd=2Ebnlinrd+khmj0l?=
+ =?utf-8?q?nmjdx=2Enqf=40doclist=2Ebounces=2Egoogle=2Ecom?= designates
+ 209.85.219.69 as permitted sender) =?utf-8?q?smtp=2Emailfrom=3D3aAgjZhQKCj0?=
+ =?utf-8?q?cqhud-rgZqdr-mnqdokxfnnfkd=2Ebnlinrd+khmj0lnmjdx=2Enqf=40doclist?=
+ =?utf-8?q?=2Ebounces=2Egoogle=2Ecom=3B?=	dmarc=pass (policy=reject)
+ header.from=google.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1713571945; a=rsa-sha256;
+	cv=none;
+	b=UL2EbcLOifnnsFxw1AQ8DivkYaliGMGRLeklanUKoTp9uV18OX8T2DhHcbLTsr0+M361Zg
+	Ix60F3/7jNdaU6W4cornLPHFm6MVM9sm7zC2ijqW1ZbbHtfyrijlkI7euiUUtYGYH5++sz
+	oqyyL0VRRuYCc/4DPiy73p2Fm0NaARk=
+ARC-Authentication-Results: i=1;	imf22.b.hostedemail.com;	dkim=pass
+ header.d=google.com header.s=20230601 header.b=PZKK0vaf;	spf=pass
+ (imf22.b.hostedemail.com: domain of =?utf-8?q?3aAgjZhQKCj0cqhud-rgZqdr-mnqd?=
+ =?utf-8?q?okxfnnfkd=2Ebnlinrd+khmj0lnmjdx=2Enqf=40doclist=2Ebounces=2Egoogl?=
+ =?utf-8?q?e=2Ecom_designates_209=2E85=2E219=2E69_as_permitted_sender=29_smt?=
+ =?utf-8?q?p=2Emailfrom=3D3aAgjZhQKCj0cqhud-rgZqdr-mnqdokxfnnfkd=2Ebnlinrd+k?=
+ =?utf-8?q?hmj0lnmjdx=2Enqf=40doclist=2Ebounces=2Egoogle=2Ecom=3B?=	dmarc=pass
+ (policy=reject) header.from=google.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1713571945;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:references:dkim-signature;
+	bh=FUvUAOgYxUwKSguDrTTRdNngxk2uitjEQl2rtltFHqg=;
+	b=FICYz2HJYZN3ewvGK4/B1ilrIzdpYGa6BMWEgupkNB9+KGUu2otDlxspNUf8CPkIh1sYzJ
+	jDf5DU/aqHuG8+PeZfTGzCDCMWUb296an7kqndmjTu+QlQu1vfkhLmNbkk60AwpcEpjq1w
+	GX04Sc3Lq21g46qerQtGPF/srNOZdtw=
+Received: by mail-qv1-f69.google.com with SMTP id
+ 6a1803df08f44-6a050ad456fso59969126d6.1        for <jose+link1@monkey.org>;
+ Fri, 19 Apr 2024 17:12:25 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20230601; t=1713571944; x=1714176744; darn=monkey.org;
+        h=cc:to:from:subject:date:message-id:references:reply-to:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=FUvUAOgYxUwKSguDrTTRdNngxk2uitjEQl2rtltFHqg=;
+        b=PZKK0vafH9FCDefN5GbDNcA8kDasAGu/zMqKU6h+XUcLEW35xTz/ADUCqU/lgMas92
+         6NzOScDbVE15rhVlpgIN69MTIlrptwwLchI6X8ZEf/OvkWVdaayAqTLEqC1N1zfY3QeE
+         e29fkrLXkKm1YrgDfN4WWGGPBkr47usC5MLL9kftL2N6mfcZIktYE1C8zpudTtn4Q7zr
+         Y+7MliccA9ziV6xdc+JHQgf9cxHiGma8NGZ9CQWp49OjV9SuWEoum0jwbZ7ebMNWUEzP
+         XoMRmsSkWTSNSZh5ErMoPg6Wp8isKK4ccK6Ap1+frf/Ejh0gKBTCHDYHjKafj62YD/ki
+         wRpQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1713571944; x=1714176744;
+        h=cc:to:from:subject:date:message-id:references:reply-to:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=FUvUAOgYxUwKSguDrTTRdNngxk2uitjEQl2rtltFHqg=;
+        b=H224gyeetDbmN0WcXGOeMT4XymGU8+qMQMy1KTNUh27DsjgIkrMf9D7OKLd+MdgQYv
+         v14ztHyiw5qSNxf5j8jzdlCcR0Ks8ZEJkYbrVFtDuep7AyF0iG6vaaC6oa1RC6UWha6Q
+         OJSxQzdsC4LUVfTNDvl5F6JWLjm9kw6P0FAMADFN3x04vuU7lCy2DMHNuojORKNQTjFG
+         0boGDX4fCoPLk0QST5AihSO7ALl0+ssjjiXg8+uXW8KS3PwE7ifTu8aBJg3+clIql6Xr
+         WJ0c246Cta+gI924tacNiQ8b4fLSLBxwM1gJokP7TGYH1rvwQXt9dhDkRAS4/f99k84f
+         y6sw==
+X-Gm-Message-State: AOJu0Yz/xV4XSdIGGZnb4DIrrToWW24SBZqEsy6R4+gYo+MClwKir36T
+	tJ1Y7xGM0c8hzD+g6K2uZUEG+HhrFEf+2fz6BeRjGgH7s8Pi94rsAGJfX2akevoilcRu9rPEa2E
+	P19Tz+dGZV3GfnuRfG+VrB67b
+X-Google-Smtp-Source: =?utf-8?q?AGHT+IEFBb0kZyPFPzzDh8doAi7IZ7Nz3S+Kiwf3PcLE?=
+ =?utf-8?q?guv5gOCvIeGae/KzaSk3KVNJqpbYcR/FlOZunCE=3D?=
+MIME-Version: 1.0
+X-Received: by 2002:a0c:c590:0:b0:699:2527:9843 with SMTP id
+ a16-20020a0cc590000000b0069925279843mr6862672qvj.5.1713571944566; Fri, 19 Apr
+ 2024 17:12:24 -0700 (PDT)
+Reply-To: WellsFargo Bank Review <downdecongai2001@authentic-accessalert.com>
+X-No-Auto-Attachment: 1
+References: <142aaa75-5e9b-4ada-9eba-44605b9457fb@docs-share.google.com>
+Message-ID: <autogen-java-052c67f8-dca8-4f4c-8e6e-8a1ba447d39d@google.com>
+Date: Sat, 20 Apr 2024 00:12:24 +0000
+Subject: Item shared with you: "Collaborative Security: Your Role in
+ Preventing Unauthorized Access"
+From:
+ "WellsFargo Bank Review (via Google Drive)" <drive-shares-noreply@google.com>
+To: jose+link1@monkey.org
+Cc: lmg58+link1@earthlink.net, tannerb1346+link1@gmail.com, 
+	tammypeyton+link1@charter.net, iopsychology2438+link1@gmail.com, 
+	MINI-3+link1@LIVE.COM
+Content-Type: multipart/alternative; boundary="0000000000000da6f106167c0fc4"
+X-Stat-Signature: pt3kj7aro48ifo8emba986aw1ie3ghbc
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 770F1160008
+X-Rspamd-Server: rspam02
+X-Spam-Status: No, score=2.60
+X-HE-Tag: 1713571945-880388
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18or2jXuNC4W1LS2aUr2yFlOFZE8lNYN3GL08+hNquPd5u?=
+ =?utf-8?q?t2lAvAeBywG5CdwzvmxYmfpeHmmpjYc/Nsowr0m9F4WdhrjgFleda0Kc6EQADq4nd?=
+ =?utf-8?q?DhjPUnM0HU6zBjk7Dpty+I6iAFcsdfSp8HIRCDXAe3bivrs3NDGtCE0H1LYFrqd2g?=
+ =?utf-8?q?p17UJrDvMhuviHIHqhdu1vlpDmIAGt3GHF7IUQJComrNKB0dz4B2oX2H5G6Oni8gU?=
+ =?utf-8?q?vhJOFSyb/zD1azGZUN7kczghZtUR2cKsKQkrddGxNfdVMHsTdQR3tInSgskwJbgxv?=
+ =?utf-8?q?AhIyM?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 118
+
+--0000000000000da6f106167c0fc4
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+
+I've shared an item with you:
+
+Collaborative Security: Your Role in Preventing Unauthorized Access
+https://drive.google.com/file/d/1JGsx-u4EoRJR2KOA9N1o1kBnwzBjK1Ed/view?usp=sharing&ts=66230868
+
+It's not an attachment -- it's stored online. To open this item, just click  
+the link above.
+
+--0000000000000da6f106167c0fc4
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head></head><body><table style=3D"border-collapse: collapse; width: =
+100%; background-color: white; text-align: center;" role=3D"presentation"><=
+tr><td style=3D"padding: 24px 0 16px 0;"><table style=3D"border-collapse: c=
+ollapse;font-family: Roboto, Arial, Helvetica, sans-serif;hyphens: auto; ov=
+erflow-wrap: break-word; word-wrap: break-word; word-break: break-word;widt=
+h: 90%; margin: auto;max-width: 700px;min-width: 280px; text-align: left;" =
+role=3D"presentation"><tr><td style=3D"padding: 0;"><table style=3D"width:1=
+00%; border: 1px solid #dadce0; border-radius: 8px; border-spacing: 0; tabl=
+e-layout:fixed; border-collapse: separate;" role=3D"presentation"><tr><td s=
+tyle=3D"padding: 4.5%;" dir=3D"ltr"><div style=3D"margin-bottom:32px;font-f=
+amily: Google Sans, Roboto, Arial, Helvetica, sans-serif; font-style: norma=
+l; font-size: 28px; line-height: 36px; color: #3c4043;">WellsFargo Bank Rev=
+iew shared an item</div><table style=3D"border-collapse: collapse;font-fami=
+ly: Roboto, Arial, Helvetica, sans-serif; font-size:16px; line-height:24px;=
+ color:#202124; letter-spacing:0.1px; table-layout:fixed; width:100%; overf=
+low-wrap: break-word;" role=3D"presentation"><tr><td style=3D"padding: 0; v=
+ertical-align:top; width:50px;"><!--[if mso]><v:oval xmlns:v=3D"urn:schemas=
+-microsoft-com:vml" xmlns:w=3D"urn:schemas-microsoft-com:office:word" style=
+=3D"height:50px;width:50px;" fill=3D"t" stroke=3D"f"><v:fill type=3D"frame"=
+ src=3D"https://lh3.googleusercontent.com/a/ACg8ocKkVjzyORNbTJXLykFyn0zQ-OA=
+EGl6J1qBPIcMdMILKMJjWiw=3Ds64" alt=3D"Header profile photo" style=3D"height=
+:50px;width:50px;"/></v:oval><![endif]--><div style=3D"mso-hide:all;"><img =
+style=3D"border-radius:50%; display:block;" width=3D"50" height=3D"50" src=
+=3D"https://lh3.googleusercontent.com/a/ACg8ocKkVjzyORNbTJXLykFyn0zQ-OAEGl6=
+J1qBPIcMdMILKMJjWiw=3Ds64" alt=3D"Header profile photo"></div></td><td styl=
+e=3D"padding: 0; vertical-align:top; padding-left:12px;"><div style=3D"padd=
+ing-top:12px;">WellsFargo Bank Review (<a href=3D"mailto:downdecongai2001@a=
+uthentic-accessalert.com" style=3D"color:inherit;text-decoration:none">down=
+decongai2001@authentic-accessalert.com</a>) has shared the following item:<=
+/div></td></tr></table><table style=3D"border-spacing:0 4px; table-layout:f=
+ixed; width:100%; overflow-wrap: break-word;" role=3D"presentation"><tr sty=
+le=3D"height:28px;"></tr><tr><td style=3D"padding: 0;"><a href=3D"https://d=
+rive.google.com/file/d/1JGsx-u4EoRJR2KOA9N1o1kBnwzBjK1Ed/view?usp=3Dsharing=
+_eil_m&amp;ts=3D66230868" target=3D"_blank" style=3D"color: #3c4043; displa=
+y: inline-block; max-width: 100%; text-decoration: none; vertical-align: to=
+p;border: 1px solid #DADCE0; border-radius: 16px; white-space: nowrap;"><di=
+v style=3D"line-height: 18px; overflow: hidden; text-overflow: ellipsis;pad=
+ding: 6px 12px;"><span style=3D"display: inline-block; vertical-align: top;=
+ min-width: 26px; width: 26px;"><img src=3D"https://ssl.gstatic.com/docs/do=
+clist/images/mediatype/icon_3_pdf_x64.png" width=3D"18" height=3D"18" style=
+=3D"vertical-align: top;" role=3D"presentation"></span><span style=3D"font:=
+ 500 14px/18px Google Sans, Roboto, Arial, Helvetica, sans-serif; display: =
+inline; letter-spacing: 0.2px;">Collaborative Security: Your Role in Preven=
+ting Unauthorized Access</span></div></a></td></tr></table><table style=3D"=
+border-collapse: collapse;" role=3D"presentation"><tr style=3D"height: 32px=
+"><td></td></tr></table><div><!--[if mso]><v:roundrect xmlns:v=3D"urn:schem=
+as-microsoft-com:vml" xmlns:w=3D"urn:schemas-microsoft-com:office:word" hre=
+f=3D"https://drive.google.com/file/d/1JGsx-u4EoRJR2KOA9N1o1kBnwzBjK1Ed/view=
+?usp=3Dsharing_eip_m&amp;ts=3D66230868" style=3D"height:36px; width:100px; =
+v-text-anchor:middle;" arcsize=3D"50%" stroke=3D"f" fillcolor=3D"#1a73e8"><=
+w:anchorlock/><center style=3D"color:#ffffff;font-family:Arial,Helvetica,sa=
+ns-serif;font-weight:500;font-size:14px;">Open </center></v:roundrect><![en=
+dif]--><a href=3D"https://drive.google.com/file/d/1JGsx-u4EoRJR2KOA9N1o1kBn=
+wzBjK1Ed/view?usp=3Dsharing_eip_m&amp;ts=3D66230868" class=3D"material-butt=
+on material-button-filled" target=3D"_blank" tabindex=3D"0" role=3D"button"=
+ style=3D"mso-hide:all;padding: 0 24px;font: 500 14px/36px Google Sans, Rob=
+oto, Arial, Helvetica, sans-serif; border: none; border-radius: 18px; box-s=
+izing: border-box; display: inline-block; letter-spacing: .25px; min-height=
+: 36px; text-align: center; text-decoration: none;background-color: #1a73e8=
+; color: #fff; cursor: pointer;">Open</a></div></td></tr></table><table sty=
+le=3D"border-collapse: collapse; width: 100%;" role=3D"presentation"><tr><t=
+d style=3D"padding: 24px 4.5%"><table style=3D"border-collapse: collapse; w=
+idth: 100%;" dir=3D"ltr"><tr><td style=3D"padding: 0;font-family: Roboto, A=
+rial, Helvetica, sans-serif; color: #5F6368; width: 100%; font-size: 12px; =
+line-height: 16px; min-height: 40px; letter-spacing: .3px;">Google LLC, 160=
+0 Amphitheatre Parkway, Mountain View, CA 94043, USA<br/> You have received=
+ this email because <a href=3D"mailto:downdecongai2001@authentic-accessaler=
+t.com" style=3D"color:inherit;text-decoration:none">downdecongai2001@authen=
+tic-accessalert.com</a> shared a file or folder located in Google Drive wit=
+h you.</td><td style=3D"padding: 0;padding-left: 20px; min-width: 96px"><a =
+href=3D"https://workspace.google.com/" target=3D"_blank" style=3D"text-deco=
+ration: none"><img src=3D"https://www.gstatic.com/docs/documents/share/imag=
+es/googleworkspace_logo_192x80.png" width=3D"96" height=3D"40" alt=3D"Googl=
+e" style=3D"font-size:16px;font-weight:500;color:#5F6368"></a></td></tr></t=
+able></td></tr></table></td></tr></table></td></tr></table></body></html>
+--0000000000000da6f106167c0fc4--
+

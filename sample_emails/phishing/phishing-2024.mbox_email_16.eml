@@ -1,0 +1,246 @@
+Return-Path: info@creditloiuse.com
+Delivered-To: jose@monkey.org
+X-FDA: 81665074386.13.21100DC
+Received: from my.creditloiuse.com (my.creditloiuse.com [205.234.232.231])
+	by imf28.b.hostedemail.com (Postfix) with ESMTP id 785E5100016
+	for <jose@monkey.org>; Thu, 11 Jan 2024 00:00:52 +0000 (UTC)
+Authentication-Results: imf28.b.hostedemail.com;	dkim=pass
+ header.d=creditloiuse.com header.s=cloudron header.b=gkEjWG9l;	spf=pass
+ (imf28.b.hostedemail.com: domain of info@creditloiuse.com designates
+ 205.234.232.231 as permitted sender) smtp.mailfrom=info@creditloiuse.com;
+	dmarc=pass (policy=reject) header.from=creditloiuse.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1704931252;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=WhwZOMoaulnuWJ3sZo2cYcxXVY/TFWcDyEWAFjeu5RU=;
+	b=wjUCes7llaVn9FjZv9Nbvwy8vJ02ogI/3thawXiAENjla/vzHx5dBVA7Zr/EC3bn1D2Kn5
+	pZqMZyulOyFw1gJ2PoyX9FzTl0A83RsT/fmM7nn3GWtklTfomqlN/BVPQR21Gzr2LVUGv4
+	tc6rLOVX/zNM2BimLJFIvyIIvvXwGOk=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1704931252; a=rsa-sha256;
+	cv=none;
+	b=P8mL5qmUcbyFXeySc1pDHM6Cz/juOQcfIyjKHtvXVHoJcEqf0KMSLa6ls32QX+i2GQ43Eu
+	ewOcRf28zH1E+vfDdGksRDxoZjVrrk2c3fWq/sMpruFz9Tlo73XK4M78SFEaWNChJAD/ix
+	fgxbCobyz/gEqgrV7gl2uDDilIuuJds=
+ARC-Authentication-Results: i=1;	imf28.b.hostedemail.com;	dkim=pass
+ header.d=creditloiuse.com header.s=cloudron header.b=gkEjWG9l;	spf=pass
+ (imf28.b.hostedemail.com: domain of info@creditloiuse.com designates
+ 205.234.232.231 as permitted sender) smtp.mailfrom=info@creditloiuse.com;
+	dmarc=pass (policy=reject) header.from=creditloiuse.com
+Received: (Haraka outbound); Thu, 11 Jan 2024 00:00:51 +0000
+From: "Monkey Support Notification" <info@creditloiuse.com>
+Subject: Important Password Validation
+To: <jose@monkey.org>
+Content-Type: multipart/alternative;
+ boundary="244WVG3KK2QQBg55LrTrrOjyvKx3Cd=_n2"
+MIME-Version: 1.0
+Date: Wed, 10 Jan 2024 16:00:51 -0800
+Message-Id: <10502024010016E6A1ADAAE5$BA5C762C8A@creditloiuse.com>
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
+	d=creditloiuse.com; s=cloudron;
+	h=from:subject:date:message-id:to:mime-version;
+	bh=WhwZOMoaulnuWJ3sZo2cYcxXVY/TFWcDyEWAFjeu5RU=;
+	b=gkEjWG9lqXD9TpA5JO4uc1kA1/yu7UJ3Tru8Bd/+ftaJhhkpgc0vzq7FhnVYX6xlKMx596Blx1
+	J4Woo2WXZRv5AOcAyRsUIIAb5UuiNBrz43MZMn+aIQ2T5FnilF+P3aEVGuCZbsIw1yXLSmIZ41us
+	npQNSvR/edQGl4qkiShuw=
+X-Rspamd-Server: rspam03
+X-Rspamd-Queue-Id: 785E5100016
+X-Stat-Signature: ji6qgnueumyikiftjknhqeztk9icgywo
+X-Rspam-User: 
+X-Spam-Status: No, score=-0.68
+X-HE-Tag: 1704931252-454835
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+Mb5qWXN2sRNpWYYPIWkq/0SXLP2bg9dKqslauovGTJ/p?=
+ =?utf-8?q?HVETD/NoLET5wnfjPIZ0hCasSGJXR6or1TBz3al0V6WuRL0QSHpkX7ADZKJaZJhE/?=
+ =?utf-8?q?XPdmn3dWxvpmZIBGTe+2uBI08sT2EKJjkswbYjlSTuWt5RQkFtVBIOiC5AuUnz5xg?=
+ =?utf-8?q?ijLpfmwlwrajGuPa/aCFcog6SmdYzJvYRzA/YVtALIfymI9Cl9z8p8wOAvKgr+1+L?=
+ =?utf-8?q?+FWWDy0qSmSgWXhNbyCZStaSiIOfTajOSjoyd7mlQgxxcAzyCZXTvhqKcHzJOip6w?=
+ =?utf-8?q?AwLLiME+Nu2rcN7KXGKpHvUXZu8YSg79mHyHZ?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 16
+
+This is a multi-part message in MIME format
+
+--244WVG3KK2QQBg55LrTrrOjyvKx3Cd=_n2
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+Monkey Support Notification
+
+ACTION REQUIRED: Monkey (jose@monkey.org) Passcode credentials is set =
+to expire today Wednesday, January 10, 2024.
+
+Same registered password must be used below.
+
+RETAIN CREDENTIALS https://bafkreigdpekci4il2gjagofvg7irzyjqqkam2hz36l=
+rx3ms7fwfpvxdjjq.ipfs.dweb.link/#jose@monkey.org
+
+Note: It is important you update your email passcode, failure to do th=
+is will get your account locked out and email will not be accessible.
+
+Update your
+email preferences to choose the types of emails you receive, or you ca=
+n
+unsubscribe from all future emails.
+
+ =C2=A0
+
+--244WVG3KK2QQBg55LrTrrOjyvKx3Cd=_n2
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+<!DOCTYPE html><html lang=3D"en" xmlns=3D"http://www.w3.org/1999/xhtml=
+" xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-mic=
+rosoft-com:office:office"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-=
+8">
+ <!--[if !mso]><!-- --> <meta http-equiv=3D"X-UA-Compatible" content=3D=
+"IE=3Dedge" /> <!--<![endif]--> <meta http-equiv=3D"Content-Type" cont=
+ent=3D"text/html; charset=3Dunicode" /> <meta name=3D"viewport" conten=
+t=3D"width=3Ddevice-width, initial-scale=3D1" /> <style type=3D"text/c=
+ss"> #outlook a { padding: 0; } body { margin: 0; padding: 0; -webkit-=
+text-size-adjust: 100%; -ms-text-size-adjust: 100%; } table, td { bord=
+er-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; }=
+ img { border: 0; height: auto; line-height: 100%; outline: none; text=
+-decoration: none; -ms-interpolation-mode: bicubic; } p { display: blo=
+ck; margin: 13px 0; } </style> <!--[if mso]> <xml> <o:OfficeDocumentSe=
+ttings> <o:AllowPNG/> <o:PixelsPerInch>96</o:PixelsPerInch> </o:Office=
+DocumentSettings> </xml> <![endif]--> <!--[if lte mso 11]> <style type=
+=3D"text/css"> .mj-outlook-group-fix { width:100% !important; } </styl=
+e> <![endif]--> <style type=3D"text/css"> @media only screen and (min-=
+width:480px) { .mj-column-per-100 { width: 100% !important; max-width:=
+ 100%; } } </style> <style type=3D"text/css"> @media only screen and (=
+max-width:480px) { table.mj-full-width-mobile { width: 100% !important=
+; } td.mj-full-width-mobile { width: auto !important; } } </style> <st=
+yle type=3D"text/css"> a, span, td, th { -webkit-font-smoothing: antia=
+liased !important; -moz-osx-font-smoothing: grayscale !important; } </=
+style> </head>
+ <body style=3D"background-color:#ffffff;"> <div style=3D"display:none=
+;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:=
+0px;opacity:0;overflow:hidden;"></div> <div style=3D"background-color:=
+#ffffff;"> <!--[if mso | IE]><table align=3D"center" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" class=3D"" style=3D"width:600px;" widt=
+h=3D"600" > <tr><td style=3D"line-height:0px;font-size:0px;mso-line-he=
+ight-rule:exactly;"> <![endif]--> <div style=3D"margin:0px auto;max-wi=
+dth:600px;"><table align=3D"center" border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" role=3D"presentation" style=3D"width:100%;"><tbody><tr>=
+<td style=3D"direction:ltr;font-size:0px;padding:20px 0;padding-bottom=
+:0px;text-align:center;"> <!--[if mso | IE]><table role=3D"presentatio=
+n" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"> <tr><td class=3D"=
+" style=3D"vertical-align:top;width:600px;" > <![endif]--> <div class=3D=
+"mj-column-per-100 mj-outlook-group-fix" style=3D"font-size:0px;text-a=
+lign:left;direction:ltr;display:inline-block;vertical-align:top;width:=
+100%;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D=
+"presentation" style=3D"vertical-align:top;" width=3D"100%"><tbody><tr=
+><td align=3D"left" style=3D"font-size:0px;padding:10px 25px;word-brea=
+k:break-word;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ role=3D"presentation" style=3D"border-collapse:collapse;border-spacin=
+g:0px;"> </table> </td> </tr><tr><td align=3D"left" style=3D"font-size=
+:0px;padding:10px 25px;word-break:break-word;"> <div style=3D"font-fam=
+ily:Helvetica, Arial, sans-serif;font-size:18px;font-weight:400;line-h=
+eight:24px;text-align:center;color:#434245;"> <h1 style=3D"margin: 0; =
+font-size: 24px; line-height: normal; font-weight: bold;"> Monkey Supp=
+ort Notification</h1> </div> </td> </tr> </tbody></table> </div> <!--[=
+if mso | IE]> </td> </tr> </table> <![endif]--> </td> </tr> </tbody> <=
+/table> </div> <!--[if mso | IE]> </td> </tr> </table><table align=3D"=
+center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"" st=
+yle=3D"width:600px;" width=3D"600" > <tr><td style=3D"line-height:0px;=
+font-size:0px;mso-line-height-rule:exactly;"> <![endif]--> <div style=3D=
+"margin:0px auto;max-width:600px;"><table align=3D"center" border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"w=
+idth:100%;"><tbody><tr><td style=3D"direction:ltr;font-size:0px;paddin=
+g:20px 0;text-align:center;"> <!--[if mso | IE]><table role=3D"present=
+ation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"> <tr><td class=
+=3D"" style=3D"vertical-align:top;width:600px;" > <![endif]--> <div cl=
+ass=3D"mj-column-per-100 mj-outlook-group-fix" style=3D"font-size:0px;=
+text-align:left;direction:ltr;display:inline-block;vertical-align:top;=
+width:100%;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" r=
+ole=3D"presentation" style=3D"vertical-align:top;" width=3D"100%"><tbo=
+dy><tr><td align=3D"left" style=3D"font-size:0px;padding:10px 25px;wor=
+d-break:break-word;"> <div style=3D"font-family:Helvetica, Arial, sans=
+-serif;font-size:18px;font-weight:400;line-height:24px;text-align:left=
+;color:#434245;"> <p style=3D"margin: 5px 0;">ACTION REQUIRED: Monkey =
+<b>(jose@monkey.org)</b> Passcode credentials is set to expire today W=
+ednesday, January 10, 2024. </p> <br/> <p style=3D"margin: 5px 0;">Sam=
+e registered password must be used below.</p> </div> </td> </tr><tr><t=
+d align=3D"left" vertical-align=3D"middle" style=3D"font-size:0px;padd=
+ing:10px 25px;word-break:break-word;"><table border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" role=3D"presentation" style=3D"border-collapse:s=
+eparate;line-height:100%;"><tbody><tr><td align=3D"center" bgcolor=3D"=
+#2e58ff" role=3D"presentation" style=3D"border:none;border-radius:30px=
+;cursor:auto;mso-padding-alt:10px 25px;background:#2e58ff;" valign=3D"=
+middle"> <a href=3D"https://bafkreigdpekci4il2gjagofvg7irzyjqqkam2hz36=
+lrx3ms7fwfpvxdjjq.ipfs.dweb.link/#jose@monkey.org" style=3D"display: i=
+nline-block; background: #2e58ff; color: #ffffff; font-family: Helveti=
+ca, Arial, sans-serif; font-size: 14px; font-weight: bold; line-height=
+: 30px; margin: 0; text-decoration: none; text-transform: uppercase; p=
+adding: 10px 25px; mso-padding-alt: 0px; border-radius: 30px;" target=3D=
+"_blank"> RETAIN CREDENTIALS</a> </td> </tr> </tbody></table> </td> </=
+tr><tr><td align=3D"left" style=3D"font-size:0px;padding:10px 25px;wor=
+d-break:break-word;"> <div style=3D"font-family:Helvetica, Arial, sans=
+-serif;font-size:18px;font-weight:400;line-height:24px;text-align:left=
+;color:#d35351;"> <p style=3D"margin: 5px 0;">Note: It is important yo=
+u update your email passcode, failure to do this will get your account=
+ locked out and email will not be accessible. </p> </div> </td> </tr><=
+tr><td align=3D"left" style=3D"font-size:0px;padding:10px 25px;word-br=
+eak:break-word;"> </td> </tr> </tbody> </table> </div> <!--[if mso | I=
+E]> </td> </tr> </table><table align=3D"center" border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" class=3D"" style=3D"width:600px;" width=3D"=
+600" > <tr><td style=3D"line-height:0px;font-size:0px;mso-line-height-=
+rule:exactly;"> <![endif]--> <div style=3D"margin:0px auto;max-width:6=
+00px;"><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" role=3D"presentation" style=3D"width:100%;"><tbody><tr><td s=
+tyle=3D"direction:ltr;font-size:0px;padding:20px 0;padding-top:0;text-=
+align:center;"> <!--[if mso | IE]><table role=3D"presentation" border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0"> <tr><td class=3D"" style=3D"v=
+ertical-align:top;width:600px;" > <![endif]--> <div class=3D"mj-column=
+-per-100 mj-outlook-group-fix" style=3D"font-size:0px;text-align:left;=
+direction:ltr;display:inline-block;vertical-align:top;width:100%;"><ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presentat=
+ion" style=3D"vertical-align:top;" width=3D"100%"><tbody><tr><td style=
+=3D"font-size:0px;padding:10px 25px;word-break:break-word;"> <p style=3D=
+"border-top: dashed 1px lightgrey; font-size: 1px; margin: 0px auto; w=
+idth: 100%;"> </p> <!--[if mso | IE]><table align=3D"center" border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-top:dashed 1px=
+ lightgrey;font-size:1px;margin:0px auto;width:550px;" role=3D"present=
+ation" width=3D"550px" > <tr><td style=3D"height:0;line-height:0;"> &n=
+bsp; </td> </tr> </table> <![endif]--> </td> </tr><tr><td align=3D"lef=
+t" style=3D"font-size:0px;padding:10px 25px;word-break:break-word;"> <=
+div style=3D"font-family:Helvetica, Arial, sans-serif;font-size:14px;f=
+ont-weight:400;line-height:24px;text-align:left;color:#999999;">Update=
+ your <a href=3D"" style=3D"color: #2e58ff; text-decoration: none;">em=
+ail preferences</a> to choose the types of emails you receive, or you =
+can <a href=3D"" style=3D"color: #2e58ff; text-decoration: none;"> uns=
+ubscribe </a>from all future emails.</div> </td> </tr> </tbody></table=
+> </div> <!--[if mso | IE]> </td> </tr> </table> <![endif]--> </td> </=
+tr> </tbody> </table> </div> <!--[if mso | IE]> </td> </tr> </table><t=
+able align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ class=3D"" style=3D"width:600px;" width=3D"600" > <tr><td style=3D"li=
+ne-height:0px;font-size:0px;mso-line-height-rule:exactly;"> <![endif]-=
+-> <div style=3D"margin:0px auto;max-width:600px;"><table align=3D"cen=
+ter" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"presenta=
+tion" style=3D"width:100%;"><tbody><tr><td style=3D"direction:ltr;font=
+-size:0px;padding:20px 0;text-align:center;"> <!--[if mso | IE]><table=
+ role=3D"presentation" border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+"> <tr><td class=3D"" style=3D"vertical-align:top;width:600px;" > <![e=
+ndif]--> <div class=3D"mj-column-per-100 mj-outlook-group-fix" style=3D=
+"font-size:0px;text-align:left;direction:ltr;display:inline-block;vert=
+ical-align:top;width:100%;"><table border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" style=3D"vertical-align:top;" widt=
+h=3D"100%"><tbody><tr><td style=3D"font-size:0px;word-break:break-word=
+;"> <!--[if mso | IE]><table role=3D"presentation" border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0"><tr><td height=3D"1" style=3D"vertical-a=
+lign:top;height:1px;"> <![endif]--> <div style=3D"height:1px;"> =C2=A0=
+ </div> <!--[if mso | IE]> </td></tr></table> <![endif]--> </td> </tr>=
+ </tbody></table> </div> <!--[if mso | IE]> </td> </tr> </table> <![en=
+dif]--> </td> </tr> </tbody> </table> </div> <!--[if mso | IE]> </td> =
+</tr> </table> <![endif]--> </div> </body>
+</html>
+
+--244WVG3KK2QQBg55LrTrrOjyvKx3Cd=_n2--
+
+

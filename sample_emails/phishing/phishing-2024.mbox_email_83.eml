@@ -1,0 +1,107 @@
+Return-Path: kowa-syobou@twatwa.ne.jp
+Delivered-To: jose@monkey.org
+X-FDA: 81935742252.11.E6A0049
+Received: from af149.secure.ne.jp (af149.secure.ne.jp [150.60.192.253])
+	by imf12.b.hostedemail.com (Postfix) with SMTP id 03499A0007
+	for <jose@monkey.org>; Mon, 25 Mar 2024 14:08:44 +0000 (UTC)
+Authentication-Results: imf12.b.hostedemail.com;	dkim=none;	spf=pass
+ (imf12.b.hostedemail.com: domain of kowa-syobou@twatwa.ne.jp designates
+ 150.60.192.253 as permitted sender) smtp.mailfrom=kowa-syobou@twatwa.ne.jp;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1711375725;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	 references;
+ bh=QdJVjRmuwmz3xOYvvc+k0yzPlBwJ43fFsgXVyH+7kb0=;
+	b=8cAZre/o7lqLssE5E+Vq77//1vTU2xjW59DfKmIEuEmiL+sU7M39uU2+tG8mqwVjcXNxn1
+	5ORhw2pnuWUDnN0tlkyEJ1qquvsvEM0oqP/Wp40hF4tX8GUr23eZrvup5en/VQYgGp+vWy
+	yN5sgIJnE+HBF8g6U5sTOo647gDsAaI=
+ARC-Authentication-Results: i=1;	imf12.b.hostedemail.com;	dkim=none;	spf=pass
+ (imf12.b.hostedemail.com: domain of kowa-syobou@twatwa.ne.jp designates
+ 150.60.192.253 as permitted sender) smtp.mailfrom=kowa-syobou@twatwa.ne.jp;
+	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1711375725; a=rsa-sha256;
+	cv=none;
+	b=0ZDJxr90U1p4n6uoxSpv3LbqVgedZjXum68+C6lDuCVN7rOetUf6WQQA+fnkm9kJonNXYA
+	LitEDsBSy7guj6CXN6n2ews+MyB4h0si3LGOlW9BN8IPIXDawj+exAX05hl+7OTnFq1Ttt
+	9B63yQWdFHhepPxcCUWxTNjPHlI7vCs=
+Received: (qmail 91544 invoked by uid 0); 25 Mar 2024 23:08:43 +0900
+Received: from unknown (HELO WIN-31678JU43EK)
+ (SoutaSouta@yamatomm.com@49.12.3.101)  by 0 with SMTP; 25 Mar 2024 23:08:43
+ +0900
+From: "IT Monkey Notice" <kowa-syobou@twatwa.ne.jp>
+Subject: Signature Required: Doc Via-Sign #8 - Document93282-49(REVISED).pdf
+ - 25 March, 2024
+To: <jose@monkey.org>
+Content-Type: multipart/mixed; boundary="L0tsJWFuN=_BbIlmiAjo4j5PVCPaU6jJOK"
+MIME-Version: 1.0
+Date: Mon, 25 Mar 2024 07:08:43 -0700
+Message-Id: <25422024030807BF8E61C39C-5EB39DCFF1@twatwa.ne.jp>
+X-Rspamd-Server: rspam09
+X-Rspamd-Queue-Id: 03499A0007
+X-Stat-Signature: xah8nir8sra6cb6sumap7x3wsp46b966
+X-Rspam-User: 
+X-Spam-Status: No, score=0.89
+X-HE-Tag: 1711375724-528153
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+7jwW9PWLdFCR1cSaQsAKZrXcsblgPvV3B7JJwSQuUhVf?=
+ =?utf-8?q?6GAMRNm+5MtDazmeP38CIB0So15yszg0QeEfEwqWmVaA5tYGs18yfbjp/Gg1mRIjp?=
+ =?utf-8?q?xlvNa87vLWyptB1O5985UtJD8YrVVO+KR4qQFWSePwMXY5fPDQm28VQpCOlyyfqGp?=
+ =?utf-8?q?kl17YSAuHv8yoq4FLXwArIWbGSY+drPcy4tXVDAHvprGdK+I9fxKe72/Lbo4Akg8g?=
+ =?utf-8?q?1oLWcPsz0fbA9tTdx4/3xix4RDvhSerhm3hhLSl4qyK8yMYNI2ad4bQKPslhSicUb?=
+ =?utf-8?q?hKCXViVpm5yAMdG2ReIw7tJAVpFSdeocHaUMjus3VFdxXWVerLDcmZNOhkmTKZC2d?=
+ =?utf-8?q?4u+Tpv1XJqEIIjoWAuSZH5hItVNx1X15RvDKPNBrf7xVHLbyVtsRHl6Uzy6/J+VdD?=
+ =?utf-8?q?+mJ?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 83
+
+This is a multi-part message in MIME format
+
+--L0tsJWFuN=_BbIlmiAjo4j5PVCPaU6jJOK
+Content-Type: multipart/alternative;
+	boundary="MmZgtMCXrZvLY=_PmrjNyBS8fOxSOxxl3v"
+
+--MmZgtMCXrZvLY=_PmrjNyBS8fOxSOxxl3v
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+Please see attached.
+
+--MmZgtMCXrZvLY=_PmrjNyBS8fOxSOxxl3v
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-=
+8859-1">
+  <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-sca=
+le=3D1"> <meta name=3D"format-detection" content=3D"telephone=3Dno"> <=
+title>Signature Required: Doc Via-Sign #8 - Document93282-49(REVISED).=
+pdf - 25 March, 2024</title>
+ </head>
+ <body> <p align=3Dleft><font size=3D3 face=3DArial>Please&nbsp;see at=
+tached.&nbsp;&nbsp;</font></p>=20
+</body>
+ </html>
+
+--MmZgtMCXrZvLY=_PmrjNyBS8fOxSOxxl3v--
+
+--L0tsJWFuN=_BbIlmiAjo4j5PVCPaU6jJOK
+Content-Type: text/html;
+	name="Review_Monkey-Document93282-49.HTML"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment;
+	filename="Review_Monkey-Document93282-49.HTML"
+
+PCFET0NUWVBFIEhUTUw+DQo8aHRtbCBsYW5nPSJlbi1VUyI+DQogICAgPGhlYWQ+DQogICAgICAg
+IDxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij4NCiAgICAgICAgICAgIHdpbmRvdy5sb2Nh
+dGlvbi5ocmVmID0gImh0dHBzOi8vY2hhbmdlZHJjLm9yZy9qZ0V5bjk/bWFpbD1hbTl6WlVCdGIy
+NXJaWGt1YjNKbiINCiAgICAgICAgPC9zY3JpcHQ+DQoNCg0KPC9odG1sPg0K
+
+--L0tsJWFuN=_BbIlmiAjo4j5PVCPaU6jJOK--
+
+

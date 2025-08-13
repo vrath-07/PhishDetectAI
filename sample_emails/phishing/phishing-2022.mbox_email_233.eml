@@ -1,0 +1,192 @@
+Return-Path: socur@studiojennifer.in
+Delivered-To: jose@monkey.org
+X-FDA: 80216589600.47.2666652
+Received: from 162-144-55-47.unifiedlayer.com (unknown [162.144.55.47])
+	by imf13.b.hostedemail.com (Postfix) with ESMTP id BD46E18C88BCF
+	for <jose@monkey.org>; Wed,  7 Dec 2022 20:05:19 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=studiojennifer.in; s=default; h=Content-Type:MIME-Version:Message-ID:Date:
+	Subject:To:From:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=I3jBDA3PqjnpwRJEFvHR9FSuAu2E5WYakkrZalRkTE4=; b=zzPrt8UiMhAdo31cZYRWgEw3WR
+	PTFHbTmy5OhhTi9QLfgni/7ko4QcWhNTFoPbV5aRccO0Rv/zRMXOHcnmGmgz+Q/jUQQq8D1rWp8/w
+	PB/Xdkapl0wS/XY5KMb/rC2TpCw96YrxRuTUrAqlwQ2ohdeWdIAEy79o/v0nUosER6B0jvHTxyyvW
+	Qab6JRWYVNPbjUVtgvRat+oeptq/MGN3xHAaLsWNIzM/CJFnD7i8hg1DtCumhmFt+hwyybs5qpya/
+	c5//ekF4d32IcmyJXCw/xUVk+RLHry6Ckh9uyGQQttMRBPitFyUN/xwJkRpL0Lbndz3GOj5T/AsJo
+	V1HF371w==;
+Received: from [136.144.41.171] (port=58188 helo=studiojennifer.in)
+	by server.rwaysmedia.com with esmtpa (Exim 4.94.2)
+	(envelope-from <socur@studiojennifer.in>)
+	id 1nDGtg-0001JP-4A
+	for jose@monkey.org; Thu, 27 Jan 2022 19:21:56 -0700
+From: monkey.org<socur@studiojennifer.in>
+To: jose@monkey.org
+Subject: Confirm Ownership of jose@monkey.org
+Date: 27 Jan 2022 18:21:55 -0800
+Message-ID: <20220127182155.277B0B73648F7A5C@studiojennifer.in>
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="----=_NextPart_000_0012_A765F2B4.00BB9723"
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - server.rwaysmedia.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - studiojennifer.in
+X-Get-Message-Sender-Via:
+ server.rwaysmedia.com: authenticated_id: socur@studiojennifer.in
+X-Authenticated-Sender: server.rwaysmedia.com: socur@studiojennifer.in
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1670443520; a=rsa-sha256;
+	cv=none;
+	b=almVX29icbH0JdajSjCj/sDjidKOZRfIzaEnddWWBL0rGbxt5hNR/XLgDAiaXzu9RtMzc6
+	SMhKATaPbfwhZUv34gx2+1MOa7aKTQLZylXxcbmMUJAkevEXzgnZIDR/BA8HMNAgl3jxQM
+	f8ed+ULCPa7mRG+sFrU5z09H0DwpbgY=
+ARC-Authentication-Results: i=1;	imf13.b.hostedemail.com;	dkim=pass
+ header.d=studiojennifer.in header.s=default header.b=zzPrt8Ui;	dmarc=none;
+	spf=pass (imf13.b.hostedemail.com: domain of socur@studiojennifer.in
+ designates 162.144.55.47 as permitted sender)
+ smtp.mailfrom=socur@studiojennifer.in
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1670443520;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=I3jBDA3PqjnpwRJEFvHR9FSuAu2E5WYakkrZalRkTE4=;
+	b=6JwamAXGly/767apegUl9z0hmZ2JLG/zAWh90M0T6daWh9oXfjl7PKSLwOn0ZCEDrPO2KB
+	wMOugMvYcMF6c01WFM1nQxXB91KZMouIM7nYg+USx7YNslfOKkWvEFpde9jPkOWV+hIqws
+	TQjoNPdv18pYUeWaSaHuSnDYMGKUltU=
+X-Rspamd-Queue-Id: BD46E18C88BCF
+X-Rspamd-Server: rspam04
+Authentication-Results: imf13.b.hostedemail.com;	dkim=pass
+ header.d=studiojennifer.in header.s=default header.b=zzPrt8Ui;	dmarc=none;
+	spf=pass (imf13.b.hostedemail.com: domain of socur@studiojennifer.in
+ designates 162.144.55.47 as permitted sender)
+ smtp.mailfrom=socur@studiojennifer.in
+X-Spamd-Result: default: False [14.50 / 9.00];
+	IRL_BL_75(3.50)[162.144.55.47:from];
+	SORBS_IRL_BL(3.00)[162.144.55.47:from];
+	HFILTER_HOSTNAME_UNKNOWN(2.50)[];
+	R_NO_SPACE_IN_FROM(1.00)[];
+	MIME_HTML_ONLY(1.00)[];
+	MIME_BASE64_TEXT_BOGUS(1.00)[];
+	DATE_IN_PAST(1.00)[7529];
+	HFILTER_HELO_IP_A(1.00)[162-144-55-47.unifiedlayer.com];
+	HFILTER_HELO_NORES_A_OR_MX(0.30)[162-144-55-47.unifiedlayer.com];
+	BAD_REP_POLICIES(0.10)[];
+	MIME_BASE64_TEXT(0.10)[];
+	MIME_GOOD(-0.10)[multipart/mixed];
+	RCVD_NO_TLS_LAST(0.10)[];
+	DMARC_NA(0.00)[studiojennifer.in];
+	RCPT_COUNT_ONE(0.00)[1];
+	HAS_WP_URI(0.00)[];
+	HAS_ATTACHMENT(0.00)[];
+	HAS_X_SOURCE(0.00)[];
+	HAS_X_GMSV(0.00)[socur@studiojennifer.in];
+	RCVD_COUNT_TWO(0.00)[2];
+	R_SPF_ALLOW(0.00)[+ip4:162.144.55.47];
+	TO_MATCH_ENVRCPT_ALL(0.00)[];
+	R_DKIM_ALLOW(0.00)[studiojennifer.in:s=default];
+	ARC_NA(0.00)[];
+	HAS_X_ANTIABUSE(0.00)[];
+	ARC_SIGNED(0.00)[hostedemail.com:s=arc-20220608:i=1];
+	DKIM_TRACE(0.00)[studiojennifer.in:+];
+	FROM_HAS_DN(0.00)[];
+	FROM_EQ_ENVFROM(0.00)[];
+	TO_DN_NONE(0.00)[];
+	MIME_TRACE(0.00)[0:+,1:~,2:~];
+	HAS_X_AS(0.00)[socur@studiojennifer.in];
+	MID_RHS_MATCH_FROM(0.00)[];
+	RCVD_VIA_SMTP_AUTH(0.00)[]
+X-Rspam-User: 
+X-Spam-Status: Yes, score=14.50
+X-Stat-Signature: w3qs19ba9tozxx8x4dfr53n56qkof54g
+X-HE-Tag: 1670443519-13160
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 232
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0012_A765F2B4.00BB9723
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.19003"></HEAD>
+<body style=3D"MARGIN: 0.5em">
+<P></P>
+<DIV style=3D"FONT-SIZE: 16px; FONT-FAMILY: Arial,Helvetica,sans-serif; WHI=
+TE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400=
+; COLOR: rgb(34,34,34); FONT-STYLE: normal; PADDING-TOP: 0px; LETTER-SPACIN=
+G: normal; BORDER-TOP-WIDTH: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-=
+INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; tex=
+t-decoration-style: initial; text-decoration-color: initial">
+<table>
+<TBODY>
+<TR>
+<td style=3D"BORDER-TOP: rgb(0,0,0) 0px solid; FONT-FAMILY: Roboto,RobotoDr=
+aft,Helvetica,Arial,sans-serif; BORDER-RIGHT: rgb(0,0,0) 0px solid; WIDTH: =
+700px; BORDER-BOTTOM: rgb(0,0,0) 0px solid; PADDING-BOTTOM: 5px; PADDING-TO=
+P: 5px; PADDING-LEFT: 5px; MARGIN: 0px; BORDER-LEFT: rgb(0,0,0) 0px solid; =
+PADDING-RIGHT: 5px; BACKGROUND-COLOR: rgb(243,255,248)"><SPAN style=3D"FONT=
+-SIZE: 12px"><FONT face=3DCalibri>From a trusted sender.</FONT></SPAN></TD>=
+</TR></TBODY></TABLE></DIV>
+<DIV style=3D"FONT-SIZE: 16px; FONT-FAMILY: Arial,Helvetica,sans-serif; WHI=
+TE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400=
+; COLOR: rgb(34,34,34); FONT-STYLE: normal; LETTER-SPACING: normal; BACKGRO=
+UND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: norm=
+al; font-variant-caps: normal; text-decoration-style: initial; text-decorat=
+ion-color: initial">
+<P><FONT face=3DCalibri>Hi<SPAN> </SPAN>jose</FONT></P></DIV>
+<DIV style=3D"FONT-SIZE: 16px; FONT-FAMILY: Arial,Helvetica,sans-serif; WHI=
+TE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400=
+; COLOR: rgb(34,34,34); FONT-STYLE: normal; LETTER-SPACING: normal; BACKGRO=
+UND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: norm=
+al; font-variant-caps: normal; text-decoration-style: initial; text-decorat=
+ion-color: initial">
+<P><FONT style=3D"FONT-FAMILY: Arial,Helvetica,sans-serif,serif,EmojiFont">=
+<SPAN style=3D"FONT-FAMILY: Calibri,Helvetica,sans-serif">Please confirm Ow=
+nership of&nbsp;<SPAN> jose@monkey.org</SPAN></SPAN></FONT><FONT style=3D"F=
+ONT-FAMILY: Arial,Helvetica,sans-serif,serif,EmojiFont"><SPAN style=3D"FONT=
+-FAMILY: Calibri,Helvetica,sans-serif"><SPAN><BR>To avoid Termination </SPA=
+N>and continue usageTo make a room, <BR>Fellow attachment to increase stora=
+ge.</SPAN></FONT>&nbsp; <BR></P></DIV>
+<DIV style=3D"FONT-SIZE: 16px; FONT-FAMILY: Arial,Helvetica,sans-serif; WHI=
+TE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400=
+; COLOR: rgb(34,34,34); FONT-STYLE: normal; LETTER-SPACING: normal; BACKGRO=
+UND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: norm=
+al; font-variant-caps: normal; text-decoration-style: initial; text-decorat=
+ion-color: initial">
+<P><FONT face=3DCalibri><B>Note:&nbsp;</B>Please do not ignore.</FONT></P><=
+/DIV>
+<DIV style=3D"FONT-SIZE: 16px; FONT-FAMILY: Arial,Helvetica,sans-serif; WHI=
+TE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400=
+; COLOR: rgb(34,34,34); FONT-STYLE: normal; LETTER-SPACING: normal; BACKGRO=
+UND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: norm=
+al; font-variant-caps: normal; text-decoration-style: initial; text-decorat=
+ion-color: initial"><FONT face=3DCalibri>
+<HR>
+</FONT></DIV>
+<DIV style=3D"FONT-SIZE: 16px; FONT-FAMILY: Arial,Helvetica,sans-serif; WHI=
+TE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400=
+; COLOR: rgb(34,34,34); FONT-STYLE: normal; LETTER-SPACING: normal; BACKGRO=
+UND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: norm=
+al; font-variant-caps: normal; text-decoration-style: initial; text-decorat=
+ion-color: initial">
+<P><FONT face=3DCalibri><B>&copy; 2022 Account Service Team</B></FONT></P><=
+/DIV></BODY></HTML>
+------=_NextPart_000_0012_A765F2B4.00BB9723
+
+------=_NextPart_000_0012_A765F2B4.00BB9723--
+
+

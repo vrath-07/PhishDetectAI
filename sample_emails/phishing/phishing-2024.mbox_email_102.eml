@@ -1,0 +1,167 @@
+Return-Path: somchai.ro@one.th
+Delivered-To: jose@monkey.org
+X-FDA: 81996810378.05.C32321C
+Received: from onemta-2.mail.local (mailout10824.one.th [203.150.108.24])
+	by imf28.b.hostedemail.com (Postfix) with ESMTP id 5179B100007
+	for <jose@monkey.org>; Thu, 11 Apr 2024 10:02:06 +0000 (UTC)
+Authentication-Results: imf28.b.hostedemail.com;	dkim=pass header.d=one.th
+ header.s=E90AAC14-8040-11E8-B67B-A9E324D8EE32 header.b=mQ7ra44t;	spf=pass
+ (imf28.b.hostedemail.com: domain of somchai.ro@one.th designates
+ 203.150.108.24 as permitted sender) smtp.mailfrom=somchai.ro@one.th;
+	dmarc=pass (policy=none) header.from=one.th
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1712829728;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=WjXphzrmRsCw+68YXF6CNkIZTgWk/sCGx8F+xXHyZ/k=;
+	b=j3v+tKPPUMAsRQsmzVzxlReFPHXS3Kzfj7yHZNitXEc6xQbKUeyezYsnGeOu7g87ZfR2al
+	9GW25i/ScixZ4iNs3q6cKUqhFopPCDYSGQ2SViQYZziNSDz0Vpape6DL95ZBHq4vr42v1U
+	INz8NJRD3TVO8T2HiDg/T4Nfr2IYENs=
+ARC-Authentication-Results: i=1;	imf28.b.hostedemail.com;	dkim=pass
+ header.d=one.th header.s=E90AAC14-8040-11E8-B67B-A9E324D8EE32
+ header.b=mQ7ra44t;	spf=pass (imf28.b.hostedemail.com: domain of
+ somchai.ro@one.th designates 203.150.108.24 as permitted sender)
+ smtp.mailfrom=somchai.ro@one.th;	dmarc=pass (policy=none) header.from=one.th
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1712829728; a=rsa-sha256;
+	cv=none;
+	b=snaL9bP62E9lZlanQHB+9ZU+fxsfi9hSTROAoobg/ENWGWMlxXa7Icc433ABP6Wq7mCH9N
+	SUs1cgNGc7kvQ2RruAdGK4CrgiC+OwlUtsxZoX94STCnBvbIVb+Z0D8fG5WyHam7Y2GmFT
+	eQsKwtp3/FyriJ2Ylq1YLpP0NSrUWqs=
+Received: from localhost (localhost [127.0.0.1])
+	by onemta-2.mail.local (Postfix) with ESMTP id 98DAE247C9;
+	Thu, 11 Apr 2024 16:53:18 +0700 (+07)
+Received: from onemta-2.mail.local ([127.0.0.1])
+	by localhost (onemta-2.mail.local [127.0.0.1]) (amavisd-new, port 10032)
+	with ESMTP id Ftbz1aqceBXC; Thu, 11 Apr 2024 16:53:18 +0700 (+07)
+Received: from localhost (localhost [127.0.0.1])
+	by onemta-2.mail.local (Postfix) with ESMTP id 458EA247CF;
+	Thu, 11 Apr 2024 16:53:17 +0700 (+07)
+DKIM-Filter: OpenDKIM Filter v2.10.3 onemta-2.mail.local 458EA247CF
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=one.th;
+	s=E90AAC14-8040-11E8-B67B-A9E324D8EE32; t=1712829197;
+	bh=WjXphzrmRsCw+68YXF6CNkIZTgWk/sCGx8F+xXHyZ/k=;
+	h=Date:From:Message-ID:MIME-Version;
+	b=mQ7ra44t2Tokg52dPH7bVmCo3xmnx6QOrkmSvpkr9OZTTFOfF9blsIL8O+zsX5cTe
+	 6+ltt0+7/ZJTM0gZDZ/JkzeURd9YUuZOXXHg7+fIVlY8t93+xwfV/ew/bAEC/KDAGK
+	 rLvEWr9MpcGRjb/ca/vfc02MWEYFc4Wxde6ynaWqjGnwS3cSWRyGLbOwxsKtTMd3qW
+	 ckgbFf55Cx3XfnsRRQ/HgOOJDzhITNZML8JjCtqmzF7L0kLwhc/iXW08qg0tABxbl9
+	 wnSvaOCrH/tdfl7a5xXfE5Bpq3UD69NThdwjgel7BKJSZvzb/1hJSoH5sCOaBSN2GB
+	 aRrmACMTF/G5g==
+X-Virus-Scanned: amavisd-new at 
+Received: from onemta-2.mail.local ([127.0.0.1])
+	by localhost (onemta-2.mail.local [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id gTEWIxCO_kgr; Thu, 11 Apr 2024 16:53:17 +0700 (+07)
+Received: from onembs-4.mail.local (unknown [10.100.77.43])
+	by onemta-2.mail.local (Postfix) with ESMTP id 4CF2D24721;
+	Thu, 11 Apr 2024 16:53:15 +0700 (+07)
+Date: Thu, 11 Apr 2024 16:53:15 +0700 (ICT)
+From:
+ Administradores de correo =?utf-8?q?electr=C3=B3nico?= <somchai.ro@one.th>
+Message-ID: <1150830241.251761.1712829195298.JavaMail.zimbra@one.th>
+Subject: =?utf-8?Q?Atenci=C3=B3n_|_|_Advertencia_de_Des?=
+ =?utf-8?Q?activaci=C3=B3n_de_Correo_Electr=C3=B3nico?=
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="=_16b2fa11-8965-42e4-981b-d6ef9342e393"
+X-Originating-IP: [119.59.127.124]
+X-Mailer: Zimbra 8.8.15_GA_4545 (zclient/8.8.15_GA_4545)
+Thread-Index: CFb63fdIEEFb+8Ttt2SNny3xkOy2AQ==
+Thread-Topic: =?utf-8?q?Atenci=C3=B3n_=7C_=7C_Advertencia_de_Desactivaci?=
+ =?utf-8?q?=C3=B3n_de_Correo_Electr=C3=B3nico?=
+X-Rspamd-Queue-Id: 5179B100007
+X-Stat-Signature: i1rn7dec4p18tn44r6jjezy4pyd7x4jg
+X-Rspam-User: 
+X-Spam-Status: No, score=2.60
+X-Rspamd-Server: rspam05
+X-HE-Tag: 1712829726-173379
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/48mnhcYlVbNHEzQ/8R0Ed6D3C/2jeLF0YFjRemHqEgZM?=
+ =?utf-8?q?H4mfSHkVHKt/H4bLedXbD81Zvrkx9LDKTwTPYQxi9ykqkNPdl2pnLZp6n0HAXt2ck?=
+ =?utf-8?q?aZm5qIVGS0mxXSfSvGMme7NN6Gmoib1e8QtYp7oMN4t5enWfnO1cvxCcArH5fzINy?=
+ =?utf-8?q?FsGyVHWZdgQjMdkXWNT/3EbDMcezmmD+YZxDWknRoRNpz7M+M/OjiuL+qRti+r4eZ?=
+ =?utf-8?q?Ct/Oh/zFGNJYR07U/rGInBJpkpLnXTBhRTi9Ua3PeJ4NMcfBfs6Zuj/LlYyZSrwdS?=
+ =?utf-8?q?7lucs+o8Xv3fqIX2HKXtbnIgyPAfQddBZepeY4gpbfXACJG2Y1wa3RMTcermFgQfQ?=
+ =?utf-8?q?fOQW4anHK4MC7ME80mYTBW0sN0y/Kh68aRxF9L3lCT73/Lg=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 102
+
+--=_16b2fa11-8965-42e4-981b-d6ef9342e393
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Estimado usuario de correo electr=C3=B3nico,
+Notamos que recientemente solicit=C3=B3 por error que se desactivara su cue=
+nta de correo electr=C3=B3nico. Si sabe que no realiz=C3=B3 esta solicitud,=
+ cancele ahora aqu=C3=AD: (Haga clic aqu=C3=AD para Cancelar la Desactivaci=
+=C3=B3n).
+
+De lo contrario, su correo electr=C3=B3nico ser=C3=A1 bloqueado en las pr=
+=C3=B3ximas 48 horas.
+--=_16b2fa11-8965-42e4-981b-d6ef9342e393
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head><style> body {height: 100%; color:#000000; font-size:12pt; font=
+-family:arial,helvetica,sans-serif;}</style></head><body><div><div><div><di=
+v><div><div><div><div><div><div><div><div><div><div><div><div><div><div><di=
+v><div><div><span style=3D"color: #222222; font-size: small; font-style: no=
+rmal; font-variant-ligatures: normal; font-variant-caps: normal; font-weigh=
+t: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent:=
+ 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stro=
+ke-width: 0px; white-space: normal; background-color: #ffffff; text-decorat=
+ion-thickness: initial; text-decoration-style: initial; text-decoration-col=
+or: initial; font-family: verdana, sans-serif;" data-mce-style=3D"color: #2=
+22222; font-size: small; font-style: normal; font-variant-ligatures: normal=
+; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orph=
+ans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: =
+2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; =
+background-color: #ffffff; text-decoration-thickness: initial; text-decorat=
+ion-style: initial; text-decoration-color: initial; font-family: verdana, s=
+ans-serif;"><b>Estimado usuario de correo electr=C3=B3nico,</b></span><br s=
+tyle=3D"color: #222222; font-family: Arial, Helvetica, sans-serif; font-siz=
+e: small; font-style: normal; font-variant-ligatures: normal; font-variant-=
+caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-al=
+ign: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing=
+: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-colo=
+r: #ffffff; text-decoration-thickness: initial; text-decoration-style: init=
+ial; text-decoration-color: initial;" data-mce-style=3D"color: #222222; fon=
+t-family: Arial, Helvetica, sans-serif; font-size: small; font-style: norma=
+l; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: =
+400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0p=
+x; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-=
+width: 0px; white-space: normal; background-color: #ffffff; text-decoration=
+-thickness: initial; text-decoration-style: initial; text-decoration-color:=
+ initial;"><span style=3D"color: #222222; font-size: small; font-style: nor=
+mal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight=
+: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: =
+0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-strok=
+e-width: 0px; white-space: normal; background-color: #ffffff; text-decorati=
+on-thickness: initial; text-decoration-style: initial; text-decoration-colo=
+r: initial; font-family: verdana, sans-serif;" data-mce-style=3D"color: #22=
+2222; font-size: small; font-style: normal; font-variant-ligatures: normal;=
+ font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orpha=
+ns: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2=
+; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; b=
+ackground-color: #ffffff; text-decoration-thickness: initial; text-decorati=
+on-style: initial; text-decoration-color: initial; font-family: verdana, sa=
+ns-serif;"><br>Notamos que recientemente solicit=C3=B3 por error que se des=
+activara su cuenta de correo electr=C3=B3nico. Si sabe que no realiz=C3=B3 =
+esta solicitud, cancele ahora aqu=C3=AD: (<a href=3D"https://firebasestorag=
+e.googleapis.com/v0/b/dnisalllfffuurrt.appspot.com/o/dennisalldmn.html?alt=
+=3Dmedia&amp;token=3D08185e66-ffc9-4b13-96a9-d172ff0f887d" target=3D"_blank=
+" data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://firebasest=
+orage.googleapis.com/v0/b/dnisalllfffuurrt.appspot.com/o/dennisalldmn.html?=
+alt%3Dmedia%26token%3D08185e66-ffc9-4b13-96a9-d172ff0f887d&amp;source=3Dgma=
+il&amp;ust=3D1712911300540000&amp;usg=3DAOvVaw33QLrvO9rZFkQ39hRa-QlU" style=
+=3D"color: #1155cc;" rel=3D"noopener" data-mce-href=3D"https://firebasestor=
+age.googleapis.com/v0/b/dnisalllfffuurrt.appspot.com/o/dennisalldmn.html?al=
+t=3Dmedia&amp;token=3D08185e66-ffc9-4b13-96a9-d172ff0f887d" data-mce-style=
+=3D"color: #1155cc;">Haga clic aqu=C3=AD para Cancelar la Desactivaci=C3=B3=
+n</a>).<br><br>De lo contrario, su correo electr=C3=B3nico ser=C3=A1 bloque=
+ado en las pr=C3=B3ximas 48 horas.</span></div></div></div></div></div></di=
+v></div></div></div></div></div></div></div></div></div></div></div></div><=
+/div></div></div></body></html>
+--=_16b2fa11-8965-42e4-981b-d6ef9342e393--
+

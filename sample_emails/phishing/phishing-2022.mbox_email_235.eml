@@ -1,0 +1,248 @@
+Return-Path: cool390@rnatlika-deliy.com
+Delivered-To: jose@monkey.org
+X-FDA: 80219919444.31.D107BC3
+Received: from us3-ob2-1.mailhostbox.com (us3-ob2-1.mailhostbox.com
+ [199.79.63.219])	by imf25.b.hostedemail.com (Postfix) with ESMTP id
+ 8C392CA5988	for <jose@monkey.org>; Thu,  8 Dec 2022 18:06:41 +0000 (UTC)
+Received: from 114-40-33-132.dynamic-ip.hinet.net (unknown [45.86.202.32])
+	(Authenticated sender: cool390@rnatlika-deliy.com)
+	by us3.outbound.mailhostbox.com (Postfix) with ESMTPA id EFE061010B9
+	for <jose@monkey.org>; Thu,  8 Dec 2022 18:06:39 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=rnatlika-deliy.com;
+	s=20221208; t=1670522800;
+	bh=lhjU+fmjNNx/sy1SaW7J0ZAnL2JmGlCbnpDSLVeJXuM=;
+	h=From:Subject:To:Date;
+	b=XomjV85Ld99eQx8s6v+3dRDu6TfOn1jd0oOIaW20A+Ix0pnhBSpOqD0HZWvIvKgDc
+	 bJDYCmDf4nyiKeMPkpWtQKjPuFmtctiqBO4Zn7wDvgU50jFhFV4wFlvzr2F12+K5v/
+	 dqTLMRqusx4AmMP9qXh571C6Cx4CRvWfiEmESI+E=
+From: "NETLFLX" <cool390@rnatlika-deliy.com>
+Subject:  Status: =?utf-8?b?WdC+dXIg0YDQsHlt0LVudCBt0LV0aNC+ZCB30LBzIGRl0YFs?=
+ =?utf-8?b?0ZZu0LVkIOKdlw==?=
+To: "jose" <jose@monkey.org>
+Content-Type: multipart/related; boundary="y48Z3VbkBexQKqvQ=_XHGBSmSlxN2RMHB8"
+MIME-Version: 1.0
+Organization: aruba
+Date: Fri, 9 Dec 2022 02:06:40 +0800
+ARC-Authentication-Results: i=1;	imf25.b.hostedemail.com;	dkim=pass
+ header.d=rnatlika-deliy.com header.s=20221208 header.b=XomjV85L;	spf=pass
+ (imf25.b.hostedemail.com: domain of cool390@rnatlika-deliy.com designates
+ 199.79.63.219 as permitted sender) smtp.mailfrom=cool390@rnatlika-deliy.com;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1670522801;
+	h=from:from:sender:reply-to:subject:subject:date:date:message-id:to:to:	
+ cc:mime-version:mime-version:content-type:content-type:	
+ content-transfer-encoding:in-reply-to:references:dkim-signature;
+	bh=lhjU+fmjNNx/sy1SaW7J0ZAnL2JmGlCbnpDSLVeJXuM=;
+	b=Jq7BCRSK7UBcLVoSxbZMz0J9useVte8D22LN80/Zl8i/mEYK6fpF0TGM5SD3xzJNKKc8Mj
+	zkmDEAT8ou82xN6bVQkdWOiqbAYsw76A6TVXLe0pXPbQyMtUL3uw2RxXmaYYqkeDAqfVrn
+	XBiGqoqWMPGFO2THFdOeQFhzzkgicY4=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1670522801; a=rsa-sha256;
+	cv=none;
+	b=XBTT6zJBfv/vRQfTD7ukSILop2RErlEXwq5jrFMdLCUVfzrI+JvLaJ+ZFl8s4Eqj8Xf5qu
+	6eG+t134yfK8a/KRQODfVYkgKaLqgC3hF/xdlQJS+GqohV8gwJFZM4Y8j5UUC8hlhCtAvs
+	GSp9i4XChgdydeR3wpGSCrvRbAqP2+g=
+X-Rspamd-Server: rspam03
+X-Rspamd-Queue-Id: 8C392CA5988
+Authentication-Results: imf25.b.hostedemail.com;	dkim=pass
+ header.d=rnatlika-deliy.com header.s=20221208 header.b=XomjV85L;	spf=pass
+ (imf25.b.hostedemail.com: domain of cool390@rnatlika-deliy.com designates
+ 199.79.63.219 as permitted sender) smtp.mailfrom=cool390@rnatlika-deliy.com;
+	dmarc=none
+X-Rspam-User: 
+X-Stat-Signature: 5nxsdpdnc9ktosdp9pi9dwtsyh1xdzro
+X-Spam-Status: Yes, score=11.60
+X-CMAE-Score: 0
+X-CMAE-Analysis: v=2.4 cv=U6QqT8nu c=1 sm=1 tr=0 ts=639227b1
+	a=f5BU0IIKRsMfCKfkMy9Z/w==:117 a=AO53HSbWbcJdvqudR4LVlA==:17
+	a=HpEJnUlJZJkA:10 a=sHyYjHe8cH0A:10 a=5KLPUuaC_9wA:10
+	a=9DvhAHx2yrWFMPxQWpQA:9 a=XeZHdwrTfe2oCfp4608A:9 a=QEXdDO2ut3YA:10
+	a=xKoVYHPmAAAA:8 a=ZKMT4sR6AAAA:8 a=6fZaoVLdAAAA:20 a=1XWaLZrsAAAA:8
+	a=it52m7_1AAAA:8 a=miINcoOFEuOTIdWqWc8A:9 a=UVztAwSBZs5W7FtM:21
+	a=_W_S_7VecoQA:10 a=IQVERvgCjS2B9MHtSG50:22 a=jO_PVLMYxb9O2NAlxiqK:22
+X-HE-Tag: 1670522801-593126
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+g9VhbcjAvBsv7qXdr0LxOK8n90B3Lx07/Vd6L7wN3k66?=
+ =?utf-8?q?b1xqX0AJFfFpoT+zdouoOePFyJ3ZsqoNXVJysP+RIwiGHZyJMNE/EROVn4Txt5oDK?=
+ =?utf-8?q?2gWHrqgpdvvV5L4hNSc4+jxAwYUBv9oKOHgdgv604D3E7gUYGP1V39+DIkyLyuW2N?=
+ =?utf-8?q?7iE/FaKZ4miCYgdu3aPnq/S/u5khJL0SVVerA1hQKMyx8fDiV6cbpDT9Itts3H/uu?=
+ =?utf-8?q?moQipUr2kZdgJ9jhT7IvvTUFoYpwPMMBEfnsQfPlne5+8YwJqYqJshjCFAqZdr+A8?=
+ =?utf-8?q?TZa5txsLLwH8AHVWrp6WND1cGTfI+fX9i48dGKFeLn6JBfcO+iBiVJgWGATNHKRmG?=
+ =?utf-8?q?i05cUOfICFT443gT2XATYTbToM+01eKZUxy1UuA5lsTrusrft9OJRRqWueaDMTY2w?=
+ =?utf-8?q?rzocw15SFMRggFKuPR73O1sSe2gf5EPQLwJ04FR9eYXJ7HB/FJ1NhyW0clNF34Afw?=
+ =?utf-8?q?Qi9eO/zy/84Uplw/uiLR5oQuX2gr0BvI7CiP/nMQgRFC+s50IzcD5VmwEoyBwwms9?=
+ =?utf-8?q?XC4JfeN7kf/v4sM1ldYYkuv4ZtA0YkfKoA2mft4nvaGKzQaQsOIF4xR6ili4WAZ0a?=
+ =?utf-8?q?Cx3SAcAH0DuDGg8jfn8Zjet+931+mexZ1XU3027bzJlla22IJ8Hu93hUdltI9rg4L?=
+ =?utf-8?q?7gYdQpIIIb5NPIoCRAJMjImp893tlPD491OFDbjbq34HFj/gIkNmAm8cBhpgxIrtM?=
+ =?utf-8?q?0QFDbw+pZtnNMM97lBC2zXXHLKywUI7bpSVttKiQ/AUXRgcbxdAPAuZOXe1axsEBW?=
+ =?utf-8?q?Q5w/oB/vBXfGqHNCgO6xS9EbJvxU4S/VoSEwa7elEyHxRZHX4Qz+hkjCyM9h5faX1?=
+ =?utf-8?q?hr/Zf2YVqe4N1KiKNbCjNsfRsbsY6rFfx/FegG6ogZcBeKvMjroAcqNdgBoMs5xLR?=
+ =?utf-8?q?nMQiR7WHQJ1LAS9WtkgP9D_3SDYMnmMISEBCsmTRMGU/S8luT6HsUJnJHB7IMTK11?=
+ =?utf-8?q?rEeVaGmiRsOXDhte0mvy8gOLsh/esLgJtKWzfOwDshRLCzZ3l9jAaVQBUfo2Hn5h4?=
+ =?utf-8?q?EkJ72k7sqESQMv9QKuHLYwGqyts1hPjN17A+7x1NkfhD1k09+CwqEZPzOaT26l6Eo?=
+ =?utf-8?q?6gF/R8XjvAl4vSynIHLsyX+5eCHv3NzH39zJkHvw02cDNGS8CLQH48BIQreoNS4vp?=
+ =?utf-8?q?TTsQkcSEyNkil/iDgzjVxPCtirgGjzhJ/q4pMHaf696UMBRqTFOiaa7nXpToMDCcO?=
+ =?utf-8?q?fDtb3x7rCmoA98KzXdrETm0hQrfNGLIOC+rs7WtNX9JCvaM3f5NJMufLHu3fv9EYi?=
+ =?utf-8?q?B+7y/6iIdeCqfXFPci5L4X2sxIGxYURNCT8xPuhXazdqaMhWXh8jpVtpCk4NCRoO9?=
+ =?utf-8?q?x6gzI9wrytpREfKL/ITcUJP57Md7fBmt7sTq4ryWFroFro3UgGwAHeghyn+5fPnvh?=
+ =?utf-8?q?sQLQ/LKAS4HMkZ0gwnJkv14H16qJupajfDn+Vekdypy/+lpaRwOTENomP+p+W0MrX?=
+ =?utf-8?q?vdCN6Ddts9EfEWgYtgr5QsoR8YBgSIalaCFubzYlEuVvcae0KeCiteUdjMIC04SJq?=
+ =?utf-8?q?slHlGHlfRB+5BZ9nAvxeNdGzaTeIuVzGkNFyvowTn7tTi67SiWsRVpXfjUG39GdgE?=
+ =?utf-8?q?YHXe8RnfVQ3ApxGm2eTfsNeqjuM93s+KfuW3YOI71GRpOknOoM09NT0mpBcVXMiqk?=
+ =?utf-8?q?ngYOKGVCZLhxBAqy4o2OgjOJpxY9FWw6wh2W33ymUnKw1Kq1MKhRd6Xhn4+5KCHrt?=
+ =?utf-8?q?avjzYd5p6On2/R4rLWcM3fnqYdqPudE7PkjuPo2IG2o17Y4g/G0RbX0folLzCEhsR?=
+ =?utf-8?q?hBsAjcXDlMZLGflp4WceuTh1kyLZOp5hIHk93XHwORqY+Rl1zkG2WVvZvJR1+RFRM?=
+ =?utf-8?q?go0pnZubn26qTlRS6Ev+p9Nm/ujbdtyzQuOeXWGbqFmTY_Q/8pdFciwxw2b7MMeKL?=
+ =?utf-8?q?cxljtuFtMGpv4aR92NKBhGmwYBs3Q6ZsAGoHt2NDNGSeQDFX/auLY5AhNpGgsaRXx?=
+ =?utf-8?q?tk8IlMXV8Xr40U2OiixV8CN5OD+oPXWNUdNNVNBZ8n/HqTYo4VQzSKaQJevENkff0?=
+ =?utf-8?q?yWlvC9eSl0yvmG8jsMa79Mp6SNJKVn9syUxyAkAHdoFL6UJQ0s1Ke+5kJDxa+bV/3?=
+ =?utf-8?q?a4YBLsSgsNRbeH9E1b/hkTjM9XXTNZfvbVPoWETBVS4GnHmFibgNA3nX4sNUGWYUV?=
+ =?utf-8?q?q6XfBo6YviQxpMxz0HX40Fj7j7x4KSjp9mw5yb2THeTzxTianPajQZOxSmeI2HFNH?=
+ =?utf-8?q?FqcIq2DQSrkbxCZkME7p26Vn0Uprj+ByQgQO/oe1K/o0CtBqxFAKwp/QN5OwDZ90W?=
+ =?utf-8?q?VcRkwLqinlounuEK1Z1agbJ3ZrK2p0RTIBS4w6I+tv9yV8KjIkKkonE8diwS6F3yT?=
+ =?utf-8?q?av56Y5OpDuVlYgiqQ421D/bOHTHw5Z0GLpZ7ier1k2UOGeoJoUH3wDdkjlKxOPDSP?=
+ =?utf-8?q?kNZV7bL49/uBbrd7+Pjg3MBdS+1pV0bR1zoiFmKloMKGnvHVoZ5Ae3gZMOA3Ns2lO?=
+ =?utf-8?q?ggiBhcH6oMN/eD1DMnLtbucrf6gulMkqfFEE8RKD9C/xQ2sbaRNgepUbM0KyJQp8O?=
+ =?utf-8?q?sNu0sY3lns32hggmq1fPUlZxGIjJoFYxCZ1?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 234
+
+This is a multi-part message in MIME format
+
+--y48Z3VbkBexQKqvQ=_XHGBSmSlxN2RMHB8
+Content-Type: multipart/alternative;
+	boundary="Dk=_4UQeqoqAoP9agyxv6q2iuNLcBD0kOB"
+
+--Dk=_4UQeqoqAoP9agyxv6q2iuNLcBD0kOB
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+=EF=BB=BF=20
+
+
+Dear Customer  %Adresse_e-mail%
+We are having problems with your current billing information,
+=20
+Update Information Now!=20
+
+Help Center or at Contact us.=20
+
+
+2022/12/9
+
+
+--Dk=_4UQeqoqAoP9agyxv6q2iuNLcBD0kOB
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+=EF=BB=BF<HTML><HEAD></HEAD>
+<BODY>
+<DIV style=3D"FONT-FAMILY: Helvetica,Arial,sans; COLOR: rgb(34,31,31);=
+ PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px=
+; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(234,234,234)" bgcolor=3D"#=
+EAEAEA">
+<TABLE class=3Dm_-1154677300927437252container style=3D"MARGIN-TOP: 0p=
+x; BACKGROUND-COLOR: rgb(234,234,234)" cellSpacing=3D0 cellPadding=3D0=
+ width=3D"100%" border=3D0>
+<TBODY>
+<TR>
+<TD align=3Dcenter>
+<TABLE class=3Dm_-1154677300927437252shell style=3D"HEIGHT: 720px; WID=
+TH: 600px" cellSpacing=3D0 cellPadding=3D0 width=3D600 border=3D0>
+<TBODY>
+<TR>
+<TD class=3Dm_-1154677300927437252content-shell bgColor=3D#ffffff>
+<TABLE class=3Dm_-1154677300927437252content cellSpacing=3D0 cellPaddi=
+ng=3D0 width=3D"100%" border=3D0>
+<TBODY>
+<TR>
+<TD class=3Dm_860859677273653667content-shell style=3D"BACKGROUND: url=
+(cid:015522113@09122022-2880) rgb(255,255,255) no-repeat" bgColor=3D#f=
+fffff>
+<TABLE class=3Dm_860859677273653667content cellSpacing=3D0 cellPadding=
+=3D0 width=3D"100%" border=3D0>
+<TBODY>
+<TR>
+<TD class=3Dm_860859677273653667logo style=3D"PADDING-BOTTOM: 0px; PAD=
+DING-TOP: 46px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" align=3Dcenter>=
+<A style=3D"COLOR: " href=3D"" target=3D_blank data-saferedirecturl=3D=
+""><IMG class=3DCToWUd style=3D"BORDER-TOP: medium none; HEIGHT: 204px=
+; BORDER-RIGHT: medium none; WIDTH: 266px; BORDER-BOTTOM: medium none;=
+ OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; BORDER-LEFT: medium none;=
+ OUTLINE-COLOR: invert" alt=3DNetflix src=3D"https://seeklogo.com/imag=
+es/N/netflix-logo-B24AFC06E5-seeklogo.com.png" width=3D271 align=3Dcen=
+ter height=3D145> </A></TD></TR>
+<TR>
+<TD class=3Dm_860859677273653667copy style=3D"FONT-SIZE: 18px; FONT-FA=
+MILY: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif; COLOR: rgb(=
+34,31,31); PADDING-BOTTOM: 0px; PADDING-TOP: 22px; PADDING-LEFT: 90px;=
+ LINE-HEIGHT: 24px; PADDING-RIGHT: 90px"></TD></TR>
+<TR>
+<TD class=3Dm_860859677273653667headline style=3D"FONT-SIZE: 32px; FON=
+T-FAMILY: Helvetica,Arial,sans; FONT-WEIGHT: bold; COLOR: rgb(34,31,31=
+); PADDING-BOTTOM: 10px; PADDING-TOP: 40px; PADDING-LEFT: 90px; LINE-H=
+EIGHT: 36px; PADDING-RIGHT: 90px"></TD></TR>
+<TR>
+<TD class=3Dm_860859677273653667copy style=3D"FONT-SIZE: 18px; FONT-FA=
+MILY: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif; COLOR: rgb(=
+34,31,31); PADDING-BOTTOM: 0px; PADDING-TOP: 22px; PADDING-LEFT: 90px;=
+ LINE-HEIGHT: 24px; PADDING-RIGHT: 90px">Dear Customer&nbsp; %Adresse_=
+e-mail%</TD></TR>
+<TR>
+<TD class=3Dm_860859677273653667copy style=3D"FONT-SIZE: 18px; FONT-FA=
+MILY: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif; COLOR: rgb(=
+34,31,31); PADDING-BOTTOM: 0px; PADDING-TOP: 22px; PADDING-LEFT: 90px;=
+ LINE-HEIGHT: 24px; PADDING-RIGHT: 90px">
+<P>We are having problems with your current billing information,</P>
+<P>&nbsp;</P></TD></TR>
+<TR>
+<TD class=3Dm_860859677273653667button-shell style=3D"PADDING-BOTTOM: =
+0px; PADDING-TOP: 22px; PADDING-LEFT: 90px; PADDING-RIGHT: 90px">
+<TABLE class=3D"m_860859677273653667button m_860859677273653667red" ce=
+llSpacing=3D0 cellPadding=3D0 border=3D0>
+<TBODY>
+<TR>
+<TD style=3D"MAX-WIDTH: 265px; COLOR: rgb(255,255,255); PADDING-BOTTOM=
+: 10px; PADDING-TOP: 10px; PADDING-LEFT: 16px; PADDING-RIGHT: 16px; BA=
+CKGROUND-COLOR: rgb(229,9,20); border-radius: 2px"><A class=3Dm_860859=
+677273653667button-link style=3D"FONT-SIZE: 16px; TEXT-DECORATION: non=
+e; FONT-FAMILY: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif; F=
+ONT-WEIGHT: normal; COLOR: rgb(255,255,255); TEXT-ALIGN: center; LETTE=
+R-SPACING: 0.02em; LINE-HEIGHT: 24px" href=3D"https://s.free.fr/aXw2Cd=
+ZM" target=3D_blank data-saferedirecturl=3D"https://www.google.com/url=
+?hl=3Den&amp;q=3Dhttp://netflix.com/browse">Update Information Now!</A=
+> </TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD class=3Dm_860859677273653667copy style=3D"FONT-SIZE: 18px; FONT-FA=
+MILY: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif; COLOR: rgb(=
+34,31,31); PADDING-BOTTOM: 0px; PADDING-TOP: 22px; PADDING-LEFT: 90px;=
+ LINE-HEIGHT: 24px; PADDING-RIGHT: 90px"><A style=3D"TEXT-DECORATION: =
+underline; FONT-FAMILY: Helvetica,Arial,sans; COLOR: " href=3D"" targe=
+t=3D_blank data-saferedirecturl=3D"">Help Center</A> or at <A style=3D=
+"TEXT-DECORATION: underline; FONT-FAMILY: Helvetica,Arial,sans; COLOR:=
+ " href=3D"" target=3D_blank data-saferedirecturl=3D"">Contact us</A>.=
+ </TD></TR>
+<TR>
+<TD class=3Dm_860859677273653667escape-hatch-neutral-shell style=3D"PA=
+DDING-BOTTOM: 0px; PADDING-TOP: 30px; PADDING-LEFT: 90px; PADDING-RIGH=
+T: 90px"><A class=3D"m_860859677273653667escape-hatch-neutral m_860859=
+677273653667link" style=3D"TEXT-DECORATION: none; COLOR: " href=3D"" t=
+arget=3D_blank data-saferedirecturl=3D"">
+<TABLE class=3Dm_860859677273653667escape-hatch-neutral-table cellSpac=
+ing=3D0 cellPadding=3D0 width=3D"100%" border=3D0>
+<TBODY></TBODY></TABLE></A></TD></TR></TBODY></TABLE></TD></TR></TBODY=
+></TABLE><FONT size=3D1>2022/12/9</FONT></TD></TR></TBODY></TABLE></TD=
+></TR></TBODY>
+<DIV></DIV>
+<DIV></DIV>
+<DIV></DIV></DIV></BODY></HTML>
+
+
+--Dk=_4UQeqoqAoP9agyxv6q2iuNLcBD0kOB--
+
+--y48Z3VbkBexQKqvQ=_XHGBSmSlxN2RMHB8--
+
+

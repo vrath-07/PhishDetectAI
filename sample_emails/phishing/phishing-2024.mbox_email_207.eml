@@ -1,0 +1,139 @@
+Return-Path: ncacoy@forwardingchile.cl
+Delivered-To: jose@monkey.org
+X-FDA: 82369226184.04.903319A
+Received: from vertexgroup.ae (unknown [188.127.251.62])
+	by imf10.b.hostedemail.com (Postfix) with ESMTP id D9C7CA0002
+	for <jose@monkey.org>; Tue, 23 Jul 2024 01:06:10 +0000 (UTC)
+Authentication-Results: imf10.b.hostedemail.com;	dkim=none;	dmarc=none;
+	spf=none (imf10.b.hostedemail.com: domain of ncacoy@forwardingchile.cl has no
+ SPF policy when checking 188.127.251.62)
+ smtp.mailfrom=ncacoy@forwardingchile.cl
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1721696747; a=rsa-sha256;
+	cv=none;
+	b=arUVSVnE1W9kFpaplJN4TiC6+vFx7N2wJmgqUtvqtCn6EsQo+ZGvJadS4Fkr6xD5zCqgew
+	aY7jRXQgT/IJB0ZiP9EeioXSi1BR3aeb7WVXdNTDTb6vWcMJW83gShC5ehX1/TV2pdZg8W
+	yHAJAsCK0D5tsS+sX8SIu78sKCPd50M=
+ARC-Authentication-Results: i=1;	imf10.b.hostedemail.com;	dkim=none;
+	dmarc=none;	spf=none (imf10.b.hostedemail.com: domain of
+ ncacoy@forwardingchile.cl has no SPF policy when checking 188.127.251.62)
+ smtp.mailfrom=ncacoy@forwardingchile.cl
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1721696747;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=t3fmd7h8/W2w9Rdo7d8loNisTPfn+ww3HoBscg44TQQ=;
+	b=fJ24J6X/oR3CYfcConG/6efJKC7PV7O4NVl6to3tXE5gyiery3sjJI6LNo2ezoL+/qyrhN
+	epzHGG8JXNWfgyNyy1eF2bUPLc5VCrfjYzocRqRU+OCv1BGfkWYReZn+N2yFSca1A5Dn7u
+	u75ZGye8Flj7lgUD2r+pClbWZfDU7kI=
+Received: from forwardingchile.cl (localhost [IPv6:::1])
+	by vertexgroup.ae (Postfix) with ESMTP id 6F1282DE435
+	for <jose@monkey.org>; Tue, 23 Jul 2024 02:51:00 +0300 (MSK)
+From: monkey.org-Postmaster <ncacoy@forwardingchile.cl>
+To: jose@monkey.org
+Subject: =?utf-8?b?4pqg77iPIOe0p+aApemAmuefpTogam9zZUBtb25rZXkub3JnIOW4kA==?=
+ =?utf-8?b?5oi36K2m5oql?=
+Date: 22 Jul 2024 16:51:00 -0700
+Message-ID: <20240722165100.BDAAAB87C38A5976@forwardingchile.cl>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Queue-Id: D9C7CA0002
+X-Stat-Signature: 46nd94fioqguofu3jdfpkc41s9cd3ebh
+X-Rspam-User: 
+X-Spam-Status: Yes, score=9.54
+X-Rspamd-Server: rspam01
+X-HE-Tag: 1721696770-173849
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/oiCok4sSwwdJxztbHoOywIlsuo2P62oO7tiH4YaDGlu6?=
+ =?utf-8?q?acKq6G3rivjS5SRCI90lMikxjGPqE/gGnn1ed0oLGGU1ghCpXBb1TPExgy7z0czTj?=
+ =?utf-8?q?jHlRfq9LOYEhk++uEPLAMvpVtRUNNNgGIRYNYoWPhey0RkFh5BXK/DW++7G6xjsyx?=
+ =?utf-8?q?Ex7odhDXBZrMiQ7YEQw77zpIfEgfcm/P46McTM7uFcYFSIULxWwFUA9a6rUc9Z+Pd?=
+ =?utf-8?q?34UooyYvDdbsg2LGCmm1kl3xsN+f1bYANpfolRRhIKgqEbVilpKQvgwdHyqO6qnZf?=
+ =?utf-8?q?xmIpWyQv5PmPLK6GBuUHH+Y1Riq5vBoUMeJUGJMVAEO49Tf9vk/+5E7jl5qrJDQmN?=
+ =?utf-8?q?mzkCoGM9WejZChomaTJPRTAbAds6ebs8ArRBJwL27UkCl6AY8PKehst+FDdLk6kKj?=
+ =?utf-8?q?MpO0kkt473eJNEPd0M2sxKDrc6UXvYIhcPA3If9rbU9Z/QkqwdMhd9hXD6ZRUChcS?=
+ =?utf-8?q?P32JbGdUTmo56VRWAHkDMl4Hyqvfm0TBl2u13Yjbt9FEWZSjEJsvYLX7LJ6pB8+Nr?=
+ =?utf-8?q?yuoRzMV3lY2fIPaMirGl7SxqEyQnG9/qeIfF+kOgIV/rr9HN3Xz3EFioH4xcVK+oA?=
+ =?utf-8?q?/znUfGRzOK/JUNOZP2t8rBXTCmPlxZ/Zk8tu7Pp/ebmshtP+nJ1ZNumoZpAw9bbW+?=
+ =?utf-8?q?ol2eHRuEHedLbnqDoZTqR08gexaHk1mWOGazgrMfjrR74rIBqsNhagB7TWI0QWjZD?=
+ =?utf-8?q?EVaeBbhtnF8Ogx9DqCb2s+4Wprk2BfWFoJDQYvHAWj3db4FgnVPERq9mNYmCkeSRI?=
+ =?utf-8?q?v1eyzp1e6m7gQs1dTPKUYJY2ONvG6ott8+YpIquKXHfSefTCXj+1GgFZaLH21NZ1X?=
+ =?utf-8?q?eWZRCgitq3n5XV4+uxq+/STtE5q8cAX2wKZIn91P8Hbhlhghp8Wn2RsBG2YznQOIg?=
+ =?utf-8?q?5x+yh/gVW+3q7sfNpu+PoV_gUyeoQJrNaDHBEGllGlh1sC9kt2Kj340JyigkA4/7w?=
+ =?utf-8?q?G2vIsyJFjiu39JUfXMttUozFaxhTPVO0h/cv3YAZwhXHiFdthcnAmOVpjw2bM+N9z?=
+ =?utf-8?q?+xiLlMb2toA9cvr42/kMup+Y3R8bAhchJ480V0nPfKtaQOmTmE7ztHQv8B8rUOzLD?=
+ =?utf-8?q?D70FuJIEKyFfd063jVxXe6HXAmPEkKut4J2X7HONaks5ofSZ/JAiDWE6EMBGP/onF?=
+ =?utf-8?q?S0D25fmZ7kDnpJI3Ni8okFEAqxzeU84zTXFSngjlwGlISD8xTpA/7aBd1tw5peDos?=
+ =?utf-8?q?fpwikZlph8pVWC70MdD9AYu+fYpkb+utJX9sWm054Pk6UIPR/mUnU/a4jNink9fOM?=
+ =?utf-8?q?fKhxhg8DlHvt0zNohbGfZnpv7aUmISscWoitJbuFrRxmL+4OVSdOByOplD2dVuaRq?=
+ =?utf-8?q?ZqDig+5URNKNWDentWb5jQnqfsTZ1B2YX51NHziYheTolqxartl8yCRX9NFV77F94?=
+ =?utf-8?q?2t7XAe0EORbMEsVmW9bsqHurAvdUEUKYRgnhM7fPmG4BSmHuMk1EZJ5dtcZdJJfDH?=
+ =?utf-8?q?CcTT1Rjfz+5V8jyhpigrR1DclTGL+HjFlmZ3MQIq/Cwf0WeIT4kofigrXCP8/XjaC?=
+ =?utf-8?q?brr/T1wpcwmdAQWCQaY0+gRfwFZw0=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 207
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<BODY>
+<DIV style=3D"FONT-SIZE: 14px; BORDER-TOP: rgb(218,220,224) thin solid; FON=
+T-FAMILY: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; BORDER-RIGHT: =
+rgb(218,220,224) thin solid; BORDER-BOTTOM: rgb(218,220,224) thin solid; CO=
+LOR: rgb(0,0,0); PADDING-BOTTOM: 40px; PADDING-TOP: 40px; PADDING-LEFT: 20p=
+x; BORDER-LEFT: rgb(218,220,224) thin solid; PADDING-RIGHT: 20px" align=3Dc=
+enter><SPAN style=3D"FONT-FAMILY: Arial, Helvetica, sans-serif">&nbsp;</SPA=
+N>&nbsp;=20
+<DIV style=3D"BORDER-BOTTOM: rgb(218,220,224) thin solid; PADDING-BOTTOM: 2=
+4px; LINE-HEIGHT: 32px">
+<DIV><B style=3D"FONT-FAMILY: Helvetica, sans-serif; COLOR: rgb(0,175,236)"=
+><FONT size=3D4><A target=3D_blank>monkey.org&nbsp;</A>&#35686;&#21578;</FO=
+NT></B></DIV><BR>&nbsp; &nbsp;<SPAN style=3D'FONT-SIZE: 15px; FONT-FAMILY: =
+Consolas, "Courier New", Courier, monospace'>&#36825;&#26159;&#20026;&#2010=
+2;&#36890;&#30693;&#24744;&#25105;&#20204;&#21363;&#23558;&#20572;&#27490;&=
+#21521;&#24744;&#24080;&#25143;&#20013;&#30340;&#20256;&#20837;&#30005;&#23=
+376;&#37038;&#20214;</SPAN>
+ <PRE style=3D'BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 15px; OVERFLOW: auto; MAR=
+GIN-BOTTOM: 0px; FONT-FAMILY: Consolas, "Courier New", Courier, monospace; =
+BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: top; BORDER-BOTTOM-WIDTH: 0px; MAR=
+GIN-TOP: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PAD=
+DING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px'>
+<SPAN style=3D"BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; VERTICAL-AL=
+IGN: top; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; =
+PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px">=
+<FONT color=3D#ff0000>jose@monkey.org</FONT> &#30001;&#20110;&#24744;&#2529=
+8;&#32477;&#20445;&#25345;&#24744;&#30340;&#24080;&#25143;&#65292;&#22240;&=
+#27492;&#22914;&#26524;&#24573;&#30053;&#27492;&#36890;&#30693;&#65292;<WBR=
+>
+&#25105;&#20204;&#21487;&#33021;&#20250;&#34987;&#36843;&#38145;&#23450;&#2=
+4744;&#30340;&#24080;&#25143;</SPAN></PRE></DIV>
+<DIV style=3D"FONT-FAMILY: Roboto-Regular, Helvetica, Arial, sans-serif; PA=
+DDING-TOP: 20px; LINE-HEIGHT: 20px">
+<DIV style=3D"PADDING-TOP: 32px"><A style=3D'FONT-FAMILY: "Google Sans", Ro=
+boto, RobotoDraft, Helvetica, Arial, sans-serif; MIN-WIDTH: 90px; COLOR: rg=
+b(255,255,255); PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LEFT: 24px=
+; LINE-HEIGHT: 16px; PADDING-RIGHT: 24px; BACKGROUND-COLOR: rgb(65,132,243)=
+; text-decoration-line: none' href=3D"https://soniapradoterapeuta.com/sss/#=
+jose@monkey.org" target=3D_blank>&#20445;&#25345;&#24080;&#25143; jose@monk=
+ey.org</A></DIV>
+<DIV style=3D"PADDING-TOP: 32px"><PRE style=3D'BORDER-LEFT-WIDTH: 0px; FONT=
+-SIZE: 15px; OVERFLOW: auto; MARGIN-BOTTOM: 0px; FONT-FAMILY: Consolas, "Co=
+urier New", Courier, monospace; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: to=
+p; BORDER-BOTTOM-WIDTH: 0px; MARGIN-TOP: 0px; PADDING-BOTTOM: 0px; PADDING-=
+TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px'>
+<SPAN style=3D"BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; VERTICAL-AL=
+IGN: top; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; =
+PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px">=
+&#35831;&#19981;&#35201;&#24573;&#30053;&#36825;&#23553;&#30005;&#23376;&#3=
+7038;&#20214;&#65292;&#20197;&#20813;&#24744;&#30340;&#24080;&#25143;&#3498=
+7;&#20851;&#38381;</SPAN></PRE></DIV></DIV></DIV>
+<DIV style=3D"FONT-SIZE: 14px; FONT-FAMILY: Roboto, RobotoDraft, Helvetica,=
+ Arial, sans-serif; COLOR: rgb(0,0,0)">
+<DIV style=3D"FONT-SIZE: 11px; FONT-FAMILY: Roboto-Regular, Helvetica, Aria=
+l, sans-serif; TEXT-ALIGN: center; PADDING-TOP: 12px; LINE-HEIGHT: 18px">
+<DIV style=3D"DIRECTION: ltr">&copy; 2024 monkey.org Service</DIV></DIV></D=
+IV></BODY></HTML>
+

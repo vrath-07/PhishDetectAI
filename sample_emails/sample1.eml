@@ -1,0 +1,13 @@
+Return-Path: <spoofed@example.com>
+From: "Fake Bank" <alerts@f4kebank.com>
+Reply-To: "Support" <helpdesk@phishy-domain.com>
+To: victim@example.com
+Subject: Urgent: Your Account is Locked
+Date: Wed, 30 July 2025 12:34:56 +0000
+Received: from unknown (HELO smtp.mailtrap.io) (203.0.113.1)
+
+Hello,
+
+Please update your account by clicking the link below.
+
+http://phishy-site.com/login

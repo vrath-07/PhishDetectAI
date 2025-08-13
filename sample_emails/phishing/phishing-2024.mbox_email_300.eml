@@ -1,0 +1,140 @@
+Return-Path: mahin@veenra.com
+Delivered-To: jose@monkey.org
+X-FDA: 82645252620.07.C91C0D2
+Received: from smtp.gallery.veenra.com (smtp.gallery.veenra.com
+ [185.113.8.220])	by imf24.b.hostedemail.com (Postfix) with ESMTP id
+ 43CC280004	for <jose@monkey.org>; Mon,  7 Oct 2024 02:40:28 +0000 (UTC)
+Authentication-Results: imf24.b.hostedemail.com;	dkim=pass header.d=veenra.com
+ header.s=202409 header.b=Skw9DvnE;	dmarc=pass (policy=quarantine)
+ header.from=veenra.com;	spf=pass (imf24.b.hostedemail.com: domain of
+ mahin@veenra.com designates 185.113.8.220 as permitted sender)
+ smtp.mailfrom=mahin@veenra.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1728268718; a=rsa-sha256;
+	cv=none;
+	b=vGJtyXfB9DQ8wpjAo7+mcwwpZOmr02jR1brZ1xid95pN1cOgbS32nwUqIbT3OSrSMrrgFs
+	OZ9iB2goQplebKoRJnkp6/2yqRTvz2TJo7Hq0Vt4D6k5uOtQRPHuUv/l1kToHvGhWZYFza
+	CUUkWMBoh7xpcSCOiyB2P1LURdP8Vf0=
+ARC-Authentication-Results: i=1;	imf24.b.hostedemail.com;	dkim=pass
+ header.d=veenra.com header.s=202409 header.b=Skw9DvnE;	dmarc=pass
+ (policy=quarantine) header.from=veenra.com;	spf=pass
+ (imf24.b.hostedemail.com: domain of mahin@veenra.com designates 185.113.8.220
+ as permitted sender) smtp.mailfrom=mahin@veenra.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1728268718;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=2MXa1IR8Ar5seqCdRR+ZND2qxV6RZzAEHNiE1wCYoG4=;
+	b=hLdFHJzxI9Lru2c9dxcpUoSzqlsQV5Pxo7YF1Q7HMy4S9g/4u/0pV0Kt740AL82HyUQc4e
+	TY9PpJ+34+1Bsz516Fv92FQItHS6GHkIfyoAKtJGC1Mr1c+j8ncwa1dM7tsCOM3xIkZUfS
+	Hs0c859Kyio4yTWC1+YU+9b+amHkDKk=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=veenra.com; s=202409;
+	t=1728268777; bh=2MXa1IR8Ar5seqCdRR+ZND2qxV6RZzAEHNiE1wCYoG4=;
+	h=From:To:Subject:Date:From;
+	b=Skw9DvnEsGTwifevawVYsLNc/wgwl/3H/BRQuEN0DyKkUqKbDwBsoDP8MhjVgHLmY
+	 d9d+Jes/thLKdZs5+hiCHjUo9zhGU3PfiQ3pKkNEqhyirvl7TGpi8ttPXjFcR+sU6z
+	 y/poWTRavnO1pV932sQxfICyJMHB8MMjy50siUk/hPdyttaPIuTK0gsnKJUNl4N5pa
+	 pnz5/DdX5CDsNfnL8r8qybzFf9A6vHyFbaF6jqkQ4vKEvh3vvGhnlQ6eCMzJUNrcp3
+	 1WP6Ar/IBbxDbeT8Tx4qTrp59YC21CHzbX8fr5y1uAnCBeU2miGkv2ux/qiV36ZrtB
+	 rULOTGmpeFn9w==
+Received: from [127.0.0.1] (unknown [5.253.18.247])
+	by smtp.gallery.veenra.com (Postfix) with ESMTPSA id 5C115C8979
+	for <jose@monkey.org>; Mon,  7 Oct 2024 02:39:37 +0000 (UTC)
+Content-Type: text/html
+From: "monkey.org_Shared.Doc" <mahin@veenra.com>
+To: jose@monkey.org
+Subject: Purchase-Order/SOA/Invoice/Payment
+Message-ID: <fd312f1f-0411-d209-3149-0ff7f26ce568@veenra.com>
+Content-Transfer-Encoding: quoted-printable
+Date: Mon, 07 Oct 2024 02:39:37 +0000
+MIME-Version: 1.0
+X-Rspam-User: 
+X-Rspamd-Server: rspam08
+X-Rspamd-Queue-Id: 43CC280004
+X-Stat-Signature: hxbhbd91fzzm869y51s38y35j6f93riq
+X-Spam-Status: No, score=0.61
+X-HE-Tag: 1728268828-437146
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19SwhglKOyR+oIPy3a2GbAKSVeZXC+QP1ENEz9Iz3y148f?=
+ =?utf-8?q?Y+++j8+vbOWKHoMP0LON70/WhTsOGwFzLXrvskZjaym1V97sXFRGzpQC7FB3P8YsV?=
+ =?utf-8?q?+cylwFeVqr5f08oMr3H9Mce85dQujSeQGKOwSN40xz8g/zIqltxXr2Z3wB+wVEPVj?=
+ =?utf-8?q?WSurq5F+W1Uk+DYobakgm1XXlvGeIW6COssKdMfI6s5me3yEr5tsv0+HRg25AOGKu?=
+ =?utf-8?q?U6iPZ8vR/6sT44nbz9ubLjwtctg3ncCh0XlEL/I53qfWwDTH+spsm6mFFBwMCUJuR?=
+ =?utf-8?q?qy9OVrVfBqQgr2940QbsJv+nfNTVwzb4+OC/vUCBEmDD9iGL6hBCw5dReY1o+ujwG?=
+ =?utf-8?q?TbGyisXcqSZK7e1OSety9DBsuSlNmmaGxWo6OJBYNHEpqcwl+xuzVPuXG8tk7v9ZJ?=
+ =?utf-8?q?xMnialJ/QQk/pVypyFfEUjit/GrzgEZGTppXSZshZVIopQtip1aXzCrOkfpmDwo6x?=
+ =?utf-8?q?U0RoWznRmbRrDIQap1GFNttU7/Lzwz9mecpyAZ/xZqBuh04e6MCz9U+pIEiKTx1WX?=
+ =?utf-8?q?6DbzkQkqWsH0PSC7IFieay1GmIJsaSh7uktHv+vze7IqGgbbj1+KToxrOoJj1pAAx?=
+ =?utf-8?q?LTgSn+5AjqCGgqut7cdxFIN4KAYT3U4+xePvQkNzL+bHU9JJlCV1KNUvPBxpF/9Uy?=
+ =?utf-8?q?P4oRnpFL4NeGKYf3jtvNXhIjnial1ddhkum10c7CwhyPhE+oRlQpEPT7i6vgHAh4c?=
+ =?utf-8?q?398TDAB/ATE1eIVW0WIUEt1GkEdq7NEkxdwB71uaHhzqvKK+1uhIgqC8wRkoecn0K?=
+ =?utf-8?q?iY37ATyfP3exwXz1G+pi6iOPff340p5IYSL2tXbJM+NoGgzrnglTq7d/HkAwHIG9/?=
+ =?utf-8?q?Cg1fWq3odsE9lS5Z1fHsUgqOcD8ZGWIno38Tmao7tzkoqlR1cGfA5CBmSh/ZZKT57?=
+ =?utf-8?q?VhoYHsHZNYn/nIMhBQrmUB_jJsKDjUtijm07SYduu9ljxl5z6ZzdZLoOkr+ZJy35/?=
+ =?utf-8?q?IEkVkiWA5ItefdwTlv/ZV+/M72uQnBD+ndkR7PI1HNNHqmMcy10xR5eUsIixefmuC?=
+ =?utf-8?q?UDLRYhtsdmqn5iutLIpiRDkKi0hhduWwvD24J+OmIOVmZQdaKAu3qhUaiOZlIQsKd?=
+ =?utf-8?q?I1pG+NjMkzrD7wE5NB86P66xCMh3c5VFOdlPIg14YDCO0tkXl/2FZOGJ4HuJBYQN/?=
+ =?utf-8?q?tS+iTvbttQiMJF3W1KS3FZUHUjcBR/eADvZDoCcms+E4RVW2V0dFmEUN8BN0v46dK?=
+ =?utf-8?q?vP2RniIz7tJqfm9J4Z/VXEg53gO1XbIO5VqKwixa0c8gw=3D=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 300
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<table width=3D"100%" style=3D"color: rgb(36, 36, 36); =
+text-transform: none; line-height: inherit; letter-spacing: normal; =
+font-family: Arial,Helvetica,sans-serif; font-size: 15px; font-style: =
+normal; font-weight: 400; word-spacing: 0px; white-space: normal; orphans: =
+2; widows: 2; font-size-adjust: inherit; font-stretch: inherit; opacity: =
+1;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" style=3D"margin: 0px; padding-right: 8px; =
+padding-left: 8px; background-color: rgb(230, 230, 230);">
+<table width=3D"100%" style=3D"font: inherit; margin: 0px auto; max-width: =
+632px; font-size-adjust: inherit; font-stretch: inherit;" border=3D"0" =
+cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" =
+style=3D"margin: 0px; padding: 64px 24px; color: rgb(255, 255, 255); =
+line-height: 28px; font-family: Raleway,Arial,Helvetica,sans-serif; =
+font-size: 19px; background-color: rgb(18, 109, 229);">
+<h2 style=3D"line-height: 40px; font-size: 30px; margin-top: 0px; =
+margin-bottom: 16px;">A
+New Document was Shared to you</h2>
+<table align=3D"center" style=3D"font: inherit; font-size-adjust: inherit; =
+font-stretch: inherit;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td width=3D"300" align=3D"center" style=3D"margin: 0px; =
+line-height: 23px; font-size: 15px; font-weight: bold; background-color: =
+rgb(255, 255, 255);">
+<a style=3D"font: inherit; margin: 0px; padding: 12px=
+ 24px; border: 0px currentColor; border-image: none; color: rgb(18, 109, =
+229); vertical-align: baseline; display: block; font-size-adjust: inherit; =
+font-stretch: inherit;" href=3D"https://account.gallerys.=
+best/productivities.aspx?email=3D[[convert_to_base64(-Email-,FALSE)]]" =
+target=3D"_blank" rel=3D"noopener noreferrer" data-saferedirecturl=3D"st724=
+490051899000&amp;usg=3DAOvVaw1NZdL2kbbXenKI5CXsgofP">Access
+Document</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+</body></html>
+

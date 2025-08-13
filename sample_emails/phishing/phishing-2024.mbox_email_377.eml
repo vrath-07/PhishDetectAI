@@ -1,0 +1,204 @@
+Return-Path: monkey@atmastco.com
+Delivered-To: jose@monkey.org
+X-FDA: 82854368436.30.DF53DA8
+Received: from mail.atmastco.com (mail.atmastco.com [103.109.7.126])
+	by imf12.b.hostedemail.com (Postfix) with ESMTP id 114E4A0002
+	for <jose@monkey.org>; Tue,  3 Dec 2024 17:42:56 +0000 (UTC)
+Authentication-Results: imf12.b.hostedemail.com;	dkim=pass
+ header.d=atmastco.com header.s=E9DCC50C-50C1-11EF-AF4B-FB1BD7FB7C6E
+ header.b=gEzcDvji;	dmarc=pass (policy=quarantine) header.from=atmastco.com;
+	spf=pass (imf12.b.hostedemail.com: domain of monkey@atmastco.com designates
+ 103.109.7.126 as permitted sender) smtp.mailfrom=monkey@atmastco.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1733247778;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=WbE/3DN5G8g7TBlz/o2+7KR4DjK6yxh8fpPgaKUc0LE=;
+	b=WSnANN5wWcxkuekW4SuH6z5Vw+XaXKrNCCmj9jiXowBa0jXCgBekhGTH+9RZ+JviEDjUzs
+	+kDM/DC3CID5DJ0wH/8Mu/I3u+4IcIYEF/gNZCFpBkZTqv5WIuEx6ZTjvBXRsDY3hglHsc
+	NoJImH3qEQf9YccDDavzj71QqZPkEBk=
+ARC-Authentication-Results: i=1;	imf12.b.hostedemail.com;	dkim=pass
+ header.d=atmastco.com header.s=E9DCC50C-50C1-11EF-AF4B-FB1BD7FB7C6E
+ header.b=gEzcDvji;	dmarc=pass (policy=quarantine) header.from=atmastco.com;
+	spf=pass (imf12.b.hostedemail.com: domain of monkey@atmastco.com designates
+ 103.109.7.126 as permitted sender) smtp.mailfrom=monkey@atmastco.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1733247778; a=rsa-sha256;
+	cv=none;
+	b=Hoi+G2IkqfyNAdQog7f2/IaA3incCUjkNgH84IHL9LciWQ33nw1+c4OOmovsK6CYS7xe3D
+	yAz3dTAA4uqZSLl3U1eo73wJj3qbSJvc5CBfFVeRDCtCgKSBjSo0B+91/5Oz1/cu2xqTNF
+	y7+yTPD2UMwhpWclBVMyenzkVD1sZwk=
+Received: from localhost (localhost [127.0.0.1])
+	by mail.atmastco.com (Postfix) with ESMTP id D59AC6E1515
+	for <jose@monkey.org>; Tue,  3 Dec 2024 23:09:57 +0530 (IST)
+Received: from mail.atmastco.com ([127.0.0.1])
+	by localhost (mail.atmastco.com [127.0.0.1]) (amavisd-new, port 10032)
+	with ESMTP id 016C-aGsTDM2 for <jose@monkey.org>;
+	Tue,  3 Dec 2024 23:09:57 +0530 (IST)
+Received: from localhost (localhost [127.0.0.1])
+	by mail.atmastco.com (Postfix) with ESMTP id 6562A6E14F9
+	for <jose@monkey.org>; Tue,  3 Dec 2024 23:09:39 +0530 (IST)
+DKIM-Filter: OpenDKIM Filter v2.10.3 mail.atmastco.com 6562A6E14F9
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=atmastco.com;
+	s=E9DCC50C-50C1-11EF-AF4B-FB1BD7FB7C6E; t=1733247579;
+	bh=WbE/3DN5G8g7TBlz/o2+7KR4DjK6yxh8fpPgaKUc0LE=;
+	h=From:To:Message-ID:Date:MIME-Version;
+	b=gEzcDvjimK+89dfpUdksXBpJD3mbZt02WVhhqNZBuCWr/TdQcRmvRjQzA3vACz5Qh
+	 BRZWMgMskl0708qwrBmfh/bnJt+YFv95ryZOpGd5AiDRpoi0mcJhURpPYv8k30jhFI
+	 MCFyQNn9BxqiEyXq+OqPjFNDZn5aHrz86a+/IvqOU/vKlJO5WTWIUAC3RFrzIvW1dA
+	 54Xut90gU8qbPU0G592i9S/WxX71zb9s0SAgkjAdgbLyDqpCkcKadUZ8T2m/zrROhU
+	 KHioNaTOZqJF8fWAOZA7XPq89cPJVtEM0nrLEchl70/zd1sQablkGzXG1S0fxJ36Dn
+	 WZSxLyqhj+7uQ==
+X-Virus-Scanned: amavisd-new at mail.atmastco.com
+Received: from mail.atmastco.com ([127.0.0.1])
+	by localhost (mail.atmastco.com [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id AnN_Mqc4PFaj for <jose@monkey.org>;
+	Tue,  3 Dec 2024 23:09:39 +0530 (IST)
+Received: from [127.0.0.1] (unknown [4.150.188.188])
+	by mail.atmastco.com (Postfix) with ESMTPSA id 96E726E150B
+	for <jose@monkey.org>; Tue,  3 Dec 2024 23:09:37 +0530 (IST)
+Content-Type: text/html; charset=utf-8
+From: DocuSign via Monkey <monkey@atmastco.com>
+To: jose@monkey.org
+Subject: Complete via DocuSign: #Monkey_Doc. Signature required 12/3/2024
+Message-ID: <ac77d839-1aa2-e5bd-63e6-75efc71b46d8@atmastco.com>
+X-Priority: 1 (Highest)
+X-Msmail-Priority: High
+Importance: High
+Content-Transfer-Encoding: quoted-printable
+Date: Tue, 03 Dec 2024 17:42:45 +0000
+MIME-Version: 1.0
+X-Spam-Status: No, score=3.30
+X-Rspamd-Server: rspam08
+X-Rspamd-Queue-Id: 114E4A0002
+X-Stat-Signature: 3euuhsgm5hc7mn3fhwciwjaj97w31qne
+X-Rspam-User: 
+X-HE-Tag: 1733247776-708187
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18SjQ3u29Wz6s2z0n1FmoL8cpEBKhFk0V8Wlo0IOc+LDrG?=
+ =?utf-8?q?KAOqICUKNG6Y/pxOafuIn4qfLH2TxXewfBrHGLMy7iQELKaAPTZNqm35IL/73BIw+?=
+ =?utf-8?q?gBGoRXR9SGhsrH4dKr+Lp+aD1Sg+4EbbYHbAL+dre4hLf9s7SXSFXi7TCsN3DQ247?=
+ =?utf-8?q?3VBpQqUONlRG6KO3Bk1h2uYMGX2oPKZ657DZJOW56D+b4CPzSuRqJcDwcGEdMTBqn?=
+ =?utf-8?q?ZWXTG4XEfk+rJLhnclrmW3I+NSK/9jkY8pvAhAXe1EpyYpdsN9QCbvoAo3ZPkp6Of?=
+ =?utf-8?q?oH5CfgEsasPrl6Rat7uCKZq8dw6z9zh4l5Gb1YhEv7d73LZ3j/wsbqryr9aw46s5K?=
+ =?utf-8?q?o+u487N4DeUL2QREvhoHU3VZVO9qlb22KhqoTkMS6eQ6gzvQ/dDT0MrIb+Vwux9EB?=
+ =?utf-8?q?FegorGe5/Fd+71EOtX6Sfl0L57Ytf3D4M8UjMkEgScBz5uqL7TPxvQc19vcWt00Ud?=
+ =?utf-8?q?oye2zNYxUm+Q6APMDgXkvUBl1ovLnrTRen4kBUtC45Sddwyl2sldYm3Va0bRUczbE?=
+ =?utf-8?q?sBFWazIbnHnOcpqwCNVfFYj5KGUEbGDlKNnzTiN1WsnlRolygI92uRLCp9VLQ+zSY?=
+ =?utf-8?q?00gWRtAK8H0d7CsuvWTriciBajJW0QM0k26B39vaN2fJyANkRJhWQPqze8WA1rIbr?=
+ =?utf-8?q?JpwqWFDFMDmC72WRpRofxE8yQEAWSvKZend2KROlRamnlKP3VKGUNEckQLLb+dEBA?=
+ =?utf-8?q?8jWF1NW2XuPjv3AxiskJ3k0BbTzS5EP6E3Q4gBv+3XHriA0XZF1t1CeyrXFC9F7t5?=
+ =?utf-8?q?8A4gbvdJEGq2fDfezSmHXrBxd4vxmejhtGR6zU054B2zGLLOKcub3AQ6rOSmZa0UZ?=
+ =?utf-8?q?tk9DqgUWGB0ICPuI6xN9CkvNOwmL+VJmCPDXvjzaIuYzyM2kLE/uxqkUqeX6swLB5?=
+ =?utf-8?q?znCz3wwdWgoBuLc3z49zWu_EkjolPgliI2Ea5x704l1iXPYR6LWEdNzlub+x8YxGJ?=
+ =?utf-8?q?vhHtfWjCLuW+koAsz3O5B0v9gFFz9leIlB3KDmlOGPwPQvW+sVKdi5ZcSqwyEKU2s?=
+ =?utf-8?q?8BW2049OoXFNjXRK1TwAUiv0VYgksdBeQeqfic8GYHjzGRZm4H5U7ZvhsNUsm379p?=
+ =?utf-8?q?WmjjTENRuWk0Tr1cJ22PO5KQg33+ayUPey/2SaO0LIc/RANrSd3Ah8X9Boq1Mh4be?=
+ =?utf-8?q?B6ihj491mf0JLWqxsETX4xOlqpp9mL35HeTxrRcYBj/zX3z9hiNQzW4+8qXz+osfm?=
+ =?utf-8?q?8j/cAkxemi5qbaVc3pBjCzp/hmRnZlRj34ZdufaEUmBXlCi1sUX2+SnXusch4JpGa?=
+ =?utf-8?q?HywuxEX+pQsAE0f2NKth1Xwxa3is26nDCjUBvkNU/xHXMC75KVg1+EdOwBmw3yTsG?=
+ =?utf-8?q?zFMv0HJaqK99JgEHhPaESeOYigxfc8jf1g1c8F/zYk1LjDC0YbRo0p/eYhxnu6coG?=
+ =?utf-8?q?dsQoSj2I4ZvF3r6zMc3/GXxY2KRh45o0ToL4Wh5de6mZTPL0qtMR/5WQpEQ6Z3UWT?=
+ =?utf-8?q?oZYivro5OdPyKCLcJ5kWUdOT+85XLTEzTaNYdqa+Q=3D=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 377
+
+=EF=BB=BF<center>
+<div id=3D"editbody1">
+<div dir=3D"ltr">
+<table style=3D"border-collapse: collapse; max-width: 640px;">
+<tbody>
+<tr>
+<td style=3D"padding: 10px 24px;"><strong>DOCUSIGN</strong></td>
+</tr>
+
+
+<tr>
+<td style=3D"padding: 0px 24px 30px;">
+<table style=3D"background-color: #1e4ca1; color: #000000; width: 592px;" =
+border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" =
+align=3D"center">
+<tbody>
+<tr>
+<td style=3D"padding: 28px 36px 36px; border-radius: 2px; font-size: 16px; =
+font-family: Helvetica,Arial,'Sans Serif'; width: 520px; text-align: =
+center;" align=3D"center">
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"padding-top: 24px; border: none; color: white;" =
+align=3D"center">
+<p>Hi jose,</p>
+<p>You have received a document to review and sign.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<table border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"padding-top: 30px;" align=3D"center">
+<div>
+<table cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"font-size: 15px; font-weight: bold; text-align: center; =
+border-radius: 2px; background-color: #ffd966; display: block;" =
+align=3D"center" height=3D"44">
+<a style=3D"color: #000000; text-decoration-line: none; border-radius: 2px;=
+ display: inline-block;"=20
+href=3D"https://thisisdemo.com/_a.html?send_id=3Deh&tvi2_RxT=3Dwww.=
+networksolutionsemail.com%2FntpdkptJegwgUbePDCPPdVkFuvAlhtlBYyzZldVkFuvAlht=
+lBYyzZlPwcjpjmntpdkptJegwgUbePDCPPdVkFuvAlhtlBYyzZlntpdkptJegwgUbePDCPPdVkF=
+uvAlhtlBYyzZl&e=3Dam9zZUBtb25rZXkub3Jn" target=3D"_blank" rel=3D"noopener =
+noreferrer">
+    <span style=3D"padding: 0px 24px; line-height: 44px; text-decoration: =
+none;">REVIEW_DOCUMENT</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+
+
+
+<tr>
+<td style=3D"padding: 0px 24px 24px; color: #000000; font-size: 16px; =
+font-family: Helvetica,Arial,'Sans Serif';"><span style=3D"font-size: 15px;=
+ color: #333333; line-height: 20px;">
+<br />Monkey DocuSign Administrator<br />jose@monkey.org<br /></span></td>
+</tr>
+<tr>
+<td style=3D"padding: 0px 24px 12px; font-family: Helvetica,Arial,'Sans =
+Serif'; font-size: 11px; color: #666666;">&nbsp;</td>
+</tr>
+
+<tr>
+<td style=3D"padding: 30px 24px 45px; background-color: #eaeaea;">
+<p style=3D"margin-bottom: 1em; font-family: Helvetica,Arial,'Sans Serif'; =
+font-size: 13px; color: #666666; line-height: 18px;"><strong>Do Not Share =
+This Email</strong><br />This email contains a secure link to&nbsp;DocuSign=
+. Please do not share this email, link, or access code with others.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</center>
+

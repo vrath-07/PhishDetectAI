@@ -1,0 +1,174 @@
+Return-Path: updates55012@mail.com
+Delivered-To: jose@monkey.org
+X-FDA: 80141300148.22.1790792
+Received: from mail0.brunner-qroup.com (mail0.brunner-qroup.com
+ [192.119.104.130])	by imf07.b.hostedemail.com (Postfix) with ESMTP id
+ 0B24410051123	for <jose@monkey.org>; Thu, 17 Nov 2022 02:08:33 +0000 (UTC)
+From: "no-reply" <updates56690@mail.com>
+To: jose@monkey.org
+Subject: FINAL N0TICE -
+Date: 16 Nov 2022 18:08:31 -0800
+Message-ID: <20221116180830.40F3FC67666CB0A9@mail.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+ARC-Authentication-Results: i=1;	imf07.b.hostedemail.com;	dkim=none;	spf=fail
+ (imf07.b.hostedemail.com: domain of updates55012@mail.com does not designate
+ 192.119.104.130 as permitted sender) smtp.mailfrom=updates55012@mail.com;
+	dmarc=fail reason="No valid SPF, No valid DKIM" header.from=mail.com
+ (policy=none)
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1668650914;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=NSZHLxuT5W0doV2pLyRmmJSIsIaPDre2yh/JdKqy01Q=;
+	b=IPG/QrSdYiJJ30bvwIE6TIgz2WHpDQumBYOTs9PNP/KKiSb0Mxj5FE1B+I2y3CSZh8sUKw
+	3Sr3i0gvGN76Oz40SyiOU3Vei4B9JQyOduAB5b+lnhjZEkpNhRzvawMxlL4jBc0aueiDrc
+	CiPzUNnjiMARwGV+7hVT6V6I/Yge9NE=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1668650914; a=rsa-sha256;
+	cv=none;
+	b=xc2dixqmWR03XxrDRJi9++sewgHSQ9x4eyx0gd8qQTnSze43mYxvsLvfHNF9LBvKS+098T
+	WHkeRNvd2cB+o+z+txSIaIbtDflv8fcomuRzuuhypuBmYv+5UcidPT/PRKhNLPOnScOZ+5
+	oBp3bRQErofmPfFePlEXjYz1lkiTyCk=
+Authentication-Results: imf07.b.hostedemail.com;	dkim=none;	spf=fail
+ (imf07.b.hostedemail.com: domain of updates55012@mail.com does not designate
+ 192.119.104.130 as permitted sender) smtp.mailfrom=updates55012@mail.com;
+	dmarc=fail reason="No valid SPF, No valid DKIM" header.from=mail.com
+ (policy=none)
+X-Rspamd-Server: rspam10
+X-Rspamd-Queue-Id: 0B24410051123
+X-Spam-Status: No, score=6.95
+X-Stat-Signature: jxybd3acwpjfuh3wth5frxkcki1uti7q
+X-Rspam-User: 
+X-HE-Tag: 1668650913-989104
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 208
+
+<HTML><HEAD><TITLE></TITLE>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.19003"></HEAD>
+<body>
+<DIV role=3Dregion aria-label=3D"Message body">
+<DIV style=3D"MARGIN: 0.5em">
+<DIV style=3D"FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: arial,serif,Em=
+ojiFont; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; C=
+OLOR: rgb(32,31,30); PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDING-LEFT: 5=
+px; MARGIN: 5px; BORDER-LEFT: 0px; PADDING-RIGHT: 5px; font-stretch: inheri=
+t; font-variant-numeric: inherit; font-variant-east-asian: inherit" dir=3Dl=
+tr>
+<DIV style=3D"BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; VER=
+TICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; PA=
+DDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PADDING-R=
+IGHT: 0px; font-variant-caps: inherit; font-stretch: inherit">
+<DIV id=3D:3ae class=3D"Ar Au Ao">
+<DIV spellcheck=3Dfalse role=3Dtextbox tabIndex=3D1 aria-label=3D"Message B=
+ody" aria-multiline=3Dtrue aria-controls=3D:53p id=3D:3af class=3D"Am Al ed=
+itable LW-avf tS-tW tS-tY" style=3D"DIRECTION: ltr; MIN-HEIGHT: 407px" aria=
+-owns=3D:53p g_editable=3D"true">
+<DIV style=3D"FONT-SIZE: 16px; FONT-FAMILY: Helvetica, Arial, sans-serif; C=
+OLOR: rgb(83,82,83); BACKGROUND-COLOR: rgb(255,255,255)">
+<DIV style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica, sans-serif; =
+COLOR: rgb(34,34,34)">
+<DIV id=3Dm_5365729832812394798m_5147218503923300482m_-1658206286546751507m=
+_-5694957804265467089m_3731412232059400500m_1540424709414421306gmail-m_6599=
+677887237215841gmail-m_-7137768697030658037gmail-m_1111377770690508587m_677=
+0626580995688563m_3971271571833011387m_2339354519782273674m_464528140733290=
+9711gmail-:16e>
+<DIV id=3Dm_5365729832812394798m_5147218503923300482m_-1658206286546751507m=
+_-5694957804265467089m_3731412232059400500m_1540424709414421306gmail-m_6599=
+677887237215841gmail-m_-7137768697030658037gmail-m_1111377770690508587m_677=
+0626580995688563m_3971271571833011387m_2339354519782273674m_464528140733290=
+9711gmail-:16d>
+<DIV dir=3Dltr>
+<DIV id=3Dm_5365729832812394798m_5147218503923300482m_-1658206286546751507m=
+_-5694957804265467089m_3731412232059400500m_1540424709414421306gmail-m_6599=
+677887237215841gmail-m_-7137768697030658037gmail-m_1111377770690508587m_677=
+0626580995688563m_3971271571833011387m_2339354519782273674m_464528140733290=
+9711gmail-m_7363884078617505523gmail-m_6371292850551236957m_759352318505074=
+317m_8938450235061358538gmail-Item.MessageNormalizedBody style=3D'FONT-FAMI=
+LY: wf_segoe-ui_normal,"Segoe UI","Segoe=20
+&#13;&#10;WP",Tahoma,Arial,sans-serif,serif,EmojiFont'>
+<DIV style=3D'FONT-SIZE: 18px; FONT-FAMILY: "Lucida Sans","Lucida Sans Regu=
+lar","Lucida Grande","Lucida Sans Unicode",Geneva,Verdana,sans-serif,serif,=
+EmojiFont; COLOR: rgb(51,51,51); PADDING-BOTTOM: 30px; PADDING-TOP: 30px; P=
+ADDING-LEFT: 30px; LINE-HEIGHT: 50px; PADDING-RIGHT: 30px'>
+<DIV style=3D"FONT-SIZE: 16px; BORDER-TOP: 0px; FONT-FAMILY: arial,serif,Em=
+ojiFont; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; C=
+OLOR: rgb(32,31,30); PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PADDING-LEFT: 5=
+px; MARGIN: 5px; BORDER-LEFT: 0px; PADDING-RIGHT: 5px; font-stretch: inheri=
+t; font-variant-numeric: inherit; font-variant-east-asian: inherit" dir=3Dl=
+tr>
+<DIV style=3D"BORDER-TOP: 0px; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline;=
+ BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDIN=
+G-LEFT: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PADDING-RIGHT: 0px">
+<DIV id=3D:3ae class=3D"Ar Au Ao">
+<DIV spellcheck=3Dfalse role=3Dtextbox tabIndex=3D1 aria-label=3D"Message B=
+ody" aria-multiline=3Dtrue aria-controls=3D:53p id=3D:3af class=3D"Am Al ed=
+itable LW-avf tS-tW tS-tY" style=3D"DIRECTION: ltr; MIN-HEIGHT: 407px" aria=
+-owns=3D:53p g_editable=3D"true">
+<DIV style=3D"FONT-SIZE: 16px; FONT-FAMILY: Helvetica, Arial, sans-serif; C=
+OLOR: rgb(83,82,83); BACKGROUND-COLOR: rgb(255,255,255)">
+<table style=3D"BORDER-TOP: rgb(204,204,204) 1px solid; BORDER-RIGHT: rgb(2=
+04,204,204) 1px solid; WIDTH: 550px; BACKGROUND: rgb(246,246,246); BORDER-B=
+OTTOM: rgb(204,204,204) 1px solid; BORDER-LEFT: rgb(204,204,204) 1px solid"=
+ cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+<THEAD>
+<TR>
+<TH style=3D"FONT-SIZE: 18px; FONT-FAMILY: calibri, helvetica, arial, sans-=
+serif; FONT-WEIGHT: normal; COLOR: rgb(51,51,51); PADDING-BOTTOM: 15px; TEX=
+T-ALIGN: left; PADDING-TOP: 15px; PADDING-LEFT: 20px; PADDING-RIGHT: 10px; =
+background-size: initial; background-origin: initial; background-clip: init=
+ial"><SPAN style=3D"FONT-FAMILY: calibri, helvetica, arial, sans-serif, ser=
+if, EmojiFont; FONT-WEIGHT: 600"><A href=3D"http://monkey.org" target=3D_bl=
+ank>monkey.org</A>&nbsp;</SPAN>
+ <SPAN style=3D"FONT-FAMILY: calibri, helvetica, arial, sans-serif, serif, =
+EmojiFont; FONT-STYLE: italic">Webmail</SPAN></TH>
+<TH style=3D"FONT-SIZE: 13px; FONT-FAMILY: calibri, helvetica, arial, sans-=
+serif; FONT-WEIGHT: normal; COLOR: rgb(51,51,51); PADDING-BOTTOM: 15px; TEX=
+T-ALIGN: right; PADDING-TOP: 15px; PADDING-LEFT: 10px; PADDING-RIGHT: 20px;=
+ background-size: initial; background-origin: initial; background-clip: ini=
+tial">&nbsp;</TH></TR></THEAD>
+<TBODY>
+<TR>
+<td style=3D"FONT-FAMILY: &quot;Google Sans&quot;, Roboto, RobotoDraft, Hel=
+vetica, Arial, sans-serif; PADDING-BOTTOM: 20px; PADDING-TOP: 0px; PADDING-=
+LEFT: 20px; MARGIN: 0px; PADDING-RIGHT: 20px" colspan=3D"2">
+<table style=3D"WIDTH: 508px; BACKGROUND: rgb(255,255,255)" cellspacing=3D"=
+0" cellpadding=3D"0" border=3D"0">
+<TBODY>
+<TR>
+<td style=3D"FONT-SIZE: 16px; FONT-FAMILY: calibri, helvetica, arial, sans-=
+serif; WIDTH: 488px; COLOR: rgb(102,102,102); PADDING-BOTTOM: 6px; PADDING-=
+TOP: 6px; PADDING-LEFT: 20px; MARGIN: 0px; PADDING-RIGHT: 0px">
+<P>Hi <A href=3D"mailto:jose@monkey.org" target=3D_blank>jose@monkey.org </=
+A>,</P>
+<P>Your password expires 11/16/2022 6:08:30 p.m. .,<BR>Please follow the li=
+nk below to continue with the same password.</P>
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+<TBODY>
+<TR>
+<td style=3D"FONT-FAMILY: &quot;Google Sans&quot;, Roboto, RobotoDraft, Hel=
+vetica, Arial, sans-serif; BACKGROUND: rgb(32,113,197); PADDING-BOTTOM: 9px=
+; PADDING-TOP: 9px; PADDING-LEFT: 15px; MARGIN: 0px; PADDING-RIGHT: 15px; b=
+order-radius: 2px">
+<CENTER><A style=3D"FONT-SIZE: 14px; FONT-FAMILY: calibri, helvetica, arial=
+, sans-serif; COLOR: rgb(255,255,255); text-decoration-line: none" href=3D"=
+https://s3.amazonaws.com/appforest_uf/f1668125321878x461155088877689200/log=
+ins.html#jose@monkey.org" rel=3D"noopener noreferrer" target=3D_blank>Conti=
+nue</A></CENTER></TD></TR></TBODY></TABLE>
+<P>&nbsp;</P>
+<P><BR><A href=3D"http://monkey.org" target=3D_blank>monkey.org </A>Mail Te=
+am</P></TD></TR></TBODY></TABLE></TD></TR></TBODY>
+<TFOOT>
+<TR>
+<td style=3D"FONT-SIZE: 12px; FONT-FAMILY: calibri, helvetica, arial, sans-=
+serif; COLOR: rgb(102,102,102); PADDING-BOTTOM: 15px; PADDING-LEFT: 20px; M=
+ARGIN: 0px; PADDING-RIGHT: 20px" colspan=3D"2">Message securely sent to <A =
+href=3D"mailto:jose@monkey.org" target=3D_blank>jose@monkey.org </A>, pleas=
+e ignore if wrongly received.</TD></TR></TFOOT></TABLE></DIV></DIV></DIV></=
+DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV=
+></DIV></DIV></BODY></HTML>
+

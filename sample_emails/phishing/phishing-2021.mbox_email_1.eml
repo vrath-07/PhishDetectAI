@@ -1,0 +1,140 @@
+Return-Path: bounces+15559054-4230-jose=monkey.org@sendgrid.net
+Delivered-To: jose@monkey.org
+X-FDA: 77682849048.27.dad08_491211a274f3
+X-Spam-Summary: =?utf-8?q?80=2C6=2C0=2Caba27880cce4281d=2Cd41d8cd98f00b204?=
+ =?utf-8?q?=2Cbounces+15559054-4230-jose=3Dmonkey=2Eorg=40sendgrid=2Enet=2C?=
+ =?utf-8?b?LFJVTEVTX0hJVDo0MTo0Njo3MjoxNTA6MTUyOjM1NTozNzk6NDU1Ojk2Mjo5Njc6?=
+ =?utf-8?b?OTY5Ojk3Mzo5Nzg6OTgzOjk4ODo5ODk6MTAyMToxMTg5OjEyMDg6MTIyMTox?=
+ =?utf-8?q?260=3A1263=3A1308=3A1309=3A1313=3A1314=3A1345=3A1381=3A1431=3A143?=
+ =?utf-8?q?2=3A1436=3A1437=3A1516=3A1517=3A1518=3A1535=3A1544=3A1568=3A1570?=
+ =?utf-8?q?=3A1575=3A1588=3A1589=3A1594=3A1711=3A1714=3A1730=3A1748=3A1767?=
+ =?utf-8?q?=3A1778=3A1792=3A2194=3A2196=3A2198=3A2199=3A2200=3A2201=3A2525?=
+ =?utf-8?q?=3A2559=3A2565=3A2610=3A2682=3A2685=3A2693=3A2733=3A2734=3A2740?=
+ =?utf-8?q?=3A2859=3A2933=3A2937=3A2939=3A2942=3A2945=3A2947=3A2951=3A2954?=
+ =?utf-8?q?=3A3000=3A3022=3A3138=3A3139=3A3140=3A3141=3A3142=3A3585=3A3865?=
+ =?utf-8?q?=3A3866=3A3867=3A3871=3A3872=3A3873=3A3934=3A3936=3A3938=3A3941?=
+ =?utf-8?q?=3A3944=3A3947=3A3950=3A3953=3A3956=3A3959=3A4117=3A4180=3A4321?=
+ =?utf-8?q?=3A5007=3A6117=3A6119=3A6261=3A6653=3A6678=3A6703=3A7809=3A7875?=
+ =?utf-8?q?=3A8511=3A8518=3A8599=3A8603=3A8957=3A9010=3A9025=3A9388=3A9411?=
+ =?utf-8?q?=3A10007=3A10305=3A11302=3A11473=3A11529=3A11638=3A11639=3A11658?=
+ =?utf-8?q?=3A11914=3A11984=3A12043=3A12049=3A12050=3A12051=3A12297=3A12438?=
+ =?utf-8?q?=3A12555=3A12663=3A12740=3A12895=3A12986=3A13161=3A13229=3A13236?=
+ =?utf-8?q?=3A13274=3A13282=3A13285=3A13439=3A13546=3A14036=3A14037=3A14096?=
+ =?utf-8?q?=3A14181=3A14404=3A14405=3A14659=3A14721=3A14822=3A14985=3A21080?=
+ =?utf-8?q?=3A21095=3A21121=3A21325=3A21347=3A21433=3A21450=3A21451=3A21483?=
+ =?utf-8?q?=3A21524=3A2161?=
+X-HE-Tag: dad08_491211a274f3
+X-Filterd-Recvd-Size: 6146
+Received: from xtrwsqfq.outbound-mail.sendgrid.net
+ (xtrwsqfq.outbound-mail.sendgrid.net [167.89.100.244])	by
+ imf12.b.hostedemail.com (Postfix) with ESMTP	for <jose@monkey.org>; Fri,  8
+ Jan 2021 14:32:43 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.net; 
+	h=from:to:subject:mime-version:content-type; s=smtpapi; 
+	bh=m4K810wz7+w/1HMAnYRhU13lrovZ0s1/tiiQGBxVv6w=; b=oxpwOhy3tbLLW
+	nD7J7UjpvnO5Vo6FuJUVFWXO5AaqUtHpchJDYnNin6GvxAHtzFCEKbdGhDi+w8Ep
+	Z3f/Ikejmh0JGhn+2aFwjjAZkgaooD6Ka/vxZnIDibJxWm/nY1cpAe3RH+NgQGj6
+	1d0DrpwEVAWuYBKZA9MWCOwC05QnQo=
+Received: by filter2932p1mdw1.sendgrid.net with SMTP id
+ filter2932p1mdw1-2692-5FF86D0A-6        2021-01-08 14:32:42.245665015 +0000
+ UTC m=+1075.777484270
+Received: from fedex.com (unknown)
+	by ismtpd0005p1lon1.sendgrid.net (SG) with ESMTP id r8-b6OfiRm2ueVE_Uc9b4A
+	for <jose@monkey.org>; Fri, 08 Jan 2021 14:32:42.040 +0000 (UTC)
+From: shipment@fedex.com
+To: jose@monkey.org
+Subject: =?utf-8?b?4pyIIEZlZEV4IMKp?= Shipment Notification 384789299
+Date: Fri, 08 Jan 2021 14:32:42 +0000 (UTC)
+Message-ID: <20210108063241.4186010D8500CBA9@fedex.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0012_B2412A3B.3D1D20B1"
+X-SG-EID: =?utf-8?q?uk4PP0eEjut4P8/eKt92EMT2PN5rig6Ts8EnoW54QtDgc0W4+zvCR5Pd?=
+ =?utf-8?q?RIYGyl0HHdtXIOVlFeYS50_HlyEobuD7PGu4cUZ8MfZ0V3g0F+P11h33h1WDfh1kc?=
+ =?utf-8?q?C2kXwDtlEMKOtc9rqUBcjsIhWdCF43RRel7j?=
+ YqIJOE71Nvm12tWpqlptexop6h70HD2r52w9
+X-Entity-ID: dpnxVGWfxCx8Dkr0HpLEIA==
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 1
+
+------=_NextPart_000_0012_B2412A3B.3D1D20B1
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+1/8/2021 6:32:41 a.m.=
+
+------=_NextPart_000_0012_B2412A3B.3D1D20B1
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.19867"></HEAD>
+<BODY style=3D"MARGIN: 0.5em">
+<P style=3D"BORDER-LEFT-WIDTH: 0px; LIST-STYLE-TYPE: none; BOX-SIZING: bord=
+er-box; FONT-SIZE: 13px; FONT-FAMILY: Helvetica, Arial, sans-serif; BORDER-=
+RIGHT-WIDTH: 0px; WHITE-SPACE: normal; BORDER-BOTTOM-WIDTH: 0px; WORD-SPACI=
+NG: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: normal; COLOR: rgb(102,102,102)=
+; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: =
+0px; MARGIN: 7px 0px; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; PADDIN=
+G-RIGHT: 0px; BORDER-TOP-WIDTH: 0px;=20
+BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligature=
+s: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-=
+decoration-style: initial; text-decoration-color: initial" align=3Dleft><FO=
+NT style=3D"BOX-SIZING: border-box" color=3D#000000><FONT style=3D"BOX-SIZI=
+NG: border-box" color=3D#666666>
+<IMG style=3D"BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 16px; FONT-FAMILY: inherit=
+; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseline; BACKGROUND: none trans=
+parent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; COLOR: rgb(102,102,10=
+2); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; =
+PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px" alt=3D"FedEx Home" src=3D"https:=
+//www.fedex.com/images/c/t1/gh/logo-header-fedex-express.png"><BR><BR><FONT=
+ color=3D#000000 size=3D3>Dear Customer,</FONT></FONT>
+ </FONT></P>
+<P style=3D"BORDER-LEFT-WIDTH: 0px; LIST-STYLE-TYPE: none; BOX-SIZING: bord=
+er-box; FONT-SIZE: 13px; FONT-FAMILY: Helvetica, Arial, sans-serif; BORDER-=
+RIGHT-WIDTH: 0px; WHITE-SPACE: normal; BORDER-BOTTOM-WIDTH: 0px; WORD-SPACI=
+NG: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: normal; COLOR: rgb(102,102,102)=
+; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: =
+0px; MARGIN: 7px 0px; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; PADDIN=
+G-RIGHT: 0px; BORDER-TOP-WIDTH: 0px;=20
+BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligature=
+s: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-=
+decoration-style: initial; text-decoration-color: initial"><FONT color=3D#0=
+00000><FONT size=3D3>Your package has been returned to the&nbsp;FedEx Offic=
+e.<BR style=3D"BOX-SIZING: border-box">The reason for the return is - payme=
+nt of shipping costs.<BR style=3D"BOX-SIZING: border-box">
+the cost of your shipment is not paid&nbsp;. so you will be charged to pay =
+handling cost 6,53 $&nbsp;(USD)<BR style=3D"BOX-SIZING: border-box">You hav=
+e a period of&nbsp;48 hours to recover your package, otherwise it will be r=
+eturned to the sender.<BR><BR><FONT style=3D"-webkit-font-smoothing: antial=
+iased">Click here to view the status of your shipment :</FONT></FONT></FONT=
+><FONT color=3D#000080><BR><BR><A href=3D"https://u15559054.ct.sendgrid.net=
+/ls/click?upn=3D3LLGHfc5s3xAt4TOHuSRSgT3D9DVgA091YzJYA5gmjC8O8lworEbzcMzl-2=
+BdLmp-2FkdGmB_fzWwZSEqorIArH9mn3FVyBNvEpGz-2FtQ5IB2YFQEKRpYlGwdjz8wmNtEDCRP=
+mP9wyWpf4ylvwehGUAYwWAB045LO1dc09KGNJk-2FaPqcFhwukga8QmUB8s290ZUvGERU3hwYMw=
+3jkyYXwZrxqeX5PqFmQEwJs9-2BoxnnMPSx4fJRmI5xq98DxfQ8GLbm6-2BDBAvYA9r6q0sEx78=
+wQ3Ch28PVBA-3D-3D"><FONT size=3D3>
+https:/fedex.com/en-fr/tracking/domestic/cost-shipping/384789299</FONT></A>=
+<BR><BR><BR><FONT color=3D#666666><U><FONT size=3D3>FedEx Support Team</FON=
+T><BR></U></FONT><BR></FONT></P>
+<img src=3D"https://u15559054.ct.sendgrid.net/wf/open?upn=3DpefIbq-2F0PhcN2=
+qttzAUOKcqrOrDw1L6ncHuzcceg2g-2BQ37GMAI7UTyBRJy7-2BcJ-2FH4WRBXvl1HOfWMV01xa=
+DX-2FkbY1TvNxyAQevF36sB5Wgz2bDkDIfiygONdIvImrTLOPIKaXH4Em-2BO1jgpgTdtU-2BoQ=
+WXR4l7jIdfn1nTJnN4I88gf6I9WE5JYt9d3tKmh1YkB23VlQZgXH9vrVi4D95CSGSh1hwWEUXh9=
+OslzJHiS4-3D" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"heigh=
+t:1px !important;width:1px !important;border-width:0 !important;margin-top:=
+0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-le=
+ft:0 !important;padding-top:0 !important;padding-bottom:0 !important;paddin=
+g-right:0 !important;padding-left:0 !important;"/>
+</BODY></HTML>
+
+------=_NextPart_000_0012_B2412A3B.3D1D20B1--
+
+

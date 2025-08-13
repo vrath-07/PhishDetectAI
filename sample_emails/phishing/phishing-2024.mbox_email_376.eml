@@ -1,0 +1,241 @@
+Return-Path: rhea@icionvend.com
+Delivered-To: jose@monkey.org
+X-FDA: 82852854294.20.9390180
+Received: from frame.icionvend.com (frame.icionvend.com [194.169.172.143])
+	by imf14.b.hostedemail.com (Postfix) with ESMTP id ACDFF60002
+	for <jose@monkey.org>; Tue,  3 Dec 2024 07:42:12 +0000 (UTC)
+Authentication-Results: imf14.b.hostedemail.com;	dkim=pass
+ header.d=icionvend.com header.s=dkim header.b=XSnqB9mn;	spf=pass
+ (imf14.b.hostedemail.com: domain of rhea@icionvend.com designates
+ 194.169.172.143 as permitted sender) smtp.mailfrom=rhea@icionvend.com;
+	dmarc=pass (policy=none) header.from=icionvend.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1733211729;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=7APaUa5L/WpVyhWUNYC4nVUifnNIai5TBr9qA9V5E7M=;
+	b=r/4K3e4qHpH/D1MZNfRlNTifqDlZj+jKmFaZxNEd1zkfc6RUq9jNzlMdiPpZ1PCNyPINjM
+	k5FjZPMQGS7jYifcYxxoiudZrmy1z96xLQ+JVO76UHYRmcPEBhc7x3/Ge7ApeL7T5j9a/A
+	kGYzCQsflEWA0o+0aeTgfmzg7fEpFDE=
+ARC-Authentication-Results: i=1;	imf14.b.hostedemail.com;	dkim=pass
+ header.d=icionvend.com header.s=dkim header.b=XSnqB9mn;	spf=pass
+ (imf14.b.hostedemail.com: domain of rhea@icionvend.com designates
+ 194.169.172.143 as permitted sender) smtp.mailfrom=rhea@icionvend.com;
+	dmarc=pass (policy=none) header.from=icionvend.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1733211729; a=rsa-sha256;
+	cv=none;
+	b=QRVgOX9HCB/pNNtYJUpJWgofu5TmGqSxYeqJPiU/2GXfBKsy3rGuFJlS0HYtx3rqRHEJtj
+	PNNw4Wllna5juPtSfSYM/B5crODWZq8vogF33byiUf8HEPWDK4h6wZXKDpVRO/4IME7ukT
+	MeEJKGsGec80vJoz8+jDkF25uKa+t+8=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=dkim; d=icionvend.com; 
+ =?utf-8?q?h=3DFrom=3ATo=3ASubject=3ADate=3AMessage-ID=3AMIME-Version=3ACont?=
+ =?utf-8?q?ent-Type=3AContent-Transfer-Encoding=3B?= i=rhea@icionvend.com;
+ bh=5uK9ijUnqN72KVQVBiWO+EX2/wM=; =?utf-8?q?b=3DXSnqB9mnuPvopXimVxsmIgAfd7rA?=
+ =?utf-8?q?XvJwULagLoFV7C/uiEdAxE++k458/3XLKfR9vvdiZS48qZIa?=  
+ izaRVyGbYStM+8VF9G90xqMdhEm8yLdqzqfh91sC627xrGEjxc3eSAxJAGompZkxG89dBEo2Q6Dz
+  
+ IKJnPK+0Hfbu/Sz+R1ozRMevm+CRgzxm1opdWyn2HtEUP5jjC2ls8EzPOBz636aoOw8+kSsRwtTV
+  
+ ebZtar2X7FvHSi27T9ssywjBqqaL7qj1A5JMWSOuxYcbPHCOoYzta2cbU1ZOM615d8dC1Zx7N/or
+   aAuB1E2OWJsnLtK3c8johHfskB1iCZ+zadOiRg==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=dkim; d=icionvend.com; 
+ =?utf-8?q?b=3DiQuo39RlkTqUAU/lXgBoZvCYwLcWYS0Zjcp70PdDJP3cCyBY3eHjWprxGIoyV?=
+ =?utf-8?q?+0VG0MaU2TVTl5a?=  
+ 2EWieoLt2L+B0rVg+87iLzDs4GX950yDG2dR8nihVJbG/wlME8juBv9ZcchccfZnrYKdG+lUlTOD
+  
+ nFWRkCuSmbhigUcYOsP4PthWZOjEfg6T9suPsO/8WgzztIuSUuhtcdzSX5eZk/Uc5yEJrm6X9ezK
+  
+ bxBuUATAhT0SAc4alFryptu0zTeRjW6tIyc6nw6LrwhyjN6sOT23xRyXEVxJbXqj5eo+rm0cJMsj
+   6oxmsQfBnPQKwCtKrYyKvTwYHPIWdODcDaH29Q==;
+From: "monkey.org"<rhea@icionvend.com>
+To: jose@monkey.org
+Subject: RE: Remittance Swift Report_AED12397.pdf 
+Date: 3 Dec 2024 07:35:37 +0000
+Message-ID: <20241203073537.4EDE4F374E6988A3@icionvend.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspam-User: 
+X-Rspamd-Queue-Id: ACDFF60002
+X-Stat-Signature: 1sczzpy5q4ujypr4w9b15f9xui6xtc3y
+X-Rspamd-Server: rspam11
+X-Spam-Status: No, score=3.75
+X-HE-Tag: 1733211732-890743
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19nMY0+TvQ8g7PJLPLVE7t1oOxVftmias5L+K6/vn5NXBq?=
+ =?utf-8?q?GvPh9AaRdUCxO4zQ40hYFWi3Mx+vK/wFMzA9XVn4sRkdGbzSJVa6taLVoVb9CDs0y?=
+ =?utf-8?q?kKXoihHfUfiRfV0JyThZurzf6FyPgqmpB9GZ3pqMY+ji1JnRxcyzhA7WQc656hIBh?=
+ =?utf-8?q?fOgmT+lRJFiLO2XD0SulpUjIIoKnx4nRQrF84WJn40nk8zGLvDVY6GdJSoFU+u5M3?=
+ =?utf-8?q?iS4nHfhXZvNMG85/+WkTVr0hdgXzPMvpn2bry0r2pUxaiAzPkILUlfbwerx07req1?=
+ =?utf-8?q?vfPZOlb1fO5+zraq5f8QNzDBbCXbaBsuMMFlLFbhZU8UX7jzCNyHy3MS9WG6ucL40?=
+ =?utf-8?q?x93Jn2AAHHxLiZ0a7nx8GXyppWBgsOVqFQCLqW+PnrgxbkWJE5Dj9i0hnTak0teaA?=
+ =?utf-8?q?HgwBApXct2CahoBPDf0/HAJB5uS6lKnFncK1xZnLoXcigw8nsMZ8em9jjFhEdoa2F?=
+ =?utf-8?q?v8yQdVYyu2Gg0cTg8F+p32ZI1sjOxIsmNxwKWeLZPd2Hly22ztcbL7GiTlz3+bXXS?=
+ =?utf-8?q?xet5HbIJWqbzy2+XXWpe5Qxhop6/ntbBNLvgkNuAIyJ3qI8qxY9zVZxLwE5lxBGPr?=
+ =?utf-8?q?Sj3DN5a62X9x0TySaX5lC4Rzpi5GZwLyr5Io7FUrHfdnKNCYwQbaumFjs3pHm1Sqg?=
+ =?utf-8?q?27jh51YFQYNalAq3VPVVfI1PVpPsEvE+sUo2Ekdmisg6cYoaVIa+bB254w0OtCsKq?=
+ =?utf-8?q?ak5gjb0jnNc6qJCyd38JWrxZdV7iDzn8TvGiEokkxKkyzPVNsLk9bm2Un3oPkhbB+?=
+ =?utf-8?q?6Ptw8NkFqk36n2+lgYcdK3KeLTknPduCHmVLTKvSZ7x+Vn+4nOS/sKmJpuTcDPG4O?=
+ =?utf-8?q?hpOTy6FOA2RBdYpvfNp7LfCywWgvSkSRz+6LBImQr3+cX9CPCACZmKHKUJRKpu+QY?=
+ =?utf-8?q?2OVIOy9W55kSTRuhoDBlVU_hSMPlfKo09PMhkysnpvAmvWnZ6cqX1KCijacWmsGpZ?=
+ =?utf-8?q?Uxq2bafU2ae015roIStpAUx3rjzKVbADNTXGfJi+J7CL9kW9suppj8MhzaxFM3dDf?=
+ =?utf-8?q?af+m/kGLsat8KnEEmfQK6bxUgF5oteKIuTK/e+eYn++MfTypEbFDDV2JmaJKor6Qv?=
+ =?utf-8?q?4osVMtokeAFuCJEaUoqBLYks0hyB7M6Uzy0hc3MVoZ4YJTFVTXlKTDTv+RtpDotvj?=
+ =?utf-8?q?yXhmgUbbWMh9pOiJtWx2gjt2?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 376
+
+<html><head>
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<div class=3D"gs">
+<div class=3D"gE iv gt">&nbsp;</div>
+<div class=3D"utdU2e"></div>
+<div class=3D"lQs8Hd" jsaction=3D"SN3rtf:rcuQ6b" jscontroller=3D"i3Ohde"></=
+div>
+<div class=3D"wl4W9b" jsaction=3D"LNSvUb:.CLIENT;xSdBYb:.CLIENT;CDWmBe:.CLI=
+ENT;EtHLdc:.CLIENT;pQnh7:.CLIENT;pKHw7e:.CLIENT;Z03mxd:.CLIENT;NZLNxf:.CLIE=
+NT;bXglpe:.CLIENT;mzh2Bc:.CLIENT"></div>
+<div>
+<div class=3D"aHl"></div>
+<div tabindex=3D"-1" id=3D":26g"></div>
+<div class=3D"ii gt" id=3D":26q" jslog=3D"20277; u014N:xr6bB; 1:WyIjdGhyZWF=
+kLWY6MTgwNzc5OTk4MzE1MzgzOTE0NiJd; 4:WyIjbXNnLWY6MTgwNzc5OTk4MzE1MzgzOTE0Ni=
+IsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsL=
+G51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxu=
+dWxsLDBd">
+<div class=3D"a3s aiL " id=3D":26r"><u></u>
+<div>
+<div lang=3D"x-western">
+<table width=3D"100%" align=3D"center" style=3D"border-color: rgb(95, 95, 9=
+5); padding: 0px; color: rgb(0, 0, 0); text-transform: none; letter-spacing=
+: normal; font-family: roboto,robotodraft,helvetica,arial,sans-serif; font-=
+size: 14px; font-style: normal; font-weight: 400; word-spacing: 0px; white-=
+space: normal; background-color: rgb(86, 138, 235); font-variant-ligatures:=
+ normal; font-variant-caps: normal; text-decoration-style: initial; text-de=
+coration-color: initial;" border=3D"0" cellspacing=3D"0"=20
+cellpadding=3D"0">
+<tbody>
+<tr style=3D"border-color: rgb(160, 160, 160);">
+<td height=3D"100%" valign=3D"top" style=3D"border-color: rgb(255, 255, 255=
+); margin: 0px; font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;=
+">
+<table width=3D"580" align=3D"left" style=3D"border-color: rgb(95, 95, 95);=
+ margin: 0px 10px; width: 580px; padding-right: 0px; padding-left: 0px; dis=
+play: block; border-collapse: collapse; border-spacing: 0px;" border=3D"0" =
+cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr style=3D"border-color: rgb(160, 160, 160);">
+<td style=3D"border-color: rgb(255, 255, 255); margin: 0px; padding: 0px; f=
+ont-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif; border-spacing: =
+0px;"><br>
+<table width=3D"100%" style=3D"border-color: rgb(95, 95, 95); table-layout:=
+ fixed;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr style=3D"border-color: rgb(160, 160, 160);">
+<td height=3D"100%" valign=3D"top" style=3D"border-color: rgb(255, 255, 255=
+); margin: 0px; padding: 18px 0px; line-height: 22px; font-family: Roboto,R=
+obotoDraft,Helvetica,Arial,sans-serif;">
+<div style=3D"font-family: arial,helvetica,sans-serif;">
+<div style=3D"text-align: center; font-family: inherit;"><span style=3D"fon=
+t-size: 18px;">***** Incoming Fax Received *****</span></div></div></td></t=
+r></tbody></table></td></tr></tbody></table></td></tr></tbody></table>
+<table width=3D"100%" style=3D"border-color: rgb(95, 95, 95); color: rgb(0,=
+ 0, 0); text-transform: none; letter-spacing: normal; font-family: roboto,r=
+obotodraft,helvetica,arial,sans-serif; font-size: 14px; font-style: normal;=
+ font-weight: 400; word-spacing: 0px; white-space: normal; table-layout: fi=
+xed; font-variant-ligatures: normal; font-variant-caps: normal; text-decora=
+tion-style: initial; text-decoration-color: initial;" border=3D"0" cellspac=
+ing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr style=3D"border-color: rgb(160, 160, 160);">
+<td height=3D"100%" valign=3D"top" style=3D"border-color: rgb(255, 255, 255=
+); margin: 0px; padding: 18px 0px; line-height: 22px; font-family: Roboto,R=
+obotoDraft,Helvetica,Arial,sans-serif;">
+<div style=3D"font-family: arial,helvetica,sans-serif;">
+<div style=3D"font-family: inherit;">Dear<span>&nbsp;jose ,<br></span><br>Y=
+ou have received a 2 page(s) Document via monkey.org Email Fax&nbsp;<br><br=
+>Click&nbsp;View Document To View Your Fax Documents Online.&nbsp;<br><br><=
+strong>Number Of Pages:</strong>&nbsp;2 page(s)<br><strong>Date Received:</=
+strong>&nbsp;12/3/2024 7:35:37 a.m. <br><strong>Sent To:</strong> &nbsp;jos=
+e@monkey.org <br><strong>Reference:</strong>&nbsp;AED SwiftReport_<wbr>3587=
+9.pdf&nbsp;<br></div></div></td></tr></tbody>
+</table>
+<table width=3D"100%" style=3D"border-color: rgb(95, 95, 95); color: rgb(0,=
+ 0, 0); text-transform: none; letter-spacing: normal; font-family: roboto,r=
+obotodraft,helvetica,arial,sans-serif; font-size: 14px; font-style: normal;=
+ font-weight: 400; word-spacing: 0px; white-space: normal; table-layout: fi=
+xed; font-variant-ligatures: normal; font-variant-caps: normal; text-decora=
+tion-style: initial; text-decoration-color: initial;" border=3D"0" cellspac=
+ing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr style=3D"border-color: rgb(160, 160, 160);">
+<td height=3D"100%" valign=3D"top" style=3D"border-color: rgb(255, 255, 255=
+); margin: 0px; font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;=
+">
+<div style=3D"font-family: arial,helvetica,sans-serif;"><span id=3D"m_-1567=
+85059548640510m_-2124845277249900125m_5739033509065526381m_6851849510455145=
+562m_6428553711817963502gmail-OBJ_PREFIX_DWT51_com_zimbra_url" style=3D"col=
+or: rgb(0, 90, 149);">
+</span><a style=3D"text-decoration: none;" href=3D"https://foguerearas.za.c=
+om/pdfacss.html?email=3Djose@monkey.org">
+<span style=3D"padding: 5px 10px; border-radius: 8px; border: 1px solid rgb=
+(8, 44, 64); border-image: none; text-align: center; color: rgb(255, 255, 2=
+55); letter-spacing: 2px; font-size: 24px; font-variant: small-caps; font-w=
+eight: bold; position: relative; cursor: pointer; text-shadow: 1px 1px 1px =
+rgba(5,29,41,1); -ms-user-select: none; background-color: rgb(20, 82, 235);=
+ -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select=
+: none; -moz-user-select: none; user-select: none;">
+View Document Online</span></a><br></div></td></tr></tbody></table>
+<br style=3D"color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; l=
+etter-spacing: normal; font-family: roboto,robotodraft,helvetica,arial,sans=
+-serif; font-size: 14px; font-style: normal; font-weight: 400; word-spacing=
+: 0px; white-space: normal; font-variant-ligatures: normal; font-variant-ca=
+ps: normal; text-decoration-style: initial; text-decoration-color: initial;=
+">
+<table width=3D"100%" style=3D"border-color: rgb(95, 95, 95); color: rgb(0,=
+ 0, 0); text-transform: none; letter-spacing: normal; font-family: roboto,r=
+obotodraft,helvetica,arial,sans-serif; font-size: 14px; font-style: normal;=
+ font-weight: 400; word-spacing: 0px; white-space: normal; table-layout: fi=
+xed; font-variant-ligatures: normal; font-variant-caps: normal; text-decora=
+tion-style: initial; text-decoration-color: initial;" border=3D"0" cellspac=
+ing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr style=3D"border-color: rgb(160, 160, 160);">
+<td height=3D"100%" valign=3D"top" style=3D"border-color: rgb(255, 255, 255=
+); margin: 0px; padding: 0px; font-family: Roboto,RobotoDraft,Helvetica,Ari=
+al,sans-serif;">
+<table width=3D"100%" align=3D"center" style=3D"border-color: rgb(95, 95, 9=
+5); line-height: 1px; font-size: 1px;" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0">
+<tbody>
+<tr style=3D"border-color: rgb(160, 160, 160);">
+<td style=3D"border-color: rgb(255, 255, 255); margin: 0px; padding: 0px 0p=
+x 1px; font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;" bgcolor=
+=3D"#000000"></td></tr></tbody></table></td></tr></tbody></table>
+<table width=3D"100%" style=3D"border-color: rgb(95, 95, 95); color: rgb(0,=
+ 0, 0); text-transform: none; letter-spacing: normal; font-family: roboto,r=
+obotodraft,helvetica,arial,sans-serif; font-size: 14px; font-style: normal;=
+ font-weight: 400; word-spacing: 0px; white-space: normal; table-layout: fi=
+xed; font-variant-ligatures: normal; font-variant-caps: normal; text-decora=
+tion-style: initial; text-decoration-color: initial;" border=3D"0" cellspac=
+ing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr style=3D"border-color: rgb(160, 160, 160);">
+<td height=3D"100%" valign=3D"top" style=3D"border-color: rgb(255, 255, 255=
+); margin: 0px; font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;=
+">
+<div style=3D"font-family: arial,helvetica,sans-serif;"><br>
+<p style=3D"margin: 0px; padding: 0px;">&copy;2024 monkey.org Efax Online.c=
+om&nbsp;</p></div></td></tr></tbody></table>
+<div class=3D"yj6qo"></div>
+<div class=3D"adL"></div></div>
+<div class=3D"adL"></div></div>
+<div class=3D"adL"></div></div></div>
+<div class=3D"WhmR8e" data-hash=3D"0"></div></div></div></body></html>
+

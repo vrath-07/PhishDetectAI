@@ -1,0 +1,2064 @@
+Return-Path:
+ newnoreplymanagehomexmbb8rkmu3ye@intl.propaganda-src5.pashululangat.my
+Delivered-To: jose@monkey.org
+X-FDA: 81670087758.04.387DAA2
+Received: from EUR03-DBA-obe.outbound.protection.outlook.com
+ (mail-dbaeur03on2059.outbound.protection.outlook.com [40.107.104.59])	by
+ imf04.b.hostedemail.com (Postfix) with ESMTP id 4118B16000B	for
+ <jose@monkey.org>; Fri, 12 Jan 2024 09:10:16 +0000 (UTC)
+Authentication-Results: imf04.b.hostedemail.com;	dkim=none;	spf=pass
+ (imf04.b.hostedemail.com: domain of
+ newnoreplymanagehomexmbb8rkmu3ye@intl.propaganda-src5.pashululangat.my
+ designates 40.107.104.59 as permitted sender) =?utf-8?q?smtp=2Emailfrom=3Dn?=
+ =?utf-8?q?ewnoreplymanagehomexmbb8rkmu3ye=40intl=2Epropaganda-src5=2Epashul?=
+ =?utf-8?q?ulangat=2Emy=3B?=	dmarc=pass (policy=reject)
+ header.from=pashululangat.my;	arc=pass
+ ("microsoft.com:s=arcselector9901:i=1")
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1705050617;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	 references;
+ bh=St9DRcwR67nqyMBr9/1lUbYnIVBLd+JzGyTYxrxb7zA=;
+	b=SjIfSYKRPd3yEEBBoUFh4JmdCQ42AE2P1FnpTmnfcqGzuFgOfROl1PqqKOdcHljbYpTSc5
+	WRX9dGxPuoh09NVFBCSTU45jSr1gSYrxfIRUSKj/SBh+NOcIebdH5Yi884vPegk99vVWCk
+	RNd5eD9aO7AXzDzjh7gWAfSYfu3Sw6E=
+ARC-Authentication-Results: i=2;	imf04.b.hostedemail.com;	dkim=none;	spf=pass
+ (imf04.b.hostedemail.com: domain of
+ newnoreplymanagehomexmbb8rkmu3ye@intl.propaganda-src5.pashululangat.my
+ designates 40.107.104.59 as permitted sender) =?utf-8?q?smtp=2Emailfrom=3Dn?=
+ =?utf-8?q?ewnoreplymanagehomexmbb8rkmu3ye=40intl=2Epropaganda-src5=2Epashul?=
+ =?utf-8?q?ulangat=2Emy=3B?=	dmarc=pass (policy=reject)
+ header.from=pashululangat.my;	arc=pass
+ ("microsoft.com:s=arcselector9901:i=1")
+ARC-Seal: i=2; s=arc-20220608; d=hostedemail.com; t=1705050617; a=rsa-sha256;
+	cv=pass;
+	b=Ky/uvSDEl3O84Nk6FI/FmQlQd8kuoxDpMmjd4L5o4Z4lnLdYyZ4h/DGg3NVSiG8S+WZTsE
+	3XwW2gqykCGFKecUeIYO7ja7D/z7gKB22NGHjWz3gl690TNcOA7QquSztUYabV2oK/8ZqY
+	NM/yqb+piS8fltPu4hlIr8oiwX44DL4=
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none; 
+ =?utf-8?q?b=3DcuoXjHBJE7pyBUOcLpPRvfrXSnN4Z2vPkQNsvFeE32y8GnlgC1WXhLrsATnBF?=
+ =?utf-8?q?LJEBNQM1l/Rl6A4ZizRDtSljdpcC4A8xwJCAOOZ7rKsuyNlPcnCQ+dJKgbXMYT3v/?=
+ =?utf-8?q?pjwRAqXUAVP/FqpuUPvNsGIkSdzsWY8yrGCRtiqR3mnCqm/ZOh3T7MJgfQWFmWxQh?=
+ =?utf-8?q?wUWX6OGPzPDwtsE7YEvVEWjBMfEz2E7PoGX/eC8TP5DmbECk4JgV9774qheL3+ZkP?=
+ =?utf-8?q?k0h10z5EyeL7iqA0d2nzGUI73wmNAVjv8BKo0XF50ggAXyxnFwecb/3xLEMCejvCQ?=
+ =?utf-8?q?wtnMCiLso0dxMFNt+ilmA=3D=3D?=
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901; =?utf-8?q?h=3DFrom=3ADate=3ASubject=3AMessage-ID=3AConte?=
+ =?utf-8?q?nt-Type=3AMIME-Version=3AX-MS-Exchange-AntiSpam-MessageData-Chunk?=
+ =?utf-8?q?Count=3AX-MS-Exchange-AntiSpam-MessageData-0=3AX-MS-Exchange-Anti?=
+ =?utf-8?q?Spam-MessageData-1=3B?=
+ bh=St9DRcwR67nqyMBr9/1lUbYnIVBLd+JzGyTYxrxb7zA=; =?utf-8?q?b=3DM0I1IrtHk9Ct?=
+ =?utf-8?q?wOC6lANm49GhehpWFzFFQEbPJPxlvcbgeBOicfyhA9W+GvAAEB9tU9pezKr7b/m1E?=
+ =?utf-8?q?cw5wfwJ5jBpZvkiJFHP9B6Bffsj7q9pn+Bu6HbdmP9bDZAHWqHPPrjzEI9kj17dzg?=
+ =?utf-8?q?T+iqFT9bT7vx5BHYPccBNmdr4SW8+x1FWJtR2037c10RI/7CQ18IjrzloCl3XTuhb?=
+ =?utf-8?q?aU7LZ97aaMfDa+Wq66UvMwj/MCOTxSEP6v16wTsHNiMHtB3nAPmljUVCQscmkdjcW?=
+ =?utf-8?q?mHTJ6Aku4zLBUbGfg7TOkdPi1bPDb10hpT6Lif2O8m9K2OgZ2Sk96g7uaUd8HiZE7?=
+ =?utf-8?q?Ty15A=3D=3D?=
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=intl.propaganda-src5.pashululangat.my; dmarc=pass action=none
+ header.from=intl.propaganda-src5.pashululangat.my; dkim=pass
+ header.d=intl.propaganda-src5.pashululangat.my; arc=none
+Received: from AM9P192MB1077.EURP192.PROD.OUTLOOK.COM (2603:10a6:20b:1f1::17)
+ by AS1P192MB1445.EURP192.PROD.OUTLOOK.COM (2603:10a6:20b:48c::14) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7181.21; Fri, 12 Jan
+ 2024 09:10:12 +0000
+Received: from AM9P192MB1077.EURP192.PROD.OUTLOOK.COM
+ ([fe80::7326:8290:def1:e8b1]) by AM9P192MB1077.EURP192.PROD.OUTLOOK.COM
+ ([fe80::7326:8290:def1:e8b1%6]) with mapi id 15.20.7181.020; Fri, 12 Jan 2024
+ 09:10:11 +0000
+Content-Type: multipart/alternative;
+ boundary="--_NmP-a52df3e04abbe30a-Part_1"
+From: =?UTF-8?Q?Prime=CD=8F?=
+ <newnoreplymanagehomexmbb8rkmu3ye@intl.propaganda-src5.pashululangat.my>
+To: jose@monkey.org
+Subject: Your Prime Membership statement was ended - Your renewal scheduled
+ on January 12, 2024. #AJPX-4288796.
+Message-ID: 
+ <bbc6ddb8-84b5-f35b-ba84-8b52d9be28fe@intl.propaganda-src5.pashululangat.my>
+Date: Fri, 12 Jan 2024 09:10:11 +0000
+X-ClientProxiedBy: LO4P123CA0532.GBRP123.PROD.OUTLOOK.COM
+ (2603:10a6:600:2c5::14) To AM9P192MB1077.EURP192.PROD.OUTLOOK.COM
+ (2603:10a6:20b:1f1::17)
+MIME-Version: 1.0
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: AM9P192MB1077:EE_|AS1P192MB1445:EE_
+X-MS-Office365-Filtering-Correlation-Id: 93b7b917-20d3-49de-d9bb-08dc134e47c2
+X-MS-Exchange-SenderADCheck: 1
+X-MS-Exchange-AntiSpam-Relay: 0
+X-Microsoft-Antispam: BCL:0;
+X-Microsoft-Antispam-Message-Info: 	=?utf-8?q?iCVwzbpUwCH4UrmTPm2HV3zTOed1pR?=
+ =?utf-8?q?qzjtV3bhUX/4YU4KlNQ0u2G9Eai/79MqqQOvcmm1OQY4a2la5hB1hs+f/N6A32F3J?=
+ =?utf-8?q?dNTzgBlh8pMxl2FiBZgR+R9oFjGvH6mROu2cFJ7tF8y9geNo+hhqCQfO/cNjc8/uj?=
+ =?utf-8?q?HwV1FNGVM1zI400y95mi7/oD8iIqT14bREiMe+Gp5sMuqrs1Z2jhK4vOqvK0j5IVq?=
+ =?utf-8?q?caDY2cEOyyFW4KuzkQ/z9p5845M2FUCBH8aWEw8KJzwXXXA+cYRHLnQD9M8rdqR5p?=
+ =?utf-8?q?VLWuF8ONm9v25M8jhlD2mJOcBVFiUTlrz62M9/gJbDZNw52P4QmcHjjkiTL1oMwav?=
+ =?utf-8?q?eYdJQ/IxsCYAm7clvgv6HRwggivMmRgsMlkiPke7rJ3TU58Py/4GxnZ+NyBd2WwIE?=
+ =?utf-8?q?iMSCTIUN5NXzhAg3iMZK1LM72BUmfw96yuqwPOMOGHhK+yQtGGxRr6cB8UyX0BwCy?=
+ =?utf-8?q?NtH0a8/xg2dQow9vYcG5EGTmkAAwgoRBlcgcxDS4+unh1ICqAhoI6O8W2dylchGW2?=
+ =?utf-8?q?0j96OTnWO/FiXIfEcC9IBSJV2Iiqs+kuOHaxCLn404UY5OU0Vph88RY/F8h8z95FC?=
+ =?utf-8?q?ZWX2Uh6igGZy74lA9E7wU4Iagk7jKu+2IiNLPXr+OxoM8gaj3mPAesXdITeDqqkrr?=
+ =?utf-8?q?xO9SkhUIR4HC2WsH3DliemnhbkaHK4I43lUKtyyKr/hkrw=3D=3D?=
+X-Forefront-Antispam-Report: 	=?utf-8?b?Q0lQOjI1NS4yNTUuMjU1LjI1NTtDVFJZOjtM?=
+ =?utf-8?b?QU5HOmVuO1NDTDoxO1NSVjo7SVBWOk5MSTtTRlY6TlNQTTtIOkFNOVAxOTJNQjEw?=
+ =?utf-8?b?NzcuRVVSUDE5Mi5QUk9ELk9VVExPT0suQ09NO1BUUjo7Q0FUOk5PTkU7U0ZTOigx?=
+ =?utf-8?q?3230031=29=28376002=29=2839860400002=29=28136003=29=28396003=29?=
+ =?utf-8?q?=28366004=29=28346002=29=28230273577357003=29=28230173577357003?=
+ =?utf-8?q?=29=28230922051799003=29=28451199024=29=281800799012=29=286410079?=
+ =?utf-8?b?OTAwMykoMTg2MDA5KSg1MjExNjAwMikoNTUyMzYwMDQpKDI2MDA1KSg4MzM4?=
+ =?utf-8?q?0400001=29=286506007=29=286512007=29=282616005=29=2833964004=29?=
+ =?utf-8?q?=288936002=29=285660300002=29=282906002=29=2841300700001=29=28867?=
+ =?utf-8?q?6002=29=2819627235002=29=28478600001=29=28316002=29=286916009=29?=
+ =?utf-8?b?KDY2NTU2MDA4KSg2NjQ3NjAwNykoNjY5NDYwMDcpKDY0ODYwMDIpKDc4NjAwMyko?=
+ =?utf-8?q?41320700001=29=2838350700005=29=2816799955002=29=2886362001=29=28?=
+ =?utf-8?q?31696002=29=2838100700002=29=28166002=29=2819627405001=29=2831686?=
+ =?utf-8?q?004=29=2866899024=29=2839450500005=29=2845980500001=29=28579004?=
+ =?utf-8?b?KSg1NTkwMDEpO0RJUjpPVVQ7U0ZQOjExMDE7?=
+X-MS-Exchange-AntiSpam-MessageData-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-0: 
+	=?utf-8?B?ay8vMUdGazJCSnVkQzBCTDhIUEFkMHdRbGpKYUljSXNoaHVsWWVIMStvZENJ?=
+ =?utf-8?B?ZHJGUTZsVGNJSG53SkV0eUtkVEJGdHE1cVdlM2VqUXM1SmxQQXlpT2N2KzBO?=
+ =?utf-8?B?bHVPVkViTWg2UUZ5dTZHSnJURnljN3kxcVNIMFpnVzdUblNqQ1RhbVM1aUZZ?=
+ =?utf-8?B?bVdEOUlzRElaeENQSFFqZ0xQL203eEZ4OG1yNDJkVFZXSUw3RTBaSEdQS21Z?=
+ =?utf-8?B?Zm1MdGIzNndKOEpTR0VOTzRqUHZiODJNWnc2Sk9VS1AzclFESTVWTjVxT0Nm?=
+ =?utf-8?B?ZDF2ODR5RmNnV01FdGVGVW1sYWFsV0hWdE1nL0ZZZ3lhUGNYWkVtV2YxYWFl?=
+ =?utf-8?B?dmR3SEFJczliUkhFb0VHbUZ6SEh0SUJ6QTlNaHRiTXFOWmcvUDgvWlBhby9P?=
+ =?utf-8?B?ODc5bVZwV3Z4OGxjRlhjZlQvUXV5Qi8ydXVWWUVhTFRoVHUzSGg1bzk4bTdr?=
+ =?utf-8?B?eTlFYWZwcDNSdkx3VFM3c201YS96cDZGSGhnRXZCWmpGRnpxU3M2VUx1TVFr?=
+ =?utf-8?B?YnNETDJGN0gwbXR2L0pPZDFWNkVaZ095Y0FUbDBVTHB6eERLcjFvVTVYczAw?=
+ =?utf-8?B?MEk1Nm56Rjg2QWZLT3grTFNlTkdRUWx6MEgwcENIVUFEVlArZHVSWFpVVyts?=
+ =?utf-8?B?by9FazgxRWppRlRmbzhpUy9KTFJYN0dYL0R2d0g2dGhqQjBXUUgxa2ZTcGFI?=
+ =?utf-8?B?NXZyWEUyb1RvL3E0cGlvODJsbGdtcm1qb25iS2VyS2ZRaHBvc0ZqOXFFWWZ1?=
+ =?utf-8?B?bHQ2dkRGMlhzaXpZVjNSL25XZ3FNSmVNenZxb29vMmxpSStsVGMzZEdKOTFW?=
+ =?utf-8?B?cEhEV3FZM01KcEtCckVhQ3VIUFVhUitELzJpa0VGeXd5WHh5Zlc2SWZOY3h3?=
+ =?utf-8?B?QS9Eekl4elRQdWRlVllteTA4dmRiU0kxNDVaTHpmc0hsY2F0Qlh1SitvM3ox?=
+ =?utf-8?B?dHBORTkzajMrV3VFVDhqSzFSTVpzeGx1dU8zK1E2TzNNb1laY2pPSFl3VllE?=
+ =?utf-8?B?TFptUjBmZVh0b282RlFHWmMxWElJQTBEbFFRWGh3R3ZYd1hsUGh6Rnp3RWs3?=
+ =?utf-8?B?L1plL1dhdHNMb25GQzZYRFFuenZTTFhtb0dQcTlJYjBEQyswdG45bmpOM3FH?=
+ =?utf-8?B?RWtabURGL0VqNlBtVXVqT2Jac0RqZENpemc3b0d1K08yWTJlZTBIbGNUcVZz?=
+ =?utf-8?B?QTlXRllXSHNZS2RUVDJ4SnBRTUd1T0UxZFdsRzBSN291MkllRzhjK3dicWpG?=
+ =?utf-8?B?cnFmRk5WS2ZDNVMxNTBEUitheUZHaENTUWtWWmpUZFJNeUdoWTJROG1JZnAz?=
+ =?utf-8?B?V3diT1BWN0RqWmMzd2M0YjVWVVNSZWtIOEFmTDFKRWYxNVhHNVR5OTVZb3o5?=
+ =?utf-8?B?YUlvWnBBS0V5MVlOWWppU3ltZnFSbkRIUnhQWENPSkdZRWlHSGZlUFJubW1G?=
+ =?utf-8?B?c09XbGxJQW5WMGgzWDRhSU5yQjBLYTlvY0s3VWhrSzZ2Q29zRHVmaHVUanFB?=
+ =?utf-8?B?NFg4RnQ4am91clkrUjV1elNqMHVBaEtaWTN0UUNSME05clB5UUZMVkdoNFJs?=
+ =?utf-8?B?MCt0UkZ2VUg0OEMvU2p2Ti96Wm9QdjdsRExDNzFkaUZHTEdRclQzWTdEckFZ?=
+ =?utf-8?B?dThQdVkwRFJGRk5zcHF6THhZMzl6NDhZMU5hMVBxYmowbms0RC9qVng5WGRM?=
+ =?utf-8?B?Qk1hZGt2ZDdEa1poQ09OYS83THdBYlVITzlzYUdlUlVubzdQbUliSVpzMFZM?=
+ =?utf-8?B?R2UwKzVyekE0Q05razFtWnFPODRkaWtrMWNCUjV4TDd0K0hwMHBzQnlXemov?=
+ =?utf-8?B?bk9rTnRDQlBlS3pFaEhyNTJ0T3duOHhocG9xaFB0OWwxdmVhbVFkeFRFWTA1?=
+ =?utf-8?B?RjhJS0xaN0k5NjBubkVnb3FURlZsMWYxYnExUUV1aUM2V0Qrc1RJem0yVDRM?=
+ =?utf-8?B?cVJLdkNqUEdVU1FxUzhUTC91KzZGQ0JEc3IxcjgxaDlHR2ZwVENWOXJ3eDdC?=
+ =?utf-8?B?NzNxK3lFTkVQclp6Q3JjMkgzNUpMczllL21FUXZZRFFDb2tnRm10Njd2aXNw?=
+ =?utf-8?B?UUNCeVFUampMaHNZZWYxMVdkbTFSWFVJdE5tRDBza0hqRG1CTExwOEx0VlJD?=
+ =?utf-8?B?WlRhamxNVTVPY3JOWXNWN0FOa3ZIN3FsVGoxN240U1grZlVBOXpnTElpUDFF?=
+ =?utf-8?B?KzFnNFJhK0JoQmswQjBOL1JhTHlGSjNNWGVrY2R5RlJ2VVg1cDg1dk1WcVlR?=
+ =?utf-8?B?ejJnVGZxeHZLM2lsNG5rYlE1SEpsVm9Yb1k0WkxnZGx5QVNrVndzTmNsa0gy?=
+ =?utf-8?B?U0NGM2kwZjgwVHVvSzQvUk9JSmQ0M3F6RjVPUVd1ZnViVHhGbk54Zz09?=
+X-OriginatorOrg: intl.propaganda-src5.pashululangat.my
+X-MS-Exchange-CrossTenant-Network-Message-Id:
+ 93b7b917-20d3-49de-d9bb-08dc134e47c2
+X-MS-Exchange-CrossTenant-AuthSource: AM9P192MB1077.EURP192.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 12 Jan 2024 09:10:11.3161
+ (UTC)
+X-MS-Exchange-CrossTenant-FromEntityHeader: Hosted
+X-MS-Exchange-CrossTenant-Id: 88fea893-debc-4418-814e-4799e7a563c3
+X-MS-Exchange-CrossTenant-MailboxType: HOSTED
+X-MS-Exchange-CrossTenant-UserPrincipalName: =?utf-8?q?k1sx0iVthy0lHMgEHuVw4?=
+ =?utf-8?q?4CNKB9BnauOTutbp4Tv0tOzwNM+lcncrB8DFWrLBR/RSNdBDcM+/ep4UyiIHyiNHw?=
+ =?utf-8?q?Fm1tY3TzPUAt5xmZf3c3mXqmE7g69oTbBmRExiAVBkXsKPPH8rarbFaG9nIJtgyQ9?=
+ =?utf-8?q?l7pb2IkDlluXiky0yn7hGHO1HambYFf1JWSWKUHHa3a4YYeDNeWiekDRP1IBtyw?=
+ =?utf-8?q?=3D=3D?=
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AS1P192MB1445
+X-Rspamd-Server: rspam09
+X-Rspamd-Queue-Id: 4118B16000B
+X-Stat-Signature: 1f7b4nzmpdzfhiysz1wbmmto9dofraym
+X-Rspam-User: 
+X-Spam-Status: No, score=-0.54
+X-HE-Tag: 1705050616-509042
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19lryx1O4ghha9bv+3TWhloV5nuLelmYsieDKHWn7TjiyK?=
+ =?utf-8?q?TsZhalviEzg/Imf3jVvla4/1JMhHh4Yms0aDilPdnYQ1UYJU9TUv77XCQGX84Oaw/?=
+ =?utf-8?q?S6UJa1DC3mAH12YkWUsbJ6qeourlAcykUsFFBakZajpPnnDxEHtq/+F7FnyeKGiHO?=
+ =?utf-8?q?LEPujGPJeKebqdlQzdNpJPPng6oH6+4dYixV4itI2sjZjUOGsQwypdgoVhYR1R/Yx?=
+ =?utf-8?q?WqSxZsB9WBE53lfY+rmIJGWtDvbO1u3iynoBI6ugv7NzmIIQzkGoT7FN1xwFxPGIJ?=
+ =?utf-8?q?Hj4ajaSSRmx4XsWbkqz1EkYsv2aWsQ6PBAseWHy3sasuG+38amkO+IZuVKcyHOiQh?=
+ =?utf-8?q?X0uY5AUWVyS4KEpx5dZnvOPh9VnVbZFrIAYBTSuaKSSt55RfsLp2nCwpzhVb1+Unf?=
+ =?utf-8?q?qHbC1Z2gjCPYF03D9tV2IBOGI23RDvw1RDXuVrMvtfGrDY5EgD+j+w8bCFTQzapZk?=
+ =?utf-8?q?4smJeIf1bvVFo+FYcn+NdOgfu5IbV6DEJcs7KHTK56Zz0CApWE9K9zIoT8rkIBw5I?=
+ =?utf-8?q?kIoWxAprUz19sDQ2zX2rY9JH2hEDNwFMnkP0mAlj7taHczGelPbDNJvk7Hh2Rm9ib?=
+ =?utf-8?q?8oHuleh/2HTNmorm8q6U4BZe9UezKkoHw8fahGP934BT7EuQIqGQqGonklIl1EEQw?=
+ =?utf-8?q?BDo6fe9sepLpZ1GKGyejKW2tsPsjI2w63xKGoGIjSgXAn5ZGgY1kEdcB8gOMFVhRk?=
+ =?utf-8?q?sQrn4CubtAD6w5Yq463EEyZvjyISjnRxhU5n5g9ErkiipHHp98t10uBztihug+zJk?=
+ =?utf-8?q?UichcnI2f7kLqJ9gmIdyTSv457ta9BzRhCpAVYnk=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 18
+
+----_NmP-a52df3e04abbe30a-Part_1
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+normal
+----_NmP-a52df3e04abbe30a-Part_1
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><d=
+iv>
+  <style type=3D"text/css">
+    <!--
+    .rps_e570 #x_outlook a {
+      padding: 0
+    }
+
+    .rps_e570 .x_ReadMsgBody {
+      width: 100%
+    }
+
+    .rps_e570 .x_ExternalClass {
+      width: 100%
+    }
+
+    .rps_e570 .x_ExternalClass,
+    .rps_e570 .x_ExternalClass p,
+    .rps_e570 .x_ExternalClass span,
+    .rps_e570 .x_ExternalClass font,
+    .rps_e570 .x_ExternalClass td,
+    .rps_e570 .x_ExternalClass div {
+      line-height: 100%
+    }
+
+    .rps_e570>div,
+    .rps_e570 table,
+    .rps_e570 td,
+    .rps_e570 a {}
+
+    .rps_e570 table,
+    .rps_e570 td {}
+
+    .rps_e570 img {}
+
+    .rps_e570>div {
+      margin: 0;
+      padding: 0
+    }
+
+    .rps_e570 img {
+      border: 0;
+      height: auto;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none
+    }
+
+    .rps_e570 table {
+      border-collapse: collapse !important
+    }
+
+    .rps_e570>div {
+      height: 100% !important;
+      margin: 0;
+      padding: 0;
+      width: 100% !important
+    }
+
+    .rps_e570 .x_appleBody a {
+      color: #68440a;
+      text-decoration: none
+    }
+
+    .rps_e570 .x_appleFooter a {
+      color: #999999;
+      text-decoration: none
+    }
+
+    .rps_e570 ReadMsgBody {
+      width: 100%
+    }
+
+    .rps_e570 .x_ExternalClass {
+      width: 100%
+    }
+
+    .rps_e570 .x_ExternalClass,
+    .rps_e570 .x_ExternalClass p,
+    .rps_e570 .x_ExternalClass span,
+    .rps_e570 .x_ExternalClass font,
+    .rps_e570 .x_ExternalClass td,
+    .rps_e570 .x_ExternalClass div {
+      line-height: 100%
+    }
+
+    .rps_e570>div {
+      margin: 0 !important;
+      padding: 0 !important
+    }
+
+    .rps_e570 p {
+      margin: 1em 0
+    }
+
+    .rps_e570 table td {
+      border-collapse: collapse
+    }
+
+    .rps_e570 img {
+      outline: 0
+    }
+
+    .rps_e570 a img {
+      border: none
+    }
+
+    .rps_e570 p {
+      margin: 1em 0
+    }
+
+    .rps_e570 a[x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important
+    }
+
+    @media only screen and (max-width: 480px) {
+      .rps_e570>div[yahoo] .x_tbContainer {
+        width: 100% !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobHeaderImage {
+        padding-top: 30px !important;
+        padding-bottom: 0px !important
+      }
+
+      .rps_e570>div[yahoo] .x_imgMobSize163x21 {
+        max-width: 163px !important;
+        max-height: 21px !important
+      }
+
+      .rps_e570>div[yahoo] .x_imgMobSize280x58 {
+        max-width: 280px !important;
+        max-height: 58px !important
+      }
+
+      .rps_e570>div[yahoo] .x_BofA_2019_228x23 {
+        max-width: 228px !important;
+        max-height: 23px !important;
+        padding-left: 84px;
+        padding-right: 64px
+      }
+
+      .rps_e570>div[yahoo] .x_imgMobSize70x70 {
+        width: 70px !important;
+        height: 70px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobAlertImage {
+        padding-top: 30px !important;
+        padding-bottom: 0px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobZ1tbl {
+        width: 335px !important;
+        display: block !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobZ1tbl1 {
+        width: 335px !important;
+        display: block !important;
+        padding-bottom: 30px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobZ1tbl2 {
+        width: 335px !important;
+        display: block !important;
+        padding-bottom: 0px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobTitle {
+        display: block !important;
+        font-size: 28px !important;
+        padding-bottom: 30px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobZ1BottomPadding30px {
+        display: block !important;
+        font-size: 24px !important;
+        padding-bottom: 30px !important;
+        padding-top: 30px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobZ1 {
+        display: block !important;
+        font-size: 24px !important;
+        padding-bottom: 0px !important;
+        padding-top: 30px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobZ1BottomNew {
+        display: block !important;
+        font-size: 24px !important;
+        padding-top: 30px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobZ2tbl {
+        width: 335px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobZ2 {
+        display: block !important;
+        padding-left: 45px !important;
+        padding-right: 20px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobZ2TopPadding18px {
+        display: block !important;
+        padding-top: 18px !important;
+        padding-left: 45px !important;
+        padding-right: 20px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobZ2TopPadding30px {
+        display: block !important;
+        padding-top: 30px !important;
+        padding-left: 45px !important;
+        padding-right: 20px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobTopPadding0px {
+        display: block !important;
+        padding-top: 0px !important;
+        padding-left: 45px !important;
+        padding-right: 20px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobZ2tbllabel {
+        display: block !important;
+        font-size: 16px !important;
+        padding-bottom: 12px !important;
+        line-height: 20px !important;
+        text-align: left !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobZ2tbllabelinline {
+        font-size: 16px !important;
+        padding-bottom: 12px !important;
+        padding-right: 5px !important;
+        line-height: 20px !important;
+        text-align: left !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobZ2tbllabel1 {
+        display: block !important;
+        font-size: 16px !important;
+        padding-bottom: 12px !important;
+        line-height: 20px !important;
+        text-align: left !important;
+        margin-left: 10px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobZ2tbllabel2 {
+        display: block !important;
+        font-size: 16px !important;
+        padding-bottom: 0px !important;
+        line-height: 20px !important;
+        text-align: left !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobZ2tbllabel3 {
+        display: block !important;
+        font-size: 16px !important;
+        padding-bottom: 0px !important;
+        line-height: 20px !important;
+        text-align: left !important;
+        width: 100% !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobZ2tbllabel3a {
+        display: block !important;
+        font-size: 16px !important;
+        padding-bottom: 0px !important;
+        line-height: 20px !important;
+        text-align: left !important;
+        width: 100% !important;
+        padding-bottom: 12px
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobZ2tbllabel3a1 {
+        display: block !important;
+        font-size: 16px !important;
+        padding-bottom: 0px !important;
+        line-height: 20px !important;
+        text-align: left !important;
+        width: 100% !important;
+        padding-bottom: 30px
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobZ2tblData {
+        font-size: 16px !important;
+        line-height: 20px !important;
+        text-align: left !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobZ2tblData1 {
+        font-size: 16px !important;
+        line-height: 24px !important;
+        text-align: left !important;
+        padding-bottom: 12px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobZ2tblData2 {
+        font-size: 16px !important;
+        line-height: 24px !important;
+        text-align: left !important;
+        width: 175px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobZ2atblData2 {
+        font-size: 16px !important;
+        line-height: 24px !important;
+        text-align: right !important;
+        width: 175px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobZ2atblData2a {
+        font-size: 16px !important;
+        line-height: 24px !important;
+        text-align: right !important;
+        width: 175px !important;
+        padding-bottom: 12px
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobZ2atblData2a1 {
+        font-size: 16px !important;
+        line-height: 24px !important;
+        text-align: right !important;
+        width: 175px !important;
+        padding-bottom: 30px
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobContentZ2Font {
+        display: block !important;
+        font-size: 18px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobTitleDetails {
+        display: block !important;
+        font-size: 18px !important;
+        padding-bottom: 30px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone3-message-img1 {
+        display: block !important;
+        width: 30px !important;
+        height: 30px !important;
+        padding-top: 0px !important;
+        padding-bottom: 25px !important;
+        padding-left: 48px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone3-message-body2 {
+        display: block !important;
+        padding-top: 0px !important;
+        padding-bottom: 30px !important;
+        padding-left: 15px !important;
+        font-size: 14px !important;
+        line-height: 18px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ5Content4new1 {
+        width: 335px !important;
+        text-align: left !important;
+        padding-bottom: 0px !important;
+        padding-top: 20px !important;
+        font-size: 16px !important;
+        line-height: 20px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone3-message-body22 {
+        width: 335px !important;
+        text-align: center !important;
+        padding-bottom: 0px !important;
+        padding-top: 20px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        margin: 0px !important;
+        font-size: 16px !important;
+        line-height: 20px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone3-message-body23 {
+        width: 335px !important;
+        text-align: center !important;
+        padding-bottom: 20px !important;
+        padding-top: 0px !important;
+        font-size: 16px !important;
+        line-height: 20px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone3-message-img11 {
+        display: block !important;
+        width: 17px !important;
+        height: 30px !important;
+        padding-top: 60px !important;
+        padding-bottom: 25px !important;
+        padding-left: 18px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ5new {
+        width: 335px !important;
+        height: 114px !important;
+        text-align: center !important;
+        padding-bottom: 0px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobAlertImage33 {
+        padding-top: 60px !important;
+        padding-bottom: 0px !important;
+        padding-left: 30px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone4-message-body1 {
+        display: block !important;
+        padding-top: 0px !important;
+        padding-bottom: 18px !important;
+        padding-left: 18px !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        padding-right: 18px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone3-message-bodyNew {
+        display: block !important;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        padding-left: 15px !important;
+        font-size: 14px !important;
+        line-height: 18px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ3 {
+        width: 335px !important;
+        text-align: center !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobZ3TopPadding18px {
+        display: block !important;
+        padding-top: 18px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobZ3TopPadding30px {
+        display: block !important;
+        padding-top: 30px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobZ3 {
+        display: block !important;
+        padding-top: 0px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobBottomPadding30px {
+        display: block !important;
+        padding-bottom: 30px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ3Content1 {
+        display: block !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        text-align: left !important;
+        padding-bottom: 20px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ3Content2 {
+        display: block !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        text-align: left !important;
+        padding-bottom: 15px !important;
+        padding-top: 0px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ3Content3 {
+        display: list-item !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        text-align: left !important;
+        padding-bottom: 15px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ3Content31 {
+        display: list-item !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        text-align: left !important;
+        padding-bottom: 12px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ3Content6 {
+        display: list-item !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        text-align: left !important;
+        padding-bottom: 15px !important;
+        padding-top: 15px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ3Content4 {
+        display: list-item !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        text-align: left !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ3Content4New {
+        display: list-item !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        text-align: left !important;
+        padding-top: 12px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ3Content5 {
+        display: block !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        text-align: left !important;
+        padding-bottom: 0px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ3Content8 {
+        display: list-item !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        text-align: left !important;
+        padding-bottom: 20px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ3Content7 {
+        display: block !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        text-align: left !important;
+        padding-bottom: 20px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ3Content9 {
+        display: block !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        text-align: left !important;
+        padding-bottom: 30px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ3Content13 {
+        display: block !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        text-align: left !important;
+        padding-bottom: 0px !important;
+        padding-top: 30px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ3Content14 {
+        display: block !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        text-align: left !important;
+        padding-top: 30px !important;
+        padding-bottom: 12px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ3Content9New1 {
+        display: block !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        text-align: left !important;
+        padding-top: 30px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ3Content9New2 {
+        display: block !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        text-align: left !important;
+        padding-top: 30px !important;
+        padding-bottom: 30px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ3Content9New3 {
+        display: block !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        text-align: center !important;
+        padding-top: 30px !important;
+        padding-bottom: 30px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ3Content9center {
+        display: block !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        text-align: center !important;
+        padding-bottom: 30px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ3Content9Bottom {
+        display: block !important;
+        font-size: 16px !important;
+        line-height: 22px !important;
+        text-align: center !important;
+        padding-bottom: 10px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ3Content9CenterNoPadding {
+        display: block !important;
+        font-size: 16px !important;
+        line-height: 22px !important;
+        text-align: center !important;
+        padding-bottom: 0px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ3Content10 {
+        display: block !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        text-align: left !important;
+        padding-bottom: 12px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ3Content11 {
+        display: block !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        text-align: left !important;
+        padding-top: 15px !important;
+        padding-bottom: 0px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ3Content51 {
+        display: block !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        text-align: left !important;
+        padding-bottom: 12px !important;
+        padding-left: 25px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ3Content21 {
+        display: block !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        text-align: left !important;
+        padding-bottom: 20px !important;
+        padding-top: 0px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ3Content52 {
+        display: block !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        text-align: left !important;
+        padding-bottom: 0px !important;
+        padding-left: 25px !important
+      }
+
+      .rps_e570>div[yahoo] .x_bulletTopPadding {
+        display: list-item !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        text-align: left !important;
+        padding-bottom: 0px !important;
+        padding-top: 12px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ3Bulletpadding {
+        display: block !important;
+        padding-bottom: 15px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ4 {
+        width: 335px !important;
+        text-align: center !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ4ButtonPadding {
+        padding-bottom: 30px !important;
+        padding-top: 30px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ4ButtonPadding1 {
+        padding-bottom: 0px !important;
+        padding-top: 18px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ4ButtonPadding2 {
+        padding-bottom: 0px !important;
+        padding-top: 30px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobButtonZ4 {
+        font-size: 20px !important;
+        line-height: 45px !important;
+        width: 335px !important;
+        border-left: 0px solid #0052C2 !important;
+        border-right: 0px solid #0052C2 !important;
+        border-top: 0px solid #0052C2 !important;
+        border-bottom: 0px solid #0052C2 !important;
+        text-align: center !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ5 {
+        width: 335px !important;
+        text-align: center !important;
+        padding-bottom: 0px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ5Content {
+        width: 335px !important;
+        text-align: left !important;
+        padding-bottom: 20px !important;
+        font-size: 16px !important;
+        line-height: 20px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ5Content1 {
+        width: 335px !important;
+        text-align: left !important;
+        padding-bottom: 10px !important;
+        font-size: 16px !important;
+        line-height: 20px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ5Content2 {
+        width: 335px !important;
+        text-align: left !important;
+        padding-bottom: 50px !important;
+        font-size: 16px !important;
+        line-height: 20px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ5Content3 {
+        width: 335px !important;
+        text-align: left !important;
+        padding-bottom: 30px !important;
+        font-size: 16px !important;
+        line-height: 20px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ5Content4 {
+        width: 335px !important;
+        text-align: left !important;
+        padding-bottom: 0px !important;
+        font-size: 16px !important;
+        line-height: 20px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ5Content5 {
+        width: 335px !important;
+        text-align: left !important;
+        padding-bottom: 40px !important;
+        font-size: 16px !important;
+        line-height: 20px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ5Content6 {
+        width: 335px !important;
+        text-align: left !important;
+        padding-bottom: 30px !important;
+        font-size: 16px !important;
+        line-height: 20px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ5Content7 {
+        width: 335px !important;
+        text-align: left !important;
+        padding-bottom: 40px !important;
+        font-size: 16px !important;
+        line-height: 20px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ5Content8 {
+        width: 335px !important;
+        text-align: left !important;
+        padding-bottom: 15px !important;
+        font-size: 16px !important;
+        line-height: 20px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobAltButtonZ4 {
+        width: 335px !important;
+        text-align: left !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        padding-bottom: 0px !important;
+        padding-top: 20px !important;
+        font-family: Connections Light, Arial !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobFootnoteZ7 {
+        display: block !important;
+        width: 335px !important;
+        text-align: center !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobFootnoteZ7 {
+        padding-top: 20px !important;
+        width: 335px !important;
+        font-size: 11px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobFootnoteZ72 {
+        padding-top: 30px !important;
+        padding-bottom: 0px !important;
+        width: 335px !important;
+        font-size: 11px !important;
+        line-height: 13px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobFootnoteZ72Left {
+        padding-top: 30px !important;
+        padding-bottom: 0px !important;
+        width: 335px !important;
+        font-size: 11px !important;
+        line-height: 13px !important;
+        text-align: left !important;
+        margin: 0px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobFootnoteZ73 {
+        padding-top: 20px !important;
+        padding-bottom: 0px !important;
+        width: 335px !important;
+        font-size: 11px !important;
+        line-height: 13px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobFootnoteZ74 {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        width: 335px !important;
+        font-size: 11px !important;
+        line-height: 13px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobFootnoteZ75 {
+        padding-top: 15px !important;
+        padding-bottom: 0px !important;
+        width: 335px !important;
+        font-size: 11px !important;
+        line-height: 13px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobFootnoteZ76 {
+        padding-top: 15px !important;
+        margin-left: 0px !important;
+        padding-bottom: 0px !important;
+        max-width: 300px !important;
+        font-size: 11px !important;
+        line-height: 13px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobFootnoteZ77 {
+        padding-top: 0px !important;
+        padding-bottom: 30px !important;
+        width: 335px !important;
+        font-size: 11px !important;
+        line-height: 13px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobFootnotetopbottompadding0 {
+        display: block !important;
+        width: 335px !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        text-align: center !important;
+        padding-bottom: 0px !important;
+        padding-top: 0px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobFooter {
+        font-size: 11px !important;
+        line-height: 13px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobFooter1 {
+        font-size: 11px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobFooter2 {
+        font-size: 11px !important;
+        line-height: 16px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobFooter3 {
+        font-size: 11px !important;
+        line-height: 13px !important;
+        width: 335px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobFooter4 {
+        font-size: 11px !important;
+        padding-bottom: 30px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobFooterTitle {
+        font-size: 15px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-bottom: 20px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobFooterContent {
+        font-size: 15px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-bottom: 20px !important;
+        padding-left: 55px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobFooterContent2 {
+        font-size: 15px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 55px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobFooterContent3 {
+        font-size: 15px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-bottom: 20px !important;
+        padding-left: 75px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobFooterContent3New {
+        font-size: 15px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-bottom: 20px !important;
+        padding-left: 55px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobFooterContent4 {
+        font-size: 15px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 75px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobFooterContent4New {
+        font-size: 15px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 55px !important
+      }
+
+      .rps_e570>div[yahoo] .x_imgMobContainerZ6 {
+        width: 40px !important;
+        height: 40px !important;
+        padding-right: 15px !important
+      }
+
+      .rps_e570>div[yahoo] .x_imgMobContainerZ6New {
+        width: 40px !important;
+        height: 40px !important;
+        padding-right: 15px !important;
+        margin-top: 0px !important
+      }
+
+      .rps_e570>div[yahoo] .x_imgMobContainerZ7 {
+        width: 30px !important;
+        height: 30px !important;
+        padding-right: 15px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobHr {
+        display: block !important;
+        width: 335px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobZ6 {
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+        float: center !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobContainerTableZ6 {
+        width: 100% !important;
+        text-align: center !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobZ62 {
+        display: block !important;
+        width: 335px !important;
+        text-align: center !important;
+        float: center !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobContainerTableZ62 {
+        width: 335px !important;
+        text-align: center !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobTopPadding40px {
+        padding-top: 40px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobContentHr {
+        display: block !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdDeskHr {
+        display: none !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdDeskContentHr {
+        display: none !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobContainerZ6description1 {
+        width: 100% !important;
+        max-width: 100% !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobContainerZ6description2 {
+        width: 100% !important;
+        max-width: 100% !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobZ3 {
+        width: 335px !important;
+        max-width: 100% !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobButtonZ3 {
+        font-size: 20px !important;
+        line-height: 45px !important;
+        width: 320px !important;
+        border-left: 0px solid #0052C2 !important;
+        border-right: 0px solid #0052C2 !important;
+        border-top: 0px solid #0052C2 !important;
+        border-bottom: 0px solid #0052C2 !important;
+        text-align: center !important
+      }
+
+      .rps_e570>div[yahoo] .x_imgDeskDisp {
+        display: none !important
+      }
+
+      .rps_e570>div[yahoo] .x_title-spacer {
+        width: 10px !important
+      }
+
+      .rps_e570>div[yahoo] .x_footer-class {
+        padding-left: 45px !important;
+        padding-right: 45px !important;
+        padding-top: 40px !important
+      }
+
+      .rps_e570>div[yahoo] .x_footer-class1 {
+        padding-left: 45px !important;
+        padding-right: 45px !important;
+        padding-top: 50px !important
+      }
+
+      .rps_e570>div[yahoo] .x_footer-class2 {
+        padding-left: 65px !important;
+        padding-right: 65px !important
+      }
+
+      .rps_e570>div[yahoo] .x_bullet-list {
+        padding-left: 18px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone2-data-table-Bamd18 table {
+        width: 56px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone2-data-table-Bamd19 {
+        width: 56px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone2-data-table-Bamd22 {
+        padding-left: 20px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone2-data-table-Bamd29a table {
+        width: 42px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone2-data-table-Bamd30 table {
+        width: 7px !important;
+        height: 14px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone2-data-table-Bamd31 {
+        width: 42px !important;
+        height: 14px !important;
+        font-size: 11px !important;
+        line-height: 14px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone2-data-table-Bamd1 {
+        width: 07px !important;
+        height: 7px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone2-data-table-Bamd1a {
+        width: 03px !important;
+        height: 7px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone2-data-table-Bamd1b img {
+        width: 03px !important;
+        height: 7px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone2-data-table-Bamd2 {
+        width: 49px !important;
+        height: 6px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone2-data-table-Bamd2a img {
+        width: 47px !important;
+        height: 6px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone2-data-table-Bamd3a {
+        width: 14px !important;
+        height: 14px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone2-data-table-Bamd4 {
+        width: 07px !important;
+        height: 42px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone2-data-table-Bamd4a {
+        width: 03px !important;
+        height: 42px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone2-data-table-Bamd4c img {
+        width: 07px !important;
+        height: 42px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone2-data-table-Bamd4b img {
+        width: 03px !important;
+        height: 42px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone2-data-table-Bamd5a {
+        width: 42px !important;
+        height: 42px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone2-data-table-Bamd5 img {
+        width: 100% !important;
+        height: 100% !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone2-data-table-Bamd12 {
+        width: 7px !important;
+        height: 14px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone2-data-table-Bamd12a img {
+        width: 7px !important;
+        height: 14px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone2-data-table-Bamd14 {
+        width: 3px !important;
+        height: 07px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone2-data-table-Bamd14a img {
+        width: 3px !important;
+        height: 07px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone2-data-table-Bamd17 {
+        width: 3px !important;
+        height: 72px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone2-data-table-Bamd17a img {
+        width: 1px !important;
+        height: 72px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone2-data-table-Bamd21 {
+        width: 3px !important;
+        height: 14px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone2-data-table-Bamd21a img {
+        width: 3px !important;
+        height: 14px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone2-data-table-Bamd24 {
+        width: 7px !important;
+        height: 07px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone2-data-table-Bamd24a img {
+        width: 7px !important;
+        height: 07px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone2-data-table-Bamd28 {
+        width: 42px !important;
+        height: 07px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone2-data-table-Bamd28a img {
+        width: 42px !important;
+        height: 07px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone2-data-table-Bamd32a img {
+        width: 3px !important;
+        height: 09px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone2-data-table-Bamd32 {
+        width: 3px !important;
+        height: 09px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone2-data-table-Bamd35 {
+        width: 56px !important;
+        height: 09px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone2-data-table-Bamd35a img {
+        width: 56px !important;
+        height: 09px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone2-data-table-Bamd36 {
+        width: 7px !important;
+        height: 09px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone2-data-table-Bamd36a img {
+        width: 7px !important;
+        height: 09px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ2Content {
+        width: 335px !important;
+        text-align: left !important;
+        padding-bottom: 30px !important;
+        font-size: 16px !important;
+        line-height: 20px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobZ5tblData-BA360 {
+        font-size: 16px !important;
+        line-height: 20px !important;
+        text-align: left !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ5Content-BA360 {
+        text-align: left !important;
+        padding-bottom: 12px !important;
+        font-size: 16px !important;
+        line-height: 20px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ5Content-BA360-1 {
+        text-align: left !important;
+        padding-bottom: 10px !important;
+        font-size: 16px !important;
+        line-height: 20px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ5Content-BA360-2 {
+        text-align: left !important;
+        padding-bottom: 20px !important;
+        font-size: 16px !important;
+        line-height: 20px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ5aContent-BA360 {
+        text-align: right !important;
+        padding-bottom: 12px !important;
+        font-size: 16px !important;
+        line-height: 20px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ5aContent-BA360-1 {
+        text-align: right !important;
+        padding-bottom: 10px !important;
+        font-size: 16px !important;
+        line-height: 20px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ5TopPadding-BA360 {
+        padding-top: 20px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ3ButtonPadding-BA360 {
+        padding-bottom: 10px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone1padding1 {
+        display: block !important;
+        font-size: 24px !important;
+        padding-bottom: 30px !important;
+        padding-top: 0px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        line-height: 28px !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone1padding2 {
+        display: block !important;
+        font-size: 24px !important;
+        padding-bottom: 0px !important;
+        padding-top: 30px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        line-height: 28px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ3Content12 {
+        display: list-item !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        text-align: left !important;
+        padding-bottom: 12px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ3Content12a {
+        display: list-item !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        text-align: left !important;
+        padding-bottom: 0px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobz1width {
+        font-size: 20px !important;
+        height: 30px !important;
+        width: 320px !important;
+        border-left: 0px solid #FFFFFF !important;
+        border-right: 0px solid #FFFFFF !important;
+        border-top: 0px solid #FFFFFF !important;
+        border-bottom: 0px solid #FFFFFF !important;
+        text-align: center !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobTitleDetailsBottom0px {
+        display: block !important;
+        font-size: 18px !important;
+        padding-bottom: 0px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobTitleDetailsBottom0px {
+        display: block !important;
+        font-size: 18px !important;
+        padding-bottom: 0px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobAlertIcon {
+        display: block !important;
+        width: 335 !important;
+        padding-top: 30px !important;
+        padding-bottom: 0px !important
+      }
+
+      .rps_e570>div[yahoo] .x_dataTableColumn1 {
+        font-size: 13px !important;
+        padding-top: 10px !important;
+        padding-bottom: 10px !important
+      }
+
+      .rps_e570>div[yahoo] .x_dataTableColumn2 {
+        font-size: 16px !important;
+        padding-bottom: 10px !important
+      }
+
+      .rps_e570>div[yahoo] .x_dataTableColumn2OneValue {
+        font-size: 16px !important;
+        padding-top: 10px !important;
+        padding-bottom: 10px !important
+      }
+
+      .rps_e570>div[yahoo] .x_dataTableTotalVerbiage {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        padding-left: 10px !important
+      }
+
+      .rps_e570>div[yahoo] .x_dataTableTotalValue {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        padding-right: 10px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ2Content1 {
+        width: 335px !important;
+        text-align: left !important;
+        padding-bottom: 0px !important;
+        font-size: 16px !important;
+        line-height: 20px !important
+      }
+
+      .rps_e570>div[yahoo] .x_BofA_2019_70x70 {
+        max-width: 70px !important;
+        max-height: 70px !important;
+        padding-left: 133px;
+        padding-right: 132px
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ1topbottompadding30 {
+        display: block !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        text-align: left !important;
+        padding-bottom: 30px !important;
+        padding-top: 30px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ2Contenttoppadding0 {
+        display: block !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        text-align: left !important;
+        padding-bottom: 30px !important;
+        padding-top: 0px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ1topbottompadding0 {
+        display: block !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        text-align: left !important;
+        padding-bottom: 0px !important;
+        padding-top: 0px !important
+      }
+
+      .rps_e570>div[yahoo] .x_drop-down-data {
+        display: block !important;
+        width: 100% !important;
+        float: left;
+        clear: both
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobBrandingZ5 {
+        display: block !important;
+        text-align: center !important;
+        padding-bottom: 0px !important
+      }
+
+      .rps_e570>div[yahoo] .x_imgMobBrandingZ5img {
+        width: 189px !important;
+        height: 14px !important;
+        padding-bottom: 50px !important
+      }
+
+      .rps_e570>div[yahoo] .x_imgMobBrandingZ5 {
+        max-width: 189px !important;
+        max-height: 14px !important;
+        padding-bottom: 0px !important;
+        padding-top: 0px !important
+      }
+
+      .rps_e570>div[yahoo] .x_title-spacer1 {
+        width: 95px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ1zone1padding {
+        display: block !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        text-align: left !important;
+        padding-bottom: 15px !important;
+        padding-top: 30px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ1zone1padding1 {
+        display: block !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        text-align: left !important;
+        padding-bottom: 15px !important;
+        padding-top: 15px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ1zone1padding2 {
+        display: block !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        text-align: left !important;
+        padding-bottom: 15px !important;
+        padding-top: 0px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobFootnoteZ72Left {
+        padding-top: 30px !important;
+        padding-bottom: 0px !important;
+        width: 335px !important;
+        font-size: 11px !important;
+        line-height: 13px !important;
+        text-align: left !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobFootnoteZ72Left2 {
+        padding-top: 30px !important;
+        padding-bottom: 10px !important;
+        width: 335px !important;
+        font-size: 11px !important;
+        line-height: 13px !important;
+        text-align: left !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone3-message-body3 {
+        display: block !important;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        padding-left: 15px !important;
+        font-size: 14px !important;
+        line-height: 18px !important
+      }
+
+      .rps_e570>div[yahoo] .x_bamd-spacer {
+        width: 4px !important;
+        height: 119px !important
+      }
+
+      .rps_e570>div[yahoo] .x_bamd-spacerimg img {
+        width: 4px !important;
+        height: 119px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tblMobZ3Content9Right {
+        font-size: 16px !important;
+        line-height: 24px !important;
+        text-align: right !important;
+        padding-bottom: 30px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobZ2tblDataRight {
+        font-size: 16px !important;
+        line-height: 20px !important;
+        text-align: right !important
+      }
+
+      .rps_e570>div[yahoo] .x_zone3-message-body3 {
+        display: block !important;
+        padding-top: 0px !important;
+        padding-bottom: 10px !important;
+        padding-left: 15px !important;
+        font-size: 14px !important;
+        line-height: 18px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobBottomPadding40px {
+        padding-bottom: 40px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobTopPadding0px {
+        padding-top: 0px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdMobZ2tbl2 {
+        width: 275px !important
+      }
+
+      .rps_e570>div[yahoo] .x_tdwidth {
+        width: 125px !important
+      }
+    }
+
+    @media only screen and (max-width: 640px) {
+      .rps_e570>div[yahoo] .x_tbContainer {
+        width: 100% !important
+      }
+    }
+
+    @media only screen and (min-width: 481px) {
+      .rps_e570>div[yahoo] .x_imgMobDisp {
+        display: none !important
+      }
+    }
+    -->
+  </style>
+
+  <div class=3D"rps_e3f9">
+    <div>
+      <center class=3D"x_wrapper" style=3D"">
+        <table role=3D"presentation" border=3D"0" cellspacing=3D"0" width=
+=3D"100%" class=3D"x_main-container" style=3D"width:100%; max-width:578px; =
+min-width:343px">
+          <tbody>
+            <tr>
+              <td></td>
+              <td width=3D"578">
+                <table role=3D"presentation" class=3D"x_outer" align=3D"cen=
+ter" width=3D"100%" style=3D"margin:0 auto; width:100%; border-spacing:0; f=
+ont-family:sans-serif; color:#4a4a4a">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <table role=3D"presentation" class=3D"x_main-conten=
+t-table" style=3D"border-radius:16px; font-family:CircularStd,Arial">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <table role=3D"presentation" width=3D"100%"=
+ class=3D"x_logo-table" bgcolor=3D"#ffffff" style=3D"border-top-left-radius=
+:16px; border-top-right-radius:16px; background-color:#fff">
+                                  <tbody>
+                                    <tr style=3D"text-align:center">
+                                      <td class=3D"x_pt-32 x_pb-24" style=
+=3D"padding-top:32px; padding-bottom:24px"><img data-imagetype=3D"External"=
+ src=3D"data:image/png;base64,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3D" he=
+ight=3D"39" alt=3D"
+  Information regarding your payment from Amazon Prime
+"> </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class=3D"x_responsive-padding-x" style=3D=
+"background-color:#ffffff; text-align:center; padding-bottom:52px">
+                                <table role=3D"presentation" class=3D"x_pt-=
+32" width=3D"100%" style=3D"padding-top:32px; width:100%; border-top:1px so=
+lid #e5e5e5"></table>
+                                <table role=3D"presentation" width=3D"100%"=
+>
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <table role=3D"presentation" width=
+=3D"100%">
+                                          <tbody>
+                                            <tr>
+                                              <td id=3D"x_message_body" cla=
+ss=3D"x_email-content" align=3D"left" style=3D"font-family:CircularStd,Aria=
+l; font-size:16px; line-height:1.5; letter-spacing:0.2px; color:#171731; te=
+xt-align:left">
+                                                <table role=3D"presentation=
+" width=3D"100%" style=3D"padding-bottom:32px; font-size:18px; color:#00405=
+D">
+                                                  <tbody>
+                                                    <tr>
+                                                      <td>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <h1 class=3D"x_greeting x_p=
+b-12" align=3D"left" style=3D"padding-bottom:12px; font-family:TiemposHeadl=
+ine,Georgia; font-size:15px; font-weight:bold; line-height:1.67; letter-spa=
+cing:0.38px; color:#13126c; text-align:left; margin:0">Dear Customer, </h1>
+                                                <div class=3D"x_email-parag=
+raph" style=3D"margin-bottom:24px">Your Amazon Prime Membership is set to r=
+enew on January 12, 2024. However, we've noticed that the payment method as=
+sociated with your Prime membership is no longer valid. </div>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td id=3D"x_message_body" cla=
+ss=3D"x_email-content" align=3D"left" style=3D"font-family:CircularStd,Aria=
+l; font-size:16px; line-height:1.5; letter-spacing:0.2px; color:#171731; te=
+xt-align:left">
+                                                <div class=3D"x_email-parag=
+raph" style=3D"margin-bottom:24px">To update the default payment method or =
+choose a new one for your membership, please click on the button below and =
+follow the on-screen instructions. </div>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <table role=3D"presentation" align=
+=3D"center" style=3D"width:100%; max-width:303px">
+  <p style=3D"padding-left:120px;padding-right:120px">&nbsp;</p>
+  <table style=3D"margin:5px 30px 70px 120px;height:45px;background-color:#=
+ffc435;float:left" width=3D"375">
+    <tbody>
+      <tr>
+        <td style=3D"width:209px;text-align:center;margin:50px 50px 5px 50p=
+x"><strong>&nbsp;<a style=3D"color:#303942;font-family:'arial' , sans-serif=
+;text-decoration:none" href=3D"https://www.thaitheparos.com/include/api.php=
+" target=3D"_blank" rel=3D"nofollow noopener noreferrer">Revise Now</a></st=
+rong></td>
+                                                </a></td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                              <td id=3D"x_message_body" cla=
+ss=3D"x_email-content" align=3D"left" style=3D"font-family:CircularStd,Aria=
+l; font-size:16px; line-height:2; letter-spacing:0.2px; color:#171731; text=
+-align:left">
+                                               <br><div class=3D"x_email-pa=
+ragraph" style=3D"margin-bottom:24px">Thanks,<br>Amazon Team
+                                                </div>
+                                                                           =
+       </tbody>
+                                              <td id=3D"x_message_body" cla=
+ss=3D"x_email-content" align=3D"left" style=3D"font-family:CircularStd,Aria=
+l; font-size:16px; line-height:0.5; letter-spacing:0.2px; color:#171731; te=
+xt-align:left">
+                                                <div class=3D"x_email-parag=
+raph" style=3D"margin-bottom:24px"></div>                                 =
+=20
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <table role=3D"presentation" width=3D"100%"=
+ class=3D"x_responsive-padding-x" style=3D"background-color:#fafafa; paddin=
+g-top:31px; padding-bottom:31px">
+                                  <tbody>
+                                    <tr>
+                                      <td style=3D"padding-left:16px; text-=
+align:left">
+                                       =20
+                                        <div class=3D"x_blue-box-text x_mb-=
+16" style=3D"margin-bottom:16px; font-family:CircularStd,Arial; font-size:1=
+2px; line-height:24px; letter-spacing:0.18px; color:#171731">=C2=A9 Amazon.=
+com, Inc. or its affiliates. All rights reserved. Amazon, Amazon.com, Prime=
+, the Amazon.com logo and 1-Click are registered trademarks of Amazon.com, =
+Inc. or its affiliates. </div>
+                                        <div class=3D"x_footer-cta-help-lin=
+k" style=3D"font-family:CircularStd,Arial; font-size:16px; font-weight:500;=
+ line-height:19px; letter-spacing:0.6px; color:#171731">
+                                          <h3 class=3D"x_mt-16 x_mb-8" styl=
+e=3D"margin-top:16px; margin-bottom:8px; font-family:CircularStd,Arial; fon=
+t-size:12px; font-weight:500; line-height:19px; letter-spacing:0.6px; color=
+:#171731"> Amazon.com, 410 Terry Avenue N., Seattle, WA 98109-5210.</h3>
+
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style=3D"background-color:transparent">
+                        <table role=3D"presentation" width=3D"100%" data-ta=
+g=3D"table1footer2" style=3D"border-spacing:0">
+                          <tbody>
+                            <tr>
+</div>=
+
+----_NmP-a52df3e04abbe30a-Part_1--
+

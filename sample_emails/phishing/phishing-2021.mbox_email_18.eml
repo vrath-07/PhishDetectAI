@@ -1,0 +1,277 @@
+Return-Path: decca43@wp4.hostingraja.info
+Delivered-To: jose@monkey.org
+X-FDA: 77882527086.50.DCF177E
+Received: from wp4.hostingraja.info (wp4.hostingraja.info [103.148.156.35])
+	by imf08.b.hostedemail.com (Postfix) with ESMTP id F24071800911A
+	for <jose@monkey.org>; Thu,  4 Mar 2021 15:09:58 +0000 (UTC)
+Received: by wp4.hostingraja.info (Postfix, from userid 1080)
+	id A14C91C914C3; Thu,  4 Mar 2021 20:21:05 +0530 (IST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=deccanplastic.com;
+	s=default; t=1614869465;
+	bh=CDT3MVG0dXYucY1Ltofco8Aav2ewipxloaPxzKSSibY=;
+	h=To:Subject:From:Date;
+	b=HmGrH9KKhl9DFjCyB1qmrnWS6xFKMay/rU1psxu3ma0LonOkzDmmEoZHhV9sTJtCC
+	 YsAGobdJntOn5yAzU/DN/+C8OHXKqiaCO2vVRlSNqJ4ZNEovq49UB2JT2GydRLApX4
+	 vk1AaxZjfRwyI099XBS8GgOWJllsMc0jlO1mOPBA=
+To: jose@monkey.org
+Subject: =?UTF-8?B?WW91ciBwYWNrYWdlIGlzIHdhaXRpbmcgZm9yIGRlbGl2ZXJ5?=
+X-PHP-Script: deccanplastic.com/wp-content/themes/mail.php for 51.104.53.72
+X-PHP-Filename: /home/decca43/public_html/wp-content/themes/mail.php
+ REMOTE_ADDR: 51.104.53.72
+X-PHP-Originating-Script: 1080:mail.php
+From: =?UTF-8?B?REhMLUV4cHJlc3M=?= <Support@deccanplastic.com>
+MIME-Version: 1.0;
+Content-type: multipart/mixed; boundary="--6kSAiKrsXG"
+Message-Id: <20210304145105.A14C91C914C3@wp4.hostingraja.info>
+Date: Thu,  4 Mar 2021 20:21:05 +0530 (IST)
+X-Spam-Status: No, score=4.90
+X-Stat-Signature: kjiqc5za74okm7gy67cfqqyaioy54ehz
+X-Rspamd-Queue-Id: F24071800911A
+X-Rspamd-Server: rspam09
+Received-SPF: none (wp4.hostingraja.info>: No applicable sender policy
+ available) receiver=imf08.b.tucows.com; identity=mailfrom;
+ envelope-from="<decca43@wp4.hostingraja.info>"; helo=wp4.hostingraja.info;
+ client-ip=103.148.156.35
+X-HE-DKIM-Result: invalid/invalid (public key: not available)
+X-Spam-Summary: =?utf-8?q?40=2C2=2E5=2C0=2Cb010e88695959afd=2Cd41d8cd98f00b2?=
+ =?utf-8?q?04=2Cdecca43=40wp4=2Ehostingraja=2Einfo=2Cjose=40monkey=2Eorg=2CR?=
+ =?utf-8?b?VUxFU19ISVQ6Mjo0MTo0Njo3MjoxNTA6MTUyOjM1NTozNzk6NDU1Ojk2MDo5Njc6?=
+ =?utf-8?q?973=3A983=3A988=3A989=3A1208=3A1313=3A1314=3A1345=3A1381=3A1394?=
+ =?utf-8?q?=3A1431=3A1432=3A1433=3A1434=3A1437=3A1516=3A1517=3A1535=3A1555?=
+ =?utf-8?q?=3A1566=3A1570=3A1571=3A1575=3A1594=3A1676=3A1685=3A1699=3A1714?=
+ =?utf-8?q?=3A1730=3A1747=3A1764=3A1777=3A1792=3A2084=3A2111=3A2194=3A2198?=
+ =?utf-8?q?=3A2199=3A2200=3A2393=3A2525=3A2527=3A2528=3A2539=3A2566=3A2610?=
+ =?utf-8?q?=3A2682=3A2685=3A2731=3A2741=3A2859=3A2909=3A2933=3A2937=3A2939?=
+ =?utf-8?q?=3A2942=3A2945=3A2947=3A2951=3A2954=3A3022=3A3138=3A3139=3A3140?=
+ =?utf-8?q?=3A3141=3A3142=3A3148=3A3650=3A3865=3A3866=3A3867=3A3870=3A3871?=
+ =?utf-8?q?=3A3872=3A3934=3A3936=3A3938=3A3941=3A3944=3A3947=3A3950=3A3953?=
+ =?utf-8?q?=3A3956=3A3959=3A4051=3A4120=3A4321=3A4361=3A5007=3A6261=3A6650?=
+ =?utf-8?q?=3A6653=3A6669=3A6678=3A7602=3A8516=3A8583=3A8603=3A8778=3A9025?=
+ =?utf-8?q?=3A9040=3A9080=3A10009=3A10231=3A10346=3A11639=3A11657=3A11658=3A?=
+ =?utf-8?q?11984=3A12043=3A12050=3A12219=3A12297=3A12555=3A12663=3A12903=3A1?=
+ =?utf-8?q?2963=3A12973=3A12986=3A13139=3A14096=3A14158=3A14196=3A14659=3A14?=
+ =?utf-8?q?829=3A21080=3A21121=3A21324=3A21433=3A21451=3A21524=3A21627=3A218?=
+ =?utf-8?q?10=3A21939=3A30018=3A30038=3A30054=3A30055=2C0=2CRBL=3A04y89ynnw9?=
+ =?utf-8?q?6kxccgmxma4itwjqxz5yrtxetcezqjf74dzoxdns7c5jeiofohtbq=2Exqqyroxpf?=
+ =?utf-8?q?uhsekgwys4redr97gxxxu7jxcirmrnpfsqbxndr6ty4n_m49m5c5z4x=2E3tq6r9r?=
+ =?utf-8?q?oout7s4agepzjokn3b1a6h6ftsixnifdnoxxjzyfk1oejg3dy-lbl8=2Emailshel?=
+ =?utf-8?q?l=2Enet-223=2E238=2E255=2E100=2CCacheIP=3Anone=2CBayesian=3A0=2E5?=
+ =?utf-8?q?=2C0=2E5=2C0=2E5=2CNetcheck=3Anone=2CDomainCache=3A0=2CMSF=3Anot?=
+ bulk,SPF:,MSBL:0,DNSBL:neutral,Custom_rules:0:1:0,LFtime:26,LUA_SUMMARY:none
+X-HE-Tag: 1614870598-959072
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 18
+
+----6kSAiKrsXG
+Content-type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<p></p>
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" id=3D"background-=
+table" style=3D"background-color: #fff;" width=3D"100%">
+<tbody>
+<tr style=3D"border-collapse: collapse;">
+<td align=3D"center" bgcolor=3D"#ffffff" style=3D"font-family: Arial, Hel=
+vetica, Geneva, sans-serif; border-collapse: collapse;">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"w640" st=
+yle=3D"margin: 0 10px 0 10px;" width=3D"640">
+<tbody>
+<tr style=3D"border-collapse: collapse;">
+<td align=3D"center" class=3D"w640" height=3D"20" style=3D"font: normal 1=
+1px/18px Arial, Helvetica, sans-serif;" width=3D"640">&nbsp;</td>
+</tr>
+<tr style=3D"border-collapse: collapse;">
+<td align=3D"center" bgcolor=3D"#ffffff" class=3D"w640" id=3D"header" sty=
+le=3D"font-family: Arial, Helvetica, Geneva, sans-serif; border-collapse:=
+ collapse;" width=3D"640">
+<table bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" class=3D"w640" id=3D"top-bar" width=3D"640">
+<tbody>
+<tr>
+<td class=3D"w15" width=3D"15">&nbsp;</td>
+<td align=3D"left" class=3D"w325" valign=3D"middle">
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"w640" width=3D"610">
+<tbody>
+<tr>
+<td align=3D"left" class=3D"w420" width=3D"390"><img width=3D"630" src=3D=
+"https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/DHL_Logo.svg/8=
+00px-DHL_Logo.svg.png" align=3D"middle"></td>
+<td align=3D"center" class=3D"w140" valign=3D"middle" width=3D"130"><!--S=
+PONSEREDLOGOBEG--><!--SPONSEREDLOGOEND--></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class=3D"w15" width=3D"15">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr style=3D"border-collapse: collapse;">
+<td class=3D"w640" height=3D"10" style=3D"font-family: Arial, Helvetica, =
+Geneva, sans-serif; border-collapse: collapse;" width=3D"640"></td>
+</tr>
+<tr id=3D"twocolumn-content-row" style=3D"border-collapse: collapse;">
+<td width=3D"640" style=3D"font-family: Arial, Helvetica, Geneva, sans-se=
+rif; border-top: 5px solid #cc0000; background: #f7f7f7;" class=3D"w640">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"w640" st=
+yle=3D"border-top: 5px solid #000;" width=3D"640">
+<tbody>
+<tr style=3D"border-collapse: collapse;">
+<td bgcolor=3D"#f7f7f7" class=3D"w15" style=3D"font-family: Arial, Helvet=
+ica, Geneva, sans-serif; border-collapse: collapse;" width=3D"15">&nbsp;<=
+/td>
+<td width=3D"610" valign=3D"top" style=3D"font-family: Arial, Helvetica, =
+Geneva, sans-serif; border-collapse: collapse;" class=3D"w610" bgcolor=3D=
+"#f7f7f7">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"w610" wi=
+dth=3D"610">
+<tbody>
+<tr style=3D"border-collapse: collapse;">
+<td class=3D"w610" style=3D"font-family: Arial, Helvetica, Geneva, sans-s=
+erif; border-collapse: collapse;" width=3D"610">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"w610" wi=
+dth=3D"610">
+<tbody>
+<tr>
+<td class=3D"w610" height=3D"15" style=3D"font-family: Arial, Helvetica, =
+Geneva, sans-serif; border-collapse: collapse;" width=3D"610">&nbsp;</td>
+</tr>
+<tr style=3D"border-collapse: collapse;">
+<td class=3D"w610" style=3D"font-family: Arial, Helvetica, Geneva, sans-s=
+erif; border-collapse: collapse;" width=3D"610">
+<table align=3D"right" border=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+<tbody>
+<tr style=3D"border-collapse: collapse;">
+<td width=3D"20" height=3D"20" align=3D"center" valign=3D"top" class=3D"w=
+30">&nbsp;</td>
+<td align=3D"center" style=3D"padding: 0px 0 10px 0;"></td>
+</tr>
+</tbody>
+</table>
+<div align=3D"left" class=3D"article-content" style=3D"font-size: 11px; l=
+ine-height: 18px; color: #444444; margin-bottom: 15px; font-family: Arial=
+, Helvetica, sans-serif;">
+<p class=3D"article-title" style=3D"font-size: 18px; line-height: 22px; c=
+olor: #444; font-weight: bold; margin-top: 15px; margin-bottom: 15px; fon=
+t-family: Arial, Helvetica, Geneva, sans-serif;">Your pac<span>kage <a hr=
+ef=3D"https://mynewpet.com.au/DHL/dhl/dhl/DHL-INFO">DH497586134</a> is wa=
+iting for del<span>ivery. </span></span></p>
+<span style=3D"color: #3c4858;"><span style=3D"color: #ff0000;"><span sty=
+le=3D"font-size: 14px;"><b>Important message!</b></span></span><br> &nbsp=
+;</span>
+<p style=3D"margin-bottom: 20px;"><strong>In order to complete the del<sp=
+an>ivery of your pac<span>kage <a href=3D"https://mynewpet.com.au/DHL/dhl=
+/dhl/DHL-INFO">DH497586134</a> , please confirm the pa<span>yment  Online=
+ confirmation must be made within the next 14 days, before it expires.</s=
+pan></span></span></strong></p>
+<p style=3D"margin-bottom: 20px;"><br> <br> <!--URLBEG--> <a href=3D"http=
+s://mynewpet.com.au/DHL/dhl/dhl/DHL-INFO" style=3D"font-size: 16px; line-=
+height: 20px; color: #238fce; font-family: Arial, Helvetica, Geneva, sans=
+-serif; text-decoration: none;" class=3D"article-title"> <!--URLEND--> <s=
+trong> <!--DOWNLOADTEXTBEG-->Del<span>iver My Pa<span>ckage &gt;&gt;</spa=
+n></span></strong></a><span><span><span> </span></span></span></p>
+<p style=3D"margin-bottom: 20px;"><!--DISCLAIMERTEXTBEG--> <!--DISCLAIMER=
+TEXTEND--></p>
+</div>
+</td>
+</tr>
+<tr style=3D"border-collapse: collapse;">
+<td class=3D"w610" style=3D"font-family: Arial, Helvetica, Geneva, sans-s=
+erif; border-collapse: collapse;">
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"w610" width=3D"610">
+<tbody>
+<tr>
+<td class=3D"whitepaper_details" style=3D"font: normal 11px/18px  Arial, =
+Helvetica, Geneva, sans-serif; color: #444; padding-top: 10px;">Kind rega=
+rds,<br> D<span>H<span>L Tracking services. </span></span></td>
+</tr>
+<tr>
+<td class=3D"whitepaper_details" style=3D"font: normal 12px/14px  Arial, =
+Helvetica, Geneva, sans-serif; color: #444;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td bgcolor=3D"#f7f7f7" class=3D"w15" style=3D"font-family: Arial, Helvet=
+ica, Geneva, sans-serif; border-collapse: collapse;" width=3D"15">&nbsp;<=
+/td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr style=3D"border-collapse: collapse;">
+<td class=3D"w640" style=3D"font-family: Arial, Helvetica, Geneva, sans-s=
+erif; border-collapse: collapse; border-top: 5px solid #cc0000;" width=3D=
+"640">
+<table bgcolor=3D"#000" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" =
+class=3D"w640" id=3D"footer" style=3D"border-radius: 0px 0px 6px 6px; -mo=
+z-border-radius: 0px 0px 6px 6px; -webkit-border-radius: 0px 0px 6px 6px;=
+ -webkit-font-smoothing: antialiased; background-color: #000; color: #fff=
+;" width=3D"640">
+<tbody>
+<tr style=3D"border-collapse: collapse;">
+<td class=3D"w30" height=3D"5" style=3D"font-family: Arial, Helvetica, Ge=
+neva, sans-serif; border-collapse: collapse;" width=3D"15"></td>
+<td class=3D"w580 h0" height=3D"5" style=3D"font-family: Arial, Helvetica=
+, Geneva, sans-serif; border-collapse: collapse;"></td>
+<td class=3D"w30" height=3D"5" style=3D"font-family: Arial, Helvetica, Ge=
+neva, sans-serif; border-collapse: collapse;" width=3D"30"></td>
+</tr>
+<tr style=3D"border-collapse: collapse;">
+<td class=3D"w30" style=3D"font-family: Arial, Helvetica, Geneva, sans-se=
+rif; border-collapse: collapse;" width=3D"15">&nbsp;</td>
+<td align=3D"left" class=3D"w580" style=3D"font-family: Arial, Helvetica,=
+ Geneva, sans-serif; border-collapse: collapse;" valign=3D"top">
+<p class=3D"footer-content-left" id=3D"permission-reminder" style=3D"-web=
+kit-text-size-adjust: none; -ms-text-size-adjust: none; font-size: 9px; l=
+ine-height: 15px; color: #fff; margin-top: 5px; margin-bottom: 5px; white=
+-space: normal;">2021 =C2=A9 D<span>H<span>L International GmbH. All righ=
+ts reserved.</span></span></p>
+<p class=3D"footer-content-left" style=3D"-webkit-text-size-adjust: none;=
+ -ms-text-size-adjust: none; font-size: 9px; line-height: 15px; color: #f=
+ff; margin-top: 5px; margin-bottom: 5px; white-space: normal;"></p>
+</td>
+<td class=3D"w30" style=3D"font-family: Arial, Helvetica, Geneva, sans-se=
+rif; border-collapse: collapse;" width=3D"30">&nbsp;</td>
+</tr>
+<tr style=3D"border-collapse: collapse;">
+<td class=3D"w30" height=3D"5" style=3D"font-family: Arial, Helvetica, Ge=
+neva, sans-serif; border-collapse: collapse;" width=3D"15"></td>
+<td class=3D"w580 h0" height=3D"5" style=3D"font-family: Arial, Helvetica=
+, Geneva, sans-serif; border-collapse: collapse;"></td>
+<td class=3D"w30" height=3D"5" style=3D"font-family: Arial, Helvetica, Ge=
+neva, sans-serif; border-collapse: collapse;" width=3D"30"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr style=3D"border-collapse: collapse;">
+<td class=3D"w640" height=3D"60" style=3D"font-family: Arial, Helvetica, =
+Geneva, sans-serif; border-collapse: collapse;" width=3D"640">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+----6kSAiKrsXG
+
+
+----6kSAiKrsXG--

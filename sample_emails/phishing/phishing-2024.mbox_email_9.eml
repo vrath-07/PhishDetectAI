@@ -1,0 +1,237 @@
+Return-Path: bounces+550660-9853-jose=monkey.org@outbound-mail.onshape.com
+Delivered-To: jose@monkey.org
+X-FDA: 81653317410.33.1410DEE
+Received: from xtrwqddr.outbound-mail.sendgrid.net
+ (xtrwqddr.outbound-mail.sendgrid.net [167.89.77.213])	by
+ imf17.b.hostedemail.com (Postfix) with ESMTP id 3E68814000C	for
+ <jose@monkey.org>; Sun,  7 Jan 2024 18:15:24 +0000 (UTC)
+Authentication-Results: imf17.b.hostedemail.com;	dkim=pass
+ header.d=onshape.com header.s=s1 header.b=LeqwA6H5;	spf=pass
+ (imf17.b.hostedemail.com: domain of
+ "bounces+550660-9853-jose=monkey.org@outbound-mail.onshape.com" designates
+ 167.89.77.213 as permitted sender) =?utf-8?q?smtp=2Emailfrom=3D=22bounces+5?=
+ =?utf-8?q?50660-9853-jose=3Dmonkey=2Eorg=40outbound-mail=2Eonshape=2Ecom=22?=
+ =?utf-8?q?=3B?=	dmarc=pass (policy=reject) header.from=onshape.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1704651324;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=dhTU4th0rb2StvKyrR+hDnBlC6+Nusr4Sxnqe8jpiZ4=;
+	b=HRNBjq3FpWfs51LpPeGCDkJxiFePMtwbsEkEs4U5S1iueC3V1OLnzMExndSyqfi+EB2GdY
+	bcBg/BFX6aJV5lE5pL54qJrGaTvB4EsGULE0d+lCST6RVmMaWtDDx15/Kpzz6aC7ucz753
+	gEW8xS4VatboQRPy480pJkiN+U9Y2Cs=
+ARC-Authentication-Results: i=1;	imf17.b.hostedemail.com;	dkim=pass
+ header.d=onshape.com header.s=s1 header.b=LeqwA6H5;	spf=pass
+ (imf17.b.hostedemail.com: domain of
+ "bounces+550660-9853-jose=monkey.org@outbound-mail.onshape.com" designates
+ 167.89.77.213 as permitted sender) =?utf-8?q?smtp=2Emailfrom=3D=22bounces+5?=
+ =?utf-8?q?50660-9853-jose=3Dmonkey=2Eorg=40outbound-mail=2Eonshape=2Ecom=22?=
+ =?utf-8?q?=3B?=	dmarc=pass (policy=reject) header.from=onshape.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1704651324; a=rsa-sha256;
+	cv=none;
+	b=QyirjB9EvOcnNP/G6W2DYb9zY6Scc8ssM89TYqGRVpMtbudnA+1DHlG2514OW90y/aWdoX
+	RX3mQKcA/i6EZEVJTqG3Ww9Rwyuh4psA0JVjz2LuPHAaLHX8K0nfBXhifsf3rUnWjQCzWD
+	+6vLXOX/YWadd0Q44nqttGKTIxIAjyk=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=onshape.com;
+	h=from:subject:mime-version:content-type:to:cc:content-type:from:
+	subject:to;
+	s=s1; bh=dhTU4th0rb2StvKyrR+hDnBlC6+Nusr4Sxnqe8jpiZ4=;
+	b=LeqwA6H58ZZSTkXBgZyxVTQNui623AdVRimASPj1GjS2+LHqVIgJcmOsp+Jl64mp8Y28
+	voYEYSztKLw5JvFIdGmu2OWFyzVbzsukx8yzY1fufh8YGfXDN6JRlKRc2jgl7PJB/nDW9K
+	7xZ1VQvLs0Sn6ENvL+1uob/ojOFW8GntweBeyClV4JztbA3fM48MqV8+Jp+QnyRF8MFo1q
+	KGAb93LnJQ2j6roquBmp3uk85w+hTgCB+Jz24pmQrhXOzLxSzPthPG7gXGOT/5PAw946Eh
+	OgqFyTui0FWn8dTH9fTes669uKXHaaEzNRV/pPdBYyS6emZpx0rkJelgzmoxN62w==
+Received: by filterdrecv-f7cb6fc56-4qmjr with SMTP id
+ filterdrecv-f7cb6fc56-4qmjr-1-659AEA3B-2E        2024-01-07
+ 18:15:23.427345094 +0000 UTC m=+7083217.301306512
+Received: from production-millstone-usw2b-130379.ops.onshape.com (unknown)
+	by geopod-ismtpd-4 (SG) with ESMTP id tAyHgtYTTt65Je_qjuJR-A
+	for <jose@monkey.org>; Sun, 07 Jan 2024 18:15:23.324 +0000 (UTC)
+Date: Sun, 07 Jan 2024 18:15:23 +0000 (UTC)
+From: Onshape <alerts@onshape.com>
+Message-ID: <1479516873.950661322.1704651323310@smtp.sendgrid.net>
+Subject: New enterprise notification
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_16216_146500781.1704651323310"
+X-Mailer: sendhtml
+X-SG-EID:  L7efP0a3+Ws/lTOyYQO/JotNvTUBxu7mxh0lcbV337b4fTizHdd76YziNaxHz+
+ =?utf-8?q?5z4vyHgwLs5bkFz0L5+BPCa2XZBNtKzxlbGcCj/?==?utf-8?q?qafpGtkI6OL93U?=
+ =?utf-8?q?/ByFwpSbThGlGJgJNJALeL5sYe7RfJ1Iu8DhlMMzPtE0wa0yW7Rip/yfUK9eaEpEg?=
+ =?utf-8?q?AdDrcJZJTw3UJ0NiWA0DOhcL7oXDtKOo5yDm0m?=gsKS1N66oaCuvTpuU=
+To: jose@monkey.org
+X-Entity-ID: YWRcWfTaH7NufMStpwMvlQ==
+X-Rspamd-Queue-Id: 3E68814000C
+X-Stat-Signature: wk1rhdbh66d1hhjixphinzsmzcjgo1np
+X-Rspam-User: 
+X-Spam-Status: No, score=1.60
+X-Rspamd-Server: rspam05
+X-HE-Tag: 1704651324-726036
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19p6BG04YIpGoe91n2UsiFPoePEpa7B8ehfDdNf+bvy0FF?=
+ =?utf-8?q?oKbNf95325R1JFZd12JoDumxp2GsCVEG3b10etMoEEWXh20lsw2DeLxBELhJKKnIN?=
+ =?utf-8?q?XZu5NqYIUiCnDzPaX71aBsBK4PypwwAWdLVAHw2zaz67uoAthwlJZQAKghO38I5BS?=
+ =?utf-8?q?3d5udg7F8GYjrqfV6l3nF1KkUyyS2bpVIhjGyfIG/Y93tF4VrbBv3YKR5VrxYr0hO?=
+ =?utf-8?q?SeeWrVZTxONmEPt847yOOtbtBNCuIxUQ1Xe2bx6kEDHyMpT+5iRnDJyjRATNjomh0?=
+ =?utf-8?q?H6WBAv+cwPtsqzQzYbbU9ggXzqOa9Bhzr8+3yIdAxfRG6WE1a7q1RPdZ8xKu5Ej/J?=
+ =?utf-8?q?7BwZVR+IvbOZQu1PWpjIZYEUE74/4UWKfIjc0OgN7J+0ygrA9rAfqN7lV7prkCPDw?=
+ =?utf-8?q?69U8wDlv7JF+ax1SdoQ+eQNf1gc+hmYcxyRIfWAq0l1xPmOUQDlqUvabB7wslFgvI?=
+ =?utf-8?q?w8I3lFGDPvoZRfFCR2q6j+0LqPtp55LejmNY298rlKSDbJjCj1ZRIZhtEqmRoND/l?=
+ =?utf-8?q?HRO4UMj7lDyX3Hm7bRcapp1kBesZsLAEuFCcUIP9IqXnPGbRWm4wOxxTbLrO1tSul?=
+ =?utf-8?q?YPOkjDMzlm8UXoJOZmnbJRwfg4VW3rxp3tJ9iAlYvzw=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 9
+
+------=_Part_16216_146500781.1704651323310
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>a {text-decoration: inherit; color: inherit;}</style>
+</head>
+<body bgcolor="#f2f2f2" style="background: #f2f2f2;">
+    <table class="body" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; height: 100%; width: 100%; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; background: #f2f2f2; margin: 0; padding: 0;" bgcolor="#f2f2f2">
+    <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+        <td class="center" align="center" valign="top" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: center; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;">
+            <center style="width: 100%; min-width: 510px;">
+                <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 510px; margin: 0 auto; padding: 0;">
+                    <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                        <td class="center" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: center; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="center" valign="top">
+                            <center style="width: 100%; min-width: 510px;">
+                                <br />
+                                <br />
+                                <img class="center" src="https://img04.en25.com/EloquaImages/clients/Onshape/%7B208bbf00-cbf9-44f4-9349-06896cb782f9%7D_logo-onshape-gray-green%402x.png" width="220" height="52" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: 220px; height: 52px; max-width: 100%; float: none; clear: both; display: block; margin: 0 auto;" align="none"/>
+                                <br />
+                            </center>
+                        </td>
+                        <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top">
+                        </td>
+                    </tr>
+                </table>
+                <table class="container" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: inherit; width: 510px; margin: 0 auto; padding: 0;">
+                    <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                        <td class="panel" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; background: #ffffff; margin: 0; padding: 10px 45px; border: 1px solid #d9d9d9;" align="left" bgcolor="#ffffff" valign="top">
+                            <center style="width: 100%; min-width: 510px;">
+                                <table class="row" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; padding: 0px;">
+                                    <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                                        <td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
+                                            <!-- Title block -->
+                                            <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 510px; margin: 0 auto; padding: 0;">
+                                                <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                                                    <td class="center" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: center; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="center" valign="top">
+                                                        <center style="width: 100%; min-width: 510px;">
+                                                            <br />
+                                                            <h1 class="center" style="text-align: center; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: bold; line-height: 1.3; word-break: normal; font-size: 28px; margin: 0; padding: 0;" align="center">Added to new enterprise</h1>
+                                                            <hr style="color: #d9d9d9; height: 1px; background: #d9d9d9; border: none;"/>
+                                                        </center>
+                                                    </td>
+                                                    <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!-- email body -->
+                                            <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 510px; margin: 0 auto; padding: 0;">
+                                                <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                                                    <td class="center" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: center; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="center" valign="top">
+                                                        <br />
+                                                        <center style="font-size: 17px; line-height: 27px; text-align: left; color: #003366; font-family: 'Helvetica', 'Arial', sans-serif; width: 100%; min-width: 510px;">
+                                                            Hello <a href="#" rel="nofollow" style="color: #003366; text-decoration:none;"></a>, <br /><br />You have been added to the enterprise: <a href="#" rel="nofollow" style="color: #003366; text-decoration:none;">Ann Arbor Public Schools</a>.<br /><br />As part of this enterprise, you can access all its shared documents.<br /><br />For more information, sign into Onshape and visit the My account section by clicking on your name in the top right corner.<br /><br />
+                                                        </center>
+                                                    </td>
+                                                    <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!-- CTA section -->
+                                            <table class="eight columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; margin: 0 auto; padding: 0;">
+                                                <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                                                    <td class="center" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: center; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="center" valign="top">
+                                                        <table class="round button medium-button" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; overflow: hidden; padding: 0;">
+                                                            <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                                                                <td width="10%"></td>
+                                                                <td width="80%" class="center" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: center; color: #ffffff; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; display: block; width: auto !important; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; background: #1b5faa; margin: 0; padding: 12px 0 10px;" align="center" bgcolor="#1b5faa" valign="top">
+                                                                    <a class="center" href="https://aaps.onshape.com/c/sso/signin" style="color: #ffffff; text-decoration: none; font-weight: bold; font-family: Helvetica, Arial, sans-serif; font-size: 20px;">
+                                                                        <span style="font-weight: lighter !important;">SIGN IN TO ONSHAPE</span>
+                                                                    </a>
+                                                                </td>
+                                                                <td width="10%"></td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <br />
+                                            <!-- Link in text format -->
+                                            <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 510px; margin: 0 auto; padding: 0;">
+                                                <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                                                    <td class="center" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: center; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="center" valign="top">
+                                                        <center style="width: 100%; min-width: 510px;">
+                                                            <p style="text-align: center; color: #a1a1a1; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0 0 10px; padding: 0;" align="center">
+                                                                You may copy/paste this link into your browser:
+                                                            </p>
+                                                            <p style=" font-size: 17px; line-height: 27px; text-align: center; color: #2d74c1; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; width: 100%; min-width: 510px; " align="center">
+                                                            https://aaps.onshape.com/c/sso/signin
+                                                            </p>
+                                                        </center>
+                                                    </td>
+                                                    <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <br />
+                                            <!-- Invite a friend section -->
+                                        </td>
+                                    </tr>
+                                </table>
+                            </center>
+                        </td>
+                    </tr>
+                </table>
+                <table class="container" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: inherit; width: 510px; margin: 0 auto; padding: 0;">
+                    <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                        <td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; background: #f2f2f2; margin: 0; padding: 0;" align="left" bgcolor="#f2f2f2" valign="top">
+                            <center style="width: 100%; min-width: 510px;">
+                                <table class="row" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; position: relative; display: block; padding: 0px;">
+                                    <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                                        <td class="wrapper last" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; position: relative; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 10px 0px 0px;" align="left" valign="top">
+                                            <table class="twelve columns" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 510px; margin: 0 auto; padding: 0;">
+                                                <tr style="vertical-align: top; text-align: left; padding: 0;" align="left">
+                                                    <td class="center" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: center; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0px 0px 10px;" align="center" valign="top">
+                                                        <center style="width: 100%; min-width: 510px;">
+                                                            <br />
+                                                            <p style="text-align: center; color: #a1a1a1; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0 0 10px; padding: 0;" align="center">
+                                                            This is an automated message from Onshape.<br />
+                                                            </p>
+                                                            <p style="text-align: center; color: #a1a1a1; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0 0 10px; padding: 0;" align="center">
+                                                                Please do not reply to this message.
+                                                            </p>
+                                                            <br />
+                                                            <br />
+                                                            <br />
+                                                        </center>
+                                                    </td>
+                                                    <td class="expander" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; visibility: hidden; width: 0px; color: #222222; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;" align="left" valign="top">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </center>
+                        </td>
+                    </tr>
+                </table>
+            </center>
+        </td>
+    </tr>
+</table>
+<img src="http://metrics.onshape.com/wf/open?upn=pefIbq-2F0PhcN2qttzAUOKcqrOrDw1L6ncHuzcceg2g-2FjqN3coAFsFpJ2ud4k73rmOCqsDLWzlndUBz9dpwHtp9-2BStwWJ2yFIgrDePoxVYAknV1Z23cCLi5OjkgFM8-2BjNhWSOiHW9BAaDemWLmvPyBd-2BqRjV4IPQk1yJRZ93ceQ-2FcLU0AzlgpDVZrgACh9ULANENLM7wnoA7VczoJWFTIfw-3D-3D" alt="" width="1" height="1" border="0" style="height:1px !important;width:1px !important;border-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !important;"/></body>
+</html>
+
+------=_Part_16216_146500781.1704651323310--
+

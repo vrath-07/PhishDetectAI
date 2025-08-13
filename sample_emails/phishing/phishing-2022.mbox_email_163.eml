@@ -1,0 +1,157 @@
+Return-Path: socur@studiojennifer.in
+Delivered-To: jose@monkey.org
+X-FDA: 79960228740.24.C049277
+Received: from 162-144-55-47.unifiedlayer.com (unknown [162.144.55.47])
+	by imf20.b.hostedemail.com (Postfix) with ESMTP id 8B24E800BB43
+	for <jose@monkey.org>; Wed, 28 Sep 2022 04:34:48 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=studiojennifer.in; s=default; h=Content-Type:MIME-Version:Message-ID:Date:
+	Subject:To:From:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=xmAQGfaCU9432pnumHQtRylPy858NW8LZBxYFH9KCjI=; b=mrdPYEX7xzo/4DMMjJuLvkcpMC
+	yQvx6x99/4Z4fUonQ0QhHXZLdOIygDjjFk7jhatKVpvw9jymVbaoFHYjDZxpvkVoVCV1b4wKenTnr
+	oK/CYDcu8AFGtfhMweXGxfn3CQbVTKScX3yjidrB9rfTtImiwbcKHdP4i7fqPj1LYrPO0yIClbUQq
+	8/QrWh0JXd605axLVckXv+G/6OpEvFHBalEHqJSzV02dSInQZOxAaVSOPCBPx+71XBQ0I9Jo017JN
+	SBDST7pqWifsw+CzxKPmsr8V+K/dz3wQJLJwveH5X/oynkwynXpdyNb6oPdSjUkSfC/8zH0anP7Oh
+	q1AuM3Wg==;
+Received: from [136.144.41.171] (port=64809 helo=studiojennifer.in)
+	by server.rwaysmedia.com with esmtpa (Exim 4.94.2)
+	(envelope-from <socur@studiojennifer.in>)
+	id 1nEX2d-0005Nu-Q4
+	for jose@monkey.org; Mon, 31 Jan 2022 06:48:24 -0700
+From: monkey.org<socur@studiojennifer.in>
+To: jose@monkey.org
+Subject: Confirm Ownership of jose@monkey.org
+Date: 31 Jan 2022 05:48:22 -0800
+Message-ID: <20220131054821.874FC423AC474C83@studiojennifer.in>
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="----=_NextPart_000_0012_4CBD39F7.22249B57"
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - server.rwaysmedia.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - studiojennifer.in
+X-Get-Message-Sender-Via:
+ server.rwaysmedia.com: authenticated_id: socur@studiojennifer.in
+X-Authenticated-Sender: server.rwaysmedia.com: socur@studiojennifer.in
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1664339689;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=xmAQGfaCU9432pnumHQtRylPy858NW8LZBxYFH9KCjI=;
+	b=Iv1cZFyG9lRMYxBF+RkBuoAZo9k6UMqAg+zL4dzfcWffGk5cTnhrKCxZtHIKjqeoKc5djY
+	JUK5m9/d0EV10KO8R3+Ul/h6iHvzzyrO65H6sKLG2yVhiK3x7s/HyinFmgfhJz+f4I0fJM
+	RlBSjgYeqLxmpKwgKyKk6s+7T3LhbEc=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1664339689; a=rsa-sha256;
+	cv=none;
+	b=JYXSbvcu1aiVIxBr7zD85Avdy4sNHqvq5EMMZKBHb2NY4fo3uq+mneKxAGfxq8wogflI4/
+	0LXbIdn6E5+N4qbL2Fndt/OS1cg3ppSOJ/MA5dLC3ICUom9goYZ5/ucmuDR/QX8/MvVORX
+	a7aHeviXSGMSYSLaYbtGgLXaDoPiagM=
+ARC-Authentication-Results: i=1;	imf20.b.hostedemail.com;	dkim=pass
+ header.d=studiojennifer.in header.s=default header.b=mrdPYEX7;	dmarc=none;
+	spf=pass (imf20.b.hostedemail.com: domain of socur@studiojennifer.in
+ designates 162.144.55.47 as permitted sender)
+ smtp.mailfrom=socur@studiojennifer.in
+X-Spam-Status: Yes, score=13.50
+X-Stat-Signature: oqn4t8xucndpg7iekn4o4oeo4woae9g6
+X-Rspamd-Queue-Id: 8B24E800BB43
+X-Rspam-User: 
+Authentication-Results: imf20.b.hostedemail.com;	dkim=pass
+ header.d=studiojennifer.in header.s=default header.b=mrdPYEX7;	dmarc=none;
+	spf=pass (imf20.b.hostedemail.com: domain of socur@studiojennifer.in
+ designates 162.144.55.47 as permitted sender)
+ smtp.mailfrom=socur@studiojennifer.in
+X-Rspamd-Server: rspam08
+X-HE-Tag: 1664339688-884610
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 162
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0012_4CBD39F7.22249B57
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.19003"></HEAD>
+<body style=3D"MARGIN: 0.5em">
+<P></P>
+<DIV style=3D"FONT-SIZE: 16px; FONT-FAMILY: Arial,Helvetica,sans-serif; WHI=
+TE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400=
+; COLOR: rgb(34,34,34); FONT-STYLE: normal; PADDING-TOP: 0px; LETTER-SPACIN=
+G: normal; BORDER-TOP-WIDTH: 0px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-=
+INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; tex=
+t-decoration-style: initial; text-decoration-color: initial">
+<table>
+<TBODY>
+<TR>
+<td style=3D"BORDER-TOP: rgb(0,0,0) 0px solid; FONT-FAMILY: Roboto,RobotoDr=
+aft,Helvetica,Arial,sans-serif; BORDER-RIGHT: rgb(0,0,0) 0px solid; WIDTH: =
+700px; BORDER-BOTTOM: rgb(0,0,0) 0px solid; PADDING-BOTTOM: 5px; PADDING-TO=
+P: 5px; PADDING-LEFT: 5px; MARGIN: 0px; BORDER-LEFT: rgb(0,0,0) 0px solid; =
+PADDING-RIGHT: 5px; BACKGROUND-COLOR: rgb(243,255,248)"><SPAN style=3D"FONT=
+-SIZE: 12px"><FONT face=3DCalibri>From a trusted sender.</FONT></SPAN></TD>=
+</TR></TBODY></TABLE></DIV>
+<DIV style=3D"FONT-SIZE: 16px; FONT-FAMILY: Arial,Helvetica,sans-serif; WHI=
+TE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400=
+; COLOR: rgb(34,34,34); FONT-STYLE: normal; LETTER-SPACING: normal; BACKGRO=
+UND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: norm=
+al; font-variant-caps: normal; text-decoration-style: initial; text-decorat=
+ion-color: initial">
+<P><FONT face=3DCalibri>Hi<SPAN> </SPAN>jose</FONT></P></DIV>
+<DIV style=3D"FONT-SIZE: 16px; FONT-FAMILY: Arial,Helvetica,sans-serif; WHI=
+TE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400=
+; COLOR: rgb(34,34,34); FONT-STYLE: normal; LETTER-SPACING: normal; BACKGRO=
+UND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: norm=
+al; font-variant-caps: normal; text-decoration-style: initial; text-decorat=
+ion-color: initial">
+<P><FONT style=3D"FONT-FAMILY: Arial,Helvetica,sans-serif,serif,EmojiFont">=
+<SPAN style=3D"FONT-FAMILY: Calibri,Helvetica,sans-serif">Please confirm Ow=
+nership of&nbsp;<SPAN> jose@monkey.org</SPAN></SPAN></FONT><FONT style=3D"F=
+ONT-FAMILY: Arial,Helvetica,sans-serif,serif,EmojiFont"><SPAN style=3D"FONT=
+-FAMILY: Calibri,Helvetica,sans-serif"><SPAN><BR>To avoid Termination </SPA=
+N>and continue usageTo make a room, <BR>Fellow attachment to increase stora=
+ge.</SPAN></FONT>&nbsp; <BR></P></DIV>
+<DIV style=3D"FONT-SIZE: 16px; FONT-FAMILY: Arial,Helvetica,sans-serif; WHI=
+TE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400=
+; COLOR: rgb(34,34,34); FONT-STYLE: normal; LETTER-SPACING: normal; BACKGRO=
+UND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: norm=
+al; font-variant-caps: normal; text-decoration-style: initial; text-decorat=
+ion-color: initial">
+<P><FONT face=3DCalibri><B>Note:&nbsp;</B>Please do not ignore.</FONT></P><=
+/DIV>
+<DIV style=3D"FONT-SIZE: 16px; FONT-FAMILY: Arial,Helvetica,sans-serif; WHI=
+TE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400=
+; COLOR: rgb(34,34,34); FONT-STYLE: normal; LETTER-SPACING: normal; BACKGRO=
+UND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: norm=
+al; font-variant-caps: normal; text-decoration-style: initial; text-decorat=
+ion-color: initial"><FONT face=3DCalibri>
+<HR>
+</FONT></DIV>
+<DIV style=3D"FONT-SIZE: 16px; FONT-FAMILY: Arial,Helvetica,sans-serif; WHI=
+TE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400=
+; COLOR: rgb(34,34,34); FONT-STYLE: normal; LETTER-SPACING: normal; BACKGRO=
+UND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: norm=
+al; font-variant-caps: normal; text-decoration-style: initial; text-decorat=
+ion-color: initial">
+<P><FONT face=3DCalibri><B>&copy; 2022 Account Service Team</B></FONT></P><=
+/DIV></BODY></HTML>
+------=_NextPart_000_0012_4CBD39F7.22249B57
+
+------=_NextPart_000_0012_4CBD39F7.22249B57--
+
+

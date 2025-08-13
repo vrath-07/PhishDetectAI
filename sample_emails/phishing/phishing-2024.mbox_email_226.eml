@@ -1,0 +1,1437 @@
+Return-Path: bounce-2438_HTML-62350230-3896855-6265510-582@bounce.email.53.com
+Delivered-To: jose@monkey.org
+X-FDA: 82414780350.18.84D75F7
+Received: from mta.email.53.com (mta.email.53.com [198.245.80.243])
+	by imf11.b.hostedemail.com (Postfix) with ESMTP id EA96A8000C
+	for <jose@monkey.org>; Sun,  4 Aug 2024 14:23:13 +0000 (UTC)
+Authentication-Results: imf11.b.hostedemail.com;	dkim=pass
+ header.d=email.53.com header.s=200608 header.b=xGmhkjU7;	spf=pass
+ (imf11.b.hostedemail.com: domain of
+ bounce-2438_HTML-62350230-3896855-6265510-582@bounce.email.53.com designates
+ 198.245.80.243 as permitted sender) =?utf-8?q?smtp=2Emailfrom=3Dbounce-2438?=
+ =?utf-8?q?=5FHTML-62350230-3896855-6265510-582=40bounce=2Eemail=2E53=2Ecom?=
+ =?utf-8?q?=3B?=	dmarc=pass (policy=reject) header.from=email.53.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1722781343;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:list-id:dkim-signature;
+	bh=EFqcrgq/UJf80WxYHnVjW4gADXp3Vjw+LXco2bfMFt8=;
+	b=SXPSmXBlU/I9NQBepXN+VVDJAe3gIpBkmft5VrASOJia8CPaa6OwZ16GKSV5agjWPI7tQ8
+	0PiEQn9wX4sGyBoFAVLfpbLSsVqznB0kOubtX5NSfkFpfVGUyTlGNk/29gwvjH6qjBmIgu
+	owJn0shQSpXD3UTYYxAXmq4k5mKe9vY=
+ARC-Authentication-Results: i=1;	imf11.b.hostedemail.com;	dkim=pass
+ header.d=email.53.com header.s=200608 header.b=xGmhkjU7;	spf=pass
+ (imf11.b.hostedemail.com: domain of
+ bounce-2438_HTML-62350230-3896855-6265510-582@bounce.email.53.com designates
+ 198.245.80.243 as permitted sender) =?utf-8?q?smtp=2Emailfrom=3Dbounce-2438?=
+ =?utf-8?q?=5FHTML-62350230-3896855-6265510-582=40bounce=2Eemail=2E53=2Ecom?=
+ =?utf-8?q?=3B?=	dmarc=pass (policy=reject) header.from=email.53.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1722781343; a=rsa-sha256;
+	cv=none;
+	b=6ahp5h9H3VJNofT9CX1eeguifdMANC/ZeU/7n0LrQ0rclEtSoOWjYOuQOcP94lELA5Arq7
+	L8MojGRhSmKAvfdfqZTN2zaej3QtVue2CSpLmr2XGbkpjhCgOu0Lh24rV4EzZC/dQMSjFb
+	4uqmjr82OGHDVeXRQWDwQdgsCdx6ItQ=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=200608;
+ d=email.53.com;
+ h=From:To:Subject:Date:List-Help:MIME-Version:Reply-To:List-ID:Message-ID:
+ Content-Type; i=FifthThirdBank@email.53.com;
+ bh=EFqcrgq/UJf80WxYHnVjW4gADXp3Vjw+LXco2bfMFt8=; =?utf-8?q?b=3DxGmhkjU7hFQp?=
+ =?utf-8?q?Yv4tjoL1w2UYfK2gRVGNWFR2GGo/CXDzxXHKXweoGuKsZ0BKyKBfV9jhWIMWc1st?=
+  
+ /8Moio2p/RMBzHPulmhZS1P3cHP2RVYEuKWAdAlCZAcn+7gRWyUTrBB1Pem0X9fhpduwuax+Z5Kw
+   ETEV0vKfRycYH4WqMlg=
+Received: by mta.email.53.com id hlu7d42fmd46 for <jose@monkey.org>; Sun, 4
+ Aug 2024 14:23:12 +0000 (envelope-from
+ <bounce-2438_HTML-62350230-3896855-6265510-582@bounce.email.53.com>)
+From: "Fifth Third Bank" <FifthThirdBank@email.53.com>
+To: <jose@monkey.org>
+Subject: =?UTF-8?B?WW91ciBEZWJpdCBDYXJkIGlzIEV4cGlyaW5nIFNvb27igJNWZXJp?=
+ =?UTF-8?B?ZnkgWW91ciBEZXRhaWxz?=
+Date: Sun, 04 Aug 2024 08:23:12 -0600
+List-Help: =?utf-8?q?=3Chttps=3A//click=2Eemail=2E53=2Ecom/subscription=5Fce?=
+ =?utf-8?q?nter=2Easpx=3Fjwt=3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9=2EeyJtaW?=
+ =?utf-8?q?QiOiI2MjY1NTEwIiwicyI6IjYyMzUwMjMwIiwibGlkIjoiMjQzOCIsImoiOiIzODk?=
+ =?utf-8?q?2ODU1IiwiamIiOiI1ODIiLCJkIjoiNjAyMzgifQ=2EPR5q-I74kbwz6dWooDjcCbL?=
+ =?utf-8?q?GX9QngakBkl0ZD2Cs3SA=3E?=
+MIME-Version: 1.0
+Reply-To: "Fifth Third Bank"
+ <reply-fe8317787c620c7870-2438_HTML-62350230-6265510-582@email.53.com>
+List-ID: <7004322.xt.local>
+X-SFMC-Stack: 6
+x-job: 6265510_3896855
+Message-ID: <98739d59-28f6-4394-9940-5c21d7f2f505@ind1s06mta1195.xt.local>
+Content-Type: multipart/alternative;
+	boundary="PgsS8UEdqtBS=_?:"
+X-Rspamd-Server: rspam03
+X-Rspamd-Queue-Id: EA96A8000C
+X-Rspam-User: 
+X-Stat-Signature: 3idcces8nwp3rfggbojh9rt731xc7ypc
+X-Spam-Status: No, score=-6.30
+X-HE-Tag: 1722781393-425121
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19eaGltX25W12wwRUGSWZXtQ6Oc0KPf67LpmnmCAD3zmQc?=
+ =?utf-8?q?eB7DoOqw5l7AHFBl2GwKaLQgtwqBJfGX7dOJ0rupYXdTu2tDa9tqh6PzRu/LfO6i/?=
+ =?utf-8?q?uhMFAYiCTwlus5PgDmEsKPEowhVDV0zpUhXRcw9jUjx/nnKTqu3HcdqY+IsTo2RTw?=
+ =?utf-8?q?jQbAaO3sp9/IhDdFRikEfsYM2a/N15wLtFrG4b6maUtr4dDqUAoafnP6PnzZzK+4Y?=
+ =?utf-8?q?28y1XyhHH3cVBAccTXM6rWMiaHsajw46nFzr5+V2GW2Av2EaGY9034zde+iMuRiFR?=
+ =?utf-8?q?oj01/Od6ADpql9pb0VLOFg6Ub4EgcAQq2jgkB1PFpWnY8Ae863e/EODRnuz8JXmLK?=
+ =?utf-8?q?qKjzgIOzcu717n+/0/nQzR1RR5OJZppoCefjL2mLQMvIXtv385WVA0H6buwv8J92U?=
+ =?utf-8?q?s6avYSeBb7zq0gzvnPwitTjW8Fv13+XXgrL1efCsr1LAp8MDvdGK+APoZ8HPsYoKs?=
+ =?utf-8?q?dezVY6aKsWj5xsuFhOM9XDnwIcw8H+SPgaAaJkclQQDgMIvSBc6mW/3IAMkkflqb8?=
+ =?utf-8?q?yNDFE0QmW4flXkQ6+pTEFp+66ImUUyfZ7gd8x3iqBYtYEnXxzoplqA2khWvTp9HS5?=
+ =?utf-8?q?1pHngFujUCHBFsfwQJqxJWIT52EmvyG0OgaFVMMO/19iL4WK1hvt/BE/Jfy8U6OtY?=
+ =?utf-8?q?x9lz3vEGKB3uDYDGB6FRflm28sFCSuuFkWQamLMFm8w2Tzm1Jam0FTv4b0eDz838F?=
+ =?utf-8?q?LAgOK0RMyws0Azthi8UiH92G2JV/0jlubBmTG//gs7ej1zlt3gittb4+Ct9hHkTGY?=
+ =?utf-8?q?zPD1cOmDPuwnitkwirzahpS58heCFa+v+fygI42UyU1J3Bizq7g/9nXvXJquNR77d?=
+ =?utf-8?q?wcJB/cCn8GLXSN0v5d0LwCm3SqRtwbZ0iRciKuDoD3jrnIHC2K7N7NRwgfhn78XEe?=
+ =?utf-8?q?l+NtD4vUGU9rRAFhNWrtk5_JQiQbeNxT2UmG8w0uqlomJOvt57H6oXmclA9C52pz4?=
+ =?utf-8?q?cU1Rop4nPY/wXCVDEr58h1ZcNImOcn2euVnmRUnkGgGQ7eh0+GlOd5dVbsuhykkT/?=
+ =?utf-8?q?gLSw1JEQNsjuAcee55Sp18IgGJqNDWKBD9cKPrGKvKvNPcYsDnQsfuMD+3mhj2ZEz?=
+ =?utf-8?q?beTOwnbjOpaFYZPufXR7iRHtlGNwKJ2gNWXbgb694es2Y+dxZUPovPnDc7KFWcXX3?=
+ =?utf-8?q?V0R39UH9ZPJyUPKlsKSTbtTmppC/uotPDGm4Parj62vzvBUtjm5f6Feqy8JUUR78g?=
+ =?utf-8?q?t1tcnxN8s4nE26w5PiR7sVciZoDtNnjx3bINBw9nTrss6HHiKWfEtfpepJ0CrvmKp?=
+ =?utf-8?q?CmZ7Ir/eRodeYkrqCXdmsrlybY15JX3HA6XzXMI0o77iAlXF7ILNvYPlYHsI90s7l?=
+ =?utf-8?q?w8WdTYgSD10JrOVoAkujc9LPRYY1SoebBGW/RlpY+oWF7cJDwoOVQJnnpyl9RLHjc?=
+ =?utf-8?q?Fy6H7TInqZstaQmc3W2xkpLOyIFkGrMqwjozFzhNEm3O5lPOJg3+DS7zwpkz2FTch?=
+ =?utf-8?q?f/9qe/FLR3bEAU9ysZpjFb6zEIEFccvKfrHXpiUrUQknSBkFD4d2+rSF2VrPtMlTx?=
+ =?utf-8?q?J8xwegHPMpwnttm0Ls1toKhoBjtii59lnz2PakAWNcJWkf1v+BszuKDHmhqYGSpF9?=
+ =?utf-8?q?zEPa3311EKDLh/W7MXlCIJL6Ghu0hdnYo5NrHdSSQ8cpsOfzLoOpRJu+G6UvO//Iy?=
+ =?utf-8?q?YvT3roAPn8db19Qa47yNAu/Jakq57LW42cVb5gH15Uxg8xz9tKa0KBwvAXoc++zOS?=
+ =?utf-8?q?uKCUaJf21/KwUdHc4r89/UkfPrTJdKk0IFYr3GsjDEu1y1VRn0uG50C/gZZPw54D+?=
+ =?utf-8?q?GgoxsfidFvDwxtA9J3KPwjoF+5oSgG0+H6OGI5mTrVw4f6+ApPrjHx0Keud4Tz8iY?=
+ =?utf-8?q?wjKgMCkaUY7+x8Cy2nlFitpn6VQiIgveuj4T3ALYqLI2h_Nr3yD8id6iadtrx++4u?=
+ =?utf-8?q?Hp10MeimwSwaBg2ObvDmYoUGzZEpb3yODblPYcL1qECkuEcfuUDupNMnAcFsdg7hC?=
+ =?utf-8?q?Ng+LMIpz8HdNNJKJX6va8Tzt/FrSoSuPtDq+KPG+bcWb4/Qrs3HTNAsNYApshb25x?=
+ =?utf-8?q?lF8f/LW/dQT1s3OwjuUREnof2yo9mu6nGusUpY5/HXJ00gQLdw6ZxRQvqBoCr/mE3?=
+ =?utf-8?q?Wl/AyIy1DE5hRZYMZlrB7cjlXUXeILpUzmN88W8cYPaSECAtp8r7rh0GBr2Y0W4SY?=
+ =?utf-8?q?z/UyH69T1e7o/3ReDYc1QmSc7gak/Mthscdha7KDSDDjuGvyvf52mwpvkV0Y+79LH?=
+ =?utf-8?q?pbuaau0zLzwAqMRastlNEpl9b5Cewn/ereRRcVhLLoKfjdKgrZBwmiWrM+RFgbz0p?=
+ =?utf-8?q?UGfmBDe0hZX0Ji6DZWSpqzA2j/MbloBBxlb3HIlNmmUSzUwc/pYg3cf0FuiSfTMxe?=
+ =?utf-8?q?GenM5nSumpfOGgyWX0Z07uckJnYOyotSwDoTkfciE/j+x9QvykW7elyA05Q0Utlev?=
+ =?utf-8?q?O6QnOvF3VICgkAfjiOOC0akGFxGCUZrLK9SpSmVg/4FsnV/j3eAeeVCmMSSRYHmyj?=
+ =?utf-8?q?tR40wOJRSZbT94G4XKhnwVndzzEGc0ob1u/LH987sPhv77OanURmt601A2472cTJ0?=
+ =?utf-8?q?suIlUv47HOqh8mWgTdNYitF51IkQCSTy9CgzV3lJkFvSrofiD4FuYG6SfeOsLVW/a?=
+ =?utf-8?q?UlVSYFWG+gi11xL1bCMx0LKp60+MXRdMEOkqmbiKGSBc1k2frKmChRL+wKOyXLovJ?=
+ =?utf-8?q?MM5H3bMs/wOrC4lde51b4PWw4DbPM6F6Z93fDD72n8iegU78lqyV0Z8r2TpXzClBk?=
+ =?utf-8?q?qYGZAH7fOqNPTYkkrMhPeit6O3IOkh6c4U02WWuWBoBp7GsV6cRG/Jky9Z3+pSGGU?=
+ =?utf-8?q?ix5h6LU+XKMRAytTHdTFkbpoSemRZI7?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 226
+
+This is a multi-part message in MIME format.
+
+--PgsS8UEdqtBS=_?:
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+
+                    
+                    
+                    
+ 
+ 
+ 
+
+ 
+
+ 
+
+ 
+ Having trouble viewing this email?
+ 
+https://view.email.53.com/?qs=ed16f1597c2b23ef5de05f43ddc43a69f23e3c1ee4d4e0e79688e66e5cc7de4ab0a31db13fec294a768e2429c16e438a114cd06ccaedfbc4fbc9d5376d74ae6f8c1850bc699b5c29b47034d8e60781d7 
+View Online
+
+
+ 
+
+ 
+https://click.email.53.com/?qs=b1fc66f56093d1f2504c9454fd2bbbee45ea934f58117184fbe12be37a0fbb228d5815c1523b4eeb88d4301caaa8d2cb04f58f11d47ec3d7 
+
+https://click.email.53.com/?qs=b1fc66f56093d1f2e1eb9470bba1f90e5530cdab604d416b78c5cd93ba2fbac916022a946d2f5af53f764dcd04850107e295f08e14fd8d34 
+
+
+ 
+
+ 
+ Dear JOSE O NAZARIO:
+ 
+
+
+Your debit card ending in 2864 is expiring soon, so we’re getting a new one ready for you. Don’t worry—you can continue to use you current card until the last day of the expiring month. Your new card should arrive in about 2-3 weeks. 
+ 
+
+We’ll ship it to:
+
+ 2160 GREENVIEW DR ANN ARBOR MI 48103-6112
+ 
+
+
+If this address is incorrect, please contact us as soon as possible at 
+tel:18009723030 
+ 800-972-3030 , Monday through Friday 8 a.m. to 6 p.m., and Saturday 10 a.m. to 4 p.m., ET. 
+ 
+
+
+
+Stay in the loop through the mobile app!
+
+If you use the app^1, we’ll notify you as soon as your card starts making its way to you. To monitor its progress:
+
+
+ 1.
+ 
+ Log in to the mobile app.
+ 
+
+
+ 2.
+ 
+ Find the checking account associated with your card. 
+ 
+
+
+ 3.
+ 
+ Tap the three dots next to your account, then Manage Card.
+ 
+
+
+ 4.
+ 
+ Select the card from the list, then tap Card Tracker.
+ 
+
+
+You can update how you get notified by going to Profile (the person icon) then tap Alerts > Manage Alerts > Security > Security Alerts.
+ 
+
+Don’t have the app? Explore the possibilities!
+
+You’ll get the benefit of the Card Tracker notifications, plus security and account alerts, mobile check deposit, Zelle(R) and more. It’s like having your own personal branch right inside your pocket, 24/7.
+ 
+
+Here’s how to get started:
+
+ 1.
+ 
+ Download the app for free from your device’s app store. 
+ 
+
+
+ 2.
+ 
+ Open the app. 
+ 
+
+
+ 3.
+ 
+ If you already use online banking, you can use the same User ID and password to log in. If you don’t have a User ID and password, tap Sign Up and follow the prompts. It’s that easy!
+ 
+
+
+https://click.email.53.com/?qs=b1fc66f56093d1f204843b20f0ee1261f0a1820dec1f3f31611e2b5f49fc28bf2bfaf1056ea6bdb748039870a4dabf27beb3cbf9c9c24902f0a5df343b97d3ef 
+
+  
+ 
+https://click.email.53.com/?qs=b1fc66f56093d1f20be36541a68e32440d90623e46e20f2d5c50d00b26494b5486881142c1659ecc330d628602fb5b4d95ca7f4a2cd6efa0ff6e80091cc61465 
+
+
+  
+ 
+
+https://click.email.53.com/?qs=b1fc66f56093d1f204843b20f0ee1261f0a1820dec1f3f31611e2b5f49fc28bf2bfaf1056ea6bdb748039870a4dabf27beb3cbf9c9c24902f0a5df343b97d3ef 
+
+https://click.email.53.com/?qs=b1fc66f56093d1f20be36541a68e32440d90623e46e20f2d5c50d00b26494b5486881142c1659ecc330d628602fb5b4d95ca7f4a2cd6efa0ff6e80091cc61465 
+
+We’re here to help.
+
+If you have any questions, you can message us 24/7 in to the mobile app or online banking, or call us at 
+tel:18009723030 
+800-972-3030 , Monday through Friday 8 a.m. to 6 p.m., and Saturday 10 a.m. to 4 p.m., ET. 
+
+
+Thank you for banking with us.
+
+
+ 
+ 
+ 
+https://www.53.com/content/fifth-third/en/personal-banking/bank/online-mobile-banking/mobile-banking.html?cid=em:et:Debit_Card_Tracker:Expiring 
+
+https://locations.53.com/search.html?cid=em:et:Debit_Card_Tracker:Expiring 
+
+https://www.facebook.com/FifthThirdBank 
+
+https://twitter.com/fifththird 
+
+https://www.youtube.com/c/fifththirdbank 
+
+https://www.linkedin.com/company/fifth-third-bank 
+
+https://www.instagram.com/fifththirdbank 
+
+
+ 1. Subject to 
+https://click.email.53.com/?qs=b1fc66f56093d1f29dcb29ab268fd98f096400c647fc082917e367cad4111d446686ce3216e0e2b7ab3755f6c7611bdf7a6d2db2ced67490aeb7a184be3dca3e 
+Digital Services User Agreement  terms and conditions.
+
+Zelle and the Zelle related marks are wholly owned by Early Warning Services, LLC and are used herein under license.
+ 
+
+
+ Email Security Information
+ 
+
+https://www.53.com/content/fifth-third/en/privacy-security.html?cid=em:et:Debit_Card_Tracker:Expiring 
+Email Privacy  | 
+https://www.53.com/content/fifth-third/en/customer-service.html?cid=em:et:Debit_Card_Tracker:Expiring 
+Customer Service 
+
+
+ This email was intended for: 
+mailto:jose@monkey.org 
+jose@monkey.org 
+
+ Security and confidentiality of your personal information is one of our highest priorities. We will never request that you provide, update or verify via email your personal or account information, including passwords, Social Security Number and PIN(s). If you receive such an email request, please email us at 
+mailto:53investigation@security.53.com 
+53investigation@security.53.com  immediately.
+ 
+
+
+ Learn more about how to protect your 
+https://www.53.com/mkg/security/phishing/index.html?cid=em:et:Debit_Card_Tracker:Expiring 
+personal information .
+ 
+
+
+ About this Email
+ 
+
+ This is a transactional/service email from Fifth Third Bank and is intended to share information regarding updates/changes to your account. Please note that you may receive customer service emails even if you have unsubscribed from marketing/promotional emails from Fifth Third Bank.
+ 
+
+ 
+ Copyright (c) 2024 Fifth Third Bank, National Association. Member FDIC.
+ 
+ Equal Housing Lender.
+ 
+
+38 Fountain Square Plaza
+ 
+
+ Cincinnati, Ohio 45202
+
+
+ 
+
+
+
+--PgsS8UEdqtBS=_?:
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html   xmlns="http://www.w3.org/1999/xhtml"   xmlns:v="urn:schemas-microsoft-com:vml"   xmlns:o="urn:schemas-microsoft-com:office:office"   lang="en"       >
+  <head>
+    <meta charset="utf-8" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <base target="new" />
+    <!--[if !mso]><!-->
+    <!--<![endif]-->
+    <!--************* 5/3 CSS FRAMEWORK - DO NOT MODIFY BELOW CSS *************-->
+    <style type="text/css">
+      a {
+        text-decoration: underline;
+      }
+
+      a[href^="tel"],
+      .nolinkcolor > a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      ul {
+        padding: 5px 30px 20px 20px;
+        margin-left: 0px;
+      }
+
+      li {
+        color: #333333;
+        padding-bottom: 10px;
+      }
+
+      li span {
+        color: #333333;
+      }
+
+      table,
+      td {
+        border-collapse: collapse !important;
+        border-spacing: 0px;
+        padding: 0px;
+        margin: 0px;
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+      }
+
+      img {
+        border: 0px;
+        padding: 0px;
+        margin: 0px;
+      }
+      sup {
+        line-height: 0;
+
+        /* The following rules (or similar) likely come from browser 
+     * style and are not needed
+     */
+        font-size: 0.7em;
+        vertical-align: super;
+      }
+
+      sup,
+      td {
+        -webkit-text-size-adjust: none;
+      }
+
+      /* Yahoo overrides */
+      em {
+        font-style: italic;
+      }
+      
+      .ft-column-per-50 {
+        width: 50% !important;
+        max-width: 50%;
+      }
+
+      strong {
+        font-weight: bold;
+      }
+
+      .link {
+        color: inherit !important;
+        text-decoration: inherit !important;
+      }
+
+      a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+      }
+
+      th {
+        font-weight: normal;
+      }
+
+      .mobileshow {
+        display: none !important;
+        width: 0 !important;
+        overflow: hidden !important;
+        float: inherit !important;
+        max-height: 0 !important;
+        line-height: 0 !important;
+      }
+
+      .gmailfix {
+        display: none;
+        display: none !important;
+      }
+
+      @media only screen and (max-width: 600px) {
+        /* Shared Styles */
+        .fullgmail {
+          width: 100% !important;
+          min-width: 100% !important;
+        }
+
+        .full {
+          width: 100% !important;
+        }
+
+        .fullautoheight {
+          width: 100% !important;
+          height: auto !important;
+        }
+
+        .mobiletext {
+          font-size: 6.2vw !important;
+          line-height: normal !important;
+        }
+
+        .mobiletextsmall {
+          font-size: 6.5vw !important;
+          line-height: normal !important;
+        }
+
+        .mobilephonerow {
+          display: inline-block !important;
+          width: 100% !important;
+          padding: 0% 0% 0% 1% !important;
+          text-align: left !important;
+        }
+
+        .mobilephonetext {
+          font-size: 6.2vw !important;
+          line-height: normal !important;
+        }
+
+        .mobilelocationrow {
+          display: inline-block !important;
+          width: 100% !important;
+          padding: 5% 0% 0% 1% !important;
+          text-align: left !important;
+        }
+
+        .mobilelocationtext {
+          font-size: 6.2vw !important;
+          line-height: normal !important;
+        }
+
+        .displayBlock {
+          width: 100% !important;
+          display: block !important;
+        }
+
+        .hide {
+          display: none !important;
+          mso-hide :all;
+        }
+
+        .mobileshow {
+          display: block !important;
+          width: auto !important;
+          overflow: visible !important;
+          float: none !important;
+          max-height: none !important;
+          line-height: normal !important;
+        }
+
+        .mobileshow2 {
+          display: block !important;
+          width: auto !important;
+          overflow: visible !important;
+          float: none !important;
+          /*max-height: none !important;*/
+          /* breaks BR tags */
+          line-height: normal !important;
+        }
+
+        .imgwdth {
+          width: 100% !important;
+          height: auto !important;
+        }
+
+        .autoheight {
+          height: auto !important;
+        }
+
+        .padmain {
+          padding-left: 15px !important;
+          padding-right: 15px !important;
+        }
+
+        .nopad {
+          padding: 0px 0px 0px 0px !important;
+        }
+
+        .nolrpad {
+          padding-left: 0px !important;
+          padding-right: 0px !important;
+        }
+
+        .padtop20 {
+          padding-top: 20px !important;
+        }
+
+        .padtop15 {
+          padding-top: 15px !important;
+        }
+
+        .txtadjucenter {
+          text-align: center !important;
+        }
+
+        .txtadjuleft {
+          text-align: left !important;
+        }
+
+        .mobileborder {
+          border-bottom: 4px solid #ffffff;
+        }
+
+        /* Header Styles */
+        .mobileswap {
+          background-color: #f0f0f0 !important;
+          color: #424242 !important;
+        }
+
+        .padright15 {
+          padding-right: 15px !important;
+        }
+
+        .padleft15 {
+          padding-left: 15px !important;
+        }
+
+        .mobileshow3 {
+          display: block !important;
+          width: auto !important;
+          overflow: visible !important;
+          float: none !important;
+          max-height: none !important;
+        }
+
+        /* Hero Styles */
+        .mobilehero {
+          height: inherit !important;
+        }
+
+        /* Adjust mobile image position here */
+        .mobilehero_swap {
+          background: url(http://image.s6.exacttarget.com/lib/fe9612727361017c75/m/3/hero_bg_mobile.gif);
+          background-position: 50% top;
+        }
+
+        /* Adjust mobile image position here */
+        .mobileheropad {
+          height: 200px;
+          padding: 0px 15px !important;
+          vertical-align: middle !important;
+        }
+
+        /* Secondary Module Styles */
+        .font26 {
+          font-size: 26px !important;
+        }
+
+        .mobilestorypad {
+          padding: 20px 15px !important;
+        }
+
+        .mobilebg {
+          background-color: #f0f0f0 !important;
+        }
+
+        .pad30 {
+          padding: 30px 30px !important;
+        }
+
+        .padtop30 {
+          padding-top: 30px !important;
+        }
+
+        .notoppad {
+          padding-top: 0px !important;
+        }
+
+        .lrpad30 {
+          padding-left: 30px !important;
+          padding-right: 30px !important;
+        }
+
+        .bottomborder {
+          border-right: 0px !important;
+          border-bottom: 4px solid #ffffff !important;
+        }
+
+        .noborder {
+          border-right: 0px !important;
+        }
+
+        .mobilebanner {
+          background-position: 100% top;
+        }
+
+        /* Adjust mobile image position here */
+        .mobilebannerpad {
+          height: 110px;
+          padding: 0px 15px !important;
+          vertical-align: middle !important;
+        }
+
+        .font13 {
+          font-size: 13px !important;
+        }
+
+        .percent25 {
+          width: 25% !important;
+        }
+
+        .padleft10 {
+          padding-left: 10px !important;
+        }
+      }
+    </style>
+    <!--************* 5/3 CSS FRAMEWORK - DO NOT MODIFY ABOVE CSS *************-->
+    <!-- if you need to insert new css rules or overwirte the ones above please do so below -->
+    <style>
+      @media only screen and (max-width: 600px) {
+        /* CSS for changing content in mobile clients */
+        .mobiletext {
+          font-size: 6vw !important;
+          line-height: 120% !important;
+        }
+
+        .centerimage {
+            width: 100% !important;
+        }
+
+        .mobilestack {
+          display: inline !important;
+          width: 100% !important;
+        }
+
+        .highlightmobiletext {
+          font-size: 7vw !important;
+          line-height: 120% !important;
+        }
+
+        .highlightmobiletextplus {
+          font-size: 9vw !important;
+          line-height: 120% !important;
+        }
+
+        .highlightpadtop {
+          padding-top: 40px !important;
+        }
+
+        .highlightpadbtm {
+          padding-bottom: 40px !important;
+        }
+
+        .highlightsup {
+          font-size: 3vw !important;
+          vertical-align: 15px !important;
+        }
+
+        .mobiletextsup {
+          font-size: 3vw !important;
+        }
+
+        .mobiletextbonus {
+          font-size: 4vw !important;
+          line-height: 120% !important;
+        }
+
+        .mobileplussign {
+          width: 7vw !important;
+        }
+
+        .contactlesstext {
+          width: 10% !important;
+        }
+
+        .contactlesslogo {
+          width: 50% !important;
+        }
+
+        .mobilesubheadtext {
+          font-size: 5vw !important;
+          line-height: 120% !important;
+        }
+        .mobiletoppadding {
+          padding-top: 10px !important;
+          padding-left: 30px !important;
+          padding-right: 30px !important;
+          padding-bottom: 15px !important;
+        }
+
+        .mobilebottompadding {
+          padding-bottom: 20px !important;
+        }
+
+
+        .mobilebullet {
+          padding-left: 30px !important;
+          font-size: 3px !important;
+        }
+      }
+    </style>
+    
+    <!--[if gte mso 9]>     <xml>         <o:OfficeDocumentSettings>             <o:AllowPNG/>             <o:PixelsPerInch>96</o:PixelsPerInch>         </o:OfficeDocumentSettings>     </xml>          <![endif]-->
+  </head>
+  <body     class="body"     style="margin: 0px; padding: 0px; background-color: #ffffff"   ><style type="text/css">
+div.preheader 
+{ display: none !important; } 
+</style>
+<div class="preheader" style="font-size: 1px; display: none !important;">We’re preparing your new card. Here’s what to expect.</div>
+    <div       class="gmailfix"       style="white-space: nowrap; font: 15px courier; line-height: 0px"     >
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    </div>
+    <!-- Yahoo Wrapper -->
+    <table       width="100%"       border="0"       align="center"       cellpadding="0"       cellspacing="0"     >
+      <tr>
+        <td           align="center"           style="background-color: #f0f0f0; padding: 0px; vertical-align: top"         >
+          <!-- Gmail Wrapper -->
+          <table             width="600"             border="0"             align="center"             cellpadding="0"             cellspacing="0"             style="min-width: 600px"             class="fullgmail"           >
+            <tr>
+              <td                 align="center"                 style="                   vertical-align: top;                   padding: 0px 0px 0px 0px;                   min-width: 600px;                 "                 class="fullgmail"               >
+
+                      <table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff" role="presentation">
+      <tr>
+      <td align="center" valign="top" bgcolor="ffffff">
+        
+        </td>
+      </tr>
+    </table>
+        <table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff" role="presentation">
+      <tr>
+      <td align="center" valign="top" bgcolor="ffffff">
+        <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"></td></tr></table>
+        </td>
+      </tr>
+    </table>
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff" role="presentation">
+      <tr>
+      <td align="center" valign="top" bgcolor="ffffff">
+        <!--View this email-->
+<tr>
+    <td align="center" valign="top">
+        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr>
+                <td align="center" valign="top" bgcolor="#ffffff" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#1D4094; mso-line-height-rule:exactly; line-height:12px; padding:10px 0px 10px 0px;">
+                    Having trouble viewing this email?
+                     <a href="https://click.email.53.com/?qs=b1fc66f56093d1f2a94945bd79aef320d0bde289d5e0c217b158b215d40be1aeafba619c6cee8c840972c6c133441db757b8f45d118b16ba"  style="color:#1D4094; text-decoration:underline;"><span class="link">View Online</span></a>
+                    
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<!--End View this email-->
+        </td>
+      </tr>
+    </table>
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff" role="presentation">
+      <tr>
+      <td align="center" valign="top" bgcolor="ffffff">
+        <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table width="100%" bgcolor="#1D4094" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td align="center" bgcolor="#1D4094" style="padding: 14px 0px 10px 0px; vertical-align: top;" class="nolrpad">
+            <!-- Desktop Logo -->
+            <div style="height:50px;" class="hide">
+                <a href="https://click.email.53.com/?qs=b1fc66f56093d1f2504c9454fd2bbbee45ea934f58117184fbe12be37a0fbb228d5815c1523b4eeb88d4301caaa8d2cb04f58f11d47ec3d7" style="color: #fffffe; display: inline-block; text-decoration: none;" target="_blank">
+                    <img src="https://image.email.53.com/lib/fe9612727361017c75/m/4/e9f599d6-086e-4be9-b5c1-40c46a9f4475.png" width="337" height="45" alt="5/3 Fifth Third Bank Logo" border="0" style="display: inline-block;">
+                </a>
+            </div>
+            <!-- /Desktop Logo -->
+            <!-- Mobile Logo -->
+            <!--[if !mso]><!-->
+            <div style="width: 0px; overflow: hidden; display: none; max-height: 0px; line-height: 0px;" class="mobileshow">
+                <a href="https://click.email.53.com/?qs=b1fc66f56093d1f2e1eb9470bba1f90e5530cdab604d416b78c5cd93ba2fbac916022a946d2f5af53f764dcd04850107e295f08e14fd8d34" style="color:#fffffe;display: inline-block;text-decoration:none;" target="_blank">
+                    <img src="https://image.email.53.com/lib/fe9612727361017c75/m/4/e9f599d6-086e-4be9-b5c1-40c46a9f4475.png" width="75%" height="auto" alt="5/3 Fifth Third Bank Logo Mobile" border="0" style="display:inline-block;">
+                </a>
+            </div>
+            <!--<![endif]-->
+            <!-- /Mobile Logo -->
+        </td>
+    </tr>
+</table></td></tr></table>
+        </td>
+      </tr>
+    </table>                     
+       <table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff" role="presentation">
+      <tr>
+      <td align="center" valign="top" bgcolor="ffffff">
+        <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table class="mobileshow" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
+  <tr>
+    <td style="                width: 100%;                height: auto;                vertical-align: middle;                " align="center">
+      <img style="vertical-align: middle" src="https://image.email.53.com/lib/fe9612727361017c75/m/1/813b756a-b5d8-42bf-8ed1-4f47f578240f.png" width="100%" height="auto" alt="Your debit card is expiring soon. Here's what to expect" border="0">
+    </td>
+  </tr>
+</table>
+<table class="hide" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#dedede">
+  <tr>
+    <td id="mainHeader" valign="top" height="159" background="https://image.email.53.com/lib/fe9612727361017c75/m/1/b6d7e7d2-7e21-4ab7-96b0-7d58de0b824e.png" bgcolor="#dedede" style="                height: 159px;                background-image: url(https://image.email.53.com/lib/fe9612727361017c75/m/1/b6d7e7d2-7e21-4ab7-96b0-7d58de0b824e.png);                background-color: #dedede;                background-size: contain;                " class="mobilehero">
+      <!--[if gte mso 9]> <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 600px; height: 159px;" src="https://image.email.53.com/lib/fe9612727361017c75/m/1/b6d7e7d2-7e21-4ab7-96b0-7d58de0b824e.png" /> <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block;position: absolute; width: 600px; height: 159px;"> <v:fill  opacity="0%" color="#dedede"  /> <v:textbox inset="0,0,0,0"> <![endif]-->
+      <div>
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" class="full">
+          <tr>
+            <td align="left" valign="top" style="                        color: #ffffff;                        font-family: 'Open Sans', Arial, Helvetica,                        sans-serif;                        font-size: 24px;                        font-weight: bold;                        padding: 60px 30px 15px 30px;                        vertical-align: top;                        line-height: 32px;                        ">
+              
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!--[if gte mso 9]>  </v:textbox> </v:fill> </v:rect> </v:image> <![endif]-->
+    </td>
+  </tr>
+</table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FFFFFF" valign="top" style="vertical-align: top;">
+ <tr>
+  <td class="darkmodebodytext padmain mobiletext" align="left" style="color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 24px; mso-line-height-rule: exactly; vertical-align: middle; font-weight: normal; padding: 20px 25px 10px 25px;">
+   Dear JOSE O NAZARIO:
+    <br>
+    <br>
+Your debit card ending in 2864 is expiring soon, so we’re getting a new one ready for you. Don’t worry—you can continue to use you current card until the last day of the expiring month. Your new card should arrive in about 2-3 weeks. 
+   <br>
+   <br>
+   <strong>We’ll ship it to:</strong>
+    <br>
+    2160 GREENVIEW DR ANN ARBOR MI 48103-6112
+    <br>
+    <br>
+If this address is incorrect, please contact us as soon as possible at <a style="text-decoration: underline; color: #0064D1" href="tel:18009723030"> 800-972-3030</a>, Monday through Friday 8 a.m. to 6 p.m., and Saturday 10 a.m. to 4 p.m., ET. 
+  </td>
+    </tr>
+</table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><div style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;">
+        <div style="background:white;background-color:white;margin:0px auto;max-width:600px;">
+        </div><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
+          
+<!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600" bgcolor="white" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+      </table><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:white;background-color:white;width:100%;">
+          
+            <tr>
+              <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;">
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><![endif]-->
+
+                  <!--[if !mso]><!-->
+                <div class="ft-column-per-50 mobilestack mobileshow" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                    
+                      <tr>
+                        <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+                            
+                              <tr>
+                                <td style="width:200px;">
+                                  <img height="auto" src="https://image.email.53.com/lib/fe9612727361017c75/m/1/228382f8-3f43-4c43-99aa-32d16934dc28.png" alt="Picture of a person's hand holding a phone with the mobile app displayed" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:16px;padding-bottom: 20px;" width="200">
+                                </td>
+                              </tr>
+                            
+                          </table>
+                        </td>
+                      </tr>
+                    
+                  </table>
+                </div>
+                <!--<![endif]-->
+
+
+
+                
+                <!--[if mso | IE]><td class="" style="vertical-align:top;width:300px;" ><![endif]-->
+                <div class="ft-column-per-50 mobilestack" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                    
+                      <tr>
+                        <td align="left" style="font-size:0px;padding:10px 25px 0px 20px;padding-right:50px;">
+                          <div class="mobiletext" style="font-family: Arial, Helvetica, sans-serif;font-size:16px;line-height:24px;text-align:left;color:#000000;"><strong>Stay in the loop through the mobile app!</strong> <br>
+If you use the app&sup1;, we’ll notify you as soon as your card starts making its way to you. To monitor its progress:
+</div>
+                        </td>
+                      </tr>
+                  </table>
+                  
+                  
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0" align="left" bgcolor="#FFFFFF" valign="top" style="vertical-align: top;">
+ <tr>
+  <td class="darkmodebodytext lrpad30" align="left" style="color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 20px; line-height: normal; vertical-align: middle; font-weight: normal; padding: 10px 30px 20px 30px;">
+   <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+    <tr>
+     <td align="left" style="vertical-align: top;" class="nolrpad">
+                        <!-- Bullet Points -->
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td class="mobiletext" style="padding: 0px 0px 0px 0px; text-align: left; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: normal; mso-line-height-rule: exactly; vertical-align: top; font-weight: normal;">
+                                    1.
+                                </td>
+                                <td width="100%" style="padding: 0px 0px 10px 0px; text-align: left; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 20px; line-height: normal; mso-line-height-rule: exactly; vertical-align: top; font-weight: normal;">
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+                                        <tr>
+                                            <td class="mobiletext" align="left" style="color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: normal; mso-line-height-rule: exactly; vertical-align: top; font-weight: normal; padding: 0px 5px 0px 10px;">
+                                                Log in to the mobile app.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+       <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td class="mobiletext" style="padding: 0px 0px 0px 0px; text-align: left; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: normal; mso-line-height-rule: exactly; vertical-align: top; font-weight: normal;">
+                                    2.
+                                </td>
+                                <td width="100%" style="padding: 0px 0px 0px 0px; text-align: left; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 20px; line-height: normal; mso-line-height-rule: exactly; vertical-align: top; font-weight: normal;">
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+                                        <tr>
+                                            <td class="mobiletext" align="left" style="color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: normal; mso-line-height-rule: exactly; vertical-align: top; font-weight: normal; padding: 0px 5px 10px 10px;">
+                                                Find the checking account associated with your card. 
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td class="mobiletext" style="padding: 0px 0px 0px 0px; text-align: left; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: normal; mso-line-height-rule: exactly; vertical-align: top; font-weight: normal;">
+                                    3.
+                                </td>
+                                <td width="100%" style="padding: 0px 0px 0px 0px; text-align: left; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 20px; line-height: normal; mso-line-height-rule: exactly; vertical-align: top; font-weight: normal;">
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+                                        <tr>
+                                            <td class="mobiletext" align="left" style="color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: normal; mso-line-height-rule: exactly; vertical-align: top; font-weight: normal; padding: 0px 5px 10px 10px;">
+                                                Tap the three dots next to your account, then <strong>Manage Card</strong>.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td class="mobiletext" style="padding: 0px 0px 0px 0px; text-align: left; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: normal; mso-line-height-rule: exactly; vertical-align: top; font-weight: normal;">
+                                    4.
+                                </td>
+                                <td width="100%" style="padding: 0px 0px 0px 0px; text-align: left; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 20px; line-height: normal; mso-line-height-rule: exactly; vertical-align: top; font-weight: normal;">
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+                                        <tr>
+                                            <td class="mobiletext" align="left" style="color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: normal; mso-line-height-rule: exactly; vertical-align: top; font-weight: normal; padding: 0px 5px 0px 10px;">
+                                                Select the card from the list, then tap <strong>Card Tracker</strong>.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- END Bullet Points -->
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+                </div>
+                <!--[if mso | IE]></td><![endif]-->
+
+
+
+                <!-- right paragraph -->
+                <!--[if mso | IE]><td class="" style="vertical-align:top;width:300px;" ><![endif]-->
+                <div class="ft-column-per-50 hide" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+                    
+                      <tr>
+                        <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+                            
+                              <tr>
+                                <td style="width:240px;">
+                                  <img height="auto" src="https://image.email.53.com/lib/fe9612727361017c75/m/1/228382f8-3f43-4c43-99aa-32d16934dc28.png" alt="Picture of a person's hand holding a phone with the mobile app displayed" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:16px;" width="240">
+                                </td>
+                              </tr>
+                            
+                          </table>
+                        </td>
+                      </tr>
+                    
+                  </table>
+                </div>
+                <!--[if mso | IE]></td></tr></table><![endif]-->
+              </td>
+            </tr>
+          
+        </table>
+      </div>
+      <!--[if mso | IE]></td></tr></table><![endif]--></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FFFFFF" valign="top" style="vertical-align: top;">
+ <tr>
+  <td class="darkmodebodytext padmain mobiletext" align="left" style="color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 24px; mso-line-height-rule: exactly; vertical-align: middle; font-weight: normal; padding: 10px 25px 20px 25px;">
+You can update how you get notified by going to Profile (the person icon) then tap Alerts &gt; Manage Alerts &gt; Security &gt; Security Alerts.
+  </td>
+    </tr>
+</table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#f4f4f4" valign="top" style="vertical-align: top;">
+ <tr>
+  <td class="darkmodebodytext padmain mobiletext" align="left" style="color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 24px; mso-line-height-rule: exactly; vertical-align: middle; font-weight: normal; padding: 30px 25px 10px 25px;">
+   <strong>Don’t have the app? Explore the possibilities!</strong><br>
+You’ll get the benefit of the Card Tracker notifications, plus security and account alerts, mobile check deposit, Zelle<sup style="font-size:12px; line-height:0; mso-line-height-rule: exactly;"><!--[if (gte mso 9) | (IE 7)]><span style="font-size: 16px; vertical-align: 3px;"><![endif]-->&reg;<!--[if (gte mso 9) | (IE 7)]></span><![endif]--></sup> and more. It’s like having your own personal branch right inside your pocket, 24/7.
+  </td>
+    </tr>
+</table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table width="100%" border="0" cellpadding="0" cellspacing="0" align="left" bgcolor="#f4f4f4" valign="top" style="vertical-align: top;">
+ <tr>
+  <td class="darkmodebodytext lrpad30" align="left" style="color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 20px; line-height: normal; vertical-align: middle; font-weight: normal; padding: 10px 30px 20px 30px;">
+   <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#f4f4f4">
+    <tr>
+     <td align="left" style="vertical-align: top;" class="nolrpad">
+       <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td class="mobiletext" style="padding: 0px 0px 8px 0px; text-align: left; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: normal; mso-line-height-rule: exactly; vertical-align: top; font-weight: normal;">
+                                  <strong>Here’s how to get started:</strong></td></tr></table>
+                        <!-- Bullet Points -->
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td class="mobiletext" style="padding: 0px 0px 0px 0px; text-align: left; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: normal; mso-line-height-rule: exactly; vertical-align: top; font-weight: normal;">
+                                    1.
+                                </td>
+                                <td width="100%" style="padding: 0px 0px 0px 0px; text-align: left; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 18px; line-height: normal; mso-line-height-rule: exactly; vertical-align: top; font-weight: normal;">
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#f4f4f4">
+                                        <tr>
+                                            <td class="mobiletext" align="left" style="color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: normal; mso-line-height-rule: normal; vertical-align: top; font-weight: normal; padding: 0px 5px 10px 10px;">
+                                                Download the app for free from your device’s app store. 
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+       
+       
+       <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td class="mobiletext" style="padding: 0px 0px 0px 0px; text-align: left; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: normal; mso-line-height-rule: exactly; vertical-align: top; font-weight: normal;">
+                                    2.
+                                </td>
+                                <td width="100%" style="padding: 0px 0px 0px 0px; text-align: left; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 20px; line-height: 25px; mso-line-height-rule: exactly; vertical-align: top; font-weight: normal;">
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#f4f4f4">
+                                        <tr>
+                                            <td class="mobiletext" align="left" style="color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: normal; mso-line-height-rule: exactly; vertical-align: top; font-weight: normal; padding: 0px 5px 10px 10px;">
+                                                Open the app. 
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+      
+       
+       <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td class="mobiletext" style="padding: 0px 0px 0px 0px; text-align: left; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: normal; mso-line-height-rule: exactly; vertical-align: top; font-weight: normal;">
+                                    3.
+                                </td>
+                                <td width="100%" style="padding: 0px 0px 0px 0px; text-align: left; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 20px; line-height: normal; mso-line-height-rule: exactly; vertical-align: top; font-weight: normal;">
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#f4f4f4">
+                                        <tr>
+                                            <td class="mobiletext" align="left" style="color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: normal; mso-line-height-rule: exactly; vertical-align: top; font-weight: normal; padding: 0px 5px 0px 10px;">
+                                                If you already use online banking, you can use the same User ID and password to log in. If you don’t have a User ID and password, tap Sign Up and follow the prompts. It’s that easy!
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- END Bullet Points -->
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table width="100%" class="hide" border="0" cellpadding="0" cellspacing="0" align="center" valign="top" style="vertical-align: top" bgcolor="#f4f4f4">
+                        <tr>
+                          <td align="left" style="                               vertical-align: top;                               line-height: 0px;                               width: 100%;                               padding: 0px 0px 20px 50px;                             " class="padmain">
+                            <table class="" border="0" cellpadding="0" cellspacing="0">
+                              <tr>
+                                <td align="center" style="                                     vertical-align: top;                                     line-height: 0px;                                     padding: 0px 0px 0px 0px;                                   " class="padmain">
+                                  <a href="https://click.email.53.com/?qs=b1fc66f56093d1f2e3c9df813ee316e24be2898543d18fb865c8671b8d6d9ea9904e01c5be1f8a44a9be760582574ce29d24b8cf3c17aa8f6e28ca708bfd6948" target="_blank" >
+                                    <img src="https://image.email.53.com/lib/fe9612727361017c75/m/5/e89188aa-561e-4ff0-aa86-f9040d7048cd.png" height="45" width="auto" alt="Download on the App Store" border="0">
+                                  </a>
+                                </td>
+                                <td align="center" style="                                     vertical-align: top;                                     line-height: 0px;                                     padding: 0px 0px 0px 0px;                                   " class="hide">
+                                  &nbsp;
+                                </td>
+                                <td align="center" style="                                     vertical-align: top;                                     line-height: 0px;                                     padding: 0px 0px 0px 0px;                                   " class="padmain">
+                                  <a href="https://click.email.53.com/?qs=b1fc66f56093d1f2e3d434ba09328eb9bbc0ced7b92ceb37249043a342207bc69e3676f95c0b091a1537c46bd562f8518455e483ba9cbb1c81e281b9ec311c28" target="_blank" >
+                                    <img src="https://image.email.53.com/lib/fe9612727361017c75/m/5/fd5a9592-20ef-482f-ba31-22a53127967d.png" height="45" width="auto" alt="Get it on Google Play" border="0">
+                                  </a>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="" align="left" valign="top" style="                                     padding: 0px 0px 0px 0px;                                     vertical-align: top;                                     line-height: 15px;                                     mso-line-height-rule: exactly;                                   ">
+                                  &nbsp;
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <!--[if !mso]><!-->
+                      <div style="                           width: 0;                           overflow: hidden;                           float: left;                           display: none;                           max-height: 0;                           line-height: 0;                           background: #f4f4f4;                         " class="mobileshow">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0" style="padding: 10px 0px 0px 0px">
+                          <tr>
+                            <th align="center" style="                                 padding: 10px 5px 30px 0px;                                 vertical-align: top;                               " class="">
+                              <!-- Apple -->
+                              <table align="center" border="0" cellpadding="0" cellspacing="0" class="full">
+                                <tr>
+                                  <td align="right" style="                                       padding: 0px 5px 0px 0px;                                       vertical-align: top;                                     " class="nolrpad">
+                                    <div class="autoheight">
+                                      <a href="https://click.email.53.com/?qs=b1fc66f56093d1f2b1348337193255d6e63aa63644530fa87c4345e0719d76ef88131af884943704a54497651638d2d3b603a2b6a67ab5d188ac7725a05dc1e7" ><img src="https://image.email.53.com/lib/fe9612727361017c75/m/5/e89188aa-561e-4ff0-aa86-f9040d7048cd.png" width="80%" height="auto" alt="Download on App Store" border="0" style="display: block"></a>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </table>
+                              <!-- /Apple -->
+                            </th>
+                            <th class="" align="center" style="                                 padding: 10px 0px 0px 5px;                                 vertical-align: top;                               ">
+                              <!-- Google -->
+                              <table align="center" border="0" cellpadding="0" cellspacing="0" class="full">
+                                <tr>
+                                  <td align="left" style="                                       padding: 0px 0px 0px 5px;                                       vertical-align: top;                                     " class="nolrpad">
+                                    <div class="autoheight">
+                                      <a href="https://click.email.53.com/?qs=b1fc66f56093d1f2a124ba336c2d405ed1d8c0fa3ab4d21850d4a9a0e84f42cbdf3e907b6095b1987a9087f3394ea808b2449671de60de6689aa425774e4aa8a" ><img src="https://image.email.53.com/lib/fe9612727361017c75/m/5/fd5a9592-20ef-482f-ba31-22a53127967d.png" width="80%" height="auto" alt="Get it on Google Play" border="0" style="display: block"></a>
+                                    </div>
+                                  </td>
+                                </tr>
+                              </table>
+                              <!-- /Google -->
+                            </th>
+                          </tr>
+                        </table></div>
+<!--<![endif]--></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FFFFFF" valign="top" style="vertical-align: top;">
+ <tr>
+  <td class="darkmodebodytext padmain mobiletext" align="left" style="color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 24px; mso-line-height-rule: exactly; vertical-align: middle; font-weight: normal; padding: 30px 25px 30px 25px;">
+<span style="color: #2466ca; font-weight: bold;">We’re here to help.</span><br>
+If you have any questions, you can message us 24/7 in to the mobile app or online banking, or call us at <a style="text-decoration: underline; color: #2466ca;" href="tel:18009723030">800-972-3030</a>, Monday through Friday 8 a.m. to 6 p.m., and Saturday 10 a.m. to 4 p.m., ET.  
+<br>
+<br>
+<span style="color: #2466ca; font-weight: bold;">Thank you for banking with us.</span>
+ </td>
+  </tr>
+</table></td></tr></table>
+        
+     <table cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff" role="presentation">
+      <tr>
+      <td align="center" valign="top" bgcolor="ffffff">
+        <!-- Start Footer App Social Find a Branch -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td align="left" bgcolor="#f0f0f0" style="padding: 20px 0px 0px 0px; vertical-align: middle;">
+            <!-- Content -->
+            <!--FOOTER-->
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td align="left" bgcolor="#f0f0f0" style="padding: 20px 10px 0px 10px; vertical-align: middle;">
+                        <!-- Content -->
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <th align="left" style="padding: 0px 0px 0px 0px; vertical-align: top;" class="displayBlock">
+                                    <!-- Left -->
+                                    <table width="265" align="left" border="0" cellpadding="0" cellspacing="0" class="full">
+                                        <tr>
+                                            <td align="center" style="padding: 0px 10px 15px 0px; vertical-align: top;" class="lrpad30">
+                                                 <div style="height:43px;" class="autoheight">
+                                                     <a href="https://click.email.53.com/?qs=b1fc66f56093d1f296b606acf4889337bef4664f68147c38204ca10f275da44a767329d564a5702cf4f78169155608e98176b201963a55ff" >
+                                                         <img src="https://image.email.53.com/lib/fe9612727361017c75/m/5/2b744541-6a62-460f-84e8-355da4334865.png" width="265" height="auto" alt="Get the App" border="0" style="display: block;" /></a> 
+                                                 </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- /Left -->
+                                </th>
+                                <th class="displayBlock" align="right" style="padding: 0px 0px 0px 0px; vertical-align: top;">
+                                    <!-- Right -->
+                                    <table width="265" align="right" border="0" cellpadding="0" cellspacing="0" class="full">
+                                        <tr>
+                                            <td align="center" style="padding: 0px 0px 15px 0px; vertical-align: top;" class="lrpad30">
+                                                <div style="height:40px;" class="autoheight">
+                                                    <a href="https://click.email.53.com/?qs=b1fc66f56093d1f2f314716bff28f592402100cfa069930cc92f77f55adfdd198f74ae04ce33a9a78642551ff7f6cd28f8990d880d107500" >
+                                                        <img src="https://image.email.53.com/lib/fe9612727361017c75/m/5/7096e15b-6d69-4a03-ab59-0de977e58b56.png" width="265" height="auto" alt="Find a Branch" border="0" style="display: block;" />
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- /Right -->
+                                </th>
+                            </tr>
+                        </table>
+                        <!-- /Content -->
+                    </td>
+                </tr>
+                <tr>
+                    <td class="padleft15 padright15" align="left" bgcolor="#f0f0f0" style="padding: 0px; vertical-align: middle;">
+                        <!-- Content -->
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <th align="center" style="padding: 0px 0px 0px 0px; vertical-align: top;" class="displayBlock">
+                                    <!-- Center -->
+                                    <table width="198" align="center" border="0" cellpadding="0" cellspacing="0" class="full">
+                                        <tr>
+                                            <td class="lrpad30" align="center" style="padding: 0px 0px 15px 0px; vertical-align: top;">
+                                                <!-- Keeps items together on mobile -->
+                                                <table class="lrpad30" border="0" cellpadding="0" cellspacing="0">
+                                                    <tr>
+                                                        <td align="left" height="40" style="padding: 0px 25px 0px 0px; vertical-align: middle;">
+                                                            <div style="height:33px;">
+                                                                <a href="https://click.email.53.com/?qs=b1fc66f56093d1f263c087ac183a9332feacc012e6c7d4ac8365dc1473cfb2397bb88c24ab713dc5b87e0d4b0ea12cbbe84737b6d31cb899" >
+                                                                    <img src="https://image.email.53.com/lib/fe9612727361017c75/m/5/1d5a586f-0cff-4e01-8258-d2320539dcaa.png" width="33" height="33" alt="Facebook" border="0" style="display: block;" />
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                        <td align="left" height="40" style="padding: 0px 25px 0px 0px; vertical-align: middle;">
+                                                            <div style="height:33px;">
+                                                                <a href="https://click.email.53.com/?qs=b1fc66f56093d1f26c6ae0b8fc7987b125e908aac4368f57549b927fe440bfd4e0fb13b810fb10c04c16a6660955550fe41d4a07d8f20a28" >
+                                                                    <img src="https://image.email.53.com/lib/fe9612727361017c75/m/1/4d70da7c-bba9-42b2-b435-503f4068b26a.png" width="33" height="33" alt="X" border="0" style="display: block;" />
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                        <td align="left" height="40" style="padding: 0px 25px 0px 0px; vertical-align: middle;">
+                                                            <div style="height:33px;">
+                                                                <a href="https://click.email.53.com/?qs=b1fc66f56093d1f20eeed90b9d0d6dce22f2ce2f6762bddcb4707e2147e1af1ad6ca75619a06ecfb4be2211c9550f128651c8efcd5857fd2" >
+                                                                    <img src="https://image.email.53.com/lib/fe9612727361017c75/m/5/6b566d60-6959-4bf9-97c7-f6401aabca27.png" width="33" height="33" alt="YouTube" border="0" style="display: block;" />
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                        <td align="left" height="40" style="padding: 0px 25px 0px 0px; vertical-align: middle;">
+                                                            <div style="height:33px;">
+                                                                <a href="https://click.email.53.com/?qs=b1fc66f56093d1f22694027445bfb3b1a56b97957c7bfb4475174c703cbce8d9756e25e82ff922d60bda3ef0380905646616b67051bfad35" >
+                                                                    <img src="https://image.email.53.com/lib/fe9612727361017c75/m/5/58fa71e4-d568-4072-b380-dfb4d9ab8d56.png" width="33" height="33" alt="LinkedIn" border="0" style="display: block;" />
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                        <td align="left" height="40" style="padding: 0px 0px 0px 0px; vertical-align: middle;">
+                                                            <div style="height:33px;">
+                                                                <a href="https://click.email.53.com/?qs=b1fc66f56093d1f219dc6128595a5ced17e09b5df361138103d19d2e98a4100fb568d1443b1bf7d6d522dcc6451b6f33b04a140265262b79" >
+                                                                    <img src="https://image.email.53.com/lib/fe9612727361017c75/m/5/2d3a2cce-aa57-4e86-a44a-93f982d49c41.png" width="33" height="33" alt="Instagram" border="0" style="display: block;" />
+                                                                </a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- /Keeps items together on mobile -->
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- /Center -->
+                                </th>
+                            </tr>
+                        </table>
+                        <!-- /Content -->
+                    </td>
+                </tr>
+            </table>
+            <!-- /Content -->
+        </td>
+    </tr>
+</table>
+<!-- End Footer App Social Find a Branch --><table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"> <!-- Footer Modules Wrapper -->
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td align="left" bgcolor="#F0F0F0" style="                               padding: 0px 15px 0px 15px;                               vertical-align: top;                             ">
+                            <!-- Start Footer Legal -->
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                              <tr>
+                                <td align="left" style="                                     color: #333333;                                     font-family: Arial, Helvetica, sans-serif;                                     font-size: 13px;                                     padding: 0px 0px 20px 0px;                                     vertical-align: top;                                   ">
+                                1. Subject to <a href="https://click.email.53.com/?qs=b1fc66f56093d1f2723f83779f5fed885e885dca5bb54fe701e52e0f8dd1ebb9678b55a91f48e9c5eb7bd606a745eaed04d7e3f7af7ec357b6430e1078fb7d43" style="color: #333333; text-decoration: underline;" >Digital Services User Agreement</a>  terms and conditions.<br><br>Zelle and the Zelle related marks are wholly owned by Early Warning Services, LLC and are used herein under license.
+                                </td>
+                              </tr>
+                            </table>
+                            <!-- End Footer Legal -->
+                          </td>
+                        </tr>
+                      </table>
+
+</td></tr></table><!-- Start Footer Security -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td align="left" bgcolor="#f0f0f0" style="padding:0px 15px 0px 15px;vertical-align:top;">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border:1px solid #333333;">
+                <tr>
+                    <td align="left" bgcolor="#d7d7d7" style="border-bottom:1px solid #333333; padding:10px 15px 10px 15px; vertical-align:top;">
+                        <!-- Left -->
+                        <table align="left" border="0" cellpadding="0" cellspacing="0" class="full">
+                            <tr>
+                                <td align="left" style="color:#333333;font-family:Arial, Helvetica, sans-serif;font-size:13px;font-weight:bold;padding:0px;vertical-align:top;">
+                                    Email Security Information
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- /Left -->
+                        <!-- Right -->
+                        <table align="right" border="0" cellpadding="0" cellspacing="0" class="full">
+                            <tr>
+                                <td align="left" valign="top" style="color:#333333; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:0px; font-weight:normal;">
+                                    <font style="font-family:Arial, Helvetica, sans-serif;">
+                                        <a class="link" href="https://click.email.53.com/?qs=b1fc66f56093d1f29b8a6346a34173667973643d06f2971934b3dbb24f13a86d5af9306c4bc1ea8e909af3761ad8d525d66f6087c1ae5fcc"  style="color:#333333; text-decoration: underline !important;" target="_blank">Email Privacy</a> | <a class="link" href="https://click.email.53.com/?qs=b1fc66f56093d1f250dabe576c7c0b6c297fd0a1674304b132f61efdebe1851218f07195bc02388eacd7cb1bbd5d05e6827f90cbdc1b04db"  style="color:#333333; text-decoration: underline !important;" target="_blank">Customer Service</a>
+                                    </font>
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- /Right -->
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left" valign="middle" style="color:#333333; font-family:Arial, Helvetica, sans-serif; font-size:13px; padding:10px 15px 12px 15px; vertical-align:top; font-weight:normal;">
+                        <font style="font-family:Arial, Helvetica, sans-serif;">
+                            This email was intended for: <a href="https://click.email.53.com/?qs=b1fc66f56093d1f25c5d89d45f931da0ad67e7b3ba0a26e0e5b79e06088a280f249d0aeeb8c8b37154a1eb315d8d6822032bd43f4a589b39" target="_blank"  style="color:#333333;text-decoration:none;">jose@monkey.org</a> 
+                            <br />
+                            Security and confidentiality of your personal information is one of our highest priorities. We will never request that you provide, update or verify via email your personal or account information, including passwords, Social Security Number and PIN(s). If you receive such an email request, please email us at <a class="link" href="https://click.email.53.com/?qs=b1fc66f56093d1f2a21c88fb71e5507b9d60ad0f5b9b18326b64aab330efa2fd09f910bc78177d413fe56978eac834fa59c5c651ed21fb97" style="color:#333333; text-decoration: underline !important;" target="_blank">53investigation@security.53.com</a> immediately.
+                            <br /><br />
+                            Learn more about how to protect your <a class="link" href="https://click.email.53.com/?qs=b1fc66f56093d1f28a9d14c2c1cd438aabd5261bf6ad11c5ed07a9e74783da1236b47a4a2e9adcdb94ec9141248be8fc76dda322bec053a4"  style="color:#333333; text-decoration: underline !important;" target="_blank">personal information</a>.
+                        </font>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<!-- End Footer Security --><!--Start Footer Transactional-->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td align="left" bgcolor="#f0f0f0" style="padding:0px 15px 0px 15px;vertical-align:top;">                                        
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td align="left" style="color:#333333; line-height: normal; mso-line-height-rule:exactly; font-family:Arial, Helvetica, sans-serif;font-size:13px;padding:15px 0px 20px 0px;vertical-align:top;">
+                        <strong>About this Email</strong>
+                        <br />
+                        This is a transactional/service email from Fifth Third Bank and is intended to share information regarding updates/changes to your account. Please note that you may receive customer service emails even if you have unsubscribed from marketing/promotional emails from Fifth Third&nbsp;Bank.
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left" valign="top" style="color:#333333; line-height: normal; mso-line-height-rule:exactly; font-family:Arial, Helvetica, sans-serif;font-size:13px; padding:0px 0px 45px 0px; font-weight: normal !important;" class="displayBlock">
+                        
+                        Copyright &copy; 2024 Fifth Third Bank, National Association. Member FDIC.
+                        <br />
+                        <img src="https://image.email.53.com/lib/fe9612727361017c75/m/5/b8763c43-7851-4526-a830-a1e39ac036e7.gif" width="16" height="12" alt="Equal Housing Lender" border="0" style="display:inline-block;" />&nbsp;Equal Housing Lender.
+                        <br /><br />
+                        <span class="nolinkcolor">38 Fountain Square&nbsp;Plaza
+                        <br />
+                        Cincinnati, Ohio&nbsp;45202</span>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<!--End Footer Transactional-->
+        </td>
+      </tr>
+    </table>
+        
+                      <!--END BODY-->
+                    </td>
+                  </tr>
+                  <!--END EMAIL WRAPPER-->
+                </table>
+                <!-- /Gmail Wrapper -->
+              </td>
+            </tr>
+          </table>
+     <!-- Yahoo Wrapper -->
+    <div style=width:0;overflow:hidden;float:left;display:none;max-height:0;line-height:0>
+      <!--Everest Tracking--><style> @media print{ #_two50 { background-image:url('https://fifththirdbank.everestengagement.com/ea/fWZmlRbLk0/?t=p&e=subscriber&c=DebitCardTracker_MonthlyReissue&jobid=3896855&MID=6265510'); } } blockquote #_two50, #mailContainerBody #_two50, div.OutlookMessageHeader, table.moz-email-headers-table { background-image:url('https://fifththirdbank.everestengagement.com/ea/fWZmlRbLk0/?t=f&e=subscriber&c=DebitCardTracker_MonthlyReissue&jobid=3896855&MID=6265510'); } </style> <div id='_two50'></div> 
+<img id='_two50_img' src='https://fifththirdbank.everestengagement.com/ea/fWZmlRbLk0/?e=subscriber&c=DebitCardTracker_MonthlyReissue&jobid=3896855&MID=6265510' width='1' height='1' style='margin:0 !important; padding:0 !important; border:0 !important; height:1px !important; width:1px !important;' />
+      <!--/Everest Tracking-->
+    <!--Litmus Tracking-->
+      <style data-ignore-inlining>@media (prefers-color-scheme:dark){#_t::before{content:url(https://kka9iola.emltrk.com/v2/kka9iola?rd&i=62350230)}}@media (prefers-color-scheme:light){#_t::before{content:url(https://kka9iola.emltrk.com/v2/kka9iola?rl&i=62350230)}}@media print{#_t{background-image:url(https://kka9iola.emltrk.com/v2/kka9iola?p&i=62350230)}}div.OutlookMessageHeader{background-image:url(https://kka9iola.emltrk.com/v2/kka9iola?f&i=62350230)}table.moz-email-headers-table{background-image:url(https://kka9iola.emltrk.com/v2/kka9iola?f&i=62350230)}blockquote #_t{background-image:url(https://kka9iola.emltrk.com/v2/kka9iola?f&i=62350230)}#MailContainerBody #_t{background-image:url(https://kka9iola.emltrk.com/v2/kka9iola?f&i=
+62350230)}</style><div id=_t></div><img alt=""border=0 height=1 src="https://kka9iola.emltrk.com/v2/kka9iola?i=62350230"width=1>
+      <!--/Litmus Tracking-->
+    </div>
+    <!--SFMC Tracking Pixel-->
+    <img src="https://click.email.53.com/open.aspx?ffcb10-fe8317787c620c7870-fe2c17727267037d771374-fe9612727361017c75-ff2e1674766c-fe6a12727661047f7614-ff60117877&d=60238&bmt=0" width="1" height="1" alt="">
+    <!--End SFMC Tracking Pixel-->
+  </body>
+</html>
+
+--PgsS8UEdqtBS=_?:--
+
+

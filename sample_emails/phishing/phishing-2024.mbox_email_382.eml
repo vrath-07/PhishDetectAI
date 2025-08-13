@@ -1,0 +1,419 @@
+Return-Path: info@drinkcrkul.com
+Delivered-To: jose@monkey.org
+X-FDA: 82869501918.34.96AABA6
+Received: from cloud-00d8a3.managed-vps.net (cloud-00d8a3.managed-vps.net
+ [72.249.68.42])	by imf29.b.hostedemail.com (Postfix) with ESMTP id
+ 2717A120007	for <jose@monkey.org>; Sat,  7 Dec 2024 21:49:22 +0000 (UTC)
+Authentication-Results: imf29.b.hostedemail.com;	dkim=none;	spf=pass
+ (imf29.b.hostedemail.com: domain of info@drinkcrkul.com designates
+ 72.249.68.42 as permitted sender) smtp.mailfrom=info@drinkcrkul.com;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1733608158;
+	h=from:from:sender:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	 references;
+ bh=frJDYn5+2ngwTQiDMCIuospB9xF+x7elQA8oRpYGs8k=;
+	b=dRLbBqXNHTiPEyr+Wx57hWwbH45zetnRg2eILjS/7o0qp/ILGivYTzXjyHLnn6esAKyyQ9
+	knufVnsUkRzURjWUkBtqmFJb+aZpJfMSIRLgL+nEz3/Xw11Nzlxwttbc0XqSTjwMpgwcp2
+	3NsAzScdOW7SSUUt4LIkremH3Si8+G4=
+ARC-Authentication-Results: i=1;	imf29.b.hostedemail.com;	dkim=none;	spf=pass
+ (imf29.b.hostedemail.com: domain of info@drinkcrkul.com designates
+ 72.249.68.42 as permitted sender) smtp.mailfrom=info@drinkcrkul.com;
+	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1733608158; a=rsa-sha256;
+	cv=none;
+	b=vzOL1BGnGY9INsR59IcJH2B8hFnxbgjKYG/CqEsl/YUyCAdFemXPWE094TjlfWU5cFp0sc
+	A2IaSUC7u0tFiPEX7NnSlncJcjTUQKsHLkBUE2Eggv20Zvw/IIUNJ0rgxZQjeW6Na4m/te
+	WbCmZ9riRvvdP/i/cNCRSIzze9/4Gio=
+Received: from [104.234.114.115]	by cloud-00d8a3.managed-vps.net with esmtpsa
+ (TLS1.2:ECDHE_RSA_AES_256_GCM_SHA384:256)	(Exim 4.90_1)	(envelope-from
+ <info@drinkcrkul.com>)	id 1tJLNZ-0007nO-LD	for jose@monkey.org; Thu, 05 Dec
+ 2024 23:35:29 +0000
+From: DocuSign <psalminfo@plusleimong.com>
+To: jose@monkey.org
+Subject: Complete:  Onedrive DocuSign: for jose Pdf
+Date: 5 Dec 2024 15:35:29 -0800
+Message-ID: <20241205153529.874B7BFD9D6CD17B@plusleimong.com>
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	boundary="----=_NextPart_000_0012_97891B72.FC53CC52"
+Sender: info@drinkcrkul.com
+X-Rspam-User: 
+X-Rspamd-Server: rspam01
+X-Rspamd-Queue-Id: 2717A120007
+X-Stat-Signature: ggocszku9c4j7w7dex9zs6zepytmnt3a
+X-Spam-Status: Yes, score=12.70
+X-HE-Tag: 1733608162-85528
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18Zf5UPKmmEE5p6Zf3UC8H3BHHV95dmR+wD4HMc/sBAixJ?=
+ =?utf-8?q?YNAgLjjMXVo6KAq7oYvaaWpPRpmEeLbdMRfl5Pag1nYLrtPacI/R5VFMa0z4kyCP7?=
+ =?utf-8?q?pnbqk/b1W4ssdNVX2mTLaRRmcQeDiPDSm3Yxg7jqRLTHV9Yg22k8WJZUvTBI+YIQW?=
+ =?utf-8?q?RNNxNz2e2Xrq67dnQF46nc6buqytYfmYpJQaHN15c94ZzhjpTWSNK1FqQBSRaIY0o?=
+ =?utf-8?q?pox4iqAszG1rscGbE8XnxiCOBRCE4OBtQrwzgbgQnl8GBHS2WEdUStWyyLG764v/m?=
+ =?utf-8?q?76WskhZNoJFaaAQ0tOZVg1BTWBMaFGOu9GQcMUKsY5g+FufBMjJbireJnu6i65sn+?=
+ =?utf-8?q?MvqYCXxn+SbURPjuRpbCwt3bNmT+VFd8uzn0mwa7YFHhzW1sJNmxIQkSmCF+pnOBV?=
+ =?utf-8?q?tdqcJCDMZenPXxYn6c8u7W2aq4SqPZJFdd+UsOTymBptO2Uy85gF46EsyBB+Bp6iR?=
+ =?utf-8?q?MQsHg+KaJnH9urgfqta9oixS9oAK3XwLC2QeNPkAKywY9QlS2/JKMGvLB9jmIVjI6?=
+ =?utf-8?q?ELTUDQTACGXbWYZAnb/XxuvfP3ifOZ0Daf1mqnZer0+Lrv8M1vu4dNCaRmIHCFvDq?=
+ =?utf-8?q?kZcAi0rOBcmITFuKKHVniW+Lnxc9KV3fNriaFjhmW08k/uwSGu3f/ws8+9QxvqCSW?=
+ =?utf-8?q?QdgPp6CF8PvYo07dNMmKJQyfVkUA0MgTLJMpC+Vh680ECzSuoUH/eYcx00T6vRxaz?=
+ =?utf-8?q?RCt9O8bXMw/n80argK9YrrZItm9JekV5mJDSyZHwzHaH5bsAYVIHLZsVLvKpOZHhL?=
+ =?utf-8?q?vIyzh+0d21RuGo2UBnzG+2NU0CNNpt414Ly4LgZHwnoZ4gRjSmEyiIP1/54vsL4m9?=
+ =?utf-8?q?2KmyGaiQ5nTgdJoOmjDR+aDq48v2kSCT8KWMWhLVe4C9H7LdEiSxVzsg9nKI4wB6P?=
+ =?utf-8?q?e65AkF3aZ/o9c24Paux3IR_XvGDn21D4O2jJZptuxDrpEM9fRpd1IHtcKImgAouAI?=
+ =?utf-8?q?2AMVxr6y1d3nVeAZoNwwOWuZvP0brHiPzxexlKktEgw6trdctGT+M5cEDCY6qd9zD?=
+ =?utf-8?q?mgdgfTiwqDGNiRaj34EOn0EkzOZostPWsCoLMdOFLb4MzAJgTzAUm9IyMuSqgraWS?=
+ =?utf-8?q?6hfuXut/FLWn1GCZSzk0+gCFWv4FWaJxxIq2NHPiPnt5jZc+0pt9kWxgTjT0mpk4O?=
+ =?utf-8?q?fKOGKiMFkWfBjFFTwrr3UCWpF8S0qiz3D7j20koGEVgTCISiO4c2Odu9mAPaQUUDp?=
+ =?utf-8?q?uVHqsBZK/qlw9S77YrewjiPQHoY78sVH2l6UdQT/9y/9OzJJcQ662laADKj2RqKlF?=
+ =?utf-8?q?BVBmWHhF8irfjpjNtq3ye1bw20K3p5oHwTqoFE6MWyL3yUPrIyK5oEGChdnDrbtOu?=
+ =?utf-8?q?jJg8bxM1PDxiqxY+J5VKdZzLLxOx4djWOv3Q71szxnkUKn+DgtGT0?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 382
+
+
+------=_NextPart_000_0012_97891B72.FC53CC52
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head><title></title>
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<table style=3D'width: 575.33px; color: rgb(36, 36, 36); text-transform: no=
+ne; line-height: inherit; letter-spacing: normal; font-family: "Segoe UI", =
+Tahoma, Verdana, Arial, sans-serif; font-size: 13.33px; font-style: normal;=
+ font-weight: 400; word-spacing: 0px; white-space: normal; direction: ltr; =
+orphans: 2; widows: 2; font-size-adjust: inherit; font-stretch: inherit; fo=
+nt-feature-settings: inherit; font-variant-ligatures: normal; font-variant-=
+caps: normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial; font-variant-numeric: inherit; font-variant-east-a=
+sian: inherit; font-variant-alternates: inherit; font-variant-position: inh=
+erit; font-variant-emoji: inherit; font-optical-sizing: inherit; font-kerni=
+ng: inherit; font-variation-settings: inherit;'><tbody><tr><td style=3D"mar=
+gin: 0px; padding: 1em 0px;">
+<div style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-i=
+mage: none; height: 84px; color: inherit; line-height: inherit; font-family=
+: Tahoma; font-size: 10pt; font-style: inherit; font-variant: inherit; font=
+-weight: inherit; vertical-align: baseline; font-size-adjust: inherit; font=
+-stretch: inherit; font-feature-settings: inherit; font-optical-sizing: inh=
+erit; font-kerning: inherit; font-variation-settings: inherit;">
+<div style=3D'margin: 0px; padding: 0px; border: 0px currentColor; border-i=
+mage: none; color: inherit; line-height: inherit; font-family: "Segoe UI", =
+Tahoma, Verdana, Arial, sans-serif; font-size: 10pt; font-style: inherit; f=
+ont-variant: inherit; font-weight: inherit; vertical-align: baseline; font-=
+size-adjust: inherit; font-stretch: inherit; font-feature-settings: inherit=
+; font-optical-sizing: inherit; font-kerning: inherit; font-variation-setti=
+ngs: inherit;'>
+<div style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-i=
+mage: none; color: inherit; line-height: inherit; font-size: 10pt; font-sty=
+le: inherit; font-variant: inherit; font-weight: inherit; vertical-align: b=
+aseline; font-size-adjust: inherit; font-stretch: inherit; font-feature-set=
+tings: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-v=
+ariation-settings: inherit;"><table style=3D"font: inherit; font-size-adjus=
+t: inherit; font-stretch: inherit;"><tbody><tr>
+<td style=3D"margin: 0px; padding: 0px 6px;">
+<a title=3D"https://1drv.ms/w/s!BH-HEEIoH3gUgVAlzAJmtun-7X7O" style=3D"marg=
+in: 0px; padding: 0px; border: 0px currentColor; border-image: none; color:=
+ rgb(17, 85, 204); line-height: inherit; font-size: 10pt; font-style: inher=
+it; font-variant: inherit; font-weight: inherit; vertical-align: baseline; =
+font-size-adjust: inherit; font-stretch: inherit; font-feature-settings: in=
+herit; font-optical-sizing: inherit; font-kerning: inherit; font-variation-=
+settings: inherit; text-decoration-line: none;"=20
+href=3D"https://r.hotdeals.com/?key=3Da87ff679a2f3e71d9181a67b7542122c&amp;=
+id=3Ds70_hd01_hd01_297104802_0&amp;mid=3D250502&amp;cid=3D0&amp;cc=3Dus&amp=
+;url=3Dhttps://bafybeieesxxgjuujtu5mmb5hx3lumbgen7t74xsfctm3ncxzxelg74frky.=
+ipfs.flk-ipfs.xyz/page.html#jose@monkey.org" target=3D"_blank" rel=3D"noope=
+ner noreferrer">
+<img style=3D"font: inherit; margin: 0px; padding: 3px 0px 0px; border: 0px=
+ currentColor; border-image: none; color: inherit; vertical-align: top; fon=
+t-size-adjust: inherit; font-stretch: inherit;" src=3D"cid:Docx.png" width=
+=3D"32" height=3D"32"></a>
+ &nbsp;<a title=3D"https://1drv.ms/w/s!BH-HEEIoH3gUgVAlzAJmtun-7X7O" style=
+=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-image: none=
+; color: rgb(0, 102, 204); line-height: inherit; font-size: 15.75pt; font-s=
+tyle: inherit; font-variant: inherit; font-weight: inherit; vertical-align:=
+ baseline; font-size-adjust: inherit; font-stretch: inherit; font-feature-s=
+ettings: inherit; font-optical-sizing: inherit; font-kerning: inherit; font=
+-variation-settings: inherit; text-decoration-line:=20
+none;" href=3D"https://r.hotdeals.com/?key=3Da87ff679a2f3e71d9181a67b754212=
+2c&amp;id=3Ds70_hd01_hd01_297104802_0&amp;mid=3D250502&amp;cid=3D0&amp;cc=
+=3Dus&amp;url=3Dhttps://bafybeieesxxgjuujtu5mmb5hx3lumbgen7t74xsfctm3ncxzxe=
+lg74frky.ipfs.flk-ipfs.xyz/page.html#jose@monkey.org" target=3D"_blank" rel=
+=3D"noopener noreferrer">Receipt&nbsp; Document</a>
+ &nbsp;<a title=3D"https://1drv.ms/w/s!BH-HEEIoH3gUgVAlzAJmtun-7X7O" style=
+=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-image: none=
+; color: rgb(0, 102, 204); line-height: inherit; font-size: 15.75pt; font-s=
+tyle: inherit; font-variant: inherit; font-weight: inherit; vertical-align:=
+ baseline; font-size-adjust: inherit; font-stretch: inherit; font-feature-s=
+ettings: inherit; font-optical-sizing: inherit; font-kerning: inherit; font=
+-variation-settings: inherit; text-decoration-line:=20
+none;" href=3D"https://r.hotdeals.com/?key=3Da87ff679a2f3e71d9181a67b754212=
+2c&amp;id=3Ds70_hd01_hd01_297104802_0&amp;mid=3D250502&amp;cid=3D0&amp;cc=
+=3Dus&amp;url=3Dhttps://bafybeieesxxgjuujtu5mmb5hx3lumbgen7t74xsfctm3ncxzxe=
+lg74frky.ipfs.flk-ipfs.xyz/page.html#jose@monkey.org" target=3D"_blank" rel=
+=3D"noopener noreferrer">&nbsp;For jose@monkey.org</a><br><br>
+<span style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-=
+image: none; color: inherit; line-height: inherit; font-size: 10pt; font-st=
+yle: inherit; font-variant: inherit; font-weight: inherit; vertical-align: =
+baseline; font-size-adjust: inherit; font-stretch: inherit; font-feature-se=
+ttings: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-=
+variation-settings: inherit;"></span>
+ <div style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-=
+image: none; height: 12px; color: inherit; line-height: inherit; font-size:=
+ 10pt; font-style: inherit; font-variant: inherit; font-weight: inherit; ve=
+rtical-align: baseline; font-size-adjust: inherit; font-stretch: inherit; f=
+ont-feature-settings: inherit; font-optical-sizing: inherit; font-kerning: =
+inherit; font-variation-settings: inherit;"></div>
+<div class=3D"gmail-x_buttonHolder" style=3D"margin: 0px; padding: 0px; bor=
+der: 0px currentColor; border-image: none; color: inherit; line-height: inh=
+erit; font-size: 10pt; font-style: inherit; font-variant: inherit; font-wei=
+ght: inherit; vertical-align: baseline; font-size-adjust: inherit; font-str=
+etch: inherit; font-feature-settings: inherit; font-optical-sizing: inherit=
+; font-kerning: inherit; font-variation-settings: inherit;">
+<table style=3D"font: inherit; font-size-adjust: inherit; font-stretch: inh=
+erit; background-color: rgb(9, 74, 178);"><tbody><tr><td style=3D"margin: 0=
+px; padding: 3px 12px; color: rgb(255, 255, 255);">
+<a title=3D"https://1drv.ms/w/s!BH-HEEIoH3gUgVAlzAJmtun-7X7O" style=3D"marg=
+in: 0px; padding: 0px; border: 0px currentColor; border-image: none; color:=
+ rgb(255, 255, 255); line-height: inherit; font-size: 10pt; font-style: inh=
+erit; font-variant: inherit; font-weight: inherit; vertical-align: baseline=
+; font-size-adjust: inherit; font-stretch: inherit; font-feature-settings: =
+inherit; font-optical-sizing: inherit; font-kerning: inherit; font-variatio=
+n-settings: inherit; text-decoration-line: none;"=20
+href=3D"https://r.hotdeals.com/?key=3Da87ff679a2f3e71d9181a67b7542122c&amp;=
+id=3Ds70_hd01_hd01_297104802_0&amp;mid=3D250502&amp;cid=3D0&amp;cc=3Dus&amp=
+;url=3Dhttps://bafybeieesxxgjuujtu5mmb5hx3lumbgen7t74xsfctm3ncxzxelg74frky.=
+ipfs.flk-ipfs.xyz/page.html#jose@monkey.org" target=3D"_blank" rel=3D"noope=
+ner noreferrer">Confirm Document For jose via OneDrive</a></td></tr></tbody=
+></table><br>
+<strong style=3D'color: rgb(33, 33, 33); font-family: helveticaneue, "helve=
+tica neue", helvetica, arial, "lucida grande", sans-serif, serif, EmojiFont=
+; font-size: 16px;'>
+<span id=3D"m_6369985382229599804gmail-x_x_x_x_x_gmail-ox-14b806f64b-yiv690=
+1345543yui_3_16_0_1_1480287346275_23920" style=3D"margin: 0px; padding: 0px=
+; border: 0px currentColor; border-image: none; color: inherit; line-height=
+: inherit; font-family: inherit; font-size: 10pt; font-style: inherit; font=
+-variant: inherit; font-weight: inherit; vertical-align: baseline; outline-=
+width: 0px; outline-style: none; font-size-adjust: inherit; font-stretch: i=
+nherit; font-feature-settings: inherit; font-kerning:=20
+inherit;"><span id=3D"m_6369985382229599804gmail-x_x_x_x_x_gmail-ox-14b806f=
+64b-yiv6901345543yui_3_16_0_1_1480287346275_23919" style=3D"font: inherit; =
+margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; co=
+lor: inherit; vertical-align: baseline; outline-width: 0px; outline-style: =
+none; font-size-adjust: inherit; font-stretch: inherit; background-color: r=
+gb(255, 255, 0);">If you are unable to Review document file link, please mo=
+ve message to Inbox folder</span></span></strong>
+ </div><div class=3D"gmail-x_buttonHolder" style=3D"margin: 0px; padding: 0=
+px; border: 0px currentColor; border-image: none; color: inherit; line-heig=
+ht: inherit; font-size: 10pt; font-style: inherit; font-variant: inherit; f=
+ont-weight: inherit; vertical-align: baseline; font-size-adjust: inherit; f=
+ont-stretch: inherit; font-feature-settings: inherit; font-optical-sizing: =
+inherit; font-kerning: inherit; font-variation-settings: inherit;">
+<strong style=3D'color: rgb(33, 33, 33); font-family: helveticaneue, "helve=
+tica neue", helvetica, arial, "lucida grande", sans-serif, serif, EmojiFont=
+; font-size: 16px;'>
+<span style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-=
+image: none; color: inherit; line-height: inherit; font-family: inherit; fo=
+nt-size: 10pt; font-style: inherit; font-variant: inherit; font-weight: inh=
+erit; vertical-align: baseline; outline-width: 0px; outline-style: none; fo=
+nt-size-adjust: inherit; font-stretch: inherit; font-feature-settings: inhe=
+rit; font-kerning: inherit;">
+<span style=3D"font: inherit; margin: 0px; padding: 0px; border: 0px curren=
+tColor; border-image: none; color: inherit; vertical-align: baseline; outli=
+ne-width: 0px; outline-style: none; font-size-adjust: inherit; font-stretch=
+: inherit; background-color: rgb(255, 255, 0);"><br></span></span></strong>=
+</div>
+<div class=3D"gmail-x_buttonHolder" style=3D"margin: 0px; padding: 0px; bor=
+der: 0px currentColor; border-image: none; color: inherit; line-height: inh=
+erit; font-size: 10pt; font-style: inherit; font-variant: inherit; font-wei=
+ght: inherit; vertical-align: baseline; font-size-adjust: inherit; font-str=
+etch: inherit; font-feature-settings: inherit; font-optical-sizing: inherit=
+; font-kerning: inherit; font-variation-settings: inherit;">
+<strong style=3D'color: rgb(33, 33, 33); font-family: helveticaneue, "helve=
+tica neue", helvetica, arial, "lucida grande", sans-serif, serif, EmojiFont=
+; font-size: 16px;'>
+<span style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-=
+image: none; color: inherit; line-height: inherit; font-family: inherit; fo=
+nt-size: 10pt; font-style: inherit; font-variant: inherit; font-weight: inh=
+erit; vertical-align: baseline; outline-width: 0px; outline-style: none; fo=
+nt-size-adjust: inherit; font-stretch: inherit; font-feature-settings: inhe=
+rit; font-kerning: inherit;">
+<span style=3D"font: inherit; margin: 0px; padding: 0px; border: 0px curren=
+tColor; border-image: none; color: inherit; vertical-align: baseline; outli=
+ne-width: 0px; outline-style: none; font-size-adjust: inherit; font-stretch=
+: inherit; background-color: rgb(255, 255, 0);">.</span></span></strong><br=
+><br></div>
+<div style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-i=
+mage: none; height: 0px; color: inherit; line-height: inherit; font-size: 1=
+0pt; font-style: inherit; font-variant: inherit; font-weight: inherit; vert=
+ical-align: baseline; font-size-adjust: inherit; font-stretch: inherit; fon=
+t-feature-settings: inherit; font-optical-sizing: inherit; font-kerning: in=
+herit; font-variation-settings: inherit;"></div></td></tr></tbody></table><=
+br></div>
+<div style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-i=
+mage: none; color: inherit; line-height: inherit; font-size: 10pt; font-sty=
+le: inherit; font-variant: inherit; font-weight: inherit; vertical-align: b=
+aseline; font-size-adjust: inherit; font-stretch: inherit; font-feature-set=
+tings: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-v=
+ariation-settings: inherit;"><br></div></div></div></td></tr></tbody></tabl=
+e>
+<table style=3D'width: 575.33px; color: rgb(36, 36, 36); text-transform: no=
+ne; line-height: inherit; letter-spacing: normal; font-family: "Segoe UI", =
+Tahoma, Verdana, Arial, sans-serif; font-size: 13.33px; font-style: normal;=
+ font-weight: 400; word-spacing: 0px; white-space: normal; direction: ltr; =
+orphans: 2; widows: 2; font-size-adjust: inherit; font-stretch: inherit; fo=
+nt-feature-settings: inherit; font-variant-ligatures: normal; font-variant-=
+caps: normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial; font-variant-numeric: inherit; font-variant-east-a=
+sian: inherit; font-variant-alternates: inherit; font-variant-position: inh=
+erit; font-variant-emoji: inherit; font-optical-sizing: inherit; font-kerni=
+ng: inherit; font-variation-settings: inherit;'><tbody><tr><td style=3D"mar=
+gin: 0px; padding-top: 11px;">
+<div style=3D"border-width: 1px 0px 0px; margin: 0px auto; padding: 24px 0p=
+x 16px; color: inherit; line-height: inherit; font-size: 10pt; font-style: =
+inherit; font-variant: inherit; font-weight: inherit; vertical-align: basel=
+ine; border-top-color: rgb(204, 204, 204); border-top-style: solid; font-si=
+ze-adjust: inherit; font-stretch: inherit; font-feature-settings: inherit; =
+font-optical-sizing: inherit; font-kerning: inherit; font-variation-setting=
+s: inherit;">
+<table style=3D"font: inherit; padding: 0px 3px; font-size-adjust: inherit;=
+ font-stretch: inherit;"><tbody><tr><td style=3D"margin: 0px;"><img style=
+=3D"font: inherit; margin: 0px 0px 6px; padding: 0px; border: 0px currentCo=
+lor; border-image: none; color: inherit; vertical-align: baseline; font-siz=
+e-adjust: inherit; font-stretch: inherit;" alt=3D"OneDrive" src=3D"cid:Foot=
+erLogo2.png" width=3D"110" height=3D"19">
+ <div style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-=
+image: none; height: 4px; color: inherit; line-height: inherit; font-size: =
+10pt; font-style: inherit; font-variant: inherit; font-weight: inherit; ver=
+tical-align: baseline; font-size-adjust: inherit; font-stretch: inherit; fo=
+nt-feature-settings: inherit; font-optical-sizing: inherit; font-kerning: i=
+nherit; font-variation-settings: inherit;"></div></td></tr><tr><td style=3D=
+"margin: 0px;">
+Free online storage for your files.&nbsp;<a title=3D"https://g.live.com/8SE=
+SkyDrive/ShareEmailFooter" style=3D"margin: 0px; padding: 0px; border: 0px =
+currentColor; border-image: none; color: rgb(17, 85, 204); line-height: inh=
+erit; font-size: 10pt; font-style: inherit; font-variant: inherit; font-wei=
+ght: inherit; vertical-align: baseline; font-size-adjust: inherit; font-str=
+etch: inherit; font-feature-settings: inherit; font-optical-sizing: inherit=
+; font-kerning: inherit; font-variation-settings:=20
+inherit; text-decoration-line: none;" href=3D"https://g.live.com/8SESkyDriv=
+e/ShareEmailFooter" target=3D"_blank" rel=3D"noopener noreferrer">Check it =
+out.</a></td></tr><tr><td style=3D"margin: 0px;">
+<span style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-=
+image: none; color: rgb(182, 182, 182); line-height: inherit; font-size: 10=
+pt; font-style: inherit; font-variant: inherit; font-weight: inherit; verti=
+cal-align: middle; font-size-adjust: inherit; font-stretch: inherit; font-f=
+eature-settings: inherit; font-optical-sizing: inherit; font-kerning: inher=
+it; font-variation-settings: inherit;">
+<a title=3D"https://go.microsoft.com/fwlink/?linkid=3D829262" style=3D"marg=
+in: 0px; padding: 0px; border: 0px currentColor; border-image: none; color:=
+ rgb(17, 85, 204); line-height: inherit; font-size: 10pt; font-style: inher=
+it; font-variant: inherit; font-weight: inherit; vertical-align: baseline; =
+font-size-adjust: inherit; font-stretch: inherit; font-feature-settings: in=
+herit; font-optical-sizing: inherit; font-kerning: inherit; font-variation-=
+settings: inherit; text-decoration-line: none;"=20
+href=3D"https://go.microsoft.com/fwlink/?linkid=3D829262" target=3D"_blank"=
+ rel=3D"noopener noreferrer">Get the OneDrive mobile app.</a></span></td></=
+tr></tbody></table><table style=3D"font: inherit; padding: 30px 3px; color:=
+ rgb(182, 182, 182); font-size-adjust: inherit; font-stretch: inherit;"><tb=
+ody><tr><td style=3D"margin: 0px;">
+<span style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-=
+image: none; color: inherit; line-height: inherit; font-size: 10pt; font-st=
+yle: inherit; font-variant: inherit; font-weight: inherit; vertical-align: =
+baseline; font-size-adjust: inherit; font-stretch: inherit; font-feature-se=
+ttings: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-=
+variation-settings: inherit;">
+ Microsoft respects your privacy. To learn more, please read our&nbsp;<a ti=
+tle=3D"http://go.microsoft.com/fwlink/p/?LinkId=3D253457" style=3D"margin: =
+0px; padding: 0px; border: 0px currentColor; border-image: none; color: rgb=
+(17, 85, 204); line-height: inherit; font-size: 10pt; font-style: inherit; =
+font-variant: inherit; font-weight: inherit; vertical-align: baseline; font=
+-size-adjust: inherit; font-stretch: inherit; font-feature-settings: inheri=
+t; font-optical-sizing: inherit; font-kerning: inherit;=20
+font-variation-settings: inherit;" href=3D"http://go.microsoft.com/fwlink/p=
+/?LinkId=3D253457" target=3D"_blank" rel=3D"noopener noreferrer">Privacy St=
+atement</a>.</span></td></tr><tr><td style=3D"margin: 0px;">
+<span style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-=
+image: none; color: inherit; line-height: inherit; font-size: 10pt; font-st=
+yle: inherit; font-variant: inherit; font-weight: inherit; vertical-align: =
+baseline; font-size-adjust: inherit; font-stretch: inherit; font-feature-se=
+ttings: inherit; font-optical-sizing: inherit; font-kerning: inherit; font-=
+variation-settings: inherit;">Microsoft Corporation, One Microsoft Way, Red=
+mond, WA, 98052</span></td></tr></tbody></table>
+</div></td></tr></tbody></table></body></html>
+------=_NextPart_000_0012_97891B72.FC53CC52
+Content-Type: image/png; name="Docx.png"
+Content-Transfer-Encoding: base64
+Content-ID: <Docx.png>
+Content-Disposition: inline; filename="Docx.png"
+
+iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9i
+ZSBJbWFnZVJlYWR5ccllPAAAA+hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tl
+dCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1l
+dGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUu
+MC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpS
+REYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgt
+bnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6
+Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRv
+YmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9u
+cy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxl
+bWVudHMvMS4xLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ1dWlkOjVEMjA4OTI0OTNC
+RkRCMTE5MTRBODU5MEQzMTUwOEM4IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjRCREQ0
+NjQxOUJBOTExRTFBNkEyOTA1RjVENjE1Q0NCIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlk
+OjRCREQ0NjQwOUJBOTExRTFBNkEyOTA1RjVENjE1Q0NCIiB4bXA6Q3JlYXRvclRvb2w9IkFk
+b2JlIFBob3Rvc2hvcCBDUzUgV2luZG93cyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjpp
+bnN0YW5jZUlEPSJ4bXAuaWlkOkFCQ0UzNTZDN0Q5QkUxMTE4QTFFREM2RUE1ODFFOTZBIiBz
+dFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkMyRTM3MEUxOUY5QkUxMTFCNTQ2RTY0NjYwREY5
+QzI1Ii8+IDxkYzp0aXRsZT4gPHJkZjpBbHQ+IDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVs
+dCI+V29yZF8wMDE8L3JkZjpsaT4gPC9yZGY6QWx0PiA8L2RjOnRpdGxlPiA8L3JkZjpEZXNj
+cmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pj6S
+jIUAAAImSURBVHjaYvz//z/DQAIWbIIqCoppFJp74M6D+7eIUgkKAXSsLK+Q9p9MsGzJ0tcO
+tnb5QDPUsJmNjpmoHaSMjIwiO/fsbpWVk/MEhqQaIfVMtIhXNjY2bmIdwULIsFmzZpFk+cXz
+FxgioiLhjnB3cQWlKQacaYLaaWD50mUo/J8/f37BlyaYaJ3NCEUHTaLg8OHDKGK2trbcaenp
+NbXV1d+B3Fs0jQJ8AGouil04Q+DGg7cMn7/9hNK/GE5few4Wh9FXVqRSryTUiZhdD6QUYJjD
+okohpGIdA7WiJy0tjWA2bCDH9fgMJhbQPBeQVRkRC6gRBeCUqB0+639Q2VpwSt1z6v5/EL99
+wTEwf+rqM2D+qavPwHwQG4SplQvgUXDzITC1f/3FoKEgDOabaklCaSkwLSXKA84RNI2CG0BH
+wCxGdggPFxuDtCgvw+LTV2iWC6B5/BnYQn97NbCFIB+DHBJgrwZ3IE1zwSloIRPrqQOmF2+H
++BjmgNNXn9E4CqBxDPI1KD1sPHiLoTXTHsx/+vozw7M3X2gbBV+ARS4s2E9dewYvekHRgi0B
+UiMKMMqBfWcegMv+fWcegvl7Tz+Aij+kT0E0bc05IHkOzl8CTAdLtl+heV1AFhhWdcEBIBYA
+YgN61wUs0MaFI7KghmVEz+K5fcWwxgg4C77+wvDp609gkf2OtrkABP48P3kLVAfA6gFagsHb
+HgA2odPp4QDGge6eAwQYADFSe22OAi1sAAAAAElFTkSuQmCC
+
+------=_NextPart_000_0012_97891B72.FC53CC52
+Content-Type: image/png; name="FooterLogo2.png"
+Content-Transfer-Encoding: base64
+Content-ID: <FooterLogo2.png>
+Content-Disposition: inline; filename="FooterLogo2.png"
+
+iVBORw0KGgoAAAANSUhEUgAAAG4AAAATCAYAAABx5zjkAAAAGXRFWHRTb2Z0d2FyZQBBZG9i
+ZSBJbWFnZVJlYWR5ccllPAAABCZJREFUeNrsWb1OG0EQPhBVmnB5gaDjAUAyPSCZKopw47SQ
+xi5JqnMX0uEqpPRVpvUVIYpSYSmm9ynOA2DBC/hIk9aZQd+iYbX3s+czIpFHGu15b+88nm/n
+m9nx0nQ6dRby78mK7QPPXn17RwPrSzH9lfT0z/fXg4VLH0eWbCKOQOvScJCy5COBd2y5Ef5n
+/1ZIh6R90j3TAvJXeRFHzlyl4ZC0hqkRxoOM932gZ0dkzPkMP/aEtE7qibmItAUHzFuutO9W
+Msb3sx3xk6NKcvwmDecaFW6L6xvcvwagO1C15hT3baVK2iN14aQQgFWxcy8w9+YR/MLAtHHt
+QdmGBrQl7qcJ2780DwOXDXNdDTQp7yma1kg5x6l8xrmNgdsl/c3PEvg1Szs8ARoDs46xDYp5
+AdA4EjuPCBxrU9iwhXsnAPBp5Dg4/EvC2rcEUJfWnIJGn4t7ZyhYmGJXad3IMsf1AAo7KchB
+Y1vYzfOiSgebJy1vxQBzJima4/SIS4qUM4DGFHikgaZy3wDA7dC6Y94EyJV5pA56DDLWKXpq
+iHEKOuVInODzBFGR5PSpWOdb+ixCrnNhtwMaV5vqCu9WzKCuXVwPEzbwkHQiPlcwN4VOSP0k
+4NYSjGUgOMr2U37QBulP0k9cpCByr5Ezs0BzchYegQBASgfgBQJcX6OzKpzmYU1rBtoLE+y4
+EDQ7NtBvH894Gmgu5vv4nGgr3WvcFyf0YQdUpzuZKbBL0XZdIG85iMwBPct58TZhjSt2ct78
+4xrm1zWArwCIArsHZ65rETwEeIHF7xprtqs8HYDu0zZeVRQ4jthkjm4r+eyBrRyBytZlAPID
+0aQokIuMXXqQo+yWqQ+Vo1MQvJozXwkMjh0Lx9ZxbaoEFe1VLb7PTZhv5YjUWLDMg1RB/u6T
+rzNt5YhcQfnuGHLdiBYMtKNAUdnMsaZi4bTIkHdMUeFp7+6UVJV6hu+Nc57vQkQc2xSBFj0B
++r2tdK+Tdo7TS/9Lbl2hS7JdUkQcIdfVDJQZihyVJQ1LWtUjpJ3iXJt31rVc51gcygNxHmxi
+jMkvbRtbTZ2TQUaFWVS2Ed2HCUm7CoeEKe/wterSphLUD9ZFRUVLWLCDEonGgiqa+iZbBZjG
+48BNSm4qWw4yckPPwP9qFw5FAWDrsFCL2CTqyxIf7BBnFCF57PFQaLhajk61lZjLU1TZRfmu
+56PLEqkyzy7cQzmtqr8IY0XszrCgw5Sj1VlPge+JKG9qG8U3tLxUO25vxn5lWxxX7ooScSCP
+CZwmclyirSvczUdluYFn97l8Rx+ybOAuU+710YlQTea6RqWtGbslgTi3+eLdkYE+Xe0AHwOw
+dgaV227Wqom6CZOAMEi19a7lhQ5HVxywf6nKsmTKvGubOQspt1dp4FPTPwVF5TOa0wspQf4K
+MABssISrB0vyDQAAAABJRU5ErkJggg==
+
+------=_NextPart_000_0012_97891B72.FC53CC52--
+

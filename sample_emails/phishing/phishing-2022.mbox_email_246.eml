@@ -1,0 +1,141 @@
+Return-Path:
+ 01000185373df22b-ff08160d-0056-4cf1-9338-21d9535ec9b9-000000@amazonses.com
+Delivered-To: jose@monkey.org
+X-FDA: 80268063330.16.7447D4C
+Received: from a31-231.smtp-out.amazonses.com (a31-231.smtp-out.amazonses.com
+ [54.240.31.231])	by imf17.b.hostedemail.com (Postfix) with ESMTP id
+ 2F88A1003D526	for <jose@monkey.org>; Thu, 22 Dec 2022 00:31:25 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=6gbrjpgwjskckoa6a5zn6fwqkn67xbtw; d=amazonses.com; t=1671669084;
+	h=MIME-Version:From:To:Date:Subject:Content-Type:Message-ID:Feedback-ID;
+	bh=WvFQ1iWQCreM7/Jq8GDSxl0VBIh+RrJDWL7mOcYLRTA=;
+	b=hgE7pRoiKm/19OZSQrVHXOtUuW6kJNPHiWfAnFs1A19OzHYBr140Rm/6qMHDnJc+
+	vBrj/i9yjzL3s8bysVWhH1mmi5TwCSjns8W/1PE/TrE+P6pjojEYJ/HqwkFApmlIXAK
+	/HmRgq2OvEa3gPJgpLEWesra4pbCHr+qs2yELlDQ=
+MIME-Version: 1.0
+From: "Netflix" <noreply@come-in-vr.com>
+To: jose@monkey.org
+Date: Thu, 22 Dec 2022 00:31:24 +0000
+Subject: Netflix : We're having some trouble with your current billing
+ information
+Content-Type: multipart/alternative;
+ boundary=--boundary_2061_bfaf2b3c-053f-49ce-a9be-560927be70c2
+Message-ID: <01000185373df22b-ff08160d-0056-4cf1-9338-21d9535ec9b9-000000@email.amazonses.com>
+Feedback-ID:
+ 1.us-east-1.4y4OhDOv1PYAaHde7slASLpWjd8LuwYe5TPg6jGE67A=:AmazonSES
+X-SES-Outgoing: 2022.12.22-54.240.31.231
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1671669085; a=rsa-sha256;
+	cv=none;
+	b=ddoCme/ewDwe3p5pMacu7AiW8TltiKLamgUDjCiZzbBR+3cDe7LnF710yKhSBAN5P6aEWV
+	usQ2E0wFvyzy2ZbIab2HOdRdQCV3v9dM7SI9267Yk+0ok3AF91QO06ozrROizNio5Ad1w7
+	1VcD6zqu43XfUIovFqAv4OZT5mPxDtY=
+ARC-Authentication-Results: i=1;	imf17.b.hostedemail.com;	dkim=pass
+ header.d=amazonses.com header.s=6gbrjpgwjskckoa6a5zn6fwqkn67xbtw
+ header.b=hgE7pRoi;	dmarc=none;	spf=pass (imf17.b.hostedemail.com: domain of
+ 01000185373df22b-ff08160d-0056-4cf1-9338-21d9535ec9b9-000000@amazonses.com
+ designates 54.240.31.231 as permitted sender) =?utf-8?q?smtp=2Emailfrom=3D0?=
+ =?utf-8?q?1000185373df22b-ff08160d-0056-4cf1-9338-21d9535ec9b9-000000=40ama?=
+ =?utf-8?q?zonses=2Ecom?=
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1671669085;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=WvFQ1iWQCreM7/Jq8GDSxl0VBIh+RrJDWL7mOcYLRTA=;
+	b=KlVhC/piT3avPK1ks1XUKhNxn33I912Wd3xKjNXYbA4s1WBcoo5pDo8/s8L4Ba8TdB6mH/
+	M48yP1CnVVRxzl9aiztaX4pmhke2ehobYkZpSeVZWpWctVKAwbhrNJA0MqNQhyCa9cJRw5
+	bV7s9QGCr3NlhngIZVYNGw7RenpoQw0=
+X-Rspamd-Queue-Id: 2F88A1003D526
+X-Rspamd-Server: rspam04
+Authentication-Results: imf17.b.hostedemail.com;	dkim=pass
+ header.d=amazonses.com header.s=6gbrjpgwjskckoa6a5zn6fwqkn67xbtw
+ header.b=hgE7pRoi;	dmarc=none;	spf=pass (imf17.b.hostedemail.com: domain of
+ 01000185373df22b-ff08160d-0056-4cf1-9338-21d9535ec9b9-000000@amazonses.com
+ designates 54.240.31.231 as permitted sender) =?utf-8?q?smtp=2Emailfrom=3D0?=
+ =?utf-8?q?1000185373df22b-ff08160d-0056-4cf1-9338-21d9535ec9b9-000000=40ama?=
+ =?utf-8?q?zonses=2Ecom?=
+X-Rspam-User: 
+X-Spam-Status: No, score=1.86
+X-Stat-Signature: mzz5s31p5rfefqrx9mr8xzcdar387hmp
+X-HE-Tag: 1671669085-850202
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/2xC88KRrSazrn+hbxTXFf7OaSaGBhoMRL622Oq3aCVC+?=
+ =?utf-8?q?BCJQPt55zLMZqaeMlVEybiWNE0UZLBWFIqykf2pIayw8ZvGpFFsMVAPOwnsBMrwwm?=
+ =?utf-8?q?QcSJ2cI3WbpbWpdkLJRpLW5WNspbhxkqdx0ffSuSUeV088Xq82EYx4lmQqu1NGZL5?=
+ =?utf-8?q?Gxg0Ie7Pa5GxKXns8tz9vqULsEWEEjlqrGgfGwNreKXJUB2rN7atGrLtk6ZHiV3gg?=
+ =?utf-8?q?E4liZV54csnQG8Rs9eZFhQWCZAAfMdMWf+ODIIk5Nn8wYiP8rD0jIqgrHOzGiYv9/?=
+ =?utf-8?q?WWMciGB+m7cB/r+/UWXFlk1QNmiZ4EOgw55dHZ+fArta0qem8mB9YiAiQU2hzjmyX?=
+ =?utf-8?q?5Ik+foFUkAKMh26pOGbJg7zuHlkTMgQvncCdcpfomiTyDKcI12PRLPLre0RnW9weH?=
+ =?utf-8?q?ZsFWC+QG4HiKiYbTH9yR0TVIVOvEZaUPh7K8JytCA8S+bBSFYEQbLTlYe5x3g7aGt?=
+ =?utf-8?q?wvXdT7iOP41+bhBG3PLQ4TVtIvU++smK/7rfcWzdX3jO5b2JLJnG3Jm2no3iaQ3tX?=
+ =?utf-8?q?EKSg9ffHExq77/YGBCS22BQl5dwAN1RmALI7n/3rkY0yPhDa7RISGXLEya/lKBPxD?=
+ =?utf-8?q?I/thdoUll7areh6EskjbKlX+q3HdqkVaYQl/gZY7k4hGacvqbNdEyStIA4wjN1RHw?=
+ =?utf-8?q?AFj2QShzBijmY8nNdPIHpSNn00CBgy4CLw1LEY5ec89kYYLslB2+6BvikICVrus1p?=
+ =?utf-8?q?x1U8esDJ+V4q/ioC+uCrCalqX4uC3ynyEzKCN2U9WWyZMB6rk4vNd84bIhdPsT/dN?=
+ =?utf-8?q?HYU+QNilUAAPjoTCE59v8AwwjnQ4H4hTtFYP322CajZT1CUwprYPsRv5yKaVzJNsu?=
+ =?utf-8?q?1kmYEZQ8LGOCAY7LsDI2Vdw4vnVMcAlHFeB8nNJqX3PbQKcrH9AZP0Z+tHY8g7jdP?=
+ =?utf-8?q?CVemtxkKQNXfLCvMJ4DwCh_xF3ztyRoxyCA6wAMSYU/7akTcVjfQ+DvTIyah1ddvk?=
+ =?utf-8?q?SziE38SfYtecuMKyaQJ+B7/YmOQ9w/qEVMCV50piVbVQQf6mw4zr5gZWkMr4H3FLs?=
+ =?utf-8?q?JvmnAydEJYeJW7z4RSpwl9Ol5SFQLujYoIdx1Zmis7bsYDyiAsLv3TgGWKIQeZ6Ob?=
+ =?utf-8?q?Gr/iWGlz9ilNbGkhY7ziQww5tWDLdkmWV5Qn1RFPHz3c0XxzJINxaM2pMxWg4nCB8?=
+ =?utf-8?q?4H1QphTxNx67GylviYKFe/XIIKy/2ukyWLlLjYmcZehsn7mruiEQKak2UhmUF937j?=
+ =?utf-8?q?rCc0GqDzRdgHLx79RqsUPWanaA6Xj+IKr6aOSKEQwhhKlaM4RvXqIUXp4Sc9ssvxu?=
+ =?utf-8?q?YTcpUoWfGIjuJcy+8myN4DRJaZrp8YkaX1I/U0/5z2HtqPZvwTOdtzUAUuQEAE1an?=
+ =?utf-8?q?gp5l04u9GL2iuhvmGYl2crHQXl2DHCKJyEh0bm5OGDLY8y6dvF3+viCFM2EQM2eN4?=
+ =?utf-8?q?oKXlzV4+fTtvwsa2CWznW6ZmU/DCnudmftb0SWR7Myi98yzu75ON73ZH0+v3zHlXr?=
+ =?utf-8?q?Mh1opXLjxs+hDY1xHmss8S+8iX08U+TjJ9v2+wCugvZCMMyIxbnUGd94UH3Ncv5rB?=
+ =?utf-8?q?u2GRXFM2xqkF2tj5mcz5PCDgxq6rCN0jfTwEJ88fIpbtREE9EIzwRwf9WU3URJgCq?=
+ =?utf-8?q?+Om1UUKA5EQD7NhDE1DD2Agy1jS0wO645xpOlAcRwlcmAa1gcVAXlsi0t5DE=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 245
+
+
+----boundary_2061_bfaf2b3c-053f-49ce-a9be-560927be70c2
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: base64
+
+PHA+PHN0cm9uZz5IRUxMTyw8L3N0cm9uZz48L3A+CjxwPiZuYnNwOzwvcD4KPHA+UGxl
+YXNlIG5vdGUgdGhhdCwgeW91ciBtb250aGx5IHBheW1lbnQgaGFzIGJlZW4gZmFpbGVk
+LjwvcD4KPHA+T3VyIGJpbGxpbmcgdGVhbSBjYW4ndCBkZWJpdCB5b3VyIG5vbWluYXRl
+ZCBjYXJkIGR1ZSBhIG1pc3NpbmcgaW5mb3JtYXRpb24gb24geW91ciBwYXltZW50IGRl
+dGFpbHMuPC9wPgo8cD5QbGVhc2UgdmVyaWZ5IHlvdXIgZGV0YWlscyBhZ2FpbiB0byBh
+dm9pZCBhbnkgZGVsYXkgb24geW91ciBzZXJ2aWNlLjwvcD4KPHA+Jm5ic3A7PC9wPgo8
+cD48YSBocmVmPSJodHRwczovL215bHV4ZWtpZHMuY29tL1pWWnNtUEgvemEvIiB0YXJn
+ZXQ9Il9ibGFuayIgcmVsPSJub29wZW5lciI+aHR0cHM6Ly9uZXRmbGl4LmNvbS91cGRh
+dGUvYWNjb3VudC9pbmZvPC9hPjwvcD4KPHA+Jm5ic3A7PC9wPgo8cD5XZSBhcHByZWNp
+YXRlIHRoZSBvcHBvcnR1bml0eSB0byBkbyBidXNpbmVzcyB3aXRoIHlvdSBhbmQgYXNr
+IGZvciB5b3VyIHVuZGVyc3RhbmRpbmcuPC9wPgo8cD5OZXRmbGl4IHN1cHBvcnQ8L3A+
+Cgo=
+----boundary_2061_bfaf2b3c-053f-49ce-a9be-560927be70c2
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: base64
+
+DQ1IRUxMTywgDQ0NUGxlYXNlIG5vdGUgdGhhdCwgeW91ciBtb250aGx5IHBheW1lbnQg
+aGFzIGJlZW4gZmFpbGVkLiANDU91ciBiaWxsaW5nIHRlYW0gY2FuJ3QgZGViaXQgeW91
+ciBub21pbmF0ZWQgY2FyZCBkdWUgYSBtaXNzaW5nIGluZm9ybWF0aW9uIG9uIHlvdXIg
+cGF5bWVudCBkZXRhaWxzLiANDVBsZWFzZSB2ZXJpZnkgeW91ciBkZXRhaWxzIGFnYWlu
+IHRvIGF2b2lkIGFueSBkZWxheSBvbiB5b3VyIHNlcnZpY2UuIA0NDWh0dHBzOi8vbmV0
+ZmxpeC5jb20vdXBkYXRlL2FjY291bnQvaW5mbyANDQ1XZSBhcHByZWNpYXRlIHRoZSBv
+cHBvcnR1bml0eSB0byBkbyBidXNpbmVzcyB3aXRoIHlvdSBhbmQgYXNrIGZvciB5b3Vy
+IHVuZGVyc3RhbmRpbmcuIA0NTmV0ZmxpeCBzdXBwb3J0IA==
+----boundary_2061_bfaf2b3c-053f-49ce-a9be-560927be70c2
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: base64
+
+PHA+PHN0cm9uZz5IRUxMTyw8L3N0cm9uZz48L3A+CjxwPiZuYnNwOzwvcD4KPHA+UGxl
+YXNlIG5vdGUgdGhhdCwgeW91ciBtb250aGx5IHBheW1lbnQgaGFzIGJlZW4gZmFpbGVk
+LjwvcD4KPHA+T3VyIGJpbGxpbmcgdGVhbSBjYW4ndCBkZWJpdCB5b3VyIG5vbWluYXRl
+ZCBjYXJkIGR1ZSBhIG1pc3NpbmcgaW5mb3JtYXRpb24gb24geW91ciBwYXltZW50IGRl
+dGFpbHMuPC9wPgo8cD5QbGVhc2UgdmVyaWZ5IHlvdXIgZGV0YWlscyBhZ2FpbiB0byBh
+dm9pZCBhbnkgZGVsYXkgb24geW91ciBzZXJ2aWNlLjwvcD4KPHA+Jm5ic3A7PC9wPgo8
+cD48YSBocmVmPSJodHRwczovL215bHV4ZWtpZHMuY29tL1pWWnNtUEgvemEvIiB0YXJn
+ZXQ9Il9ibGFuayIgcmVsPSJub29wZW5lciI+aHR0cHM6Ly9uZXRmbGl4LmNvbS91cGRh
+dGUvYWNjb3VudC9pbmZvPC9hPjwvcD4KPHA+Jm5ic3A7PC9wPgo8cD5XZSBhcHByZWNp
+YXRlIHRoZSBvcHBvcnR1bml0eSB0byBkbyBidXNpbmVzcyB3aXRoIHlvdSBhbmQgYXNr
+IGZvciB5b3VyIHVuZGVyc3RhbmRpbmcuPC9wPgo8cD5OZXRmbGl4IHN1cHBvcnQ8L3A+
+Cgo=
+----boundary_2061_bfaf2b3c-053f-49ce-a9be-560927be70c2--
+
+
+

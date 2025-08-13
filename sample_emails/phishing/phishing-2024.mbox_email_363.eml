@@ -1,0 +1,128 @@
+Return-Path:
+ larissa.souza19846protocolado585n.7-websx.com@protocolado585n.7-websx.com
+Delivered-To: jose@monkey.org
+X-FDA: 82828041408.26.102A8D8
+Received: from protocolado585n.7-websx.com (protocolado585n.7-websx.com
+ [65.109.136.220])	by imf20.b.hostedemail.com (Postfix) with ESMTP id
+ 9AAAF60002	for <jose@monkey.org>; Tue, 26 Nov 2024 11:35:40 +0000 (UTC)
+Authentication-Results: imf20.b.hostedemail.com;	dkim=none;	dmarc=pass
+ (policy=none) header.from=protocolado585n.7-websx.com;	spf=pass
+ (imf20.b.hostedemail.com: domain of
+ larissa.souza19846protocolado585n.7-websx.com@protocolado585n.7-websx.com
+ designates 65.109.136.220 as permitted sender) =?utf-8?q?smtp=2Emailfrom=3D?=
+ =?utf-8?q?larissa=2Esouza19846protocolado585n=2E7-websx=2Ecom=40protocolado?=
+ =?utf-8?q?585n=2E7-websx=2Ecom?=
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1732620942;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	 references;
+ bh=sr/fGCYNSkoTAZV/l3Om/LlrftoKiLwbdm8PGBJOPg4=;
+	b=d4qOg3c9upo9TQCu6Iu+eaM9e5AV12OfZEAZwngCeMJwKeob/WXyPizQdDuzy7dKGXS8RA
+	8EjHoXTsnWYjk9nQ88GarcwUFgbMK8hmXn5MTEV593VVEKz56WwVnC/wMQeq+07ZWY3rqg
+	uWFNnRCupmcAQqze0059upr1H0ch11M=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1732620942; a=rsa-sha256;
+	cv=none;
+	b=s423BcpH2z4bXmBBNIOks0N1v4NrC1b5Sh5spFnyRidg9zRkUIivdsN7ua4RGVxFXh+QHU
+	B4RUhmYTsrX2na0wI4OMVtDh6Pl3tY8XdZagOSl6FAaw+YhkpVznz28r+fKmZe5TS3zwCs
+	Dz5ShTmjr3mur+64Hqa13X7om6CvcMk=
+ARC-Authentication-Results: i=1;	imf20.b.hostedemail.com;	dkim=none;
+	dmarc=pass (policy=none) header.from=protocolado585n.7-websx.com;	spf=pass
+ (imf20.b.hostedemail.com: domain of
+ larissa.souza19846protocolado585n.7-websx.com@protocolado585n.7-websx.com
+ designates 65.109.136.220 as permitted sender) =?utf-8?q?smtp=2Emailfrom=3D?=
+ =?utf-8?q?larissa=2Esouza19846protocolado585n=2E7-websx=2Ecom=40protocolado?=
+ =?utf-8?q?585n=2E7-websx=2Ecom?=
+Received: from protocolado585n.7-websx.com (localhost [127.0.0.1])
+	by protocolado585n.7-websx.com (Postfix) with ESMTP id 087B21192
+	for <jose@monkey.org>; Tue, 26 Nov 2024 08:35:44 -0300 (-03)
+From: "Larissa Souza"
+ <larissa.souza19846protocolado585n.7-websx.com@protocolado585n.7-websx.com>
+To: jose@monkey.org
+Content-Type: multipart/alternative;
+ boundary="3vEa3hUPiDXt9IcwIT1v9Euooiw=_4mXe1"
+MIME-Version: 1.0
+Reply-To:
+ larissa.souza19846protocolado585n.7-websx.com@protocolado585n.7-websx.com
+Date: Tue, 26 Nov 2024 08:35:44 -0300
+Subject: CV21 - Larissa Souza
+Message-Id: <20241126113544.087B21192@protocolado585n.7-websx.com>
+X-Rspamd-Server: rspam05
+X-Spam-Status: No, score=-0.17
+X-Stat-Signature: 5w33b7ee5gtemy17gpiaaere6oyerxpu
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 9AAAF60002
+X-HE-Tag: 1732620940-449705
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19tAFZ7PTJuD3sBwkHmyyeX0TBCY+LxPYU66WPtKfX70Z8?=
+ =?utf-8?q?4NMaoA+pVb4skUxnGYebAUT6TyuNt/H3CXBYFYvSXijdA1Jsf/IefZuydvgITNMrJ?=
+ =?utf-8?q?TUENO5Qgtz1EDLElqcU5HR1dwYwa9xBXHITv0Tdun4yNZDS1JljBqJsiLbHAS3OIl?=
+ =?utf-8?q?aFeJQTeV0hYIfChuH3UCapf1+3qM3tD1pcxd0dSIU9CH00l5o800vJ6xmK/2qEH7w?=
+ =?utf-8?q?vBrEw0NhPZie1dMMLkCTxfp8C/QGULg+f3M3+pEWVBqJYE84TiPtj2MlPEsVHgWDB?=
+ =?utf-8?q?bQYKWbv8OFEU9IIWWAfjVWy6rxKlj3YC17Tc7Sm5KlbxUziYqFWCMvYl5UR9t7YEL?=
+ =?utf-8?q?FkWBczTyIRUFXCsoZKiBr7aAQAH7BtZeRzIUaHzCfuDOxKIbQzYAEemURJSW2pXYw?=
+ =?utf-8?q?ofrBd8JY7jik9zKiEArSK4jHz5+br3ALlWeYi/kqilPuOER/Lk8ggDia43HLQp/pW?=
+ =?utf-8?q?2oAE6J3v5B4gy0UMt3x2+JzU0q2BYCYPivoDthEhk8e2Bjib1vF8bQr+2FhhYSd8y?=
+ =?utf-8?q?6u3Du+9gwZbBtYVdlEBySpBV0kWLxom+5/m5Ug8qYC74h1fVMrgExkr76/iaiPFw2?=
+ =?utf-8?q?5Oh5P7We6myxSSytD8gvxe5AHygTo6m+nlcLZPkjpzN+WrOqYFktWz8kX/nPZnW74?=
+ =?utf-8?q?WHaaJKhFolOrFACbMAAqg0C+3+fwNr7jIP4xmZ1SCtX0vFtqeBqYOwKl8A0ZEtUJ8?=
+ =?utf-8?q?ZNOq4ToPOqgv8XWfKcn/AJ/zoVP2v/DBhOzWniwRD4be6XBUtiokplo/60NUZTYqB?=
+ =?utf-8?q?OYVzMrlwn0SXvJ9WmBeE6byMkPffVz64F8myJwzDnJ4LkdfJVpsQAV37anJxmCDRL?=
+ =?utf-8?q?E5iMwU1IpFnQkuQf0NKIy0eHnv1XZnexLdgyr0H04dZQGN14ZZKKgtb+H8lx0THLg?=
+ =?utf-8?q?7ptNUG9jE9C0OlGhHjPuAS_Ay+hDPRjRJyYMRrRGBxOsgkXCHTv/vRlwyBZM7L1zg?=
+ =?utf-8?q?5dIiRGj2KGU1W0BYziQtx3jnwZ48ltoWC8e7AMuoWmwCnrneBCovKhymd62nifkNE?=
+ =?utf-8?q?RBurCNlgXoEsvkC6Twfxn4bDCE4GksF1hwKc8fQ+YefGAOkRa99Srl9fHVdlw7mj1?=
+ =?utf-8?q?ZtKxfg5QrEAZJNI9fFUp59CnPq+CEa4u4v21wwrTdIxC7CBWJGF3zF2anCYMSNLen?=
+ =?utf-8?q?IT8U8/IkFwIvKzY1GeYTUqIvR8F46lXa7AeQqZSFQiIje3ozOglC+VNrXLhlawkJ9?=
+ =?utf-8?q?bYI1Xy1Aqp3xKrnonFCNDFAQdwe3blP3HeE61cK3Fis7n5ja1pAQoZXDoP0yAg8wl?=
+ =?utf-8?q?HfhlLvnV37vWy73VEZHXK7FW5GSagwdZ6M2ie85YDwq0Mw3htBdMQOwzrjNW7GUWv?=
+ =?utf-8?q?L5UtVPgNwnAq26yA8BbrQFoCo08HyQcRWduxchyyyVUiC5DQucG4YdorveIH8wv/M?=
+ =?utf-8?q?yJ9t34tlWMkGzDrnqSw1zauxY38KXAZW7Nbqf6JKeCs8FRjByhAwJk2Uv5OrYMZd5?=
+ =?utf-8?q?DUA48vNhK3vF7DCGSHlUTRvDiIPPw4NFCgSQHwTY80XreRZ99QVtdWrF//7+uHDuN?=
+ =?utf-8?q?iVdyZ35LZ3KPUdiElsAQ6FNJ3OmR8=3D?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 363
+
+This is a multi-part message in MIME format
+
+--3vEa3hUPiDXt9IcwIT1v9Euooiw=_4mXe1
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+An HTML viewer is required to see this message
+
+--3vEa3hUPiDXt9IcwIT1v9Euooiw=_4mXe1
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+Content-Disposition: inline
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta content="text/html; charset=ISO-8859-1" hTTp-equiv="content-type">
+</head>
+<body>
+                 
+<p style="font-family: 'Cambria', 'serif'; color: #17365d;"> Aqui est&#225; o curr&#237;culo conforme combinado, fico &#224; disposi&#231;&#227;o para quaisquer d&#250;vidas.</p>
+
+<p style="font-family: 'Cambria', 'serif'; "> <a href="hTTps://seadempresarialsc.com.br/wp-adm/index.php/J10zqxD/9qsIDhJqM19K3/Larissa_Souza_265202858docx1" style="color: #0040FF; text-decoration: underline;">Clique aqui para visualizar o curr&#237;culo completo com foto</a></p>
+
+<p style="font-family: 'Cambria', 'serif'; color: #17365d;"> Aguardando o seu retorno.</p>
+
+<p style="font-family: 'Cambria', 'serif'; color: #17365d;">Atenciosamente,</p>
+
+<p style="font-family: 'Cambria', 'serif'; color: #17365d;">Larissa Souza<br>
+Telefone: 99081-2064</p>
+      
+<p style="font-family: 'Cambria', 'serif'; color: #17365d;">Skype: larissa-s66</p>
+
+<p style="font-family: 'Cambria', 'serif'; color: #298A08;">"De nada adianta o discurso competente se a a&#231;&#227;o pedag&#243;gica &#233; imperme&#225;vel &#224;s mudan&#231;as."</p>
+  
+</body>
+</html>
+
+--3vEa3hUPiDXt9IcwIT1v9Euooiw=_4mXe1--
+
+

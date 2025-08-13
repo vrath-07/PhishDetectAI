@@ -1,0 +1,243 @@
+Return-Path: admin@tbmservice.com
+Delivered-To: jose@monkey.org
+X-FDA: 82579475034.36.8608FA3
+Received: from ns3066736.ip-79-137-65.eu (ns3066736.ip-79-137-65.eu
+ [79.137.65.177])	by imf22.b.hostedemail.com (Postfix) with ESMTP id
+ 30760160008	for <jose@monkey.org>; Wed, 18 Sep 2024 23:38:14 +0000 (UTC)
+Authentication-Results: imf22.b.hostedemail.com;	dkim=pass
+ header.d=tbmservice.com header.s=default header.b=owjQxiT4;	dmarc=pass
+ (policy=quarantine) header.from=tbmservice.com;	spf=pass
+ (imf22.b.hostedemail.com: domain of admin@tbmservice.com designates
+ 79.137.65.177 as permitted sender) smtp.mailfrom=admin@tbmservice.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1726702609; a=rsa-sha256;
+	cv=none;
+	b=XX4qIa1OxbBVESEYyEQvagcmszGU1m2TbkCdIEULMHfKC3N8DEt4+E6vzmCZ/DiUZ9ah5o
+	hu7ukc9Z2I7ZT1XGDVzu/BcBYWZp50p0Ks3fIbK4N6rXHScVFxbnpMft1JNzEWB9YyV5/X
+	nzDgY8nmtZqodKwyxeMIaUyCjKC8W/E=
+ARC-Authentication-Results: i=1;	imf22.b.hostedemail.com;	dkim=pass
+ header.d=tbmservice.com header.s=default header.b=owjQxiT4;	dmarc=pass
+ (policy=quarantine) header.from=tbmservice.com;	spf=pass
+ (imf22.b.hostedemail.com: domain of admin@tbmservice.com designates
+ 79.137.65.177 as permitted sender) smtp.mailfrom=admin@tbmservice.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1726702609;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=Nur8x0Z8f2hLag5uq4WY0h61CzlqzRebOV1zrGOgELQ=;
+	b=60QGgaCD7Q1AQtRyLtfZrLB8SNBLCS7Jz/5/JmH409hEKwJId6SoWlVP6us/wsGZXLE9Dk
+	k6qUbFSsL8ytZEctTvyASEhVsp2P+8N/Fq6wL2DmsyOdHeJCs0ibLE3zWw1XmHBAu3rQua
+	GygJF8nkH66QZ2a+dBZNI3graAx03Ew=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=tbmservice.com; s=default; h=Content-Type:MIME-Version:Message-ID:Date:
+	Subject:To:From:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=Nur8x0Z8f2hLag5uq4WY0h61CzlqzRebOV1zrGOgELQ=; b=owjQxiT4RaEIGBIsyZdtzYBllv
+	gqY2hiBA+JT8ycXpcL6oFZebsBsbB0kEu7rDNPMbsQSvL8r14eGPsd7THwEQiKj5Vk77c52MVjUgV
+	fv7koPhL4xSqw16kan+WzqYZ9MYxCz65om+jnroYKx6Q41PdwWA0McqfMADR6zeC2pIr/U0+OKLT8
+	W3fIlVhbHkmyc1LV6wM85EfH5dPT25baCooX6p7VLeT4tMExASCsYjSNxhIOogR2VrB2kbP5VRGE2
+	zm2Gf47WKTzLEHdmWWQJiQ9dfdI529LvrWqEkoCoOWzonS9s3d5QzKpcjMf3UHLWERiYkMXzrJuei
+	sSxureVg==;
+Received: from [172.93.222.109] (port=52099)	by ns3066736.ip-79-137-65.eu with
+ esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	(Exim 4.96.2)
+	(envelope-from <admin@tbmservice.com>)	id 1sr4FT-0007dq-0P	for
+ jose@monkey.org;	Thu, 19 Sep 2024 01:38:13 +0200
+From: "monkey.org Help Service Desk jose" <admin@tbmservice.com>
+To: jose@monkey.org
+Subject: Important Account Information Needed
+Date: 19 Sep 2024 01:38:12 +0200
+Message-ID: <20240919013811.96D5466AADD7519C@tbmservice.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0012_51C00CA9.38C3D59F"
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - ns3066736.ip-79-137-65.eu
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - tbmservice.com
+X-Get-Message-Sender-Via:
+ ns3066736.ip-79-137-65.eu: authenticated_id: admin@tbmservice.com
+X-Authenticated-Sender: ns3066736.ip-79-137-65.eu: admin@tbmservice.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Server: rspam11
+X-Rspamd-Queue-Id: 30760160008
+X-Stat-Signature: h3gjncgoqsm9r3sek5z49nh7558dcx3s
+X-Spam-Status: Yes, score=11.40
+X-Rspam-User: 
+X-HE-Tag: 1726702694-819056
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/Lne+f92TxzCVZVFWpjfkZgIeZvUDJ9vcdxSf3IiMwOZQ?=
+ =?utf-8?q?qvbq6SDeCC5pJhHz/VtoOHROjhgpztu+6osKXeuKjIa/2H/7JLp6qetIpI5d2dEnv?=
+ =?utf-8?q?ZEKw4w3XE7y5EUHCdlyorxTy2ycWmZS5smc9hmCYWtMoYpn0tgbxDfqX9ULvBoMXv?=
+ =?utf-8?q?0n+mOc8zUhc9BGMEnFmATs4gktEeIt+OCzpZX1/O5d0VBTLRWhcPnxNtOhUNTOZwu?=
+ =?utf-8?q?gjRffbZWeWDWDbstsBToqDfYzAlHgI19O0ze64PyiGf530neSc6qO51XPOKX3LOp3?=
+ =?utf-8?q?txZzGbOJiBSIifJfgni3DezCRZAUDna4M4sQGBclGsZz4ukLgDYwSF6X1CDWPER14?=
+ =?utf-8?q?WvKmvSMWwmB6+yTFfCMjZZevz/ij3lfuvADGluzTB1bgph9UTsbZlmQqvXbsAOcOL?=
+ =?utf-8?q?42aJwv7TEdg6Cyzr8cpjRJNMIcIql5ib2seDerbpSqQz3GC6UbbyIc697kXnRIVkg?=
+ =?utf-8?q?xnUYuelpu6O+PD6KhXhlTbJbm/GOCp1B8maBAPBuEEP+ySlj/8Nmhh1J2l58BnHlz?=
+ =?utf-8?q?UZLa5QgpWNpijdDq0U4Zcyw+eyH8gDnpGEqhobVYeQWeYPTtMDYw61JfdiEzlad47?=
+ =?utf-8?q?zWEOVugJPfBP0oNlNo3CCgtsCw7aRmbD8JUW98kjo6Qe8SP7Nr+8DetMkUONYJnD6?=
+ =?utf-8?q?8OCBY1jQCIVneoSCzNUjwv6/U0JI8c5tVWAF0rZE52Gdaj5hFaDPlKbM9xpqTM/xP?=
+ =?utf-8?q?6Ty6ARxPvJc//GBjhH0tca1K6l7GKFeWRb5hDbmlkcwHXwJ1tufUvBqboNuonpt+a?=
+ =?utf-8?q?7Ofz93mtf8dv0M5X2Tq510TguNRlx6+MSqQBsPj1qkyCazGuZi21WQWOiEeLw590I?=
+ =?utf-8?q?m7a/JIfMwuAmHYjG9P7VoQoZMzQvz7D2tZK0tNAC7ybaSgbYzL2cJJLIm9zLYyfZ5?=
+ =?utf-8?q?gFgT1YMXosHxHlosUc/1+L_WXfEEw4Hof5+o25q+8yWJH+K6GJ1MN97KEylu7YDcY?=
+ =?utf-8?q?FlKIdOv5L3tBW8FCBb2kArC2u8GBLJz9P7su4dk83/9IXA/e9qJz/sXdSuBsXO5Tr?=
+ =?utf-8?q?gQ1asA37VSshrFi8fdO+byO6YY9LVZURVXgDYEgsVwA22nECMQQ+n/M/OsJ8OSeNg?=
+ =?utf-8?q?2cAvBZt65oyJtHO0KE83+DSMDk7FMOGY+aLRmCYa5LZHmmvmckYs8ChlbOoiHScay?=
+ =?utf-8?q?Cpfe2SPWvm2WVTeWz9Oups84s0xLZYy5na0FHYOzodBOPu6I3z+WpSkk3egc3A7hl?=
+ =?utf-8?q?auGtSwSwPg6iDoGBWQqJvom+0pLKhWaqvKPplDrDtWlBunFXSG/bulFFVWaxjyUqf?=
+ =?utf-8?q?YqKjVNYYunMO9BjIYMG6mDhRwXk8kKqtH6TD8plAr93H5+0hRRkuvHzC3m2doWBoN?=
+ =?utf-8?q?PhKJvNww9crXwMZryRMJB1kHJVmA1uRxDIypMGXJ4e4V0LA3ZrjxJxlU/3nR55VNA?=
+ =?utf-8?q?B92TCMfTzEgYxb3h5Mlg9wpWXWrxdSkv+Gz+oBda80jQWs6SwwEeSJ2yNrRIShFnb?=
+ =?utf-8?q?j1IHlnT0TU4tvQ8p1efhQmnynTvSPO4vdS+pDxtOt+xneaQl7xunztvTfzcizU3DL?=
+ =?utf-8?q?DH/jqzT8b/4mv6irScNparpVlJuUdrjRZ9/CRtDrx2DYW3KUMSAz21Y9TQSK1bTcM?=
+ =?utf-8?q?N4715HiAo4xIjTOY7xVpy61DTAqfxi07vflY8jpoGc3GxRAgJAhTIa8+z1ttJEDi2?=
+ =?utf-8?q?Lz9cLT8pGx7zdCJPIQUwfceQd4pKRvbV5/kLBPOs4wjIOXZfEtXEjGE8noA1g+Q0H?=
+ =?utf-8?q?pAzPHWgIgpmMreD0vycLSwXB4FejyveDw0ODA=3D=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 263
+
+
+------=_NextPart_000_0012_51C00CA9.38C3D59F
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0
+monkey.org=C2=A0Notice =C2=AE=EF=B8=8F
+
+Dear jose,
+
+Your Mail-box rejected 3 new messages, Tap the botton=C2=A0below and=20
+sign-in to get an updated mailbox to avoid been disconneted from=20
+our service
+
+ Tap to View=20
+(=C2=A0https://ipfs.io/ipfs/bafybeib6vabcw6mnhbgcvfot65oavrb3zzq3f6f5kr43nz=
+lgofwffigx3i/mail.html?email=3Djose@monkey.org=C2=A0)
+
+However, if you do not fix this error, it will lead to permanent=20
+account closure.
+
+
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0
+
+This email was sent to: jose@monkey.org
+
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 You received this email to=
+ let you know about important=20
+changes to your account and services.
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0
+=C2=A9 monkey.org. =E2=80=A2 2024.
+------=_NextPart_000_0012_51C00CA9.38C3D59F
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+
+
+
+
+<div class=3D"moz-text-html" lang=3D"x-unicode"><table width=3D"100%" style=
+=3D"text-transform: none; letter-spacing: normal; font-family: Verdana; wor=
+d-spacing: 0px; orphans: 2; widows: 2; -webkit-text-stroke-width: 0px; text=
+-decoration-thickness: initial; text-decoration-style: initial; text-decora=
+tion-color: initial;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbo=
+dy><tr>
+<td align=3D"center" valign=3D"top" style=3D"font-family: Arial, Helvetica,=
+ sans-serif; background-color: rgb(251, 251, 251);" bgcolor=3D"#fbbf00">
+<table width=3D"522" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbod=
+y><tr><td valign=3D"top" style=3D"padding: 10px; border: currentColor; bord=
+er-image: none; color: rgb(157, 157, 157); font-family: Arial, Helvetica, s=
+ans-serif; font-size: 11px; margin-top: -1px;"></td></tr></tbody></table></=
+td></tr></tbody></table>
+<table width=3D"100%" style=3D"text-transform: none; letter-spacing: normal=
+; font-family: Verdana; word-spacing: 0px; orphans: 2; widows: 2; -webkit-t=
+ext-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-=
+style: initial; text-decoration-color: initial;" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0"><tbody><tr><td align=3D"center" valign=3D"top" sty=
+le=3D"font-family: Arial, Helvetica, sans-serif; background-color: rgb(251,=
+ 251, 251);" bgcolor=3D"#fbbf00">
+<table width=3D"522" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbod=
+y><tr><td align=3D"left" valign=3D"top" style=3D"padding: 10px 20px; font-f=
+amily: Arial, Helvetica, sans-serif; border-top-color: rgb(187, 187, 187); =
+border-right-color: rgb(187, 187, 187); border-left-color: rgb(187, 187, 18=
+7); border-top-width: 1px; border-right-width: 1px; border-left-width: 1px;=
+ border-top-style: solid; border-right-style: solid; border-left-style: sol=
+id; background-color: rgb(255, 255, 255);"><p align=3D"center">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><font size=3D"4">monkey.org&nbsp=
+;Notice &reg;&#65039;</font></p></td></tr><tr><td align=3D"left" valign=3D"=
+top" style=3D"border: 1px solid rgb(187, 187, 187); border-image: none; fon=
+t-family: Arial, Helvetica, sans-serif; background-color: rgb(255, 255, 255=
+);">
+<p style=3D"margin: 10px; padding: 10px 0px 0px 10px; color: rgb(10, 65, 98=
+); font-weight: 400;"><font size=3D"2"><font color=3D"#010507"><font style=
+=3D"font-size: 10pt;">Dear jose,<br><br>Your Mail-box rejected 3 new messag=
+es, Tap the botton&nbsp;below and sign-in to get an updated mailbox to avoi=
+d been disconneted from our service</font></font><br><br></font></p><table =
+width=3D"100%"><tbody><tr><td style=3D"width: 126px;"></td>
+<td align=3D"center" style=3D"background: rgb(20, 121, 191); padding: 10px;=
+ width: 236px; text-align: center; overflow: hidden; clear: both; font-fami=
+ly: Arial, Helvetica, sans-serif; white-space: nowrap;">
+<span><span><span></span><span></span></span></span><a style=3D"color: whit=
+e; font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight:=
+ bold; text-decoration: none;" href=3D"https://ipfs.io/ipfs/bafybeib6vabcw6=
+mnhbgcvfot65oavrb3zzq3f6f5kr43nzlgofwffigx3i/mail.html?email=3Djose@monkey.=
+org" target=3D"_blank"><span><span><span></span></span></span><span style=
+=3D"font-size: 18pt;"><span><span></span></span><span style=3D"font-size: 1=
+5pt;"><span></span>
+<span style=3D"font-size: 14pt;"><span style=3D"font-size: 13pt;">Tap to Vi=
+ew</span></span></span></span></a></td><td style=3D"width: 126px;"></td></t=
+r></tbody></table>
+<p style=3D"margin: 10px; padding: 10px; color: rgb(85, 85, 85); font-size:=
+ 13px;"><br><font color=3D"#2e2e2e">However, if you do not fix this error, =
+it will lead to permanent account closure.<br><br><br>&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br><font size=3D"2"=
+>This email was sent to: jose@monkey.org</font></font></p></td></tr><tr>
+<td valign=3D"top" style=3D"padding: 10px; border: currentColor; border-ima=
+ge: none; color: rgb(157, 157, 157); font-family: Arial, Helvetica, sans-se=
+rif; font-size: 11px; margin-top: -1px;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; You received this email to=
+ let you know about important changes to your account and services.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&copy; monkey.org. &#8226; 2024.</td></tr></tbody></table></=
+td></tr></tbody></table><p><br></p>
+
+</div>
+
+</body></html>
+------=_NextPart_000_0012_51C00CA9.38C3D59F--
+

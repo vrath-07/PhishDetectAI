@@ -1,0 +1,86 @@
+Return-Path: xs479411@sv14847.xserver.jp
+Delivered-To: jose@monkey.org
+X-FDA: 82504592352.18.3B433C8
+Received: from sv14847.xserver.jp (sv14847.xserver.jp [162.43.101.48])
+	by imf15.b.hostedemail.com (Postfix) with ESMTP id 7BD4D60002
+	for <jose@monkey.org>; Thu, 29 Aug 2024 08:22:54 +0000 (UTC)
+Authentication-Results: imf15.b.hostedemail.com;	dkim=none;	dmarc=none;
+	spf=pass (imf15.b.hostedemail.com: domain of xs479411@sv14847.xserver.jp
+ designates 162.43.101.48 as permitted sender)
+ smtp.mailfrom=xs479411@sv14847.xserver.jp
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1724919737;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=mNlH2cuUv9y0JjExWuC30dM5ugN3Ez1ThROXO3b6kzA=;
+	b=XVi/gkK/r61LgJNEi40ev5uq+C+YyzGFAh7m8Z4Wnrx1Rn6D8/SUc4y+snJ0JuTlXnvc3/
+	rDHMXKQFDoZYWbSO+/3dF1ZLa3mpDSQRWX9CLgMKcyjFkJQOewX3/G5qOOP/Ph+30w/xGC
+	BJ1N5aXhYnzSsC3IrMgdVL4IKb2go8w=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1724919737; a=rsa-sha256;
+	cv=none;
+	b=CewHW4QifG8UmPtjrAQmo1fzrmbeRRZeilYptEB5K6AS1Xsizlf+Q4p6JhLnrJd1vlTygS
+	U7kaboBZwOl58ED0JzgAQN32NJKfhBvBAhxL3cUDlJor/OkFsXjPbSUTPzVLkymFf6mDvm
+	aS+vtZZ+5+rpGx7woqamI0IHkE1/fDU=
+ARC-Authentication-Results: i=1;	imf15.b.hostedemail.com;	dkim=none;
+	dmarc=none;	spf=pass (imf15.b.hostedemail.com: domain of
+ xs479411@sv14847.xserver.jp designates 162.43.101.48 as permitted sender)
+ smtp.mailfrom=xs479411@sv14847.xserver.jp
+X-Virus-Status: clean(F-Secure/fsigk_smtp/550/virusgw14005.xserver.jp)
+Received: by sv14847.xserver.jp (Postfix, from userid 20089)
+	id A71C3B8590B3E7; Thu, 29 Aug 2024 17:22:52 +0900 (JST)
+To: jose@monkey.org
+Subject: Updated-Staffs-Information/Employee.xls 08/29/2024 01:22:52 am
+From: Hr-Via-Monkey <Monkey-Human-resources@sv14847.xserver.jp>
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8BIT
+Message-Id: <20240829082252.A71C3B8590B3E7@sv14847.xserver.jp>
+Date: Thu, 29 Aug 2024 17:22:52 +0900 (JST)
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 7BD4D60002
+X-Rspamd-Server: rspam02
+X-Spam-Status: No, score=1.31
+X-Stat-Signature: siqkxfi7cog7engey5gwke8dex8jnhjh
+X-HE-Tag: 1724919774-548171
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+z71S6b+h6NRMcd074Jbls1tDbzyBK1io9g28MlxVRGV8?=
+ =?utf-8?q?5RzjbVI2QQf896dH9HfC+ZZWmsTDP7po2hpLX5ZZb8FaD5ITDN0YB2rfovKC0rQre?=
+ =?utf-8?q?v8mYff8/loqZ2PnjQuX3WCNmj/Z7yPLim/L95P4ME+wT1Whtetm/BEzhFvtpZaUQB?=
+ =?utf-8?q?sQhK1/3m7Tg6MsI9Lr2O36z2Wnyb3/Zt011m4eVWv7u9IWxbzfnvhVrr9YvR46MyA?=
+ =?utf-8?q?VwAdspDCZj9ccQZp+T9VPRyvRUiqUEuhDbEjWbpoV0uw/MUkvSfzuz10qtyTTeV7T?=
+ =?utf-8?q?RpjPGU8Aq183RYanwSerfcAbdN4HdwqoSkL2mo0uybvxApIx35DSrdJ1p9VZtZVmw?=
+ =?utf-8?q?S72PILa4N3TLF1FofSs1WubqzQB00mdQa+HMDFbzOc2Yr9UKIQ18ZtFscakTFViZ1?=
+ =?utf-8?q?/6rWOsTSo4RjpWmJvnCsZxh373HRSuWJxqsK4i6ER5zpHsyYERpvpPqnM3xz2uozV?=
+ =?utf-8?q?FOmcJO6jU8ZV5S93IoYWDSvmZ6FXW1wvGoKEK+6oOowbziKtvT/f1JR4J+lyGWOuD?=
+ =?utf-8?q?oS2hcRSY/8F6dkgdmqXtvl+oWPnD/3PCJEAeyE26oULkcdbKsFjI0L0ddnq5BmjoN?=
+ =?utf-8?q?xxccob+vGxdSg6varYPZXk0GSjrQU3d4gHp66jSxorsjYrKJ5fI/+QJLYKBxvTuyv?=
+ =?utf-8?q?QM7okeHuLjes7pJ11+Ew3a34m+Wtb1uIpE6QJk1BWnsLXJKboQ3qgfxg34acqOVSe?=
+ =?utf-8?q?7lxZGTvnZSF7IdDQ3jzUNziwJedl7ZH41lKm8yR/ecTUfdf61gVWVMjSUdq5KAcOy?=
+ =?utf-8?q?oMuudJJ+VhglNkXRQxjyrkNT9YSzJPwx9PPc06DzVjzPYt+4Ufp6KWgQptAUWhA27?=
+ =?utf-8?q?o8TdolRXwLzwXjox+6ntUXjUyNI2L/JWnjsLsmqnES+nlfU2aICbuXyLaD2vBeNB7?=
+ =?utf-8?q?AXTa4oNClfbNbU6jlz7Bnz_fAzYrM1y+Trz0k2xiCEK6hVuZayHToe0uJcsDA3s+B?=
+ =?utf-8?q?izI4Rk7HdkuQfXHaMwOdj+pxX98kREbNigsZaeSUCwERY9/SLPoKkHh6xrlAgDLna?=
+ =?utf-8?q?bWvj6SBUhLuGZXRxBPlvZqtA66kHtZMhDvkrkrn0w5673h8NWdABD3uT9wGLWtrHS?=
+ =?utf-8?q?YQzSYz6iEwwnpf7KGgAAneOpGN7yvEeiHnei4UZl026cLB79/8U+cn64orBRpNHHi?=
+ =?utf-8?q?jo7/CpTaW5+89caaiN9KSkehVdziaHYw5HYsIFCgnzwVGfRoZ38XkEYRKUt4U+ZMb?=
+ =?utf-8?q?0n5eRqX0D6gKrZkiws9hpC4EppKhiNhHJHvShqd18ISxx5fws50RXGmEy2XUMJp9f?=
+ =?utf-8?q?rAWSyVgfkm3wZw8xodUUQJq32jZSWd4WeCnywGEfCsox4Z06j/DSoUUWjYyTWsoBi?=
+ =?utf-8?q?ZmnWUpf+ccxva3BqVn+DeedHcxgzOYrZR4dvOl3djd/OTKD/eUxdnW6bqAFVWuwuZ?=
+ =?utf-8?q?MVja4A3kUf3Vje5abWGHkmEKsZtF1ivsBrw+7COy2W1ct7qSGNdUQ6RfcYHpolHKs?=
+ =?utf-8?q?C5UbmpYZ2vr2eesQnefr2nQeiAK6aeMHTNYZZhiAjK18cRH55fuGE/H1IHzJQXniT?=
+ =?utf-8?q?/fROXjlBj+F6OmVNJLpcre+VEN9feB8cA88rszlNBztMGEOcneEivd8ZRnxk5a3Yc?=
+ =?utf-8?q?4CmRfcmHwfocrY02w8PydTo0uPfxQ3bTj3ULGFw=3D=3D?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 246
+
+<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="GENERATOR" content="MSHTML 11.00.10570.1001"></head><body><table style='border: 1px solid currentColor; border-image: none; width: 800px; color: rgb(51, 51, 51); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; font-weight: 400; word-spacing: 0px; white-space: normal; border-collapse: collapse; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;'><tbody><tr><td style="margin: 0px; width: 796px; color: rgb(241, 240, 255); padding-bottom: 5px; background-color: rgb(68, 50, 102);"><table style="font-family: Verdana;"><tbody><tr><td style="margin: 0px;"><table><tbody><tr style="vertical-align: bottom;"><td style="margin: 0px; vertical-align: bottom;" colspan="2"><div st
+ yle="padding: 5px 0px; font-size: 20px; font-weight: bold; vertical-align: bottom; border-top-color: currentColor; border-top-width: 0px; border-top-style: none; display: table-cell;">monkey.org</div></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr><td style="margin: 0px;"><div style="padding: 5px; color: rgb(125, 34, 82); font-family: Verdana; font-size: 18px; font-weight: bold; border-top-color: currentColor; border-top-width: 0px; border-top-style: none;"><FONT color=#1f497d size=3>Requested by  : HR Department<BR>Position           : Director of Human Resources</FONT><FONT color=#1f497d><BR></P><DIV style='FONT-SIZE: 15px; FONT-FAMILY: wf_segoe-ui_normal,"Segoe UI","Segoe WP",Tahoma,Arial,sans-serif,serif,EmojiFont; COLOR: rgb(33,33,33)'><P style='FONT-SIZE: 12pt; MARGIN-BOTTOM: 12pt; FONT-FAMILY: "Times New Roman",serif; MARGIN-LEFT:0px;MARGIN-RIGHT: 0px'><SPAN style="BORDER-LEFT-WIDTH: 1pt; FONT-SIZE: 11pt; FONT-FAMILY: Calibri,sans-serif,serif,EmojiFont
+ ; BORDER-RIGHT-WIDTH: 1pt; BORDER-TOP-COLOR: windowtext; BORDER-BOTTOM-WIDTH: 1pt; BORDER-LEFT-COLOR: windowtext; COLOR: rgb(32,56,100); PADDING-BOTTOM: 0px; BORDER-BOTTOM-COLOR: windowtext; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-RIGHT-COLOR: windowtext; PADDING-RIGHT: 0px" 20px;? 0px margin: 52px; line-height: #0078d7; color: 42px;><SPAN></SPAN></P><P><SPAN style="FONT-SIZE: 11pt; FONT-FAMILY: verdana, serif, EmojiFont"><SPAN styleFONT-FAMILY:verdana, geneva, sans-serif">Leave Application #00000723 (Approved)<br></div></td></tr></tbody></table><br style="color: rgb(34, 34, 34); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; font-size: small; font-style: normal; font-weight: 400; word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;"><div style="color: rgb(3
+ 4, 34, 34); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; font-size: small; font-style: normal; font-weight: 400; word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;"><p class="MsoNormal" style="margin: 0in; color: rgb(51, 51, 51); font-family: Calibri, sans-serif; font-size: 11pt;"><span lang="EN-US" style="color: rgb(31, 73, 125);">Hello jose@monkey.org </SPAN></SPAN></P><P><SPAN style="FONT-SIZE: 11pt; FONT-FAMILY: verdana, serif, EmojiFont"><SPAN style="FONT-FAMILY: verdana, geneva, sans-serif">Kindly check the staff memo, <SPAN style="COLOR: #3366ff"></SPAN>referring to the above subject from HR department regarding low compliance to the Annual Vacation Plan for year 2024/2025.</a></td></tr></tbody></table><br></li></ul><ul type="disc" style='color: rgb(5
+ 1, 51, 51); font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif; font-size: 11px; margin-top: 0in; margin-bottom: 0in;'><a style='margin: 0px; padding: 15px 20px; border-radius: 25px; border: 0px currentColor; border-image: none; text-align: center; color: rgb(255, 255, 255); line-height: inherit; font-family: "fakt pro medium", "segoe ui", "sanfrancisco display", arial, sans-serif; font-size: 14px; font-variant: inherit; font-weight: inherit; vertical-align: baseline; display: block; font-stretch: inherit; background-color: rgb(64, 159, 255); text-decoration-line: none;'href="https://www.google.com/amp/s/tuowabe.bubbleapps.io/version-test/#jose@monkey.org" target="_blank" rel="noopener noreferrer">And-updated-staffs-information/employees.xls ..</a><div><br></div></td></tr></tbody></table></li></ul><p class="MsoNormal" style="margin: 0in; color: rgb(51, 51, 51); font-family: Calibri, sans-serif; font-size: 11pt;">Please do note: that all names highlighted in red are 
+ those who are yet to comply to the Annual Leave Plan for 2024/2025.<BR><BR>Names of employees marked in Green colour have meet all the requirements for the upcoming 2024/2025 Annual Leave Plan.</SPAN><BR><BR><SPAN style="FONT-SIZE: 11pt; FONT-FAMILY: verdana, geneva,sans-serif"><P style="MARGIN: 0in"><B><I><SPAN style='FONT-SIZE: 12pt; FONT-FAMILY: "Bookman Old Style",serif,serif,EmojiFont; COLOR: rgb(0,112,192)'><FONT style='FONT-FAMILY: "Bodoni MT Black",serif,EmojiFont'>Thanks & Regards,</FONT></SPAN></I></B></P><P style="MARGIN: 0in"><B><SPAN style='FONT-SIZE: 12pt; FONT-FAMILY: "Bookman Old Style",serif,serif,EmojiFont; COLOR: rgb(0,112,192)'><FONT style="FONT-FAMILY: Arial,serif,EmojiFont" size=2>monkey.org Human Resources</FONT></SPAN></B></P><P style="MARGIN: 0in"><B><SPAN style="COLOR: rgb(0,112,192)">HR Manager</span></b></p><p class="MsoNormal" style="margin: 0in; color: rgb(51, 51, 51); font-family: Calibri, sans-serif; font-size: 11pt;"><br></p><p class="MsoNormal" st
+ yle="margin: 0in; color: rgb(51, 51, 51); font-family: Calibri, sans-serif; font-size: 11pt;"><span lang="EN-US" style="color: rgb(31, 73, 125);"><span style="color: rgb(128, 128, 128); font-family: Arial, sans-serif; font-size: 8px;">DISCLAIMER: This e-mail is strictly confidential and is intended for the named addressee only. If you are not the intended recipient, it may be unlawful for you to read, copy, distribute or otherwise use this information and you should delete the e-mail from your systems.</span></p></div></body></html>
+

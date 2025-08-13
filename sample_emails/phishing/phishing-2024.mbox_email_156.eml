@@ -1,0 +1,449 @@
+Return-Path: all+bncBDG2ZCFF2MPRBAFOX2ZAMGQEWB3RIXI@honeynet.org
+Delivered-To: jose@monkey.org
+X-FDA: 82150627314.07.B78036A
+Received: from mail-pg1-f200.google.com (mail-pg1-f200.google.com
+ [209.85.215.200])	by imf26.b.hostedemail.com (Postfix) with ESMTP id
+ 035AE180002	for <jose@monkey.org>; Thu, 23 May 2024 19:20:34 +0000 (UTC)
+Authentication-Results: imf26.b.hostedemail.com;	dkim=pass
+ header.d=honeynet.org header.s=google header.b=KpZwkWgi;	arc=pass
+ ("google.com:s=arc-20160816:i=2");	spf=pass (imf26.b.hostedemail.com: domain
+ of all+bncBDG2ZCFF2MPRBAFOX2ZAMGQEWB3RIXI@honeynet.org designates
+ 209.85.215.200 as permitted sender)
+ smtp.mailfrom=all+bncBDG2ZCFF2MPRBAFOX2ZAMGQEWB3RIXI@honeynet.org;	dmarc=none
+ARC-Message-Signature: i=3; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1716492035;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:list-id:list-unsubscribe:list-post:dkim-signature;
+	bh=xqvNC61aHMJK+TA53JNhVo4AgLlMyNiz2iWGkaRXna0=;
+	b=T6pnrAYAWFYz4O/8hC7SH1iIGWKrBw4JrQ2h0fVMEJV2JsE/TiWqmSrHAn2kM/LL4b26R2
+	WKGsP0ok1aJfg79esEH/DRIWbdk+7Sk7PEMxHJVFtZRXE+7u/CyO5uioRnVjIBWk9UMVNd
+	Vw/WazPArZsMeJW1jVwGboXtHnFxLEc=
+ARC-Authentication-Results: i=3;	imf26.b.hostedemail.com;	dkim=pass
+ header.d=honeynet.org header.s=google header.b=KpZwkWgi;	arc=pass
+ ("google.com:s=arc-20160816:i=2");	spf=pass (imf26.b.hostedemail.com: domain
+ of all+bncBDG2ZCFF2MPRBAFOX2ZAMGQEWB3RIXI@honeynet.org designates
+ 209.85.215.200 as permitted sender)
+ smtp.mailfrom=all+bncBDG2ZCFF2MPRBAFOX2ZAMGQEWB3RIXI@honeynet.org;	dmarc=none
+ARC-Seal: i=3; s=arc-20220608; d=hostedemail.com; t=1716492035; a=rsa-sha256;
+	cv=pass;
+	b=U5bqGBEmUOPPSSxC1aSyTL9E3bKHkvm3WwDaNO9PW7O//QSpY9qmbyfP6pVGA7r1A7vGpA
+	EiWmyYie0Y0v4NSShWXHN3Vu1UNKfaeBVx8GEvE8FREPhLzNUBjo+x3ZII6cYgUbYQVWsK
+	ZVfIyIfgLUVrQMvVMFrZonVGrdR+P6E=
+Received: by mail-pg1-f200.google.com with SMTP id
+ 41be03b00d2f7-6818f651293sf126363a12.1        for <jose@monkey.org>; Thu, 23
+ May 2024 12:20:34 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1716492034; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=ul6m0sdoiZFQF8Pc8ffn2mEsSLIstUQQqC3pJihuDiTmapqpJIcsfFFcHYkpbqWgBf
+         j/fRE8JS0SckIyYPg9aeJWux2AkPJHkZy59Z1+RN1uGF/BwKQ510zdMEDzM4NZsqGm4f
+         z2mjE9KebvlCvgAotcfO+LbYhMA3GTpRVvpHE6dShubygafyWwhDR64NdyOzJ42ZGEHU
+         Vlo2kIYhgaIbzZLH7a9WP3CfI95FmT1u4zgJBabF/HZhgtPqhGUUa4/mZWJJkD8nQPQ8
+         DLkIx8Eoep+OVLOgplokYS7haZos0OL8ZdBUoEM62f4Fi1MX3GiPO0ghCl37RoYP0KHB
+         qtgg==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20160816;       
+ h=list-unsubscribe:list-archive:list-help:list-post:list-id        
+ :mailing-list:precedence:reply-to:to:subject:message-id:date:from        
+ :mime-version:dkim-signature;       
+ bh=xqvNC61aHMJK+TA53JNhVo4AgLlMyNiz2iWGkaRXna0=;       
+ fh=lgaE04Zh8Nh+Thr8+9sQjXWNQyidQMz8IIQVSun8/ic=;       
+ b=JMIu6sbcwxCzfdDjs1O0u5ZbaNcFcPKeHWMWyikJWwDB3vz4cjpOmd8C2PL5hIYHG6        
+ ndo79E759xlrVumaolXVsmBXhSgq4DC4Mdpr7GNXU6CwSnFge6c3+nWDA6RysjLNpvhD        
+ jZAqu06yGIDXCAn9Hhw7YOjjYCD3CkE2crxcnZlAQ6+eZn1Ed2Ve7GwViiJANCVKWz7G        
+ NL+91I7nerZ4NK092i72PTQfIod8BXzETb9qCROfoMwTissSvotK4kv7uwUZ6GBQ8FXg        
+ x73NO6DdZXQ3TLeAbBjUES7vqAKcbFiBygu/C0adAj2RgpGSSU1Z0ib6/jOrg4VlBFi6        
+ f9tg==;        darn=monkey.org
+ARC-Authentication-Results: i=2; mx.google.com;       dkim=pass
+ header.i=@gmail-com.20230601.gappssmtp.com header.s=20230601
+ header.b=uviY8L7+;       spf=pass (google.com: domain of eldraco@gmail.com
+ designates 209.85.220.41 as permitted sender)
+ smtp.mailfrom=eldraco@gmail.com;       dmarc=fail (p=QUARANTINE sp=NONE
+ dis=NONE) header.from=agents.fel.cvut.cz
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=honeynet.org; s=google; t=1716492034; x=1717096834; darn=monkey.org;
+        h=list-unsubscribe:list-archive:list-help:list-post:list-id
+         :mailing-list:precedence:reply-to:x-original-authentication-results
+         :x-original-sender:to:subject:message-id:date:from:mime-version:from
+         :to:cc:subject:date:message-id:reply-to;
+        bh=xqvNC61aHMJK+TA53JNhVo4AgLlMyNiz2iWGkaRXna0=;
+        b=KpZwkWgi5xqgwOez+p7l5mXtuyMN4IVltmb7kWBuCCajQfzuLDTihrY/Ocg4HkuOJ5
+         ToBFXy4p/Z0+2X8X/jViTRUIX3xDL3y0jpijADfokS4Gm8NC/tZlQPG/8qBjr0P3L+1K
+         EV9g3UXUrp0GXyyfrcq++449JFwRC0Wi+Ur80nBPFdNhfZzfbIpwuzD4me0AsZqeN3bp
+         pq2IdhO/idtKGcJ26Aic/jQPjsJRaxrfDpJmpCOSRkqLCQkkwLCr0gQDbF/znyXBQtyJ
+         tKnfwfeLinpMm6ZbCJzCO8fzC+Pn2+jOyKoItmmmHv6IkY25jlII2bQeQe3vAqyQ1QYB
+         L5jg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1716492034; x=1717096834;
+        h=list-unsubscribe:list-archive:list-help:list-post
+         :x-spam-checked-in-group:list-id:mailing-list:precedence:reply-to
+         :x-original-authentication-results:x-original-sender:to:subject
+         :message-id:date:from:mime-version:x-beenthere:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=xqvNC61aHMJK+TA53JNhVo4AgLlMyNiz2iWGkaRXna0=;
+        b=glxJLJiodI5hN/Kv2PHzy63UdQEtmVN8WFKz27n3k1d3FYbjy2zhR4aA4H0SIL/YPv
+         F6W/531i+ixSYNaJ2KvsPqld5e4C3aEkjEnizdIA2o5EI8IZldqaHC5iprqauqFgHf6j
+         rj/RNIicR5wkQYwkzoI/i7Xo412L8hk5ABSS1EANtD+0sjdSMnf+YeN/8jJciZ/GAAwY
+         ae8apJ5eGaIuFCkafGaCeCGDXEnhUsyc+BYK6rhOwy74VcPxekUqaG+hIUfji2sNenG4
+         HP1i+sn6X0LQooHuZxrQDklbDH6+M/NFn1hNiR6NG1nQUiaZ3YwV64redcD8+4aqj6xQ
+         v7Ig==
+X-Forwarded-Encrypted: i=2; =?utf-8?q?AJvYcCV467t/8nKAHkYX7rYxXNi9H3mWd+13I0?=
+ =?utf-8?q?YtrnyNwGuNBhPU7x5zfkxjWVRpIV+x+O7InISCHiraC69UdczzKRI=3D?=
+X-Gm-Message-State: AOJu0YzaG0+CDUh/uok5hKK+AC//Mrh/BHqZOURvklGv5HvNYbywZrZm
+	15uimZlANM9shL+lby8fXk9zwiimXaxpLINTXSJ7rLURupQGDYxROwh7XnlWTMM=
+X-Google-Smtp-Source: =?utf-8?q?AGHT+IFHDeGcBYoYTL6Gx4671gMlCdrr7S3YfU/+kMcj?=
+ =?utf-8?q?SF2iYKdA8eujkXdPXi1RNtPQF4F4TveXgg=3D=3D?=
+X-Received: by 2002:a05:6a20:9143:b0:1af:d44c:cfc4 with SMTP id
+ adf61e73a8af0-1b212d5cd2bmr494875637.17.1716492033314;        Thu, 23 May
+ 2024 12:20:33 -0700 (PDT)
+X-BeenThere: all@honeynet.org
+Received: by 2002:a05:6a00:a0b:b0:6f4:78b1:6b91 with SMTP id
+ d2e1a72fcca58-6f8dcf12e10ls178226b3a.0.-pod-prod-07-us; Thu, 23 May 2024
+ 12:20:31 -0700 (PDT)
+X-Received: by 2002:a05:6a00:4c12:b0:6f3:ead3:c287 with SMTP id
+ d2e1a72fcca58-6f8f194beaemr207761b3a.0.1716492031355;        Thu, 23 May 2024
+ 12:20:31 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1716492031; cv=none;
+        d=google.com; s=arc-20160816;
+        b=SWfCSO73ctUY/su6fP0RCsYaQaaFfaCcDJGL4/a0JTjlaDHz/XdK//kHxFgDWpB0b/
+         Xy9AWx3f7+W+uC2119lS4NiarEy4jgFYDJnHEh6vNl+xfPPNLBDtyprPQpy4QesZcZi1
+         hHJT+6wyd1JdOCKji4Iy9R79UwZhApfaHf4E73PT3cmoFgBhbvVZAku2KXDz9r/fNEMW
+         vJg5HF/q26P4ff80MuDSlz1VnOO0ryEZdwXF6WVs1J1l8BG910iQvY1oj3MgDmK64JFk
+         5hl1XgDM3E2J3ChBH31dgP+oEmvn8RbUCbxAhpSQ4ePkpQBvxvn9t7aUIOxHk3IyWM/Z
+         Sm+w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com;
+ s=arc-20160816;       
+ h=to:subject:message-id:date:from:mime-version:dkim-signature;       
+ bh=qPxGySAVGA+7X7thXRIzpxnDN1Mgz5F+bzoU7AKLek0=;       
+ fh=D0M88cubDgULX3HCQWKWAMhazdgiLw3thUsI0IBPfhE=;       
+ b=ZYD4B0zk0HbpwJSYXQRFTtpAIjauQ179Ry4dc1Lg8zq398TAeh05NFKi6t0nSNmH5G        
+ JJKYQTPXh9PUYuq0UojFxQJEEvbkB376PkmSp96BPb3Wn3ieQVFHRWtAsVbsxpG6WXXL        
+ HEt5uVcUK/HcTdZSytH5um2MqzesMz4gMw9c6AEuSd3KHGb7T0c4cIovMdtOFe13IEhe        
+ epy/hJhOLHwX8PeuNRszeHfMpfv7X1huJWyW6zh81y1QCDNdIGLdad1JcsGluWQA4+iD        
+ m2iUMDtvYRshoHAtg6F28+Cq71zMicadeRTAW4Spt6Ypf/KxxHv5cONFJx7lHKC+sq6H        
+ fGwQ==;        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;       dkim=pass
+ header.i=@gmail-com.20230601.gappssmtp.com header.s=20230601
+ header.b=uviY8L7+;       spf=pass (google.com: domain of eldraco@gmail.com
+ designates 209.85.220.41 as permitted sender)
+ smtp.mailfrom=eldraco@gmail.com;       dmarc=fail (p=QUARANTINE sp=NONE
+ dis=NONE) header.from=agents.fel.cvut.cz
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com.
+ [209.85.220.41])        by mx.google.com with SMTPS id
+ d2e1a72fcca58-6f4deb49dd2sor16525591b3a.12.2024.05.23.12.20.31        for
+ <all@honeynet.org>        (Google Transport Security);        Thu, 23 May
+ 2024 12:20:31 -0700 (PDT)
+Received-SPF: pass (google.com: domain of eldraco@gmail.com designates
+ 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+X-Received: by 2002:a05:6a00:44cc:b0:6f4:47b0:6b5d with SMTP id
+ d2e1a72fcca58-6f8f419b039mr94199b3a.30.1716492030394; Thu, 23 May 2024
+ 12:20:30 -0700 (PDT)
+MIME-Version: 1.0
+From: "'Sebastian Garcia' via all" <all@honeynet.org>
+Date: Thu, 23 May 2024 21:20:18 +0200
+Message-ID:
+ <CAPWjjvpr0+sdA47jn-XsvxhBioSihKDwnEQqos0m_ysSMZOTZw@mail.gmail.com>
+Subject: =?UTF-8?Q?=5BAll=5D_Asking_you_to_participate_in_an_questionnaire_?=
+	=?UTF-8?Q?about_Honeypots=3A_=E2=80=9CKnow_your_Honeypot=E2=80=9D=2E?=
+To: Honeynet <all@honeynet.org>
+Content-Type: multipart/alternative; boundary="000000000000bb4955061923f1c4"
+X-Original-Sender: sebastian.garcia@agents.fel.cvut.cz
+X-Original-Authentication-Results: mx.google.com;       dkim=pass
+ header.i=@gmail-com.20230601.gappssmtp.com header.s=20230601
+ header.b=uviY8L7+;       spf=pass (google.com: domain of eldraco@gmail.com
+ designates 209.85.220.41 as permitted sender)
+ smtp.mailfrom=eldraco@gmail.com;       dmarc=fail (p=QUARANTINE sp=NONE
+ dis=NONE) header.from=agents.fel.cvut.cz
+X-Original-From: Sebastian Garcia <sebastian.garcia@agents.fel.cvut.cz>
+Reply-To: Sebastian Garcia <sebastian.garcia@agents.fel.cvut.cz>
+Precedence: list
+Mailing-list: list all@honeynet.org; contact all+owners@honeynet.org
+List-ID: <all.honeynet.org>
+X-Spam-Checked-In-Group: all@honeynet.org
+X-Google-Group-Id: 983218544367
+List-Post: <https://groups.google.com/a/honeynet.org/group/all/post>,
+ <mailto:all@honeynet.org>
+List-Help:
+ <https://support.google.com/a/honeynet.org/bin/topic.py?topic=25838>,
+ <mailto:all+help@honeynet.org>
+List-Archive: <https://groups.google.com/a/honeynet.org/group/all/>
+List-Unsubscribe:
+ <mailto:googlegroups-manage+983218544367+unsubscribe@googlegroups.com>,
+ <https://groups.google.com/a/honeynet.org/group/all/subscribe>
+X-Rspamd-Server: rspam07
+X-Rspamd-Queue-Id: 035AE180002
+X-Spam-Status: No, score=2.09
+X-Stat-Signature: p3m5hx1u783hr3hy4fy3fhkzatymz5tg
+X-Rspam-User: 
+X-HE-Tag: 1716492034-344175
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18Rr85rcd6R2O2OAcoz1Np/jE4OFOIe4Gplw76HNdqjqM6?=
+ =?utf-8?q?7ObcxUIt2sEQbayykSzU3QH4Lh3jlylLb5zOGqnDcBZwA/T0ZqkeCQb2UZFxUmGls?=
+ =?utf-8?q?3TuqMfN4WcjQocflDeZfIBxveSPQq+kDnuY4jO/QhZou5xXw0zdve2MeFIlGd8Tkl?=
+ =?utf-8?q?tjj+582zXo4W5SOzGERLbAa+IZ+QZb11PjrtLb4mUdXOrVm3kgO83FjobDYlVq8Dq?=
+ =?utf-8?q?PtO9wd8pDt/6YVDPBshxOoNC954YZ/mjbUw3u4wz/jbypiiTEFk7J+lMeLSiByr6z?=
+ =?utf-8?q?mQNlYVUtv6j0/CsfjyVOv4Ls0AdLvPHyRjrcK5hlKWy3jUmzvPKEnWjmosqyCBq9a?=
+ =?utf-8?q?AUCEqLwjX+5nhDJqfbtYgesEMSlfjNPnZWCCpOdGOgAgiGHtiXYisSqWlSFNmcNeb?=
+ =?utf-8?q?qUKXZXYfp0Dbb0oQ734xZmq1FViya6P7FZbWUNXwag1MD8lFYvF6ymeUEv9Lc3W1n?=
+ =?utf-8?q?jks3dLBlm10Z263uyFbG+q2nJfClkpWOIS0pQJjzN4ImLrHsrZxOvEKSTr6Vq/cs8?=
+ =?utf-8?q?Lqp261m/VGx5cRJD5uLElsuvDB5rSKvwf+vg8uesLFOT1QzRcLslifGCisjX2iEZP?=
+ =?utf-8?q?qIkrYWbA3pC4OcAOBi8zfBYtekjqyYB/YZmrUYjGUPAViGEIGiaiGUD4Z/Zmxv+ao?=
+ =?utf-8?q?VOgU5PkCeiCPAvbvo5X9mpm5oylse/x18QuG3lMqPl+WUM4/mGniDBIKyHMSqesN8?=
+ =?utf-8?q?YPkX0k70qLAGcovximjva8Hgx5F8wYIkZus/UoCQ8=3D?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 156
+
+--000000000000bb4955061923f1c4
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Honeynet members
+
+My name is Sebastian Garcia from the Czech chapter and Czech Technical
+University in Prague. Together with Carlos Catania (Uncuyo University),
+Muris Sladic (Czech Technical University in Prague), and Emmanouil
+Vasilomanolakis (Technical University of Denmark), we would like to ask for
+your help to conduct a novel and comprehensive study on the current use of
+honeypots.
+
+The main motivation, shared with many of you, is to understand better how
+honeypots are currently used. Our research questions are:
+
+   -
+
+   For which purposes are honeypots used?
+   -
+
+   Why are honeypots used or not used?
+   -
+
+   What are the user experiences of honeypots?
+
+
+As you are surely aware, in the last 10 years, there seems to be a sort of
+resurgence in the use of honeypots, most clearly marked by a growing number
+of new companies offering honeypot solutions. However, many questions
+remain unanswered on how this phenomenon may be growing again.
+
+We believe that a better understanding of the current use of honeypots,
+both for research and production purposes, would greatly help all of us
+move forward to new areas, such as all the new implementations with AI that
+we are currently seeing.
+
+For this reason, we are conducting a small research questionnaire called =
+=E2=80=9CKnow
+your Honeypot 2024=E2=80=9D, and we are asking you to please help by partic=
+ipating
+in a two-part questionnaire. The first part is online, and this text is the
+invitation. Based on the answers to the first part, we plan a second part
+with those of you who would like to participate during a short in-person
+interview during the Honeynet workshop 2024. Drinks are on us.
+
+This is an anonymous and privacy-respecting academic research whose results
+will be shared in this group and published publicly. Your help is greatly
+appreciated.
+
+This is the online questionnaire link (~20mins):
+https://forms.gle/JwSkZsmNzt75iEcp9
+
+Thanks for your help, and we wish to say hi in Copenhagen if you go.
+
+Any questions, please contact us
+
+
+   -
+
+   Sebastian Garcia (Czech Technical University in Prague, CZ). Email:
+   sebastian.garcia@agents.fel.cvut.cz
+   -
+
+   Carlos Harpo Catania (Uncuyo University, AR). Email:
+   harpo@ingenieria.uncuyo.edu.ar
+   -
+
+   Muris Sladic (Czech Technical University in Prague, CZ). Email:
+   sladimur@fel.cvut.cz
+   -
+
+   Emmanouil Vasilomanolakis (Technical University of Denmark, DK). Email:
+   emmva@dtu.dk
+
+
+
+--=20
+researchgate.net/profile/Sebastian_Garcia6
+https://cz.linkedin.com/in/sebagarcia
+https://pgp.mit.edu/pks/lookup?op=3Dget&search=3D0x298BCB1E5CB80F49
+
+To unsubscribe from this group and stop receiving emails from it, send an e=
+mail to all+unsubscribe@honeynet.org.
+
+--000000000000bb4955061923f1c4
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><span id=3D"gmail-docs-internal-guid-38834177-7fff-de4f-df=
+c4-2f18ec320198"><p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;ma=
+rgin-bottom:0pt"><span style=3D"font-size:11pt;font-family:Arial,sans-serif=
+;color:rgb(0,0,0);background-color:transparent;font-variant-numeric:normal;=
+font-variant-east-asian:normal;font-variant-alternates:normal;vertical-alig=
+n:baseline">Dear Honeynet members</span></p><br><p dir=3D"ltr" style=3D"lin=
+e-height:1.38;margin-top:0pt;margin-bottom:0pt"><span style=3D"font-size:11=
+pt;font-family:Arial,sans-serif;color:rgb(0,0,0);background-color:transpare=
+nt;font-variant-numeric:normal;font-variant-east-asian:normal;font-variant-=
+alternates:normal;vertical-align:baseline">My name is Sebastian Garcia from=
+ the Czech chapter and Czech Technical University in Prague. Together with =
+Carlos Catania (Uncuyo University), Muris Sladic (Czech Technical Universit=
+y in Prague), and Emmanouil Vasilomanolakis (Technical University of Denmar=
+k), we would like to ask for your help to conduct a novel and comprehensive=
+ study on the current use of honeypots.=C2=A0</span></p><br><p dir=3D"ltr" =
+style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0pt"><span style=3D"=
+font-size:11pt;font-family:Arial,sans-serif;color:rgb(0,0,0);background-col=
+or:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;f=
+ont-variant-alternates:normal;vertical-align:baseline">The main motivation,=
+ shared with many of you, is to understand better how honeypots are current=
+ly used. Our research questions are:</span></p><ul style=3D"margin-top:0px;=
+margin-bottom:0px"><li dir=3D"ltr" style=3D"list-style-type:disc;font-size:=
+11pt;font-family:Arial,sans-serif;color:rgb(32,33,36);background-color:tran=
+sparent;font-variant-numeric:normal;font-variant-east-asian:normal;font-var=
+iant-alternates:normal;vertical-align:baseline;white-space:pre"><p dir=3D"l=
+tr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0pt" role=3D"pre=
+sentation"><span style=3D"font-size:11pt;background-color:transparent;font-=
+variant-numeric:normal;font-variant-east-asian:normal;font-variant-alternat=
+es:normal;vertical-align:baseline">For which purposes are honeypots used?</=
+span></p></li><li dir=3D"ltr" style=3D"list-style-type:disc;font-size:11pt;=
+font-family:Arial,sans-serif;color:rgb(32,33,36);background-color:transpare=
+nt;font-variant-numeric:normal;font-variant-east-asian:normal;font-variant-=
+alternates:normal;vertical-align:baseline;white-space:pre"><p dir=3D"ltr" s=
+tyle=3D"line-height:1.38;margin-top:0pt;margin-bottom:0pt" role=3D"presenta=
+tion"><span style=3D"font-size:11pt;background-color:transparent;font-varia=
+nt-numeric:normal;font-variant-east-asian:normal;font-variant-alternates:no=
+rmal;vertical-align:baseline">Why are honeypots used or not used?</span></p=
+></li><li dir=3D"ltr" style=3D"list-style-type:disc;font-size:11pt;font-fam=
+ily:Arial,sans-serif;color:rgb(32,33,36);background-color:transparent;font-=
+variant-numeric:normal;font-variant-east-asian:normal;font-variant-alternat=
+es:normal;vertical-align:baseline;white-space:pre"><p dir=3D"ltr" style=3D"=
+line-height:1.38;margin-top:0pt;margin-bottom:0pt" role=3D"presentation"><s=
+pan style=3D"background-color:transparent;font-size:11pt">What are the user=
+ experiences of honeypots?</span><br></p></li></ul><br><p dir=3D"ltr" style=
+=3D"line-height:1.38;margin-top:0pt;margin-bottom:0pt"><span style=3D"font-=
+size:11pt;font-family:Arial,sans-serif;color:rgb(0,0,0);background-color:tr=
+ansparent;font-variant-numeric:normal;font-variant-east-asian:normal;font-v=
+ariant-alternates:normal;vertical-align:baseline">As you are surely aware, =
+in the last 10 years, there seems to be a sort of resurgence in the use of =
+honeypots, most clearly marked by a growing number of new companies offerin=
+g honeypot solutions. However, many questions remain unanswered on how this=
+ phenomenon may be growing again.</span></p><br><p dir=3D"ltr" style=3D"lin=
+e-height:1.38;margin-top:0pt;margin-bottom:0pt"><span style=3D"font-size:11=
+pt;font-family:Arial,sans-serif;color:rgb(0,0,0);background-color:transpare=
+nt;font-variant-numeric:normal;font-variant-east-asian:normal;font-variant-=
+alternates:normal;vertical-align:baseline">We believe that a better underst=
+anding of the current use of honeypots, both for research and production pu=
+rposes, would greatly help all of us move forward to new areas, such as all=
+ the new implementations with AI that we are currently seeing.=C2=A0</span>=
+</p><br><p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bott=
+om:0pt"><span style=3D"font-size:11pt;font-family:Arial,sans-serif;color:rg=
+b(0,0,0);background-color:transparent;font-variant-numeric:normal;font-vari=
+ant-east-asian:normal;font-variant-alternates:normal;vertical-align:baselin=
+e">For this reason, we are conducting a small research questionnaire called=
+ </span><span style=3D"font-size:11pt;font-family:Arial,sans-serif;color:rg=
+b(0,0,0);background-color:transparent;font-weight:700;font-variant-numeric:=
+normal;font-variant-east-asian:normal;font-variant-alternates:normal;vertic=
+al-align:baseline">=E2=80=9CKnow your Honeypot 2024=E2=80=9D</span><span st=
+yle=3D"font-size:11pt;font-family:Arial,sans-serif;color:rgb(0,0,0);backgro=
+und-color:transparent;font-variant-numeric:normal;font-variant-east-asian:n=
+ormal;font-variant-alternates:normal;vertical-align:baseline">, and we are =
+asking you to please help by participating in a two-part questionnaire. The=
+ first part is online, and this text is the invitation. Based on the answer=
+s to the first part, we plan a second part with those of you who would like=
+ to participate during a short in-person interview during the Honeynet work=
+shop 2024. Drinks are on us.</span></p><br><p dir=3D"ltr" style=3D"line-hei=
+ght:1.38;margin-top:0pt;margin-bottom:0pt"><span style=3D"font-size:11pt;fo=
+nt-family:Arial,sans-serif;color:rgb(0,0,0);background-color:transparent;fo=
+nt-variant-numeric:normal;font-variant-east-asian:normal;font-variant-alter=
+nates:normal;vertical-align:baseline">This is an anonymous and privacy-resp=
+ecting academic research whose results will be shared in this group and pub=
+lished publicly. Your help is greatly appreciated.</span></p><br><p dir=3D"=
+ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0pt"><span styl=
+e=3D"font-size:11pt;font-family:Arial,sans-serif;color:rgb(0,0,0);backgroun=
+d-color:transparent;font-weight:700;font-variant-numeric:normal;font-varian=
+t-east-asian:normal;font-variant-alternates:normal;vertical-align:baseline"=
+>This is the online questionnaire link (~20mins)</span><span style=3D"font-=
+size:11pt;font-family:Arial,sans-serif;color:rgb(0,0,0);background-color:tr=
+ansparent;font-variant-numeric:normal;font-variant-east-asian:normal;font-v=
+ariant-alternates:normal;vertical-align:baseline">: <a href=3D"https://form=
+s.gle/JwSkZsmNzt75iEcp9">https://forms.gle/JwSkZsmNzt75iEcp9</a></span></p>=
+<br><p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0=
+pt"><span style=3D"font-size:11pt;font-family:Arial,sans-serif;color:rgb(0,=
+0,0);background-color:transparent;font-variant-numeric:normal;font-variant-=
+east-asian:normal;font-variant-alternates:normal;vertical-align:baseline">T=
+hanks for your help, and we wish to say hi in Copenhagen if you go.</span><=
+/p><p dir=3D"ltr" style=3D"line-height:1.656;background-color:rgb(255,255,2=
+55);margin-top:0pt;margin-bottom:0pt"><span style=3D"font-size:11pt;font-fa=
+mily:Arial,sans-serif;color:rgb(0,0,0);background-color:transparent;font-we=
+ight:400;font-style:normal;font-variant:normal;text-decoration:none;vertica=
+l-align:baseline;white-space:pre-wrap">Any questions, please contact us</sp=
+an></p><p style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0pt"><span=
+ id=3D"gmail-docs-internal-guid-48253889-7fff-81c4-53d9-45e14dbd3c6d"></spa=
+n></p><ul style=3D"margin-top:0px;margin-bottom:0px"><li dir=3D"ltr" style=
+=3D"list-style-type:disc;font-size:11pt;font-family:Arial,sans-serif;color:=
+rgb(34,34,34);background-color:transparent;font-weight:400;font-style:norma=
+l;font-variant:normal;text-decoration:none;vertical-align:baseline;white-sp=
+ace:pre"><p dir=3D"ltr" style=3D"line-height:1.38;background-color:rgb(255,=
+255,255);margin-top:10pt;margin-bottom:0pt" role=3D"presentation"><span sty=
+le=3D"font-size:11pt;font-family:Arial,sans-serif;color:rgb(0,0,0);backgrou=
+nd-color:transparent;font-weight:400;font-style:normal;font-variant:normal;=
+text-decoration:none;vertical-align:baseline;white-space:pre-wrap">Sebastia=
+n Garcia (Czech Technical University in Prague, CZ). Email: <a href=3D"mail=
+to:sebastian.garcia@agents.fel.cvut.cz">sebastian.garcia@agents.fel.cvut.cz=
+</a></span></p></li><li dir=3D"ltr" style=3D"list-style-type:disc;font-size=
+:11pt;font-family:Arial,sans-serif;color:rgb(34,34,34);background-color:tra=
+nsparent;font-weight:400;font-style:normal;font-variant:normal;text-decorat=
+ion:none;vertical-align:baseline;white-space:pre"><p dir=3D"ltr" style=3D"l=
+ine-height:1.38;background-color:rgb(255,255,255);margin-top:0pt;margin-bot=
+tom:0pt" role=3D"presentation"><span style=3D"font-size:11pt;font-family:Ar=
+ial,sans-serif;color:rgb(0,0,0);background-color:transparent;font-weight:40=
+0;font-style:normal;font-variant:normal;text-decoration:none;vertical-align=
+:baseline;white-space:pre-wrap">Carlos Harpo Catania (Uncuyo University, AR=
+). Email: <a href=3D"mailto:harpo@ingenieria.uncuyo.edu.ar">harpo@ingenieri=
+a.uncuyo.edu.ar</a></span></p></li><li dir=3D"ltr" style=3D"list-style-type=
+:disc;font-size:11pt;font-family:Arial,sans-serif;color:rgb(34,34,34);backg=
+round-color:transparent;font-weight:400;font-style:normal;font-variant:norm=
+al;text-decoration:none;vertical-align:baseline;white-space:pre"><p dir=3D"=
+ltr" style=3D"line-height:1.38;background-color:rgb(255,255,255);margin-top=
+:0pt;margin-bottom:0pt" role=3D"presentation"><span style=3D"font-size:11pt=
+;font-family:Arial,sans-serif;color:rgb(0,0,0);background-color:transparent=
+;font-weight:400;font-style:normal;font-variant:normal;text-decoration:none=
+;vertical-align:baseline;white-space:pre-wrap">Muris Sladic (Czech Technica=
+l University in Prague, CZ). Email: <a href=3D"mailto:sladimur@fel.cvut.cz"=
+>sladimur@fel.cvut.cz</a></span></p></li><li dir=3D"ltr" style=3D"list-styl=
+e-type:disc;font-size:11pt;font-family:Arial,sans-serif;color:rgb(34,34,34)=
+;background-color:transparent;font-weight:400;font-style:normal;font-varian=
+t:normal;text-decoration:none;vertical-align:baseline;white-space:pre"><p d=
+ir=3D"ltr" style=3D"line-height:1.38;background-color:rgb(255,255,255);marg=
+in-top:0pt;margin-bottom:10pt" role=3D"presentation"><span style=3D"font-si=
+ze:11pt;font-family:Arial,sans-serif;color:rgb(0,0,0);background-color:tran=
+sparent;font-weight:400;font-style:normal;font-variant:normal;text-decorati=
+on:none;vertical-align:baseline;white-space:pre-wrap">Emmanouil Vasilomanol=
+akis (Technical University of Denmark, DK). Email: <a href=3D"mailto:emmva@=
+dtu.dk">emmva@dtu.dk</a></span></p></li></ul><p></p></span><br class=3D"gma=
+il-Apple-interchange-newline"><div><br></div><span class=3D"gmail_signature=
+_prefix">-- </span><br><div dir=3D"ltr" class=3D"gmail_signature" data-smar=
+tmail=3D"gmail_signature"><a href=3D"http://researchgate.net/profile/Sebast=
+ian_Garcia6" target=3D"_blank">researchgate.net/profile/Sebastian_Garcia6</=
+a><br><a href=3D"https://cz.linkedin.com/in/sebagarcia" target=3D"_blank">h=
+ttps://cz.linkedin.com/in/sebagarcia</a><br><a href=3D"https://pgp.mit.edu/=
+pks/lookup?op=3Dget&amp;search=3D0x298BCB1E5CB80F49" target=3D"_blank">http=
+s://pgp.mit.edu/pks/lookup?op=3Dget&amp;search=3D0x298BCB1E5CB80F49</a></di=
+v></div>
+
+<p></p>
+
+To unsubscribe from this group and stop receiving emails from it, send an e=
+mail to <a href=3D"mailto:all+unsubscribe@honeynet.org">all+unsubscribe@hon=
+eynet.org</a>.<br />
+
+--000000000000bb4955061923f1c4--
+

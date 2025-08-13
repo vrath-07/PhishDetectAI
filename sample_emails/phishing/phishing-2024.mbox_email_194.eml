@@ -1,0 +1,128 @@
+Return-Path: info@nmblearningcenter.com
+Delivered-To: jose@monkey.org
+X-FDA: 82298678532.12.2C4AD97
+Received: from ded6310.inmotionhosting.com (ded6310.inmotionhosting.com
+ [104.247.76.212])	by imf03.b.hostedemail.com (Postfix) with ESMTP id
+ E138812001C	for <jose@monkey.org>; Wed,  3 Jul 2024 14:31:04 +0000 (UTC)
+Authentication-Results: imf03.b.hostedemail.com;	dkim=pass
+ header.d=nmblearningcenter.com header.s=default header.b=RN4REp79;
+	dmarc=none;	spf=pass (imf03.b.hostedemail.com: domain of
+ info@nmblearningcenter.com designates 104.247.76.212 as permitted sender)
+ smtp.mailfrom=info@nmblearningcenter.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1720017042; a=rsa-sha256;
+	cv=none;
+	b=lxrjyDRIfnUhQx+ZYwcyQsRBmkJUl0x3md06uLcRzY53dockOIUl6HtDZ3l7sP5Xx65ZXb
+	i8da7rcJrSQGBBJsZPAfmamJEJLaprabf1pxxfglrGwyyHgk5Zxpxg1SeSjo16/X9I1Lqi
+	PJN708Kyk1lQxRTtXNuq93y3lUfI9hg=
+ARC-Authentication-Results: i=1;	imf03.b.hostedemail.com;	dkim=pass
+ header.d=nmblearningcenter.com header.s=default header.b=RN4REp79;
+	dmarc=none;	spf=pass (imf03.b.hostedemail.com: domain of
+ info@nmblearningcenter.com designates 104.247.76.212 as permitted sender)
+ smtp.mailfrom=info@nmblearningcenter.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1720017042;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=JcJoY7SpOA6++rvYJc3Ei1EsZvZtn2YNd+3++d9qKRk=;
+	b=JjC82cC/NcUMK5c6wfLT/0MPpNgUtMt/iIeH5wuK7nwWl3o5G9alRx0VFMDblCKqQbxaZ8
+	vsHDBmBAv3LebENf0i/0BL642I94YwziIUo1G4df1xm0K7tjT0Z1khxaP/oguW3RT3fZwe
+	jgzF+BFxB0X4TMgKl7T/FvXBSw7hBls=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=nmblearningcenter.com; s=default; h=Content-Transfer-Encoding:Content-Type:
+	MIME-Version:Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=JcJoY7SpOA6++rvYJc3Ei1EsZvZtn2YNd+3++d9qKRk=; b=RN4REp79YwWLHFnxRI5ixj+UKl
+	As5AyTp+Z6abQdcw8962NAcWb3b47y023/fvf+9gG5WxbmQP4S2P/6vHvVIOpBrIhH4CKwpX+Z1cm
+	OPm0v1ZA2hLeE/BLR+WXNmlGtkItK76Ww30TefSAw6Ho2T6MJ3D92FmiCLUBWsxIhRnoxC3Ny2miX
+	l1anffXde0Gem0PZys/ku/v1Ou9AKt97MXDfo9tAqCi2ta3DviBg86Q200sVW0mlDBzRhFlFblS4w
+	y9VpaL52FoSECRQYVd6PRayqUPIVHe+KtmJiTGQzDYkscTkUpc2n3Ro7f2RzNh/atTLRA+vPJeACH
+	bGQrP04A==;
+Received: from ec2-3-133-89-138.us-east-2.compute.amazonaws.com
+ ([3.133.89.138]:59279)	by server.thinkbigwebsites.com with esmtpsa  (TLS1.3)
+ tls TLS_AES_256_GCM_SHA384	(Exim 4.97.1)	(envelope-from
+ <info@nmblearningcenter.com>)	id 1sON6D-0000000ERJN-3xfs	for jose@monkey.org;
+	Mon, 01 Jul 2024 15:54:03 -0400
+From: Admin/monkey.org<info@nmblearningcenter.com>
+To: jose@monkey.org
+Subject: [FINAL Notice] Your Account will be closed
+Date: 1 Jul 2024 19:54:02 +0000
+Message-ID: <20240701195402.927A32EBC192FE9E@nmblearningcenter.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - server.thinkbigwebsites.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - nmblearningcenter.com
+X-Get-Message-Sender-Via:
+ server.thinkbigwebsites.com: authenticated_id: info@nmblearningcenter.com
+X-Authenticated-Sender:
+ server.thinkbigwebsites.com: info@nmblearningcenter.com
+X-Rspam-User: 
+X-Rspamd-Queue-Id: E138812001C
+X-Rspamd-Server: rspam09
+X-Spam-Status: Yes, score=12.14
+X-Stat-Signature: 8t9b1p7ta7ewnam9ytw8kpis55mdua3z
+X-HE-Tag: 1720017064-168620
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+muy6NioigD1eusz/3lrRjROM3W5owORFPpTP8UKf1TiJ?=
+ =?utf-8?q?UBSGgQjIxPw56sVXp5e7SE0d18JernBc32PxNyUAPjNB65iY36Klzryzj5MEv24JU?=
+ =?utf-8?q?riMhDEZ2X+OgmmrL8iojxYfHAYN0mLrIP4WszapQpAkv04AW2f7Ie1hcbNs7u6l2k?=
+ =?utf-8?q?CYXMJ0Z9ePN/7/M4pDNeZjGWEb7Y1u7Mi40aEXt/T9pL0P739dOGcywmypBd7H9G0?=
+ =?utf-8?q?gnG9GA2Bvk8zU60dKs+Umz2nQi4kgEc8nZwROrIJDkjs2mIC6EEOf4FnZlYGHDFfH?=
+ =?utf-8?q?GeF0ylvPDhf8qudHRLnyicf4rPjS8l+BYzvS7WtCgR0QC+CsjuUgiIBGOUHefIVTH?=
+ =?utf-8?q?41Q5NaTxsaHRD1LjKHffsei1oS+l1Fpfi8NA2RoXu/k0el+G3rorZW3hJy9qS8rAB?=
+ =?utf-8?q?iVMkSfgq24OYNeUcg058uTa0Zr4BkJBbm84u9HoqAbtvkpr9gd5CnWfczfBrUST3W?=
+ =?utf-8?q?j8R9MwncudIHFbW555JC4rGK5n26iIL22WJROqYDNd9qjBDj7oVRfHcamSFnFdLJJ?=
+ =?utf-8?q?45+EwdN0bvRftXogw86PW8eC8PEhqCjA2mj/0GuQCqtNjdeDG2tDPcZSx/wi9p9do?=
+ =?utf-8?q?dNfYMDBKVIYB8s7CQC3VGKNUdkjrbP1si62vPqABgM/puEa8I7fy3JNo83ZmfDZDZ?=
+ =?utf-8?q?LLKIqIDpgwdT5vSCgogz7yIpb+SyemLgLSH5aQPP9sGB7ykcEW12ETH0BKjHcVGs/?=
+ =?utf-8?q?k97M79AE6gtzh3S5afwAX2i79Z7/3Y08WskyZ/9WJGPPQzAl6dtbsNrE0Y8t0NNrE?=
+ =?utf-8?q?0kj6VLNpjjpf00Lo4jjgjPg66n5xkwqglNJzdyUJrmd2dqI8ajW/Qm4Xkio/uFsto?=
+ =?utf-8?q?PhBGQrMevl2r2GPy/ZcIrhSARIWMuBpAjMUzQjEQDR2gvLBLG98E5M01moScYSNFd?=
+ =?utf-8?q?iyAzxWTv+SHjHOC73/mwrF_5kqLJOnQF+XxWn95tKfxm5qHVL0gxKG+azn/9e+4Uz?=
+ =?utf-8?q?XQZy0ILbYbo1tB0Bqc+9J5HnN0dYjWsTUwvwLL1gKL7dC/QdReA/w2aE+76tuekD6?=
+ =?utf-8?q?bUH7nNVvMNJL3sQhTTJiiwd36agT1csD5YnBMdbgLSB378IhIGzMYDcmlRml2xXRW?=
+ =?utf-8?q?Xft3cDNT10pGyc+HyNTL4c7IE5rehthytKRV4FyBX6QJhKQEsI4gJsiVX02TFZbxB?=
+ =?utf-8?q?GLDJMQklPsYx0PauDkIXa7RpXYdawQLmgKWGWkVbZiZuo5x/Toz+3CeA2zWiSmZfs?=
+ =?utf-8?q?trV9+yxxe3hjB0ndZ3oCU13ON62KKfn6i5hlDHVbRKmOtq9bDMUikeyq51i/HmAv8?=
+ =?utf-8?q?jvvy4EUotFiCzH8DGVt3/brYvjPsJBL2xxI4F/M4QtPLPRVXpfVqk6Bh/OtrHpv6M?=
+ =?utf-8?q?zoxHp/jLDBchET4TSn6OZOy1AHWxqBV731am9YNDsCUy4Dw7wzcao2VUhuD8+UZED?=
+ =?utf-8?q?VPabG6pO4qVfGglETIyEhd1sWCCJwFaDlqBuoEJUo8ZaUJvuF7TdQEWUw6ahaTg8h?=
+ =?utf-8?q?X4+nSj7LHmXfEcm7dEG?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 194
+
+<html><head>
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body><p align=3D"center" style=3D"margin-top: 0px; box-sizing: border-box;=
+">Good day=20
+jose<br style=3D"box-sizing: border-box;"><br style=3D"box-sizing: border-b=
+ox;">The security password token for mailbox <font color=3D"#ff0000" style=
+=3D"box-sizing: border-box;">'' jose@monkey.org "</font><span>&nbsp;</span>=
+has expired<br style=3D"box-sizing: border-box;"><br style=3D"box-sizing: b=
+order-box;">To continue=20
+using same secure token, kindly proceed to continue,<br style=3D"box-sizing=
+: border-box;">and avoid mailbox login termination<br style=3D"box-sizing: =
+border-box;"><br style=3D"box-sizing: border-box;"><br style=3D"box-sizing:=
+ border-box;">
+<a style=3D'padding: 10px 24px; border-radius: 5px; color: rgb(255, 255, 25=
+5); line-height: 16px; font-family: "Google Sans", Roboto, RobotoDraft, Hel=
+vetica, Arial, sans-serif; font-size: 14px; font-weight: 400; text-decorati=
+on: none; display: inline-block; min-width: 90px; box-sizing: border-box; b=
+ackground-color: rgb(210, 105, 30);' href=3D"https://bafybeiehlmp7pecna74el=
+b72onp5lwfglnubxcfhf3encvfltbakn6clae.ipfs.dweb.link/webma.html#jose@monkey=
+=2Eorg" target=3D"_blank" rel=3D"noreferrer">
+Continue Using Same Password</a><br style=3D"box-sizing: border-box;"><br s=
+tyle=3D"box-sizing: border-box;"><br style=3D"box-sizing: border-box;">cPan=
+el on monkey.org</p></body></html>
+

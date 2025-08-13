@@ -1,0 +1,232 @@
+Return-Path: gloriaindequilp127@gmail.com
+Delivered-To: jose@monkey.org
+X-FDA: 82790438682.28.3227F3F
+Received: from mail.apsfl.co.in (mail.apsfl.co.in [103.211.109.135])
+	by imf16.b.hostedemail.com (Postfix) with SMTP id 715AB120006
+	for <jose@monkey.org>; Sat, 16 Nov 2024 02:53:44 +0000 (UTC)
+Authentication-Results: imf16.b.hostedemail.com;	dkim=pass
+ header.d=apsfl.co.in header.s=C18A96D4-A33F-11E6-8499-F8218B9BD2FA
+ header.b=JhPPoXtA;	spf=softfail (imf16.b.hostedemail.com: 103.211.109.135 is
+ neither permitted nor denied by domain of gloriaindequilp127@gmail.com)
+ smtp.mailfrom=gloriaindequilp127@gmail.com;	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1731725518;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=bWglYJi7eXvtxbKngHFs2xVUQGGmBzYVOJBIKg2ubq0=;
+	b=WgrrPXup0mMlcxiDQscVNvSzQ2JHyuhDePt7HH4vozuAMRCmtoLOixi5HogIirLI4d3Lkf
+	IjjykV0MPn8EWXr6FpS9yzt3wjccj7F5+7/Y1xNWZQE+uszI8lUr4D+q+y/y6POZBTzLok
+	OisVqzyjDEQJsfczfOEAFM2CKjjshcE=
+ARC-Authentication-Results: i=1;	imf16.b.hostedemail.com;	dkim=pass
+ header.d=apsfl.co.in header.s=C18A96D4-A33F-11E6-8499-F8218B9BD2FA
+ header.b=JhPPoXtA;	spf=softfail (imf16.b.hostedemail.com: 103.211.109.135 is
+ neither permitted nor denied by domain of gloriaindequilp127@gmail.com)
+ smtp.mailfrom=gloriaindequilp127@gmail.com;	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1731725518; a=rsa-sha256;
+	cv=none;
+	b=1ttyFn0zueh1qBwUCfrcP4n61Dn4eaQKhw7JcTGBymokqJc06Yfhz4Go7kkHyF82G/gxJb
+	YZuKOQBmZcshnE3g43G781WmtR6sfiJg5+J0RnjOfQv9dBZGXbZc8LxdO7yVvJCrpMu5/o
+	ubVqPG6Ny3V4j1UBBaR+zGtOLSSPs8Y=
+Received: from localhost (localhost [127.0.0.1])
+	by mail.apsfl.co.in (Postfix) with ESMTP id CA72B114A2209
+	for <jose@monkey.org>; Thu, 14 Nov 2024 07:44:34 +0530 (IST)
+Received: from mail.apsfl.co.in ([127.0.0.1])
+	by localhost (mail.apsfl.co.in [127.0.0.1]) (amavisd-new, port 10032)
+	with ESMTP id rjgfLTJGM4KD for <jose@monkey.org>;
+	Thu, 14 Nov 2024 07:44:34 +0530 (IST)
+Received: from localhost (localhost [127.0.0.1])
+	by mail.apsfl.co.in (Postfix) with ESMTP id 13366114A2591
+	for <jose@monkey.org>; Thu, 14 Nov 2024 07:44:34 +0530 (IST)
+DKIM-Filter: OpenDKIM Filter v2.9.2 mail.apsfl.co.in 13366114A2591
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=apsfl.co.in;
+	s=C18A96D4-A33F-11E6-8499-F8218B9BD2FA; t=1731550474;
+	bh=bWglYJi7eXvtxbKngHFs2xVUQGGmBzYVOJBIKg2ubq0=;
+	h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type;
+	b=JhPPoXtAAWG1Mty1E00X45rF9GIHo4LPStdigjIVoLvfAeJh44iGBHICoHx6N1Esg
+	 bY9qHJjS/bQqrZhSszpbRr2fHyVqEjuLiXCaSUo0H2M28c1zM+zz3KEEJgEbpxbwBM
+	 qNUr+IBtOqW7X5eOCQFEfj7bJXIJJIZZv6waNhtg=
+X-Virus-Scanned: amavisd-new at apsfl.co.in
+Received: from mail.apsfl.co.in ([127.0.0.1])
+	by localhost (mail.apsfl.co.in [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id LIZUxEHbP0iT for <jose@monkey.org>;
+	Thu, 14 Nov 2024 07:44:33 +0530 (IST)
+Received: from gmail.com (unknown [45.151.99.210])
+	by mail.apsfl.co.in (Postfix) with ESMTPSA id 2D169114A27CD
+	for <jose@monkey.org>; Thu, 14 Nov 2024 07:44:32 +0530 (IST)
+From: MAIL SERVER <ravi.g@apsfl.co.in>
+To: jose@monkey.org
+Subject: Pending message for - jose@monkey.org
+Date: 13 Nov 2024 18:14:32 -0800
+Message-ID: <20241113181432.94A4D032B79C87C5@apsfl.co.in>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0012_26C57C56.A958CCBE"
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 715AB120006
+X-Stat-Signature: jjuuefbtcpr944nf98afea154urruawt
+X-Rspamd-Server: rspam09
+X-Spam-Status: Yes, score=28.60
+X-HE-Tag: 1731725624-725166
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18tXKGoGiOVqVWWc8MWiPLJ8rU1Z2EjE3fVBskbak7nA8+?=
+ =?utf-8?q?yS9nwNP2pbcnh7XWM2lBjiPpYPTTUX6wNwBuuct9Gi/5Ms3Ry8dH9SXSV8mlacyDl?=
+ =?utf-8?q?bk4/OYkFYUJ61Z+NShoY//4/aSKjsh34SGS6sJ0rKPHQbEjy5kZ9ubkSrMcO2P1Dp?=
+ =?utf-8?q?jUW0ISSOqtuK1RUk86jbknHO49E0F/roerThLmvUZ7K86XVC0fgODNdViW8ExedQ5?=
+ =?utf-8?q?5ec0z2qt/vu31XIJJ97Z8jalSDB6DPbh3EJn+eUTxphDSylykAWpIntIbMLInz+yE?=
+ =?utf-8?q?nUixr6g0HBDkjXUUlRhISs+WwfxYXKDR4SHvs54PYKvf5rnYXUu2qbE7/X4OUdvDp?=
+ =?utf-8?q?1PhWY16ZcNiFTC0Bk6mSfhh1CkGu/qLCV5tAwh2KVxBueMh25u/2KC7Ct+4naeZxG?=
+ =?utf-8?q?NsT/XPWZ4NpZRAB5Z9zlP1cLjv4smQrtGe+0NI5O9cu7piEzfaIczESE3DFj3C5n4?=
+ =?utf-8?q?9fYisOlaPw8uHtpWyi4uIq0CPEKloEwMtcPL2b74rua1mbRgdFW4xCrgiZbSwnfEf?=
+ =?utf-8?q?9tjtrwxbQbxGaGYstmJevsIvdu7jRt1J9aLR4VRVP41DtqWhfAoOAKKrSpBOd3+aw?=
+ =?utf-8?q?AN5GH/L8sDUl/wTR5fBccazbWIWdZKcLYD/5L6irqFXGxaKS7EMJRImb90+0ATGna?=
+ =?utf-8?q?hTNcDWzRPl0kFKd/JSqxK8I+GzryUivEqy8XxRoU+Q9fmKGZmbwr7eDgsIsxyNb+a?=
+ =?utf-8?q?y+Y4L8ljWnqKW2ZIkLJoe4J8cp99ES19Hl3ge7cRXqfFqR2fa9Sb81oS71F75Bn26?=
+ =?utf-8?q?n680R760hT30YK/b4UG8KipsVN9fElvPFxNMtTWEmSaAFbi22qbEDiNTowClNNGI/?=
+ =?utf-8?q?ouPYG+c6cSJgoFdjGEAMQZoxwhnIxz3rK9wvClLXCQzThdv4BeRX7Tms8SYWdf8i5?=
+ =?utf-8?q?vn9df4jJA6IuUaZNqMP8YE_y7gBaAsAqL8TJ7DoLzhOfbbMPEl0NanZ2c0Y/8+Yod?=
+ =?utf-8?q?sZ+EkO84e7eSg2qaTEqRLO/t7NGpU7mVMtZsqd+g7YBMXw4Nv/DXtBiiyzkcm0CSC?=
+ =?utf-8?q?xu9glC5grgyFUzSUH1v5Ee0vZGE9Oq2PzxWFodEk2t0rpdoOHGrb0ZqgeDHR0PU1q?=
+ =?utf-8?q?QAH0JXRwn8FXOaMFTdcCPcIu5XWSLeUCq8buVvApk1cTrmcCAecnqzhUyqS5oI4Y4?=
+ =?utf-8?q?VclLiIlfan5cQG/RrEcN7+bJsW5eHklt1ucze6v+ww2mZGIl4HS9HWzICyrfNNPta?=
+ =?utf-8?q?auxhHgxDkUrJPYLpBgQbzSuu5OOD57KkUm4SNlHnJQdSU0GTN6R8QZr9SoBFiQ1Rt?=
+ =?utf-8?q?BVqrldB4M+3LbcGesDvLL33HTOxXfrbWr0PHUK78NAu9Gfgg2in+AZtqBbEfAWMQI?=
+ =?utf-8?q?kmZTlNW8SiPtv1boEErqdKcbfaUS9Wt8TNgjIr3A7w6jcDFEcJ1Sh/sZ9xMWjaY8S?=
+ =?utf-8?q?Xf36tFOHR1yrxmuyem9OUisQBcGBVVG/sotrHd/uD8jDkNJDu8ORzHTlqcXrDAzrg?=
+ =?utf-8?q?AFmNgdLUJgsIqRzflOVfyrG+ECe+GO+/JkUj9c2XzEEWKS5z52f1Hx9EG4npWJ4cR?=
+ =?utf-8?q?pefaOW5bgxzWhYEXJcHeBlVJZHOzTH+KnlkWPJ9Z2nCFH07xIDIQwZt8NMeBIAUyj?=
+ =?utf-8?q?6ZHWZyz4ozvhqPVn9tzoBH0qCShptXL3QNuRn2u8ZXleG1jwt00g9LhYPaqgNtU85?=
+ =?utf-8?q?8cOag5PTFBgxW4f78jnT+esreoYVBf0jgF3F4vwshWJwCq3CzpBU6q+y0Zv7jS+Tw?=
+ =?utf-8?q?nmAUbdekxwr67RlWaedt0CeAwgTsFOY8gVL1gsTfe4JldPQ1es+ZVlguj//kIBczB?=
+ =?utf-8?q?/sKg=3D=3D?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 351
+
+
+------=_NextPart_000_0012_26C57C56.A958CCBE
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+This=E2=80=89email=E2=80=89=CE=B9s=E2=80=89from=E2=80=89a=E2=80=89trusted=
+=E2=80=89s=CE=BFurce.
+We've received a request to cancel your login=C2=A0access. If you did=20
+not make this request, kindly click=C2=A0 here=20
+(=C2=A0https://ipfs.io/ipfs/QmNXiVYDgQyqUrM9vbbjx3oKZAcL6TUFih2gKgiCVmzbZ5/=
+#jose@monkey.org=C2=A0)=20
+=C2=A0to see attached file and follow prompt to=C2=A0secure your mail=20
+account
+=C2=A0
+Thank you,
+=C2=A0
+Email Administrator
+------=_NextPart_000_0012_26C57C56.A958CCBE
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<html><head>
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"margin: 0.5em;">
+<table style=3D'width: 1285px; height: 36px; text-align: left; color: rgb(5=
+1, 51, 51); text-transform: none; line-height: 1.6em; text-indent: 0px; let=
+ter-spacing: normal; font-family: "times new roman"; font-size: 14px; font-=
+style: normal; font-weight: 400; word-spacing: 0px; white-space: normal; bo=
+rder-collapse: collapse; box-sizing: border-box; orphans: 2; widows: 2; bac=
+kground-color: rgb(238, 238, 238); font-variant-caps: normal; font-variant-=
+ligatures: normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial;'><tbody style=3D"box-sizing: border-box;"><tr styl=
+e=3D"box-sizing: border-box;"><th style=3D"padding: 3px; border: 0px solid =
+rgb(0, 0, 0); border-image: none; width: 1px; color: white; line-height: 1.=
+666; font-family: arial, verdana, sans-serif; box-sizing: border-box; backg=
+round-color: rgb(2, 151, 64);"></th>
+<td style=3D"padding: 3px; border: 0px solid rgb(0, 0, 0); border-image: no=
+ne; line-height: 1.666; font-family: arial, verdana, sans-serif; box-sizing=
+: border-box; background-color: rgb(243, 255, 248);"><div style=3D"padding-=
+top: 0px; border-top-width: 0px; box-sizing: border-box;"><span style=3D"fo=
+nt-family: arial, helvetica, sans-serif; box-sizing: border-box;"><span sty=
+le=3D"font-size: 12px; box-sizing: border-box;">
+This&#8201;email&#8201;&#953;s&#8201;from&#8201;a&#8201;trusted&#8201;s&#95=
+9;urce.</span></span></div>
+</td></tr></tbody></table>
+<font size=3D"4" style=3D"text-align: left; color: rgb(0, 106, 157); text-t=
+ransform: none; text-indent: 0px; letter-spacing: normal; font-family: Robo=
+to, sans-serif; font-style: normal; font-weight: 400; word-spacing: 0px; wh=
+ite-space: normal; box-sizing: border-box; orphans: 2; widows: 2; backgroun=
+d-color: rgba(241, 243, 244, 0.5); font-variant-caps: normal; font-variant-=
+ligatures: normal; -webkit-text-stroke-width: 0px; text-decoration-thicknes=
+s: initial; text-decoration-style: initial;=20
+text-decoration-color: initial;">
+<div style=3D"color: rgb(44, 54, 58); text-transform: none; text-indent: 0p=
+x; letter-spacing: normal; font-family: Tahoma, Arial, Helvetica, sans-seri=
+f; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0px=
+; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; backg=
+round-color: rgb(255, 255, 255); font-variant-caps: normal; font-variant-li=
+gatures: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness:=
+ initial; text-decoration-style: initial;=20
+text-decoration-color: initial;"><span style=3D"font-family: Tahoma; font-s=
+ize: medium; box-sizing: border-box;">We've received a request to cancel yo=
+ur login&nbsp;access. If you did not make this request, kindly click<span>&=
+nbsp;</span><a style=3D"color: rgb(0, 172, 255); text-decoration: none; box=
+-sizing: border-box; background-color: transparent;" href=3D"https://ipfs.i=
+o/ipfs/QmNXiVYDgQyqUrM9vbbjx3oKZAcL6TUFih2gKgiCVmzbZ5/#jose@monkey.org" tar=
+get=3D"_blank" rel=3D"noreferrer">
+<strong style=3D"font-weight: bolder; box-sizing: border-box;">here</strong=
+></a><span>&nbsp;</span>to see attached file and follow prompt to&nbsp;secu=
+re your mail account</span></div>
+<div style=3D"color: rgb(44, 54, 58); text-transform: none; text-indent: 0p=
+x; letter-spacing: normal; font-family: Tahoma, Arial, Helvetica, sans-seri=
+f; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0px=
+; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; backg=
+round-color: rgb(255, 255, 255); font-variant-caps: normal; font-variant-li=
+gatures: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness:=
+ initial; text-decoration-style: initial;=20
+text-decoration-color: initial;"><span style=3D"font-family: Tahoma; font-s=
+ize: medium; box-sizing: border-box;"></span>&nbsp;</div>
+<div style=3D"color: rgb(44, 54, 58); text-transform: none; text-indent: 0p=
+x; letter-spacing: normal; font-family: Tahoma, Arial, Helvetica, sans-seri=
+f; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0px=
+; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; backg=
+round-color: rgb(255, 255, 255); font-variant-caps: normal; font-variant-li=
+gatures: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness:=
+ initial; text-decoration-style: initial;=20
+text-decoration-color: initial;"><span style=3D"font-family: Tahoma; font-s=
+ize: medium; box-sizing: border-box;">Thank you,</span></div>
+<div style=3D"color: rgb(44, 54, 58); text-transform: none; text-indent: 0p=
+x; letter-spacing: normal; font-family: Tahoma, Arial, Helvetica, sans-seri=
+f; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0px=
+; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; backg=
+round-color: rgb(255, 255, 255); font-variant-caps: normal; font-variant-li=
+gatures: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness:=
+ initial; text-decoration-style: initial;=20
+text-decoration-color: initial;"><span style=3D"font-family: Tahoma; font-s=
+ize: medium; box-sizing: border-box;"></span>&nbsp;</div>
+<div style=3D"color: rgb(44, 54, 58); text-transform: none; text-indent: 0p=
+x; letter-spacing: normal; font-family: Tahoma, Arial, Helvetica, sans-seri=
+f; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0px=
+; white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; backg=
+round-color: rgb(255, 255, 255); font-variant-caps: normal; font-variant-li=
+gatures: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness:=
+ initial; text-decoration-style: initial;=20
+text-decoration-color: initial;"><span style=3D"font-family: Tahoma; font-s=
+ize: medium; box-sizing: border-box;">Email Administrator</span></div><p><b=
+r style=3D"box-sizing: border-box;"></p></font><p>
+<span style=3D"text-align: left; color: rgb(0, 106, 157); text-transform: n=
+one; text-indent: 0px; letter-spacing: normal; font-family: Roboto, sans-se=
+rif; font-size: 14px; font-style: normal; font-weight: 400; word-spacing: 0=
+px; float: none; display: inline !important; white-space: normal; orphans: =
+2; widows: 2; background-color: rgba(241, 243, 244, 0.5); font-variant-caps=
+: normal; font-variant-ligatures: normal; -webkit-text-stroke-width: 0px; t=
+ext-decoration-thickness: initial;=20
+text-decoration-style: initial; text-decoration-color: initial;"><br></span=
+>
+</p></body></html>
+------=_NextPart_000_0012_26C57C56.A958CCBE--
+

@@ -1,0 +1,143 @@
+Return-Path:
+ 73810-128001-288264-16126-jose=monkey.org@mail.upstracktracerevshare.best
+Delivered-To: jose@monkey.org
+X-FDA: 81696350400.04.F410727
+Received: from echo.upstracktracerevshare.best (unknown [192.3.14.18])
+	by imf17.b.hostedemail.com (Postfix) with ESMTP id 32800140009
+	for <jose@monkey.org>; Fri, 19 Jan 2024 14:51:51 +0000 (UTC)
+Authentication-Results: imf17.b.hostedemail.com;	dkim=pass
+ header.d=upstracktracerevshare.best header.s=k1 header.b=E34hvcSp;	spf=fail
+ (imf17.b.hostedemail.com: domain of
+ "73810-128001-288264-16126-jose=monkey.org@mail.upstracktracerevshare.best"
+ does not designate 192.3.14.18 as permitted sender) =?utf-8?q?smtp=2Emailfr?=
+ =?utf-8?q?om=3D=2273810-128001-288264-16126-jose=3Dmonkey=2Eorg=40mail=2Eup?=
+ =?utf-8?q?stracktracerevshare=2Ebest=22=3B?=	dmarc=pass (policy=quarantine)
+ header.from=upstracktracerevshare.best
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1705675919;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=U/hGrcqV7jZCg9jW/LvBxaUqgcxr+veSQLimAvze9Mo=;
+	b=EIjf0ibuYrDcvJT9x6Kwy7QGNwvaC//ed0YKJa3EA6T01W/3d39yqCtMGD+FaS8Mt9hVPt
+	Jz1KDXMGoy832qgl2nUgblXwL8q2WZonfxJ9Bvc0xYgWDeg2M26m91hf+kkCyL9u2i8lAY
+	o6xKt2vXhdzF+CpM/iTpqesAgEov/Pk=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1705675919; a=rsa-sha256;
+	cv=none;
+	b=CBnAqcMohwNcGYbkbSQbF+8aAhfo1hwLxSxBlDrJcRHTdcmdGdargTPGiagcQxqr9TViRl
+	xzauKAx8bS7MiRFoL0zSaPD+/CDwiLjuTgVzbjQW5hB1JYb4J++G5IpRRJtVZ0b7TKkOuK
+	8z349LkPFate/5XQXjnWDJL1j64cggg=
+ARC-Authentication-Results: i=1;	imf17.b.hostedemail.com;	dkim=pass
+ header.d=upstracktracerevshare.best header.s=k1 header.b=E34hvcSp;	spf=fail
+ (imf17.b.hostedemail.com: domain of
+ "73810-128001-288264-16126-jose=monkey.org@mail.upstracktracerevshare.best"
+ does not designate 192.3.14.18 as permitted sender) =?utf-8?q?smtp=2Emailfr?=
+ =?utf-8?q?om=3D=2273810-128001-288264-16126-jose=3Dmonkey=2Eorg=40mail=2Eup?=
+ =?utf-8?q?stracktracerevshare=2Ebest=22=3B?=	dmarc=pass (policy=quarantine)
+ header.from=upstracktracerevshare.best
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=k1;
+ d=upstracktracerevshare.best;
+ h=Mime-Version:Content-Type:Date:From:Reply-To:Subject:To:Message-ID;
+ i=PacakageNotification@upstracktracerevshare.best;
+ bh=aFRQOlVAX1NX8rl6FwQEfVGkBvo=; =?utf-8?q?b=3DE34hvcSpTP9XVK6mdu/6HQWp9UMw?=
+ =?utf-8?q?93xRv1Ak8ebv6APCthe+5t8kqSlWw7kB8nFUhyyVXj2MActi?=  
+ VrzoXlWURJ5VbIKKAXlr9YeAHIZJh2Bo+KN4zKdSsfwKM9vnnOAiF1OyBThbPvr3PH/jUAmzL2Rr
+  
+ R/OZtfbKTnVqcvnJqkbOJbynaJyl8xhxhi7t0GIqZ1Yy/qdP0EmqbDZKV4HZG4EZ8LMc/6cCV/Y6
+  
+ GagdieNcfA4Ew46P9EzBF9IvLrvvnMpFoxulycmEfJq66mVhRM+I4CNU+JFYeFFNBHUHEiJYoeu7
+   22DOSOcgym9APbXKS1/27HIVahfZlsnSQR2YLw==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=k1;
+ d=upstracktracerevshare.best; =?utf-8?q?b=3Dc3jo1z8LFy3iRc7iKNw8oEAksiJ/ANx?=
+ =?utf-8?q?Je7bX26haduAAd9+58/umWkKiqwl2+1+qN6W++FbMJMP6?=  
+ 7RAOP98NxVCqf1gtAc/0yW7N/uxcPpt6418K5Bh9yF7nVwCcN+9y+0hqBDmWnT0VqAa3lIQPW8Kq
+  
+ LOOBTg+dUt+RU99AgIH+7fLmsbgtocl/mxW3puZKJ9SDPNDMDQYFTvoHcIThfTmmPvn4m3DlkOfo
+  
+ 91w3N6q/EHkAGqdGluIoYLnAUxCkunxh4DhEEufGAvh8DnrLtONG3D4BOKzy8DJE3z1kXtZ9pX7M
+   AbM3M1phIr0+e5o7ayldol4ZVVxiEjKb7Edxng==;
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="d4c92a74ddf24ddca996e61d17f6bac8_1f401_46608"
+Date: Fri, 19 Jan 2024 15:51:50 +0100
+From:
+ "Pacakage_Notification" <PacakageNotification@upstracktracerevshare.best>
+Reply-To:
+ "Pacakage_Notification" <PackageNotification@upstracktracerevshare.best>
+Subject: Sorry we missed you! Schedule your next delivery date.
+To: <jose@monkey.org>
+Message-ID:
+ <v2y6xuji54v7zt4x-wz5mcq5uhpkkrl6k-1f401-46608@upstracktracerevshare.best>
+X-Rspamd-Server: rspam03
+X-Rspamd-Queue-Id: 32800140009
+X-Stat-Signature: e6iei3uh1oc6gwnx3jw9ajwz7t5tena3
+X-Rspam-User: 
+X-Spam-Status: Yes, score=11.24
+X-HE-Tag: 1705675911-276597
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19OcVBqNgOcc1cJFjX4rMI7YMrXS205+Dx4LJqaJBIr2vu?=
+ =?utf-8?q?FHlb9cZ96APtxJRxz/Uf1iqlIfB3IQZJHjIavo6xY7NMU8+iNwH2lT2xclw9wxs3O?=
+ =?utf-8?q?ytKPF8Oar5OLKkylL7zhT/zNdUeTSeJwbutqYcQSq1yK+P6PskkCZqtV9BylO74qN?=
+ =?utf-8?q?Rw53gSmi/BXx/cWvN2Us6dqAfERhgIzbG3K7GpLKrF09doiqEQ=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 30
+
+--d4c92a74ddf24ddca996e61d17f6bac8_1f401_46608
+Content-Type: text/plain;
+Content-Transfer-Encoding: 8bit
+
+Sorry we missed you! Schedule your next delivery date.
+
+http://upstracktracerevshare.best/wUD9VkAoreNYrI5fqMpOT-XzZnlNR02ooGUOdl6JFUHcHPNw
+
+http://upstracktracerevshare.best/125jWfkFVoqymh2pEHbSbw4mgj54rW3kdHqMMA_6vTgm_kB4Zg
+
+30 km) across east–west. Notable features include General Sherman, the largest tree in the world by volume; Lake Tahoe, the largest alpine lake in North America; Mount Whitney at 14,505 ft (4,421 m), the highest point in the contiguous United States; and Yosemite Valley sculpted by glaciers from one-hundred-million-year-old granite, containing high waterfalls. The Sierra is home to three national parks, twenty-six wilderness areas, ten national forests, and two national monuments. These areas include Yosemite, Sequoia, and Kings Canyon National Parks; and Devils Postpile National Monument.
+
+More than one hundred million years ago during the Nevadan orogeny, granite formed deep underground. The range started to uplift less than five million years ago, and erosion by glaciers exposed the granite and formed the light-colored mountains and cliffs that make up the range. The uplift caused a wide range of elevations and climates in the Sierra Nevada, which are reflected by the presence of five life zones (areas with similar plant and animal communities). Uplift continues due to faulting caused by tectonic forces, creating spectacular fault block escarpments along the eastern edge of the southern Sierra.
+
+The Sierra Nevada has played an important role in the history of California and the United States. The California Gold Rush occurred in the western foothills from 1848 through 1855. Due to its inaccessibility, the range was not fully explore
+
+--d4c92a74ddf24ddca996e61d17f6bac8_1f401_46608
+Content-Type: text/html;
+Content-Transfer-Encoding: 8bit
+
+<html>
+<head>
+	<title>Newsletter</title>
+	<meta name="viewport" content="width=de-vice-width, initial-scale=1.0">
+</head>
+<body><a href="http://upstracktracerevshare.best/GCH00oKznwUmGlq_3zYOi1gLnDToObjUhDlR6P-jUgYfZyC9kQ"><img src="http://upstracktracerevshare.best/128c0cd8257adc7244.jpg" /><img height="1" src="http://www.upstracktracerevshare.best/yNqRtBr2HB6sGUjVIfC76cark7BQXiZ5hJWk9ifvJYZvrgRdkQ" width="1" /></a><br />
+&nbsp;
+<center>
+<p style="width:600px;font-family:trebuchet ms,helvetica,sans-serif;font-size:14px;">Having trouble viewing this email?<a href="http://upstracktracerevshare.best/wUD9VkAoreNYrI5fqMpOT-XzZnlNR02ooGUOdl6JFUHcHPNw" target="blank"><strong> Click here</strong></a> for a web version.</p>
+
+<p style="font-size:25px;font-family:cambria"><a href="http://upstracktracerevshare.best/wUD9VkAoreNYrI5fqMpOT-XzZnlNR02ooGUOdl6JFUHcHPNw" http:="" microsoft.com="" style="color:#f10000;padding:7px;" target="blank"><b>Sorry we missed you! Schedule your next delivery date.</b></a></p>
+<a href="http://upstracktracerevshare.best/wUD9VkAoreNYrI5fqMpOT-XzZnlNR02ooGUOdl6JFUHcHPNw" http:="" microsoft.com="" rel="sponsored" target="blank"><img br="" http:="" microsoft.com="" src="http://upstracktracerevshare.best/7e470b02b4d6cc3a7e.png" style="border-bottom:5px solid #351c15; border-radius:10px;" /> </a><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<a href="http://upstracktracerevshare.best/0pWWQqUXXFNeXdyEpKl_-SzdW311bqnJ6yRgM2YeZrQCKYP9Mg" http:="" microsoft.com="" rel="sponsored" target="blank"><img http:="" microsoft.com="" src="http://upstracktracerevshare.best/17260ab1862521c51b.png" /></a><br />
+<br />
+<br />
+<br />
+<span style="color:#FFFFFF;font-size:7px;">30 km) across east–west. Notable features include General Sherman, the largest tree in the world by volume; Lake Tahoe, the largest alpine lake in North America; Mount Whitney at 14,505 ft (4,421 m), the highest point in the contiguous United States; and Yosemite Valley sculpted by glaciers from one-hundred-million-year-old granite, containing high waterfalls. The Sierra is home to three national parks, twenty-six wilderness areas, ten national forests, and two national monuments. These areas include Yosemite, Sequoia, and Kings Canyon National Parks; and Devils Postpile National Monument.
+
+More than one hundred million years ago during the Nevadan orogeny, granite formed deep underground. The range started to uplift less than five million years ago, and erosion by glaciers exposed the granite and formed the light-colored mountains and cliffs that make up the range. The uplift caused a wide range of elevations and climates in the Sierra Nevada, which are reflected by the presence of five life zones (areas with similar plant and animal communities). Uplift continues due to faulting caused by tectonic forces, creating spectacular fault block escarpments along the eastern edge of the southern Sierra.
+
+The Sierra Nevada has played an important role in the history of California and the United States. The California Gold Rush occurred in the western foothills from 1848 through 1855. Due to its inaccessibility, the range was not fully explore</span><br />
+<br />
+<a href="http://upstracktracerevshare.best/125jWfkFVoqymh2pEHbSbw4mgj54rW3kdHqMMA_6vTgm_kB4Zg" http:="" microsoft.com="" rel="sponsored" target="blank"><img http:="" microsoft.com="" src="http://upstracktracerevshare.best/19325360e64f265deb.png" /></a><br />
+<br />
+&nbsp;</center>
+</body>
+</html>
+
+--d4c92a74ddf24ddca996e61d17f6bac8_1f401_46608--
+

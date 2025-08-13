@@ -1,0 +1,100 @@
+Return-Path: bounces+27596889-6ee7-jose=monkey.org@sendgrid.net
+Delivered-To: jose@monkey.org
+X-FDA: 79631874546.20.0B99FE1
+Received: from wrqvxqqd.outbound-mail.sendgrid.net
+ (wrqvxqqd.outbound-mail.sendgrid.net [149.72.164.77])	by
+ imf27.b.hostedemail.com (Postfix) with ESMTP id 427DD18773EC9	for
+ <jose@monkey.org>; Wed, 29 Jun 2022 16:55:32 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.net;
+	h=content-type:mime-version:subject:from:to;
+	s=smtpapi; bh=YkqWU/4R4srSa4TvcSIddwkOT45k3/fUr6cOPosstOY=;
+	b=g/Z4eqdorF/Z4tGLZknZSccRZ4qKDrdv1qlPohleXOKY83xBZFFaEw0Fi3ppQiucmGWr
+	wX+jvg+RV9vRsc81Zx/lgXBwqXyPb0yqFWyDKjipfjFswK8m28rLGPVvNAQwUZlDMwviNW
+	9+a5hhpsPTvz/+yckERTZXrwKJuv6CN0I=
+Received: by filterdrecv-687fbd5fff-tblmg with SMTP id
+ filterdrecv-687fbd5fff-tblmg-1-62BC8400-3B        2022-06-29
+ 16:55:28.614821356 +0000 UTC m=+1812423.924798157
+Received: from [74.143.94.244] (unknown)
+	by geopod-ismtpd-3-6 (SG)
+	with ESMTP
+	id mBb2pEM9TwCDKwKazGImCA
+	Wed, 29 Jun 2022 16:55:28.413 +0000 (UTC)
+Content-Type: multipart/mixed; boundary="===============0813900150=="
+MIME-Version: 1.0
+Subject: You Have New Security Message
+From: American Express <wilkiena.www@gmail.com>
+Date: Wed, 29 Jun 2022 16:55:31 +0000 (UTC)
+Message-ID: <mBb2pEM9TwCDKwKazGImCA@geopod-ismtpd-3-6>
+X-SG-EID:  2/OwGpjz+YDFPHPSefD6MEw2hLVW15hjJtBazagAgwNoPW1NKiD13uiGuUV+VP
+ =?utf-8?q?Ds3R4ybm31WuorCzzGnEa2A2QRtRbAyAUWRpBWM?==?utf-8?q?28dOiejvtctDK3?=
+ =?utf-8?q?WOmKHN5ddnxrhyPGHlGAMJe0xEhR9lNlJTDcyUuPaOYlixK25tcJeyIWPYQJcgL2j?=
+ =?utf-8?q?KKrAUOn/17qaEyY8qfX78PZlhYI/5xGuLXfaS0DFeDu0UzOxjJLzmBXOC4+zxRu+3?=
+ =?utf-8?q?AMuch9twQCn?=
+To: Recipients <wilkiena.www@gmail.com>
+X-Entity-ID: 3ccCo202Yzmyb9uqutYhfA==
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1656521732; a=rsa-sha256;
+	cv=none;
+	b=qf4sOl4FtGQ3SLQtDeHkGVz7UymkfoaWcVQ7m0YMSg1rUY0WBRrwGubKZpdmIxOFcqOZAE
+	3z3l4sSMfMcw4EgW5mSfpjQNxnWk+XaX1FkACI2QpTZ4WU4lgnpr5hMTHnCAJvohTVcd5W
+	u4sSL1ikfgwRXInHFygVZifArecUGeE=
+ARC-Authentication-Results: i=1;	imf27.b.hostedemail.com;	dkim=pass
+ header.d=sendgrid.net header.s=smtpapi header.b="g/Z4eqdo";	spf=pass
+ (imf27.b.hostedemail.com: domain of
+ "bounces+27596889-6ee7-jose=monkey.org@sendgrid.net" designates 149.72.164.77
+ as permitted sender)
+ smtp.mailfrom="bounces+27596889-6ee7-jose=monkey.org@sendgrid.net";
+	dmarc=fail reason="SPF not aligned (relaxed), DKIM not aligned (relaxed)"
+ header.from=gmail.com (policy=none)
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1656521732;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=YkqWU/4R4srSa4TvcSIddwkOT45k3/fUr6cOPosstOY=;
+	b=AdXGP1kiVPT2YRLXyhNTEYqmWYuYPw3f4YJ8GTKZ3Y/NZVlXeCqeCUM+kVu61Awos/PSf6
+	E5DZHX4qklpn9ZmT7iq1rxa+Hcjs2cXBw8mEB22Yd/+OBy+uURCDIEdazI6a3qFuPzMsSo
+	bQgJIIE/FHTYrYkt3QiQiKEHLwZi2pU=
+Authentication-Results: imf27.b.hostedemail.com;	dkim=pass
+ header.d=sendgrid.net header.s=smtpapi header.b="g/Z4eqdo";	spf=pass
+ (imf27.b.hostedemail.com: domain of
+ "bounces+27596889-6ee7-jose=monkey.org@sendgrid.net" designates 149.72.164.77
+ as permitted sender)
+ smtp.mailfrom="bounces+27596889-6ee7-jose=monkey.org@sendgrid.net";
+	dmarc=fail reason="SPF not aligned (relaxed), DKIM not aligned (relaxed)"
+ header.from=gmail.com (policy=none)
+X-Rspam-User: 
+X-Rspamd-Server: rspam04
+X-Spam-Status: No, score=6.50
+X-Stat-Signature: 8wf6yuncnjhq7xyxr8kkjenk7pdtb6zc
+X-Rspamd-Queue-Id: 427DD18773EC9
+X-HE-Tag: 1656521732-124657
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 73
+
+You will not see this in a MIME-aware mail reader.
+--===============0813900150==
+Content-Type: multipart/alternative; boundary="===============0364316601=="
+MIME-Version: 1.0
+
+--===============0364316601==
+Content-Type: text/plain; charset=us-ascii
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+Content-Description: Mail message body
+
+
+--===============0364316601==
+Content-Type: text/html; charset=us-ascii
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+Content-Description: Mail message body
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3Diso-8859-1"/></head></html>
+--===============0364316601==--
+
+--===============0813900150==
+--===============0813900150==--
+

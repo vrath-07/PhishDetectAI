@@ -1,0 +1,145 @@
+Return-Path: networkdoc@ecoremailing.com
+Delivered-To: jose@monkey.org
+X-FDA: 82757600562.08.3078B53
+Received: from box.ecoremailing.com (box.ecoremailing.com [131.226.2.122])
+	by imf17.b.hostedemail.com (Postfix) with ESMTP id 746A314000A
+	for <jose@monkey.org>; Thu,  7 Nov 2024 01:43:09 +0000 (UTC)
+Authentication-Results: imf17.b.hostedemail.com;	dkim=pass
+ header.d=ecoremailing.com header.s=mail header.b=TCh7ZxbQ;	spf=pass
+ (imf17.b.hostedemail.com: domain of networkdoc@ecoremailing.com designates
+ 131.226.2.122 as permitted sender) smtp.mailfrom=networkdoc@ecoremailing.com;
+	dmarc=pass (policy=quarantine) header.from=ecoremailing.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1730943625;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=cT/xYLAssLv3tcPoOqXDLiOhzT64dh7cPF7xkRX1oTg=;
+	b=lqNGSSJrCF9o7Ntl3q1uxaZYo9E5rPin2Kq3XFLgCQ69INjeWpGgrWvyQN3ThecADo8FOE
+	omWLYREY+Wkqheysrc7Bm90gHAJmNEkaMB2bpoTiKQT2oQpojtfWl4daLhAfpSc3rX8AXz
+	kxtVd/3A3umyIRjnc94oq39Ln6LH71w=
+ARC-Authentication-Results: i=1;	imf17.b.hostedemail.com;	dkim=pass
+ header.d=ecoremailing.com header.s=mail header.b=TCh7ZxbQ;	spf=pass
+ (imf17.b.hostedemail.com: domain of networkdoc@ecoremailing.com designates
+ 131.226.2.122 as permitted sender) smtp.mailfrom=networkdoc@ecoremailing.com;
+	dmarc=pass (policy=quarantine) header.from=ecoremailing.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1730943625; a=rsa-sha256;
+	cv=none;
+	b=lMxmYmPUaiGKChmE7Wn3vuOX6OCC8ms2b+VVZepIqFW3DnZJtj4l1OC2sj91dVG1ctpKCv
+	3UWxXAvTS4CAI2C1RAJbtSeKgx3e3XCXP88vaarEqaum+k9L1RuOLc54n8hErNetBl1V0h
+	4G2oOwXMkQA7yY1iVayLV6FkiWD8Lfw=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=ecoremailing.com;
+	s=mail; t=1730943800;
+	bh=fTdQWMnNH9mTvnthTWTdE2FSy/g0OxHR2MQ/0EuYD/Y=;
+	h=From:Subject:To:Date:From;
+	b=TCh7ZxbQ7DzQidZjYJiZ48IPT1k/3DvKML9LMPjIbTs+qsaVj795pmQPvtFPpkVtS
+	 ggrs0hpd9X/p4jUO8/KFZQhdw+vyV7vFIdqg/LuxOKQy6Se/pL9hvdZ9BGrWAJplDT
+	 1DtF7iSLAQy5U41tBGwKCtvvjgak1pIygq+yHJC7V8wh9OH7ZEmajEZ5DmEDWEK96t
+	 m4lydTqFnnqBlFA4I8gICxmO/oM1hV9p0ECRl2+f311aSXebG5d9/c3dWu7mxl7wSd
+	 TEUERpRNE4o/2eHCPOx+Z3gmY+cdKDDl6uPaGCbWZfOcnHlcHAbwGgNJjzam+NrOki
+	 egpbJu/rSUbTw==
+Received: from authenticated-user (box.ecoremailing.com [131.226.2.122])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by box.ecoremailing.com (Postfix) with ESMTPSA id A3DB48E9EF
+	for <jose@monkey.org>; Thu,  7 Nov 2024 09:43:19 +0800 (CST)
+From: "Support Mail" <networkdoc@ecoremailing.com>
+Subject: Service Suspension Notice
+To: <jose@monkey.org>
+Content-Type: multipart/alternative;
+ boundary="5fkZJrRepseSjaOtNEWnbjr3OGRhs=_aQl"
+MIME-Version: 1.0
+Date: Thu, 7 Nov 2024 02:43:20 +0100
+Message-Id: <071920241143026569E56BE2$1BADD02716@ecoremailing.com>
+X-Rspamd-Server: rspam06
+X-Rspamd-Queue-Id: 746A314000A
+X-Stat-Signature: um39owid5gz3axg6wbc76n4ixz7njmod
+X-Spam-Status: No, score=0.20
+X-Rspam-User: 
+X-HE-Tag: 1730943789-720332
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+rhfvERiM6sHU8Us3AvrH9AZrtTOdpF8He0NUXwTonS47?=
+ =?utf-8?q?3bTVOGOJFtkBj702j2FDs1BrUfOzt38migi/pjS+urygJoCOEjrvrlk9UFdmUUaxF?=
+ =?utf-8?q?rrchiz9+TVoYbwH3YXN2mHET+4yE5JmhAHDT1mNn4ufo3pttcduXVc3EoSQZL58/Q?=
+ =?utf-8?q?5cWGTSHljeVMtTRch1w+qNg4AZ6cOd/3QJ+LSLOvPEITilYv+yxsp4b2Ln8E+unmV?=
+ =?utf-8?q?26+Wc461YkGP9+snJxGEqpH6j94j9at2D8V1/T8xT3/K9wz6jho1QF+73vtL690z7?=
+ =?utf-8?q?eQGKTN9LlFELgKtecuNV877e3lFUmOO32mSG6iKwlcSaSb7TJnKJYvM0qX6oGvU75?=
+ =?utf-8?q?QhtPd+UUk+maC+6cSZhEZ1GFrrqJKah0fW5Hb329fZ0Bt5vSzPD4sKC/U6ANaz7Zm?=
+ =?utf-8?q?jXvcxaHbqmrkq/vY74LTrab6e444UVLSu40eP98lBeBWV9VB0VEliZTvOrO5nzVQj?=
+ =?utf-8?q?sQ9l699oGeEvnooPKHAVnfxIb6UQuFzZGJmEjTHQyNFqCyHiMOv96i1qoCkx4EWX8?=
+ =?utf-8?q?pLdLhHFWTuzOGXtjoGv9xmzq0k11R+24K+nu/zLFx73XW5hxpEETBVLSHMINzKSmf?=
+ =?utf-8?q?w/pwOSuReEZfeDxxlvNJo5t847XOJ/ECCpnzNYCRXq5PkAnvN2Po9eeghYoloKhft?=
+ =?utf-8?q?lg7mmT0CYnIz9lNuHqpI9AJgDcL1K6Zo2EyJ/Ch572aCPI7HqblXRifR1L8BsGY6x?=
+ =?utf-8?q?4PAkplfMZsY2oluUCdDCZOHT0YGk8JqKPLLmRX4RG7pG3gBM/REl5PhkiVVgMXdq7?=
+ =?utf-8?q?2my++d/rD6SdjNhHZtdro1Ptke577r0kODhbWfT47+gTGHZX3lzWB5VtoJQVFOKpR?=
+ =?utf-8?q?QggOsayff8U4lXAcZcNUNAu7YhjE/EZU9kuD27ltaW7cOls2OIZ08KePKiUi92jFY?=
+ =?utf-8?q?mI/mNG/91DBx5gZOT03G93_aABx4zNqTB5u4rrbuF/6emgKdyeIyv9z4fifFb6jGM?=
+ =?utf-8?q?mCsYKh+xrjeG6ZzFrCOj2lDU6b2vtGS0BnPn20ASHAdGCwP/SPvap/jjixfz6Ca2o?=
+ =?utf-8?q?gAENGjrF700hY3qronHdBiBJ05+ojHRATnCM5DtWBD3mtnWGIesOhGoi6e/MkTjzU?=
+ =?utf-8?q?uL9r4GdJcFZnY33XN+UmDSJkXQdZPqoP3bFfEIJoC446febSwY/BLNzkRm3EdS++k?=
+ =?utf-8?q?1ww7OsXUwrW1Ib1Mt1HRcrmxIUVupMccfwvO2qxhvdlWVGJ3lYFyJfOMETNeB+b4n?=
+ =?utf-8?q?x0ACjMKnw8WE7ndBriGkoYkkobmrAsdahCwGjWH+wgjmIUUmx7AZsOKewPu5TCV3H?=
+ =?utf-8?q?rDfJtc0NYIy0OCJXP/pJNKNy5OuxXq9MuzQEJUYGMU/S+h+wMuuM7WpFKP3sqVuzX?=
+ =?utf-8?q?2VFFEGbqGfPJ0lKapete42FBqcjT4wJ90ivQx16cdCH4sTYXkgJM4?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 331
+
+This is a multi-part message in MIME format
+
+--5fkZJrRepseSjaOtNEWnbjr3OGRhs=_aQl
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+monkey.org Mail Administrator Thursday, November 7, 2024 2:43:19 AM
+
+Hi jose@monkey.org,
+
+You need to verify your mail account to continue using our serivce.
+
+VERIFY YOUR MAIL HERE https://globinter.store/.dtm/MailUpdateFresh/#jo=
+se@monkey.org
+
+Thanks for using our services
+
+monkey.org =A9 All Rights Reserved
+
+--5fkZJrRepseSjaOtNEWnbjr3OGRhs=_aQl
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-=
+8859-1">
+  <META name=3D"viewport" content=3D"width=3Ddevice-width, initial-sca=
+le=3D1"> <META name=3D"format-detection" content=3D"telephone=3Dno"><t=
+itle>Service Suspension Notice</title>
+ </head>
+ <body style=3D"BACKGROUND-COLOR: #ffffff" bgColor=3D#ffffff> <P align=
+=3Dleft>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <FONT color=3D#0000ff size=3D5>=
+monkey.org Mail Administrator Thursday, November 7, 2024 2:43:19 AM</F=
+ONT></p><p align=3Dleft><FONT size=3D3 face=3DArial>&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </FONT></p><p align=3Dleft><FONT size=3D=
+3 face=3DArial>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hi &nbsp;&nb=
+sp;jose@monkey.org,</FONT></p><p align=3Dleft><FONT face=3DArial>&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</FONT></p><p align=3Dleft>=
+<FONT face=3DArial>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; You need to verify y=
+our mail account to continue using our serivce.</FONT></p><p align=3Dl=
+eft><FONT face=3DArial>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </FO=
+NT></p><p align=3Dleft><FONT face=3DArial>&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;<A href=3D"https://globinter.store/.dtm/MailUpdateFresh/=
+#jose@monkey.org"><STRONG><FONT size=3D5>VERIFY YOUR MAIL HERE</FONT><=
+/STRONG></A></FONT></p><p align=3Dleft><FONT face=3DArial>&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </FONT></p><p align=3Dleft><FONT face=3D=
+Arial>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thanks for using our =
+services</FONT></p><p align=3Dleft><FONT face=3DArial>&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp; </FONT></p><p align=3Dleft><FONT face=3DAri=
+al>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <FONT color=3D#0000ff>mo=
+nkey.org &copy;&nbsp; All Rights Reserved</FONT></FONT></P></body>
+ </html>
+
+--5fkZJrRepseSjaOtNEWnbjr3OGRhs=_aQl--
+
+

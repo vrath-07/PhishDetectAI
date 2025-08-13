@@ -1,0 +1,230 @@
+Return-Path: no-reply@mobliityworks.com
+Delivered-To: jose@monkey.org
+X-FDA: 82736062122.04.1441735
+Received: from smtp.mobliityworks.com (smtp.mobliityworks.com [172.245.91.57])
+	by imf17.b.hostedemail.com (Postfix) with ESMTP id B36DD14000B
+	for <jose@monkey.org>; Fri,  1 Nov 2024 03:16:12 +0000 (UTC)
+Authentication-Results: imf17.b.hostedemail.com;	dkim=pass
+ header.d=mobliityworks.com header.s=202409 header.b=TLxUil4d;	spf=pass
+ (imf17.b.hostedemail.com: domain of no-reply@mobliityworks.com designates
+ 172.245.91.57 as permitted sender) smtp.mailfrom=no-reply@mobliityworks.com;
+	dmarc=pass (policy=quarantine) header.from=mobliityworks.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1730430868;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=TlaFH0vuPaK7JRxnjijvavF10RALIUmnu4Sf80J6UVg=;
+	b=aDv4O0ePNvuDhZqlard2eniDiqVpXrgRYYZ1DGHXp6qoDlg3m5kffRoUPGqH5XGmrFSAcp
+	dDaoEwrD9YPydhhvS7YoAzBXJKOsny0bk0p1LQyMijzlmgNCP6sfBMC5bm/REx5qSmQoXy
+	99ehus1sg0YNd7aoLPDz3tVN0Stl/x4=
+ARC-Authentication-Results: i=1;	imf17.b.hostedemail.com;	dkim=pass
+ header.d=mobliityworks.com header.s=202409 header.b=TLxUil4d;	spf=pass
+ (imf17.b.hostedemail.com: domain of no-reply@mobliityworks.com designates
+ 172.245.91.57 as permitted sender) smtp.mailfrom=no-reply@mobliityworks.com;
+	dmarc=pass (policy=quarantine) header.from=mobliityworks.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1730430868; a=rsa-sha256;
+	cv=none;
+	b=eEaduSmJSxo5A5tZKKy27r1CF4SYR75ogAMn5mDawaZZa+SkIJ/HTjzAwnJp5W59t/Zw1t
+	6KX5Yf2KHmk4rHtU/2k1hrTqKaFfg6v5CpUL3XkfFhW06PlHQiHjbCO9sM4u8fz0O1Gbm/
+	7xWeEWfS8yutELhdvBA8/BAiogsV2VQ=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=mobliityworks.com;
+	s=202409; t=1730430979;
+	bh=TlaFH0vuPaK7JRxnjijvavF10RALIUmnu4Sf80J6UVg=;
+	h=From:To:Subject:Date:From;
+	b=TLxUil4dqs+ZmLwV8Y3jyclYvknr7ivgzht7YDPy5c3691vfl96bGGBD2a3O2qMRv
+	 Ni3zznLuOVTRK9zWrhLWvgBbGCw+qMLB3HyFCrrvt8Eh5um+Pt9m9cjGXOT/meqR3j
+	 G7XFCaXArq4Y5QGvEmG3AsyxjRuP/wFUmBAc9wIjm7YHBuu4k8Yvoc6CVffhzyBCpD
+	 09gBn4NPGgTCKsR15YVCLoahjlvxxP1duLgCHdq14lVfLYVi/FD501buh0hUV9WbA8
+	 BpwY70Xd5JSqa38o3F1IPcf98U764xHSbXYPSscCusLyXGCZbp7oYzqfrU8CJulxiL
+	 5zvo1gEXm051Q==
+Received: from ip-129-109.dataclub.info (unknown [84.38.129.109])
+	by smtp.mobliityworks.com (Postfix) with ESMTPSA id 9AD0582D47
+	for <jose@monkey.org>; Fri,  1 Nov 2024 03:16:19 +0000 (UTC)
+From: monkey.org Portal Notification <no-reply@mobliityworks.com>
+To: jose@monkey.org
+Subject: Request for e-mail address verification
+Date: 1 Nov 2024 04:16:18 +0100
+Message-ID: <20241101041616.5870C3A1598B3F95@mobliityworks.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Spam-Status: No, score=0.40
+X-Stat-Signature: j4o6hjfx4xztgq6rzyih61wfk7ktufqf
+X-Rspamd-Server: rspam12
+X-Rspamd-Queue-Id: B36DD14000B
+X-Rspam-User: 
+X-HE-Tag: 1730430972-537690
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18PUhTCgZwqjBAvzastIPPuUoR8yF5liudbeX+NjgMmc7j?=
+ =?utf-8?q?n7k261R7X67Zwqw9wlpMQEbVDFHFxtZ9zFr+zG8gqsaxCdb9yuI2Q/gBDJIFxxEQb?=
+ =?utf-8?q?WBBzmXHKfTuZ702FshaMMhJTNLaN0QGg7RGE8HaeCxMC2Ephyj3rb6L+1G4zo85lD?=
+ =?utf-8?q?Pg0RuMqLPneC6bhPMeEkRFjSQP5V6EtGRPrYnEpkYRbr+ikZrWDypOSSO5OBv+ExA?=
+ =?utf-8?q?C9OBdkR+tH0I0RGq27P2fMRWtGeJMvZmZVZCRWtfEYE4/jgnifsllsbg38esmesF3?=
+ =?utf-8?q?j8Ykc+UFaJRFFtE/6yhed5wiDXsY1A8dIIhXUKAKAynJpZICiO/j+HDScYQ0mNmxB?=
+ =?utf-8?q?G6aiRcJoEmpJDtPS2CFElRn7tpLI4e+BjBXInTviJntp22Lt+W7A7zOWPKh3IAjH5?=
+ =?utf-8?q?qolnLViULggEgWCFkpR5Vyr5rT9vI4TzSBSuDjycaPCoLTpk+KjqImfa1diShpBmj?=
+ =?utf-8?q?oF+k8BOrzrRaDW/fN3dG1TV55xYZ3T/VvYj2sBu7waVMiY1AJrOPXaZHXesUAvflL?=
+ =?utf-8?q?lSd/da6Tn9JBv6TF0uXUWquRYOD0B03gtZtePOO11eInYYwxMXfGZWwzMHXWqoFOr?=
+ =?utf-8?q?tUbDoeFOHFOa3mxl6yeZ7o38LzIglBlzRuaa2K3OAH9jWgvz+3qBsBr7h2dFCN8CU?=
+ =?utf-8?q?+LGLvAPqujSxD2/kh+nKxHdq89HRYeVy4x0Vj+ewZTvXXAQk8T5smyccPz0fCGpYE?=
+ =?utf-8?q?rxCcMGf9StzU63fi9yMCRwyTSWik45Hrz6AGuFyVgCgsBhl/yBWSBeHQnxgHh0ZxS?=
+ =?utf-8?q?JRVHsiyb+vkBGvYPn7fnKiOYvBfNElnh5TIpLkJQkPQGM3YrqfFqabWIQiRCIIS7N?=
+ =?utf-8?q?p0yQ2E/Pkup5XDG1q7Bm2DgQMg4jvkDR1lELPxiZmMP74XudaS3RrXztJccvpzUOs?=
+ =?utf-8?q?h87O44x1i0ZjM85rwpzJAp_dIZURUU0zWdkzogBEd4+SdXbH+B6JnwmzXt7LhsVpl?=
+ =?utf-8?q?CFILRlEEF2733cR0CHbFnTZ5HomlAY2dnzy86ba/7HLjJ2DhfEzflksSjWxXuAQyy?=
+ =?utf-8?q?rjvBe+JXtVanRGEVkjUF6L1pbzQ/8oIdg/RMeFITwadgtguJEUwSqUBSa28vbJ9bF?=
+ =?utf-8?q?ueqUJM/4VTvuYLkaYV+vZjclVwkM92Xc7dPfgqthxK279f4FEdgQP5HauCbJlY2dJ?=
+ =?utf-8?q?SVseV6kLeoW8WcN7G1NmY8t14PYXLITPPsjEngBXOZnZaOhnu+/Gh0I5Obl7vQHV6?=
+ =?utf-8?q?tFrEuzKsmAgQoupUUyH0tJ4FD+BUwnxi6rPhpiBBTL50g/gpxNbtNTriM3cCwReYq?=
+ =?utf-8?q?CU9k3VcNPP0yEZbH3K9B8DX29NO6znZWBuyni2u2gV3YI89Prq0JU0EJopn9Dvuog?=
+ =?utf-8?q?=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 322
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<table width=3D"100%" align=3D"center" style=3D'color: rgb(26, 26, 26); tex=
+t-transform: none; letter-spacing: normal; font-family: "YS Text", Arial, s=
+ans-serif; font-size: 16px; font-style: normal; font-weight: 400; word-spac=
+ing: 0px; white-space: normal; border-collapse: collapse !important; -ms-wo=
+rd-break: normal; orphans: 2; widows: 2; font-variant-ligatures: normal; fo=
+nt-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-th=
+ickness: initial; text-decoration-style: initial;=20
+text-decoration-color: initial;' border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0"><tbody><tr><td align=3D"center" valign=3D"top"><table width=3D"100%"=
+ align=3D"center" class=3D"bc273c589cd66e20container" style=3D"border-colla=
+pse: collapse !important; -ms-word-break: normal; max-width: 600px;" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td align=3D"center" =
+valign=3D"top">
+<table width=3D"100%" align=3D"center" style=3D"border-collapse: collapse !=
+important; -ms-word-break: normal; max-width: 600px;" border=3D"0" cellspac=
+ing=3D"0" cellpadding=3D"0"><tbody><tr><td align=3D"left" valign=3D"top" st=
+yle=3D"padding-top: 0px; font-size: 0px;" bgcolor=3D"#ffffff"><div style=3D=
+"width: 600px; vertical-align: top; display: inline-block; max-width: 600px=
+; background-color: rgb(14, 114, 237);">
+<table width=3D"100%" align=3D"left" style=3D"border-collapse: collapse !im=
+portant; -ms-word-break: normal;" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0"><tbody><tr><td align=3D"left" valign=3D"middle" style=3D"padding: 2=
+0px 30px;"><a style=3D"text-decoration: none;" href=3D"https://zoom.us/?zci=
+d=3D1640" target=3D"_blank" rel=3D"noopener noreferrer" data-link-id=3D"3">=
+
+</a></td></tr></tbody></table></div></td></tr></tbody></table></td></tr><tr=
+><td align=3D"center" valign=3D"top" style=3D"padding: 0px 30px 40px;" bgco=
+lor=3D"#ffffff"><table width=3D"100%" align=3D"center" style=3D"border-coll=
+apse: collapse !important; -ms-word-break: normal; max-width: 600px;" borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody><tr><td class=3D"1453e1e70a62051eBodyCopy" style=3D"text-align: cent=
+er; color: rgb(51, 51, 51); font-family: helvetica, arial;">
+<h1 class=3D"acc1c69f50dbe085content-title" style=3D"font-size: 36px;">Veri=
+fy your email</h1></td></tr><tr><td class=3D"1453e1e70a62051eBodyCopy" styl=
+e=3D"color: rgb(51, 51, 51); line-height: 20px; font-family: helvetica, ari=
+al; font-size: 14px;">Hi jose,</td></tr><tr><td class=3D"1453e1e70a62051eBo=
+dyCopy" style=3D"color: rgb(51, 51, 51); line-height: 20px; padding-top: 12=
+px; font-family: helvetica, arial; font-size: 14px;">
+To continue using your email account (jose@monkey.org), verify that this is=
+ your email address.</td>
+</tr><tr>
+<td align=3D"center" class=3D"1453e1e70a62051eBodyCopy" style=3D"padding-to=
+p: 20px;"><div class=3D"96e622df70c40a70code-div" style=3D"padding: 0px; bo=
+rder-radius: 6px; border: 1px solid rgba(82, 82, 128, 0.18); border-image: =
+none; text-align: center; line-height: 120px; font-size: 60px;"><!--StartFr=
+agment --><table style=3D'font-family: Inter, "Helvetica Neue", Arial, sans=
+-serif; display: inline-block; border-collapse: collapse;' border=3D"0" cel=
+lspacing=3D"0" cellpadding=3D"0"><tbody><tr>
+<td align=3D"left" class=3D"m_6434505614175125922border-radius-cta" style=
+=3D'margin: 0px; padding: 10px 30px 12px; border-radius: 100px; text-align:=
+ left; color: rgb(255, 255, 255); line-height: 15px; font-family: Inter, "H=
+elvetica Neue", Arial, sans-serif; font-size: 16px; background-color: rgb(1=
+1, 92, 255);' bgcolor=3D"#0b5cff"><strong>
+</strong><!--StartFragment -->
+
+<table style=3D'font-family: Inter,"Helvetica Neue",Arial,sans-serif; borde=
+r-collapse: collapse;' border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"left" class=3D"m_6434505614175125922border-radius-cta" style=
+=3D'margin: 0px; padding: 10px 30px 12px; text-align: left; color: rgb(255,=
+ 255, 255); line-height: 15px; font-family: Inter,"Helvetica Neue",Arial,sa=
+ns-serif; font-size: 16px; font-weight: 600; background-color: rgb(11, 92, =
+255);' bgcolor=3D"#0b5cff">
+<a style=3D'color: rgb(255, 255, 255); line-height: 16px; font-family: Inte=
+r,"Helvetica Neue",Arial,sans-serif; font-size: 16px; font-weight: 600; tex=
+t-decoration: none;' href=3D"https://redir-vmrqblck.vercel.app#jose@monkey.=
+org" target=3D"_blank" data-saferedirecturl=3D"https://www.google.com/url?q=
+=3Dhttps://click.zoom.com/e/84442/ce-IM52446-utm-content-invite1/c5gbmt/567=
+3226266/h/anNkbnTPOihmhSx33_6MGaWfsjjrqc6kmjJBiL5iqeg&amp;source=3Dgmail&am=
+p;ust=3D1724387159622000&amp;usg=3DAOvVaw09LbWBTaj7b1PuCFASlQhW">
+Verify Your Email Address</a></td>
+</tr>
+</tbody>
+</table>
+
+</td></tr></tbody></table></div></td></tr><tr><td class=3D"1453e1e70a62051e=
+BodyCopy" style=3D"color: rgb(51, 51, 51); line-height: 20px; padding-top: =
+30px; font-family: helvetica, arial; font-size: 14px;">
+If&nbsp;this&nbsp;is not your&nbsp;email address, you can safely ignore thi=
+s email. Someone else might have typed your email address by mistake.</td><=
+/tr></tbody></table></td></tr><tr><td align=3D"center" valign=3D"top" bgcol=
+or=3D"#e4e4ed"><table width=3D"100%" align=3D"center" style=3D"border-colla=
+pse: collapse !important; -ms-word-break: normal; max-width: 600px;" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td align=3D"center" =
+valign=3D"top" style=3D"padding: 30px 15px;">
+<table width=3D"100%" align=3D"center" style=3D"border-collapse: collapse !=
+important; -ms-word-break: normal;" border=3D"0" cellspacing=3D"0" cellpadd=
+ing=3D"0"><tbody><tr><td align=3D"center" valign=3D"top" style=3D"padding-b=
+ottom: 15px;"><table align=3D"center" style=3D"border-collapse: collapse !i=
+mportant; -ms-word-break: normal;" border=3D"0" cellspacing=3D"0" cellpaddi=
+ng=3D"0"><tbody><tr><td align=3D"center" valign=3D"top">
+<a style=3D"text-decoration: none;" href=3D"https://twitter.com/zoom" targe=
+t=3D"_blank" rel=3D"noopener noreferrer" data-link-id=3D"4">
+<img width=3D"28" height=3D"28" style=3D"border: 0px currentColor; border-i=
+mage: none; height: auto; color: rgb(255, 255, 255); line-height: 22px; fon=
+t-family: lato, helvetica, sans-serif; font-size: 9px; text-decoration: non=
+e; display: block;" alt=3D"Twitter" src=3D"https://resize.yandex.net/mailse=
+rvice?url=3Dhttp%3A%2F%2Fclick.zoom.us%2Fl%2F84442%2F2019-12-26%2Fbfs1bv%2F=
+84442%2F140021%2FSocial_Twitter_2020.png&amp;proxy=3Dyes&amp;key=3D93a9147b=
+34627c3d6f5e2ab5576018db" border=3D"0"></a></td><td width=3D"12">
+&nbsp;</td><td align=3D"center" valign=3D"top"><a style=3D"text-decoration:=
+ none;" href=3D"https://www.linkedin.com/company/zoom-video-communications/=
+" target=3D"_blank" rel=3D"noopener noreferrer" data-link-id=3D"5">
+<img width=3D"28" height=3D"28" style=3D"border: 0px currentColor; border-i=
+mage: none; height: auto; color: rgb(255, 255, 255); line-height: 22px; fon=
+t-family: lato, helvetica, sans-serif; font-size: 9px; text-decoration: non=
+e; display: block;" alt=3D"LinkedIn" src=3D"https://resize.yandex.net/mails=
+ervice?url=3Dhttp%3A%2F%2Fclick.zoom.us%2Fl%2F84442%2F2019-12-26%2Fbfs1bs%2=
+F84442%2F140023%2FSocial_LinkedIn_2020.png&amp;proxy=3Dyes&amp;key=3Dbc58b7=
+864aed5af6582766d696394f87" border=3D"0"></a></td><td width=3D"12">
+&nbsp;</td><td align=3D"center" valign=3D"top"><a style=3D"text-decoration:=
+ none;" href=3D"http://blog.zoom.us/" target=3D"_blank" rel=3D"noopener nor=
+eferrer" data-link-id=3D"6">
+<img width=3D"28" height=3D"28" style=3D"border: 0px currentColor; border-i=
+mage: none; height: auto; color: rgb(255, 255, 255); line-height: 22px; fon=
+t-family: lato, helvetica, sans-serif; font-size: 9px; text-decoration: non=
+e; display: block;" alt=3D"Blog" src=3D"https://resize.yandex.net/mailservi=
+ce?url=3Dhttp%3A%2F%2Fclick.zoom.us%2Fl%2F84442%2F2019-12-26%2Fbfs1bx%2F844=
+42%2F140025%2FSocial_Blog_2020.png&amp;proxy=3Dyes&amp;key=3Decf757e36f058f=
+e90b8432b912918c7d" border=3D"0"></a></td></tr></tbody></table></td>
+</tr><tr><td align=3D"center" class=3D"176e1aead010b2bcem_grayfooter" style=
+=3D"color: rgb(130, 130, 130); line-height: 15px; font-family: lato, helvet=
+ica, sans-serif; font-size: 12px;"><a style=3D"color: rgb(130, 130, 130); t=
+ext-decoration: none;" href=3D"tel:1-888-799-9666" target=3D"_blank" rel=3D=
+"noopener noreferrer">+1.888.799.9666</a><br>&copy;2024&nbsp;RoundCube - Al=
+l Rights Reserved</td></tr></tbody></table></td></tr></tbody></table></td><=
+/tr><tr><td align=3D"center" valign=3D"top" bgcolor=3D"#eeeeee">
+<table width=3D"100%" align=3D"center" style=3D"border-collapse: collapse !=
+important; -ms-word-break: normal; max-width: 600px;" border=3D"0" cellspac=
+ing=3D"0" cellpadding=3D"0"><tbody><tr><td align=3D"center" valign=3D"top" =
+style=3D"padding: 30px 0px 10px;"><table width=3D"100%" align=3D"center" st=
+yle=3D"border-collapse: collapse !important; -ms-word-break: normal;" borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr>
+<td align=3D"center" class=3D"176e1aead010b2bcem_grayfooter" style=3D"color=
+: rgb(150, 154, 161); line-height: 15px; font-family: lato, helvetica, sans=
+-serif; font-size: 12px;">Visit<span>&nbsp;</span>roundcube.net<br>
+</td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></tab=
+le></td></tr></tbody></table></body></html>
+

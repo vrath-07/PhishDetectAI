@@ -1,0 +1,362 @@
+Return-Path: bounces+22663605-5f51-jose=monkey.org@em2748.pali.com
+Delivered-To: jose@monkey.org
+X-FDA: 82924707180.34.2E6E7F9
+Received: from o2.ptr6300.pali.com (o2.ptr6300.pali.com [159.183.222.110])
+	by imf05.b.hostedemail.com (Postfix) with ESMTP id 8F59F1C0006
+	for <jose@monkey.org>; Mon, 23 Dec 2024 02:56:11 +0000 (UTC)
+Authentication-Results: imf05.b.hostedemail.com;	dkim=pass header.d=pali.com
+ header.s=s1 header.b=IRp+5I82;	spf=pass (imf05.b.hostedemail.com: domain of
+ "bounces+22663605-5f51-jose=monkey.org@em2748.pali.com" designates
+ 159.183.222.110 as permitted sender)
+ smtp.mailfrom="bounces+22663605-5f51-jose=monkey.org@em2748.pali.com";
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1734922587;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=RGvhyRmpatlyWqbFBEqoCCWWttDqrurvNXrhapQvCBY=;
+	b=1r19D6ZqfdL85grswdkVxKUqcQA2r9ORffiBHNJhpUGIo3DMflwojPL4j5d9t99HJFkjdy
+	enB4S/aPbseb/B0hUE9J2loY73wTegDHbwP7Vhasi8R62Ile/NYY32+XjIGVakEGFEIra4
+	c75lWWkpGn7Uc4c2yZraDV/q+ZtTlP8=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1734922587; a=rsa-sha256;
+	cv=none;
+	b=fOZ8OiOj3W/AohLz3rKhLvlOmr6M4a+JPkwIGH9zGOx6SZmawdvzphnYdGfTfukq1McW2g
+	3mkTHPFkzbgYbrKVdEulfIXPbpWxcPAq2/lgji4yJ9BKCxYL4zmwyYR9n1IeYrgxvNBCtA
+	55h1jpB1DUI+ORy/JVA77DYXgIb68ec=
+ARC-Authentication-Results: i=1;	imf05.b.hostedemail.com;	dkim=pass
+ header.d=pali.com header.s=s1 header.b=IRp+5I82;	spf=pass
+ (imf05.b.hostedemail.com: domain of
+ "bounces+22663605-5f51-jose=monkey.org@em2748.pali.com" designates
+ 159.183.222.110 as permitted sender)
+ smtp.mailfrom="bounces+22663605-5f51-jose=monkey.org@em2748.pali.com";
+	dmarc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=pali.com;
+	h=content-type:from:subject:content-transfer-encoding:mime-version:to:
+	cc:content-type:from:subject:to;
+	s=s1; bh=RGvhyRmpatlyWqbFBEqoCCWWttDqrurvNXrhapQvCBY=;
+	b=IRp+5I82+SV9y69zMHW5HpoTEzWuRAKltiuDGxv/1Ng5r5gSATxcMglsDYfVeiwq1Ar3
+	4L/aIuVYrcUCxCFIL9utdI6M23UqLoyqr39fe4zikrGVsaf1+13pl3rOHUwAW+x3+h1PXg
+	Lb+ztwdJTnD2ztfUzjBXTnEBue4krvlkSgCoAbpJsqQfO/pN7150DQTImHgpQMk30nILUt
+	uY0lf1kPFN51cVd4EeV8jrPoksNr/X87ac4QQtoeto28FJsfWgcD6XnMlINhZAW7qNSEO8
+	os8z36/2IDZJvyd2iq/ijmUJFOYcjIFOjOw8dljtON3usMh+6UhSZrxjbrZc+fJg==
+Received: by recvd-84b546689d-rx8jw with SMTP id
+ recvd-84b546689d-rx8jw-1-6768D16D-E	2024-12-23 02:56:45.858332279 +0000 UTC
+ m=+3303338.142780511
+Received: from [127.0.0.1] (unknown)
+	by geopod-ismtpd-6 (SG) with ESMTP
+	id kjHfebq-QcWZ-qBKHGqWPA
+	for <jose@monkey.org>;
+	Mon, 23 Dec 2024 02:56:45.719 +0000 (UTC)
+Content-Type: text/html; charset=us-ascii
+From: noreply <sendgrid@pali.com>
+Subject: re: Final reminder Netflix  [DD-266440-D3990]
+Message-ID: <2569ab47-f8af-f6a1-5e47-281e2fa32cca@pali.com>
+Content-Transfer-Encoding: quoted-printable
+Date: Mon, 23 Dec 2024 02:56:45 +0000 (UTC)
+MIME-Version: 1.0
+X-SG-EID:  u001.uYXYedraW/JDt7DPbp5GmNYb30zNgKVCg47zng/6K9OFd/baGN3Uxz3YV
+ =?utf-8?q?n0wxxdtSB5WQbAgHm3bqHcbXZrAAVQGR/gtBfZg?==?utf-8?q?5VoGHwXSVKoMtU?=
+ =?utf-8?q?qH+l3BECzUnEAJ0WPTv7HTi5i7ZyitFrQJNMcp2eWK5XSSZw/U+0m0PB9jOlhb80r?=
+ =?utf-8?q?Cpsf0Ju1lPwmSFGbDy9YPDAqb2yEX/yjf3gYzE?=tsgfpnA896qoHe1sDSxQdo=
+To: jose@monkey.org
+X-Entity-ID: u001.Tmub5m0QAQKXZak3uHUYDg==
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 8F59F1C0006
+X-Spam-Status: No, score=2.10
+X-Stat-Signature: buobb9mi7j58xdeupcp15y6fgdndx45r
+X-Rspamd-Server: rspam09
+X-HE-Tag: 1734922571-609209
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/jhAVsy69TOEovO7bYnLKvOF0LJw4avviFS29f8kT/HVT?=
+ =?utf-8?q?/3kHCoB8MBfE9oVbtfiNDi+CN+MT++Wxgxq9kOEuJDgxEBk0X0KItyrFq6gJf4UIo?=
+ =?utf-8?q?Djd1cD9Z2JSosNxzxiVd9Bxba3Np4MuQl2uviRc6kU8zHgrVY362GsiotfszhJRiq?=
+ =?utf-8?q?D13gfhgGcclvtgFf7fj1qxXsz/R1qua/1wA00BNmFR3fgz9aq+TpJemuL4mgUrcwT?=
+ =?utf-8?q?SVktc5N00NlTE86cUJ6NETaZFlEYlG2Su83+0opvsJE6P9peLSg5syKSYt596Cb8u?=
+ =?utf-8?q?GSz81BfEkPyhrRbXryqAoJqxRCyMeHSB3zQmu6wa271LTsgkaG5VyQVeIaqWLRmii?=
+ =?utf-8?q?JKelVsK6AYZGCN0pSofrHarkqXM2UjxQjC+so+4FlUq/H6skluSg6oZYpPkq+Pax4?=
+ =?utf-8?q?20N4Gfu6QoLicySszxrRMocIGdRJBdxgchZq0M89iZWnouetY5sfVvG/9Nd2KqNP4?=
+ =?utf-8?q?loyvOyuhvafmwrZjcNpHrqgtn7Fk9zqWTsO20n+UAKzKn1xqRpfEOT6gAxEuPiUeE?=
+ =?utf-8?q?/oMUoZsXq6sOwxMktPVZDrc1Hd5eVyDmdWkdkvD+LJty6dhfw8uAKSXTjNbNUliOb?=
+ =?utf-8?q?k9Qgk4BIURolZ4Xi7mI1MCToBQxgMSkmRACYb4Q3+Cksc0PN0AbUpEUXhAUH8yOnz?=
+ =?utf-8?q?jPAMAe+4xpBU/rO9uA/bbt0RNJJAcjfCVB5fGU7WM3//srNrYhpc02S5mhTcMOkIA?=
+ =?utf-8?q?y7LJy9PtE/VqcMhH3T54ddKEMtS9mk9Hj3TAnCzeO5+oC+14LsVy2bSRMaYIPdLOu?=
+ =?utf-8?q?ZTPhwxIHBfmEvO19CjSIJOwjkKg4mImVyUTOG68+i0owNJUOXhyu2mw25Gzj6vsBl?=
+ =?utf-8?q?e7cU3Nl/Gpkngy1cCTtDGuv6EXmypnkGK54aFU6BCPYVp+fQlnyUxv6KMmSOGNm5q?=
+ =?utf-8?q?4o3Z1sF8fxN/24ptINoFfW_p3a2XL5NakTjCH4fafYqZpqbJ9+vki0eM/VYo7rrf/?=
+ =?utf-8?q?lPsALdiiNQw84QreN91frCbBgeFj8lYZk5iXhuPgz9DMH1avX7e767zMq2v7zet0y?=
+ =?utf-8?q?4IzZwb/v6+7kbAAmP9c10OYA/qnvIvvyUYVzCzHWTWf0OdY8dNR0tURwKAqb9TD9S?=
+ =?utf-8?q?BLQ/qOiz0nB41PIEI+N67HdgAIrkFT4juwJJtcRzfFTx+a6oq955KxU7slqH1eYiu?=
+ =?utf-8?q?BzvIRm3JF6ijTc0Fc1H58bsSk/pMEYYagmj+Pye+z+C51qta3QlPoCco6ExQzDHXc?=
+ =?utf-8?q?Ax7o4huFJWs++BAQHG8YZb3jn/CHk1oJMTaccT2E55cRqKyunZ8OgN8wI46YfZ8Yr?=
+ =?utf-8?q?CbkNEQR8Rk6O3pJfzEYsDw26qmQDxY0g4+qNNxGMP0jueNC5PQylT2dbhvZFlcfDV?=
+ =?utf-8?q?oXCuZvrP5D3+XZfYHQ+PseqdcHVSqZKcGBI7Ds0Kn8In7SC/x8B5wqhg5R8FlO4oN?=
+ =?utf-8?q?TYVacZ7cP/mTlXgqFQDdoPzs7og5oXowdPMvlgAKskMbpkl3xkoEah3LbT8uWDQmY?=
+ =?utf-8?q?a2/hN+dHlnRzrq24NmXP8prFNF6zSF+nSz4Cc/ezhqlSgkzEveO?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 400
+
+<p align=3D"center"><img src=3D"data:image/png;base64,iVBORw0KGgoAAAANSUhEU=
+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
+Z7e2AAAAAElFTkSuQmCC" alt=3D"" width=3D"48" height=3D"88" /></p>
+<div style=3D"box-sizing: border-box; font-size: 14px; font-family: 'Netfli=
+x Sans', 'Helvetica Neue', Arial, sans-serif; white-space: normal; word-spa=
+cing: 0px; position: static; text-transform: none; font-weight: 400; color:=
+ white; font-style: normal; text-align: center; left: auto; orphans: 2; wid=
+ows: 2; margin: 0px; z-index: auto; letter-spacing: normal; background-colo=
+r: #e50914; text-indent: 0px; text-decoration-style: initial; text-decorati=
+on-color: initial; font-variant-ligatures: normal; font-variant-caps: norma=
+l; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; over=
+flow-wrap: break-word; --scroll-snap-strictness: proximity; --border-spacin=
+g-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rotate=
+: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; =
+--scale-y: 1; border: 0px solid; padding: 40px 20px 40px 20px;">
+<h1 style=3D"box-sizing: border-box; font-size: 26px; font-family: 'Netflix=
+ Sans', 'Helvetica Neue', Arial, sans-serif; position: static; font-weight:=
+ normal; left: auto; margin: 0px; z-index: auto; overflow-wrap: break-word;=
+ --scroll-snap-strictness: proximity; --border-spacing-x: 0; --border-spaci=
+ng-y: 0; --translate-x: 0; --translate-y: 0; --rotate: 0; --rotate-x: 0; --=
+rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; --scale-y: 1; text-wra=
+p: balance; border: 0px solid; padding: 0px;"><strong><span style=3D"font-s=
+ize: x-large;">Payment data update</span></strong></h1>
+</div>
+<div style=3D"box-sizing: border-box; font-size: 14px; font-family: 'Netfli=
+x Sans', 'Helvetica Neue', Arial, sans-serif; white-space: normal; word-spa=
+cing: 0px; position: static; text-transform: none; font-weight: 400; color:=
+ #2c2f45; font-style: normal; text-align: center; left: auto; orphans: 2; w=
+idows: 2; margin: 0px; z-index: auto; letter-spacing: normal; background-co=
+lor: white; text-indent: 0px; text-decoration-style: initial; text-decorati=
+on-color: initial; font-variant-ligatures: normal; font-variant-caps: norma=
+l; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; over=
+flow-wrap: break-word; --scroll-snap-strictness: proximity; --border-spacin=
+g-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rotate=
+: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; =
+--scale-y: 1; border: 0px solid; padding: 40px;">
+<p style=3D"box-sizing: border-box; font-size: 16px; font-family: 'Netflix =
+Sans', 'Helvetica Neue', Arial, sans-serif; position: static; color: #33333=
+3; left: auto; margin: 15px 0px; z-index: auto; overflow-wrap: break-word; =
+--scroll-snap-strictness: proximity; --border-spacing-x: 0; --border-spacin=
+g-y: 0; --translate-x: 0; --translate-y: 0; --rotate: 0; --rotate-x: 0; --r=
+otate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; --scale-y: 1; border: 0=
+px solid; padding: 0px;"><strong style=3D"box-sizing: border-box; font-fami=
+ly: 'Netflix Sans', 'Helvetica Neue', Arial, sans-serif; position: static; =
+left: auto; margin: 0px; z-index: auto; overflow-wrap: break-word; --scroll=
+-snap-strictness: proximity; --border-spacing-x: 0; --border-spacing-y: 0; =
+--translate-x: 0; --translate-y: 0; --rotate: 0; --rotate-x: 0; --rotate-y:=
+ 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; --scale-y: 1; border: 0px solid=
+; padding: 0px;">Dear Customer,</strong></p>
+<p style=3D"box-sizing: border-box; font-size: 16px; font-family: 'Netflix =
+Sans', 'Helvetica Neue', Arial, sans-serif; position: static; color: #33333=
+3; left: auto; margin: 15px 0px; z-index: auto; overflow-wrap: break-word; =
+--scroll-snap-strictness: proximity; --border-spacing-x: 0; --border-spacin=
+g-y: 0; --translate-x: 0; --translate-y: 0; --rotate: 0; --rotate-x: 0; --r=
+otate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; --scale-y: 1; border: 0=
+px solid; padding: 0px;">We remind you that today is the last day to update=
+ your payment information.</p>
+<div style=3D"box-sizing: border-box; position: static; left: auto; margin:=
+ 20px 0px; z-index: auto; background-color: #f2f2f2; border-radius: 5px; ov=
+erflow-wrap: break-word; --scroll-snap-strictness: proximity; --border-spac=
+ing-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rota=
+te: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1=
+; --scale-y: 1; border: 0px solid; padding: 10px;">
+<p style=3D"box-sizing: border-box; font-size: 16px; font-family: 'Netflix =
+Sans', 'Helvetica Neue', Arial, sans-serif; position: static; color: #33333=
+3; left: auto; margin: 15px 0px; z-index: auto; overflow-wrap: break-word; =
+--scroll-snap-strictness: proximity; --border-spacing-x: 0; --border-spacin=
+g-y: 0; --translate-x: 0; --translate-y: 0; --rotate: 0; --rotate-x: 0; --r=
+otate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; --scale-y: 1; border: 0=
+px solid; padding: 0px;"><strong style=3D"box-sizing: border-box; font-fami=
+ly: 'Netflix Sans', 'Helvetica Neue', Arial, sans-serif; position: static; =
+left: auto; margin: 0px; z-index: auto; overflow-wrap: break-word; --scroll=
+-snap-strictness: proximity; --border-spacing-x: 0; --border-spacing-y: 0; =
+--translate-x: 0; --translate-y: 0; --rotate: 0; --rotate-x: 0; --rotate-y:=
+ 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; --scale-y: 1; border: 0px solid=
+; padding: 0px;">To prevent your account from being blocked, update your in=
+formation at <span style=3D"box-sizing: border-box; font-family: 'Netflix S=
+ans', 'Helvetica Neue', Arial, sans-serif; position: static; color: #ff6600=
+; left: auto; margin: 0px; z-index: auto; overflow-wrap: break-word; --scro=
+ll-snap-strictness: proximity; --border-spacing-x: 0; --border-spacing-y: 0=
+; --translate-x: 0; --translate-y: 0; --rotate: 0; --rotate-x: 0; --rotate-=
+y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; --scale-y: 1; border: 0px sol=
+id; padding: 0px;">24 hours.</span></strong></p>
+</div>
+<p style=3D"box-sizing: border-box; font-size: 16px; font-family: 'Netflix =
+Sans', 'Helvetica Neue', Arial, sans-serif; position: static; color: #33333=
+3; left: auto; margin: 15px 0px; z-index: auto; overflow-wrap: break-word; =
+--scroll-snap-strictness: proximity; --border-spacing-x: 0; --border-spacin=
+g-y: 0; --translate-x: 0; --translate-y: 0; --rotate: 0; --rotate-x: 0; --r=
+otate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; --scale-y: 1; border: 0=
+px solid; padding: 0px;">Don't miss the opportunity to enjoy our exclusive =
+content, including the latest movies and series.</p>
+<p style=3D"box-sizing: border-box; font-size: 16px; font-family: 'Netflix =
+Sans', 'Helvetica Neue', Arial, sans-serif; position: static; color: #33333=
+3; left: auto; margin: 15px 0px; z-index: auto; overflow-wrap: break-word; =
+--scroll-snap-strictness: proximity; --border-spacing-x: 0; --border-spacin=
+g-y: 0; --translate-x: 0; --translate-y: 0; --rotate: 0; --rotate-x: 0; --r=
+otate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; --scale-y: 1; border: 0=
+px solid; padding: 0px;">Update your payment details and enjoy seamless acc=
+ess to our library.</p>
+<div style=3D"font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif, =
+serif, EmojiFont; text-align: center; padding: 0px;">&nbsp;</div>
+<div style=3D"box-sizing: border-box; position: static; text-align: center;=
+ left: auto; margin: 20px 0px; z-index: auto; overflow-wrap: break-word; --=
+scroll-snap-strictness: proximity; --border-spacing-x: 0; --border-spacing-=
+y: 0; --translate-x: 0; --translate-y: 0; --rotate: 0; --rotate-x: 0; --rot=
+ate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; --scale-y: 1; border: 0px=
+ solid; padding: 0px;">&nbsp;
+<table class=3D"x_t" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center">
+<table class=3D"x_t x_mobile-FW" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" align=3D"center">
+<tbody>
+<tr>
+<td style=3D"font-size: 15px; font-family: 'Arial'; color: #ffffff !importa=
+nt;" align=3D"center"><a style=3D"font-size: 15px; text-decoration: none; f=
+ont-family: 'Arial'; color: #ffffff !important; text-align: center; display=
+: block;" title=3D"http://link.mybecharge.com/c?p=3DwAbNB2vDxBDQ3Esn0NhlMkb=
+Q2tCg0Md26Vo70KnQl8QQUGhfHPPQ30fQgtCGQBL1EUgrMdmPaHR0cHM6Ly93d3cuYmVjaGFyZ2=
+UuYmUvYmUtZnIvQWNoZXRlci9jYXJ0ZXMtY2FkZWF1eC1aYWxhbmRvLTMtMjUzP3V0bV9zb3VyY=
+2U9U2FyYmFjYW5lJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPU1haWxfemFsYW5kb19i=
+ZWF1dHlfYmVfZnK4NWE2ODVhNjRiODViNTM2YTlmNGJlYjky2SQ1YTQ1NDJiYi1lZjU2LTQ5OTA=
+tYjI1OC0wM2NlY2I4YWRmMjLAtkxxaUo1X1laU0lxam1pOVo5UXZ4NWezbGluay5teWJlY2hhcm=
+dlLmNvbcQU0Mdvc9Cj0Iji0MDuYyRl8tCA0Kpv0Igx5tDeCA" href=3D"http://url2522.pa=
+li.com/ls/click?upn=3Du001.3S2uyEtfBAW-2BauLvG8nRY8Nr5sOLHygj3DFvR7RIR-2Fh6=
+CLW0PuIMqJp0ooL9RxHT1Xnz_fKvoxt542JDYaqgeR2SzDY7s2siCDcUil1Dfvcd8On-2Bcaoln=
+RXXFE4BC1DjtFlizaw-2Ff3Do-2B-2BOR-2FAs3WQZz3-2FI7n4ylP3k1K1GM4HJJ5yUP1LHM97=
+ySS5RF-2FaGk3czLN6tPYB6q4IVRNOx6EbZ3gMNUX78-2BVf15EllBnClkkI0Subrt2SXhVdIn0=
+5zdntZtE6KfOlBv15ezOt4RhgmkNCw-3D-3D" target=3D"_blank" rel=3D"noopener nor=
+eferrer" data-linkindex=3D"0" data-auth=3D"NotApplicable"><span style=3D"di=
+splay: block; background-color: #f00; border-radius: 5px; border: #006e7b 1=
+px solid; padding: 10px 25px 10px 25px;"><span style=3D"font-size: 18px; ma=
+rgin: 0px; line-height: 22px;"><span style=3D"font-size: 18px; line-height:=
+ 22px;"><span style=3D"color: #f00 !important;"><strong style=3D"color: #f8=
+f8f8 !important;">To renew</strong></span><br /></span></span></span></a></=
+td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style=3D"box-sizing: border-box; font-size: 16px; font-family: 'Netflix =
+Sans', 'Helvetica Neue', Arial, sans-serif; position: static; color: #33333=
+3; left: auto; margin: 15px 0px; z-index: auto; overflow-wrap: break-word; =
+--scroll-snap-strictness: proximity; --border-spacing-x: 0; --border-spacin=
+g-y: 0; --translate-x: 0; --translate-y: 0; --rotate: 0; --rotate-x: 0; --r=
+otate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; --scale-y: 1; border: 0=
+px solid; padding: 0px;">If you have any questions, our support team will b=
+e happy to assist you.</p>
+<p style=3D"box-sizing: border-box; font-size: 16px; font-family: 'Netflix =
+Sans', 'Helvetica Neue', Arial, sans-serif; position: static; color: #33333=
+3; left: auto; margin: 15px 0px; z-index: auto; overflow-wrap: break-word; =
+--scroll-snap-strictness: proximity; --border-spacing-x: 0; --border-spacin=
+g-y: 0; --translate-x: 0; --translate-y: 0; --rotate: 0; --rotate-x: 0; --r=
+otate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1; --scale-y: 1; border: 0=
+px solid; padding: 0px;">Thank you for being part of our community!</p>
+</div>
+<div style=3D"box-sizing: border-box; font-size: 12px; font-family: 'Netfli=
+x Sans', 'Helvetica Neue', Arial, sans-serif; white-space: normal; word-spa=
+cing: 0px; position: static; text-transform: none; font-weight: 400; color:=
+ #999999; font-style: normal; text-align: center; left: auto; orphans: 2; w=
+idows: 2; margin: 0px; z-index: auto; letter-spacing: normal; background-co=
+lor: #f9f9f9; text-indent: 0px; text-decoration-style: initial; text-decora=
+tion-color: initial; font-variant-ligatures: normal; font-variant-caps: nor=
+mal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; ov=
+erflow-wrap: break-word; --scroll-snap-strictness: proximity; --border-spac=
+ing-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-y: 0; --rota=
+te: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; --scale-x: 1=
+; --scale-y: 1; border: 0px solid; padding: 20px;">
+<p style=3D"box-sizing: border-box; font-family: 'Netflix Sans', 'Helvetica=
+ Neue', Arial, sans-serif; position: static; left: auto; margin: 0px; z-ind=
+ex: auto; overflow-wrap: break-word; --scroll-snap-strictness: proximity; -=
+-border-spacing-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-=
+y: 0; --rotate: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; =
+--scale-x: 1; --scale-y: 1; border: 0px solid; padding: 0px;">&copy; 2024 Y=
+our company. All rights reserved.</p>
+<p style=3D"box-sizing: border-box; font-family: 'Netflix Sans', 'Helvetica=
+ Neue', Arial, sans-serif; position: static; left: auto; margin: 0px; z-ind=
+ex: auto; overflow-wrap: break-word; --scroll-snap-strictness: proximity; -=
+-border-spacing-x: 0; --border-spacing-y: 0; --translate-x: 0; --translate-=
+y: 0; --rotate: 0; --rotate-x: 0; --rotate-y: 0; --skew-x: 0; --skew-y: 0; =
+--scale-x: 1; --scale-y: 1; border: 0px solid; padding: 0px;">Abbestellen</=
+p>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<img src=3D"http://url2522.pali.com/wf/open?upn=3Du001.z0wa68HzF9Nq0jK6BfRw=
+e1frBA-2BiN8Z2wCSGnkWlgw85SXjv0XHB8ADh-2F-2BfzvRUGlInEaOMzhD4vHEGoixi9XhQ6l=
+UdlcCj25VkVj9t8UdQ6GTFp3W3oJgpjtozK1ijBlaq4EuPOnDM3HwCYvkQRc3-2BBd0eOMjM-2F=
+4oeC4Ycb9Jcch2mRz5k-2FV07hDJy3f-2FDvwiRLBxgoiyUv2UeLLlUyBg-3D-3D" alt=3D"" =
+width=3D"1" height=3D"1" border=3D"0" style=3D"height:1px !important;width:=
+1px !important;border-width:0 !important;margin-top:0 !important;margin-bot=
+tom:0 !important;margin-right:0 !important;margin-left:0 !important;padding=
+-top:0 !important;padding-bottom:0 !important;padding-right:0 !important;pa=
+dding-left:0 !important;"/>
+

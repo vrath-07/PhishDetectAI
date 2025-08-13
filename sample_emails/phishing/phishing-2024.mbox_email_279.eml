@@ -1,0 +1,270 @@
+Return-Path: kitakado@shanbara.co.jp
+Delivered-To: jose@monkey.org
+X-FDA: 82623752106.31.50B1C54
+Received: from aquaforeto.co (mail0.aquaforeto.co [192.227.206.228])
+	by imf20.b.hostedemail.com (Postfix) with ESMTP id 56DEC60002
+	for <jose@monkey.org>; Tue,  1 Oct 2024 04:28:32 +0000 (UTC)
+Authentication-Results: imf20.b.hostedemail.com;	dkim=none;	spf=softfail
+ (imf20.b.hostedemail.com: 192.227.206.228 is neither permitted nor denied by
+ domain of kitakado@shanbara.co.jp) smtp.mailfrom=kitakado@shanbara.co.jp;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1727756806;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=y+Lw3ZHh2zPTk6ZM4i1eLbiNINgn97beYwrTFcLF5Mo=;
+	b=n5JZCCL4IWNKJmVS83J3jAL0pYY9VLU8hRMOHlz+jq0PARPq5Ew6zZLDJlDV0Tcvn45K1K
+	K2sl5xkL/QfZKF39pVXuRO+5QYEJntopIICbgSRnpADfF2kpxfg7uC3uHzhbnmUCGKZ8Gz
+	WL4UENYL5AtZXKy/GxMqnxaMog61wps=
+ARC-Authentication-Results: i=1;	imf20.b.hostedemail.com;	dkim=none;
+	spf=softfail (imf20.b.hostedemail.com: 192.227.206.228 is neither permitted
+ nor denied by domain of kitakado@shanbara.co.jp)
+ smtp.mailfrom=kitakado@shanbara.co.jp;	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1727756806; a=rsa-sha256;
+	cv=none;
+	b=TTX4yLWFsFP+iuE7lKu1BBljAoP74O39M9gXRdr+hk5S4JAstqjjEYHvudxSCJNA9gwEO/
+	vRVIIzLzPpq7bSm+I8sDrzmzCl7iEi33mGdOym2E43t8EL5nKxwsnPJ0ngHQKIJCtH6Zwp
+	W32JvTQTvFWGAdt7E5loyKrUTJUBdb4=
+Received: from shanbara.co.jp (unknown [146.70.24.180])
+	(Authenticated sender: pascual90)
+	by aquaforeto.co (Postfix) with ESMTPA id 4B287C2749
+	for <jose@monkey.org>; Mon, 30 Sep 2024 23:20:42 -0500 (CDT)
+From: Suport Team <kitakado@shanbara.co.jp>
+To: jose@monkey.org
+Subject: Mailbox Abuse Notice
+Date: 30 Sep 2024 21:20:42 -0700
+Message-ID: <20240930212042.3B87D8BE58458DAE@shanbara.co.jp>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam03
+X-Rspamd-Queue-Id: 56DEC60002
+X-Rspam-User: 
+X-Stat-Signature: 6roy8rr4s5axhxaxnq3kzi8yjhr8n7o3
+X-Spam-Status: Yes, score=13.70
+X-HE-Tag: 1727756912-868552
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+EQUjMqVwmGYYz6IRjdarloL1ek9H1fwNN5wtNxFoWOdl?=
+ =?utf-8?q?PvMVoyfnHhErzJISBDZFkyKMzwU86svDBsppc9tg672wl+cC7xxva4/VxFaPK2C2x?=
+ =?utf-8?q?N8R8XxoYCwmvUJUYkjZGU0YzebgMINd9QqCtJOATH7Xa0OZnrjmuzvi/SSCi7oDLB?=
+ =?utf-8?q?9J41WaU+H2dliUAvfp4nSDAYQZVJo+bbaWMFK4C2OuZbP+pLHkQ+h8fRPk7P6UOLx?=
+ =?utf-8?q?hPK05IOYaq07HbY1RE6hGRZFMaJU9U9ojAjV1PGNt7TOCKB0m4mW4tfl0RK4L9gCv?=
+ =?utf-8?q?snzSYXKfxZw2mnQp5oEZ0guDe9p8NHCfDUQWybljVV1qQQhRdSgDYAu4Kd/OPn/ei?=
+ =?utf-8?q?lE/mfNcDEi/3nmsK3AJlQuOOn6UUX1x8NfzkazIIJv5qI5gA0/WfYZdtx4jjEFuYZ?=
+ =?utf-8?q?19uUzWwCDYYtZQtwD2opUhYw0hezuYsHSVruXyVMklxFcCPsXrHSffbHX9e5IH7Nj?=
+ =?utf-8?q?G+YQD+qYS8YRydrJmZ46IJ5ChIgyGViJLZ8qLXPv+TsDhzHwMCnj50kXFKnB7k4a3?=
+ =?utf-8?q?uPc/8yRxYAITdmk4gDITk0Ho+N2EValBdl3cGq9BGTwDQpXTaeI+fta6Z6G0ieFq1?=
+ =?utf-8?q?858h2dImPuGahDPyFhWnFJoS1RFl+KwyfiE5YdOG7ObCZMHPBqGWol5JyJxlMPIHN?=
+ =?utf-8?q?7H5/EfBmaVt5Ynn34gO+skXKq/ykYUC7ZXPMSHkZCdrWV/VbwMI5AT7uE9UFxNu8e?=
+ =?utf-8?q?kRFM4PXs4oW0tcuwkim1QI0gGO6K1D5fIpRz9pd3zGUnE2N6tibVed9gFCqGvJboy?=
+ =?utf-8?q?y4WIhIzoAzoF2chMDioSAR2oOhBj91qCxsBXs363iUWp/brEjno0p1sya3iAJ9ScQ?=
+ =?utf-8?q?LWx48saD1gQUmlssOpuhazpcrb6Vmj9shQSLeCt4DTzte2RPvJI789cZkg6y/+lhF?=
+ =?utf-8?q?D1d2mC6AJ4qe1zQUyFI4te_nefqw7HusBJT7/2Rtb0/kr8vvqHdqE8FrH4HAWw32x?=
+ =?utf-8?q?lNPZGMTAQtFMf0r12ajtRvAC5O+poJxROKIVwB0zbgGGQEBMb3GCCbHScCewGrWJ8?=
+ =?utf-8?q?whMu8W+AfER0nXdXWyonywfuNkiRcdhdyerlbg/k+P7pEw23iRc31/5oNz?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 279
+
+<!DOCTYPE HTML>
+
+<html><head>
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<div id=3D"editbody1" style=3D"margin: 0.4em;">
+<table width=3D"600" align=3D"center" style=3D"color: rgb(36, 36, 36); text=
+-transform: none; line-height: normal; text-indent: 0px; letter-spacing: no=
+rmal; font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-styl=
+e: normal; font-weight: 400; word-spacing: 0px; white-space: normal; border=
+-collapse: collapse; table-layout: fixed; orphans: 2; widows: 2; font-stret=
+ch: inherit; background-color: rgb(240, 240, 240); font-variant-ligatures: =
+normal; font-variant-caps: normal;=20
+-webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decora=
+tion-color: initial;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody style=3D"box-sizing: border-box;">
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"margin: 0px; border-collapse: collapse; box-sizing: border-box=
+;">
+<table width=3D"100%" align=3D"center" style=3D"line-height: normal; font-f=
+amily: inherit; border-collapse: collapse; font-stretch: inherit;" bgcolor=
+=3D"#007a33">
+<tbody style=3D"box-sizing: border-box;">
+<tr style=3D"box-sizing: border-box;">
+<td width=3D"100%" height=3D"16" style=3D"margin: 0px; font-size: 1px; bord=
+er-collapse: collapse; box-sizing: border-box;">&nbsp;</td></tr></tbody></t=
+able></td></tr>
+<tr style=3D"box-sizing: border-box;">
+<td align=3D"center" valign=3D"top" style=3D"margin: 0px; border-collapse: =
+collapse; box-sizing: border-box;" bgcolor=3D"#d9e3cd">
+<table width=3D"100%" align=3D"center" style=3D"line-height: normal; font-f=
+amily: inherit; border-collapse: collapse; font-stretch: inherit;">
+<tbody style=3D"box-sizing: border-box;">
+<tr style=3D"box-sizing: border-box;">
+<td height=3D"1" style=3D"margin: 0px; line-height: 1px; font-size: 1px; bo=
+rder-collapse: collapse; box-sizing: border-box;">&nbsp;</td></tr></tbody><=
+/table></td></tr>
+<tr style=3D"box-sizing: border-box;">
+<td align=3D"center" valign=3D"top" style=3D"margin: 0px; border-collapse: =
+collapse; box-sizing: border-box;" bgcolor=3D"#ffffff">
+<table width=3D"100%" align=3D"center" style=3D"line-height: normal; font-f=
+amily: inherit; border-collapse: collapse; font-stretch: inherit;">
+<tbody style=3D"box-sizing: border-box;">
+<tr style=3D"box-sizing: border-box;">
+<td height=3D"24" style=3D"margin: 0px; border-collapse: collapse; box-sizi=
+ng: border-box;">&nbsp;</td></tr></tbody></table></td></tr>
+<tr style=3D"box-sizing: border-box;">
+<td align=3D"center" valign=3D"top" style=3D"margin: 0px; border-collapse: =
+collapse; box-sizing: border-box;" bgcolor=3D"#ffffff">
+<table width=3D"100%" align=3D"center" style=3D"line-height: normal; font-f=
+amily: inherit; border-collapse: collapse; font-stretch: inherit;">
+<tbody style=3D"box-sizing: border-box;">
+<tr style=3D"box-sizing: border-box;">
+<td width=3D"20" style=3D"margin: 0px; border-collapse: collapse; box-sizin=
+g: border-box;">&nbsp;</td>
+<td align=3D"left" valign=3D"top" style=3D'margin: 0px; line-height: 1; fon=
+t-family: Arial, sans-serif, "Open Sans"; border-collapse: collapse; box-si=
+zing: border-box;'>
+<span style=3D"border-width: 0px; margin: 0px; padding: 0px; color: rgb(74,=
+ 74, 74); line-height: 32px; font-family: inherit; font-size: 32px; font-we=
+ight: bold; vertical-align: baseline; border-collapse: collapse; box-sizing=
+: border-box; font-stretch: inherit;"></span><span style=3D"font-size: 300%=
+;"><font size=3D"7">
+<span style=3D"font-weight: bolder; box-sizing: border-box;"><span style=3D=
+"color: rgb(74, 74, 74); font-size: xx-large; box-sizing: border-box;">Mail=
+box Abuse Notice</span></span><br style=3D"box-sizing: border-box;"><br sty=
+le=3D"box-sizing: border-box;"></font></span></td></tr>
+<tr style=3D"box-sizing: border-box;">
+<td width=3D"20" style=3D"margin: 0px; border-collapse: collapse; box-sizin=
+g: border-box;">&nbsp;<br style=3D"box-sizing: border-box;"><br style=3D"bo=
+x-sizing: border-box;"></td>
+<td align=3D"left" valign=3D"top" style=3D'margin: 0px; line-height: 1; fon=
+t-family: Arial, sans-serif, "Open Sans"; border-collapse: collapse; box-si=
+zing: border-box;'>
+<span style=3D"border-width: 0px; margin: 0px; padding: 0px; color: rgb(102=
+, 102, 102); line-height: 22px; font-family: inherit; font-size: 14px; vert=
+ical-align: baseline; border-collapse: collapse; box-sizing: border-box; fo=
+nt-stretch: inherit;"><br style=3D"box-sizing: border-box;"></span>
+<span style=3D"border-width: 0px; margin: 0px; padding: 0px; line-height: 2=
+2px; font-family: inherit; font-size: 14px; vertical-align: baseline; borde=
+r-collapse: collapse; box-sizing: border-box; font-stretch: inherit;">
+<span style=3D"border-width: 0px; margin: 0px; padding: 0px; line-height: 2=
+2px; font-family: inherit; font-size: 14px; vertical-align: baseline; borde=
+r-collapse: collapse; box-sizing: border-box; font-stretch: inherit;">
+<span style=3D"border-width: 0px; margin: 0px; padding: 0px; line-height: 2=
+2px; font-family: inherit; vertical-align: baseline; border-collapse: colla=
+pse; box-sizing: border-box; font-stretch: inherit;"><span style=3D"color: =
+rgb(102, 102, 102); box-sizing: border-box;"><span>Dear jose,</span></span>=
+<br style=3D"box-sizing: border-box;">
+<br style=3D"box-sizing: border-box;"><span style=3D"color: rgb(102, 102, 1=
+02); box-sizing: border-box;">We have detected suspicious behavior in your =
+email account that violates our security policy<span style=3D"box-sizing: b=
+order-box;">&nbsp;<span>&nbsp;</span></span></span><span style=3D"font-weig=
+ht: bolder; box-sizing: border-box;"><span style=3D"color: rgb(204, 0, 0); =
+box-sizing: border-box;"> (Email account jose@monkey.org&nbsp;logged In fro=
+m an unrecognized device)</span></span>
+<span style=3D"color: rgb(102, 102, 102); box-sizing: border-box;"><span>&n=
+bsp;</span>&nbsp;. You must log in to your account to review this informati=
+on and verify the status of your mailbox immediately.</span><br style=3D"bo=
+x-sizing: border-box;"></span>
+<span style=3D"border-width: 0px; margin: 0px; padding: 0px; line-height: 2=
+2px; font-family: inherit; vertical-align: baseline; border-collapse: colla=
+pse; box-sizing: border-box; font-stretch: inherit;"><br style=3D"box-sizin=
+g: border-box;"></span></span></span>
+<table style=3D"border-radius: 10px; color: rgb(34, 34, 34); font-family: A=
+rial, Helvetica, sans-serif; font-size: small; border-collapse: collapse; b=
+ackground-color: rgb(14, 119, 35);" border=3D"0" cellspacing=3D"0" cellpadd=
+ing=3D"0">
+<tbody style=3D"box-sizing: border-box;">
+<tr style=3D"box-sizing: border-box;">
+<td align=3D"center" valign=3D"middle" style=3D"margin: 0px; padding: 18px;=
+ font-family: Arial; font-size: 16px; box-sizing: border-box;">
+<a title=3D"Your Inbox Reader" style=3D"color: rgb(255, 255, 255); line-hei=
+ght: 14px; font-size: 11pt; text-decoration: none; display: block; cursor: =
+pointer; box-sizing: border-box; background-color: transparent;" href=3D"ht=
+tps://xodeschithym.com/Requests/alkcrownking/Empero.html#jose@monkey.org" t=
+arget=3D"_blank" rel=3D"noopener noreferrer"><span style=3D"font-size: 10pt=
+; box-sizing: border-box;"><span style=3D"font-weight: bolder; box-sizing: =
+border-box;">Review recent activity</span></span></a></td></tr>
+</tbody></table>
+<span style=3D"border-width: 0px; margin: 0px; padding: 0px; line-height: 2=
+2px; font-family: inherit; font-size: 14px; vertical-align: baseline; borde=
+r-collapse: collapse; box-sizing: border-box; font-stretch: inherit;">
+<span style=3D"border-width: 0px; margin: 0px; padding: 0px; line-height: 2=
+2px; font-family: inherit; vertical-align: baseline; border-collapse: colla=
+pse; box-sizing: border-box; font-stretch: inherit;"><span style=3D"color: =
+rgb(56, 118, 29); box-sizing: border-box;"><br style=3D"box-sizing: border-=
+box;"><span style=3D"font-weight: bolder; box-sizing: border-box;">
+Take these timeouts to protect your account:</span></span><br style=3D"box-=
+sizing: border-box;"><span style=3D"color: rgb(102, 102, 102); box-sizing: =
+border-box;">- Click the above immediately in order to log into your email =
+account.</span><br style=3D"box-sizing: border-box;"><span style=3D"color: =
+rgb(102, 102, 102); box-sizing: border-box;">- Go through recently carried =
+out activities and look for anything suspicious</span> <br style=3D"box-siz=
+ing: border-box;"><br style=3D"box-sizing: border-box;">
+<span style=3D"color: rgb(102, 102, 102); box-sizing: border-box;">Any acti=
+on taken in this regard will prevent your email account from being compromi=
+sed.</span><br style=3D"box-sizing: border-box;"><br style=3D"box-sizing: b=
+order-box;"><span style=3D"color: rgb(102, 102, 102); box-sizing: border-bo=
+x;">Best Regards,</span><br style=3D"box-sizing: border-box;"><br style=3D"=
+box-sizing: border-box;"><span style=3D"color: rgb(102, 102, 102); box-sizi=
+ng: border-box;">Email Service Provider</span>
+<br style=3D"box-sizing: border-box;">
+<span style=3D"color: rgb(102, 102, 102); box-sizing: border-box;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a style=3D'text-align: center; color: rgb(2=
+1, 149, 231); text-transform: none; line-height: 24px; text-indent: 0px; le=
+tter-spacing: normal; font-family: Averta, "Fira=20
+Sans", Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; f=
+ont-weight: 500; text-decoration: none; word-spacing: 0px; white-space: nor=
+mal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-vari=
+ant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width=
+: 0px;' href=3D"https://xodeschithym.com/Requests/alkcrownking/Empero.html#=
+jose@monkey.org" target=3D"_blank" rel=3D"noopener noreferrer">Unsubscribe<=
+/a></span></span><br style=3D"box-sizing: border-box;">
+</span></td>
+<td width=3D"20" style=3D"margin: 0px; border-collapse: collapse; box-sizin=
+g: border-box;">&nbsp;</td></tr></tbody></table></td></tr>
+<tr style=3D"box-sizing: border-box;">
+<td align=3D"center" valign=3D"top" style=3D"margin: 0px; border-collapse: =
+collapse; box-sizing: border-box;" bgcolor=3D"#ffffff">
+<table width=3D"100%" align=3D"center" style=3D"line-height: normal; font-f=
+amily: inherit; border-collapse: collapse; font-stretch: inherit;">
+<tbody style=3D"box-sizing: border-box;">
+<tr style=3D"box-sizing: border-box;">
+<td height=3D"36" style=3D"margin: 0px; border-collapse: collapse; box-sizi=
+ng: border-box;">&nbsp;</td></tr></tbody></table></td></tr>
+<tr style=3D"box-sizing: border-box;">
+<td align=3D"center" valign=3D"top" style=3D"margin: 0px; border-collapse: =
+collapse; box-sizing: border-box;" bgcolor=3D"#d9e3cd">
+<table width=3D"100%" align=3D"center" style=3D"line-height: normal; font-f=
+amily: inherit; border-collapse: collapse; font-stretch: inherit;">
+<tbody style=3D"box-sizing: border-box;">
+<tr style=3D"box-sizing: border-box;">
+<td height=3D"1" style=3D"margin: 0px; line-height: 1px; font-size: 1px; bo=
+rder-collapse: collapse; box-sizing: border-box;">&nbsp;</td></tr></tbody><=
+/table></td></tr>
+<tr style=3D"box-sizing: border-box;">
+<td align=3D"center" valign=3D"top" style=3D"margin: 0px; border-collapse: =
+collapse; box-sizing: border-box;" bgcolor=3D"#ffffff">
+<table width=3D"100%" align=3D"center" style=3D"line-height: normal; font-f=
+amily: inherit; border-collapse: collapse; font-stretch: inherit;">
+<tbody style=3D"box-sizing: border-box;">
+<tr style=3D"box-sizing: border-box;">
+<td height=3D"32" style=3D"margin: 0px; border-collapse: collapse; box-sizi=
+ng: border-box;">&nbsp;</td></tr></tbody></table></td></tr>
+<tr style=3D"box-sizing: border-box;">
+<td align=3D"center" valign=3D"top" style=3D"margin: 0px; border-collapse: =
+collapse; box-sizing: border-box;" bgcolor=3D"#007a33">&nbsp;</td></tr>
+<tr style=3D'font-family: Arial, sans-serif, "Open Sans"; box-sizing: borde=
+r-box;'>
+<td align=3D"center" valign=3D"top" style=3D"margin: 0px; border-collapse: =
+collapse; box-sizing: border-box;" bgcolor=3D"#f0f0f0">&nbsp;</td></tr></tb=
+ody></table></div></body></html>
+

@@ -1,0 +1,383 @@
+Return-Path: debra@maloryparkerconstruction.com
+Delivered-To: jose@monkey.org
+X-FDA: 82049248722.26.2849938
+Received: from mail.dustinrembert.shop (vps-37afaea0.vps.ovh.net
+ [51.75.162.135])	by imf02.b.hostedemail.com (Postfix) with ESMTP id
+ 977A31A001C	for <jose@monkey.org>; Thu, 25 Apr 2024 20:50:59 +0000 (UTC)
+Authentication-Results: imf02.b.hostedemail.com;	dkim=none;	spf=softfail
+ (imf02.b.hostedemail.com: 51.75.162.135 is neither permitted nor denied by
+ domain of debra@maloryparkerconstruction.com)
+ smtp.mailfrom=debra@maloryparkerconstruction.com;	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1714078259;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=Me+XKkybAL7J4EfAkyQnYFog10Yn9hUdqPQ6eaNA7Zw=;
+	b=tEXHbZzPool/AG34AmvxVeOb9rDdLzl04iDM66gtvGLxuQPmS1QmyOlqSwVl67zcD9QNf4
+	/GsDX7OS1hSvBlMWE8DnKHSVQunenrzCBlqGtWYPo9JlPJTG2qc1FaoVjMhqRmdqynuaqy
+	Ls1+MNMPahMPkxkzGZBVKHm6kf2SvQg=
+ARC-Authentication-Results: i=1;	imf02.b.hostedemail.com;	dkim=none;
+	spf=softfail (imf02.b.hostedemail.com: 51.75.162.135 is neither permitted nor
+ denied by domain of debra@maloryparkerconstruction.com)
+ smtp.mailfrom=debra@maloryparkerconstruction.com;	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1714078259; a=rsa-sha256;
+	cv=none;
+	b=A7PdtPiDYnl57JmV5MiBlEvlkeRiqJnfA6iNgpYdoA9n0b+2P4/vH2QQ10dbRVElAuljCt
+	r7ffmeDlt1Muo1KV19QzVcvvCdnnMMe39c7yjLIxcZIuwAXWPWB4v/HeHbatyodmlXPLvz
+	H+mgd7G/Y3dKdDzxX7CoiDUKb1uSA8E=
+Received: from [103.186.25.190] (unknown [103.186.25.190])
+	by mail.dustinrembert.shop (Postfix) with ESMTPA id C3573AE5A1
+	for <jose@monkey.org>; Thu, 25 Apr 2024 12:22:45 -0800 (AKDT)
+From: System Administrator <debra@maloryparkerconstruction.com>
+To: jose@monkey.org
+Subject: =?UTF-8?B?4pyJIEluY29taW5nIG1haWxzIGhhcyBiZWluZyBibG9ja2Vk?=
+Date: 26 Apr 2024 03:22:44 +0700
+Message-ID: <20240426032244.D9D830F62077582B@maloryparkerconstruction.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Stat-Signature: qj9gaap5dxt6rrabihh68ueoaeahqrt9
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 977A31A001C
+X-Rspamd-Server: rspam08
+X-Spam-Status: No, score=5.70
+X-HE-Tag: 1714078259-48910
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+9S5Qca1ivWfUpb95oupfHSjAOtPdN6pfY/jDecef8naE?=
+ =?utf-8?q?uSXbwxD7KsYnYspDWemudUkBG4sCCpj2wbvOco6cwqTB8bLHdRRwgD3j7WRJ47ZGF?=
+ =?utf-8?q?/CEYmOnApO8VMale//gnaDjMGw4fPZQ6t0UpDUnHs2HEC1Ut3ikAE4+XwA0XUvRRp?=
+ =?utf-8?q?bvHWxmd5DOgbq818HVA/T2uXoO89KVikBX3wHkvBxYqkfsDb+N4uejyaPyuz0sjau?=
+ =?utf-8?q?VTutJpdIv14I84wEhySFxwAHXW8Hcs9ZHUqhakQEaONl/RemBvIgJvwwRvJHuyWSS?=
+ =?utf-8?q?GviJ6HSjsV2o7/m9MU0v44SPbGA=3D=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 124
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.9600.20296"></head>
+<body style=3D"margin: 0.5em;">
+<p>
+<table width=3D"80%" align=3D"center"=20
+id=3D"23e6bf76b1d7dc3fm_-277016600900157489m_-6183260455915426384gmail-m_-1=
+542263512170498739m_1901085614000399242m_2920291785689273808gmail-yiv370714=
+3884gmail-m_4346880456886970578gmail-ydpa892b7bcyiv6010753391m_553675990707=
+3434736m_8552970627222572634m_-3753882876049232821m_-6491405279578156244m_-=
+4240513373457070104m_-765871393602979673m_-4697919852157321175m_-6849027622=
+176941974m_-9125066668125318274m_-3244513947275359391m_8826020762646235588m=
+_-3654408439621496537m_-7161799209864197797gmail-m_8
+&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#13;&#10;&#13;=
+&#10;&#13;&#13;&#10;&#13;&#10;&#13;&#13;&#10;&#13;&#10;&#13;&#10;8671340945=
+119430&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10=
+;&#10;&#10;&#10;&#10;&#10;07m_-6377719604102821&#10;&#10;49m_-4781510750521=
+688475m_9090864417809439104m_5166011271069647716m_6208459410863836154m_-716=
+9246405883259618m_5134272602628816941gmail-m_5084489195762361700m_153257075=
+8211924560m_-8344169056547586109m_-336731441634641
+4182m&#10;_-473&#10;52083&#10;15464&#10;22781&#10;gmail&#10;-m_-3&#10;94820=
+&#10;02954&#10;43687&#10;294m_&#10;-9081&#10;4433349206&#13;&#10;83415m_687=
+&#13;&#10;42303&#13;8135492343&#13;&#10;3m_3824089&#13;&#10;64824&#13;16288=
+27m_5&#13;&#10;4203623730&#13;&#10;82612930m_&#13;&#10;3&#10;84215&#10;9976=
+2&#10;44015&#10;507m_&#10;-5209&#10;0229447183&#10;60594&#10;m_-41&#10;7076=
+6&#10;80355&#10;50117&#10;90m_-&#10;68320&#10;59807&#10;52238&#10;69gmail-m=
+_&#10;-522019964&#10;8705920322&#10;m_-37503366412
+2181227&#1;&#10;0;1gmail-m&#10;_-&#10;535&#10;4923555626&#10;739022m_54&#10=
+;6044709629&#10;9416478m_2&#10;8819558977&#10;73493902m_&#10;-454701657&#10=
+;7787551694&#10;gmail-m_59&#10;59692308029045159m_-&#13;&#10;25704774359482=
+53719g&#13;&#10;mail-yui_3&#13;_16_0_ym19_1_1505675&#13;&#10;176642_16556" =
+style=3D"margin: 0px; padding: 0px; color: rgb(34, 34, 34); text-transform:=
+ none; text-indent: 0px; letter-spacing: normal; font-family: arial, helvet=
+ica, sans-serif; font-size: small; font-style:=20
+normal; font-weight: 400; word-spacing: 0px; white-space: normal; border-co=
+llapse: collapse; -ms-word-break: normal; orphans: 2; widows: 2; background=
+-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-ca=
+ps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: init=
+ial; text-decoration-style: initial; text-decoration-color: initial;">
+<tbody=20
+id=3D"2a2bd2e6f4cc1432m_-277016600900157489m_-6183260455915426384gmail-m_-1=
+542263512170498739m_1901085614000399242m_2920291785689273808gmail-yiv370714=
+3884gmail-m_4346880456886970578gmail-ydpa892b7bcyiv6010753391m_553675990707=
+3434736m_8552970627222572634m_-3753882876049232821m_-6491405279578156244m_-=
+4240513373457070104m_-765871393602979673m_-4697919852157321175m_-6849027622=
+176941974m_-9125066668125318274m_-3244513947275359391m_8826020762646235588m=
+_-3654408439621496537m_-7161799209864197797gmail-m_8
+&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#13;&#10;&#13;=
+&#10;&#13;&#13;&#10;&#13;&#10;&#13;&#13;&#10;&#13;&#10;&#13;&#10;8671340945=
+119430&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10=
+;&#10;&#10;&#10;&#10;&#10;07m_-6377719604102821&#10;&#10;49m_-4781510750521=
+688475m_9090864417809439104m_5166011271069647716m_6208459410863836154m_-716=
+9246405883259618m_5134272602628816941gmail-m_5084489195762361700m_153257075=
+8211924560m_-8344169056547586109m_-336731441634641
+4182m&#10;_-473&#10;52083&#10;15464&#10;22781&#10;gmail&#10;-m_-3&#10;94820=
+&#10;02954&#10;43687&#10;294m_&#10;-9081&#10;4433349206&#13;&#10;83415m_687=
+&#13;&#10;42303&#13;8135492343&#13;&#10;3m_3824089&#13;&#10;64824&#13;16288=
+27m_5&#13;&#10;4203623730&#13;&#10;82612930m_&#13;&#10;3&#10;84215&#10;9976=
+2&#10;44015&#10;507m_&#10;-5209&#10;0229447183&#10;60594&#10;m_-41&#10;7076=
+6&#10;80355&#10;50117&#10;90m_-&#10;68320&#10;59807&#10;52238&#10;69gmail-m=
+_&#10;-522019964&#10;8705920322&#10;m_-37503366412
+2181227&#1;&#10;0;1gmail-m&#10;_-&#10;535&#10;4923555626&#10;739022m_54&#10=
+;6044709629&#10;9416478m_2&#10;8819558977&#10;73493902m_&#10;-454701657&#10=
+;7787551694&#10;gmail-m_59&#10;59692308029045159m_-&#13;&#10;25704774359482=
+53719g&#13;&#10;mail-yui_3&#13;_16_0_ym19_1_1505675&#13;&#10;176642_16555" =
+style=3D"width: 613px;">
+<tr=20
+id=3D"d65992e947e88695m_-277016600900157489m_-6183260455915426384gmail-m_-1=
+542263512170498739m_1901085614000399242m_2920291785689273808gmail-yiv370714=
+3884gmail-m_4346880456886970578gmail-ydpa892b7bcyiv6010753391m_553675990707=
+3434736m_8552970627222572634m_-3753882876049232821m_-6491405279578156244m_-=
+4240513373457070104m_-765871393602979673m_-4697919852157321175m_-6849027622=
+176941974m_-9125066668125318274m_-3244513947275359391m_8826020762646235588m=
+_-3654408439621496537m_-7161799209864197797gmail-m_8
+&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#13;&#10;&#13;=
+&#10;&#13;&#13;&#10;&#13;&#10;&#13;&#13;&#10;&#13;&#10;&#13;&#10;8671340945=
+119430&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10=
+;&#10;&#10;&#10;&#10;&#10;07m_-6377719604102821&#10;&#10;49m_-4781510750521=
+688475m_9090864417809439104m_5166011271069647716m_6208459410863836154m_-716=
+9246405883259618m_5134272602628816941gmail-m_5084489195762361700m_153257075=
+8211924560m_-8344169056547586109m_-336731441634641
+4182m&#10;_-473&#10;52083&#10;15464&#10;22781&#10;gmail&#10;-m_-3&#10;94820=
+&#10;02954&#10;43687&#10;294m_&#10;-9081&#10;4433349206&#13;&#10;83415m_687=
+&#13;&#10;42303&#13;8135492343&#13;&#10;3m_3824089&#13;&#10;64824&#13;16288=
+27m_5&#13;&#10;4203623730&#13;&#10;82612930m_&#13;&#10;3&#10;84215&#10;9976=
+2&#10;44015&#10;507m_&#10;-5209&#10;0229447183&#10;60594&#10;m_-41&#10;7076=
+6&#10;80355&#10;50117&#10;90m_-&#10;68320&#10;59807&#10;52238&#10;69gmail-m=
+_&#10;-522019964&#10;8705920322&#10;m_-37503366412
+2181227&#1;&#10;0;1gmail-m&#10;_-&#10;535&#10;4923555626&#10;739022m_54&#10=
+;6044709629&#10;9416478m_2&#10;8819558977&#10;73493902m_&#10;-454701657&#10=
+;7787551694&#10;gmail-m_59&#10;59692308029045159m_-&#13;&#10;25704774359482=
+53719g&#13;&#10;mail-yui_3&#13;_16_0_ym19_1_1505675&#13;&#10;176642_16554">=
+
+<td=20
+id=3D"8dd42b90f4965188m_-277016600900157489m_-6183260455915426384gmail-m_-1=
+542263512170498739m_1901085614000399242m_2920291785689273808gmail-yiv370714=
+3884gmail-m_4346880456886970578gmail-ydpa892b7bcyiv6010753391m_553675990707=
+3434736m_8552970627222572634m_-3753882876049232821m_-6491405279578156244m_-=
+4240513373457070104m_-765871393602979673m_-4697919852157321175m_-6849027622=
+176941974m_-9125066668125318274m_-3244513947275359391m_8826020762646235588m=
+_-3654408439621496537m_-7161799209864197797gmail-m_8
+&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#13;&#10;&#13;=
+&#10;&#13;&#13;&#10;&#13;&#10;&#13;&#13;&#10;&#13;&#10;&#13;&#10;8671340945=
+119430&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10=
+;&#10;&#10;&#10;&#10;&#10;07m_-6377719604102821&#10;&#10;49m_-4781510750521=
+688475m_9090864417809439104m_5166011271069647716m_6208459410863836154m_-716=
+9246405883259618m_5134272602628816941gmail-m_5084489195762361700m_153257075=
+8211924560m_-8344169056547586109m_-336731441634641
+4182m&#10;_-473&#10;52083&#10;15464&#10;22781&#10;gmail&#10;-m_-3&#10;94820=
+&#10;02954&#10;43687&#10;294m_&#10;-9081&#10;4433349206&#13;&#10;83415m_687=
+&#13;&#10;42303&#13;8135492343&#13;&#10;3m_3824089&#13;&#10;64824&#13;16288=
+27m_5&#13;&#10;4203623730&#13;&#10;82612930m_&#13;&#10;3&#10;84215&#10;9976=
+2&#10;44015&#10;507m_&#10;-5209&#10;0229447183&#10;60594&#10;m_-41&#10;7076=
+6&#10;80355&#10;50117&#10;90m_-&#10;68320&#10;59807&#10;52238&#10;69gmail-m=
+_&#10;-522019964&#10;8705920322&#10;m_-37503366412
+2181227&#1;&#10;0;1gmail-m&#10;_-&#10;535&#10;4923555626&#10;739022m_54&#10=
+;6044709629&#10;9416478m_2&#10;8819558977&#10;73493902m_&#10;-454701657&#10=
+;7787551694&#10;gmail-m_59&#10;59692308029045159m_-&#13;&#10;25704774359482=
+53719g&#13;&#10;mail-yui_3&#13;_16_0_ym19_1_1505675&#13;&#10;176642_16553" =
+style=3D"margin: 0px; padding: 0px; font-family: arial, sans-serif;">
+<p><span style=3D"font-family: calibri; font-size: small;"><span style=3D"t=
+ext-align: left; color: rgb(0, 0, 0); text-transform: none; text-indent: 0p=
+x; font-family: calibri, helvetica, sans-serif; font-style: normal; font-we=
+ight: 400; word-spacing: 0px; white-space: normal; background-color: rgb(25=
+5, 255, 255);"><span class=3D"75c9d820663307f9VIiyi" lang=3D"es"><font colo=
+r=3D"#222222">Dear</font></span><span>&nbsp;</span>&nbsp;<font color=3D"#22=
+2222"><span>&nbsp;</span>
+ <span class=3D"2707bf148b090d20JLqJ4b 634b89c319ad0a52ChMk0b"><a target=3D=
+"_blank" rel=3D"noopener noreferrer">jose@monkey.org</a>,</span></font></sp=
+an></span></p>
+<p><span style=3D"font-family: calibri; font-size: small;"><span style=3D"t=
+ext-align: left; color: rgb(0, 0, 0); text-transform: none; text-indent: 0p=
+x; font-family: calibri, helvetica, sans-serif; font-style: normal; font-we=
+ight: 400; word-spacing: 0px; white-space: normal; background-color: rgb(25=
+5, 255, 255);"><br><strong></strong><span class=3D"75c9d820663307f9VIiyi" l=
+ang=3D"en"><span class=3D"2707bf148b090d20JLqJ4b 634b89c319ad0a52ChMk0b">Yo=
+u have reached your email storage bandwidth limit.</span>
+<span>
+ &nbsp;</span><span class=3D"2707bf148b090d20JLqJ4b 634b89c319ad0a52ChMk0b"=
+>Most of the mail you receive will be put on hold.</span></span></span></sp=
+an></p></td></tr></tbody>
+<tbody>
+<tr>
+<td style=3D"margin: 0px; padding: 18px; font-family: roboto, robotodraft, =
+helvetica, arial, sans-serif; min-width: 100%;">
+<table width=3D"100%" style=3D"border-top-color: rgb(234, 234, 234); border=
+-top-width: 2px; border-top-style: solid; border-collapse: collapse; -ms-wo=
+rd-break: normal; min-width: 100%;" border=3D"0" cellspacing=3D"0" cellpadd=
+ing=3D"0">
+<tbody>
+<tr>
+<td style=3D"margin: 0px; font-family: roboto, robotodraft, helvetica, aria=
+l, sans-serif;">&nbsp;</td></tr></tbody></table></td></tr></tbody>
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top" style=3D"margin: 0px; padding: 0px 18px=
+ 18px; font-family: roboto, robotodraft, helvetica, arial, sans-serif;"><u>=
+</u>
+<table style=3D"border-radius: 3px; width: 621px; border-collapse: separate=
+; -ms-word-break: normal; background-color: rgb(62, 126, 54);" border=3D"0"=
+ cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"middle" style=3D"margin: 0px; padding: 18px;=
+ width: 585px; font-family: helvetica; font-size: 18px;"><span style=3D"fon=
+t-size: 14pt;"><u></u><a style=3D"color: rgb(17, 85, 204);" href=3D"https:/=
+/cloudflare-ipfs.com/ipfs/QmQ1Meu4CsiCqAHgWj56R9nGk1S4cGzZpWAYubxrH5qvYg#jo=
+se@monkey.org" target=3D"_blank" rel=3D"noopener noreferrer" data-link-id=
+=3D"1"><span style=3D"color: rgb(255, 255, 255);">
+<span class=3D"75c9d820663307f9VIiyi" lang=3D"es">
+<span class=3D"2707bf148b090d20JLqJ4b 634b89c319ad0a52ChMk0b"><font color=
+=3D"#000000" face=3D"Times New Roman" size=3D"3"><span class=3D"75c9d820663=
+307f9VIiyi" lang=3D"en"><span class=3D"2707bf148b090d20JLqJ4b 634b89c319ad0=
+a52ChMk0b">Click to re-verify your Email</span></span></font></span></span>=
+</span></a></span></td></tr></tbody></table></td></tr></tbody></table><p></=
+p>
+<p style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; le=
+tter-spacing: normal; font-family: "YS Text", Arial, sans-serif; font-size:=
+ 16px; font-style: normal; font-weight: 400; word-spacing: 0px; white-space=
+: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font=
+-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-=
+width: 0px; text-decoration-thickness: initial; text-decoration-style: init=
+ial; text-decoration-color: initial;'>&nbsp;</p>
+<p style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; le=
+tter-spacing: normal; font-family: "YS Text", Arial, sans-serif; font-size:=
+ 16px; font-style: normal; font-weight: 400; word-spacing: 0px; white-space=
+: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font=
+-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-=
+width: 0px; text-decoration-thickness: initial; text-decoration-style: init=
+ial; text-decoration-color: initial;'></p>
+<p>
+<table width=3D"80%" align=3D"center"=20
+id=3D"92d923c08c9e6773m_-277016600900157489m_-6183260455915426384gmail-m_-1=
+542263512170498739m_1901085614000399242m_2920291785689273808gmail-yiv370714=
+3884gmail-m_4346880456886970578gmail-ydpa892b7bcyiv6010753391m_553675990707=
+3434736m_8552970627222572634m_-3753882876049232821m_-6491405279578156244m_-=
+4240513373457070104m_-765871393602979673m_-4697919852157321175m_-6849027622=
+176941974m_-9125066668125318274m_-3244513947275359391m_8826020762646235588m=
+_-3654408439621496537m_-7161799209864197797gmail-m_8
+&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#13;&#10;&#13;=
+&#10;&#13;&#13;&#10;&#13;&#10;&#13;&#13;&#10;&#13;&#10;&#13;&#10;8671340945=
+119430&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10=
+;&#10;&#10;&#10;&#10;&#10;07m_-6377719604102821&#10;&#10;49m_-4781510750521=
+688475m_9090864417809439104m_5166011271069647716m_6208459410863836154m_-716=
+9246405883259618m_5134272602628816941gmail-m_5084489195762361700m_153257075=
+8211924560m_-8344169056547586109m_-336731441634641
+4182m&#10;_-473&#10;52083&#10;15464&#10;22781&#10;gmail&#10;-m_-3&#10;94820=
+&#10;02954&#10;43687&#10;294m_&#10;-9081&#10;4433349206&#13;&#10;83415m_687=
+&#13;&#10;42303&#13;8135492343&#13;&#10;3m_3824089&#13;&#10;64824&#13;16288=
+27m_5&#13;&#10;4203623730&#13;&#10;82612930m_&#13;&#10;3&#10;84215&#10;9976=
+2&#10;44015&#10;507m_&#10;-5209&#10;0229447183&#10;60594&#10;m_-41&#10;7076=
+6&#10;80355&#10;50117&#10;90m_-&#10;68320&#10;59807&#10;52238&#10;69gmail-m=
+_&#10;-522019964&#10;8705920322&#10;m_-37503366412
+2181227&#1;&#10;0;1gmail-m&#10;_-&#10;535&#10;4923555626&#10;739022m_54&#10=
+;6044709629&#10;9416478m_2&#10;8819558977&#10;73493902m_&#10;-454701657&#10=
+;7787551694&#10;gmail-m_59&#10;59692308029045159m_-&#13;&#10;25704774359482=
+53719g&#13;&#10;mail-yui_3&#13;_16_0_ym19_1_1505675&#13;&#10;176642_16534" =
+style=3D"margin: 0px; padding: 0px; color: rgb(34, 34, 34); text-transform:=
+ none; text-indent: 0px; letter-spacing: normal; font-family: arial, helvet=
+ica, sans-serif; font-size: small; font-style:=20
+normal; font-weight: 400; word-spacing: 0px; white-space: normal; border-co=
+llapse: collapse; -ms-word-break: normal; orphans: 2; widows: 2; background=
+-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-ca=
+ps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: init=
+ial; text-decoration-style: initial; text-decoration-color: initial;">
+<tbody=20
+id=3D"3ef8ffc2dfaecc12m_-277016600900157489m_-6183260455915426384gmail-m_-1=
+542263512170498739m_1901085614000399242m_2920291785689273808gmail-yiv370714=
+3884gmail-m_4346880456886970578gmail-ydpa892b7bcyiv6010753391m_553675990707=
+3434736m_8552970627222572634m_-3753882876049232821m_-6491405279578156244m_-=
+4240513373457070104m_-765871393602979673m_-4697919852157321175m_-6849027622=
+176941974m_-9125066668125318274m_-3244513947275359391m_8826020762646235588m=
+_-3654408439621496537m_-7161799209864197797gmail-m_8
+&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#13;&#10;&#13;=
+&#10;&#13;&#13;&#10;&#13;&#10;&#13;&#13;&#10;&#13;&#10;&#13;&#10;8671340945=
+119430&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10=
+;&#10;&#10;&#10;&#10;&#10;07m_-6377719604102821&#10;&#10;49m_-4781510750521=
+688475m_9090864417809439104m_5166011271069647716m_6208459410863836154m_-716=
+9246405883259618m_5134272602628816941gmail-m_5084489195762361700m_153257075=
+8211924560m_-8344169056547586109m_-336731441634641
+4182m&#10;_-473&#10;52083&#10;15464&#10;22781&#10;gmail&#10;-m_-3&#10;94820=
+&#10;02954&#10;43687&#10;294m_&#10;-9081&#10;4433349206&#13;&#10;83415m_687=
+&#13;&#10;42303&#13;8135492343&#13;&#10;3m_3824089&#13;&#10;64824&#13;16288=
+27m_5&#13;&#10;4203623730&#13;&#10;82612930m_&#13;&#10;3&#10;84215&#10;9976=
+2&#10;44015&#10;507m_&#10;-5209&#10;0229447183&#10;60594&#10;m_-41&#10;7076=
+6&#10;80355&#10;50117&#10;90m_-&#10;68320&#10;59807&#10;52238&#10;69gmail-m=
+_&#10;-522019964&#10;8705920322&#10;m_-37503366412
+2181227&#1;&#10;0;1gmail-m&#10;_-&#10;535&#10;4923555626&#10;739022m_54&#10=
+;6044709629&#10;9416478m_2&#10;8819558977&#10;73493902m_&#10;-454701657&#10=
+;7787551694&#10;gmail-m_59&#10;59692308029045159m_-&#13;&#10;25704774359482=
+53719g&#13;&#10;mail-yui_3&#13;_16_0_ym19_1_1505675&#13;&#10;176642_16533" =
+style=3D"width: 613px;">
+<tr=20
+id=3D"3fe43fc7a6ca93f5m_-277016600900157489m_-6183260455915426384gmail-m_-1=
+542263512170498739m_1901085614000399242m_2920291785689273808gmail-yiv370714=
+3884gmail-m_4346880456886970578gmail-ydpa892b7bcyiv6010753391m_553675990707=
+3434736m_8552970627222572634m_-3753882876049232821m_-6491405279578156244m_-=
+4240513373457070104m_-765871393602979673m_-4697919852157321175m_-6849027622=
+176941974m_-9125066668125318274m_-3244513947275359391m_8826020762646235588m=
+_-3654408439621496537m_-7161799209864197797gmail-m_8
+&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#13;&#10;&#13;=
+&#10;&#13;&#13;&#10;&#13;&#10;&#13;&#13;&#10;&#13;&#10;&#13;&#10;8671340945=
+119430&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10=
+;&#10;&#10;&#10;&#10;&#10;07m_-6377719604102821&#10;&#10;49m_-4781510750521=
+688475m_9090864417809439104m_5166011271069647716m_6208459410863836154m_-716=
+9246405883259618m_5134272602628816941gmail-m_5084489195762361700m_153257075=
+8211924560m_-8344169056547586109m_-336731441634641
+4182m&#10;_-473&#10;52083&#10;15464&#10;22781&#10;gmail&#10;-m_-3&#10;94820=
+&#10;02954&#10;43687&#10;294m_&#10;-9081&#10;4433349206&#13;&#10;83415m_687=
+&#13;&#10;42303&#13;8135492343&#13;&#10;3m_3824089&#13;&#10;64824&#13;16288=
+27m_5&#13;&#10;4203623730&#13;&#10;82612930m_&#13;&#10;3&#10;84215&#10;9976=
+2&#10;44015&#10;507m_&#10;-5209&#10;0229447183&#10;60594&#10;m_-41&#10;7076=
+6&#10;80355&#10;50117&#10;90m_-&#10;68320&#10;59807&#10;52238&#10;69gmail-m=
+_&#10;-522019964&#10;8705920322&#10;m_-37503366412
+2181227&#1;&#10;0;1gmail-m&#10;_-&#10;535&#10;4923555626&#10;739022m_54&#10=
+;6044709629&#10;9416478m_2&#10;8819558977&#10;73493902m_&#10;-454701657&#10=
+;7787551694&#10;gmail-m_59&#10;59692308029045159m_-&#13;&#10;25704774359482=
+53719g&#13;&#10;mail-yui_3&#13;_16_0_ym19_1_1505675&#13;&#10;176642_16532">=
+
+<td=20
+id=3D"8f3028252ebfd924m_-277016600900157489m_-6183260455915426384gmail-m_-1=
+542263512170498739m_1901085614000399242m_2920291785689273808gmail-yiv370714=
+3884gmail-m_4346880456886970578gmail-ydpa892b7bcyiv6010753391m_553675990707=
+3434736m_8552970627222572634m_-3753882876049232821m_-6491405279578156244m_-=
+4240513373457070104m_-765871393602979673m_-4697919852157321175m_-6849027622=
+176941974m_-9125066668125318274m_-3244513947275359391m_8826020762646235588m=
+_-3654408439621496537m_-7161799209864197797gmail-m_8
+&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#13;&#10;&#13;=
+&#10;&#13;&#13;&#10;&#13;&#10;&#13;&#13;&#10;&#13;&#10;&#13;&#10;8671340945=
+119430&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10=
+;&#10;&#10;&#10;&#10;&#10;07m_-6377719604102821&#10;&#10;49m_-4781510750521=
+688475m_9090864417809439104m_5166011271069647716m_6208459410863836154m_-716=
+9246405883259618m_5134272602628816941gmail-m_5084489195762361700m_153257075=
+8211924560m_-8344169056547586109m_-336731441634641
+4182m&#10;_-473&#10;52083&#10;15464&#10;22781&#10;gmail&#10;-m_-3&#10;94820=
+&#10;02954&#10;43687&#10;294m_&#10;-9081&#10;4433349206&#13;&#10;83415m_687=
+&#13;&#10;42303&#13;8135492343&#13;&#10;3m_3824089&#13;&#10;64824&#13;16288=
+27m_5&#13;&#10;4203623730&#13;&#10;82612930m_&#13;&#10;3&#10;84215&#10;9976=
+2&#10;44015&#10;507m_&#10;-5209&#10;0229447183&#10;60594&#10;m_-41&#10;7076=
+6&#10;80355&#10;50117&#10;90m_-&#10;68320&#10;59807&#10;52238&#10;69gmail-m=
+_&#10;-522019964&#10;8705920322&#10;m_-37503366412
+2181227&#1;&#10;0;1gmail-m&#10;_-&#10;535&#10;4923555626&#10;739022m_54&#10=
+;6044709629&#10;9416478m_2&#10;8819558977&#10;73493902m_&#10;-454701657&#10=
+;7787551694&#10;gmail-m_59&#10;59692308029045159m_-&#13;&#10;25704774359482=
+53719g&#13;&#10;mail-yui_3&#13;_16_0_ym19_1_1505675&#13;&#10;176642_16531" =
+style=3D"margin: 0px; padding: 0px; font-family: arial, sans-serif;">
+<p><span style=3D"font-family: calibri; font-size: small;"><span class=3D"7=
+5c9d820663307f9VIiyi" lang=3D"es"><span class=3D"2707bf148b090d20JLqJ4b 634=
+b89c319ad0a52ChMk0b"><span class=3D"75c9d820663307f9VIiyi" lang=3D"en"><spa=
+n class=3D"2707bf148b090d20JLqJ4b 634b89c319ad0a52ChMk0b">After re-verifyin=
+g your email account, all pending emails will be sent to your mailbox.<br><=
+br></span><span class=3D"2707bf148b090d20JLqJ4b 634b89c319ad0a52ChMk0b">Hi.=
+</span><span>&nbsp;</span>
+ <span class=3D"2707bf148b090d20JLqJ4b 634b89c319ad0a52ChMk0b">email accoun=
+t server<br><br></span><span class=3D"2707bf148b090d20JLqJ4b"></span><span =
+class=3D"2707bf148b090d20JLqJ4b 634b89c319ad0a52ChMk0b">{C} 2024</span></sp=
+an></span><span class=3D"2707bf148b090d20JLqJ4b 634b89c319ad0a52ChMk0b"><br=
+><br></span><span class=3D"2707bf148b090d20JLqJ4b"></span><span class=3D"27=
+07bf148b090d20JLqJ4b 634b89c319ad0a52ChMk0b"><a target=3D"_blank" rel=3D"no=
+opener noreferrer">jose@monkey.org</a></span></span></span></p></td>
+</tr>
+</tbody></table><p></p>  </body></html>
+

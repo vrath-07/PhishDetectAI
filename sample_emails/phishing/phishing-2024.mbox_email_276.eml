@@ -1,0 +1,107 @@
+Return-Path: info@dorukticaret.com.tr
+Delivered-To: jose@monkey.org
+X-FDA: 82610945634.21.0DD6924
+Received: from server.nring.net (server.nring.net [95.211.244.167])
+	by imf24.b.hostedemail.com (Postfix) with ESMTP id 5BBFC80005
+	for <jose@monkey.org>; Fri, 27 Sep 2024 15:46:35 +0000 (UTC)
+Authentication-Results: imf24.b.hostedemail.com;	dkim=none;	spf=neutral
+ (imf24.b.hostedemail.com: 95.211.244.167 is neither permitted nor denied by
+ domain of info@dorukticaret.com.tr) smtp.mailfrom=info@dorukticaret.com.tr;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1727451944;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	 references;
+ bh=yVJOXQxdK3Hb8zUjK7NMpRFp5RDnIkMHszRQhYZOrZw=;
+	b=UrUXKDcdgNjjFcKy7jWXtB3JGV2xGNlght9XrO8RMtBUcX9F5xr0ekZOrPdpIf8jou+RuS
+	ZPOEPZOIDIlT5ytEAKxjRsZtyMff+qGu7L4wrOB6Xcll7vX8jsXnD67aczfV4IkDcwxmSn
+	0z7bAUoDU6ZPI23MKSpJETiBk3ogiPA=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1727451944; a=rsa-sha256;
+	cv=none;
+	b=BUvTnSCb/h18HgOHEQuynzqUrnRlfP2EdOqP1dvYRujGYY6LmSrqfsB0U4dUcaDMT+jkec
+	YlQsUAVH1c2e2lBl9f3KXaMwK8SlPpjQseCI4jZXDBljb8Td4rk3PKbshwOEoTIzbRwEal
+	980CVJtELSpPWpsEfJPmD72V6X9Bvtg=
+ARC-Authentication-Results: i=1;	imf24.b.hostedemail.com;	dkim=none;
+	spf=neutral (imf24.b.hostedemail.com: 95.211.244.167 is neither permitted nor
+ denied by domain of info@dorukticaret.com.tr)
+ smtp.mailfrom=info@dorukticaret.com.tr;	dmarc=none
+Received: from ec2-3-88-208-27.compute-1.amazonaws.com ([3.88.208.27]:57574
+ helo=dorukticaret.com.tr)	by server.nring.net with esmtpsa  (TLS1.2) tls
+ TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	(Exim 4.96.2)	(envelope-from
+ <info@dorukticaret.com.tr>)	id 1suDAp-0005Q9-05	for jose@monkey.org;	Fri, 27
+ Sep 2024 18:46:33 +0300
+From: info@dorukticaret.com.tr
+To: jose@monkey.org
+Subject: Payment receipt.
+Date: 27 Sep 2024 15:46:31 +0000
+Message-ID: <20240927154631.F31BECC02DA8E371@dorukticaret.com.tr>
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="----=_NextPart_000_0012_C3B95C48.5A730D7F"
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - server.nring.net
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - dorukticaret.com.tr
+X-Get-Message-Sender-Via:
+ server.nring.net: authenticated_id: support@tawfik.co.il
+X-Authenticated-Sender: server.nring.net: support@tawfik.co.il
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Queue-Id: 5BBFC80005
+X-Spam-Status: No, score=5.45
+X-Stat-Signature: d88jf9j8jnkwzpqkshytk1xhk7nskesz
+X-Rspam-User: 
+X-Rspamd-Server: rspam05
+X-HE-Tag: 1727451995-487025
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19y06yJmwUsMQxKdtQBVsd9XLUUTZv5kNLlWibYX4a+p4N?=
+ =?utf-8?q?CnyDKu60Lc80IEyBrwTBy6oNABAD5nEjcnvteN7vAbI66iAk8pBOQIuxP9pg0JOS8?=
+ =?utf-8?q?2ZQczEdCvbP96D747P9cBJI6S+a8tvwsXnXLvBIJHlFCmr48MyNu70dbrs/IbckDD?=
+ =?utf-8?q?mmQQlqIB9QcqLB6DdPCEBMuj87PhVTyCuNF7ouDYQox/jX24OBDdfofdtQBI/Jei8?=
+ =?utf-8?q?g2Use1qnDMWMPkJmeNETC9qkYOG7fDtdazSnSPjy/QD7QBsGxHw7Rdvl7GdonQ/w3?=
+ =?utf-8?q?DVq+sGY47c+Xqm4SzUMtpbymPRt5jjyarg8cBrzyN/SzdDxYqpDkyT8CIAJ3x0uJ3?=
+ =?utf-8?q?W6+WKJ+7uVN7p9fivHPC8hxemaoWYj8+ghGNtDCULGtS7TTb/NjYN2wIrEBANXAoW?=
+ =?utf-8?q?Z5c0N4pANgyubVSSw0OIgY2ldkYmwM0Kk87W6jupJSvWYhbjsXxuYBa9N8vAW3y+n?=
+ =?utf-8?q?RiGxxWsu7b2Lrk1Ta2Q5zChCA5+9iUWeFOQzm/dluhi/vDJ8hocvO52FHiXzmab7X?=
+ =?utf-8?q?qHtibQ7RY5biatJU6YTXkMf/3j9ZjoRVtEXcKjopTJoYbwbnUl/JRb8/FtUiTWtIe?=
+ =?utf-8?q?Pgg4+yGvUIRZXCaQeEMLSgoFXVQNKtfVXHIGWCMASZ05ZoGQgnPTokcEiQcrQ8WZB?=
+ =?utf-8?q?nP2587MZ+6ga83OQw9WaJEP9orYohv3RehYRCo18CtkKNhsc1IIddJ7kDaovHWyK5?=
+ =?utf-8?q?+0FUCuxkJ3VJENY4UvaNuHnQXUv21PXL5t+jPjdEaXS+czTdDBYFNFDFxpQx9wTJJ?=
+ =?utf-8?q?K0svFq1Zaox6nafNGLiDohnFBGtLtl3DnLXNDzRFC46UgwTwD2HU/myvB65v/roKZ?=
+ =?utf-8?q?nlF1GYBfrm/17sHTIx0yfytCwO1XeevUHOU2bknWdo44frrZDuknKd46IfHuoUQg3?=
+ =?utf-8?q?TBnnHQ+IFNTS6Agl+dX1iJ_5XyhfHTBypocJGtZBTKpRDWl6hN8aggmnsPPU7IBRL?=
+ =?utf-8?q?9qmq3mcINFu//kdN/PZhYabI7IrMgByF4RiP4lmBx/XZzKqxvu6mxiQxFxAz/WxpA?=
+ =?utf-8?q?FbJtuyBhwVef25TDTOz+Z0lyJ1krFoEDYwloOiBQrLQcYOvzJYa1rUCINAq79bxbg?=
+ =?utf-8?q?scrcoGEnY3FxJATCOZ5qbMz10/bmn9/fSdFOfBbkaJ2gV9HykJfSKqMs8hYtzZp4p?=
+ =?utf-8?q?oO/QmpgMeqt1Afse3HGfGiooup6XQd9yOiKOvlzYRoPfke7WsOSrbg+K7wZbdphMq?=
+ =?utf-8?q?Vd0s+ZDeUGt622zC4IApN5NnczIrttPS9bnyTdy8w7dZx3RMgzuZJDHxwXbLeQHCE?=
+ =?utf-8?q?CID7pbeTx7LtjfqTxAT3BbteA4ZQhtkvPeBPX39ItleZ9WgwUDmQiRupEYxTY03CC?=
+ =?utf-8?q?Iq4G4xaH8O/TBghnXYjEtl8X78VLwYrbU8veWtZg868ISHoz6fAmeZmWYOjhXDouU?=
+ =?utf-8?q?O/OihV7D/hkclHv/kJNFAplciTaIZUMTRb4/K60B9QeqHIwMCaeo5Xw9j28ulpoRJ?=
+ =?utf-8?q?s3acI3DjkZf41FMpJ/iXtBewZ5wWs/OvCyphRY8LSm+RQXbu7HHHTsLk9R88PtOQ0?=
+ =?utf-8?q?8R9YLn0eH85Yshq4yqBR/LofgO4xJTgyw0Pc0C2Q1Qfsh/SzQcrIemj0TFxXJMLwY?=
+ =?utf-8?q?o7XzNGkEV4uqCkkMm?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 276
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0012_C3B95C48.5A730D7F
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Please review the attached payment receipt.
+
+Thank you
+Johnson Gutierrez.
+
+------=_NextPart_000_0012_C3B95C48.5A730D7F
+------=_NextPart_000_0012_C3B95C48.5A730D7F--
+
+

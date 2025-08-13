@@ -1,0 +1,199 @@
+Return-Path: noreply@groups.google.com
+Delivered-To: jose@monkey.org
+X-FDA: 82824369726.16.5F31464
+Received: from mail-pj1-f71.google.com (mail-pj1-f71.google.com
+ [209.85.216.71])	by imf11.b.hostedemail.com (Postfix) with ESMTP id
+ EA60980003	for <jose@monkey.org>; Mon, 25 Nov 2024 11:18:39 +0000 (UTC)
+Authentication-Results: imf11.b.hostedemail.com;	dkim=pass header.d=google.com
+ header.s=20230601 header.b="vOEF/KNE";	spf=pass (imf11.b.hostedemail.com:
+ domain of noreply@groups.google.com designates 209.85.216.71 as permitted
+ sender) smtp.mailfrom=noreply@groups.google.com;	dmarc=pass (policy=reject)
+ header.from=google.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1732533521;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=+CcH4FiNqy+YEV1/OGVTV3/K+GeOb9hInCGadvQ3bNI=;
+	b=rGI+LV4w5SFC6ywiF8tnkyTpUN5EnME5C2aiYGpkFw/qnMUJoWujxwDT2yvbwpo4yGoyPY
+	vdrI9h88n7L5dkP6SiCmuy5UzDXOIhNgrhkqvFM5DykB7QU08ESIfUj9OE7/d1RTzM+5ao
+	iPrYkqX0JyOYDwSGfWrj6Q7T4nS/UAo=
+ARC-Authentication-Results: i=1;	imf11.b.hostedemail.com;	dkim=pass
+ header.d=google.com header.s=20230601 header.b="vOEF/KNE";	spf=pass
+ (imf11.b.hostedemail.com: domain of noreply@groups.google.com designates
+ 209.85.216.71 as permitted sender) smtp.mailfrom=noreply@groups.google.com;
+	dmarc=pass (policy=reject) header.from=google.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1732533521; a=rsa-sha256;
+	cv=none;
+	b=c2YOqiS7xX555zJaUwAliAjxsGr6ssDACDhJFdw1StYGweVh92qN+3kZrQImixl50wG5MW
+	AtxYom2b7X23BrortT53r7XjhEPc0Ueg6/zKsJoJqzSC/uo9FCqtS1Ox6R+UKX5tpYGXgi
+	E+8upp/jyJdyNHaAPtD3Qf6Cx/v+JcQ=
+Received: by mail-pj1-f71.google.com with SMTP id
+ 98e67ed59e1d1-2ea2bf5b5fbso4264696a91.2        for <jose@monkey.org>; Mon, 25
+ Nov 2024 03:18:42 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=google.com; s=20230601; t=1732533521; x=1733138321; darn=monkey.org;
+        h=to:from:subject:message-id:auto-submitted:date:mime-version:from:to
+         :cc:subject:date:message-id:reply-to;
+        bh=+CcH4FiNqy+YEV1/OGVTV3/K+GeOb9hInCGadvQ3bNI=;
+        b=vOEF/KNEDodcLFp7PozDwlx55k9R6ErHY70NFNYPRLELGsH1CqfEwykAJtzfhWEwv1
+         zNkGbBAhQnQ4TGp68vxaRBOgbl9kNwNo4JMiYME6med8ABt799fPDQt50mtPHqB3NkSA
+         XBtz5vWT+gvweLAS8bsBnQd4fXunT/VDLZQHu2KtSHHscAWAD7ccaV5eyyplIcvXt0wm
+         hQVpJANuDb45Jw2vZI+Fruicv4M+gkl1905oUxYg5nvgG47MPsAsVWVhj9Wvjjp86U79
+         7yG8/2FT2TlWv5eQtA2GJWh6YEDcrqdB6srOYepRVPZno+FJYktqfGkywYRYFxhKz3Bu
+         qd3w==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1732533521; x=1733138321;
+        h=to:from:subject:message-id:auto-submitted:date:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=+CcH4FiNqy+YEV1/OGVTV3/K+GeOb9hInCGadvQ3bNI=;
+        b=pqyPpSTxhmMaIQAPuX6JotO/V8taC3RaGJGneZUudOTa/4019uO7EpYbiTwuIKLIIA
+         9Tca2KMKZ/vU0F5DllJVp3cqu3RFRbPhXDW66izCgmgDrG5Gih2b1EdIW8TTu2Lm5PhQ
+         e0m1am9UEPYxbxPddWte8Jhk94X0n2vQEg3F2OkJQw3Cv2WYN4njdVoD+dDDNIl07CyR
+         KCzYe+7PBX+C+uYtHZhnE/iDxSOWdXED5rfuskcm/bmxXcq6JHcnqWgEDv8wlrZkQGke
+         rqIKsDLW8SVujTMCW7/d9eJVrOrlgiQpopCs4LTO6xuJ2nEETiaj2hP5V/VdbgJJAswv
+         w1mw==
+X-Gm-Message-State: AOJu0Yya4PD2w8qD38u22WyiXN4o0PMeBWtmlM0v8lbBdZL28IXK77dT
+	kpGbz7t7w0ptlGPFJ8eQmmgnjI8vXZDvV8ZFfSMkROiVz3mnAUmXtYDjZNdkaeKPmPwScDacOnC
+	+pjgq06ncILodbsB1gcm6ilEedy5NyCvqCyAbuq45c6KL3htItjU=
+X-Google-Smtp-Source: =?utf-8?q?AGHT+IEsTu9zzm2ZRJIyanGExL1fHpoypkifTI/cR/G9?=
+ =?utf-8?q?unZt/LaQTDnWvyLwGMY5GK/XWKjEKktvYyJpI29VAEZi1Mriuiuk9g8=3D?=
+MIME-Version: 1.0
+X-Received: by 2002:a17:90b:4a51:b0:2ea:4e67:5638 with SMTP id
+ 98e67ed59e1d1-2eb0e884761mr15894685a91.35.1732533521623; Mon, 25 Nov 2024
+ 03:18:41 -0800 (PST)
+Date: Mon, 25 Nov 2024 03:18:41 -0800
+Auto-Submitted: auto-generated
+X-Notifications: fc385c9b36e20000
+X-Notifications-Bounce-Info: =?utf-8?q?ARtip5zfx8QrNSKfyF-8K39ec5y2DVBdAYI1L?=
+ =?utf-8?q?p-Wc04RwfCR0NxbH-pobEPstwCc6W5NxhHrVxZuI8bS-261f8ToxhrS9s0AlUPEfS?=
+ =?utf-8?q?6vyJQej6MliQLw-jbDTxfF=5F-ha1J8FSf7qPDpECOuLRN=5F1wEntouOLZKXSS7C?=
+ =?utf-8?q?pgkSvd7nYqFUsHpfbdpOe3eINjAwNjA0MDQxNTM1NTk2OTMzMg?=
+Message-ID: <8EqpLNPyGKrj_u_mBpop5A@notifications.google.com>
+Subject: Invitation to join KzMgLX Your eyes should be on me.  lLVbn6
+From: Google Groups <noreply@groups.google.com>
+To: jose@monkey.org
+Content-Type: multipart/alternative; boundary="0000000000001e2f400627bae575"
+X-Spam-Status: No, score=1.94
+X-Rspamd-Server: rspam07
+X-Rspamd-Queue-Id: EA60980003
+X-Stat-Signature: h7mc745oz3b1douztahy3samypzfjybb
+X-Rspam-User: 
+X-HE-Tag: 1732533519-144087
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+C+40CmLEH8sbUjpPlHNQJQNotiYLpAION1OzVLemMd1k?=
+ =?utf-8?q?b9nrz8JNMf4eD6eqcENdbm3nPYjcRf+5MNHMZHiIA59YQ3pCns+FD/G7GLZd+h7Zl?=
+ =?utf-8?q?a0Gci30YvQvyQcClb7NClh9DeW9iZbxpqGTfxnAxgKwg+rasmaco3v/b2UgLPLnVe?=
+ =?utf-8?q?Ee6APXBsFlW8wUCQ1+uWwgyVWSrg+LT4ZW25ZoBb309z2bck6x1vKOeKpy3fKwZnx?=
+ =?utf-8?q?nhzHMQeEeA+nTesOmQwHPZYyjnR+zLgIPyvDgMxPaXY9Ci14xh+wWCGfhcvgBJYki?=
+ =?utf-8?q?WH5jcq74O4WSa7kI6TRECQiIkl4o++N1zFK99kt4TE4u+rj+glFLUVDfNHg0IkXg6?=
+ =?utf-8?q?2f8Abg/TvZVQgWHlAeEUJkL6zDJ70MC1KAwWGweAB5bzHNQ1w3XQ+BxVRs+CTjpdl?=
+ =?utf-8?q?Q+CTmLNJ5y7qEi42MiPxAldWoqyRMj1x9tjk//Hb365TWKzyueCpRHf2QO4jbMLEG?=
+ =?utf-8?q?HMvyc3yE+5XKaV2UqndveE1W5pap+iRP0q9v3UeWCPKiGTJOCcrlKoWID4tBCMfMO?=
+ =?utf-8?q?YZ1IQvLECtE0VHEzE/pRZSnBZ3HrQJEjLG+Q7KmZZR5tfqX8TyFy4iiwSfMIXjftI?=
+ =?utf-8?q?lJT0A92nq8Sq45B3Ohd7+LFuD2acGKh6ckSaYqY55c4DV5DmU98uWPUyGV83RSOxz?=
+ =?utf-8?q?9O0BPL21JA5DFENxPXszxssno+WXsPMO7r9GgGfwj5g7mIWZqU/eUSX7GeK3I+v27?=
+ =?utf-8?q?Jpz5Wd0R8NqSK/uv9sMcvlOZkyes0IoKPGRsrrtUAylVj5R29EyC6NR1Lprs+FdL+?=
+ =?utf-8?q?FC7x8ffXGeVbswcmH1C8SzfnFrAhQQgQVlzVv0TE5JTh4UzO4qGicEo9RZ7/gfH5u?=
+ =?utf-8?q?o6hhX8h+qzWpSWhm71/+uQLsgFJUQQKFFN0wNs3rc18uewW6stLilGVDRtDR4lUy5?=
+ =?utf-8?q?RuUN/Shh3sQcOeZSv2vMDu_rRX5WXYnfh+8pt2PxM09cI57iOqiMA6JBb6VTgAzhq?=
+ =?utf-8?q?CJeDMYTMKwd1S6gqw8PAp3hj+F5IzCZpMr2rr3FaBaM4zGJszofq8GU9RBgmf14L/?=
+ =?utf-8?q?hteNGMu/f/u2UZkJEFXZRiBKE6dcxshrXZaOcP8K0XF2z4VUx/bkaCyjiC/ZBxEIK?=
+ =?utf-8?q?5LcJduyPOMl95RHw+hmYxeWGAHkBNJDHcBH7mqT3etut87moBiclWV+12gObumaZ3?=
+ =?utf-8?q?SmrefNye1Oe6ndVMNmRB13FDmyg/ALzpKhvd2Q60CgT2nLaO37h12G1QVNe7INazA?=
+ =?utf-8?q?W2+8MimVMVHODBBMFb5wZWP5od5LLHqExuP1b4nsK5GdpTvczZ2re4Ff0LCNXdMyR?=
+ =?utf-8?q?oM4wItlonRD78FQZrTahky652mMfhliy3wupJ+h1HKgxTZpRgihCiaGHf+hSrlYoV?=
+ =?utf-8?q?N7TyGzqnea9iGGv7qCd+5Y75GQaGfJ9XEVAu3XigtVhhJ+shtVfTSQdFO/PZtKdG/?=
+ =?utf-8?q?8GqI37+M8F75PWl6CNxAR8uPB7bzC+yzYDannOrKJiBNurLPDDZlDlf5w+M1vuVoT?=
+ =?utf-8?q?sxQ1tSQv5vpoieOsbSVVvuHZifarkkaUQwcEKGnH3bMuDgVTKRjAAVPMLB1mMveyA?=
+ =?utf-8?q?iJTBdsutnLq28NE5fQGSqOskRIgoQ=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 360
+
+--0000000000001e2f400627bae575
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+
+Hi jose@monkey.org,
+frankie21harold@c.deting.club invited you to join the group KzMgLX Your  
+eyes should be on me.  lLVbn6.
+https://groups.google.com/a/c.deting.club/d/forum/icj6cvqmk1qttofhvqx3qcjhht7hsus7yz7syamndvjz9cqklyfvupkorxvo
+
+Google Groups allows you to create and participate in online forums and
+email-based groups with a rich community experience. You can also use
+your Group to share documents, pictures, calendars, invitations and other  
+resources.
+
+
+Accept this invitation at:  
+https://groups.google.com/a/c.deting.club/forum/subscribe?token=AHZ7KVO-mN5AqE7uhq6nsRI1dsQT4my5yQDEvM5GCnNlXJNqiNGeBHys1MFLTSwAa5u1rqDoFOzgMBgeXiWHrqJSrHm47oiaFQ
+If you do not wish to be a member of this group or believe that this group  
+may contain spam:
+* You can report this group for abuse at  
+https://groups.google.com/a/c.deting.club/d/abuse/AJmrmCt9NTdFid7ednNPluKYYPoxEiZRQKExlXpvGdMZkHGxpFrS3DKUF5VwPBEFNIbWpC7XdNZf8m6dXpw1yHYUFihE3_Lu900U5e3FG_aXudLPd9vexcw
+* You can opt out of all future Google Groups activity at  
+https://groups.google.com/a/c.deting.club/d/optout
+
+Visit the Google Groups Help Centre at  
+https://support.google.com/groups/answer/46601?hl=en_GB.
+
+--0000000000001e2f400627bae575
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html dir=3D"ltr"><head><meta charset=3D"UTF-8"></head><body dir=3D"ltr"><d=
+iv style=3D"border: 1px solid #f0f0f0; max-width: 650px; font-family: Arial=
+, sans-serif; color: #000"><div style=3D"background-color: #f5f5f5; padding=
+: 10px 12px"><table cellpadding=3D"0" cellspacing=3D"0" style=3D"width:100%=
+"><tbody><tr><td style=3D"width: 50%"><span style=3D"font: 20px/24px arial;=
+ color: #333"><a href=3D"https://groups.google.com/a/c.deting.club/d/forum/=
+icj6cvqmk1qttofhvqx3qcjhht7hsus7yz7syamndvjz9cqklyfvupkorxvo" style=3D"text=
+-decoration: none; color: #000">KzMgLX Your eyes should be on me.  lLVbn6</=
+a></span></td><td style=3D"text-align: right; width: 50%"><span style=3D"fo=
+nt: 20px/24px arial"><a style=3D"color:#dd4b39; text-decoration:none;" href=
+=3D"https://groups.google.com/a/c.deting.club/d/overview" target=3D"_blank"=
+>Google Groups</a></span></td><td style=3D"text-align: right;"><a href=3D"h=
+ttps://groups.google.com/a/c.deting.club/d/overview" target=3D"_blank"><img=
+ style=3D"border: 0; vertical-align: middle; padding-left: 10px;" src=3D"ht=
+tps://fonts.gstatic.com/s/i/productlogos/groups/v9/web-32dp/logo_groups_col=
+or_1x_web_32dp.png" alt=3D'Logo for Google Groups'></a></td></tr></tbody></=
+table></div><div style=3D"margin: 30px 30px 30px 30px; line-height: 21px;">=
+<span style=3D"font-size: 13px; color: #333333;">Hi jose@monkey.org,<br>fra=
+nkie21harold@c.deting.club invited you to join the group <a style=3D"color:=
+ #1155cc; text-decoration: none;" href=3D"https://groups.google.com/a/c.det=
+ing.club/d/forum/icj6cvqmk1qttofhvqx3qcjhht7hsus7yz7syamndvjz9cqklyfvupkorx=
+vo"><b>KzMgLX Your eyes should be on me.  lLVbn6</b></a>.</span></div><div =
+style=3D"margin: 30px 30px 30px 30px; line-height: 21px;"><p style=3D"font-=
+size: 13px; color: #333333;">Google Groups allows you to create and partici=
+pate in online forums and email-based groups with a rich community experien=
+ce. You can also use your Group to share documents, pictures, calendars, in=
+vitations and other resources. <a style=3D"color: #1155cc; text-decoration:=
+ none;" href=3D"https://support.google.com/groups/answer/46601?hl=3Den_GB">=
+Learn more</a>.</p><p style=3D"font-size: 13px; color: #333333;">If you do =
+not wish to be a member of this group or believe that this group may contai=
+n spam, you can <a style=3D"color: #1155cc; text-decoration: none;" href=3D=
+"https://groups.google.com/a/c.deting.club/d/abuse/AJmrmCsHZCaUwFaC4mB2yEGo=
+4OyRgMjj786fsKZuDBFqds3WeqswI5KTIkMSGF_r6QZFfsWpNwrnjhfIT9k8fPKkVL7d-T9Y6zg=
+BCWYm0n0NuEhOLaaEhhA">report the group for abuse.</a> For additional inform=
+ation, please visit our <a style=3D"color: #1155cc; text-decoration: none;"=
+ href=3D"https://support.google.com/groups/answer/46601?hl=3Den_GB">Help Ce=
+ntre</a>.</p></div><div style=3D"margin: 30px 30px 30px 30px; line-height: =
+21px;"><a style=3D"background-color: #498af2; border: solid 1px #3079ed; bo=
+rder-radius: 2px; color: #ffffff; display: inline-block; font-size: 11px; f=
+ont-weight: bold; line-height: 27px; min-width: 54px; padding: 0px 8px; tex=
+t-align: center; text-decoration: none;" href=3D"https://groups.google.com/=
+a/c.deting.club/forum/subscribe?token=3DAHZ7KVPdgiwNIAw0jfTZVWxIDJdfVCjKhdD=
+x8_4izilRS-cb2q-7JmX6ipdZ7sDl4WJopu53SfdtLz8UhwwZFPtnZtZtOe9IaQ">Accept thi=
+s invitation</a></div><div style=3D"margin: 30px 30px 30px 30px; line-heigh=
+t: 21px;"><span style=3D"font-size: 13px; color: #333333;">If you do not wi=
+sh to be added to Google Groups in the future, you can opt out <a style=3D"=
+color: #1155cc; text-decoration: none;" href=3D"https://groups.google.com/a=
+/c.deting.club/d/optout">here</a>.</span></div><div style=3D"background-col=
+or: #f5f5f5; padding: 5px 12px;"><table cellpadding=3D"0" cellspacing=3D"0"=
+ style=3D"width: 100%"><tbody><tr><td style=3D"padding-top: 4px; font-famil=
+y: arial, sans-serif; color: #636363; font-size: 11px"><a href=3D"https://s=
+upport.google.com/groups/answer/46601?hl=3Den_GB" style=3D"color: #1155cc; =
+text-decoration: none;" target=3D"_blank">Visit the Help Centre.</a></td></=
+tr></tbody></table></div></div></body></html>
+--0000000000001e2f400627bae575--
+

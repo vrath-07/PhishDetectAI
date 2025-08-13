@@ -1,0 +1,256 @@
+Return-Path: gwen@asmdy.com
+Delivered-To: jose@monkey.org
+X-FDA: 82118126538.20.4B60BE0
+Received: from proof.asmdy.com (proof.asmdy.com [194.169.172.88])
+	by imf19.b.hostedemail.com (Postfix) with ESMTP id 1297D4000E
+	for <jose@monkey.org>; Tue, 14 May 2024 20:23:27 +0000 (UTC)
+Authentication-Results: imf19.b.hostedemail.com;	dkim=pass header.d=asmdy.com
+ header.s=dkim header.b=Cz0ORRJQ;	spf=pass (imf19.b.hostedemail.com: domain of
+ gwen@asmdy.com designates 194.169.172.88 as permitted sender)
+ smtp.mailfrom=gwen@asmdy.com;	dmarc=pass (policy=none) header.from=asmdy.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1715718208;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=VeTWi2+XUqJnRezpTKrgq2a2CmuCLdLwVna1w24x2DM=;
+	b=ffLjLro2eDUJVkxbSe+d0qc2LFXjqfhBqIgieQCFAycDL5BpDDoX4orBqcljayu4WE99s2
+	MIIwAtKKZMqKukssi5sg6MdeV+PFY2DoXqM7PTXaUJEUFiqjtcY4J7LTGgmF3h6Ue6uilB
+	J1NajkjbjD7D0P1wv/bCzbjdzXA9s8w=
+ARC-Authentication-Results: i=1;	imf19.b.hostedemail.com;	dkim=pass
+ header.d=asmdy.com header.s=dkim header.b=Cz0ORRJQ;	spf=pass
+ (imf19.b.hostedemail.com: domain of gwen@asmdy.com designates 194.169.172.88
+ as permitted sender) smtp.mailfrom=gwen@asmdy.com;	dmarc=pass (policy=none)
+ header.from=asmdy.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1715718208; a=rsa-sha256;
+	cv=none;
+	b=LVkV3ObtMl6QG2UikyJ02dZOnil3tprzYVtsoPMaO6cUNln9C0AtMaraxStzIvOcOlMSur
+	vOSQuzsmUv32Kufope5O64URcC/qtYa69MIsUG6f1k9ANBLpDSGdUAxv2K1pl7LZXwmWVl
+	5yq755N5s449h+zIPIFIIuoW2N4HSXM=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=dkim; d=asmdy.com;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type;
+ i=gwen@asmdy.com; bh=Vn0CFZnNLGksGKFcFuv2T7Y4ku4=; =?utf-8?q?b=3DCz0ORRJQCj?=
+ =?utf-8?q?bevK0T3Cq+xAVjZ8ua69ajmtcL94NpbUH/V4DAj41oCfDSv7skRipgwGtWNS0t0Th?=
+ =?utf-8?q?n?=  
+ VyT0eSAjfBS3eGwYgwKKyU7/JPMSu02Ga0MOHmTMNkzIGv5zDZ0S7vuxs3kB5OiJ9MchAdpqGl3Y
+  
+ UGvbC91rJbYKQdY/Jnf/wV0JP4/Cy0vnu7/7KhrpQfEPI3+JFrCmZq/rag4Qe/tqT9o3OTTYmMpr
+  
+ yEv4q5+ife/ajeV+rGPbzl+jgcVqqzQ2I9a2eW4/FSBqr47kcAh5S5NPf+xVjaCloyRh0wZR2Sqj
+   1QWORPgt8Bxc3ZlidcF9r/54zZGMfqzOAM0d/Q==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=dkim; d=asmdy.com; 
+ =?utf-8?q?b=3DnmNsVkA+SmNpEIHGpI773nllbdwGorgCkHfJ7Mnrv3VGH6C6Dn//tD8zZF+II?=
+ =?utf-8?q?/MAZEYmIlkrkCxi?=  
+ wG81mEtq7T51ng0F9Hb/CiX2VYH5GV7Fqx99LxrvsqnILE82zblXhxL9nfU+KNnSqUgmDHuy7G7P
+  
+ ulx8ArLp1vWCasKAg9CQc5VRD5QT/Nt7sdkwYI/NbDopWJ6FJ6NfG/QT/5JvaHcPLVC2ZWT5EvKk
+  
+ NIqLFOD54Ff4hUwyVhlz2WtqNmhdPkxnutbY6BTWZgfztEJa+TaeNTUtnhYs6ftmlEyE4dryezbu
+   ScM3tGCi2K+znvm0ApmkHBkAYKEb4I8cPNYY0Q==;
+From: Cpanel <gwen@asmdy.com>
+To: jose@monkey.org
+Subject: ServerReport
+Date: 14 May 2024 08:26:55 -0700
+Message-ID: <20240514082655.70CCF883D3A9B653@asmdy.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0012_53F01457.CA37C1BE"
+X-Rspamd-Server: rspam02
+X-Rspamd-Queue-Id: 1297D4000E
+X-Stat-Signature: p86itmr8eoghrqc6hdxy6g1xudbddhcx
+X-Rspam-User: 
+X-Spam-Status: Yes, score=12.85
+X-HE-Tag: 1715718207-96582
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+6RP3XfLggrGS2E4xwnipsUImePdL5P8zYpEOCCramROX?=
+ =?utf-8?q?9kPJ5YiuIkF7GQEAx4aZzJUCu1cYo6wbugw0l5Sost+i/Hda3GV3OZIYU+bRdQ2gt?=
+ =?utf-8?q?zPxhS7s3DZGyjKo5/A15GJgwvXHsLTw/z1zZUG9o6PwYr/o78p6TVIXOTFGz3cud2?=
+ =?utf-8?q?66bYLOx1MrJK85c4HuUktxcbec43bWwHU0UjPWyt5eVtjAEgcg=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 138
+
+
+------=_NextPart_000_0012_53F01457.CA37C1BE
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+The email account " jose@monkey.org " is almost full.
+
+The email account currently uses 91.68% (229.19 MB / 250 MB) of=20
+its capacity.
+
+You should remove some emails from the mailbox as soon as=20
+possible in order to prevent the loss of any future email. Use=20
+the Email Disk Usage tool at=20
+https://monkey.org:2096/?goto_app=3DEmail_DiskUsage , or ask the=20
+system administrator to upgrade your account to a larger quota.
+
+The system generated this warning on Friday, September 21, 2018=20
+at 6:27:01 (UTC).
+
+You can disable the =E2=80=9CQuota :: MailboxWarning=E2=80=9D notice type t=
+hrough=20
+the cPanel interface:=20
+https://monkey.org:2083/?goto_app=3DContactInfo_Change
+
+Do not reply to this automated message.
+------=_NextPart_000_0012_53F01457.CA37C1BE
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>&nbsp;=20
+<div class=3D"moz-text-html" lang=3D"x-western" style=3D"font-size: 11pt;">=
+<p><span style=3D"border-width: 0px; margin: 0px; padding: 0px; color: rgb(=
+0, 0, 0); vertical-align: baseline;"><font style=3D"face: Arial;"><span>Dea=
+r&nbsp;User</span></font></span><span>,<br></span></p><span>
+<p>Our domain Server<span style=3D'color: rgb(34, 34, 34); text-transform: =
+none; text-indent: 0px; letter-spacing: normal; font-family: "times new rom=
+an"; font-size: medium; font-style: normal; font-weight: 400; word-spacing:=
+ 0px; white-space: normal; orphans: 2; widows: 2; background-color: rgb(255=
+, 255, 255); text-decoration-color: initial; text-decoration-style: initial=
+; -webkit-text-stroke-width: 0px; font-variant-ligatures: normal; font-vari=
+ant-caps: normal;'> is holding your inco</span>
+<span style=3D'color: rgb(34, 34, 34); text-transform: none; text-indent: 0=
+px; letter-spacing: normal; font-family: "times new roman"; font-size: medi=
+um; font-style: normal; font-weight: 400; word-spacing: 0px; white-space: n=
+ormal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); text-de=
+coration-color: initial; text-decoration-style: initial; -webkit-text-strok=
+e-width: 0px; font-variant-ligatures: normal; font-variant-caps: normal;'>m=
+ing messages </span>
+<span style=3D'color: rgb(34, 34, 34); text-transform: none; text-indent: 0=
+px; letter-spacing: normal; font-family: "times new roman"; font-size: medi=
+um; font-style: normal; font-weight: 400; word-spacing: 0px; white-space: n=
+ormal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); text-de=
+coration-color: initial; text-decoration-style: initial; -webkit-text-strok=
+e-width: 0px; font-variant-ligatures: normal; font-variant-caps: normal;'>b=
+ecause your email <strong>
+<font color=3D"#338fe9" face=3D"Helvetica" size=3D"2">jose@monkey.org</font=
+></strong><font color=3D"#000000">,</font></span>
+ <span style=3D'color: rgb(34, 34, 34); text-transform: none; text-indent: =
+0px; letter-spacing: normal; font-family: "times new roman"; font-size: med=
+ium; font-style: normal; font-weight: 400; word-spacing: 0px; white-space: =
+normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); text-d=
+ecoration-color: initial; text-decoration-style: initial; -webkit-text-stro=
+ke-width: 0px; font-variant-ligatures: normal; font-variant-caps: normal;'>=
+has not been verif</span>
+<span style=3D'color: rgb(34, 34, 34); text-transform: none; text-indent: 0=
+px; letter-spacing: normal; font-family: "times new roman"; font-size: medi=
+um; font-style: normal; font-weight: 400; word-spacing: 0px; white-space: n=
+ormal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); text-de=
+coration-color: initial; text-decoration-style: initial; -webkit-text-strok=
+e-width: 0px; font-variant-ligatures: normal; font-variant-caps: normal;'>i=
+ed.</span>
+ <br style=3D'color: rgb(34, 34, 34); text-transform: none; text-indent: 0p=
+x; letter-spacing: normal; font-family: "times new roman"; font-size: small=
+; font-style: normal; font-weight: 400; word-spacing: 0px; white-space: nor=
+mal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); text-deco=
+ration-color: initial; text-decoration-style: initial; -webkit-text-stroke-=
+width: 0px; font-variant-ligatures: normal; font-variant-caps: normal;'>
+<br style=3D'color: rgb(34, 34, 34); text-transform: none; text-indent: 0px=
+; letter-spacing: normal; font-family: "times new roman"; font-size: small;=
+ font-style: normal; font-weight: 400; word-spacing: 0px; white-space: norm=
+al; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); text-decor=
+ation-color: initial; text-decoration-style: initial; -webkit-text-stroke-w=
+idth: 0px; font-variant-ligatures: normal; font-variant-caps: normal;'>
+<span style=3D'color: rgb(34, 34, 34); text-transform: none; text-indent: 0=
+px; letter-spacing: normal; font-family: "times new roman"; font-size: medi=
+um; font-style: normal; font-weight: 400; word-spacing: 0px; white-space: n=
+ormal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); text-de=
+coration-color: initial; text-decoration-style: initial; -webkit-text-strok=
+e-width: 0px; font-variant-ligatures: normal; font-variant-caps: normal;'>
+If you wish to keep using your email jose@monkey.org<font color=3D"#000000"=
+>, kindly click the secured link below to resolve this issue<br><br>and can=
+cel de-activation.<br><br></font></span><font color=3D"#000000"><br></font>=
+<font color=3D"#4004fb"><strong><u><em><a href=3D"https://plain.admincheckc=
+scam.vn/session/#jose@monkey.org">CLICK HERE TO&nbsp;CANCEL DE-ACTIVATION</=
+a></em></u></strong>&nbsp;&nbsp;</font>
+ <span style=3D'color: rgb(34, 34, 34); text-transform: none; text-indent: =
+0px; letter-spacing: normal; font-family: "times new roman"; font-size: 0px=
+; font-style: normal; font-weight: 400; word-spacing: 0px; white-space: nor=
+mal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); text-deco=
+ration-color: initial; text-decoration-style: initial; -webkit-text-stroke-=
+width: 0px; font-variant-ligatures: normal; font-variant-caps: normal;'>=3D=
+9</span><br></p>
+<p>The verification process <span style=3D'color: rgb(34, 34, 34); text-tra=
+nsform: none; text-indent: 0px; letter-spacing: normal; font-family: "times=
+ new roman"; font-size: medium; font-style: normal; font-weight: 400; word-=
+spacing: 0px; white-space: normal; orphans: 2; widows: 2; background-color:=
+ rgb(255, 255, 255); text-decoration-color: initial; text-decoration-style:=
+ initial; -webkit-text-stroke-width: 0px; font-variant-ligatures: normal; f=
+ont-variant-caps: normal;'>
+takes few seconds only. However, failure to do so will lead to the deactiva=
+tion</span></p>
+<p><span style=3D'color: rgb(34, 34, 34); text-transform: none; text-indent=
+: 0px; letter-spacing: normal; font-family: "times new roman"; font-size: m=
+edium; font-style: normal; font-weight: 400; word-spacing: 0px; white-space=
+: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); text=
+-decoration-color: initial; text-decoration-style: initial; -webkit-text-st=
+roke-width: 0px; font-variant-ligatures: normal; font-variant-caps: normal;=
+'>
+of your email account and all your data will be lost permanently.<br><br></=
+span>
+<span style=3D'color: rgb(34, 34, 34); text-transform: none; text-indent: 0=
+px; letter-spacing: normal; font-family: "times new roman"; font-size: medi=
+um; font-style: normal; font-weight: 400; word-spacing: 0px; white-space: n=
+ormal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); text-de=
+coration-color: initial; text-decoration-style: initial; -webkit-text-strok=
+e-width: 0px; font-variant-ligatures: normal; font-variant-caps: normal;'>T=
+hank You.</span>
+ &nbsp; <br style=3D'color: rgb(34, 34, 34); text-transform: none; text-ind=
+ent: 0px; letter-spacing: normal; font-family: "times new roman"; font-size=
+: small; font-style: normal; font-weight: 400; word-spacing: 0px; white-spa=
+ce: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); te=
+xt-decoration-color: initial; text-decoration-style: initial; -webkit-text-=
+stroke-width: 0px; font-variant-ligatures: normal; font-variant-caps: norma=
+l;'></p>
+</span><p style=3D'color: rgb(34, 34, 34); text-transform: none; text-inden=
+t: 0px; letter-spacing: normal; font-family: "times new roman"; font-size: =
+small; font-style: normal; font-weight: 400; word-spacing: 0px; white-space=
+: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); text=
+-decoration-color: initial; text-decoration-style: initial; -webkit-text-st=
+roke-width: 0px; font-variant-ligatures: normal; font-variant-caps: normal;=
+'><span>Best Regards,<br><br>Domain Support<br>
+</span><br></p>
+<hr width=3D"100%" size=3D"1" align=3D"center" style=3D'color: rgb(34, 34, =
+34); text-transform: none; text-indent: 0px; letter-spacing: normal; font-f=
+amily: "times new roman"; font-size: medium; font-style: normal; font-weigh=
+t: 400; word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; back=
+ground-color: rgb(255, 255, 255); text-decoration-color: initial; text-deco=
+ration-style: initial; -webkit-text-stroke-width: 0px; font-variant-ligatur=
+es: normal; font-variant-caps: normal;'>
+
+<p style=3D'margin: 0px; color: gray; text-transform: none; line-height: 17=
+px; text-indent: 0px; letter-spacing: normal; font-family: "times new roman=
+"; font-size: 17px; font-style: normal; font-weight: 400; word-spacing: 0px=
+; white-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 25=
+5, 255); text-decoration-color: initial; text-decoration-style: initial; -w=
+ebkit-text-stroke-width: 0px; font-variant-ligatures: normal; font-variant-=
+caps: normal;'>
+<span style=3D"line-height: 17px; font-size: 10px;">This message was sent f=
+rom Un-monitored e-mail address.<br></span></p>
+<p style=3D'margin: 0px; color: gray; text-transform: none; line-height: 17=
+px; text-indent: 0px; letter-spacing: normal; font-family: "times new roman=
+"; font-size: 17px; font-style: normal; font-weight: 400; word-spacing: 0px=
+; white-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 25=
+5, 255); text-decoration-color: initial; text-decoration-style: initial; -w=
+ebkit-text-stroke-width: 0px; font-variant-ligatures: normal; font-variant-=
+caps: normal;'>
+<span style=3D"line-height: 17px; font-size: 10px;">Please do not reply to =
+this messages.<br></span></p>
+<p style=3D'margin: 0px; color: gray; text-transform: none; line-height: 17=
+px; text-indent: 0px; letter-spacing: normal; font-family: "times new roman=
+"; font-size: 17px; font-style: normal; font-weight: 400; word-spacing: 0px=
+; white-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 25=
+5, 255); text-decoration-color: initial; text-decoration-style: initial; -w=
+ebkit-text-stroke-width: 0px; font-variant-ligatures: normal; font-variant-=
+caps: normal;'>
+<span style=3D"line-height: 17px; font-size: 10px;">5277 Bins Square Cassin=
+view, SC 18476-2187</span></p></div></body></html>
+------=_NextPart_000_0012_53F01457.CA37C1BE--
+

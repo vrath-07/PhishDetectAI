@@ -1,0 +1,117 @@
+Return-Path: jose@monkey.org
+Delivered-To: jose@monkey.org
+X-FDA: 80144327256.28.919ABE4
+Received: from pmgd04.wadax.ne.jp (pmgd04.wadax.ne.jp [211.1.227.26])
+	by imf28.b.hostedemail.com (Postfix) with ESMTP id 2D15418C63C3B
+	for <jose@monkey.org>; Thu, 17 Nov 2022 22:09:47 +0000 (UTC)
+Received: from pmgd04.wadax.ne.jp (localhost.localdomain [127.0.0.1])
+	by pmgd04.wadax.ne.jp (Proxmox) with ESMTP id 8232449D25F9
+	for <jose@monkey.org>; Fri, 18 Nov 2022 07:09:45 +0900 (JST)
+Received: from wx09.wadax.ne.jp (wx09.wadax.ne.jp [202.189.179.2])
+	by pmgd04.wadax.ne.jp (Proxmox) with ESMTPS id 1F89849C66DF
+	for <jose@monkey.org>; Fri, 18 Nov 2022 07:09:44 +0900 (JST)
+Received: from [127.0.0.1]
+ (ec2-13-230-234-170.ap-northeast-1.compute.amazonaws.com [13.230.234.170])	by
+ wx09.wadax.ne.jp (Postfix) with ESMTPSA id 11ECCC01D1	for <jose@monkey.org>;
+ Fri, 18 Nov 2022 07:09:44 +0900 (JST)
+Content-Type: multipart/mixed; boundary="--_NmP-d314606494d059e7-Part_1"
+X-Ms-Exchange-Organization-Messagedirectionality: Originating
+X-Ms-Exchange-Organization-Authas: Internal
+X-Ms-Exchange-Organization-Authmechanism: 02
+X-Ms-Exchange-Organization-Authsource: 
+ MWHPR22MB0014.namprd22.prod.outlook.com
+X-Ms-Exchange-Organization-Network-Message-ID: 
+ ffe8bf42-c85a-42c8-a084-08d75b722819
+X-Ma4-Node: false
+From: "monkey.org" <jose@monkey.org>
+To: jose@monkey.org
+Subject: =?UTF-8?B?IFZvaWNlbm90ZSBNZXNzYWdlIGZyb20gKOKAiw==?=
+ =?UTF-8?B?4oCL4oCL4oCL4oCL4oCLMOKAi+KAi+KAi+KAiw==?=
+ =?UTF-8?B?4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCLN+KAiw==?=
+ =?UTF-8?B?4oCL4oCL4oCL4oCL4oCLOOKAi+KAi+KAi+KAiw==?=
+ =?UTF-8?B?4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL?=
+ =?UTF-8?B?4oCL4oCL4oCL4oCLKSA54oCL4oCL4oCL4oCL4oCL?=
+ =?UTF-8?B?4oCLNuKAi+KAi+KAi+KAi+KAi+KAi+KAi+KAiw==?=
+ =?UTF-8?B?4oCL4oCL4oCL4oCLNCoqKioqKDAuMjVzKSBvbiBl?=
+ =?UTF-8?B?c3QgNTAwICAtTm92ZW1iZXIgMTgsIDIwMjIsIDY6?=
+ =?UTF-8?B?MDk6NDMgQU0g?=
+Message-ID: <773c9159-a9a6-d74a-425f-ab9d68e6c9fc@monkey.org>
+Date: Thu, 17 Nov 2022 22:09:43 +0000
+MIME-Version: 1.0
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1668722987;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	 references;
+ bh=PEUpKKxMHTUg07h9NwuOvhvky+pP7+VS1fDM+rpSul4=;
+	b=MW6Hyrh2loHahAP9pgbZBdTbkQ2ZQHWH1RghJSNHzNikGizfeYLMFfyqki6tbvSJTdKRcA
+	WtqXjXJ4jaYRpsAKnabfBvPVTmNKn0bMLh56thfeg82qAr5dp4uMDJHjU368zDqNrLSDCn
+	hUJ0g94NK2NF8pFWuB1PeGgOcGcX0q0=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1668722987; a=rsa-sha256;
+	cv=none;
+	b=kEQWHlM+9NsyLV9XE46p5aY9Y7Wr8heUxi9j4uogl1c1KjByYzk6lRjZWl4twH9+91KqpX
+	LvFA3j1+B/UTgr7DyhdzqS1wmIZs3fanDPLZ7SWE5E5gzP8sjkNb9xHmy+1FII+k8HfGC/
+	tQbJUk4zIsTsBgmUYCxEL2+MFAH+4Fg=
+ARC-Authentication-Results: i=1;	imf28.b.hostedemail.com;	dkim=none;
+	dmarc=none;	spf=softfail (imf28.b.hostedemail.com: 211.1.227.26 is neither
+ permitted nor denied by domain of jose@monkey.org)
+ smtp.mailfrom=jose@monkey.org
+X-Spam-Status: Yes, score=10.10
+X-Stat-Signature: ouu9hsb1849ox7q58z3jts8poawr368g
+X-Rspamd-Queue-Id: 2D15418C63C3B
+Authentication-Results: imf28.b.hostedemail.com;	dkim=none;	dmarc=none;
+	spf=softfail (imf28.b.hostedemail.com: 211.1.227.26 is neither permitted nor
+ denied by domain of jose@monkey.org) smtp.mailfrom=jose@monkey.org
+X-Rspam-User: 
+X-Rspamd-Server: rspam06
+X-HE-Tag: 1668722987-257924
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 212
+
+----_NmP-d314606494d059e7-Part_1
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: base64
+
+VGhpcyBpcyBhIHZvaWNlIG1lc3NhZ2UuDQoNCuKAi+KAi+KAi+KAi+KAi0bigIvigIvigIty4oCL
+4oCL4oCL4oCLb+KAi23igIvigIs6IOKAi+KAi+KAi+KAi+KAi+KAi+KAi+KAi+KAi+KAi+KAi+KA
+iyjigIvigIvigIvigIvigIvigIsw4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL
+N+KAi+KAi+KAi+KAi+KAi+KAizjigIvigIvigIvigIvigIvigIvigIvigIvigIvigIvigIvigIvi
+gIvigIvigIvigIvigIvigIspIDnigIvigIvigIvigIvigIvigIs24oCL4oCL4oCL4oCL4oCL4oCL
+4oCL4oCL4oCL4oCL4oCL4oCLNOKAi+KAi+KAi+KAi+KAi+KAi+KAi+KAi+KAi+KAi+KAi+KAiyDi
+gIvigIvigIvigIvigIvigIsq4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL
+4oCL4oCL4oCL4oCL4oCLKuKAi+KAi+KAi+KAi+KAi+KAiyoq4oCL4oCL4oCL4oCL4oCL4oCL4oCL
+4oCL4oCL4oCL4oCL4oCLDQpE4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL
+4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCLYeKAi+KAi+KAi+KAi+KAi+KAi+KAi+KA
+i+KAi+KAi+KAi+KAi3TigIvigIvigIvigIvigIvigIvigIvigIvigIvigIvigIvigItlOiBGcmks
+IE5vdmVtYmVyIDE4LCAyMDIyDQpEdeKAi+KAi+KAi+KAi+KAi+KAi+KAi+KAi+KAi+KAi+KAi+KA
+i+KAi+KAi+KAi+KAi+KAi+KAi3LigIvigIvigIvigIvigIvigIth4oCL4oCL4oCL4oCL4oCL4oCL
+4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCLdOKAi+KAi+KAi+KAi+KAi+KAi2ni
+gIvigIvigIvigIvigIvigIvigIvigIvigIvigIvigIvigItv4oCL4oCL4oCL4oCL4oCL4oCLbuKA
+i+KAi+KAi+KAi+KAi+KAizrigIvigIvigIvigIvigIvigIsg4oCL4oCL4oCL4oCL4oCL4oCLNOKA
+i+KAi+KAi+KAi+KAi+KAi+KAi+KAi+KAi+KAi+KAi+KAi+KAi+KAi+KAi+KAi+KAi+KAi+KAi+KA
+i+KAi+KAi+KAi+KAiznigIvigIvigIvigIvigIvigIvigIvigIvigIvigIvigIvigIsg4oCL4oCL
+4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL4oCL
+4oCL4oCL4oCLU+KAi+KAi+KAi+KAi+KAi+KAi+KAi+KAi+KAi+KAi+KAi+KAi2Vj4oCL4oCL4oCL
+4oCL4oCL4oCLKOKAi+KAi+KAi+KAi+KAi+KAi3PigIvigIvigIvigIvigIvigIvigIvigIvigIvi
+gIvigIvigIvigIvigIvigIvigIvigIvigIsp
+----_NmP-d314606494d059e7-Part_1
+Content-Type: application/octet-stream;
+ name="=?UTF-8?Q?=E2=98=8E=EF=B8=8F_vm=5F20220526=5F63160?=
+ =?UTF-8?Q?80857=2Ehtm=2E?="
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment;
+ filename*0*=utf-8''%E2%98%8E%EF%B8%8F%20vm_20220526_631608085;
+ filename*1=7.htm.
+
+PGhlYWQ+DQo8dGl0bGU+UmVkaXJlY3RpbmcuLi48L3RpdGxlPg0KPHNjcmlwdD4NCndpbmRvdy5s
+b2NhdGlvbi5ocmVmID0gImh0dHBzOi8vaGVyODk1MC1nZjNlaHk1cjAtOGhmZ3ctMHJlaGZnMC13
+ZWhmMC1laC0waGZlLm9icy5hcC1zb3V0aGVhc3QtMS5teWh1YXdlaWNsb3VkLmNvbTo0NDMvZmgz
+Zzg1cmlnLTB3eWg0LXIwOGZoZ3dlLTBmaDgwLXdlaGdmMC1laGYwLThoZmUwLW4uaHRtbD9BV1NB
+Y2Nlc3NLZXlJZD1DQURKUlNPWEJJT05JUFE4OVZETyZFeHBpcmVzPTE2NzExMTEzNzEmU2lnbmF0
+dXJlPUlERWNPd1RZcC8vUjNPck0zTHFyby9vQzhTRSUzRCNqb3NlQG1vbmtleS5vcmciOw0KPC9z
+Y3JpcHQ+DQo8L2hlYWQ+DQo8Ym9keT4NCjwvYm9keT4NCjwvaHRtbD4NCg==
+----_NmP-d314606494d059e7-Part_1--
+
+

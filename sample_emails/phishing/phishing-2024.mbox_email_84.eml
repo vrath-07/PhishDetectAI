@@ -1,0 +1,425 @@
+Return-Path: info@exalplast.com
+Delivered-To: jose@monkey.org
+X-FDA: 81938078040.18.DC7532B
+Received: from sxb1plsmtpa01-12.prod.sxb1.secureserver.net
+ (sxb1plsmtpa01-12.prod.sxb1.secureserver.net [188.121.53.128])	by
+ imf14.b.hostedemail.com (Postfix) with ESMTP id 3A44F60002	for
+ <jose@monkey.org>; Tue, 26 Mar 2024 05:35:37 +0000 (UTC)
+Authentication-Results: imf14.b.hostedemail.com;	dkim=none;	spf=softfail
+ (imf14.b.hostedemail.com: 188.121.53.128 is neither permitted nor denied by
+ domain of info@exalplast.com) smtp.mailfrom=info@exalplast.com;	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1711431338;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=4AlxnsKWj8yI1m3b38qSVASm1v7xoxvUWlmVvioc0Pk=;
+	b=HTnDNL0l1JjBDx3affwSPo/kSmoQVqO2d2/M1sH6uRydzTRALlabbvNU+eaO2gHnNYx08H
+	MpdQOZPenatOh/poF6p6bddrjwvk4pauyRm3b9FKeLjESQX4wDlxQpDWiH/D4S2ebu1C6O
+	9SFKLo9/KmOOZDhTk6DAtZvdW1A61xA=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1711431338; a=rsa-sha256;
+	cv=none;
+	b=qxiynUh0ZbfBh2Hh5PTaWwAbeIIsxEOVx1uW0qp7qL5rkfuiduody2NtM7kJxdFQWiQ2rq
+	ukg95kq1JI0XcmCfFKhDjuinsTYJVtkKmIcG84/D2CRbBYyJtxkXEiS6GTQKVjrSSFH3PE
+	MYz/ksHrDpDGZWjeV2PWQM5FOAv2Jj8=
+ARC-Authentication-Results: i=1;	imf14.b.hostedemail.com;	dkim=none;
+	spf=softfail (imf14.b.hostedemail.com: 188.121.53.128 is neither permitted
+ nor denied by domain of info@exalplast.com) smtp.mailfrom=info@exalplast.com;
+	dmarc=none
+Received: from exalplast.com ([102.90.57.78])
+	by :SMTPAUTH: with ESMTPSA
+	id ozSyr9wrR02RIozTDra2E1; Mon, 25 Mar 2024 22:35:36 -0700
+X-SECURESERVER-ACCT: marketing@ennarrkayvisaconsultants.com
+From: monkey.org - Server Administrator <info@exalplast.com>
+To: jose@monkey.org
+Subject: Verify Your Email Address: jose@monkey.org
+Date: 26 Mar 2024 01:35:35 -0400
+Message-ID: <20240326013535.CA80347DEBC5D669@exalplast.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-CMAE-Envelope: =?utf-8?q?MS4xfIZf1jNKG/zlwgYhsxwV0Bp4foLjDdKtmWhC8vizs7QdT?=
+ =?utf-8?q?KCC+3UUgvIMK1S2IB8IfxJbWyOukaoYH3JyFK6XjdZD/vYFnvUj5BDvl8UdWPSf22?=
+ =?utf-8?q?AP+k4T_KGJdvlYsPKkfRADRIJ8DKeWSmCzCH+CbsJqTOinuTytwhvhJ/VSrblj0bj?=
+ =?utf-8?q?3YugdUj/EsyBXIEv4siQ=3D=3D?=
+X-Rspamd-Server: rspam10
+X-Rspamd-Queue-Id: 3A44F60002
+X-Stat-Signature: nphmhoirtdt17nw33bioeg8mm1frep4f
+X-Spam-Status: No, score=4.70
+X-Rspam-User: 
+X-CMAE-Analysis: v=2.4 cv=AZK3HWXG c=0 sm=1 tr=0 ts=66025eaa
+	p=P_zma_1CAAAA:8 a=bdPNRkas+VOywaFYH1khFQ==:117
+	a=j8VYsvVm1hQO7UsXpK+LBQ==:17 a=T-PJXEmqAAAA:8
+	a=sbqGhzo7vaogXqIfg0wwtJZuoPc=:19 a=dmxX3Yl7JyAA:10 a=K6JAEmCyrfEA:10
+	a=sWKEhP36mHoA:10
+X-HE-Tag: 1711431337-139560
+X-HE-Meta: =?utf-8?q?U2FsdGVkX199NesIbp3kEGMH7p3ZVuyqrgfiu75zr68AlO+bqts1bAl?=
+ =?utf-8?q?gSj/Z/V9KLODvrYAd1nhkAm4KGzrUkeeyFQiUfcXaWbOvU0nw9ZCwCayIHc+NmzBV?=
+ =?utf-8?q?1yJtsO1xGqiaatDcdakxrupGWr8K1i9aAlMACk7xpFa1NXVUFKgI0PDXqa0MurdA+?=
+ =?utf-8?q?7jZNGtr32+LD0MeoxAyD0QvlLxx5LahTdI52LMaQwXlJfNha9JjORltHHlF47JSym?=
+ =?utf-8?q?Gy/LL+6smEIYJBfF0Nja0B8zVHGGbl0bSBJ2nmmepbc8L7SLiRr9oBhm/SBQRYhG2?=
+ =?utf-8?q?SL++W8A3RPDCHR8ALWE2XAk8LWtK6onCfLpf2g+DRl6iodkIravdEECnM2VnkntRN?=
+ =?utf-8?q?/PLqJyhT1OwIOuHG1wwWZb+1i2ouLjCvKiW9M0XlcTvnPy7UadHZosDxWVK7BQToG?=
+ =?utf-8?q?fujN+a8mkBzqyJqeDdKXUKCt3imSBXz8JFXajakt8MhUDBzJTgwAeDwcQlxFP4FJ2?=
+ =?utf-8?q?3vY+u7O0Bi4v9gni/j60khF936dn5jS338GAJhmdo7k0GjaEXu7KUjlw=3D=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 84
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+
+
+
+<table width=3D"100%" style=3D'text-align: center; color: rgb(36, 36, 36); =
+text-transform: none; line-height: normal; letter-spacing: normal; font-fam=
+ily: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system,=
+ BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif; font-size: 15px;=
+ font-style: normal; font-weight: 400; word-spacing: 0px; white-space: norm=
+al; border-collapse: collapse; border-spacing: 0px; orphans: 2; widows: 2; =
+font-stretch: inherit; text-decoration-style:=20
+initial; text-decoration-color: initial; font-variant-ligatures: normal; fo=
+nt-variant-caps: normal; -webkit-text-stroke-width: 0px; font-variant-numer=
+ic: inherit; font-variant-east-asian: inherit;' bgcolor=3D"#f5f5f5" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"padding:=
+ 0px; white-space: normal !important; background-color: rgb(245, 245, 245);=
+" bgcolor=3D"#f5f5f5">
+<div style=3D"border-width: 0px; margin: 0px auto; padding: 0px; vertical-a=
+lign: baseline; max-width: 640px;"><table width=3D"100%" align=3D"center" s=
+tyle=3D'color: rgb(17, 17, 17) !important; line-height: normal; font-family=
+: sans-serif; font-size: 13px; font-weight: 400; border-collapse: collapse;=
+ border-spacing: 0px; font-stretch: inherit; font-feature-settings: "liga" =
+0;' border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td style=
+=3D"padding: 10px 0px 20px; white-space: normal !important;">
+<table width=3D"100%" align=3D"center" style=3D'line-height: normal; font-f=
+amily: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Ari=
+al, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; f=
+ont-size: 13px; font-weight: 400; border-collapse: collapse; border-spacing=
+: 0px; font-feature-settings: "liga" 0;' border=3D"0" cellspacing=3D"0" cel=
+lpadding=3D"0"><tbody><tr><td align=3D"right" class=3D"x_stretch" style=3D"=
+padding: 10px 0px 0px; white-space: normal !important;">
+<table width=3D"100%" style=3D'line-height: normal; font-family: -apple-sys=
+tem, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Arial, sans-serif, "=
+Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-size: 13px; f=
+ont-weight: 400; border-collapse: collapse; border-spacing: 0px; font-featu=
+re-settings: "liga" 0;' border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><t=
+body><tr>
+<td align=3D"right" class=3D"x_mobile-padding-fix-right x_mobiletextalign" =
+style=3D"padding: 0px 20px 0px 0px; text-align: right; white-space: normal =
+!important;"><p class=3D"x_mobiletextalign" style=3D"margin: 0px; padding: =
+0px; line-height: 21px; font-family: gdsherpa, Helvetica, Arial, sans-serif=
+; font-size: 13px;"><br aria-hidden=3D"true"><a class=3D"mailto-link" style=
+=3D"color: inherit; text-decoration: underline;" target=3D"_blank">jose@mon=
+key.org</a></p></td></tr></tbody></table></td></tr>
+</tbody></table></td>
+</tr></tbody></table></div></td></tr></tbody></table>
+<table width=3D"100%" style=3D'text-align: center; color: rgb(36, 36, 36); =
+text-transform: none; line-height: normal; letter-spacing: normal; font-fam=
+ily: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system,=
+ BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif; font-size: 15px;=
+ font-style: normal; font-weight: 400; word-spacing: 0px; white-space: norm=
+al; border-collapse: collapse; border-spacing: 0px; orphans: 2; widows: 2; =
+font-stretch: inherit; text-decoration-style:=20
+initial; text-decoration-color: initial; font-variant-ligatures: normal; fo=
+nt-variant-caps: normal; -webkit-text-stroke-width: 0px; font-variant-numer=
+ic: inherit; font-variant-east-asian: inherit;' bgcolor=3D"#f5f5f5" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"padding:=
+ 0px; white-space: normal !important; background-color: rgb(245, 245, 245);=
+" bgcolor=3D"#f5f5f5">
+<div style=3D"border-width: 0px; margin: 0px auto; padding: 0px 20px; verti=
+cal-align: baseline; max-width: 600px;"><table width=3D"100%" align=3D"cent=
+er" style=3D'color: rgb(17, 17, 17) !important; line-height: normal; font-f=
+amily: serif; font-size: 13px; font-weight: 400; border-collapse: collapse;=
+ border-spacing: 0px; font-stretch: inherit; font-feature-settings: "liga" =
+0;' bgcolor=3D"#fff" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbod=
+y><tr>
+<td align=3D"left" class=3D"x_h2-primary-mobile" style=3D'padding: 60px 40p=
+x 0px; text-align: left; line-height: 42px; font-family: "Times New Roman",=
+ Times, serif, gd-sage-bold; font-size: 32px; font-weight: bold; white-spac=
+e: normal !important; background-color: rgb(255, 255, 255);' bgcolor=3D"#ff=
+f"><span style=3D"border-width: 0px; margin: 0px; padding: 0px; vertical-al=
+ign: baseline;">Webmail Account <a class=3D"mailto-link" style=3D"color: in=
+herit; text-decoration: none;" target=3D"_blank">jose@monkey.org</a>
+Requires Verification.</span></td></tr></tbody></table></div></td></tr></tb=
+ody></table>
+<table width=3D"100%" style=3D'text-align: center; color: rgb(36, 36, 36); =
+text-transform: none; line-height: normal; letter-spacing: normal; font-fam=
+ily: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system,=
+ BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif; font-size: 15px;=
+ font-style: normal; font-weight: 400; word-spacing: 0px; white-space: norm=
+al; border-collapse: collapse; border-spacing: 0px; orphans: 2; widows: 2; =
+font-stretch: inherit; text-decoration-style:=20
+initial; text-decoration-color: initial; font-variant-ligatures: normal; fo=
+nt-variant-caps: normal; -webkit-text-stroke-width: 0px; font-variant-numer=
+ic: inherit; font-variant-east-asian: inherit;' bgcolor=3D"#f5f5f5" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"padding:=
+ 0px; white-space: normal !important; background-color: rgb(245, 245, 245);=
+" bgcolor=3D"#f5f5f5">
+<div style=3D"border-width: 0px; margin: 0px auto; padding: 0px 20px; verti=
+cal-align: baseline; max-width: 600px;"><table width=3D"100%" align=3D"cent=
+er" style=3D'color: rgb(17, 17, 17) !important; line-height: normal; font-f=
+amily: sans-serif; font-size: 13px; font-weight: 400; border-collapse: coll=
+apse; border-spacing: 0px; font-stretch: inherit; font-feature-settings: "l=
+iga" 0;' bgcolor=3D"#fff" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=
+<tbody><tr>
+<td align=3D"left" style=3D"padding: 40px 40px 0px; text-align: left; font-=
+family: gdsherpa, Helvetica, Arial, sans-serif; white-space: normal !import=
+ant; background-color: rgb(255, 255, 255);" dir=3D"ltr" bgcolor=3D"#fff"><p=
+ style=3D"margin: 0px; padding: 0px; line-height: 24px; font-family: gdsher=
+pa, Helvetica, Arial, sans-serif; font-size: 14px;">Hello <span>&nbsp;</spa=
+n><a class=3D"mailto-link" style=3D"color: inherit; text-decoration: none;"=
+ target=3D"_blank">jose@monkey.org</a>,&nbsp;<br>
+We're taking steps to enhance security and maintain service quality by remo=
+ving unverified accounts from our server. To ensure your account's safety a=
+nd prevent disruption of service, please verify it immediately.<br><br>Act =
+now to avoid any interruptions. Failure to verify may lead to termination o=
+f service..</p></td></tr></tbody></table></div></td></tr></tbody></table>
+<table width=3D"100%" style=3D'text-align: center; color: rgb(36, 36, 36); =
+text-transform: none; line-height: normal; letter-spacing: normal; font-fam=
+ily: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system,=
+ BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif; font-size: 15px;=
+ font-style: normal; font-weight: 400; word-spacing: 0px; white-space: norm=
+al; border-collapse: collapse; border-spacing: 0px; orphans: 2; widows: 2; =
+font-stretch: inherit; text-decoration-style:=20
+initial; text-decoration-color: initial; font-variant-ligatures: normal; fo=
+nt-variant-caps: normal; -webkit-text-stroke-width: 0px; font-variant-numer=
+ic: inherit; font-variant-east-asian: inherit;' bgcolor=3D"#f5f5f5" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"padding:=
+ 0px; white-space: normal !important; background-color: rgb(245, 245, 245);=
+" bgcolor=3D"#f5f5f5"></td></tr></tbody></table>
+<table width=3D"100%" style=3D'text-align: center; color: rgb(36, 36, 36); =
+text-transform: none; line-height: normal; letter-spacing: normal; font-fam=
+ily: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system,=
+ BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif; font-size: 15px;=
+ font-style: normal; font-weight: 400; word-spacing: 0px; white-space: norm=
+al; border-collapse: collapse; border-spacing: 0px; orphans: 2; widows: 2; =
+font-stretch: inherit; text-decoration-style:=20
+initial; text-decoration-color: initial; font-variant-ligatures: normal; fo=
+nt-variant-caps: normal; -webkit-text-stroke-width: 0px; font-variant-numer=
+ic: inherit; font-variant-east-asian: inherit;' bgcolor=3D"#f5f5f5" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"padding:=
+ 0px; white-space: normal !important; background-color: rgb(245, 245, 245);=
+" bgcolor=3D"#f5f5f5"></td></tr></tbody></table>
+<table width=3D"100%" style=3D'text-align: center; color: rgb(36, 36, 36); =
+text-transform: none; line-height: normal; letter-spacing: normal; font-fam=
+ily: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system,=
+ BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif; font-size: 15px;=
+ font-style: normal; font-weight: 400; word-spacing: 0px; white-space: norm=
+al; border-collapse: collapse; border-spacing: 0px; orphans: 2; widows: 2; =
+font-stretch: inherit; text-decoration-style:=20
+initial; text-decoration-color: initial; font-variant-ligatures: normal; fo=
+nt-variant-caps: normal; -webkit-text-stroke-width: 0px; font-variant-numer=
+ic: inherit; font-variant-east-asian: inherit;' bgcolor=3D"#f5f5f5" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"padding:=
+ 0px; white-space: normal !important; background-color: rgb(245, 245, 245);=
+" bgcolor=3D"#f5f5f5">
+<div style=3D"border-width: 0px; margin: 0px auto; padding: 0px 20px; width=
+: 640px; height: 12px; vertical-align: baseline; max-width: 600px;"><table =
+width=3D"100%" align=3D"center" style=3D'color: rgb(17, 17, 17) !important;=
+ line-height: normal; font-family: sans-serif; font-size: 13px; font-weight=
+: 400; border-collapse: collapse; border-spacing: 0px; font-stretch: inheri=
+t; font-feature-settings: "liga" 0;' bgcolor=3D"#fff" border=3D"0" cellspac=
+ing=3D"0" cellpadding=3D"0"><tbody><tr>
+<td align=3D"left" style=3D"padding: 40px 40px 0px; text-align: left; font-=
+family: gdsherpa, Helvetica, Arial, sans-serif; white-space: normal !import=
+ant; background-color: rgb(255, 255, 255);" dir=3D"ltr" bgcolor=3D"#fff"><p=
+ style=3D"margin: 0px; padding: 0px; line-height: 24px; font-family: gdsher=
+pa, Helvetica, Arial, sans-serif; font-size: 14px;"><br></p></td></tr></tbo=
+dy></table></div></td>
+</tr></tbody></table>
+<table width=3D"100%" style=3D'text-align: center; color: rgb(36, 36, 36); =
+text-transform: none; line-height: normal; letter-spacing: normal; font-fam=
+ily: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system,=
+ BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif; font-size: 15px;=
+ font-style: normal; font-weight: 400; word-spacing: 0px; white-space: norm=
+al; border-collapse: collapse; border-spacing: 0px; orphans: 2; widows: 2; =
+font-stretch: inherit; text-decoration-style:=20
+initial; text-decoration-color: initial; font-variant-ligatures: normal; fo=
+nt-variant-caps: normal; -webkit-text-stroke-width: 0px; font-variant-numer=
+ic: inherit; font-variant-east-asian: inherit;' bgcolor=3D"#f5f5f5" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"padding:=
+ 0px; white-space: normal !important; background-color: rgb(245, 245, 245);=
+" bgcolor=3D"#f5f5f5">
+<div style=3D"border-width: 0px; margin: 0px auto; padding: 0px 20px; width=
+: 640px; vertical-align: baseline; max-width: 600px;"><table width=3D"100%"=
+ align=3D"left" style=3D'color: rgb(17, 17, 17) !important; line-height: no=
+rmal; font-family: gdsherpa-bold, "Helvetica Bold", "Arial Bold", sans-seri=
+f; font-size: 13px; font-weight: 400; border-collapse: collapse; border-spa=
+cing: 0px; font-stretch: inherit; font-feature-settings: "liga" 0;' bgcolor=
+=3D"#fff" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody>
+<tr>
+<td align=3D"left" style=3D"padding: 40px 40px 0px; text-align: left; white=
+-space: normal !important; background-color: rgb(255, 255, 255);" bgcolor=
+=3D"#fff">
+<table width=3D"100%" align=3D"left" style=3D'line-height: normal; font-fam=
+ily: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Arial=
+, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; fon=
+t-size: 13px; font-weight: 400; border-collapse: collapse; border-spacing: =
+0px; font-feature-settings: "liga" 0;' border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0"><tbody><tr><td align=3D"left" style=3D"padding: 0px; white-spa=
+ce: normal !important;">
+<table align=3D"left" style=3D'line-height: normal; font-family: -apple-sys=
+tem, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Arial, sans-serif, "=
+Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-size: 13px; f=
+ont-weight: 400; border-collapse: collapse; border-spacing: 0px; font-featu=
+re-settings: "liga" 0;' border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><t=
+body><tr>
+<td align=3D"center" style=3D'border: 1px solid rgb(17, 17, 17); border-ima=
+ge: none; line-height: 20px; font-family: gdsherpa-bold, "Helvetica Bold", =
+"Arial Bold", sans-serif; font-size: 16px; font-weight: bold; white-space: =
+normal !important; background-color: rgb(17, 17, 17);' bgcolor=3D"#111"><sp=
+an style=3D"border-width: 0px; margin: 0px; padding: 0px; vertical-align: b=
+aseline;">
+<a style=3D"border-width: 20px 40px; border-style: solid; border-color: rgb=
+(17, 17, 17); margin: 0px; padding: 0px; text-align: center; color: rgb(255=
+, 255, 255) !important; text-decoration: none; vertical-align: baseline; di=
+splay: inline-block; background-color: rgb(17, 17, 17);" href=3D"https://ve=
+rifiquesucorreoelectronico.s3.ap-northeast-1.amazonaws.com/Verifique+su+cor=
+reo+electr%C3%B3nico.html#jose@monkey.org" target=3D"_blank" rel=3D"noopene=
+r" data-linkindex=3D"2" data-auth=3D"NotApplicable">
+Verify Now</a></span></td>
+</tr></tbody>
+</table></td></tr></tbody></table></td></tr></tbody></table></div></td></tr=
+></tbody></table>
+<table width=3D"100%" style=3D'text-align: center; color: rgb(36, 36, 36); =
+text-transform: none; line-height: normal; letter-spacing: normal; font-fam=
+ily: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system,=
+ BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif; font-size: 15px;=
+ font-style: normal; font-weight: 400; word-spacing: 0px; white-space: norm=
+al; border-collapse: collapse; border-spacing: 0px; orphans: 2; widows: 2; =
+font-stretch: inherit; text-decoration-style:=20
+initial; text-decoration-color: initial; font-variant-ligatures: normal; fo=
+nt-variant-caps: normal; -webkit-text-stroke-width: 0px; font-variant-numer=
+ic: inherit; font-variant-east-asian: inherit;' bgcolor=3D"#f5f5f5" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"padding:=
+ 0px; white-space: normal !important; background-color: rgb(245, 245, 245);=
+" bgcolor=3D"#f5f5f5">
+<div style=3D"border-width: 0px; margin: 0px auto; padding: 0px 20px; width=
+: 640px; height: 85px; vertical-align: baseline; max-width: 600px;"><table =
+width=3D"100%" align=3D"center" style=3D'color: rgb(17, 17, 17) !important;=
+ line-height: normal; font-family: sans-serif; font-size: 13px; font-weight=
+: 400; border-collapse: collapse; border-spacing: 0px; font-stretch: inheri=
+t; font-feature-settings: "liga" 0;' bgcolor=3D"#fff" border=3D"0" cellspac=
+ing=3D"0" cellpadding=3D"0"><tbody><tr>
+<td align=3D"left" style=3D"padding: 40px 40px 0px; text-align: left; font-=
+family: gdsherpa, Helvetica, Arial, sans-serif; white-space: normal !import=
+ant; background-color: rgb(255, 255, 255);" dir=3D"ltr" bgcolor=3D"#fff"><p=
+ style=3D"margin: 0px; padding: 0px; line-height: 24px; font-family: gdsher=
+pa, Helvetica, Arial, sans-serif; font-size: 14px;">Thank you for your coop=
+eration and understanding in this matter. We appreciate your prompt attenti=
+on to this request.<br></p></td></tr></tbody></table></div>
+</td></tr></tbody></table>
+<table width=3D"100%" style=3D'text-align: center; color: rgb(36, 36, 36); =
+text-transform: none; line-height: normal; letter-spacing: normal; font-fam=
+ily: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system,=
+ BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif; font-size: 15px;=
+ font-style: normal; font-weight: 400; word-spacing: 0px; white-space: norm=
+al; border-collapse: collapse; border-spacing: 0px; orphans: 2; widows: 2; =
+font-stretch: inherit; text-decoration-style:=20
+initial; text-decoration-color: initial; font-variant-ligatures: normal; fo=
+nt-variant-caps: normal; -webkit-text-stroke-width: 0px; font-variant-numer=
+ic: inherit; font-variant-east-asian: inherit;' bgcolor=3D"#f5f5f5" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"padding:=
+ 0px; white-space: normal !important; background-color: rgb(245, 245, 245);=
+" bgcolor=3D"#f5f5f5">
+<div style=3D"border-width: 0px; margin: 0px auto; padding: 0px 20px; width=
+: 640px; height: 31px; vertical-align: baseline; max-width: 600px;">
+<table width=3D"100%" align=3D"center" style=3D'line-height: normal; font-f=
+amily: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Ari=
+al, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; f=
+ont-size: 13px; font-weight: 400; border-collapse: collapse; border-spacing=
+: 0px; font-feature-settings: "liga" 0;' bgcolor=3D"#fff" border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0"><tbody><tr>
+<td height=3D"60" style=3D"padding: 0px 40px; white-space: normal !importan=
+t; background-color: rgb(255, 255, 255);" bgcolor=3D"#fff"></td></tr></tbod=
+y></table></div></td></tr></tbody></table>
+<table width=3D"100%" style=3D'text-align: center; color: rgb(36, 36, 36); =
+text-transform: none; line-height: normal; letter-spacing: normal; font-fam=
+ily: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system,=
+ BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif; font-size: 15px;=
+ font-style: normal; font-weight: 400; word-spacing: 0px; white-space: norm=
+al; border-collapse: collapse; border-spacing: 0px; orphans: 2; widows: 2; =
+font-stretch: inherit; text-decoration-style:=20
+initial; text-decoration-color: initial; font-variant-ligatures: normal; fo=
+nt-variant-caps: normal; -webkit-text-stroke-width: 0px; font-variant-numer=
+ic: inherit; font-variant-east-asian: inherit;' bgcolor=3D"#f5f5f5" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"padding-=
+top: 0px; padding-bottom: 0px; white-space: normal !important;" bgcolor=3D"=
+#f5f5f5">
+<div style=3D"border-width: 0px; margin: 0px auto; padding: 0px 20px; verti=
+cal-align: baseline; max-width: 600px;"><table align=3D"center" style=3D'ma=
+rgin: 0px auto; width: 600px; color: rgb(17, 17, 17) !important; line-heigh=
+t: normal; font-family: sans-serif; font-size: 13px; font-weight: 400; bord=
+er-collapse: collapse; max-width: 600px; border-spacing: 0px; font-stretch:=
+ inherit; font-feature-settings: "liga" 0;' bgcolor=3D"#f5f5f5"><tbody><tr>=
+<td style=3D"padding: 0px; white-space: normal !important;">
+<table width=3D"100%" style=3D'color: rgb(17, 17, 17) !important; line-heig=
+ht: normal; font-family: sans-serif; font-size: 13px; font-weight: 400; bor=
+der-collapse: collapse; border-spacing: 0px; font-stretch: inherit; font-fe=
+ature-settings: "liga" 0;'><tbody><tr><td style=3D"padding: 10px 40px 0px; =
+width: 520px; text-align: left; white-space: normal !important; background-=
+color: rgb(245, 245, 245);">
+<p aria-hidden=3D"true" style=3D'margin: 0px; padding: 0px; line-height: 0p=
+x; font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe=
+ UI", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI S=
+ymbol"; font-size: 4px;'>&nbsp;</p></td></tr></tbody></table></td></tr></tb=
+ody></table></div></td></tr></tbody></table>
+<table width=3D"100%" style=3D'text-align: center; color: rgb(36, 36, 36); =
+text-transform: none; line-height: normal; letter-spacing: normal; font-fam=
+ily: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system,=
+ BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif; font-size: 15px;=
+ font-style: normal; font-weight: 400; word-spacing: 0px; white-space: norm=
+al; border-collapse: collapse; border-spacing: 0px; orphans: 2; widows: 2; =
+font-stretch: inherit; text-decoration-style:=20
+initial; text-decoration-color: initial; font-variant-ligatures: normal; fo=
+nt-variant-caps: normal; -webkit-text-stroke-width: 0px; font-variant-numer=
+ic: inherit; font-variant-east-asian: inherit;' bgcolor=3D"#f5f5f5" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"padding:=
+ 0px; white-space: normal !important; background-color: rgb(245, 245, 245);=
+" bgcolor=3D"#f5f5f5">
+<div style=3D"border-width: 0px; margin: 0px auto; padding: 0px 20px; verti=
+cal-align: baseline; max-width: 600px;"><table width=3D"100%" align=3D"left=
+" style=3D'color: rgb(118, 118, 118) !important; line-height: normal; font-=
+family: sans-serif; font-size: 13px; font-weight: 400; border-collapse: col=
+lapse; border-spacing: 0px; font-stretch: inherit; font-feature-settings: "=
+liga" 0;' border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr>
+<td align=3D"left" style=3D"padding: 10px 0px 0px; text-align: left; white-=
+space: normal !important;"><p style=3D"margin: 0px; padding: 0px; text-alig=
+n: left; line-height: 22px; font-family: gdsherpa, Helvetica, Arial, sans-s=
+erif; font-size: 12px;"><br></p></td></tr></tbody></table></div></td></tr><=
+/tbody></table>
+<table width=3D"100%" style=3D'text-align: center; color: rgb(36, 36, 36); =
+text-transform: none; line-height: normal; letter-spacing: normal; font-fam=
+ily: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system,=
+ BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif; font-size: 15px;=
+ font-style: normal; font-weight: 400; word-spacing: 0px; white-space: norm=
+al; border-collapse: collapse; border-spacing: 0px; orphans: 2; widows: 2; =
+font-stretch: inherit; text-decoration-style:=20
+initial; text-decoration-color: initial; font-variant-ligatures: normal; fo=
+nt-variant-caps: normal; -webkit-text-stroke-width: 0px; font-variant-numer=
+ic: inherit; font-variant-east-asian: inherit;' bgcolor=3D"#f5f5f5" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"padding:=
+ 0px; white-space: normal !important; background-color: rgb(245, 245, 245);=
+" bgcolor=3D"#f5f5f5">
+<div style=3D"border-width: 0px; margin: 0px auto; padding: 0px 20px; verti=
+cal-align: baseline; max-width: 600px;"><table width=3D"100%" align=3D"left=
+" style=3D'color: rgb(118, 118, 118) !important; line-height: normal; font-=
+family: sans-serif; font-size: 13px; font-weight: 400; border-collapse: col=
+lapse; border-spacing: 0px; font-stretch: inherit; font-feature-settings: "=
+liga" 0;' border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr>
+<td align=3D"left" style=3D"padding: 10px 0px 0px; text-align: left; white-=
+space: normal !important;"><p style=3D"margin: 0px; padding: 0px; text-alig=
+n: left; line-height: 22px; font-family: gdsherpa, Helvetica, Arial, sans-s=
+erif; font-size: 12px;">&nbsp;Copyright &copy; 1999-2024<span>&nbsp;</span>=
+<span>&nbsp;</span><span>&nbsp;</span>
+<span class=3D"mark9glrk6stc" style=3D"border-width: 0px; margin: 0px; padd=
+ing: 0px; vertical-align: baseline;" data-markjs=3D"true" data-ogac=3D"" da=
+ta-ogab=3D"" data-ogsc=3D"" data-ogsb=3D"">Webmail<span>&nbsp;</span></span=
+>Operating Company, LLC. All Rights Reserved.</p></td></tr></tbody></table>=
+</div></td></tr></tbody></table>
+</body></html>
+

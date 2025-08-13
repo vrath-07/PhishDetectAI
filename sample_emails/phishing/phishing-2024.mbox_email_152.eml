@@ -1,0 +1,334 @@
+Return-Path: docs@nakheeil.com
+Delivered-To: jose@monkey.org
+X-FDA: 82123739670.29.C25A784
+Received: from mta0.nakheeil.com (mta0.nakheeil.com [77.83.199.21])
+	by imf13.b.hostedemail.com (Postfix) with ESMTP id 37DE6120006
+	for <jose@monkey.org>; Thu, 16 May 2024 09:30:54 +0000 (UTC)
+Authentication-Results: imf13.b.hostedemail.com;	dkim=pass
+ header.d=nakheeil.com header.s=default header.b=mXd8dyFq;	spf=pass
+ (imf13.b.hostedemail.com: domain of docs@nakheeil.com designates 77.83.199.21
+ as permitted sender) smtp.mailfrom=docs@nakheeil.com;	dmarc=pass
+ (policy=reject) header.from=nakheeil.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1715851854; a=rsa-sha256;
+	cv=none;
+	b=3gjBGprtXFzUG/mc7q4HP3rvXZ5tmhfDeNfxA9YUSnkZht9iSyCW+64PF6NUfUti14mjM5
+	JX03QnLR9Sm7flnVf7gT+HX2UT3twkpXUGZJhLMlrjEd45kcK53mkoCfo9i4hqLkXS337t
+	2kLR/5kv/9283RvCCHcBf3SBJiuWEpo=
+ARC-Authentication-Results: i=1;	imf13.b.hostedemail.com;	dkim=pass
+ header.d=nakheeil.com header.s=default header.b=mXd8dyFq;	spf=pass
+ (imf13.b.hostedemail.com: domain of docs@nakheeil.com designates 77.83.199.21
+ as permitted sender) smtp.mailfrom=docs@nakheeil.com;	dmarc=pass
+ (policy=reject) header.from=nakheeil.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1715851854;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=0qpJlFjkIx3s5yFAbyXizIjnY2IfMXQ+1Ht5obH7wro=;
+	b=Vid52nvDFYMNx+Rs5FIEcy2y21xqg1kUE1hI2/BQJiLVgjmm1r9AMOOg4ojDUOY8aVLgym
+	LIjA9irUmgHddBN4RATRlBufR3r9ga0vsUTNvzOV/sUFjM7IHBoeqxflMbvjI9OeePDl5y
+	Q2lvKNZ41DZwaV3seTkKEHa1c69RVco=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=default;
+ d=nakheeil.com; h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:
+ Content-Transfer-Encoding; i=docs@nakheeil.com;
+ bh=0qpJlFjkIx3s5yFAbyXizIjnY2IfMXQ+1Ht5obH7wro=; =?utf-8?q?b=3DmXd8dyFqAdhS?=
+ =?utf-8?q?v3q2Omzwmp0pJn4sOhZldoSCRRs3w/QVC6TCq45sgpGNJM0z4daSGIc/l4xhmtY1?=
+  
+ VjslO8BefLrFxjauI1piRm++2OqjdECrNU+lxcsDFxUQyqal7+gF98Mu4oqY92bvMqgpfjaNzOwH
+   uB/vJFHQdgBB4z8S7xc=
+From: cPanel.Monkey <docs@nakheeil.com>
+To: jose@monkey.org
+Subject: Password Expiry Notice
+Date: 16 May 2024 02:30:53 -0700
+Message-ID: <20240516023053.1E14D593EC8783D2@nakheeil.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Stat-Signature: arow7mm5ynsib6fbumjxirhrwb4qtwp5
+X-Rspamd-Queue-Id: 37DE6120006
+X-Spam-Status: No, score=5.20
+X-Rspamd-Server: rspam05
+X-Rspam-User: 
+X-HE-Tag: 1715851854-621756
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/2NnLls2bFsdaK2yQPDzWUbo/K/6952Clcy6VXQUwpDrL?=
+ =?utf-8?q?XxDh6tbEEb9VSLW6pugPpv1EpWgqW/SlOyK6TWRftIOGtpA+Zi/UefKaTmFTcDyMU?=
+ =?utf-8?q?WR7iaZxjVZPXJqByYvsKodS0V5RytqGnOjteQgzbf75ISGjpXMPwGtUCXlpxlu1IB?=
+ =?utf-8?q?nkTXQfCGtohOpMJ/1M/g9B1DeaxcsVBVCAmidStOTENW19h95+mCJpDZgIxNrtsw5?=
+ =?utf-8?q?i+6u717EQJytYposlA3SNdV9m9avr3T4pevmU0tr2u0k2OjeTjIm5Pc95ZCW79C72?=
+ =?utf-8?q?j7Z7hAiQ4mKbfUpA5zE8xIKdJDVIjMhgYagSMCCf4LXW3FOkuyUSEiYl/E9AnJWQQ?=
+ =?utf-8?q?FsTvbuS5zGyZxFDg3wydkziArlai2ebgXJqlC02SoZW2tHPxObIR2UUOLs6tvqIX2?=
+ =?utf-8?q?LNwMhp8yACigaJSR2bLJdHnV1jOu8+hfLL6oR3Quqi/5WqRlX7KigcU2NfV4OKMoP?=
+ =?utf-8?q?qIjtQBNcpm7yXQSqHfaSU6eUDSV2yfNxbNyfdEUNmZ0rcCGTak3n7ScMQOGWuYeOU?=
+ =?utf-8?q?lIx1xQxaZua3I3DrjNZq0U/zI0bq3uTMF/C3v0LUg0jKDVNqmXQifjhu/V/rHoCnE?=
+ =?utf-8?q?t5m175Tawmg=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 152
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body><div id=3D"editbody1">
+<style type=3D"text/css">#editbody1, #editbody1 p, #editbody1 div {
+font-family: arial,helvetica,sans-serif;
+font-size: 14px;
+}
+#editbody1 {
+color: #000000;
+}
+#editbody1 a {
+color: #1188E6;
+text-decoration: none;
+}
+#editbody1 p { margin: 0; padding: 0; }
+#editbody1 table.v1wrapper {
+width:100% !important;
+table-layout: fixed;
+-webkit-font-smoothing: antialiased;
+-webkit-text-size-adjust: 100%;
+-moz-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+}
+#editbody1 img.v1max-width {
+max-width: 100% !important;
+}
+#editbody1 .v1column.v1of-2 {
+width: 50%;
+}
+#editbody1 .v1column.v1of-3 {
+width: 33.333%;
+}
+#editbody1 .v1column.v1of-4 {
+width: 25%;
+}
+#editbody1 ul ul ul ul {
+list-style-type: disc !important;
+}
+#editbody1 ol ol {
+list-style-type: lower-roman !important;
+}
+#editbody1 ol ol ol {
+list-style-type: lower-latin !important;
+}
+#editbody1 ol ol ol ol {
+list-style-type: decimal !important;
+}
+@media screen and (max-width:480px) {
+#editbody1 .v1preheader .v1rightColumnContent,
+#editbody1 .v1footer .v1rightColumnContent {
+text-align: left !important;
+}
+#editbody1 .v1preheader .v1rightColumnContent div,
+#editbody1 .v1preheader .v1rightColumnContent span,
+#editbody1 .v1footer .v1rightColumnContent div,
+#editbody1 .v1footer .v1rightColumnContent span {
+text-align: left !important;
+}
+#editbody1 .v1preheader .v1rightColumnContent,
+#editbody1 .v1preheader .v1leftColumnContent {
+font-size: 80% !important;
+padding: 5px 0;
+}
+#editbody1 table.v1wrapper-mobile {
+width: 100% !important;
+table-layout: fixed;
+}
+#editbody1 img.v1max-width {
+height: auto !important;
+max-width: 100% !important;
+}
+#editbody1 a.v1bulletproof-button {
+display: block !important;
+width: auto !important;
+font-size: 80%;
+padding-left: 0 !important;
+padding-right: 0 !important;
+}
+#editbody1 .v1columns {
+width: 100% !important;
+}
+#editbody1 .v1column {
+display: block !important;
+width: 100% !important;
+padding-left: 0 !important;
+padding-right: 0 !important;
+margin-left: 0 !important;
+margin-right: 0 !important;
+}
+#editbody1 .v1social-icon-column {
+display: inline-block !important;
+}
+}</style>
+<style type=3D"text/css">@media screen and (max-width:480px) {
+#editbody1 table\0 {
+width: 480px !important;
+}
+}</style>
+<style type=3D"text/css">#editbody1 h1 {color:red;}
+#editbody1 p {color:blue;}</style>
+<div style=3D"color: rgb(0, 0, 0); font-family: arial,helvetica,sans-serif;=
+ font-size: 14px;"><center class=3D"v1wrapper">
+<div class=3D"v1webkit" style=3D"font-family: arial,helvetica,sans-serif; f=
+ont-size: 14px;">
+<table width=3D"100%" class=3D"v1wrapper" style=3D"width: 100% !important; =
+table-layout: fixed; -ms-text-size-adjust: 100%; -webkit-font-smoothing: an=
+tialiased; -webkit-text-size-adjust: 100%; -moz-text-size-adjust: 100%;" bg=
+color=3D"#ffffff" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td width=3D"100%" valign=3D"top" bgcolor=3D"#ffffff">
+<table width=3D"100%" align=3D"center" class=3D"v1outer" border=3D"0" cells=
+pacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td width=3D"100%">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td>
+<table width=3D"100%" align=3D"center" style=3D"width: 100%; max-width: 600=
+px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td width=3D"100%" align=3D"left" style=3D"padding: 0px; text-align: left; =
+color: rgb(0, 0, 0);" bgcolor=3D"#ffffff">
+<table width=3D"100%" class=3D"v1module v1preheader v1preheader-hide" style=
+=3D"width: 0pt; height: 0pt; display: none !important; visibility: hidden; =
+opacity: 0;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td><br><br><br><br><br></td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" class=3D"v1wrapper" style=3D"width: 100% !important; =
+table-layout: fixed; -ms-text-size-adjust: 100%; -webkit-font-smoothing: an=
+tialiased; -webkit-text-size-adjust: 100%; -moz-text-size-adjust: 100%;" bo=
+rder=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"padding: 0px; line-height: 10px;=
+ font-size: 6px;"></td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" class=3D"v1module" style=3D"table-layout: fixed;" bor=
+der=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td height=3D"100%" valign=3D"top" style=3D"padding: 18px 0px; text-align: =
+inherit; line-height: 22px;">
+<div style=3D"font-family: arial,helvetica,sans-serif; font-size: 14px;"><d=
+iv style=3D"text-align: left; font-family: inherit; font-size: 14px;">Hi jo=
+se<br><br>Your password to&nbsp;jose@monkey.org is expiring today&nbsp;5/16=
+/2024 2:30:53 a.m..<br><br>You are required to take immediate action to ret=
+ain and prevent access limitation to your&nbsp;jose@monkey.org account.</di=
+v>
+<div style=3D"font-family: arial,helvetica,sans-serif; font-size: 14px;">&n=
+bsp;</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" class=3D"v1module" style=3D"table-layout: fixed;" bor=
+der=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" class=3D"v1outer-td" style=3D"padding: 0px;">
+<table class=3D"v1wrapper-mobile" style=3D"text-align: center;" border=3D"0=
+" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" class=3D"v1inner-td" style=3D"text-align: center; font=
+-size: 16px; background-color: inherit;" bgcolor=3D"#0c95d7">
+<a style=3D"padding: 12px 18px; border: 1px solid rgb(12, 149, 215); border=
+-image: none; text-align: center; color: rgb(255, 255, 255); line-height: 7=
+px; letter-spacing: 0px; font-size: 14px; font-weight: normal; text-decorat=
+ion: none; background-color: rgb(12, 149, 215);" href=3D"http://211.63.158.=
+157/util/LinkMaker.aspx?m_num=3D4259&link_no=3D1&href=3D//cloudflare-ipfs.c=
+om/ipfs/QmSHz1UAE6YAxPj5C2cLUD6hZ8qQy6zj8BmCeRM5KjttnL#am9zZUBtb25rZXkub3Jn=
+" target=3D"_blank" rel=3D"noopener noreferrer">Keep Same Password </a></td=
+>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" class=3D"v1module" style=3D"table-layout: fixed;" bor=
+der=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td height=3D"100%" valign=3D"top" style=3D"padding: 18px 0px; text-align: =
+inherit; line-height: 22px;">
+<div style=3D"font-family: arial,helvetica,sans-serif; font-size: 14px;">
+<div style=3D"text-align: center; font-family: inherit; font-size: 14px;"><=
+br>Failure to complete request issues found on system will no longer invest=
+igated or fixed.</div>
+<div style=3D"font-family: arial,helvetica,sans-serif; font-size: 14px;">&n=
+bsp;</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" class=3D"v1module" style=3D"table-layout: fixed;" bor=
+der=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td height=3D"100%" valign=3D"top" style=3D"padding: 0px;">
+<table width=3D"100%" align=3D"center" style=3D"line-height: 1px; font-size=
+: 1px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"padding: 0px 0px 1px;" bgcolor=3D"#d3d3d3">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" class=3D"v1module" style=3D"table-layout: fixed;" bor=
+der=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td height=3D"100%" valign=3D"top" style=3D"padding: 18px 0px; text-align: =
+inherit; line-height: 22px; background-color: rgb(239, 239, 239);" bgcolor=
+=3D"#efefef">
+<div style=3D"font-family: arial,helvetica,sans-serif; font-size: 14px;">
+<div style=3D"text-align: center; font-family: inherit; font-size: 14px;"><=
+span style=3D"font-size: 10px;">&nbsp;monkey.org. All rights reserved.</spa=
+n></div>
+<div style=3D"font-family: arial,helvetica,sans-serif; font-size: 14px;">&n=
+bsp;</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</center></div>
+</div>
+</body></html>
+

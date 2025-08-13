@@ -1,0 +1,214 @@
+Return-Path: accounts@reco-transformers.com
+Delivered-To: jose@monkey.org
+X-FDA: 81696457542.38.D561E32
+Received: from firsttender.com (firsttender.com [174.142.131.118])
+	by imf09.b.hostedemail.com (Postfix) with ESMTP id C535D18001F
+	for <jose@monkey.org>; Fri, 19 Jan 2024 15:34:29 +0000 (UTC)
+Authentication-Results: imf09.b.hostedemail.com;	dkim=none;	spf=softfail
+ (imf09.b.hostedemail.com: 174.142.131.118 is neither permitted nor denied by
+ domain of accounts@reco-transformers.com)
+ smtp.mailfrom=accounts@reco-transformers.com;	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1705678470;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	 references;
+ bh=LJKTL6It6DmTrE/2F5w4ibbZKwiYRlMTA2/lst7A4NI=;
+	b=Un+S22/Q+XGHKss/ZpKYW1aHS+tIj+NSzXcBUwuYxEyZTZ4hvAu3eg/2XIC3cyW2tap/SO
+	oNI5oJn8WMkYfao6M0coPTWkcgCZ6co2IZdnPap98fV8e0I7xN7l33hUHLopgibEThbON3
+	zasUrv7e4JHdx3roImcO/NldBY6ykQM=
+ARC-Authentication-Results: i=1;	imf09.b.hostedemail.com;	dkim=none;
+	spf=softfail (imf09.b.hostedemail.com: 174.142.131.118 is neither permitted
+ nor denied by domain of accounts@reco-transformers.com)
+ smtp.mailfrom=accounts@reco-transformers.com;	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1705678470; a=rsa-sha256;
+	cv=none;
+	b=IUjAelW7Dnhus3mTRE8gfr1/306vwpYQ6A013888fHjRBq9KJFLEdgMX8APuDPvUdP7AyT
+	239iCSYaIF2j3JwdrtkcARXxd8zLvXn9wXatpGfqeiJ+LwqUu8OceOoqSeOIkXxueFqdBE
+	9W/Gpbs3ts+SB0J05IjeEZqK/bpa2X4=
+Received: from reco-transformers.com ([185.44.77.100]) by firsttender.com with
+ MailEnable ESMTPSA (version=TLS1_2
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384); Fri, 19 Jan 2024 20:03:34
+ +0530
+Reply-To: ipaulcruise@gmail.com
+From: accounts@reco-transformers.com
+To: jose@monkey.org
+Subject: Swift copy of USD 15945.75.
+Date: 19 Jan 2024 06:33:24 -0800
+Message-ID: <20240119063318.424326C79E742877@reco-transformers.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="----=_NextPart_000_0012_A5AD0892.B7AF68D3"
+X-Rspamd-Server: rspam08
+X-Rspam-User: 
+X-Rspamd-Queue-Id: C535D18001F
+X-Spam-Status: No, score=5.39
+X-Stat-Signature: oz3xt9hontotux8fxdtx391w64yhfbu7
+X-HE-Tag: 1705678469-684471
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18k5NIdiw0EwBZuC4Prtp/iImOkzEMZ0HHsVQiVIYtCY5O?=
+ =?utf-8?q?hghKmsZ6BoIu5l8aIqLJSGmczhtEhnxoAwEjJwXi5YF0mO3blJ92++tnVOUJMZ4yg?=
+ =?utf-8?q?sUEUvoUU2KFE0WMhUIuK+5giEDE3J+DQiWa4s/AjZB3q7Kuh/9twqfsT9WWto0GZP?=
+ =?utf-8?q?pujtGK+pEAXKi7GpX3CvosvlyQUnmRzRulIB70vA51NqnBkyTk7eqJpcIXH7A4h0j?=
+ =?utf-8?q?KZHDoQVy2vQLMDlzU=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 31
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0012_A5AD0892.B7AF68D3
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<body style=3D"MARGIN: 0.5em">
+<P class=3DMsoNormal style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helveti=
+ca, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: non=
+e; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; =
+WIDOWS: 2; MARGIN: 0px; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,2=
+55,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-cap=
+s: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initi=
+al; text-decoration-style: initial;=20
+text-decoration-color: initial"><SPAN lang=3DEN-US>Dear Sir,<BR><U></U><U><=
+/U></SPAN></P>
+<P class=3DMsoNormal style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helveti=
+ca, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: non=
+e; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; =
+WIDOWS: 2; MARGIN: 0px; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,2=
+55,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-cap=
+s: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initi=
+al; text-decoration-style: initial;=20
+text-decoration-color: initial"><SPAN lang=3DEN-US><U></U><U></U></SPAN>&nb=
+sp;</P>
+<P class=3DMsoNormal style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helveti=
+ca, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: non=
+e; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; =
+WIDOWS: 2; MARGIN: 0px; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,2=
+55,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-cap=
+s: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initi=
+al; text-decoration-style: initial;=20
+text-decoration-color: initial"><SPAN lang=3DEN-US>Please find attached Swi=
+ft copy of<SPAN>&nbsp;</SPAN><SPAN class=3Dil>USD</SPAN><SPAN>&nbsp;</SPAN>=
+15945.75.<U></U><U></U></SPAN></P>
+<P class=3DMsoNormal style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helveti=
+ca, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: non=
+e; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; =
+WIDOWS: 2; MARGIN: 0px; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,2=
+55,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-cap=
+s: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initi=
+al; text-decoration-style: initial;=20
+text-decoration-color: initial"><SPAN lang=3DEN-US><U></U><U></U></SPAN>&nb=
+sp;</P>
+<P class=3DMsoNormal style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helveti=
+ca, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: non=
+e; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; =
+WIDOWS: 2; MARGIN: 0px; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,2=
+55,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-cap=
+s: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initi=
+al; text-decoration-style: initial;=20
+text-decoration-color: initial"><SPAN lang=3DEN-US>Kindly check and confirm=
+ once you receive the<SPAN>&nbsp;</SPAN><SPAN class=3Dil>payment</SPAN>.<U>=
+</U><U></U></SPAN></P>
+<P class=3DMsoNormal style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helveti=
+ca, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: non=
+e; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; =
+WIDOWS: 2; MARGIN: 0px; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,2=
+55,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-cap=
+s: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initi=
+al; text-decoration-style: initial;=20
+text-decoration-color: initial"><SPAN lang=3DEN-US><U></U><U></U></SPAN>&nb=
+sp;</P>
+<P class=3DMsoNormal style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helveti=
+ca, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: non=
+e; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; =
+WIDOWS: 2; MARGIN: 0px; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,2=
+55,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-cap=
+s: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initi=
+al; text-decoration-style: initial;=20
+text-decoration-color: initial"><SPAN lang=3DEN-US><U></U><U><BR><BR><BR></=
+U></SPAN>&nbsp;</P>
+<P class=3DMsoNormal style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helveti=
+ca, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: non=
+e; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; =
+WIDOWS: 2; MARGIN: 0px; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,2=
+55,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-cap=
+s: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initi=
+al; text-decoration-style: initial;=20
+text-decoration-color: initial"><SPAN lang=3DEN-US style=3D'FONT-SIZE: 12pt=
+; FONT-FAMILY: "Bookman Old Style", "serif"'>Thanks &amp; Regards</SPAN><SP=
+AN style=3D'FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman", "serif"'><U></=
+U><U></U></SPAN></P>
+<P class=3DMsoNormal style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helveti=
+ca, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: non=
+e; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; =
+WIDOWS: 2; MARGIN: 0px; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,2=
+55,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-cap=
+s: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initi=
+al; text-decoration-style: initial;=20
+text-decoration-color: initial"><SPAN lang=3DEN-US style=3D'FONT-SIZE: 12pt=
+; FONT-FAMILY: "Bookman Old Style", "serif"'>Shalaka Accounts</SPAN><SPAN s=
+tyle=3D'FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman", "serif"'><U></U><U=
+></U></SPAN></P>
+<P class=3DMsoNormal style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helveti=
+ca, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: non=
+e; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; =
+WIDOWS: 2; MARGIN: 0px; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,2=
+55,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-cap=
+s: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initi=
+al; text-decoration-style: initial;=20
+text-decoration-color: initial"><SPAN lang=3DEN-US style=3D'FONT-SIZE: 12pt=
+; FONT-FAMILY: "Bookman Old Style", "serif"'>ORIENT BOX MOVERS PVT LTD.</SP=
+AN><SPAN style=3D'FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman", "serif"'=
+><U></U><U></U></SPAN></P>
+<P class=3DMsoNormal style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helveti=
+ca, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: non=
+e; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; =
+WIDOWS: 2; MARGIN: 0px; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,2=
+55,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-cap=
+s: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initi=
+al; text-decoration-style: initial;=20
+text-decoration-color: initial"><SPAN lang=3DEN-US style=3D'FONT-SIZE: 12pt=
+; FONT-FAMILY: "Bookman Old Style", "serif"'>601 ACME PLAZA, ANDHERI KURLA =
+ROAD</SPAN><SPAN style=3D'FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman", =
+"serif"'><U></U><U></U></SPAN></P>
+<P class=3DMsoNormal style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helveti=
+ca, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: non=
+e; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; =
+WIDOWS: 2; MARGIN: 0px; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,2=
+55,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-cap=
+s: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initi=
+al; text-decoration-style: initial;=20
+text-decoration-color: initial"><SPAN lang=3DEN-US style=3D'FONT-SIZE: 12pt=
+; FONT-FAMILY: "Bookman Old Style", "serif"'>ANDHERI (EAST),</SPAN><SPAN st=
+yle=3D'FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman", "serif"'><U></U><U>=
+</U></SPAN></P>
+<P class=3DMsoNormal style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helveti=
+ca, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: non=
+e; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; =
+WIDOWS: 2; MARGIN: 0px; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,2=
+55,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-cap=
+s: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initi=
+al; text-decoration-style: initial;=20
+text-decoration-color: initial"><SPAN lang=3DEN-US style=3D'FONT-SIZE: 12pt=
+; FONT-FAMILY: "Bookman Old Style", "serif"'>MUMBAI-400059</SPAN><SPAN styl=
+e=3D'FONT-SIZE: 12pt; FONT-FAMILY: "Times New Roman", "serif"'><U></U><U></=
+U></SPAN></P>
+<P class=3DMsoNormal style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helveti=
+ca, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: non=
+e; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; =
+WIDOWS: 2; MARGIN: 0px; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,2=
+55,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-cap=
+s: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initi=
+al; text-decoration-style: initial;=20
+text-decoration-color: initial"><SPAN lang=3DEN-US style=3D'FONT-SIZE: 12pt=
+; FONT-FAMILY: "Bookman Old Style", "serif"'>TEL: 022-028244575/881</SPAN><=
+/P></BODY></HTML>
+------=_NextPart_000_0012_A5AD0892.B7AF68D3--
+
+

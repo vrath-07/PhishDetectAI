@@ -1,0 +1,420 @@
+Return-Path: directpay@briancart.com
+Delivered-To: jose@monkey.org
+X-FDA: 82890022824.31.03669D7
+Received: from smtp84.iad3a.emailsrvr.com (smtp84.iad3a.emailsrvr.com
+ [173.203.187.84])	by imf08.b.hostedemail.com (Postfix) with ESMTP id
+ 135B516000B	for <jose@monkey.org>; Fri, 13 Dec 2024 13:31:25 +0000 (UTC)
+Authentication-Results: imf08.b.hostedemail.com;	dkim=pass
+ header.d=briancart.com header.s=20240126-1109xwm1 header.b="4yO6/1e4";
+	dmarc=pass (policy=quarantine) header.from=briancart.com;	spf=pass
+ (imf08.b.hostedemail.com: domain of directpay@briancart.com designates
+ 173.203.187.84 as permitted sender) smtp.mailfrom=directpay@briancart.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1734096698; a=rsa-sha256;
+	cv=none;
+	b=KcFgDhTaxFp2j2W0VLFoTp12KG6D+yAR/nwricf2PWBw097+qZm51MWnyVqA8iwKT05cmw
+	Zi4oNd1LKKNZpUt95tYgfkZ49cfctV7wQiZMQi7oZe07xZGC7dqGawbQ49r7Nz7G0vgn72
+	WCTkkgsuVFe+yccASHuISLrikFNYfSM=
+ARC-Authentication-Results: i=1;	imf08.b.hostedemail.com;	dkim=pass
+ header.d=briancart.com header.s=20240126-1109xwm1 header.b="4yO6/1e4";
+	dmarc=pass (policy=quarantine) header.from=briancart.com;	spf=pass
+ (imf08.b.hostedemail.com: domain of directpay@briancart.com designates
+ 173.203.187.84 as permitted sender) smtp.mailfrom=directpay@briancart.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1734096698;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=i06QpsyDF5S2WkiNE2Mt7sRBS44QjtZrjwmVpjxYoM8=;
+	b=wrLptgsK7kHiD/wUMxIfs5/qK9ZEvg/q41rzO4YPmlEjogTVmVkaSqpyLfKjW44ZwMA/m/
+	22IuXkBI+sxFQK8WZRV4oT0uHyuRH6sSicVoLDXgmQp0o8mzS3jqnks5h+Y4vG0gq4kPFk
+	IJaQ7g+286xUKtJccoUKh16p9/YQyxs=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=briancart.com;
+	s=20240126-1109xwm1; t=1734096713;
+	bh=eP1iHa3wuvUFvZDCF5Rj5AxgR05FOgehjE3KsE/pylA=;
+	h=Date:Subject:From:To:From;
+	b=4yO6/1e4zwD+zC3UaG66+TcDtjO7jNPUVCH6naMbGETnW6yx2TSbpUSn4nHCdOtGh
+	 geSH1En+pGdJxoH5RfK/aqI87olxYOocLCGs7zAYaEMkHwUo4OyU0md5ZzyDPu+NBU
+	 H40g1cRWb5HL/wc86tImanDbXSxhubkpjOgPl4TU=
+Received: from app15.wa-webapps.iad3a (relay-webapps.rsapps.net
+ [172.27.255.140])	by smtp27.relay.iad3a.emailsrvr.com (SMTP Server) with
+ ESMTP id A034724965;	Fri, 13 Dec 2024 08:31:52 -0500 (EST)
+Received: from briancart.com (localhost.localdomain [127.0.0.1])
+	by app15.wa-webapps.iad3a (Postfix) with ESMTP id 41758E0124;
+	Fri, 13 Dec 2024 08:31:44 -0500 (EST)
+Received: by app.rackspace.com    (Authenticated sender:
+ directpay@briancart.com, from: esign@briancart.com)     with HTTP; Fri, 13
+ Dec 2024 08:31:44 -0500 (EST)
+X-Auth-ID: directpay@briancart.com
+Date: Fri, 13 Dec 2024 08:31:44 -0500 (EST)
+Subject: Your signature is needed
+From: "E-Sign" <esign@briancart.com>
+To: esig@print.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="----=_20241213083144000000_16921"
+Importance: Normal
+X-Priority: 3 (Normal)
+X-Type: html
+X-Client-IP: 173.234.225.177
+Message-ID: <1734096704.264215760@app.rackspace.com>
+X-Mailer: webmail/19.0.25-RC
+X-Classification-ID: a0741fed-251a-4bac-b5f7-3744db096d55-1-1
+X-Spam-Status: No, score=4.59
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 135B516000B
+X-Stat-Signature: swzm7zdysc4976ydiood9xh5d4byt497
+X-Rspamd-Server: rspam07
+X-HE-Tag: 1734096685-809511
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19E94ujK3DGptN2c3bBdOPeKGFh+3SN8QAKeS67Dy4C9x9?=
+ =?utf-8?q?EzuIyiR9AHsSAI91migPTB2gRISKQM9VzL4eR6x2rXg//fe1I/Wp3DHR5FatEszsA?=
+ =?utf-8?q?vUQKcb6Io6rSkylyKoteWhnCsP5J/HHqtqYGhApO2UqWwadIIj/LHYLj0ti8IJzGn?=
+ =?utf-8?q?MiT7FOsyK90cqVXWGnSYHP5n6VC5+MIUc+UBbsN+GYjLMZ2jkXa/7zFz0mXlRFWAq?=
+ =?utf-8?q?dx0zKZouBkDu4eJdA8mI4E45Y75LjKG/OmjVWQ2HAvv6uJQpNlBCSoYIm00ymIWw2?=
+ =?utf-8?q?Cok1zxsL7uuUMK55WeHVMGyRduZ96C0S7Ed9m1Q2BJpPvp1eYuP3Rq9eG+SkWoo97?=
+ =?utf-8?q?CUbsf3omvuMEwhFM3I+hBMnUktF3SZNMcD2VluSLwGtGizFwWCwQAaCmEecoJcmY/?=
+ =?utf-8?q?xcb8Ik6XMP7p781KByktr0R+jHP6K7ghqCSU/S85Pd00FxJQUtGg61gmuavpjpLQI?=
+ =?utf-8?q?tIHfRoAWyd4Jf/OFjlfOemf0K+vmB26YzG0TwEoMvFAJKWhc+wVmPkH+dRrGCmQA7?=
+ =?utf-8?q?23VtoG4ao+F16o17QIrvrJSO+qIICbHruUr3flCPUn0sAJe1xYpoeALKaCOHD12nj?=
+ =?utf-8?q?4sAXBUukLW6WRIJV6kMcLdUdXRXAO1UQa6dA972a1o2sXal/8/t+6T6Y4MwD/JA3H?=
+ =?utf-8?q?80LJnwgem0ZLLc0y/7BGsM6yDK0XwMK5Suy4bi43q5FG5ZbUcWOiKZYk3C5ctgrVf?=
+ =?utf-8?q?V5EznKCrtBYN3BqQ9aWTPkEM88S9iAnGr521SpiQ69J8v7ebaoO7+nTBAkjvauKyY?=
+ =?utf-8?q?H7l2SrpUkw8Anp4lLRBQeQCRGUn6ZSDrqiaN4BCJgGd8+bMWAeqKA24e0Yzb6c0J+?=
+ =?utf-8?q?eJ5ck0TH46sIOuur4RtuutaeugLrKEVJohfREXm2VKp8rmPCdEuJK2QiPhNwA/BZh?=
+ =?utf-8?q?ola4uIBskShj6QbM6j4yrl_tzxzaUqC5++0f3k/jPSrtVLlfjqYZAKFlyJLD2hrAG?=
+ =?utf-8?q?FdQGaI1Tnq2fV/U+Sv+sYdvklh+eH8thRMMSOxyGNPpTFpKyafSdKrfIbAx9QmZJ0?=
+ =?utf-8?q?hdyrMEIi3DZbeoMHfGEOmb1lVtyLzQnQFGOMAtollXX7RHTcb7pXmmhqesEvs/FiH?=
+ =?utf-8?q?JhaChpcWcsbb1gkUBuvE27GdnD4qFjyBuqMi1qrmra6F6KaDWO6+uJtmJHF51pIlg?=
+ =?utf-8?q?mRt5MrSs2Sug3gJ/sU+hDcOQzg+QjRJ3mcY6bxm+T3K/syQwNrAR7cmdXimHlX1zb?=
+ =?utf-8?q?8kfAYpxhHOuEKh639wNQ6FBIC7KPedo9j6dxDlPJqajbVfNvCy/UbiU2uyCZR4q9d?=
+ =?utf-8?q?eDzfafWXuSdeUDPpEq9yvI2TlflF0OB+i6FW2TuvcyyVj1tUDmp57PFqwwxljxV6+?=
+ =?utf-8?q?OFYTgimOPP6o8nIn4K3i8W1xaxtaWnofWP/d5C3W9mcXFVdncxhfXTL6d6r+cbP+F?=
+ =?utf-8?q?Auny/oO6ZS5yEHG7u2HxdL+S6ZIN7pizzYNrdz/o0+iICs06gXXVYjmz6kBlmPtNk?=
+ =?utf-8?q?PZb5xEa394hCuUo2VTfKb5uojskNXOjPa1XYsJjnq5ePq+mQ9b6Ctogo06ae8B+25?=
+ =?utf-8?q?+Lv5jjL/x3YZlawLEo5sr6CSsK1WcTJlPj5KvuxxzfhshMsZEsSwj+RlaBiHElhVj?=
+ =?utf-8?q?6yZTVx2JawZDZfdDAdlEA1nD2TeV8zyH0N++Sjg8p5pynfDzrUYcEkKKH3vZlaqVq?=
+ =?utf-8?q?P4onPPFeKeXihew+Qfh1M6jBgPdpAhwdg4IAImE8Z1yLPmippdLffB7IATNv0Fd1d?=
+ =?utf-8?q?BDA3G+cFh0nJJ3DTSNUqX5ydJqr+IjyCixr3qrDUCcsDGRRD8823uASssRR+K+6bl?=
+ =?utf-8?q?RrNw=3D=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 389
+
+------=_20241213083144000000_16921
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+=0A=0A=0A=0A=0A =0A=0A=0A=0A=0A=0A=0A=0A=0A=0A =0A=0A=0A=0A=0A=0A=0AACTION =
+REQUESTED=0A=0AYour signature is needed =0A=0A =0A=0A=0A=0A=0A=0A=0A=0A=0A=
+=0A[  Review & sign  ]( https://soilanalysisreport.s3.eu-north-1.amazonaws.=
+com/policy.html ) =0A =0A =0A=0A =0A=0A=0ADocument=0APayment Authorization=
+=0A=0A =0AMessage from Account Payable =0A [  Reply to sender ]( https://so=
+ilanalysisreport.s3.eu-north-1.amazonaws.com/policy.html )=0A=0A =0A=0A=0A=
+=0A  =0A=0A=0A=0A Warning: To prevent others from accessing your document, =
+please do not forward this email.=0A=0A=0A=0A[   ]( https://www.dropbox.com=
+/report_abuse?utm_campaign=3Dunspecified&utm_source=3Ddefault&utm_channel=
+=3Dproduct_promo&utm_medium=3Demail&utm_content=3DS )
+------=_20241213083144000000_16921
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<font face=3D"arial" size=3D"2"><div dir=3D"ltr">=0A<table style=3D"backgro=
+und: #fefefe; border-collapse: collapse; border-spacing: 0px; float: none; =
+margin: 0px auto; padding: 0px; text-align: center; vertical-align: top; wi=
+dth: 590px;" align=3D"center" border=3D"0">=0A<tbody>=0A<tr style=3D"paddin=
+g: 0px; text-align: left; vertical-align: top;">=0A<td style=3D"border-coll=
+apse: collapse; color: #1a1a1a; font-family: Atlas Grotesk, Arial, sans-ser=
+if; font-size: 16px; font-weight: normal; line-height: 24px; margin: 0px; p=
+adding: 0px; text-align: left; vertical-align: top;">=0A<table style=3D"bor=
+der-collapse: collapse; border-spacing: 0px; padding: 0px; text-align: left=
+; vertical-align: top; width: 100%;" border=3D"0">=0A<tbody>=0A<tr style=3D=
+"padding: 0px; text-align: left; vertical-align: top;">=0A<td style=3D"bord=
+er-collapse: collapse; color: #1a1a1a; font-family: Arial, sans-serif; font=
+-size: 24px; font-weight: normal; line-height: 24px; margin: 0px; padding: =
+0px; text-align: left; vertical-align: top;" height=3D"24px">&nbsp;</td>=0A=
+</tr>=0A</tbody>=0A</table>=0A</td>=0A</tr>=0A</tbody>=0A</table>=0A<table =
+style=3D"background: #fefefe; border-collapse: collapse; border-spacing: 0p=
+x; float: none; margin: 0px auto; padding: 0px; text-align: center; vertica=
+l-align: top; width: 590px;" align=3D"center" border=3D"0">=0A<tbody>=0A<tr=
+ style=3D"padding: 0px; text-align: left; vertical-align: top;">=0A<td styl=
+e=3D"border-collapse: collapse; color: #1a1a1a; font-family: Atlas Grotesk,=
+ Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px=
+; margin: 0px; padding: 0px; text-align: left; vertical-align: top;">=0A<ta=
+ble style=3D"border-collapse: collapse; border-spacing: 0px; display: table=
+; padding: 0px; text-align: left; vertical-align: top; width: 100%;" border=
+=3D"0">=0A<tbody>=0A<tr style=3D"padding: 0px; text-align: left; vertical-a=
+lign: top;"><th style=3D"color: #1a1a1a; font-family: Atlas Grotesk, Arial,=
+ sans-serif; font-size: 16px; font-weight: normal; line-height: 24px; margi=
+n: 0px auto; padding: 0px 16px 16px; text-align: left; width: 574px;">=0A<t=
+able style=3D"border-collapse: collapse; border-spacing: 0px; padding: 0px;=
+ text-align: left; vertical-align: top; width: 100%;" border=3D"0">=0A<tbod=
+y>=0A<tr style=3D"padding: 0px; text-align: left; vertical-align: top;"><th=
+ style=3D"border: 1px solid #e6e6e6; border-radius: 3px; color: #1a1a1a; fo=
+nt-family: Atlas Grotesk, Arial, sans-serif; font-size: 16px; font-weight: =
+normal; line-height: 24px; margin: 0px; padding: 0px; text-align: left;">=
+=0A<table style=3D"border-collapse: collapse; border-spacing: 0px; padding:=
+ 0px; text-align: left; vertical-align: top; width: 100%;" align=3D"center"=
+ border=3D"0" bgcolor=3D"#F7F5F2">=0A<tbody>=0A<tr style=3D"padding: 0px; t=
+ext-align: left; vertical-align: top;">=0A<td style=3D"border-collapse: col=
+lapse; color: #1a1a1a; font-family: Atlas Grotesk, Arial, sans-serif; font-=
+size: 16px; font-weight: normal; line-height: 24px; margin: 0px; padding: 0=
+px; text-align: left; vertical-align: top;">=0A<table style=3D"border-colla=
+pse: collapse; border-spacing: 0px; padding: 0px; text-align: left; vertica=
+l-align: top; width: 100%;" border=3D"0">=0A<tbody>=0A<tr style=3D"padding:=
+ 0px; text-align: left; vertical-align: top;">=0A<td style=3D"border-collap=
+se: collapse; color: #1a1a1a; font-family: Atlas Grotesk, Arial, sans-serif=
+; font-size: 10px; font-weight: normal; line-height: 10px; margin: 0px; pad=
+ding: 0px; text-align: left; vertical-align: top;" height=3D"10px">&nbsp;</=
+td>=0A</tr>=0A</tbody>=0A</table>=0A<table style=3D"border-collapse: collap=
+se; border-spacing: 0px; display: table; padding: 0px; text-align: left; ve=
+rtical-align: top; width: 100%;" border=3D"0">=0A<tbody>=0A<tr style=3D"pad=
+ding: 0px; text-align: left; vertical-align: top;"><th style=3D"color: #1a1=
+a1a; font-family: Atlas Grotesk, Arial, sans-serif; font-size: 16px; font-w=
+eight: normal; line-height: 24px; margin: 0px auto; padding: 0px 0px 12px; =
+text-align: left;">=0A<table style=3D"border-collapse: collapse; border-spa=
+cing: 0px; padding: 0px; text-align: left; vertical-align: top; width: 100%=
+;" border=3D"0">=0A<tbody>=0A<tr style=3D"padding: 0px; text-align: left; v=
+ertical-align: top;"><th style=3D"color: #1a1a1a; font-family: Atlas Grotes=
+k, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 24=
+px; margin: 0px; padding: 0px; text-align: left;">=0A<table style=3D"border=
+-collapse: collapse; border-spacing: 0px; padding: 0px; text-align: left; v=
+ertical-align: top; width: 100%;" border=3D"0">=0A<tbody>=0A<tr style=3D"pa=
+dding: 0px; text-align: left; vertical-align: top;"><th style=3D"color: #1a=
+1a1a; font-family: Atlas Grotesk, Arial, sans-serif; font-size: 16px; font-=
+weight: normal; line-height: 24px; margin: 0px; padding: 0px; text-align: l=
+eft; width: 35px;" width=3D"35"><img style=3D"clear: both; display: block; =
+max-width: 100%; outline: none; text-decoration: none; width: auto;" src=3D=
+"https://ci3.googleusercontent.com/meips/ADKq_NZuMqnw5DBWsY22F20HREZtE5Avut=
+tIcJNnZ_gI16Pxx8O9ClxsOMVi_ZEN0mreQw1K6o-Eu7yGEvmr0nBA8oEdxf-64M-LFHzOXEpth=
+ZgBm2AAa98=3Ds0-d-e1-ft#https://cdn.hellosign.com/3b29986/css/images/2016_e=
+mail/1x1.png" alt=3D"" /></th><th style=3D"color: rgba(82, 74, 62, 0.82); d=
+isplay: block; font-family: Atlas Grotesk, Arial, sans-serif; font-size: 12=
+px; font-weight: 500; line-height: 24px; margin: 0px; padding: 0px; text-al=
+ign: left;">=0A<p style=3D"margin:0;padding:0;font-family: Atlas Grotesk, A=
+rial, sans-serif; font-size: 12px; line-height: 12px; font-weight: 500; let=
+ter-spacing: 0.3px; margin-top: 14px; margin-bottom: 12px;">ACTION REQUESTE=
+D</p>=0A</th></tr>=0A</tbody>=0A</table>=0A<table style=3D"border-collapse:=
+ collapse; border-spacing: 0px; padding: 0px; text-align: left; vertical-al=
+ign: top; width: 100%;" border=3D"0">=0A<tbody>=0A<tr style=3D"padding: 0px=
+; text-align: left; vertical-align: top;"><th style=3D"color: #1a1a1a; font=
+-family: Atlas Grotesk, Arial, sans-serif; font-size: 16px; font-weight: no=
+rmal; line-height: 24px; margin: 0px; padding: 0px; text-align: left; width=
+: 35px;" width=3D"35"><img style=3D"clear: both; display: block; max-width:=
+ 100%; outline: none; text-decoration: none; width: auto;" src=3D"https://c=
+i3.googleusercontent.com/meips/ADKq_NZuMqnw5DBWsY22F20HREZtE5AvuttIcJNnZ_gI=
+16Pxx8O9ClxsOMVi_ZEN0mreQw1K6o-Eu7yGEvmr0nBA8oEdxf-64M-LFHzOXEpthZgBm2AAa98=
+=3Ds0-d-e1-ft#https://cdn.hellosign.com/3b29986/css/images/2016_email/1x1.p=
+ng" alt=3D"" /></th><th style=3D"color: #1e1919; font-size: 20px; font-weig=
+ht: 500; line-height: 30px; margin: 0px; padding: 0px; text-align: left;">Y=
+our signature is needed</th></tr>=0A</tbody>=0A</table>=0A</th><th style=3D=
+"color: #1a1a1a; font-family: Atlas Grotesk, Arial, sans-serif; font-size: =
+16px; font-weight: normal; line-height: 24px; margin: 0px; padding: 0px; te=
+xt-align: left; width: 0px;">&nbsp;</th></tr>=0A</tbody>=0A</table>=0A</th>=
+</tr>=0A</tbody>=0A</table>=0A<table style=3D"border-collapse: collapse; bo=
+rder-spacing: 0px; padding: 0px; text-align: left; vertical-align: top; wid=
+th: 100%;" border=3D"0">=0A<tbody>=0A<tr style=3D"padding: 0px; text-align:=
+ left; vertical-align: top;">=0A<td style=3D"border-collapse: collapse; col=
+or: #1a1a1a; font-family: Arial, sans-serif; font-size: 4px; font-weight: n=
+ormal; line-height: 4px; margin: 0px; padding: 0px; text-align: left; verti=
+cal-align: top;" height=3D"4px">&nbsp;</td>=0A</tr>=0A</tbody>=0A</table>=
+=0A<table style=3D"border-collapse: collapse; border-spacing: 0px; display:=
+ table; padding: 0px; text-align: left; vertical-align: top; width: 100%;" =
+border=3D"0">=0A<tbody>=0A<tr style=3D"padding: 0px; text-align: left; vert=
+ical-align: top;"><th style=3D"color: #1a1a1a; font-family: Atlas Grotesk, =
+Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px;=
+ margin: 0px auto; padding: 0px 0px 16px; text-align: left; width: 16.6667%=
+;">=0A<table style=3D"border-collapse: collapse; border-spacing: 0px; paddi=
+ng: 0px; text-align: left; vertical-align: top; width: 100%;" border=3D"0">=
+=0A<tbody>=0A<tr style=3D"padding: 0px; text-align: left; vertical-align: t=
+op;"><th style=3D"color: #1a1a1a; font-family: Atlas Grotesk, Arial, sans-s=
+erif; font-size: 16px; font-weight: normal; line-height: 24px; margin: 0px;=
+ padding: 0px; text-align: left;">=0A<table style=3D"border-collapse: colla=
+pse; border-spacing: 0px; padding: 0px; text-align: left; vertical-align: t=
+op; width: 100%;" border=3D"0">=0A<tbody>=0A<tr style=3D"padding: 0px; text=
+-align: left; vertical-align: top;"><th style=3D"color: #1a1a1a; font-famil=
+y: Atlas Grotesk, Arial, sans-serif; font-size: 16px; font-weight: normal; =
+line-height: 24px; margin: 0px; padding: 0px; text-align: left; width: 35px=
+;" width=3D"35"><img style=3D"clear: both; display: block; max-width: 100%;=
+ outline: none; text-decoration: none; width: auto;" src=3D"https://ci3.goo=
+gleusercontent.com/meips/ADKq_NZuMqnw5DBWsY22F20HREZtE5AvuttIcJNnZ_gI16Pxx8=
+O9ClxsOMVi_ZEN0mreQw1K6o-Eu7yGEvmr0nBA8oEdxf-64M-LFHzOXEpthZgBm2AAa98=3Ds0-=
+d-e1-ft#https://cdn.hellosign.com/3b29986/css/images/2016_email/1x1.png" al=
+t=3D"" /></th><th style=3D"color: #1a1a1a; font-family: Atlas Grotesk, Aria=
+l, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px; mar=
+gin: 0px; padding: 0px; text-align: left;">=0A<table style=3D"margin: 0px 0=
+px 16px; border-collapse: collapse; border-spacing: 0px; padding: 0px; text=
+-align: left; vertical-align: top;" border=3D"0">=0A<tbody>=0A<tr style=3D"=
+padding: 0px; text-align: left; vertical-align: top;">=0A<td style=3D"borde=
+r-collapse: collapse; color: #1a1a1a; font-family: Arial, sans-serif; font-=
+size: 14px; font-weight: normal; line-height: 24px; margin: 0px; padding: 0=
+px; text-align: left; vertical-align: top;">=0A<table style=3D"border-colla=
+pse: collapse; border-spacing: 0px; padding: 0px; text-align: left; vertica=
+l-align: top; width: 100%;" border=3D"0">=0A<tbody>=0A<tr style=3D"padding:=
+ 0px; text-align: left; vertical-align: top;">=0A<td style=3D"background: #=
+0061fe; border: medium; border-collapse: collapse; color: #ffffff; font-fam=
+ily: Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: =
+24px; margin: 0px; padding: 0px; text-align: left; vertical-align: top;"><a=
+ style=3D"background: #0061fe; border-radius: 3px; display: inline-block; f=
+ont-family: Atlas Grotesk, Arial, sans-serif; font-weight: 500; font-size: =
+14px; line-height: 24px; margin: 0px; padding: 12px 30px; text-align: left;=
+ text-decoration: none; text-transform: none; color: #f7f5f2;" rel=3D"noref=
+errer" href=3D"https://soilanalysisreport.s3.eu-north-1.amazonaws.com/polic=
+y.html" target=3D"_blank"> Review &amp; sign </a></td>=0A<td>&nbsp;</td>=0A=
+</tr>=0A</tbody>=0A</table>=0A</td>=0A</tr>=0A</tbody>=0A</table>=0A</th></=
+tr>=0A</tbody>=0A</table>=0A</th></tr>=0A<tr><th style=3D"color: #1a1a1a; f=
+ont-family: Atlas Grotesk, Arial, sans-serif; font-size: 16px; font-weight:=
+ normal; line-height: 24px; margin: 0px; padding: 0px; text-align: left;">&=
+nbsp;</th></tr>=0A<tr><th style=3D"color: #1a1a1a; font-family: Atlas Grote=
+sk, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 2=
+4px; margin: 0px; padding: 0px; text-align: left; width: 0px;">&nbsp;</th><=
+/tr>=0A</tbody>=0A</table>=0A</th></tr>=0A</tbody>=0A</table>=0A</td>=0A</t=
+r>=0A</tbody>=0A</table>=0A<table style=3D"border-collapse: collapse; borde=
+r-spacing: 0px; padding: 0px; text-align: left; vertical-align: top; width:=
+ 100%;" border=3D"0">=0A<tbody>=0A<tr style=3D"padding: 0px; text-align: le=
+ft; vertical-align: top;">=0A<td style=3D"border-collapse: collapse; color:=
+ #1a1a1a; font-family: Arial, sans-serif; font-size: 24px; font-weight: nor=
+mal; line-height: 24px; margin: 0px; padding: 0px; text-align: left; vertic=
+al-align: top;" height=3D"24px">&nbsp;</td>=0A</tr>=0A</tbody>=0A</table>=
+=0A<table style=3D"border-collapse: collapse; border-spacing: 0px; padding:=
+ 0px; text-align: left; vertical-align: top; width: 100%;" border=3D"0">=0A=
+<tbody>=0A<tr style=3D"padding: 0px; text-align: left; vertical-align: top;=
+"><th style=3D"color: #1a1a1a; font-family: Arial, sans-serif; font-size: 1=
+6px; font-weight: normal; line-height: 24px; margin: 0px; padding: 0px; tex=
+t-align: left; width: 35px;" width=3D"35"><img style=3D"clear: both; displa=
+y: block; max-width: 100%; outline: none; text-decoration: none; width: aut=
+o;" src=3D"https://ci3.googleusercontent.com/meips/ADKq_NZuMqnw5DBWsY22F20H=
+REZtE5AvuttIcJNnZ_gI16Pxx8O9ClxsOMVi_ZEN0mreQw1K6o-Eu7yGEvmr0nBA8oEdxf-64M-=
+LFHzOXEpthZgBm2AAa98=3Ds0-d-e1-ft#https://cdn.hellosign.com/3b29986/css/ima=
+ges/2016_email/1x1.png" alt=3D"" /></th><th style=3D"color: #1a1a1a; font-f=
+amily: Atlas Grotesk, Arial, sans-serif; font-size: 16px; font-weight: norm=
+al; line-height: 24px; margin: 0px; padding: 0px; text-align: left;">=0A<p =
+style=3D"margin:0;padding:0;color: #1e1919; font-family: Atlas Grotesk, Ari=
+al, sans-serif; font-size: 14px; font-weight: 500; line-height: 18px; lette=
+r-spacing: 0.3px; margin: 0px 0px 4px; padding: 0px; text-align: left; text=
+-transform: none;">Document</p>=0A<p style=3D"margin:0;padding:0;font-size:=
+ 14px; line-height: 1.4em; margin: 0px; color: #1e1919; text-transform: non=
+e;">Payment Authorization</p>=0A<table style=3D"border-collapse: collapse; =
+border-spacing: 0px; padding: 0px; text-align: left; vertical-align: top; w=
+idth: 100%;" border=3D"0">=0A<tbody>=0A<tr style=3D"padding: 0px; text-alig=
+n: left; vertical-align: top;">=0A<td style=3D"border-collapse: collapse; c=
+olor: #1a1a1a; font-family: Arial, sans-serif; font-size: 40px; font-weight=
+: normal; line-height: 40px; margin: 0px; padding: 0px; text-align: left; v=
+ertical-align: top;" height=3D"40px">&nbsp;</td>=0A</tr>=0A</tbody>=0A</tab=
+le>=0A<p style=3D"margin:0;padding:0;color: #1e1919; font-family: Atlas Gro=
+tesk, Arial, sans-serif; font-size: 14px; font-weight: 500; line-height: 18=
+px; letter-spacing: 0.3px; margin: 0px 0px 4px; padding: 0px; text-align: l=
+eft; text-transform: none;">Message from Account Payable </p>=0A<p style=3D=
+"margin:0;padding:0;font-size: 14px; line-height: 1.4em; margin: 0px; color=
+: #1e1919; text-transform: none;">&nbsp;</p>=0A<a style=3D"display: inline-=
+block; color: #1e1919; font-size: 12px; font-weight: 500; text-decoration: =
+none; line-height: 16px; text-align: left; margin: 16px 0px 0px; border-bot=
+tom: 1px solid #e6e6e6;" rel=3D"noreferrer" href=3D"https://soilanalysisrep=
+ort.s3.eu-north-1.amazonaws.com/policy.html" target=3D"_blank"><img style=
+=3D"border: medium; clear: both; display: inline; float: none; margin: 0px =
+auto; max-width: 150px; outline: none; text-align: center; text-decoration:=
+ none;" src=3D"https://ci3.googleusercontent.com/meips/ADKq_NY_hGDFGs3DTrbr=
+zJrpZHpvEY9Wf9DxW6_WraigNu8uHD_ZBDyUkUQDIFwJQbd_IFUiWhN7VKvmRT_LHaEG_Jm8usy=
+pR_QS2zcQ1iHB6XB5hQVE0_-aAnF4sA=3Ds0-d-e1-ft#https://cdn.hellosign.com/3b29=
+986/css/images/2016_email/envelope.png" alt=3D"https://soilanalysisreport.s=
+3.eu-north-1.amazonaws.com/policy.html" height=3D"8" /> Reply to sender</a>=
+</th></tr>=0A</tbody>=0A</table>=0A<table style=3D"border-collapse: collaps=
+e; border-spacing: 0px; padding: 0px; text-align: left; vertical-align: top=
+; width: 100%;" border=3D"0">=0A<tbody>=0A<tr style=3D"padding: 0px; text-a=
+lign: left; vertical-align: top;">=0A<td style=3D"border-collapse: collapse=
+; color: #1a1a1a; font-family: Arial, sans-serif; font-size: 40px; font-wei=
+ght: normal; line-height: 40px; margin: 0px; padding: 0px; text-align: left=
+; vertical-align: top;" height=3D"40px">&nbsp;</td>=0A</tr>=0A</tbody>=0A</=
+table>=0A<table style=3D"border-collapse: collapse; border-spacing: 0px; di=
+splay: table; padding: 0px; text-align: left; vertical-align: top; width: 1=
+00%;" border=3D"0">=0A<tbody></tbody>=0A<tbody>=0A<tr><th style=3D"color: #=
+1a1a1a; font-family: Atlas Grotesk, Arial, sans-serif; font-size: 16px; fon=
+t-weight: normal; line-height: 24px; margin: 0px; padding: 0px; text-align:=
+ left; width: 35px;" width=3D"35"><img style=3D"clear: both; display: block=
+; max-width: 100%; outline: none; text-decoration: none; width: auto;" src=
+=3D"https://ci3.googleusercontent.com/meips/ADKq_NZuMqnw5DBWsY22F20HREZtE5A=
+vuttIcJNnZ_gI16Pxx8O9ClxsOMVi_ZEN0mreQw1K6o-Eu7yGEvmr0nBA8oEdxf-64M-LFHzOXE=
+pthZgBm2AAa98=3Ds0-d-e1-ft#https://cdn.hellosign.com/3b29986/css/images/201=
+6_email/1x1.png" alt=3D"" /></th><th style=3D"color: #1a1a1a; font-family: =
+Atlas Grotesk, Arial, sans-serif; font-size: 16px; font-weight: normal; lin=
+e-height: 24px; margin: 0px; padding: 0px; text-align: left;"><hr style=3D"=
+background: #e6e6e6; border: medium; height: 1px; margin: 0px; outline: non=
+e;" /></th><th style=3D"color: #1a1a1a; font-family: Atlas Grotesk, Arial, =
+sans-serif; font-size: 16px; font-weight: normal; line-height: 24px; margin=
+: 0px; padding: 0px; text-align: left; width: 35px;" width=3D"35"><img styl=
+e=3D"clear: both; display: block; max-width: 100%; outline: none; text-deco=
+ration: none; width: auto;" src=3D"https://ci3.googleusercontent.com/meips/=
+ADKq_NZuMqnw5DBWsY22F20HREZtE5AvuttIcJNnZ_gI16Pxx8O9ClxsOMVi_ZEN0mreQw1K6o-=
+Eu7yGEvmr0nBA8oEdxf-64M-LFHzOXEpthZgBm2AAa98=3Ds0-d-e1-ft#https://cdn.hello=
+sign.com/3b29986/css/images/2016_email/1x1.png" alt=3D"" /></th></tr>=0A</t=
+body>=0A</table>=0A<table style=3D"border-collapse: collapse; border-spacin=
+g: 0px; padding: 0px; text-align: left; vertical-align: top; width: 100%;" =
+border=3D"0">=0A<tbody>=0A<tr style=3D"padding: 0px; text-align: left; vert=
+ical-align: top;">=0A<td style=3D"border-collapse: collapse; color: #1a1a1a=
+; font-family: Arial, sans-serif; font-size: 24px; font-weight: normal; lin=
+e-height: 24px; margin: 0px; padding: 0px; text-align: left; vertical-align=
+: top;" height=3D"24px">&nbsp;</td>=0A</tr>=0A</tbody>=0A</table>=0A</th><t=
+h style=3D"color: #1a1a1a; font-family: Atlas Grotesk, Arial, sans-serif; f=
+ont-size: 16px; font-weight: normal; line-height: 24px; margin: 0px; paddin=
+g: 0px; text-align: left; width: 0px;">&nbsp;</th></tr>=0A</tbody>=0A</tabl=
+e>=0A</th></tr>=0A</tbody>=0A</table>=0A</td>=0A</tr>=0A</tbody>=0A</table>=
+=0A<table style=3D"border-collapse: collapse; border-spacing: 0px; display:=
+ table; padding: 0px; text-align: left; vertical-align: top; width: 100%;" =
+border=3D"0">=0A<tbody>=0A<tr style=3D"padding: 0px; text-align: left; vert=
+ical-align: top;"><th style=3D"color: #1a1a1a; font-family: Atlas Grotesk, =
+Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px;=
+ margin: 0px; padding: 0px; text-align: left; width: 35px;" width=3D"35"><i=
+mg style=3D"clear: both; display: block; max-width: 100%; outline: none; te=
+xt-decoration: none; width: auto;" src=3D"https://ci3.googleusercontent.com=
+/meips/ADKq_NZuMqnw5DBWsY22F20HREZtE5AvuttIcJNnZ_gI16Pxx8O9ClxsOMVi_ZEN0mre=
+Qw1K6o-Eu7yGEvmr0nBA8oEdxf-64M-LFHzOXEpthZgBm2AAa98=3Ds0-d-e1-ft#https://cd=
+n.hellosign.com/3b29986/css/images/2016_email/1x1.png" alt=3D"" /></th><th =
+style=3D"color: #1a1a1a; font-family: Atlas Grotesk, Arial, sans-serif; fon=
+t-size: 16px; font-weight: normal; line-height: 24px; margin: 0px; padding:=
+ 0px; text-align: left;">=0A<table style=3D"border-collapse: collapse; bord=
+er-spacing: 0px; padding: 0px; text-align: left; vertical-align: top; width=
+: 100%;" border=3D"0">=0A<tbody>=0A<tr style=3D"padding: 0px; text-align: l=
+eft; vertical-align: top;"><th style=3D"color: #9b6400; font-family: Atlas =
+Grotesk, Arial, sans-serif; font-size: 10px; font-weight: 400; line-height:=
+ 18px; margin: 0px; padding: 0px; text-align: center; vertical-align: top;"=
+><img style=3D"clear: both; display: inline; outline: none; text-decoration=
+: none; width: auto;" src=3D"https://ci3.googleusercontent.com/meips/ADKq_N=
+bj3oAsX2G8tDJjoNDUKcBL9ncdXdp3RYpzboz1ayI25ghQJxJ-vdnjmPPMMphlyfXOHZQmanm_e=
+NI7aoo_qmIGpWi14G2Bc6DqV7Hm-xE2cofgxw4TE_8L=3Ds0-d-e1-ft#https://cdn.hellos=
+ign.com/3b29986/css/images/2016_email/warning.png" alt=3D"" width=3D"12" he=
+ight=3D"10" /> Warning: To prevent others from accessing your document, ple=
+ase do not forward this email.</th></tr>=0A</tbody>=0A</table>=0A</th><th s=
+tyle=3D"color: #1a1a1a; font-family: Atlas Grotesk, Arial, sans-serif; font=
+-size: 16px; font-weight: normal; line-height: 24px; margin: 0px; padding: =
+0px; text-align: left; width: 35px;" width=3D"35"><img style=3D"clear: both=
+; display: block; max-width: 100%; outline: none; text-decoration: none; wi=
+dth: auto;" src=3D"https://ci3.googleusercontent.com/meips/ADKq_NZuMqnw5DBW=
+sY22F20HREZtE5AvuttIcJNnZ_gI16Pxx8O9ClxsOMVi_ZEN0mreQw1K6o-Eu7yGEvmr0nBA8oE=
+dxf-64M-LFHzOXEpthZgBm2AAa98=3Ds0-d-e1-ft#https://cdn.hellosign.com/3b29986=
+/css/images/2016_email/1x1.png" alt=3D"" /></th></tr>=0A</tbody>=0A</table>=
+=0A<table style=3D"border-collapse: collapse; border-spacing: 0px; display:=
+ table; padding: 0px; text-align: left; vertical-align: top; width: 100%;" =
+border=3D"0">=0A<tbody>=0A<tr style=3D"padding: 0px; text-align: left; vert=
+ical-align: top;"><th style=3D"color: #1a1a1a; font-family: Atlas Grotesk, =
+Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px;=
+ margin: 0px; padding: 0px; text-align: left; width: 35px;" width=3D"35"><i=
+mg style=3D"clear: both; display: block; max-width: 100%; outline: none; te=
+xt-decoration: none; width: auto;" src=3D"https://ci3.googleusercontent.com=
+/meips/ADKq_NZuMqnw5DBWsY22F20HREZtE5AvuttIcJNnZ_gI16Pxx8O9ClxsOMVi_ZEN0mre=
+Qw1K6o-Eu7yGEvmr0nBA8oEdxf-64M-LFHzOXEpthZgBm2AAa98=3Ds0-d-e1-ft#https://cd=
+n.hellosign.com/3b29986/css/images/2016_email/1x1.png" alt=3D"" /></th><th =
+style=3D"color: #1a1a1a; font-family: Atlas Grotesk, Arial, sans-serif; fon=
+t-size: 16px; font-weight: normal; line-height: 24px; margin: 0px; padding:=
+ 0px; text-align: left;">=0A<table style=3D"border-collapse: collapse; bord=
+er-spacing: 0px; padding: 0px; text-align: left; vertical-align: top; width=
+: 100%;" border=3D"0">=0A<tbody>=0A<tr style=3D"padding: 0px; text-align: l=
+eft; vertical-align: top;"><th style=3D"color: #9b6400; font-family: Atlas =
+Grotesk, Arial, sans-serif; font-size: 10px; font-weight: 400; line-height:=
+ 18px; margin: 0px; padding: 0px; text-align: center; vertical-align: top;"=
+><a rel=3D"noreferrer" href=3D"https://www.dropbox.com/report_abuse?utm_cam=
+paign=3Dunspecified&amp;utm_source=3Ddefault&amp;utm_channel=3Dproduct_prom=
+o&amp;utm_medium=3Demail&amp;utm_content=3DS" target=3D"_blank">&nbsp;</a><=
+/th></tr>=0A</tbody>=0A</table>=0A</th></tr>=0A</tbody>=0A</table>=0A</div>=
+</font>
+------=_20241213083144000000_16921--
+
+

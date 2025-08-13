@@ -1,0 +1,335 @@
+Return-Path:
+ bounces+47935538-678e-jose=monkey.org@em9179.lillypillycreations.com
+Delivered-To: jose@monkey.org
+X-FDA: 82776241338.11.2E5B2E0
+Received: from xtrwkhkk.outbound-mail.sendgrid.net
+ (xtrwkhkk.outbound-mail.sendgrid.net [167.89.16.17])	by
+ imf05.b.hostedemail.com (Postfix) with ESMTP id 814171C0003	for
+ <jose@monkey.org>; Tue, 12 Nov 2024 04:59:57 +0000 (UTC)
+Authentication-Results: imf05.b.hostedemail.com;	dkim=pass
+ header.d=lillypillycreations.com header.s=s1 header.b=z+NZVdw9;	spf=pass
+ (imf05.b.hostedemail.com: domain of
+ "bounces+47935538-678e-jose=monkey.org@em9179.lillypillycreations.com"
+ designates 167.89.16.17 as permitted sender) =?utf-8?q?smtp=2Emailfrom=3D?=
+ =?utf-8?q?=22bounces+47935538-678e-jose=3Dmonkey=2Eorg=40em9179=2Elillypill?=
+ =?utf-8?q?ycreations=2Ecom=22=3B?=	dmarc=pass (policy=none)
+ header.from=lillypillycreations.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1731387448;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:list-unsubscribe:dkim-signature;
+	bh=01+twAqm0Onz3j+Ro//fqF6xZZw6spc2y+E1o5pA49w=;
+	b=ODGajTPQ81kAqD7abnivM7ef61rYdwKnGk0dF+23Y+BksV255hK0eloAtWknlg8V726uoP
+	wVKIzUuQ/8ufPFk+rEGimnjW4Av+LnD3MCivaKR4atNa5zU5LZypweTlxApYwui7uJIOjX
+	gjrHSV5A27ypAhPXYNyiOO63gvB6E8c=
+ARC-Authentication-Results: i=1;	imf05.b.hostedemail.com;	dkim=pass
+ header.d=lillypillycreations.com header.s=s1 header.b=z+NZVdw9;	spf=pass
+ (imf05.b.hostedemail.com: domain of
+ "bounces+47935538-678e-jose=monkey.org@em9179.lillypillycreations.com"
+ designates 167.89.16.17 as permitted sender) =?utf-8?q?smtp=2Emailfrom=3D?=
+ =?utf-8?q?=22bounces+47935538-678e-jose=3Dmonkey=2Eorg=40em9179=2Elillypill?=
+ =?utf-8?q?ycreations=2Ecom=22=3B?=	dmarc=pass (policy=none)
+ header.from=lillypillycreations.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1731387448; a=rsa-sha256;
+	cv=none;
+	b=4JKnXekSPydS2/xzyz1RgH/YWWZZetRGih6K7ivOVhLr35DV6PLxd2rrSE2FWVXyWcAOx/
+	XMYHRRQZ1GqTpq55KQpbHmyV/hd+C7kPaSUv3q4WQmUeM3jvYrpm8hwlG1KA6UOmFiEbbH
+	t9VUKevStAqMBnCctk6JlW5pXJvif3A=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=lillypillycreations.com;
+	h=content-type:from:mime-version:subject:reply-to:to:list-unsubscribe:
+	list-unsubscribe-post:cc:content-type:from:subject:to;	s=s1;
+ bh=01+twAqm0Onz3j+Ro//fqF6xZZw6spc2y+E1o5pA49w=;
+	b=z+NZVdw9SqGOCZv+fCoB6sASBr3/Xe1tryQWgrCPSoKT/8A0p0DGSodRaKDmHCtt6NFm
+	aX0xx6RU7S5Czm2wP2x7L6fuM80H1J1SnnnMhs1m9NQiVi6JGwv5/BTd7ysH2IT/Js10gO
+	9YVIKcVNMjwef5ptIpqdMgTOQn5UE/l/NXKByYvCxgcyUwDko+292wjzpch1F3biTnw0Wm
+	DKk2Xo/WBY0QhGvuVMFSWl86NnZ1oDcIdyuM7752KazYWo5XnkxpNtrrnElSgYscAIbkiz
+	OUVAWUGLa5lArqqRkjIP40Nzk4NziQOGkAQMjHDIU8I0InBJ+dSbljxsqr4FRaWQ==
+Received: by recvd-5ddd76c7bc-jhcjg with SMTP id
+ recvd-5ddd76c7bc-jhcjg-1-6732E0EB-54	2024-11-12 05:00:27.602917026 +0000 UTC
+ m=+5223744.883293402
+Received: from NDc5MzU1Mzg (unknown)
+	by geopod-ismtpd-38 (SG) with HTTP
+	id J6rgqf9-QJuJvBICsPG_0A
+	Tue, 12 Nov 2024 05:00:27.538 +0000 (UTC)
+Content-Type: multipart/alternative;
+ boundary="911de9ad432b649f984108679cec80d9efbbe248e1947b83f435aa57594f"
+Date: Tue, 12 Nov 2024 05:00:28 +0000 (UTC)
+From: Hr <hr@lillypillycreations.com>
+Mime-Version: 1.0
+Message-ID: <J6rgqf9-QJuJvBICsPG_0A@geopod-ismtpd-38>
+Subject: Leave Application #00000723 (Approved)
+Reply-To: hr@lillypillycreations.com
+X-SG-EID:  u001.cAAY/2MTDGoMjOYh6sXHEAHHLEpLZmu/6RXhFRlnrUVdxqCwTkz+I237L
+ =?utf-8?q?9DhZsJxeqQRwscoFePhGBpx0lMwrMsfaEglrg15?==?utf-8?q?12vM6z9hSCCWA8?=
+ =?utf-8?q?umsWwyLBZxFRRTCcSmFe+Zi3RAgwuKnLG4OsIb+kvXVfOV+Zasrwp0iL63IYD4O9b?=
+ =?utf-8?q?hvnx8estUY3hNLYqMIbP3T2PxeeEYBt4QVvrUL?=KFwokxtlcx5pDPuJ+kykfI=
+X-SG-ID:  u001.XwhBPNhCejkv4+fVosb2QVfR16Qxp9CrA7PjDe5zzeI/0IZCBsPXtgHbA
+ =?utf-8?q?oGIj+RskLxA4N2rJjSWrHfgX07tLOm0v5BUQcd6?==?utf-8?q?w3knjorGi7Hwu0?=
+ =?utf-8?q?WCOA5AFSvy0/wlG32/IULn7kPr6ldvIt7HKR8Koq44et0T3T9juvnIYGrUOcNkkpU?=
+ =?utf-8?q?ctMDJvnWiF5e2cO9n8U5zxQu62xZcP7O6y969lfLhpH0n6QfBwzKWDyOSOLPOiv+u?=
+ =?utf-8?q?lrm+2cP2OtYETeroUO05waehM4B2upLJHbiIYXN2YBzl7ZE+KBcNDhjHT0AHfsVn3?=
+ =?utf-8?q?Q3h8czLfEgpDUBzxQQ3tB4n57VBwm72Chb2AafU543rr728Ed6rzFqV8ZtMvdIQSF?=
+ =?utf-8?q?M4u9TrHTl6HcTOuHAzzhOKTxvAshcFcM4u5+PGcTnUAqTdJrfL4c+LoF5SpkwMZm/?=
+ =?utf-8?q?YPxKrNz4TdIuwEB5QaXtb4yhvGwXkwI7y6VJ7IrYO0gdIc0nzTaBDCyBINgNWLVyD?=
+ =?utf-8?q?sRCGpTf0uJrimQ9kIWZQcFONkXUDyH8bH2X1sNh6M/i6g+dsRTOyUYSTY9h99DvXO?=
+ =?utf-8?q?yXZmLlIu0coTWPcdYwpC7DdbFHUg9j5XrwRpGZn7drEHWNhoyvyWvNUTMorHp6Q7Z?=
+ =?utf-8?q?R0HsYGXWhsJ3jT5zOo8H+NVztkALfN3EOSbxd67KtslT4s+j0BAS4ucKXx854soO5?=
+ =?utf-8?q?OcrXHzB9QwfmwpwssnEgiDCkE6UP+2kLA2Jk2tilmxciopmILfYQJm8jyps52ENsX?=
+ =?utf-8?q?sQQEuhT7?=
+To: jose@monkey.org
+X-Entity-ID: u001.JfNbEy9JnF9HBeYKhGA8+A==
+List-Unsubscribe: 
+ <mailto:unsubscribe@em9179.lillypillycreations.com?subject=479=?utf-8?q?355?=
+ =?utf-8?q?38=2EwMlO44IXddzHIBATLp0HFinkzpBVctn-i9w52Byx8eZoMDAwdTAwMGAs2ZnT?=
+ =?utf-8?q?e2HhTOD3TGfr9n0G4EtIQ6Cztqj2A987UkUZdRJIcFvUFNrGqnQOIdQ-5LMUlFc7t?=
+ =?utf-8?q?syKRVG14csxXD1mT0gfIp1vTrtQtrCSQd87=2ES=5FirIa2jRtC-EzvcpjUFdynzo?=
+ =?utf-8?q?tN-ijozZ=5FmbAGNcDXpoMDAwdTAwMOSjrEFRGoLrQ4me3VsuH992jIrz1DOs3Ha1?=
+ =?utf-8?q?JnrmGeXhpwLV6AzkDOEnqgZHDQBEJUc8erMFYBa8RynR-s9JLZaI2T4rA9idRoYf5?=
+ =?utf-8?q?V5wf7FvdviEtzu2N3zAXWFh6x7MBDVt51ttasRz9qbfFuYWBGFyeDX78zASUrLB4D?=
+ =?utf-8?q?MXTVY4lSdZ59wsOjF67urjmrQr7YIkjXrsiw-f4qnhgsZ0pl-WqcO9f1ZVQVkYoLP?=
+ =?utf-8?q?HnLMR4fuau6vPFAA9135X7m2PtYxJCEHbNVyvs26QHY93p-2zr1gHAZwiuxZ3TM-P?=
+ =?utf-8?q?mT1A-J6xbC1y0N4Q64gAG0StkGYqfGvUAbEcZvF07mWxRvfupCvG2cS3ou7uEuGX?=
+ =?utf-8?q?=5F686oDGHViTBeUA2lRjOz62Jwbivme912SXmbEqXbg7s=5FmJlgKu2YM5ZJd6yG?=
+ =?utf-8?q?Mej6CFtC6LpMXcGdkSa00HhtFtEANKdDPsMAvjpxI1om6L2WEb93d=5F=5FI5IBho?=
+ =?utf-8?q?YT4R=5FBU8Puq8c2=5FmrZW8bJz9BY0cvFmve1ipxxivaineQsH1pbxatdT1zK2iY?=
+ =?utf-8?q?jsVcNN9Qrouh7q9Q04UXee2K6KG2HYZAx9e=5FLj-kU05v9ncp2EO=5FNSfrlOnM4?=
+ =?utf-8?q?sg03tv37P8mJNI9PGCcuJCEAkcXC36s9jFHrfy5o9dsAmQIUGIZvdhvTrqGiGZ77d?=
+ =?utf-8?q?1kja4RK6Ze27-OvDrZxmEjKrd4EuH8bD-sM89TCys=5Fv36kbyicxxLwgv-C1iF8R?=
+ =?utf-8?q?y5QOhk-NTvoqdziJ6cGxCgPRm=5F6Z3u=5FPTJslDrQQGTiknWtVoyUqgulXMnh4g?=
+ =?utf-8?q?wpECYS1QBpvPoFRjoXbGp4XglQpduyd8EPcWcjf2KIAWv=5FShje5K1h=5F0jDfQa?=
+ =?utf-8?q?9=5FquA7b9NaaL44St3tfH3zfahcHERtK3JhsyWy4A8FUrBeQGU24vj4uar7jUc2v?=
+ =?utf-8?q?Py=5F-2WbRMlmpQfY17kwyfyS=3E=2C=3Chttps=3A//u47935538=2Ect=2Esend?=
+ =?utf-8?q?grid=2Enet/lu/unsubscribe=3Foc=3Du001=2EkQLHZ-Jp8vuL5zfprTnZ9PXEa?=
+ =?utf-8?q?iCY0eEApusOXdwrSIL7wS8gijIp6kPviBZ4s4rqW06D3u3Gu61-ArD3uteXyO0WEk?=
+ =?utf-8?q?fYGMluKjF-rGoup5WJH07OuqpEuDfoXTyq4-=5FSKGJyOsgL5oTx6bgx7HbZJ-SPT?=
+ =?utf-8?q?JjP3RbdP7FZ2WFioM=5FCpvHWS5PkWw7JGl9HG0GwY3DDnOlwwwqp6i7KlEeBpNaz?=
+ =?utf-8?q?XqN=5FjVXJke8ahRMwiIYcXw81KacRmE-raFzf5Y=5F-qRs-Uyi8wRWqg1xuxYTQw?=
+ =?utf-8?q?cj4bbNxPIOoVV6lrJnutCbB9vbFKNxvb4SM7rOL5k0vpuQpR9aIHzuWWb5SSwaqLp?=
+ =?utf-8?q?jb8AAUj1iTcece0A9kodvrPSslcIS5mBzX2uG3baNAc44w5J64aCeOAwp7AbH0yAU?=
+ =?utf-8?q?Vf13dfeT7Dz92g5XjBxgQHSXbdBKYamPvIF-OwM9U7lUfz0mE6gvj8tFL=5F=5Fif?=
+ =?utf-8?q?Yy1sa2DLPiBxmCJNwdC7msJw9rPQX=5FOaV8Wl1NBSE90PgHhDdIDHuvlrGuSvVvg?=
+ =?utf-8?q?sMFeOBMLWzBCZU9LkSeSD9AsU5cNWeqXRiX9RS-yE0HWIHROIPCi-gPS=5FAIkOBg?=
+ =?utf-8?q?-Cv3e7hSjRA0-RA=5FgrHlnUm4WSph83PyGtGL9q-vMTKT4Y78m2XvciJaUde8Vum?=
+ =?utf-8?q?BPhMyaHA0ODmxbvq1WIPpVOzO3UTpFUUk7BIJ7WAYLIkzoOfqZBRo4LLDbj8uWzeu?=
+ =?utf-8?q?FVtZotDy=5Fy83pPMfZpYsKNL9di3VcOGFEOqRWkBda2ZPSdAskQJYYbRDpL4yR?=
+ =?utf-8?q?=5F2ZIlJTvCQJLgGJYfCBc1qyVlFXFMoYhFqqcQneFK7ILghzUe-zyPyxgJDGxQxR?=
+ =?utf-8?q?64QTlwLR8L-BKsYBgzlndiyN9sQXNYmORqRH36hWx9LteiWFck4ZYkgTQiFIBrnio?=
+ =?utf-8?q?nPordWozoX4Qn02UDFO-8QFQDapJnyZe0syGIr8MOjCK9LMUBevgk=5FEyz4JZ9ID?=
+ =?utf-8?q?kXc8BvFvd9qMDVI7UIrGSBbf0moRHcrPk4Oeoz8KEHGL7DhUtLVaggaxF=5FdEi70?=
+ =?utf-8?q?cU9y7STWajT0OJSaOH937BHhIZlB1qThpreczjAt4kHzcqvsQweawMO55JvH711GF?=
+ =?utf-8?q?Se2QS7bU=5Fw9Cj0FnADMhGFr-eCRxOv32Hme3Oa1ZMDqjbH3VTm5Q7zXPCiyz3aV?=
+ =?utf-8?q?DoYrN0yBrHO8z6EDInqM78Kel5-T3rXkGldFvvkzRFIO5J274CGL5uSa4WILhNkmg?=
+ =?utf-8?q?aGwDMkRS06hsR5MlXr4Nvz-D0j=5FalEoFzPcc=5FgjWvBVRDugz=5FDlYBMVX1Lx?=
+ =?utf-8?q?Y3SgAdLmGCokTm66VMsgkYViuUA21hcn--nHvC09w8UJRckLXm=5FLeQeX49smhpC?=
+ =?utf-8?q?99VMRkhOUKMsCxvdvg5XPBqG9oSPyPert5YzN4OIdy-WYpWGeSkLw4wQorjpMa5Vr?=
+ =?utf-8?q?JZIdgE4GsR2iH6NDPs0=5FBTX4tNeuRYp2jIsWD9exx0A4PfmTwqzTg0nH3b6pkWv?=
+ =?utf-8?q?Rf=5FggAtDySTMM2-j1MJcGwGuB=5FX2Zyj3PdIaFUsZlPilrss1jQkA3D0TShDPu?=
+ =?utf-8?q?BmjqhIPS=5FAm3FwkzHDRA=5Fj7UdLxOhVAhf9sHZmUfzqtHXtOnPSpWbTvm7xteu?=
+ =?utf-8?q?ZAwzUExshyM6zoG5sBSxnjtS=5Ff?=jNrVBW8vxL5xLMIIgIqdpKxw4NFLtGqdq4DC>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-Rspamd-Server: rspam06
+X-Rspamd-Queue-Id: 814171C0003
+X-Stat-Signature: 7957h9a4ysndh5nuqxf8zj3waauyanfd
+X-Spam-Status: No, score=3.96
+X-Rspam-User: 
+X-HE-Tag: 1731387597-696156
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+3UobhQLVeaVeYiTvAfH8ASoyGqWGHwTzi0hUTkYRt0z1?=
+ =?utf-8?q?+Riw2Pz/qz1jllajvu4kf64FP0uJHj4ZAFd25eAIniZ60Y9S6QBTowqE5dsJjwGiD?=
+ =?utf-8?q?vX9SBuF6Yjn9b+1a+l2JKMDI4x6NIIJKZJq8YG320uJqVXaIDNbjadNgK1dK23kDx?=
+ =?utf-8?q?l35UIshRoy+FPqRj/9mWiMk0S9lNVrcjf/BWEOyd53ZkL1GwrTNYOd/3iAKdRkBJI?=
+ =?utf-8?q?cvzGfg0+k76ZROD5ek6pMD9miapuGUrqqKpFlvVqL3Rv/CCPLwSGU0cC/Huk22YoC?=
+ =?utf-8?q?9J44Irx3NHzenDyWkPLGOVOObuD8PooC9JZTBSJDx2ehuCSwITLl9cHTwj+2Kbgzv?=
+ =?utf-8?q?Tc71MZ3k34L2MwoyrcRXtNf+8o1LglXCK4o9Kpl1Y5Y5QgLS09lWwJy0G9Tm2vvL1?=
+ =?utf-8?q?GlMKlIEnvmQhms4ivQoEHQkgrymwK64X1VyoukO0SbcyMrRvcvE7O9NiGbdfpiJl4?=
+ =?utf-8?q?QJUrotXNiLZTNdpGxNyaVeqJo15CNli6Nz4t7sHMjw250Xi8J5bDsp846WqcpH06+?=
+ =?utf-8?q?jmFW1TMZG1twvpnK1cFTno0ifLDGD0PQeHqSY/H4TBoSJgcSCAQHtJZqtefg7Fc/M?=
+ =?utf-8?q?4ndEspAzj5XepYtxBgmfvVx+RQyUhqn+H4t1DxWY3XaBg9DwfCOJ2KI9QCubzVGkR?=
+ =?utf-8?q?7WFjdqkVMlARs9EUXjDBXJkA9lJdnWhaySBO05SVw05o+ASe2nb6Y35/Eflttuuah?=
+ =?utf-8?q?Rw0+tz2qMI3LIdY32XOHxMoFLGq6xub8+icq9pzgf7QHblWh0S3HRp7a5rK3Q+mgP?=
+ =?utf-8?q?fSe7nN+H2DC0Y3uiMWYwvY/ac6jK6WKIhF82ueTLfBPBi9WxWEWnaS23M2rimBOvy?=
+ =?utf-8?q?lku6R67u8k02cTKOqjphoC5lHYhloPoAbZ7yFEw4KqlGUJeUnhAz/9Ii3RtUjwONh?=
+ =?utf-8?q?ccBKJxB1vrNKuSrDw6nIWK_zpgEN4wvsC6+IQxVNXS8om9fo4MCm7DNl0dw68J3e9?=
+ =?utf-8?q?IViPpKsRvX157XVJ60T3buDheyD0UoaWJ0FCA7Y/mZKD8nhr9A3p81T2Zbz60rDO9?=
+ =?utf-8?q?oKCWCJfF/jWwBxrAnuoeMk/06mZ4UxRq8DSqTV+abd3jrjPRZrANtxWmPrYygBj+S?=
+ =?utf-8?q?jt1aspo2eQ67OSRughwVOVyfoLUnAeJ6KRlujtVwj5nL+pXRKezYJfnjUsJJnyeBD?=
+ =?utf-8?q?FnqXr4Xr9FYz2+y05Tkt/F1e2vNuyiWodM/G8BACc/+W8WPvEmZ/Ihh6Bgx7fXfNn?=
+ =?utf-8?q?Rx6obSAOfShA+H3JHe4q4cIoAoC7Zn8DgXc6hZP//RHg/jTQ1BQ11sjI2aonNI4ZC?=
+ =?utf-8?q?innNhgHEIx2t7kCM1ZjIwV9nNWn3yCUHk8S1WYnrDrgLYFjZfx5JloWoPjDLzIR4V?=
+ =?utf-8?q?RfDKz/Lo+DDbJLDeo3IxlytAtu+FjoMTKCJzC5lQ1flHduVFgKKmF1xNMrz7+aHzt?=
+ =?utf-8?q?1QasnvhuwtU6de7z/IWgcNS30BNgG0WPui9gS9Y+wqFY0mLIongQxndaFugLI2TlT?=
+ =?utf-8?q?K/LWYlgk+2r/tfGZDH3f7u4mLFsMcpokhoBPQERl2JQ67jbPzDgCaY2CgKlCJm0VE?=
+ =?utf-8?q?pALId7MskanRWZK3giTHrv6CFtz/YMU1ho6gHRTtqC/bGhZH5fJbn5xHlnrwp0g+R?=
+ =?utf-8?q?JxzDamU5UKog1MZU2OCexTcIaxyB0wvMjrdPwSfzqGgRh0V7SkZlz6G7bddsCWtJN?=
+ =?utf-8?q?2xMfo6g7EKAOmDzgwTCdFPbiRjlnwXs+lUHRfam6X8UkSxrAPhVfKJcv9r7xpLee5?=
+ =?utf-8?q?ZUzbJtEkSqigT3/sQPqBtLhj0+hxPtg6M2kM0Rn+Nu2+zplbDsKk/8sBtS7sbjm0W?=
+ =?utf-8?q?bb97cBkLQ76vYWQCAoiUK55ybmvIVYTj2Yl0t/55mdtuDcjjH/nhSKPu9gQIABimC?=
+ =?utf-8?q?dJkqqONQfKune3UDP6husxLc4HBOV2KVyzwD5mnPnAjux_nujkmsXFZHRVOPwBU/w?=
+ =?utf-8?q?YmD/6zwt6oe4UjNv7hYYPFpBPBl6ngzttu0y5qfCtY7Ka8/hw1qgulB5cNrsmRsWW?=
+ =?utf-8?q?cYQjw/fPyHQY1znWQQ9Q0kHJbFAlTm8LVLshju6N8Lq4/PHMy6+9azYzmqIKB5FFL?=
+ =?utf-8?q?jXMP+zUZNmh?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 344
+
+--911de9ad432b649f984108679cec80d9efbbe248e1947b83f435aa57594f
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=us-ascii
+Mime-Version: 1.0
+
+Hi jose@monkey.org
+
+Internal share file document link has been shared with you below
+
+Kindly check the staff memo, referring to the above subject from HR departm=
+ent regarding low compliance to the Annual Vacation Plan for year 2024/2025=
+.
+
+Please do note: that all names highlighted in red are those who are yet to =
+comply to the Annual Leave Plan for 2024/2025.
+
+Names of employees marked in Green colour have meet all the requirements fo=
+r the upcoming 2024/2025 Annual Leave Plan.
+
+*https//sharefile.PDF* ( https://holy-polar-credit.glitch.me )
+
+Unsubscribe ( http://url9884.lillypillycreations.com/asm/unsubscribe/?user_=
+id=3D47935538&data=3DWIJAzJoum9xtLUr_1EmkO-5dn3KuJHfWxPh_0C9zoExoMDAwdTAwMH=
+FwLqeJNBFRpSMRmKWFn29YRTLEmmVjEb7va7zkNINX9AUiFx3HhdE2JgR5paXxyfQzwJLRV8Jwx=
+GKUEJCy2cOIZ4YotPf0ZVSohcf24vF2BxAeFfQdrrbYLZ43JS2ogNDRUrHR20Dbc5nDactOUW9p=
+eqR8ZCzAB_-D0_4rxzJ1vgcXjcN7IASGpverHyL1fp6OliYfBghKZjDPZZBRfXbU31tYYNIfApp=
+owvg41g8jxb-YAUQb51wDXFM2djSqXcyFpLr0lQ1i-yOPcoL78kafHSxGnQeos1uyut8Bs7vDSv=
+L4rn7cFnzrxvYw_cs1-WzFdZaV777LcKsSG5mx8Dxcz7dsLvIZHCkAkFzQO6Dv_aTPJQFvZgGuq=
+t0JU0BOmpKF2p7-a2pKyR7gzV8luVUOPR0vlcIBZ1B0cAza8WySgIk2io4ixSXqtu1VSR4rEfZw=
+MOwXesi5cc5T_FOwDYzEBKhXcn7RQ7l87X-0ohxg_pzhfOnDzNsXPbN3NwwheeXMgkoO49yZmPN=
+ezCrXNe4br8V6DsCcYNdEhnISLWqNGvdSWIC6ry5MCg5WAZ08-i5PvjLtS0X6XJ4TRrCMWG6fNE=
+9F3BS0jr_XQUyKWENDMml3edF6xU2A63e3cRZKqLShW79HEpjFX_hTQ3Zu7KzkLnqtoYHUfGTvn=
+u4CLJ042IHOGbjYUbTiWvMkh1lF6E_AoP5rVTGqMWmE1_AfoGbWDnJY4eOKhCZ0NLzszshbRBcs=
+GvbtUc3bnb5uDzAmtNln47tAMIWgqgBAvLOl4gUI8QaY2A9Nl82Rx1YmM31L2MXqpVL4roFtJu5=
+uRTOjp_35-SrtugGaJWhzqDRDzlPR4g8rWCp48tVk6Y6KCilO6lJ6B0wZbbZ2O9ZuQrDhjjFQ7H=
+8sf3YwghVdWbPcP8hzxFw9Szi4elQsEULQEXPRuLslu2JfieyzrKTfawTFBy2CQzpw01L_nGV4n=
+5Dhidw0eddRsI0FBl9usKPAys0__7fznWNhi8ahLHcFYoDXxkjBIwEnNvk9e0aJgzgCD3iqpAbn=
+tx4DoZacRekqD4iG22aHYZHthUm6ECAsXFsg5SKhc8AVMxGmyi09WfstVI4=3D ) Unsubscrib=
+e Preferences ( http://url9884.lillypillycreations.com/asm/?user_id=3D47935=
+538&data=3D9GkXc2yFieFC5UscY-OaFCzOlJXP7kbw995hqGoZt15oMDAwdTAwMJH_4wW6ujFY=
+de4VV880zBl5SjbneCXWv7MAEDubXbVCFaLV82_g4NDCZ1khbiGN3z-0FjFUpDKize5vxYmCQNS=
+ygX3yAT0YaWgk42gqj1xdiSpms4kwsrUXd24FgxagIBrVImyVqMzVq1MhI3LUdPvlmVYiZwLTm0=
+2FW7TKD71lgRsva7Qy2bZugfksRAfdCLxi6O3wRNoWWYPyHo54y3iqzPXgzci5kxJngd-tc8Ao9=
+ziCF2_ylW8dfniQe8mP3EQQXxccEw8S_1aWgXGphWqH_o44FKfSqgFgGWbYWkVAn-FY7MYNF9Hv=
+2enY6-CCmOjI17ii2StzuqLOxXfnEOGU35-7VgVvHXxir1W9pn9un1C5l2Br5ohcWomddeeprbz=
+vAPbRnmTImo7spfAEun_xYUvkjs7HhrBny3re4FpcI8E7rpGBD2yQwAYB1eNcqD7yHrk2Qt0kv5=
+z0s7-gSwVvis-2VCBptc4252y7RdZuOuMn7YsEF5kFleipdVgqh1w1gfvTuaFWGV1Hp7QP8gbYF=
+l5U4dhVLqga8zzfZwxXH4feQFbveHE2BbYaeJ3MO-pUWpeaWwVHvXSj5h1OUBB1ZmW82AEunSK8=
+Ki7Y8xoY8d_e5-BunXWKKoPEUDcOgClUWLRW7xwdVNrwN-2bbL2L5-IWebHa8yp9tCLvdJHS6p4=
+Gz8eGj3X9AkFRqTn8fHK8dFL_GKs1o3b2kmFrAJtceipXObk6EaLxhu8JLRZJ9iytN9BvSOxfoL=
+lHtMnliZpkbQH4-H9_AjLI7x_T8tF5UQdi2VKNLX7CDsxZwHQc7yKO46PsdoweEhOtMDHXfcjci=
+J1V2vNMllEdWKnibN5b1vy6pTvRl0JDjGocG184PIsLON5jE2NFHvE_HK9EE36AHguFJ_yrCF2A=
+V9zKJ9539uvvm-1vGFTcEHIKtKZcI1hpUopQfiK9AVFKyhdmU4xy4_iGtivSO3DdBA8xpznZlJA=
+YGWUMl0A56Y5TIjlHpkCDAxu5RqopfweBYCG1q-aA_LCROexlMjuFJE6xLeMR8PEfCx_GOREQ9J=
+iQYNZbHBajKCrvDDG15Kkh06QNbPI4OOtoCLyemn_1WL8Yl3Y=3D )
+--911de9ad432b649f984108679cec80d9efbbe248e1947b83f435aa57594f
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=us-ascii
+Mime-Version: 1.0
+
+
+        <html><head>
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>Hi jose@monkey.org <br><br>Internal share file document link has been=
+ shared with you below<br><br>Kindly check the staff memo, <span style=3D"c=
+olor: rgb(51, 102, 255);"></span> referring to the above subject from HR de=
+partment regarding low compliance to the Annual Vacation Plan for year 2024=
+/2025.<br><br>Please do note: that all names highlighted in red are those w=
+ho are yet to comply to the Annual Leave Plan for 2024/2025.<br><br>
+Names of employees marked in Green colour have meet all the requirements fo=
+r the upcoming 2024/2025 Annual Leave Plan.<br><br><a href=3D"http://url988=
+4.lillypillycreations.com/ls/click?upn=3Du001.84bzSl8krF9vnFYajuiiqclGHieMP=
+KsZwkzVb1uptWK6RRIL3cd4WoB06mzE08aA266C_fKvoxt542JDYaqgeR2SzDQ9Kw6x5OtiyHV8=
+KpcS0yBDMTRrfB-2BVb4MdOwr4sXigomPky9GC5VL-2Fx1QwkfyhzJ3JkTFIm9lXCyJcRhDnY2O=
+R0-2BVrN2wWkihqEZKetdn1EgijLnkVIRRTzr5rUB5y71bencimWWW5Ddo9kN-2FjAK1ufT-2FF=
+V5Q-2F-2Fe7WIOJVFjuH0LZ-2Brwi0t2A3mlE82c1xblKSzYHjMgDKCg1CafAK1ARQL9opd6q3p=
+WwR6igpd4FHljC5uybIqjExnwbyQ6tUH-2Fle0lPARAo3LAVL-2FjgbP9kDno1rley5w6LP-2BG=
+KrppoWm4n9sfDrusNhKaUEISOVkl8UfOyg1RgOkIvW1dLizKAAL6yG-2BXZEHOIT1-2Bg040LDJ=
+HLT14JzKs-2FHbmfdJHZeOXULwBg53zTUIw-2Ba4rRjq2EGJVgGATJyNzKiQZB784BFD56CDH73=
+tzpq9meuMKaboGIKfszot3TDuSfAqwnqEo0VFT82cxmmUrvNqW2lsP8E8jl0fnWzSX1hBZyS1kK=
+tcDhZ2KezbjbWoaCoD-2BW8c-2FC-2BlAD0K-2BmNrAknOivcZiY7zB2esVE-2Fo1nvQWib9NS7=
+kjIOLzxuPgDCiqEpteiIhEuplpWtYFGIopzGbTY3bwCbR8qmq2P3elA16aUp8eIs-2BJXEZ47ax=
+aRQ6M-2FuWflnxTutVBwcK6-2BDLN5B7vsdaZMxTCrDyHksQ-2BJ2NhKMsVaHtVI-2FyBXUOv5I=
+hCtniVJbitV-2B5ateS9M35Gnqeo1tGuURbAxlaXhdOOxjK7CD7d6wzVO839cI620tl-2FyJkj-=
+2FXEwlawUay0BkdcuGq8GHEuHNJguweC0jKWlnQEJf5lul0pX7cXnNZ0OqIe07y3RvM5ZuHSi-2=
+Bnc1Kjhm1hrGY-2B8DCsVyH4uANtgm3PnP-2BR1Q579fep3XDwArP305lF8kLVhPuAot9kljYt3=
+r0lHanhVs6MP"><strong>https//sharefile.PDF</strong></a></body></html><p sty=
+le=3D"font-size:12px; line-height:20px;">
+          <a class=3D"Unsubscribe--unsubscribeLink" href=3D"http://url9884.=
+lillypillycreations.com/asm/unsubscribe/?user_id=3D47935538&amp;data=3DWIJA=
+zJoum9xtLUr_1EmkO-5dn3KuJHfWxPh_0C9zoExoMDAwdTAwMHFwLqeJNBFRpSMRmKWFn29YRTL=
+EmmVjEb7va7zkNINX9AUiFx3HhdE2JgR5paXxyfQzwJLRV8JwxGKUEJCy2cOIZ4YotPf0ZVSohc=
+f24vF2BxAeFfQdrrbYLZ43JS2ogNDRUrHR20Dbc5nDactOUW9peqR8ZCzAB_-D0_4rxzJ1vgcXj=
+cN7IASGpverHyL1fp6OliYfBghKZjDPZZBRfXbU31tYYNIfAppowvg41g8jxb-YAUQb51wDXFM2=
+djSqXcyFpLr0lQ1i-yOPcoL78kafHSxGnQeos1uyut8Bs7vDSvL4rn7cFnzrxvYw_cs1-WzFdZa=
+V777LcKsSG5mx8Dxcz7dsLvIZHCkAkFzQO6Dv_aTPJQFvZgGuqt0JU0BOmpKF2p7-a2pKyR7gzV=
+8luVUOPR0vlcIBZ1B0cAza8WySgIk2io4ixSXqtu1VSR4rEfZwMOwXesi5cc5T_FOwDYzEBKhXc=
+n7RQ7l87X-0ohxg_pzhfOnDzNsXPbN3NwwheeXMgkoO49yZmPNezCrXNe4br8V6DsCcYNdEhnIS=
+LWqNGvdSWIC6ry5MCg5WAZ08-i5PvjLtS0X6XJ4TRrCMWG6fNE9F3BS0jr_XQUyKWENDMml3edF=
+6xU2A63e3cRZKqLShW79HEpjFX_hTQ3Zu7KzkLnqtoYHUfGTvnu4CLJ042IHOGbjYUbTiWvMkh1=
+lF6E_AoP5rVTGqMWmE1_AfoGbWDnJY4eOKhCZ0NLzszshbRBcsGvbtUc3bnb5uDzAmtNln47tAM=
+IWgqgBAvLOl4gUI8QaY2A9Nl82Rx1YmM31L2MXqpVL4roFtJu5uRTOjp_35-SrtugGaJWhzqDRD=
+zlPR4g8rWCp48tVk6Y6KCilO6lJ6B0wZbbZ2O9ZuQrDhjjFQ7H8sf3YwghVdWbPcP8hzxFw9Szi=
+4elQsEULQEXPRuLslu2JfieyzrKTfawTFBy2CQzpw01L_nGV4n5Dhidw0eddRsI0FBl9usKPAys=
+0__7fznWNhi8ahLHcFYoDXxkjBIwEnNvk9e0aJgzgCD3iqpAbntx4DoZacRekqD4iG22aHYZHth=
+Um6ECAsXFsg5SKhc8AVMxGmyi09WfstVI4=3D" target=3D"_blank" style=3D"font-fami=
+ly:sans-serif;text-decoration:none;">
+            Unsubscribe
+          </a>
+          <a href=3D"http://url9884.lillypillycreations.com/asm/?user_id=3D=
+47935538&amp;data=3D9GkXc2yFieFC5UscY-OaFCzOlJXP7kbw995hqGoZt15oMDAwdTAwMJH=
+_4wW6ujFYde4VV880zBl5SjbneCXWv7MAEDubXbVCFaLV82_g4NDCZ1khbiGN3z-0FjFUpDKize=
+5vxYmCQNSygX3yAT0YaWgk42gqj1xdiSpms4kwsrUXd24FgxagIBrVImyVqMzVq1MhI3LUdPvlm=
+VYiZwLTm02FW7TKD71lgRsva7Qy2bZugfksRAfdCLxi6O3wRNoWWYPyHo54y3iqzPXgzci5kxJn=
+gd-tc8Ao9ziCF2_ylW8dfniQe8mP3EQQXxccEw8S_1aWgXGphWqH_o44FKfSqgFgGWbYWkVAn-F=
+Y7MYNF9Hv2enY6-CCmOjI17ii2StzuqLOxXfnEOGU35-7VgVvHXxir1W9pn9un1C5l2Br5ohcWo=
+mddeeprbzvAPbRnmTImo7spfAEun_xYUvkjs7HhrBny3re4FpcI8E7rpGBD2yQwAYB1eNcqD7yH=
+rk2Qt0kv5z0s7-gSwVvis-2VCBptc4252y7RdZuOuMn7YsEF5kFleipdVgqh1w1gfvTuaFWGV1H=
+p7QP8gbYFl5U4dhVLqga8zzfZwxXH4feQFbveHE2BbYaeJ3MO-pUWpeaWwVHvXSj5h1OUBB1ZmW=
+82AEunSK8Ki7Y8xoY8d_e5-BunXWKKoPEUDcOgClUWLRW7xwdVNrwN-2bbL2L5-IWebHa8yp9tC=
+LvdJHS6p4Gz8eGj3X9AkFRqTn8fHK8dFL_GKs1o3b2kmFrAJtceipXObk6EaLxhu8JLRZJ9iytN=
+9BvSOxfoLlHtMnliZpkbQH4-H9_AjLI7x_T8tF5UQdi2VKNLX7CDsxZwHQc7yKO46PsdoweEhOt=
+MDHXfcjciJ1V2vNMllEdWKnibN5b1vy6pTvRl0JDjGocG184PIsLON5jE2NFHvE_HK9EE36AHgu=
+FJ_yrCF2AV9zKJ9539uvvm-1vGFTcEHIKtKZcI1hpUopQfiK9AVFKyhdmU4xy4_iGtivSO3DdBA=
+8xpznZlJAYGWUMl0A56Y5TIjlHpkCDAxu5RqopfweBYCG1q-aA_LCROexlMjuFJE6xLeMR8PEfC=
+x_GOREQ9JiQYNZbHBajKCrvDDG15Kkh06QNbPI4OOtoCLyemn_1WL8Yl3Y=3D" target=3D"_b=
+lank" class=3D"Unsubscribe--unsubscribePreferences" style=3D"font-family:sa=
+ns-serif;text-decoration:none;">
+            Unsubscribe Preferences
+          </a>
+        </p>
+      </div>
+    <img src=3D"http://url9884.lillypillycreations.com/wf/open?upn=3Du001.z=
+0wa68HzF9Nq0jK6BfRwezFGFpLUsJWsYBdYBoB39cpRh4Bj3ZA5XaL2-2F8z-2BnfBH2X8UZj14=
+-2FDQjowNopXf8M17Qx-2FeA8wV1Z-2BEqEozBnjcqvGcNvOxIrpFpIn1YLqwx-2BAfaJM62uWn=
+PCpEeXNAZrcAAC77RHmwK9AVRU7lcCHBcdl7E6aPyPlHZ2tmplgiUtrMJ6-2FYwXkXVymtqK0oO=
+jWjdxKZpBgZmysTVXP4KAHTr3KPooIQ4n-2B-2BWQqyQmMKosM4OQ1R4R3VS8ruP9K9BeaxFUwO=
+yjghiNGUm6t6LgrqoKVdUXtKzAyfFlUclXFmcP0bE1gsK25tYMZ8TnuaCCuZvYcojWFjv0bfkmh=
+f-2Ba4UPfvBNJBruVj4-2F7Vr87YjNFpz1bJaALvEcgZq49oemiAMxi0SHeIwfpQW8GbZ8rykIG=
+5TLy-2Fy99EghFYERWOCEDYdkwg5smqIWMpd403ygLkGUDhFjw43mpizz7cqby6OxDd2v-2FCDl=
+FbkJq8-2F4aZf6Bo-2BDBVO08ce-2F1NlCnctGmljdU2uhONlMgL7Bio7KAMbnrLWpIAklkG8Tj=
+bSpdQDRKPtVw4utwMCgIVmSlgFMaRrIOaNz1lkuozP8jETtoL1Ce0u7xagOuvMMSnEOrSC7kDFQ=
+6S5RXt8lqcNIDafhhNuywOP5xcdWy6BYs26HcGWcxmqq0ESSp9Wq9dHbZ48DaqZvtsmHCZ7U1cd=
+tnxofPuBEbE7MilmhIHG5AvSQxbmkIj-2BD4EUWngdyVoayaYzBDdLqW7j2Q-2Fw0Cgg5pWdTGB=
+WgY34uztaBoYPIyEtsgBBbMt88l0yVM9urGd4ZXoqJFRhwldU6PcMVU4fPblSKM0hMo4ywZfiDn=
+6h6RAsR61Tg0g4ItWtIpfkjWgWwlgtjPJ7-2FeCBNG523-2B2H6J8GrX-2FtwwK4RVKaTM153aG=
+l-2FkpqtwUz7uSfq-2FyQ-2FiFh2XLd8" alt=3D"" width=3D"1" height=3D"1" border=
+=3D"0" style=3D"height:1px !important;width:1px !important;border-width:0 !=
+important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0=
+ !important;margin-left:0 !important;padding-top:0 !important;padding-botto=
+m:0 !important;padding-right:0 !important;padding-left:0 !important;"/></bo=
+dy>
+  </html>
+
+--911de9ad432b649f984108679cec80d9efbbe248e1947b83f435aa57594f--
+

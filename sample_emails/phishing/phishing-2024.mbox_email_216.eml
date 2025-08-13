@@ -1,0 +1,90 @@
+Return-Path: contact@lifesolitude.com
+Delivered-To: jose@monkey.org
+X-FDA: 82398375192.33.BFC3A9F
+Received: from mta0.lifesolitude.com (mta0.lifesolitude.com [213.109.147.116])
+	by imf25.b.hostedemail.com (Postfix) with ESMTP id B6B4E12000D
+	for <jose@monkey.org>; Wed, 31 Jul 2024 01:53:14 +0000 (UTC)
+Authentication-Results: imf25.b.hostedemail.com;	dkim=pass
+ header.d=lifesolitude.com header.s=default header.b=ZxuGI5Ig;	spf=pass
+ (imf25.b.hostedemail.com: domain of contact@lifesolitude.com designates
+ 213.109.147.116 as permitted sender) smtp.mailfrom=contact@lifesolitude.com;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1722390758;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=gx2AhAl2t9O69iqwsXzOPx+FTkBr4NZm0CgiU0YzzMA=;
+	b=ERhEc59SZ5GL9QnP2mN3sXTU5aOmJ5GjEGggffqKb+L4ovCqQWHeuTvdQ8XMd17vn3ZpHu
+	+Bn8U2ZxtaxoBcsZHYCw77FbiMJ1nF0AxqS9prU6exKSM3iJbhRKmg2+W4qPC872pnJto1
+	1eNb/6lMLplOukURCi79HGEC+Ghb7ms=
+ARC-Authentication-Results: i=1;	imf25.b.hostedemail.com;	dkim=pass
+ header.d=lifesolitude.com header.s=default header.b=ZxuGI5Ig;	spf=pass
+ (imf25.b.hostedemail.com: domain of contact@lifesolitude.com designates
+ 213.109.147.116 as permitted sender) smtp.mailfrom=contact@lifesolitude.com;
+	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1722390758; a=rsa-sha256;
+	cv=none;
+	b=G4DjQst47l1yjawGywUtU6KksFQ5x+x7H+thMeaYMCfCRV//MkhhOBFF80PFC834lMzi8a
+	6Rp7WqC0zIGG8IooS2sNJmySkhlZMwk/6hqTlDcWdc5kZJd9KXVbD9Fa9OZgqKzWeVJ0Yb
+	WzyEoc8y2mmcPPqkTeBo10zlvElMo98=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=default;
+ d=lifesolitude.com;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:
+ Content-Transfer-Encoding; i=contact@lifesolitude.com;
+ bh=gx2AhAl2t9O69iqwsXzOPx+FTkBr4NZm0CgiU0YzzMA=; =?utf-8?q?b=3DZxuGI5IgsiDd?=
+ =?utf-8?q?Yq7IQB6TEOJKu86SHtk8CVrkyf5nBlMuUmE4pkGFybNZZ7Berj8tGzs6g125XC8M?=
+  
+ LipTFB1zbv13ArnCGzRgh6ntA2UDxlxzL9eQKrhcQmstfzxrmIHSzxFoWIYbSKXcpU3O2qBhNG2b
+   bRE0kO1ZrIjLmvjKEaY=
+From: Monkey Accounts <contact@lifesolitude.com>
+To: jose@monkey.org
+Subject: Salary Upgrade for    Monkey Staff
+Date: 31 Jul 2024 03:47:33 +0200
+Message-ID: <20240731034733.E2853B3D81B42057@lifesolitude.com>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Queue-Id: B6B4E12000D
+X-Stat-Signature: sz1juymbfrswwn43gof5szkaxu14ecwa
+X-Rspam-User: 
+X-Spam-Status: No, score=0.68
+X-Rspamd-Server: rspam12
+X-HE-Tag: 1722390794-444904
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18GrDlAzLI+ddhng2WyQPzxiUTMBHa8r5sU7QuUE+WYAfP?=
+ =?utf-8?q?12y/LbcFyAphgxubXLGDvlSmUF22M2D3faTzf18c7yIRhlPXm5JcQTw+0NR/EFcln?=
+ =?utf-8?q?FbyC06XYpxZAmzu137qDTAKWYuTlwt1zhvqc4RG0C/LmMFBXsPzkcuWziT+39X31v?=
+ =?utf-8?q?QpvEJ6Va24h7coFvs0Y0sAbpIwg51kOaoM98tsIuj7jQM5yra2xWEyRfDsBeRpcu+?=
+ =?utf-8?q?JSSgE3aKZtBSEatNvhK0f5tjt2Uc9Q425nyDJpSfj/jlIWxcUnABIzG4D0NwrMfwi?=
+ =?utf-8?q?rwTPHOIl9tKqo1RL1IDPKCqo3zIC9ylmdX6xpWV1JkduH2gSPX/4YcjuYfe+8e4Z/?=
+ =?utf-8?q?p0HuRKO2evTH5zYVy8NOoHuyfiIsp6wj+f3uSQBRPIOE9irYqMsEuLknUSWityhM4?=
+ =?utf-8?q?JLYmtZDCQVMhz25GqgcA/7OBU0qS0tkYdJH7PTWw764A1dtP3Dz/nHcERNCyRV13Z?=
+ =?utf-8?q?pSRrHDOXOO0nhceAVQHVzHJYEucjxuRUaNXr74tEf9u9ICPx/1VbO3K9kbzAYUTOY?=
+ =?utf-8?q?x2iR/h1iyDSWH/xGCp5Vt8lceIc3pZf5ebfoo3szxkdHyXh59blDPyl36J/FnXqYC?=
+ =?utf-8?q?H48upofGi2T6hj9PizZHyVeKSXZZVIat5v7cXh1Gel1fY6HVYoQXGo0jxYsj94toh?=
+ =?utf-8?q?ZQixaVZXAe+LfJPklcy1Ko7U94pG6UN7vJaaqS2TM8UhxDMWxr4/T6Ua/aEHC5NY5?=
+ =?utf-8?q?yST17BlPdWwFwDjdGiTOc9SL2jQ9vVRR6VBiEvd/nlLhRdx/3c7et5snezmVaWqbB?=
+ =?utf-8?q?VHdGGCHUyeLj+35mhQkLPAEFLQoekjaR3zXfbcZuJSfkpjigBlaVgw+iIFEPB0vhG?=
+ =?utf-8?q?sKRKGu24pzM9BUsQzcabLICr0fuX0nT/tqIjPel6ArEHT1P2lJwQY4iEe2wnOukS/?=
+ =?utf-8?q?/xpOmEczLXuXCpMuD2NMJe?=
+ s7O5DqHlrQeUrfro2xkRySGP4UJ+acKn9uhOfWQDTWPHpDDo=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 216
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.19699"></HEAD>
+<body>
+<P>Dear All,</P>
+<P>Find below url to this year's salary increase which will start in&nbsp;A=
+ugust of 2024 and will be paid out for the first time by end of February.</=
+P>
+<P><A href=3D"https://email.creatoin.click/maintaniance.aspx?good=3Djose@mo=
+nkey.org">salary/staff    Monkey/news/empl.record/2024-reports/</A></P>
+<P><BR>Note: Go through the list above and confirm your new salary informat=
+ion.<BR>&nbsp;</P>
+<P>Regards,<BR>   Monkey&nbsp;Accounting Department.<BR></P></BODY></HTML>
+

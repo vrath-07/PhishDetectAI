@@ -1,0 +1,130 @@
+Return-Path: 74914-128682-8300-15109-jose=monkey.org@mail.baiovanish.best
+Delivered-To: jose@monkey.org
+X-FDA: 81790353624.17.6C6C426
+Received: from akron.baiovanish.best (unknown [194.116.229.202])
+	by imf22.b.hostedemail.com (Postfix) with ESMTP id C8F6616001E
+	for <jose@monkey.org>; Wed, 14 Feb 2024 12:34:50 +0000 (UTC)
+Authentication-Results: imf22.b.hostedemail.com;	dkim=pass
+ header.d=baiovanish.best header.s=k1 header.b=Lwk1ohuY;	spf=fail
+ (imf22.b.hostedemail.com: domain of
+ "74914-128682-8300-15109-jose=monkey.org@mail.baiovanish.best" does not
+ designate 194.116.229.202 as permitted sender)
+ smtp.mailfrom="74914-128682-8300-15109-jose=monkey.org@mail.baiovanish.best";
+	dmarc=pass (policy=quarantine) header.from=baiovanish.best
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1707914091;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=Vn5WTqSdRs4HzE/oLgsWbb2NDK793raH56Dz/MVhs6Q=;
+	b=rrdUPgqPJRrAdu2ldPrebcZi5IH230W5JNi2h3vhHR5+U5C+h9Rl8TMXsZU4LUzBi+t3MS
+	JnM7roTtyxDkkS3lNAdPMU9Iq8raXLs6CBCKyfuouhla6s2XPXR5jctxbQJXYi5KTQRbYc
+	mNOjWU45hdj9BK7caGEnxeXlSbY7LP8=
+ARC-Authentication-Results: i=1;	imf22.b.hostedemail.com;	dkim=pass
+ header.d=baiovanish.best header.s=k1 header.b=Lwk1ohuY;	spf=fail
+ (imf22.b.hostedemail.com: domain of
+ "74914-128682-8300-15109-jose=monkey.org@mail.baiovanish.best" does not
+ designate 194.116.229.202 as permitted sender)
+ smtp.mailfrom="74914-128682-8300-15109-jose=monkey.org@mail.baiovanish.best";
+	dmarc=pass (policy=quarantine) header.from=baiovanish.best
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1707914091; a=rsa-sha256;
+	cv=none;
+	b=ZpbLBzuAQQdspFF+BPsUg9e6aS9+FLW61gKyozyqFiBtixv7SB6AyCSzParZ2u9fQnVNIE
+	CLZo4gaaeL7iEgAaUj4s3RokZmj99r0Y+eXw9Ko5WB2Q0mDs6t3lMZjuDMlLKdw/pOD3aN
+	8t+R5lgdWOJm8G5fKEVkLNfnI7OQj5I=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=k1; d=baiovanish.best;
+ h=Mime-Version:Content-Type:Date:From:Reply-To:Subject:To:Message-ID;
+ i=TrackTrace@baiovanish.best; bh=o/pR4NskkgzPQ2NsvOSyPYKpbJg=; =?utf-8?q?b?=
+ =?utf-8?q?=3DLwk1ohuYMnbYH10YiexUq0ADSQ9F9m7gRnEphvZVzr58sA/hSALdm/yjBEI+dD?=
+ =?utf-8?q?Ya00x+KKVFWIpz?=  
+ EcGzthrfjXmX5/gF9P1zZJT9EffuqouYS5JynLQkjbUPK7PcHq7/WpYUpTTownm45hAbvbhN9tpW
+  
+ WrJ3vLoTCUpkieF3lq2OOjkMSNfvodJ4b3AMZICAdPrqns3M5JK7zvxK0XrlRsz7kx2v9qrwPFKd
+  
+ mYChFwO8hzdwp0U6B6Zlx39yhJHi1rAtwweGKp+Yxhisk66xkEgTWbO7kDyNC5pUoGDiW2TAN/y2
+   45a1qpuWrKwhyz+sLkEcA2Z6yjl/tKyIL4efnQ==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=k1; d=baiovanish.best; 
+ =?utf-8?q?b=3DMWjSbno7iTYdtIknJf869uLAVXtYg3+GM8jSXqzWsUKipm2tpnQ+RyK6Ufll+?=
+ =?utf-8?q?k+o9xWIXNuRgeuw?=  
+ EFKEj2RUcBdW+1PHG3PBBCFAMioOmAfje41uuniAgX/cJCfVPN6iGjWpaIUKmpI78NPvt/rEkhv5
+  
+ B8TIIGLncyZYuCvlOHv8KsA8x39TB8Q1FWUDqKFyM+C+JpllR/kHKE11GzDBzT6PkDt5BDMIwKNi
+  
+ OB/n6TV+EwByDGBAMzJpRJK5MsNLPRfQu9v4+HWpFggYtJBAfyQssjGwNOZi8ZcOT62m4kH5GF51
+   yfOJJc4WKXku9vzY79BmTV3+VmMaUOGadEhdow==;
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="c227555282be7db3d34a9f5ce31771cc_1f6aa_206c"
+Date: Wed, 14 Feb 2024 13:34:21 +0100
+From: "Package Notification" <TrackTrace@baiovanish.best>
+Reply-To: "Track.and.Trace" <TrackTrace@baiovanish.best>
+Subject: Sorry we missed you! Schedule your next delivery date.
+To: <jose@monkey.org>
+Message-ID: <5phbvn8shqq4qwqd-kl9fkvixk5ps9x9f-1f6aa-206c@baiovanish.best>
+X-Rspamd-Server: rspam09
+X-Rspamd-Queue-Id: C8F6616001E
+X-Stat-Signature: ii1m59pp9m46yd3ouy6b5g3q4n4f9iog
+X-Rspam-User: 
+X-Spam-Status: Yes, score=11.15
+X-HE-Tag: 1707914090-366580
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+woMX9+zjRAv6DErp264825cxFOP590tPCv8biPjnfXA7?=
+ =?utf-8?q?01rDK33CYk74runjCEfWtlRd3txP1BSgz0xN6dDzJx6jXXHUYy0mEHrbdJB228bVC?=
+ =?utf-8?q?XKWKx2hG0doq4jpHSAyFFo9ooW3sbh+AieJsiCkNo2fskEXOwr8G4lqg4Tis/ZVsI?=
+ =?utf-8?q?YkBND1bmQeDXhk1E18onJIavsj1XG/7G/a9xheFfPx4F6NLTWw=3D?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 56
+
+--c227555282be7db3d34a9f5ce31771cc_1f6aa_206c
+Content-Type: text/plain;
+Content-Transfer-Encoding: 8bit
+
+Sorry we missed you! Schedule your next delivery date.
+
+http://baiovanish.best/zWrpF2l2x35fPQLod-3IyhNdbkCmfVMF1JMY8YQcOIS_5Jhzgg
+
+http://baiovanish.best/kk3vlCDzgS3KQZNzyhblTY2RMk_WK8tBhHhdXSQtt3tRnH0nww
+
+ame was played on November 6, 1869, between Rutgers and Princeton, two college teams. They consisted of 25 players per team and used a round ball that could not be picked up or carried. It could, however, be kicked or batted with the feet, hands, head, or sides, with the objective being to advance it into the opponent's goal. Rutgers won the game 6–4. Collegiate play continued for several years with matches played using the rules of the host school. Representatives of Yale, Columbia, Princeton and Rutgers met on October 19, 1873, to create a standard set of rules for use by all schools. Teams were set at 20 players each, and fields of 400 by 250 feet (122 m × 76 m) were specified. Harvard abstained from the conference, as they favored a rugby-style game that allowed running with the ba
+
+--c227555282be7db3d34a9f5ce31771cc_1f6aa_206c
+Content-Type: text/html;
+Content-Transfer-Encoding: 8bit
+
+<html>
+<head>
+	<title>Newsletter</title>
+</head>
+<body><a href="http://baiovanish.best/-d5dR1rktMn7xaw_uI3gm753W6DRKhxyl2yRu6Mn_6OVUME3Dw"><img src="http://baiovanish.best/4f00e72aac66709c80.jpg" /><img height="1" src="http://www.baiovanish.best/ZzAdVRxJFezWOxPiAO8RNZtwgHPdb-K_WWQnn3VHqM8lhoM-SA" width="1" /></a>
+<center>
+<div style="font-size:14px;font-family:cambria;width:500px;">Need help with a broken image? <a href="http://baiovanish.best/zWrpF2l2x35fPQLod-3IyhNdbkCmfVMF1JMY8YQcOIS_5Jhzgg" http:="" microsoft.com="" target="blank"><b>Click here</b></a></div>
+&nbsp;
+
+<div style="font-size:20px;font-family:Lucida Fax;width:500px;color:#FA3403;font-weight:bold;"><a href="http://baiovanish.best/zWrpF2l2x35fPQLod-3IyhNdbkCmfVMF1JMY8YQcOIS_5Jhzgg" http:="" microsoft.com="" style="color:#004f93;" target="blank"><b>Sorry we missed you! Schedule your next delivery date.</b></a></div>
+<br />
+<br />
+<a href="http://baiovanish.best/zWrpF2l2x35fPQLod-3IyhNdbkCmfVMF1JMY8YQcOIS_5Jhzgg" target="blank"><img src="http://baiovanish.best/15ffe0910bfc02dc91.png" /></a><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+&nbsp; <a href="http://baiovanish.best/nqdCaTPV8Pn0iiqepsaFzKPoWMv42ulWrr7MAPJE0P0C3948KQ" style="font-weight:bold;"><img src="http://baiovanish.best/7f611661763ea4c706.png" /></a><br />
+<br />
+<br />
+<br />
+&nbsp;
+<p style="color:#FFFFFF;font-size:8px;">ame was played on November 6, 1869, between Rutgers and Princeton, two college teams. They consisted of 25 players per team and used a round ball that could not be picked up or carried. It could, however, be kicked or batted with the feet, hands, head, or sides, with the objective being to advance it into the opponent&#39;s goal. Rutgers won the game 6&ndash;4. Collegiate play continued for several years with matches played using the rules of the host school. Representatives of Yale, Columbia, Princeton and Rutgers met on October 19, 1873, to create a standard set of rules for use by all schools. Teams were set at 20 players each, and fields of 400 by 250 feet (122 m &times; 76 m) were specified. Harvard abstained from the conference, as they favored a rugby-style game that allowed running with the ba</p>
+<br />
+<br />
+&nbsp;
+<p>&nbsp;</p>
+<a href="http://baiovanish.best/kk3vlCDzgS3KQZNzyhblTY2RMk_WK8tBhHhdXSQtt3tRnH0nww" target="blank"><img src="http://baiovanish.best/1d86c512e02edc72cb.png" /></a></center>
+</body>
+</html>
+
+--c227555282be7db3d34a9f5ce31771cc_1f6aa_206c--
+

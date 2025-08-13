@@ -1,0 +1,106 @@
+Return-Path: serv1@mailsyncr.com
+Delivered-To: jose@monkey.org
+X-FDA: 82299700476.31.63F99E1
+Received: from mail.mailsyncr.com (mail.mailsyncr.com [142.171.166.152])
+	by imf23.b.hostedemail.com (Postfix) with ESMTP id 25C50160024
+	for <jose@monkey.org>; Wed,  3 Jul 2024 21:16:36 +0000 (UTC)
+Authentication-Results: imf23.b.hostedemail.com;	dkim=pass
+ header.d=mailsyncr.com header.s=dkim header.b="WZiJYu5/";	spf=pass
+ (imf23.b.hostedemail.com: domain of serv1@mailsyncr.com designates
+ 142.171.166.152 as permitted sender) smtp.mailfrom=serv1@mailsyncr.com;
+	dmarc=pass (policy=none) header.from=mailsyncr.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1720041384;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=Jop0RIJzWDkcriLM1pblBRdfTzE6AX6FuZL35c+bydc=;
+	b=ZLlbMEixbc8dD32LN149dIWM7wJIMe1ym6UiOxpVkZcPxXS3GLd1u3Ln8DZfSJpNU4bT4a
+	NzrmrqEDe8FMol/pZmSbIWt38KFOXktCpYfuBInaK0iWW1XtMq7HVwPco8Dost8xLRmhdz
+	5Gvrp8mW9XlN+wQJtspREBMndMhCCug=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1720041384; a=rsa-sha256;
+	cv=none;
+	b=msatQZGi4o63bmUtKADJsMbNHbDU6M7Sy/vlA2SeJEx335qD30T6eBU6542LAVZSrVZ4fR
+	pr82PB8pUJkdNxm3NmPn4bAblXsEH4vRvGiboTQSJ/ORpQrad8oYSjnyDVsL6d8bvddUs4
+	8uUwQ81vovfyasASxk6vX/EOkkrLWOA=
+ARC-Authentication-Results: i=1;	imf23.b.hostedemail.com;	dkim=pass
+ header.d=mailsyncr.com header.s=dkim header.b="WZiJYu5/";	spf=pass
+ (imf23.b.hostedemail.com: domain of serv1@mailsyncr.com designates
+ 142.171.166.152 as permitted sender) smtp.mailfrom=serv1@mailsyncr.com;
+	dmarc=pass (policy=none) header.from=mailsyncr.com
+Received: from [127.0.0.1] (localhost [127.0.0.1]) by localhost (Mailerdaemon)
+ with ESMTPSA id 5247B1E6204	for <jose@monkey.org>; Wed,  3 Jul 2024 17:04:32
+ +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mailsyncr.com;	s=dkim;
+ t=1720026274; h=from:subject:date:message-id:to:mime-version:content-type;
+	bh=Jop0RIJzWDkcriLM1pblBRdfTzE6AX6FuZL35c+bydc=;
+	b=WZiJYu5/Nek0jinEXTrxVNHuWTW3kArus9qhL02uXqWTIn60wXSHdL97kfaDq6ZqnJn4Zh
+	k+mZSLOQaW5CYhPuAaZYnJklDURMIpxgAWLOSPJ1YyAS7KTUBvgeD9olDGEK9CprPq8hjo
+	vPAJ2LMYFHYVTKKbtUM++38HChoXuxTN/9stdNAew6SMBXhjM5LGFWFEou3iatV53ws9VJ
+	j44UeaWK5+nafygdQ4CEskpPIyT3hYSmXrxa9+0po4TiiUkGC66dTlZ3Ij1rb999lpkwGS
+	sxWAM5ni4W1jzKEf/Y4IlLMQwqeTZiBsJVLr2KzmDkiBli4GPFtBJZOgvKT9WQ==
+From: Service <serv1@mailsyncr.com>
+To: jose@monkey.org
+Subject: Failed Email Delivery Notification
+Date: 3 Jul 2024 20:04:29 +0300
+Message-ID: <20240703200429.58A031288594212C@mailsyncr.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="----=_NextPart_000_0012_2B3674E6.C67A58B3"
+X-Last-TLS-Session-Version: TLSv1.3
+X-Rspam-User: 
+X-Rspamd-Server: rspam01
+X-Rspamd-Queue-Id: 25C50160024
+X-Stat-Signature: mr4n1o6zuzygjfpxz9izqo4sfk7kdr8j
+X-Spam-Status: No, score=6.80
+X-HE-Tag: 1720041396-892530
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18GCXdKZ4fPu+0Gs96FZBZnUPbXkAjp03fSe55pH8R0wzH?=
+ =?utf-8?q?WrYOfgLXhUR+S8uojw+7EYN3/cQqw/xF1U0O4aubTyll1/+MsoAixM/pWvN68j46r?=
+ =?utf-8?q?nIUZ+BrMbrSRxYxafxcrPJ+XM5oD9LuAC3d9eVz5ELO2Dtt9USjuGsj/BPuVQk2J7?=
+ =?utf-8?q?nQPjIfyNrbEm1rL+XJDxn+V/Fj4MqqzPQ/WQEzU2RLWg2VHeJicF1yy83WvOAWE0O?=
+ =?utf-8?q?Z8RXxL0KaYnjL9upvMp6gZWMZMKBe3/W3YESL06qOHm4G8icikhcPNBoG92AYsYDm?=
+ =?utf-8?q?7IK/s6hukXznZVN9yV0vhe/iwKYYIagrznjT8/EopI6zRQ/Fdni/0jteSNlPtj/ur?=
+ =?utf-8?q?mcfyehp5K+D3PvFo/RTCFranQgw5au483voZ6ibxOIqtjKzwmJZ1XYxbnXf8Cw2uu?=
+ =?utf-8?q?0XV2vIJ5hTUH2Dm7w2zo3qCm8JvP8hIyKf4zZHFPmo8S4ZxbyWevVAvNgLL3sAh5L?=
+ =?utf-8?q?5RRKpFTFkxeZilywqEj9X76MbOjF5sCXboEhC0L7geIRWF9IKjG0aZ3Vblz5k14nw?=
+ =?utf-8?q?1CdqD+iV/2RhE6Xn+ZcHNyCYVmCaggwtagaqNOiasoUQopWCNqpIxNxk6a2a7HVDn?=
+ =?utf-8?q?dy3B8kxZb8Z8ZvnrN/wpZpC9DiorCnTh0nSoK6PLCtSGJY+NBVUnvw54QAQ4oC3rg?=
+ =?utf-8?q?AnOZTP+4aaQ8nRDuZDRwMfZvmiR8HgHvlxmrwaiIxhRzYfR0BOKp3DUjtRyETTzfh?=
+ =?utf-8?q?x8wiZ0ZFVBVi3TeRGWKC1uycC7uabyoeADXMlNWCWnSl7jgbG1Foy/B3nBOz7kvPL?=
+ =?utf-8?q?nbD0MSEuLYuR+e6gcjMMKEgNhEdBDZNzeF6VMUUBf/WPGKwl/2uV1BYXux4KxS+Fj?=
+ =?utf-8?q?LuKlDlaN20CyXSp5wtxzMUAtJhl7KQd8ll96tAq/8F7Hdqd/lS0ksrJlOmYBikKqw?=
+ =?utf-8?q?3ur7pk9NBwcuL8yMX5BS8r_mzQPl15F71K43uTX0tfBTLz3C4Wih2m17XGliwcumf?=
+ =?utf-8?q?EhY86xhbdllF/jdGoTZv+VvJ+phJ+7eRWps1PH9O+WmJzM0kF/g72X95txhdjQYGS?=
+ =?utf-8?q?/4amnqQOHeHVCPH4zZMGgAFoXwhdL2yPUBTK3/X+2gMmGq92SaE88qrelvtVtUeow?=
+ =?utf-8?q?8LkokZ4Dm7oELc90bHIecf/PoGF1SpFrHIt+0yew/VnRyc5+RJTQN+T8MexRERVWl?=
+ =?utf-8?q?5lMidAKDs/ebJnf2cczUT4ob6y9vbkntAVE/tuGBRPiPdD9M6/jk6skDINe7SWbvV?=
+ =?utf-8?q?5elcRRluZuKANA7Wh7OVEJ23BetmfViWKZuBhD0Yg1DSr++cT4KdODNo9+Ymxz2kY?=
+ =?utf-8?q?7mR5QAgRTZfa805shVsGmo4zqdA4Pf43rhhW5DZGana/pKcYeBSFOFfi/sOCgWV8Q?=
+ =?utf-8?q?q3TPqYdalSg=3D=3D?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 195
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0012_2B3674E6.C67A58B3
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body><p>Dear User,</p><p>We hope this message finds you well. We would lik=
+e to inform you that there have been three failed email deliveries to your =
+account. To ensure that your emails are delivered promptly, we kindly ask y=
+ou to verify your information.</p><p>Please download and open the attached =
+file to view the details of the undelivered emails and follow the instructi=
+ons provided to update your information.</p><p>
+We apologize for any inconvenience this may have caused and appreciate your=
+ prompt attention to this matter.</p><p>Thank you for your cooperation.<br>=
+<br>monkey.org service center,</p></body></html>
+------=_NextPart_000_0012_2B3674E6.C67A58B3
+
+------=_NextPart_000_0012_2B3674E6.C67A58B3--
+

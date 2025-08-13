@@ -1,0 +1,408 @@
+Return-Path: nrt5+SRS=ky8UZ=MS=docusign.net=dse_NA4@080524.site
+Delivered-To: jose@monkey.org
+X-FDA: 82121023488.14.1E339AC
+Received: from NAM10-MW2-obe.outbound.protection.outlook.com
+ (mail-mw2nam10hn2210.outbound.protection.outlook.com [52.100.157.210])	by
+ imf25.b.hostedemail.com (Postfix) with ESMTP id 730F412002C	for
+ <jose@monkey.org>; Wed, 15 May 2024 15:33:00 +0000 (UTC)
+Authentication-Results: imf25.b.hostedemail.com;	dkim=pass
+ header.d=docusign.net header.s=mail1 header.b=gGmEdQZR;	dmarc=pass
+ (policy=reject) header.from=docusign.net;	spf=pass (imf25.b.hostedemail.com:
+ domain of "nrt5+SRS=ky8UZ=MS=docusign.net=dse_NA4@080524.site" designates
+ 52.100.157.210 as permitted sender)
+ smtp.mailfrom="nrt5+SRS=ky8UZ=MS=docusign.net=dse_NA4@080524.site";	arc=pass
+ ("microsoft.com:s=arcselector9901:i=1")
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1715787180;
+	h=from:from:sender:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=CsoOpg630BBGs9Q4xny3vRVp70xpRqnasgxEGyuwcPw=;
+	b=W3HO0VdJGQqwvoHKuaNbo4hDOoyqL+qateti8fX4I7P+ccZdtfwCwNsCU+RNFmngci3x5i
+	MEhx9OPGjASpFl29OJCzXmK0a8UE1yS3SjvDCwbajPrQrGFJVlSe8f+7xvfK78oQ0TRq5Y
+	O23NuHs+tY8w4MnElBGTFjtsbj3bo9Y=
+ARC-Authentication-Results: i=2;	imf25.b.hostedemail.com;	dkim=pass
+ header.d=docusign.net header.s=mail1 header.b=gGmEdQZR;	dmarc=pass
+ (policy=reject) header.from=docusign.net;	spf=pass (imf25.b.hostedemail.com:
+ domain of "nrt5+SRS=ky8UZ=MS=docusign.net=dse_NA4@080524.site" designates
+ 52.100.157.210 as permitted sender)
+ smtp.mailfrom="nrt5+SRS=ky8UZ=MS=docusign.net=dse_NA4@080524.site";	arc=pass
+ ("microsoft.com:s=arcselector9901:i=1")
+ARC-Seal: i=2; s=arc-20220608; d=hostedemail.com; t=1715787181; a=rsa-sha256;
+	cv=pass;
+	b=pX/QqoRMqOruxGyW2N0Nlm7kQa43DavQa/8ULE5CvDSBKzeInkKPRh1gMZaxXIYC1lh5mE
+	aq/Uy2k9LS7DIDS9LSMas8r2M+yM/OQBvqZRI2FLvFI1wfu7thhM+Wm4do5pJZBKCQzW5s
+	LvSSAUL3+ncRmk9N2PQ0l7fzRmMkhT4=
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none; 
+ =?utf-8?q?b=3DkpiWFSRr5TbbkxoDYGxS79e1lZr3U8T8qoA4TyVCy+xyQcQcuH2RhuO3+A35B?=
+ =?utf-8?q?ua6ylwyZ41/sCTKV+SDButdotcBlmr1ZhtcYtk9FTu2MQ+oOM9CvuoLmjW7xi9c5T?=
+ =?utf-8?q?+hmxhvidU1j7jOq4Uhpvu/K4jMkix/EOhzMGiP2PIAtdsfkrm6sSQxmmE1NAavKxu?=
+ =?utf-8?q?bR6RozLTXScBbcz0etQG4iEzZ8aehC7bKib4LRjF44P95212l74h0R5Oc7eLmdNWQ?=
+ =?utf-8?q?RMhiU0Rl+oHyDybixNcUAa3u2Y85vxID50V8xlr2h1RJsh/eLvn/siGsEI1EwKqVM?=
+ =?utf-8?q?3w3x3OYfi9H37FNotySlg=3D=3D?=
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901; =?utf-8?q?h=3DFrom=3ADate=3ASubject=3AMessage-ID=3AConte?=
+ =?utf-8?q?nt-Type=3AMIME-Version=3AX-MS-Exchange-AntiSpam-MessageData-Chunk?=
+ =?utf-8?q?Count=3AX-MS-Exchange-AntiSpam-MessageData-0=3AX-MS-Exchange-Anti?=
+ =?utf-8?q?Spam-MessageData-1=3B?=
+ bh=CsoOpg630BBGs9Q4xny3vRVp70xpRqnasgxEGyuwcPw=; =?utf-8?q?b=3DUzzmn+6zEZlY?=
+ =?utf-8?q?UsgXb/f0lgRM3uyt2eQuykIkoN+OQgy4twokdBwctfxiktfTOQjln/O4rZi/CRPy9?=
+ =?utf-8?q?+rctn0HHB311QXFYEzquZ8JmOx/gZojZpokmPTO0I2tU/0jCRYsAxDoIhf11usKtE?=
+ =?utf-8?q?xuhSHfvYZDcmS46gweESCiNGtaHd34VvtPZG2+DuzyoUgUnQqW9l/emPkUue2PDRW?=
+ =?utf-8?q?edlJctg8WA0lDM/BwwIi2iwMWG4Clmmh8Gx8cor257mKz9tbfrrzwfuXQ2vZ2qrt0?=
+ =?utf-8?q?4W1dxZsE7ktiPq0IYPvgFtU+pcIQBi9YDe3YAggpKJDbublAsb0dJRof6xCyCeYmF?=
+ =?utf-8?q?d8uxg=3D=3D?=
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass (sender ip is
+ 64.207.219.8) smtp.rcpttodomain=080524.site smtp.mailfrom=docusign.net;
+ dmarc=pass (p=reject sp=reject pct=100) action=none header.from=docusign.net;
+ dkim=pass (signature was verified) header.d=docusign.net; arc=none (0)
+Received: from BL3PR19MB6441.namprd19.prod.outlook.com (2603:10b6:208:3b0::8)
+ by BL1PR19MB5745.namprd19.prod.outlook.com (2603:10b6:208:390::17) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7544.55; Wed, 15 May
+ 2024 15:32:55 +0000
+Received: from SJ0PR03CA0386.namprd03.prod.outlook.com (2603:10b6:a03:3a1::31)
+ by BL3PR19MB6441.namprd19.prod.outlook.com (2603:10b6:208:3b0::8) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7544.55; Wed, 15 May
+ 2024 15:31:54 +0000
+Received: from SJ5PEPF000001CD.namprd05.prod.outlook.com
+ (2603:10b6:a03:3a1:cafe::f9) by SJ0PR03CA0386.outlook.office365.com
+ (2603:10b6:a03:3a1::31) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7544.55 via Frontend
+ Transport; Wed, 15 May 2024 15:31:54 +0000
+Received-SPF: Pass (protection.outlook.com: domain of docusign.net designates
+ 64.207.219.8 as permitted sender) receiver=protection.outlook.com;
+ client-ip=64.207.219.8; helo=mailsea.docusign.net; pr=C
+Received: from mailsea.docusign.net (64.207.219.8) by
+ SJ5PEPF000001CD.mail.protection.outlook.com (10.167.242.42) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.20.7587.21
+ via Frontend Transport; Wed, 15 May 2024 15:31:54 +0000
+Received: from SE5FE21.corp.docusign.net (se-c101-f51-81.corp.docusign.net
+ [10.101.81.9])	by mailsea.docusign.net (Postfix) with ESMTP id CD55F20035CC
+	for <nrt5@080524.site>; Wed, 15 May 2024 15:30:14 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=docusign.net;
+	s=mail1; t=1715787014;
+	bh=44nv5CvnmJW3c4yWuDSFNHWpTD86Q9Gnts6xynSdM2Y=; h=From;
+	b=gGmEdQZRkfwgkmnaVwe07guzC7+RbQSX0pFazq/x8IIQL27DrkyuP31uQwarQt+4Y
+	 MvN6ObMyXHbq9rKG6l71dbL0Nn9yQ5/JHlD6fFqb+2qO0ZXahT02ZYkRF94POfiYLq
+	 yWTdVFEI2/MOGGb/rPWGhm+QsW95bGNSs8LfqD4aK0XrQ4cLE1TrBB9+RC+V+I7hIh
+	 POwdLxIlKt4F3WTya3Sbe0D0uB8iFguzpPKMASk9vre03C4vLa7F1oBxOgs6XvPZFE
+	 THJrmKxdecoB8Tob69anrqIrdOxtQAapjvtkbquALK0lGWbzIg/n47z5wiRG6n0YGe
+	 +e6K/LiwatWXw==
+Received: from docusign.net ([127.0.0.1]) by SE5FE21.corp.docusign.net with
+ Microsoft SMTPSVC(10.0.17763.1697);	 Wed, 15 May 2024 08:30:14 -0700
+Sender: DocuSign NA4 System  <dse_NA4@docusign.net>
+Reply-To:
+ "Geek<>Squad? Support-Team +1-813-776-1410"  <Joseph1-813-776-1410@gmx.com>
+Recipient-Id: c6f0a117-20cf-479d-a65b-b716dc0f3606
+X-Debug: False
+X-Email-Rejection-Mode: LearningMode
+X-Api-Host: na4.docusign.net
+Site-Id: 7
+X-BounceEmailVersion: 1
+From: =?utf-8?q?Geek=3C=3ESquad=C2=AE_Support-Team_+1-813-776-1410_via_DocuS?=
+ =?utf-8?q?ign?= <dse_NA4@docusign.net>
+To: "nrt5" <nrt5@080524.site>
+Message-ID: <944bcd4c18634bc68be65cc650b29fd9@docusign.net>
+Date: Wed, 15 May 2024 08:30:14 -0700
+Subject: Payment Received [PP190208843783] =?utf-8?q?Geek=5E=5ESquad=C2=AE+1?=
+ =?utf-8?q?-?=813-776-1410
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_NextPart_3ABC2589_CF94_4AC4_ABE8_B55765009AC1"
+X-OriginalArrivalTime:
+ 15 May 2024 15:30:14.0467 (UTC) FILETIME=[C851C930:01DAA6DC]
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 6f9d168f-8b96-4d57-bd99-c6dac12c3aa0:0
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: 
+	SJ5PEPF000001CD:EE_|BL3PR19MB6441:EE_|BL1PR19MB5745:EE_
+X-MS-Office365-Filtering-Correlation-Id: d49baa10-864a-41c8-4d65-08dc74f4262d
+X-LD-Processed: 6f9d168f-8b96-4d57-bd99-c6dac12c3aa0,ExtAddr
+X-MS-Exchange-AtpMessageProperties: SA
+X-MS-Exchange-SenderADCheck: 0
+X-MS-Exchange-AntiSpam-Relay: 0
+X-Microsoft-Antispam: BCL:0;ARA:13230031|39440400008;
+X-Microsoft-Antispam-Message-Info: 
+	=?utf-8?B?Y1dzSnN0OTVYUEd0TzcwZFZNMzJqZEg5eWRvTG93Umw0dys3eG50VUgzbGZ6?=
+ =?utf-8?B?bkltWDV6STVWTGNtclZLcTJNVjg4SUF6Y2lQelZQVWYzaHFNdkZqOGNnRVVh?=
+ =?utf-8?B?b2ZFMjVDVXRuMktSTmZ4UVpsZ1IvZzdzQWkzY3pwaEsvTmErdWFvbmxqZVNv?=
+ =?utf-8?B?RFdJQXk2RG95Zjg4WFkyR0dBeXZ3RDdHZ3ljN1RnUVNYVU1TOXNMb21lMUky?=
+ =?utf-8?B?aTdBeTVNeS91Tk9hcXllYU9GM1E3aU8wNVp5aDRoQnlkbVl6dFNOUllxMFlw?=
+ =?utf-8?B?WWlMZmpyUmJjYjRiRkh4SUFkSkZ0NmJ1elRyN2VaR3ZvS0JTaDJSbUNic0Nx?=
+ =?utf-8?B?L05qUXkyMVBsczF3ejV2UVd3c0VqK3FsSXZ5MWp5NmhwM1E5S1NEMjM4R052?=
+ =?utf-8?B?a2dYc0RDZ1VaRVVMWnlNUjVuRVlEak9LTkcwQ0Q5cmxYWmJIZUdseEZGMFV1?=
+ =?utf-8?B?dkNDcGRRWXZOU2p3Vks5NVQwY2lwcDFEVEV5dTg4M3B0WVcwNGp0a1VBbXox?=
+ =?utf-8?B?TDlZRFNmYWNsdUtsN25YZGtxSElRdWp1S0Z1OFgxUmI0UGJEd2xTa1Vrenk0?=
+ =?utf-8?B?ZHFEa1FZNjdXdjN2Q2MyeG95c3dzYzN3cnBiSVMwSWhjV0JQT3NycHJFU2lq?=
+ =?utf-8?B?cGdsL0N6SzlYWU85U1hDWEZaVjF0bHVON2NtZmUwdGpWaHpMRXp5OXNIOTJ3?=
+ =?utf-8?B?OTBPUTBhRk56dU91aXg3c1hUWk9JalNaay9GVVlBL2crSmZwVWw4elVVeXhU?=
+ =?utf-8?B?aHFqSnpOWWhDM1J1aDZaRHFYTDNRampTdW9lUzE0T1kzQ1ZQcmwrQUZYMnJI?=
+ =?utf-8?B?RisvaU51dnpXWFpMUWNFS0ZIdjRwSVVQQmxyb2R4T0ZqelJMWU8zSmtwbWI2?=
+ =?utf-8?B?N0pkMVdNendpK0w5S2tPMjBmSGhoZGFHclRzVmtxaXlxSHB0SHFiRkYraWJU?=
+ =?utf-8?B?ejk3Z05SbkZWeGcvTThaSmdzVFZnd2FhdDNxNFJidU4wb2sxL0l4SHpacGF0?=
+ =?utf-8?B?U1pOUWtTSlVzd04zZTUzaUVlUGs1V0ZabXBJOGFqZEVsSlEzc3lPSWhBeFlK?=
+ =?utf-8?B?NWJXRURIUDBqVnBCczZITzUzK1NrTVVTVm83NVdiNnE1eFlEbWpHRFNkbkcz?=
+ =?utf-8?B?Wkh3SFFvM29JUnJPM0dRc2pMWmNESjlONjY0dGZyUzJUOExZcTFubVhlTGdj?=
+ =?utf-8?B?L1RTN0MySWE5NktFTmd3aFhCckFJNTdnZWtBNDdrMEZGdDcwSnFuYU9jaWlP?=
+ =?utf-8?B?MFkvWDFsbE9jWVRCSEVBbW8vNklKOTNTVEJBNXQ3MzVJWXN0RFNSOUR6eHQ5?=
+ =?utf-8?B?NWZvRk1GbGpSdGovRU5EajBqbS9VSTdWbnJpMFpJVnoreVoySXdvbWJteHo4?=
+ =?utf-8?B?K3JESlNUYnl4VmVpV0lMbTJCajJjZE9ZQ2ZJY3p4ZlhBUy93VnJZcHpDZVdM?=
+ =?utf-8?B?L000elovKy9EbGU5bUtrK1k0Z29JTkhLalNtUVR2MGNESDNiL3pKTlpsWWVH?=
+ =?utf-8?B?c1pGVzV2dzU1Nm1jc010T3kvb1h4eElKMGdjcDJCRDgvenZ1ZFVIc0d0YVl0?=
+ =?utf-8?B?OElPMEhiQ2dGZWFNMUJjZktWdjRMS2tMK0tHQnpsVm03cGJEMHZjSmZyZ3Y3?=
+ =?utf-8?B?TFA4UHBtMzduNXhBanJRaGpHQ1FiUkEzMFpQd005UDZqaFc2NytMMjJBL3cz?=
+ =?utf-8?B?VEJ6ZzdwclZnOFBXUGU3ZXp4MDJUTmh3a3BFSmdmRHVwZ05pdTFBTjErci96?=
+ =?utf-8?B?c2ljRzZ6OEFRdlVPMTF5R2hKU0M4a1lSK3IzMEFrTjVmMlhKdVFGeDZ5Wkxp?=
+ =?utf-8?B?NnNub0Uyb0xmVy9VMUlJSERIbThHb0JYWXZJWVdoa1d3MEQydG9CcHF1dXhv?=
+ =?utf-8?B?TllNWSs3eURwaXh3QzVORHBwOHNROEwxSFpPTmdLMVRiVVBHajlLZ3A0ZEZR?=
+ =?utf-8?B?bGFic3U2cDQ1ejdFb3grV3B1eTg3VVJSRCtBcktoVTU0MC9qSDN5RUs1Vytq?=
+ =?utf-8?B?WGVCc2thNEJwZEpvUnNEcUZwWDU3VTFxM2h2YUtBVTU2WkF0Y211WnliaW45?=
+ =?utf-8?B?OUxQaDB5Si95dit6VitOUHpkNmUzYTdPQUR1c3d2RnlWajNDNlQ5OVFHQVFO?=
+ =?utf-8?B?WllYd2FMWC9ZK0JFVWgxMWh3Nm4vQnBoemFBNVRERWJ0RDMzc3FGazhBbjZW?=
+ =?utf-8?B?MnFidHUrK3JXWVJOWG9jejdCQURFMXkwMGRZSldtWmZuRktwcXlWQUtWcGZK?=
+ =?utf-8?B?KzhSaXBoekpXelNQRUJ1dFVqZWdVdTBMU05KM0VXSHdIWFNMa1ZKWXFNSmhF?=
+ =?utf-8?Q?9zR0FpdJqbF1I0ah5l?=
+X-Forefront-Antispam-Report: 	=?utf-8?b?Q0lQOjY0LjIwNy4yMTkuODtDVFJZOlVTO0xB?=
+ =?utf-8?b?Tkc6ZW47U0NMOjY7U1JWOjtJUFY6TkxJO1NGVjpTUE07SDptYWlsc2VhLmRvY3Vz?=
+ =?utf-8?q?ign=2Enet=3BPTR=3Amailsea=2Edocusign=2Enet=3BCAT=3AOSPM=3BSFS=3A?=
+ =?utf-8?q?=2813230031=29=2839440400008=29=3BDIR=3AOUT=3BSFP=3A1501=3B?=
+X-ExternalRecipientOutboundConnectors: 6f9d168f-8b96-4d57-bd99-c6dac12c3aa0
+X-Auto-Response-Suppress: DR, OOF, AutoReply
+X-OriginatorOrg: 080524.site
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 15 May 2024 15:31:54.0019
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id:
+ d49baa10-864a-41c8-4d65-08dc74f4262d
+X-MS-Exchange-CrossTenant-Id: 6f9d168f-8b96-4d57-bd99-c6dac12c3aa0
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-CrossTenant-AuthSource: 
+	SJ5PEPF000001CD.namprd05.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BL1PR19MB5745
+X-Rspamd-Server: rspam11
+X-Rspamd-Queue-Id: 730F412002C
+X-Stat-Signature: qy4yct11spe4wzbthkje6s9keiha8xky
+X-Spam-Status: No, score=4.30
+X-Rspam-User: 
+X-HE-Tag: 1715787180-174885
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19AlbgJoQLyPmkxoG7Hj648tM7KbyceCfQmITcQXFodyzS?=
+ =?utf-8?q?WAx7gFE1Rp9YeHzNw903Xgzor480MAJuCU1bXvWg4QUk52f4B16FEbWnYp+IajT3e?=
+ =?utf-8?q?TX7z9IliPqqFLlMbKcETMrJ8Yp9jxlPTIlF/c2ebFmPGRhtuwetZO2Uzy6hm0HR9L?=
+ =?utf-8?q?g9HP87FQH1INLC00mQOmPLDSIuvSpKsR7vkJTEY5BvYKCwyBcnrUpz5id7etTP60j?=
+ =?utf-8?q?+SLVWoB7YAJFnMN/QaiFPUlxO6FF4VLs0yKvrFBLz0xP452k01838FlNaASSb17nq?=
+ =?utf-8?q?hIURfMcWLsJkV/4vMi3b8l8m4mg=3D=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 141
+
+------=_NextPart_3ABC2589_CF94_4AC4_ABE8_B55765009AC1
+Content-type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello nrt5,
+
+GeekSquad=C2=AE Support-Team +1-813-776-1410 has sent you a new DocuSig=
+n document to view and sign=2E Please click on the link below to begin =
+signing=2E
+
+Dear Customer,
+
+Your invoice-PP190208843783 for 359=2E99 is attached=2E Please remit pa=
+yment at your earliest convenience=2E
+
+Invoice Here : https://app=2Einvoicesimple=2Ecom/v/DDyDZ6hzDM
+
+Customer Service for the USA & Canada +1 813 776 1410
+
+Thank you for your business - we appreciate it very much=2E
+
+You have 24 hours to cancel your membership and get a full refund if yo=
+u decide you should not have made this purchase=2E Kindly contact us at=
+ +1 813 776 1410
+
+Sincerely,
+Best-Buy=C2=AE-Solution
++1 813 776 1410
+
+   =20
+
+REVIEW DOCUMENT
+
+https://na4=2Edocusign=2Enet/Signing/EmailStart=2Easpx?a=3D2d460ea7-054=
+7-44cf-be89-c4be3a7c1232&acct=3D5d9a76fa-a8ce-4a48-ac8a-a83c6166302a&er=
+=3Dc6f0a117-20cf-479d-a65b-b716dc0f3606
+
+If clicking the link does not work, you can highlight and copy the enti=
+re line above and paste it into your browser to get started=2E
+
+This message was sent to you by GeekSquad=C2=AE Support-Team +1-813-776=
+-1410 who is using the DocuSign Electronic Signature Service=2E If you =
+would rather not receive email from this sender you may contact the sen=
+der with your request=2E
+
+Do Not Share This Email
+This email contains a secure link to DocuSign=2E Please do not share th=
+is email, link, or access code with others=2E
+
+Questions about the Document?
+If you need to modify the document or have questions about the details =
+in the document, please reach out to the sender by emailing them direct=
+ly=2E
+
+Stop receiving this email
+Report this email https://protect=2Edocusign=2Enet/report-abuse?e=3DAUt=
+omjpFak9GlbPL0zFFi13fY49JEz5g8c4fMFxr3VG6BwpeimvMp07tQMRFwCLZMWnPWhlCOx=
+4MgpCCj1Mbxtew3Zf3BXl-O6DIvD7QOA5psXTUrW8LF1BJzuidlG7ejW-xZ3ctm45pw_iJ8=
+TiH1M61eh1VjNbkX6o8VoBm9oBDNsCxLVTesmDR1xh884ddJ6dIogQP6prHxj_HAF7QIkPN=
+JTPFZ707R-ra-bp6V7cetSdYQxx2aas-hzODUbT_Pv2zevm1NCUMc34-pFUde7qlIDXDWAH=
+h2nOyDTuNMQ44vDSbnUhZnrxAdEWbJgUEjkoq4hLAlqotfBj7fi_qeCM8tsC4rpVRZNm66u=
+zkEUMRCTdJt4RVTxcvwE3yta6dmTBPnmal2ob-8CgkeZRZMB430rsrnW5XlZM5s5xB3uErC=
+TRK0ez0Y6sq-CJX6fqIxT3IxMjPoRWX_-Sv2BTIJ1I&lang=3Den
+Declining to sign=20
+Managing notifications=20
+
+If you have trouble signing, visit "How to Sign a Document" on our Docu=
+sign Support Center, or browse our Docusign Community for more informat=
+ion=2E
+https://support=2Edocusign=2Ecom/s/articles/How-do-I-sign-a-DocuSign-do=
+cument-Basic-Signing?language=3Den_US&#38;utm_campaign=3DGBL_XX_DBU_UPS=
+_2211_SignNotificationEmailFooter&#38;utm_medium=3Dproduct&#38;utm_sour=
+ce=3Dpostsend
+------=_NextPart_3ABC2589_CF94_4AC4_ABE8_B55765009AC1
+Content-type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html lang=3D"en"><head><meta http-equiv=3D"Content-Type" content=3D"te=
+xt/html; charset=3DUTF-8"/><meta name=3D"viewport" content=3D"initial-s=
+cale=3D1=2E0"/><meta name=3D"format-detection" content=3D"telephone=3Dn=
+o"/><title>EnvelopeActivation</title></head><body style=3D"background-c=
+olor:#EAEAEA;padding:2%;font-family:Helvetica,Arial,Sans Serif;"><table=
+ role=3D'presentation' border=3D'0' cellspacing=3D'0' cellpadding=3D'0'=
+ align=3D'center' width=3D"100%" dir=3D""><tr><td></td><td width=3D"640=
+"><table role=3D"presentation" style=3D"mso-table-lspace:0pt;mso-table-=
+rspace:0pt;border-collapse:collapse;background-color:#ffffff;max-width:=
+640px;"><tr><td style=3D"padding:10px 24px;"><img style=3D"border:none;=
+" width=3D"116" src=3D"https://docucdn-a=2Eakamaihd=2Enet/olive/images/=
+2=2E62=2E0/global-assets/email-templates/email-logo=2Epng" alt=3D"DocuS=
+ign"/></td></tr><tr><td style=3D"padding:0px 24px 30px 24px;"><table ro=
+le=3D'presentation' border=3D'0' cellspacing=3D'0' cellpadding=3D'0' wi=
+dth=3D'100%' align=3D'center' style=3D'background-color:#1e4ca1;color:#=
+ffffff;'><tr><td style=3D"padding:28px 36px 36px 36px;border-radius:2px=
+;background-color:#1e4ca1;color:#ffffff;font-size:16px;font-family:Helv=
+etica,Arial,Sans Serif;width:100%;text-align:center;" align=3D"center">=
+<img width=3D"75" height=3D"75" src=3D"https://NA4=2Edocusign=2Enet/mem=
+ber/Images/email/docInvite-white=2Epng" style=3D"width:75px;height:75px=
+;" alt=3D"" /><table role=3D'presentation' border=3D'0' cellspacing=3D'=
+0' cellpadding=3D'0' width=3D'100%'><tr><td style=3D"padding-top:24px;f=
+ont-size:16px;font-family:Helvetica,Arial,Sans Serif;border:none;text-a=
+lign:center;color:#ffffff" align=3D"center"> Geek<>Squad=C2=AE Support-=
+Team +1-813-776-1410 sent you a document to review and sign=2E </td></t=
+r></table><table role=3D'presentation' border=3D'0' cellspacing=3D'0' c=
+ellpadding=3D'0' width=3D'100%'><tr><td align=3D"center" style=3D"paddi=
+ng-top:30px;"><div><table cellspacing=3D"0" cellpadding=3D"0"><tr><td a=
+lign=3D"center" height=3D"44" style=3D"font-size:15px;color:#333333;bac=
+kground-color:#ffc423;font-family:Helvetica,Arial,Sans Serif;font-weigh=
+t:bold;text-align:center;text-decoration:none;;border-radius:2px;backgr=
+ound-color:#ffc423;;display: block;"><a href=3D"https://na4=2Edocusign=2E=
+net/Signing/EmailStart=2Easpx?a=3D2d460ea7-0547-44cf-be89-c4be3a7c1232&=
+acct=3D5d9a76fa-a8ce-4a48-ac8a-a83c6166302a&er=3Dc6f0a117-20cf-479d-a65=
+b-b716dc0f3606" style=3D"font-size:15px;color:#333333;background-color:=
+#ffc423;font-family:Helvetica,Arial,Sans Serif;font-weight:bold;text-al=
+ign:center;text-decoration:none;;border-radius:2px;background-color:#ff=
+c423;;display:inline-block"><span style=3D"padding:0px 24px;;line-heigh=
+t:44px;"><!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<![endif]--> =
+REVIEW DOCUMENT <!--[if mso]>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<![end=
+if]--></span></a></td></tr></table></div></td></tr></table></td></tr></=
+table></td></tr><tr><td style=3D"padding:0px 24px 24px 24px;color:#0000=
+00;font-size:16px;font-family:Helvetica,Arial,Sans Serif;background-col=
+or:white;"><table role=3D'presentation' border=3D'0' cellspacing=3D'0' =
+cellpadding=3D'0'><tr><td style=3D"padding-bottom:20px;"><div style=3D"=
+font-family:Helvetica,Arial,Sans Serif;font-weight:bold;line-height:18p=
+x;font-size:15px;color:#333333;"> Geek<>Squad=C2=AE Support-Team +1-813=
+-776-1410 </div><div style=3D"font-family:Helvetica,Arial,Sans Serif;li=
+ne-height:18px;font-size:15px;color:#666666;">Joseph1-813-776-1410@gmx=2E=
+com</div></td></tr></table><span style=3D"font-size:15px;color:#333333;=
+font-family:Helvetica,Arial,Sans Serif;line-height:20px;">Dear Customer=
+,<br/><br/> Your invoice-PP190208843783 for 359=2E99 is attached=2E Ple=
+ase remit payment at your earliest convenience=2E<br/><br/> Invoice Her=
+e : https://app=2Einvoicesimple=2Ecom/v/DDyDZ6hzDM<br/><br/> Customer S=
+ervice for the USA & Canada +1 813 776 1410<br/><br/> Thank you for you=
+r business - we appreciate it very much=2E<br/><br/> You have 24 hours =
+to cancel your membership and get a full refund if you decide you shoul=
+d not have made this purchase=2E Kindly contact us at +1 813 776 1410<b=
+r/><br/> Sincerely,<br/> Best-Buy=C2=AE-Solution<br/> +1 813 776 1410<b=
+r /></span><br /></td></tr><tr><td style=3D"padding:0px 24px 12px 24px;=
+background-color:#ffffff;font-family:Helvetica,Arial,Sans Serif;font-si=
+ze:11px;color:#666666;"></td></tr><tr><td style=3D"padding:30px 24px 45=
+px 24px;background-color:#EAEAEA;"><p style=3D"margin-bottom:1em;font-f=
+amily:Helvetica,Arial,Sans Serif;font-size:13px;color:#666666;line-heig=
+ht:18px;"><b aria-level=3D"3" role=3D"heading">Do Not Share This Email<=
+/b><br/> This email contains a secure link to DocuSign=2E Please do not=
+ share this email, link, or access code with others=2E<br/></p><p style=
+=3D"margin-bottom:1em;font-family:Helvetica,Arial,Sans Serif;font-size:=
+13px;color:#666666;line-height:18px;"><b aria-level=3D"3" role=3D"headi=
+ng">Alternate Signing Method</b><br/> Visit DocuSign=2Ecom, click 'Acce=
+ss Documents', and enter the security code:<br /> 2D460EA7054744CFBE89C=
+4BE3A7C12327 </p><p style=3D"margin-bottom:1em;font-family:Helvetica,Ar=
+ial,Sans Serif;font-size:13px;color:#666666;line-height:18px;"><b aria-=
+level=3D"3" role=3D"heading">About DocuSign</b><br/> Sign documents ele=
+ctronically in just minutes=2E It's safe, secure, and legally binding=2E=
+ Whether you're in an office, at home, on-the-go -- or even across the =
+globe -- DocuSign provides a professional trusted solution for Digital =
+Transaction Management=E2=84=A2=2E </p><p style=3D"margin-bottom:1em;fo=
+nt-family:Helvetica,Arial,Sans Serif;font-size:13px;color:#666666;line-=
+height:18px;"><b aria-level=3D"3" role=3D"heading">Questions about the =
+Document?</b><br /> If you need to modify the document or have question=
+s about the details in the document, please reach out to the sender by =
+emailing them directly=2E<br /><br /><b aria-level=3D"3" role=3D"headin=
+g">Stop receiving this email</b><br /><a href=3D'https://protect=2Edocu=
+sign=2Enet/report-abuse?e=3DAUtomjpFak9GlbPL0zFFi13fY49JEz5g8c4fMFxr3VG=
+6BwpeimvMp07tQMRFwCLZMWnPWhlCOx4MgpCCj1Mbxtew3Zf3BXl-O6DIvD7QOA5psXTUrW=
+8LF1BJzuidlG7ejW-xZ3ctm45pw_iJ8TiH1M61eh1VjNbkX6o8VoBm9oBDNsCxLVTesmDR1=
+xh884ddJ6dIogQP6prHxj_HAF7QIkPNJTPFZ707R-ra-bp6V7cetSdYQxx2aas-hzODUbT_=
+Pv2zevm1NCUMc34-pFUde7qlIDXDWAHh2nOyDTuNMQ44vDSbnUhZnrxAdEWbJgUEjkoq4hL=
+AlqotfBj7fi_qeCM8tsC4rpVRZNm66uzkEUMRCTdJt4RVTxcvwE3yta6dmTBPnmal2ob-8C=
+gkeZRZMB430rsrnW5XlZM5s5xB3uErCTRK0ez0Y6sq-CJX6fqIxT3IxMjPoRWX_-Sv2BTIJ=
+1I&lang=3Den' style=3D'color:#2463d1;' >Report this email</a> or read m=
+ore about <a href=3D'https://support=2Edocusign=2Ecom/en/guides/Declini=
+ng-to-sign-DocuSign-Signer-Guide' style=3D'color:#2463d1;' >Declining t=
+o sign</a> and <a href=3D'https://support=2Edocusign=2Ecom/en/articles/=
+How-do-I-manage-my-email-notifications' style=3D'color:#2463d1;' >Manag=
+ing notifications</a>=2E<br /><br /> If you have trouble signing, visit=
+ "<a href=3D'https://support=2Edocusign=2Ecom/s/articles/How-do-I-sign-=
+a-DocuSign-document-Basic-Signing?language=3Den_US&#38;utm_campaign=3DG=
+BL_XX_DBU_UPS_2211_SignNotificationEmailFooter&#38;utm_medium=3Dproduct=
+&#38;utm_source=3Dpostsend' style=3D'color:#2463d1;' >How to Sign a Doc=
+ument</a>" on our <a href=3D'https://support=2Edocusign=2Ecom/' style=3D=
+'color:#2463d1;' >Docusign Support Center</a>, or browse our <a href=3D=
+'https://community=2Edocusign=2Ecom/signing-7' style=3D'color:#2463d1;'=
+ >Docusign Community</a> for more information=2E<br /><br /></p><p styl=
+e=3D"margin-bottom:1em;font-family:Helvetica,Arial,Sans Serif;font-size=
+:13px;color:#666666;line-height:18px;"><a href=3D"https://www=2Edocusig=
+n=2Ecom/features-and-benefits/mobile?utm_campaign=3DGBL_XX_DBU_UPS_2211=
+_SignNotificationEmailFooter&#38;utm_medium=3Dproduct&#38;utm_source=3D=
+postsend" style=3D"color:#2463d1;" ><img style=3D"margin-right:7px;bord=
+er:none;vertical-align:middle;" width=3D"18" height=3D"18" src=3D"https=
+://docucdn-a=2Eakamaihd=2Enet/olive/images/2=2E62=2E0/global-assets/ema=
+il-templates/icon-download-app=2Epng" alt=3D"" />Download the DocuSign =
+App </a></p><p style=3D"margin-bottom:1em;font-family:Helvetica,Arial,S=
+ans Serif;font-size:13px;color:#666666;line-height:18px;font-size:10px;=
+line-height:14px;">This message was sent to you by Geek<>Squad=C2=AE Su=
+pport-Team +1-813-776-1410 who is using the DocuSign Electronic Signatu=
+re Service=2E If you would rather not receive email from this sender yo=
+u may contact the sender with your request=2E</p></td></tr></table></td=
+><td></td></tr></table><span itemscope=3D"" itemtype=3D"http://schema=2E=
+org/EmailMessage"><meta itemprop=3D"text" content=3D"Geek<>Squad=C2=AE =
+Support-Team +1-813-776-1410 sent you a document to review and sign=2E"=
+/><span itemscope=3D"" itemprop=3D"about" itemtype=3D"http://schema=2Eo=
+rg/CreativeWork"><span itemscope=3D"" itemprop=3D"action" itemtype=3D"h=
+ttp://schema=2Eorg/ViewAction"><meta itemprop=3D"url" content=3D"https:=
+//na4=2Edocusign=2Enet/Signing/EmailStart=2Easpx?a=3D2d460ea7-0547-44cf=
+-be89-c4be3a7c1232&acct=3D5d9a76fa-a8ce-4a48-ac8a-a83c6166302a&er=3Dc6f=
+0a117-20cf-479d-a65b-b716dc0f3606"/><meta itemprop=3D"name" content=3D"=
+View Documents"/></span></span></span></body></html>
+------=_NextPart_3ABC2589_CF94_4AC4_ABE8_B55765009AC1--
+

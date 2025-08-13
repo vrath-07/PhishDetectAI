@@ -1,0 +1,16 @@
+{
+    "timestamp": "2025-08-01T04:24:53.580557",
+    "header_anomalies": [
+        "Return-Path mismatch with From",
+        "Reply-To differs from From (may be phishing)"
+    ],
+    "url_analysis": [
+        {
+            "url": "http://phishy-site.com/login",
+            "risk_level": "Medium",
+            "risk_score": 1,
+            "virustotal": "0 malicious, 0 suspicious, 66 harmless",
+            "openphish_flag": false
+        }
+    ]
+}

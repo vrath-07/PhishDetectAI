@@ -1,0 +1,581 @@
+Return-Path: no_reply@wetransfer.com
+Delivered-To: jose@monkey.org
+X-FDA: 80223242904.52.8861AF5
+Received: from vm4081348.1nvme.had.wf (vm4081348.1nvme.had.wf
+ [45.147.197.125])	by imf23.b.hostedemail.com (Postfix) with ESMTP id
+ 51BFF100359AC	for <jose@monkey.org>; Fri,  9 Dec 2022 16:05:31 +0000 (UTC)
+Received: from vm4081348.1nvme.had.wf (localhost [127.0.0.1])
+	by vm4081348.1nvme.had.wf (Postfix) with ESMTP id C3A4645CAEF
+	for <jose@monkey.org>; Fri,  9 Dec 2022 17:55:00 +0200 (EET)
+From: WeTransfer <no_reply@wetransfer.com>
+To: jose@monkey.org
+Subject: Jeanette.rodriguez@mcft.com sent you Product Sample and
+ Specifications.pdf via WeTransfer
+Date: 9 Dec 2022 15:54:58 +0000
+Message-ID: <20221209155458.84FC8E0307D61165@wetransfer.com>
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	boundary="----=_NextPart_000_0012_C421331F.EF2D0F55"
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1670601931; a=rsa-sha256;
+	cv=none;
+	b=gBcuyXhIoNOsqtPGGnc71dtrzyuRChKAT+nGGw4RZjzOiizYGxGW/1y/JXUo0L5rvH8ow1
+	8NUUwHK+O3H2obbAr7AK9RT18fYI2HgxOK8lcIBou3aX1bNLB2b70llJzP+rgycacgJnYm
+	IIcTUTWP9Wjhd5meWHliTtn70cnX82A=
+ARC-Authentication-Results: i=1;	imf23.b.hostedemail.com;	dkim=none;	spf=none
+ (imf23.b.hostedemail.com: domain of no_reply@wetransfer.com has no SPF policy
+ when checking 45.147.197.125) smtp.mailfrom=no_reply@wetransfer.com;
+	dmarc=fail reason="No valid SPF, No valid DKIM" header.from=wetransfer.com
+ (policy=reject)
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1670601931;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	 references;
+ bh=NckeTBMVQwnLDO4SY73ZEP7NiewLPHj6eCUgQMqB65U=;
+	b=F7GpK2u1OdpkvogIDVOE9ktLPTnu0IR5KgQc3NWA3eyAit/XRCrzqW5RfLmCCtAfebsBvu
+	TR1hGpJG5YyZSezdS8ujMjbxJQ9KZT1xiB9wBTrfAzinCj9GB+7/A77khfEY9e2Vjl6XUP
+	GfsH2fTahW0dDRVYrLKj5V1cCmdLuVE=
+X-Spam-Status: Yes, score=6.11
+X-Rspamd-Server: rspam01
+X-Rspamd-Queue-Id: 51BFF100359AC
+X-Rspamd-Pre-Result: action=add header;
+	module=dmarc;
+	Action set by DMARC
+X-Rspam-User: 
+X-Stat-Signature: 5ec59xhe9dudhcwh6u9f4p5rrgrugesw
+Authentication-Results: imf23.b.hostedemail.com;	dkim=none;	spf=none
+ (imf23.b.hostedemail.com: domain of no_reply@wetransfer.com has no SPF policy
+ when checking 45.147.197.125) smtp.mailfrom=no_reply@wetransfer.com;
+	dmarc=fail reason="No valid SPF, No valid DKIM" header.from=wetransfer.com
+ (policy=reject)
+X-Rspam: Yes
+X-HE-Tag: 1670601931-451752
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+YzS52jGsvsWIDdvHW722a/CnIERNWqCb9cO+++jpq+IZ?=
+ =?utf-8?q?7PnqJmqI+f5xYsU855YHqNMSTJdNgA/dG17hCJVszozCIfLKVT2Soy1eDOiSbPU24?=
+ =?utf-8?q?00lgBsITmhMphr4/Mkr70oOVGQeyV1WBvAPETvPMIDcJUNJRbdmfEIydWRI4n4mmn?=
+ =?utf-8?q?HPgg+i+xk2vXfbsIocg3iKxNMqp0ounqJNvEn5NvhcKVMJUzyBt+NMmohkbglTmtF?=
+ =?utf-8?q?81TUGp6Q8B3tQYWkcQD8khKXrJHQlmeAohyPHD4SRSLri9EyQSLBWWkcKJORAIPUr?=
+ =?utf-8?q?BBHOgTqPeQDfOqkuy1GBjNIggr9fgffAK12lNjZYJesCgsLEnCdwY0z4yR6Dx9X9B?=
+ =?utf-8?q?Eup2+MOkeiV25RtzX6SaNk4GTupL5qxhFDGADuf+MB6uZ5SQDLazdqgbFoC8Q67HO?=
+ =?utf-8?q?bxi35t+k3oHj+Q1cUUNU5Qnh1AHyt7RBiMHgc/sfndVzX7FnCtGjPQcegxfj2sUNz?=
+ =?utf-8?q?yrZbJsRg/CaemPTsdO/0EM9WiFd+meS0xSgJ5yH+v3szcgvG+Kig7RAaoZY/JE1bs?=
+ =?utf-8?q?LjivU7abzIrLAZ0F5aT4VWUuuF+yckXLUYpzf7R3Ge3JAz91opCNq9hdmjpP6iToH?=
+ =?utf-8?q?vQ5CDqlScY4V29f2mrhRlhX9WAQqjgNjCG6Ia0CP8f5GlyJLrbr+uTDwzJ2KvaOR4?=
+ =?utf-8?q?Zicvd+dNDqp3D8CIMzmpT6VbeL+z6IwEIPQcFJOy0qNtzcuSZifomkDKnPX+2xbu+?=
+ =?utf-8?q?1oy6SZXkpZqabyadx/6V6zg97woih5mzXCBTYIhxqlKwiQp/Lqq+I5VENohZ2FKYi?=
+ =?utf-8?q?DZ6rc/nnznHlFrZmBzoTge/cmqsTSeRAb8vuabDxeNcbPqUIxe3CljdjWEBE83alX?=
+ =?utf-8?q?O1tEyzUXly/DPgPsrKg/A/u9nDt4mlg+jz5NOVrA7pixYMG3EqL7qn2n7AayMfeC6?=
+ =?utf-8?q?ZlHbilqkdiKqMLjhLW+er+_qD7Zm1QmzgHnXp0qK53uzYRWlfYjE5SlwUeq2SP9MX?=
+ =?utf-8?q?1Z53PCkxnXCrMyYJxoOTMjuBELOlJGYVy38eeYI1llR2XylndmeAM8UeO7PC+0KCX?=
+ =?utf-8?q?07u8GqEPc0gfM52wsQQDuEu4NOi+Qmpodn2dJCkLWz2ORpQLKUgnmC2CtpR/PVd40?=
+ =?utf-8?q?oAl+NQUoxZLLaEAb0B8IWwBjCUBBMr1Wz+mDhQieFAUeDVL1OidXiZAdP0kC5aTw7?=
+ =?utf-8?q?jhdkdzPsOSQtsIkRqrhbtmWljBF3RALzJ5cnN858id7OYI1nZZJ84P3wLv0tFJWMf?=
+ =?utf-8?q?6C+WQAU0fsN/65helaudZElZpKZ8ZgPsO5wMWGSngccCWyAZ7VlrhduP0S8xZTR9a?=
+ =?utf-8?q?ZANCe4/ZnzeMGdAY64TUqzfXRORK183kcOjyh3KMblm8VzTZEi6SwoTCY+/N2VMPU?=
+ =?utf-8?q?2k15p0+uSLa2dWHtnnc72hu95XVCWe5bPecNfYQ9LQY1IUMw3OfxJAhUgQBfBcrjO?=
+ =?utf-8?q?pac7jMO75/M4XjwpqJzNTPQD2h10M0WwQc2eJzYzx/595SJJxa6ZiyrQfT+GfonY4?=
+ =?utf-8?q?u3Hs5efdTkk5YqFP9jYYQ+c+WHtJ3LlTYE+jBUVM4M8Kepe6zibN2bDTsTyvosJU5?=
+ =?utf-8?q?G1gQNEYaJD619xCmY5+XD+S7wU7KtrsPKiSHJchszgZTaLnhNC?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 236
+
+
+------=_NextPart_000_0012_C421331F.EF2D0F55
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_001_0013_C421331F.EF2D0F55"
+
+
+------=_NextPart_001_0013_C421331F.EF2D0F55
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+test
+------=_NextPart_001_0013_C421331F.EF2D0F55
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<table style=3D"margin: 0pt; padding: 0pt; width: 0pt; font-size: 0pt; disp=
+lay: none; border-collapse: collapse; table-layout: fixed; max-height: 0pt;=
+ border-spacing: 0pt;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"margin: 0pt; padding: 0pt; width=
+: 0pt; font-size: 0pt; display: none; max-height: 0pt;"> This <span class=
+=3D"il">transfer</span>
+expires on 2022-08-25 <br>
+</td>
+</tr>
+</tbody>
+</table>
+<table style=3D"margin: 0pt; padding: 0pt; width: 100%; border-collapse: co=
+llapse; table-layout: fixed; border-spacing: 0pt;" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"margin: 0pt; padding: 55px 0pt 0=
+pt; width: 100%;">
+<table style=3D"margin: 0pt; padding: 0pt; width: 100%; border-collapse: co=
+llapse; table-layout: fixed; border-spacing: 0pt;" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"margin: 0pt; padding: 0pt; width=
+: 100%; font-size: 10px;" bgcolor=3D"#409fff">
+<center>
+<table align=3D"center" style=3D"margin: 0pt auto; padding: 0pt; width: aut=
+o; border-collapse: collapse; table-layout: fixed; border-spacing: 0pt;" bo=
+rder=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td height=3D"16" align=3D"left" valign=3D"top" style=3D"margin: 0pt; paddi=
+ng: 0pt; width: 100%; height: 16px;"><br>
+</td>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"margin: 0pt; padding: 0pt; width=
+: 100%;">
+ <a href=3D"https://wetransfer.com/?utm_campaign=3DWT_email_tracking&amp;ut=
+m_content=3Dgeneral&amp;utm_medium=3Dlogo&amp;utm_source=3Dnotify_recipient=
+_email" target=3D"_blank" data-saferedirecturl=3D"https://www.google.com/ur=
+l?q=3Dhttps://wetransfer.com/?utm_campaign%3DWT_email_tracking%26utm_conten=
+t%3Dgeneral%26utm_medium%3Dlogo%26utm_source%3Dnotify_recipient_email&amp;s=
+ource=3Dgmail&amp;ust=3D1663427697195000&amp;usg=3DAOvVaw3qkIA-Bgc7O_r5-b_e=
+kAIy">
+<img width=3D"56" align=3D"middle" class=3D"CToWUd" style=3D"margin: 0pt; p=
+adding: 0pt; border: currentColor; border-image: none; width: 56px; height:=
+ auto; line-height: 100%; text-decoration: none; display: block;" alt=3D"Cl=
+ick 'Download images' to view images" src=3D"cid:23ca347f13e88c6f92cc4f4614=
+9efc23.png" border=3D"0" data-bit=3D"iit"> </a>
+</td>
+</tr>
+<tr>
+<td height=3D"11" align=3D"left" valign=3D"top" style=3D"margin: 0pt; paddi=
+ng: 0pt; width: 100%; height: 11px;"><br>
+</td>
+</tr>
+</tbody>
+</table>
+</center>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table style=3D"margin: 0pt; padding: 0pt; width: 100%; border-collapse: co=
+llapse; table-layout: fixed; border-spacing: 0pt;" bgcolor=3D"#ffffff" bord=
+er=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"margin: 0pt; padding: 0pt; width=
+: 100%;">
+<table style=3D"margin: 0pt; padding: 0pt; width: 100%; border-collapse: co=
+llapse; table-layout: fixed; border-spacing: 0pt;" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"margin: 0pt; padding: 0pt; width=
+: 100%;">
+<table style=3D"margin: 0pt; padding: 0pt; width: 100%; border-collapse: co=
+llapse; table-layout: fixed; border-spacing: 0pt;" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top" style=3D'margin: 0pt; padding: 60px 80p=
+x 0pt; width: 100%; color: rgb(23, 24, 26); line-height: 30px; font-family:=
+ "FreightSans Pro","Segoe UI","SanFrancisco Display",Arial,sans-serif; font=
+-size: 26px; font-style: normal; font-weight: normal; word-spacing: 0pt;'>
+<a style=3D"color: rgb(23, 24, 26); font-weight: normal; text-decoration: n=
+one;" href=3D"mailto:info@jifcouae.com" target=3D"_blank"><span style=3D"co=
+lor: rgb(64, 159, 255); font-weight: normal; text-decoration: none;">jeanet=
+te.rodriguez@mcft.com</span></a>
+<br>
+<span>
+sent you Product Sample and Specifications.pdf
+</span></td>
+</tr>
+<tr>
+<td align=3D"center" valign=3D"top" style=3D'margin: 0pt; padding: 20px 80p=
+x 0pt; width: 100%; color: rgb(106, 109, 112); line-height: 23px; font-fami=
+ly: "Fakt Pro","Segoe UI","SanFrancisco Display",Arial,sans-serif; font-siz=
+e: 14px; font-style: normal; font-weight: normal; word-spacing: 0pt;'>&nbsp=
+;
+5 items, 200 MB in total
+&#12539; Expires on&nbsp;15 December, 2022
+</td>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D'margin: 0pt; padding: 50px 80px =
+0pt; width: 100%; color: rgb(121, 124, 127); line-height: 24px; font-family=
+: "Fakt Pro","Segoe UI","SanFrancisco Display",Arial,sans-serif; font-size:=
+ 14px; font-style: normal; font-weight: normal; word-spacing: 0pt;'>
+<p style=3D"padding: 20px; color: rgb(23, 24, 26); background-color: rgb(25=
+0, 250, 250);"><strong>Product Sample and Specifications</strong>.<br>
+<br>
+Kindly find attached product sample, product order and company
+specifications<br>
+<br>
+Thanks &amp; Regards,
+<b><span lang=3D"EN-GB" style=3D"color: rgb(0, 32, 96);"></span></b><br>
+Ms. Jeanette Rodriguez<br>
+MCFT Trading LLC</p>
+<br>
+</td>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"margin: 0pt; padding: 40px 160px=
+; width: 100%;">
+<table style=3D"margin: 0pt; padding: 0pt; width: 100%; border-collapse: co=
+llapse; table-layout: fixed; border-spacing: 0pt;" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"margin: 0pt; padding: 0pt; width=
+: 100%;">
+ <a style=3D'padding: 15px 20px; text-align: center; color: rgb(255, 255, 2=
+55); font-family: "Fakt Pro Medium","Segoe UI","SanFrancisco Display",Arial=
+,sans-serif; font-size: 14px; font-style: normal; text-decoration: none; wo=
+rd-spacing: 0pt; display: block; background-color: rgb(64, 159, 255);' href=
+=3D"https://link.gmgb4.net/x/d?c=3D27562421&amp;l=3D5814f1de-f7e5-438c-b080=
+-5fa1c1c5ce86&amp;r=3D90d60fd3-10cf-4a10-9022-00fc37f5e200#jose@monkey.org&=
+amp;10P33-994K" target=3D"_blank"=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://wetransfer.c=
+om/downloads/2ddd705c3f9194e81aad04deb30acee820220818123211/d4c5b6a979dc7e8=
+42a4fffbb31f076cf20220818123235/46fe24?utm_campaign%3DWT_email_tracking%26u=
+tm_content%3Dgeneral%26utm_medium%3Ddownload_button%26utm_source%3Dnotify_r=
+ecipient_email&amp;source=3Dgmail&amp;ust=3D1663427697195000&amp;usg=3DAOvV=
+aw2eVTZPLSUVWUuLm0ofFhxI">
+<span> Get your files </span>
+</a> </td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"margin: 0pt; padding: 40px 80px =
+0pt; width: 100%;">
+<table style=3D"margin: 0pt; padding: 0pt; width: 100%; border-collapse: co=
+llapse; table-layout: fixed; border-spacing: 0pt;" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"margin: 0pt; padding: 0pt; width=
+: 100%; line-height: 0pt; font-size: 1px; border-bottom-color: rgb(244, 244=
+, 244); border-bottom-width: 2px; border-bottom-style: solid;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D'margin: 0pt; padding: 50px 80px =
+0pt; width: 100%; color: rgb(121, 124, 127); line-height: 24px; font-family=
+: "Fakt Pro","Segoe UI","SanFrancisco Display",Arial,sans-serif; font-size:=
+ 14px; font-style: normal; font-weight: normal; word-spacing: 0pt;'>
+<span style=3D'color: rgb(23, 24, 26); font-family: "FreightSans Pro","Sego=
+e UI","SanFrancisco Display",Arial,sans-serif; font-size: 18px; font-weight=
+: 500;'>Download
+link
+</span><br>
+<a style=3D'color: rgb(23, 24, 26); font-family: "Fakt Pro Medium","Segoe U=
+I","SanFrancisco Display",Arial,sans-serif; font-weight: normal; text-decor=
+ation: underline;' href=3D"https://link.gmgb4.net/x/d?c=3D27562421&amp;l=3D=
+5814f1de-f7e5-438c-b080-5fa1c1c5ce86&amp;r=3D90d60fd3-10cf-4a10-9022-00fc37=
+f5e200#jose@monkey.org&amp;10P33-994K" target=3D"_blank"=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://wetransfer.c=
+om/downloads/2ddd705c3f9194e81aad04deb30acee820220818123211/d4c5b6a979dc7e8=
+42a4fffbb31f076cf20220818123235/46fe24&amp;source=3Dgmail&amp;ust=3D1663427=
+697195000&amp;usg=3DAOvVaw18NRerCecMJSBszbQgsKlh"><span style=3D"color: rgb=
+(64, 159, 255); font-weight: normal; text-decoration: underline;">https://<=
+span class=3D"il">wetransfer</span>.com/<wbr>downloads/<wbr>2ddd705c3f9194e=
+81aad04deb30ace<wbr>e820220818123211/<wbr>
+d4c5b6a979dc7e842a4fffbb31f076<wbr>cf20220818123235/46fe24</span>
+</a></td>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D'margin: 0pt; padding: 50px 80px =
+0pt; width: 100%; color: rgb(121, 124, 127); line-height: 24px; font-family=
+: "Fakt Pro","Segoe UI","SanFrancisco Display",Arial,sans-serif; font-size:=
+ 14px; font-style: normal; font-weight: normal; word-spacing: 0pt;'>&nbsp;<=
+span style=3D'color: rgb(23, 24, 26); font-family: "FreightSans Pro","Segoe=
+ UI","SanFrancisco Display",Arial,sans-serif; font-size: 18px; font-weight:=
+ 500;'>5
+items
+</span></td>
+</tr>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D'margin: 0pt; padding: 0pt 80px 5=
+0px; width: 100%; color: rgb(121, 124, 127); line-height: 24px; font-family=
+: "Fakt Pro","Segoe UI","SanFrancisco Display",Arial,sans-serif; font-size:=
+ 14px; font-style: normal; font-weight: normal; word-spacing: 0pt;'>
+<div style=3D"padding: 9px 0pt 7px; border-bottom-color: rgb(244, 244, 244)=
+; border-bottom-width: 1px; border-bottom-style: none;">
+<div style=3D'color: rgb(23, 24, 26); line-height: 16px; font-family: "Fakt=
+ Pro","Segoe UI","SanFrancisco Display",Arial,sans-serif; font-size: 14px; =
+font-style: normal; font-weight: normal; word-spacing: 0pt;'>Product
+Sample 1.pdf
+</div>
+<div style=3D"color: rgb(106, 109, 112); line-height: 16px; font-size: 12px=
+;">9
+MB<br>
+<div style=3D"padding: 9px 0pt 7px; border-bottom-color: rgb(244, 244, 244)=
+; border-bottom-width: 1px; border-bottom-style: none;">
+<div style=3D'color: rgb(23, 24, 26); line-height: 16px; font-family: "Fakt=
+ Pro","Segoe UI","SanFrancisco Display",Arial,sans-serif; font-size: 14px; =
+font-style: normal; font-weight: normal; word-spacing: 0pt;'>Product
+Sample 2.pdf
+</div>
+<div style=3D"color: rgb(106, 109, 112); line-height: 16px; font-size: 12px=
+;">8
+MB<br>
+<div style=3D"padding: 9px 0pt 7px; border-bottom-color: rgb(244, 244, 244)=
+; border-bottom-width: 1px; border-bottom-style: none;">
+<div style=3D'color: rgb(23, 24, 26); line-height: 16px; font-family: "Fakt=
+ Pro","Segoe UI","SanFrancisco Display",Arial,sans-serif; font-size: 14px; =
+font-style: normal; font-weight: normal; word-spacing: 0pt;'>Sample
+1 video.mp4
+</div>
+<div style=3D"color: rgb(106, 109, 112); line-height: 16px; font-size: 12px=
+;">33
+MB<br>
+<div style=3D"padding: 9px 0pt 7px; border-bottom-color: rgb(244, 244, 244)=
+; border-bottom-width: 1px; border-bottom-style: none;">
+<div style=3D'color: rgb(23, 24, 26); line-height: 16px; font-family: "Fakt=
+ Pro","Segoe UI","SanFrancisco Display",Arial,sans-serif; font-size: 14px; =
+font-style: normal; font-weight: normal; word-spacing: 0pt;'>Sample
+2 video.mp4
+</div>
+<div style=3D"color: rgb(106, 109, 112); line-height: 16px; font-size: 12px=
+;">109
+MB<br>
+<div style=3D"padding: 9px 0pt 7px; border-bottom-color: rgb(244, 244, 244)=
+; border-bottom-width: 1px; border-bottom-style: none;">
+<div style=3D'color: rgb(23, 24, 26); line-height: 16px; font-family: "Fakt=
+ Pro","Segoe UI","SanFrancisco Display",Arial,sans-serif; font-size: 14px; =
+font-style: normal; font-weight: normal; word-spacing: 0pt;'>Specifications=
+=2Epdf
+</div>
+<div style=3D"color: rgb(106, 109, 112); line-height: 16px; font-size: 12px=
+;">41
+MB<br>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table style=3D"margin: 0pt; padding: 0pt; width: 100%; border-collapse: co=
+llapse; table-layout: fixed; border-spacing: 0pt;" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"margin: 0pt; padding: 2px 0pt 0p=
+t; width: 100%;">
+<table style=3D"margin: 0pt; padding: 0pt; width: 100%; border-collapse: co=
+llapse; table-layout: fixed; border-spacing: 0pt;" bgcolor=3D"#ffffff" bord=
+er=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top" style=3D"margin: 0pt; padding: 0pt 20px; =
+width: 100%;">
+<table style=3D"margin: 0pt; padding: 0pt; width: 100%; border-collapse: co=
+llapse; table-layout: fixed; border-spacing: 0pt;" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top" style=3D'margin: 0pt; padding: 13px 0pt=
+; width: 100%; color: rgb(121, 124, 127); line-height: 24px; font-family: "=
+Fakt Pro","Segoe UI","SanFrancisco Display",Arial,sans-serif; font-size: 12=
+px; font-style: normal; font-weight: normal; word-spacing: 0pt;'>
+<p style=3D"margin: 0pt; padding: 0pt;">To
+make sure our emails arrive, please add <a style=3D"color: rgb(121, 124, 12=
+7); font-weight: normal; text-decoration: none !important;" href=3D"mailto:=
+noreply@wetransfer.com" target=3D"_blank"><span style=3D"color: rgb(121, 12=
+4, 127); font-weight: normal; text-decoration: none !important;">noreply@<s=
+pan class=3D"il">wetransfer</span>.com</span></a>
+ to <a style=3D"color: rgb(121, 124, 127); font-weight: normal; text-decora=
+tion: underline;" href=3D"https://wetransfer.zendesk.com/hc/en-us/articles/=
+204909429?utm_campaign=3DWT_email_tracking&amp;utm_source=3Dnotify_recipien=
+t_email&amp;utm_medium=3DAdd+Us+To+Your+Contacts+Link&amp;utm_content=3Dgen=
+eral" target=3D"_blank"=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://wetransfer.z=
+endesk.com/hc/en-us/articles/204909429?utm_campaign%3DWT_email_tracking%26u=
+tm_source%3Dnotify_recipient_email%26utm_medium%3DAdd%2BUs%2BTo%2BYour%2BCo=
+ntacts%2BLink%26utm_content%3Dgeneral&amp;source=3Dgmail&amp;ust=3D16634276=
+97195000&amp;usg=3DAOvVaw1LchyioAN09a-ojAAgcv5c">your
+contacts</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table style=3D"margin: 0pt; padding: 0pt; width: 100%; border-collapse: co=
+llapse; table-layout: fixed; border-spacing: 0pt;" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" valign=3D"top" style=3D'margin: 0pt; padding: 30px 20p=
+x; width: 100%; color: rgb(121, 124, 127); line-height: 23px; font-family: =
+"Fakt Pro","Segoe UI","SanFrancisco Display",Arial,sans-serif; font-size: 1=
+2px; font-style: normal; font-weight: normal; word-spacing: 0pt;'>
+ <a style=3D"color: rgb(121, 124, 127); font-weight: normal; text-decoratio=
+n: underline;" href=3D"https://wetransfer.com/about?utm_campaign=3DWT_email=
+_tracking&amp;utm_content=3Dgeneral&amp;utm_medium=3Dabout_link&amp;utm_sou=
+rce=3Dnotify_recipient_email" target=3D"_blank"=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://wetransfer.c=
+om/about?utm_campaign%3DWT_email_tracking%26utm_content%3Dgeneral%26utm_med=
+ium%3Dabout_link%26utm_source%3Dnotify_recipient_email&amp;source=3Dgmail&a=
+mp;ust=3D1663427697195000&amp;usg=3DAOvVaw2iw3YmQLffytG_616tbaFu">
+<span style=3D"color: rgb(121, 124, 127); font-weight: normal; text-decorat=
+ion: underline;">About
+<span class=3D"il">WeTransfer</span></span></a> <span style=3D"color: rgb(1=
+21, 124, 127);">&nbsp;&nbsp;&#12539;&nbsp;&nbsp;</span>
+ <a style=3D"color: rgb(121, 124, 127); font-weight: normal; text-decoratio=
+n: underline;" href=3D"https://wetransfer.zendesk.com/hc/en-us?utm_campaign=
+=3DWT_email_tracking&amp;utm_source=3Dnotify_recipient_email&amp;utm_medium=
+=3DFooter+Help+Link&amp;utm_content=3Dgeneral" target=3D"_blank"=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://wetransfer.z=
+endesk.com/hc/en-us?utm_campaign%3DWT_email_tracking%26utm_source%3Dnotify_=
+recipient_email%26utm_medium%3DFooter%2BHelp%2BLink%26utm_content%3Dgeneral=
+&amp;source=3Dgmail&amp;ust=3D1663427697195000&amp;usg=3DAOvVaw05sR2S7z3LLN=
+CS9PlhMHhK">
+<span style=3D"color: rgb(121, 124, 127); font-weight: normal; text-decorat=
+ion: underline;">Help</span></a>
+<span style=3D"color: rgb(121, 124, 127);">&nbsp;&nbsp;&#12539;&nbsp;&nbsp;=
+</span>
+<a style=3D"color: rgb(121, 124, 127); font-weight: normal; text-decoration=
+: underline;" href=3D"https://wetransfer.com/legal/terms?utm_campaign=3DWT_=
+email_tracking&amp;utm_content=3Dgeneral&amp;utm_medium=3Dlegal_link&amp;ut=
+m_source=3Dnotify_recipient_email" target=3D"_blank"=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://wetransfer.c=
+om/legal/terms?utm_campaign%3DWT_email_tracking%26utm_content%3Dgeneral%26u=
+tm_medium%3Dlegal_link%26utm_source%3Dnotify_recipient_email&amp;source=3Dg=
+mail&amp;ust=3D1663427697195000&amp;usg=3DAOvVaw1YhvSbw37YD4fbFmk-IwYB">
+<span style=3D"color: rgb(121, 124, 127); font-weight: normal; text-decorat=
+ion: underline;">Legal</span></a>
+<span style=3D"color: rgb(121, 124, 127);">&nbsp;&nbsp;&#12539;&nbsp;&nbsp;=
+</span>
+<a style=3D"color: rgb(121, 124, 127); font-weight: normal; text-decoration=
+: underline;"=20
+href=3D"https://wetransfer.zendesk.com/hc/en-us/requests/new?ticket_form_id=
+=3D360000007663&amp;utm_campaign=3DWT_email_tracking&amp;utm_source=3Dnotif=
+y_recipient_email&amp;utm_medium=3DSpam+Support+Link&amp;utm_content=3Dgene=
+ral&amp;token=3DeyJhbGciOiJub25lIn0.eyJyZXF1ZXN0X3N1YmplY3QiOiJSZXBvcnQgdGh=
+pcyB0cmFuc2ZlciBhcyBzcGFtIiwicmVxdWVzdF9kZXNjcmlwdGlvbiI6Imh0dHBzOi8vd2V0cm=
+Fuc2Zlci5jb20vZG93bmxvYWRzLzJkZGQ3MDVjM2Y5MTk0ZTgxYWFkMDRkZWIzMGFjZWU4MjAyM=
+jA4MTgxMjMyMTEvZDRjNWI2YTk3OWRjN2U4NDJhNGZmZmJiMzFmMDc2Y2YyMDIyM
+&#10;DgxODEyMzIzNS80NmZlMjQiLCJyZXF1ZXN0X2Fub255bW91c19yZXF1ZXN0ZXJfZW1haWw=
+iOiJheWFAYTNkZXNpZ24uYWUiLCJyZXF1ZXN0X2N1c3RvbV9maWVsZHNfMzYwMDAwMTcxMjIzIj=
+oiYzM0M2NiZWM5OGUzOGQ1ZDM1Mzc2ODhmMzc5ZWM0YzE3OGY5ZDk3ZDNkMzQ0NTVlMDNhNDhmO=
+WFlZDcyZjY1MGI5Y2QyM2EzOTAzYzdhNGFiOGJmMDJmZWNkMjI4MTQ3M2ExNWUxZjYwNjg3MDE4=
+ODIyNmYzNTVmNDc0YjlkMTQifQ." target=3D"_blank" rel=3D"external"=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://wetransfer.z=
+endesk.com/hc/en-us/requests/new?ticket_form_id%3D360000007663%26utm_campai=
+gn%3DWT_email_tracking%26utm_source%3Dnotify_recipient_email%26utm_medium%3=
+DSpam%2BSupport%2BLink%26utm_content%3Dgeneral%26token%3DeyJhbGciOiJub25lIn=
+0.eyJyZXF1ZXN0X3N1YmplY3QiOiJSZXBvcnQgdGhpcyB0cmFuc2ZlciBhcyBzcGFtIiwicmVxd=
+WVzdF9kZXNjcmlwdGlvbiI6Imh0dHBzOi8vd2V0cmFuc2Zlci5jb20vZG93bmxvYWRzLzJkZGQ3=
+MDVjM2Y5MTk0ZTgxYWFkMDRkZWIzMGFjZWU4MjAyMjA4MTgxMjMyMT
+&#10;EvZDRjNWI2YTk3OWRjN2U4NDJhNGZmZmJiMzFmMDc2Y2YyMDIyMDgxODEyMzIzNS80NmZl=
+MjQiLCJyZXF1ZXN0X2Fub255bW91c19yZXF1ZXN0ZXJfZW1haWwiOiJheWFAYTNkZXNpZ24uYWU=
+iLCJyZXF1ZXN0X2N1c3RvbV9maWVsZHNfMzYwMDAwMTcxMjIzIjoiYzM0M2NiZWM5OGUzOGQ1ZD=
+M1Mzc2ODhmMzc5ZWM0YzE3OGY5ZDk3ZDNkMzQ0NTVlMDNhNDhmOWFlZDcyZjY1MGI5Y2QyM2EzO=
+TAzYzdhNGFiOGJmMDJmZWNkMjI4MTQ3M2ExNWUxZjYwNjg3MDE4ODIyNmYzNTVmNDc0YjlkMTQi=
+fQ.&amp;source=3Dgmail&amp;ust=3D1663427697195000&amp;usg=3DAOvVaw0SG12WCYk=
+mlUjI5-moaJUi">
+<span style=3D"color: rgb(121, 124, 127); font-weight: normal; text-decorat=
+ion: underline;">Report
+this <span class=3D"il">transfer</span> as spam</span></a> </td>
+</tr>
+</tbody>
+</table>
+
+</body></html>
+------=_NextPart_001_0013_C421331F.EF2D0F55--
+
+------=_NextPart_000_0012_C421331F.EF2D0F55
+Content-Type: image/png; name="23ca347f13e88c6f92cc4f46149efc23.png"
+Content-Transfer-Encoding: base64
+Content-ID: <23ca347f13e88c6f92cc4f46149efc23.png>
+Content-Disposition: inline; filename="23ca347f13e88c6f92cc4f46149efc23.png"
+
+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
+
+------=_NextPart_000_0012_C421331F.EF2D0F55--
+

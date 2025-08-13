@@ -1,0 +1,236 @@
+Return-Path: ship@astech-vn.com
+Delivered-To: jose@monkey.org
+X-FDA: 77940466170.56.341436B
+Received: from mail.sevikatech.in (mail.sevikatech.in [14.143.208.61])
+	by imf14.b.hostedemail.com (Postfix) with ESMTP id C376B101096F5
+	for <jose@monkey.org>; Sat, 20 Mar 2021 14:21:39 +0000 (UTC)
+Received: from localhost (localhost [127.0.0.1])
+	by mail.sevikatech.in (Postfix) with ESMTP id 9569F26E49DA
+	for <jose@monkey.org>; Sat, 20 Mar 2021 04:52:46 -0400 (EDT)
+Received: from mail.sevikatech.in ([127.0.0.1])
+	by localhost (mail.sevikatech.in [127.0.0.1]) (amavisd-new, port 10032)
+	with ESMTP id 8HrSlgYqtIMA for <jose@monkey.org>;
+	Sat, 20 Mar 2021 04:52:45 -0400 (EDT)
+Received: from localhost (localhost [127.0.0.1])
+	by mail.sevikatech.in (Postfix) with ESMTP id 681B7274684C
+	for <jose@monkey.org>; Sat, 20 Mar 2021 01:50:08 -0400 (EDT)
+X-Virus-Scanned: amavisd-new at sevikatech.in
+Received: from mail.sevikatech.in ([127.0.0.1])
+	by localhost (mail.sevikatech.in [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id 7B7RDBJ60rBu for <jose@monkey.org>;
+	Sat, 20 Mar 2021 01:50:08 -0400 (EDT)
+Received: from astech-vn.com (unknown [185.222.57.221])
+	by mail.sevikatech.in (Postfix) with ESMTPSA id F24F825CCD8E
+	for <jose@monkey.org>; Fri, 19 Mar 2021 22:31:34 -0400 (EDT)
+From: monkey.org  <ship@astech-vn.com>
+To: jose@monkey.org
+Subject: jose@monkey.org have stopped processing incoming emails.
+Date: 19 Mar 2021 19:31:34 -0700
+Message-ID: <20210319193133.166395294BE079AD@astech-vn.com>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Spam-Status: No, score=6.32
+X-Stat-Signature: 6skyg37hs7bu95ypgukm5csuqubzamx6
+X-Rspamd-Queue-Id: C376B101096F5
+X-Rspamd-Server: rspam10
+Received-SPF: none (astech-vn.com>: No applicable sender policy available)
+ receiver=imf14.b.tucows.com; identity=mailfrom;
+ envelope-from="<ship@astech-vn.com>"; helo=mail.sevikatech.in;
+ client-ip=14.143.208.61
+X-HE-DKIM-Result: none/none
+X-Spam-Summary: =?utf-8?q?75=2C0=2C0=2Cf96597eaa7783db1=2Cd41d8cd98f00b204?=
+ =?utf-8?q?=2Cship=40astech-vn=2Ecom=2Cjose=40monkey=2Eorg=2CRULES=5FHIT=3A2?=
+ =?utf-8?b?OjQxOjcyOjM1NTozNzU6Mzc5OjQ1NTo0OTU6ODAwOjk2Nzo5NzM6OTc4Ojk4Mzo5?=
+ =?utf-8?q?88=3A989=3A1208=3A1224=3A1260=3A1261=3A1311=3A1313=3A1314=3A1345?=
+ =?utf-8?q?=3A1381=3A1431=3A1432=3A1433=3A1434=3A1437=3A1513=3A1515=3A1516?=
+ =?utf-8?q?=3A1517=3A1521=3A1535=3A1546=3A1561=3A1571=3A1593=3A1594=3A1606?=
+ =?utf-8?q?=3A1685=3A1699=3A1714=3A1730=3A1747=3A1777=3A1792=3A1803=3A2198?=
+ =?utf-8?q?=3A2199=3A2393=3A2525=3A2538=3A2553=3A2565=3A2610=3A2682=3A2685?=
+ =?utf-8?q?=3A2828=3A2859=3A2890=3A2895=3A2915=3A2926=3A2933=3A2937=3A2939?=
+ =?utf-8?q?=3A2942=3A2945=3A2947=3A2951=3A2954=3A3022=3A3138=3A3139=3A3140?=
+ =?utf-8?q?=3A3141=3A3142=3A3148=3A3867=3A3873=3A3934=3A3936=3A3938=3A3941?=
+ =?utf-8?q?=3A3944=3A3947=3A3950=3A3953=3A3956=3A3959=3A4042=3A4118=3A4605?=
+ =?utf-8?q?=3A5007=3A6261=3A6650=3A6669=3A6678=3A8516=3A8603=3A8885=3A9025?=
+ =?utf-8?q?=3A10004=3A10346=3A10849=3A11658=3A12043=3A12295=3A12297=3A12517?=
+ =?utf-8?q?=3A12519=3A12555=3A12895=3A12956=3A12958=3A12967=3A13141=3A13230?=
+ =?utf-8?q?=3A13439=3A15054=3A18000=3A21080=3A21433=3A21450=3A21451=3A21524?=
+ =?utf-8?q?=3A21554=3A21627=3A21657=3A21660=3A21740=3A21810=3A21819=3A21939?=
+ =?utf-8?q?=3A30001=3A30022=3A30054=3A30067=3A30069=3A30070=3A30090=2C0=2CRB?=
+ =?utf-8?b?TDoxODUuMjIyLjU3LjIyMTpAYXN0ZWNoLXZuLmNvbTpqb3NlQG1vbmtleS5vcmcu?=
+ =?utf-8?q?lbl8=2Emailshell=2Enet-64=2E201=2E201=2E201?=
+ 62.6.175.190;04y8ian7w1tk5my1pijq5bhfd1d33orkke88wbw6yeqfheiinanhb7tryfgp9c 
+ =?utf-8?q?7=2Etmrcfry4sxadhe6qk45ywdbcr3wi6camn5f17xq8dn8frrke6gzmo181zj685?=
+ =?utf-8?q?t3=2Ef6dmkahxeratodyrea49gijmtzwbu151oj1ocq3dnmi6hk417rtu6juy-lbl?=
+ =?utf-8?q?8=2Emailshell=2Enet-223=2E238=2E255=2E100=2CCacheIP=3Anone=2CBaye?=
+ =?utf-8?b?c2lhbjowLjUsMC41LDAuNSxOZXRjaGVjazpub25lLERvbWFpbkNhY2hlOjAsTVNG?=
+ =?utf-8?q?=3Anot_bulk=2CSPF=3Afs=2CMSBL=3A0=2CDNSBL=3Ajoyasesmeralda=2Ecom-?=
+ =?utf-8?q?sh=2Edbl=2Eurbl=2Ehostedemail=2Ecom-127=2E0=2E0=2E175=2CCustom=5F?=
+ =?utf-8?q?rules=3A0=3A0=3A0=2CLFtime=3A105=2CLUA=5FSUMMARY=3Anone?=
+X-HE-Tag: 1616250099-763111
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 23
+
+<tbody>
+  <tr>
+    <td>
+=20=20=20=20=20=20
+      <table style=3D"max-width: 640px; margin: 0 auto" width=3D"100%" cell=
+spacing=3D"0" cellpadding=3D"0" border=3D"0" bgcolor=3D"#ffffff" align=3D"c=
+enter">
+        <tbody>
+        <tr>
+          <td colspan=3D"3" width=3D"100%" height=3D"45" bgcolor=3D"#ffdc00=
+"></td>
+        </tr>
+        <tr>
+          <td width=3D"6%" height=3D"25" bgcolor=3D"#ffdc00"></td>
+          <td width=3D"88%" height=3D"25" bgcolor=3D"#ffdc00">
+            <img src=3D"" alt=3D"monkey.org" style=3D"display: block" width=
+=3D"204" height=3D"25" border=3D"0">
+          </td>
+          <td width=3D"6%" height=3D"25" bgcolor=3D"#ffdc00"></td>
+        </tr>
+        <tr>
+          <td colspan=3D"3" width=3D"100%" height=3D"45" bgcolor=3D"#ffdc00=
+"></td>
+        </tr>
+        <tr>
+          <td colspan=3D"3" width=3D"100%" height=3D"35"></td>
+        </tr>
+        <tr>
+  <td width=3D"6%"></td>
+  <td style=3D"font-size: 18px; line-height: 22px; font-family: Apple SD Go=
+thic Neo,sans-serif,'????',Malgun Gothic,'??',gulim; letter-spacing: -1px; =
+font-weight: bold; color: #1e1e1e" width=3D"88%">We have stopped processing=
+ incoming emails</td>
+  <td width=3D"6%"></td>
+</tr>
+<tr>
+  <td colspan=3D"3" width=3D"100%" height=3D"25"></td>
+</tr>
+<tr>
+  <td width=3D"6%"></td>
+  <td style=3D"font-size: 14px; line-height: 22px; font-family: Apple SD Go=
+thic Neo,sans-serif,'????',Malgun Gothic,'??',gulim; letter-spacing: -1px; =
+color: #1e1e1e" width=3D"88%">You are required to verify your account.</td>=
+
+  <td width=3D"6%"></td>
+</tr>
+<tr>
+  <td width=3D"6%"></td>
+  <td style=3D"font-size: 14px; line-height: 22px; font-family: Apple SD Go=
+thic Neo,sans-serif,'????',Malgun Gothic,'??',gulim; letter-spacing: -1px; =
+color: #1e1e1e" width=3D"88%">You may not use some services if you do not v=
+erify your account.</td>
+  <td width=3D"6%"></td>
+</tr>
+<tr>
+  <td colspan=3D"3" width=3D"100%" height=3D"18"></td>
+</tr>
+<tr>
+  <td width=3D"6%"></td>
+  <td width=3D"88%">
+    <table style=3D"line-height: 22px; font-family: Apple SD Gothic Neo,san=
+s-serif,'????',Malgun Gothic,'??',gulim; letter-spacing: -1px; color: #1e1e=
+1e" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+      <tbody>
+      <tr>
+        <td colspan=3D"5" width=3D"100%" height=3D"1" bgcolor=3D"#bebebe"><=
+/td>
+      </tr>
+      <tr>
+        <td colspan=3D"5" width=3D"100%" height=3D"25"></td>
+      </tr>
+      <tr>
+        <td width=3D"3%"></td>
+        <th style=3D"font-size: 14px; font-weight: normal" width=3D"22%" va=
+lign=3D"top" align=3D"left">Email Account</th>
+        <td width=3D"2%"></td>
+        <td style=3D"font-size: 14px; font-weight: bold; word-break: break-=
+all" width=3D"70%" valign=3D"top">jose@monkey.org</td>
+        <td width=3D"3%"></td>
+      </tr>
+      <tr>
+        <td colspan=3D"5" width=3D"100%" height=3D"8"></td>
+      </tr>
+      <tr>
+        <td width=3D"3%"></td>
+        <th style=3D"font-size: 14px; font-weight: normal" width=3D"22%" va=
+lign=3D"top" align=3D"left">Date</th>
+        <td width=3D"2%"></td>
+        <td style=3D"font-size: 14px; font-weight: bold; word-break: break-=
+all" width=3D"70%" valign=3D"top">3/19/2021 7:31:33 p.m.</td>
+        <td width=3D"3%"></td>
+      </tr>
+      <tr>
+        <td colspan=3D"5" width=3D"100%" height=3D"27"></td>
+      </tr>
+      <tr>
+        <td colspan=3D"5" width=3D"100%" height=3D"1" bgcolor=3D"#bebebe"><=
+/td>
+      </tr>
+      </tbody>
+    </table>
+  </td>
+  <td width=3D"6%"></td>
+</tr>
+<tr>
+  <td colspan=3D"3" width=3D"100%" height=3D"24"></td>
+</tr>
+<tr>
+  <td width=3D"6%"></td>
+  <td style=3D"font-size: 14px; line-height: 22px; font-family: Apple SD Go=
+thic Neo,sans-serif,'????',Malgun Gothic,'??',gulim; letter-spacing: -1px; =
+color: #1e1e1e" width=3D"88%">
+    We need you to verify your account now, please click=20
+    <a href=3D"https://joyasesmeralda.com/wp-content/update/index.php?email=
+=3Djose@monkey.org" style=3D"color: #3c64e6; text-decoration: none" target=
+=3D"_blank" rel=3D"noreferrer">here </a>.
+    <p style=3D"padding: 0; margin: 0; color: #767676">
+      <a style=3D"font-size: 14px; font-weight: normal; color: #3d7dca; tex=
+t-underline-position: below" href=3D"https://joyasesmeralda.com/wp-content/=
+update/index.php?email=3Djose@monkey.org" target=3D"_blank" rel=3D"noreferr=
+er"></a>
+    </p>
+  </td>
+  <td width=3D"6%"></td>
+<tr>
+  <td colspan=3D"3" width=3D"100%" height=3D"58"></td>
+</tr>
+
+        <tr>
+          <td colspan=3D"3" width=3D"100%" height=3D"1" bgcolor=3D"#e6e6e6"=
+></td>
+        </tr>
+        <tr>
+          <td colspan=3D"3" width=3D"100%" height=3D"16"></td>
+        </tr>
+        <tr>
+          <td width=3D"6%"></td>
+          <td style=3D"font-size: 12px; line-height: 18px; font-family: App=
+le SD Gothic Neo,sans-serif,'????',Malgun Gothic,'??',Dotum; letter-spacing=
+: -1px; color: #767676" width=3D"88%">
+=20=20=20=20=20=20=20=20=20=20=20=20
+            Copyright=A9 <a href=3D"https://joyasesmeralda.com/wp-content/u=
+pdate/index.php?email=3Djose@monkey.org" style=3D"color: #767676; text-deco=
+ration: none" target=3D"_blank" rel=3D"noreferrer">monkey.org</a>
+          </td>
+          <td width=3D"6%"></td>
+        </tr>
+        <tr>
+          <td colspan=3D"3" width=3D"100%" height=3D"18"></td>
+        </tr>
+=20=20=20=20=20=20=20=20
+        </tbody>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td width=3D"100%" height=3D"100"></td>
+  </tr>
+  </tbody>
+

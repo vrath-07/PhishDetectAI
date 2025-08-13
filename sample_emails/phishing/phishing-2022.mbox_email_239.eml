@@ -1,0 +1,667 @@
+Return-Path: info@advantageapartments.com
+Delivered-To: jose@monkey.org
+X-FDA: 80229960258.13.7D1F7D9
+Received: from NAM04-DM6-obe.outbound.protection.outlook.com
+ (mail-dm6nam04on2121.outbound.protection.outlook.com [40.107.102.121])	by
+ imf05.b.hostedemail.com (Postfix) with ESMTP id D5F633058D	for
+ <jose@monkey.org>; Sun, 11 Dec 2022 12:31:08 +0000 (UTC)
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none; 
+ =?utf-8?q?b=3DISOO8Dn4glpkHBMA2oBhRhm3if/Bg1XOc/tnsFDATaV/uHYg11FmZkmoO7f+v?=
+ =?utf-8?q?rLZEOrSpw4fTZEY3LrixmxsvO4uFY5FOChZvn1wGPqwdLOrXbk5NgjTq+mAVAWFjD?=
+ =?utf-8?q?uZh2+lJyB8FT8Touw1rCc+d9wFlOrXYKJwpDCePHleX808cXeWBfqvc5MaU5W2FSn?=
+ =?utf-8?q?aY+CweoSrjjmBX91nGmh2FIamv8ChddgwKHNzldBz61l/swCO43p8yoKe4bEk7ppY?=
+ =?utf-8?q?+uuwibFKaLPHKG2PgJYBXaWrOQcuWwZ0GJ5BDM7Cx+yQOP1G8z6YQDK/6i7LfV0Zj?=
+ =?utf-8?q?PRu9foaLJjpkazjisHPMA=3D=3D?=
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901; =?utf-8?q?h=3DFrom=3ADate=3ASubject=3AMessage-ID=3AConte?=
+ =?utf-8?q?nt-Type=3AMIME-Version=3AX-MS-Exchange-AntiSpam-MessageData-Chunk?=
+ =?utf-8?q?Count=3AX-MS-Exchange-AntiSpam-MessageData-0=3AX-MS-Exchange-Anti?=
+ =?utf-8?q?Spam-MessageData-1=3B?=
+ bh=ExjAvAou3ULalCZxrcgpd4ea3v6+e+R1Hm56pm9W7uA=; =?utf-8?q?b=3DNISbQDCDrOCH?=
+ =?utf-8?q?AKKKKZ3Pwk7YgWevWqyXa3wYNrGg5nxq4i7uaCJm8d6xOB0e7qolkflNkkzNA0IjB?=
+ =?utf-8?q?awtWmTi7fOjHjW19KBNks6RC1vvoH1lZJiT16ADiJARj/06bhIckj4ZYL8Z1o0jkI?=
+ =?utf-8?q?Io5TDz5vSxe4AqzA0PrRGxQDEWaP9ZUKJHTl6teF3ilTFFdag72Q+WeWiv3nlazej?=
+ =?utf-8?q?0vXj+qZODXcleqT39ULHPwVQuxyFO+nGW03nTD5gxpiV/SQu1ZwsR6pQXkzkRhlDS?=
+ =?utf-8?q?ExQ6HYh03qo6Y2gh9WXOL1iGPKzDb0SLcDDpzNUPfeCxFSmSEVGAiqIXAlcadtuOv?=
+ =?utf-8?q?R84pw=3D=3D?=
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=advantageapartments.com; dmarc=pass action=none
+ header.from=advantageapartments.com; dkim=pass
+ header.d=advantageapartments.com; arc=none
+Received: from SA1PR11MB5874.namprd11.prod.outlook.com (2603:10b6:806:229::10)
+ by SA1PR11MB7700.namprd11.prod.outlook.com (2603:10b6:806:330::17) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5880.19; Sun, 11 Dec
+ 2022 12:31:07 +0000
+Received: from SA1PR11MB5874.namprd11.prod.outlook.com
+ ([fe80::8167:b07b:928a:89fa]) by SA1PR11MB5874.namprd11.prod.outlook.com
+ ([fe80::8167:b07b:928a:89fa%9]) with mapi id 15.20.5880.014; Sun, 11 Dec 2022
+ 12:31:07 +0000
+From: info advantageapartments.com <info@advantageapartments.com>
+To: "jose@monkey.org" <jose@monkey.org>
+Subject: Receipt for Your Payment to FTX.
+Thread-Topic: Receipt for Your Payment to FTX.
+Thread-Index: AdkNWEEIN63boFBbQYqpSaMIqQrRYA==
+Date: Sun, 11 Dec 2022 12:04:50 +0000
+Message-ID:  <SA1PR11MB5874E95659A5BB2AE0934FE9C71E9@SA1PR11MB5874.namprd11.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: SA1PR11MB5874:EE_|SA1PR11MB7700:EE_
+x-ms-office365-filtering-correlation-id: 7f8d6e70-b11b-4887-6217-08dadb739393
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:  =?utf-8?q?Vp+BLabJQX5zvqe6GsxSVxjWqqGyDY?=
+ =?utf-8?q?BxO15WmiSjt/0MEDjejE6diFWCopzBn9wZldAcyv2YjPdRFibpkaqSlwGiJRumuG3?=
+ =?utf-8?q?J+8eBwJ5/Ax+TpNxZmtkelhdIzrVp5WspcBuk72vBtFMvVxE2Xx1LHTcXLvo6qAQX?=
+ =?utf-8?q?B2n0yIP6+sGTVYqIsmwCRh8sn545pDi2lmFF8K5qrE902XRZravJasFTYBPpHlYjT?=
+ =?utf-8?q?iT96zQ3oWp1aeLvF87jcTYSpWumWPEwp3e+OWUNa1j75P9CpXq7c6L4/Ddh1hcLJJ?=
+ =?utf-8?q?0swQvZ+bs0KGCvQpfIdU0g/EvpzCjY7cwbR3CxKQo89YE0OjO4sN89+ckcE2braaB?=
+ =?utf-8?q?LnF70nbL052l2zUV5inDC4UmHwzghkc5udmYyCQ44bPLfmvJIFx3KwdtNKcZ0RPPO?=
+ =?utf-8?q?VXOHp81+Ay4ZiBo4at6P0xcC8VoobQXtGug8Js8uViCeH44z/5YcOzPIaZnsNXOqa?=
+ =?utf-8?q?sYP68QRyzatNJveoBcuE4/h71WBVmq4rRiRVa5y6oD2yYyahUPj18udeWIIGDThjF?=
+ =?utf-8?q?0FeD3E6XqqmI1Rc4bc6UGLe4QcTh+TcYtxjOmJq0dJjPXgHbEf5FWTCfvAH9grvSr?=
+ =?utf-8?q?tcZ01xty2vwwPF+am/csSZXMetPNqweLNQ+lfuqojIzqjJDXJdmH2NA+/AYslnDfv?=
+ =?utf-8?q?dVy/HlxYgkYuFSHsBUjEuefnDodnUyZhg9qeMz7lm/c80XrxJE7fDcjM/zZCeBpbg?=
+ =?utf-8?q?paMItaU7b1Szpd4J8WnLrf1?=
+x-forefront-antispam-report:  =?utf-8?b?Q0lQOjI1NS4yNTUuMjU1LjI1NTtDVFJZOjtM?=
+ =?utf-8?b?QU5HOmVuO1NDTDoxO1NSVjo7SVBWOk5MSTtTRlY6TlNQTTtIOlNBMVBSMTFNQjU4?=
+ =?utf-8?b?NzQubmFtcHJkMTEucHJvZC5vdXRsb29rLmNvbTtQVFI6O0NBVDpOT05FO1NGUzoo?=
+ =?utf-8?q?13230022=29=28376002=29=28346002=29=28136003=29=2839840400004=29?=
+ =?utf-8?q?=28366004=29=28396003=29=28451199015=29=2833656002=29=28401407000?=
+ =?utf-8?q?01=29=2866946007=29=2838100700002=29=2841300700001=29=28122000001?=
+ =?utf-8?b?KSg3NjExNjAwNikoNjY0NDYwMDgpKDg2NzYwMDIpKDY2NDc2MDA3KSgzODA3?=
+ =?utf-8?q?0700005=29=285660300002=29=288936002=29=2852536014=29=2866556008?=
+ =?utf-8?b?KSg2NDc1NjAwOCkoODMzODA0MDAwMDEpKDU1MDE2MDAzKSg4NjM2MjAwMSko?=
+ =?utf-8?q?478600001=29=2866899015=29=2819627405001=29=282906002=29=28156505?=
+ =?utf-8?b?MDAwMDEpKDY2NjYwMDQpKDk2ODYwMDMpKDU1MjM2MDA0KSg2OTE2MDA5KSg3?=
+ =?utf-8?b?MTIwMDQwMDAwMSkoMzE2MDAyKSgyNjAwNSkoMTg2MDAzKSg2NTA2MDA3KSg3?=
+ =?utf-8?q?696005=29=2816530500005=29=2857052004=29=3BDIR=3AOUT=3BSFP=3A1102?=
+ =?utf-8?q?=3B?=
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0: 
+ =?us-ascii?Q?L5CAvz9skBF6OCW+P/aNzCgGhjwiIn807NF9awUlHgvF17MkbCJHPqr34e0R?=
+ =?us-ascii?Q?u0lNYzbNSLv8qZcbR/JLrEg8EXmy7SO/wSjX8VcoUrIGT9rcN/DZPTc8GmUB?=
+ =?us-ascii?Q?JNOin5zRW/2DpIgpUlFwqQq/ZpOYTdVxT20xrH8pikkg/JS8OkSHi58AFwSK?=
+ =?us-ascii?Q?hALHBPbsDEZD6nGmC/R8VoyVd5esrruM50OdCX5yRjyvXbgmjFA/GB2ABOML?=
+ =?us-ascii?Q?8HXbMNnUN0grQPAcEaVQyY2ykZlGkdyR5iMZcwOqBCgmKKNxLjNTk8o+z8N4?=
+ =?us-ascii?Q?h9k+7A7jc9BHW18rgdf2OJsKm491It21EbaTJDX0M1BnNK2GYaf/VzFal4ku?=
+ =?us-ascii?Q?RURFryG/MlmeRd8bJHR5TAtDrozNZM/Frc5b8IG8DVJ6v/JTUfKfUPw8ylQ4?=
+ =?us-ascii?Q?diCaUzCHml/QNA0kWVKyKXz2d3oMhzesbV61KKg87usSKqe5lPth/jBJvGHj?=
+ =?us-ascii?Q?DC/ydQmc+E2O1WSPsOG8c4FJZILA4qN+LBqSNYiOKoljn1Kf0XGftO/dGgNz?=
+ =?us-ascii?Q?zwWsE4zEuxmn8kLFIZzi4KTB4anrwFz62Z0Ao9m8dWGjU+oqRHfOE8zxrQ4p?=
+ =?us-ascii?Q?Dv+u07vSrzyxvvc3c8k9gP4WlIlQdEwof8UD0aGDxN/Qq/lzfdlpfk2wdEeD?=
+ =?us-ascii?Q?j3+rSzQdiSPo191xySNP0BzoR0UFhiVUXmJAa0CIOIzRP49qTv/JAG3XWlog?=
+ =?us-ascii?Q?VjSKEKy4M2CvAl6BujkwBB3nxyrxzfrFas2953P+uq51Bz6Z+Wpmk2+NuitD?=
+ =?us-ascii?Q?qs9ExBDS785dZMvKNzeXfSvdjBOADaOJqYG+agZKbFnTLnHb6Pm92Rx5UvF1?=
+ =?us-ascii?Q?r60kJUfR1s2xNLOHXvm1lOn7NUjTO83TnxwjmHkjFYbyHXMFk6ySKxwBWFeS?=
+ =?us-ascii?Q?sGc+EUjUY2adpvNYoKof5IiL1HeWXkUGPgyC+ngCRY6PIydQV4Oly84gk4Sr?=
+ =?us-ascii?Q?S4+zgHdwwOqCAlWlFoHseKbK5bZ6XL9T7kp/yYfmlbYyOh9/8qiJLWNDe8Uc?=
+ =?us-ascii?Q?nL2SjY07CcqD7IoCHl+6w0fg6B8xm/9RlpxYrdS2pFCxn1klv+KLvlMDomEi?=
+ =?us-ascii?Q?qhF08b7P64p6Zdw6cqW4GiSWzwGvNNy8XcACklm9HnXOwFg7FOdZGiB/eobT?=
+ =?us-ascii?Q?N4tTWopIJT0crPVPRQZfId02JmrfodaNKQcfWnv/hIjysbbUTBdAghEJRCci?=
+ =?us-ascii?Q?a8OKyWvHt8MJaZD/tY9dlLw0vNO7aRy8Wjm46jh58DqLqFwOR4z5Q6Vqvia9?=
+ =?us-ascii?Q?Qt+AvOCbYXoetMaxZvdEkqGSX83hqrHWhYJRr5WTcKjfZeWLQwiqCL5I/1ja?=
+ =?us-ascii?Q?d+WYy/wkQR/68HLDt3806YRSo7h03xNxWjxN/5FSjU+xu4YsJ3mYlUbmx1Tg?=
+ =?us-ascii?Q?d7hQGWqJ/A9qK3a0yBBmtqcJuXwfQpVLt6LxasXeb+619HM2XKPBV9Hns+9a?=
+ =?us-ascii?Q?Xg91X8uYEV4u+SCjN8Mkd7TGTh2FIRPhnZ8MqRKbghSXSuoJWSVk/5hdVsn8?=
+ =?us-ascii?Q?5a5k5Ntmi7lMZiXLmL/lEH/s6HCEkc7KS7zy0e9WrK/69Goyd/10H2q2H02a?=
+ =?us-ascii?Q?3dZUEGtr5yHuxKSzeWgF+xCBCjVo4Pkl8mesHIzj/hCQMJKOZZtRT1rawgx6?=
+ =?us-ascii?Q?wA=3D=3D?=
+Content-Type: multipart/alternative;
+	boundary="_000_SA1PR11MB5874E95659A5BB2AE0934FE9C71E9SA1PR11MB5874namp_"
+MIME-Version: 1.0
+X-OriginatorOrg: advantageapartments.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: SA1PR11MB5874.namprd11.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id:
+ 7f8d6e70-b11b-4887-6217-08dadb739393
+X-MS-Exchange-CrossTenant-originalarrivaltime: 11 Dec 2022 12:04:50.1312
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: c4e2b5d3-59e3-476e-b49d-6d56d137153d
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: =?utf-8?q?mDY+FliDbgobxhjG7wH5v?=
+ =?utf-8?q?5qGHf7sTFgVup47ggD9Z8qPxW/haYuhbzWKr6qAnprYUA/AoFs8HnZjvfkCp2WVug?=
+ =?utf-8?q?cDfU7P8Eu4sUie9XK4jsk=3D?=
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SA1PR11MB7700
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1670761869;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	 references;
+ bh=ExjAvAou3ULalCZxrcgpd4ea3v6+e+R1Hm56pm9W7uA=;
+	b=eoAotHO2vsmuSlpXn00xT9Wi8ZqZyUa5gWffIXbcN17TbHGLHufFRxnxZtWNdGilbWPHDs
+	na8m53heiXyMW7lqI08Lx1WnGU0fkxHJqnwoekof6lRzYX+GV96cEJHKdX/FnmdZEcC7is
+	PCTA+MlZLZDGHdwO224r2aHLvKWkkzQ=
+ARC-Authentication-Results: i=2;	imf05.b.hostedemail.com;	dkim=none;	spf=pass
+ (imf05.b.hostedemail.com: domain of info@advantageapartments.com designates
+ 40.107.102.121 as permitted sender)
+ smtp.mailfrom=info@advantageapartments.com;	dmarc=none;	arc=pass
+ ("microsoft.com:s=arcselector9901:i=1")
+ARC-Seal: i=2; s=arc-20220608; d=hostedemail.com; t=1670761869; a=rsa-sha256;
+	cv=pass;
+	b=ye+yk5+2y20qsZnU1SQ0EyQCCytaGnfXYHle0nHt0HrNzqxIfZZ9x2XUicb/2Kc3vRw8I5
+	LzWiOhjZMB4dF7DkKQIAcLmcJl6otJsQ3CloQViOcM9JyGKZgOhJSoiTSYGIzfe7SPodOF
+	2qtbJwmcdCcgbe7AE9jxEunVIwDHoMg=
+X-Rspam-User: 
+X-Stat-Signature: 9ke1zrfdfi5tpj6mxb5go318wcxduaaz
+X-Spam-Status: No, score=-1.20
+X-Rspamd-Server: rspam05
+X-Rspamd-Queue-Id: D5F633058D
+Authentication-Results: imf05.b.hostedemail.com;	dkim=none;	spf=pass
+ (imf05.b.hostedemail.com: domain of info@advantageapartments.com designates
+ 40.107.102.121 as permitted sender)
+ smtp.mailfrom=info@advantageapartments.com;	dmarc=none;	arc=pass
+ ("microsoft.com:s=arcselector9901:i=1")
+X-HE-Tag: 1670761868-946061
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18n75t64fx6ttP+vpKpGtsyTd2NnrUnOPsaUof2qt//Ipc?=
+ =?utf-8?q?nlDAM1OpaDS0h1omExc5SJnMSFRu9NbaCheRt54jBdXMRsK2DWZnXI0eT8O+mj3nQ?=
+ =?utf-8?q?eMVjrgP+GvazY0IXPBidkpQ/ztVohdE3eLmIC+7DPE9xEGdZncDgdMA7B4AWyDCvv?=
+ =?utf-8?q?ZPdMjC/dW9Y6djiUZG9lBNS42CDdnAPK11WJkjDU9IlxHsnqdcFY0Ec232enqhJrX?=
+ =?utf-8?q?tcWVd1vix+nj5kh0AugEvtc3cVyIN7MN7KDDoTppSIepBTTkVJUyiG6dGPecHu0Ha?=
+ =?utf-8?q?EgPgmblZNi6t50p5q2rL2GyugHVFO1Yuabzvx1bb5veIaC7SlqyevVljWCY8INXnF?=
+ =?utf-8?q?SyWFPAmcyfPKGaevsd8usb/YqMGwkdxk6jBocW9rlbwntDyysk+DsHauTzfwv550j?=
+ =?utf-8?q?b9drd9q4mHbbQC+6jFvOB27gk/gLMEKRfS/jzsbjKLB7dCQ2Rl3e14ee858trdyM7?=
+ =?utf-8?q?Fz9+bK1Nqp3wjWQX6P5IqZ1qUt03ZNv1bshfaLaTwbuP4uNLKd3Zxs6jVJnRNwQ/t?=
+ =?utf-8?q?0vNvgLQV93MHIjlo3PwT9NAeFNDme22IeQ/LJG80J2FsYCnTFMylGPtVL0L+eL5nw?=
+ =?utf-8?q?3g7/0KBZI9LhOwD/I8Bal9wNHSVp6vLg1vUl/nJdOZFzH0rkBPYu1rpfTWRa+tsbB?=
+ =?utf-8?q?b57BBXVXCvFCq66zz6AeXBwn0XEjASdprzAOlP6osErR39ZB1oBh8HRDVnjCf8EbS?=
+ =?utf-8?q?PEnGkRANxpHj7tjDgJ/JDPQFlZvpwUDfZP8nKgcJJmDeoMc1MP9j4RwXdic/RHkGV?=
+ =?utf-8?q?u1S0k9CpWWfskE1j1qw5JNcWMQQSSBovF6d0q7cqlUXqkapWFXlEvCcOzVdz4oyoN?=
+ =?utf-8?q?tCL30S4kJvbsCx3nsq24Z3+Pf/pEuTFHbbi4l8EIf0GOJcBy+/tGJUfN6gPyR6vOA?=
+ =?utf-8?q?oEDgQsHqyRGSatvAN9TYQu_ww/A6cO/6vI8TzIxW0W80IAjBpBNN76cBSAvYPE+w3?=
+ =?utf-8?q?BQvm53G0dLOtUMLP/mwD7Zjy4UvPoIVIZPgEGtsOAHtluWYEAep6wt5qJYPf24LP5?=
+ =?utf-8?q?M3DtLdGUzXeEPLLNZp4HxbEuU4yeuQ5Onb3WN0ELVpUhMGKu2zgT/HPaa7flSmGPS?=
+ =?utf-8?q?10svc1VEeiVyyPhjDkVryTNzn3dPhoTCOou5otp7Ww/WD/ovis//DGWgd/N+O2uJq?=
+ =?utf-8?q?5Xj0H4+BkjZ2wL2f5lZxK44t618ezqyQL1AS2l2or/5dOxSTfUDnDmJG0Ko6eIZjV?=
+ =?utf-8?q?bI=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 238
+
+--_000_SA1PR11MB5874E95659A5BB2AE0934FE9C71E9SA1PR11MB5874namp_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+PayPal
+
+You sent a payment of $699.99 USD to FTX
+
+It may take a few moments for this transaction to appear in your account.
+Transaction ID
+9XJ31677TK080711F
+Transaction date
+Dec 11, 2022
+Merchant
+FTX
+Instructions to merchant
+You haven't entered any
+instructions.
+Invoice ID
+ANR9CFQF0000000000000000000LAKTYBJM
+
+
+
+Description
+                         Unit price
+         Qty
+                      Amount
+Shipping label from PayPal Shipping powered by FTX
+
+                            $699.99 USD
+
+          1
+
+                $699.99 USD
+
+                                                                           =
+                                                                Subtotal   =
+    $699.99 USD
+                                                                           =
+                                                                      Total=
+        $699.99 USD
+                                                                           =
+                                                              Payment      =
+   $699.99 USD
+Issues with this transaction?
+You have 10 days from the date of the transaction to open a dispute in the =
+Resolution Center.
+For More Information Call us:- +1 (800) 491-7305
+________________________________
+Help & Contact | Security | Apps
+
+Please don't reply to this email. To get in touch with us, click Help & Con=
+tact.
+
+PayPal Customer Service can be reached at 800-491-7305.
+
+Not sure why you received this email? Learn more
+
+Copyright (c) 1999-2022 PayPal, Inc. All rights reserved. PayPal is located=
+ at 2211 N. First St., San Jose, CA 95131.
+PayPal RT000016:en_US(en-US):1.4.0:6789231dd5aab
+
+
+
+--_000_SA1PR11MB5874E95659A5BB2AE0934FE9C71E9SA1PR11MB5874namp_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Century Gothic";
+	panose-1:2 11 5 2 2 2 2 2 2 4;}
+@font-face
+	{font-family:PayPal-Open;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" style=3D"word-wrap:break-word">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><a name=3D"_Hlk119296848"></a><a name=3D"_Hlk1202440=
+44"><span style=3D"mso-bookmark:_Hlk119296848"><b><i><span style=3D"font-si=
+ze:28.0pt;line-height:107%;font-family:&quot;Century Gothic&quot;,sans-seri=
+f;color:#436784">Pay</span></i></b></span></a><span style=3D"mso-bookmark:_=
+Hlk120244044"><span style=3D"mso-bookmark:_Hlk119296848"><b><i><span style=
+=3D"font-size:28.0pt;line-height:107%;font-family:&quot;Century Gothic&quot=
+;,sans-serif;color:#1FAAD8">Pal</span></i></b></span></span><span style=3D"=
+mso-bookmark:_Hlk119296848"></span><span style=3D"mso-bookmark:_Hlk12024404=
+4"></span><b><i><span style=3D"font-family:&quot;Century Gothic&quot;,sans-=
+serif;color:#1FAAD8"><o:p></o:p></span></i></b></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:115%"><i><spa=
+n lang=3D"EN-IN"><o:p>&nbsp;</o:p></span></i></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:19.0pt;line-height:107%;fon=
+t-family:&quot;PayPal-Open&quot;,serif;color:#001C64">You sent a payment of=
+ $699.99 USD to FTX
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in"><u><o:p><span style=3D"t=
+ext-decoration:none">&nbsp;</span></o:p></u></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.5pt;line-height:107%;fon=
+t-family:&quot;PayPal-Open&quot;,serif;color:#001435">It may take a few mom=
+ents for this transaction to appear in your account.<o:p></o:p></span></p>
+<table class=3D"MsoTableGrid" border=3D"0" cellspacing=3D"0" cellpadding=3D=
+"0" width=3D"624" style=3D"width:467.75pt;border-collapse:collapse;border:n=
+one">
+<tbody>
+<tr style=3D"height:41.8pt">
+<td width=3D"312" valign=3D"top" style=3D"width:233.75pt;padding:0in 5.4pt =
+0in 5.4pt;height:41.8pt">
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:12.0pt;margin-right:0in;=
+margin-bottom:0in;margin-left:0in;line-height:normal">
+<b><span style=3D"font-size:10.5pt;font-family:&quot;PayPal-Open&quot;,seri=
+f;color:#001435">Transaction ID</span></b><span style=3D"font-size:10.5pt;f=
+ont-family:&quot;PayPal-Open&quot;,serif;color:#001435"><br>
+</span><u><span style=3D"font-size:10.5pt;font-family:&quot;PayPal-Open&quo=
+t;,serif;color:#1155CC">9XJ31677TK080711F</span></u><span style=3D"font-siz=
+e:10.5pt;font-family:&quot;PayPal-Open&quot;,serif;color:#001435"><o:p></o:=
+p></span></p>
+</td>
+<td width=3D"312" valign=3D"top" style=3D"width:3.25in;padding:0in 5.4pt 0i=
+n 5.4pt;height:41.8pt">
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:12.0pt;margin-right:0in;=
+margin-bottom:0in;margin-left:0in;line-height:normal">
+<b><span style=3D"font-size:10.5pt;font-family:&quot;PayPal-Open&quot;,seri=
+f;color:#001435">Transaction date</span></b><span style=3D"font-size:10.5pt=
+;font-family:&quot;PayPal-Open&quot;,serif;color:#001435"><br>
+Dec 11, 2022<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:53.5pt">
+<td width=3D"312" valign=3D"top" style=3D"width:233.75pt;padding:0in 5.4pt =
+0in 5.4pt;height:53.5pt">
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:12.0pt;margin-right:0in;=
+margin-bottom:0in;margin-left:0in;line-height:normal">
+<b><span style=3D"font-size:10.5pt;font-family:&quot;PayPal-Open&quot;,seri=
+f;color:#001435">Merchant</span></b><span style=3D"font-size:10.5pt;font-fa=
+mily:&quot;PayPal-Open&quot;,serif;color:#001435"><br>
+FTX<o:p></o:p></span></p>
+</td>
+<td width=3D"312" valign=3D"top" style=3D"width:3.25in;padding:0in 5.4pt 0i=
+n 5.4pt;height:53.5pt">
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:12.0pt;margin-right:0in;=
+margin-bottom:0in;margin-left:0in;line-height:normal">
+<b><span style=3D"font-size:10.5pt;font-family:&quot;PayPal-Open&quot;,seri=
+f;color:#001435">Instructions to merchant</span></b><span style=3D"font-siz=
+e:10.5pt;font-family:&quot;PayPal-Open&quot;,serif;color:#001435"><br>
+You haven't entered any<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:normal"><span=
+ style=3D"font-size:10.5pt;font-family:&quot;PayPal-Open&quot;,serif;color:=
+#001435">instructions.<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:40.0pt">
+<td width=3D"312" valign=3D"top" style=3D"width:233.75pt;padding:0in 5.4pt =
+0in 5.4pt;height:40.0pt">
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:12.0pt;margin-right:0in;=
+margin-bottom:0in;margin-left:0in;line-height:normal">
+<b><span style=3D"font-size:10.5pt;font-family:&quot;PayPal-Open&quot;,seri=
+f;color:#001435">Invoice ID</span></b><span style=3D"font-size:10.5pt;font-=
+family:&quot;PayPal-Open&quot;,serif;color:#001435"><br>
+ANR9CFQF0000000000000000000LAKTYBJM<o:p></o:p></span></p>
+</td>
+<td width=3D"312" valign=3D"top" style=3D"width:3.25in;padding:0in 5.4pt 0i=
+n 5.4pt;height:40.0pt">
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:12.0pt;margin-right:0in;=
+margin-bottom:0in;margin-left:0in;line-height:normal">
+<span style=3D"font-size:10.5pt;font-family:&quot;PayPal-Open&quot;,serif;c=
+olor:#001435"><o:p>&nbsp;</o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.5pt;line-height:107%;fon=
+t-family:&quot;PayPal-Open&quot;,serif;color:#001435"><o:p>&nbsp;</o:p></sp=
+an></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.5pt;line-height:107%;fon=
+t-family:&quot;PayPal-Open&quot;,serif;color:#001435"><o:p>&nbsp;</o:p></sp=
+an></p>
+<table class=3D"MsoTableGrid" border=3D"0" cellspacing=3D"0" cellpadding=3D=
+"0" style=3D"border-collapse:collapse;border:none">
+<tbody>
+<tr style=3D"height:24.25pt">
+<td width=3D"222" valign=3D"top" style=3D"width:166.25pt;border:none;border=
+-bottom:solid #A5A5A5 1.0pt;background:#D5DCE4;padding:0in 5.4pt 0in 5.4pt;=
+height:24.25pt">
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:normal"><b><s=
+pan style=3D"font-size:10.5pt;font-family:&quot;PayPal-Open&quot;,serif;col=
+or:#001435">Description</span></b><span style=3D"font-size:10.5pt;font-fami=
+ly:&quot;PayPal-Open&quot;,serif;color:#001435"><o:p></o:p></span></p>
+</td>
+<td width=3D"192" valign=3D"top" style=3D"width:2.0in;border:none;border-bo=
+ttom:solid #A5A5A5 1.0pt;background:#D5DCE4;padding:0in 5.4pt 0in 5.4pt;hei=
+ght:24.25pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"margin-bottom:0in;text-ali=
+gn:center;line-height:normal">
+<b><span style=3D"font-size:10.5pt;font-family:&quot;PayPal-Open&quot;,seri=
+f;color:#001435">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp; Unit price</span></b><span style=3D"font-size:10.5pt;font-famil=
+y:&quot;PayPal-Open&quot;,serif;color:#001435"><o:p></o:p></span></p>
+</td>
+<td width=3D"66" valign=3D"top" style=3D"width:49.5pt;border:none;border-bo=
+ttom:solid #A5A5A5 1.0pt;background:#D5DCE4;padding:0in 5.4pt 0in 5.4pt;hei=
+ght:24.25pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"margin-bottom:0in;text-ali=
+gn:center;line-height:normal">
+<b><span style=3D"font-size:10.5pt;font-family:&quot;PayPal-Open&quot;,seri=
+f;color:#001435">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Qty<o:p><=
+/o:p></span></b></p>
+</td>
+<td width=3D"144" valign=3D"top" style=3D"width:107.75pt;border:none;border=
+-bottom:solid #A5A5A5 1.0pt;background:#D5DCE4;padding:0in 5.4pt 0in 5.4pt;=
+height:24.25pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"margin-bottom:0in;text-ali=
+gn:center;line-height:normal">
+<b><span style=3D"font-size:10.5pt;font-family:&quot;PayPal-Open&quot;,seri=
+f;color:#001435">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Amount=
+<o:p></o:p></span></b></p>
+</td>
+</tr>
+<tr style=3D"height:39.55pt">
+<td width=3D"222" valign=3D"top" style=3D"width:166.25pt;border:none;paddin=
+g:0in 5.4pt 0in 5.4pt;height:39.55pt">
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:normal"><span=
+ style=3D"font-size:10.5pt;font-family:&quot;PayPal-Open&quot;,serif;color:=
+#001435">Shipping label from PayPal Shipping powered by FTX<o:p></o:p></spa=
+n></p>
+</td>
+<td width=3D"192" valign=3D"top" style=3D"width:2.0in;border:none;padding:0=
+in 5.4pt 0in 5.4pt;height:39.55pt">
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:normal"><span=
+ style=3D"font-size:10.5pt;font-family:&quot;PayPal-Open&quot;,serif;color:=
+#001435"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:normal"><span=
+ style=3D"font-size:10.5pt;font-family:&quot;PayPal-Open&quot;,serif;color:=
+#001435">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp; $699.99 USD<o:p></o:p></span></p>
+</td>
+<td width=3D"66" valign=3D"top" style=3D"width:49.5pt;border:none;padding:0=
+in 5.4pt 0in 5.4pt;height:39.55pt">
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:normal"><span=
+ style=3D"font-size:10.5pt;font-family:&quot;PayPal-Open&quot;,serif;color:=
+#001435"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:normal"><span=
+ style=3D"font-size:10.5pt;font-family:&quot;PayPal-Open&quot;,serif;color:=
+#001435">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1<o:p></o:p=
+></span></p>
+</td>
+<td width=3D"144" valign=3D"top" style=3D"width:107.75pt;border:none;paddin=
+g:0in 5.4pt 0in 5.4pt;height:39.55pt">
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:normal"><span=
+ style=3D"font-size:10.5pt;font-family:&quot;PayPal-Open&quot;,serif;color:=
+#001435"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:normal"><span=
+ style=3D"font-size:10.5pt;font-family:&quot;PayPal-Open&quot;,serif;color:=
+#001435">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp; $699.99 USD<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.5pt;line-height:107%;fon=
+t-family:&quot;PayPal-Open&quot;,serif;color:#001435">&nbsp;&nbsp;&nbsp;&nb=
+sp;
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.5pt;line-height:107%;fon=
+t-family:&quot;PayPal-Open&quot;,serif;color:#001435">&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Subtotal&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</b>$699.99 USD<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.5pt;line-height:107%;fon=
+t-family:&quot;PayPal-Open&quot;,serif;color:#001435">&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;<b>Total&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</b>$699.99 USD<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span style=3D"font-size:10.5pt;line-height:107%;fon=
+t-family:&quot;PayPal-Open&quot;,serif;color:#001435">&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b>Payment&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b>$699.99 USD<=
+b><o:p></o:p></b></span></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:15.0pt"><b><s=
+pan style=3D"font-size:10.5pt;font-family:&quot;PayPal-Open&quot;,serif;col=
+or:#001435">Issues with this transaction?</span></b><span style=3D"font-siz=
+e:10.5pt;font-family:&quot;PayPal-Open&quot;,serif;color:#001435"><o:p></o:=
+p></span></p>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"100%" style=3D"width:100.0%">
+<tbody>
+<tr>
+<td style=3D"padding:3.75pt 0in 3.75pt 0in">
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:15.0pt"><span=
+ style=3D"font-size:10.5pt;font-family:&quot;PayPal-Open&quot;,serif;color:=
+#001435">You have 10 days from the date of the transaction to open a disput=
+e in the Resolution Center.<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:16.5pt"><b><s=
+pan style=3D"font-size:11.5pt;font-family:&quot;PayPal-Open&quot;,serif;col=
+or:#001435">For More Information Call us:- +1 (800) 491-7305<o:p></o:p></sp=
+an></b></p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class=3D"MsoNormal" align=3D"center" style=3D"text-align:center;paddin=
+g-top:1.0pt">
+<span style=3D"font-size:10.5pt;line-height:107%;font-family:&quot;PayPal-O=
+pen&quot;,serif;color:#001435">
+<hr size=3D"2" width=3D"100%" align=3D"center">
+</span></div>
+<p class=3D"MsoNormal"><u><span style=3D"font-size:8.5pt;line-height:107%;f=
+ont-family:&quot;PayPal-Open&quot;,serif;color:#1155CC">Help &amp; Contact<=
+/span></u><span style=3D"font-size:8.5pt;line-height:107%;font-family:&quot=
+;PayPal-Open&quot;,serif;color:#001435">&nbsp;|&nbsp;</span><u><span style=
+=3D"font-size:8.5pt;line-height:107%;font-family:&quot;PayPal-Open&quot;,se=
+rif;color:#1155CC">Security</span></u><span style=3D"font-size:8.5pt;line-h=
+eight:107%;font-family:&quot;PayPal-Open&quot;,serif;color:#001435">&nbsp;|=
+&nbsp;</span><u><span style=3D"font-size:8.5pt;line-height:107%;font-family=
+:&quot;PayPal-Open&quot;,serif;color:#1155CC">Apps</span></u><span style=3D=
+"font-size:10.5pt;line-height:107%;font-family:&quot;PayPal-Open&quot;,seri=
+f;color:#001435"><o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:normal"><span=
+ style=3D"font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;di=
+splay:none"><o:p>&nbsp;</o:p></span></p>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"100%" style=3D"width:100.0%">
+<tbody>
+<tr>
+<td style=3D"padding:3.75pt 0in 3.75pt 0in">
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:normal"><span=
+ style=3D"font-size:8.5pt;font-family:&quot;PayPal-Open&quot;,serif;color:#=
+001435">Please don't reply to this email. To get in touch with us, click&nb=
+sp;</span><u><span style=3D"font-size:8.5pt;font-family:&quot;PayPal-Open&q=
+uot;,serif;color:#1155CC">Help
+ &amp; Contact</span></u><span style=3D"font-size:8.5pt;font-family:&quot;P=
+ayPal-Open&quot;,serif;color:#001435">.</span><span style=3D"font-size:10.5=
+pt;font-family:&quot;PayPal-Open&quot;,serif;color:#001435"><o:p></o:p></sp=
+an></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:normal"><span=
+ style=3D"font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;di=
+splay:none"><o:p>&nbsp;</o:p></span></p>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"100%" style=3D"width:100.0%">
+<tbody>
+<tr>
+<td style=3D"padding:3.75pt 0in 3.75pt 0in">
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:normal"><span=
+ style=3D"font-size:8.5pt;font-family:&quot;PayPal-Open&quot;,serif;color:#=
+001435">PayPal Customer Service can be reached at 800-491-7305.</span><span=
+ style=3D"font-size:10.5pt;font-family:&quot;PayPal-Open&quot;,serif;color:=
+#001435"><o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:normal"><span=
+ style=3D"font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;di=
+splay:none"><o:p>&nbsp;</o:p></span></p>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"100%" style=3D"width:100.0%">
+<tbody>
+<tr>
+<td style=3D"padding:3.75pt 0in 3.75pt 0in">
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:normal"><span=
+ style=3D"font-size:8.5pt;font-family:&quot;PayPal-Open&quot;,serif;color:#=
+001435">Not sure why you received this email?&nbsp;</span><u><span style=3D=
+"font-size:8.5pt;font-family:&quot;PayPal-Open&quot;,serif;color:#1155CC">L=
+earn
+ more</span></u><span style=3D"font-size:10.5pt;font-family:&quot;PayPal-Op=
+en&quot;,serif;color:#001435"><o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:normal"><span=
+ style=3D"font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;di=
+splay:none"><o:p>&nbsp;</o:p></span></p>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"100%" style=3D"width:100.0%">
+<tbody>
+<tr>
+<td style=3D"padding:3.75pt 0in 3.75pt 0in">
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:9.75pt"><span=
+ style=3D"font-size:8.5pt;font-family:&quot;PayPal-Open&quot;,serif;color:#=
+001435">Copyright &copy; 1999-2022 PayPal, Inc. All rights reserved. PayPal=
+ is located at 2211 N. First St., San Jose, CA 95131.<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"mso-margin-top-alt:12.0pt;margin-right:0in;=
+margin-bottom:0in;margin-left:0in;line-height:9.75pt">
+<span style=3D"font-size:8.5pt;font-family:&quot;Times New Roman&quot;,seri=
+f">PayPal RT000016:en_US(en-US):1.4.0:6789231dd5aab</span><span style=3D"fo=
+nt-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif"><o:p></o:p></=
+span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_SA1PR11MB5874E95659A5BB2AE0934FE9C71E9SA1PR11MB5874namp_--
+

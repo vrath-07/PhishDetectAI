@@ -1,0 +1,113 @@
+Return-Path: supnewday@gulumsekocaeli.com.tr
+Delivered-To: jose@monkey.org
+X-FDA: 82640159070.03.A445CF4
+Received: from server.yesmedya.com (server.yesmedya.com [89.252.184.45])
+	by imf20.b.hostedemail.com (Postfix) with ESMTP id 1688160006
+	for <jose@monkey.org>; Sat,  5 Oct 2024 16:59:12 +0000 (UTC)
+Authentication-Results: imf20.b.hostedemail.com;	dkim=none;	dmarc=none;
+	spf=pass (imf20.b.hostedemail.com: domain of supnewday@gulumsekocaeli.com.tr
+ designates 89.252.184.45 as permitted sender)
+ smtp.mailfrom=supnewday@gulumsekocaeli.com.tr
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1728147419;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=SMTh4VlpxMksGw9mzRK/2WIBB/2JuONwOISyaCPQfZQ=;
+	b=2X/120DTDLvD5+4+E3KAcpG4oSuicSc0wVgyz7PilaVN1WssBI3AHsxHACnBLxTkqzurbY
+	K5oF2T8A5KM9t1/DZz2AIuJ6NSBR00mi4zks1XIZvLYyq8rvct2+/catn5F5VJRKYukMbm
+	VP/v/WQyLISEPzqV1WGfTNC+S/fo0cs=
+ARC-Authentication-Results: i=1;	imf20.b.hostedemail.com;	dkim=none;
+	dmarc=none;	spf=pass (imf20.b.hostedemail.com: domain of
+ supnewday@gulumsekocaeli.com.tr designates 89.252.184.45 as permitted sender)
+ smtp.mailfrom=supnewday@gulumsekocaeli.com.tr
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1728147419; a=rsa-sha256;
+	cv=none;
+	b=GfxXi+JgGsRkPRlyZYmdGUJo2iHF5T5qe4JvOZMuWcy6G25GsN5J0UtFpwORhTlaG7/RBj
+	P9t65rJVCqWL9DYRqqdEp2jNGr6B8SYuFKGOcDdt//NVWtpA4lmv/8SnBJfZtA7L3WsYtq
+	4SHMlkGrZTQvHOkP8A2x6DI1RZoT4pY=
+Received: from [98.97.159.163] (port=1234
+ helo=customer.mdrdesp1.pop.starlinkisp.net)	by 89-252-184-45.cprapid.com with
+ esmtpsa  (TLS1.3) tls TLS_AES_256_GCM_SHA384	(Exim 4.97.1)	(envelope-from
+ <supnewday@gulumsekocaeli.com.tr>)	id 1sx87f-0000000CTos-2f6S	for
+ jose@monkey.org;	Sat, 05 Oct 2024 19:59:11 +0300
+From: Wells Fargo Online <supnewday@gulumsekocaeli.com.tr>
+To: jose@monkey.org
+Subject: You Have An Important Notice From Wells Fargo Bank
+Date: 5 Oct 2024 11:59:56 -0500
+Message-ID: <20241005115955.E7874442B3A5A63A@gulumsekocaeli.com.tr>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - 89-252-184-45.cprapid.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - gulumsekocaeli.com.tr
+X-Get-Message-Sender-Via:
+ 89-252-184-45.cprapid.com: authenticated_id: supnewday@gulumsekocaeli.com.tr
+X-Authenticated-Sender:
+ 89-252-184-45.cprapid.com: supnewday@gulumsekocaeli.com.tr
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Rspamd-Server: rspam10
+X-Rspamd-Queue-Id: 1688160006
+X-Stat-Signature: y5hpjj659uhstfxhw8634cezcgj3wui3
+X-Rspam-User: 
+X-Spam-Status: No, score=1.10
+X-HE-Tag: 1728147552-345214
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18Z7+VgpV9NrLtlq0J1KlMtvawMq+GO69E1uiUBZOxGfmy?=
+ =?utf-8?q?WlQc/Ru9nzmxCQfpt+Zd974agqVZ6RXVos4jSm71dHb3lF6WmRXzq+9LsN1R7/k8J?=
+ =?utf-8?q?qlntQ0PAYnmHDyoHyRAvj1RIEc/noiIKUzzvK4hmvfBceI7VGCtkF0lJxUdO76Y/k?=
+ =?utf-8?q?E6//6/VxeBCBFeD/KVEUd9eh17KkD5Cl410WFhadCOJN45VbDEK0pEpMfI2FGtREw?=
+ =?utf-8?q?ouPnVoEAxgfzoGgPq7xkZOozUBaWIzNxFbnYZFWQ1ri0YVkOMHahvX9iNR1v7d2WI?=
+ =?utf-8?q?5PGCXwLKOqxAft9FjtIm9uZtLrbegNDnyXteWHhu1V9/R6hUSE6HAKP0b2bg1y4YD?=
+ =?utf-8?q?xu5h9ckiS00jTfTylz1BwToMm4TJKpDsVyswEA0i+xBMC+l7Yfxq4XssHPhD8RTjh?=
+ =?utf-8?q?O8X5Tt8AVrtVmGgtNHifzAP6GBdEu8tffDYVdiyE9kLVM1QJzwp2mw5HIfrvz/1j1?=
+ =?utf-8?q?Gr3kZVy3AXZ4Xahtar4rw1XaOV8anjDL3bf0Is6+s8M9m+QgqY5LURBZ3z61JfImP?=
+ =?utf-8?q?Fgc/LHJEEJI8gpkl2hBVfBSwfWaRrYqNwF6HGjibWhBq/e0LbfAHlmgANv+k21bBE?=
+ =?utf-8?q?g92Cq5/l/nIBXOSFuatS/tGurJTaFISmiJxNdU7DT6tkbHmjQ+8tt4VHaNLEvjjOs?=
+ =?utf-8?q?FNHFoKxvHKC+81aen/Ja4GPNPzPIbnBJsWjutJMW/rR6pCj7zzHWxwt6QWTaoFQvg?=
+ =?utf-8?q?rPCd2PbrYdZxw8hKU60jS8rrA4oMfvsbUClOnsuH+SmRNipU2Jp66KBD4mLEA52Yb?=
+ =?utf-8?q?0zLlcrKvAY3hLOs4S1Z623gPVsRvRE3wg4IfGclndJrL/QPkooPq+iQO7wWzyzqXd?=
+ =?utf-8?q?Bzji57FHMoc62no3SaCID7VIb7GPCn39MP2EpBX2XDrjmXH4iForwH3is8Je17s9b?=
+ =?utf-8?q?mcek9jHyKKYFOaat6xze8z_pPHn5P3dJ9qbpkqtGqVUuVU5ZkMwgaUjqOajur1O/x?=
+ =?utf-8?q?4uHcWe78GBao3TC9DwJqNjIeCymZ3EvPC3tujeAFgsJ18cfSTl2U4B+bmOVYXBnJd?=
+ =?utf-8?q?tzntIq+KA+lpljFL2VvgxYQ1AKvF3Js10MOGh0Yc4msGv9CROEMOYla5WCDoSVEXz?=
+ =?utf-8?q?90w992lL3/dJS8h/mAz+3ePEvaDD+zK6s88l69ApucgT8u/V6GZEyIt7T8nO8fWra?=
+ =?utf-8?q?2L20KdfbwWhDqvThFxgODcr49vQ60MFn/ww8jzBZbr4igVJ+aCGOU6DoKgNYq0MMU?=
+ =?utf-8?q?bW8JCDEOdxCJyWs//iDG2E+68kgZWtnBdkoAy+PeFvMub1bKNgyitx867dmWrm8GX?=
+ =?utf-8?q?KBgh9boEjgpBQ3gcaCf9BQ1kulxSJN/S1r91rSiTGM2E5Y1GlWI51EB2+svyW6VIY?=
+ =?utf-8?q?naun5e0+JReVsPHfSl/ImoJLkCQec6UNHL/NXF3QTgZF8v8ms/TbBQKBVlxiLIrXh?=
+ =?utf-8?q?bu/IZaeZt38ou/5abKn/9tiGLThj4qMax2xCSkZB5Q=3D=3D?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 299
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body><p><span style=3D"font-family: Verdana;">Dear Valued Customer,</span>=
+<br>
+<br>
+You Have an Important Notice&nbsp;from&nbsp;Wells Fargo&nbsp;Bank.<br>
+<br>
+<b><a href=3D"https://hqwf.us/?secured"><font color=3D"#008000">Please Go t=
+o Resolution=20
+Center</font></a></b><br>
+<br><br>
+As this e-mail is an automated message, we can't reply to any e-mails sent =
+by=20
+return.<br>
+---------------------------------------------------------------------------=
+---------------------------------<br><br><span style=3D"font-size: 14px;">C=
+opyright <span class=3D"c-footer__copyright">&copy;1999 -&nbsp;</span>2024&=
+nbsp;Wells Fargo&nbsp;Bank, N.A. &nbsp;All Rights Reserved. Member FDIC</sp=
+an><br>
+</p>
+</body></html>
+

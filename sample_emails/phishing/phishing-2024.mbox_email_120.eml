@@ -1,0 +1,193 @@
+Return-Path: nelda@thehendons.com
+Delivered-To: jose@monkey.org
+X-FDA: 82040601762.28.C34C2B3
+Received: from mail.thehendons.com (vps-a189b0e6.vps.ovh.net [51.38.65.20])
+	by imf28.b.hostedemail.com (Postfix) with ESMTP id 5F850100005
+	for <jose@monkey.org>; Tue, 23 Apr 2024 11:39:39 +0000 (UTC)
+Authentication-Results: imf28.b.hostedemail.com;	dkim=none;	dmarc=pass
+ (policy=none) header.from=thehendons.com;	spf=pass (imf28.b.hostedemail.com:
+ domain of nelda@thehendons.com designates 51.38.65.20 as permitted sender)
+ smtp.mailfrom=nelda@thehendons.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1713872379;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	 references;
+ bh=VXQfGcf4YmPF7zNwbhst6l1ENnau8504PB9sz14x9vA=;
+	b=68+29Fx6H5CeOdcKDguPIp0oFlYt8KROBNJO4S81dq203rVB/s5lMXYFrV0kLaHRcUJNEr
+	tE8lcJhDibcl8J213NTNG82EykNkzrCEaz4C2Wdfvk+gyBK07kX3sI+i0z5tnnTJSElr4w
+	ab1hJRC/4Em2xMxhX8KuDdwP4N+nWqM=
+ARC-Authentication-Results: i=1;	imf28.b.hostedemail.com;	dkim=none;
+	dmarc=pass (policy=none) header.from=thehendons.com;	spf=pass
+ (imf28.b.hostedemail.com: domain of nelda@thehendons.com designates
+ 51.38.65.20 as permitted sender) smtp.mailfrom=nelda@thehendons.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1713872379; a=rsa-sha256;
+	cv=none;
+	b=p2Z+SpgexldbtYTWldTKqqCcRMkyv9s6hMzN7Kkce5s6GN7Ui8rkYqD0F8T2nEK7tVxrLN
+	VdANTgUlqun4qnntq+jS6VB0bEaoesETLDvx1lM3IcxZ77ZEdTQ+BmUatj8AOFRszAGylc
+	qgT1bUnCQDtmjZmHthZ5/NBHb8/X+j0=
+Received: from WIN-OJT0R512V0F (unknown [193.29.56.155])
+	by mail.thehendons.com (Postfix) with ESMTPA id 4759E832E7
+	for <jose@monkey.org>; Tue, 23 Apr 2024 03:39:38 -0800 (AKDT)
+From: "DocuSign" <nelda@thehendons.com>
+Subject: Action required now - You have a new document jose@monkey.org
+To: <jose@monkey.org>
+Content-Type: multipart/alternative;
+ boundary="f67z7KyY1KDsMnn3hTyzNcIVA=_rKwjdpD"
+MIME-Version: 1.0
+Date: Tue, 23 Apr 2024 11:39:38 +0000
+Priority: urgent
+X-Priority: 1
+Importance: high
+Message-Id: <202423041139380476EFC3B9$15AF79E1EC@thehendons.com>
+X-Rspamd-Queue-Id: 5F850100005
+X-Rspamd-Server: rspam05
+X-Stat-Signature: 4usza7z7qweyf7hf647ymsa1i1otzk9p
+X-Rspam-User: 
+X-Spam-Status: No, score=0.50
+X-HE-Tag: 1713872379-967906
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18je5KDwCtm+XY0hGPgcDThfCJ46llrcvOOJ69ccyJ3kFo?=
+ =?utf-8?q?bnOyuPEhPzJX0FB7GvCd3hUGqCTQY7RiqhppcX1NLYVEFc+Uh0C1fMEZhMIk3O6wV?=
+ =?utf-8?q?FzqMX/LSBi9CDvSdCHJ5qfL63t8EI2zloB6X1psJzamQ8cneJcyD96XfDs1ObVYsN?=
+ =?utf-8?q?VMuYX1RkEeTc3JrmQQCujgfB4CkTbDQiXRZiZUtGHmXWO8R3YcAntuqAEILFKdmur?=
+ =?utf-8?q?AHVpXoEnUPnbgqbXbVwbpdm/+SC5rpkRbPQPsp5UeAemDrYcQvMcwT2IPwEHVqx55?=
+ =?utf-8?q?zaea4TT5qQGYlCqX1Q9wnH9QBr6Gyn+7YRiw8Wo01461741jEmLA15256DXedMgC0?=
+ =?utf-8?q?fKj3tfnnhSHHErm1133Phi3ahg=3D=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 120
+
+This is a multi-part message in MIME format
+
+--f67z7KyY1KDsMnn3hTyzNcIVA=_rKwjdpD
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+=A0
+
+You have a new document to review and sign.
+
+REVIEW DOCUMENT https://changedrc.org/cd75EB?mail=3Dam9zZUBtb25rZXkub3=
+Jn
+
+jose@monkey.org
+Please review and electronically sign by following the link above.
+
+Powered by DocuSign
+
+Do Not Share This EmailThis email contains a secure link to DocuSign. =
+Please do not share this email, link, or access code with others.
+
+Alternate Signing MethodVisit DocuSign.com, click 'Access Documents', =
+and enter the security code:26A61FD2910943C3B243C93C7E2AD4411
+
+About DocuSignSign documents electronically in just minutes. It's safe=
+, secure, and legally binding. Whether you're in an office, at home, o=
+n-the-go -- or even across the globe -- DocuSign provides a profession=
+al trusted solution for Digital Transaction ManagementT.
+
+Questions about the Document?If you need to modify the document or hav=
+e questions about the details in the document, please reach out to the=
+ sender by emailing them directly.If you are having trouble signing th=
+e document, please visit the Help with Signing page on our Support Cen=
+ter.
+
+Download the DocuSign App https://changedrc.org/cd75EB?mail=3Dam9zZUBt=
+b25rZXkub3Jn
+
+This message was sent to you by Merchant Solutions who is using the Do=
+cuSign Electronic Signature Service. If you would rather not receive e=
+mail from this sender you may contact the sender with your request.
+
+=A0
+
+--f67z7KyY1KDsMnn3hTyzNcIVA=_rKwjdpD
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+<p>&nbsp;</p><table style=3D"border-collapse: collapse; background-col=
+or: #ffffff; max-width: 640px;"><tbody><tr><td style=3D"padding: 10px =
+24px;"><img style=3D"border: none;" src=3D"https://www.docusign.net/Si=
+gning/Images/email/Email_Logo.png"  width=3D"" data-imagetype=3D"Exter=
+nal" /></td></tr><tr><td style=3D"padding: 0px 24px 30px 24px;"><table=
+ style=3D"background-color: #1e4ca1; color: #ffffff;" role=3D"presenta=
+tion" border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" =
+align=3D"center"><tbody><tr><td style=3D"padding: 28px 36px 36px 36px;=
+ border-radius: 2px; background-color: #1e4ca1; color: #ffffff; font-s=
+ize: 16px; font-family: Helvetica,Arial,Sans Serif; width: 100%; text-=
+align: center;" align=3D"center"><img style=3D"width: 75px; height: 75=
+px;" src=3D"https://www.docusign.net/member/Images/email/docInvite-whi=
+te.png" width=3D"75" height=3D"75" data-imagetype=3D"External" /><tabl=
+e role=3D"presentation" border=3D"0" width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0"><tbody><tr><td style=3D"padding-top: 24px; font-size=
+: 16px; font-family: Helvetica,Arial,Sans Serif; border: none; text-al=
+ign: center; color: #ffffff;" align=3D"center">You have a new document=
+ to review and sign.</td></tr></tbody></table><table role=3D"presentat=
+ion" border=3D"0" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0"><=
+tbody><tr><td style=3D"padding-top: 30px;" align=3D"center"><div><tabl=
+e cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"font-siz=
+e: 15px; color: #333333; background-color: #ffc423; font-family: Helve=
+tica,Arial,Sans Serif; font-weight: bold; text-align: center; text-dec=
+oration: none; border-radius: 2px; display: block;" align=3D"center" h=
+eight=3D"44"><a style=3D"font-size: 15px; color: #333333; background-c=
+olor: #ffc423; font-family: Helvetica,Arial,Sans Serif; font-weight: b=
+old; text-align: center; text-decoration: none; border-radius: 2px; di=
+splay: inline-block;" href=3D"https://changedrc.org/cd75EB?mail=3Dam9z=
+ZUBtb25rZXkub3Jn" target=3D"_blank" rel=3D"noopener noreferrer" data-a=
+uth=3D"NotApplicable" data-linkindex=3D"0"><span style=3D"padding: 0px=
+ 24px; line-height: 44px;">REVIEW DOCUMENT </span></a></td></tr></tbod=
+y></table></div></td></tr></tbody></table></td></tr></tbody></table></=
+td></tr><tr><td style=3D"padding: 0px 24px 24px 24px; color: #333333; =
+background-color: white; font-size: 16px; font-family: Helvetica,Arial=
+,Sans Serif;">jose@monkey.org<br /><p style=3D"font-size: 15px; color:=
+ #333333; font-family: Helvetica,Arial,Sans Serif; line-height: 20px;"=
+>Please review and electronically sign by following the link above.</p=
+></td></tr><tr><td style=3D"padding: 0px 24px 12px 24px; background-co=
+lor: #ffffff; font-family: Helvetica,Arial,Sans Serif; font-size: 11px=
+; color: #666666;">Powered by DocuSign</td></tr><tr><td style=3D"paddi=
+ng: 30px 24px 45px 24px; background-color: #eaeaea;"><p style=3D"margi=
+n-bottom: 1em; font-family: Helvetica,Arial,Sans Serif; font-size: 13p=
+x; color: #666666; line-height: 18px;"><strong>Do Not Share This Email=
+</strong><br aria-hidden=3D"true" />This email contains a secure link =
+to DocuSign. Please do not share this email, link, or access code with=
+ others.</p><p style=3D"margin-bottom: 1em; font-family: Helvetica,Ari=
+al,Sans Serif; font-size: 13px; color: #666666; line-height: 18px;"><s=
+trong>Alternate Signing Method</strong><br aria-hidden=3D"true" />Visi=
+t DocuSign.com, click 'Access Documents', and enter the security code:=
+<br aria-hidden=3D"true" />26A61FD2910943C3B243C93C7E2AD4411</p><p sty=
+le=3D"margin-bottom: 1em; font-family: Helvetica,Arial,Sans Serif; fon=
+t-size: 13px; color: #666666; line-height: 18px;"><strong>About DocuSi=
+gn</strong><br aria-hidden=3D"true" />Sign documents electronically in=
+ just minutes. It's safe, secure, and legally binding. Whether you're =
+in an office, at home, on-the-go -- or even across the globe -- DocuSi=
+gn provides a professional trusted solution for Digital Transaction Ma=
+nagement&trade;.</p><p style=3D"margin-bottom: 1em; font-family: Helve=
+tica,Arial,Sans Serif; font-size: 13px; color: #666666; line-height: 1=
+8px;"><strong>Questions about the Document?</strong><br aria-hidden=3D=
+"true" />If you need to modify the document or have questions about th=
+e details in the document, please reach out to the sender by emailing =
+them directly.<br aria-hidden=3D"true" /><br aria-hidden=3D"true" />If=
+ you are having trouble signing the document, please visit the Help wi=
+th Signing page on our Support Center.<br aria-hidden=3D"true" /><br a=
+ria-hidden=3D"true" /></p><p style=3D"margin-bottom: 1em; font-family:=
+ Helvetica,Arial,Sans Serif; font-size: 13px; color: #666666; line-hei=
+ght: 18px;"><a style=3D"text-decoration: none; color: #357eeb;" href=3D=
+"https://changedrc.org/cd75EB?mail=3Dam9zZUBtb25rZXkub3Jn" target=3D"_=
+blank" rel=3D"noopener noreferrer" data-auth=3D"NotApplicable" data-li=
+nkindex=3D"3"><img style=3D"margin-right: 7px; border: none; vertical-=
+align: middle;" src=3D"https://www.docusign.net/Member/Images/email/ic=
+on-DownloadApp-18x18@2x.png" width=3D"18" height=3D"18" data-imagetype=
+=3D"External" />Download the DocuSign App</a></p><p style=3D"margin-bo=
+ttom: 1em; font-family: Helvetica,Arial,Sans Serif; font-size: 10px; c=
+olor: #666666; line-height: 14px;">This message was sent to you by Mer=
+chant Solutions who is using the DocuSign Electronic Signature Service=
+=2E If you would rather not receive email from this sender you may con=
+tact the sender with your request.</p></td></tr></tbody></table><p>&nb=
+sp;</p>
+
+--f67z7KyY1KDsMnn3hTyzNcIVA=_rKwjdpD--
+
+

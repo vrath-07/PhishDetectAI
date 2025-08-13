@@ -1,0 +1,135 @@
+Return-Path: jardimdoserido@v2net.com.br
+Delivered-To: jose@monkey.org
+X-FDA: 80140511136.34.7D731E4
+Received: from mail.v2net.com.br (mail.v2net.com.br [177.8.177.11])
+	by imf25.b.hostedemail.com (Postfix) with ESMTP id 8C15BC32F79
+	for <jose@monkey.org>; Wed, 16 Nov 2022 20:55:27 +0000 (UTC)
+Received: from v133-130-55-60.a00c.g.tyo1.static.conoha.io
+ (v133-130-55-60.a00c.g.tyo1.static.conoha.io [133.130.55.60])	by
+ mail.v2net.com.br (Postfix) with ESMTPSA id 5AC5B2CC9B8	for
+ <jose@monkey.org>; Wed, 16 Nov 2022 17:13:27 -0300 (BRT)
+From: Email Notification<jardimdoserido@v2net.com.br>
+To: jose@monkey.org
+Subject: Unexpected sign-in attempt on jose@monkey.org
+Date: 17 Nov 2022 05:55:24 +0900
+Message-ID: <20221117055523.0F25FA828839BBFC@v2net.com.br>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1668632127;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=Ua+k19Vz8kUDXQjC+WjvPp/a4W8ZvA8CHO8QdC7q+mU=;
+	b=e3+voYWG/w/9CUkUs1VaZHdXScTKnseBBqkhHq8eE59O19I3GLASs0Ie3jMJtQyGEblc7N
+	Tnrm9ENdOHPJo5cLOD9wJ/NyDK5X3dcQFvhNuIO2tOT6tSXlD8F2Dgr8UY+K3usX074rOf
+	eduAkuZBy0DKk8L1mcEjhWDyPce+XN0=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1668632127; a=rsa-sha256;
+	cv=none;
+	b=8Hai1NcFyFLeTH1fkQ0XYPi1ONhv9t16sqxnqdmGAkiRzPKhEQUI/AA+0yVK4WtmPX+lwQ
+	+L1VDm5KtZtm3hynOYjU2d4wD7osSlCKTdDtOxYBIL6JoaKk2qNxzFKC05SU8INPFJ595C
+	HwBMMbaat3RO7WyXXOoUoruvI8KMA2w=
+ARC-Authentication-Results: i=1;	imf25.b.hostedemail.com;	dkim=none;	spf=pass
+ (imf25.b.hostedemail.com: domain of jardimdoserido@v2net.com.br designates
+ 177.8.177.11 as permitted sender) smtp.mailfrom=jardimdoserido@v2net.com.br;
+	dmarc=none
+Authentication-Results: imf25.b.hostedemail.com;	dkim=none;	spf=pass
+ (imf25.b.hostedemail.com: domain of jardimdoserido@v2net.com.br designates
+ 177.8.177.11 as permitted sender) smtp.mailfrom=jardimdoserido@v2net.com.br;
+	dmarc=none
+X-Spam-Status: Yes, score=10.17
+X-Rspamd-Server: rspam05
+X-Rspam-User: 
+X-Stat-Signature: 6stfo79o549f553xtu6rajrznzmdxfpa
+X-Rspamd-Queue-Id: 8C15BC32F79
+X-HE-Tag: 1668632127-514690
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 207
+
+<!DOCTYPE HTML>
+
+<html><head><title></title>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"margin: 0.4em;">
+<table style=3D"color: rgb(34, 34, 34); text-transform: none; letter-spacin=
+g: normal; padding-bottom: 20px; font-family: Arial, Helvetica, sans-serif;=
+ font-size: small; font-style: normal; font-weight: 400; word-spacing: 0px;=
+ white-space: normal; min-width: 220px; max-width: 516px; orphans: 2; widow=
+s: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-te=
+xt-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-s=
+tyle: initial; text-decoration-color: initial;"=20
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"ma=
+rgin: 0px; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;"=
+><div style=3D"padding: 16px; margin-bottom: 6px; direction: ltr; backgroun=
+d-color: rgb(245, 245, 245);"><table width=3D"100%" border=3D"0" cellspacin=
+g=3D"0" cellpadding=3D"0"><tbody><tr><td style=3D"margin: 0px; font-family:=
+ Roboto, RobotoDraft, Helvetica, Arial, sans-serif; vertical-align: top;">
+<img height=3D"20" src=3D"https://ci5.googleusercontent.com/proxy/siAK5pAvL=
+6HiWqy_Ut4hdMMjmvVsflvWUV0fOtT8hcdO1e9CkJf-GQ1QcgFkZat3Vx8c6HqHa5CRfHHn8HpM=
+uU98DxxYb1OH57jXpx-tF0WVN6x0MvQB0Mk=3Ds0-d-e1-ft#https://www.gstatic.com/ac=
+countalerts/email/Icon_recovery_x2_20_20.png" width=3D"20"></td><td width=
+=3D"13" style=3D"margin: 0px; width: 13px; font-family: Roboto, RobotoDraft=
+, Helvetica, Arial, sans-serif;"></td><td style=3D"margin: 0px; font-family=
+: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; direction: ltr;">
+<span style=3D"line-height: 1.6; font-family: Roboto-Regular, Helvetica, Ar=
+ial, sans-serif; font-size: 13px;">This is a copy of a security alert sent =
+to jose@monkey.org;</span><span style=3D"line-height: 1.6; font-family: Rob=
+oto-Regular, Helvetica, Arial, sans-serif; font-size: 13px;"></span></td></=
+tr></tbody></table></div><div align=3D"center" style=3D"padding: 40px 20px;=
+ border: thin solid rgb(218, 220, 224);">
+<img src=3D"https://ci4.googleusercontent.com/proxy/Cv7o2hgEXrXiE1G1hv89N7r=
+ttqDS-DztD702J5Kdg_ZnuT8FKVLxmflgFLyWGHCCeFL-ivSfZreHKcccB3EogIiYIta-=3Ds0-=
+d-e1-ft#https://i.ibb.co/fGdjDX0/envelope-xh-Ipyjp0m-Q.png" width=3D"384" h=
+eight=3D"288"><div style=3D'line-height: 32px; padding-bottom: 24px; font-f=
+amily: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif; bo=
+rder-bottom-color: rgb(218, 220, 224); border-bottom-width: thin; border-bo=
+ttom-style: solid;'><div style=3D"font-size: 24px;">
+<h1 style=3D"margin: 0px; color: rgb(0, 0, 0); font-family: Lato, sans-seri=
+f; font-weight: 400;"><a style=3D"color: rgb(48, 227, 202); font-size: 24px=
+; font-weight: 700;">e-Verify</a></h1><a style=3D"color: rgb(17, 85, 204);"=
+ href=3D"https://rebrand.ly/6uo8t15#jose@monkey.org" target=3D"_blank" data=
+-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://rebrand.ly/raxjj=
+g6%23%5B%5B-Email-%5D%5D&amp;source=3Dgmail&amp;ust=3D1668616325492000&amp;=
+usg=3DAOvVaw3aEY8L_hHOd2OrIOZpqKEO">Verify Your Account</a></div>
+<table align=3D"center" style=3D"margin-top: 8px;"><tbody><tr style=3D"line=
+-height: normal;"><td align=3D"right" style=3D"margin: 0px; padding-right: =
+8px; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;"><img =
+width=3D"20" height=3D"20" style=3D"width: 20px; height: 20px; vertical-ali=
+gn: sub;" alt=3D"" src=3D"https://lh4.googleusercontent.com/-bBpiiZZ0YY0/AA=
+AAAAAAAAI/AAAAAAAAAAA/AMZuucnsoGaBvUpTTmS6phCNo6ALR4SXwQ/s96/photo.jpg"></t=
+d>
+<td style=3D"margin: 0px; font-family: Roboto, RobotoDraft, Helvetica, Aria=
+l, sans-serif;">jose@monkey.org;</td></tr></tbody></table></div><div style=
+=3D"text-align: left; line-height: 20px; padding-top: 20px; font-family: Ro=
+boto-Regular, Helvetica, Arial, sans-serif; font-size: 14px;">Our system de=
+tected some unusual activities in your account.<br>
+As part of our security measures please log in to your account and verify y=
+our account now.<div style=3D"text-align: center; color: rgb(95, 99, 104); =
+line-height: 16px; letter-spacing: 0.3px; padding-top: 20px; font-size: 12p=
+x;">
+<a style=3D'padding: 10px 24px; color: rgb(255, 255, 255); line-height: 16p=
+x; font-family: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-=
+serif; font-size: 14px; min-width: 90px; background-color: rgb(65, 132, 243=
+); text-decoration-line: none;' href=3D"https://rebrand.ly/raxjjg6#jose@mon=
+key.org" target=3D"_blank" data-saferedirecturl=3D"https://www.google.com/u=
+rl?q=3Dhttps://rebrand.ly/raxjjg6%23%5B%5B-Email-%5D%5D&amp;source=3Dgmail&=
+amp;ust=3D1668616325492000&amp;usg=3DAOvVaw3aEY8L_hHOd2OrIOZpqKEO">
+Verify Account</a><br><a style=3D"text-decoration: inherit;"><br></a></div>=
+<br>This is a security measure intended to protect and secure your account.=
+<br><br><font face=3D"Calibri">Email Account Server {C} 2022</font><p><span=
+ style=3D"font-size: small;"><span style=3D"font-family: calibri;">monkey.o=
+rg</span></span><br><br></p></div></div><div><div style=3D"text-align: cent=
+er; line-height: 18px; padding-top: 12px; font-family: Roboto-Regular, Helv=
+etica, Arial, sans-serif; font-size: 11px;"><div><br>
+</div><div style=3D"direction: ltr;"><br><a style=3D"line-height: 18px; pad=
+ding-top: 12px;"></a></div></div></div></td></tr></tbody></table><p>
+</p>
+
+
+</body></html>
+

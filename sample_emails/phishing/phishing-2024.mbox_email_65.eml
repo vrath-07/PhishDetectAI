@@ -1,0 +1,272 @@
+Return-Path: adm.app@vaqexokz.shop
+Delivered-To: jose@monkey.org
+X-FDA: 81832866822.36.5B98864
+Received: from my.vaqexokz.shop (my.vaqexokz.shop [45.142.122.239])
+	by imf18.b.hostedemail.com (Postfix) with ESMTP id C5323120003
+	for <jose@monkey.org>; Mon, 26 Feb 2024 05:45:09 +0000 (UTC)
+Authentication-Results: imf18.b.hostedemail.com;	dkim=pass
+ header.d=vaqexokz.shop header.s=cloudron header.b=CYS9yk6S;	spf=pass
+ (imf18.b.hostedemail.com: domain of adm.app@vaqexokz.shop designates
+ 45.142.122.239 as permitted sender) smtp.mailfrom=adm.app@vaqexokz.shop;
+	dmarc=pass (policy=reject) header.from=vaqexokz.shop
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1708926310;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:list-unsubscribe:dkim-signature;
+	bh=NL46HAqjt6tnlwSd9BDSdxPI8i1IEs2VMxciMPkZisA=;
+	b=0bVzRhMyQd4hHj3h7LMgrkxQ/d7BeVcI24pqY+ZVMPegvGIiXuUbH//a1lf1m0U1c+Fnv1
+	cDkNX0JQlzcFUbFtrtov1tW4OOJ+2lZRWbiualhJMXIb4NkLC94JIBgNNgnaEAGjtignyN
+	Rx409cdUSwJq9JQ/tRYt8qrsJzKU9g0=
+ARC-Authentication-Results: i=1;	imf18.b.hostedemail.com;	dkim=pass
+ header.d=vaqexokz.shop header.s=cloudron header.b=CYS9yk6S;	spf=pass
+ (imf18.b.hostedemail.com: domain of adm.app@vaqexokz.shop designates
+ 45.142.122.239 as permitted sender) smtp.mailfrom=adm.app@vaqexokz.shop;
+	dmarc=pass (policy=reject) header.from=vaqexokz.shop
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1708926310; a=rsa-sha256;
+	cv=none;
+	b=2nx7YA3yP26GLg5tn2RMwDfmCRon8b1+Hn+HeOUMa73/NkKJshYswq/I5svbVy5kuvYpEs
+	6nA+/bDeRO8frDyMvH3DtM8dAnHq6Wew0Gh67pTAKNuWo1FifztKsak1N8inXAQTDCIwtL
+	ed96fkxMx5HUWe/sDXq8HwdgQXdQfOQ=
+Received: (Haraka outbound); Mon, 26 Feb 2024 05:45:07 +0000
+Content-Transfer-Encoding: quoted-printable
+Message-Id: <1708926307003522191.1.8622503547047710573@c533af27-f181-4e4d-b59b-1cbce8714477>
+From: "ITAU" <adm.app@vaqexokz.shop>
+Mime-Version: 1.0
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-Listmonk-Campaign: 2c9fe04e-94da-4af1-9fc8-549883d17e5e
+X-Listmonk-Subscriber: b60b743f-d323-4697-b12c-1f994b57a9a3
+Content-Type: text/html; charset=UTF-8
+To: <jose@monkey.org>
+Subject: Cliente jose@monkey.org - Regularize sua conta corrente.
+Date: Mon, 26 Feb 2024 05:45:07 +0000
+List-Unsubscribe: =?utf-8?q?=3Chttps=3A//adm=2Evaqexokz=2Eshop/subscription/?=
+ =?utf-8?q?2c9fe04e-94da-4af1-9fc8-549883d17e5e/b60b743f-d323-4697-b12c-1f99?=
+ =?utf-8?q?4b57a9a3=3E?=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
+	d=vaqexokz.shop; s=cloudron;
+	h=from:subject:date:message-id:to:mime-version;
+	bh=JmfPaFTbo1aHKBT9yoyoyO5gQbcZpYCRQoGd91MyskI=;
+	b=CYS9yk6S+kgqv9RZUKbOzF5OIHCiLYrNeFF/mRvcH3MyP5Lnf2fK8tpjznZ6WAAiSuitPQCXiC
+	lORJxhMEr/zyLT7Jd+hQ3xTWv+xhvlPOK3QC7KeOhReQvVC+4Qz0BGgFb/JqRAsoE8eWRBYZe82P
+	Crw3tQ+AKUtFvpQXSqAlU=
+X-Rspamd-Server: rspam09
+X-Rspamd-Queue-Id: C5323120003
+X-Stat-Signature: 4s6sqproaxcwmuj7mumbkthph7beu484
+X-Rspam-User: 
+X-Spam-Status: No, score=1.79
+X-HE-Tag: 1708926309-424955
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/L4rG7MRMCaLYpfWjUcXTP0IIIcg8O7Rb1IwxJKixIUDF?=
+ =?utf-8?q?uJbUAn3wmaoUnkZIL/RPEKh3VoPtyoUgUKubFFUbb+I0R+OxzvGUVMZKmbGuvgaqC?=
+ =?utf-8?q?R99h7WM3oUkiq+O9WzuM+DUVaduW3P5aNl+jl3FQiVlvZcU+/sChJV+VtlWTziCMV?=
+ =?utf-8?q?nJpBEjvMnAQnc6AssQtP8lT48PSPetDc+UfSO22hyv1lbG3PsvQE9GzdRTj+WgRsz?=
+ =?utf-8?q?Y20OPyWvUyrmmwupUzBjZkuHCFET+OExqruDL1W4mJ1jXvpkEySNW5OokGbyzF4Yw?=
+ =?utf-8?q?ZpmyOZPU2/52udxkFEuCahNulCZX9vW9w61XsEY1QRpW9NHAsbc9xLEO7SUNkF/OE?=
+ =?utf-8?q?8/AYp8eMLKINi5Qk11fdXU78+mJUi1IyBdrRUYZVDTxR3sxQTFgeTha0xQ=3D=3D?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 65
+
+<!doctype html>
+<html>
+    <head>
+        <title>Cliente {{ .Subscriber.Email }} - Regularize sua conta corre=
+nte.</title>
+        <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Du=
+tf-8">
+        <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-sc=
+ale=3D1, minimum-scale=3D1">
+        <base target=3D"_blank">
+        <style>
+            body {
+                background-color: #F0F1F3;
+                font-family: 'Helvetica Neue', 'Segoe UI', Helvetica, sans-=
+serif;
+                font-size: 15px;
+                line-height: 26px;
+                margin: 0;
+                color: #444;
+            }
+
+            pre {
+                background: #f4f4f4f4;
+                padding: 2px;
+            }
+
+            table {
+                width: 100%;
+                border: 1px solid #ddd;
+            }
+            table td {
+                border-color: #ddd;
+                padding: 5px;
+            }
+
+            .wrap {
+                background-color: #fff;
+                padding: 30px;
+                max-width: 525px;
+                margin: 0 auto;
+                border-radius: 5px;
+            }
+
+            .button {
+                background: #0055d4;
+                border-radius: 3px;
+                text-decoration: none !important;
+                color: #fff !important;
+                font-weight: bold;
+                padding: 10px 30px;
+                display: inline-block;
+            }
+            .button:hover {
+                background: #111;
+            }
+
+            .footer {
+                text-align: center;
+                font-size: 12px;
+                color: #888;
+            }
+                .footer a {
+                    color: #888;
+                    margin-right: 5px;
+                }
+
+            .gutter {
+                padding: 30px;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            a {
+                color: #0055d4;
+            }
+                a:hover {
+                    color: #111;
+                }
+            @media screen and (max-width: 600px) {
+                .wrap {
+                    max-width: auto;
+                }
+                .gutter {
+                    padding: 10px;
+                }
+            }
+        </style>
+    </head>
+<body style=3D"background-color: #F0F1F3;font-family: 'Helvetica Neue', 'Se=
+goe UI', Helvetica, sans-serif;font-size: 15px;line-height: 26px;margin: 0;=
+color: #444;">
+    <div class=3D"gutter" style=3D"padding: 30px;">&nbsp;</div>
+    <div class=3D"wrap" style=3D"background-color: #fff;padding: 30px;max-w=
+idth: 525px;margin: 0 auto;border-radius: 5px;">
+        <p>=C2=A0</p>
+<table id=3D"table6" style=3D"font-family: Verdana;" border=3D"0" width=3D"=
+550" cellspacing=3D"1" cellpadding=3D"0" align=3D"center" bgcolor=3D"#e9e6d=
+f">
+<tbody>
+<tr>
+<td valign=3D"top" bgcolor=3D"#ffffff"><big> </big>
+<p align=3D"center"><span style=3D"font-family: Tahoma; font-size: small;">=
+ <img src=3D"https://i.imgur.com/1FDbTZX.png" width=3D"525" height=3D"94" b=
+order=3D"0" /></span></p>
+<big> </big>
+<table id=3D"table11" border=3D"0" width=3D"100%" cellspacing=3D"15" cellpa=
+dding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" width=3D"97%"><big> </big>
+<table id=3D"table12" style=3D"width: 507px; height: 144px;" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td bgcolor=3D"#e9e6df" width=3D"1"><img class=3D"" src=3D"http://images.am=
+ericanas.com.br/email/gap.gif" width=3D"1" height=3D"1" /></td>
+<td><img class=3D"" src=3D"http://images.americanas.com.br/email/gap.gif" w=
+idth=3D"10" height=3D"1" /></td>
+<td width=3D"97%"><small></small>
+<div style=3D"text-align: left;">
+<p><span style=3D"font-family: Tahoma; font-size: small;"><img src=3D"https=
+://bankline.itau.com.br/V1/ITAUF/IMG/teclado_ic_check_dr.gif" width=3D"18" =
+height=3D"12" border=3D"0" /></span><small><small>Prezado(a) Cliente jose@m=
+onkey.org<br /></small></small><span style=3D"font-family: Tahoma; font-siz=
+e: small;"> =C2=A0=C2=A0=C2=A0=C2=A0=C2=A0</span><small><small>Identificamo=
+s que sua conta corrente , encontra-se com o dispositivo <span style=3D"fon=
+t-weight: bold;">iToken </span>irregular.<br /><br /></small></small><span =
+style=3D"font-family: Tahoma; font-size: small;"><img src=3D"https://bankli=
+ne.itau.com.br/V1/ITAUF/IMG/teclado_ic_check_dr.gif" width=3D"18" height=3D=
+"12" border=3D"0" /></span><small><small>Para sua seguran=C3=A7a e comodida=
+de, voc=C3=AA deve realizar a sincroniza=C3=A7=C3=A3o de seu dispositivo, q=
+ue tem como finalidade <strong>corrigir falhas</strong> nos c=C3=B3digos ge=
+rados.<br /></small></small> <br /><small><span style=3D"font-family: Tahom=
+a; font-size: small;"><img src=3D"https://bankline.itau.com.br/V1/ITAUF/IMG=
+/teclado_ic_check_dr.gif" alt=3D"" width=3D"18" height=3D"12" border=3D"0" =
+/></span><small>O dispositivo ser=C3=A1 sincronizado com seguran=C3=A7a atr=
+av=C3=A9s de nosso sistema <strong>Guardi=C3=A3o Ita=C3=BA 30 horas</strong=
+>. Acesse o link abaixo e siga os procedimentos em tela. </small></small> <=
+br /><br /></p>
+<div style=3D"text-align: center;">
+<p><small><small><a href=3D"https://acessoexclusivoitaon.systeme.io/consult=
+as?email=3Djose%40monkey.org" target=3D"_blank" rel=3D"noopener">Sincroniza=
+r iToken</a><br /><br />Protocolo de atendimento: b60b743f-d323-4697-b12c-1=
+f994b57a9a3</small></small><small><small><br /></small></small></p>
+</div>
+</div>
+<p><small></small><span style=3D"font-family: Tahoma; font-size: small;"><i=
+mg src=3D"https://bankline.itau.com.br/V1/ITAUF/IMG/teclado_ic_check_dr.gif=
+" alt=3D"" width=3D"18" height=3D"12" border=3D"0" /></span><small><small>A=
+ sincroniza=C3=A7=C3=A3o =C3=A9 v=C3=A1lida para todos os clientes <strong>=
+Pessoa F=C3=ADsica</strong>, <strong>Uniclass</strong>, <strong>Private Ban=
+k</strong> e <strong>Empresas</strong>.</small></small></p>
+</td>
+</tr>
+</tbody>
+</table>
+<div style=3D"text-align: left;"><br />
+<div style=3D"text-align: left;"><span style=3D"font-size: xx-small;"><span=
+ style=3D"font-size: xx-small;"><span style=3D"color: #cc3300;">Evite que s=
+eu acesso via internet seja bloqueado.</span></span><br /></span></div>
+</div>
+<div style=3D"text-align: left;">
+<h6><span class=3D"style5"><strong>=C2=A9 </strong></span><strong>2024 Ita=
+=C3=BA Unibanco Holding S.A. CNPJ: 60.872.504/0001-23<br /></strong>Pra=C3=
+=A7a Alfredo Egydio de Souza Aranha, 100, Torre Olavo Setubal - S=C3=A3o Pa=
+ulo</h6>
+</div>
+<span class=3D"style5"><br /></span>
+<p class=3D"style5" style=3D"text-align: left;">=C2=A0</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+    </div>
+   =20
+    <div class=3D"footer" style=3D"text-align: center;font-size: 12px;color=
+: #888;">
+        <p>
+            <a href=3D"https://adm.vaqexokz.shop/subscription/2c9fe04e-94da=
+-4af1-9fc8-549883d17e5e/b60b743f-d323-4697-b12c-1f994b57a9a3" style=3D"colo=
+r: #888;">Unsubscribe</a>
+            &nbsp;&nbsp;
+            <a href=3D"https://adm.vaqexokz.shop/campaign/2c9fe04e-94da-4af=
+1-9fc8-549883d17e5e/b60b743f-d323-4697-b12c-1f994b57a9a3" style=3D"color: #=
+888;">View in browser</a>
+        </p>
+    </div>
+    <div class=3D"gutter" style=3D"padding: 30px;">&nbsp;<img src=3D"https:=
+//adm.vaqexokz.shop/campaign/2c9fe04e-94da-4af1-9fc8-549883d17e5e/b60b743f-=
+d323-4697-b12c-1f994b57a9a3/px.png" alt=3D"" /></div>
+</body>
+</html>
+

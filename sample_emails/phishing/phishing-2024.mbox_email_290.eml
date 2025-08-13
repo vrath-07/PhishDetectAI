@@ -1,0 +1,174 @@
+Return-Path: bounces+6867233-39f5-jose=monkey.org@sendgrid.net
+Delivered-To: jose@monkey.org
+X-FDA: 82637398914.15.BAD7BD5
+Received: from o2.sg.campminder.com (o2.sg.campminder.com [167.89.74.76])
+	by imf28.b.hostedemail.com (Postfix) with ESMTP id 55C4E100002
+	for <jose@monkey.org>; Fri,  4 Oct 2024 22:43:56 +0000 (UTC)
+Authentication-Results: imf28.b.hostedemail.com;	dkim=pass
+ header.d=sendgrid.net header.s=smtpapi header.b="Evfe/Ccf";	spf=pass
+ (imf28.b.hostedemail.com: domain of
+ "bounces+6867233-39f5-jose=monkey.org@sendgrid.net" designates 167.89.74.76
+ as permitted sender)
+ smtp.mailfrom="bounces+6867233-39f5-jose=monkey.org@sendgrid.net";	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1728081718;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=HRWsedmQuMfiYcqQhUoPtvGn5YoMcmjqVspxKWOoe+k=;
+	b=Nk/jRzvmanIyysDpRM5RtIeSg5Tis/LTu/V3gJ4G3ra0vvxDjBAU7FqiST019lfTbqGMOm
+	pOTnViDzmZ1swqrpvcyw4/f3vHXkt+5NKKmAsVbBk07o5W8yNSRs88kkqN/0h2r7xU1+i7
+	s2wCcp+vnXxKovkaaXNs/z2xVNy3d8s=
+ARC-Authentication-Results: i=1;	imf28.b.hostedemail.com;	dkim=pass
+ header.d=sendgrid.net header.s=smtpapi header.b="Evfe/Ccf";	spf=pass
+ (imf28.b.hostedemail.com: domain of
+ "bounces+6867233-39f5-jose=monkey.org@sendgrid.net" designates 167.89.74.76
+ as permitted sender)
+ smtp.mailfrom="bounces+6867233-39f5-jose=monkey.org@sendgrid.net";	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1728081718; a=rsa-sha256;
+	cv=none;
+	b=lGSJIO0lFrWAuBq/k/htJdm4ASkV+VH+HM8BiBoagQIxJ2m+JqrfbI6ZXzYD+qboqQoEq7
+	N657HRvw/gmp/vSnty7Ffyhh753YLAlaGb0QseEqOr6L4fdKNIQSMsB+GDoQnHR8PUH8g+
+	HwWcAFC72m9aOjmtMKNuWOMs5/HjgtQ=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.net;
+	h=content-type:from:mime-version:subject:to:cc:content-type:from:
+	subject:to;
+	s=smtpapi; bh=HRWsedmQuMfiYcqQhUoPtvGn5YoMcmjqVspxKWOoe+k=;
+	b=Evfe/CcfFbFAscLDRWhLF9btPEhrv15I0GAMkkNJc8NOa6CCIY3yzuj4llD1I6A0AhlJ
+	Dr+T54rM+XTOOyULx4NEAbt+wPRKcNztPmMQRjzAWhr/PUllt7xxPxlCEZrrSUbFkaUNYH
+	/Hurck2a7N5H3M6LIzx0nv3qAdm+ik9bo=
+Received: by recvd-5c9bd48f99-gg85l with SMTP id
+ recvd-5c9bd48f99-gg85l-1-67006FAB-17	2024-10-04 22:43:55.409915238 +0000 UTC
+ m=+1918040.243245498
+Received: from Njg2NzIzMw (unknown)
+	by geopod-ismtpd-10 (SG) with HTTP
+	id wDHhhjIIRLKT_Z7ULmhLcQ
+	Fri, 04 Oct 2024 22:43:55.380 +0000 (UTC)
+Content-Type: multipart/alternative;
+ boundary="db6b7a20863b674a7a95a2c3b8fe6b679f5f01fac7ab803df5d6fb01b574"
+Date: Fri, 04 Oct 2024 22:43:55 +0000 (UTC)
+From: DHL <pdoutre@annarborymca.org>
+Mime-Version: 1.0
+Message-ID: <wDHhhjIIRLKT_Z7ULmhLcQ@geopod-ismtpd-10>
+Subject: Your Package is ready for delivery!
+X-SG-EID:  u001.1s0pjnRS/Bz1mwRS+uGDphfgyWx1z7ac01IQUUVwjhfitYxGm4W5LWQq1
+ =?utf-8?q?TBR8PPdtZBPXa0IXrBIOSSRFrHGoErw6ZaB+xEt?==?utf-8?q?T1/UX41kvLKV/o?=
+ =?utf-8?q?uA8Gte7gy28Qjp/fB39z7qUshIiNvP7U60xQsmAdk1Oeq7mvPZk/2SlmRkhfd0XkV?=
+ =?utf-8?q?WBEdzGk/k7LJc7KKMYWtSzqIO1dyLYnflS2iWN?=RM4C6wJ2TrTN/lREZOOslA=
+To: Jose Nazario <jose@monkey.org>
+X-Entity-ID: u001.q55UWaSuk/LS6qmi3whRjQ==
+X-Stat-Signature: wjfdo317hmkkzimoqyc91ikh4u1nwf64
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 55C4E100002
+X-Rspamd-Server: rspam09
+X-Spam-Status: No, score=2.10
+X-HE-Tag: 1728081836-464822
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19oaWE2uHvE8+uj48J60uYmbcY5sK5e5wA/u5p5W7tyko2?=
+ =?utf-8?q?HqIJ1ebfbf9gtu0aUAlxyKTQO6fzlHvusgFSxXC92XvRjwUz7curmpu2UCfF/X+sq?=
+ =?utf-8?q?lU9H+bOhwcgZntoIrKFxtOVKcskG1WwmQ3FadoBV+DPAkfnY9zYTuGVoqn5iR6kDe?=
+ =?utf-8?q?GmQII+H6XX98UPL24uLa2CbWfI6TtcizCmZt1IHcUx9wrlbC0ig1eyZFBWoGwszFC?=
+ =?utf-8?q?jKy5oThPnU+pj0ZG2WRwBQOY2eqJGw5EXsW1XCOanlERa4gMiDyEwGu8VlOmnnIsl?=
+ =?utf-8?q?+lsnj8fQkxRz9u3xQ8gsBhgN42HiIGpdQr9hYEIZNYhaAqtTjJZaQq7b8wl30uZEu?=
+ =?utf-8?q?8MW+GsDf6Ptsbec1UGSYBjRPa1OVJ181PRt1kLviaKkKwfebSyyYwaCvjU46YWr/t?=
+ =?utf-8?q?M7cEeFCufe6dADb6WNfnVhA1rITz8PeCmQTJzY4ngGIBugy9rPIV7G7CLKYZxTa5A?=
+ =?utf-8?q?he0ttpjOlz3cWu5QfKP3hqS9j6o9hHLMKi9LE3FqN5NQ796NmgLz3/7gQPylC64YV?=
+ =?utf-8?q?gOCHsY1p90jTgEINCH3qtvpsTAGAQBMnE0k+N0OJ3cttW+spBH+p7VCeK7qCuFOGa?=
+ =?utf-8?q?pzTkgc/f8YpNrHGg3Ja0vAsM3AxoYq58p4kcwGP9dv1GNt6BR+s13Zs+2GJVL33KL?=
+ =?utf-8?q?xlyt3qwLHbNeZGS4G6QNRKmXkuNHmDEf09VeWNxOUhi/hh8nEehvFqYPR7KxAQufl?=
+ =?utf-8?q?PyCq508xerozN2r6Rvr+1Ec6s813YABhShms/+P21LKCaRrqH2Z4M0hJx1o0YUPhO?=
+ =?utf-8?q?Rchd6NGl8lMTQDQo4N7JkyzNhkmqylJ2b/+wMyuJKDNt2PJASgTyAEPMnLnNkMeL6?=
+ =?utf-8?q?Is0FC2Pb5VnQL/z9mRf0SC4e5JnPhWj9hAVilP1YYBhI9sNi6fJ6PlJvmZN5FGfqd?=
+ =?utf-8?q?7K3uGspRWo9nmriixPzPtu_vVtt9DJykodBlh32qX4l2im4sNycBqD5KdijRbhz5n?=
+ =?utf-8?q?2J9OhkZiRta5EvAxEavaXkzOnD9eknke7GPgvqw2VhYviEQ8rX/vT6ljyXG0CT/lf?=
+ =?utf-8?q?CSFRWCCMA+XGRrDGdxSSt+VAbKTqoAp9U8GVWkcoRhYQUqvqd6RfaNPh0VxLtzg28?=
+ =?utf-8?q?4Qzvo3nJYpGVa/v6unlhEiRqYsfdzXw7D1tgOFGd68z0n7Pg90JcEegvQ5z7wSbTE?=
+ =?utf-8?q?doBgJMbYF6ikoY9ZhIWrWffGlgcjhxROVnsAeX0QuDzQoVLOvVi6uHCZtJr4ddeZA?=
+ =?utf-8?q?ran6IdAog/BC2I0QRYYAMdSwD3KChdbfWgNyUtPQar8xyjTXd2wFjnf7BvTYXGy2N?=
+ =?utf-8?q?1QSkZLlMnFr9o952tvecSUihhFqbdZoOphp64wv60I5mo8JdXYo+V1J6EORSnktdB?=
+ =?utf-8?q?il/d3dfVKvI2JUd8tcNPaQ+1+zA7D3MCJoPzcpJZ6wIHk1Bh0EhsVCwbCv+Ls1C+C?=
+ =?utf-8?q?IE4PmaRHTKmjYFlcQKeOE3ZudOJgYUs9jgYDZsO55/FHeZZTKGtaRQz8TgK+ayE?=
+ =?utf-8?q?=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 290
+
+--db6b7a20863b674a7a95a2c3b8fe6b679f5f01fac7ab803df5d6fb01b574
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=us-ascii
+Mime-Version: 1.0
+
+[DHL] Your Package is ready for delivery. Please confirm your details and p=
+ay the transport fee to avoid delays. Update now : https://did.li/8QcOf . O=
+therwise, your Package will be returned to the sender
+--db6b7a20863b674a7a95a2c3b8fe6b679f5f01fac7ab803df5d6fb01b574
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=us-ascii
+Mime-Version: 1.0
+
+<!DOCTYPE html><html><head><style type=3D'text/css'>@import url(https://sys=
+tem.campminder.com/v2/common/abcpdf/css/cmTextEditor.css);</style><style ty=
+pe=3D'text/css'>
+			body {
+				padding:0;
+				margin:0;
+				color:#333;
+				background:#e7e7e7;}
+		=09
+			a {
+				color:#069;}
+		=09
+			a:hover {
+				color:#a00;
+				text-decoration:none;}
+		</style></head><body>
+			<div align=3D"center" style=3D"background-color:#e7e7e7;padding:10px;">
+				<table cellspacing=3D"0" width=3D"550" style=3D"background:#fff;border-=
+left:1px solid #ddd;border-right:1px solid #ccc;border-bottom:1px solid #cc=
+c;padding:0;margin:0;">
+					<tr>
+						<td align=3D"center" style=3D"padding:20px;"><img src=3D"https://imag=
+es2.campminder.com/C676/EmailStationery/annarboremail.gif"></td>
+					</tr>
+					<tr>
+						<td align=3D"left" style=3D"padding:0 20px 20px 20px;line-height:1.4e=
+m;">
+[DHL] Your Package is ready for delivery. Please confirm your details and p=
+ay the transport fee to avoid delays. Update now : https://did.li/8QcOf . O=
+therwise, your Package will be returned to the sender
+						</td>
+					</tr>
+				</table>
+				<p align=3D"center" style=3D"font-family:Lucida Grande,Verdana,Helvetic=
+a,Arial,sans-serif;font-size:.7em;line-height:1.3em;color:#999;padding-top:=
+11px;margin:0;">
+				<a href=3D"http://www.annarborymca.org/">www.annarborymca.org</a> &bull=
+; <a href=3D"mailto:camping@annarborymca.org">camping@annarborymca.org</a><=
+br/>
+				  400 W. Washington St. &bull; Ann Arbor MI, 48103 &bull; (734)996-9622=
+<br />
+				</p>
+			=09
+		=09
+			=09
+			=09
+				<img src=3D"https://images2.campminder.com/C215/EmailStationery/powered=
+ByCampMinder.gif">
+			</div>
+		<img src=3D"http://links.annarborymca.org/wf/open?upn=3Du001.z0wa68HzF9Nq=
+0jK6BfRwe1frBA-2BiN8Z2wCSGnkWlgw-2FHJOF1SCGmDe1Wd0QxQU8o0VbkZGTm0Sgq1VOlofr=
+nKnAJGKkOht2LnaeFuShLh-2BXqBNTvH6rnbAJtJg5spdZvILVwrC-2FSzrpIWwR5-2BYOgQ-2F=
+1Uoy7BDaO8jC0FBH5YiiIlfMaa8zzPWWdIFCbmzpi7vQyuSrF-2F9P08QM0MbgslTg-3D-3D" a=
+lt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"height:1px !importan=
+t;width:1px !important;border-width:0 !important;margin-top:0 !important;ma=
+rgin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important=
+;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !impo=
+rtant;padding-left:0 !important;"/></body></html><img src=3D"https://system=
+.campminder.com/CMinder/V2/Communication/JS/EmailTracker.jshx?cid=3D676&eid=
+=3D79785f8d-0b6a-4758-bf98-31c90a59aa17&pid=3D9715992&t=3Dv" alt=3D"" style=
+=3D"position:absolute; opacity:0; z-index:-1000;" id=3D"pixelTracker"/><div=
+><a href=3D'https://annarborymca.campintouch.com/ui/unsubscribe/Emails?toke=
+n=3DeyJDbGllbnRJZCI6Njc2LCJFbWFpbEFkZHJlc3MiOiJqb3NlQG1vbmtleS5vcmciLCJVc2V=
+yTmFtZSI6Ikpvc2UgTmF6YXJpbyJ9'>Unsubscribe</a> from marketing emails</div>
+--db6b7a20863b674a7a95a2c3b8fe6b679f5f01fac7ab803df5d6fb01b574--
+

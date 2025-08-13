@@ -1,0 +1,164 @@
+Return-Path: contactus@51dulele131.net
+Delivered-To: jose@monkey.org
+X-FDA: 82022662428.05.A9BE9EA
+Received: from inbox0.51dulele131.net (inbox0.51dulele131.net [79.141.162.49])
+	by imf02.b.hostedemail.com (Postfix) with ESMTP id A38481A000E
+	for <jose@monkey.org>; Thu, 18 Apr 2024 13:00:53 +0000 (UTC)
+Authentication-Results: imf02.b.hostedemail.com;	dkim=pass
+ header.d=51dulele131.net header.s=default header.b=LBbh6ySd;	dmarc=pass
+ (policy=reject) header.from=51dulele131.net;	spf=pass
+ (imf02.b.hostedemail.com: domain of contactus@51dulele131.net designates
+ 79.141.162.49 as permitted sender) smtp.mailfrom=contactus@51dulele131.net
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1713445253;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=aZ40qC/citxsXPJhiGk8qtvoVIlvzh6t2mpT8I6wb2I=;
+	b=SV9FfNAL9sTbkaW3V56DRxiNl8bzEXFXz6h5kQO0ukaeCLb3NzX2lzLTr7rK6+Dd28Y4lf
+	8YM8SxbJgOOV/0WMExc2rh74sx8MJidMEJ/7caoFxmKdrZkSgy1H9rP+623DcgbXP/pJAP
+	0v9mQahAmSvZXrqMEPONtZaNTmMYED4=
+ARC-Authentication-Results: i=1;	imf02.b.hostedemail.com;	dkim=pass
+ header.d=51dulele131.net header.s=default header.b=LBbh6ySd;	dmarc=pass
+ (policy=reject) header.from=51dulele131.net;	spf=pass
+ (imf02.b.hostedemail.com: domain of contactus@51dulele131.net designates
+ 79.141.162.49 as permitted sender) smtp.mailfrom=contactus@51dulele131.net
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1713445253; a=rsa-sha256;
+	cv=none;
+	b=mYxoZ90uvjrEzEFdHmvYHBTkxcTtu6UrI5265LhAXBoLsZVOm5msYRKzpQbu2zMY2wcnSF
+	KRIDOCyo423q1Y+fJ4sGNKfspcxa53DeXGprtr1AJFSrV/Jzo1Z5TEqCiYnaej1arFogjp
+	pCXban6HsZ7a9flMlkcjXCQvJgpDvJ8=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=default;
+ d=51dulele131.net;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:
+ Content-Transfer-Encoding; i=contactus@51dulele131.net;
+ bh=aZ40qC/citxsXPJhiGk8qtvoVIlvzh6t2mpT8I6wb2I=; =?utf-8?q?b=3DLBbh6ySdac2M?=
+ =?utf-8?q?LEXSoegvDQswLtm8Rqdm7LTrghhotp1d0zOPaqRbxNf0rrZoJPj6STDBzNB/iNcr?=
+  
+ D+kPPJqODOz0jx92eBgMbjDQTYG9B7DVl4H6dtq3yNMfd5LB/aBP0zoWjsWhNIii8oR3Zu306QIo
+   /D1W7a7faEBlvta4dJM=
+From: DocuSign via DocuSign<contactus@51dulele131.net>
+To: jose@monkey.org
+Subject: Complete with DocuSign: 2024-04-18 monkey.org Contract Agreement.pdf
+Date: 18 Apr 2024 06:00:51 -0700
+Message-ID: <20240418060051.40AE0FA259BFF2DC@51dulele131.net>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam10
+X-Stat-Signature: qakfa6hsk8f4dwrw484x85e54q7fhut7
+X-Rspam-User: 
+X-Spam-Status: No, score=-1.80
+X-Rspamd-Queue-Id: A38481A000E
+X-HE-Tag: 1713445253-312839
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18C5oav77NwIVZAgsH5mKlVdP9Te36n52+/s3FAtIqXsQU?=
+ =?utf-8?q?zQD2Uq4xRPOmMWHlABkn7hdQQIwMAQfTj/YV1eWjJScuqF0ynIci8uIFutpKY6PyL?=
+ =?utf-8?q?knkTprOUIXmGqNhAJejlGMHTKcjBogSjBsHNieeEczpj5ChFsYaY3J2CbMkJSk1xd?=
+ =?utf-8?q?wP0TwL+X7H1Bd8Q0ZtMKkmlM29Ay2zX51/dcwyJ0LSoT9gqFbA=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 113
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<table width=3D"100%" align=3D"center" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0"><tbody><tr><td></td><td width=3D"640">
+<table style=3D"border-collapse: collapse; max-width: 640px; background-col=
+or: rgb(255, 255, 255);"><tbody><tr><td style=3D"padding: 10px 24px;"><img =
+width=3D"116" style=3D"border: currentColor; border-image: none;" alt=3D"Do=
+cuSign" src=3D"https://resize.yandex.net/mailservice?url=3Dhttps%3A%2F%2Fdo=
+cucdn-a.akamaihd.net%2Folive%2Fimages%2F2.62.0%2Fglobal-assets%2Femail-temp=
+lates%2Femail-logo.png&amp;proxy=3Dyes&amp;key=3Db924da2236004be38167d79a21=
+53fda6" height=3D"25"></td></tr><tr><td style=3D"padding: 0px 24px 30px;">
+<table width=3D"100%" align=3D"center" style=3D"color: rgb(255, 255, 255); =
+background-color: rgb(30, 76, 161);" border=3D"0" cellspacing=3D"0" cellpad=
+ding=3D"0"><tbody><tr><td align=3D"center" style=3D'padding: 28px 10px 36px=
+; border-radius: 2px; width: 100%; text-align: center; color: rgb(255, 255,=
+ 255); font-family: "helvetica", "arial", "sans serif"; font-size: 16px; ba=
+ckground-color: rgb(30, 76, 161);'>
+<img width=3D"75" height=3D"75" style=3D"width: 75px; height: 75px;" src=3D=
+"https://resize.yandex.net/mailservice?url=3Dhttps%3A%2F%2Fwww.docusign.net=
+%2Fmember%2FImages%2Femail%2FdocComplete-white.png&amp;proxy=3Dyes&amp;key=
+=3D20a9fc6a787dd8a64e9cccf62a2edbd7">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbo=
+dy><tr><td align=3D"center" style=3D'border: currentColor; border-image: no=
+ne; text-align: center; color: rgb(255, 255, 255); padding-top: 24px; font-=
+family: "helvetica", "arial", "sans serif"; font-size: 16px;'>Your document=
+ has been completed to review and sign</td></tr></tbody></table>
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbo=
+dy><tr><td align=3D"center" style=3D"padding-top: 30px;">
+<div>
+<table cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td height=3D"44" ali=
+gn=3D"center" style=3D'border-radius: 2px; border: 1px solid rgb(255, 255, =
+255); border-image: none; height: 100%; text-align: center; color: rgb(255,=
+ 255, 255); font-family: "helvetica", "arial", "sans serif"; font-size: 14p=
+x; font-weight: bold; text-decoration: none; display: block; background-col=
+or: rgb(30, 76, 161);'>
+<a style=3D'padding: 0px 12px; text-align: center; color: rgb(255, 255, 255=
+); font-family: "helvetica", "arial", "sans serif"; font-size: 14px; font-w=
+eight: bold; text-decoration: none; display: inline-block; background-color=
+: rgb(30, 76, 161);' href=3D"https://jornalogaribaldense.com.br/#jose@monke=
+y.org" target=3D"_blank" rel=3D"noopener noreferrer"><span style=3D"line-he=
+ight: 44px;"> VIEW COMPLETED DOCUMENT &amp; SIGN</span></a></td></tr></tbod=
+y></table>
+</div>
+</td></tr></tbody></table>
+</td></tr></tbody></table>
+</td></tr><tr><td style=3D'padding: 0px 24px 24px; color: rgb(0, 0, 0); fon=
+t-family: "helvetica", "arial", "sans serif"; font-size: 16px; background-c=
+olor: white;'>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td styl=
+e=3D"padding-bottom: 20px;">
+
+<div style=3D'color: rgb(102, 102, 102); line-height: 18px; font-family: "h=
+elvetica", "arial", "sans serif"; font-size: 15px;'><a target=3D"_blank" re=
+l=3D"noopener noreferrer">jose@monkey.org</a></div>
+</td></tr></tbody></table>
+<p style=3D'color: rgb(51, 51, 51); line-height: 20px; font-family: "helvet=
+ica", "arial", "sans serif"; font-size: 15px;'>All parties have completed C=
+omplete with DocuSign: <span class=3D"gmail-wmi-callto">4/18/2024 6:00:51 a=
+=2Em.</span>&nbsp; monkey.org  Contract Agreement.pdf.</p>
+</td></tr><tr><td style=3D'padding: 0px 24px 12px; color: rgb(102, 102, 102=
+); font-family: "helvetica", "arial", "sans serif"; font-size: 11px; backgr=
+ound-color: rgb(255, 255, 255);'>&nbsp;</td></tr><tr><td style=3D"padding: =
+30px 24px 45px; background-color: rgb(234, 234, 234);">
+<p style=3D'color: rgb(102, 102, 102); line-height: 18px; font-family: "hel=
+vetica", "arial", "sans serif"; font-size: 13px; margin-bottom: 1em;'><stro=
+ng>Do Not Share This Email</strong><br>This email contains a secure link to=
+ DocuSign. Please do not share this email, link, or access code with others=
+=2E</p>
+<p style=3D'color: rgb(102, 102, 102); line-height: 18px; font-family: "hel=
+vetica", "arial", "sans serif"; font-size: 13px; margin-bottom: 1em;'><stro=
+ng>About DocuSign</strong><br>Sign
+ documents electronically in just minutes. It's safe, secure, and=20
+legally binding. Whether you're in an office, at home, on-the-go -- or=20
+even across the globe -- DocuSign provides a professional trusted=20
+solution for Digital Transaction Management&#8482;.</p>
+<p style=3D'color: rgb(102, 102, 102); line-height: 18px; font-family: "hel=
+vetica", "arial", "sans serif"; font-size: 13px; margin-bottom: 1em;'><stro=
+ng>Questions about the Document?</strong><br>If
+ you need to modify the document or have questions about the details in=20
+the document, please reach out to the sender by emailing them directly.<br>=
+<br><strong>CONFIDENTIALITY NOTICE:</strong>
+ The information in this electronic message may be privileged and=20
+confidential and is intended for the use of the individual and/or entity
+ named above. If you are not the intended recipient, you are on notice=20
+that any unauthorized disclosure, copying, distribution, or taking any=20
+action in reliance on the contents of the electronically transmitted=20
+materials is prohibited. If you receive this message in error, or are=20
+not the named recipient, please notify the sender at the email address=20
+above and delete this email from your computer.</p>
+<p style=3D'color: rgb(102, 102, 102); line-height: 14px; font-family: "hel=
+vetica", "arial", "sans serif"; font-size: 10px; margin-bottom: 1em;'>This
+ message was sent to you by [EMail_DomainPart] who is using the DocuSign=20=
+
+Electronic Signature Service. If you would rather not receive email from
+ this sender you may contact the sender with your request.</p></td></tr></t=
+body></table></td></tr></tbody></table>
+
+</body></html>
+

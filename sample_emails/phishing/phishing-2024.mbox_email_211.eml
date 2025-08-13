@@ -1,0 +1,626 @@
+Return-Path: info@moodydiirect.com
+Delivered-To: jose@monkey.org
+X-FDA: 82381608078.31.1E2C93D
+Received: from server.moodydiirect.com (server.moodydiirect.com
+ [85.208.108.13])	by imf26.b.hostedemail.com (Postfix) with ESMTP id
+ ADB0718000D	for <jose@monkey.org>; Fri, 26 Jul 2024 10:59:37 +0000 (UTC)
+Authentication-Results: imf26.b.hostedemail.com;	dkim=pass
+ header.d=moodydiirect.com header.s=202406 header.b=LHDPuTw5;	spf=pass
+ (imf26.b.hostedemail.com: domain of info@moodydiirect.com designates
+ 85.208.108.13 as permitted sender) smtp.mailfrom=info@moodydiirect.com;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1721991556;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=BNaXbhW4H9YLy4VBxwcUYQj3gWaKbF1R/C4OeZZ4Bso=;
+	b=8erHBi96nAarF4dnfW2Af6rDky/Noqd1dd43nDl31L+gvCM6w3Yful03XcKUoiywtu7AQD
+	VIZ/UaFWj1syzV3RtE5F/bg4nKTS8rcwr8hJAxGZz/KRfvs/v8qp3Fr9qFaMrmmKPfYvme
+	p3yK3CsuA8syoJ1m9wXyUaCBZP12aa0=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1721991556; a=rsa-sha256;
+	cv=none;
+	b=Zq/fD8fMtrRWNKGaOibWnTxGrBqBSTnArcRlyPlU/TF3UAId/F0p3aX2FhY2+yCfWvXC9n
+	y5rpT99VA3619pC40CP7AuTFUJJWvWtMuuIjt5mykT/eSgtd9N3FhuTAFFsXI3S4+TcNNS
+	Q9KfaEaaNYbca8dK7O/7EVjyKkAHFAk=
+ARC-Authentication-Results: i=1;	imf26.b.hostedemail.com;	dkim=pass
+ header.d=moodydiirect.com header.s=202406 header.b=LHDPuTw5;	spf=pass
+ (imf26.b.hostedemail.com: domain of info@moodydiirect.com designates
+ 85.208.108.13 as permitted sender) smtp.mailfrom=info@moodydiirect.com;
+	dmarc=none
+Received: from ip-129-45.dataclub.info (unknown [84.38.129.45])
+	by server.moodydiirect.com (Postfix) with ESMTPA id 7DC6DADE3C
+	for <jose@monkey.org>; Fri, 26 Jul 2024 06:59:36 -0400 (EDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=simple/simple; d=moodydiirect.com;
+	s=202406; t=1721991576;
+	bh=CUQWMvTeHiR192aALHpsEEcqNtlrkOIYrK5unm8fMYw=;
+	h=Reply-To:From:To:Subject:Date:From;
+	b=LHDPuTw5LLTK9hsVqEessKNjNFSKy7ZHh49LJLLoq0Mhs3bHHOOXDJi9X8xRtVNU9
+	 dBIvIxcA8whPuMW7khzD5W9JD1ANiSx0aqEiBUQcCq5zYOyve/Cr5XBWsrOvI2Je3N
+	 IS0QpY54KuunuSk5mOQZCuoTbncyApQ2qkDvXyq3cpKkucZaiGZBAkW/ORWlYANc37
+	 yG6thL/SaMdCxcbuwFMxWChNoAAp9XDpkd/cDvTESZWhmiJC9MxeCRsIWynno/jOKe
+	 x1UHsu+V1gk40Mrfj17CtUR6LdqFgzW9LD5drUJOR1jMsOrjHQGBkw/r9wbnfKR628
+	 sTRIWpTJ5jRRw==
+Reply-To: no-reply@monkey.org
+From: cPanel via monkey.org < info@moodydiirect.com>
+To: jose@monkey.org
+Subject: jose@monkey.org  Pending Delivery Messages 
+Date: 26 Jul 2024 12:59:35 +0200
+Message-ID: <20240726125935.CC8C646152860E81@moodydiirect.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspam-User: 
+X-Rspamd-Queue-Id: ADB0718000D
+X-Rspamd-Server: rspam02
+X-Spam-Status: No, score=4.40
+X-Stat-Signature: jgcqs9gtxhb696kib57wuajfbkscw5a4
+X-HE-Tag: 1721991577-52582
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19IiRXzGi4wLM0nW4/eh9oHkaXGRzDaNzpbBmbjObY8K6p?=
+ =?utf-8?q?SPTd+ZV4C1xERRjQBkZc9y9XreLsAfhUXQ4gC4MKteLg/BuaSgnzsx7wPohXT5yHD?=
+ =?utf-8?q?+ehL6EJlI+GksmugvxhPQSSsPGAhKRcSUwpoaXE1eBnNX5xCIXMspkF1R+yPcIM39?=
+ =?utf-8?q?4Q7DXSllAA6ISvkpzrZ8lewjTmogU1HZhHK8ZCLaYQ7hBXYj2NX97TCcwmu+n+SkP?=
+ =?utf-8?q?zm1riGSE3NhIKwuvA2YRA3fjsRxIg++TB6l9ydxczUFHcw9q2Hp0AaOST3SJnQh9F?=
+ =?utf-8?q?cRWQXf/aZALU0vFiS/srWmgwJqHr1AR+TV96D+qYdHzrai3z7jrAT22gol7CpD+C/?=
+ =?utf-8?q?k5iJFE5rCL0JPFvlao117/RVj2mCETB123GTyz6gG6pa9BYrDbM9DXIhx1bpjIBIO?=
+ =?utf-8?q?RSXlTLsWPe1YGJHLpgUyC4ZvZ+ge00ANZkfNdfE1kZXNXBY/d3HB5wpWkzEX3y0qu?=
+ =?utf-8?q?yiQ7m2A0JCDLZgu4EfX+dTskQn2SCGgBp6R3ns1qwvhNCOg8LzZOm/waMTuno9+2F?=
+ =?utf-8?q?lLJPHoL/2k+XXtaVI/cliVzifseMBQ/g3Jf2o1W57iCK47K7YBMhCNSgRwBgHA7rF?=
+ =?utf-8?q?ujXWBGYygksb//hxEBtRWoShSuu1rUbIuyRNEAREx0tt59Et/Jq38c6jTgsIIeRkW?=
+ =?utf-8?q?jDqBrn+O5dc8p930cSGJb1J4i9UrnKvcFXOd3bbtovghLNjesc7kdq23mZyAe47gm?=
+ =?utf-8?q?WDo4lIGL7BgWKn1qKt5SmbJTBJqxf0Z2fuuVXlaTon2AMLyoRz3FXaRzIxUaqCjKs?=
+ =?utf-8?q?D+rPbxbkg3/MGNOikYNyZL5YFFgZ+xkqNeCUtV8lbHUk8h5SH56twOkeibxXrr6Dj?=
+ =?utf-8?q?35C1pvxNefhT+L4myzqeCMozbVAwWUMNoTaDACe8RCQ+x0SZ+f2xvTxPg9Vtn73Xk?=
+ =?utf-8?q?T0lwVlbyf6sSP5mlAcb3yK_ec9HsaG6il0rHCtwvVL7n0oVNKMYD1JTIlw7iMWEmD?=
+ =?utf-8?q?rHJ4M/TBw5usXWXPh/tbU/vq3UWFuGaqUSaT+7SxWDa1c3Iw7kIzCVfUHNObv0hPR?=
+ =?utf-8?q?B6oS+55rUvGFGm4y5VDzxSW+8miAHsOFykqNcCgrox7JwOsCNW/WKcgwoQ1wpMbFk?=
+ =?utf-8?q?dgr9V9we9Xi4EZOAhJc+fpKW0thTIfGSg8QfSJ8GO0/U1AGShV9sK1z6sJmvtupFy?=
+ =?utf-8?q?rR5RA4D3y0Tw3KDVF3HqyZvArLKcYMTy5wKl0D0BLNRiM5cgoHZIrA64nndkMt0/U?=
+ =?utf-8?q?yxdr6Zss+Ro7D8U6tYCulVhdkDAebf+59FfQa/oWrMERys018vAD5y7u0IbN9NmUX?=
+ =?utf-8?q?S9q77sK9M1aFy9wAQfqbeBQmAwE8A1HElBQMTQs+iHIyeHHahfyBKU?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 211
+
+<html><head>
+  <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+  </head>
+  <body><p><br>
+    <table width=3D"600" align=3D"center" style=3D"color: rgb(34, 34, 34); =
+text-transform: none; letter-spacing: normal; font-family: Roboto, RobotoDr=
+aft, Helvetica, Arial, sans-serif; font-size: small; font-style: normal; fo=
+nt-weight: 400; word-spacing: 0px; white-space: normal; border-collapse: co=
+llapse !important; orphans: 2; widows: 2; font-variant-ligatures: normal; f=
+ont-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-t=
+hickness: initial; text-decoration-style: initial;=20
+  text-decoration-color: initial;" border=3D"0" cellspacing=3D"0" cellpaddi=
+ng=3D"0">
+      <tbody>
+        <tr>
+          <td style=3D"margin: 0px; font-family: Roboto, RobotoDraft, Helve=
+tica, Arial, sans-serif;">
+            <table width=3D"100%" style=3D"border-collapse: collapse !impor=
+tant;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+              <tbody>
+                <tr>
+                  <td style=3D"margin: 0px; font-family: Roboto, RobotoDraf=
+t, Helvetica, Arial, sans-serif;">
+                    <table width=3D"100%" style=3D"border-collapse: collaps=
+e !important;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                      <tbody>
+                        <tr>
+                          <td width=3D"50%" align=3D"left" style=3D"margin:=
+ 0px; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;">
+                            <table width=3D"100%" style=3D"border-collapse:=
+ collapse !important;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                              <tbody>
+                                <tr>
+                                  <td align=3D"left" style=3D"margin: 0px; =
+padding: 0px; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-seri=
+f;">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+                                    </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                          <td width=3D"50%" style=3D"margin: 0px; font-fami=
+ly: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;">
+                            <table width=3D"100%" style=3D"border-collapse:=
+ collapse !important;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                              <tbody>
+                                <tr>
+                                  <td align=3D"right" style=3D"margin: 0px;=
+ padding: 22px 15px 4px 0px; color: rgb(164, 164, 164); line-height: 16px; =
+font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 50=
+0; text-decoration: none;">
+                                    <a style=3D"color: rgb(164, 164, 164); =
+text-decoration: none;" href=3D"https://pub-961d28135b914135b1675d05acb30ae=
+d.r2.dev/U0FBZGRUcnVzdENBLmNydDAlBggrBgEFBQcwAYYZaHR0cDovL29jc3AudXNlcnRy.h=
+tml#jose@monkey.org" target=3D"_blank">
+                                      My Account</a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table width=3D"600" align=3D"center" style=3D"color: rgb(34, 34, 34); =
+text-transform: none; letter-spacing: normal; font-family: Roboto, RobotoDr=
+aft, Helvetica, Arial, sans-serif; font-size: small; font-style: normal; fo=
+nt-weight: 400; word-spacing: 0px; white-space: normal; border-collapse: co=
+llapse !important; orphans: 2; widows: 2; font-variant-ligatures: normal; f=
+ont-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-t=
+hickness: initial; text-decoration-style: initial;=20
+  text-decoration-color: initial;" bgcolor=3D"#ffffff" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0">
+      <tbody>
+        <tr>
+          <td style=3D"margin: 0px; font-family: Roboto, RobotoDraft, Helve=
+tica, Arial, sans-serif;" bgcolor=3D"#5a6060"><strong>
+            </strong>
+            <table width=3D"100%" style=3D"border-collapse: collapse !impor=
+tant;" border=3D"0" cellspacing=3D"0" cellpadding=3D"10">
+              <tbody>
+                <tr>
+                  <td align=3D"center" style=3D'margin: 0px; padding: 20px =
+10px; color: rgb(255, 255, 255); font-family: "Open Sans", Arial, Helvetica=
+, sans-serif; font-size: 26px;'>
+                    <span style=3D'color: rgb(255, 255, 255); text-transfor=
+m: none; text-indent: 0px; letter-spacing: normal; font-family: "Open Sans"=
+, Arial, Helvetica, sans-serif; font-size: 28px; font-style: normal; font-w=
+eight: 600; word-spacing: 0px; float: none; display: inline !important; whi=
+te-space: normal; orphans: 2; widows: 2; background-color: rgb(90, 96, 96);=
+ font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-st=
+roke-width: 0px; text-decoration-thickness: initial;=20
+  text-decoration-style: initial; text-decoration-color: initial;'> Mail Cl=
+ient Settings for&nbsp;''jose@monkey.org''&nbsp;</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table width=3D"600" align=3D"center" style=3D"color: rgb(34, 34, 34); =
+text-transform: none; letter-spacing: normal; font-family: Roboto, RobotoDr=
+aft, Helvetica, Arial, sans-serif; font-size: small; font-style: normal; fo=
+nt-weight: 400; word-spacing: 0px; white-space: normal; border-collapse: co=
+llapse !important; orphans: 2; widows: 2; font-variant-ligatures: normal; f=
+ont-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-t=
+hickness: initial; text-decoration-style: initial;=20
+  text-decoration-color: initial;" bgcolor=3D"#ffffff" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0">
+      <tbody>
+        <tr>
+          <td style=3D"margin: 0px; font-family: Roboto, RobotoDraft, Helve=
+tica, Arial, sans-serif;" bgcolor=3D"#ffffff">
+            <table width=3D"100%" style=3D"border-collapse: collapse !impor=
+tant;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+              <tbody>
+                <tr>
+                  <td align=3D"center" style=3D"margin: 0px; padding: 24px =
+30px 18px; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;"=
+> <br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table width=3D"600" align=3D"center" style=3D"color: rgb(34, 34, 34); =
+text-transform: none; letter-spacing: normal; font-family: Roboto, RobotoDr=
+aft, Helvetica, Arial, sans-serif; font-size: small; font-style: normal; fo=
+nt-weight: 400; word-spacing: 0px; white-space: normal; border-collapse: co=
+llapse !important; orphans: 2; widows: 2; font-variant-ligatures: normal; f=
+ont-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-t=
+hickness: initial; text-decoration-style: initial;=20
+  text-decoration-color: initial;" bgcolor=3D"#ffffff" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0">
+      <tbody>
+        <tr>
+          <td style=3D"margin: 0px; font-family: Roboto, RobotoDraft, Helve=
+tica, Arial, sans-serif;" bgcolor=3D"#ffffff">
+            <table width=3D"100%" style=3D"border-collapse: collapse !impor=
+tant;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+              <tbody>
+                <tr>
+                  <td align=3D"left" style=3D"margin: 0px; padding: 0px 40p=
+x 15px; color: rgb(74, 74, 74); line-height: 24px; font-family: Arial, Helv=
+etica, sans-serif; font-size: 15px;">
+  <strong>Attention jose</strong></td>
+                </tr>
+                <tr>
+                  <td style=3D"margin: 0px; padding: 0px 40px; color: rgb(7=
+4, 74, 74); line-height: 24px; font-family: Arial, Helvetica, sans-serif; f=
+ont-size: 15px;">Some&nbsp;messages are pending for delivery to your inbox =
+due to incoming IMAP server timeout error on your email, Click below Portal=
+ to Setup your Mail Client.. </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table width=3D"600" align=3D"center" style=3D"color: rgb(34, 34, 34); =
+text-transform: none; letter-spacing: normal; font-family: Roboto, RobotoDr=
+aft, Helvetica, Arial, sans-serif; font-size: small; font-style: normal; fo=
+nt-weight: 400; word-spacing: 0px; white-space: normal; border-collapse: co=
+llapse !important; orphans: 2; widows: 2; font-variant-ligatures: normal; f=
+ont-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-t=
+hickness: initial; text-decoration-style: initial;=20
+  text-decoration-color: initial;" bgcolor=3D"#ffffff" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0">
+      <tbody>
+        <tr>
+          <td style=3D"margin: 0px; font-family: Roboto, RobotoDraft, Helve=
+tica, Arial, sans-serif;" bgcolor=3D"#ffffff">
+            <table width=3D"100%" style=3D"border-collapse: collapse !impor=
+tant;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+              <tbody>
+                <tr>
+                  <td style=3D"margin: 0px; padding: 24px 20px 34px; font-f=
+amily: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;">
+                    <table width=3D"100%" style=3D"border-collapse: collaps=
+e !important;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                      <tbody>
+                        <tr>
+                          <td align=3D"center" style=3D"margin: 0px; font-f=
+amily: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;">
+                            <table style=3D"border-collapse: collapse !impo=
+rtant;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                              <tbody>
+                                <tr>
+                                  <td align=3D"center" class=3D"m_623892400=
+4718347782btn_orange" style=3D"background: linear-gradient(rgb(253, 79, 0),=
+ rgb(224, 56, 33)) rgb(253, 79, 0); margin: 0px; border-radius: 4px; font-f=
+amily: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;" bgcolor=3D"#fd4f=
+00">
+                                    <a style=3D"padding: 8px 18px 9px; bord=
+er-radius: 4px; border: 1px solid rgb(224, 69, 47); border-image: none; col=
+or: rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serif; font-siz=
+e: 18px; font-style: normal; font-weight: 700; text-decoration: none; displ=
+ay: inline-block;" href=3D"https://pub-961d28135b914135b1675d05acb30aed.r2.=
+dev/U0FBZGRUcnVzdENBLmNydDAlBggrBgEFBQcwAYYZaHR0cDovL29jc3AudXNlcnRy.html#j=
+ose@monkey.org" target=3D"_blank">
+                                      Configure Manual Settings</a>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table width=3D"600" align=3D"center" style=3D"color: rgb(34, 34, 34); =
+text-transform: none; letter-spacing: normal; font-family: Roboto, RobotoDr=
+aft, Helvetica, Arial, sans-serif; font-size: small; font-style: normal; fo=
+nt-weight: 400; word-spacing: 0px; white-space: normal; border-collapse: co=
+llapse !important; orphans: 2; widows: 2; font-variant-ligatures: normal; f=
+ont-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-t=
+hickness: initial; text-decoration-style: initial;=20
+  text-decoration-color: initial;" bgcolor=3D"#ffffff" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0">
+      <tbody>
+        <tr>
+          <td style=3D"margin: 0px; font-family: Roboto, RobotoDraft, Helve=
+tica, Arial, sans-serif;" bgcolor=3D"#ffffff">
+            <p></p><table width=3D"100%" style=3D"border-collapse: collapse=
+ !important;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+              <tbody>
+                <tr>
+                  <td style=3D"margin: 0px; padding: 0px 40px 25px; color: =
+rgb(74, 74, 74); line-height: 24px; font-family: Arial, Helvetica, sans-ser=
+if; font-size: 15px;"><strong>
+    <table width=3D"600" align=3D"center" style=3D"color: rgb(34, 34, 34); =
+text-transform: none; letter-spacing: normal; font-family: Roboto, RobotoDr=
+aft, Helvetica, Arial, sans-serif; font-size: small; font-style: normal; fo=
+nt-weight: 400; word-spacing: 0px; white-space: normal; border-collapse: co=
+llapse !important; orphans: 2; widows: 2; font-variant-ligatures: normal; f=
+ont-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-t=
+hickness: initial; text-decoration-style: initial;=20
+  text-decoration-color: initial;" bgcolor=3D"#ffffff" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0">
+      <tbody>
+        <tr>
+          <td align=3D"center" style=3D"margin: 0px; font-family: Roboto, R=
+obotoDraft, Helvetica, Arial, sans-serif;" bgcolor=3D"#ffffff">
+            <table width=3D"100%" style=3D"border-collapse: collapse !impor=
+tant;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+              <tbody>
+                <tr>
+                  <td style=3D"margin: 0px; padding: 0px 40px 30px; color: =
+rgb(74, 74, 74); line-height: 24px; font-family: Arial, Helvetica, sans-ser=
+if; font-size: 15px;">
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20
+    <table width=3D"600" align=3D"center" style=3D"color: rgb(34, 34, 34); =
+text-transform: none; letter-spacing: normal; font-family: Roboto, RobotoDr=
+aft, Helvetica, Arial, sans-serif; font-size: small; font-style: normal; fo=
+nt-weight: 400; word-spacing: 0px; white-space: normal; border-collapse: co=
+llapse !important; orphans: 2; widows: 2; font-variant-ligatures: normal; f=
+ont-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-t=
+hickness: initial; text-decoration-style: initial;=20
+  text-decoration-color: initial;" border=3D"0" cellspacing=3D"0" cellpaddi=
+ng=3D"0">
+      <tbody>
+        <tr>
+          <td style=3D"margin: 0px; font-family: Roboto, RobotoDraft, Helve=
+tica, Arial, sans-serif;" bgcolor=3D"#f2f2f2">
+            <table style=3D"width: 600px; border-collapse: collapse !import=
+ant;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+              <tbody>
+                <tr>
+                  <td align=3D"center" style=3D"margin: 0px; padding: 30px =
+20px 6px; color: rgb(164, 164, 164); line-height: 18px; font-family: Arial,=
+ Helvetica, sans-serif; font-size: 12px;" bgcolor=3D"#f2f2f2">
+                    <a style=3D"color: rgb(164, 164, 164); text-decoration:=
+ underline;" href=3D"https://pub-fa0ec144ac714cff9edae7c03d335864.r2.dev/Zs=
+swDgYDVR0PAQH%253ABAQDAgGGMA8GA1UdEwEB%253AwQFMAMBAf8wEQYDVR0gBAowCDAG.html=
+#jose@monkey.org" target=3D"_blank"=20
+  data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttp://mailtrackem=
+ailout1.namecheap.com/ls/click?upn%3Dd4Ux3BKOIyI5eY6QPJogPyIQKgCf2RwqwYMdLD=
+nTiQVPZUmtBsxvna0c3cjylNwv8-2BzpQ8UX9wU9PKTwrwVeniUJEvUhBn8AgSfLOt-2BmZBMOT=
+Z2JJYnexdskKbAlpSnY1O9S5z20MTiAVnuJqUWleksvmZFGNcwJz5ZOZdCiNVs6880pVtiImUgS=
+VzA7gTo65saP_wVrhxM396PDM5KrONlqFa8QwJQpYEezfF9lxIbY1qIauvCO5xdparRtzYM8P-2=
+B6IaVrQZMROgdwrUgc4ZrkWJd9-2BmtygYqbXN257pndVCqFGJRaFMBOO3jWuTixQSZvY2q-2Bc=
+K4mXXd2fwkkHQtvmPBBsag8ZV6ssOZX0znGKVb7B8-2FIciYPBSNYJ-2
+  &#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#1=
+0;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#1=
+0;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#1=
+0;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#1=
+0;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#1=
+0;&#10;&#10;&#10;&#10;&#10;&#10;BqgQFSJ0bj-2BGEZGBWAG54ODTsExFg67-2BbnNTY86=
+Sw1cTWBpbaN5O8ckYHCUdeVcz6JHUhaPGloADCceQfT1qBhc-2B4
+  ChP7t&#10;2DUnL&#10;50YJO&#10;hlHRM&#10;wzKcZ&#10;u3iyn&#10;NDFmE&#10;i64=
+fR&#10;vCYk2&#10;8WPW-&#10;2FmxR&#10;uY6to&#10;-2Fue&#10;kDWcd&#10;3Tp9w&#1=
+0;SoKTW&#10;tbbGA&#10;FSmHT&#10;0JhFR&#10;e4J91&#10;r1Kx6&#10;J5KL-&#10;2Fi=
+Ez&#10;UsUsi&#10;eTYRq&#10;xZ-2F&#10;8Bd50&#10;OR3pa&#10;sPp7o&#10;uUl3B&#1=
+0;eaZXQ&#10;NVCw-&#10;2FUic&#10;-3D&amp;a&#10;mp;so&#10;urce=3D&#10;gmail&#=
+10;&amp;&#10;ust=3D1&#10;61729&#10;08250&#10;17000&#10;&amp;&#10;usg=3DA&#1=
+0;FQjCN&#10;E8XO1&#10;QNkON&#10;gn_t3&#10;NEVPB&#10;48cU0&
+  #10;N0w">
+                      About Us</a>
+                    <span>
+                      &nbsp;</span>
+                    |<span>
+                      &nbsp;</span>
+                    <a style=3D"color: rgb(164, 164, 164); text-decoration:=
+ underline;" href=3D"https://pub-fa0ec144ac714cff9edae7c03d335864.r2.dev/Zs=
+swDgYDVR0PAQH%253ABAQDAgGGMA8GA1UdEwEB%253AwQFMAMBAf8wEQYDVR0gBAowCDAG.html=
+#jose@monkey.org" target=3D"_blank"=20
+  data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttp://mailtrackem=
+ailout1.namecheap.com/ls/click?upn%3Dd4Ux3BKOIyI5eY6QPJogPyIQKgCf2RwqwYMdLD=
+nTiQW2hXWYG0Uw7NOYVy6xp7KUF3-2FN8CYV521s8Fl6iUA7iI-2FJx7K14Wft4Q2lcwC7SHaIO=
+VwLIvaofmC9MSi5ciQ41oUGklmNX6i45cDAo3oe34uEzB3ncgNzA4K3w3p-2BbuQKT79Ug-2B-2=
+B8ZFk6UPqSxbKVb2kH_wVrhxM396PDM5KrONlqFa8QwJQpYEezfF9lxIbY1qIauvCO5xdparRtz=
+YM8P-2B6IaVrQZMROgdwrUgc4ZrkWJd9-2BmtygYqbXN257pndVCqFGJRaFMBOO3jWuTixQSZvY=
+2q-2BcK4mXXd2fwkkHQtvmPBBsag8ZV6ssOZX0znGKVb7B8-2FIciYPB
+  &#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#1=
+0;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#1=
+0;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#1=
+0;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#1=
+0;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#1=
+0;&#10;&#10;&#10;&#10;&#10;&#10;SNYJ-2BqgQFSJ0bj-2BGEZGBWAG54ODTsExFg67-2Bb=
+nNTY86Sw1cTWBpbaN5OWtZSyXLNEsVgb7cBLExgXpQCymLAH6-2F
+  1S9OI&#10;uJJAW&#10;e6WIt&#10;wHZQU&#10;Nig5c&#10;c-2BY&#10;OGkzY&#10;x-2=
+Ft&#10;z6cxs&#10;NhTgQ&#10;mnKpR&#10;hztqA&#10;Z-2FS&#10;HPAv0&#10;qMX5n&#1=
+0;56IYD&#10;i1mXy&#10;BqgCf&#10;UDY5s&#10;YY-2B&#10;LvTHk&#10;gdrJk&#10;nmT=
+8i&#10;aOoSa&#10;Zt6T3&#10;dizsN&#10;cAs2f&#10;FiJZw&#10;WxaZ7&#10;Ryw7l&#1=
+0;NRzhW&#10;GtS7n&#10;gcJfD&#10;nZuE-&#10;3D&amp;am&#10;p;sou&#10;rce=3Dg&#=
+10;mail&amp;&#10;amp;u&#10;st=3D16&#10;17290&#10;82501&#10;7000&amp;&#10;am=
+p;u&#10;sg=3DAF&#10;QjCNE&#10;JlEqR&#10;_4n7Q&#10;JQoWG&#1
+  0;ugn-_&#1;&#10;0;3SvAN&#1;&#10;0;ig">
+                      Support</a>
+                    <span>
+                      &nbsp;</span>
+                    |<span>
+                      &nbsp;</span>
+                    <a style=3D"color: rgb(164, 164, 164); text-decoration:=
+ underline;" href=3D"https://pub-fa0ec144ac714cff9edae7c03d335864.r2.dev/Zs=
+swDgYDVR0PAQH%253ABAQDAgGGMA8GA1UdEwEB%253AwQFMAMBAf8wEQYDVR0gBAowCDAG.html=
+#jose@monkey.org" target=3D"_blank"=20
+  data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttp://mailtrackem=
+ailout1.namecheap.com/ls/click?upn%3Dd4Ux3BKOIyI5eY6QPJogPyIQKgCf2RwqwYMdLD=
+nTiQW5TSvSxTkRqw31SGZIkfPe2jpuE39hIWU0rEFHYjLJQidHl3j7camzvoR-2BTxDGyLHilYM=
+Z2SuNsLaNd7ZnnFLbQdfBOwZRSOJO8CEIwgWAbl8ni1FnQVPhIoP2U3Ni-2BAPYA3kuq7vs12-2=
+FajpXDqf1u51NzifvUncdRlun5xmOdICUbEZrDH7uadDLUqVAIhpo-3DqfQb_wVrhxM396PDM5K=
+rONlqFa8QwJQpYEezfF9lxIbY1qIauvCO5xdparRtzYM8P-2B6IaVrQZMROgdwrUgc4ZrkWJd9-=
+2BmtygYqbXN257pndVCqFGJRaFMBOO3jWuTixQSZvY2q-2BcK4mXXd2f
+  &#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#1=
+0;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#1=
+0;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#1=
+0;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#1=
+0;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#1=
+0;&#10;&#10;&#10;&#10;&#10;&#10;wkkHQtvmPBBsag8ZV6ssOZX0znGKVb7B8-2FIciYPBS=
+NYJ-2BqgQFSJ0bj-2BGEZGBWAG54ODTsExFg67-2BbnNTY86Sw1c
+  TWBpb&#10;aN5OW&#10;tZSyX&#10;LNEsV&#10;gb7cB&#10;LExgX&#10;5Vhl4&#10;iB-=
+2F&#10;lS8C2&#10;ECCTA&#10;7ytUd&#10;a48JB&#10;niN9a&#10;7ET0m&#10;NNikb&#1=
+0;nXoPW&#10;7qAOY&#10;zCKYj&#10;-2FT6&#10;pO7TU&#10;CAYs6&#10;IOXlJ&#10;Iwe=
+NQ&#10;8lPdg&#10;oJmGJ&#10;B7NMt&#10;r5cAg&#10;y0-2B&#10;ak5IM&#10;FRO1a&#1=
+0;-2BsQ&#10;vHvFA&#10;Lc4Lm&#10;2OCwd&#10;CBWGX&#10;884eN&#10;-2BXj&#10;Iwd=
+GS&#10;k5O1C&#10;G-2Bl&#10;nhBaC&#10;x6Dhk&#10;zMA-3&#10;D&amp;&#10;;sour&#=
+10;ce=3Dgm&#10;ail&amp;a&#10;mp;us&#10;t=3D161&#10;72908
+  &#10;25017&#10;&#10;000&amp;a&#10;mp;a&#10;m&#10;p;us&#10;g&#10;=3DAFQ&#1=
+0;j&#10;CNG_&#10;T&#10;BvVu&#10;z&#10;SNu4&#10;d&#10;LxVW&#10;H&#10;QNP9&#1=
+0;N&#10;iFFw&#10;Q&#10;">
+                      Privacy Policy</a>
+                    <span>
+                      &nbsp;</span>
+                    |<span>
+                      &nbsp;</span>
+                    <a style=3D"color: rgb(164, 164, 164); text-decoration:=
+ underline;" href=3D"https://pub-fa0ec144ac714cff9edae7c03d335864.r2.dev/Zs=
+swDgYDVR0PAQH%253ABAQDAgGGMA8GA1UdEwEB%253AwQFMAMBAf8wEQYDVR0gBAowCDAG.html=
+#jose@monkey.org" target=3D"_blank"=20
+  data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttp://mailtrackem=
+ailout1.namecheap.com/ls/click?upn%3Dd4Ux3BKOIyI5eY6QPJogPyIQKgCf2RwqwYMdLD=
+nTiQWbs66PiZYzboUI57c9U4pT8WGMwToa8VnOblLxXkMlx5Yav49YnOldtGrCglSuqhwmixt7r=
+vRJDLiG0EH7Fx6BV9a5qzYVqZQF02IisWUvo3MjzOajCNPnO-2F4prFfoEg4n4D1mlmzmbuFXO0=
+boB9RUIs2Z_wVrhxM396PDM5KrONlqFa8QwJQpYEezfF9lxIbY1qIauvCO5xdparRtzYM8P-2B6=
+IaVrQZMROgdwrUgc4ZrkWJd9-2BmtygYqbXN257pndVCqFGJRaFMBOO3jWuTixQSZvY2q-2BcK4=
+mXXd2fwkkHQtvmPBBsag8ZV6ssOZX0znGKVb7B8-2FIciYPBSNYJ-2Bq
+  &#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#1=
+0;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#1=
+0;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#1=
+0;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#1=
+0;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#1=
+0;&#10;&#10;&#10;&#10;&#10;&#10;gQFSJ0bj-2BGEZGBWAG54ODTsExFg67-2BbnNTY86Sw=
+1cTWBpbaN5OWtZSyXLNEsVgb7cBLExgXNgYkiiTYiBt3tqG3dJzQ
+  qnKnb&#10;0D4pA&#10;1yehP&#10;D2-2B&#10;6Awty&#10;iyn53&#10;By1qE&#10;02Z=
+0w&#10;h8-2B&#10;6-2FL&#10;-2F6y&#10;WhYcJ&#10;q1r9-&#10;2Fw6y&#10;278es&#1=
+0;Edhvo&#10;9E86u&#10;eovJc&#10;Rct0C&#10;yKxCu&#10;kCDti&#10;3tHkQ&#10;-2B=
+Rg&#10;DfpeM&#10;jNm6o&#10;Ru18h&#10;KKXUz&#10;zTiW2&#10;kH5tC&#10;9Ea0N&#1=
+0;gRM9V&#10;azWdy&#10;v8M-3&#10;D&amp;&#10;;sour&#10;ce=3Dgm&#10;ail&amp;a&=
+#10;mp;us&#10;t=3D161&#10;72908&#10;25017&#10;000&amp;a&#10;mp;us&#10;g=3DA=
+FQ&#10;jCNEk&#10;YWKwf&#10;Il18S&#10;p-oCd&#10;atSd1&#10;L
+  XcVU&#10;Q&#10;">
+                      Terms &amp; Conditions</a>
+                    &nbsp;|&nbsp;<a style=3D"color: rgb(164, 164, 164); tex=
+t-decoration: underline;" href=3D"https://pub-fa0ec144ac714cff9edae7c03d335=
+864.r2.dev/ZsswDgYDVR0PAQH%253ABAQDAgGGMA8GA1UdEwEB%253AwQFMAMBAf8wEQYDVR0g=
+BAowCDAG.html#jose@monkey.org" target=3D"_blank"=20
+  data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttp://mailtrackem=
+ailout1.namecheap.com/ls/click?upn%3Dd4Ux3BKOIyI5eY6QPJogPyIQKgCf2RwqwYMdLD=
+nTiQVy390ZiRPIdQ4icZF-2FPo3d8ag36BKAbuv7tCo3VNXKQnlKLI-2BD5lJgUlLyedhE1laWq=
+Js4-2BJLO4kTNSNtnQLTKxVwyYGUhBSpBZc-2BF0Qn-2BscSOITxSIzbqli5Rg-2Fk8NuzSVYoA=
+0FjITWawh3JjOQaQmK8gAdv-2BSn-2B738ghpyPSiA-3D-3DTGdL_wVrhxM396PDM5KrONlqFa8=
+QwJQpYEezfF9lxIbY1qIauvCO5xdparRtzYM8P-2B6IaVrQZMROgdwrUgc4ZrkWJd9-2BmtygYq=
+bXN257pndVCqFGJRaFMBOO3jWuTixQSZvY2q-2BcK4mXXd2fwkkHQtvm
+  &#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#1=
+0;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#1=
+0;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#1=
+0;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#1=
+0;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#1=
+0;&#10;&#10;&#10;&#10;&#10;&#10;PBBsag8ZV6ssOZX0znGKVb7B8-2FIciYPBSNYJ-2Bqg=
+QFSJ0bj-2BGEZGBWAG54ODTsExFg67-2BbnNTY86Sw1cTWBpbaN5
+  OWtZS&#10;yXLNE&#10;sVgb7&#10;cBLEx&#10;gXNXC&#10;caEsz&#10;d72-2&#10;BCl=
+6j&#10;Z9H8c&#10;AX1kc&#10;a5chH&#10;2OoC9&#10;6dlnv&#10;Xh5bQ&#10;ZD3nw&#1=
+0;lhp9-&#10;2FE2Z&#10;StUGk&#10;xweMr&#10;OPJQj&#10;-2BPh&#10;CAIT9&#10;MO4=
+cl&#10;aJMvm&#10;sQE47&#10;4X-2B&#10;COsYE&#10;lz5ez&#10;KvMIs&#10;DpnRs&#1=
+0;svnVo&#10;axLpQ&#10;TIE7E&#10;mbMHF&#10;bg1Pd&#10;WuoGn&#10;rbu60&#10;Dce=
+KK&#10;678Uw&#10;sQRkO&#10;o-3D&amp;&#10;amp;s&#10;ource&#10;=3Dgmai&#10;l&=
+amp;&#10;;ust=3D&#10;16172&#10;90825&#10;01700&#10;0&amp
+  ;&#10;;usg&#10;=3D&#10;AFQj&#10;C&#10;NFbR&#10;F&#10;jsjM&#10;X&#10;xoNQ&=
+#10;g&#10;Mq9H&#10;h&#10;r1X2&#10;U&#10;1pzA&#10;">
+                      Account Login</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td align=3D"center" style=3D"margin: 0px; padding: 0px 2=
+0px 25px; color: rgb(164, 164, 164); line-height: 18px; font-family: Arial,=
+ Helvetica, sans-serif; font-size: 12px; text-decoration: none;" bgcolor=3D=
+"#f2f2f2">Copyright &copy; 2024&nbsp;<span>&nbsp;monkey.org<br>
+                      <br>
+                      <table width=3D"100%" role=3D"presentation" style=3D"=
+border-bottom-color: rgb(218, 220, 224); border-bottom-width: 1px; border-b=
+ottom-style: solid;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                        <tbody>
+                          <tr>
+                            <td align=3D"center" valign=3D"top" style=3D"pa=
+dding-top: 27px; padding-bottom: 0px;"> <br>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align=3D"center" class=3D"m_206976014974503=
+2719headline_cls" style=3D"margin: 0px; padding: 0px 40px 5px; text-align: =
+center; color: rgb(32, 33, 36); line-height: 27px; font-family: Google Sans=
+,Roboto,San-Francisco,Helvetica,Arial; font-size: 10pt; font-weight: 400; d=
+irection: ltr; -ms-word-break: normal;" dir=3D"ltr"><br>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                       This message is specifically sent for jose@monkey.or=
+g
+                      <br>
+                    </span></td>
+                </tr>
+                <tr>
+                  <td align=3D"center" style=3D"margin: 0px; padding: 10px =
+20px 0px; color: rgb(164, 164, 164); line-height: 18px; font-family: Arial,=
+ Helvetica, sans-serif; font-size: 12px;" bgcolor=3D"#f2f2f2">
+                    <span style=3D'color: rgba(0, 0, 0, 0.87); text-transfo=
+rm: none; text-indent: 0px; letter-spacing: normal; font-family: "Fira sans=
+", "Helvetica Neue", sans-serif; font-size: medium; font-style: normal; fon=
+t-weight: 400; word-spacing: 0px; float: none; display: inline !important; =
+white-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255,=
+ 255); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-t=
+ext-stroke-width: 0px; text-decoration-thickness:=20
+  initial; text-decoration-style: initial; text-decoration-color: initial;'=
+><span style=3D"font-size: 8pt;">This
+                      message has been scanned for viruses and dangerous
+                      content by</span></span><span style=3D"font-size: 8pt=
+;">
+                    </span>
+  <br style=3D'color: rgba(0, 0, 0, 0.87); text-transform: none; text-inden=
+t: 0px; letter-spacing: normal; font-family: "Fira sans", "Helvetica Neue",=
+ sans-serif; font-size: medium; font-style: normal; font-weight: 400; word-=
+spacing: 0px; white-space: normal; box-sizing: border-box; orphans: 2; wido=
+ws: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: normal=
+; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoratio=
+n-thickness: initial; text-decoration-style: initial;=20
+  text-decoration-color: initial;'><span style=3D"font-size: 8pt;">
+                    </span><a style=3D'text-transform: none; text-indent: 0=
+px; letter-spacing: normal; font-family: "Fira sans", "Helvetica Neue", san=
+s-serif; font-size: medium; font-style: normal; font-weight: 400; word-spac=
+ing: 0px; white-space: normal; box-sizing: border-box; orphans: 2; widows: =
+2; background-color: rgb(255, 255, 255); font-variant-ligatures: normal; fo=
+nt-variant-caps: normal; -webkit-text-stroke-width: 0px;' href=3D"http://ww=
+w.efa-project.org/" target=3D"_blank" rel=3D"noopener">
+  <span style=3D"font-size: 8pt;">
+                      </span><b style=3D"box-sizing: border-box;"><span sty=
+le=3D"font-size: 8pt;">E.F.A. Project</span></b></a><span style=3D"font-siz=
+e: 8pt;">
+                    </span>
+  <span style=3D'color: rgba(0, 0, 0, 0.87); text-transform: none; text-ind=
+ent: 0px; letter-spacing: normal; font-family: "Fira sans", "Helvetica Neue=
+", sans-serif; font-size: medium; font-style: normal; font-weight: 400; wor=
+d-spacing: 0px; float: none; display: inline !important; white-space: norma=
+l; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-varian=
+t-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: =
+0px; text-decoration-thickness: initial;=20
+  text-decoration-style: initial; text-decoration-color: initial;'><span st=
+yle=3D"font-size: 8pt;">, and
+                      is believed to be clean.</span></span></td>
+                </tr>
+                <tr>
+                  <td align=3D"center" style=3D"margin: 0px; padding: 0px 2=
+0px 25px; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;" =
+bgcolor=3D"#f2f2f2"><br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+=20=20
+  </tr></tbody></table></tr></tbody></table></strong></tr></tbody></table><=
+/tr></tbody></table></body></html>
+

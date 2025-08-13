@@ -1,0 +1,255 @@
+Return-Path: ccristian_adrian_83vs@kawunimy.com
+Delivered-To: jose@monkey.org
+X-FDA: 82204243128.01.80628EB
+Received: from chameleon.ash.relay.mailchannels.net
+ (chameleon.ash.relay.mailchannels.net [23.83.222.33])	by
+ imf25.b.hostedemail.com (Postfix) with ESMTP id 83C4912001A	for
+ <jose@monkey.org>; Fri,  7 Jun 2024 13:56:42 +0000 (UTC)
+Authentication-Results: imf25.b.hostedemail.com;	dkim=none ("invalid DKIM
+ record") header.d=kawunimy.com header.s=default header.b=iEQQpnLT;	spf=none
+ (imf25.b.hostedemail.com: domain of ccristian_adrian_83vs@kawunimy.com has no
+ SPF policy when checking 23.83.222.33)
+ smtp.mailfrom=ccristian_adrian_83vs@kawunimy.com;	dmarc=none;	arc=pass
+ ("mailchannels.net:s=arc-2022:i=1")
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1717768602;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=Sk9hA8dCUoWcMp4/6HQ8Qg+QjdVCFSZTld5G0D5/21w=;
+	b=u66fX/kw1rjA6c4vxPy4c/NVnXr4tsjRm8teaWEAAohc/NynRIB18D8hHJpDKZz6V+ecd/
+	qTZOaAfhOQNzb6XPzntCPbmSPVlnmSv3s2oveIGxwgrypyXtfFEU+991T6yvYyGCKYKPrj
+	PTVz4Kc9e3eWT3jqpf+2+53DQCUeRrw=
+ARC-Authentication-Results: i=2;	imf25.b.hostedemail.com;	dkim=none ("invalid
+ DKIM record") header.d=kawunimy.com header.s=default header.b=iEQQpnLT;
+	spf=none (imf25.b.hostedemail.com: domain of
+ ccristian_adrian_83vs@kawunimy.com has no SPF policy when checking
+ 23.83.222.33) smtp.mailfrom=ccristian_adrian_83vs@kawunimy.com;	dmarc=none;
+	arc=pass ("mailchannels.net:s=arc-2022:i=1")
+ARC-Seal: i=2; s=arc-20220608; d=hostedemail.com; t=1717768602; a=rsa-sha256;
+	cv=pass;
+	b=0+HW5PMLY15Mc4elz4/mF821tD50CG97CPt2ztsTbx2tTRdPCLzcrKDI5hXlK0z1p+SqIJ
+	aUuidaVNpF29HI9XvhPNbRuVFuzhO6lw19auH8VSVov6nrJyrK4ZDH+PDHqJUo9fuUoD/u
+	c8t6ae6g2/MFZtnru4Ii2zD73U5fCWU=
+X-Sender-Id: nocmonitoringorg|x-authuser|ccristian_adrian_83vs@kawunimy.com
+Received: from relay.mailchannels.net (localhost [127.0.0.1])
+	by relay.mailchannels.net (Postfix) with ESMTP id 800742C336B;
+	Fri,  7 Jun 2024 13:56:41 +0000 (UTC)
+Received: from corporate.vip7.noc401.com (unknown [127.0.0.6])
+	(Authenticated sender: nocmonitoringorg)
+	by relay.mailchannels.net (Postfix) with ESMTPA id 7879B2C2CE9;
+	Fri,  7 Jun 2024 13:56:36 +0000 (UTC)
+ARC-Seal: i=1; s=arc-2022; d=mailchannels.net; t=1717768601; a=rsa-sha256;
+	cv=none;
+	b=D7tAzO7342RcK901huJVfVyXQgBK68Y0m/8fV5tc9CdcPWXlMiZtexbgNwlp5fjvjqxuks
+	oH/553aInxwFop2rcvbXzck5SX5XgocYau3MnOQBKwIvmckyepYcHuv6ggnsW7HiGN4TYw
+	FMKPHfBp8Mqqa5DF86qrJjSBerkyo9DgotucnvjnAyIWNN0QygBcHiTpxasfaiDvhm81D9
+	1m2IR24W3xHdnE5uah8+YMy3bF4APYZbfIAGq7I5rpBS12N+xR7nXVdOSX2LO1XFPtwRU8
+	s3lP6p0oP6a+LIva8sOWVg2G41lKEYhdOkSdC3ko6T1q+i8cijXfRSP8QjRTOg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=mailchannels.net;
+	s=arc-2022; t=1717768601;
+	h=from:from:reply-to:subject:subject:date:date:message-id:message-id:
+	 to:to:cc:mime-version:mime-version:content-type:content-type:
+	 dkim-signature; bh=Sk9hA8dCUoWcMp4/6HQ8Qg+QjdVCFSZTld5G0D5/21w=;
+	b=7AgPpeBHt8LnVlFpLIf9JKfZ74iRT/JAYbD85CIg8tErvLRhIwwvdfIU84yccObwbZvJme
+	WkOoI31qE1Yy+xihLp+cAHayPFNVmAiH04bh3WpsLEgp66AIiM7D1Ie46tyx+lSYKUPCT0
+	PG9xTJAtW6zfbo7O8OQ+OXH3nHD6B0ML6cDzA/xtoE3efIfaHFHaHzuDU5dbnNpjmZEM/a
+	wKIiAsxsvY1XY3SU7nlfaFacgFwDCL4p538UAZPdBs3kdCLEEKMpGDDFKlCg3unLPXgjMn
+	0AdTZtGc3oz/Pf220jQk1P17VsYlqoQRgcG8AJFOyJ5VGt5b6fCab4ZVgiEG8A==
+ARC-Authentication-Results: i=1;
+	rspamd-7f76976655-8wwns;
+	auth=pass smtp.auth=nocmonitoringorg
+ smtp.mailfrom=ccristian_adrian_83vs@kawunimy.com
+X-Sender-Id: nocmonitoringorg|x-authuser|ccristian_adrian_83vs@kawunimy.com
+X-MC-Relay: Bad
+X-MailChannels-SenderId: 
+ nocmonitoringorg|x-authuser|ccristian_adrian_83vs@kawunimy.com
+X-MailChannels-Auth-Id: nocmonitoringorg
+X-Battle-Bitter: 1e5462256f0af43a_1717768601342_1790719626
+X-MC-Loop-Signature: 1717768601342:1050271506
+X-MC-Ingress-Time: 1717768601342
+Received: from corporate.vip7.noc401.com (corporate.vip7.noc401.com
+ [107.167.86.146])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384)
+	by 100.113.249.79 (trex/6.9.2);
+	Fri, 07 Jun 2024 13:56:41 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=kawunimy.com; s=default; h=Content-Type:Message-ID:Subject:To:From:Date:
+	MIME-Version:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=Sk9hA8dCUoWcMp4/6HQ8Qg+QjdVCFSZTld5G0D5/21w=; b=iEQQpnLTHkr6/0MNY3djvcJm8C
+	enT/BABXoJI2pZCMOvDAu1BNbUnLbXSzQshrZHdtByckZ9gc1LXW+F2tAnpUN9sMCd9HMsYsdTTAm
+	7+x8CmO1/yj5y9Mf3c49ubA0xwXjHHqby59YuD3uLtz2HVbAeycoF5mSx2QlNLENQpnNlW8yUGvWg
+	W2S4dV7nwcEPf6XqWvFbL1ab9k8FQC+4k2qeS/VbAHcDEW5HSDOPZdhx1GSn/3DZOO2SHc3UzoPum
+	gUybfFCxWbP7tqmXOjCLmMqBDAjtcrcSA3T7Itfo6PVLcooaclytZ7mGuPD4r8i1ba+Ad5sahaLt/
+	n69XIWVQ==;
+Received: from [::1] (port=51188 helo=corporate.vip7.noc401.com)
+	by corporate.vip7.noc401.com with esmtpa (Exim 4.97.1)
+	(envelope-from <ccristian_adrian_83vs@kawunimy.com>)
+	id 1sFa4Z-0000000FPV2-20tV;
+	Fri, 07 Jun 2024 06:56:02 -0700
+MIME-Version: 1.0
+Date: Fri, 07 Jun 2024 06:55:28 -0700
+From: Wise <ccristian_adrian_83vs@kawunimy.com>
+To: undisclosed-recipients:;
+Subject: Your Account Is Now Closed
+User-Agent: Roundcube Webmail/1.6.6
+Message-ID: <25d301d94aafdb7b7f60503b55d14288@kawunimy.com>
+X-Sender: ccristian_adrian_83vs@kawunimy.com
+X-Priority: 1 (Highest)
+Content-Type: multipart/alternative;
+ boundary="=_e9621eb4718d5ccf8d1b72c1313359d6"
+X-AuthUser: ccristian_adrian_83vs@kawunimy.com
+X-Rspamd-Server: rspam02
+X-Rspamd-Queue-Id: 83C4912001A
+X-Stat-Signature: zzwdbfgqeytjixxpx4pcyaiqtnutaoia
+X-Rspam-User: 
+X-Spam-Status: Yes, score=11.80
+X-HE-Tag: 1717768602-751950
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/EMNZJ6oEJS1Yb1T4VF8XCbHSlTdGKSY2BxGGRH0ewW53?=
+ =?utf-8?q?4u5eIRXrxKBeeLzk/FKaES4H/86fKvwF2hOOM3tcLuobRFG3XR3/r72wKHCAjURLX?=
+ =?utf-8?q?a/ZtkAlUSdrjT8iiG3T93d8g+HHS8cBQSbhVKOrFkLCFhIDjh12pJ9TbiF+2ujMw/?=
+ =?utf-8?q?Osg6b9w0nJzfVI9nJH0FYxWcBlr8k+nFBDvv8PnONpvy70JJGM=3D?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 173
+
+--=_e9621eb4718d5ccf8d1b72c1313359d6
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset=US-ASCII;
+ format=flowed
+
+WE'VE CLOSED YOUR ACCOUNT
+
+Hello,
+
+It's because how you use, or plan to use Wise, isn't allowed under our 
+Acceptable Use Policy [1].
+
+We've refunded any pending payments back to the sender. Refunds take 1-2 
+working days -- it depends on how quickly the bank processes payments
+
+If you still hold money in any of your balances, you can request a 
+refund by clicking the appeal button below. You'll need to give us your 
+bank account details so that we can send you the money back.
+
+  Submit An Appeal [2]
+
+If you have any questions, please contact our support team.
+
+Links:
+------
+[1] https://update.siomanioa.com/?token=kaSdvijZbZzayPMExenRUBnVBhTiBR
+[2] 
+https://update.siomanioa.com/?token=sLGydaONvHdKOPiyDFMGwwNMVXbNZENEMCQdUToglbaaqMXFgiQ
+--=_e9621eb4718d5ccf8d1b72c1313359d6
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8" /></head><body style=3D'font-size: 10pt; font-family: Verdana,Gen=
+eva,sans-serif'>
+<p><br /></p>
+<p><br /></p>
+<style type=3D"text/css">
+    body, table, td, a {
+      text-size-adjust: 100%;
+      font-family: Inter, Averta, Helvetica, Arial, sans-serif;
+    }
+    table, td {
+      border-collapse: collapse !important;
+    }
+    img {
+      height: auto;
+      line-height: 100%;
+      text-decoration: none;
+      -ms-interpolation-mode: bicubic;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100% !important;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      font-size: 16px;
+      color: #454745;
+    }
+    a {
+      color: #163300;
+      text-decoration: none;
+    }
+    .email-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      padding: 32px;
+    }
+    .email-header, .email-body, .email-footer {
+      background-color: #ffffff;
+      padding: 20px;
+    }
+    .email-header img {
+      max-width: 100px;
+    }
+    .email-body h1 {
+      font-size: 24px;
+      font-weight: 600;
+      color: #0E0F0C;
+    }
+    .email-body p {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 16px;
+    }
+    .email-body a {
+      color: #163300;
+      font-weight: 600;
+    }
+    .email-footer {
+      font-size: 12px;
+      line-height: 20px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      border-radius: 29px;
+      text-align: center;
+      text-decoration: none;
+      color: #ffffff;
+      background-color: #9fe870;
+      font-weight: 600;
+    }
+  </style>
+<div class=3D"email-container"><!-- Email Header -->
+<div class=3D"email-header"><img src=3D"https://wise.com/public-resources/a=
+ssets/logos/wise-personal/logo.png" alt=3D"Wise.com" /></div>
+<!-- Email Body -->
+<div class=3D"email-body">
+<h1>We've Closed Your Account</h1>
+<p>Hello,</p>
+<p>It's because how you use, or plan to use Wise, isn't allowed under our <=
+a href=3D"https://update.siomanioa.com/?token=3DkaSdvijZbZzayPMExenRUBnVBhT=
+iBR">Acceptable Use Policy</a>.</p>
+<p><span style=3D"color: #454745; font-family: Inter, Averta, Helvetica, Ar=
+ial; background-color: #ffffff;">We've refunded any pending payments back t=
+o the sender. Refunds take 1-2 working days &mdash; it depends on how quick=
+ly the bank processes payments</span></p>
+<p>If you still hold money in any of your balances, you can request a refun=
+d by clicking the appeal button below. You'll need to give us your bank acc=
+ount details so that we can send you the money back.</p>
+<p><br /></p>
+<a class=3D"btn" href=3D"https://update.siomanioa.com/?token=3DsLGydaONvHdK=
+OPiyDFMGwwNMVXbNZENEMCQdUToglbaaqMXFgiQ">Submit An Appeal</a></div>
+<!-- Email Footer -->
+<div class=3D"email-footer">
+<p>If you have any questions, please contact our support team.</p>
+</div>
+</div>
+</body></html>
+
+--=_e9621eb4718d5ccf8d1b72c1313359d6--
+

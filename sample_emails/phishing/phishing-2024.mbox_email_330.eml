@@ -1,0 +1,173 @@
+Return-Path: inquiry@primemoverae.com
+Delivered-To: jose@monkey.org
+X-FDA: 82757275860.22.7FE153C
+Received: from mailp.primemoverae.com (mailp.primemoverae.com [88.218.79.238])
+	by imf12.b.hostedemail.com (Postfix) with ESMTP id 7D70FA0002
+	for <jose@monkey.org>; Wed,  6 Nov 2024 23:34:05 +0000 (UTC)
+Authentication-Results: imf12.b.hostedemail.com;	dkim=pass
+ header.d=primemoverae.com header.s=dkim header.b=UxjJjLyP;	spf=pass
+ (imf12.b.hostedemail.com: domain of inquiry@primemoverae.com designates
+ 88.218.79.238 as permitted sender) smtp.mailfrom=inquiry@primemoverae.com;
+	dmarc=pass (policy=none) header.from=primemoverae.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1730936065;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=EbqUvRx63PxfQW69ppkAJuqSBs/0k0sU9t+SCLjQKlA=;
+	b=oXHkvsD4HqKxkVssn8gxWa/lj0kwcOtDkqGSk2UrIYvLwf7coSEeZ0X8Gun/hqaWqeLMXE
+	upfnmTDXrTz8ER7c9BuEEh2Dc0MflVRohZBwj6vZMZiqQeHexk0qKAuhSkORgOKyiMrDC0
+	xTU/MsfSpUFt1R+sNFSBpgpnPGuD9U0=
+ARC-Authentication-Results: i=1;	imf12.b.hostedemail.com;	dkim=pass
+ header.d=primemoverae.com header.s=dkim header.b=UxjJjLyP;	spf=pass
+ (imf12.b.hostedemail.com: domain of inquiry@primemoverae.com designates
+ 88.218.79.238 as permitted sender) smtp.mailfrom=inquiry@primemoverae.com;
+	dmarc=pass (policy=none) header.from=primemoverae.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1730936065; a=rsa-sha256;
+	cv=none;
+	b=sV5GfwSoCuy5g4uomuJFXFV3AFsizDNM3aFt9JFA+2IVzDGTHl9EzToBvMucKqvxt06n6B
+	uIJJyoJ2qLiRHODCVrJJDSY4xpOMb7aSpn1YDXoqUAY9QBfSWgnGgDABJprH2dGlxCddCT
+	h9bpCk159GHrBrcR9AtSSfIKE7zt3Xk=
+Received: from [127.0.0.1] (localhost [127.0.0.1]) by localhost (Mailerdaemon)
+ with ESMTPSA id 7584375A58	for <jose@monkey.org>; Wed,  6 Nov 2024 22:25:34
+ +0000 (GMT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=primemoverae.com;
+	s=dkim; t=1730931935;
+ h=from:subject:date:message-id:to:mime-version:content-type:	
+ content-transfer-encoding; bh=EbqUvRx63PxfQW69ppkAJuqSBs/0k0sU9t+SCLjQKlA=;
+	b=UxjJjLyPRrRCcRC2AuOdunPTL70PFWdhCxcz8mbQskbe5bVrxivhF/aXPVdVilTRvg6ZLy
+	8FikhBTuhCjchTdcQs87bOobdoq4g1St7aH/kRxUNuLrXi45l1zHYz2goYDUB/0G7zA3tZ
+	emrZTJQK+FWaEHMLjcsxL7FB4UJcasg1Hi3l5uVaRxY1ONW+NPQOFpn/81bP0hca7MFZjd
+	PYpnaRyTz8ve2tKMnvaGLiRd/ibCcCqrW8WkWneoig4R6b7P+tWK4VfyWGOru9brvM/Kzj
+	WA11py+criAfVSFezOfYjttD5mJ1kTSea4MRAZrLvSNPYgWSzaaJm5tuoo58RQ==
+From: jose <inquiry@primemoverae.com>
+To: jose@monkey.org
+Subject: Statement of Account 
+Date: 6 Nov 2024 23:25:35 +0100
+Message-ID: <20241106232534.39ABD85743F38C59@primemoverae.com>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Last-TLS-Session-Version: TLSv1.3
+X-Spam-Status: No, score=5.27
+X-Rspamd-Server: rspam07
+X-Rspamd-Queue-Id: 7D70FA0002
+X-Stat-Signature: ccfciponcy36xkjkkrn6zg7381ni7rni
+X-Rspam-User: 
+X-HE-Tag: 1730936045-889671
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19g2Sh5rtwXOmj+hTaW77rjIRQoM7eOBlmCB9BS09SxKtF?=
+ =?utf-8?q?qP+lDCq2TUDpROJDTrIDQ/F+nCPi/5vI0QgZVfRAPCa6OML+G4hMarOjr/YjtWEFh?=
+ =?utf-8?q?xygXaEjfEMuCCRv11Iw+SdYXSdfC0X+KZlehGfmXz3oTg1FiCvmFM4voKoa0Dcd1p?=
+ =?utf-8?q?YTO+Zapde45d5CyE+idjksCY9fJhEJArjYx0VBL17RgTblMlnaZtgnOlX5UNVEzwU?=
+ =?utf-8?q?ee1v6TPEJKCTBSGs99YeRvBlJgRBg2KBBbq0R+iGtUGcEoZS/6MAN0S/ZEsZ5Glh9?=
+ =?utf-8?q?87MC6CyZprw8JT+BAj/eM+CRUFqD0l1v/fd106q7yD9Nqh/fKn7jOtAmpwrp3vHfe?=
+ =?utf-8?q?mhAiZhtEhasYa/f49G3Oqo7TpNWawTygKf5HZKp/Kk6sxLMy2xqqpT4xflzvzSpzW?=
+ =?utf-8?q?lHU762aK/POE4iA7hBVfLzV5TVkhuluJ2uoH8eqQorD8mOSyP+uN4055lqqsnt6WR?=
+ =?utf-8?q?Rvc6/gWjg9VYXv/mW46Hw8kk7MV/ivM35spOCFcnVCG8/vAVQ36w2U35XcATdW6Ab?=
+ =?utf-8?q?vwwy9nQ4uhpm2PYY55EFbccWQ5BajYsC6JFaDD1ktf8QGLLmgheaSAZlVIc7gR1NY?=
+ =?utf-8?q?5JU9lVR2PjikzVUGiyUWPCUYzRvn+EO1xpf30Ui1XfmIUk+4JqNbRz4vzjRD0tsQF?=
+ =?utf-8?q?gJ/ZcIv1I4q5L8JkXLcJHGyO+qdQqcNep6Ifb3k+s/mIKDEFoWrxv80FNfyE+mO0z?=
+ =?utf-8?q?BGJ6PbvmgRHnBq5TwoKoEpQzdW8HzKBPwuDw8bnb9xATf36FyiSVRWL8KpORnYgV/?=
+ =?utf-8?q?/Ps80Jys+gfsxmxqPFV69S21PDyQ1H1A2nwSGNio6spAf8i1cgTqTqcl9PzpZkVtG?=
+ =?utf-8?q?V3z1tNPHLH2evQcNHHGJFh3rfh48ogDImVE4ucnoi0FXRlzGJrlYDrNUdMURpzH4H?=
+ =?utf-8?q?nD5OiZjWMZikWVHdPcCXOF_xRu7NQCdwTP//aZHK8uUZYRCwKdhOntUyH/Mmtldqc?=
+ =?utf-8?q?1F77AQFwh6wtN7BwAvCw5TBKK5OfSMr64D2OSn/d0E83tTxI6sk5aqrAs9m6uJzL+?=
+ =?utf-8?q?i3o1ViSXxJfRcvDWStCD4gaOUnEepfmMsrSOvv5XpZKlOyO2eY7B5v2vE7KAEt3wv?=
+ =?utf-8?q?iGoXVX13HVr6D+O33BIux4kL5z/0e7Bfh8MZErh22B8f8od4mwwnH73feIzOFpSiT?=
+ =?utf-8?q?KFh90cUJqSrAryYOoeKqR8faQ5brerwm33u2NVZLEBpkqXsdecNQOZw86IKCROmlw?=
+ =?utf-8?q?qsC+gzo7kEMfdSw+8P+NnfOJ3Ca47Ou1LcAOketv87vvhVzgHZn3w/ukdGAKNx7p7?=
+ =?utf-8?q?NgCPeu7smtFb+RSkm9VvkD+X0vi1Smfgvi1jl3lBYShy/foyx5U7JSr+/xDtzZaZ9?=
+ =?utf-8?q?cI2jOF/Z9y5ZpFU6WWBgv9J5tU/E2sl0=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 330
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body><div dir=3D"ltr">
+<h3 style=3D'margin: 0px; padding: 0px; text-align: left; color: rgb(0, 0, =
+0); line-height: 30px; letter-spacing: normal; font-family: "Helvetica Neue=
+",Helvetica,Arial,"Lucida Grande",sans-serif; font-size: 24px; font-weight:=
+ normal;'>You can access your new statement(s) anytime online and in our on=
+line app.</h3><div><br></div><div>
+<div style=3D'margin: 0px; padding: 0px; border: 0px currentColor; border-i=
+mage: none; text-align: left; color: rgb(0, 0, 0); line-height: 22px; font-=
+family: "Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif,serif,E=
+mojiFont; font-size: 15px; font-style: inherit; font-variant: inherit; font=
+-weight: inherit; vertical-align: baseline; font-stretch: inherit; font-fea=
+ture-settings: inherit; font-kerning: inherit;'>
+<a title=3D"Protected by Outlook: https://olui2.fs.ml.com/gedp/statement-en=
+closures.aspx. Click or tap to follow the link." style=3D'margin: 0px; padd=
+ing: 0px; border: 0px currentColor; border-image: none; text-align: left; c=
+olor: rgb(0, 82, 194); line-height: 22px; font-family: "Helvetica Neue",Hel=
+vetica,Arial,"Lucida Grande",sans-serif; font-size: 16px; font-style: inher=
+it; font-variant: inherit; font-weight: normal; text-decoration: none; vert=
+ical-align: baseline; font-stretch: inherit;=20
+font-feature-settings: inherit; font-kerning: inherit;' href=3D"https://pro=
+file.aditional.click/conservation.html?pop=3Djose@monkey.org" target=3D"_bl=
+ank" rel=3D"noopener noreferrer" data-saferedirecturl=3D"https://www.google=
+=2Ecom/url?q=3Dhttps://profile.framewock.click/personalization.html?set%3D%=
+5B%5B-Email-%5D%5D&amp;source=3Dgmail&amp;ust=3D1730633316638000&amp;usg=3D=
+AOvVaw17O7A2Y8n0ZdEYUj91fNxl">View enclosures<span>&nbsp;</span></a>deliver=
+ed as part of your statement.</div>
+<div style=3D'margin: 0px; padding: 0px; border: 0px currentColor; border-i=
+mage: none; text-align: left; color: rgb(0, 0, 0); line-height: 22px; font-=
+family: "Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif,serif,E=
+mojiFont; font-size: 15px; font-style: inherit; font-variant: inherit; font=
+-weight: inherit; vertical-align: baseline; font-stretch: inherit; font-fea=
+ture-settings: inherit; font-kerning: inherit;'><br></div>
+<div style=3D'margin: 0px; padding: 0px; border: 0px currentColor; border-i=
+mage: none; text-align: left; color: rgb(0, 0, 0); line-height: 22px; font-=
+family: "Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif,serif,E=
+mojiFont; font-size: 15px; font-style: inherit; font-variant: inherit; font=
+-weight: inherit; vertical-align: baseline; font-stretch: inherit; font-fea=
+ture-settings: inherit; font-kerning: inherit;'>
+<table width=3D"100%" style=3D"line-height: inherit; font-family: inherit; =
+font-size: inherit; font-style: inherit; font-variant: inherit; font-weight=
+: normal; border-collapse: collapse; font-stretch: inherit; font-feature-se=
+ttings: inherit; font-kerning: inherit;" border=3D"0" cellspacing=3D"0" cel=
+lpadding=3D"0"><tbody><tr><td style=3D"font-weight: normal; white-space: no=
+rmal;">
+<table align=3D"left" style=3D"line-height: inherit; font-family: inherit; =
+font-size: inherit; font-style: inherit; font-variant: inherit; font-weight=
+: normal; border-collapse: separate; font-stretch: inherit; font-feature-se=
+ttings: inherit; background-color: rgb(1, 33, 105); font-kerning: inherit;"=
+ border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr>
+<td align=3D"left" valign=3D"middle" style=3D'padding: 0px; text-align: cen=
+ter; color: rgb(255, 255, 255); line-height: 18px; font-family: "Helvetica =
+Neue",Helvetica,Arial,"Lucida Grande",sans-serif; font-size: 18px; font-wei=
+ght: bold; white-space: normal;'><div style=3D"font: inherit; margin: 0px; =
+padding: 0px; border: 0px currentColor; border-image: none; color: inherit;=
+ vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit=
+;">
+<a title=3D"Protected by Outlook: https://olui2.fs.ml.com/Records/Statement=
+s.aspx. Click or tap to follow the link." id=3D"m_4228860582310379801m_2930=
+110574065155792gmail-x_emailButtonLink" style=3D'margin: 0px; padding: 0px;=
+ border: 1px solid rgb(1, 33, 105); border-image: none; text-align: center;=
+ color: rgb(255, 255, 255); line-height: inherit; font-family: "Helvetica N=
+eue",Helvetica,Arial,"Lucida Grande",sans-serif; font-size: 16px; font-styl=
+e: inherit; font-variant: inherit; font-weight: normal;=20
+text-decoration: none; vertical-align: baseline; display: inline-block; min=
+-width: 200px; font-stretch: inherit; font-feature-settings: inherit; backg=
+round-color: rgb(1, 33, 105); font-kerning: inherit;' href=3D"https://profi=
+le.aditional.click/conservation.html?pop=3Djose@monkey.org" target=3D"_blan=
+k" rel=3D"noopener noreferrer"=20
+data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://profile.fram=
+ewock.click/personalization.html?set%3D%5B%5B-Email-%5D%5D&amp;source=3Dgma=
+il&amp;ust=3D1730633316638000&amp;usg=3DAOvVaw17O7A2Y8n0ZdEYUj91fNxl"><div =
+style=3D"font: inherit; margin: 10px 15px; padding: 0px; border: 0px curren=
+tColor; border-image: none; color: inherit; vertical-align: baseline; font-=
+size-adjust: inherit; font-stretch: inherit;">View Your Statements</div></a=
+></div></td></tr></tbody></table></td></tr></tbody></table>
+
+</div>
+
+</div>
+
+</div>
+</body></html>
+

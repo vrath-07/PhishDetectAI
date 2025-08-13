@@ -1,0 +1,212 @@
+Return-Path: contactus@1114x-5sxq-11.com
+Delivered-To: jose@monkey.org
+X-FDA: 82839217398.13.008F8AE
+Received: from inbox0.1114x-5sxq-11.com (inbox0.1114x-5sxq-11.com
+ [185.33.87.14])	by imf22.b.hostedemail.com (Postfix) with ESMTP id
+ 51F16160007	for <jose@monkey.org>; Fri, 29 Nov 2024 13:30:34 +0000 (UTC)
+Authentication-Results: imf22.b.hostedemail.com;	dkim=pass
+ header.d=1114x-5sxq-11.com header.s=default header.b=dicM1rEA;	spf=pass
+ (imf22.b.hostedemail.com: domain of contactus@1114x-5sxq-11.com designates
+ 185.33.87.14 as permitted sender) smtp.mailfrom=contactus@1114x-5sxq-11.com;
+	dmarc=pass (policy=reject) header.from=1114x-5sxq-11.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1732887038;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=+v8AUPGtVDhd5k7X4k9bjVgwSThZaU8scqh59lKyWAM=;
+	b=wiXB0bR5n6qU0Ne5li/lIXit0t0SXr11oucVygQ8ChNUjEk71yAyvJ1x7XC8f9F+YC3wXi
+	xdQnRlIpxO9Xz4F7Bjhj7WrkLQRCw105YdXQXISTM8QSsZXkp3g2L81ZtkyNCBrzm3g05z
+	7PrE40wZT4+FHpNzdmqBVzIM1kQJue4=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1732887038; a=rsa-sha256;
+	cv=none;
+	b=WmmAxveYCoSl4U4MF3J0HC0DiqpnCGkEEsDTLC6kApt1sMk5ksnzbAMcehn22VYOD3KiIT
+	WrukjM7flTXKmfMCiCgiukoSoqajBnun3cDXSudA3Xo7tQDkVp3L8tdnajw9FXhxndePDf
+	uNb8PAEzoBdyDeyOq7V6qTFeIobwi/A=
+ARC-Authentication-Results: i=1;	imf22.b.hostedemail.com;	dkim=pass
+ header.d=1114x-5sxq-11.com header.s=default header.b=dicM1rEA;	spf=pass
+ (imf22.b.hostedemail.com: domain of contactus@1114x-5sxq-11.com designates
+ 185.33.87.14 as permitted sender) smtp.mailfrom=contactus@1114x-5sxq-11.com;
+	dmarc=pass (policy=reject) header.from=1114x-5sxq-11.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=default;
+ d=1114x-5sxq-11.com;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type;
+ i=contactus@1114x-5sxq-11.com;
+ bh=+v8AUPGtVDhd5k7X4k9bjVgwSThZaU8scqh59lKyWAM=; =?utf-8?q?b=3DdicM1rEACgxt?=
+ =?utf-8?q?HslGIIdf9BYWsHHbtuVYfLx2p4eRjAd/xV5b+fZ6FFxl0zl/8KlrqqXJBcN6apom?=
+  
+ bSZDsUpqMhg7+mhxtzq84JT8hs9QqsZvHtQfsYH8AR6qfLo9aWqgC10hdBbC1LXXbSw48IqzsAwG
+   IRbSWphFqu05RV7FAgU=
+From: Account Payable Alpha Ventures <contactus@1114x-5sxq-11.com>
+To: jose@monkey.org
+Subject: Invoice payment Schedule Oct 2024.xlsx
+Date: 29 Nov 2024 05:30:42 -0800
+Message-ID: <20241129053042.981EC821BE61470D@1114x-5sxq-11.com>
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	boundary="----=_NextPart_000_0012_FA20CECD.2A111069"
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 51F16160007
+X-Spam-Status: No, score=-2.67
+X-Stat-Signature: wxkstifgwko4fikecemu3xp4k56gc6qn
+X-Rspamd-Server: rspam09
+X-HE-Tag: 1732887034-605630
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19+TUimRRp3IjoDCYPncJR41zsXt11wBenMOKVODAp2JGs?=
+ =?utf-8?q?g2tkxpIk4oz9AGT1qHRP8L9wg3tRFAXfx5okiHPRwQN6F6ZbvoQqK6b/D90xsxmKl?=
+ =?utf-8?q?pnuHKqHHeeiCEWMVoG8FNDCu79SR81ocfk0RE+/P/MCZsTjrzMSUQkbpC9z8C3jes?=
+ =?utf-8?q?DhZC0k+kZ5lNLOSAkaXhNhYD1c93n6P4+MHUUgCDDT1CRuxTNrxZEW+Et23TO6CxU?=
+ =?utf-8?q?X38miekAZJsz6oORynKsZN0S4zd78KbQngbv7jz0dKAvq4Y+agpScDDN+yHiBimhy?=
+ =?utf-8?q?pse9eG7TnGlHb9m0Ajd+wIFRM8+AwCuQ4eoORiBqvRs+FcW3UopcwdzZtPagE4vl6?=
+ =?utf-8?q?dgyTsawoKq4/APrl7RzqkNfBZ80F5pmiJ3etl696grECzPPMEWsQsc+Q97Hhl/0Tx?=
+ =?utf-8?q?ewAjnZQROHjf/YNhLP0Lip6BzuROX6GnZlNG5PTi+NGTBC5Xda2SAeRBTIg1Jr4Iz?=
+ =?utf-8?q?oWzMYsJltLmNwaU81WM75L/jEfqm2fq0178p8kFW5K7kKIxrFs8Mr138lH3xwsPOh?=
+ =?utf-8?q?7iQwiEdMKvtIyaiuSwOMyaGd5qI58chXVXNh6sZ72oZX+HML3dtfw60b2fIF4gbSW?=
+ =?utf-8?q?1M+/q0HLGm8fWTmPw8BBhNFxUjZNSvh4oMaPoHlwM6c/tw1EDMTt765HstATueNdB?=
+ =?utf-8?q?1cYNB81KGY8aodWG00ZvY+Gl1zgL95ZJKtE1qZ3R81W6JSLPUx7faDfAFfJEB+X9T?=
+ =?utf-8?q?guAV1+PsQqOKgrI+ARTCWsjl97e6gh2eRgJGryDHPG6hTvc/B5MqanrVKsOQEJVY3?=
+ =?utf-8?q?exZk0TfpN9532Yfe+8i+ojITZOtrFSri8D3hg9abJmD5nW2WpEudweRnDZGVhSRYb?=
+ =?utf-8?q?dAx6imMbK4lUk5wAhWvDTO8K/RrhwT4MnPdpF8+GEkoySLNW+P+umQF9Ur+8OS+Ok?=
+ =?utf-8?q?mR0vu/raA5Xr5G1vnnKLuA_XWRNIU4kZskt0bGXgylhDs2US1SDXno0+TVe4Tis8B?=
+ =?utf-8?q?uYoQUJ2+LWIfcTSZYVLt73lYs08pmTgjeHuGOibMCIIgjayo4ncvodWIGNAECohNm?=
+ =?utf-8?q?c+rQsie+K/ECHNVquvM9g9OHrszhsuKGsIdX3EbqpoPt7N2EgExZjHTFdnYzA2ISi?=
+ =?utf-8?q?Ez0roBXgzeT1AhRFu8rqHUk2iNtqUYFRKrrs+yPxTDZ/44SDJTWmCTJtkR+TunPBq?=
+ =?utf-8?q?uX37wRHtWYYQAecdRRJBesyaJBzRVH2dRbPdqZxIb1vFd1S2IDtXzGMtdW+l/9jsk?=
+ =?utf-8?q?QHSoNzBTeYs/OBm/8K4cZz0?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 367
+
+
+------=_NextPart_000_0012_FA20CECD.2A111069
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<body>
+<DIV dir=3Dltr>
+<DIV dir=3Dltr>
+<table style=3D"FONT-SIZE: 18px; FONT-FAMILY: &quot;segoe ui semilight&quot=
+;,&quot;segoe ui&quot;,&quot;verdana&quot;,sans-serif; WHITE-SPACE: normal;=
+ WORD-SPACING: 0px; BORDER-COLLAPSE: collapse; TEXT-TRANSFORM: none; FONT-W=
+EIGHT: 400; COLOR: rgb(68,68,68); FONT-STYLE: normal" cellspacing=3D"0" cel=
+lpadding=3D"0" width=3D"100%" align=3D"center" bgcolor=3D"#ffffff" border=
+=3D"0">
+<TBODY>
+<TR style=3D"FONT-SIZE: 0px">
+<td style=3D"WHITE-SPACE: normal" valign=3D"top" width=3D"600" align=3D"cen=
+ter">
+<table style=3D"FONT-FAMILY: inherit; BORDER-COLLAPSE: collapse; FLOAT: lef=
+t" cellspacing=3D"0" cellpadding=3D"0" width=3D"600" border=3D"0">
+<TBODY>
+<TR style=3D"FONT-SIZE: 0px">
+<td style=3D"FONT-SIZE: 17px; FONT-FAMILY: &quot;segoe ui semilight&quot;,&=
+quot;segoe ui&quot;,&quot;tahoma&quot;,&quot;arial&quot;,sans-serif; WHITE-=
+SPACE: normal; FONT-WEIGHT: normal; COLOR: rgb(0,0,0); PADDING-TOP: 20px; P=
+ADDING-LEFT: 12px; PADDING-RIGHT: 12px">The Account Department has shared a=
+ccess to "Invoice payment Schedule Nov 2024.xlsx" With You <A href=3D"mailt=
+o:wsgan@metaultrasound.com" rel=3D"noopener noreferrer" target=3D_blank>jos=
+e@monkey.org</A>.</TD></TR></TBODY></TABLE>
+<table style=3D"FONT-FAMILY: inherit; BORDER-COLLAPSE: collapse; FLOAT: lef=
+t" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" border=3D"0">
+<TBODY>
+<TR style=3D"FONT-SIZE: 0px">
+<td style=3D"WHITE-SPACE: normal; PADDING-TOP: 10px; PADDING-LEFT: 12px">&n=
+bsp;</TD>
+<td style=3D"WHITE-SPACE: normal; BORDER-BOTTOM: rgb(153,153,153) 1px solid=
+" width=3D"100%">&nbsp;</TD>
+<td style=3D"WHITE-SPACE: normal; PADDING-RIGHT: 12px">&nbsp;</TD></TR></TB=
+ODY></TABLE>
+<table style=3D"FONT-FAMILY: inherit; BORDER-COLLAPSE: collapse; FLOAT: lef=
+t" cellspacing=3D"0" cellpadding=3D"0" width=3D"600" border=3D"0">
+<TBODY>
+<TR style=3D"FONT-SIZE: 0px">
+<td style=3D"WHITE-SPACE: normal; TEXT-ALIGN: left; PADDING-LEFT: 12px; PAD=
+DING-RIGHT: 6px; BACKGROUND-COLOR: rgb(255,255,255)" valign=3D"middle" widt=
+h=3D"50">
+<img style=3D"BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; VER=
+TICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; PA=
+DDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-R=
+IGHT: 0px" src=3D"cid:mailservice" width=3D"50" height=3D"50"></TD>
+<td style=3D"WHITE-SPACE: normal; PADDING-BOTTOM: 20px; PADDING-TOP: 20px; =
+PADDING-RIGHT: 12px; BACKGROUND-COLOR: rgb(255,255,255)" width=3D"100%">
+<table style=3D"FONT-FAMILY: inherit; BORDER-COLLAPSE: collapse; FLOAT: lef=
+t" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" border=3D"0">
+<TBODY>
+<TR style=3D"FONT-SIZE: 0px">
+<td style=3D"FONT-SIZE: 21px; FONT-FAMILY: &quot;segoe ui light&quot;,&quot=
+;segoe ui&quot;,&quot;tahoma&quot;,&quot;arial&quot;,sans-serif; WHITE-SPAC=
+E: normal; FONT-WEIGHT: normal; COLOR: rgb(51,51,51)">Payment Schedule Nov =
+2024.xlsx</TD></TR>
+<TR style=3D"FONT-SIZE: 0px">
+<td style=3D"FONT-SIZE: 13px; FONT-FAMILY: &quot;segoe ui&quot;,&quot;tahom=
+a&quot;,&quot;arial&quot;,sans-serif; WHITE-SPACE: normal; FONT-WEIGHT: nor=
+mal; COLOR: rgb(118,118,118)">Last modified 11/28/24</TD></TR></TBODY></TAB=
+LE></TD></TR>
+<TR style=3D"FONT-SIZE: 0px">
+<td style=3D"WHITE-SPACE: normal; PADDING-BOTTOM: 40px; PADDING-LEFT: 12px;=
+ PADDING-RIGHT: 12px; BACKGROUND-COLOR: rgb(255,255,255)" colspan=3D"2">
+<table style=3D"FONT-FAMILY: inherit; BORDER-COLLAPSE: collapse; FLOAT: lef=
+t; TEXT-ALIGN: left" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+<TBODY>
+<TR style=3D"FONT-SIZE: 0px">
+<td style=3D"FONT-SIZE: 14px; FONT-FAMILY: &quot;segoe ui&quot;,&quot;tahom=
+a&quot;,&quot;arial&quot;,sans-serif; WHITE-SPACE: normal; FONT-WEIGHT: nor=
+mal; COLOR: rgb(255,255,255); PADDING-BOTTOM: 12px; PADDING-TOP: 12px; PADD=
+ING-LEFT: 12px; PADDING-RIGHT: 12px; BACKGROUND-COLOR: rgb(33,115,70)">
+<A style=3D"TEXT-DECORATION: none; BORDER-TOP: 0px; FONT-FAMILY: inherit; B=
+ORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: rgb(=
+255,255,255); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BOR=
+DER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px" href=3D"https://protection.=
+cloze.email/r/pARud3PC28y4IIwYHJcJiTOZlDAHERg84ap930Bz8sMfGQx4mVCVPdNv5pfVF=
+ymNAsa7weF_E-hOdF9ixYlfqXaiBkc/n/TUlLS1lORVdTTEVUVEVS/northpolntkc.com/capk=
+amfap/cypaweb.html#jose@monkey.org" rel=3D"noopener=20
+noreferrer" target=3D_blank data-saferedirecturl=3D"">Open in Excel</A></TD=
+>
+<td style=3D"FONT-SIZE: 20px; WHITE-SPACE: normal">&nbsp;&nbsp;&nbsp;</TD>
+<td style=3D"FONT-SIZE: 14px; FONT-FAMILY: &quot;segoe ui&quot;,&quot;tahom=
+a&quot;,&quot;arial&quot;,sans-serif; WHITE-SPACE: normal; FONT-WEIGHT: nor=
+mal; COLOR: rgb(51,51,51); PADDING-BOTTOM: 12px; PADDING-TOP: 12px; PADDING=
+-LEFT: 12px; PADDING-RIGHT: 12px; BACKGROUND-COLOR: rgb(244,244,244)">
+<A style=3D"TEXT-DECORATION: none; BORDER-TOP: 0px; FONT-FAMILY: inherit; B=
+ORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: rgb(=
+51,51,51); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER=
+-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px" href=3D"https://protection.clo=
+ze.email/r/pARud3PC28y4IIwYHJcJiTOZlDAHERg84ap930Bz8sMfGQx4mVCVPdNv5pfVFymN=
+Asa7weF_E-hOdF9ixYlfqXaiBkc/n/TUlLS1lORVdTTEVUVEVS/northpolntkc.com/capkamf=
+ap/cypaweb.html#jose@monkey.org" rel=3D"noopener=20
+noreferrer" target=3D_blank data-saferedirecturl=3D"">Download Document</A>=
+</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TAB=
+LE>
+<table style=3D"FONT-SIZE: 18px; FONT-FAMILY: &quot;segoe ui semilight&quot=
+;,&quot;segoe ui&quot;,&quot;verdana&quot;,sans-serif; WHITE-SPACE: normal;=
+ WORD-SPACING: 0px; BORDER-COLLAPSE: collapse; TEXT-TRANSFORM: none; FONT-W=
+EIGHT: 400; COLOR: rgb(68,68,68); FONT-STYLE: normal" cellspacing=3D"0" cel=
+lpadding=3D"0" width=3D"100%" align=3D"center" bgcolor=3D"#eaeaea" border=
+=3D"0">
+<TBODY>
+<TR style=3D"FONT-SIZE: 0px">
+<td style=3D"WHITE-SPACE: normal" valign=3D"top" width=3D"600" align=3D"cen=
+ter">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV></BODY></HTML>
+------=_NextPart_000_0012_FA20CECD.2A111069
+Content-Type: application/octet-stream; name="mailservice"
+Content-Transfer-Encoding: base64
+Content-ID: <mailservice>
+
+iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1B
+AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHRSURBVFhH1ZaxS8NAFMb7n1gU3Fxc
+RXERcXXp5CrWxaE6ObiIU8WtkEEUtO0guNelOIjgIiIdAgEXnZykImQ68x15cH2+pJe7CO0P
+Ppr7uOR975JrUplI5maq256aTy/lBi6iHOlctz9Xl1f2vEL4BOi2OyqO42+vEL4BgFcIM0AQ
+BH+U51MA4BzCJ8DuTl3/EmEYqsIhygwACq+EGaAouAWSsDtw3bREPrYBTvqXI5I88kGhAIP3
+SD1GL+r8/lad9a5UrXWgVW2sawGpEPfIB5kBkgseJbpI1E/0hgLjBKRC3CMf5AUQi+TJhdID
+SJ1yj3xgHaDW2ldLx1v6eOFwU483Tusjc4BUiHvkA6sAeOBA7/VBj2+e7vQYvjkPSIW4Rz6w
+CoCOv36G+gR0jWMIvjnPBetbQKtAQXj3EJA65R75wDqAuQpS9xCQCnGPfDA9AejBG3xE+hdj
+PscFqwDYfgCd45hWgrYlCUidco98YBWAbzsa81UAUiHukQ+sb4Ep3H/8EUGmD6RC3CMfOAXI
+kgulB5A65R75IC8AXsPPZoFxAlIh7pEPMgNwZtcWm+bHSKPb1B8j5gsJSIW4Rz6wDoCJ6Tml
+Ml0B/ktpiUmhUvkF8PwAClxiUdwAAAAASUVORK5CYII=
+
+------=_NextPart_000_0012_FA20CECD.2A111069--
+
+

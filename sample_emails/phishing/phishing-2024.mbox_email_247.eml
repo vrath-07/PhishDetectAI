@@ -1,0 +1,201 @@
+Return-Path: bounces+2073619-9b54-jose=monkey.org@em7136.vietiso.com
+Delivered-To: jose@monkey.org
+X-FDA: 82506473574.21.8EC12EF
+Received: from wfbthrdf.outbound-mail.sendgrid.net
+ (wfbthrdf.outbound-mail.sendgrid.net [159.183.5.223])	by
+ imf24.b.hostedemail.com (Postfix) with ESMTP id 56D8880004	for
+ <jose@monkey.org>; Thu, 29 Aug 2024 20:49:26 +0000 (UTC)
+Authentication-Results: imf24.b.hostedemail.com;	dkim=pass
+ header.d=vietiso.com header.s=s1 header.b=I+xU4JGN;	spf=pass
+ (imf24.b.hostedemail.com: domain of
+ "bounces+2073619-9b54-jose=monkey.org@em7136.vietiso.com" designates
+ 159.183.5.223 as permitted sender)
+ smtp.mailfrom="bounces+2073619-9b54-jose=monkey.org@em7136.vietiso.com";
+	dmarc=pass (policy=reject) header.from=vietiso.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1724964485;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=HUmpdwQ2WuVw6H0TZ1+Z65DoIAjJiYe5NbBprBtBjYo=;
+	b=xFwzeF56wI4P2EPUr0mKvE4QRE+mIYCHFtcFW4z5Ojmh31738yTYu0Q9q1aob2zkw2qUXO
+	5S58cve0P+4D62hi0c4TxFA7LYlnmV0A8a6QWS/viQawmDGsEqHxiMtqJQIL3W8Zhju0tY
+	uiDUbtkrXMNuX5ZO6wYY8zxdAUO7Yq0=
+ARC-Authentication-Results: i=1;	imf24.b.hostedemail.com;	dkim=pass
+ header.d=vietiso.com header.s=s1 header.b=I+xU4JGN;	spf=pass
+ (imf24.b.hostedemail.com: domain of
+ "bounces+2073619-9b54-jose=monkey.org@em7136.vietiso.com" designates
+ 159.183.5.223 as permitted sender)
+ smtp.mailfrom="bounces+2073619-9b54-jose=monkey.org@em7136.vietiso.com";
+	dmarc=pass (policy=reject) header.from=vietiso.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1724964485; a=rsa-sha256;
+	cv=none;
+	b=UWloFsgZdeTR6ViyEV943cxVTVQmsVV0ENzSUnQi8rFjOPhEGqa7nrW6TlmwhGi4M43yAM
+	wJ8e4QLilC6eOrUoH3Ped0nZQNko08kW5U/n+XqJN8+LqfZw28NwZSSn/05Sb4S8f/PVeg
+	pKglZHvQyGi1ZLHfOHn+DiiAiyd6vRU=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=vietiso.com;
+	h=from:subject:content-type:mime-version:to:cc:content-type:from:
+	subject:to;
+	s=s1; bh=HUmpdwQ2WuVw6H0TZ1+Z65DoIAjJiYe5NbBprBtBjYo=;
+	b=I+xU4JGNwewRFf0qkcdOvf+PWi1KPsdxHegDGgOOW0gy3bW4kOPvR59zH4gBEKdaPUoA
+	+7Ts1ZXBMvChAFFoN/bHN9XtSctCOtgl3hOPh72vFKeWCVOzvqHZzZAEbdiaIRJC4p1Cgt
+	/t9ncdMIqMFaYWh9ZqGTxA+zUnr95kdQcSEF0I0O/MfTnDbAEfSffu0Tm3se0GTKiS6wKh
+	9zRjsXqygOrQTA4k9pWF1qIrlGoeSj2FdxsV1om/rqs6JAPrrAUlI83aby+9YCNTuugrz3
+	ygCcse7zljq9ARMO9RxOXbiIgdtCZeARcPTpwnqatqD/ASCmGzOmmzZTH5JakXgw==
+Received: by recvd-6b4ddb655c-vnnhl with SMTP id
+ recvd-6b4ddb655c-vnnhl-1-66D0DD2A-C	2024-08-29 20:42:18.160414344 +0000 UTC
+ m=+685339.881874320
+Received: from WIN-F6NF7R6I6PJ (unknown)
+	by geopod-ismtpd-24 (SG) with ESMTP
+	id LTqMSTmzQC-DtA9qIQdsew
+	for <jose@monkey.org>;
+	Thu, 29 Aug 2024 20:42:18.070 +0000 (UTC)
+From: Mail Administrator <info@vietiso.com>
+Subject: Storage Notification Alert!
+Content-Type: multipart/alternative;
+ boundary="FakPm82uXFR=_Qd5TXFBZvUcaZ2nfxpWUw"
+MIME-Version: 1.0
+Date: Thu, 29 Aug 2024 20:42:18 +0000 (UTC)
+Message-Id: <293420240838201DDE0BC5D3-69F86329E9@vietiso.com>
+X-SG-EID:  u001.2GVbraVlsAwCqOHZik485dXnie0CkxZSVU//JUzfZSDhfH0RH5FZPXfqL
+ =?utf-8?q?DybosiyyjoCnsG8rDCmw78b2+WszeMv7RYz0mO9?==?utf-8?q?7HiCE26miQyE/q?=
+ =?utf-8?q?8/TtxocCXf0cDYCYMCayUumbpPlDng6UyVciB7woh90mla4CCE8NIM1ju4gFa+RV7?=
+ =?utf-8?q?y9z4cpKfDhSaMS/6jAjin7ghZJ/UNsTFCwddju?=6BJTCyurUKQPNCFL1Jo8mw=
+To: jose@monkey.org
+X-Entity-ID: u001.ZfyNQ1Wf18YPkiNJew7C3A==
+X-Stat-Signature: 4sfikzdtcep8ju38fewths6rxznyuh5c
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 56D8880004
+X-Rspamd-Server: rspam09
+X-Spam-Status: Yes, score=12.85
+X-HE-Tag: 1724964566-365840
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/Hj2/mKiCUyHHG4GFZKqr6sXpHsZXq36uG8VP6QlTV6+O?=
+ =?utf-8?q?rHuegA6smbHYkpJlZU79CYAt+rW+ASpvBJJGyR+QmGuCz2MlGkd/FbExAi3zBuuhI?=
+ =?utf-8?q?kKcY5B842vEUZkji9BewF1GIj8IkSVFs817d6ct49Znzem78eKIY5aUPL1nAdZdTJ?=
+ =?utf-8?q?OfgB514OoeS1rZXILLYC4cJOBafyJqJ8Gn5jD7cJyL5Pin8zh/sMJvnTxth6Bup5P?=
+ =?utf-8?q?/WbWwD/8uOm/DBgV0ST1LRvTC0Y3bJeO9D9pmxWEZk1UrRGilDTIhZMrM1cUohXXs?=
+ =?utf-8?q?wsahBj+rcArjHZeTNfplzCGl30/kZL95lrht2m7cAQ+SbSZjVmB1eVg3kZoG3kV2E?=
+ =?utf-8?q?OihkTpZyiueePupHHr26p+5AcAuyQKSSxfypUD0UQ/0ePoQflVrZyFUE1YxRB3GWX?=
+ =?utf-8?q?HKnMkjINgpls9UQlqxTXPvgut4NVxFrlj5oRiV7EG6LL53qzfAjVRpPvfJV4h4we8?=
+ =?utf-8?q?H91GAC962z3ztL4h8m3Kubkt1k5u+FShQCwhm/peSBXGnPhUXa6DRgE8nNb/bSRyr?=
+ =?utf-8?q?ihozvq2Ym9O1Rdkp0DuV/82RbzTHuMj42cticTHenjspgvqzjzASJ68DicE3l12a5?=
+ =?utf-8?q?18p7rKUIzDstbCAGsfP/QX718bcNZz7Y6vlz/eDEGzbEpRjQg7Exhyma8tZnbslRM?=
+ =?utf-8?q?+H7qS2/M9HMTEYFCJtRnjuTMoDXdnt0YKZR66KprnazgPU5mQyOfaFFz8cwVX9Fi6?=
+ =?utf-8?q?gNAhBNFetsC4MgoPCNwlwQaOiCqyFa7fAXhT+SJMQVC6T849FyeDFkBQfSgQdecIx?=
+ =?utf-8?q?Dv7tpVsr5MJLnNcfoKl0d7+pl3zvncll44B1cfPkhNikB1gQkbIUTyP3t4DIFVeIj?=
+ =?utf-8?q?rfJ27BPvPgdZ18VGzftHwO+XtIc3k83zwPgPwAZcUFtZWJAwAD3bmSEiWaMPk4TnU?=
+ =?utf-8?q?SO18NmzufegZt+pvWdm97X_pjZMQM9ySTWim49syuxBDf/Ya0B75Ofs2AMKR9sltF?=
+ =?utf-8?q?Ka0+789Zc9XU/ZJ6X+VVFDljd8RKOGMgtFLvXolaRGdBgex7jd1jWXzzj+0kZ7Tqz?=
+ =?utf-8?q?fghccYTY0hplJEEKRynP4gRNlIAgTWpvhBo13AqNmOEBfPqJEYxETfAjOP6CNVgmD?=
+ =?utf-8?q?6x5YhxgAKl/H7aeFMRAVUliBFE8AMY8NVn1wDiKb+4nwng2r3uqd+pa+Is7nDiHwB?=
+ =?utf-8?q?UwUpeEcCJA++F8ovyeYL1kEVPEEqiG8wkOgQv6PIllp7xnNmM3PdZSI0xTQy/uA+u?=
+ =?utf-8?q?SCiAjviJdC2QP/S43F6uvNTBmwaISKkHUHDBeLTb+rtXW2rmkHYdG5ByglDXMjYMF?=
+ =?utf-8?q?+yekrZ6YSSrE/jdam2H8ZE4+rsphRQuG+DrXrg6bijM8Iqf7pz3umU6x3kh/Ej9RC?=
+ =?utf-8?q?OGbhaeqDnAlmXUZLpM48A3ALaZ7f/gRzYlLl1fgW/0QAdE49OXwrRt2RvDRMxYxE7?=
+ =?utf-8?q?Oh3+R4o4SWjYQu4raFHI2ogyFW7uDB+JM3ifXuYxlj779YrZdECX4Zq893+ML9tfW?=
+ =?utf-8?q?zFU3rcC3wcoHGNQxSn1VpaLlYmuyGphI+1rImYqmg=3D=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 247
+
+This is a multi-part message in MIME format
+
+--FakPm82uXFR=_Qd5TXFBZvUcaZ2nfxpWUw
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+
+Full Storage Notification
+
+jose@monkey.org
+
+You have used up all your storage capacity. To prevent message
+ from being clutered and deleted, you must clear the cache
+ immediately to free up space.
+
+Clear
+ Cache http://url4282.vietiso.com/ls/click?upn=3Du001.c3-2FhfTP23UQD0uIBFNt=
+tondbpLSnMwqUquvwuS05M1SJlUfNhYva0twW-2BYatyxF-2FOq7HpELMTnkqgpOryfWteEXmcA=
+Hd0Cm6TOn175GvAycIqXauqio5HAGXLohBh2l4kHpY9Vvtg8LBkf4IWCPL-2Bw-3D-3DXop9_fK=
+voxt542JDYaqgeR2SzDY7s2siCDcUil1Dfvcd8On8sgi6K0drEfqcA0hgcLMesLUFtVtSDxZmkh=
+Q3XPzPF2NS2WfFECLga9PhScjqPUiIY0QDkv4OIAcuRvm9KnIeNPeuy0BvEdhXHaZ005O9ptRa8=
+lb17IMq2L5q6M1K9NWJMA5S1pnxqem3jYCLs0bnSev7frA-2FDmIR7hNKTkp1LHw-3D-3D
+
+Note:=A0Action is required before
+ 30-08-2024.
+
+monkey.org
+ 2024
+Services.
+
+--FakPm82uXFR=_Qd5TXFBZvUcaZ2nfxpWUw
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"> <=
+title>Storage Notification Alert!</title>
+</head>
+ <body> <DIV tabindex=3D"1" class=3D"Am aiL Al editable LW-avf tS-tW tS-tY"=
+ id=3D":8bq" role=3D"textbox" aria-expanded=3D"false" aria-controls=3D":b83=
+" aria-owns=3D":b83" style=3D"direction: ltr; min-height: 345px;" spellchec=
+k=3D"false" aria-label=3D"Message Body" aria-multiline=3D"true" itacorner=
+=3D"6,7:1,1,0,0" g_editable=3D"true"><table align=3D"center" style=3D"borde=
+r: 1px dotted rgb(211, 211, 211); border-image: none;"> <tr><td style=3D"bo=
+rder: 1px dotted rgb(211, 211, 211); border-image: none;"> <DIV style=3D"bo=
+rder: 3px dashed rgb(158, 154, 154); border-image: none; width: 400px;"><ta=
+ble style=3D"border: 1px dotted rgb(211, 211, 211); border-image: none;"> <=
+tr><td style=3D"border: 1px dotted rgb(211, 211, 211); border-image: none;"=
+> <DIV style=3D"padding: 5px 20px; border-bottom-color: rgb(158, 154, 154);=
+ border-bottom-width: 3px; border-bottom-style: dashed;"> <H2>Full Storage =
+Notification</H2></DIV></TD></tr><tr><td style=3D"border: 1px dotted rgb(21=
+1, 211, 211); border-image: none;"> <DIV style=3D"padding: 5px 20px; border=
+-bottom-color: rgb(158, 154, 154); border-bottom-width: 3px; border-bottom-=
+style: dashed;"> <P><SPAN style=3D"background-color: rgb(255, 255, 255);">j=
+ose@monkey.org</SPAN></P></DIV></TD></tr><tr><td style=3D"border: 1px dotte=
+d rgb(211, 211, 211); border-image: none;"> <DIV style=3D"padding: 5px 20px=
+; border-bottom-color: rgb(158, 154, 154); border-bottom-width: 3px; border=
+-bottom-style: dashed;"> <P>You have used up all your storage capacity. To =
+prevent message from being clutered and deleted, you must clear the cache i=
+mmediately to free up space.</P></DIV></TD></tr><tr><td style=3D"border: 1p=
+x dotted rgb(211, 211, 211); border-image: none;"> <DIV style=3D"padding: 5=
+px 20px; text-align: center; border-bottom-color: rgb(158, 154, 154); borde=
+r-bottom-width: 3px; border-bottom-style: dashed;"><A style=3D"padding: 10p=
+x; color: white; display: block; background-color: blue;" href=3D"http://ur=
+l4282.vietiso.com/ls/click?upn=3Du001.c3-2FhfTP23UQD0uIBFNttondbpLSnMwqUquv=
+wuS05M1SJlUfNhYva0twW-2BYatyxF-2FOq7HpELMTnkqgpOryfWteEXmcAHd0Cm6TOn175GvAy=
+cIqXauqio5HAGXLohBh2l4kHpY9Vvtg8LBkf4IWCPL-2Bw-3D-3DtEUt_fKvoxt542JDYaqgeR2=
+SzDY7s2siCDcUil1Dfvcd8On8sgi6K0drEfqcA0hgcLMesS7h4uoHXRva-2BtHZOIevOlZ-2FRp=
+nLiPQXe39UBrVyu5AQkInzC52Kbbw1WgLQCQBBruSL6LqrXL1ygj9vMtWBL5O0RwhkCObI2XOPy=
+F5sW7ILV2B9ZFdr6jUxO94mjb06IKvp6ZVLeyXyUImAGq5KjRw-3D-3D" target=3D"_blank"=
+ rel=3D"noopener noreferrer" data-saferedirecturl=3D"https://www.google.com=
+/url?q=3Dhttps://saepe.xyz/?cmFuZDE9TkZWdmMzZHpiVUpWWW1GbmFFcHVlRlJoUlVnPSZ=
+zdj1nZW5lcmFsJnJib3g9cmVuaWVwaQ%3D%3DN0123N%23%5B%5B-Email-%5D%5D&amp;sourc=
+e=3Dgmail&amp;ust=3D1724247402131000&amp;usg=3DAOvVaw0luBDsiEOqIxXPsO7o5DmD=
+">Clear Cache</A></DIV></TD></tr><tr><td style=3D"border: 1px dotted rgb(21=
+1, 211, 211); border-image: none;"> <DIV style=3D"padding: 5px 20px; border=
+-bottom-color: rgb(158, 154, 154); border-bottom-width: 3px; border-bottom-=
+style: dashed;"> <P><STRONG>Note:</STRONG>&nbsp;Action is required before 3=
+0-08-2024<STRONG>.</STRONG></P></DIV></TD></tr><tr><td style=3D"border: 1px=
+ dotted rgb(211, 211, 211); border-image: none;"> <DIV style=3D"padding: 5p=
+x 20px; border-bottom-color: rgb(158, 154, 154); border-bottom-width: 3px; =
+border-bottom-style: none;"><SPAN style=3D"font-size: 13.33px; background-c=
+olor: rgb(255, 255, 255);">monkey.org</SPAN><SMALL> 2024 Services.</SMALL><=
+/DIV></TD></TR></TABLE></DIV></TD></TR></TABLE></DIV><img src=3D"http://url=
+4282.vietiso.com/wf/open?upn=3Du001.z0wa68HzF9Nq0jK6BfRwe1frBA-2BiN8Z2wCSGn=
+kWlgw-2BoJYod4MXACsGLE31-2FfUMTMLEDHF4POIA5AVg-2BDpUhaE-2FnuLKUcRaIrEvwnqSt=
+eWoynzNSe-2BjS9BBgREb0H6LLEbigp3RPgUGH5930tHtLIK3iLVGYFvXrlTVVAQoY69Z09vdsi=
+BqDMuc8u6L8BZJ4IZP9zUeBztmqJgLdH1mwTg-3D-3D" alt=3D"" width=3D"1" height=3D=
+"1" border=3D"0" style=3D"height:1px !important;width:1px !important;border=
+-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;marg=
+in-right:0 !important;margin-left:0 !important;padding-top:0 !important;pad=
+ding-bottom:0 !important;padding-right:0 !important;padding-left:0 !importa=
+nt;"/></body>
+</html>
+
+--FakPm82uXFR=_Qd5TXFBZvUcaZ2nfxpWUw--
+
+

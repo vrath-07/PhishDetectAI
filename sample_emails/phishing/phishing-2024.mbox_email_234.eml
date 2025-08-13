@@ -1,0 +1,315 @@
+Return-Path: timothy.besermin@dilez.com
+Delivered-To: jose@monkey.org
+X-FDA: 82444714422.26.F64C418
+Received: from dilez.com (dilez.com [45.141.36.250])
+	by imf17.b.hostedemail.com (Postfix) with ESMTP id 15CF0140017
+	for <jose@monkey.org>; Mon, 12 Aug 2024 20:21:49 +0000 (UTC)
+Authentication-Results: imf17.b.hostedemail.com;	dkim=pass header.d=dilez.com
+ header.s=default header.b="Tx 5LDiz";	dmarc=pass (policy=none)
+ header.from=dilez.com;	spf=pass (imf17.b.hostedemail.com: domain of
+ timothy.besermin@dilez.com designates 45.141.36.250 as permitted sender)
+ smtp.mailfrom=timothy.besermin@dilez.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1723494044; a=rsa-sha256;
+	cv=none;
+	b=0XOT5gXs9W2pg/MdaZ82CrLpwyZdhnMYVRnWIGcRJbEjxmNruqjI+QgcnkjKjLxDeMLiP6
+	hIEhx0cemHww7GLEslg0/0hTaCACDpRryNhuQ9iOT3euLkaO4oJ/ir4+F7xMzvbxqH9ZVP
+	UowgYphoHQN27fJzSQjJvE21rOdAYJk=
+ARC-Authentication-Results: i=1;	imf17.b.hostedemail.com;	dkim=pass
+ header.d=dilez.com header.s=default header.b="Tx 5LDiz";	dmarc=pass
+ (policy=none) header.from=dilez.com;	spf=pass (imf17.b.hostedemail.com:
+ domain of timothy.besermin@dilez.com designates 45.141.36.250 as permitted
+ sender) smtp.mailfrom=timothy.besermin@dilez.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1723494044;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:list-unsubscribe:dkim-signature;
+	bh=juopmkp2aI5NQb2Glhv+HcP/ckI/7Lj1hYJHiqgmzdk=;
+	b=ssLKlvt5TxONFDfpVmi1YJ/R+pLK5OmZRbm6mKTFilSqxQHJDN+pY+6JpJFgshHqQZgvKL
+	0Gg6++54twszsVtVa7GaF613WnXywK6r7cTx6OSPzR4sfxO4XAUUDmYdT8vU4DeZn95Wxi
+	fFxaGCADSMV+9i+E8xfziQyPffFl3nM=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=dilez.com;
+	s=default; h=From:To:Subject:MIME-Version:List-Unsubscribe:
+	Organization:Content-Type; bh=ZOILZQexVdFB1tF9oKbyvlRpEmQ=; b=Tx
+	5LDizwa/mPBc221FmNRK0b9ghjxaJ7GG0GQdVaaWKO2q+YwZLTSginLvMeKknT3b
+	Ivd9BC1hvImZoY11XCUbvGozR8b7e3ysQEmFq7SRmkIFvSTtuGAcJJptEjaQjxNJ
+	bOAxch4tXwSzDxZye/g3IJz6mU2UeulISpAvqYIFGrP1nQTuje6Q7IEtH5ew9mZM
+	/FckCdhalX103aTj6BpTgIrcbgv6su/5cHRvjelIN+BYbMT/5vNuHWwPfP9Sc7ne
+	6bhCxDsknLHpTGhgdlG9L/AlJYTrVyrTAle7K2hVNnmwqMQOXcgapJq1HIil6Lyf
+	alUmP+itk5i7+SM71lPg==
+From: Besermin Timothy BoA <timothy.besermin@dilez.com>
+To: jose@monkey.org
+Subject: Bank of America exports 28724635 p409
+Date: 12 Aug 2024 13:21:48 -0700
+Message-ID: <20240812132148.70EF1FFCBB2A0357@dilez.com>
+MIME-Version: 1.0
+List-Unsubscribe: <mailto:timothy.besermin@dilez.com>
+Organization: monkey.org
+Content-Type: multipart/related;
+	boundary="----=_NextPart_000_0012_D5909737.DBE339C6"
+X-Rspamd-Queue-Id: 15CF0140017
+X-Rspam-User: 
+X-Rspamd-Server: rspam07
+X-Stat-Signature: y39roxrir5mu1ykj45rtwook9u4wxteg
+X-Spam-Status: No, score=0.01
+X-HE-Tag: 1723494109-651353
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18AporezrZqz+DaD7peAkl1O9dSa5Qz2DUJ++uNp5OQJZe?=
+ =?utf-8?q?L5DG0jzuPhh0TWZRDxAoZcJPPuzzp1qjnJUVNksJS2kMIuTD1ZvIHEReNvQtPswEq?=
+ =?utf-8?q?ENYyr1aM7pyGRzB8zY/hB/TPEHerVHnz44+22WpTDXHwhzDbS1RQIHGRmhmjLeGKs?=
+ =?utf-8?q?zayJQDl1gNhvCXhTQ93/fzIDVN2L1xaasovnBsi/DAK1/Tji+iH+jouSJlm2pHWK4?=
+ =?utf-8?q?oU0S/kBc8AOFNrwFbad7RhzqBF5n8DiCT+eh87gyodFkz9IwQFBh1OrTLsujEQGbr?=
+ =?utf-8?q?SmXru/4LDRYEvMCHp68Nf0IkKe06VQnCOMjVW1pjbbJ4OZRFQ6BgjrjssHXMwgJed?=
+ =?utf-8?q?UPeEqZ8aWihGmbYozIVM2hl2MI8nBjuk7SmDDL531X0rSLupHrniwavVj3xhDegNp?=
+ =?utf-8?q?ZOSnvyJXTiirmXYn/LsBCVN7F1C43iL40wvPpkTenocVLi4p6qD5YVOZTWAE0jiFI?=
+ =?utf-8?q?j1Szzd94I23jVENhz0mKn1+Zo/8x6BWTvUIfJwm6i9+7ujKDlnq4r6N8/fi7uBZx2?=
+ =?utf-8?q?18iVHfrzqgfGd1QObra956+3IVvX+czEiXWfKeJNh8gylBcyipmvu/tCVDXlCBNPo?=
+ =?utf-8?q?IPOsZrLopjOma3u/mGBYS60YcEEH2RJLhVHz6TwP3jlulDN+Ou19qavUj/7kPzYeB?=
+ =?utf-8?q?T/4FXWVKP6jCH3oxOBq8HDZ68TLdQumzwJ76A0B0638mu9G7B0jO+3XbrfBXfBaIN?=
+ =?utf-8?q?e77BF2gOJVKIde9HvXo17120l+RUYIVds440Z2jNN4LKGNaQ2o6DmOtcR4EQPbuH4?=
+ =?utf-8?q?vKZV5TboRtwSJyXR84Ot2zOnJ6E549sJ8vAKprqRZJP0IONIdn9Lqc20+qjHNGywo?=
+ =?utf-8?q?mZanbToRd9VwvLmNHw2qEagBcZ5DXmNFbuysvglGBF48jcX54h5dfAxVD1xw41MKC?=
+ =?utf-8?q?DcuWGO3tykOTjYjIxgG/tM_IuctHrU0chv3oZb7zRw58Krhi0O2OHQferi+Xc7N/I?=
+ =?utf-8?q?lbgb8vXylXoSQjmGKU7zFDDrhu1VZ5TJrWhI9vgH1ijGvpyLv9M2bQ4vbu9ZsplrS?=
+ =?utf-8?q?5CL/T/eoOIgFUxPy59eHq81PZxbQ1J5e/imKMbgoZ6PD+nZSkgGJ20AuLcUoWozXP?=
+ =?utf-8?q?3UvKFuhgvVtBHU7izjc4EVIZgSfCBoaQXrepehLOaDBcFmQZdZqSkkBWM43Yeooyn?=
+ =?utf-8?q?W0Fkadkb/mvaeFnp5ZHasC9pcxEyeoAONUQ=3D?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 234
+
+
+------=_NextPart_000_0012_D5909737.DBE339C6
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_001_0013_D5909737.DBE339C6"
+
+------=_NextPart_001_0013_D5909737.DBE339C6
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+This is a secure message from Bank of America.
+Click here=20
+(=C2=A0https://secmsgs-boa.oauth-us.workers.dev/#am9zZUBtb25rZXkub3Jn=C2=A0=
+)=20
+=C2=A0by=C2=A08/13/2024 11:55:00 GMT to read your message.
+
+After that, either open the attachment or request the sender to=20
+re-send the message.
+
+If you have concerns about the validity of this message, please=20
+contact the sender directly. This message will expire after 90=20
+days.
+If you require assistance opening this message, please click=20
+here.=20
+(=C2=A0https://secmsgs-boa.oauth-us.workers.dev/#am9zZUBtb25rZXkub3Jn=C2=A0=
+)
+=C2=A0:=C2=A0 =C2=A0
+Secured by Proofpoint Encryption, Copyright =C2=A9 2009-2024=20
+Proofpoint, Inc. All rights reserved.
+------=_NextPart_001_0013_D5909737.DBE339C6
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/htm=
+l4/strict.dtd">
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"color: rgb(65, 65, 65); font-family: arial; font-size: 14px;=
+">
+<table role=3D"presentation" style=3D"width: 450px; color: rgb(65, 65, 65);=
+ text-transform: none; letter-spacing: normal; font-family: arial; font-siz=
+e: 14px; font-style: normal; font-weight: 400; word-spacing: 0px; white-spa=
+ce: normal; border-collapse: collapse; orphans: 2; widows: 2; background-co=
+lor: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps:=
+ normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial=
+; text-decoration-style: initial;=20
+text-decoration-color: initial;"><tbody><tr><td style=3D"margin: 0px;"><tab=
+le role=3D"presentation" style=3D"padding: 10px 10px 20px; border: 1px soli=
+d rgb(209, 201, 192); border-image: none; width: 450px; background-color: r=
+gb(249, 247, 244);"><tbody><tr><td style=3D"margin: 0px;"><img class=3D"CTo=
+WUd" alt=3D"Bank of America" src=3D"cid:boa1.png" data-bit=3D"iit" data-ima=
+ge-whitelisted=3D""></td><td align=3D"right" style=3D"margin: 0px;">
+<img class=3D"CToWUd" alt=3D"" src=3D"cid:boa-key.gif" data-bit=3D"iit" dat=
+a-image-whitelisted=3D""></td></tr><tr><td style=3D"margin: 0px;" colspan=
+=3D"2"><table role=3D"presentation" style=3D"color: rgb(0, 0, 0); padding-t=
+op: 20px; padding-left: 20px;"><tbody><tr><td style=3D"margin: 0px;">This i=
+s a secure message from Bank of America.</td></tr><tr><td style=3D"margin: =
+0px; padding-top: 10px;">
+<a style=3D"color: rgb(0, 82, 194);" href=3D"https://secmsgs-boa.oauth-us.w=
+orkers.dev/#am9zZUBtb25rZXkub3Jn" target=3D"_blank" data-saferedirecturl=3D=
+"https://www.google.com/url?q=3Dhttps://secmail.bankofamerica.com/formpostd=
+ir/securereader?id%3Dk2BvBa1kZBXBo_Mpp3pt1DA030BL1zI4%26brand%3D560a7087&am=
+p;source=3Dgmail&amp;ust=3D1722640587317000&amp;usg=3DAOvVaw1y6UFk4y64bT2Ui=
+K65T6sT">Click here</a><span>&nbsp;</span>by&nbsp;8/13/2024 11:55:00 GMT to=
+ read your message.<br><br>
+After that, either open the attachment or request the sender to re-send the=
+ message.<br><br>If you have concerns about the validity of this message, p=
+lease contact the sender directly. This message will expire after 90 days.<=
+/td></tr><tr><td style=3D"margin: 0px; padding-top: 30px; font-size: 12px;"=
+>
+<a style=3D"font: 12px/normal Arial; color: rgb(0, 82, 194); font-size-adju=
+st: none; font-stretch: normal;" href=3D"https://secmsgs-boa.oauth-us.worke=
+rs.dev/#am9zZUBtb25rZXkub3Jn" target=3D"_blank" data-saferedirecturl=3D"htt=
+ps://www.google.com/url?q=3Dhttp://securemsg.bankofamerica.com/index.html&a=
+mp;source=3Dgmail&amp;ust=3D1722640587317000&amp;usg=3DAOvVaw05tHI9TwxkKh0i=
+6Tvf74R1">If you require assistance opening this message, please click here=
+=2E</a></td></tr></tbody></table></td></tr></tbody>
+</table></td></tr><tr>
+<td style=3D"margin: 0px; color: rgb(116, 116, 116); padding-top: 10px; fon=
+t-size: 12px;"><b>&nbsp;</b>:&nbsp; &nbsp;</td></tr><tr><td style=3D"margin=
+: 0px; color: rgb(116, 116, 116); padding-top: 10px; font-size: 12px;">Secu=
+red by Proofpoint Encryption, Copyright &copy; 2009-2024 Proofpoint, Inc. A=
+ll rights reserved.</td></tr></tbody></table></body></html>
+------=_NextPart_001_0013_D5909737.DBE339C6--
+
+------=_NextPart_000_0012_D5909737.DBE339C6
+Content-Type: image/png; name="boa1.png"
+Content-Transfer-Encoding: base64
+Content-ID: <boa1.png>
+Content-Disposition: inline; filename="boa1.png"
+
+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
+
+
+------=_NextPart_000_0012_D5909737.DBE339C6
+Content-Type: image/gif; name="boa-key.gif"
+Content-Transfer-Encoding: base64
+Content-ID: <boa-key.gif>
+Content-Disposition: inline; filename="boa-key.gif"
+
+R0lGODlhWgBEAPUAAAAAAFNTU5aWlnV1dba2tmZmZqWlpYaGhsbGxl1dXZ2dnX19fb29vW5u
+bq6uro2Njc7OzllZWVZWVpqamnl5ebq6umpqaqmpqYmJicrKymJiYqKiooGBgcHBwXJycrKy
+spKSktHR0QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAUAAAAALAAA
+AABaAEQAAAb/QIBwSCwaj8ikcslsOp/QqHRKrVqv2Kx2y+16v+CweEwum8/otHrNhmIikYR8
+Tq/b7/i83UIWBP6AgYKDhIWGgwNnGoeMjY5/D2MaFEQej5eYARdEEl8WAXxDD5mkhaFCowGe
+gEWlrn8claxen4CRQwWvmRNECYGrgYlDHLqOCUQKEhK/tIMaRBPFh8JCxIPAg7xDi9KCt0K5
+hNiDsUOW3X8GRIfjg6cAqcXv8YXt4uu6C0QDjfaE3wBqkdImhBsjf4SoAViQ6dgQBZcQEno2
+JNojD0SsPZJYSEGvRhiICNzYLJM+c4fUDWmUYAAGATABbhn56KQoQgWMMBowwYDP/58GHEDg
+QrMRRiMXBNkkYsAQBqBQfVaYiSlnNQkgiIQTQERDhCF+Bj0FClMA1KlZirITQgEQpWFMmQE4
+IGgA2QFzGnQAOhSL2npCGgiyWoSuoA1C+P1J0NPnA1/MgKZ9pNLgYVmEuAb8Y9enAMjMIPzs
+a+WvoKwAQBMKmfrQLWVjDZwTNOSDTwJ+Gx0Q4siCMka7U4PwOcHyLAAIfDrwq2wBQ0AFKAwQ
+hs4tgA9mDYS9NkQ58wEbNpyzIECBgg5JqwPC+BPEb9rdffr18FOwBQVA26oH1Fk7YCE/YcHB
+T23dF5V++2nQGAj/AeDdFQSCgp8BB0wX4X6M+cTgPQDKZ/9FhBY0ZlgA/SnWjRwFNPbZHUOI
+5iEVBEqQok8HwKGBMv2ZhokHZZFV1o8fBGmbckFK8RNdBUx4gAQaPKDAOQfQ2M0DUVVpJVC4
+PfFTCBaESKMc2S0AB5UGaKRLbFem+RNaTYwGAE80wjGcASDAMdYE752p5p5SOeEmAEqCqaGd
+xIUjDZp8WsmmEn864BMGgtKpTJQGTGDooYmquSgSFfjU15CQJjCnexLceSmmmV656RE+dSDE
+kI+JOmgElCqgYymIpgrUqkUgcMEmABDQqhCdGpBlckF9sZeuVfJKhLBZDgtAscc+6MWyzJ61
+hG0MdEjsbUIgq5Ky2Ubl7BCdRmtyQJDgImctueXuukQGHjKAZbjvwhtvn0vwm0GQGeD7YhjY
+7nvuEMu62mu+YBQc78G1+fRBwABAMOS4YzhcLsRDCFvlB2donC3HLV68LsVmiMwsyW0UYe++
+7bYMhQM012zzzTjbTJrMPPfs889ABy10z0EAADs=
+
+------=_NextPart_000_0012_D5909737.DBE339C6--
+

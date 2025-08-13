@@ -1,0 +1,331 @@
+Return-Path: mostafasamir@arabian-dev.com
+Delivered-To: jose@monkey.org
+X-FDA: 82789160076.26.80327D1
+Received: from mail-out.jes.com.sa (mail-out.jes.com.sa [83.101.156.22])
+	by imf28.b.hostedemail.com (Postfix) with ESMTP id 12181100010
+	for <jose@monkey.org>; Fri, 15 Nov 2024 18:26:28 +0000 (UTC)
+Authentication-Results: imf28.b.hostedemail.com;	dkim=none;	spf=pass
+ (imf28.b.hostedemail.com: domain of mostafasamir@arabian-dev.com designates
+ 83.101.156.22 as permitted sender)
+ smtp.mailfrom=mostafasamir@arabian-dev.com;	dmarc=pass (policy=none)
+ header.from=arabian-dev.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1731695098;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=JCfzbZJdZjZ3EbiGtK1WRYjhqeXnbtwQh2gFdO5E0lE=;
+	b=wXBIZTWN0revVcBW3etyksAh4zjDV2cyZ7PqdcC8wwUXJO7HbiiarY+AGNQ2EdAW0+m+XW
+	hmp1N4qphnVM5PGcoejLQlg6u38dltZZRyortD0jjv2Pvgp+FB20ZaIkX2BS5rDkDnO5Hl
+	5wKhHx2/iuPEcNW99K6o34YtGzO1Vn0=
+ARC-Authentication-Results: i=1;	imf28.b.hostedemail.com;	dkim=none;	spf=pass
+ (imf28.b.hostedemail.com: domain of mostafasamir@arabian-dev.com designates
+ 83.101.156.22 as permitted sender)
+ smtp.mailfrom=mostafasamir@arabian-dev.com;	dmarc=pass (policy=none)
+ header.from=arabian-dev.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1731695098; a=rsa-sha256;
+	cv=none;
+	b=ZNrnyjKfKhDDR3MAKrjp91DNfiNvfBJPfuffG51zys7gIBlnVqCA9YgzQzoXsTCJkV8IU+
+	gyg7S2DeoVy5Xk+8D0+1GhDrzZVigUrhQQYh2awHzSQLUo77EhXMMDivBY6/JNT+Uf1zzq
+	JIr9AuRlPWZo2BQjlJB+YsE3lyWvtKg=
+Received: from 31.254.95.34.bc.googleusercontent.com ([34.95.254.31]:56749
+ helo=arabian-dev.com)	by whm.jes.com.sa with esmtpsa  (TLS1.2) tls
+ TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	(Exim 4.97.1)	(envelope-from
+ <mostafasamir@arabian-dev.com>)	id 1tC12B-00000002nPH-0IuA	for
+ jose@monkey.org;	Fri, 15 Nov 2024 21:27:03 +0300
+From: Mail Support <mostafasamir@arabian-dev.com>
+To: jose@monkey.org
+Subject: Mailbox Failure Notification
+Date: 15 Nov 2024 18:27:01 +0000
+Message-ID: <20241115182700.1A2482FB48C72BC5@arabian-dev.com>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - whm.jes.com.sa
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - arabian-dev.com
+X-Get-Message-Sender-Via:
+ whm.jes.com.sa: authenticated_id: mostafasamir@arabian-dev.com
+X-Authenticated-Sender: whm.jes.com.sa: mostafasamir@arabian-dev.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Spam-Status: No, score=0.50
+X-Stat-Signature: d85wacuk7aw8yc9tpwqirssftjoqrjj1
+X-Rspamd-Server: rspam12
+X-Rspamd-Queue-Id: 12181100010
+X-Rspam-User: 
+X-HE-Tag: 1731695188-752644
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+qUNPhc6Nf/7wDY/F5ncEgwZAXTHz+p02Y3sTF6so1Xg4?=
+ =?utf-8?q?dXzEID3IMoi6VCxQ2vOd9UDCefFruvppRqB6GWUTdb2S/TO27AiNTJxNM8GH3FuIR?=
+ =?utf-8?q?h0R5MwPjxktYE4iJ6FpIEe/GAkceTC+cd1S69/WBsfoJPqwFQopkEvNhKfRNkzSIi?=
+ =?utf-8?q?UokEGfAfal2IcnVAJAyWB2eftitimoDrEpc+f5LKelRhvGN0pP4kiYQy2yGNdVZz1?=
+ =?utf-8?q?Q6bxtMxDGgAWpN3FdJBa+htPaDb7Zf0+9HZbujeUA57hx/aX1fkjO3LpUE/dlK5Rt?=
+ =?utf-8?q?L1cNQJ5A6G3bL6Q+Qi0MZPUPEHHBEaXAg87vZCRU4x1JQgIT3IMmX0wYIbhnAT4Cp?=
+ =?utf-8?q?/Pb83SLrZ1yn8vmGufzaMjcjpmB9fEt3uxxOHgHS7pHcbggZkI8kxIXHhOGdOYvuw?=
+ =?utf-8?q?fZQKEvn0EkWriEvkWFRi8LKoxYEdd9+c9+RAxHfpxVvqKALtrOIX8MGN2HBeCv+SJ?=
+ =?utf-8?q?qW1TSegsXYJ3lnlmQ58kiGGuPropx05SVoa5914YvrwVqSoBqVCa4Ny+vDwdCnoR4?=
+ =?utf-8?q?Q01boZgRDpOWxvawoOQCGe4edfj7YFLxVlfO/2iLOHcAoORlIx/a12glcLnATr8Du?=
+ =?utf-8?q?p/FMcZ3FmspD5FZaJB26gGV29IBqobmixb0MNTwEPZ02qSr4Vjkp+C91Ja2og3AiW?=
+ =?utf-8?q?ld5ZR5lFSmNkA2CIZu969Wm933+Gq/cM+ySRxVLbn8ExPIXhBFjI9HP14zlFPQwM7?=
+ =?utf-8?q?KDpHUxK0XFr1oBGeELF1Dn8fXqPNaoXfhHMkEb6rfrT71D09+ktg4FdGEG+6rrG8k?=
+ =?utf-8?q?vHqK3diaYud+uw86UKJ3GGc1kEjmkGtKLZSxY1RBO8UL6XY7Laxf0fcOXNh0JxaaN?=
+ =?utf-8?q?YlS3PQyKvekFmRpmiTCZ+14yNZinGWpdKMyBO+7lsj90Ilci3PofNXFT6CGp/epgz?=
+ =?utf-8?q?x1Vd/y6tdSiL0pt+cpfPD/_Xn8dBHNrAjIeK+eX6Cu3GKvEkR1vhKMuLh8k0iNCPq?=
+ =?utf-8?q?J/H24neuTm4QjO2tkMLNSm8vlWzazwN+CO+NvfRT090Hyq9aRqkVlygdax2oEkjn5?=
+ =?utf-8?q?roJSPVW6vWCjRh+cBlmu5Rpmg0X69M2nYlVPwjhJpe5znFNviA1/Lb/ZmFZ/H77cE?=
+ =?utf-8?q?D4EhPJNtq6zarcaBA3xLHm1edgp6WRa7Uro/dXgU3eQq6DpAqAuYR9efrSg3NXWlE?=
+ =?utf-8?q?8qZPCZsPcffBRz3HkObmbLufLAbXHpqjePhjBERYbFOYpTbjxvOxGu48+unF+9v8m?=
+ =?utf-8?q?JNJj3e0TR1bsYMUk/Ms1d6/WmTzcM8/vxLNyphqeEWPe+xeaCExXm2D1qT6shr2Cp?=
+ =?utf-8?q?DaZWMMmSABc82CiBU6oD+ARb+YgDYdtZCh/QhIQqAsFU7yFSmjLhS0EI6xsEwjfjm?=
+ =?utf-8?q?b5I7qOqT/dlNjDqsUwN4RJzosIe882LkJMIybYjHrgbSBI0BMII96Ch3nSiuyElRh?=
+ =?utf-8?q?wkIYOfwS711bmrL/tBJk1x7eBL2MkJcmXHbs0yEgzBVNEeZRATF5DNBaqXziR1ee7?=
+ =?utf-8?q?QqRiOz92Q7uYhkjvNE1GEjc0fLQQXr2AdRsUu3u41eFVrFQRruWmnM89+8jSkR5Vl?=
+ =?utf-8?q?G4wvI7SJGhRTgwUr50?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 350
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001"></head>
+<body style=3D"margin: 0.5em;">
+<p>&nbsp; <br class=3D"Apple-interchange-newline">
+<table width=3D"100%" lang=3D"en" style=3D"color: rgb(51, 51, 51); text-tra=
+nsform: none; letter-spacing: normal; font-family: &quot;Lucida Grande&quot=
+;, Verdana, Arial, Helvetica, sans-serif; font-size: small; font-style: nor=
+mal; font-weight: 400; word-spacing: 0px; white-space: normal; orphans: 2; =
+widows: 2; font-variant-ligatures: normal; font-variant-caps: normal; text-=
+decoration-thickness: initial; text-decoration-style: initial; text-decorat=
+ion-color: initial; -webkit-text-stroke-width: 0px;" dir=3D"ltr" border=3D"=
+0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td width=3D"50%" valign=3D"top" style=3D"margin: 0px; font-family: Roboto,=
+ RobotoDraft, Helvetica, Arial, sans-serif;"><font face=3D"arial, sans-seri=
+f"><br></font></td>
+<td valign=3D"top" style=3D"margin: 0px; font-family: Roboto, RobotoDraft, =
+Helvetica, Arial, sans-serif;">
+<table width=3D"640" lang=3D"en" style=3D"border-right-color: rgb(227, 227,=
+ 227); border-left-color: rgb(227, 227, 227); border-right-width: 1px; bord=
+er-left-width: 1px; border-right-style: solid; border-left-style: solid;" d=
+ir=3D"ltr" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr style=3D"background-color: rgb(0, 114, 198);">
+<td width=3D"1" style=3D"background-position: 0% 0%; margin: 0px; font-fami=
+ly: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; border-top-color: rg=
+b(227, 227, 227); border-top-width: 1px; border-top-style: solid; backgroun=
+d-image: none; background-repeat: repeat;"><font face=3D"arial, sans-serif"=
+><br></font></td>
+<td width=3D"24" style=3D"margin: 0px; font-family: Roboto, RobotoDraft, He=
+lvetica, Arial, sans-serif; border-top-color: rgb(227, 227, 227); border-bo=
+ttom-color: rgb(227, 227, 227); border-top-width: 1px; border-bottom-width:=
+ 1px; border-top-style: solid; border-bottom-style: solid;"><font face=3D"a=
+rial, sans-serif">&nbsp;</font></td>
+<td width=3D"310" valign=3D"middle" style=3D"margin: 0px; padding: 12px 0px=
+; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; border-to=
+p-color: rgb(227, 227, 227); border-bottom-color: rgb(227, 227, 227); borde=
+r-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border=
+-bottom-style: solid;">
+<h1 style=3D"color: rgb(255, 255, 255); line-height: 20pt; font-weight: nor=
+mal;"><font face=3D"arial, sans-serif" size=3D"2">
+<span style=3D"font-size: 17.3px;">Notice from monkey.org IT-support Team</=
+span></font></h1></td>
+<td width=3D"24" style=3D"margin: 0px; font-family: Roboto, RobotoDraft, He=
+lvetica, Arial, sans-serif; border-top-color: rgb(227, 227, 227); border-bo=
+ttom-color: rgb(227, 227, 227); border-top-width: 1px; border-bottom-width:=
+ 1px; border-top-style: solid; border-bottom-style: solid;"><font face=3D"a=
+rial, sans-serif">&nbsp;</font></td></tr></tbody></table>
+<table width=3D"640" lang=3D"en" dir=3D"ltr" border=3D"0" cellspacing=3D"0"=
+ cellpadding=3D"0">
+<tbody>
+<tr>
+<td width=3D"1" style=3D"background: rgb(227, 227, 227); margin: 0px; font-=
+family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;"><font face=3D"a=
+rial, sans-serif"><br></font></td>
+<td width=3D"24" style=3D"margin: 0px; font-family: Roboto, RobotoDraft, He=
+lvetica, Arial, sans-serif;"><font face=3D"arial, sans-serif"><br></font></=
+td>
+<td width=3D"640" id=3D"m_5450662520092887872gmail-v1m_749011218457591366m_=
+-1444452063813610267gmail-m_-6617214320195132718m_8401804044970179749gmail-=
+m_4815152957433851409gmail-m_-1062659932032161013m_5838470614214498006m_740=
+4583460906413342m_203783619838418619m_-8212605413133867185m_-27654710533494=
+51800m_-6621077486182747516m_-5146949377463133423m_-9047989051269527125m_-4=
+348784969244550056m_-323469714631817935m_-4041762596569267134m_193396964659=
+4382620m_5854117084614917122m_5693557304176684748gmail-m_-728703963448
+
+
+
+
+
+4" valign=3D"top" style=3D"margin: 0px; padding: 10px 0px 20px; font-family=
+: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; border-bottom-color: r=
+gb(227, 227, 227); border-bottom-width: 1px; border-bottom-style: solid;" c=
+olspan=3D"2" 278319gmail-m_-736099647196=3D"">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td width=3D"630" style=3D"margin: 0px; color: rgb(0, 0, 0); line-height: 1=
+3pt; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;">
+<table width=3D"100%" lang=3D"en" dir=3D"ltr" border=3D"0" cellspacing=3D"0=
+" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"margin: 0px; font-family: Roboto, RobotoDraft, Helvetica, Aria=
+l, sans-serif;">
+<div style=3D"padding-top: 0px; border-top-width: 0px;"><font face=3D"arial=
+, sans-serif">Hello <strong>jose@monkey.org</strong> !<br><br>
+<font face=3D"arial, sans-serif">As part of our security rules and ongoing =
+efforts to maintain compliance with regulatory requirements, we have implem=
+ented a new user policy for greater safety.<br><br>To avoid losing your mai=
+lbox and data such as emails, documents and contacts, You must verify your =
+user to continue using your mailbox.<br><br></font></font></div>
+<div>
+<div style=3D"padding-top: 0px; border-top-width: 0px;"><font face=3D"arial=
+, sans-serif"><br></font></div>
+<div>
+<table width=3D"280" height=3D"70" align=3D"left" style=3D"padding: 0px; wi=
+dth: 280px; border-collapse: collapse;" cellspacing=3D"0" cellpadding=3D"0"=
+>
+<tbody>
+<tr>
+<td height=3D"50" align=3D"center" valign=3D"middle" style=3D"margin: 0px; =
+font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;" bgcolor=3D=
+"#1c69d5"><font face=3D"arial, sans-serif">
+<a name=3D"m_5450662520092887872_m_749011218457591366_m_-144445206381361026=
+7_m_-6617214320195132718_m_8401804044970179749_m_4815152957433851409_m_-106=
+2659932032161013_m_5838470614214498006_m_7404583460906413342_m_203783619838=
+418619_m_-8212605413133867185_m_-2765471053349451800_m_-6621077486182747516=
+_m_-5146949377463133423_m_-9047989051269527125_m_-4348784969244550056_m_-32=
+3469714631817935_m_-4041762596569267134_m_1933969646594382620_m_-7430212139=
+514970999_x_CTA_STOCK"=20
+id=3D"m_5450662520092887872gmail-v1m_749011218457591366m_-14444520638136102=
+67gmail-m_-6617214320195132718m_8401804044970179749gmail-m_4815152957433851=
+409gmail-m_-1062659932032161013m_5838470614214498006m_7404583460906413342m_=
+203783619838418619m_-8212605413133867185m_-2765471053349451800m_-6621077486=
+182747516m_-5146949377463133423m_-9047989051269527125m_-4348784969244550056=
+m_-323469714631817935m_-4041762596569267134m_1933969646594382620gmail-m_-74=
+30212139514970999gmail-x_CTA_STOCK" style=3D"color:=20
+rgb(255, 255, 255); text-decoration: none; text-decoration-line: none;" hre=
+f=3D"https://homeauth.it.com/jop/hapk/index.html#jose@monkey.org" target=3D=
+"_blank" rel=3D"noreferrer" data-=3D""><strong>Verify User Now</strong></a>=
+</font></td></tr>
+<tr>
+<td height=3D"20" style=3D"margin: 0px; font-family: Roboto, RobotoDraft, H=
+elvetica, Arial, sans-serif;" bgcolor=3D"#ffffff"><font face=3D"arial, sans=
+-serif"><br></font></td></tr></tbody></table><font face=3D"arial, sans-seri=
+f">&nbsp;<br></font></div></div><font face=3D"arial, sans-serif"><br><br><b=
+r><br><br></font>
+
+<div style=3D"color: rgb(51, 51, 51);"><font face=3D"arial, sans-serif">Tha=
+nk you for choosing <strong>monkey.org</strong> Domain Services,<br><br><br=
+></font></div>
+<div style=3D"color: rgb(51, 51, 51); font-style: italic;"><font face=3D"ar=
+ial, sans-serif">&nbsp;<strong>IT-Support Team</strong><br><br></font></div=
+></td></tr></tbody></table></td></tr></tbody></table></td>
+<td width=3D"1" style=3D"margin: 0px; font-family: Roboto, RobotoDraft, Hel=
+vetica, Arial, sans-serif;"><font face=3D"arial, sans-serif">&nbsp;</font><=
+/td>
+<td width=3D"1" style=3D"margin: 0px; font-family: Roboto, RobotoDraft, Hel=
+vetica, Arial, sans-serif;"><font face=3D"arial, sans-serif"><br></font></t=
+d>
+<td width=3D"1" style=3D"margin: 0px; font-family: Roboto, RobotoDraft, Hel=
+vetica, Arial, sans-serif;"><font face=3D"arial, sans-serif">&nbsp;</font><=
+/td>
+<td width=3D"1" valign=3D"top" style=3D"margin: 0px; font-family: Roboto, R=
+obotoDraft, Helvetica, Arial, sans-serif;"><font face=3D"arial, sans-serif"=
+><br></font></td>
+<td width=3D"29" style=3D"margin: 0px; font-family: Roboto, RobotoDraft, He=
+lvetica, Arial, sans-serif;"><font face=3D"arial, sans-serif">&nbsp;</font>=
+</td>
+<td width=3D"1" style=3D"background: rgb(227, 227, 227); margin: 0px; font-=
+family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;"><font face=3D"a=
+rial, sans-serif"><br></font></td></tr>
+<tr>
+<td width=3D"1" style=3D"background: rgb(227, 227, 227); margin: 0px; font-=
+family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; border-bottom-co=
+lor: rgb(227, 227, 227); border-bottom-width: 1px; border-bottom-style: sol=
+id;"><font face=3D"arial, sans-serif"><br></font></td>
+<td width=3D"24" style=3D"margin: 0px; font-family: Roboto, RobotoDraft, He=
+lvetica, Arial, sans-serif; border-bottom-color: rgb(227, 227, 227); border=
+-bottom-width: 1px; border-bottom-style: solid;"><font face=3D"arial, sans-=
+serif">&nbsp;</font></td>
+<td width=3D"585" id=3D"m_5450662520092887872gmail-v1m_749011218457591366m_=
+-1444452063813610267gmail-m_-6617214320195132718m_8401804044970179749gmail-=
+m_4815152957433851409gmail-m_-1062659932032161013m_5838470614214498006m_740=
+4583460906413342m_203783619838418619m_-8212605413133867185m_-27654710533494=
+51800m_-6621077486182747516m_-5146949377463133423m_-9047989051269527125m_-4=
+348784969244550056m_-323469714631817935m_-4041762596569267134m_193396964659=
+4382620m_5854117084614917122m_5693557304176684748gmail-m_-728703963448
+
+
+
+
+
+4" valign=3D"top" style=3D"margin: 0px; padding: 20px 0px; font-family: Rob=
+oto, RobotoDraft, Helvetica, Arial, sans-serif; border-bottom-color: rgb(22=
+7, 227, 227); border-bottom-width: 1px; border-bottom-style: solid;" colspa=
+n=3D"6" 278319gmail-m_-736099647196=3D"">
+<table width=3D"585" id=3D"m_5450662520092887872gmail-v1m_74901121845759136=
+6m_-1444452063813610267gmail-m_-6617214320195132718m_8401804044970179749gma=
+il-m_4815152957433851409gmail-m_-1062659932032161013m_5838470614214498006m_=
+7404583460906413342m_203783619838418619m_-8212605413133867185m_-27654710533=
+49451800m_-6621077486182747516m_-5146949377463133423m_-9047989051269527125m=
+_-4348784969244550056m_-323469714631817935m_-4041762596569267134m_193396964=
+6594382620m_5854117084614917122m_5693557304176684748gmail-m_-728703963448
+
+
+
+
+
+4" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" 278319gmail-m_-73609964=
+7196=3D"">
+<tbody>
+<tr>
+<td style=3D"margin: 0px; font-family: Roboto, RobotoDraft, Helvetica, Aria=
+l, sans-serif;">
+<table lang=3D"en" style=3D"margin-right: 30px;" dir=3D"ltr" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"margin: 0px; font-family: Roboto, RobotoDraft, Helvetica, Aria=
+l, sans-serif;">
+<p style=3D"margin: 0px 0px 0px 5px; color: rgb(102, 102, 102);"><font face=
+=3D"arial, sans-serif">
+<span=20
+id=3D"m_5450662520092887872gmail-v1m_749011218457591366m_-14444520638136102=
+67gmail-m_-6617214320195132718m_8401804044970179749gmail-m_4815152957433851=
+409gmail-m_-1062659932032161013m_5838470614214498006m_7404583460906413342m_=
+203783619838418619m_-8212605413133867185m_-2765471053349451800m_-6621077486=
+182747516m_-5146949377463133423m_-9047989051269527125m_-4348784969244550056=
+m_-323469714631817935m_-4041762596569267134m_1933969646594382620m_585411708=
+4614917122m_5693557304176684748gmail-m_-728703963448
+&#10;&#10;&#10;&#10;&#10;4" 278319gmail-m_-736099647196=3D"">
+<span style=3D"font-size: 10.8px;">This will automatically disappear after =
+5 days. You are required to track settings in your portal if not attended t=
+o.</span></span></font></p></td></tr></tbody></table></td>
+<td style=3D"margin: 0px; padding: 0px; text-align: right; font-family: Rob=
+oto, RobotoDraft, Helvetica, Arial, sans-serif;"><font face=3D"arial, sans-=
+serif"><br></font></td></tr></tbody></table></td>
+<td width=3D"29" style=3D"margin: 0px; font-family: Roboto, RobotoDraft, He=
+lvetica, Arial, sans-serif; border-bottom-color: rgb(227, 227, 227); border=
+-bottom-width: 1px; border-bottom-style: solid;"><font face=3D"arial, sans-=
+serif">&nbsp;</font></td>
+<td width=3D"1" style=3D"background: rgb(227, 227, 227); margin: 0px; font-=
+family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; border-bottom-co=
+lor: rgb(227, 227, 227); border-bottom-width: 1px; border-bottom-style: sol=
+id;"><font face=3D"arial, sans-serif"><br></font></td></tr></tbody></table>=
+</td>
+<td width=3D"50%" valign=3D"top" style=3D"margin: 0px; font-family: Roboto,=
+ RobotoDraft, Helvetica, Arial, sans-serif;"><font face=3D"arial, sans-seri=
+f"><br></font></td></tr></tbody></table><p></p></body></html>
+

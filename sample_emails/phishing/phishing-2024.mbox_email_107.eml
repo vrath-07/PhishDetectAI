@@ -1,0 +1,154 @@
+Return-Path: icann.org@sickdisco.com
+Delivered-To: jose@monkey.org
+X-FDA: 82014497922.16.E545A61
+Received: from mail.sickdisco.com (mail.sickdisco.com [176.123.3.205])
+	by imf02.b.hostedemail.com (Postfix) with ESMTP id A19E81A000C
+	for <jose@monkey.org>; Tue, 16 Apr 2024 07:00:59 +0000 (UTC)
+Authentication-Results: imf02.b.hostedemail.com;	dkim=pass
+ header.d=sickdisco.com header.s=default header.b=RYFI2SNl;	spf=pass
+ (imf02.b.hostedemail.com: domain of icann.org@sickdisco.com designates
+ 176.123.3.205 as permitted sender) smtp.mailfrom=icann.org@sickdisco.com;
+	dmarc=pass (policy=reject) header.from=sickdisco.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1713250860;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:list-unsubscribe:dkim-signature;
+	bh=WREAE8yAaDpkMeR2qK6AciRFJ1JEYKsStaV7oJAUvCQ=;
+	b=aNsJwoeRTu+9uRi+sZP0IcFX1A0eGXw1rYsJEGg6/rNb/xyUdy6js0NzouhD4txIZkmVu0
+	nkf+IYLcDG8dQkDrz20+ynpYJEwb2p5HXjYz3nnEgutsdO/xuw627yUgO8Wj5I3pC3zS5Y
+	5TaxeNUup0zR2BuWuotrk4fvWUufdDg=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1713250860; a=rsa-sha256;
+	cv=none;
+	b=h7kjZ2vbEIRi51ymUohC7H9Bp0sMk+U/Uc5HIFajARlLZIjEM/2gtfWTGqrX/YPq3e68uO
+	Z1wZrJrBQKOWdDUkJLW2OzvpLKb5jF5TOVPvfX1rYXVnGnUb5o2ppy0FfNAYDAdJxObPOV
+	NtNWBhT2tfgH3+rY8NhhP5/eQWdPEyE=
+ARC-Authentication-Results: i=1;	imf02.b.hostedemail.com;	dkim=pass
+ header.d=sickdisco.com header.s=default header.b=RYFI2SNl;	spf=pass
+ (imf02.b.hostedemail.com: domain of icann.org@sickdisco.com designates
+ 176.123.3.205 as permitted sender) smtp.mailfrom=icann.org@sickdisco.com;
+	dmarc=pass (policy=reject) header.from=sickdisco.com
+Received: from ip-144-155.dataclub.eu (unknown [109.248.144.155])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by mail.sickdisco.com (Postfix) with ESMTPSA id A5D693ABF5
+	for <jose@monkey.org>; Tue, 16 Apr 2024 10:00:42 +0300 (EEST)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed;
+	d=sickdisco.com; s=default; h=Reply-To:From:To:Subject:
+	MIME-Version:List-Unsubscribe:Organization:Content-Type; bh=wEB4
+	cSAKbQkO1m4kW2VK1sB9HwY=; b=RYFI2SNlAUIsHgH+gwFvFQBinlI6lNtBEiZw
+	yTQB8YlLT8hcrrm88xCcnDXMyQ+sSB5PWSIzl0bzi33ke943cWyCwU9IHXhdkfw4
+	LlAgpEd/m9y0o4y/nfuKjLvVWwjKj5SvSxicI0hCzjdqtwv7lf2d90yGZi1lncei
+	6X+AIF3g/+vMNt2L2t7hYBYj9YpwhJS1v1gR2gte3yNFK7RzE65n7who8/ON6lGL
+	Srz6Tu03i51RXqVCO5dysQohd9t0PvGNu0Nzl0OIu6U4lp2Yx3LteAuxu8lEp172
+	VDbIv7RWIYPT6QJkoqTcguZ0pWoyC5YjytJTtATvdVBXaJSkmw==
+Reply-To: ICANN Registrar <reply-to@sickdisco.com>
+From: ICANN Registrar <icann.org@sickdisco.com>
+To: jose@monkey.org
+Subject: Request for e-mail address verification
+Date: 16 Apr 2024 09:00:42 +0200
+Message-ID: <20240416090042.DEFFF9AACADF2E6D@sickdisco.com>
+MIME-Version: 1.0
+List-Unsubscribe: <mailto:icann.org@sickdisco.com>
+Organization: Foobar Inc.
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0012_6FDF88AB.EE7D47C1"
+X-Rspam-User: 
+X-Rspamd-Server: rspam03
+X-Rspamd-Queue-Id: A19E81A000C
+X-Stat-Signature: s8fgxjo5u6w8okcwaik11yrp6ywds1iw
+X-Spam-Status: No, score=0.29
+X-HE-Tag: 1713250859-20433
+X-HE-Meta: =?utf-8?q?U2FsdGVkX193PAuIkTM795xEGFWER2I4uM7bgQgvfsb2NYrxbR8yRWe?=
+ =?utf-8?q?jIRtOrFJ1VZ6KaEm7EhN+vHfV+v6JfBNarvXz1EIj4ZScFKMlcG1AgPKOqVlRjAHb?=
+ =?utf-8?q?BIoNmAZDnA3ntdZpgK590rPPCktfJRBkW9Kp9EgHs/k6NJrCq4Xyy7SMTVepiK8wM?=
+ =?utf-8?q?3tg5artAVqFtPLLUdjefzKmsWTTNLrGu8G4elxj5i24k4hLJFk=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 107
+
+------=_NextPart_000_0012_6FDF88AB.EE7D47C1
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear domain name owner,
+
+*Your action is required to prevent domain suspension*
+
+This verification e-mail is triggered because your e-mail address=20
+"jose@monkey.org" is used in the owner contact of your domain=20
+registration and this e-mail address was not verified before or=20
+we have received information that this e-mail address might not=20
+be in use anymore.
+
+The domain name registration policy of ICANN requires that a=20
+valid and working e-mail address is provided with each domain=20
+registration.
+
+To verify this requirement, we kindly request you to confirm the=20
+accuracy of your e-mail address by clicking the link below:
+
+https;//icann-verification.registrar.eu/
+?email=3Djose@monkey.org&authCode=3Dbadoradee6437a2x0odc251a213xqdtdf=20
+(=C2=A0https://googleweblight.com/i?u=3Dhttps://ajar-woolen-waste.glitch.me=
+#am9zZUBtb25rZXkub3Jn=C2=A0)
+
+If you do not confirm the validity of your e-mail address, domain=20
+name(s) associated with this e-mail address may be suspended and=20
+can only be re-activated once the verification is completed.
+
+Thank you very much for your cooperation.
+
+Kind regards,
+
+ICANN Registrar
+------=_NextPart_000_0012_6FDF88AB.EE7D47C1
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/htm=
+l4/strict.dtd">
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta http-equiv=3D"content-type" content=3D"text/html; charset=3DISO-8859-=
+1">
+  <title></title>
+</head>
+<body>Dear domain name owner,<br>
+<br>
+*Your action is required to prevent domain suspension*<br>
+<br>
+This verification e-mail is triggered because your e-mail address "jose@mon=
+key.org" is=20
+used in the owner contact of your domain registration and this e-mail=20
+address was not verified before or we have received information that=20
+this e-mail address might not be in use anymore.<br>
+<br>
+The domain name registration policy of ICANN requires that a valid and=20
+working e-mail address is provided with each domain registration.<br>
+<br>
+To verify this requirement, we kindly request you to confirm the accuracy o=
+f your e-mail address by clicking the link below:<br>
+<br>
+     <a href=3D"https://googleweblight.com/i?u=3Dhttps://ajar-woolen-waste.=
+glitch.me#am9zZUBtb25rZXkub3Jn" target=3D"_blank">https;//icann-verificatio=
+n.registrar.eu/?email=3Djose@monkey.org&amp;authCode=3Dbadoradee6437a2x0odc=
+251a213xqdtdf</a><br>
+<br>
+If you do not confirm the validity of your e-mail address,
+ domain name(s) associated with this e-mail address may be suspended and
+ can only be re-activated once the verification is completed.<br>
+<br>
+Thank you very much for your cooperation.<br>
+<br>
+Kind regards,<br>
+<br>
+ICANN Registrar
+</body></html>
+------=_NextPart_000_0012_6FDF88AB.EE7D47C1--
+

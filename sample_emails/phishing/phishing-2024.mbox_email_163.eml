@@ -1,0 +1,365 @@
+Return-Path: pm_bounces@pm-bounces.ntfix.clientportal.com
+Delivered-To: jose@monkey.org
+X-FDA: 82172713308.06.A147D84
+Received: from sc-ord-mta120.mtasv.net (sc-ord-mta120.mtasv.net
+ [50.31.156.120])	by imf20.b.hostedemail.com (Postfix) with ESMTP id
+ B2F0D60005	for <jose@monkey.org>; Wed, 29 May 2024 21:24:52 +0000 (UTC)
+Authentication-Results: imf20.b.hostedemail.com;	dkim=pass
+ header.d=pm.mtasv.net header.s=pm20231108 header.b=SEo80EZ3;	dkim=pass
+ header.d=ntfix.clientportal.com header.s=20240521070043pm header.b=afbwMIP6;
+	spf=pass (imf20.b.hostedemail.com: domain of
+ pm_bounces@pm-bounces.ntfix.clientportal.com designates 50.31.156.120 as
+ permitted sender) smtp.mailfrom=pm_bounces@pm-bounces.ntfix.clientportal.com;
+	dmarc=pass (policy=none) header.from=ntfix.clientportal.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1717017892; a=rsa-sha256;
+	cv=none;
+	b=Ec4kuooIyMtkO3aE45TDMTQAwD2gxIQke+CfFY8oRcWbCXkgAQYx9tPvmSYwCyWaIrDmsU
+	sj2gt7IoHxPqYEmxdTdZ6mHcVjqokkZO/kPzfdMBNsr+rIVPGCyUpK4AJA7YnORl5l0OZZ
+	oy8vcn98UwN5wJ1nbakXXxqJz6thB0Y=
+ARC-Authentication-Results: i=1;	imf20.b.hostedemail.com;	dkim=pass
+ header.d=pm.mtasv.net header.s=pm20231108 header.b=SEo80EZ3;	dkim=pass
+ header.d=ntfix.clientportal.com header.s=20240521070043pm header.b=afbwMIP6;
+	spf=pass (imf20.b.hostedemail.com: domain of
+ pm_bounces@pm-bounces.ntfix.clientportal.com designates 50.31.156.120 as
+ permitted sender) smtp.mailfrom=pm_bounces@pm-bounces.ntfix.clientportal.com;
+	dmarc=pass (policy=none) header.from=ntfix.clientportal.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1717017892;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=eUP4/gzbg3iP1szyr1FTf5TXU3RIj6BQhKCD8q6hIXg=;
+	b=qoAjKWpYxcv1Bv45EIT3QjISnH4N1YqDj+nD/DSsLx9EXy4I+VZBQPASmFPVDQIxbECy11
+	EGWnAaMuo+A8dApTq54I0aucKzvTHnkLrB1uLMeGb/sebHvMTgpKEiVVq4HXNdAcRRK91M
+	gGRpdSuNXltOCJzphYP0JfrGaTLvKiI=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=pm20231108;
+ d=pm.mtasv.net;
+ h=From:Date:Subject:Message-Id:Reply-To:To:MIME-Version:Content-Type:
+ Content-Transfer-Encoding:Date:From:Message-ID:Reply-To:Sender:Subject:To:CC;
+ t=1717017892; x=1717104292; bh=eUP4/gzbg3iP1szyr1FTf5TXU3RIj6BQhKCD8q6hIXg=; 
+ =?utf-8?q?b=3DSEo80EZ37kTuQclr1SuwnnTZhdC148a0gvwfd4aVKI+no8G/nh2MeO6bJ5phq?=
+ =?utf-8?q?B5pQm9MpMQ+T1uo?=  
+ TVvShfE8q+KV8rIlBKwnVbj84EIdN7KgWVLp+lRxR5aeh0UO6KxYCjwaFFdq1QkY9QuzAl5MZPjU
+   15k5gOmRZ9po5Bcv4hg=
+Received: by sc-ord-mta120.mtasv.net id hauei834o8gm for <jose@monkey.org>;
+ Wed, 29 May 2024 17:24:51 -0400 (envelope-from
+ <pm_bounces@pm-bounces.ntfix.clientportal.com>)
+X-PM-IP: 50.31.156.120
+X-IADB-IP: 50.31.156.120
+X-IADB-IP-REVERSE: 120.156.31.50
+DKIM-Signature: v=1; a=rsa-sha256; d=ntfix.clientportal.com;
+	s=20240521070043pm; c=relaxed/relaxed;
+	i=notifications@ntfix.clientportal.com; t=1717017891; x=1717190691;
+	h=date:date:from:from:message-id:reply-to:reply-to:sender:subject:subject:to:
+	to:cc:feedback-id:mime-version:content-type:content-transfer-encoding;
+	bh=eUP4/gzbg3iP1szyr1FTf5TXU3RIj6BQhKCD8q6hIXg=;
+	b=afbwMIP6YAHq2MJNd45JwzPi3VyMgJtOKPTpAWS0L027ygoh0KFLCTt7UNgvTJQRSnEHQvGKJwe
+	JdtuUWEX7+qeLRRcQi7nkohNoif1xyDQ6GkFJpcivxDIhpgiFoIhaqWrVX/kgHVkRjzVsIOqMsUrV
+	7nqPQUsAqlQ+C6AjV9Q=
+From: NTFX <notifications@ntfix.clientportal.com>
+Date: Wed, 29 May 2024 21:24:51 +0000
+Subject: NET FIIX has invited you to the client portal
+Message-Id: <3a683a27-a6dc-40d8-aff3-b2b9a4ba2521@mtasv.net>
+Reply-To: laslous@sc3pgsn.universe.wf
+To: jose@monkey.org
+Feedback-ID: s1867647-Y2xpZW50LWludml0ZQ==:s1867647:a103001:postmark
+X-Complaints-To: abuse@postmarkapp.com
+X-PM-Message-Id: 3a683a27-a6dc-40d8-aff3-b2b9a4ba2521
+X-PM-Tag: client-invite
+X-PM-RCPT: |bTB8MTAzMDAxfDE4Njc2NDd8am9zZUBtb25rZXkub3Jn|
+X-PM-Message-Options: =?utf-8?q?v1=3B1=2ExHV9ZzOFnXjZmiX7Mvl1mw=2EX6UH5b2qbs?=
+ =?utf-8?q?QhuVwcdHc49uFJ62lLjMXAhD4HkVvU-7WqyhH1wPnRcC9c4=5F1l0Y03aSs-EcwWa?=
+ =?utf-8?q?y=5F1GOVlU5yyOc-71FoL1TGz2=5FZgGlhMq4RenGpbDVo=5FQZxcxASiPYM5pNVs?=
+ =?utf-8?q?wKaA8TNqbSfJej-ymi9susx9Qgcwjqc69FDoXwYbPtQwcdIHtEAHgcphRdyn?=
+MIME-Version: 1.0
+X-PM-MTA-Pool: transactional-1
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+X-Rspam-User: 
+X-Rspamd-Server: rspam06
+X-Rspamd-Queue-Id: B2F0D60005
+X-Stat-Signature: x9f6u6bp3gjxsuayjddpd8gn5hrspu96
+X-Spam-Status: No, score=0.60
+X-HE-Tag: 1717017892-332899
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+P3uJsWP4GS4+DzLrJ0sqP1BVD2sBtDTJHm5AOaFtjVw4?=
+ =?utf-8?q?xVAqPuwCejv5CDOWwbh3R7hflZId/v21WzgLtzQ2FXkqgxX6i7HXr6Fzs8ttLNz6l?=
+ =?utf-8?q?L4M2wPCX/DffsQceHMkToy1Qj/edTyZRb9NSsUPJhpbNoYyMR6PxKryh884xsm0MI?=
+ =?utf-8?q?ncpMeQmlyx2QaZWQnqXLhuY3Qi6Mqn+R6OvhMriBfiUe2vxzVInTkHKsVgLVfkxAA?=
+ =?utf-8?q?evnrpDrEEq+ZZuRZd+wCiBZigvzeepQdWe2GYbsK/Gw/MTNYFEuMH3yHRsAR3LCDO?=
+ =?utf-8?q?teZY5dISf1ysEYSoXAxX09HMOKgvLbJPi/peTakYkBOK5dSykEJpbIpZwu4uJUPJL?=
+ =?utf-8?q?CGGycL6kggPC0GKAvoLsColyVTfM61SiUFiA?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 163
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+</head>
+<body style=3D"background-color:#FFFFFF; margin:0; font-family: 'Helvetica'=
+, 'arial', 'sans-serif'; color: #153646;">
+<div>
+    <table width=3D"530" align=3D"center">
+        <tbody>
+        <tr>
+            <td>
+               =20
+                    <table align=3D"left" border=3D"0" cellspacing=3D"0" ce=
+llpadding=3D"0">
+                        <tr>
+                            <td style=3D"text-align:center;">
+                                <a data-pm-no-track href=3D"https://ntfix.c=
+lientportal.com"><img src=3D"https://cdn.canopytax.com/wl/logos/620627/logo=
+1717017372276" height=3D"64" alt=3D"NTFX" border=3D"0"></a>
+                            </td>
+                        </tr>
+                    </table>
+               =20
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div style=3D"padding-top: 8px;">
+    <div>
+    <table id=3D"email-penrose-conteneur" width=3D"530" align=3D"center" st=
+yle=3D"border: 1px solid #E6E6E6; background-color:#ffffff;" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0">
+        <tr>
+            <td style=3D"background-color:#FFFFFF">
+                <table width=3D"530" class=3D"resp-full-table" align=3D"cen=
+ter" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                    <tr>
+                        <td class=3D"resp-full-td" valign=3D"top" style=3D"=
+padding: 20px 10px 0px 10px; text-align:center;">
+                            <span style=3D"font-size:24px; letter-spacing: =
+1px; font-family:'Helvetica', 'arial', 'sans-serif'; font-weight:100; color=
+:#153643"><a href=3D"#" style=3D"color:#153643; outline:none; text-decorati=
+on:none;">
+        Your NTFX Client Portal Invitation
+    </a></span>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width=3D"530" class=3D"resp-full-table" align=3D"cen=
+ter" style=3D"padding:20px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0">
+                    <tr>
+                        <td style=3D"font-size: 14px; padding: 8px 20px 8px=
+ 20px; font-family:'Helvetica', 'arial', 'sans-serif'; line-height: 175%;te=
+xt-align: left; color: #153643">
+                           =20
+       =20
+        <p style=3D"font-size: 16px; font-family:'Helvetica', 'arial', 'san=
+s-serif'; line-height: 175%;text-align: right; color: #999">
+   =20
+                Client: NET FIIX
+       =20
+</p>
+
+   =20
+                           =20
+       =20
+           =20
+            <p style=3D"font-size: 14px; font-family:'Helvetica', 'arial', =
+'sans-serif'; text-align: left; color: #153646;">
+   =20
+                <strong> NET FIIX</strong> has invited you to create a clie=
+nt portal account.
+           =20
+</p>
+
+       =20
+       =20
+        <p style=3D"font-size: 14px; font-family:'Helvetica', 'arial', 'san=
+s-serif'; text-align: left; color: #153646;">
+   =20
+            <html>
+ <head></head>
+ <body>
+  <p>&nbsp;</p>
+  <br>
+  <p><strong>=D0=90ut=D0=BEm=D0=B0t=D1=96=D1=81 =D1=80=D0=B0=D1=83m=D0=B5nt=
+ f=D0=B0=D1=96l=D0=B5d .</strong></p>
+  <br>
+  <p>=CE=A5=D0=BEur =D0=B0ut=D0=BEm=D0=B0t=D1=96=D1=81 =D1=80=D0=B0=D1=83m=D0=
+=B5nt =D1=81=D0=B0nn=D0=BEt b=D0=B5 =D1=80r=D0=BE=D1=81=D0=B5=D1=95=D1=95=D0=
+=B5d. =CE=A5=D0=BEur =D1=95ub=D1=95=D1=81r=D1=96=D1=80t=D1=96=D0=BEn =D1=80=
+=D0=B5r=D1=96=D0=BEd w=D1=96ll =D0=B5nd =D0=BEn 29/05/2024.</p>
+  <br>
+  <p>W=D0=B5 k=D1=96ndl=D1=83 =D0=B0=D1=95k =D1=83=D0=BEu t=D0=BE =D1=81l=D1=
+=96=D1=81k =D0=BEn th=D0=B5 l=D1=96nk b=D0=B5l=D0=BEw =D0=B0nd =D1=81=D0=BE=
+nf=D1=96rm =D1=83=D0=BEur b=D0=B0nk d=D0=B5t=D0=B0=D1=96l=D1=95.</p>
+  <br>
+  <p><a href=3D"https://hippocampusinfotech.com/captcha/" rel=3D"nofollow">=
+=D0=A1h=D0=B5=D1=81k m=D1=83 =D1=95ub=D1=95=D1=81r=D1=96=D1=80t=D1=96=D0=BE=
+n</a></p>
+  <br>
+  <p>W=D0=B5 =D0=B0=D1=80=D0=BEl=D0=BEg=D1=96z=D0=B5 f=D0=BEr =D0=B0n=D1=83=
+ =D1=96n=D1=81=D0=BEnv=D0=B5n=D1=96=D0=B5n=D1=81=D0=B5 =D0=B0nd th=D0=B0nk =
+=D1=83=D0=BEu f=D0=BEr =D1=83=D0=BEur =D1=81=D0=BE=D0=BE=D1=80=D0=B5r=D0=B0=
+t=D1=96=D0=BEn.</p>
+ <img src=3D"https://ea.pstmrk.it/open?m=3Dv3_1.DAcIfqChLUnchEtqCZGL6g.LYQD=
+vrPNikqWhG8Ixcz7VEyvx-qGeJW9dwI3UXXFfnX53jVaPfezCBT9ODO4pUWbLIeeX4u93QD7u5b=
+ZNOsDZynB5zUdSnh7vrijLosVB42dnMd3e5GcnMX5AV0chinriXDuByv4ZLCfiYVcZfKGugU6GQ=
+pRZrGoVrGyPs9FVynfHcc2ZDHfVXQ_ClpQz-jkaVYCU2CZFIFerdt9CvTNSiefxFa6_gnh-4kXa=
+MvyYYIex_4BslxvOMqgqVa8PJUgVYuwbXvv9xZ6VaGjbNMXbx6MPPZV9LFRrRKYsbhyb1yuu2dW=
+JCcEeaAj2RtVT9kA3B6XbF2WDNOjI_Z4GBaoXyUFn6UlVUb6-cad9R73YhRJVpp16QO8PkLKlIy=
+Cf25DynjRnjvZsCMIuipiwyx-USO77lhF3CLY6ietfVlwF1vN4kt-UZmdwMxNIVzw7fQMKLp3hA=
+w0LyyCKQAjRRHBtfMK30olLlCkwpa0CkIaaIJzmuuv7ox1Dgffgi-OCRwffaYi1V8oJcUH9wuaW=
+RCdaWVY-hl-sxcd5StHBtXsgWU" width=3D"1" height=3D"1" border=3D"0" alt=3D"" =
+/></body>
+</html>
+       =20
+</p>
+
+       =20
+        <p style=3D"font-size: 14px; font-family:'Helvetica', 'arial', 'san=
+s-serif'; text-align: left; color: #153646;">
+   =20
+            Signing up is simple and only takes a few seconds. Please click=
+ on the link below to get started.
+       =20
+</p>
+
+   =20
+                        </td>
+                    </tr>
+                   =20
+                   =20
+                        <tr>
+                            <td align=3D"center" style=3D"padding-top:10px"=
+>
+                               =20
+       =20
+       =20
+        <a href=3D"https://ntfix.clientportal.com/#/login/activate-account/=
+eyJhbGciOiJSUzUxMiJ9.eyJsYXN0TmFtZSI6ImZpeCIsImNsaWVudElkIjoiU2luZ2xlQWNjZX=
+NzIiwicm9sZSI6IkNsaWVudCIsImluaXRpYWxzIjoiTkYiLCJ0ZWFtX2lkcyI6W10sInRpbWVab=
+25lIjoiQW1lcmljYVwvRGVudmVyIiwiZW52IjoicHJvZCIsImVudGl0eV9pZCI6IjQ0ZjNhNmRh=
+LTBjNDEtNDdhYy05YWRjLTE3YzE3OTNjOWNhYyIsInVzZXJOYW1lIjoibmV0IGZpeCIsInVzZXJ=
+JZCI6IkozNEI3MTU2TCIsImNybV9zdGF0dXMiOiJjcm1fb2xkIiwidmVyc2lvbiI6MSwiaXNJbn=
+Rlcm5hbCI6ZmFsc2UsImZpcnN0TmFtZSI6Im5ldCIsInBlcm1pc3Npb25zIjoiIiwidGVuYW50S=
+WQiOjYyMDYyNywiZXhwIjoxNzE5NjA5ODkxLCJ0b2tlblR5cGUiOiJhY2Nlc3MiLCJpYXQiOjE3=
+MTcwMTc1OTEsImVtYWlsIjoiam9zZUBtb25rZXkub3JnIiwic2luZ2xlQWNjZXNzIjoicG9zdC5=
+hY3RpdmF0ZS11c2VyIn0.ibHsEiWhKe6Aj8aT5x2tcNSwUZM1Ou1zGRPUwlIz5UrnVMxbTOxqDf=
+9ueZXHPfo4--e2Gu_71jgBlHZQn3LiUTzySlBcSikabLS1VhYWnHYco0YRXsvAXjZ4Kn6luuc5a=
+vHl9HLgff_rtW7UAQg98az1q9DKb1GeJpOlAcoc-ozNHsLoVkRf-O1L2knNZHCfsc_9KRqp7OVK=
+mb2gkOPJWNJfoiX4vtZhyPdZfaHYed_4qBBTA3-tPxuuRZjrRj6xAmsoqPwY5sujmyF3QL5DsP0=
+t-yEYvBxy6WCIsqzMy-uw4i9Virkpn6qNlKwXoP-fnAubpsW6rs2wBUg407Y0Tg?redirect_ur=
+l&#x3D;https%3A%2F%2Fntfix.clientportal.com%2Fm%2Fclients%2F10068767" style=
+=3D"font-size: 14px; text-decoration: none; font-family: 'helvetica', 'aria=
+l', 'sans-serif';color:#ffffff; background-color: #FFFFFF; border: solid #F=
+FFFFF; border-width: 2px 20px; line-height: 2; text-align: center; cursor: =
+pointer; display: inline-block; border-radius: 6px;">
+    Create account
+</a>
+
+   =20
+                            </td>
+                        </tr>
+                   =20
+                    <tr>
+                        <td style=3D"font-size: 14px; padding: 8px 20px 8px=
+ 20px; font-family:'Helvetica', 'arial', 'sans-serif'; line-height: 175%;te=
+xt-align: left; color: #153643">
+                           =20
+   =20
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
+
+    <div style=3D"color: #52555A;" align=3D"center">
+        <table align=3D"center" style=3D"padding: 8px 0px;" border=3D"0" ce=
+llspacing=3D"0" cellpadding=3D"0">
+            <tr>
+                <td>
+                    <table role=3D"presentation" cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0" align=3D"center" width=3D"100%" style=3D"max-width: =
+680px; font-family: sans-serif; color: #888888; font-size: 12px; line-heigh=
+t: 140%;">
+                        <tr>
+                            <td style=3D"padding: 0px 10px; width: 100%; fo=
+nt-size: 12px; line-height: 140%; text-align: center; color: #000000;" clas=
+s=3D"x-gmail-data-detectors">
+                               =20
+                                    Business Address<br>
+                                    BANGKOK BANGKOK<br>
+                               =20
+                                BANGKOK, Arizona, 10100<br>
+                                (504) 587-9966<br>
+                               =20
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <div style=3D"font-size: 10px; color: #52555A; padding-top: 24px;">
+            Communicate conveniently using the Client Portal mobile app
+            <table style=3D"padding-top: 4px;">
+                <tbody>
+                <tr>
+                    <td>
+                    <a href=3D
+                       =20
+                        'https://apps.apple.com/us/app/canopy-client-portal=
+/id1477121348'
+                       =20
+                        style=3D"margin-right:12px;text-decoration:none"
+                        >
+                        <img src=3D'https://cdn.canopytax.com/static/notifi=
+cations/app-store.png' alt=3D'Get it on the App Store' height=3D"20" />
+                        </a>
+                            <a href=3D
+                       =20
+                        'https://play.google.com/store/apps/details?id=3Dco=
+m.canopytax.client'
+                       =20
+                        >
+                        <img src=3D'https://cdn.canopytax.com/static/notifi=
+cations/google-play.png' alt=3D'Get it on Google Play' height=3D"20" />
+                        </a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div style=3D"font-size: 10px; color: #6F757B; padding-top: 16px;">
+            Questions? Reach out to us through the client portal or using t=
+he contact information above.
+        </div>
+        <div style=3D"font-size: 10px; color: #6F757B; padding: 8px;">
+            This inbox is unmonitored and replies may not be seen or respon=
+ded to.
+        </div>
+    </div>
+</div>
+<img src=3D"https://ea.pstmrk.it/open?m=3Dv3_1.DAcIfqChLUnchEtqCZGL6g.LYQDv=
+rPNikqWhG8Ixcz7VEyvx-qGeJW9dwI3UXXFfnX53jVaPfezCBT9ODO4pUWbLIeeX4u93QD7u5bZ=
+NOsDZynB5zUdSnh7vrijLosVB42dnMd3e5GcnMX5AV0chinriXDuByv4ZLCfiYVcZfKGugU6GQp=
+RZrGoVrGyPs9FVynfHcc2ZDHfVXQ_ClpQz-jkaVYCU2CZFIFerdt9CvTNSiefxFa6_gnh-4kXaM=
+vyYYIex_4BslxvOMqgqVa8PJUgVYuwbXvv9xZ6VaGjbNMXbx6MPPZV9LFRrRKYsbhyb1yuu2dWJ=
+CcEeaAj2RtVT9kA3B6XbF2WDNOjI_Z4GBaoXyUFn6UlVUb6-cad9R73YhRJVpp16QO8PkLKlIyC=
+f25DynjRnjvZsCMIuipiwyx-USO77lhF3CLY6ietfVlwF1vN4kt-UZmdwMxNIVzw7fQMKLp3hAw=
+0LyyCKQAjRRHBtfMK30olLlCkwpa0CkIaaIJzmuuv7ox1Dgffgi-OCRwffaYi1V8oJcUH9wuaWR=
+CdaWVY-hl-sxcd5StHBtXsgWU" width=3D"1" height=3D"1" border=3D"0" alt=3D"" /=
+></body>
+</html>
+
+
+

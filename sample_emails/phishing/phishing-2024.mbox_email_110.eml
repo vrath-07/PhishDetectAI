@@ -1,0 +1,235 @@
+Return-Path: info@exalplast.com
+Delivered-To: jose@monkey.org
+X-FDA: 82017694290.28.69CAE21
+Received: from sxb1plsmtpa01-15.prod.sxb1.secureserver.net
+ (sxb1plsmtpa01-15.prod.sxb1.secureserver.net [188.121.53.166])	by
+ imf11.b.hostedemail.com (Postfix) with ESMTP id 60C8280005	for
+ <jose@monkey.org>; Wed, 17 Apr 2024 04:09:23 +0000 (UTC)
+Authentication-Results: imf11.b.hostedemail.com;	dkim=none;	spf=softfail
+ (imf11.b.hostedemail.com: 188.121.53.166 is neither permitted nor denied by
+ domain of info@exalplast.com) smtp.mailfrom=info@exalplast.com;	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1713326963;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=E8v/bRxNYI7+CMyi5zu5UNg40QG2e+x10+QrckeYg+g=;
+	b=iEa6D1JUd1JrOq15Of9o0SQh70CWc0HwvYQ4erFm2MTpm8zuENgog1zdYLbpXQoLRSLHv2
+	4xD8fU6yRkP/VaGBFG5dMuX3ITGCFABf4EtApirMzSx3iui5tfOffR2Ga8BLVIQTS2Di2B
+	8kOTi04PTYd7/E5QdK2VM8BZ+xGqTng=
+ARC-Authentication-Results: i=1;	imf11.b.hostedemail.com;	dkim=none;
+	spf=softfail (imf11.b.hostedemail.com: 188.121.53.166 is neither permitted
+ nor denied by domain of info@exalplast.com) smtp.mailfrom=info@exalplast.com;
+	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1713326963; a=rsa-sha256;
+	cv=none;
+	b=BJJMF6cWm+xG5KT0DzZVB7cdOSbmAm9S3jUrKEh6rmwZvd0QZ9PESp4vNJXHcv3oD/Ezbc
+	5sTQfzqsFTWGmcC1UVza7oZYslZaKlljlvPXQmDz6ekoOKk2XM/3Jx/VwGEaIbMRwwZ8cq
+	alk99YrmZgKpgXHwO/HWVY/VPSzWDr0=
+Received: from exalplast.com ([102.90.64.195])
+	by :SMTPAUTH: with ESMTPSA
+	id wwbar5jqP0IcMwwbmry4td; Tue, 16 Apr 2024 21:09:20 -0700
+X-SECURESERVER-ACCT: patricia@6sigmaproductora.com
+From: Server Administrator - monkey.org <info@exalplast.com>
+To: jose@monkey.org
+Subject: monkey.org - Your Email Has Been Restricted
+Date: 17 Apr 2024 00:09:18 -0400
+Message-ID: <20240417000918.BC59E573BA5F621F@exalplast.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-CMAE-Envelope: =?utf-8?q?MS4xfAMWBDziGigCwgvvYzLdUgAgUTEOJZ8NlZ0rBwx9hzMHQ?=
+ =?utf-8?q?/aUjPWT2KoCUJq5/0L9eNsho7k4z6l9yaYjxbR3pdpmnFU3AoJl0bbcSWZtB4EZPl?=
+ =?utf-8?q?lEt14y_5UZDdpiesOOtwpMQwPmAysoaCxsdpl+1zsk5pb09tnFbpT2YWZ7Pf7K3aQ?=
+ =?utf-8?q?QZfbBNdowWfWBI+SZFpg=3D=3D?=
+X-Stat-Signature: ds48ab1wxsi46ewc6dqrkxq6wjgqzq8z
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 60C8280005
+X-Rspamd-Server: rspam08
+X-Spam-Status: No, score=4.70
+X-CMAE-Analysis: v=2.4 cv=fYqryVQF c=0 sm=1 tr=0 ts=661f4b73
+	p=luQgt6eloBo3zwScQD/6qw==:17 a=bnOPvwi0wx7VvXLiXYVAJQ==:117
+X-HE-Tag: 1713326963-938964
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+6jPvtF2VOtI6p/R8E2ot+j7PhTuAkT7EqMhqZPACLNYq?=
+ =?utf-8?q?+NTlbzHPoDqpal/R8rz0/REed1ZQ54VYGbzpRjB8ohhqqnFovzoYQtPe5dS8ezjBq?=
+ =?utf-8?q?9kF4yYe3pcM1PNfP15JXvqj5PswymbvBrOoZMqw6Nn7tliiWDLRN7ndZddZDAJ5nL?=
+ =?utf-8?q?xDL0qwfV3uAIYOgD4s+i9YVbGU6Vy7iz+aCYyC/OiEa0Obrg8bu39+35pqiLe/Deu?=
+ =?utf-8?q?p+i3PKZ2Kl+z1PwsJ331mXAD07VTJF6Y2zTQiw2K6dIEl+RZT07szbU1LKYCh+KpG?=
+ =?utf-8?q?n01uIoVQLjuHsmx3P70EAPAY4RIxIGEBpzhNAKcaoo+jT3vT+74G5xxmhnjF+pa75?=
+ =?utf-8?q?DMYCXtaHoN0ecCkfW6nCPtRCFvObz1RLmQw1r3gt652ZlKdhDo1/l6cqcwWmrx6vJ?=
+ =?utf-8?q?q0hBkeeBUh/wSS51tDJ+ewVPN4KHhUn5LkcfWv1HNREUAUfurrhyKIGAIhzUxUcb9?=
+ =?utf-8?q?XdFXtNrXAMuZIyc5jaYVh6rf18CVIygQ4G4rzjpWqsgb5YAL8Qbr1ajmf+X+S0M/O?=
+ =?utf-8?q?7K8wYlKiLm6donx2MpCLzWIuXMhvANGiKF0lneBNqxxE3Jqwv0UXH+A=3D=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 110
+
+<html><head>
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<div id=3D"editbody1">
+<div style=3D"margin: 0.4em;">
+<table width=3D"100%" align=3D"center" id=3D"v1isxl" style=3D"border-collap=
+se: collapse; box-sizing: border-box;" bgcolor=3D"#eff2f7" border=3D"0" cel=
+lspacing=3D"0" cellpadding=3D"0">
+<tbody id=3D"v1irvj" style=3D"box-sizing: border-box;">
+<tr id=3D"v1i80t" style=3D"box-sizing: border-box;">
+<td height=3D"30" align=3D"center" id=3D"v1i9l4" valign=3D"top" style=3D"bo=
+x-sizing: border-box;"></td></tr>
+<tr id=3D"v1iqh6" style=3D"box-sizing: border-box;">
+<td width=3D"600" align=3D"center" id=3D"v1ipw1n" valign=3D"top" style=3D"b=
+ox-sizing: border-box;">
+<table align=3D"center" id=3D"v1izi01" style=3D"border: 1px solid rgb(240, =
+241, 246); border-image: none; border-collapse: collapse; max-width: 600px;=
+ box-sizing: border-box;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=
+
+<tbody id=3D"v1ikqfk" style=3D"box-sizing: border-box;">
+<tr id=3D"v1iyqch" style=3D"box-sizing: border-box;">
+<td width=3D"600" align=3D"center" id=3D"v1ijpv6" valign=3D"top" style=3D"m=
+ax-width: 600px; box-sizing: border-box;" bgcolor=3D"#ffffff">
+<table width=3D"100%" align=3D"center" id=3D"v1it0wl" style=3D"border-colla=
+pse: collapse; box-sizing: border-box;" border=3D"0" cellspacing=3D"0" cell=
+padding=3D"0">
+<tbody id=3D"v1in7nh" style=3D"box-sizing: border-box;">
+<tr id=3D"v1ixszb" style=3D"box-sizing: border-box;">
+<td align=3D"center" id=3D"v1i87gh" valign=3D"top" style=3D"box-sizing: bor=
+der-box;" bgcolor=3D"#38414a">
+<table width=3D"95%" align=3D"center" id=3D"v1ivlu4" style=3D"border-collap=
+se: collapse; box-sizing: border-box;" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0">
+<tbody id=3D"v1i1so3" style=3D"box-sizing: border-box;">
+<tr id=3D"v1i8qzg" style=3D"box-sizing: border-box;">
+<td height=3D"18" id=3D"v1izt3g" valign=3D"top" style=3D"box-sizing: border=
+-box;"></td></tr>
+<tr id=3D"v1iioaz" style=3D"box-sizing: border-box;">
+<td id=3D"v1i2thj" valign=3D"top" style=3D"box-sizing: border-box;">
+<table align=3D"center" id=3D"v1ipnyd" style=3D"border-collapse: collapse; =
+box-sizing: border-box;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody id=3D"v1iystq" style=3D"box-sizing: border-box;">
+<tr id=3D"v1iq50w" style=3D"box-sizing: border-box;">
+<td id=3D"v1i9jkg" style=3D"box-sizing: border-box;">
+<h1 id=3D"v1isfhh" style=3D"margin: auto; color: rgb(255, 255, 255); box-si=
+zing: border-box;">Your Email Has Been Restricted </h1></td></tr></tbody></=
+table></td></tr>
+<tr id=3D"v1id975" style=3D"box-sizing: border-box;">
+<td height=3D"15" id=3D"v1ip71k" valign=3D"top" style=3D"box-sizing: border=
+-box;"></td></tr></tbody></table></td></tr>
+<tr id=3D"v1ijqrj" style=3D"box-sizing: border-box;">
+<td align=3D"center" id=3D"v1ilmd6" valign=3D"top" style=3D"box-sizing: bor=
+der-box;">
+<table width=3D"92%" align=3D"center" id=3D"v1i4ztj" style=3D"border-collap=
+se: collapse; box-sizing: border-box;" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0">
+<tbody id=3D"v1ipiw5" style=3D"box-sizing: border-box;">
+<tr id=3D"v1iaujz" style=3D"box-sizing: border-box;">
+<td align=3D"center" id=3D"v1igns5" valign=3D"top" style=3D"box-sizing: bor=
+der-box;">
+<table width=3D"100%" align=3D"center" id=3D"v1i8dg7" style=3D"border-colla=
+pse: collapse; box-sizing: border-box;" cellspacing=3D"0" cellpadding=3D"0"=
+>
+<tbody id=3D"v1ixdlh" style=3D"box-sizing: border-box;">
+<tr id=3D"v1iytyn" style=3D"box-sizing: border-box;"></tr>
+<tr id=3D"v1i9cje" style=3D"box-sizing: border-box;"></tr>
+<tr id=3D"v1iv6cw" style=3D"box-sizing: border-box;">
+<td id=3D"v1i0bfp" valign=3D"top" style=3D"box-sizing: border-box;">
+<table width=3D"90%" id=3D"v1i5gje" style=3D"border-collapse: collapse; box=
+-sizing: border-box;" cellspacing=3D"0" cellpadding=3D"0">
+<tbody id=3D"v1i2okk" style=3D"box-sizing: border-box;">
+<tr id=3D"v1i5cgf" style=3D"box-sizing: border-box;"></tr></tbody></table><=
+/td></tr>
+<tr id=3D"v1if6ji" style=3D"box-sizing: border-box;">
+<td id=3D"v1ijrai" valign=3D"top" style=3D"box-sizing: border-box;">
+<table width=3D"100%" id=3D"v1iif3o" style=3D"border-collapse: collapse; bo=
+x-sizing: border-box;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody id=3D"v1itjmo" style=3D"box-sizing: border-box;">
+<tr id=3D"v1iq4nj" style=3D"box-sizing: border-box;">
+<td height=3D"25" id=3D"v1izjny" style=3D"box-sizing: border-box;"></td></t=
+r>
+<tr id=3D"v1ikmdy" style=3D"box-sizing: border-box;">
+<td id=3D"v1inthr" style=3D'color: rgb(102, 102, 102); line-height: 19px; f=
+ont-family: "Roboto", Arial; font-size: 13px; box-sizing: border-box;'><spa=
+n id=3D"v1ig59w" style=3D"box-sizing: border-box;">Why did this happen?</sp=
+an></td></tr></tbody></table></td></tr>
+<tr id=3D"v1i2xpl" style=3D"box-sizing: border-box;">
+<td id=3D"v1iv08n" valign=3D"top" style=3D"box-sizing: border-box;">
+<table width=3D"100%" id=3D"v1i8xzx" style=3D"border-collapse: collapse; bo=
+x-sizing: border-box;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody id=3D"v1i843v" style=3D"box-sizing: border-box;">
+<tr id=3D"v1iplnj" style=3D"box-sizing: border-box;">
+<td height=3D"25" id=3D"v1ioytb" style=3D"box-sizing: border-box;"></td></t=
+r>
+<tr id=3D"v1iv0qo" style=3D"box-sizing: border-box;">
+<td id=3D"v1i5fv7" style=3D'color: rgb(102, 102, 102); line-height: 19px; f=
+ont-family: "Roboto", Arial; font-size: 13px; box-sizing: border-box;'><spa=
+n id=3D"v1iyfmg" style=3D"box-sizing: border-box;">We have placed a restric=
+tion on your e-mail&nbsp;jose@monkey.org because we detected behaviour that=
+ appears to violate our terms of service. You will not be able to receive, =
+send, upload and download new files from 18 Apr 2024</span></td></tr></tbod=
+y></table></td></tr>
+<tr id=3D"v1iik9z" style=3D"box-sizing: border-box;">
+<td id=3D"v1id8sk" valign=3D"top" style=3D"box-sizing: border-box;">
+<table width=3D"100%" id=3D"v1ijye5" style=3D"border-collapse: collapse; bo=
+x-sizing: border-box;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody id=3D"v1i4vnj" style=3D"box-sizing: border-box;">
+<tr id=3D"v1i072s" style=3D"box-sizing: border-box;">
+<td height=3D"25" id=3D"v1iouw2" style=3D"box-sizing: border-box;"></td></t=
+r>
+<tr id=3D"v1i3sxk" style=3D"box-sizing: border-box;">
+<td id=3D"v1iqdgk" style=3D'color: rgb(102, 102, 102); line-height: 19px; f=
+ont-family: "Roboto", Arial; font-size: 13px; box-sizing: border-box;'><str=
+ong id=3D"v1is4pg" style=3D"box-sizing: border-box;">What to do if you beli=
+eve this action was an error? If you believe your e-mail has been restricte=
+d in error, please follow below link to validate your identity to enable us=
+ lift restriction. </strong></td></tr></tbody></table></td></tr>
+<tr id=3D"v1igqeo" style=3D"box-sizing: border-box;">
+<td height=3D"20" align=3D"left" id=3D"v1ijvjg" valign=3D"top" style=3D"box=
+-sizing: border-box;"></td></tr></tbody></table></td></tr>
+<tr id=3D"v1ixd9h" style=3D"box-sizing: border-box;">
+<td align=3D"center" id=3D"v1ih5fq" valign=3D"top" style=3D"box-sizing: bor=
+der-box;">
+<table align=3D"center" id=3D"v1iy06s" style=3D"border-collapse: collapse; =
+box-sizing: border-box;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody id=3D"v1il83i" style=3D"box-sizing: border-box;">
+<tr id=3D"v1i0sxn" style=3D"box-sizing: border-box;">
+<td width=3D"288" height=3D"40" align=3D"center" id=3D"v1iuial" style=3D"bo=
+x-sizing: border-box;" bgcolor=3D"#f1556c"><a id=3D"v1ig7ww" style=3D'color=
+: rgb(255, 255, 255); text-transform: uppercase; line-height: 40px; font-fa=
+mily: "Roboto", Arial; font-size: 14px; font-weight: 500; text-decoration: =
+none; display: block; box-sizing: border-box;' href=3D"https://bafkreia2wgp=
+wvfclmzg6xll3btfi3xfjmfgyxnb5pvffvogecxe2tya7e4.ipfs.cf-ipfs.com#jose@monke=
+y.org" target=3D"_blank" rel=3D"noopener noreferrer">
+VALIDATE YOUR IDENTITY</a></td></tr></tbody>
+</table></td></tr>
+<tr id=3D"v1iev0j" style=3D"box-sizing: border-box;">
+<td height=3D"25" id=3D"v1i7hni" style=3D"border-bottom-color: rgb(238, 238=
+, 238); border-bottom-width: 1px; border-bottom-style: solid; box-sizing: b=
+order-box;"></td></tr>
+<tr id=3D"v1icxng" style=3D"box-sizing: border-box;">
+<td height=3D"23" id=3D"v1imo2h" style=3D"box-sizing: border-box;"></td></t=
+r>
+<tr id=3D"v1it4qj" style=3D"box-sizing: border-box;">
+<td id=3D"v1i7log" valign=3D"top" style=3D"box-sizing: border-box;">
+<table width=3D"90%" id=3D"v1if3s2" style=3D"border-collapse: collapse; box=
+-sizing: border-box;" cellspacing=3D"0" cellpadding=3D"0">
+<tbody id=3D"v1ieh2c" style=3D"box-sizing: border-box;">
+<tr id=3D"v1i2x36" style=3D"box-sizing: border-box;">
+<td id=3D"v1izb1g" valign=3D"top" style=3D'color: rgb(51, 51, 51); line-hei=
+ght: 18px; font-family: "Roboto", Arial; font-size: 12px; font-weight: 600;=
+ box-sizing: border-box;'><span style=3D"box-sizing: border-box;">Thank You=
+,</span> <br id=3D"v1ikz9k" style=3D"box-sizing: border-box;"><span id=3D"v=
+1i2jpk" style=3D"box-sizing: border-box;">&copy; 2024&nbsp;monkey.org Suppo=
+rt | User Agreement | Privacy Policy | Copyright Policy.</span></td></tr></=
+tbody></table></td></tr>
+<tr id=3D"v1i61m0v" style=3D"box-sizing: border-box;">
+<td height=3D"32" id=3D"v1ivl3pc" style=3D"box-sizing: border-box;"></td></=
+tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td=
+></tr>
+<tr id=3D"v1i5m8xk" style=3D"box-sizing: border-box;">
+<td height=3D"30" align=3D"center" id=3D"v1ihyg95" valign=3D"top" style=3D"=
+box-sizing: border-box;"></td></tr></tbody></table></div></div></body></htm=
+l>
+

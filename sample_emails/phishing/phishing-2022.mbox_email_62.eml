@@ -1,0 +1,58 @@
+Return-Path: radmin@c15cxhuh.mwprem.net
+Delivered-To: jose@monkey.org
+X-FDA: 79533744276.13.F0030F2
+Received: from c15cxhuh.mwprem.net (c15cxhuh.mwprem.net [122.17.173.64])
+	by imf23.b.hostedemail.com (Postfix) with ESMTP id 585B710037B53
+	for <jose@monkey.org>; Thu,  2 Jun 2022 15:54:49 +0000 (UTC)
+Received: from 122.17.173.64 (ec2-3-21-106-66.us-east-2.compute.amazonaws.com
+ [3.21.106.66])	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384
+ (256/256 bits))	(Client did not present a certificate)	by c15cxhuh.mwprem.net
+ (Postfix) with ESMTPSA id B30496EE144A	for <jose@monkey.org>; Sun, 29 May
+ 2022 11:16:48 +0900 (JST)
+From: Email Admin < radmin@c15cxhuh.mwprem.net>
+To: jose@monkey.org
+Subject: =?UTF-8?B?RW1haWwgQ2FuY2VsbGF0aW9uIOKYke+4jyA=?=jose@monkey.org
+Date: 29 May 2022 02:16:48 +0000
+Message-ID: <20220529021647.AFA2DA6D8688F8E5@c15cxhuh.mwprem.net>
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="----=_NextPart_000_0012_7F167DDB.A0668BD3"
+X-Spam-Status: Yes, score=11.88
+X-Rspamd-Server: rspam05
+X-Rspamd-Queue-Id: 585B710037B53
+X-Stat-Signature: uim9b56bndhthnhjcuwmqjehir8iabnh
+Authentication-Results: imf23.b.hostedemail.com;	dkim=none;	dmarc=none;
+	spf=none (imf23.b.hostedemail.com: domain of radmin@c15cxhuh.mwprem.net has
+ no SPF policy when checking 122.17.173.64)
+ smtp.mailfrom=radmin@c15cxhuh.mwprem.net
+X-Rspam-User: 
+X-HE-Tag: 1654185289-863283
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 63
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0012_7F167DDB.A0668BD3
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<body style=3D"MARGIN: 0.5em">
+<P>Hello jose.</P>
+<P>Your access to your email will expire soon.</P>
+<P>I used 14.91 GB (99%) of my 15 GB email account quota.</P>
+<P>To avoid account suspension, we recommend that you open the attachment a=
+nd update your account immediately.</P>
+<P>&nbsp;</P>
+<P><BR>thank you.<BR>monkey.org! member service</P></BODY></HTML>
+------=_NextPart_000_0012_7F167DDB.A0668BD3
+------=_NextPart_000_0012_7F167DDB.A0668BD3--
+
+

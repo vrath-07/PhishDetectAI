@@ -1,0 +1,190 @@
+Return-Path: support@pgc.sa
+Delivered-To: jose@monkey.org
+X-FDA: 80145222738.58.39F1D9B
+Received: from cp2ptr1.hawsabah.com.sa (cp2ptr1.hawsabah.com.sa
+ [162.215.217.79])	by imf27.b.hostedemail.com (Postfix) with ESMTP id
+ 3F1EA18C64786	for <jose@monkey.org>; Fri, 18 Nov 2022 04:05:09 +0000 (UTC)
+Received: from power by cp2.hawsabah.com.sa with local (Exim 4.95)
+	(envelope-from <support@pgc.sa>)
+	id 1ovscl-0002yu-Vi
+	for jose@monkey.org;
+	Fri, 18 Nov 2022 07:05:08 +0300
+To: jose@monkey.org
+Subject: We're having some trouble with your current billing information
+X-PHP-Script: pgc.sa/sgtndcyd.php for 20.110.203.225, 20.110.203.225
+X-PHP-Originating-Script: 1076:sgtndcyd.php
+Date: Fri, 18 Nov 2022 04:05:07 +0000
+From: Help Center <support@pgc.sa>
+Message-ID: <0a42eecce3769e492d8869d650dabb91@pgc.sa>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_0a42eecce3769e492d8869d650dabb91"
+Content-Transfer-Encoding: 8bit
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - cp2.hawsabah.com.sa
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [1076 991] / [47 12]
+X-AntiAbuse: Sender Address Domain - pgc.sa
+X-Get-Message-Sender-Via: cp2.hawsabah.com.sa: authenticated_id: power/from_h
+X-Authenticated-Sender: cp2.hawsabah.com.sa: support@pgc.sa
+X-Source: 
+X-Source-Args: php-fpm: pool pgc_sa                                     
+X-Source-Dir: pgc.sa:/public_html
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1668744309; a=rsa-sha256;
+	cv=none;
+	b=aGsuVZUSQCbHOWia/7SWPjnAwdu272qdctYohYNmdmqi1H1Wr11z3DNwVF6Z0VK4HeYn9Q
+	5gPlQE+au6E/KaOgHw8gkLTcvQ2WJs9u/w035tQPc6wFhrvpMXkvXBQVWh64v8rqSQZWzy
+	fUTlsBv6X5/yHW8MFdT4mBDy9b7ZCJs=
+ARC-Authentication-Results: i=1;	imf27.b.hostedemail.com;	dkim=none;
+	spf=softfail (imf27.b.hostedemail.com: 162.215.217.79 is neither permitted
+ nor denied by domain of support@pgc.sa) smtp.mailfrom=support@pgc.sa;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1668744309;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	 references;
+ bh=nJ0j1t6LrTYqisgKBk2i9BKSUL0WhVK+U0KqU9bs8+Y=;
+	b=4NFkXz9CmkwQL5sqrxT/QeXdZRlYHpMADpPK6o9O8OHvyViC0YDJ0j7HncbNj96B0UPxQr
+	yoMQFQMZUa/ySqRctud/P2VzV6Dtn6DO7y1B0Gn6YcaR6rTzS5ulHcalcae7pJl4xBtVqy
+	lqoOVmcR7h19S7LWyERhx1P7oMC5nJU=
+Authentication-Results: imf27.b.hostedemail.com;	dkim=none;	spf=softfail
+ (imf27.b.hostedemail.com: 162.215.217.79 is neither permitted nor denied by
+ domain of support@pgc.sa) smtp.mailfrom=support@pgc.sa;	dmarc=none
+X-Rspam-User: 
+X-Spam-Status: No, score=8.00
+X-Stat-Signature: x58w13e981gth5cyfexbsrcgxoxtfki8
+X-Rspamd-Queue-Id: 3F1EA18C64786
+X-Rspamd-Server: rspam07
+X-HE-Tag: 1668744309-971544
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 214
+
+This is a multi-part message in MIME format.
+
+--b1_0a42eecce3769e492d8869d650dabb91
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+         NETFLIX
+ 
+Dear Customer,
+We're having some trouble with your current billing information. We'll try again, but in the meantime you may want to update your payment details.
+click on the button bellow to update your account now.
+>>Update my Account
+ 
+Thank you for choosing Netflix.
+Netflix billing team.
+
+
+--b1_0a42eecce3769e492d8869d650dabb91
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<P style=3D'FONT-SIZE: 15px; FONT-FAMILY: "Segoe UI", "Segoe UI Web (West E=
+uropean)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetic=
+a Neue", sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM=
+: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FONT-STYLE: normal; ORPHANS=
+: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255);=
+ TEXT-INDENT: 0px; text-decoration-style: initial; text-decoration-color: i=
+nitial; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-=
+text-stroke-width: 0px; text-decoration-thickness: initial'><STRONG><FONT c=
+olor=3D#ff0000 size=3D7>=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0 NE=
+TFLIX</FONT></STRONG></P>
+<P aria-hidden=3Dtrue style=3D'FONT-SIZE: 15px; FONT-FAMILY: "Segoe UI", "S=
+egoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont=
+, Roboto, "Helvetica Neue", sans-serif; WHITE-SPACE: normal; WORD-SPACING: =
+0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FONT-STY=
+LE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR=
+: rgb(255,255,255); TEXT-INDENT: 0px; text-decoration-style: initial; text-=
+decoration-color: initial; font-variant-ligatures: normal; font-variant-cap=
+s: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initi=
+al'>=C2=A0</P>
+<P style=3D'FONT-SIZE: 15px; FONT-FAMILY: "Segoe UI", "Segoe UI Web (West E=
+uropean)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetic=
+a Neue", sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM=
+: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FONT-STYLE: normal; ORPHANS=
+: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255);=
+ TEXT-INDENT: 0px; text-decoration-style: initial; text-decoration-color: i=
+nitial; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-=
+text-stroke-width: 0px; text-decoration-thickness: initial'><FONT size=3D3>=
+<FONT color=3D#000000>Dear Customer<STRONG>,</STRONG></FONT></FONT></P>
+<P style=3D'FONT-SIZE: 15px; FONT-FAMILY: "Segoe UI", "Segoe UI Web (West E=
+uropean)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetic=
+a Neue", sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM=
+: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FONT-STYLE: normal; ORPHANS=
+: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255);=
+ TEXT-INDENT: 0px; text-decoration-style: initial; text-decoration-color: i=
+nitial; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-=
+text-stroke-width: 0px; text-decoration-thickness: initial'><FONT color=3D#=
+000000 size=3D3>We're having some trouble with your current billing informa=
+tion. We'll try again, but in the meantime you may want to update your paym=
+ent details.</FONT></P>
+<P aria-hidden=3Dtrue style=3D'FONT-SIZE: 15px; FONT-FAMILY: "Segoe UI", "S=
+egoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont=
+, Roboto, "Helvetica Neue", sans-serif; WHITE-SPACE: normal; WORD-SPACING: =
+0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FONT-STY=
+LE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR=
+: rgb(255,255,255); TEXT-INDENT: 0px; text-decoration-style: initial; text-=
+decoration-color: initial; font-variant-ligatures: normal; font-variant-cap=
+s: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initi=
+al'><SPAN style=3D'FONT-SIZE: 16px; FONT-FAMILY: "Segoe UI", "Segoe UI Web =
+(West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "H=
+elvetica Neue", sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TR=
+ANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); FONT-STYLE=
+: normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline !importa=
+nt; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT=
+: 0px; text-decoration-style: initial; text-decoration-color: initial; font=
+-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-=
+width: 0px; text-decoration-thickness: initial'>click on the button bellow =
+to update your account now.</SPAN></P>
+<P style=3D'FONT-SIZE: 15px; FONT-FAMILY: "Segoe UI", "Segoe UI Web (West E=
+uropean)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetic=
+a Neue", sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM=
+: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FONT-STYLE: normal; ORPHANS=
+: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255);=
+ TEXT-INDENT: 0px; text-decoration-style: initial; text-decoration-color: i=
+nitial; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-=
+text-stroke-width: 0px; text-decoration-thickness: initial'><FONT color=3D#=
+3366ff>>></FONT><A style=3D"BORDER-TOP: 0px; BORDER-RIGHT: 0px; VERTICAL-AL=
+IGN: baseline; BORDER-BOTTOM: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; P=
+ADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px" href=
+=3D"https://www.jannaty.co/net.htm" target=3D_blank data-auth=3D"NotApplica=
+ble" data-linkindex=3D"0"><FONT color=3D#3366ff>Update my Account</FONT></A=
+></P>
+<P aria-hidden=3Dtrue style=3D'FONT-SIZE: 15px; FONT-FAMILY: "Segoe UI", "S=
+egoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont=
+, Roboto, "Helvetica Neue", sans-serif; WHITE-SPACE: normal; WORD-SPACING: =
+0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FONT-STY=
+LE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR=
+: rgb(255,255,255); TEXT-INDENT: 0px; text-decoration-style: initial; text-=
+decoration-color: initial; font-variant-ligatures: normal; font-variant-cap=
+s: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initi=
+al'>=C2=A0</P>
+<P style=3D'FONT-SIZE: 15px; FONT-FAMILY: "Segoe UI", "Segoe UI Web (West E=
+uropean)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetic=
+a Neue", sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM=
+: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FONT-STYLE: normal; ORPHANS=
+: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255);=
+ TEXT-INDENT: 0px; text-decoration-style: initial; text-decoration-color: i=
+nitial; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-=
+text-stroke-width: 0px; text-decoration-thickness: initial'><FONT color=3D#=
+000000>Thank you for choosing Netflix.</FONT></P>
+<P style=3D'FONT-SIZE: 15px; FONT-FAMILY: "Segoe UI", "Segoe UI Web (West E=
+uropean)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetic=
+a Neue", sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM=
+: none; FONT-WEIGHT: 400; COLOR: rgb(36,36,36); FONT-STYLE: normal; ORPHANS=
+: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255);=
+ TEXT-INDENT: 0px; text-decoration-style: initial; text-decoration-color: i=
+nitial; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-=
+text-stroke-width: 0px; text-decoration-thickness: initial'><FONT color=3D#=
+000000>Netflix billing team.</FONT></P>
+
+
+--b1_0a42eecce3769e492d8869d650dabb91--
+
+

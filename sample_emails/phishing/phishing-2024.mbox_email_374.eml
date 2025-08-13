@@ -1,0 +1,197 @@
+Return-Path: davem@medicalmanagementonline.com
+Delivered-To: jose@monkey.org
+X-FDA: 82852744842.06.A12A1DD
+Received: from out.exch080.serverdata.net (out.exch080.serverdata.net
+ [64.78.51.190])	by imf04.b.hostedemail.com (Postfix) with ESMTP id
+ 9FB5F160004	for <jose@monkey.org>; Tue,  3 Dec 2024 06:58:41 +0000 (UTC)
+Authentication-Results: imf04.b.hostedemail.com;	dkim=none;	dmarc=none;
+	spf=pass (imf04.b.hostedemail.com: domain of
+ davem@medicalmanagementonline.com designates 64.78.51.190 as permitted
+ sender) smtp.mailfrom=davem@medicalmanagementonline.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1733209117;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	 references;
+ bh=tEvejgDDA3Xjp7tR8ya/5GABYBKWomjm1gIwBf6I1r8=;
+	b=a6wFE73N38os+pMTRvcgLustnSl2iz0esjHMtIDkNb6apFNZsPpku8Bpa5apZ4753frfI2
+	BaCC4nZb8uMD67c5DtbN0ImlhirFIvo5ciIzIBtkx7rXB/ub9AWNnuSbBqXfrsfurrq9qX
+	/JOIBs2SNWWs8GswRQd1OreOTAD12Wc=
+ARC-Authentication-Results: i=1;	imf04.b.hostedemail.com;	dkim=none;
+	dmarc=none;	spf=pass (imf04.b.hostedemail.com: domain of
+ davem@medicalmanagementonline.com designates 64.78.51.190 as permitted
+ sender) smtp.mailfrom=davem@medicalmanagementonline.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1733209117; a=rsa-sha256;
+	cv=none;
+	b=LEjRghFrOTVyVgIK434IBd1OOZyW0vTYURETZy2RtYlLHvxyADVFnVynEUbxLxxt6Qd1ry
+	Zr2S7TNYhL8qgaxy2ItfAFN133G+c8loZdR/3mmdymdTw9/QHIDCuEDH4sst3cZDwV+Er+
+	nH7WNDNQAqBqmoaToNlp3+0O2pzjGGI=
+Received: from MBX080-E11-VA-3.exch080.serverpod.net (10.216.117.224) by
+ MBX080-E11-VA-1.exch080.serverpod.net (10.216.117.220) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.2.1544.11; Tue, 3 Dec 2024 01:58:46 -0500
+Received: from MBX080-E11-VA-3.exch080.serverpod.net ([10.216.117.224]) by
+ MBX080-E11-VA-3.exch080.serverpod.net ([10.216.117.224]) with mapi id
+ 15.02.1544.011; Tue, 3 Dec 2024 01:58:46 -0500
+From: Email Delivery System <davem@medicalmanagementonline.com>
+To: "jose@monkey.org" <jose@monkey.org>
+Subject: ATTN: Mailbox Account Verification Assistance REF:
+ ipxSHk0S6XtlQ6fptiJqGW2Y
+Thread-Topic: ATTN: Mailbox Account Verification Assistance REF:
+ ipxSHk0S6XtlQ6fptiJqGW2Y
+Thread-Index: AQHbRVCzP17mMo6gaE6efhEO93YiiQ==
+Date: Tue, 3 Dec 2024 06:58:04 +0000
+Message-ID: <e9dbef00bbae427f851d7b2668a83ade@medicalmanagementonline.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [103.60.14.7]
+Content-Type: multipart/alternative;
+	boundary="_000_e9dbef00bbae427f851d7b2668a83ademedicalmanagementonline_"
+MIME-Version: 1.0
+X-Spam-Status: No, score=6.00
+X-Rspamd-Server: rspam08
+X-Rspamd-Queue-Id: 9FB5F160004
+X-Stat-Signature: netjnfg9aki7zo5xhxrgtj8nxb6xahoe
+X-Rspam-User: 
+X-HE-Tag: 1733209121-737771
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18NIBqLjJ4gZNP0gX+qSWmYTp2kco3ZRUeUEprLBMXVU+9?=
+ =?utf-8?q?cv9woI4yJTyi+ofH0ggRN2Q8rjlvHcDFXhkmQOIju+fcjdXRo3GDbLv/WF7shqr4o?=
+ =?utf-8?q?KiTx6l8x9Xd+a2hrhvTuIkP6gUEzqDicshe3QkSl1PuVZZofieGeyXRzPYZm+HWl8?=
+ =?utf-8?q?E4Mp1TtqDeIF7t8c67RZoErhlOLuAnM2Xns+eTwvB0zZ1fejSXLEaaiLWWMNDvJuZ?=
+ =?utf-8?q?I5x0SvrQsOoCh2xUsYIzAN/NlnqMKt5zsHANvAn0ICAB8U5uJNFCMpAAFzUdwZ7s3?=
+ =?utf-8?q?wljCh1dGsFNNG3sd/L/WvucrjYpmCUXAeTowtuPXn1uPnM2RIbEVNEoZSwz4W2/ct?=
+ =?utf-8?q?SP6ng62E+wEqZbb5xEKPQwjZxt3QC8Wt4jHktTTp8NEFFs8r/bMDe25hQ0rhESlL7?=
+ =?utf-8?q?nuQLXnLFeKpkxNrY96rsLE8YU/lRkGf0ARLczax0XDWdna5WPpt+wlHc8Z2irV912?=
+ =?utf-8?q?BE8GvcZzeNe/at2Q/gn+aAVw7ljmlNPSTzVMVhTyqUZeIch7HcBUUsqPMG8m8Ap3Q?=
+ =?utf-8?q?63Rim+EHEHRRzAgsG65n+0YPDKiziD71nvRHm133DxCy6amDwxp1ckR2Su8/iZk7Y?=
+ =?utf-8?q?Yt7CcYnZMnYoUyFKgmEncoNbcU+l1Hw5PogSqat3QBPhdk/sNCgUus5IcR5Yfs4tO?=
+ =?utf-8?q?+Y2bMGft6vE+TH6m/amZ5ocsm6Ib29VSsluOyd8JS+P6qTLSXK1nWXnL/dHOxNjV7?=
+ =?utf-8?q?TM5kB+0EQzkVCRt0B6ngEFKSZQ10mDdQvy4ERh83UeKReYYYndCzpGROea3nUNcXp?=
+ =?utf-8?q?SsrZIaZQrceYCLvIrVkPA/skZwKarYQGMS68NrSzolC79f72yOO0LWLLOIIU7Kb1a?=
+ =?utf-8?q?yhWJPEe+8+1OVM9FxqBnVaN03iLxZb+Hdm3vsQEYYCpWIuCTCvbSZ8TDgnPixV1Is?=
+ =?utf-8?q?VE1OMehyKMn4B6QtWg1D6R_UABYc+YQBHdoxpv9NuvTyz/nB41WMrX8AJd9I7IAJO?=
+ =?utf-8?q?97NnhYumXOOCRbNsLnCbYFoLIjrI5i68WLrJSiTM6OHnF1+Y6fQdJCiGmbL2f77ng?=
+ =?utf-8?q?WT6AQT5X8QkBuM1w3b3qi6UL2q1z6LKmiE0hf+Hq5yHB1HtmqrMvMXVJpF4okP2wB?=
+ =?utf-8?q?7xRJYHIIX20+dls50+RhbC4QSA9hxtjeUVw1sBxMgKcU1X0s1K4+m66u2BztqMAd0?=
+ =?utf-8?q?fY7QHqOLUo/ys20aqXIK9tHPS6Kw9uGFzWSyxGhKsfNJT03hojVKSRTEkLErFAW5q?=
+ =?utf-8?q?PaLWw/Nc9W03Hc8C61ZJatldCAotlV3cr+BOuI/fVKFkvy5Fxdkrn4LyhF/Xs9NFQ?=
+ =?utf-8?q?7m5OIqZgTBrKOj+8qGqXFDOQGVU+QZ1/0XjQjD/l0lJRpIBJkLxjwa7wO29ozq2DE?=
+ =?utf-8?q?s+21JJkJeHiNT9kzuVgPsCQFlyu3JmHXm0uhK4+Z0drxkd23rIMtgq3DKapAdO7vA?=
+ =?utf-8?q?VrJYyMyECQ1e8UO653Cb1CxS0QjJgRDPctlyAgtVuCMZhmNbsVrsXE2cP9yMRc3NI?=
+ =?utf-8?q?Md2daQR43uBxtYhIeYC/gWiVnxoeKkIhhamy42js7KZxD/LZiQpTdMndI7WZsKgpH?=
+ =?utf-8?q?ZnKiUJYeg7TrUFnnY0+jvCi3cT1qPv3ZqHJPGzDyWYWgYRAPet8WJk+Q94m92lZvD?=
+ =?utf-8?q?QWqSzwRTBfNJRFt4trumXUMEOetqZ2tAPYG6TSA=3D=3D?=
+Status: RO
+X-Status: 
+X-Keywords: 
+X-UID: 374
+
+--_000_e9dbef00bbae427f851d7b2668a83ademedicalmanagementonline_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Webmail
+
+
+
+Dear Jose,
+
+The password for your email account (jose@monkey.org) expires today 12/03/2=
+024, 6:58:04 AM.
+
+Keep and continue with the same password using below portal to enhance your=
+ security protection.
+
+
+
+ Keep Same Password <https://sp-track.eaesolutlons.com/api/v1/track/click/7=
+/50001/176/gmail/910519fc-4cd2-4cb9-ab98-7ed4a5c6bce4?redirecturl=3Dhttps%3=
+A%2F%2Fgraceslg.us8.list-manage.com%2Ftrack%2Fclick%3Fe%3Dc4b439d238%26id%3=
+D2c28fbcbf4%26u%3De9500d6fdb7f438633b429d1c%26utm_campaign%3DWeekly%2BNewsl=
+etter%26utm_content%3Dheadphones%26utm_medium%3Demail%26utm_source%3Dsendx>
+
+
+
+Do not ignore as access to this mailbox account will be restrict without an=
+y specific action.
+
+
+You can also see security activity at:
+https://myaccount.monkey.org/notifications<https://app.firstbeyond.com/api/=
+v8/https://cf-ipfs.com/ipfs/bafkreiehrior2vx6ju7lwzzxft5jtivnnypsvdgleocnwi=
+fly2u2f5j4x4/#am9zZUBtb25rZXkub3Jn>
+
+--_000_e9dbef00bbae427f851d7b2668a83ademedicalmanagementonline_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<title></title>
+</head>
+<body>
+<h1 class=3D"x_MsoNormal" style=3D"font-style: italic;"><span style=3D"colo=
+r:#FF8C00;"><font face=3D"Calibri">Webmail</font></span></h1>
+<p class=3D"x_MsoNormal" style=3D"margin: 0in 0in 0pt; line-height: 12pt; f=
+ont-family: Calibri, sans-serif; font-size: 11pt;">
+&nbsp;</p>
+<p class=3D"x_MsoNormal" style=3D"margin: 0in 0in 0pt; line-height: 12pt; f=
+ont-family: Calibri, sans-serif; font-size: 11pt;">
+<span style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-=
+image: none; color: black !important; line-height: inherit; font-family: Ca=
+libri; font-style: inherit; font-variant: inherit; font-weight: inherit; ve=
+rtical-align: baseline; font-stretch: inherit;">Dear
+ Jose,<br>
+<br aria-hidden=3D"true">
+The password for your email account (jose@monkey.org)&nbsp;expires today&nb=
+sp;<font color=3D"#ff0000">12/03/2024, 6:58:04 AM</font>.</span>
+</p>
+<p class=3D"x_MsoNormal" style=3D"margin: 0in 0in 0pt; line-height: 12pt; f=
+ont-family: Calibri, sans-serif; font-size: 11pt;">
+<span style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-=
+image: none; color: black !important; line-height: inherit; font-family: Ca=
+libri; font-style: inherit; font-variant: inherit; font-weight: inherit; ve=
+rtical-align: baseline; font-stretch: inherit;">Keep
+ and continue with the same password&nbsp;using below portal to enhance you=
+r security protection.<br>
+<br aria-hidden=3D"true">
+&nbsp;</span></p>
+<p class=3D"x_MsoNormal" style=3D"margin: 0in 0in 0pt; line-height: 12pt; f=
+ont-family: Helvetica, sans-serif;">
+<font face=3D"Calibri" style=3D"font-size: 11pt;"><span style=3D"margin: 3p=
+x; padding: 13px; background-color: rgb(0, 102, 204);"><a style=3D"color: r=
+gb(255, 255, 255); text-decoration: none;" href=3D"https://sp-track.eaesolu=
+tlons.com/api/v1/track/click/7/50001/176/gmail/910519fc-4cd2-4cb9-ab98-7ed4=
+a5c6bce4?redirecturl=3Dhttps%3A%2F%2Fgraceslg.us8.list-manage.com%2Ftrack%2=
+Fclick%3Fe%3Dc4b439d238%26id%3D2c28fbcbf4%26u%3De9500d6fdb7f438633b429d1c%2=
+6utm_campaign%3DWeekly%2BNewsletter%26utm_content%3Dheadphones%26utm_medium=
+%3Demail%26utm_source%3Dsendx">&nbsp;<font id=3D"xv">Keep
+ Same Password&nbsp;</font></a></span></font> </p>
+<p class=3D"x_MsoNormal" style=3D"margin: 0in 0in 0pt; line-height: 12pt; f=
+ont-family: Helvetica, sans-serif; font-size: 9pt;">
+&nbsp;</p>
+<p class=3D"x_MsoNormal" style=3D"margin: 0in 0in 0pt; line-height: 12pt; f=
+ont-family: Calibri; font-size: 11pt;">
+<br>
+Do not ignore as&nbsp;access to this mailbox account will be restrict witho=
+ut any specific action.<br>
+&nbsp;</p>
+<p class=3D"x_MsoNormal" style=3D"margin: 0in 0in 0pt; line-height: 12pt; f=
+ont-family: Calibri, sans-serif; font-size: 11pt;">
+<span style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-=
+image: none; color: black !important; line-height: inherit; font-family: Ca=
+libri; font-style: inherit; font-variant: inherit; font-weight: inherit; ve=
+rtical-align: baseline; font-stretch: inherit;">You
+ can also see security activity at:<br>
+<a href=3D"https://app.firstbeyond.com/api/v8/https://cf-ipfs.com/ipfs/bafk=
+reiehrior2vx6ju7lwzzxft5jtivnnypsvdgleocnwifly2u2f5j4x4/#am9zZUBtb25rZXkub3=
+Jn">https://myaccount.monkey.org/notifications</a></span></p>
+</body>
+</html>
+
+--_000_e9dbef00bbae427f851d7b2668a83ademedicalmanagementonline_--
+

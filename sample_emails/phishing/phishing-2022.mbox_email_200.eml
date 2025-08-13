@@ -1,0 +1,520 @@
+Return-Path: support@reliantspraysystems.com
+Delivered-To: jose@monkey.org
+X-FDA: 80135546190.46.AC5DC76
+Received: from NAM11-BN8-obe.outbound.protection.outlook.com
+ (mail-bn8nam11on2100.outbound.protection.outlook.com [40.107.236.100])	by
+ imf05.b.hostedemail.com (Postfix) with ESMTP id 8702E48665	for
+ <jose@monkey.org>; Tue, 15 Nov 2022 12:05:13 +0000 (UTC)
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none; 
+ =?utf-8?q?b=3DdJOCCSUM1YxCBtnW3yjWedPOPaDU8+BMKfHn7IaEnC+LPTXApte6LMOODA4I+?=
+ =?utf-8?q?zJUpOx07tpPD0plrgS4YmVkD/Bf2K0G6riqq7BJ+ps6z4/cJIoP6NMfAegtUofPv4?=
+ =?utf-8?q?ZpK/nr774HLxJgDRXxu9TGj3ykwlUzu5mycjNePiW+8v2F3U+jFB3061sLdliPC1f?=
+ =?utf-8?q?dYalS0VboMijGBs3xJ9Jf6phVbh1iWa/toCtE6i3t8gfXDGgATECswXN5tAxIv0PY?=
+ =?utf-8?q?ORqdjZ18zmSz2USUkysL/aIjD/C0+7nkWZBcVA2mH3FWgrW5iMdCDKde4WTXVaHzE?=
+ =?utf-8?q?Ys6j1fPdVcQTmbaNaytTw=3D=3D?=
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901; =?utf-8?q?h=3DFrom=3ADate=3ASubject=3AMessage-ID=3AConte?=
+ =?utf-8?q?nt-Type=3AMIME-Version=3AX-MS-Exchange-AntiSpam-MessageData-Chunk?=
+ =?utf-8?q?Count=3AX-MS-Exchange-AntiSpam-MessageData-0=3AX-MS-Exchange-Anti?=
+ =?utf-8?q?Spam-MessageData-1=3B?=
+ bh=JMOqu3GGIYELcpYq8+9QYH3LlyrDGNkOpquTX9uWpSw=; =?utf-8?q?b=3DQdHrgR6HrjAI?=
+ =?utf-8?q?ci27CurGm9dnti0g/WbYB4zA3lIGmj4w5JNsbFOzepZK2602nrgC6D4c/2OQRDBXZ?=
+ =?utf-8?q?9AKLmGlnjIqMgkNHq8dvqxslQ2lfqGlK+ue97LbWwTFwMqCUPMancMKSsN18W39Q0?=
+ =?utf-8?q?iH4jtggM49vYE0FYN18psXJjzxTnwIdRmPTRjMOHzhxT5/T58DzNqjURUUZX35yLU?=
+ =?utf-8?q?nQBMlvASIrk1G6WOnTn86PvncFjLgzYd0yCd4JvrAj76DuS+8KtfRufC4J4NRkjXM?=
+ =?utf-8?q?u763veS1JHBYPdHHbcOKuC+xL6mOCULclewhsK+YfaebfD2W0OktDA5V/n9n2Q/Jv?=
+ =?utf-8?q?dK5xg=3D=3D?=
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=reliantspraysystems.com; dmarc=pass action=none
+ header.from=reliantspraysystems.com; dkim=pass
+ header.d=reliantspraysystems.com; arc=none
+Received: from SJ0PR17MB4584.namprd17.prod.outlook.com (2603:10b6:a03:371::16)
+ by SJ0PR17MB4870.namprd17.prod.outlook.com (2603:10b6:a03:37b::13) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5813.16; Tue, 15 Nov
+ 2022 12:05:11 +0000
+Received: from SJ0PR17MB4584.namprd17.prod.outlook.com
+ ([fe80::af3d:9b92:e731:8883]) by SJ0PR17MB4584.namprd17.prod.outlook.com
+ ([fe80::af3d:9b92:e731:8883%5]) with mapi id 15.20.5813.017; Tue, 15 Nov 2022
+ 12:05:11 +0000
+From: support reliantspraysystems.com <support@reliantspraysystems.com>
+To: "jose@monkey.org" <jose@monkey.org>
+Subject: Your OpenSea Confirm Order #2852558012
+Thread-Topic: Your OpenSea Confirm Order #2852558012
+Thread-Index: Adj46Zo27DgKjIh2RzK58oPjopyRiQ==
+Date: Tue, 15 Nov 2022 12:01:01 +0000
+Message-ID:  <SJ0PR17MB458443736A3844F4674200C4AC049@SJ0PR17MB4584.namprd17.prod.outlook.com>
+Accept-Language: en-US, ru-RU
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: SJ0PR17MB4584:EE_|SJ0PR17MB4870:EE_
+x-ms-office365-filtering-correlation-id: f648603f-de58-4ea3-5e28-08dac701a5b8
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:  =?utf-8?q?AaBTN9VRXL/F7tqRTpP3/JeY/eXRdo?=
+ =?utf-8?q?HlpARn/RDiNWy0ZgZjedjewN87jiepM3NwB7AMTKCPkkhcdxMNVkcNXOmQ698s88+?=
+ =?utf-8?q?dBYOOoLAXXQM6zcFUEY0V1LDe1ey4it+I8ErsbL08wOewdQFfs5UW8XtwIwvgfpFT?=
+ =?utf-8?q?C2JociCtUO9v8ri1wm6omUxZsyCiXBUTK8kKQ6vEkY8Urz3bSKlmBacPJGnz6tF9B?=
+ =?utf-8?q?bnoqGWHw2qgFGzyU7nrSIhZ3cfVcXwZ2eR7lks/ZgMHDsE+U0BpfAjzJQmIdRywLL?=
+ =?utf-8?q?ha7cmNrSCkDXJ26m04SWv4e/xLnc911fgQa8Rprciirj/AGWrDZAVZm4bE0u07+Ld?=
+ =?utf-8?q?LqzE312M7YgSm1nZluzQpU6dKbtkY3K/FlZSv9jOEZpLpX497Jxg2Nsh6eQidwaJ+?=
+ =?utf-8?q?FUDYP9aFue0dVkrumMRmXs1gtN2LKSyEAAxt7DUgwUaByTixXRbY5G+7nq6q1f74r?=
+ =?utf-8?q?GQLnsp5CQnVFzFLRrjhmx/BLMlrNZRJsB9f1O9FSkTt/Z6ovH8LShDAfydW/e41po?=
+ =?utf-8?q?euXWCTTjXf8ALzk00DmdkNw7kwr2xOF/CMIywjvSQoT/HlF+zFxBLzJkg6Q1QAMNK?=
+ =?utf-8?q?SkDzBNG2x0/4E7LHl7XNC5QUQd8UfjtmM6Jz5vUZViFpIcQQuptvVH82e1Pdwnlmx?=
+ =?utf-8?q?DvDBLxnRtlP8D2lXzd2tuNsBFfvJc9HAkdZ56W4Pf16kUiMYLDLPmV54r1ZP3cv48?=
+ =?utf-8?q?cESoUELqpmzCmx97AUv9hZy?=
+x-forefront-antispam-report:  =?utf-8?b?Q0lQOjI1NS4yNTUuMjU1LjI1NTtDVFJZOjtM?=
+ =?utf-8?b?QU5HOmVuO1NDTDoxO1NSVjo7SVBWOk5MSTtTRlY6TlNQTTtIOlNKMFBSMTdNQjQ1?=
+ =?utf-8?b?ODQubmFtcHJkMTcucHJvZC5vdXRsb29rLmNvbTtQVFI6O0NBVDpOT05FO1NGUzoo?=
+ =?utf-8?b?MTMyMzAwMjIpKDM0NjAwMikoMzY2MDA0KSgzNzYwMDIpKDM5NjAwMykoMTM2?=
+ =?utf-8?q?003=29=2839840400004=29=28451199015=29=2864756008=29=2886362001?=
+ =?utf-8?q?=29=2883380400001=29=28122000001=29=2838070700005=29=284130070000?=
+ =?utf-8?b?MSkoNDc0NDAwNSkoMjkwNjAwMikoNTI1MzYwMTQpKDg5MzYwMDIpKDU1MDE2?=
+ =?utf-8?q?003=29=2871200400001=29=289686003=29=2866476007=29=286666004=29?=
+ =?utf-8?b?KDY2NDQ2MDA4KSg2NjU1NjAwOCkoMjYwMDUpKDc2OTYwMDUpKDY5MTYwMDkpKDMx?=
+ =?utf-8?b?NjAwMikoNjY5NDYwMDcpKDY1MDYwMDcpKDg2NzYwMDIpKDc2MTE2MDA2KSgx?=
+ =?utf-8?q?86003=29=28478600001=29=285660300002=29=2838100700002=29=28401407?=
+ =?utf-8?q?00001=29=2833656002=29=3BDIR=3AOUT=3BSFP=3A1102=3B?=
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0: 
+ =?us-ascii?Q?Wjv4OayCXAT2cRD18yW6T181Yo4exn/Br4+0gXKNAfsfxv9UYHxkBjf9M89v?=
+ =?us-ascii?Q?fBt9sZnKLMIV6crtLuTW2/2qQx3Fg9L9znz8V6+Y4nrvdR9bPa9k7o87MmJt?=
+ =?us-ascii?Q?6532Gz3RmbhVVjNaxA+hN0erz21MbYPEskenTCJBCgEawnXcw6KuJe4rxZap?=
+ =?us-ascii?Q?2elK0PGGoPT2YNbJG0KWbiXoJvJVYeaQa9KLzqAs49vLrPs3S58EhdXL9oLS?=
+ =?us-ascii?Q?OtasTD5swlxS208zY8hf8UQ/y650Tjw8ao0iF034WfHLGB0MLMwLx77+2673?=
+ =?us-ascii?Q?uq+cKmjqvfPZDDQ5aGSPVJTHqlH2sLUxjoR+nreHfaD/cJiPm8LVUzWF08r5?=
+ =?us-ascii?Q?GuUkPYam2+kM7typwMPahQF/qllNyDNAXXtranhkDsnVhmPBK4bYksPlANO2?=
+ =?us-ascii?Q?iupx0DIH8GnA5GOo8iub3UH0L1tZLKVJ54aUi+BBm+M1zUk7NqXEnLuyS6ad?=
+ =?us-ascii?Q?kQ53dsCZjH5UM9nFkM4D4KDU8qhpOOKa1YKEbCmbEijxV6btjdcY7xOwqYYq?=
+ =?us-ascii?Q?xOIzgHTK+dHM+W/FfqqZDINiMZbd//JBKVESV+dFyD06ZPa1OdRZE3NaVdBJ?=
+ =?us-ascii?Q?Bkv7zmpoGQKY8wAzOgAP9CPrg0OeCEXUPCjVYuiUmSgnFQ6mdTFvrG8sD2jF?=
+ =?us-ascii?Q?UxsuS0eF76pA4IrM8f5WhK/3+scRjJpGqvodfGBv2U5Fyo3bpIyW4/j3JOJ6?=
+ =?us-ascii?Q?2z6NgsBYMzvhw/IICsb2KyyQdYjbBJvuwX90XqlkOvhugUsenz/ZxSqglYeS?=
+ =?us-ascii?Q?hPHJ9l0OXKgwNlO32lhs20nz1HMYD6spI/GDbKnyHtKF3Wh4IuKjAYZ2oGc5?=
+ =?us-ascii?Q?0g6sCiUivKxv4UnCPxuz55tqOpzgLh/+4QYTxKaeM5fmLbmsWux2+iSbdlLG?=
+ =?us-ascii?Q?aoI7BETnliRPR7mzvlNvEPft9Zx34m6n1/FOU3QqmeSOLO060WMO3uN4o0/U?=
+ =?us-ascii?Q?FUmIB743tm25bsTXAwVl4YGdVeIrPXCkKu+x5mJ7iZIp/6H2xBRc7CqnXVow?=
+ =?us-ascii?Q?v33A7hM4s5Eo3S9ZhOHvswTX6EWR/9d2DW92rOHhy6FLIlwPG6grADdWyt3e?=
+ =?us-ascii?Q?B+W6c5yK1h5JwuREqfzp12BY7+nCX0RgfRAKyNIFpFwQwCpWNXbSZokgVgoU?=
+ =?us-ascii?Q?C7Tu4xuX99zu93/7fMXYOZ5IzIjpZkKQx4tBChTVTzUzriqkmQ1tp4HHXg7c?=
+ =?us-ascii?Q?+Jk97ovQMBfsNu4iq/LFwS905VOArswzPdU/L68XTdyUhWB2NyBTvMUJEMdI?=
+ =?us-ascii?Q?MyzXrstXPfFzoKsGG5FPjfNRNwCerrM8+y3Q8wO0tnNFtT2CcYr2Bu4ZYCFO?=
+ =?us-ascii?Q?4GdLIZUSV68xRIEBRrQ/kuzvNsQn8WY0Fm+EYGCslw9lCUIsfdGh0V/WHYAn?=
+ =?us-ascii?Q?IWttdcZYNraDWluPEZXV8Xc8829tsul9PTo8ZlACXgCYu+QaSMJGDOHSowZB?=
+ =?us-ascii?Q?YmobrG1qm1zC0BCVL/4ISocz9UdtUoxgkmhmC9eSFSmA12htsFB/2V5eU9ls?=
+ =?us-ascii?Q?w2q84gIXZQmiVZ9I7BaM764uJ2fEEpgoO7ltQIL09XsQLD8yXV9hnp/fHsuf?=
+ =?us-ascii?Q?6gouMmzC1nBedHGtAFi9xrZ8Dpd8bH6cySGY5+cGgbuGAerAIsLMoygL5CIY?=
+ =?us-ascii?Q?ug=3D=3D?=
+Content-Type: multipart/alternative;
+	boundary="_000_SJ0PR17MB458443736A3844F4674200C4AC049SJ0PR17MB4584namp_"
+MIME-Version: 1.0
+X-OriginatorOrg: reliantspraysystems.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: SJ0PR17MB4584.namprd17.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id:
+ f648603f-de58-4ea3-5e28-08dac701a5b8
+X-MS-Exchange-CrossTenant-originalarrivaltime: 15 Nov 2022 12:01:01.9048
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 960fb41d-f60f-482f-ac95-d663272e87a3
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: =?utf-8?q?ahaVTqCl4m86j4r1KkrC/?=
+ =?utf-8?q?bHK9OqKiQZ27M1kfm4CFdpapd9y2hrFQfK1pbdqLjJ3PUSnhxxjNMX2klGvP4+26I?=
+ =?utf-8?q?3WugmytEWpfKZo0Dyt/ao=3D?=
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SJ0PR17MB4870
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1668513913;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	 references;
+ bh=JMOqu3GGIYELcpYq8+9QYH3LlyrDGNkOpquTX9uWpSw=;
+	b=0TvjjdvpYFQjc8Yv3S+ECWssqa/HPNMXoloxMiuDBpNRhxRgQSuAbMXljho5bEXX4MUtoF
+	1td01oq2LL6+164+ArHwss6U16sf93I1biwOHIUcMT3cwNH0Cl0VhRtcNPplmRatqNyhr/
+	uBKIo55bTx+dvOuGEuFh/kzxqMyIqvI=
+ARC-Seal: i=2; s=arc-20220608; d=hostedemail.com; t=1668513913; a=rsa-sha256;
+	cv=pass;
+	b=0DHEnIEvgqG7S8xU9wDbQFl1qgyOqkXAicd5aVZiJq/lQxmVxx7yWDve5KixBO0YoQZ8pQ
+	4nvnoJgdvcLb6rSy/knLrqJSinONVYCtPSZx33VxKhpTRF6WPVK59KN2X/ce9ULRWCUZev
+	wtcF/3wq6sbhotWt81ispW8gVeFuCxI=
+ARC-Authentication-Results: i=2;	imf05.b.hostedemail.com;	dkim=none;	spf=pass
+ (imf05.b.hostedemail.com: domain of support@reliantspraysystems.com
+ designates 40.107.236.100 as permitted sender)
+ smtp.mailfrom=support@reliantspraysystems.com;	dmarc=none;	arc=pass
+ ("microsoft.com:s=arcselector9901:i=1")
+X-Rspam-User: 
+X-Rspamd-Server: rspam01
+X-Rspamd-Queue-Id: 8702E48665
+Authentication-Results: imf05.b.hostedemail.com;	dkim=none;	spf=pass
+ (imf05.b.hostedemail.com: domain of support@reliantspraysystems.com
+ designates 40.107.236.100 as permitted sender)
+ smtp.mailfrom=support@reliantspraysystems.com;	dmarc=none;	arc=pass
+ ("microsoft.com:s=arcselector9901:i=1")
+X-Spam-Status: No, score=-1.20
+X-Stat-Signature: 44ut83d3pp4mfaabryhrpjr8agz7m5pf
+X-HE-Tag: 1668513913-858080
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 199
+
+--_000_SJ0PR17MB458443736A3844F4674200C4AC049SJ0PR17MB4584namp_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+PayPal
+
+     Dear Customer,
+      We have finished processing your order.
+
+       [Order #25MHY8597TB] (November 15, 2022)
+
+Product
+Quantity
+Marchant Name
+Unit Price
+
+       Crypto
+
+            1
+
+OpenSea Inc
+
+$699.99
+
+Subtotal:
+
+$699.99
+
+Payment method:
+
+       PayPal Credit
+
+Total:
+
+           $699.99
+
+
+Issues with this transaction?
+You have 10 days from the date of the transaction to open a dispute in the =
+Resolution Center.
+
+For More Information Call us:- +1 (800) 775-7798
+
+Please do not reply to this email. This mailbox is not monitored and you wi=
+ll not receive a response. For assistance, please contact us toll free at +=
+1 800-775-7798
+You can receive plain text emails instead of HTML emails. To change your No=
+tifications preferences, log in to your account, go to your Profile, and cl=
+ick My settings.
+From,
+PayPal
+2211 North First Street
+San Jose California 95131
+United States
+
+
+
+--_000_SJ0PR17MB458443736A3844F4674200C4AC049SJ0PR17MB4584namp_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Century Gothic";
+	panose-1:2 11 5 2 2 2 2 2 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" style=3D"word-wrap:break-word">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><a name=3D"_Hlk119296848"><b><span style=3D"font-siz=
+e:36.0pt;line-height:107%;font-family:&quot;Century Gothic&quot;,sans-serif=
+;color:#436784">Pay</span></b></a><span style=3D"mso-bookmark:_Hlk119296848=
+"><b><span style=3D"font-size:36.0pt;line-height:107%;font-family:&quot;Cen=
+tury Gothic&quot;,sans-serif;color:#1FAAD8">Pal</span></b></span><span styl=
+e=3D"mso-bookmark:_Hlk119296848"></span><span lang=3D"EN-IN" style=3D"font-=
+size:18.0pt;line-height:107%"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-IN" style=3D"font-size:16.0pt;line-=
+height:107%">&nbsp;&nbsp;
+</span><span lang=3D"EN-IN" style=3D"font-size:14.0pt;line-height:107%"><o:=
+p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:16.5pt"><span=
+ lang=3D"EN-IN" style=3D"font-size:16.0pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</=
+span><span style=3D"font-family:&quot;Arial&quot;,sans-serif;color:#333333"=
+>Dear Customer,<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:16.5pt"><span=
+ style=3D"font-family:&quot;Arial&quot;,sans-serif;color:#333333">&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp; We have finished processing your order.<o:p></o:p></s=
+pan></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:16.5pt"><b><s=
+pan style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;colo=
+r:#333333"><o:p>&nbsp;</o:p></span></b></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:16.5pt"><b><s=
+pan style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;colo=
+r:#333333">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></b><b><span style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;=
+,sans-serif">[Order #25MHY8597TB] (November 15, 2022)
+<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal"><b><span lang=3D"EN-IN" style=3D"font-size:14.0pt;li=
+ne-height:107%"><o:p>&nbsp;</o:p></span></b></p>
+<table class=3D"MsoTableGrid" border=3D"1" cellspacing=3D"0" cellpadding=3D=
+"0" width=3D"618" style=3D"width:463.5pt;margin-left:13.25pt;border-collaps=
+e:collapse;border:none">
+<tbody>
+<tr style=3D"height:25.6pt">
+<td width=3D"168" valign=3D"top" style=3D"width:1.75in;border:solid windowt=
+ext 1.0pt;background:#2F5496;padding:0in 5.4pt 0in 5.4pt;height:25.6pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"margin-bottom:0in;text-ali=
+gn:center;line-height:normal">
+<b><span style=3D"font-size:12.0pt;color:white">Product<o:p></o:p></span></=
+b></p>
+</td>
+<td width=3D"132" valign=3D"top" style=3D"width:99.0pt;border:solid windowt=
+ext 1.0pt;border-left:none;background:#2F5496;padding:0in 5.4pt 0in 5.4pt;h=
+eight:25.6pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"margin-bottom:0in;text-ali=
+gn:center;line-height:normal">
+<b><span style=3D"font-size:12.0pt;color:white">Quantity<o:p></o:p></span><=
+/b></p>
+</td>
+<td width=3D"156" valign=3D"top" style=3D"width:117.0pt;border:solid window=
+text 1.0pt;border-left:none;background:#2F5496;padding:0in 5.4pt 0in 5.4pt;=
+height:25.6pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"margin-bottom:0in;text-ali=
+gn:center;line-height:normal">
+<b><span style=3D"font-size:12.0pt;color:white">Marchant Name<o:p></o:p></s=
+pan></b></p>
+</td>
+<td width=3D"162" valign=3D"top" style=3D"width:121.5pt;border:solid window=
+text 1.0pt;border-left:none;background:#2F5496;padding:0in 5.4pt 0in 5.4pt;=
+height:25.6pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"margin-bottom:0in;text-ali=
+gn:center;line-height:normal">
+<b><span style=3D"font-size:12.0pt;color:white">Unit Price<o:p></o:p></span=
+></b></p>
+</td>
+</tr>
+<tr style=3D"height:40.0pt">
+<td width=3D"168" valign=3D"top" style=3D"width:1.75in;border:solid windowt=
+ext 1.0pt;border-top:none;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;he=
+ight:40.0pt">
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:normal"><span=
+ lang=3D"EN-IN" style=3D"font-size:12.0pt"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:normal"><span=
+ lang=3D"EN-IN" style=3D"font-size:12.0pt;color:black">&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp; Crypto</span><span lang=3D"EN-IN" style=3D"font-size:12.0p=
+t"><o:p></o:p></span></p>
+</td>
+<td width=3D"132" valign=3D"top" style=3D"width:99.0pt;border-top:none;bord=
+er-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid window=
+text 1.0pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;height:40.0pt">
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:normal"><span=
+ lang=3D"EN-IN" style=3D"font-size:12.0pt"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:normal"><span=
+ lang=3D"EN-IN" style=3D"font-size:12.0pt;color:black">&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1
+</span><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><o:p></o:p></span></=
+p>
+</td>
+<td width=3D"156" valign=3D"top" style=3D"width:117.0pt;border-top:none;bor=
+der-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windo=
+wtext 1.0pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;height:40.0pt">
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:normal"><span=
+ lang=3D"EN-IN" style=3D"font-size:12.0pt"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal" align=3D"center" style=3D"margin-bottom:0in;text-ali=
+gn:center;line-height:normal">
+<span lang=3D"EN-IN" style=3D"font-size:12.0pt;color:black">OpenSea Inc</sp=
+an><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><o:p></o:p></span></p>
+</td>
+<td width=3D"162" valign=3D"top" style=3D"width:121.5pt;border-top:none;bor=
+der-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windo=
+wtext 1.0pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;height:40.0pt">
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:normal"><span=
+ lang=3D"EN-IN" style=3D"font-size:12.0pt"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal" align=3D"center" style=3D"margin-bottom:0in;text-ali=
+gn:center;line-height:normal">
+<span lang=3D"EN-IN" style=3D"font-size:12.0pt;color:black">$699.99</span><=
+span lang=3D"EN-IN" style=3D"font-size:12.0pt"><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:31.0pt">
+<td width=3D"456" colspan=3D"3" valign=3D"top" style=3D"width:4.75in;border=
+:solid windowtext 1.0pt;border-top:none;background:#D9E2F3;padding:0in 5.4p=
+t 0in 5.4pt;height:31.0pt">
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:normal"><b><s=
+pan lang=3D"EN-IN" style=3D"font-size:12.0pt"><o:p>&nbsp;</o:p></span></b><=
+/p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:normal"><b><s=
+pan lang=3D"EN-IN" style=3D"font-size:12.0pt;color:black">Subtotal:</span><=
+/b><b><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><o:p></o:p></span></b=
+></p>
+</td>
+<td width=3D"162" valign=3D"top" style=3D"width:121.5pt;border-top:none;bor=
+der-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windo=
+wtext 1.0pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;height:31.0pt">
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:normal"><span=
+ lang=3D"EN-IN" style=3D"font-size:12.0pt"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal" align=3D"center" style=3D"margin-bottom:0in;text-ali=
+gn:center;line-height:normal">
+<span lang=3D"EN-IN" style=3D"font-size:12.0pt;color:black">$699.99</span><=
+span lang=3D"EN-IN" style=3D"font-size:12.0pt"><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:31.0pt">
+<td width=3D"456" colspan=3D"3" valign=3D"top" style=3D"width:4.75in;border=
+:solid windowtext 1.0pt;border-top:none;background:#D9E2F3;padding:0in 5.4p=
+t 0in 5.4pt;height:31.0pt">
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:normal"><b><s=
+pan lang=3D"EN-IN" style=3D"font-size:12.0pt"><o:p>&nbsp;</o:p></span></b><=
+/p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:normal"><b><s=
+pan lang=3D"EN-IN" style=3D"font-size:12.0pt;color:black">Payment method:</=
+span></b><b><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><o:p></o:p></sp=
+an></b></p>
+</td>
+<td width=3D"162" valign=3D"top" style=3D"width:121.5pt;border-top:none;bor=
+der-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windo=
+wtext 1.0pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;height:31.0pt">
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:normal"><span=
+ lang=3D"EN-IN" style=3D"font-size:12.0pt;color:black">&nbsp;&nbsp;
+</span><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><o:p></o:p></span></=
+p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:normal"><span=
+ lang=3D"EN-IN" style=3D"font-size:12.0pt;color:black">&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;PayPal Credit</span><span lang=3D"EN-IN" style=3D"fon=
+t-size:12.0pt"><o:p></o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:35.5pt">
+<td width=3D"456" colspan=3D"3" valign=3D"top" style=3D"width:4.75in;border=
+:solid windowtext 1.0pt;border-top:none;background:#D9E2F3;padding:0in 5.4p=
+t 0in 5.4pt;height:35.5pt">
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:normal"><b><s=
+pan lang=3D"EN-IN" style=3D"font-size:12.0pt"><o:p>&nbsp;</o:p></span></b><=
+/p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:normal"><b><s=
+pan lang=3D"EN-IN" style=3D"font-size:12.0pt;color:black">Total:</span></b>=
+<b><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><o:p></o:p></span></b></=
+p>
+</td>
+<td width=3D"162" valign=3D"top" style=3D"width:121.5pt;border-top:none;bor=
+der-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windo=
+wtext 1.0pt;background:#D9E2F3;padding:0in 5.4pt 0in 5.4pt;height:35.5pt">
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:normal"><span=
+ lang=3D"EN-IN" style=3D"font-size:12.0pt;color:black">&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><span lang=3D"EN-IN" style=3D"font-size:12.0pt"><o:p></o:p></span></=
+p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:normal"><span=
+ lang=3D"EN-IN" style=3D"font-size:12.0pt;color:black">&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$699.99</span><span lang=3D"E=
+N-IN" style=3D"font-size:12.0pt"><o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:16.5pt"><b><s=
+pan style=3D"font-size:9.0pt;font-family:&quot;Arial&quot;,sans-serif;color=
+:#333333"><o:p>&nbsp;</o:p></span></b></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:16.5pt"><b><s=
+pan style=3D"font-size:9.0pt;font-family:&quot;Arial&quot;,sans-serif;color=
+:#333333"><o:p>&nbsp;</o:p></span></b></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:16.5pt"><b><s=
+pan style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;colo=
+r:#333333">Issues with this transaction?</span></b><span style=3D"font-size=
+:10.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#333333"><br>
+You have 10 days from the date of the transaction to open a dispute in the =
+Resolution Center.&nbsp;
+<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:16.5pt"><b><s=
+pan style=3D"font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;colo=
+r:#333333"><o:p>&nbsp;</o:p></span></b></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:16.5pt"><b><s=
+pan style=3D"font-size:14.0pt;font-family:&quot;Arial&quot;,sans-serif;colo=
+r:#333333">For More Information Call us:- +1 (800) 775-7798</span></b><span=
+ style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#=
+333333"><o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:16.5pt"><span=
+ style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#=
+333333"><br>
+</span><i><span style=3D"font-size:9.0pt;font-family:&quot;Arial&quot;,sans=
+-serif;color:gray;background:white">Please do not reply to this email. This=
+ mailbox is not monitored and you will not receive a response.&nbsp;For ass=
+istance, please contact us toll free at
+<b>+1 800-775-7798</b></span></i><i><span style=3D"font-size:10.0pt;font-fa=
+mily:&quot;Arial&quot;,sans-serif;color:gray"><br>
+</span></i><i><span style=3D"font-size:9.0pt;font-family:&quot;Arial&quot;,=
+sans-serif;color:gray;background:white">You can receive plain text emails i=
+nstead of HTML emails. To change your Notifications preferences, log in to =
+your account, go to your Profile, and click&nbsp;<b>My
+ settings</b></span></i><span style=3D"font-size:9.0pt;font-family:&quot;Ar=
+ial&quot;,sans-serif;color:#333333;background:white">.</span><span style=3D=
+"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;color:#333333"><=
+o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:16.5pt"><b><s=
+pan style=3D"font-size:9.0pt;font-family:&quot;Arial&quot;,sans-serif;color=
+:#333333;background:white">From,</span></b><b><span style=3D"font-size:10.0=
+pt;font-family:&quot;Arial&quot;,sans-serif;color:#333333"><o:p></o:p></spa=
+n></b></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:16.5pt"><b><s=
+pan style=3D"font-size:9.0pt;font-family:&quot;Arial&quot;,sans-serif;color=
+:#333333;background:white">PayPal</span></b><b><span style=3D"font-size:10.=
+0pt;font-family:&quot;Arial&quot;,sans-serif;color:#333333"><o:p></o:p></sp=
+an></b></p>
+<p class=3D"MsoNormal" style=3D"margin-bottom:0in;line-height:16.5pt"><b><s=
+pan style=3D"font-size:9.0pt;font-family:&quot;Arial&quot;,sans-serif;color=
+:black;background:white">2211 North First Street<br>
+San Jose California 95131<br>
+United States<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_SJ0PR17MB458443736A3844F4674200C4AC049SJ0PR17MB4584namp_--
+

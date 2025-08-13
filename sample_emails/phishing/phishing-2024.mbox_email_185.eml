@@ -1,0 +1,260 @@
+Return-Path: support@varandasii.condominiodedicado.com.br
+Delivered-To: jose@monkey.org
+X-FDA: 82250814408.22.0927EBB
+Received: from server1.servertrk.com (server1.servertrk.com [138.128.179.106])
+	by imf12.b.hostedemail.com (Postfix) with ESMTP id 9CFC8A0007
+	for <jose@monkey.org>; Thu, 20 Jun 2024 09:57:22 +0000 (UTC)
+Authentication-Results: imf12.b.hostedemail.com;	dkim=pass
+ header.d=varandasii.condominiodedicado.com.br header.s=default header.b="Y
+ QHIP7v";	spf=pass (imf12.b.hostedemail.com: domain of
+ support@varandasii.condominiodedicado.com.br designates 138.128.179.106 as
+ permitted sender) smtp.mailfrom=support@varandasii.condominiodedicado.com.br;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1718877436;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=hHw5hui1v324b2etrGAh/MTFiPalXzbbc7U9Ldzrce8=;
+	b=ti1oZ3iAwcv8MR9tBKwse63cqqw4FOlCay2gLIXkfAlHAwwSNlaW4/Cjj8bUmxIf9QrN4s
+	ImEda01Xa/80vVKQcplW1Bq7o5XPybq8KsngOsMhaAtBER3mSZ6jegVyUpu1bQo1/Jv4qv
+	SS0HpCV4S8WIw/SI62gAKRzxc/wHB/g=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1718877436; a=rsa-sha256;
+	cv=none;
+	b=yV7L2792HF2fCvto4nu9+W6rilcyLpm1tsolJm3G5tVCpKQfObSgwITylDAXBBP/FqFR7V
+	bNbdiwXXX/FQoSM3OouUO1bdtv8i6mjpaKFidaKu41AtEXUl4XLIO4nqdUEI7Hpl/kKpci
+	SfrnLmQkV2n+sxLocTAKdAEtnz5/pTU=
+ARC-Authentication-Results: i=1;	imf12.b.hostedemail.com;	dkim=pass
+ header.d=varandasii.condominiodedicado.com.br header.s=default header.b="Y
+ QHIP7v";	spf=pass (imf12.b.hostedemail.com: domain of
+ support@varandasii.condominiodedicado.com.br designates 138.128.179.106 as
+ permitted sender) smtp.mailfrom=support@varandasii.condominiodedicado.com.br;
+	dmarc=none
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=varandasii.condominiodedicado.com.br; s=default;
+	h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:From:Date:
+	Subject:To:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
+	Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+	References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
+	List-Owner:List-Archive; bh=hHw5hui1v324b2etrGAh/MTFiPalXzbbc7U9Ldzrce8=; b=Y
+	QHIP7vEdBnfANGi8DMaKwL2ws4uE3DRgHkXhO1qR1smPw5qcjlYXK5wVujDAcRy3F+gDFDy2GD4kg
+	uR5V/JodEgs8icyinaGdu7QWr6pt0ovf/mp+SvMqODP1zDmZosS/XLQf/BHzbPnBCt+8wL9FP+Tak
+	fvyKTfycptD6QHcCypac1zdK+/kP7A88PXr8Y7uMjA2NjCdhFPGOr2yXBHTw29FUGn7JhZVBNCXDy
+	OX6ULcHkl1rtNmDAQM3cE2DoL3Z21ne0di0T5r545qOkd/MCPRt8bGijrxlpQsS3rC74k1YjsYHPi
+	6qfZr23B5JCb02htXp9hfH+6Kq0QkwbOw==;
+Received: from dedicado by server1.servertrk.com with local (Exim 4.96.2)
+	(envelope-from <support@varandasii.condominiodedicado.com.br>)
+	id 1sKEXg-00HQf6-2X
+	for jose@monkey.org;
+	Thu, 20 Jun 2024 06:57:20 -0300
+To: jose@monkey.org
+Subject: Your mailbox is full !
+X-PHP-Script: =?utf-8?q?varandasii=2Econdominiodedicado=2Ecom=2Ebr/=2Ewell-k?=
+ =?utf-8?q?nown/pki-validation/723c5538-f888-4378-a890-b7484392cba4=2Ephp?=
+ for 54.85.149.26
+X-PHP-Filename: =?utf-8?q?/home/dedicado/varandasii/public/=2Ewell-known/pki?=
+ =?utf-8?q?-validation/723c5538-f888-4378-a890-b7484392cba4=2Ephp?=
+ REMOTE_ADDR: 54.85.149.26
+Date: Thu, 20 Jun 2024 06:57:20 -0300
+From: "monkey.org" <support@varandasii.condominiodedicado.com.br>
+Message-ID:
+ <1d88595cc9bb1991d507a2f96df9bc7a@varandasii.condominiodedicado.com.br>
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="b1_1d88595cc9bb1991d507a2f96df9bc7a"
+Content-Transfer-Encoding: 8bit
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - server1.servertrk.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [640 500] / [47 12]
+X-AntiAbuse: Sender Address Domain - varandasii.condominiodedicado.com.br
+X-Get-Message-Sender-Via:
+ server1.servertrk.com: authenticated_id: dedicado/from_h
+X-Authenticated-Sender:
+ server1.servertrk.com: support@varandasii.condominiodedicado.com.br
+X-Source: 
+X-Source-Args: 
+X-Source-Dir:
+ condominiodedicado.com.br:/varandasii/public/.well-known/pki-validation
+X-Rspam-User: 
+X-Rspamd-Server: rspam12
+X-Rspamd-Queue-Id: 9CFC8A0007
+X-Stat-Signature: fcj6j45wczij5sfj5dis84rxrcqzt36a
+X-Spam-Status: No, score=2.90
+X-HE-Tag: 1718877442-406938
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18hYY903O0E/gYOaTBZRncEPclONDr2oBVyI+7g0sqebgz?=
+ =?utf-8?q?th4WU00GBWPRX1N8r4qI0M+oIfn2iBRaML8WlDlQMnmE5uOtBzaC36CaVStgQ9/q1?=
+ =?utf-8?q?4weWacygXwXBnUz5bfSQik5KSdIHurNM79dTL8zPOcQuuuY94QZxys+QXxQl97RI+?=
+ =?utf-8?q?OEOwlsVvS27+wplrqabLjvfi06ifxU8uEIw2EAyWdoM7Gev3pk9IoL/HUY5bxd4cl?=
+ =?utf-8?q?Y5mcEMyfH52hYjZKiEvjpn6KJVnSLT4yp5PRZs6oLo7g9BK7B9GIJwo6D9htzcTKA?=
+ =?utf-8?q?pbFsshf87bce9xwsUsPBCdPApbPjI2ipzEUyUUovmnrIbAd1HX3gNAD92q0Jxu9+R?=
+ =?utf-8?q?xpaOG63+AUNZL/mPvkZSPf+iPEjkUHpgJz3TwkeMoXJ1Cri3Dk0eP28GApMjUrKaU?=
+ =?utf-8?q?7NXMejQokOzFIX+m+JFo8bt3q3bGCexJ0Tp1tgjwHODRD4OhiRLUCTptgpG58HHuP?=
+ =?utf-8?q?Ys5uXd0lt8NdGbeftJMC88RwJJ3pipuQWOJDpezDVfFvjTCdZxFkhXXByo/Ay/xL8?=
+ =?utf-8?q?8Vg0Mx3PU1K1md6BAxfn9vj9aM2efQpe+MnkRazO/BhDmJBZTCaXrcRaeqMooWOi/?=
+ =?utf-8?q?e9gvfPMmbit+wZW/jOg1E6EvHoEXpjKRSfm5u6U6IoLmFYQ+eP+rH0Cf3yfP0qPCI?=
+ =?utf-8?q?YoIy4g9LP16gDWTA6djVdUFc8MqZRh/XbR1bOpgAGUyoZ2bXSP4mbH4i234TW90Pj?=
+ =?utf-8?q?RKqvlfU4XTQFLtNpnGY+KlCPMSZd7wbbfZ3K9tzqBQ/YFFIoH3sz1vPSlZ4u8GQVx?=
+ =?utf-8?q?OO6ntfC2o8Be4Ypw/l/n6MyL+BB+rQ/Y4ps/6g1SxnzgNlfgjsh6sX1z4DY6hpe9Q?=
+ =?utf-8?q?5mVXO0R+uC92xLZ7NyDc1w7i3ov57SvCbgnLJOHNKwPscuMNR46I66X3ME/CC1uy2?=
+ =?utf-8?q?L6zYDP74ptCEAY6gzl2Kel_mRL9tqTHzBVJ1L0bbDxOkTiokBjAvVGXcQZgYpTsdC?=
+ =?utf-8?q?AiVrFVVKCcxtIs5dXwNGsarog2TwiJDKV8Uc8b1JTMV1PIsBh3pdvHv0PxWAAS12G?=
+ =?utf-8?q?6K6OziYbDPCG6c62JiV3sYEsMUB+Hz6PA1xQYY5/mpPI35VgjLQ48pOhHkhRJcLK7?=
+ =?utf-8?q?KzEFqXKVGQ9x26Kcb8MGWUMIrWJ1wXC5VNsNySE2Nxez5l7b14i/kWHbxXEby12Np?=
+ =?utf-8?q?K4i1o0Ol6c2SC6UvjvcGbeokNYQ+YvG1FQK+jwIwUUyv8DlPfm1ecSCnZ+UKgurEp?=
+ =?utf-8?q?bHmLLvzF7dfArlbfBj5F8Foc9fjv02vt1YoQwYXuRV43KmmrEdEKpWK0ZDiU9NHjI?=
+ =?utf-8?q?o80yepC73mNTYdjo5HccEIWfSncb7/zjmCGpMpSjyFQZqN80jR6i3lfb+BI/HuP43?=
+ =?utf-8?q?hJs19DyMarlcsNml/e4Ebs3y2i0wZnZa1b8Kbjj5qPDhC80Rt3fiJzgdtX/LfQJcp?=
+ =?utf-8?q?VeJQ7c5LDtArQRB0MVMjK6kbxu4lDZy/t9PnW9upTv5Vu4JhSVhjAstsn8Pb7f6Ci?=
+ =?utf-8?q?l/+07gxrL7V4/nqM2RdEznD5TDlZp+TkEk/wpa+2w0KNcvkawJQKtOCllYcIVpUW7?=
+ =?utf-8?q?YS9w3RLA=3D=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 185
+
+This is a multi-part message in MIME format.
+
+--b1_1d88595cc9bb1991d507a2f96df9bc7a
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+
+
+
+
+    
+        
+            
+                User: jose@monkey.org
+            
+            
+                    Your Mailbox storage is 99% Full
+                
+            
+                 
+            
+            
+                    You are currently using 4852.3 MB of 5000 MB available.
+                
+            
+                 
+                
+                     
+                    Don't risk losing new incoming messages, Follow below to increase your email account storage.
+                    
+                        
+                            
+                                
+                                    
+                                        
+                                            
+Increase Your Email Storage
+                                        
+                                    
+                                
+                            
+                        
+                    
+                
+            
+        
+        
+            Attachments
+            
+                
+                    Maximum number of attachments:
+                    Maximum size of an attachment:
+                    Maximum total size of attachments:
+                
+                
+                    3000
+                    1852  MB
+                    
+                        4852  MB
+                    
+                
+            
+        
+         
+    
+
+
+
+--b1_1d88595cc9bb1991d507a2f96df9bc7a
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+<html><head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<body><div id="editbody1">
+    <div>
+        <div style="color: rgb(34, 34, 34); text-transform: none; text-indent: 0px; letter-spacing: normal; padding-top: 6px; font-family: Arial, Helvetica, sans-serif; font-size: small; font-style: normal; font-weight: 400; margin-bottom: 16px; word-spacing: 0px; white-space: normal; outline-width: medium; outline-style: none; orphans: 2; widows: 2; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; text-decoration-color: initial; text-decoration-style: 
+initial; text-decoration-thickness: initial;">
+            <p>
+                <font style="vertical-align: inherit;"><span style="vertical-align: inherit;"><strong>User:</strong></span></font><span style="vertical-align: inherit;"> </span>jose@monkey.org
+            </p>
+            <div style="outline-width: medium; outline-style: none;"><span style="font-size: xx-large;">
+                    <font style="vertical-align: inherit; outline-width: medium; outline-style: none;">Your Mailbox storage is 99% Full</font>
+                </span></div>
+            <div style="border: 1px solid rgb(187, 187, 187); border-image: none; width: 700px; height: 8px; font-size: 1px; margin-top: 10px; margin-bottom: 8px; outline-width: medium; outline-style: none; box-sizing: border-box;">
+                <div style="border: 1px solid rgb(236, 101, 51); border-image: none; width: 621px; height: 6px; outline-width: medium; outline-style: none; background-color: rgb(236, 101, 51);"> </div>
+            </div>
+            <p><span style="color: rgb(159, 159, 159);">
+                    <font style="vertical-align: inherit; outline-width: medium; outline-style: none;"><i><span style="outline-width: medium; outline-style: none;">You are currently using 4852.3 MB of 5000 MB available.</span></i></font>
+                </span></p>
+            <div style="padding: 10px; margin-top: 12px; border-top-color: rgb(247, 167, 22); border-top-width: 3px; border-top-style: solid; display: flex; outline-width: medium; outline-style: none; background-color: rgb(254, 246, 233);">
+                <div style="background-position: 50% 50%; margin: 4px 10px 0px 0px; width: 30px; height: 18px; outline-width: medium; outline-style: none; background-repeat: no-repeat;"> </div>
+                <div style="outline-width: medium; outline-style: none;">
+                    <div style="margin: 1px 0px 12px; line-height: 21px; outline-width: medium; outline-style: none;"> </div>
+                    <div style="margin: 1px 0px 12px; line-height: 21px; outline-width: medium; outline-style: none;"><span style="font-size: large;">Don't risk losing new incoming messages, Follow below to increase your email account storage.</span></div>
+                    <div style="margin: 1px 0px 12px; line-height: 21px; outline-width: medium; outline-style: none;">
+                        <figure class="table">
+                            <table style="text-align: center;" border="0" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                    <tr>
+                                        <td style="margin: 0px; border-radius: 6px; text-align: left;" bgcolor="#204dd5">
+                                            <p style="margin-left: 0px;">
+<a style="padding: 12px 18px; border-radius: 6px; border: 1px solid rgb(32, 77, 213); border-image: none; width: 270px; text-align: center; color: rgb(255, 255, 255); line-height: 13px; letter-spacing: 0px; font-family: inherit; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; vertical-align: baseline; display: inline-block; font-stretch: inherit; text-decoration-line: none;" href="https://broad-outstanding-skiff.glitch.me#jose@monkey.org" target="_blank" rel="noopener noreferrer" 
+data-saferedirecturl="https://www.google.com/url?q=https://broad-outstanding-skiff.glitch.me#jose@monkey.org&source=gmail&ust=1718105714633000&usg=AOvVaw28Z7i6Igfp911ysWCEtwyr"><span style="font-size: large;">Increase Your Email Storage</span></a></p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="color: rgb(34, 34, 34); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; font-size: small; font-style: normal; font-weight: 400; word-spacing: 0px; white-space: normal; outline-width: medium; outline-style: none; orphans: 2; widows: 2; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; text-decoration-color: initial; text-decoration-style: initial; text-decoration-thickness: 
+initial;">
+            <div style="margin: 0px; padding: 17px 0px; width: 700px; color: rgb(0, 0, 0); line-height: normal; font-family: LatoWebBold, Helvetica, Arial, sans-serif; font-size: 16px; border-top-color: rgb(241, 241, 241); border-top-width: 6px; border-top-style: solid; display: inline-block; outline-width: medium; outline-style: none; box-sizing: border-box; font-stretch: normal; font-variant-east-asian: normal; font-variant-numeric: normal;">Attachments</div>
+            <div style="margin-bottom: 9px; display: flex; outline-width: medium; outline-style: none;">
+                <div style="line-height: 32px; padding-right: 16px; outline-width: medium; outline-style: none;">
+                    <div style="outline-width: medium; outline-style: none;">Maximum number of attachments:</div>
+                    <div style="outline-width: medium; outline-style: none;">Maximum size of an attachment:</div>
+                    <div style="outline-width: medium; outline-style: none;">Maximum total size of attachments:</div>
+                </div>
+                <div style="line-height: 32px; padding-right: 16px; outline-width: medium; outline-style: none;">
+                    <div style="outline-width: medium; outline-style: none;">3000</div>
+                    <div style="outline-width: medium; outline-style: none;">1852  MB</div>
+                    <div style="outline-width: medium; outline-style: none;">
+                        <font style="vertical-align: inherit; outline-width: medium; outline-style: none;">4852  MB</font>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="color: rgb(34, 34, 34); text-transform: none; text-indent: 0px; letter-spacing: normal; font-family: Arial, Helvetica, sans-serif; font-size: small; font-style: normal; font-weight: 400; word-spacing: 0px; white-space: normal; outline-width: medium; outline-style: none; orphans: 2; widows: 2; -webkit-text-stroke-width: 0px; font-variant-caps: normal; font-variant-ligatures: normal; text-decoration-color: initial; text-decoration-style: initial; text-decoration-thickness: 
+initial;"> </div>
+    </div>
+</div>
+</body></html>
+
+
+
+--b1_1d88595cc9bb1991d507a2f96df9bc7a--
+
+

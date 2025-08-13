@@ -1,0 +1,280 @@
+Return-Path: human.resource@surnise-sh.com
+Delivered-To: jose@monkey.org
+X-FDA: 82911513594.14.AB08260
+Received: from mta0.surnise-sh.com (mta0.surnise-sh.com [46.249.58.205])
+	by imf09.b.hostedemail.com (Postfix) with ESMTP id A5B06180002
+	for <jose@monkey.org>; Thu, 19 Dec 2024 11:39:29 +0000 (UTC)
+Authentication-Results: imf09.b.hostedemail.com;	dkim=pass
+ header.d=surnise-sh.com header.s=default header.b=EgrB+BAC;	spf=pass
+ (imf09.b.hostedemail.com: domain of human.resource@surnise-sh.com designates
+ 46.249.58.205 as permitted sender)
+ smtp.mailfrom=human.resource@surnise-sh.com;	dmarc=pass (policy=reject)
+ header.from=surnise-sh.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1734608373;
+	h=from:from:sender:reply-to:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=7wxFvBOO8Tn5QVZBPSwyNMAc6FKurlwixozd4/bcjls=;
+	b=OXeEFf4c36/uB3dUQ5c/enL/bz5g9VifkGTifpzNYyyLLcFKD8Z7wOIj5uv2r4mHXCNIAw
+	q73gLa6Enb4sGvD6iIBAXYQ1PJWNry7GhTjVWU7I0jfv79nGyGAdh8kmI1YYggjoqi8UQ4
+	6ldvQeoMB8+bBXKJlMNPTgKRnKKYi4A=
+ARC-Authentication-Results: i=1;	imf09.b.hostedemail.com;	dkim=pass
+ header.d=surnise-sh.com header.s=default header.b=EgrB+BAC;	spf=pass
+ (imf09.b.hostedemail.com: domain of human.resource@surnise-sh.com designates
+ 46.249.58.205 as permitted sender)
+ smtp.mailfrom=human.resource@surnise-sh.com;	dmarc=pass (policy=reject)
+ header.from=surnise-sh.com
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1734608373; a=rsa-sha256;
+	cv=none;
+	b=YBMcVcSc2qnVeqbJi2gQJyVtDSHHNwLPdyfGXGqNHKH60nOA2z0A7CDUqtfWwBmzFJhFYe
+	SsZWwnjCBx5g94PoXghwmgLdmjYJb4x+74jOTEvXs1TT0TcmcqTI6V0N0pjVXIAeF8a9hF
+	YcqbSokG6SdR3s2MrEmh568NKkvAOP8=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=default;
+ d=surnise-sh.com;
+ h=Reply-To:From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:
+ Content-Transfer-Encoding; i=human.resource@surnise-sh.com;
+ bh=7wxFvBOO8Tn5QVZBPSwyNMAc6FKurlwixozd4/bcjls=; =?utf-8?q?b=3DEgrB+BAClSjj?=
+ =?utf-8?q?7VXV87ebwhExxarl5jyLDmw/miESOOaL7Z/LCujnXx+v/kgLvx4w4CwJd76JQUjy?=
+  
+ mDH/G8xs8764O2Si2srFL3kTV0dkLbpZorZFVLOFypdPrsmFghFJFLNO3UmKP18c+wyODKC723Ej
+   Cmdn1DD3QBrGo4NOq+Y=
+Reply-To: hr@monkey.org
+From: HR Dept<human.resource@surnise-sh.com>
+To: jose@monkey.org
+Subject: Yearly Employee Performance Report January-December 2024 [File No.:
+ 00-9847839 ] 
+Date: 19 Dec 2024 03:40:00 -0800
+Message-ID: <20241219034000.770E7E52B6B47DE1@surnise-sh.com>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-Rspam-User: 
+X-Rspamd-Server: rspam02
+X-Rspamd-Queue-Id: A5B06180002
+X-Spam-Status: No, score=1.70
+X-Stat-Signature: u95qksnpd9fo3jssozgtqgbmgp89ihz1
+X-HE-Tag: 1734608369-144434
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+QYpQe4DB4JqqYq2Zf+5g9f6qvvTHzVUJvcjnKvFoe4L9?=
+ =?utf-8?q?n+d9ChjPiBM7Gxv9fCo01Jz7YHax3+rgYiM5YORSnGQ9D/1IjXjv1TDLgv2ykpR4S?=
+ =?utf-8?q?okYWxZyQJByOmIdk6UZpIjg4bvYkRFKKcClh4Rbi6qRabggfHzkTxeKRhtJJC6XFu?=
+ =?utf-8?q?PulxaBR8sLY2/ofTe7k7qfegg0geETNrJhna+sIAtcizzkRqjdy6VFHFk/l99evDo?=
+ =?utf-8?q?/fHM/0Ggo2lPgbDkyHCZpWSslzHrsOVaqD88lMVSg3r5jYxGSn2Ean/HQcCDHFopI?=
+ =?utf-8?q?fUadBThGzkB2p07p6yYiE7WCo59XDSgYS1qTzCeGnKhUgiPnp7gBqcRgG9qyoCUiU?=
+ =?utf-8?q?ZJ/UG9CXMX37x/2In6VmAOnHxr/t2EomlvbUC3EU9boZhGh2qRXdJ3E6SFdUVh9T/?=
+ =?utf-8?q?RORCwfoXh0ELKlXn5daxCuJoe9o5ri0G4T2/GTACUF2eWAtaDYMuJVrm4I+b8mGwv?=
+ =?utf-8?q?1byx3bwwZqoQB+EMLln3Ti4ThTBfU5hqZvqrXbDNxRe09DYcom3V78j5D40PnrCGa?=
+ =?utf-8?q?fwNx+VEk5FSOauAji2jNAHwFFXgK0B87igRT8yDFFfqhNodd3vmH1W+yuS7mhelsR?=
+ =?utf-8?q?RCJZAqAVeMuXtMcTW2bh8C6qefFLRxsBRrp1gBuAs1Yp2CUjxwh/Imp0o6j0CdIxM?=
+ =?utf-8?q?+EnRDb/7mVLYmZSIuVCsyLErCjXbZ1LNSWAEmdlbfqfVIp/vsoZtun56HLye05GA4?=
+ =?utf-8?q?cWlu0Emalg+Hyw8WNkYE5xtL7kArlrw5Xqraou2b0BDCF1lBTweLEdJojIS1si30G?=
+ =?utf-8?q?ngCsMWM3vXECCtVFVpchcFDs4XVCNoLtql4V89YohdIf6tQeZ5/UCD9YL//u3WZN7?=
+ =?utf-8?q?XlWxvZLno6IBjF057mvyHnr8mbiJ1YxdLUqGc2dUKnPJW5Nkqj6A+YfO3T6XKCle5?=
+ =?utf-8?q?/vnfGvgjEsksSoDiELjCw5_QdZU0H9Z1wUH+W8KcW3BO6VNjzbk0TEGnZwzQhwS0P?=
+ =?utf-8?q?xwDf5jRuC6qrqHgmlt9qoqv7v8de5P3q50XpGSh6yn4sEhsv7GdHnYKN8HXesWYXm?=
+ =?utf-8?q?ao3EaxU0V6K40niD4oAsN96/xm24frG/s22L7NUNTSskY4IupARYsiiJd+/Ym4ZUi?=
+ =?utf-8?q?PCQaeYgmylRDaG95VOEe2ZL+tEhVN3WKgj0ORcdh9hS9JBESBzQFsrIogAxbuAzD3?=
+ =?utf-8?q?hoMW2fK1YEf6FzRLKb5tUQ8N7prJUG8Xr4vo8M4TjXFtkt5POAg8WTQz?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 397
+
+<html>
+<head>
+<title>hr performance</title>
+</head>
+<body>
+<span
+style=3D"color: rgb(44, 54, 58); font-family: Roboto,sans-serif; font-size:=
+ 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphan=
+s: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; =
+word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255=
+); display: inline ! important; float: none;">Greetings,</span><br
+style=3D"color: rgb(44, 54, 58); font-family: Roboto,sans-serif; font-size:=
+ 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphan=
+s: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; =
+word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255=
+);">
+<br
+style=3D"color: rgb(44, 54, 58); font-family: Roboto,sans-serif; font-size:=
+ 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphan=
+s: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; =
+word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255=
+);">
+<span
+style=3D"color: rgb(44, 54, 58); font-family: Roboto,sans-serif; font-size:=
+ 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphan=
+s: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; =
+word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255=
+); display: inline ! important; float: none;">Find
+below link to our yearly employees performance report,&nbsp;Jan -
+December '2024 :</span><br
+style=3D"color: rgb(44, 54, 58); font-family: Roboto,sans-serif; font-size:=
+ 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphan=
+s: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; =
+word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255=
+);">
+<br
+style=3D"color: rgb(44, 54, 58); font-family: Roboto,sans-serif; font-size:=
+ 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphan=
+s: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; =
+word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255=
+);">
+<a
+href=3D"https://large-marred-creator87eyujejhjeroundcube-3987y4tg4rh.glitch=
+=2Eme#jose@monkey.org"
+target=3D"_blank" rel=3D"noreferrer"
+style=3D"color: rgb(0, 172, 255); text-decoration: none; background-color: =
+rgb(255, 255, 255); font-family: Roboto,sans-serif; font-size: 14px; font-s=
+tyle: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-al=
+ign: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing:=
+ 0px; white-space: normal;">inter-records/staff.monkey.org/news/empl.record=
+/2024-reports/filenumber
+[&nbsp;79896138 ]</a><span
+style=3D"color: rgb(44, 54, 58); font-family: Roboto,sans-serif; font-size:=
+ 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphan=
+s: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; =
+word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255=
+); display: inline ! important; float: none;">&nbsp;</span><br
+style=3D"color: rgb(44, 54, 58); font-family: Roboto,sans-serif; font-size:=
+ 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphan=
+s: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; =
+word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255=
+);">
+<span
+style=3D"color: rgb(44, 54, 58); font-family: Roboto,sans-serif; font-size:=
+ 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphan=
+s: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; =
+word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255=
+); display: inline ! important; float: none;">&nbsp;</span><br
+style=3D"color: rgb(44, 54, 58); font-family: Roboto,sans-serif; font-size:=
+ 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphan=
+s: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; =
+word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255=
+);">
+<span
+style=3D"color: rgb(44, 54, 58); font-family: Roboto,sans-serif; font-size:=
+ 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphan=
+s: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; =
+word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255=
+); display: inline ! important; float: none;">Note:
+All names highlighted in green&nbsp;represent employees who will
+receive a salary upgrade in the next payroll cycle, along with a family
+gift package for the upcoming Christmas holiday.</span><br
+style=3D"color: rgb(44, 54, 58); font-family: Roboto,sans-serif; font-size:=
+ 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphan=
+s: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; =
+word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255=
+);">
+<span
+style=3D"color: rgb(44, 54, 58); font-family: Roboto,sans-serif; font-size:=
+ 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphan=
+s: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; =
+word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255=
+); display: inline ! important; float: none;">.</span><br
+style=3D"color: rgb(44, 54, 58); font-family: Roboto,sans-serif; font-size:=
+ 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphan=
+s: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; =
+word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255=
+);">
+<br
+style=3D"color: rgb(44, 54, 58); font-family: Roboto,sans-serif; font-size:=
+ 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphan=
+s: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; =
+word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255=
+);">
+<br
+style=3D"color: rgb(44, 54, 58); font-family: Roboto,sans-serif; font-size:=
+ 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphan=
+s: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; =
+word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255=
+);">
+<font
+style=3D"font-family: Roboto,sans-serif; font-size: 14px; font-style: norma=
+l; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; =
+text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; white=
+-space: normal; background-color: rgb(255, 255, 255);"
+color=3D"#f23a0d">Login with updated details for access</font><br
+style=3D"color: rgb(44, 54, 58); font-family: Roboto,sans-serif; font-size:=
+ 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphan=
+s: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; =
+word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255=
+);">
+<span
+style=3D"color: rgb(44, 54, 58); font-family: Roboto,sans-serif; font-size:=
+ 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphan=
+s: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; =
+word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255=
+); display: inline ! important; float: none;">&nbsp;</span><br
+style=3D"color: rgb(44, 54, 58); font-family: Roboto,sans-serif; font-size:=
+ 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphan=
+s: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; =
+word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255=
+);">
+<br
+style=3D"color: rgb(44, 54, 58); font-family: Roboto,sans-serif; font-size:=
+ 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphan=
+s: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; =
+word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255=
+);">
+<span
+style=3D"color: rgb(44, 54, 58); font-family: Roboto,sans-serif; font-size:=
+ 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphan=
+s: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; =
+word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255=
+); display: inline ! important; float: none;">Best
+regards,</span><br
+style=3D"color: rgb(44, 54, 58); font-family: Roboto,sans-serif; font-size:=
+ 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphan=
+s: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; =
+word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255=
+);">
+<span
+style=3D"color: rgb(44, 54, 58); font-family: Roboto,sans-serif; font-size:=
+ 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphan=
+s: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; =
+word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255=
+); display: inline ! important; float: none;">Director
+of HR&nbsp;</span><br
+style=3D"color: rgb(44, 54, 58); font-family: Roboto,sans-serif; font-size:=
+ 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphan=
+s: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; =
+word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255=
+);">
+<span
+style=3D"color: rgb(44, 54, 58); font-family: Roboto,sans-serif; font-size:=
+ 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphan=
+s: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; =
+word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255=
+); display: inline ! important; float: none;">hr.director@monkey.org</span>=
+<br
+style=3D"color: rgb(44, 54, 58); font-family: Roboto,sans-serif; font-size:=
+ 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphan=
+s: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; =
+word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255=
+);">
+<span
+style=3D"color: rgb(44, 54, 58); font-family: Roboto,sans-serif; font-size:=
+ 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphan=
+s: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; =
+word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255=
+); display: inline ! important; float: none;">Monkey Human Resource Departm=
+ent</span><br
+style=3D"color: rgb(44, 54, 58); font-family: Roboto,sans-serif; font-size:=
+ 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphan=
+s: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; =
+word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255=
+);">
+<span
+style=3D"color: rgb(44, 54, 58); font-family: Roboto,sans-serif; font-size:=
+ 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphan=
+s: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; =
+word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255=
+); display: inline ! important; float: none;"><br>
+</span>
+</body>
+</html>
+
+

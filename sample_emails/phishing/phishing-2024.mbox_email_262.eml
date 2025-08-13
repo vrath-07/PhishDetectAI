@@ -1,0 +1,261 @@
+Return-Path: mehedi@radixbd.net
+Delivered-To: jose@monkey.org
+X-FDA: 82573242990.04.399D317
+Received: from web.r2groupofcompanies.com (web.r2groupofcompanies.com
+ [198.57.224.67])	by imf25.b.hostedemail.com (Postfix) with ESMTP id
+ 8C6F0120009	for <jose@monkey.org>; Tue, 17 Sep 2024 06:25:13 +0000 (UTC)
+Authentication-Results: imf25.b.hostedemail.com;	dkim=pass
+ header.d=r2groupofcompanies.com header.s=default header.b="NHm/C3g7";
+	spf=softfail (imf25.b.hostedemail.com: 198.57.224.67 is neither permitted nor
+ denied by domain of mehedi@radixbd.net) smtp.mailfrom=mehedi@radixbd.net;
+	dmarc=none
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1726554214;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=6EHfxKp2iPczU3J0vXELw2dqmu7l6xi2KAaZPVls6sE=;
+	b=yh1DL0ALlTrVuT87Qh/Bk+XeKJWQ0KMbhpGUCrdAkeScf7Bvr0U1eO/2V2/KtUJwBuzU1h
+	KzV8QqsjOITZ4aFgyes/Eg/3VaZzLcJeFrJDbzKNao17xqKRKJ1BCWBZjHLzA832P0sOjR
+	BRHmBli2JnOPIBliSP9ZBVVLY5EN3gI=
+ARC-Authentication-Results: i=1;	imf25.b.hostedemail.com;	dkim=pass
+ header.d=r2groupofcompanies.com header.s=default header.b="NHm/C3g7";
+	spf=softfail (imf25.b.hostedemail.com: 198.57.224.67 is neither permitted nor
+ denied by domain of mehedi@radixbd.net) smtp.mailfrom=mehedi@radixbd.net;
+	dmarc=none
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1726554214; a=rsa-sha256;
+	cv=none;
+	b=n+JtSxb46mOWpl2BWyOFr5Avc/7uTMmYNmzLToqanlEyqVjiPcFUrWoo7Sa8RZaz2JdTAk
+	86AapTU1QFN1WBcZUtbF7wcNAtT+TiBCgBP7iLxOJbAIEUNWIj9T/lEvshBEXeVPf2w5L/
+	SVXC1/ZeOwpsklo2LrK+kiXjf0NzLpA=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=r2groupofcompanies.com; s=default; h=Content-Transfer-Encoding:Content-Type
+	:MIME-Version:Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=6EHfxKp2iPczU3J0vXELw2dqmu7l6xi2KAaZPVls6sE=; b=NHm/C3g7jh3Q5ufFMMOt4Bk7z/
+	bgn/cDW71ZT42h879EZ/6PXFSBVxGi6Nxy7V/nOHcKjbdWp1e/5wW09YbSKkZKjGjpv7PMV9PKIlq
+	oenGFq3nj4Q02hvaLxnGNnP29H+FjXLzJNsYfEquhL+0IuvzMKy3fFhh9igNV2ub2P6QgChqcHoZj
+	jIDj579nIHdwYNEhvnXVXrAG2urdmSa8UTnOzF6Au1ovBzxjK3AmlVyy1EnJHukygAVRXCRtryJnN
+	W27SYn9nGtFD/W/1qXX6sTGBrnagNuOZ6wqm0Krwsi7rMFUGNtfSQchwZDLcodW8VAvAeGVUuoknx
+	S+I+HbSg==;
+Received: from [102.89.40.250] (port=22941 helo=[102.88.83.200])	by
+ web.r2groupofcompanies.com with esmtpsa  (TLS1.2) tls
+ TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	(Exim 4.93)	(envelope-from
+ <mehedi@radixbd.net>)	id 1sm25C-0006Es-7G	for jose@monkey.org; Wed, 04 Sep
+ 2024 21:18:50 -0500
+From: IT Domain Help Desk <mehedi@radixbd.net>
+To: jose@monkey.org
+Subject: Attention: Service Suspension (Action Required)
+Date: 5 Sep 2024 03:18:48 +0100
+Message-ID: <20240905031848.C4D24BDA1ADA94C6@radixbd.net>
+MIME-Version: 1.0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - web.r2groupofcompanies.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - radixbd.net
+X-Get-Message-Sender-Via:
+ web.r2groupofcompanies.com: authenticated_id: malen@r2groupofcompanies.com
+X-Authenticated-Sender:
+ web.r2groupofcompanies.com: malen@r2groupofcompanies.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Stat-Signature: 7yhfadam4hjc4587tftpxjd947rkog1h
+X-Rspam-User: 
+X-Rspamd-Queue-Id: 8C6F0120009
+X-Rspamd-Server: rspam09
+X-Spam-Status: Yes, score=12.09
+X-HE-Tag: 1726554313-97194
+X-HE-Meta: =?utf-8?q?U2FsdGVkX19TKHIdCedLPTVM1JOKB7aCu9No1i4Jn9VodgOdmvBnK2T?=
+ =?utf-8?q?fhamlylQcgIN4qDeUfeWPuXLocaJVJvp/se6YOvaTKJk7z2wRGj7LNcFl4Q6Lrlf9?=
+ =?utf-8?q?nwQaJy63jAo35ar1A41efeGCco7c9mJ2hj8z9xiXH6QqYqsSh5t6o3vzDDgKkKzrp?=
+ =?utf-8?q?8Dkf4oL6b7XZCWY5xlovNlsOC/Ah6D16rzAnOMbRY3PK70d5sKAFVHQl5zdgRgxUH?=
+ =?utf-8?q?26tKyEAPVdm60lJjUhvQrF7BLf0AYCBFCjLkKqblIMMCKvDtdLU8Ms5fX24apOtmy?=
+ =?utf-8?q?zpuiWirF6i/F8HB13ZNCwyrPYV6fAL9C6kQnv0GMrJ2GtJFOI0//m1gJEtpECR5un?=
+ =?utf-8?q?PQd4sgTJpEPGDqO+V6/yeaCplOesxhStCnXkUFXjPnxjJ/0fE30/N18n7TLKEKlnK?=
+ =?utf-8?q?6s0BFZh4r7r1ffE1bb6jhGh/yTjBAHGYiZyzyzgh1KCDKOW1htsVzKn02uukxmkbJ?=
+ =?utf-8?q?mdHJuicH2eYE5lsJcjIpMvLVEMhSU5fcSzvGa6saDkWr7fAbvrCjDrGEv5LK49j8N?=
+ =?utf-8?q?zy37L/L94ZntIoAdgsMVJ249k5MbmPxIc1H5uD2hTm4ovv3vovtHL4Jn2KifWQRp8?=
+ =?utf-8?q?77aMbLIbNkbb9jARlpMNkFg5CXbutFk3CcD1OdPJf+Tu9cdNU2rYe3WheMP4spJ1t?=
+ =?utf-8?q?KmCUQSwnUOFAR8JzAWKQ4U8tMhCNHZ+/dIykRXYb4U53ROTJhcDwJ33BUgHnZh8HN?=
+ =?utf-8?q?6rQCciUAQhvfY5gboKIfH1Ut6cj9D6YsPRq8cY9mSLaOP9NlTyMc7UAVPB1WipBQL?=
+ =?utf-8?q?u5FOo4Mu1X8NiVmMkXRs9PPnRELo/Y5/yS9FskPc8rak0FA5o6UYcil9d1calaFPH?=
+ =?utf-8?q?iwqHipZR2Ug/wiKexgZ/W/OxpUsOKCQzTIuviDj+z56gnV+cwltHjuZeXukKN+js7?=
+ =?utf-8?q?aBCIVTuuQI2veTewFHoqsh_hAKBNwxRqjR28JKPOUZGnaUNfE3RBg3XzTd1WzwZbX?=
+ =?utf-8?q?PwkFM81/misTjKZ6k6J/ydL11QtA7jVtkB8wcaB5G3K0JnCvwEfTBWndohe06hRES?=
+ =?utf-8?q?lv+2koDUKHuc1iXD8Bpj7ryG4G0jtOcvRzmDn3Jc6bxNUsVtfo3FIy5aUGDFssNb3?=
+ =?utf-8?q?MADWAnOliUe9FW82dun5phYRKtYYrvkatRaPbbQf6+4U889P7J7VGFWLDOaODKnqP?=
+ =?utf-8?q?//bcKIaL8XI9Zr8NDfxPWwfcXzd7UZ0JThr7V37lQS5u3ohbP6d83cKKAqupoeS90?=
+ =?utf-8?q?Fz+83QNCOFb+fb2YyQ6m2aca4RQIztTN3JWS53cUuNoCw1ZEZ6/WFqHGfq174Vf5w?=
+ =?utf-8?q?QawL6L05pOUegI6zzp6paor6EhouAJkYuEfeuyZAX01iwM9Wqd2ZJEvtNdgrsoQjE?=
+ =?utf-8?q?QMR32tPk/cEXhfuQQuMyqJtD0kny0icG6Eu2nzCB2Cl/MWoF32Flt4gVXNYXtTNOB?=
+ =?utf-8?q?x58sBVs5MWb64eNHBTb3FXvPYTBkZYLITBeB2mo4ZOLyIAXz468ykm09irwe/UWmZ?=
+ =?utf-8?q?R3aQr59BA=3D=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 262
+
+<!DOCTYPE HTML>
+
+<html><head><title></title>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"margin: 0.4em;">
+<div style=3D'text-align: left; color: rgb(38, 40, 42); text-transform: non=
+e; text-indent: 0px; letter-spacing: normal; font-family: "Helvetica Neue",=
+ Helvetica, Arial, sans-serif; font-size: 13px; font-style: normal; font-we=
+ight: 400; word-spacing: 0px; white-space: normal; box-sizing: border-box; =
+orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-l=
+igatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px=
+; text-decoration-thickness: initial;=20
+text-decoration-style: initial; text-decoration-color: initial;'><br class=
+=3D"Apple-interchange-newline">&nbsp;</div>
+<div style=3D'text-align: left; color: rgb(38, 40, 42); text-transform: non=
+e; text-indent: 0px; letter-spacing: normal; font-family: "Helvetica Neue",=
+ Helvetica, Arial, sans-serif; font-size: 13px; font-style: normal; font-we=
+ight: 400; word-spacing: 0px; white-space: normal; box-sizing: border-box; =
+orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-l=
+igatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px=
+; text-decoration-thickness: initial;=20
+text-decoration-style: initial; text-decoration-color: initial;'><div id=3D=
+"v1v1ydp56ef6cc7yiv4653084436" style=3D"box-sizing: border-box;"><div style=
+=3D"box-sizing: border-box;">
+<table style=3D"color: rgb(44, 45, 46); text-transform: none; letter-spacin=
+g: normal; padding-top: 0px; padding-bottom: 0px; font-family: inherit; fon=
+t-size: 15px; font-style: normal; font-weight: 600; word-spacing: 0px; whit=
+e-space: normal; border-collapse: collapse; max-width: 548px; box-sizing: b=
+order-box; border-spacing: 0px; orphans: 2; widows: 2; font-stretch: inheri=
+t; background-color: rgb(255, 255, 255); text-decoration-style: initial; te=
+xt-decoration-color: initial;" border=3D"0">
+<tbody style=3D"box-sizing: border-box;"><tr style=3D"box-sizing: border-bo=
+x;"><td style=3D'width: 181px; font-family: "Segoe UI", Frutiger, Arial, sa=
+ns-serif; vertical-align: bottom; box-sizing: border-box;'>IT HelpDesk</td>=
+<td style=3D'width: 186px; text-align: center; font-family: "Segoe UI", Fru=
+tiger, Arial, sans-serif; vertical-align: bottom; box-sizing: border-box;'>=
+&nbsp;</td>
+<td style=3D'width: 181px; text-align: right; font-family: "Segoe UI", Frut=
+iger, Arial, sans-serif; vertical-align: bottom; box-sizing: border-box;'>&=
+nbsp;</td></tr><tr style=3D"box-sizing: border-box;"><td style=3D'width: 18=
+1px; padding-top: 0px; padding-bottom: 0px; font-family: "Segoe UI", Frutig=
+er, Arial, sans-serif; font-size: 14px; vertical-align: middle; box-sizing:=
+ border-box;'>
+<span style=3D"border-width: 0px; margin: 0px; padding: 0px; color: white; =
+vertical-align: baseline; box-sizing: border-box;"><span style=3D"border-wi=
+dth: 0px; margin: 0px; padding: 0px; color: black; vertical-align: baseline=
+; box-sizing: border-box;">Sender</span></span></td><td style=3D'width: 186=
+px; text-align: center; padding-top: 0px; padding-bottom: 0px; font-family:=
+ "Segoe UI", Frutiger, Arial, sans-serif; font-size: 14px; font-weight: 400=
+; vertical-align: middle; box-sizing: border-box;'>
+&nbsp;</td><td style=3D'width: 181px; text-align: right; padding-top: 0px; =
+padding-bottom: 0px; font-family: "Segoe UI", Frutiger, Arial, sans-serif; =
+font-size: 14px; font-weight: 400; vertical-align: middle; box-sizing: bord=
+er-box;'><span style=3D"border-width: 0px; margin: 0px; padding: 0px; color=
+: white; vertical-align: baseline; box-sizing: border-box;"><span style=3D"=
+border-width: 0px; margin: 0px; padding: 0px; color: rgb(192, 0, 0); vertic=
+al-align: baseline; box-sizing: border-box;">
+<strong style=3D"font-weight: bolder; box-sizing: border-box;">Action Requi=
+red</strong></span></span></td></tr><tr style=3D"box-sizing: border-box;"><=
+td style=3D"padding: 0px; box-sizing: border-box;" colspan=3D"3"><table sty=
+le=3D"padding: 0px; border-collapse: collapse; box-sizing: border-box; bord=
+er-spacing: 0px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody s=
+tyle=3D"box-sizing: border-box;"><tr style=3D"box-sizing: border-box;">
+<td style=3D"padding: 0px; width: 180px; line-height: 10px; font-size: 6px;=
+ min-height: 10px; box-sizing: border-box;" bgcolor=3D"#cccccc">&nbsp;</td>=
+<td style=3D"padding: 0px; width: 4px; line-height: 10px; font-size: 6px; m=
+in-height: 10px; box-sizing: border-box;" bgcolor=3D"white">&nbsp;</td><td =
+style=3D"padding: 0px; width: 180px; line-height: 10px; font-size: 6px; min=
+-height: 10px; box-sizing: border-box;" bgcolor=3D"#cccccc">&nbsp;</td>
+<td style=3D"padding: 0px; width: 4px; line-height: 10px; font-size: 6px; m=
+in-height: 10px; box-sizing: border-box;" bgcolor=3D"white">&nbsp;</td><td =
+style=3D"padding: 0px; width: 180px; line-height: 10px; font-size: 6px; min=
+-height: 10px; box-sizing: border-box;" bgcolor=3D"#c00000">&nbsp;</td></tr=
+></tbody></table></td></tr><tr style=3D"box-sizing: border-box;">
+<td style=3D'padding: 0px; width: 181px; line-height: 20px; font-family: "S=
+egoe UI", Frutiger, Arial, sans-serif; font-size: 14px; font-weight: 400; b=
+ox-sizing: border-box;'>&nbsp;</td><td style=3D'padding: 0px; width: 186px;=
+ text-align: center; line-height: 20px; font-family: "Segoe UI", Frutiger, =
+Arial, sans-serif; font-size: 14px; font-weight: 400; box-sizing: border-bo=
+x;'>&nbsp;</td>
+<td style=3D'padding: 0px; width: 181px; text-align: right; line-height: 20=
+px; font-family: "Segoe UI", Frutiger, Arial, sans-serif; font-size: 14px; =
+font-weight: 400; box-sizing: border-box;'><span style=3D"border-width: 0px=
+; margin: 0px; padding: 0px; color: white; vertical-align: baseline; box-si=
+zing: border-box;"><span style=3D"border-width: 0px; margin: 0px; padding: =
+0px; color: rgb(192, 0, 0); vertical-align: baseline; box-sizing: border-bo=
+x;">
+<strong style=3D"font-weight: bolder; box-sizing: border-box;">Password&nbs=
+p;Has Expired</strong></span></span></td></tr></tbody></table>
+<div style=3D"color: rgb(44, 45, 46); text-transform: none; text-indent: 0p=
+x; letter-spacing: normal; font-family: Arial, Tahoma, Verdana, sans-serif;=
+ font-size: 15px; font-style: normal; font-weight: 400; word-spacing: 0px; =
+white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; backgro=
+und-color: rgb(255, 255, 255); text-decoration-style: initial; text-decorat=
+ion-color: initial;"><p style=3D"margin-top: 0px; margin-bottom: 1rem; box-=
+sizing: border-box;">&nbsp;</p>
+<table style=3D"padding: 0px; width: 528px; margin-left: 0px; border-collap=
+se: collapse; box-sizing: border-box; background-color: rgb(242, 245, 250);=
+" border=3D"0"><tbody style=3D"box-sizing: border-box;"><tr style=3D"box-si=
+zing: border-box;"><td style=3D'padding: 0px 10px; font-family: "Segoe UI",=
+ Frutiger, Arial, sans-serif; font-size: 21px; box-sizing: border-box;'>
+&nbsp;<div style=3D"border-width: 0px; margin: 0px; padding: 0px; color: rg=
+b(32, 31, 30); font-family: inherit; font-size: 15px; vertical-align: basel=
+ine; box-sizing: border-box; font-stretch: inherit;">Dear&nbsp;jose ,</div>=
+<div style=3D"border-width: 0px; margin: 0px; padding: 0px; color: rgb(32, =
+31, 30); font-family: inherit; font-size: 15px; vertical-align: baseline; b=
+ox-sizing: border-box; font-stretch: inherit;">&nbsp;</div></td></tr><tr st=
+yle=3D"box-sizing: border-box;">
+<td style=3D'padding: 0px 10px 6px; font-family: "Segoe UI", Frutiger, Aria=
+l, sans-serif; font-size: 16px; box-sizing: border-box;'>The password &nbsp=
+;for<span style=3D"box-sizing: border-box;">&nbsp;jose@monkey.org</span><sp=
+an style=3D"border-width: 0px; margin: 0px; padding: 0px; color: rgb(255, 0=
+, 0); vertical-align: baseline; box-sizing: border-box;"><span style=3D"bor=
+der-width: 0px; margin: 0px; padding: 0px; color: rgb(0, 0, 0); vertical-al=
+ign: baseline; box-sizing: border-box;">
+will expire this week</span></span><span style=3D"box-sizing: border-box;">=
+&nbsp;</span><span>&nbsp;</span><span style=3D"border-width: 0px; margin: 0=
+px; padding: 0px; color: rgb(255, 0, 0); vertical-align: baseline; box-sizi=
+ng: border-box;"><span style=3D"border-width: 0px; margin: 0px; padding: 0p=
+x; color: rgb(0, 0, 0); vertical-align: baseline; box-sizing: border-box;">=
+=2E</span></span><br style=3D"box-sizing: border-box;"><br style=3D"box-siz=
+ing: border-box;">
+Action required to Fix this below:<br style=3D"box-sizing: border-box;"><br=
+ style=3D"box-sizing: border-box;"><a style=3D"border-width: 0px; margin: 0=
+px; padding: 0px; color: rgb(0, 172, 255); vertical-align: baseline; box-si=
+zing: border-box; background-color: transparent;" href=3D"https://0usfztwe.=
+freewebhostmost.com/#jose@monkey.org" target=3D"_blank" rel=3D"noreferrer">=
+Keep Same&nbsp;Password</a>
+<br style=3D"box-sizing: border-box;">
+<br style=3D"box-sizing: border-box;"><br style=3D"box-sizing: border-box;"=
+>
+<div style=3D"box-sizing: border-box;"><span style=3D"color: rgb(12, 54, 84=
+); box-sizing: border-box;"><strong style=3D"font-weight: bolder; box-sizin=
+g: border-box;">Thank you.<br style=3D"box-sizing: border-box;">Customer Se=
+rvices Team<br style=3D"box-sizing: border-box;"><br style=3D"box-sizing: b=
+order-box;"></strong><em style=3D"box-sizing: border-box;">
+The email is automatically generated upon request. This electronic transmis=
+sion is confidential information and is for your use only. If this is not t=
+he case, please delete the original and all copies and notify the sender im=
+mediately.</em><br style=3D"box-sizing: border-box;"><em>Copyright &copy;20=
+23<strong style=3D"font-weight: bolder; box-sizing: border-box;"><span styl=
+e=3D"box-sizing: border-box;">&nbsp;</span>
+<span style=3D"color: rgb(12, 74, 243); box-sizing: border-box;">.</span></=
+strong><span style=3D"box-sizing: border-box;">&nbsp;</span>&nbsp;All right=
+s reserved </em>monkey.org</span></div></td></tr><tr style=3D"box-sizing: b=
+order-box;"><td style=3D'padding: 0px 10px 6px; font-family: "Segoe UI", Fr=
+utiger, Arial, sans-serif; font-size: 16px; box-sizing: border-box;'>&nbsp;=
+</td></tr></tbody></table><p style=3D"margin-top: 0px; margin-bottom: 1rem;=
+ box-sizing: border-box;">&nbsp;</p></div>
+<p style=3D"margin-top: 0px; margin-bottom: 1rem; box-sizing: border-box;">=
+&nbsp;</p></div></div></div>
+
+
+</body></html>
+

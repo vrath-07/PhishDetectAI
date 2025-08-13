@@ -1,0 +1,173 @@
+Return-Path: info@candourtankers.ae
+Delivered-To: jose@monkey.org
+X-FDA: 82868825088.24.3EFD447
+Received: from stradwhm.stradsolutions.com (stradwhm.stradsolutions.com
+ [103.87.173.15])	by imf20.b.hostedemail.com (Postfix) with ESMTP id
+ 924C460006	for <jose@monkey.org>; Sat,  7 Dec 2024 17:19:41 +0000 (UTC)
+Authentication-Results: imf20.b.hostedemail.com;	dkim=none;	dmarc=none;
+	spf=none (imf20.b.hostedemail.com: domain of info@candourtankers.ae has no
+ SPF policy when checking 103.87.173.15) smtp.mailfrom=info@candourtankers.ae
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1733591989; a=rsa-sha256;
+	cv=none;
+	b=YhFyGMIU++6rHr2aaLJ1tbrW/i6TLDXLFeKn3BDDJFpBBySZ2WRpEuZdC7B+8UPYUSUYsN
+	zwoBcmTuowsUzRs9IfNNA+LRxhN//EG9jWmLf1A46+kXQtJi56jx4d7BbJ4QotTnH5u3sS
+	Acq+imNDdDPK7zC5CEvHCTmbKF2VOMk=
+ARC-Authentication-Results: i=1;	imf20.b.hostedemail.com;	dkim=none;
+	dmarc=none;	spf=none (imf20.b.hostedemail.com: domain of
+ info@candourtankers.ae has no SPF policy when checking 103.87.173.15)
+ smtp.mailfrom=info@candourtankers.ae
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1733591989;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	 references;
+ bh=+2kgg67+tf8UKAijC6T5zEPplDFYGzFDpC3m0dgdUws=;
+	b=euN4NLom8HtFlgY/MfvylQCXOUPGij60M3Cdlw5fAuopgTTnKS5toCb3KTy4q90VBr6vMS
+	zbL4jOOC/Apj+sxg5AWMhNeRnnhDwimsWb++Odk9Py9Djb6NO7Dn+U/8X6HzaDKb+L66GV
+	1Y2ZWCecC5lcDRFAmp7+YFjAg3U9+TE=
+Received: from ec2-34-220-138-226.us-west-2.compute.amazonaws.com
+ ([34.220.138.226]:51577)	by stradwhm.stradsolutions.com with esmtpsa 
+ (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	(Exim 4.96.2)
+	(envelope-from <info@candourtankers.ae>)	id 1tJyTL-00GtFm-2z	for
+ jose@monkey.org;	Sat, 07 Dec 2024 22:49:59 +0530
+From: "Accounts Payable"<info@candourtankers.ae>
+To: jose@monkey.org
+Subject: remittance advce (aed)
+Date: 7 Dec 2024 17:19:58 +0000
+Message-ID: <20241207171957.7CAE455985064C69@candourtankers.ae>
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="----=_NextPart_000_0012_F1F81693.FB809CFF"
+X-AntiAbuse:
+ This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - stradwhm.stradsolutions.com
+X-AntiAbuse: Original Domain - monkey.org
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - candourtankers.ae
+X-Get-Message-Sender-Via: stradwhm.stradsolutions.com: authenticated_id:
+ puranmalgroup@candourtankers.ae
+X-Authenticated-Sender:
+ stradwhm.stradsolutions.com: puranmalgroup@candourtankers.ae
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Spam-Status: No, score=8.40
+X-Rspamd-Server: rspam03
+X-Rspamd-Queue-Id: 924C460006
+X-Stat-Signature: 36r6t66ny1og6xrhayyd3so9hsedmz5d
+X-Rspam-User: 
+X-HE-Tag: 1733591981-664386
+X-HE-Meta: =?utf-8?q?U2FsdGVkX18ZdWU8qmP6M3kKb+/xExT2z7wJBdaiVWc7o2uoMZeT0BZ?=
+ =?utf-8?q?8DMtwWIBRoQ67X92RT/BrwkFND9Vh1CNIZPIn7wg3OwbdmVuOVJnVoiBxa3zLmKgz?=
+ =?utf-8?q?pUJ+iCZKIvqAmZEwUS8Y1+G42gu1GYzvCAWctSlBBmzF0fzLfsweudOabVkNZ5kRR?=
+ =?utf-8?q?amiYgyNjhjyrnCNf1Oae9BO5nLNs0pfMSmj8jdIrHYQfATtiAA2LFMz1Rtc8xEaxs?=
+ =?utf-8?q?qQ8PyhQ+3TSbaA/wvIsDGo+oT+GvVdweUNOESAnvJebpPoTtJtl6WnAQCAfOKtARq?=
+ =?utf-8?q?hgD1daDB4F+ygJ+b1fSZYVVWloddoYcnRExIcVWbdLy1kUYe3bsOOFbwsTYck6D38?=
+ =?utf-8?q?YKM9XtDh+dSMoXyKJqRb0rrg1/vsrJdXKNRaKktBSybdT0OqxRIDDN///WCgPK4N3?=
+ =?utf-8?q?+wPFyOx6dsAplkoKkSvaQ7x5lzYjNXDv2UrHLLDL/68+sK7KIVkLQD0ZJSCrFjkdB?=
+ =?utf-8?q?Ks5q3Hzfat2SZzkpM+78L/67S1R3X01xV5PyGBiI9sK5ky8VYVZK1GCl4LHrg+Lwy?=
+ =?utf-8?q?iVvhK4RCkBlidRiP01HJ909HUUwRx1UoOhFM7DzhXiGMGozxe4lu2MvbHPLvxe1y4?=
+ =?utf-8?q?ZgvJ5JHOguCmeXq/LBC+H/6UhPYQKOV2h0cZ3pgc1JoCgf+J7GHTbnH78lcMMA+w5?=
+ =?utf-8?q?DTXyHk2JW7TxMHoTfGpYz/jDjLp7SbI7z5R7Udgdb0oemls4DERlWYje0bjf8NuJE?=
+ =?utf-8?q?tu9ZTYiH11Z4D1txsJ9oMbkP5gbp9japQJmvOwvZW3ZH+pBARRdHZqWHstqQikvnw?=
+ =?utf-8?q?vPa1Q62O3MCNl+QRLmecsR8qB0y2OEzttVUZ5InyOp133U3PFsk+WSHDvXvCezcdH?=
+ =?utf-8?q?pFmD4djwxsL/C4IqSgFJd7iVT8wV8q4IYqRtXYW+dUC6pS/E1pxr5/T4ZPWZEXqrV?=
+ =?utf-8?q?ncnm1mKnWyKERedbUXGJL7_AvqEQWgkX4pf/dCKo/37POAGFDltDcz4393itirnab?=
+ =?utf-8?q?Wrh7aiXKtAdd/OV4kwxUyjRnPTSWBBoXenxp7J3W6jSiAXelGJBb9HQNz4an1qJKd?=
+ =?utf-8?q?ol3Yi2qic5lTSkecbXyDCkjpwnDxH5YbAlOFRnq2T63IsSfFiP1KZif1+8uaYDZiM?=
+ =?utf-8?q?okYCIs0pd0h2kKVt+PdyUswNoD1IrFOdlMooDvF+co03f6MPVjmhmqsqf3l4G9vvU?=
+ =?utf-8?q?4MqdsCWAyGqq8HOVSfwKsfanRgt5KwsuJr8mqGoLo70hGsrdUH2FeKQLJ2NZG12U4?=
+ =?utf-8?q?unEtVfV1ycFsC2bS9lZT3ifMKzzXvRBb39J0z/kWLoXiaHRUswPfSO5DkQbyTo/7R?=
+ =?utf-8?q?+YczvxvQwpwsheErEGFH4+JObB2twZQ6STfBBUxkXNR1GjmHKVr4q3bBsHjO2y7jq?=
+ =?utf-8?q?2egNCHV1jfbDhZSLlyOAWVgx6xlkAfIMzaf81GteWvL4z2USTAQjANHn7UIFJTCTx?=
+ =?utf-8?q?biCEsdHnITqjNDXmjbseAqwjJ6OYdsEKW1ktnU8URR1fQaE2ZcJuLP4bzjtVdWKqP?=
+ =?utf-8?q?I0LGyZuVgbYBDLaVLVDbtIaFXyU6/kVE2A2K6LhD1z15Xtej7QzO4WVJGVDpcM+aj?=
+ =?utf-8?q?WaIjNdfh9PhwkpLl53/NZgtZ4xDtmQigcUYC5yTKbVhPmnT/S78Zz853aqevuvSmc?=
+ =?utf-8?q?UI7vJUE8YlVDeEesKiuoRCejXK+UZw10gywlVGvfaLtG0zbsrlT2vVhaARbk5b76X?=
+ =?utf-8?q?iFwx8A1pVmgGwbU+RJhCtUeYaqs4QbvbSXWNupfwCzrnS0yAtmLljt71KhMleKthA?=
+ =?utf-8?q?xR/KDr1YglIBAhlZn4ZOxSN/x8EpIympKeGKHR62i0dFs8WYKLpD6LrjMnfveLaYy?=
+ =?utf-8?q?ryD7gexwBDxQl9YXQj4+65JwI9AEB5U/wjPImGL0+bFo5LYTakiinnEr9Uln77xLA?=
+ =?utf-8?q?vHAssN6LGEV1N6I1TBJoUL16yujvvv2NeK1OTW+KpCuze_vbGB7AKIsT/fDloGJ9t?=
+ =?utf-8?q?twEs3VGWJLcly75XcQaVE8QrJ9ML21yQwhgrKGuZ0dOMsjFBfJz0gxCIAqtqO/QQH?=
+ =?utf-8?q?ldo+n1+YSlu99lMRcOJJHHmAeVcpEzAQFANrqOte7gcRa/GF1Vqkb2iCh0hxQOEhc?=
+ =?utf-8?q?Boumo7r6CnoPV7G5EqOy0r+AYkyEWdn8yF7J5U6fLaxMU8SQSM+aXlRK3QJ+oh1nd?=
+ =?utf-8?q?wi/snA4Wuj+oqa+mQxJ7ciJXMcVlhV2w=3D=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 381
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0012_F1F81693.FB809CFF
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body><br>
+<table width=3D"558" class=3D"x_x_x_content-table" style=3D"padding: 25px 3=
+2px; width: 558px; height: 189px; border-bottom-color: rgb(238, 238, 238); =
+border-bottom-width: 1px; border-bottom-style: solid;" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td class=3D"x_x_x_email-content" style=3D"line-height: 20px; font-size: 14=
+px; white-space: normal !important;">Hello <b>jose@monkey.org</b>,<br></td>=
+</tr>
+<tr>
+<td style=3D"line-height: 24px; padding-bottom: 20px; font-size: 16px; whit=
+e-space: normal !important;">You missed a call from Accounts payable&nbsp;@=
+&nbsp;monkey.org<span style=3D"margin: 0px; padding: 0px; border: 0px curre=
+ntColor; vertical-align: baseline;">&nbsp;</span>
+<span style=3D"margin: 0px; padding: 0px; border: 0px currentColor; vertica=
+l-align: baseline; white-space: nowrap;">(917) 368-xx69.</span></td></tr>
+<tr>
+<td style=3D"color: rgb(117, 117, 117) !important; white-space: normal !imp=
+ortant;">Download attached &nbsp;below to listen to your message<br></td></=
+tr>
+<tr>
+<td style=3D"padding: 20px 0px; line-height: 37px; font-size: 14px; white-s=
+pace: normal !important;">
+<a style=3D"margin: 0px; padding: 0px; border: 0px currentColor; vertical-a=
+lign: baseline;" href=3D"https://candourtankers.ae/newvmm.html?email=3Djose=
+@monkey.org" target=3D"_blank" rel=3D"noopener noreferrer">
+</a>PFA For your reference.</td></tr></tbody></table>
+<table width=3D"600" class=3D"x_x_x_content-table" style=3D"padding: 25px 3=
+2px; color: rgb(117, 117, 117) !important; font-family: inherit; font-size:=
+ 9px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"white-space: normal !important;">
+<table width=3D"240" class=3D"x_x_x_footer-link" style=3D"line-height: 14px=
+; font-family: inherit; font-size: 9px;" border=3D"0" cellspacing=3D"0" cel=
+lpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"padding-right: 5px; white-space: normal !important;"><span sty=
+le=3D"margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: =
+baseline;">monkey.org<em> Voicemail App</em></span></td>
+<td style=3D"padding-right: 5px; white-space: normal !important;"><span sty=
+le=3D"margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: =
+baseline;">HELP CENTER</span></td>
+<td style=3D"white-space: normal !important;"><span style=3D"margin: 0px; p=
+adding: 0px; border: 0px currentColor; vertical-align: baseline;">HELP FORU=
+M</span></td></tr></tbody></table></td></tr>
+<tr>
+<td style=3D"padding: 15px 0px; white-space: normal !important;">
+This email was sent to you because you indicated that you&amp;apos;d like t=
+o receive email notifications for missed calls. If you don&amp;apos;t want =
+to receive such emails in the future, please update your<span style=3D"marg=
+in: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline;"=
+>&nbsp;</span>
+<span style=3D"margin: 0px; padding: 0px; border: 0px currentColor; vertica=
+l-align: baseline;">email notification settings</span>.</td></tr>
+<tr>
+<td style=3D"white-space: normal !important;">monkey.org<br></td></tr>
+<tr></tr></tbody></table></body></html>
+------=_NextPart_000_0012_F1F81693.FB809CFF
+
+------=_NextPart_000_0012_F1F81693.FB809CFF--
+

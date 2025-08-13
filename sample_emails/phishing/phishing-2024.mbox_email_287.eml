@@ -1,0 +1,155 @@
+Return-Path: connection.info@pentaleon.com
+Delivered-To: jose@monkey.org
+X-FDA: 82634250888.10.B453FD7
+Received: from mailprotect.pentaleon.com (unknown [23.95.218.142])
+	by imf13.b.hostedemail.com (Postfix) with ESMTP id 70B79120004
+	for <jose@monkey.org>; Fri,  4 Oct 2024 01:54:42 +0000 (UTC)
+Authentication-Results: imf13.b.hostedemail.com;	dkim=pass
+ header.d=pentaleon.com header.s=default header.b=YuMatk6t;	spf=pass
+ (imf13.b.hostedemail.com: domain of connection.info@pentaleon.com designates
+ 23.95.218.142 as permitted sender)
+ smtp.mailfrom=connection.info@pentaleon.com;	dmarc=pass (policy=quarantine)
+ header.from=pentaleon.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1728006828;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:	
+ content-transfer-encoding:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=Q8q5yIhVSPY/xu29VWpkTyV5poUnw1tsZ/E6j4SEA8s=;
+	b=xAYoKqxHEumfBNQDI6S/0NpD2uGGQBu417wvL5M0qu8MBEjKVQP9n4S4+CGqD+drZ7PyRS
+	qPpun/NJgnvHgbDcgfQK70CWPwlXCmt1WRh9b6vEjRiS/ZjM0TA9huKVOhCEht55fDo66F
+	QGnDDhVyjFS9L8QvgouOEaE95dHlxbY=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1728006828; a=rsa-sha256;
+	cv=none;
+	b=w09doNFanUNtlkAXBCe7g4IP8i2CtC5lxwTq/MPjNzsD+GhUITiF/fGK3Th24NCuJoOIGG
+	Um7Idtxfh+PCMPq6AMvXyBFZ1Zx97PzEn7fSPE0hMHo0YlOiQtBLvMlAmDEM1rMhskvz2N
+	zZbbieYj5BHPnOF4xBp3LTrTO4pcAJA=
+ARC-Authentication-Results: i=1;	imf13.b.hostedemail.com;	dkim=pass
+ header.d=pentaleon.com header.s=default header.b=YuMatk6t;	spf=pass
+ (imf13.b.hostedemail.com: domain of connection.info@pentaleon.com designates
+ 23.95.218.142 as permitted sender)
+ smtp.mailfrom=connection.info@pentaleon.com;	dmarc=pass (policy=quarantine)
+ header.from=pentaleon.com
+Received: from [127.0.0.1]
+ (v-192-223-25-84.unman-vds.premium-seattle.nfoservers.com [192.223.25.84])	by
+ mailprotect.pentaleon.com (Postfix) with ESMTPSA id C983A10038	for
+ <jose@monkey.org>; Thu,  3 Oct 2024 17:06:31 -0400 (EDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=pentaleon.com;
+	s=default; t=1727989592;
+	bh=Q8q5yIhVSPY/xu29VWpkTyV5poUnw1tsZ/E6j4SEA8s=; h=From:To:Subject;
+	b=YuMatk6tY2rilOBhYzcn+kLAh5IKmpvNhDatZFWB8x7cjqwpuEZpmVdu4nGqGbyzV
+	 Y5sv3IG/XyC5XLRHr0Zr4XgWbz3VSm3QWbjgn2x4mYzJLW2+vBwqCv2YbD3AT0SvYd
+	 5fJKpzS3Q6GwjS5gfQmOOKQafNnmwMGlXf8aExmRXBXMY4hNGYtsocqXmr9a7+Va/s
+	 1wGv+XI+VG+GvnYjzc1PE4YNCgBgOq2V0N5m7K4r7IUOuWf1V60HtAdRIH17PTnrBd
+	 UN+kUNsqBlS2ENcusv+6NRJgq7zM00Uw6PL0Syk65gOGn0/i+L8y5lz97uDFYP4a1d
+	 si0C6nvLWrQ/g==
+Received-SPF: pass (mailprotect.pentaleon.com: connection is authenticated)
+Content-Type: text/html
+From: "Monkey I.T  - Desk" <connection.info@pentaleon.com>
+To: jose@monkey.org
+Subject: Monkey Ticket #37549842: You have 1 or more errors in your Mail
+ Account: ref:_t12YqLtI._t12YqLtI
+Message-ID: <edf730ca-4269-a77e-5fe4-d3d51b021aaf@pentaleon.com>
+X-Priority: 1 (Highest)
+X-Msmail-Priority: High
+Importance: High
+Content-Transfer-Encoding: quoted-printable
+Date: Thu, 03 Oct 2024 21:06:29 +0000
+MIME-Version: 1.0
+X-Rspamd-Queue-Id: 70B79120004
+X-Spam-Status: No, score=6.80
+X-Stat-Signature: hgpjc9eunzhma7wescpf37rb1y9to1e5
+X-Rspam-User: 
+X-Rspamd-Server: rspam05
+X-HE-Tag: 1728006882-97431
+X-HE-Meta: =?utf-8?q?U2FsdGVkX1+uTUX2UpLF0y9CFOiAVnIfK/Wy94QIiepqUSoqDzQpjti?=
+ =?utf-8?q?3EUCoOs6LoD1IAYrsTOBazjLkVzwvCiBmiwi08027sfcBuNXCTWLx5m35rllNq1CH?=
+ =?utf-8?q?rrH0ghnpvcJV92BBrScGqaNcDBZrPtYpjuO3m+dCV1JwpvDaq2RJiOXaRYwZji2n9?=
+ =?utf-8?q?GrvhLxchLRNvXZiTAiem6NoXkYLBmZgXb65a+6cUR7J/HTJ8jAIaF3Wb5udZKtCAq?=
+ =?utf-8?q?xqSEbA4wgqMt6HLbsoTbYKGb00IZ+wHqx2jcpJHaQ72TGMEwU2Rif3zYABq2GdLG5?=
+ =?utf-8?q?D9FGaPc+fN0aKfpJsuLhms/gOPfPQMCpLYjwa+LHLa2VSzyJqjQffGENvcy6q02EL?=
+ =?utf-8?q?nZwBwprtLtyBV0wEeo6DQNtK7D9y4auCjRU0AEMfyWKm5ti9urTJJVS8HHSr2ixI7?=
+ =?utf-8?q?SC/FkJj3Rgzk0vM8Gs7bR4MI+Mc7F06vsI9GchR23MZbfvE3L47LeWV5aBO7Jnrk5?=
+ =?utf-8?q?ZKs0mfLMnYEGytSeHDtt8HjkYKzLWmgyQz5duc+SH3Awg/gKo8jJUAqU+FMsQRvmM?=
+ =?utf-8?q?vepeWzGCEzhb6fP+lJrmeh/gTgZxvaMChhCtoDDeVRS76Fap0AjMTtMl5cwUAan4Y?=
+ =?utf-8?q?1e4+njmsupaaahx8ZGh1ny1w4yCcB/su3I5einzpAjgfljWe6bfcMUOilDEJvsqJn?=
+ =?utf-8?q?g33PnkCiiwe6GOpr2KEeDIccbPtIMFjL6ziI7+qfzYM/rNNWsfu5cTbClh6l063oW?=
+ =?utf-8?q?w+zCdcv3wxd+taYnUt+tdMwlFRfli2Qk80xtYUMWZpQlW6KzaLLYFpS23YKSj2SuJ?=
+ =?utf-8?q?dD6wnlch/HZuXOqyKFQ/7ZIVivmPBzNBXhHB/V5n6BoT0XiC9qj56G37h/2gbfVvf?=
+ =?utf-8?q?8c4l6EoaecJfkWJn69BFDtchlYGpFTFoEuudJNI0LraV89xabMZVX+0Vki4yqfdBC?=
+ =?utf-8?q?FP/Z9tO+/ehYqGrTqsrUwF_Wa7FTe+S6BBJivhEVgotE4hN/nZ8pxE+b6oDGM3L89?=
+ =?utf-8?q?Ilc7OC80uKUwt8XK+MehdZ3Sbpcf3vSg5rnV5U7JSX0kTaAHnkz6F6wphAjFpqtHg?=
+ =?utf-8?q?bLdXtW3he4htlHmwNADO2EWHxG6urvBeEEttOzycthpQrhbV6PDNgLIvTeoXtQauv?=
+ =?utf-8?q?WpzmXoHj7amxSqubKNUpXxjOdlKxloIDaFh9Xbf3KZK770xg14Xax+Fujh7MYTTAx?=
+ =?utf-8?q?hknHLSVNq4vv95rZshCllmZc3SQQixBr4DUHH5P0jqivkkCjqvgnoBN3JzPh9zZqb?=
+ =?utf-8?q?1XGMP20GyAlR8B1zo6TWHeFu/nwdxCtf/jeXAJAVn0Phz3te9UVELPaIwK2PNP/O2?=
+ =?utf-8?q?UIpeXpBXzCkgc0Pgpy8hdue379EWi07J6KDXx9b89wLifNS3cuRr+Rhh+E7w8lFLU?=
+ =?utf-8?q?XjBx1R+VAYg=3D=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 287
+
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta charset=3D"UTF-8">
+  <meta name=3D"viewport" content=3D"width=3Ddevice-width, =
+initial-scale=3D1.0">
+  <title>Inbox Storage Limit Exceeded</title>
+</head>
+<body style=3D"margin: 0pt; padding: 0pt; font-family: Calibri; =
+background-color: rgb(244, 244, 244);">
+<table width=3D"100%" style=3D"background-color: rgb(244, 244, 244);" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+  <tbody>
+    <tr>
+      <td align=3D"center" style=3D"padding: 20px;">
+      <table width=3D"100%" style=3D"border: 1px solid rgb(221, 221, 221); =
+border-image: none; background-color: rgb(255, 255, 255);" border=3D"0" =
+cellspacing=3D"0" cellpadding=3D"0" max-width=3D"600">
+        <tbody>
+          <tr>
+            <td style=3D"padding: 20px; text-align: center; color: rgb(255,=
+ 255, 255); font-size: 24px; font-weight: bold; background-color: rgb(0, =
+123, 255);">
+Inbox Storage Alert<br>Monkey<br></td>
+          </tr>
+          <tr>
+            <td style=3D"padding: 20px; text-align: left; color: rgb(51, 51=
+, 51); font-size: 16px;">
+            <p>Hello jose,<br><br>Your account jose@monkey.org&nbsp;have =
+exceeded the allocated storage limit on Monkey server time 10/3/2024, =
+02:06:29 PM and requires your immediate attention.<br><br><font =
+color=3D"#ff0000"><strong>Please
+address this issue promptly to avoid disruptions in receiving new
+emails.</strong></font><br><br></p>
+            <p style=3D"margin: 20px 0pt; text-align: center;">
+ <a style=3D"padding: 15px 25px; color: rgb(255, 255, 255); font-size: =
+16px; text-decoration: none; background-color: rgb(0, 123, 255);" =
+href=3D"https://www.dragonships-maritime.com/1/?eUN9ChK7fJ8paGLpo3KL/eUN9Ch=
+K7fJ8paGLpo3KL/#jose@monkey.org" target=3D"_blank">Manage Storage<strong>
+            </strong></a></p>
+            <p align=3D"center"><br><br></p>
+            </td>
+          </tr>
+          <tr>
+            <td style=3D"padding: 10px; text-align: center; color: rgb(170,=
+ 170, 170); font-size: 12px; background-color: rgb(244, 244, =
+244);"><strong>
+<!--StartFragment -->
+
+
+&nbsp;</strong>&copy; 2024 Mail Administrator. All rights reserved.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+</body></html>
+

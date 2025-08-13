@@ -1,0 +1,95 @@
+Return-Path: cruz@inshieldnt.com
+Delivered-To: jose@monkey.org
+X-FDA: 81889273494.38.8DD01C6
+Received: from mta0.inshieldnt.com (mta0.inshieldnt.com [89.150.57.34])
+	by imf30.b.hostedemail.com (Postfix) with ESMTP id A5CBB180021
+	for <jose@monkey.org>; Tue, 12 Mar 2024 18:48:45 +0000 (UTC)
+Authentication-Results: imf30.b.hostedemail.com;	dkim=pass
+ header.d=inshieldnt.com header.s=default header.b=WSw4nG1x;	spf=pass
+ (imf30.b.hostedemail.com: domain of cruz@inshieldnt.com designates
+ 89.150.57.34 as permitted sender) smtp.mailfrom=cruz@inshieldnt.com;
+	dmarc=pass (policy=reject) header.from=inshieldnt.com
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=hostedemail.com;	s=arc-20220608; t=1710269326;
+	h=from:from:sender:reply-to:subject:subject:date:date:	
+ message-id:message-id:to:to:cc:mime-version:mime-version:	
+ content-type:content-type:content-transfer-encoding:in-reply-to:	
+ references:dkim-signature; bh=V04+nLeWFRn0/iPMiO5NthYNkgC3m2GKHadLGL+85XM=;
+	b=UhPt9py4eU0zpmOCJtjg/KVrtGzdcpBlEEjoRveSEG1e4bHb4Z72xqHIdTRXyw2odpvv0z
+	D+DihHmXs3hKnvOzYMLHzsMTa3+sLKMJCA+sbJr5+h7uYEeEUuQkP/OLSNsfQG5bugMgqh
+	+ws0vqZXulMAb+Soixd+ysRS1nR9EwQ=
+ARC-Seal: i=1; s=arc-20220608; d=hostedemail.com; t=1710269326; a=rsa-sha256;
+	cv=none;
+	b=7yDCZstb9+DwD4pqruSf6SdHJMeBVF8c/BJaoB/hEAH5FGReK5ktWqSXlir2gWyzK2P9aL
+	Pvhcf9l13dxS0gnyYJrAkH9XMHxM5/8nkUPvjMTYgktDGt5C2iekV6a85Cff/lAbtNYQDW
+	IfsjRIWx0uRvqYLe/cihDiareU6spig=
+ARC-Authentication-Results: i=1;	imf30.b.hostedemail.com;	dkim=pass
+ header.d=inshieldnt.com header.s=default header.b=WSw4nG1x;	spf=pass
+ (imf30.b.hostedemail.com: domain of cruz@inshieldnt.com designates
+ 89.150.57.34 as permitted sender) smtp.mailfrom=cruz@inshieldnt.com;
+	dmarc=pass (policy=reject) header.from=inshieldnt.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=default;
+ d=inshieldnt.com;
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type;
+ i=cruz@inshieldnt.com; bh=V04+nLeWFRn0/iPMiO5NthYNkgC3m2GKHadLGL+85XM=; 
+ =?utf-8?q?b=3DWSw4nG1xDTvP/Ri049tPFiJcO6cp/S3T9LJaRS6Sdv+KS5DxH7hi/O7CR3y6H?=
+ =?utf-8?q?Bub/wCPUuafSqft?=  
+ B4mjCYyPHK91d4TZeQtg/rnZ2Ct9zabaDUqe2OVpU6HWtOMcvVMqa4U61lPYsmvYECjmN6yfFpdQ
+   JJGW8XEN8hxSqP3ezbA=
+From: DOCUSIGN<cruz@inshieldnt.com>
+To: jose@monkey.org
+Subject: You have a Document Via DOCUSIGN
+Date: 12 Mar 2024 14:48:42 -0400
+Message-ID: <20240312144842.E6963EE9AFC0BC57@inshieldnt.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="----=_NextPart_000_0012_9DB1A823.EF9CDCCD"
+X-Rspamd-Server: rspam02
+X-Rspam-User: 
+X-Rspamd-Queue-Id: A5CBB180021
+X-Spam-Status: No, score=0.50
+X-Stat-Signature: cr71n4gudhjs1p7ryasjnskbogpjmn4k
+X-HE-Tag: 1710269325-910662
+X-HE-Meta: =?utf-8?q?U2FsdGVkX188jr2dVJCv39PFbHqYmhPeIHhjEzijyWPVyG92uVpdX1m?=
+ =?utf-8?q?zhoqUVIxD88g8RTGT3vJVAhL7S5MtwLiM/WKoat/0ijupP8p59obStVlrlUsOfPIt?=
+ =?utf-8?q?Hs64u5UtZqPvxULemrR4xWVbGRxInJxS9fwWYl+LxdtL6trd3FpweKSumdARTwUek?=
+ =?utf-8?q?9+KSYarO5r7HZHNMisSoQ0JCkxSRdqIh25mwpi/7S3ws444pTQ1vRVELWzDrgNz1E?=
+ =?utf-8?q?EicKNH9XKiYwJLp6OfRTq0B085oU2Foy7ITNTXtMKLZd4+0PPqA2RuXn4ULLM9FgB?=
+ =?utf-8?q?ojHfXa0aG95LaJ/Y=3D?=
+Status: O
+X-Status: 
+X-Keywords: 
+X-UID: 69
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0012_9DB1A823.EF9CDCCD
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear jose@monkey.org,
+=20=20
+  Kindly view the attached document and revert back to us as soon=20
+as possible.
+
+  Password of pdf document: Enquiry2024
+
+
+  E-Mail Disclaimer: This email, including any attachments, is=20
+confidential and may be legally privileged. It is intended solely=20
+for the addressee(s). Access to this email by anyone else is=20
+unauthorized and strictly prohibited. If you are not the intended=20
+recipient please inform the sender and be aware that any=20
+disclosure, copying, distribution or any action taken or omitted=20
+to be taken in reliance on it, is prohibited and may be unlawful.=20
+Copyright in this email and any document created by us and sent=20
+as an attachment to this email will be and remain vested in us=20
+and will not be transferred to you. You should check this email=20
+and any attachments for viruses, we do not accept liability for=20
+any loss or damage resulting from viruses.This email is solely=20
+for jose@monkey.org.
+------=_NextPart_000_0012_9DB1A823.EF9CDCCD
+
+------=_NextPart_000_0012_9DB1A823.EF9CDCCD--
+
