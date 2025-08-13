@@ -6,7 +6,7 @@ import os
 
 # Set up absolute model path
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-MODEL_PATH = os.path.join(BASE_DIR, "model", "phish_rf_model.pkl")
+MODEL_PATH = os.path.join(BASE_DIR, "model", "phishdetect_eml_model.pkl")
 
 # Load trained model
 model = joblib.load(MODEL_PATH)
