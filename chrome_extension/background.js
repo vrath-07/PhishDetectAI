@@ -1,4 +1,8 @@
 chrome.runtime.onInstalled.addListener(() => {
-    console.log("PhishDetectAI Extension installed.");
+  chrome.notifications.create({
+    type: "basic",
+    iconUrl: "icon.png",
+    title: "PhishDetectAI Installed 🎉",
+    message: "Click the extension icon to start scanning suspicious emails."
   });
-  
+});

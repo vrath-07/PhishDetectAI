@@ -6,10 +6,22 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h2>PhishDetectAI</h2>
-  <input type="file" id="emailFile" accept=".eml" />
-  <button id="scanBtn">Scan Email</button>
-  <div id="result"></div>
+  <div class="container">
+    <h2>PhishDetectAI</h2>
+
+    <!-- Drop Zone -->
+    <div id="dropZone">
+      <p>📂 Drag & Drop .eml file here<br/>or click to browse</p>
+      <input type="file" id="emailFile" accept=".eml" hidden />
+    </div>
+
+    <!-- Scan Button -->
+    <button id="scanBtn">🔍 Scan Email</button>
+
+    <!-- Results -->
+    <div id="result"></div>
+  </div>
+
   <script src="popup.js"></script>
 </body>
 </html>
